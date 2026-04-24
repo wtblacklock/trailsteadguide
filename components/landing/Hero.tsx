@@ -5,11 +5,11 @@ export default function Hero() {
   return (
     <section>
       {/* Upper: open cream space with large serif headline left-aligned */}
-      <div className="max-w-page mx-auto px-8 pt-24 pb-16">
+      <div className="max-w-page mx-auto px-8 pt-14 md:pt-24 pb-10 md:pb-16">
         <p className="text-stone-400 text-sm mb-8">For first-time families</p>
         <div className="max-w-4xl">
             <h1 className="font-serif text-6xl md:text-7xl lg:text-8xl font-semibold text-stone-950 tracking-tight leading-[1.05] mb-10">
-              Your family&apos;s first camping trip, planned in 10 minutes.
+              A step-by-step system built for first-time families. No guesswork. No overbuying.
             </h1>
             <div className="flex flex-wrap items-center gap-6">
               <Link

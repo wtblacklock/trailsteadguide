@@ -19,33 +19,50 @@ export default function AffiliateBlock({ products }: Props) {
   )
 
   return (
-    <section className="py-12 bg-white">
+    <section className="py-16">
       <div className="max-w-wide mx-auto px-6">
-        <h2 className="text-2xl font-serif font-medium text-stone-900 mb-2">Recommended Gear</h2>
-        <p className="text-stone-500 text-sm mb-10">Affiliate links help support Trailstead Guide at no extra cost to you.</p>
+        <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-2 mb-12">
+          <h2 className="font-serif text-3xl font-semibold text-stone-950 tracking-tight">Gear for this trip</h2>
+          <p className="text-stone-400 text-sm">Affiliate links support Trailstead at no extra cost.</p>
+        </div>
+
         {(['essential', 'comfort', 'convenience'] as const).map((category) => {
           const items = grouped[category]
           if (items.length === 0) return null
           return (
             <div key={category} className="mb-10">
-              <h3 className="text-xs font-semibold uppercase tracking-widest text-stone-400 mb-4">
+              <p className="text-xs font-semibold tracking-widest uppercase text-stone-400 mb-3">
                 {categoryLabel[category]}
-              </h3>
-              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              </p>
+              <div>
                 {items.map((product) => (
                   <a
-                    key={product.name}
+                    key={product.id}
                     href={product.affiliateUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group block border border-stone-200 rounded-xl p-5 hover:shadow-md transition-shadow"
+                    className="group flex items-center justify-between gap-8 py-5 border-t border-stone-200"
                   >
-                    <div className="font-medium text-stone-900 group-hover:text-brand-green transition-colors mb-1">
-                      {product.name}
+                    <div className="flex-1 min-w-0">
+                      <p className="font-serif font-medium text-stone-900 group-hover:text-stone-600 transition-colors mb-1">
+                        {product.name}
+                      </p>
+                      <p className="text-sm text-stone-500 leading-relaxed">{product.description}</p>
                     </div>
-                    <div className="text-sm text-stone-500">{product.description}</div>
+                    <div className="flex items-center gap-4 shrink-0">
+                      {product.priceRange && (
+                        <span className="text-sm text-stone-400 tabular-nums">{product.priceRange}</span>
+                      )}
+                      <span
+                        className="text-stone-300 group-hover:text-stone-700 transition-colors text-lg leading-none"
+                        aria-hidden="true"
+                      >
+                        →
+                      </span>
+                    </div>
                   </a>
                 ))}
+                <div className="border-t border-stone-200" />
               </div>
             </div>
           )

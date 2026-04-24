@@ -21,7 +21,7 @@ export default function TrustSection() {
   ]
 
   return (
-    <section className="py-36 max-w-page mx-auto px-8">
+    <section className="py-16 md:py-36 max-w-page mx-auto px-8">
       <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
         {/* Left: heading + trust points */}
         <div className="col-span-1 md:col-span-6">

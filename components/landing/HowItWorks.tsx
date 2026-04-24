@@ -20,11 +20,11 @@ export default function HowItWorks() {
   ]
 
   return (
-    <section className="py-36 max-w-page mx-auto px-8">
+    <section className="py-16 md:py-36 max-w-page mx-auto px-8">
       {/* Header */}
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-6 mb-16 md:mb-20">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-6 mb-12 md:mb-20">
         <div className="col-span-1 md:col-span-5">
-          <h2 className="font-serif text-5xl md:text-6xl font-semibold text-stone-950 tracking-tight">
+          <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-stone-950 tracking-tight">
             Three steps to your first camping trip.
           </h2>
         </div>
@@ -33,14 +33,14 @@ export default function HowItWorks() {
       {/* Steps */}
       <div>
         {steps.map((step) => (
-          <div key={step.number} className="grid grid-cols-12 gap-6 py-10 border-t border-stone-200">
+          <div key={step.number} className="grid grid-cols-12 gap-x-6 gap-y-3 py-8 md:py-10 border-t border-stone-200">
             <div className="col-span-1">
               <span className="font-serif text-stone-300 text-lg">{step.number}</span>
             </div>
-            <div className="col-span-4 md:col-span-4">
-              <h3 className="font-serif text-2xl font-medium text-stone-900 leading-snug">{step.title}</h3>
+            <div className="col-span-11 md:col-span-4">
+              <h3 className="font-serif text-xl md:text-2xl font-medium text-stone-900 leading-snug">{step.title}</h3>
             </div>
-            <div className="hidden md:block md:col-span-5 md:col-start-7">
+            <div className="col-span-11 col-start-2 md:col-span-5 md:col-start-7">
               <p className="text-stone-500 leading-relaxed">{step.description}</p>
             </div>
           </div>
