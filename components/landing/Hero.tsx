@@ -8,7 +8,7 @@ export default function Hero() {
       <div className="max-w-page mx-auto px-8 pt-14 md:pt-24 pb-10 md:pb-16">
 <div className="max-w-4xl">
             <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-semibold text-stone-950 tracking-tight leading-[1.08] mb-5 md:mb-6">
-              Plan your first family camping trip in 10 minutes.
+              Plan your first family camping trip in 2 minutes.
             </h1>
             <p className="text-stone-500 text-lg md:text-xl leading-relaxed mb-8 md:mb-10 max-w-2xl">
               A step-by-step system for first-time campers. Know exactly what to bring, what to do, and what to expect.
@@ -24,7 +24,7 @@ export default function Hero() {
                 See example plan
               </a>
             </div>
-            <p className="text-stone-400 text-sm mt-6">Free · No account required · About 2 minutes</p>
+            <p className="text-stone-400 text-sm mt-6">Free · No account required</p>
         </div>
       </div>
 
