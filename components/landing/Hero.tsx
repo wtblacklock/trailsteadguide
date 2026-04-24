@@ -8,9 +8,12 @@ export default function Hero() {
       <div className="max-w-page mx-auto px-8 pt-14 md:pt-24 pb-10 md:pb-16">
         <p className="text-stone-400 text-sm mb-8">For first-time families</p>
         <div className="max-w-4xl">
-            <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-semibold text-stone-950 tracking-tight leading-[1.08] mb-8 md:mb-10">
-              A step-by-step system built for first-time families. No guesswork. No overbuying.
+            <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-semibold text-stone-950 tracking-tight leading-[1.08] mb-5 md:mb-6">
+              Plan your first family camping trip in 10 minutes.
             </h1>
+            <p className="text-stone-500 text-lg md:text-xl leading-relaxed mb-8 md:mb-10 max-w-2xl">
+              A step-by-step system for first-time campers. Know exactly what to bring, what to do, and what to expect.
+            </p>
             <div className="flex flex-wrap items-center gap-6">
               <Link
                 href="/quiz"
