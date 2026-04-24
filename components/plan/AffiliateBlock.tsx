@@ -42,15 +42,28 @@ export default function AffiliateBlock({ products }: Props) {
                     href={getProductUrl(product)}
                     target="_blank"
                     rel="sponsored nofollow noopener noreferrer"
-                    className="group flex items-center justify-between gap-8 py-5 border-t border-stone-200"
+                    className="group flex items-center gap-5 sm:gap-6 py-5 border-t border-stone-200"
                   >
+                    {product.imageUrl && (
+                      <div className="shrink-0 w-20 h-20 sm:w-24 sm:h-24 bg-stone-100 rounded-md overflow-hidden">
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img
+                          src={product.imageUrl}
+                          alt=""
+                          loading="lazy"
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        />
+                      </div>
+                    )}
                     <div className="flex-1 min-w-0">
                       <p className="font-serif font-medium text-stone-900 group-hover:text-stone-600 transition-colors mb-1">
                         {product.name}
                       </p>
-                      <p className="text-sm text-stone-500 leading-relaxed">{product.description}</p>
+                      <p className="text-sm text-stone-500 leading-relaxed line-clamp-2 sm:line-clamp-none">
+                        {product.description}
+                      </p>
                     </div>
-                    <div className="flex items-center gap-4 shrink-0">
+                    <div className="hidden sm:flex items-center gap-4 shrink-0">
                       {product.priceRange && (
                         <span className="text-sm text-stone-400 tabular-nums">{product.priceRange}</span>
                       )}
