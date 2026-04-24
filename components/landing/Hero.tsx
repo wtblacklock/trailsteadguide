@@ -6,8 +6,7 @@ export default function Hero() {
     <section>
       {/* Upper: open cream space with large serif headline left-aligned */}
       <div className="max-w-page mx-auto px-8 pt-14 md:pt-24 pb-10 md:pb-16">
-        <p className="text-stone-400 text-sm mb-8">For first-time families</p>
-        <div className="max-w-4xl">
+<div className="max-w-4xl">
             <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-semibold text-stone-950 tracking-tight leading-[1.08] mb-5 md:mb-6">
               Plan your first family camping trip in 10 minutes.
             </h1>
