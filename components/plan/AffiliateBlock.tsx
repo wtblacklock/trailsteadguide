@@ -36,6 +36,8 @@ export default function AffiliateBlock({ products }: Props) {
                   <a
                     key={product.name}
                     href={product.affiliateUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="group block border border-stone-200 rounded-xl p-5 hover:shadow-md transition-shadow"
                   >
                     <div className="font-medium text-stone-900 group-hover:text-brand-green transition-colors mb-1">

@@ -11,7 +11,7 @@ export default function SafetyNotes({ notes }: Props) {
         <ul className="space-y-3">
           {notes.map((note, i) => (
             <li key={i} className="flex gap-3 text-stone-700">
-              <span className="flex-shrink-0 text-amber-600">⚠</span>
+              <span className="flex-shrink-0 text-amber-600" aria-hidden="true">⚠</span>
               <span>{note}</span>
             </li>
           ))}

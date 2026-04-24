@@ -11,7 +11,7 @@ export default function GearList({ items }: Props) {
         <ul className="grid sm:grid-cols-2 gap-3">
           {items.map((item, i) => (
             <li key={i} className="flex gap-3 items-start text-stone-700">
-              <span className="mt-1 text-brand-green flex-shrink-0">✓</span>
+              <span className="mt-1 text-brand-green flex-shrink-0" aria-hidden="true">✓</span>
               <span>{item}</span>
             </li>
           ))}
