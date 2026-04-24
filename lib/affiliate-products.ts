@@ -9,7 +9,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     imageUrl: 'https://m.media-amazon.com/images/S/aplus-media-library-service-media/f19b70cc-14ac-46ae-bec2-33b25b7fd2a9.__CR0,0,1464,600_PT0_SX1464_V1___.png',
     category: 'essential',
     templateSlugs: ['first-night-camp', 'first-weekend-camp'],
-    priceRange: '$80–100',
+    priceRange: '~$95',
   },
   {
     id: 'tent-cabin',
@@ -19,7 +19,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     imageUrl: 'https://m.media-amazon.com/images/S/aplus-media-library-service-media/66d90136-6ff5-40c8-8adf-1b409a9a5f81.__CR0,0,1464,600_PT0_SX1464_V1___.png',
     category: 'comfort',
     templateSlugs: ['easy-family-basecamp'],
-    priceRange: '$100–150',
+    priceRange: '~$130',
   },
   {
     id: 'sleeping-bag-family',
@@ -29,7 +29,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     imageUrl: 'https://m.media-amazon.com/images/S/aplus-media/vc/94b627ff-60b3-4f09-af91-225e2a7b114d._CR0,0,970,300_PT0_SX970__.jpg',
     category: 'essential',
     templateSlugs: ['backyard-test', 'first-night-camp', 'first-weekend-camp'],
-    priceRange: '$80–110',
+    priceRange: '~$95',
   },
   {
     id: 'sleeping-pad-air',
@@ -39,7 +39,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     imageUrl: 'https://m.media-amazon.com/images/I/71AVJB+xn6L._AC_SL1500_.jpg',
     category: 'comfort',
     templateSlugs: ['first-night-camp', 'first-weekend-camp'],
-    priceRange: '$60–90',
+    priceRange: '~$75',
   },
   {
     id: 'air-mattress-queen',
@@ -49,7 +49,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     imageUrl: 'https://m.media-amazon.com/images/I/616X+781lOL._AC_SX679_.jpg',
     category: 'comfort',
     templateSlugs: ['easy-family-basecamp'],
-    priceRange: '$110–140',
+    priceRange: '~$120',
   },
   {
     id: 'stove-2-burner',
@@ -59,7 +59,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     imageUrl: 'https://m.media-amazon.com/images/I/71J5ttHnYvL._AC_SX679_.jpg',
     category: 'essential',
     templateSlugs: ['first-night-camp', 'first-weekend-camp', 'easy-family-basecamp'],
-    priceRange: '$190–230',
+    priceRange: '~$210',
   },
   {
     id: 'headlamp-family',
@@ -69,7 +69,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     imageUrl: 'https://m.media-amazon.com/images/I/81sGcNXb1eL._AC_SL1500_.jpg',
     category: 'essential',
     templateSlugs: ['backyard-test', 'first-night-camp', 'first-weekend-camp', 'easy-family-basecamp'],
-    priceRange: '$40–55',
+    priceRange: '~$50',
   },
   {
     id: 'camp-chairs',
@@ -79,7 +79,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     imageUrl: 'https://m.media-amazon.com/images/I/61B-kRUS-IL._AC_SL1200_.jpg',
     category: 'comfort',
     templateSlugs: ['first-night-camp', 'first-weekend-camp', 'easy-family-basecamp'],
-    priceRange: '$80–100',
+    priceRange: '~$95',
   },
   {
     id: 'cooler-basic',
@@ -89,7 +89,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     imageUrl: 'https://m.media-amazon.com/images/I/91uqAgVltVS._AC_SL1500_.jpg',
     category: 'essential',
     templateSlugs: ['first-night-camp', 'first-weekend-camp', 'easy-family-basecamp'],
-    priceRange: '$100–140',
+    priceRange: '~$120',
   },
   {
     id: 'canopy-camp',
@@ -99,7 +99,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     imageUrl: 'https://m.media-amazon.com/images/I/610Y31VdNIL._AC_.jpg',
     category: 'convenience',
     templateSlugs: ['first-weekend-camp', 'easy-family-basecamp'],
-    priceRange: '$100–160',
+    priceRange: '~$130',
   },
 ]
 

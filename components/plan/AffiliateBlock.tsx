@@ -24,7 +24,7 @@ export default function AffiliateBlock({ products }: Props) {
       <div className="max-w-wide mx-auto px-6">
         <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-2 mb-12">
           <h2 className="font-serif text-3xl font-semibold text-stone-950 tracking-tight">Gear for this trip</h2>
-          <p className="text-stone-400 text-sm">Affiliate links support Trailstead at no extra cost.</p>
+          <p className="text-stone-400 text-sm">Affiliate links support Trailstead at no extra cost. Prices shown are approximate and may vary on Amazon.</p>
         </div>
 
         {(['essential', 'comfort', 'convenience'] as const).map((category) => {
