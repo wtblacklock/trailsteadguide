@@ -71,8 +71,8 @@ export default function Footer() {
           <p className="text-stone-600 text-xs">
             © {new Date().getFullYear()} Trailstead Guide. All rights reserved.
           </p>
-          <p className="text-stone-600 text-xs max-w-sm text-left sm:text-right">
-            Some links on this site are affiliate links. We may earn a small commission at no extra cost to you.
+          <p className="text-stone-600 text-xs max-w-md text-left sm:text-right">
+            As an Amazon Associate we earn from qualifying purchases. Some links on this site are affiliate links &mdash; clicking them may earn us a small commission at no extra cost to you.
           </p>
         </div>
       </div>
