@@ -22,6 +22,7 @@ const mockSnapshot: SessionSnapshot = {
   intent: 'real-trip',
   anxiety: 'high',
   comfortPriority: 'low',
+  partySize: { adults: 2, kids: 2 },
   planSlug: 'first-night-camp',
   timestamp: 1714000000000,
 }

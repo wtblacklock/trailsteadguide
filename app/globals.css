@@ -17,3 +17,24 @@
     @apply font-serif;
   }
 }
+
+/* Scroll reveal — driven by components/landing/ScrollRevealer.tsx */
+[data-reveal] {
+  transition: opacity 700ms cubic-bezier(0.22, 1, 0.36, 1),
+              transform 700ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+[data-reveal][data-reveal-state="out"] {
+  opacity: 0;
+  transform: translateY(18px);
+}
+[data-reveal][data-reveal-state="in"] {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] {
+    transition: none;
+    opacity: 1;
+    transform: none;
+  }
+}

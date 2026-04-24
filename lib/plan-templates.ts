@@ -1,7 +1,9 @@
 import type { PlanTemplate } from '@/types'
+import { MEALS_BY_PLAN } from './plan-meals'
 
 export const PLAN_TEMPLATES: Record<string, PlanTemplate> = {
   'backyard-test': {
+    meals: MEALS_BY_PLAN['backyard-test'],
     slug: 'backyard-test',
     title: 'Backyard Test Night',
     tagline: 'Before you commit to a campsite, make sure everyone can actually sleep outside.',
@@ -77,6 +79,7 @@ export const PLAN_TEMPLATES: Record<string, PlanTemplate> = {
   },
 
   'first-night-camp': {
+    meals: MEALS_BY_PLAN['first-night-camp'],
     slug: 'first-night-camp',
     title: 'First Night Camp',
     tagline: 'Your first real campsite trip — done right, without the chaos.',
@@ -192,6 +195,7 @@ export const PLAN_TEMPLATES: Record<string, PlanTemplate> = {
   },
 
   'first-weekend-camp': {
+    meals: MEALS_BY_PLAN['first-weekend-camp'],
     slug: 'first-weekend-camp',
     title: 'First Weekend Camp',
     tagline: 'Two nights. Better gear. More confidence. Same family.',
@@ -317,6 +321,7 @@ export const PLAN_TEMPLATES: Record<string, PlanTemplate> = {
   },
 
   'easy-family-basecamp': {
+    meals: MEALS_BY_PLAN['easy-family-basecamp'],
     slug: 'easy-family-basecamp',
     title: 'Easy Family Basecamp',
     tagline: 'Maximum comfort. Minimal chaos. Camping for families who like being comfortable.',

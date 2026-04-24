@@ -9,17 +9,24 @@ import SafetyNotes from '@/components/plan/SafetyNotes'
 import AffiliateBlock from '@/components/plan/AffiliateBlock'
 import PostPlanEmailCapture from '@/components/plan/PostPlanEmailCapture'
 import FloatingEmailBar from '@/components/plan/FloatingEmailBar'
+import MealPlanAndShopping from '@/components/plan/MealPlanAndShopping'
+import { parsePartySize } from '@/lib/party-size'
 
 export const metadata: Metadata = {
   title: 'Backyard Test Night Plan | Trailstead Guide',
   description: 'A zero-pressure backyard camping trial run for first-time family campers.',
 }
 
-export default function BackyardTestPage() {
+export default async function BackyardTestPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ adults?: string; kids?: string }>
+}) {
   const plan = getPlanTemplate('backyard-test')
   if (!plan) notFound()
 
   const products = getProductsForTemplate('backyard-test')
+  const { adults, kids } = parsePartySize(await searchParams)
 
   const timelineSections = [
     { heading: 'Before You Start', items: plan.preTrip },
@@ -52,6 +59,7 @@ export default function BackyardTestPage() {
       <GearList items={gearItems} />
       <KidActivityPlan activities={activityItems} />
       <SafetyNotes notes={plan.safetyNotes} />
+      <MealPlanAndShopping meals={plan.meals} defaultAdults={adults} defaultKids={kids} />
       <AffiliateBlock products={products} />
       <PostPlanEmailCapture planSlug="backyard-test" />
       <FloatingEmailBar planSlug="backyard-test" />

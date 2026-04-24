@@ -10,9 +10,12 @@ export type Intent = 'test' | 'real-trip' | 'multi-night'
 export type ComfortPriority = 'low' | 'high'
 export type KidsAgeGroup = 'none' | '3-6' | '7-12' | 'teens'
 
+export type PartySize = { adults: number; kids: number }
+
 export type QuizAnswers = {
   experience: Experience
   kidsAgeGroup: KidsAgeGroup[]
+  partySize: PartySize
   intent: Intent
   anxiety: Anxiety
   comfortPriority: ComfortPriority
@@ -32,6 +35,8 @@ export type QuizQuestion = {
   id: keyof QuizAnswers
   prompt: string
   subprompt?: string
+  /** Default 'select'. Use 'party-size' for the adults/kids stepper. */
+  kind?: 'select' | 'party-size'
   options: QuizOption[]
   multiSelect?: boolean
 }
@@ -54,6 +59,40 @@ export type ActivityItem = {
   ageGroup: KidsAgeGroup | 'all'
 }
 
+export type IngredientCategory =
+  | 'protein'
+  | 'produce'
+  | 'pantry'
+  | 'dairy'
+  | 'snacks'
+  | 'drinks'
+  | 'other'
+
+export type Ingredient = {
+  name: string
+  /** Amount per adult, in `unit`. */
+  perAdult: number
+  /** Amount per kid, in `unit`. */
+  perKid: number
+  /** Display unit (e.g. 'oz', 'slice', 'count', 'cup'). */
+  unit: string
+  /** Optional pack rounding for the shopping list. `amount` is in `unit`. */
+  packSize?: { amount: number; label: string }
+  category: IngredientCategory
+}
+
+export type MealSlot = 'breakfast' | 'lunch' | 'dinner' | 'snack'
+
+export type Meal = {
+  /** 1-indexed day of the trip. */
+  day: number
+  dayLabel: string
+  slot: MealSlot
+  title: string
+  description: string
+  ingredients: Ingredient[]
+}
+
 export type PlanTemplate = {
   slug: PlanSlug
   title: string
@@ -67,6 +106,7 @@ export type PlanTemplate = {
   gear: GearItem[]
   activities: ActivityItem[]
   safetyNotes: string[]
+  meals: Meal[]
 }
 
 export type AffiliateProduct = {
@@ -92,6 +132,6 @@ export type QuizState = {
 }
 
 export type QuizAction =
-  | { type: 'ANSWER'; questionId: keyof QuizAnswers; value: string | string[] }
+  | { type: 'ANSWER'; questionId: keyof QuizAnswers; value: string | string[] | PartySize }
   | { type: 'DISMISS_EMAIL_CAPTURE' }
   | { type: 'COMPLETE' }

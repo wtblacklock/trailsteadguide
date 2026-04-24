@@ -24,6 +24,13 @@ export const QUIZ_QUESTIONS: QuizQuestion[] = [
     ],
   },
   {
+    id: 'partySize',
+    kind: 'party-size',
+    prompt: 'Who\u2019s coming?',
+    subprompt: 'We\u2019ll scale the shopping list and meals to fit.',
+    options: [],
+  },
+  {
     id: 'intent',
     prompt: 'What are you hoping to do?',
     options: [

@@ -4,6 +4,8 @@ import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 import Nav from '@/components/landing/Nav'
 import Footer from '@/components/landing/Footer'
+import PreLoader from '@/components/landing/PreLoader'
+import ScrollRevealer from '@/components/landing/ScrollRevealer'
 
 const figtree = Figtree({
   subsets: ['latin'],
@@ -29,6 +31,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${figtree.variable} ${sourceSerif4.variable}`}>
       <body className="font-sans">
+        <PreLoader />
+        <ScrollRevealer />
         <Nav />
         {children}
         <Footer />

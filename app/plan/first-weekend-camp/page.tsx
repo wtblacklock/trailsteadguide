@@ -10,17 +10,24 @@ import SafetyNotes from '@/components/plan/SafetyNotes'
 import AffiliateBlock from '@/components/plan/AffiliateBlock'
 import PostPlanEmailCapture from '@/components/plan/PostPlanEmailCapture'
 import FloatingEmailBar from '@/components/plan/FloatingEmailBar'
+import MealPlanAndShopping from '@/components/plan/MealPlanAndShopping'
+import { parsePartySize } from '@/lib/party-size'
 
 export const metadata: Metadata = {
   title: 'First Weekend Camp Plan | Trailstead Guide',
   description: 'A full two-night camping plan for families ready to level up.',
 }
 
-export default function FirstWeekendCampPage() {
+export default async function FirstWeekendCampPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ adults?: string; kids?: string }>
+}) {
   const plan = getPlanTemplate('first-weekend-camp')
   if (!plan) notFound()
 
   const products = getProductsForTemplate('first-weekend-camp')
+  const { adults, kids } = parsePartySize(await searchParams)
 
   const timelineSections = [
     { heading: 'Before You Leave', items: plan.preTrip.map(i => `${i.time}: ${i.title} — ${i.description}`) },
@@ -39,6 +46,7 @@ export default function FirstWeekendCampPage() {
       <GearList items={gearItems} />
       <KidActivityPlan activities={activityItems} />
       <SafetyNotes notes={plan.safetyNotes} />
+      <MealPlanAndShopping meals={plan.meals} defaultAdults={adults} defaultKids={kids} />
       <AffiliateBlock products={products} />
       <PostPlanEmailCapture planSlug="first-weekend-camp" />
       <FloatingEmailBar planSlug="first-weekend-camp" />

@@ -46,7 +46,7 @@ export default function QuizShell() {
   useEffect(() => {
     if (status !== 'complete') return
 
-    const requiredKeys: (keyof QuizAnswers)[] = ['experience', 'kidsAgeGroup', 'intent', 'anxiety', 'comfortPriority']
+    const requiredKeys: (keyof QuizAnswers)[] = ['experience', 'kidsAgeGroup', 'partySize', 'intent', 'anxiety', 'comfortPriority']
     const isComplete = requiredKeys.every(k => k in answers)
     if (!isComplete) return
     const completeAnswers = answers as QuizAnswers
@@ -57,7 +57,8 @@ export default function QuizShell() {
       planSlug: slug,
       timestamp: Date.now(),
     })
-    router.push(`/plan/${slug}`)
+    const { adults, kids } = completeAnswers.partySize
+    router.push(`/plan/${slug}?adults=${adults}&kids=${kids}`)
   }, [status, answers, router])
 
   return (

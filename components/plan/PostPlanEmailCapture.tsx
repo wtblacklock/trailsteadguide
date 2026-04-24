@@ -26,12 +26,12 @@ export default function PostPlanEmailCapture({ planSlug }: Props) {
   }
 
   return (
-    <section className="py-16 bg-stone-900 text-white">
+    <section className="py-16">
       <div className="max-w-content mx-auto px-6 text-center">
-        <h2 className="text-2xl font-serif font-medium mb-3">Save your plan</h2>
-        <p className="text-stone-400 mb-8">Get your full trip plan and gear list sent to your inbox.</p>
+        <h2 className="text-2xl font-serif font-medium text-stone-900 mb-3">Save your plan</h2>
+        <p className="text-stone-500 mb-8">Get your full trip plan and gear list sent to your inbox.</p>
         {status === 'success' ? (
-          <p className="text-green-400 font-medium">Plan sent! Check your inbox.</p>
+          <p className="text-brand-green font-medium">Plan sent! Check your inbox.</p>
         ) : (
           <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
             <label htmlFor="post-plan-email" className="sr-only">Email address</label>
@@ -42,7 +42,7 @@ export default function PostPlanEmailCapture({ planSlug }: Props) {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="your@email.com"
-              className="flex-1 rounded-md px-4 py-2.5 bg-stone-800 text-white placeholder:text-stone-500 border border-stone-700 focus:outline-none focus:ring-2 focus:ring-brand-green"
+              className="flex-1 rounded-md px-4 py-2.5 bg-white text-stone-900 placeholder:text-stone-400 border border-stone-300 focus:outline-none focus:ring-2 focus:ring-brand-green"
             />
             <Button type="submit" disabled={status === 'loading'} variant="primary">
               {status === 'loading' ? 'Sending…' : 'Email My Plan'}

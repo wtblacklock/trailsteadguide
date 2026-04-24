@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function ExampleOutput() {
   return (
-    <section id="example" className="py-8 max-w-page mx-auto px-8">
+    <section id="example" data-reveal className="py-8 max-w-page mx-auto px-8">
       {/* Header */}
       <div className="grid grid-cols-1 md:grid-cols-12 gap-6 mb-10 md:mb-12">
         <div className="col-span-1 md:col-span-5">

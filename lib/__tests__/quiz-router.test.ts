@@ -10,6 +10,7 @@ describe('computePlanSlug', () => {
       intent: 'real-trip',
       anxiety: 'high',
       comfortPriority: 'high',
+      partySize: { adults: 2, kids: 2 },
     }
     expect(computePlanSlug(answers)).toBe('easy-family-basecamp')
   })
@@ -21,6 +22,7 @@ describe('computePlanSlug', () => {
       intent: 'multi-night',
       anxiety: 'low',
       comfortPriority: 'high',
+      partySize: { adults: 2, kids: 2 },
     }
     expect(computePlanSlug(answers)).toBe('easy-family-basecamp')
   })
@@ -32,6 +34,7 @@ describe('computePlanSlug', () => {
       intent: 'test',
       anxiety: 'high',
       comfortPriority: 'low',
+      partySize: { adults: 2, kids: 2 },
     }
     expect(computePlanSlug(answers)).toBe('backyard-test')
   })
@@ -43,6 +46,7 @@ describe('computePlanSlug', () => {
       intent: 'multi-night',
       anxiety: 'medium',
       comfortPriority: 'low',
+      partySize: { adults: 2, kids: 2 },
     }
     expect(computePlanSlug(answers)).toBe('first-weekend-camp')
   })
@@ -54,6 +58,7 @@ describe('computePlanSlug', () => {
       intent: 'multi-night',
       anxiety: 'low',
       comfortPriority: 'low',
+      partySize: { adults: 2, kids: 2 },
     }
     expect(computePlanSlug(answers)).toBe('first-weekend-camp')
   })
@@ -65,6 +70,7 @@ describe('computePlanSlug', () => {
       intent: 'real-trip',
       anxiety: 'high',
       comfortPriority: 'low',
+      partySize: { adults: 2, kids: 2 },
     }
     expect(computePlanSlug(answers)).toBe('first-night-camp')
   })
@@ -76,6 +82,7 @@ describe('computePlanSlug', () => {
       intent: 'real-trip',
       anxiety: 'medium',
       comfortPriority: 'low',
+      partySize: { adults: 2, kids: 2 },
     }
     expect(computePlanSlug(answers)).toBe('first-night-camp')
   })

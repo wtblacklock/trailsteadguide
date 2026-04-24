@@ -20,7 +20,7 @@ export default function HowItWorks() {
   ]
 
   return (
-    <section className="py-16 md:py-36 max-w-page mx-auto px-8">
+    <section data-reveal className="py-16 md:py-36 max-w-page mx-auto px-8">
       {/* Header */}
       <div className="grid grid-cols-1 md:grid-cols-12 gap-6 mb-12 md:mb-20">
         <div className="col-span-1 md:col-span-5">

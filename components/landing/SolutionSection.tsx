@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function SolutionSection() {
   return (
-    <section className="py-8 max-w-page mx-auto px-8">
+    <section data-reveal className="py-8 max-w-page mx-auto px-8">
       <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:items-end">
         {/* Large image — left 7 columns */}
         <div className="col-span-1 md:col-span-7 relative aspect-[4/3] rounded-2xl overflow-hidden">
