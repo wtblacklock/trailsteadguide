@@ -5,6 +5,7 @@ import type { KidsAgeGroup } from '@/types'
 export const metadata: Metadata = {
   title: 'Your Camping Checklist | Trailstead Guide',
   description: 'Your personalized packing checklist, scaled to your family.',
+  robots: { index: false, follow: false },
 }
 
 const ALLOWED_AGES: KidsAgeGroup[] = ['none', '3-6', '7-12', 'teens']
