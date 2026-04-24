@@ -9,6 +9,7 @@ import KidActivityPlan from '@/components/plan/KidActivityPlan'
 import SafetyNotes from '@/components/plan/SafetyNotes'
 import AffiliateBlock from '@/components/plan/AffiliateBlock'
 import PostPlanEmailCapture from '@/components/plan/PostPlanEmailCapture'
+import TripPackCta from '@/components/plan/TripPackCta'
 import FloatingEmailBar from '@/components/plan/FloatingEmailBar'
 import MealPlanAndShopping from '@/components/plan/MealPlanAndShopping'
 import { parsePartySize } from '@/lib/party-size'
@@ -102,8 +103,9 @@ export default async function FirstNightCampPage({
       {products.length > 0 && (
         <div id="shop" className="scroll-mt-32"><AffiliateBlock products={products} /></div>
       )}
-      <PostPlanEmailCapture planSlug="first-night-camp" />
-      <FloatingEmailBar planSlug="first-night-camp" />
+      <TripPackCta planSlug="first-night-camp" adults={adults} kids={kids} />
+      <PostPlanEmailCapture planSlug="first-night-camp" adults={adults} kids={kids} />
+      <FloatingEmailBar planSlug="first-night-camp" adults={adults} kids={kids} />
     </main>
   )
 }
