@@ -4,13 +4,13 @@ export default function ExampleOutput() {
   return (
     <section id="example" className="py-8 max-w-page mx-auto px-8">
       {/* Header */}
-      <div className="grid grid-cols-12 gap-6 mb-12">
-        <div className="col-span-5">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-6 mb-10 md:mb-12">
+        <div className="col-span-1 md:col-span-5">
           <h2 className="font-serif text-5xl font-semibold text-stone-950 tracking-tight">
             This is what you get.
           </h2>
         </div>
-        <div className="col-span-4 col-start-7 flex items-end">
+        <div className="col-span-1 md:col-span-4 md:col-start-7 flex items-end">
           <p className="text-stone-500 text-lg leading-relaxed">
             A sample from the First Night Camp plan — built for a family with young kids on their first real campsite trip.
           </p>

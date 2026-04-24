@@ -6,13 +6,13 @@ export default function Hero() {
     <section>
       {/* Upper: open cream space with large serif headline offset to right */}
       <div className="max-w-page mx-auto px-8 pt-24 pb-16">
-        <div className="grid grid-cols-12 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
           {/* Left col: small label anchored bottom */}
-          <div className="col-span-4 flex items-end pb-2">
+          <div className="hidden md:flex md:col-span-4 items-end pb-2">
             <p className="text-stone-400 text-sm">For first-time families</p>
           </div>
           {/* Right col: big headline + CTA */}
-          <div className="col-span-8">
+          <div className="col-span-1 md:col-span-8">
             <h1 className="font-serif text-6xl md:text-7xl lg:text-8xl font-semibold text-stone-950 tracking-tight leading-[1.05] mb-10">
               Your family&apos;s first camping trip, planned in 10 minutes.
             </h1>

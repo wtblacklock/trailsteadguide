@@ -25,13 +25,13 @@ export default function ProblemSection() {
   return (
     <section className="py-36 max-w-page mx-auto px-8">
       {/* Section statement */}
-      <div className="grid grid-cols-12 gap-6 mb-20">
-        <div className="col-span-5">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-6 mb-16 md:mb-20">
+        <div className="col-span-1 md:col-span-5">
           <h2 className="font-serif text-5xl md:text-6xl font-semibold text-stone-950 tracking-tight leading-tight">
             Family camping fails the same way every time.
           </h2>
         </div>
-        <div className="col-span-5 col-start-7 flex items-end">
+        <div className="col-span-1 md:col-span-5 md:col-start-7 flex items-end">
           <p className="text-stone-500 text-lg leading-relaxed">
             It&apos;s not that camping is hard. It&apos;s that first-time families have no structured starting point. Nobody gives you a step-by-step plan.
           </p>
@@ -41,14 +41,14 @@ export default function ProblemSection() {
       {/* Problem rows */}
       <div>
         {problems.map((problem) => (
-          <div key={problem.number} className="grid grid-cols-12 gap-6 py-8 border-t border-stone-200">
+          <div key={problem.number} className="grid grid-cols-12 gap-6 py-6 md:py-8 border-t border-stone-200">
             <div className="col-span-1">
               <span className="font-serif text-stone-300 text-lg">{problem.number}</span>
             </div>
             <div className="col-span-3">
               <h3 className="font-serif text-xl font-medium text-stone-900">{problem.title}</h3>
             </div>
-            <div className="col-span-6 col-start-6">
+            <div className="col-span-8 md:col-span-6 md:col-start-6">
               <p className="text-stone-500 leading-relaxed">{problem.description}</p>
             </div>
           </div>

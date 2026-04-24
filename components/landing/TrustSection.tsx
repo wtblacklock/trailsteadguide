@@ -22,9 +22,9 @@ export default function TrustSection() {
 
   return (
     <section className="py-36 max-w-page mx-auto px-8">
-      <div className="grid grid-cols-12 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
         {/* Left: heading + trust points */}
-        <div className="col-span-6">
+        <div className="col-span-1 md:col-span-6">
           <h2 className="font-serif text-5xl md:text-6xl font-semibold text-stone-950 tracking-tight leading-tight mb-16">
             Designed for families who want a plan, not a hobby.
           </h2>
@@ -40,7 +40,7 @@ export default function TrustSection() {
         </div>
 
         {/* Right: tall image */}
-        <div className="col-span-5 col-start-8">
+        <div className="col-span-1 md:col-span-5 md:col-start-8">
           <div className="relative h-full min-h-[600px] rounded-2xl overflow-hidden">
             <Image
               src="https://images.unsplash.com/photo-1559521783-1d1599583485?w=800&auto=format&fit=crop&q=80"

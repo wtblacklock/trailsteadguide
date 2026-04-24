@@ -22,8 +22,8 @@ export default function HowItWorks() {
   return (
     <section className="py-36 max-w-page mx-auto px-8">
       {/* Header */}
-      <div className="grid grid-cols-12 gap-6 mb-20">
-        <div className="col-span-5">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-6 mb-16 md:mb-20">
+        <div className="col-span-1 md:col-span-5">
           <h2 className="font-serif text-5xl md:text-6xl font-semibold text-stone-950 tracking-tight">
             Three steps to your first camping trip.
           </h2>
@@ -37,10 +37,10 @@ export default function HowItWorks() {
             <div className="col-span-1">
               <span className="font-serif text-stone-300 text-lg">{step.number}</span>
             </div>
-            <div className="col-span-4">
+            <div className="col-span-4 md:col-span-4">
               <h3 className="font-serif text-2xl font-medium text-stone-900 leading-snug">{step.title}</h3>
             </div>
-            <div className="col-span-5 col-start-7">
+            <div className="hidden md:block md:col-span-5 md:col-start-7">
               <p className="text-stone-500 leading-relaxed">{step.description}</p>
             </div>
           </div>
