@@ -63,7 +63,7 @@ export default async function TripPackPage({
         ]}
       />
 
-      <header className="max-w-page mx-auto px-8 pt-8 pb-10">
+      <header className="w-full px-8 pt-8 pb-10">
         <p className="text-xs uppercase tracking-[0.25em] text-emerald-800 mb-3">
           Trailstead Trip Pack
         </p>
@@ -73,7 +73,7 @@ export default async function TripPackPage({
         <p className="text-lg text-stone-600 max-w-2xl">{plan.tripSummary}</p>
       </header>
 
-      <div className="max-w-page mx-auto px-8 grid lg:grid-cols-[1fr_360px] gap-10 pb-24">
+      <div className="w-full px-8 grid lg:grid-cols-[1fr_360px] gap-10 pb-24">
         <TripPackPreview
           content={content}
           plan={plan}
