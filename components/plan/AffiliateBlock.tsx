@@ -1,4 +1,5 @@
 import { AffiliateProduct } from '@/types'
+import { getProductUrl } from '@/lib/amazon'
 
 interface Props {
   products: AffiliateProduct[]
@@ -38,9 +39,9 @@ export default function AffiliateBlock({ products }: Props) {
                 {items.map((product) => (
                   <a
                     key={product.id}
-                    href={product.affiliateUrl}
+                    href={getProductUrl(product)}
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="sponsored nofollow noopener noreferrer"
                     className="group flex items-center justify-between gap-8 py-5 border-t border-stone-200"
                   >
                     <div className="flex-1 min-w-0">

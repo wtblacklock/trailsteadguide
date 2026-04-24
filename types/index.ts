@@ -73,7 +73,10 @@ export type AffiliateProduct = {
   id: string
   name: string
   description: string
-  affiliateUrl: string
+  /** Amazon ASIN for direct product link. When set, overrides search fallback. */
+  amazonAsin?: string
+  /** Optional explicit URL override (non-Amazon stores, etc.). When set, used as-is. */
+  affiliateUrl?: string
   imageUrl: string
   category: 'essential' | 'comfort' | 'convenience'
   templateSlugs: PlanSlug[]
