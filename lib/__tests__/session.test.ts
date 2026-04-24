@@ -18,7 +18,7 @@ import type { SessionSnapshot } from '@/types'
 
 const mockSnapshot: SessionSnapshot = {
   experience: 'none',
-  kidsAgeGroup: '3-6',
+  kidsAgeGroup: ['3-6'],
   intent: 'real-trip',
   anxiety: 'high',
   comfortPriority: 'low',

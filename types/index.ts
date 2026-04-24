@@ -12,7 +12,7 @@ export type KidsAgeGroup = 'none' | '3-6' | '7-12' | 'teens'
 
 export type QuizAnswers = {
   experience: Experience
-  kidsAgeGroup: KidsAgeGroup
+  kidsAgeGroup: KidsAgeGroup[]
   intent: Intent
   anxiety: Anxiety
   comfortPriority: ComfortPriority
@@ -33,6 +33,7 @@ export type QuizQuestion = {
   prompt: string
   subprompt?: string
   options: QuizOption[]
+  multiSelect?: boolean
 }
 
 export type TimelineItem = {
@@ -87,6 +88,6 @@ export type QuizState = {
 }
 
 export type QuizAction =
-  | { type: 'ANSWER'; questionId: keyof QuizAnswers; value: string }
+  | { type: 'ANSWER'; questionId: keyof QuizAnswers; value: string | string[] }
   | { type: 'DISMISS_EMAIL_CAPTURE' }
   | { type: 'COMPLETE' }

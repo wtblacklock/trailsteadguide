@@ -6,10 +6,6 @@ const links = [
   { label: 'See Example Plan', href: '/#example' },
 ]
 
-const legal = [
-  { label: 'Affiliate Disclosure', href: '/affiliate-disclosure' },
-  { label: 'Privacy', href: '/privacy' },
-]
 
 export default function Footer() {
   return (
@@ -26,7 +22,7 @@ export default function Footer() {
                 alt="Trailstead Guide"
                 height={28}
                 width={160}
-                className="h-7 w-auto object-contain invert mix-blend-screen opacity-90 mb-6"
+                className="h-7 w-auto object-contain invert mb-6"
               />
             </Link>
             <p className="text-stone-400 leading-relaxed max-w-xs">
@@ -35,30 +31,13 @@ export default function Footer() {
           </div>
 
           {/* Spacer */}
-          <div className="hidden md:block md:col-span-2" />
+          <div className="hidden md:block md:col-span-4" />
 
           {/* Links */}
-          <div className="col-span-1 md:col-span-2">
+          <div className="col-span-1 md:col-span-3">
             <p className="text-xs font-semibold tracking-widest uppercase text-stone-500 mb-5">Get started</p>
             <ul className="space-y-3">
               {links.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-stone-400 hover:text-white transition-colors text-sm"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Legal links */}
-          <div className="col-span-1 md:col-span-3">
-            <p className="text-xs font-semibold tracking-widest uppercase text-stone-500 mb-5">Legal</p>
-            <ul className="space-y-3">
-              {legal.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}

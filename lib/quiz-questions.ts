@@ -13,7 +13,9 @@ export const QUIZ_QUESTIONS: QuizQuestion[] = [
   },
   {
     id: 'kidsAgeGroup',
-    prompt: 'What age are your kids?',
+    prompt: 'What ages are your kids?',
+    subprompt: 'Select all that apply.',
+    multiSelect: true,
     options: [
       { label: 'No kids — just adults', value: 'none' },
       { label: '3–6 years old', value: '3-6' },

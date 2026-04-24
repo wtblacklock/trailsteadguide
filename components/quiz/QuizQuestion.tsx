@@ -1,11 +1,54 @@
+'use client'
+
+import { useState } from 'react'
 import type { QuizQuestion as QuizQuestionType } from '@/types'
 
 interface QuizQuestionProps {
   question: QuizQuestionType
-  onAnswer: (value: string) => void
+  onAnswer: (value: string | string[]) => void
 }
 
 export default function QuizQuestion({ question, onAnswer }: QuizQuestionProps) {
+  const [selected, setSelected] = useState<string[]>([])
+
+  if (!question.multiSelect) {
+    return (
+      <div>
+        <div className="mb-8">
+          <h2 className="font-serif text-3xl text-stone-900 mb-2">{question.prompt}</h2>
+          {question.subprompt && (
+            <p className="text-stone-500">{question.subprompt}</p>
+          )}
+        </div>
+        <div className="flex flex-col gap-3">
+          {question.options.map((option) => (
+            <button
+              key={option.value}
+              onClick={() => onAnswer(option.value)}
+              className="w-full text-left py-4 px-6 rounded-xl border border-stone-200 bg-white hover:bg-stone-50 transition-colors duration-150 text-stone-800"
+            >
+              {option.label}
+            </button>
+          ))}
+        </div>
+      </div>
+    )
+  }
+
+  // Multi-select: toggle selection, "none" is mutually exclusive with age ranges
+  const toggle = (value: string) => {
+    if (value === 'none') {
+      setSelected(['none'])
+      return
+    }
+    setSelected((prev) => {
+      const withoutNone = prev.filter((v) => v !== 'none')
+      return withoutNone.includes(value)
+        ? withoutNone.filter((v) => v !== value)
+        : [...withoutNone, value]
+    })
+  }
+
   return (
     <div>
       <div className="mb-8">
@@ -15,16 +58,49 @@ export default function QuizQuestion({ question, onAnswer }: QuizQuestionProps) 
         )}
       </div>
       <div className="flex flex-col gap-3">
-        {question.options.map((option) => (
-          <button
-            key={option.value}
-            onClick={() => onAnswer(option.value)}
-            className="w-full text-left py-4 px-6 rounded-xl border border-stone-200 bg-white hover:bg-stone-100 transition-colors duration-150 text-stone-800"
-          >
-            {option.label}
-          </button>
-        ))}
+        {question.options.map((option) => {
+          const isSelected = selected.includes(option.value)
+          return (
+            <button
+              key={option.value}
+              onClick={() => toggle(option.value)}
+              aria-pressed={isSelected}
+              className={`w-full text-left py-4 px-6 rounded-xl border transition-colors duration-150 flex items-center justify-between ${
+                isSelected
+                  ? 'border-stone-900 bg-stone-900 text-white'
+                  : 'border-stone-200 bg-white hover:bg-stone-50 text-stone-800'
+              }`}
+            >
+              <span>{option.label}</span>
+              {isSelected && (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M20 6L9 17l-5-5" />
+                </svg>
+              )}
+            </button>
+          )
+        })}
       </div>
+
+      {selected.length > 0 && (
+        <button
+          onClick={() => onAnswer(selected)}
+          className="mt-6 w-full py-4 px-6 rounded-xl bg-stone-900 text-white font-medium hover:bg-stone-800 transition-colors duration-150"
+        >
+          Continue
+        </button>
+      )}
     </div>
   )
 }

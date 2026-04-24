@@ -8,7 +8,7 @@ export default function Hero() {
       <div className="max-w-page mx-auto px-8 pt-14 md:pt-24 pb-10 md:pb-16">
         <p className="text-stone-400 text-sm mb-8">For first-time families</p>
         <div className="max-w-4xl">
-            <h1 className="font-serif text-6xl md:text-7xl lg:text-8xl font-semibold text-stone-950 tracking-tight leading-[1.05] mb-10">
+            <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-semibold text-stone-950 tracking-tight leading-[1.08] mb-8 md:mb-10">
               A step-by-step system built for first-time families. No guesswork. No overbuying.
             </h1>
             <div className="flex flex-wrap items-center gap-6">

@@ -6,7 +6,7 @@ describe('computePlanSlug', () => {
   it('returns easy-family-basecamp for high comfort priority regardless of experience', () => {
     const answers: QuizAnswers = {
       experience: 'none',
-      kidsAgeGroup: '3-6',
+      kidsAgeGroup: ['3-6'],
       intent: 'real-trip',
       anxiety: 'high',
       comfortPriority: 'high',
@@ -17,7 +17,7 @@ describe('computePlanSlug', () => {
   it('returns easy-family-basecamp for high comfort even with confident experience', () => {
     const answers: QuizAnswers = {
       experience: 'confident',
-      kidsAgeGroup: 'none',
+      kidsAgeGroup: ['none'],
       intent: 'multi-night',
       anxiety: 'low',
       comfortPriority: 'high',
@@ -28,7 +28,7 @@ describe('computePlanSlug', () => {
   it('returns backyard-test for no experience + test intent', () => {
     const answers: QuizAnswers = {
       experience: 'none',
-      kidsAgeGroup: '7-12',
+      kidsAgeGroup: ['7-12'],
       intent: 'test',
       anxiety: 'high',
       comfortPriority: 'low',
@@ -39,7 +39,7 @@ describe('computePlanSlug', () => {
   it('returns first-weekend-camp for some experience + multi-night', () => {
     const answers: QuizAnswers = {
       experience: 'some',
-      kidsAgeGroup: '7-12',
+      kidsAgeGroup: ['7-12'],
       intent: 'multi-night',
       anxiety: 'medium',
       comfortPriority: 'low',
@@ -50,7 +50,7 @@ describe('computePlanSlug', () => {
   it('returns first-weekend-camp for confident + multi-night', () => {
     const answers: QuizAnswers = {
       experience: 'confident',
-      kidsAgeGroup: 'teens',
+      kidsAgeGroup: ['teens'],
       intent: 'multi-night',
       anxiety: 'low',
       comfortPriority: 'low',
@@ -61,7 +61,7 @@ describe('computePlanSlug', () => {
   it('returns first-night-camp as default for no-experience + real-trip', () => {
     const answers: QuizAnswers = {
       experience: 'none',
-      kidsAgeGroup: '3-6',
+      kidsAgeGroup: ['3-6'],
       intent: 'real-trip',
       anxiety: 'high',
       comfortPriority: 'low',
@@ -72,7 +72,7 @@ describe('computePlanSlug', () => {
   it('returns first-night-camp for some experience + real-trip', () => {
     const answers: QuizAnswers = {
       experience: 'some',
-      kidsAgeGroup: 'teens',
+      kidsAgeGroup: ['teens'],
       intent: 'real-trip',
       anxiety: 'medium',
       comfortPriority: 'low',

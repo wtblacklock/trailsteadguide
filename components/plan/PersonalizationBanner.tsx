@@ -12,9 +12,10 @@ export default function PersonalizationBanner() {
 
   if (!session) return null
 
-  const kidsText = session.kidsAgeGroup === 'none'
+  const ageGroups = Array.isArray(session.kidsAgeGroup) ? session.kidsAgeGroup : [session.kidsAgeGroup]
+  const kidsText = ageGroups.includes('none') || ageGroups.length === 0
     ? 'no kids'
-    : `kids aged ${session.kidsAgeGroup}`
+    : `kids aged ${ageGroups.filter((a) => a !== 'none').join(' & ')}`
 
   const experienceText = {
     none: 'brand new to camping',
