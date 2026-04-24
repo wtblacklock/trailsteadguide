@@ -84,6 +84,7 @@ export type QuizState = {
   currentIndex: number
   answers: Partial<QuizAnswers>
   showEmailCapture: boolean
+  emailCaptureShown: boolean
   status: 'active' | 'complete'
 }
 

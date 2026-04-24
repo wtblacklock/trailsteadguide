@@ -15,9 +15,18 @@ function quizReducer(state: QuizState, action: QuizAction): QuizState {
     case 'ANSWER': {
       const newAnswers = { ...state.answers, [action.questionId]: action.value }
       const nextIndex = state.currentIndex + 1
-      // Email capture disabled for now
       if (nextIndex >= QUESTIONS.length) {
         return { ...state, answers: newAnswers, status: 'complete' }
+      }
+      // Trigger email capture after the configured question index (once per session)
+      if (state.currentIndex === EMAIL_CAPTURE_AFTER_INDEX && !state.emailCaptureShown) {
+        return {
+          ...state,
+          answers: newAnswers,
+          currentIndex: nextIndex,
+          showEmailCapture: true,
+          emailCaptureShown: true,
+        }
       }
       return { ...state, answers: newAnswers, currentIndex: nextIndex }
     }
@@ -34,6 +43,7 @@ const initialState: QuizState = {
   currentIndex: 0,
   answers: {},
   showEmailCapture: false,
+  emailCaptureShown: false,
   status: 'active',
 }
 
