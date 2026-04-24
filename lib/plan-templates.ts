@@ -45,7 +45,7 @@ export const PLAN_TEMPLATES: Record<string, PlanTemplate> = {
     ],
     morning: [],
     gear: [
-      { name: '3-season tent', essential: true, affiliateProductId: 'tent-basic' },
+      { name: '3-season tent', essential: true },
       { name: 'Sleeping bags (age/temp appropriate)', essential: true, affiliateProductId: 'sleeping-bag-family' },
       { name: 'Sleeping pads', essential: true },
       { name: 'Headlamps (one per person)', essential: true, affiliateProductId: 'headlamp-family' },
