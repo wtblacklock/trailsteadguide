@@ -49,13 +49,18 @@ export default function QuizShell() {
   useEffect(() => {
     if (status !== 'complete') return
 
-    const slug = computePlanSlug(answers as QuizAnswers)
+    const requiredKeys: (keyof QuizAnswers)[] = ['experience', 'kidsAgeGroup', 'intent', 'anxiety', 'comfortPriority']
+    const isComplete = requiredKeys.every(k => k in answers)
+    if (!isComplete) return
+    const completeAnswers = answers as QuizAnswers
+
+    const slug = computePlanSlug(completeAnswers)
     writeSession({
-      ...(answers as QuizAnswers),
+      ...completeAnswers,
       planSlug: slug,
       timestamp: Date.now(),
     })
-    router.push('/plan/' + slug)
+    router.push(`/plan/${slug}`)
   }, [status, answers, router])
 
   return (

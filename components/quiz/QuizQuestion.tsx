@@ -8,11 +8,12 @@ interface QuizQuestionProps {
 export default function QuizQuestion({ question, onAnswer }: QuizQuestionProps) {
   return (
     <div>
-      <h2 className="font-serif text-3xl text-stone-900 mb-2">{question.prompt}</h2>
-      {question.subprompt && (
-        <p className="text-stone-500 mb-8">{question.subprompt}</p>
-      )}
-      {!question.subprompt && <div className="mb-8" />}
+      <div className="mb-8">
+        <h2 className="font-serif text-3xl text-stone-900 mb-2">{question.prompt}</h2>
+        {question.subprompt && (
+          <p className="text-stone-500">{question.subprompt}</p>
+        )}
+      </div>
       <div className="flex flex-col gap-3">
         {question.options.map((option) => (
           <button

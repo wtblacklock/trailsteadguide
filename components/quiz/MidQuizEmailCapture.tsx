@@ -20,6 +20,7 @@ export default function MidQuizEmailCapture({ onSkip }: MidQuizEmailCaptureProps
 
     try {
       const formId = process.env.NEXT_PUBLIC_CONVERTKIT_FORM_ID
+      if (!formId) { setError('Email service not configured.'); setLoading(false); return }
       const res = await fetch(
         `https://app.convertkit.com/forms/${formId}/subscriptions`,
         {
@@ -33,6 +34,7 @@ export default function MidQuizEmailCapture({ onSkip }: MidQuizEmailCaptureProps
         throw new Error('Something went wrong. Please try again.')
       }
 
+      setLoading(false)
       onSkip()
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Something went wrong.')
@@ -51,7 +53,9 @@ export default function MidQuizEmailCapture({ onSkip }: MidQuizEmailCaptureProps
       </p>
 
       <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+        <label htmlFor="email-capture" className="sr-only">Your email address</label>
         <input
+          id="email-capture"
           type="email"
           required
           value={email}
