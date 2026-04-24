@@ -43,8 +43,8 @@ export default function TrustSection() {
         <div className="col-span-1 md:col-span-5 md:col-start-8">
           <div className="relative h-full min-h-[600px] rounded-2xl overflow-hidden">
             <Image
-              src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&auto=format&fit=crop&q=80"
-              alt="Family hiking together on a mountain trail"
+              src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=900&auto=format&fit=crop&q=80"
+              alt="Group of family and friends hiking together on a forest trail"
               fill
               className="object-cover"
               unoptimized

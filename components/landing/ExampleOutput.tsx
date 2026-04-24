@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function ExampleOutput() {
   return (
-    <section id="example" data-reveal className="py-8 max-w-page mx-auto px-8">
+    <section id="example" data-reveal className="py-8 max-w-page mx-auto px-8 scroll-mt-24 md:scroll-mt-32">
       {/* Header */}
       <div className="grid grid-cols-1 md:grid-cols-12 gap-6 mb-10 md:mb-12">
         <div className="col-span-1 md:col-span-5">
@@ -22,7 +22,7 @@ export default function ExampleOutput() {
         {/* Image */}
         <div className="relative h-72 md:h-96">
           <Image
-            src="https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?w=1200&auto=format&fit=crop&q=80"
+            src="https://images.unsplash.com/photo-1519904981063-b0cf448d479e?w=1200&auto=format&fit=crop&q=80"
             alt="Family at a campsite in the evening light"
             fill
             className="object-cover"
@@ -81,6 +81,50 @@ export default function ExampleOutput() {
                     {item}
                   </li>
                 ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* Meal plan preview — truncated */}
+        <div className="px-8 md:px-12 pb-8 md:pb-12">
+          <div className="border-t border-stone-800 pt-8 md:pt-10 grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div>
+              <h4 className="text-stone-400 text-xs uppercase tracking-widest mb-6">Meal Plan (2 adults · 2 kids)</h4>
+              <ul className="space-y-4">
+                {[
+                  { slot: 'Fri dinner', title: 'Foil-packet dinner', note: 'Ground beef, potatoes, peppers over fire' },
+                  { slot: 'Sat breakfast', title: 'Eggs, bacon, toast', note: 'On the 2-burner stove' },
+                  { slot: 'Sat snacks', title: "Trail mix + s'mores bin", note: 'Keep it accessible, reduce meltdowns' },
+                ].map((m) => (
+                  <li key={m.slot} className="border-t border-stone-800 pt-3">
+                    <div className="flex items-baseline justify-between gap-4 mb-0.5">
+                      <span className="text-stone-200 font-medium">{m.title}</span>
+                      <span className="text-stone-500 text-xs uppercase tracking-wider">{m.slot}</span>
+                    </div>
+                    <p className="text-stone-400 text-sm">{m.note}</p>
+                  </li>
+                ))}
+                <li className="text-stone-500 text-sm italic pt-2">+ Sunday breakfast &amp; full shopping list in your plan</li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="text-stone-400 text-xs uppercase tracking-widest mb-6">Shopping List Preview</h4>
+              <ul className="space-y-3">
+                {[
+                  { name: 'Ground beef', qty: '1 × 1 lb pack' },
+                  { name: 'Eggs', qty: '1 dozen' },
+                  { name: 'Bacon', qty: '1 × 1 lb pack' },
+                  { name: 'Baby potatoes', qty: '2 × 1.5 lb bag' },
+                  { name: 'Granola bars', qty: '2 × 6-pack box' },
+                  { name: 'Water', qty: '2 gallons' },
+                ].map((item) => (
+                  <li key={item.name} className="flex items-baseline justify-between gap-4 text-stone-300 border-t border-stone-800 pt-3">
+                    <span>{item.name}</span>
+                    <span className="text-stone-500 text-sm tabular-nums">{item.qty}</span>
+                  </li>
+                ))}
+                <li className="text-stone-500 text-sm italic pt-2">Scales automatically to your party size.</li>
               </ul>
             </div>
           </div>

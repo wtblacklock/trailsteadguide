@@ -45,7 +45,7 @@ export default function AffiliateBlock({ products }: Props) {
                     className="group flex items-center gap-5 sm:gap-6 py-5 border-t border-stone-200"
                   >
                     {product.imageUrl && (
-                      <div className="shrink-0 w-20 h-20 sm:w-24 sm:h-24 bg-stone-100 rounded-md overflow-hidden">
+                      <div className="shrink-0 w-32 h-24 sm:w-44 sm:h-32 md:w-56 md:h-36 bg-stone-100 rounded-2xl overflow-hidden">
                         {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img
                           src={product.imageUrl}

@@ -2,10 +2,9 @@ import type { Metadata } from 'next'
 import { Figtree, Source_Serif_4 } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
-import Nav from '@/components/landing/Nav'
-import Footer from '@/components/landing/Footer'
-import PreLoader from '@/components/landing/PreLoader'
+import { ChromeNav, ChromeFooter } from '@/components/landing/Chrome'
 import ScrollRevealer from '@/components/landing/ScrollRevealer'
+import PageTransition from '@/components/PageTransition'
 
 const figtree = Figtree({
   subsets: ['latin'],
@@ -31,11 +30,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${figtree.variable} ${sourceSerif4.variable}`}>
       <body className="font-sans">
-        <PreLoader />
         <ScrollRevealer />
-        <Nav />
-        {children}
-        <Footer />
+        <ChromeNav />
+        <PageTransition>{children}</PageTransition>
+        <ChromeFooter />
         <Analytics />
       </body>
     </html>

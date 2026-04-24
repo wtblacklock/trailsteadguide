@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation'
 import { getPlanTemplate } from '@/lib/plan-templates'
 import { getProductsForTemplate } from '@/lib/affiliate-products'
 import PlanHero from '@/components/plan/PlanHero'
+import PlanJumpNav from '@/components/plan/PlanJumpNav'
 import Timeline from '@/components/plan/Timeline'
 import GearList from '@/components/plan/GearList'
 import KidActivityPlan from '@/components/plan/KidActivityPlan'
@@ -42,12 +43,24 @@ export default async function FirstWeekendCampPage({
   return (
     <main>
       <PlanHero title={plan.title} hook={plan.tagline} imageUrl={plan.heroImage} />
-      <Timeline sections={timelineSections} />
-      <GearList items={gearItems} />
-      <KidActivityPlan activities={activityItems} />
-      <SafetyNotes notes={plan.safetyNotes} />
-      <MealPlanAndShopping meals={plan.meals} defaultAdults={adults} defaultKids={kids} />
-      <AffiliateBlock products={products} />
+      <PlanJumpNav
+        links={[
+          { id: 'timeline', label: 'Timeline' },
+          { id: 'gear', label: 'Gear' },
+          { id: 'activities', label: 'Activities' },
+          { id: 'meals', label: 'Meals' },
+          { id: 'safety', label: 'Safety' },
+          ...(products.length > 0 ? [{ id: 'shop', label: 'Shop' }] : []),
+        ]}
+      />
+      <div id="timeline" className="scroll-mt-32"><Timeline sections={timelineSections} /></div>
+      <div id="gear" className="scroll-mt-32"><GearList items={gearItems} /></div>
+      <div id="activities" className="scroll-mt-32"><KidActivityPlan activities={activityItems} /></div>
+      <div id="meals" className="scroll-mt-32"><MealPlanAndShopping meals={plan.meals} defaultAdults={adults} defaultKids={kids} /></div>
+      <div id="safety" className="scroll-mt-32"><SafetyNotes notes={plan.safetyNotes} /></div>
+      {products.length > 0 && (
+        <div id="shop" className="scroll-mt-32"><AffiliateBlock products={products} /></div>
+      )}
       <PostPlanEmailCapture planSlug="first-weekend-camp" />
       <FloatingEmailBar planSlug="first-weekend-camp" />
     </main>

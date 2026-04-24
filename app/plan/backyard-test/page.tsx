@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation'
 import { getPlanTemplate } from '@/lib/plan-templates'
 import { getProductsForTemplate } from '@/lib/affiliate-products'
 import PlanHero from '@/components/plan/PlanHero'
+import PlanJumpNav from '@/components/plan/PlanJumpNav'
 import GearList from '@/components/plan/GearList'
 import KidActivityPlan from '@/components/plan/KidActivityPlan'
 import SafetyNotes from '@/components/plan/SafetyNotes'
@@ -39,8 +40,18 @@ export default async function BackyardTestPage({
   return (
     <main>
       <PlanHero title={plan.title} hook={plan.tagline} imageUrl={plan.heroImage} />
+      <PlanJumpNav
+        links={[
+          { id: 'timeline', label: 'Plan' },
+          { id: 'gear', label: 'Gear' },
+          { id: 'activities', label: 'Activities' },
+          { id: 'meals', label: 'Meals' },
+          { id: 'safety', label: 'Safety' },
+          ...(products.length > 0 ? [{ id: 'shop', label: 'Shop' }] : []),
+        ]}
+      />
       {/* backyard-test: no overnight, so no Timeline wrapper — just pre-trip + setup inline */}
-      <section className="py-12 max-w-content mx-auto px-6">
+      <section id="timeline" className="scroll-mt-32 py-12 max-w-content mx-auto px-6">
         <h2 className="text-2xl font-serif font-medium text-stone-900 mb-8">Your Trial Night Plan</h2>
         {timelineSections.map((section) => (
           <div key={section.heading} className="mb-8">
@@ -56,11 +67,13 @@ export default async function BackyardTestPage({
           </div>
         ))}
       </section>
-      <GearList items={gearItems} />
-      <KidActivityPlan activities={activityItems} />
-      <SafetyNotes notes={plan.safetyNotes} />
-      <MealPlanAndShopping meals={plan.meals} defaultAdults={adults} defaultKids={kids} />
-      <AffiliateBlock products={products} />
+      <div id="gear" className="scroll-mt-32"><GearList items={gearItems} /></div>
+      <div id="activities" className="scroll-mt-32"><KidActivityPlan activities={activityItems} /></div>
+      <div id="meals" className="scroll-mt-32"><MealPlanAndShopping meals={plan.meals} defaultAdults={adults} defaultKids={kids} /></div>
+      <div id="safety" className="scroll-mt-32"><SafetyNotes notes={plan.safetyNotes} /></div>
+      {products.length > 0 && (
+        <div id="shop" className="scroll-mt-32"><AffiliateBlock products={products} /></div>
+      )}
       <PostPlanEmailCapture planSlug="backyard-test" />
       <FloatingEmailBar planSlug="backyard-test" />
     </main>

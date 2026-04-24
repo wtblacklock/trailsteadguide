@@ -6,14 +6,27 @@ import type { QuizQuestion as QuizQuestionType, PartySize } from '@/types'
 interface QuizQuestionProps {
   question: QuizQuestionType
   onAnswer: (value: string | string[] | PartySize) => void
+  initialValue?: string | string[] | PartySize
 }
 
-export default function QuizQuestion({ question, onAnswer }: QuizQuestionProps) {
-  const [selected, setSelected] = useState<string[]>([])
+export default function QuizQuestion({ question, onAnswer, initialValue }: QuizQuestionProps) {
+  const [selected, setSelected] = useState<string[]>(
+    Array.isArray(initialValue) ? initialValue : [],
+  )
 
   // Party-size stepper
   if (question.kind === 'party-size') {
-    return <PartySizeQuestion question={question} onAnswer={onAnswer} />
+    return (
+      <PartySizeQuestion
+        question={question}
+        onAnswer={onAnswer}
+        initialValue={
+          initialValue && typeof initialValue === 'object' && !Array.isArray(initialValue)
+            ? (initialValue as PartySize)
+            : undefined
+        }
+      />
+    )
   }
 
   if (!question.multiSelect) {
@@ -113,12 +126,14 @@ export default function QuizQuestion({ question, onAnswer }: QuizQuestionProps) 
 function PartySizeQuestion({
   question,
   onAnswer,
+  initialValue,
 }: {
   question: QuizQuestionType
   onAnswer: (value: PartySize) => void
+  initialValue?: PartySize
 }) {
-  const [adults, setAdults] = useState(2)
-  const [kids, setKids] = useState(2)
+  const [adults, setAdults] = useState(initialValue?.adults ?? 2)
+  const [kids, setKids] = useState(initialValue?.kids ?? 2)
 
   return (
     <div>

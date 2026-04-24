@@ -1,10 +1,5 @@
 import Link from 'next/link'
-
-const links = [
-  { label: 'Start Your Plan', href: '/quiz' },
-  { label: 'See Example Plan', href: '/#example' },
-]
-
+import { FOOTER_SECONDARY, FOOTER_LEGAL, GUIDE_LINKS, TOOL_LINKS } from '@/lib/nav-config'
 
 export default function Footer() {
   return (
@@ -43,39 +38,81 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Spacer */}
-          <div className="hidden md:block md:col-span-4" />
+          {/* Guides */}
+          <FooterCol title="Guides" items={GUIDE_LINKS.slice(0, 5)} />
 
-          {/* Links */}
-          <div className="col-span-1 md:col-span-3">
-            <p className="text-xs font-semibold tracking-widest uppercase text-stone-500 mb-5">Get started</p>
-            <ul className="space-y-3">
-              {links.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-stone-400 hover:text-white transition-colors text-sm"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+          {/* Tools + Site */}
+          <div className="col-span-1 md:col-span-2 space-y-8">
+            <FooterCol title="Tools" items={TOOL_LINKS} bare />
+            <FooterCol title="Site" items={[{ label: 'Gear Guide', href: '/gear-guide' }, { label: 'About', href: '/about' }, ...FOOTER_SECONDARY]} bare />
+          </div>
+
+          {/* Start */}
+          <div className="col-span-1 md:col-span-2">
+            <p className="text-xs font-semibold tracking-widest uppercase text-stone-500 mb-5">Start</p>
+            <Link
+              href="/quiz"
+              className="inline-flex items-center justify-center gap-2 text-sm font-medium bg-white text-stone-900 rounded-md hover:bg-stone-100 transition-colors px-4 py-2.5"
+            >
+              Start Planning
+            </Link>
           </div>
         </div>
       </div>
 
       {/* Bottom bar */}
       <div className="border-t border-stone-800">
-        <div className="max-w-page mx-auto px-8 py-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+        <div className="max-w-page mx-auto px-8 py-5 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
           <p className="text-stone-600 text-xs">
             © {new Date().getFullYear()} Trailstead Guide. All rights reserved.
           </p>
-          <p className="text-stone-600 text-xs max-w-md text-left sm:text-right">
+          <ul className="flex flex-wrap items-center gap-x-5 gap-y-2">
+            {FOOTER_LEGAL.map((link) => (
+              <li key={link.href}>
+                <Link
+                  href={link.href}
+                  className="text-stone-500 hover:text-stone-300 transition-colors text-xs"
+                >
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="max-w-page mx-auto px-8 pb-5 -mt-2">
+          <p className="text-stone-600 text-xs max-w-2xl">
             As an Amazon Associate we earn from qualifying purchases. Some links on this site are affiliate links &mdash; clicking them may earn us a small commission at no extra cost to you.
           </p>
         </div>
       </div>
     </footer>
+  )
+}
+
+function FooterCol({
+  title,
+  items,
+  bare = false,
+}: {
+  title: string
+  items: { label: string; href: string }[]
+  bare?: boolean
+}) {
+  return (
+    <div className={bare ? '' : 'col-span-1 md:col-span-3'}>
+      <p className="text-xs font-semibold tracking-widest uppercase text-stone-500 mb-5">{title}</p>
+      <ul className="space-y-3">
+        {items.map((link) => (
+          <li key={link.href}>
+            <Link
+              href={link.href}
+              className="text-stone-400 hover:text-white transition-colors text-sm"
+            >
+              {link.label}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </div>
   )
 }

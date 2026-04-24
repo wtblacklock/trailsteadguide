@@ -98,8 +98,8 @@ export default function Hero() {
         }
         .hero-text {
           /* subtle drift & fade as user scrolls past */
-          opacity: calc(1 - var(--hero-progress) * 0.35);
-          transform: translateY(calc(var(--hero-progress) * -12px));
+          opacity: calc(1 - var(--hero-progress, 0) * 0.35);
+          transform: translateY(calc(var(--hero-progress, 0) * -12px));
           transition: opacity 120ms linear;
         }
         /* Horizontal-only expansion: height stays fixed; side padding and
@@ -107,9 +107,9 @@ export default function Hero() {
         .hero-image-outer {
           width: 100%;
           padding-bottom: 2rem;
-          padding-left: calc((1 - var(--hero-progress)) * 2rem);
-          padding-right: calc((1 - var(--hero-progress)) * 2rem);
-          max-width: calc(90rem + (100vw - 90rem) * var(--hero-progress));
+          padding-left: calc((1 - var(--hero-progress, 0)) * 2rem);
+          padding-right: calc((1 - var(--hero-progress, 0)) * 2rem);
+          max-width: calc(90rem + (100vw - 90rem) * var(--hero-progress, 0));
           margin-left: auto;
           margin-right: auto;
         }
@@ -118,18 +118,18 @@ export default function Hero() {
           width: 100%;
           height: 55vh;
           min-height: 420px;
-          border-radius: calc((1 - var(--hero-progress)) * 1.5rem);
+          border-radius: calc((1 - var(--hero-progress, 0)) * 1.5rem);
           overflow: hidden;
         }
         .hero-image-img {
-          transform: scale(calc(1 + var(--hero-progress) * 0.03));
+          transform: scale(calc(1 + var(--hero-progress, 0) * 0.03));
           transition: none;
         }
         @media (max-width: 767px) {
           .hero-image-outer {
             max-width: none;
-            padding-left: calc((1 - var(--hero-progress)) * 1.25rem);
-            padding-right: calc((1 - var(--hero-progress)) * 1.25rem);
+            padding-left: calc((1 - var(--hero-progress, 0)) * 1.25rem);
+            padding-right: calc((1 - var(--hero-progress, 0)) * 1.25rem);
           }
         }
         @media (prefers-reduced-motion: reduce) {

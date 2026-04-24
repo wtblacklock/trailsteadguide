@@ -128,10 +128,12 @@ export type QuizState = {
   answers: Partial<QuizAnswers>
   showEmailCapture: boolean
   emailCaptureShown: boolean
-  status: 'active' | 'complete'
+  status: 'active' | 'generating' | 'complete'
 }
 
 export type QuizAction =
   | { type: 'ANSWER'; questionId: keyof QuizAnswers; value: string | string[] | PartySize }
+  | { type: 'BACK' }
   | { type: 'DISMISS_EMAIL_CAPTURE' }
+  | { type: 'FINISH_GENERATING' }
   | { type: 'COMPLETE' }

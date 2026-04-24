@@ -7,7 +7,7 @@ export const PLAN_TEMPLATES: Record<string, PlanTemplate> = {
     slug: 'backyard-test',
     title: 'Backyard Test Night',
     tagline: 'Before you commit to a campsite, make sure everyone can actually sleep outside.',
-    heroImage: 'https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=1400&auto=format&fit=crop&q=80',
+    heroImage: 'https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?w=1400&auto=format&fit=crop&q=80',
     tripSummary: 'A one-night backyard simulation to test your sleep system, gear setup, and kid readiness — no campsite booking required.',
     preTrip: [
       {
@@ -83,7 +83,7 @@ export const PLAN_TEMPLATES: Record<string, PlanTemplate> = {
     slug: 'first-night-camp',
     title: 'First Night Camp',
     tagline: 'Your first real campsite trip — done right, without the chaos.',
-    heroImage: 'https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?w=1400&auto=format&fit=crop&q=80',
+    heroImage: 'https://images.unsplash.com/photo-1506003094589-53954a26283f?w=1400&auto=format&fit=crop&q=80',
     tripSummary: "A one-night campsite trip with a clear timeline, a short gear list, and everything your family needs to leave feeling like you'll do it again.",
     preTrip: [
       {
