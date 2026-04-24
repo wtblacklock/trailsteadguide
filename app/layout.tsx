@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Figtree, Source_Serif_4 } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 import Nav from '@/components/landing/Nav'
 import Footer from '@/components/landing/Footer'
@@ -31,6 +32,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Nav />
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   )
