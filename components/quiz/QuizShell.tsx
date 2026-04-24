@@ -3,7 +3,7 @@
 import { useReducer, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import type { QuizState, QuizAction, QuizAnswers } from '@/types'
-import { QUIZ_QUESTIONS as QUESTIONS, EMAIL_CAPTURE_AFTER_INDEX } from '@/lib/quiz-questions'
+import { QUIZ_QUESTIONS as QUESTIONS } from '@/lib/quiz-questions'
 import { computePlanSlug } from '@/lib/quiz-router'
 import { writeSession } from '@/lib/session'
 import QuizProgress from './QuizProgress'
@@ -17,16 +17,6 @@ function quizReducer(state: QuizState, action: QuizAction): QuizState {
       const nextIndex = state.currentIndex + 1
       if (nextIndex >= QUESTIONS.length) {
         return { ...state, answers: newAnswers, status: 'complete' }
-      }
-      // Trigger email capture after the configured question index (once per session)
-      if (state.currentIndex === EMAIL_CAPTURE_AFTER_INDEX && !state.emailCaptureShown) {
-        return {
-          ...state,
-          answers: newAnswers,
-          currentIndex: nextIndex,
-          showEmailCapture: true,
-          emailCaptureShown: true,
-        }
       }
       return { ...state, answers: newAnswers, currentIndex: nextIndex }
     }
