@@ -159,7 +159,7 @@ export const PLAN_TEMPLATES: Record<string, PlanTemplate> = {
       },
     ],
     gear: [
-      { name: 'Family tent (4-person min)', essential: true, affiliateProductId: 'tent-family' },
+      { name: 'Family tent (4-person min)', essential: true, affiliateProductId: 'tent-sundome-3' },
       { name: 'Sleeping bags (temp-rated for season)', essential: true, affiliateProductId: 'sleeping-bag-family' },
       { name: 'Sleeping pads or air mattress', essential: true, affiliateProductId: 'sleeping-pad-air' },
       { name: '2-burner camp stove + fuel', essential: true, affiliateProductId: 'stove-2-burner' },
@@ -280,7 +280,7 @@ export const PLAN_TEMPLATES: Record<string, PlanTemplate> = {
       },
     ],
     gear: [
-      { name: 'Family tent (6-person or larger)', essential: true, affiliateProductId: 'tent-family' },
+      { name: 'Family tent (6-person or larger)', essential: true, affiliateProductId: 'tent-sundome-6' },
       { name: 'Sleeping bags + liners', essential: true, affiliateProductId: 'sleeping-bag-family' },
       { name: 'Self-inflating sleeping pads', essential: true, affiliateProductId: 'sleeping-pad-air' },
       { name: '2-burner stove + extra fuel', essential: true, affiliateProductId: 'stove-2-burner' },
@@ -401,7 +401,7 @@ export const PLAN_TEMPLATES: Record<string, PlanTemplate> = {
       },
     ],
     gear: [
-      { name: 'Cabin tent or large family tent', essential: true, affiliateProductId: 'tent-cabin' },
+      { name: 'Cabin tent or large family tent', essential: true, affiliateProductId: 'tent-sundome-6' },
       { name: 'Queen air mattress + electric pump', essential: true, affiliateProductId: 'air-mattress-queen' },
       { name: 'Real pillows (bring from home)', essential: true },
       { name: 'Sleeping bags + extra blankets', essential: true, affiliateProductId: 'sleeping-bag-family' },
