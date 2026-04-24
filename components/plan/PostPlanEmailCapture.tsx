@@ -46,18 +46,6 @@ export default function PostPlanEmailCapture({ planSlug, adults, kids }: Props) 
   return (
     <section className="py-20 bg-gradient-to-b from-[#f5efe2] to-[#ece4d2]">
       <div className="max-w-3xl mx-auto px-6">
-        <div className="text-center mb-10">
-          <p className="text-xs uppercase tracking-[0.3em] text-[#3a5a3e] font-semibold mb-3">
-            Take it with you
-          </p>
-          <h2 className="text-4xl md:text-5xl font-serif font-semibold text-[#1f3622] leading-tight mb-4">
-            Save this plan
-          </h2>
-          <p className="text-stone-600 text-lg max-w-xl mx-auto">
-            Keep everything handy — a campsite-ready PDF in your pocket, or the plan in your inbox for later.
-          </p>
-        </div>
-
         <div className="grid md:grid-cols-2 gap-5">
           {/* Card 1 — Download the Trip Pack PDF */}
           <div className="bg-white rounded-2xl border border-stone-200 shadow-sm p-7 flex flex-col">
