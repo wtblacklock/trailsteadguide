@@ -52,7 +52,7 @@ export default function BackyardTestPage() {
       <KidActivityPlan activities={activityItems} />
       <SafetyNotes notes={plan.safetyNotes} />
       <AffiliateBlock products={products} />
-      <PostPlanEmailCapture />
+      <PostPlanEmailCapture planSlug="backyard-test" />
     </main>
   )
 }

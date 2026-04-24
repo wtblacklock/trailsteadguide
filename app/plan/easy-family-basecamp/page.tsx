@@ -39,7 +39,7 @@ export default function EasyFamilyBasecampPage() {
       <KidActivityPlan activities={activityItems} />
       <SafetyNotes notes={plan.safetyNotes} />
       <AffiliateBlock products={products} />
-      <PostPlanEmailCapture />
+      <PostPlanEmailCapture planSlug="easy-family-basecamp" />
     </main>
   )
 }

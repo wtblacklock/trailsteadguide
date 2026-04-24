@@ -19,16 +19,11 @@ export default function MidQuizEmailCapture({ onSkip }: MidQuizEmailCaptureProps
     setLoading(true)
 
     try {
-      const formId = process.env.NEXT_PUBLIC_CONVERTKIT_FORM_ID
-      if (!formId) { setError('Email service not configured.'); setLoading(false); return }
-      const res = await fetch(
-        `https://app.convertkit.com/forms/${formId}/subscriptions`,
-        {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ email_address: email }),
-        }
-      )
+      const res = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, source: 'mid-quiz' }),
+      })
 
       if (!res.ok) {
         throw new Error('Something went wrong. Please try again.')

@@ -39,7 +39,7 @@ export default function FirstWeekendCampPage() {
       <KidActivityPlan activities={activityItems} />
       <SafetyNotes notes={plan.safetyNotes} />
       <AffiliateBlock products={products} />
-      <PostPlanEmailCapture />
+      <PostPlanEmailCapture planSlug="first-weekend-camp" />
     </main>
   )
 }

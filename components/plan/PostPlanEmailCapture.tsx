@@ -2,24 +2,23 @@
 import { useState } from 'react'
 import Button from '@/components/ui/Button'
 
-export default function PostPlanEmailCapture() {
+type Props = {
+  planSlug: string
+}
+
+export default function PostPlanEmailCapture({ planSlug }: Props) {
   const [email, setEmail] = useState('')
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
-  const formId = process.env.NEXT_PUBLIC_CONVERTKIT_FORM_ID
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
-    if (!formId) { setStatus('error'); return }
     setStatus('loading')
     try {
-      const res = await fetch(
-        `https://app.convertkit.com/forms/${formId}/subscriptions`,
-        {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ email_address: email }),
-        }
-      )
+      const res = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, planSlug, source: 'post-plan' }),
+      })
       setStatus(res.ok ? 'success' : 'error')
     } catch {
       setStatus('error')
