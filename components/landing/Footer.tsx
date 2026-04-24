@@ -18,7 +18,7 @@ export default function Footer() {
           <div className="col-span-1 md:col-span-5">
             <Link href="/" aria-label="Trailstead Guide home">
               <Image
-                src="/images/logo_masthead.png"
+                src="/images/trailsteadguide_logo.svg"
                 alt="Trailstead Guide"
                 height={28}
                 width={160}

@@ -7,7 +7,7 @@ export default function Nav() {
       <div className="max-w-page mx-auto px-8 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center shrink-0" aria-label="Trailstead Guide home">
           <Image
-            src="/images/logo_masthead.png"
+            src="/images/trailsteadguide_logo.svg"
             alt="Trailstead Guide"
             height={28}
             width={160}
