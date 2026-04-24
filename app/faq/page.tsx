@@ -1,12 +1,16 @@
 import Link from 'next/link'
-import type { Metadata } from 'next'
+import JsonLd from '@/components/seo/JsonLd'
+import { pageMetadata, faqPageGraph, SITE_URL } from '@/lib/seo'
+import Breadcrumbs from '@/components/seo/Breadcrumbs'
 
-export const metadata: Metadata = {
-  title: 'FAQ — Trailstead Guide',
-  description: 'Questions about the Trailstead camping planner, guides, and gear recommendations.',
-}
+export const metadata = pageMetadata({
+  title: 'FAQ',
+  description:
+    'Answers to common questions about the Trailstead camping planner, guides, gear recommendations, and how we build plans for first-time families.',
+  path: '/faq',
+})
 
-const faqs = [
+const FAQ_ITEMS = [
   {
     q: 'Is Trailstead Guide free?',
     a: 'Yes. The planner, the guides, and the gear recommendations are free. We earn small commissions on some gear links, which funds the writing.',
@@ -44,6 +48,14 @@ const faqs = [
 export default function Page() {
   return (
     <main>
+      <JsonLd data={faqPageGraph(FAQ_ITEMS)} />
+      <Breadcrumbs
+        emitSchema
+        items={[
+          { name: 'Home', url: `${SITE_URL}/` },
+          { name: 'FAQ', url: `${SITE_URL}/faq` },
+        ]}
+      />
       <header className="max-w-page mx-auto px-8 pt-16 md:pt-24 pb-12">
         <p className="text-xs font-semibold tracking-widest uppercase text-stone-500 mb-4">FAQ</p>
         <h1 className="font-serif text-5xl md:text-7xl font-semibold text-stone-950 tracking-tight leading-tight max-w-4xl">
@@ -53,7 +65,7 @@ export default function Page() {
 
       <section className="max-w-page mx-auto px-8 pb-24">
         <div className="max-w-3xl">
-          {faqs.map((f) => (
+          {FAQ_ITEMS.map((f) => (
             <div key={f.q} className="border-t border-stone-200 py-8">
               <h2 className="font-serif text-xl md:text-2xl font-medium text-stone-900 tracking-tight mb-3">
                 {f.q}

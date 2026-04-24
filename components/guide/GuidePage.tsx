@@ -1,21 +1,17 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import type { ReactNode } from 'react'
-import { GUIDE_LINKS } from '@/lib/nav-config'
 
 export type GuidePageProps = {
   eyebrow?: string
   title: string
   lede: string
   heroImage?: { src: string; alt: string }
-  slug: string // current guide slug, to suggest a different related one
+  slug: string // current guide slug — kept for API compatibility (RelatedGuides reads it)
   children: ReactNode
 }
 
-export function GuidePage({ eyebrow = 'Guide', title, lede, heroImage, slug, children }: GuidePageProps) {
-  // Pick a "next guide" that isn't the current one
-  const related = GUIDE_LINKS.find((g) => !g.href.endsWith(slug)) ?? GUIDE_LINKS[0]
-
+export function GuidePage({ eyebrow = 'Guide', title, lede, heroImage, children }: GuidePageProps) {
   return (
     <article>
       {/* Editorial header — text-first, narrow column, oversized serif title */}
@@ -40,6 +36,8 @@ export function GuidePage({ eyebrow = 'Guide', title, lede, heroImage, slug, chi
               alt={heroImage.alt}
               fill
               className="object-cover"
+              priority
+              sizes="(max-width: 768px) 100vw, 1024px"
               unoptimized
             />
           </div>
@@ -72,23 +70,6 @@ export function GuidePage({ eyebrow = 'Guide', title, lede, heroImage, slug, chi
         </div>
       </section>
 
-      {/* Related — two quiet links, not cards */}
-      <section className="max-w-3xl mx-auto px-8 mt-20 mb-32">
-        <div className="border-t border-stone-200 pt-12">
-          <p className="text-xs font-semibold tracking-[0.18em] uppercase text-stone-500 mb-8">
-            Keep reading
-          </p>
-          <Link href={related.href} className="group block">
-            <p className="text-xs uppercase tracking-widest text-stone-400 mb-2">Next guide</p>
-            <p className="font-serif text-2xl md:text-3xl font-medium text-stone-900 tracking-tight leading-snug group-hover:text-stone-600 transition-colors">
-              {related.label}
-            </p>
-            {related.description && (
-              <p className="text-stone-500 mt-2 leading-relaxed">{related.description}</p>
-            )}
-          </Link>
-        </div>
-      </section>
     </article>
   )
 }

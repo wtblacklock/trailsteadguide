@@ -1,13 +1,18 @@
 import Link from 'next/link'
-import type { Metadata } from 'next'
+import Image from 'next/image'
 import { AFFILIATE_PRODUCTS } from '@/lib/affiliate-products'
 import { getProductUrl } from '@/lib/amazon'
 import type { AffiliateProduct } from '@/types'
+import { pageMetadata, productGraph, itemListGraph, SITE_URL } from '@/lib/seo'
+import JsonLd from '@/components/seo/JsonLd'
+import Breadcrumbs from '@/components/seo/Breadcrumbs'
 
-export const metadata: Metadata = {
-  title: 'Camping Gear Guide — The Exact Gear You Need | Trailstead Guide',
-  description: 'Proven camping setups for first-time families. Three curated bundles, no 100-option lists, no overwhelm.',
-}
+export const metadata = pageMetadata({
+  title: 'Camping Gear Guide — The Exact Gear You Need',
+  description:
+    'Proven camping setups for first-time families. Three curated bundles and a short per-category catalog — no 100-option lists, no overwhelm.',
+  path: '/gear-guide',
+})
 
 /** Find a product by id; throws at build time if missing so we catch breakage early. */
 function P(id: string): AffiliateProduct {
@@ -36,7 +41,7 @@ const BUNDLES: Bundle[] = [
     name: 'First Night Simple',
     tagline: 'One night, close to home. The just-try-it setup.',
     planHref: '/plan/first-night-camp',
-    itemIds: ['tent-sundome-3', 'sleeping-bag-family', 'sleeping-pad-air', 'headlamp-family', 'camp-chairs'],
+    itemIds: ['tent-sundome-3', 'sleeping-bag-family', 'fwc-lantern-consciot', 'fwc-lantern-hanger'],
   },
   {
     id: 'weekend-ready',
@@ -45,7 +50,7 @@ const BUNDLES: Bundle[] = [
     planHref: '/plan/first-weekend-camp',
     itemIds: [
       'fwc-tent-sundome',
-      'fwc-stove-coleman-1burner',
+      'stove-2-burner',
       'fwc-cooler-rolling',
       'fwc-sleeping-bag-mallome',
       'fwc-chair-gci-rocker',
@@ -57,7 +62,7 @@ const BUNDLES: Bundle[] = [
     name: 'Family Basecamp',
     tagline: 'Three+ nights, basecamp style. The upgrade your back will thank you for.',
     planHref: '/plan/easy-family-basecamp',
-    itemIds: ['tent-sundome-6', 'air-mattress-queen', 'stove-2-burner', 'cooler-basic', 'camp-chairs', 'canopy-camp'],
+    itemIds: ['tent-sundome-6', 'air-mattress-queen', 'stove-2-burner', 'fwc-cooler-rolling', 'fwc-chair-gci-rocker', 'canopy-camp'],
   },
 ]
 
@@ -70,7 +75,7 @@ const CATEGORY_SECTIONS: { title: string; note?: string; ids: string[] }[] = [
   },
   {
     title: 'Cooking',
-    note: 'Propane. Always propane. One burner is enough for a weekend.',
+    note: 'Propane. Always propane.',
     ids: ['stove-2-burner', 'fwc-stove-coleman-1burner'],
   },
   {
@@ -85,12 +90,22 @@ const CATEGORY_SECTIONS: { title: string; note?: string; ids: string[] }[] = [
   },
   {
     title: 'Sleep',
-    ids: ['sleeping-bag-family', 'fwc-sleeping-bag-mallome', 'headlamp-family', 'fwc-lantern-consciot', 'fwc-lantern-hanger'],
+    ids: ['sleeping-bag-family', 'fwc-sleeping-bag-mallome'],
+  },
+  {
+    title: 'Lighting',
+    note: 'One headlamp per person is non-negotiable. A lantern for the table makes camp feel like home.',
+    ids: ['headlamp-family', 'fwc-lantern-consciot', 'fwc-lantern-hanger'],
+  },
+  {
+    title: 'Keep camp clean',
+    note: 'A pop-up trash can saves the picnic table and makes pack-out easy.',
+    ids: ['fwc-trash-can-wakeman'],
   },
   {
     title: 'Make it fun',
     note: 'The unfair advantages. A projector on the tent wall changes the trip.',
-    ids: ['fwc-projector-tmy', 'canopy-camp', 'fwc-trash-can-wakeman'],
+    ids: ['fwc-projector-tmy', 'canopy-camp'],
   },
 ]
 
@@ -104,13 +119,15 @@ function ProductCard({ p, compact = false }: { p: AffiliateProduct; compact?: bo
       rel="nofollow sponsored noopener noreferrer"
       className="group rounded-2xl ring-1 ring-stone-200 bg-white flex flex-col overflow-hidden transition-all duration-200 hover:ring-stone-900 hover:-translate-y-0.5 hover:shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-stone-900"
     >
-      <div className={`${compact ? 'aspect-[4/3]' : 'aspect-[4/3]'} w-full bg-stone-50 overflow-hidden`}>
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+      <div className={`${compact ? 'aspect-[4/3]' : 'aspect-[4/3]'} w-full bg-stone-50 overflow-hidden relative`}>
+        <Image
           src={p.imageUrl}
           alt={p.name}
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 400px"
           loading="lazy"
-          className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+          unoptimized
+          className="object-cover transition-transform duration-300 group-hover:scale-[1.02]"
         />
       </div>
       <div className={`${compact ? 'p-6' : 'p-8'} flex flex-col flex-1`}>
@@ -164,9 +181,16 @@ function BundleCard({ bundle }: { bundle: Bundle }) {
               rel="nofollow sponsored noopener noreferrer"
               className="flex items-center gap-4 px-8 md:px-10 py-4 group hover:bg-stone-50 transition-colors"
             >
-              <div className="w-14 h-14 shrink-0 rounded-md bg-stone-100 overflow-hidden">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={p.imageUrl} alt="" loading="lazy" className="w-full h-full object-cover" />
+              <div className="w-14 h-14 shrink-0 rounded-md bg-stone-100 overflow-hidden relative">
+                <Image
+                  src={p.imageUrl}
+                  alt=""
+                  fill
+                  sizes="56px"
+                  loading="lazy"
+                  unoptimized
+                  className="object-cover"
+                />
               </div>
               <div className="flex-1 min-w-0">
                 <p className="text-sm font-medium text-stone-900 truncate group-hover:text-stone-600 transition-colors">
@@ -184,14 +208,6 @@ function BundleCard({ bundle }: { bundle: Bundle }) {
           </li>
         ))}
       </ul>
-      <div className="p-8 md:p-10 border-t border-stone-100 bg-stone-50">
-        <Link
-          href={bundle.planHref}
-          className="inline-flex items-center justify-center rounded-md font-medium bg-stone-900 text-white hover:bg-stone-800 transition-colors px-6 py-3 text-sm"
-        >
-          View full setup
-        </Link>
-      </div>
     </article>
   )
 }
@@ -199,8 +215,46 @@ function BundleCard({ bundle }: { bundle: Bundle }) {
 // ─── page ───────────────────────────────────────────────────────────────────
 
 export default function Page() {
+  // Build deduped Product JSON-LD for every product appearing in BUNDLES or CATEGORY_SECTIONS.
+  const featuredIds = new Set<string>()
+  BUNDLES.forEach((b) => b.itemIds.forEach((id) => featuredIds.add(id)))
+  CATEGORY_SECTIONS.forEach((c) => c.ids.forEach((id) => featuredIds.add(id)))
+
+  const productGraphs = AFFILIATE_PRODUCTS.filter((p) => featuredIds.has(p.id)).map((p) =>
+    productGraph({
+      id: p.id,
+      name: p.name,
+      description: p.description,
+      image: p.imageUrl,
+      offerUrl: getProductUrl(p),
+      priceRange: p.priceRange,
+    }),
+  )
+
+  const itemList = itemListGraph({
+    name: 'Camping Gear for First-Time Families',
+    items: BUNDLES.map((b, i) => ({
+      position: i + 1,
+      name: b.name,
+      url: `${SITE_URL}/gear-guide#${b.id}`,
+    })),
+  })
+
+  const gearGraph = {
+    '@context': 'https://schema.org',
+    '@graph': [itemList, ...productGraphs],
+  }
+
   return (
     <main>
+      <JsonLd data={gearGraph} />
+      <Breadcrumbs
+        emitSchema
+        items={[
+          { name: 'Home', url: `${SITE_URL}/` },
+          { name: 'Gear Guide', url: `${SITE_URL}/gear-guide` },
+        ]}
+      />
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
       <header className="max-w-page mx-auto px-8 pt-16 md:pt-24 pb-14 md:pb-20">
         <p className="text-xs font-semibold tracking-[0.18em] uppercase text-stone-500 mb-6">Gear Guide</p>

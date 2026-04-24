@@ -1,15 +1,40 @@
 import Link from 'next/link'
-import type { Metadata } from 'next'
 import { GUIDE_LINKS } from '@/lib/nav-config'
+import JsonLd from '@/components/seo/JsonLd'
+import Breadcrumbs from '@/components/seo/Breadcrumbs'
+import { pageMetadata, collectionPageGraph, SITE_URL } from '@/lib/seo'
 
-export const metadata: Metadata = {
-  title: 'Camping Guides — Trailstead Guide',
-  description: 'Beginner-focused camping guides for families: checklists, planning walkthroughs, and what to do when kids come along.',
-}
+const GUIDES_TITLE = 'Camping Guides'
+const GUIDES_DESCRIPTION =
+  'Beginner-focused camping guides for families: checklists, planning walkthroughs, packing lists, and what to do when kids come along.'
+
+export const metadata = pageMetadata({
+  title: GUIDES_TITLE,
+  description: GUIDES_DESCRIPTION,
+  path: '/guides',
+})
+
+const GUIDES_COLLECTION = collectionPageGraph({
+  slug: '/guides',
+  title: GUIDES_TITLE,
+  description: GUIDES_DESCRIPTION,
+  items: GUIDE_LINKS.map((g) => ({
+    name: g.label,
+    url: `${SITE_URL}${g.href}`,
+  })),
+})
 
 export default function Page() {
   return (
     <main>
+      <JsonLd data={GUIDES_COLLECTION} />
+      <Breadcrumbs
+        emitSchema
+        items={[
+          { name: 'Home', url: `${SITE_URL}/` },
+          { name: 'Guides', url: `${SITE_URL}/guides` },
+        ]}
+      />
       <header className="max-w-page mx-auto px-8 pt-16 md:pt-24 pb-12">
         <p className="text-xs font-semibold tracking-widest uppercase text-stone-500 mb-4">Guides</p>
         <h1 className="font-serif text-5xl md:text-7xl font-semibold text-stone-950 tracking-tight leading-tight max-w-4xl">

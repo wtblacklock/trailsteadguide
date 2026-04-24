@@ -1,15 +1,25 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import type { Metadata } from 'next'
+import { pageMetadata, SITE_URL } from '@/lib/seo'
+import Breadcrumbs from '@/components/seo/Breadcrumbs'
 
-export const metadata: Metadata = {
-  title: 'About — Trailstead Guide',
-  description: 'Trailstead Guide is a structured camping system for families who want a plan, not a hobby.',
-}
+export const metadata = pageMetadata({
+  title: 'About',
+  description:
+    'Trailstead Guide is a structured camping system for families who want a plan, not a hobby. Built by parents for first-time family trips.',
+  path: '/about',
+})
 
 export default function Page() {
   return (
     <main>
+      <Breadcrumbs
+        emitSchema
+        items={[
+          { name: 'Home', url: `${SITE_URL}/` },
+          { name: 'About', url: `${SITE_URL}/about` },
+        ]}
+      />
       <header className="max-w-page mx-auto px-8 pt-16 md:pt-24 pb-12">
         <p className="text-xs font-semibold tracking-widest uppercase text-stone-500 mb-4">About</p>
         <h1 className="font-serif text-5xl md:text-7xl font-semibold text-stone-950 tracking-tight leading-tight max-w-4xl">

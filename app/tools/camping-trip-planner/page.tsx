@@ -1,14 +1,25 @@
 import Link from 'next/link'
-import type { Metadata } from 'next'
+import { pageMetadata, SITE_URL } from '@/lib/seo'
+import Breadcrumbs from '@/components/seo/Breadcrumbs'
 
-export const metadata: Metadata = {
-  title: 'Camping Trip Planner — Trailstead Guide',
-  description: 'Build a full family camping trip plan in 2 minutes. Timeline, gear, meals, activities — all scaled to your family.',
-}
+export const metadata = pageMetadata({
+  title: 'Camping Trip Planner',
+  description:
+    'Build a full family camping trip plan in 2 minutes. Timeline, gear, meals, and kid activities — all scaled to your family size and experience level.',
+  path: '/tools/camping-trip-planner',
+})
 
 export default function Page() {
   return (
     <main>
+      <Breadcrumbs
+        emitSchema
+        items={[
+          { name: 'Home', url: `${SITE_URL}/` },
+          { name: 'Tools', url: `${SITE_URL}/tools` },
+          { name: 'Trip Planner', url: `${SITE_URL}/tools/camping-trip-planner` },
+        ]}
+      />
       <header className="max-w-page mx-auto px-8 pt-16 md:pt-24 pb-12">
         <p className="text-xs font-semibold tracking-widest uppercase text-stone-500 mb-4">Tool</p>
         <h1 className="font-serif text-5xl md:text-7xl font-semibold text-stone-950 tracking-tight leading-tight max-w-4xl">

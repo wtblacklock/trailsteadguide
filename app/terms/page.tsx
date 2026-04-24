@@ -1,10 +1,12 @@
 import { LegalPage } from '@/components/legal/LegalPage'
-import type { Metadata } from 'next'
+import { pageMetadata } from '@/lib/seo'
 
-export const metadata: Metadata = {
-  title: 'Terms of Service — Trailstead Guide',
-  description: 'Terms of service for Trailstead Guide.',
-}
+export const metadata = pageMetadata({
+  title: 'Terms of Service',
+  description:
+    'Terms of service for Trailstead Guide — acceptable use, content ownership, disclaimers of warranty, limitation of liability, and governing law.',
+  path: '/terms',
+})
 
 export default function Page() {
   return (

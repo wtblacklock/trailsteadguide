@@ -1,4 +1,3 @@
-import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { getPlanTemplate } from '@/lib/plan-templates'
 import { getProductsForTemplate } from '@/lib/affiliate-products'
@@ -13,11 +12,21 @@ import PostPlanEmailCapture from '@/components/plan/PostPlanEmailCapture'
 import FloatingEmailBar from '@/components/plan/FloatingEmailBar'
 import MealPlanAndShopping from '@/components/plan/MealPlanAndShopping'
 import { parsePartySize } from '@/lib/party-size'
+import JsonLd from '@/components/seo/JsonLd'
+import { pageMetadata, articleGraph, howToGraph, SITE_URL } from '@/lib/seo'
+import Breadcrumbs from '@/components/seo/Breadcrumbs'
 
-export const metadata: Metadata = {
-  title: 'First Weekend Camp Plan | Trailstead Guide',
-  description: 'A full two-night camping plan for families ready to level up.',
-}
+const SLUG = '/plan/first-weekend-camp'
+const TITLE = 'First Weekend Camp Plan'
+const DESCRIPTION =
+  'A full two-night family camping plan for families ready to level up. Hour-by-hour timeline, gear, meals, kid activities, and safety notes in one page.'
+
+export const metadata = pageMetadata({
+  title: TITLE,
+  description: DESCRIPTION,
+  path: SLUG,
+  type: 'article',
+})
 
 export default async function FirstWeekendCampPage({
   searchParams,
@@ -40,8 +49,40 @@ export default async function FirstWeekendCampPage({
   const gearItems = plan.gear.map(g => g.name)
   const activityItems = plan.activities.map(a => `${a.title} — ${a.description}`)
 
+  const howToSteps = [...plan.preTrip, ...plan.arrival, ...plan.evening, ...plan.morning].map((s) => ({
+    name: s.title,
+    text: `${s.time}: ${s.description}`,
+  }))
+
   return (
     <main>
+      <JsonLd
+        data={howToGraph({
+          name: TITLE,
+          description: DESCRIPTION,
+          image: plan.heroImage,
+          totalTime: 'P2D',
+          steps: howToSteps,
+        })}
+      />
+      <JsonLd
+        data={articleGraph({
+          slug: SLUG,
+          title: TITLE,
+          description: DESCRIPTION,
+          image: plan.heroImage,
+          breadcrumbs: [
+            { name: 'Home', url: `${SITE_URL}/` },
+            { name: TITLE, url: `${SITE_URL}${SLUG}` },
+          ],
+        })}
+      />
+      <Breadcrumbs
+        items={[
+          { name: 'Home', url: `${SITE_URL}/` },
+          { name: TITLE, url: `${SITE_URL}${SLUG}` },
+        ]}
+      />
       <PlanHero title={plan.title} hook={plan.tagline} imageUrl={plan.heroImage} />
       <PlanJumpNav
         links={[

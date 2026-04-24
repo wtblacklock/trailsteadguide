@@ -1,12 +1,14 @@
-import type { Metadata } from 'next'
 import ChecklistResult from '@/components/checklist/ChecklistResult'
 import type { KidsAgeGroup } from '@/types'
+import { pageMetadata } from '@/lib/seo'
 
-export const metadata: Metadata = {
-  title: 'Your Camping Checklist | Trailstead Guide',
-  description: 'Your personalized packing checklist, scaled to your family.',
-  robots: { index: false, follow: false },
-}
+export const metadata = pageMetadata({
+  title: 'Your Camping Checklist',
+  description:
+    'Your personalized packing checklist, scaled to your family size, kid ages, and trip length. Print it, check it off, go camping.',
+  path: '/checklist/result',
+  noIndex: true,
+})
 
 const ALLOWED_AGES: KidsAgeGroup[] = ['none', '3-6', '7-12', 'teens']
 

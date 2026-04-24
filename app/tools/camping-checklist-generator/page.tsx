@@ -1,14 +1,25 @@
 import Link from 'next/link'
-import type { Metadata } from 'next'
+import { pageMetadata, SITE_URL } from '@/lib/seo'
+import Breadcrumbs from '@/components/seo/Breadcrumbs'
 
-export const metadata: Metadata = {
-  title: 'Camping Checklist Generator — Trailstead Guide',
-  description: 'Generate a packing checklist tuned to your family size, kid ages, and trip length.',
-}
+export const metadata = pageMetadata({
+  title: 'Camping Checklist Generator',
+  description:
+    'Generate a packing checklist tuned to your family size, kid ages, and trip length. Categorized, scaled, printable — skip generic one-size lists.',
+  path: '/tools/camping-checklist-generator',
+})
 
 export default function Page() {
   return (
     <main>
+      <Breadcrumbs
+        emitSchema
+        items={[
+          { name: 'Home', url: `${SITE_URL}/` },
+          { name: 'Tools', url: `${SITE_URL}/tools` },
+          { name: 'Checklist Generator', url: `${SITE_URL}/tools/camping-checklist-generator` },
+        ]}
+      />
       <header className="max-w-page mx-auto px-8 pt-16 md:pt-24 pb-12">
         <p className="text-xs font-semibold tracking-widest uppercase text-stone-500 mb-4">Tool</p>
         <h1 className="font-serif text-5xl md:text-7xl font-semibold text-stone-950 tracking-tight leading-tight max-w-4xl">

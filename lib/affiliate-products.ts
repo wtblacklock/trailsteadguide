@@ -8,7 +8,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
   {
     id: 'tent-sundome-3',
     name: 'Coleman Sundome 3-Person Tent',
-    description: 'The small-family or couple pick. Sets up in 10 minutes, weatherproof, fits a full-size air bed.',
+    description: 'The couple or solo-with-gear pick. 7×7 ft floor, sets up in 10 minutes, fits a full-size air bed.',
     amazonAsin: 'B004J2GUOK',
     imageUrl: 'https://m.media-amazon.com/images/S/aplus-media-library-service-media/f19b70cc-14ac-46ae-bec2-33b25b7fd2a9.__CR0,0,1464,600_PT0_SX1464_V1___.png',
     category: 'essential',
@@ -18,7 +18,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
   {
     id: 'tent-sundome-6',
     name: 'Coleman Sundome 6-Person Tent',
-    description: 'The size-up pick for families of 4+ or anyone who wants room to stand and spread out gear.',
+    description: 'The size-up pick for families of 5+ or anyone who wants room to stand and spread out gear. 10×10 ft floor.',
     amazonAsin: 'B004E4AWYA',
     imageUrl: 'https://m.media-amazon.com/images/S/aplus-media-library-service-media/f19b70cc-14ac-46ae-bec2-33b25b7fd2a9.__CR0,0,1464,600_PT0_SX1464_V1___.png',
     category: 'comfort',
@@ -33,7 +33,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     affiliateUrl: 'https://amzn.to/4mVpMom',
     imageUrl: 'https://m.media-amazon.com/images/S/aplus-media/vc/94b627ff-60b3-4f09-af91-225e2a7b114d._CR0,0,970,300_PT0_SX970__.jpg',
     category: 'essential',
-    templateSlugs: ['backyard-test', 'first-night-camp'],
+    templateSlugs: ['first-night-camp'],
     priceRange: '~$95',
   },
   {
@@ -44,7 +44,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     affiliateUrl: 'https://amzn.to/4vG4xdY',
     imageUrl: 'https://m.media-amazon.com/images/I/71AVJB+xn6L._AC_SL1500_.jpg',
     category: 'comfort',
-    templateSlugs: ['first-night-camp'],
+    templateSlugs: [],
     priceRange: '~$75',
   },
   {
@@ -66,7 +66,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     affiliateUrl: 'https://amzn.to/4sQx6Tz',
     imageUrl: 'https://m.media-amazon.com/images/I/71J5ttHnYvL._AC_SX679_.jpg',
     category: 'essential',
-    templateSlugs: ['first-night-camp', 'easy-family-basecamp'],
+    templateSlugs: ['first-weekend-camp', 'easy-family-basecamp'],
     priceRange: '~$210',
   },
   {
@@ -77,7 +77,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     affiliateUrl: 'https://amzn.to/4mXLRTe',
     imageUrl: 'https://m.media-amazon.com/images/I/81sGcNXb1eL._AC_SL1500_.jpg',
     category: 'essential',
-    templateSlugs: ['backyard-test', 'first-night-camp', 'easy-family-basecamp'],
+    templateSlugs: ['backyard-test'],
     priceRange: '~$50',
   },
   {
@@ -88,7 +88,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     affiliateUrl: 'https://amzn.to/4sVHJEv',
     imageUrl: 'https://m.media-amazon.com/images/I/61B-kRUS-IL._AC_SL1200_.jpg',
     category: 'comfort',
-    templateSlugs: ['first-night-camp', 'easy-family-basecamp'],
+    templateSlugs: [],
     priceRange: '~$95',
   },
   {
@@ -99,7 +99,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     affiliateUrl: 'https://amzn.to/4sQx6Tz',
     imageUrl: 'https://m.media-amazon.com/images/I/91uqAgVltVS._AC_SL1500_.jpg',
     category: 'essential',
-    templateSlugs: ['first-night-camp', 'easy-family-basecamp'],
+    templateSlugs: [],
     priceRange: '~$120',
   },
   {
@@ -122,10 +122,10 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
   {
     id: 'fwc-tent-sundome',
     name: 'Coleman Sundome 4-Person Tent',
-    description: 'Best-selling family dome tent. Weatherproof, quick to pitch, fits a queen air bed. The safe first-trip tent.',
+    description: 'Best-selling family dome tent. 9×7 ft floor, weatherproof, quick to pitch, fits a queen air bed. The safe first-trip tent.',
     amazonAsin: 'B0D7QHY574',
     affiliateUrl: 'https://amzn.to/4sUKHJs',
-    imageUrl: 'https://m.media-amazon.com/images/S/aplus-media-library-service-media/f19b70cc-14ac-46ae-bec2-33b25b7fd2a9.__CR0,0,1464,600_PT0_SX1464_V1___.png',
+    imageUrl: 'https://images-na.ssl-images-amazon.com/images/P/B0D7QHY574.01.L.jpg',
     category: 'essential',
     templateSlugs: ['first-weekend-camp'],
     priceRange: '~$116',
@@ -138,7 +138,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     affiliateUrl: 'https://amzn.to/4uc7DVG',
     imageUrl: 'https://m.media-amazon.com/images/I/81aj95-ouRL._AC_SL1500_.jpg',
     category: 'essential',
-    templateSlugs: ['first-weekend-camp'],
+    templateSlugs: [],
     priceRange: '~$40',
   },
   {
@@ -149,7 +149,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     affiliateUrl: 'https://amzn.to/4d3oHXX',
     imageUrl: 'https://m.media-amazon.com/images/S/aplus-media-library-service-media/6a95b9ce-ba2f-46da-a5f8-82593670f6eb.__CR0,0,1464,600_PT0_SX1464_V1___.png',
     category: 'essential',
-    templateSlugs: ['first-weekend-camp'],
+    templateSlugs: ['first-weekend-camp', 'easy-family-basecamp'],
     priceRange: '~$107',
   },
   {
@@ -160,7 +160,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     affiliateUrl: 'https://amzn.to/4ut42CT',
     imageUrl: 'https://m.media-amazon.com/images/I/91+ezTNiVbL._AC_SL1500_.jpg',
     category: 'comfort',
-    templateSlugs: ['first-weekend-camp'],
+    templateSlugs: [],
     priceRange: '~$30',
   },
   {
@@ -171,7 +171,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     affiliateUrl: 'https://amzn.to/4tz86RT',
     imageUrl: 'https://m.media-amazon.com/images/I/71ATGzY0CUL._AC_SL1500_.jpg',
     category: 'essential',
-    templateSlugs: ['first-weekend-camp'],
+    templateSlugs: ['first-night-camp', 'first-weekend-camp'],
     priceRange: '~$30',
   },
   {
@@ -193,7 +193,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     affiliateUrl: 'https://amzn.to/4e8dK8O',
     imageUrl: 'https://m.media-amazon.com/images/I/71O4-VrNP3L._AC_SL1000_.jpg',
     category: 'comfort',
-    templateSlugs: ['first-weekend-camp'],
+    templateSlugs: ['first-weekend-camp', 'easy-family-basecamp'],
     priceRange: '~$80',
   },
   {
@@ -204,7 +204,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     affiliateUrl: 'https://amzn.to/3OlFWKU',
     imageUrl: 'https://m.media-amazon.com/images/S/aplus-media-library-service-media/bb0c1152-f522-4772-98ea-c3cac62e88bf.__CR0,0,1464,600_PT0_SX1464_V1___.jpg',
     category: 'convenience',
-    templateSlugs: ['first-weekend-camp'],
+    templateSlugs: [],
     priceRange: '~$50',
   },
   {
@@ -215,7 +215,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     affiliateUrl: 'https://amzn.to/4cHYL2S',
     imageUrl: 'https://m.media-amazon.com/images/I/913OeuUhboL._AC_SL1500_.jpg',
     category: 'convenience',
-    templateSlugs: ['first-weekend-camp'],
+    templateSlugs: [],
     priceRange: '~$21',
   },
   {
@@ -226,7 +226,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     affiliateUrl: 'https://amzn.to/3Qm3Mqu',
     imageUrl: 'https://m.media-amazon.com/images/I/81IPjzQWjlL.jpg',
     category: 'convenience',
-    templateSlugs: ['first-weekend-camp'],
+    templateSlugs: ['first-night-camp'],
     priceRange: '~$20',
   },
 ]

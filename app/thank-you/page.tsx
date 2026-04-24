@@ -1,11 +1,14 @@
-import { Metadata } from 'next'
 import Link from 'next/link'
 import Button from '@/components/ui/Button'
+import { pageMetadata } from '@/lib/seo'
 
-export const metadata: Metadata = {
-  title: 'You\'re all set | Trailstead Guide',
-  description: 'Your camping plan is on its way.',
-}
+export const metadata = pageMetadata({
+  title: 'You\'re all set',
+  description:
+    'Your Trailstead camping plan is on its way to your inbox. Check your email and you\'re ready to go enjoy your first family camping trip.',
+  path: '/thank-you',
+  noIndex: true,
+})
 
 export default function ThankYouPage() {
   return (

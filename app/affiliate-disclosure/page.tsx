@@ -1,10 +1,12 @@
 import { LegalPage } from '@/components/legal/LegalPage'
-import type { Metadata } from 'next'
+import { pageMetadata } from '@/lib/seo'
 
-export const metadata: Metadata = {
-  title: 'Affiliate Disclosure — Trailstead Guide',
-  description: 'How Trailstead Guide earns from affiliate links.',
-}
+export const metadata = pageMetadata({
+  title: 'Affiliate Disclosure',
+  description:
+    'How Trailstead Guide earns from affiliate links — Amazon Associates and select outdoor retailers — and how that does not influence what we recommend.',
+  path: '/affiliate-disclosure',
+})
 
 export default function Page() {
   return (

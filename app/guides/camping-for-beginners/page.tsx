@@ -1,20 +1,77 @@
 import { GuidePage } from '@/components/guide/GuidePage'
-import type { Metadata } from 'next'
+import RelatedGuides from '@/components/guide/RelatedGuides'
+import JsonLd from '@/components/seo/JsonLd'
+import Breadcrumbs from '@/components/seo/Breadcrumbs'
+import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
 
-export const metadata: Metadata = {
-  title: 'Camping for Beginners — Trailstead Guide',
-  description: 'A real, grown-up guide to your first camping trip. No gear worship, no backcountry talk — just what families actually need to know.',
-}
+const SLUG = '/guides/camping-for-beginners'
+const TITLE = 'Camping for Beginners'
+const DESCRIPTION =
+  'A real, grown-up guide to your first camping trip. No gear worship, no backcountry talk — just what families actually need to know to get outside.'
+const HERO_IMAGE = 'https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?w=1400&auto=format&fit=crop&q=80'
+
+export const metadata = pageMetadata({
+  title: TITLE,
+  description: DESCRIPTION,
+  path: SLUG,
+  type: 'article',
+  image: HERO_IMAGE,
+})
 
 export default function Page() {
   return (
+    <>
+      <JsonLd
+        data={articleGraph({
+          slug: SLUG,
+          title: TITLE,
+          description: DESCRIPTION,
+          image: HERO_IMAGE,
+          breadcrumbs: [
+            { name: 'Home', url: `${SITE_URL}/` },
+            { name: 'Guides', url: `${SITE_URL}/guides` },
+            { name: TITLE, url: `${SITE_URL}${SLUG}` },
+          ],
+        })}
+      />
+      <JsonLd
+        data={faqPageGraph([
+          {
+            q: 'Do I need a 4-season tent for my first camping trip?',
+            a: 'No. A standard 3-season dome tent like a Coleman Sundome is the right pick for car camping. Four-season tents are built for mountaineering and are overkill for an established campground.',
+          },
+          {
+            q: 'Is it safe to camp with young kids?',
+            a: 'At an established campground, yes. You are in a managed site with bathrooms, rangers, and other families nearby. Give each kid a whistle and teach them the site number.',
+          },
+          {
+            q: 'What if it rains on my first camping trip?',
+            a: 'A dome tent with its rainfly handles regular rain fine, as long as you stake the rainfly out. If the forecast is genuinely bad, reschedule — there is no reason to camp in a downpour on your first trip.',
+          },
+          {
+            q: 'Do I need to reserve a campsite ahead of time?',
+            a: 'Yes. Walk-up sites exist but are unreliable, especially in summer. Book 3 to 6 weeks ahead through ReserveAmerica or Recreation.gov.',
+          },
+          {
+            q: 'How long should a first camping trip be?',
+            a: 'One night. Go home Saturday, assess what worked, and book a two-night trip for next month. One night teaches you almost everything you need to know.',
+          },
+        ])}
+      />
+      <Breadcrumbs
+        items={[
+          { name: 'Home', url: `${SITE_URL}/` },
+          { name: 'Guides', url: `${SITE_URL}/guides` },
+          { name: TITLE, url: `${SITE_URL}${SLUG}` },
+        ]}
+      />
     <GuidePage
       slug="camping-for-beginners"
       eyebrow="Start here"
       title="Camping for Beginners"
       lede="If you&apos;ve never camped, start here. This is the shortest, least-intimidating path from zero to a great first trip."
       heroImage={{
-        src: 'https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?w=1400&auto=format&fit=crop&q=80',
+        src: HERO_IMAGE,
         alt: 'Tent pitched in a forest clearing at golden hour',
       }}
     >
@@ -60,6 +117,92 @@ export default function Page() {
       <p>
         That&apos;s it. Camping is not complicated. It&apos;s just unfamiliar — and a structured plan removes 90% of the unfamiliarity.
       </p>
+
+      <h2>What to skip on your first trip</h2>
+      <p>
+        Every first-trip list online is 150 items long. Most of that is gear people bring once and never use again. On your first trip you can safely skip:
+      </p>
+      <ul>
+        <li><strong>A dutch oven.</strong> You will not be baking bread on coals. Cook on the stove.</li>
+        <li><strong>A hatchet.</strong> Buy bundled firewood at the camp store. That&apos;s what it&apos;s there for.</li>
+        <li><strong>A French press or pour-over kit.</strong> Instant coffee is fine for one weekend. It truly is.</li>
+        <li><strong>A second tent &ldquo;just in case.&rdquo;</strong> If your tent fails, sleep in the car. That&apos;s the backup plan.</li>
+        <li><strong>Hiking boots.</strong> Sneakers work at a car campsite. Buy boots later if you start hiking seriously.</li>
+      </ul>
+      <p>
+        The pattern: every item you skip is one less thing to pack, unpack, keep dry, and lose. Under-packing is a feature.
+      </p>
+
+      <h2>How much a first trip actually costs</h2>
+      <p>
+        People assume camping requires a thousand dollars of gear before you can start. It doesn&apos;t. A realistic first-trip budget, if you borrow a tent and sleeping bags:
+      </p>
+      <ul>
+        <li>Campsite for one night: $25–$45</li>
+        <li>Firewood from the camp store: $8</li>
+        <li>Block of ice: $5</li>
+        <li>Groceries for 2 meals + snacks: $40–$60</li>
+        <li>Gas (under 90 minutes each way): $20</li>
+      </ul>
+      <p>
+        Call it ~$120 for a family of four for a one-night trip. That&apos;s cheaper than most movie nights once you factor in dinner. If you buy a $120 Sundome 4P tent, you break even on the second trip — every trip after that is nearly free.
+      </p>
+
+      <h2>The first-night routine that works</h2>
+      <p>
+        The trick to a smooth first evening is doing things in the right order. Cooking while the tent isn&apos;t up, or starting the fire before dinner is prepped, are the two most common rookie errors. Your order of operations:
+      </p>
+      <ol>
+        <li>Park, walk the site, pick the tent spot (flat, no rocks, not under a dead branch)</li>
+        <li>Pitch the tent. Throw the sleeping bags inside so it&apos;s ready for later.</li>
+        <li>Set up the kitchen on the picnic table</li>
+        <li>Start dinner. Eat before sunset.</li>
+        <li>Build the campfire after dinner is cleaned up</li>
+        <li>S&apos;mores, stories, bed</li>
+      </ol>
+      <p>
+        Do it in this sequence and the first night is genuinely enjoyable. Skip the sequence and you end up cooking pasta by headlamp with a hungry 6-year-old on your lap.
+      </p>
+
+      <h2>What &ldquo;a good first trip&rdquo; actually looks like</h2>
+      <p>
+        A good first trip isn&apos;t a transcendent wilderness experience. Set the bar at the right height:
+      </p>
+      <ul>
+        <li>You arrive before sunset and the tent goes up without a fight</li>
+        <li>You cook one hot meal outdoors</li>
+        <li>Everyone sleeps at least 5 hours</li>
+        <li>Nobody gets hurt, nobody gets lost</li>
+        <li>You wake up, drink coffee, and stay another few hours before heading home</li>
+        <li>At least one kid says &ldquo;can we do this again?&rdquo;</li>
+      </ul>
+      <p>
+        That&apos;s it. Notice what&apos;s not on the list: perfect weather, gorgeous photos, a deep wilderness vibe, seeing wildlife. Those are nice when they happen. They are not the measure of success on trip one.
+      </p>
+
+      <h2>Frequently asked</h2>
+      <h3>Do I need a 4-season tent?</h3>
+      <p>
+        No. Unless you&apos;re camping in snow, a standard 3-season dome tent — Coleman Sundome or similar — is the right pick. Four-season tents are built for mountaineering and are overkill (and uncomfortable) for car camping.
+      </p>
+      <h3>Is it safe to camp with young kids?</h3>
+      <p>
+        At an established campground, yes. You&apos;re not in the wilderness — you&apos;re in a managed site with bathrooms, rangers, and other families nearby. The main risks are small: sunburn, bug bites, a kid wandering off. Give each kid a whistle and teach them the site number.
+      </p>
+      <h3>What if it rains?</h3>
+      <p>
+        A dome tent with its rainfly handles a regular rainstorm fine. Problems start when people don&apos;t stake the rainfly out or leave gear outside. If the forecast is genuinely bad — steady rain all weekend, storms — cancel and rebook. You&apos;re not obligated to camp in a downpour on trip one.
+      </p>
+      <h3>Do I need to reserve a site?</h3>
+      <p>
+        Yes. Walk-up sites exist but are unreliable, especially in summer. Book 3–6 weeks ahead at a state park or national forest site through ReserveAmerica or Recreation.gov.
+      </p>
+      <h3>How long should the first trip be?</h3>
+      <p>
+        One night. Seriously. Go home Saturday, sleep in your bed Saturday night, remember what worked and what didn&apos;t, and book a two-night trip for next month.
+      </p>
     </GuidePage>
+    <RelatedGuides currentSlug="camping-for-beginners" />
+    </>
   )
 }

@@ -1,20 +1,77 @@
 import { GuidePage } from '@/components/guide/GuidePage'
-import type { Metadata } from 'next'
+import RelatedGuides from '@/components/guide/RelatedGuides'
+import JsonLd from '@/components/seo/JsonLd'
+import Breadcrumbs from '@/components/seo/Breadcrumbs'
+import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
 
-export const metadata: Metadata = {
-  title: 'Camping With Kids for the First Time — Trailstead Guide',
-  description: 'What changes when kids come along — and how to build a trip they actually enjoy.',
-}
+const SLUG = '/guides/camping-with-kids-first-time'
+const TITLE = 'Camping With Kids for the First Time'
+const DESCRIPTION =
+  'What changes when kids come along — sleep, food, activities, safety — and how to build a first family camping trip they actually enjoy.'
+const HERO_IMAGE = 'https://images.unsplash.com/photo-1674230316788-d9c8b92f0d63?w=1400&auto=format&fit=crop&q=80'
+
+export const metadata = pageMetadata({
+  title: TITLE,
+  description: DESCRIPTION,
+  path: SLUG,
+  type: 'article',
+  image: HERO_IMAGE,
+})
 
 export default function Page() {
   return (
+    <>
+      <JsonLd
+        data={articleGraph({
+          slug: SLUG,
+          title: TITLE,
+          description: DESCRIPTION,
+          image: HERO_IMAGE,
+          breadcrumbs: [
+            { name: 'Home', url: `${SITE_URL}/` },
+            { name: 'Guides', url: `${SITE_URL}/guides` },
+            { name: TITLE, url: `${SITE_URL}${SLUG}` },
+          ],
+        })}
+      />
+      <JsonLd
+        data={faqPageGraph([
+          {
+            q: 'What age can kids start camping?',
+            a: 'Kids can camp at any age — people take infants. But the easiest starting age is 4 to 8. Younger than 4 and the logistics around naps, diapers, and night feeds dominate the trip. School-age kids can entertain themselves and help with small chores.',
+          },
+          {
+            q: 'How do you keep kids warm at night in a tent?',
+            a: 'Dress them in a base layer of long underwear plus a fleece, in a kid-sized sleeping bag rated at least 10 degrees below the forecast low. Beanie on the head, socks on the feet. Never zip a small child into an adult bag — they slip down inside it and lose heat.',
+          },
+          {
+            q: 'What food should I bring camping with kids?',
+            a: 'Bring meals you already know each kid will eat at home. Camp is not the place to debut new food. Over-pack snacks — hunger-driven meltdowns are the number one avoidable disaster. Hot dogs, mac and cheese, cereal with boxed milk, and peanut butter sandwiches all work.',
+          },
+          {
+            q: 'Can a 2-year-old go camping?',
+            a: 'Yes, but pick a one-night trip at a site with flush toilets, under an hour from home. The trip will be exhausting and mostly about managing your toddler, not relaxing. Most parents say the real sweet spot for camping starts at age 4.',
+          },
+          {
+            q: 'What do kids do all day at camp?',
+            a: 'Plan three activities per day or they will be bored and difficult. A morning nature walk with a scavenger hunt list, a quiet afternoon activity at the site like rock painting or reading, and an evening around the fire with s\u2019mores is a proven template.',
+          },
+        ])}
+      />
+      <Breadcrumbs
+        items={[
+          { name: 'Home', url: `${SITE_URL}/` },
+          { name: 'Guides', url: `${SITE_URL}/guides` },
+          { name: TITLE, url: `${SITE_URL}${SLUG}` },
+        ]}
+      />
     <GuidePage
       slug="camping-with-kids-first-time"
       eyebrow="With kids"
       title="Camping With Kids for the First Time"
       lede="Camping with kids is a different activity than camping without them. Here&apos;s what actually changes — and what to plan for."
       heroImage={{
-        src: 'https://images.unsplash.com/photo-1674230316788-d9c8b92f0d63?w=1400&auto=format&fit=crop&q=80',
+        src: HERO_IMAGE,
         alt: 'Two young girls standing next to a tent at their campsite',
       }}
     >
@@ -63,6 +120,94 @@ export default function Page() {
       <p>
         The goal for the first trip is not to create a transcendent nature experience. It&apos;s for them to leave saying &quot;when can we go camping again?&quot; That&apos;s a very low bar — and a structured plan clears it easily.
       </p>
+
+      <h2>The bedtime problem (and how to solve it)</h2>
+      <p>
+        Kids sleep worse at camp on the first night. This is normal, not a sign something&apos;s wrong. Everything is unfamiliar — the sounds, the light, the sleeping bag, the feeling of the ground. What helps:
+      </p>
+      <ul>
+        <li><strong>Keep the bedtime ritual the same.</strong> Same book. Same songs. Same order.</li>
+        <li><strong>Bring a small battery-powered fan.</strong> White noise masks unfamiliar night sounds and camp neighbors.</li>
+        <li><strong>A glow stick or dim LED tap light</strong> inside the tent takes the &ldquo;total pitch black&rdquo; fear off the table.</li>
+        <li><strong>Wear them out before dinner.</strong> A 4pm bike ride or playground visit means they&apos;re actually tired at 8:30.</li>
+        <li><strong>Go to bed earlier than you&apos;d plan at home.</strong> Camp sunset is when the night winds down. Fighting this is losing.</li>
+      </ul>
+      <p>
+        Night one is rough. Night two is usually fine. Build your trip around that reality.
+      </p>
+
+      <h2>Gear that specifically helps with kids</h2>
+      <ul>
+        <li><strong>Kid-sized sleeping bag, not an adult bag.</strong> Adult bags are too long and kids lose body heat in the empty space.</li>
+        <li><strong>A small foam or inflatable pad under the sleeping bag.</strong> Cold ground pulls heat out of kids faster than adults.</li>
+        <li><strong>A headlamp with a red-light mode.</strong> Red light doesn&apos;t wake siblings. Every kid needs their own.</li>
+        <li><strong>Kid-specific camp chair.</strong> They sit more and fight less when they each have a spot.</li>
+        <li><strong>Rain jackets packed at the top of the bag</strong> — kids will be the first ones soaked when the weather turns.</li>
+      </ul>
+
+      <h2>Handling meltdowns and bail-out thresholds</h2>
+      <p>
+        Every kid trip includes at least one rough hour. What distinguishes a fine trip from a disaster is knowing when to push through and when to call it.
+      </p>
+      <ul>
+        <li><strong>Tired + hungry meltdown:</strong> feed them, put them in the tent with a book, wait 45 minutes. This passes.</li>
+        <li><strong>Cold and can&apos;t-warm-up:</strong> this is real. Sit by the fire, hot chocolate, dry clothes. If they can&apos;t warm up in 30 minutes, go home.</li>
+        <li><strong>Sick kid:</strong> go home. No trip is worth a feverish kid in a tent.</li>
+        <li><strong>Everyone&apos;s scared at night:</strong> sleep in the car. No shame. The car is for this.</li>
+      </ul>
+
+      <h2>Screens at camp: a practical take</h2>
+      <p>
+        Every parent agonizes over this. The honest answer: bring the tablet, keep it in the car, use it strategically. Pretending screens don&apos;t exist sets you up for failure. Use them as a tool:
+      </p>
+      <ul>
+        <li><strong>Driving to and from camp:</strong> zero guilt. It&apos;s the car. Screens are car-normal.</li>
+        <li><strong>Rain forces everyone into the tent for two hours:</strong> a pre-downloaded movie saves the trip.</li>
+        <li><strong>Pre-dinner meltdown window while adults cook:</strong> 20 minutes of a show buys you peace. Fine.</li>
+        <li><strong>Around the fire after dinner:</strong> no screens. This is the trip. Games, stories, staring at the flames.</li>
+        <li><strong>First thing in the morning:</strong> no screens. The morning is nature time. Kids will find something.</li>
+      </ul>
+      <p>
+        A rule that&apos;s flexible but clear beats a rule that&apos;s strict but unenforceable. Download two shows and a movie before you leave — the signal at camp will not cooperate.
+      </p>
+
+      <h2>Making the trip memorable (not just survivable)</h2>
+      <p>
+        There&apos;s a difference between &ldquo;we did it&rdquo; and &ldquo;when can we go again?&rdquo; The trick is picking one or two details you deliberately make special, so the kids remember those instead of the rough parts:
+      </p>
+      <ul>
+        <li><strong>One &ldquo;only at camp&rdquo; treat.</strong> S&apos;mores, Pop-Tarts cooked on a stick, hot chocolate at sunrise — something they don&apos;t get at home.</li>
+        <li><strong>One special ritual.</strong> Each kid picks a rock or leaf to bring home. Each night ends with a ghost story. A morning walk before breakfast just with Dad.</li>
+        <li><strong>One photo ritual.</strong> Same pose, same spot, every trip. A visual record they look forward to adding to.</li>
+        <li><strong>One job each kid owns.</strong> Firewood gatherer, head flashlight-holder, tent-stake counter. Ownership turns boring setup into &ldquo;their&rdquo; contribution.</li>
+      </ul>
+      <p>
+        Kids don&apos;t remember gear, weather, or logistics. They remember the weird little things. Plant those deliberately.
+      </p>
+
+      <h2>Frequently asked</h2>
+      <h3>What age can kids start camping?</h3>
+      <p>
+        Any age, but 4 to 8 is the easiest on-ramp. Under 4 and the nap/diaper logistics dominate the trip.
+      </p>
+      <h3>How do you keep kids warm at night in a tent?</h3>
+      <p>
+        Base layer + fleece inside a kid-sized sleeping bag rated 10&deg;F below the forecast low. Beanie and socks. Don&apos;t put small kids in adult bags.
+      </p>
+      <h3>What food should I bring camping with kids?</h3>
+      <p>
+        Only meals you know they&apos;ll eat. Over-pack snacks. Hot dogs, mac and cheese, cereal, PB&amp;J all work.
+      </p>
+      <h3>Can a 2-year-old go camping?</h3>
+      <p>
+        Yes, but stay one night, flush toilets, under an hour from home. It&apos;s more work than relaxation at that age.
+      </p>
+      <h3>What do kids do all day at camp?</h3>
+      <p>
+        Plan three activities per day: morning walk, afternoon quiet activity at the site, evening fire with s&apos;mores.
+      </p>
     </GuidePage>
+    <RelatedGuides currentSlug="camping-with-kids-first-time" />
+    </>
   )
 }

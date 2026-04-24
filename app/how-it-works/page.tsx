@@ -1,10 +1,13 @@
 import Link from 'next/link'
-import type { Metadata } from 'next'
+import { pageMetadata, SITE_URL } from '@/lib/seo'
+import Breadcrumbs from '@/components/seo/Breadcrumbs'
 
-export const metadata: Metadata = {
-  title: 'How It Works — Trailstead Guide',
-  description: 'How the Trailstead planner turns 5 questions into a complete camping trip plan.',
-}
+export const metadata = pageMetadata({
+  title: 'How It Works',
+  description:
+    'How the Trailstead planner turns 5 quick questions into a complete camping trip plan — timeline, gear, meals, and activities scaled to your family.',
+  path: '/how-it-works',
+})
 
 const steps = [
   {
@@ -32,6 +35,13 @@ const steps = [
 export default function Page() {
   return (
     <main>
+      <Breadcrumbs
+        emitSchema
+        items={[
+          { name: 'Home', url: `${SITE_URL}/` },
+          { name: 'How It Works', url: `${SITE_URL}/how-it-works` },
+        ]}
+      />
       <header className="max-w-page mx-auto px-8 pt-16 md:pt-24 pb-12">
         <p className="text-xs font-semibold tracking-widest uppercase text-stone-500 mb-4">How it works</p>
         <h1 className="font-serif text-5xl md:text-7xl font-semibold text-stone-950 tracking-tight leading-tight max-w-4xl">
