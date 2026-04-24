@@ -9,6 +9,7 @@ import KidActivityPlan from '@/components/plan/KidActivityPlan'
 import SafetyNotes from '@/components/plan/SafetyNotes'
 import AffiliateBlock from '@/components/plan/AffiliateBlock'
 import PostPlanEmailCapture from '@/components/plan/PostPlanEmailCapture'
+import FloatingEmailBar from '@/components/plan/FloatingEmailBar'
 
 export const metadata: Metadata = {
   title: 'First Night Camp Plan | Trailstead Guide',
@@ -40,6 +41,7 @@ export default function FirstNightCampPage() {
       <SafetyNotes notes={plan.safetyNotes} />
       <AffiliateBlock products={products} />
       <PostPlanEmailCapture planSlug="first-night-camp" />
+      <FloatingEmailBar planSlug="first-night-camp" />
     </main>
   )
 }
