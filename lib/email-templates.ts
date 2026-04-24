@@ -50,7 +50,7 @@ export function getPlanEmail(planSlug: string): PlanEmail | null {
         <table role="presentation" width="560" cellpadding="0" cellspacing="0" border="0" style="max-width:560px; background:#ffffff; border-radius:16px; overflow:hidden;">
           <tr>
             <td style="padding:40px 40px 24px 40px;">
-              <p style="margin:0 0 8px 0; font-size:13px; letter-spacing:0.08em; text-transform:uppercase; color:#78716c;">Trailstead Guide</p>
+              <img src="${SITE_URL}/images/logo_masthead.png" alt="Trailstead Guide" width="160" style="display:block; height:auto; margin:0 0 28px 0; max-width:160px;">
               <h1 style="margin:0 0 20px 0; font-family:Georgia,serif; font-size:28px; line-height:1.25; font-weight:600; color:#0c0a09;">
                 Your ${meta.label.toLowerCase()} plan is ready.
               </h1>
