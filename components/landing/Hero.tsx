@@ -4,37 +4,64 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect, useRef } from 'react'
 
+/**
+ * Hero with cinematic scroll-driven expansion.
+ *
+ * IMPORTANT: the resting (un-scrolled) state uses plain Tailwind classes so
+ * it renders correctly on the very first paint — even in production where
+ * styled-jsx CSS can arrive a frame late. The scroll-driven transforms are
+ * applied as inline styles on a rAF-throttled scroll handler; at rest we
+ * remove them entirely so the Tailwind classes win.
+ */
 export default function Hero() {
   const wrapRef = useRef<HTMLElement>(null)
-  const imageBoxRef = useRef<HTMLDivElement>(null)
+  const outerRef = useRef<HTMLDivElement>(null)
+  const boxRef = useRef<HTMLDivElement>(null)
+  const imgWrapRef = useRef<HTMLDivElement>(null)
   const textRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     let raf = 0
+
     const apply = () => {
       raf = 0
       const wrap = wrapRef.current
-      const imageBox = imageBoxRef.current
+      const outer = outerRef.current
+      const box = boxRef.current
+      const imgWrap = imgWrapRef.current
       const text = textRef.current
-      if (!wrap || !imageBox || !text) return
+      if (!wrap || !outer || !box || !imgWrap || !text) return
 
-      // Progress: 0 at top of page, 1 when hero has scrolled past its expansion window.
       const rect = wrap.getBoundingClientRect()
       const vh = window.innerHeight || 1
-      // Start expanding as soon as user scrolls; fully expanded after ~0.9 * viewport of scroll.
-      const start = 0
       const end = vh * 0.9
-      const scrolled = Math.max(0, -rect.top + start)
-      const progress = Math.max(0, Math.min(1, scrolled / (end - start)))
-
-      // Ease out for more cinematic feel
+      const scrolled = Math.max(0, -rect.top)
+      const progress = Math.max(0, Math.min(1, scrolled / end))
       const eased = 1 - Math.pow(1 - progress, 2)
 
-      // Set on the root so all descendants (outer, box, text) inherit it.
-      wrap.style.setProperty('--hero-progress', String(eased))
-      // Also set on the image element so transform picks it up (scoped styles).
-      imageBox.style.setProperty('--hero-progress', String(eased))
-      text.style.setProperty('--hero-progress', String(eased))
+      // Match Tailwind's responsive side padding: px-4 (1rem) on mobile, px-8 (2rem) on md+
+      const sidePadRem = window.innerWidth <= 767 ? 1.25 : 2
+
+      if (eased <= 0.001) {
+        // At rest: let Tailwind base classes own layout. This is the fix for
+        // the "huge-then-settles" flash on first paint.
+        outer.style.removeProperty('padding-left')
+        outer.style.removeProperty('padding-right')
+        outer.style.removeProperty('max-width')
+        box.style.removeProperty('border-radius')
+        imgWrap.style.removeProperty('transform')
+        text.style.removeProperty('opacity')
+        text.style.removeProperty('transform')
+        return
+      }
+
+      outer.style.paddingLeft = `calc((1 - ${eased}) * ${sidePadRem}rem)`
+      outer.style.paddingRight = `calc((1 - ${eased}) * ${sidePadRem}rem)`
+      outer.style.maxWidth = `calc(90rem + (100vw - 90rem) * ${eased})`
+      box.style.borderRadius = `calc((1 - ${eased}) * 1.5rem)`
+      imgWrap.style.transform = `scale(${1 + eased * 0.03})`
+      text.style.opacity = String(1 - eased * 0.35)
+      text.style.transform = `translateY(${eased * -12}px)`
     }
 
     const onScroll = () => {
@@ -42,9 +69,16 @@ export default function Hero() {
       raf = window.requestAnimationFrame(apply)
     }
 
-    apply()
-    window.addEventListener('scroll', onScroll, { passive: true })
-    window.addEventListener('resize', onScroll)
+    // Respect reduced motion — never apply the transforms
+    const reduce =
+      typeof window !== 'undefined' &&
+      window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
+    if (!reduce) {
+      apply()
+      window.addEventListener('scroll', onScroll, { passive: true })
+      window.addEventListener('resize', onScroll)
+    }
+
     return () => {
       window.removeEventListener('scroll', onScroll)
       window.removeEventListener('resize', onScroll)
@@ -53,9 +87,9 @@ export default function Hero() {
   }, [])
 
   return (
-    <section ref={wrapRef} className="hero-root">
+    <section ref={wrapRef}>
       <div className="max-w-page mx-auto px-8 pt-14 md:pt-24 pb-10 md:pb-16">
-        <div ref={textRef} className="hero-text max-w-4xl">
+        <div ref={textRef} className="max-w-4xl" style={{ willChange: 'opacity, transform' }}>
           <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-semibold text-stone-950 tracking-tight leading-[1.08] mb-5 md:mb-6">
             Plan your first family camping trip in 2 minutes.
           </h1>
@@ -77,72 +111,29 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Full-width expanding image — keeps height, widens to full viewport on scroll */}
-      <div className="hero-image-outer">
-        <div ref={imageBoxRef} className="hero-image-box">
-          <Image
-            src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=1600&auto=format&fit=crop&q=80"
-            alt="Family camping in a forest clearing at golden hour"
-            fill
-            className="object-cover hero-image-img"
-            priority
-            unoptimized
-          />
+      {/* Resting state: max-w-page with Tailwind padding + rounded-2xl. No CSS
+          vars, no styled-jsx — renders correctly on the very first paint. */}
+      <div
+        ref={outerRef}
+        className="w-full max-w-page mx-auto px-4 md:px-8 pb-8"
+      >
+        <div
+          ref={boxRef}
+          className="relative w-full h-[55vh] min-h-[420px] rounded-2xl overflow-hidden"
+        >
+          <div ref={imgWrapRef} className="absolute inset-0" style={{ willChange: 'transform' }}>
+            <Image
+              src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=1600&auto=format&fit=crop&q=80"
+              alt="Family camping in a forest clearing at golden hour"
+              fill
+              className="object-cover"
+              priority
+              unoptimized
+            />
+          </div>
           <div className="absolute inset-0 bg-gradient-to-t from-stone-950/50 via-transparent to-transparent" />
         </div>
       </div>
-
-      <style jsx>{`
-        .hero-root {
-          --hero-progress: 0;
-        }
-        .hero-text {
-          /* subtle drift & fade as user scrolls past */
-          opacity: calc(1 - var(--hero-progress, 0) * 0.35);
-          transform: translateY(calc(var(--hero-progress, 0) * -12px));
-          transition: opacity 120ms linear;
-        }
-        /* Horizontal-only expansion: height stays fixed; side padding and
-           radius collapse to 0 so the image fills the full viewport width. */
-        .hero-image-outer {
-          width: 100%;
-          padding-bottom: 2rem;
-          padding-left: calc((1 - var(--hero-progress, 0)) * 2rem);
-          padding-right: calc((1 - var(--hero-progress, 0)) * 2rem);
-          max-width: calc(90rem + (100vw - 90rem) * var(--hero-progress, 0));
-          margin-left: auto;
-          margin-right: auto;
-        }
-        .hero-image-box {
-          position: relative;
-          width: 100%;
-          height: 55vh;
-          min-height: 420px;
-          border-radius: calc((1 - var(--hero-progress, 0)) * 1.5rem);
-          overflow: hidden;
-        }
-        .hero-image-img {
-          transform: scale(calc(1 + var(--hero-progress, 0) * 0.03));
-          transition: none;
-        }
-        @media (max-width: 767px) {
-          .hero-image-outer {
-            max-width: none;
-            padding-left: calc((1 - var(--hero-progress, 0)) * 1.25rem);
-            padding-right: calc((1 - var(--hero-progress, 0)) * 1.25rem);
-          }
-        }
-        @media (prefers-reduced-motion: reduce) {
-          .hero-text,
-          .hero-image-outer,
-          .hero-image-box,
-          .hero-image-img {
-            transition: none;
-            transform: none;
-            opacity: 1;
-          }
-        }
-      `}</style>
     </section>
   )
 }

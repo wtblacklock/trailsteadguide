@@ -78,26 +78,15 @@ export function GuidePage({ eyebrow = 'Guide', title, lede, heroImage, slug, chi
           <p className="text-xs font-semibold tracking-[0.18em] uppercase text-stone-500 mb-8">
             Keep reading
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-            <Link href={related.href} className="group block">
-              <p className="text-xs uppercase tracking-widest text-stone-400 mb-2">Next guide</p>
-              <p className="font-serif text-2xl md:text-3xl font-medium text-stone-900 tracking-tight leading-snug group-hover:text-stone-600 transition-colors">
-                {related.label}
-              </p>
-              {related.description && (
-                <p className="text-stone-500 mt-2 leading-relaxed">{related.description}</p>
-              )}
-            </Link>
-            <Link href="/#example" className="group block">
-              <p className="text-xs uppercase tracking-widest text-stone-400 mb-2">See it in action</p>
-              <p className="font-serif text-2xl md:text-3xl font-medium text-stone-900 tracking-tight leading-snug group-hover:text-stone-600 transition-colors">
-                Example plan
-              </p>
-              <p className="text-stone-500 mt-2 leading-relaxed">
-                What the final plan actually looks like.
-              </p>
-            </Link>
-          </div>
+          <Link href={related.href} className="group block">
+            <p className="text-xs uppercase tracking-widest text-stone-400 mb-2">Next guide</p>
+            <p className="font-serif text-2xl md:text-3xl font-medium text-stone-900 tracking-tight leading-snug group-hover:text-stone-600 transition-colors">
+              {related.label}
+            </p>
+            {related.description && (
+              <p className="text-stone-500 mt-2 leading-relaxed">{related.description}</p>
+            )}
+          </Link>
         </div>
       </section>
     </article>
