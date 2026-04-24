@@ -9,7 +9,8 @@
   }
 
   body {
-    @apply bg-stone-50 text-stone-900;
+    @apply text-stone-950;
+    background-color: #F5F3EE;
   }
 
   h1, h2, h3 {

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter, Lora } from 'next/font/google'
 import './globals.css'
+import Nav from '@/components/landing/Nav'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -22,7 +23,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${inter.variable} ${lora.variable}`}>
-      <body className="font-sans">{children}</body>
+      <body className="font-sans">
+        <Nav />
+        {children}
+      </body>
     </html>
   )
 }

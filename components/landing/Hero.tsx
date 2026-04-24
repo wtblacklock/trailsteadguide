@@ -3,53 +3,47 @@ import Link from 'next/link'
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[92vh] flex items-center">
-      {/* Background image */}
-      <div className="absolute inset-0 z-0">
-        <Image
-          src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=1600&auto=format&fit=crop&q=80"
-          alt="Family camping in a forest clearing at golden hour"
-          fill
-          className="object-cover"
-          priority
-          unoptimized
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-stone-900/60 via-stone-900/40 to-stone-900/70" />
+    <section>
+      {/* Upper: open cream space with large serif headline offset to right */}
+      <div className="max-w-page mx-auto px-8 pt-24 pb-16">
+        <div className="grid grid-cols-12 gap-6">
+          {/* Left col: small label anchored bottom */}
+          <div className="col-span-4 flex items-end pb-2">
+            <p className="text-stone-400 text-sm">For first-time families</p>
+          </div>
+          {/* Right col: big headline + CTA */}
+          <div className="col-span-8">
+            <h1 className="font-serif text-6xl md:text-7xl lg:text-8xl font-semibold text-stone-950 tracking-tight leading-[1.05] mb-10">
+              Your family&apos;s first camping trip, planned in 10 minutes.
+            </h1>
+            <div className="flex flex-wrap items-center gap-6">
+              <Link
+                href="/quiz"
+                className="inline-flex items-center justify-center rounded-md font-medium bg-stone-900 text-white hover:bg-stone-800 transition-colors px-8 py-4 text-base"
+              >
+                Start Your Trailstead Plan
+              </Link>
+              <a href="#example" className="text-base text-stone-500 hover:text-stone-700 transition-colors underline underline-offset-4">
+                See example plan
+              </a>
+            </div>
+            <p className="text-stone-400 text-sm mt-6">Free · No account required · About 2 minutes</p>
+          </div>
+        </div>
       </div>
 
-      {/* Content */}
-      <div className="relative z-10 w-full max-w-content mx-auto px-6 py-32">
-        <div className="max-w-2xl">
-          <p className="text-stone-300 text-sm font-medium tracking-widest uppercase mb-6">
-            For first-time families
-          </p>
-          <h1 className="font-serif text-5xl md:text-6xl font-semibold text-white leading-tight mb-6">
-            Your first camping trip,
-            <br />
-            planned in 10 minutes.
-          </h1>
-          <p className="text-stone-200 text-xl leading-relaxed mb-10 max-w-lg">
-            Answer a few questions. Get a personalized plan — trip timeline, gear checklist, kid activities, and safety guidance. Built for families who have never done this before.
-          </p>
-
-          <div className="flex flex-wrap gap-4">
-            <Link
-              href="/quiz"
-              className="inline-flex items-center justify-center rounded-md font-medium transition-colors duration-150 bg-stone-900 text-white hover:bg-stone-800 px-8 py-4 text-lg"
-            >
-              Start Your Trailstead Plan
-            </Link>
-            <a
-              href="#example"
-              className="inline-flex items-center justify-center rounded-md font-medium transition-colors duration-150 border border-white/30 text-white bg-white/10 hover:bg-white/20 px-8 py-4 text-lg"
-            >
-              See Example Plan
-            </a>
-          </div>
-
-          <p className="text-stone-400 text-sm mt-6">
-            Free · No account required · Takes about 2 minutes
-          </p>
+      {/* Lower: full-width rounded image card */}
+      <div className="max-w-page mx-auto px-8 pb-8">
+        <div className="relative h-[55vh] min-h-[420px] rounded-3xl overflow-hidden">
+          <Image
+            src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=1600&auto=format&fit=crop&q=80"
+            alt="Family camping in a forest clearing at golden hour"
+            fill
+            className="object-cover"
+            priority
+            unoptimized
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-stone-950/50 via-transparent to-transparent" />
         </div>
       </div>
     </section>

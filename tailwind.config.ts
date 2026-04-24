@@ -19,10 +19,12 @@ const config: Config = {
           brown: '#5c3d1e',
           earth: '#8b6345',
         },
+        cream: '#F5F3EE',
       },
       maxWidth: {
         content: '48rem',
         wide: '72rem',
+        page: '80rem',
       },
       animation: {
         'fade-in': 'fadeIn 0.4s ease-out',
