@@ -12,30 +12,24 @@ type Props = {
 const STORAGE_KEY = 'tsg:floating-email-dismissed'
 
 /**
- * Floating bottom bar that appears after ~400px of scroll.
+ * Floating bottom bar — renders on every plan page from initial mount.
  * Two calls to action:
  *   1. Email this plan (lightweight capture to /api/subscribe)
  *   2. Download the Trip Pack PDF — routes to /trip-pack/<slug>
+ *
+ * Dismissal is sticky for the session via sessionStorage.
  */
 export default function FloatingEmailBar({ planSlug, adults, kids }: Props) {
-  const [visible, setVisible] = useState(false)
+  const [visible, setVisible] = useState(true)
   const [email, setEmail] = useState('')
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
 
   useEffect(() => {
     if (typeof window === 'undefined') return
-    if (sessionStorage.getItem(STORAGE_KEY) === planSlug) return
-
-    const onScroll = () => {
-      if (window.scrollY > 400) {
-        setVisible(true)
-        window.removeEventListener('scroll', onScroll)
-      }
+    // Honor a previous dismiss for this plan in the same tab session.
+    if (sessionStorage.getItem(STORAGE_KEY) === planSlug) {
+      setVisible(false)
     }
-
-    window.addEventListener('scroll', onScroll, { passive: true })
-    onScroll()
-    return () => window.removeEventListener('scroll', onScroll)
   }, [planSlug])
 
   async function handleSubmit(e: React.FormEvent) {
