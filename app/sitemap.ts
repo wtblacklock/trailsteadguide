@@ -6,6 +6,7 @@
 // actually changes. We bucket URLs into three tiers.
 
 import { MetadataRoute } from 'next'
+import { ACTIVITIES } from '@/lib/activities/data'
 
 const BASE_URL = 'https://www.trailsteadguide.com'
 
@@ -33,6 +34,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/plan/first-night-camp`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/plan/first-weekend-camp`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/plan/easy-family-basecamp`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.8 },
+
+    // Activities
+    { url: `${BASE_URL}/activities`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.8 },
+    ...ACTIVITIES.map((a) => ({
+      url: `${BASE_URL}/activities/${a.slug}`,
+      lastModified: FRESH,
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
+    })),
 
     // Tools
     { url: `${BASE_URL}/tools`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.7 },
