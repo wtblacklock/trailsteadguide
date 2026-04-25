@@ -9,6 +9,8 @@
 import { Resend } from 'resend'
 import type { PlanSlug } from '@/types'
 
+const SITE_URL = 'https://www.trailsteadguide.com'
+
 const PLAN_TITLES: Record<PlanSlug, string> = {
   'backyard-test': 'Backyard Test Night',
   'first-night-camp': 'First Night Camp',
@@ -41,6 +43,7 @@ export async function sendTripPackEmail(args: SendArgs): Promise<{ ok: boolean; 
 <html><body style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;background:#f5efe2;margin:0;padding:32px 16px;color:#1f2622;">
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:560px;margin:0 auto;background:#ffffff;border-radius:16px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,0.05);">
     <tr><td style="padding:28px 32px 12px;">
+      <img src="${SITE_URL}/images/logo_masthead.png" alt="Trailstead Guide" width="160" style="display:block; height:auto; margin:0 0 28px 0; max-width:160px;">
       <div style="font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#3a5a3e;font-weight:600;margin-bottom:8px;">Trailstead Trip Pack</div>
       <h1 style="font-size:26px;line-height:1.2;margin:0 0 8px;color:#1f3622;font-weight:700;letter-spacing:-0.4px;">Your ${title} pack is ready.</h1>
       <p style="margin:0;color:#5a6b5e;font-size:14px;">Thanks for your order. The ${tierLabel} Trip Pack is waiting below.</p>
