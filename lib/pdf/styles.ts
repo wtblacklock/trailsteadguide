@@ -31,17 +31,19 @@ export const PDF_STYLES = `
   }
   .page {
     width: 210mm;
-    padding: 16mm 16mm 18mm;
+    padding: 16mm 16mm 12mm;
     break-before: page;
     page-break-before: always;
     page-break-inside: auto;
     background: #ffffff;
   }
 
-  /* Footer strip — sits at end of each logical section */
+  /* Footer strip — sits at end of each logical section. Slim margin-top so
+     the footer fits inside the section's page even when content is dense;
+     break-inside: avoid keeps it from splitting across pages on its own. */
   .footer {
-    margin-top: 14mm;
-    padding-top: 5mm;
+    margin-top: 6mm;
+    padding-top: 4mm;
     border-top: 1px solid #ece4d2;
     display: flex;
     justify-content: space-between;
@@ -50,6 +52,8 @@ export const PDF_STYLES = `
     font-size: 8pt;
     color: #8a9088;
     letter-spacing: 0.4px;
+    break-inside: avoid;
+    page-break-inside: avoid;
   }
   .footer-wordmark {
     font-size: 8pt;
@@ -176,24 +180,24 @@ export const PDF_STYLES = `
 
   /* PACKING LIST */
   .packing-grid {
-    display: grid; grid-template-columns: 1fr 1fr; gap: 14px 18px;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 8px 18px;
   }
   .packing-cat {
     background: #fffaf0;
     border: 1px solid #ece4d2;
     border-radius: 8px;
-    padding: 12px 14px;
+    padding: 9px 14px;
     page-break-inside: avoid;
     break-inside: avoid;
   }
   .packing-cat-title {
     font-size: 9.5pt; font-weight: 700; letter-spacing: 1.5px;
     text-transform: uppercase; color: #3a5a3e;
-    margin: 0 0 6px;
+    margin: 0 0 5px;
   }
   .packing-item {
     display: flex; gap: 8px; align-items: baseline;
-    font-size: 9.5pt; color: #2c332e; padding: 2px 0;
+    font-size: 9.5pt; color: #2c332e; padding: 1px 0;
   }
   .packing-item .box {
     flex: 0 0 10px; height: 10px; border: 1.5px solid #3a5a3e;
