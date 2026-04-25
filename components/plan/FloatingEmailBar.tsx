@@ -9,7 +9,10 @@ type Props = {
   kids?: number
 }
 
-const STORAGE_KEY = 'tsg:floating-email-dismissed'
+// Per-pageview dismissal key. Reset across navigations so the bar
+// reliably appears on every plan view; only an X click in the current
+// view suppresses it.
+const STORAGE_KEY = 'tsg:floating-email-dismissed-v2'
 
 /**
  * Floating bottom bar — renders on every plan page from initial mount.
@@ -24,13 +27,12 @@ export default function FloatingEmailBar({ planSlug, adults, kids }: Props) {
   const [email, setEmail] = useState('')
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
 
+  // Clear any stale per-tab dismissal so each fresh plan view shows the
+  // bar. Dismissal still works within the current view via dismiss().
   useEffect(() => {
     if (typeof window === 'undefined') return
-    // Honor a previous dismiss for this plan in the same tab session.
-    if (sessionStorage.getItem(STORAGE_KEY) === planSlug) {
-      setVisible(false)
-    }
-  }, [planSlug])
+    sessionStorage.removeItem(STORAGE_KEY)
+  }, [])
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
