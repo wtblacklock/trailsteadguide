@@ -59,6 +59,25 @@ export type ActivityItem = {
   ageGroup: KidsAgeGroup | 'all'
 }
 
+/**
+ * A reference from a plan to a curated skill, with a per-plan rationale
+ * explaining why the skill matters for THIS trip. The rationale belongs to
+ * the plan-skill relationship, not to the skill itself, so different plans
+ * can frame the same skill differently.
+ */
+export type PlanSkillRef = {
+  /** Slash-separated `categorySlug/skillSlug`, e.g. 'knots/taut-line-hitch'. */
+  skillSlug: string
+  rationale: string
+}
+
+export type PlanActivitySchedule = {
+  /** Activity slugs scheduled for day 1. */
+  day1: string[]
+  /** Optional day 2 schedule. Single-night plans omit this. */
+  day2?: string[]
+}
+
 export type IngredientCategory =
   | 'protein'
   | 'produce'
@@ -107,6 +126,12 @@ export type PlanTemplate = {
   activities: ActivityItem[]
   safetyNotes: string[]
   meals: Meal[]
+  /** Activity slugs curated for this plan (3–5 total). */
+  recommendedActivities: string[]
+  /** Skills curated for this plan, with per-plan rationale (3–4 max). */
+  recommendedSkills: PlanSkillRef[]
+  /** Day-by-day activity schedule. Each slug must appear in `recommendedActivities`. */
+  activitySchedule: PlanActivitySchedule
 }
 
 export type AffiliateProduct = {
