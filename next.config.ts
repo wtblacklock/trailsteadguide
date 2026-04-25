@@ -40,6 +40,14 @@ const securityHeaders = [
 ]
 
 const nextConfig: NextConfig = {
+  // Keep @sparticuz/chromium and puppeteer-core as external CommonJS modules
+  // so Turbopack doesn't try to bundle the native + brotli binaries.
+  serverExternalPackages: ['@sparticuz/chromium', 'puppeteer-core'],
+  // Tell Vercel's file tracer to include chromium's bin/ folder (which
+  // holds the brotli-compressed Chromium build) in the function bundle.
+  outputFileTracingIncludes: {
+    '/api/generate-pdf': ['./node_modules/@sparticuz/chromium/**/*'],
+  },
   images: {
     formats: ['image/avif', 'image/webp'],
     remotePatterns: [
