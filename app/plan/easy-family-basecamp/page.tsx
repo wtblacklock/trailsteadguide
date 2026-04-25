@@ -6,7 +6,8 @@ import PlanJumpNav from '@/components/plan/PlanJumpNav'
 import Timeline from '@/components/plan/Timeline'
 import GearList from '@/components/plan/GearList'
 import KidActivityPlan from '@/components/plan/KidActivityPlan'
-import RecommendedActivities from '@/components/activities/RecommendedActivities'
+import ActivityScheduleBlock from '@/components/plan/ActivityScheduleBlock'
+import SkillsSummaryBlock from '@/components/plan/SkillsSummaryBlock'
 import SafetyNotes from '@/components/plan/SafetyNotes'
 import AffiliateBlock from '@/components/plan/AffiliateBlock'
 import TripPackCta from '@/components/plan/TripPackCta'
@@ -89,7 +90,8 @@ export default async function EasyFamilyBasecampPage({
         links={[
           { id: 'timeline', label: 'Timeline' },
           { id: 'gear', label: 'Gear' },
-          { id: 'activities', label: 'Activities' },
+          { id: 'activities', label: 'What You’ll Do' },
+          { id: 'skills', label: 'Skills' },
           { id: 'meals', label: 'Meals' },
           { id: 'safety', label: 'Safety' },
           ...(products.length > 0 ? [{ id: 'shop', label: 'Shop' }] : []),
@@ -99,11 +101,10 @@ export default async function EasyFamilyBasecampPage({
       <div id="gear" className="scroll-mt-32"><GearList items={gearItems} /></div>
       <div id="activities" className="scroll-mt-32">
         <KidActivityPlan activities={activityItems} />
-        <RecommendedActivities
-          planSlug="easy-family-basecamp"
-          kidsAgeGroups={['3-6', '7-12']}
-          partySize={{ adults, kids }}
-        />
+        <ActivityScheduleBlock schedule={plan.activitySchedule} />
+      </div>
+      <div id="skills" className="scroll-mt-32">
+        <SkillsSummaryBlock skillRefs={plan.recommendedSkills} />
       </div>
       <div id="meals" className="scroll-mt-32"><MealPlanAndShopping meals={plan.meals} defaultAdults={adults} defaultKids={kids} /></div>
       <div id="safety" className="scroll-mt-32"><SafetyNotes notes={plan.safetyNotes} /></div>
