@@ -298,4 +298,86 @@ export const PDF_STYLES = `
     border: 1.5px solid #c9d6cb; border-radius: 2px;
     transform: translateY(2px);
   }
+
+  /* ACTIVITIES PLAN */
+  .activity-pdf-day {
+    font-size: 10pt; font-weight: 700; letter-spacing: 2px;
+    text-transform: uppercase; color: #1f3622;
+    margin: 0 0 8px; padding-bottom: 5px; border-bottom: 1.5px solid #1f3622;
+  }
+  .activity-pdf-day + .activity-pdf-grid { margin-bottom: 18px; }
+  .activity-pdf-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
+    margin-bottom: 14px;
+  }
+  .activity-pdf-card {
+    background: #f8f4ea;
+    border: 1px solid #ece4d2;
+    border-radius: 8px;
+    padding: 11px 13px;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+  .activity-pdf-title {
+    font-size: 10.5pt; font-weight: 700; color: #1f2622;
+    margin: 0 0 4px; line-height: 1.25;
+  }
+  .activity-pdf-tagline {
+    font-size: 9pt; color: #4a5450; margin: 0 0 6px; line-height: 1.45;
+  }
+  .activity-pdf-badges {
+    display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 6px;
+  }
+  .activity-pdf-badges span {
+    font-size: 7.5pt; font-weight: 600; letter-spacing: 0.5px;
+    text-transform: uppercase;
+    background: #ece4d2; color: #3a5a3e;
+    padding: 2px 7px; border-radius: 999px;
+  }
+  .activity-pdf-preview {
+    font-size: 8.5pt; color: #4a5450; margin: 0; line-height: 1.45;
+    font-style: italic;
+  }
+
+  /* SKILLS USED */
+  .skill-pdf-card {
+    background: #fffaf0;
+    border: 1px solid #ece4d2;
+    border-radius: 8px;
+    padding: 12px 14px;
+    margin-bottom: 10px;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+  .skill-pdf-cat {
+    display: inline-block;
+    font-size: 7.5pt; font-weight: 700; letter-spacing: 1.2px;
+    text-transform: uppercase; color: #3a5a3e;
+    background: #ece4d2; padding: 3px 8px; border-radius: 999px;
+    margin-bottom: 6px;
+  }
+  .skill-pdf-title {
+    font-size: 11pt; font-weight: 700; color: #1f2622;
+    margin: 0 0 3px; line-height: 1.25;
+  }
+  .skill-pdf-tagline {
+    font-size: 9pt; color: #4a5450; margin: 0 0 6px; line-height: 1.45;
+  }
+  .skill-pdf-rationale {
+    font-size: 9pt; color: #2c332e; margin: 0 0 8px; line-height: 1.5;
+  }
+  .skill-pdf-rationale b { color: #1f3622; font-weight: 700; }
+  .skill-pdf-steps {
+    list-style: none; padding: 0; margin: 0 0 8px;
+  }
+  .skill-pdf-steps li {
+    font-size: 9pt; color: #2c332e; margin: 0 0 4px; line-height: 1.45;
+    padding-left: 0;
+  }
+  .skill-pdf-num {
+    font-weight: 700; color: #3a5a3e; margin-right: 4px;
+  }
+  .skill-pdf-link {
+    font-size: 8pt; color: #6a7268; margin: 0; letter-spacing: 0.3px;
+  }
 `
