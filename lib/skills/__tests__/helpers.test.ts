@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { getCategoryBySlug } from '../categories'
-import { getSkillBySlugs, getSkillsByCategoryId, getPopulatedCategories } from '../helpers'
+import { getSkillBySlugs, getSkillsByCategoryId, getPopulatedCategories, getSkillByRef } from '../helpers'
 
 describe('getCategoryBySlug', () => {
   it('returns a category for a known slug', () => {
@@ -45,5 +45,32 @@ describe('getPopulatedCategories', () => {
     for (const cat of populated) {
       expect(getSkillsByCategoryId(cat.id).length).toBeGreaterThan(0)
     }
+  })
+})
+
+describe('getSkillByRef', () => {
+  it('returns skill + category for a valid category/skill slug', () => {
+    const result = getSkillByRef('knots/taut-line-hitch')
+    expect(result).not.toBeNull()
+    expect(result!.skill.slug).toBe('taut-line-hitch')
+    expect(result!.skill.category).toBe('knots')
+    expect(result!.category.slug).toBe('knots')
+    expect(result!.category.id).toBe('knots')
+  })
+
+  it('returns null for an unknown category', () => {
+    expect(getSkillByRef('made-up/whatever')).toBeNull()
+  })
+
+  it('returns null for an unknown skill in a real category', () => {
+    expect(getSkillByRef('knots/no-such-knot')).toBeNull()
+  })
+
+  it('returns null for a malformed slug (no slash)', () => {
+    expect(getSkillByRef('taut-line-hitch')).toBeNull()
+  })
+
+  it('returns null for an empty string', () => {
+    expect(getSkillByRef('')).toBeNull()
   })
 })

@@ -40,4 +40,23 @@ export function getPopulatedCategories(): SkillCategory[] {
   return SKILL_CATEGORIES.filter((c) => (SKILLS_BY_CATEGORY[c.id]?.length ?? 0) > 0)
 }
 
+/**
+ * Look up a skill by its plan-template reference slug, e.g.
+ * `knots/taut-line-hitch`. Returns null for malformed slugs,
+ * unknown categories, or unknown skills.
+ */
+export function getSkillByRef(
+  ref: string,
+): { skill: Skill; category: SkillCategory } | null {
+  const slash = ref.indexOf('/')
+  if (slash <= 0 || slash === ref.length - 1) return null
+  const categorySlug = ref.slice(0, slash)
+  const skillSlug = ref.slice(slash + 1)
+  const category = getCategoryBySlug(categorySlug)
+  if (!category) return null
+  const skill = getSkillBySlugs(categorySlug, skillSlug)
+  if (!skill) return null
+  return { skill, category }
+}
+
 export { SKILLS, SKILL_CATEGORIES }
