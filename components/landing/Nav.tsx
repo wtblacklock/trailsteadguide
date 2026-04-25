@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
+import { usePathname } from 'next/navigation'
 import { useEffect, useRef, useState } from 'react'
 import { GUIDE_LINKS, TOOL_LINKS } from '@/lib/nav-config'
 
@@ -11,6 +12,13 @@ export default function Nav() {
   const [open, setOpen] = useState<OpenMenu>(null)
   const [mobileOpen, setMobileOpen] = useState(false)
   const navRef = useRef<HTMLElement>(null)
+  const pathname = usePathname()
+
+  // Close any open menu on route change
+  useEffect(() => {
+    setOpen(null)
+    setMobileOpen(false)
+  }, [pathname])
 
   // Close dropdown on outside click / Escape
   useEffect(() => {
