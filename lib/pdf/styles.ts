@@ -63,16 +63,20 @@ export const PDF_STYLES = `
     letter-spacing: 0.5px;
   }
 
-  /* COVER PAGE — full-bleed, takes exactly one physical page */
+  /* COVER PAGE — content-driven height with a forced break after, so the
+     cover always owns exactly one physical page without sub-pixel overflow
+     bumping a sliver onto page 2. */
   .cover {
     background: linear-gradient(180deg, #f5efe2 0%, #ece4d2 100%);
     width: 210mm;
-    height: 296mm;
+    min-height: 260mm;
     padding: 26mm 22mm;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
+    break-after: page;
+    page-break-after: always;
   }
   .cover-logo {
     text-align: center;
