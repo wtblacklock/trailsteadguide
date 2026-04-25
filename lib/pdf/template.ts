@@ -347,7 +347,7 @@ function renderSkillsUsed(plan: typeof PLAN_TEMPLATES[string]): string {
     <h2 class="section-title">How to do it</h2>
     <p class="section-lede">A few core skills this trip leans on. The full guide for each lives at trailsteadguide.com/skills.</p>
     ${blocks}
-    ${footer('Skills you&rsquo;ll use')}
+    ${footer('Skills you’ll use')}
   </div>`
 }
 
