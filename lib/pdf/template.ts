@@ -11,6 +11,8 @@ import { PLAN_TEMPLATES } from '@/lib/plan-templates'
 import { getPlanContent } from '@/lib/plan-content'
 import { resolveGearSet, buildAffiliateUrl } from '@/lib/gear-sets'
 import { buildChecklist, type ChecklistInput } from '@/lib/checklist-builder'
+import { getActivityBySlug } from '@/lib/activities/data'
+import { getSkillByRef } from '@/lib/skills/helpers'
 import { PDF_STYLES } from './styles'
 
 const escapeHtml = (s: string) =>
@@ -77,6 +79,8 @@ export function renderTripPackHtml(input: TripPackInput): string {
   ${renderCover(input, content, plan.tripSummary)}
   ${renderOverview(content)}
   ${renderTimeline(plan)}
+  ${renderActivitiesPlan(plan)}
+  ${renderSkillsUsed(plan)}
   ${renderPacking(checklist)}
   ${renderGear(gear)}
   ${renderMistakes(content)}
@@ -269,6 +273,81 @@ function renderFinalChecklist(content: ReturnType<typeof getPlanContent>): strin
       ${rows}
     </div>
     ${footer('Final checklist')}
+  </div>`
+}
+
+function renderActivitiesPlan(plan: typeof PLAN_TEMPLATES[string]): string {
+  const day1 = plan.activitySchedule.day1
+    .map(getActivityBySlug)
+    .filter((a): a is NonNullable<typeof a> => a !== null)
+  const day2 = (plan.activitySchedule.day2 ?? [])
+    .map(getActivityBySlug)
+    .filter((a): a is NonNullable<typeof a> => a !== null)
+
+  const groupHtml = (heading: string | null, items: typeof day1) => {
+    if (items.length === 0) return ''
+    const cards = items
+      .map(
+        (a) => `
+        <div class="activity-pdf-card">
+          <p class="activity-pdf-title">${escapeHtml(a.title)}</p>
+          <p class="activity-pdf-tagline">${escapeHtml(a.tagline)}</p>
+          <div class="activity-pdf-badges">
+            <span>${escapeHtml(a.timeRequired)}</span>
+            <span>${escapeHtml(a.energyLevel)} energy</span>
+            <span>${escapeHtml(a.groupSize)}</span>
+          </div>
+          <p class="activity-pdf-preview">${escapeHtml(a.instructions[0] ?? '')}</p>
+        </div>`,
+      )
+      .join('')
+    return `
+      ${heading ? `<p class="activity-pdf-day">${escapeHtml(heading)}</p>` : ''}
+      <div class="activity-pdf-grid">${cards}</div>`
+  }
+
+  const groups = day2.length
+    ? `${groupHtml('Day 1', day1)}${groupHtml('Day 2', day2)}`
+    : groupHtml(null, day1)
+
+  return `
+  <div class="page">
+    <p class="section-eyebrow">Your activities plan</p>
+    <h2 class="section-title">What you&rsquo;ll do</h2>
+    <p class="section-lede">A short, balanced lineup. Full step-by-step instructions live on trailsteadguide.com/activities.</p>
+    ${groups}
+    ${footer('Activities plan')}
+  </div>`
+}
+
+function renderSkillsUsed(plan: typeof PLAN_TEMPLATES[string]): string {
+  const blocks = plan.recommendedSkills
+    .map((ref) => {
+      const found = getSkillByRef(ref.skillSlug)
+      if (!found) return ''
+      const { skill, category } = found
+      const stepPreview = skill.steps.slice(0, 4)
+        .map((s, i) => `<li><span class="skill-pdf-num">${i + 1}.</span> ${escapeHtml(s)}</li>`)
+        .join('')
+      return `
+        <div class="skill-pdf-card">
+          <span class="skill-pdf-cat">${escapeHtml(category.label)}</span>
+          <p class="skill-pdf-title">${escapeHtml(skill.title)}</p>
+          <p class="skill-pdf-tagline">${escapeHtml(skill.tagline)}</p>
+          <p class="skill-pdf-rationale"><b>Why for this trip:</b> ${escapeHtml(ref.rationale)}</p>
+          <ol class="skill-pdf-steps">${stepPreview}</ol>
+          <p class="skill-pdf-link">Full guide: trailsteadguide.com/skills/${escapeHtml(category.slug)}/${escapeHtml(skill.slug)}</p>
+        </div>`
+    })
+    .join('')
+
+  return `
+  <div class="page">
+    <p class="section-eyebrow">Skills you&rsquo;ll use</p>
+    <h2 class="section-title">How to do it</h2>
+    <p class="section-lede">A few core skills this trip leans on. The full guide for each lives at trailsteadguide.com/skills.</p>
+    ${blocks}
+    ${footer('Skills you&rsquo;ll use')}
   </div>`
 }
 
