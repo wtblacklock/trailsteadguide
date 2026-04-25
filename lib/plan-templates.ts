@@ -549,7 +549,7 @@ export const PLAN_TEMPLATES: Record<string, PlanTemplate> = {
       {
         skillSlug: 'knots/taut-line-hitch',
         rationale:
-          'Your canopy and tent guy lines need to stay taut for three nights, even after dew or rain. This is the knot that does it.',
+          'Your canopy and tent guy lines need to stay taut for multiple nights, even after dew or rain. This is the knot that does it.',
       },
       {
         skillSlug: 'fire/starting-a-fire',
