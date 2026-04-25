@@ -65,7 +65,7 @@ export default async function SkillDetailPage({ params }: PageProps) {
           breadcrumbs: [
             { name: 'Home', url: `${SITE_URL}/` },
             { name: 'Skills', url: `${SITE_URL}/skills` },
-            { name: category.label, url: `${SITE_URL}/skills/${category.slug}` },
+            { name: category.label, url: `${SITE_URL}/skills?category=${category.slug}` },
             { name: skill.title, url: `${SITE_URL}${path}` },
           ],
         })}
@@ -74,7 +74,7 @@ export default async function SkillDetailPage({ params }: PageProps) {
         items={[
           { name: 'Home', url: `${SITE_URL}/` },
           { name: 'Skills', url: `${SITE_URL}/skills` },
-          { name: category.label, url: `${SITE_URL}/skills/${category.slug}` },
+          { name: category.label, url: `${SITE_URL}/skills?category=${category.slug}` },
           { name: skill.title, url: `${SITE_URL}${path}` },
         ]}
       />

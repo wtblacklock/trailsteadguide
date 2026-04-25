@@ -12,13 +12,13 @@ export default function SkillsHero() {
           <span className="block text-stone-500">Learn the essentials without overthinking it.</span>
         </h1>
         <p className="text-lg text-stone-600 leading-relaxed mb-8 max-w-prose">
-          Twelve categories of practical, scouting-style skills for first-time campers. Each one is
-          a short, scannable how-to with safety notes, common mistakes, and pro tips — built for
-          families who want to do it right, not just read about it.
+          A practical, scouting-style library of camp skills for first-time campers. Filter by
+          category, difficulty, or safety level — each skill is a short, scannable how-to with
+          safety notes, common mistakes, and pro tips.
         </p>
         <div className="flex flex-wrap gap-3">
           <a
-            href="#categories"
+            href="#filter-bar"
             className="inline-flex items-center justify-center gap-2 bg-stone-900 text-white text-base font-medium rounded-md hover:bg-stone-800 transition-colors px-6 py-3"
           >
             Browse skills

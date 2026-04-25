@@ -1,4 +1,5 @@
 import type { NextConfig } from 'next'
+import { SKILL_CATEGORIES } from './lib/skills/categories'
 
 /**
  * Security headers per OWASP best practices + Vercel platform conventions.
@@ -63,6 +64,17 @@ const nextConfig: NextConfig = {
         headers: securityHeaders,
       },
     ]
+  },
+  async redirects() {
+    // Old /skills/[category] landing pages now redirect to filter-prefilled
+    // hub URLs. Generated from SKILL_CATEGORIES so config can never drift
+    // from the data layer. Detail pages /skills/[category]/[skill] are
+    // unchanged.
+    return SKILL_CATEGORIES.map((c) => ({
+      source: `/skills/${c.slug}`,
+      destination: `/skills?category=${c.slug}`,
+      permanent: true,
+    }))
   },
 }
 

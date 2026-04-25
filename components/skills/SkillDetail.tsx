@@ -15,7 +15,7 @@ export default function SkillDetail({ skill, category }: Props) {
     <article className="bg-[#F5F3EE]">
       <div className="max-w-content mx-auto px-6 pt-12 pb-6 md:pt-16">
         <Link
-          href={`/skills/${category.slug}`}
+          href={`/skills?category=${category.slug}`}
           className="inline-flex items-center gap-1.5 text-sm text-stone-600 hover:text-stone-900 mb-8"
         >
           <svg

@@ -4,9 +4,9 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { useEffect, useRef, useState } from 'react'
-import { GUIDE_LINKS, SKILL_LINKS, TOOL_LINKS } from '@/lib/nav-config'
+import { GUIDE_LINKS, TOOL_LINKS } from '@/lib/nav-config'
 
-type OpenMenu = 'guides' | 'tools' | 'skills' | null
+type OpenMenu = 'guides' | 'tools' | null
 
 export default function Nav() {
   const [open, setOpen] = useState<OpenMenu>(null)
@@ -82,14 +82,7 @@ export default function Nav() {
             onToggle={() => setOpen(open === 'tools' ? null : 'tools')}
             onClose={() => setOpen(null)}
           />
-          <Dropdown
-            label="Skills"
-            items={SKILL_LINKS}
-            isOpen={open === 'skills'}
-            onToggle={() => setOpen(open === 'skills' ? null : 'skills')}
-            onClose={() => setOpen(null)}
-            wide
-          />
+          <NavLink href="/skills">Skills</NavLink>
           <NavLink href="/activities">Activities</NavLink>
           <NavLink href="/gear-guide">Gear Guide</NavLink>
           <NavLink href="/about">About</NavLink>
@@ -150,9 +143,13 @@ export default function Nav() {
           <div className="max-w-page mx-auto px-8 py-6 space-y-6">
             <MobileGroup title="Guides" items={GUIDE_LINKS} onNavigate={() => setMobileOpen(false)} />
             <MobileGroup title="Tools" items={TOOL_LINKS} onNavigate={() => setMobileOpen(false)} />
-            <MobileGroup title="Skills" items={SKILL_LINKS} onNavigate={() => setMobileOpen(false)} />
             <div className="pt-2 border-t border-stone-200">
               <ul className="space-y-3">
+                <li>
+                  <Link href="/skills" onClick={() => setMobileOpen(false)} className="block text-stone-800 text-base">
+                    Skills
+                  </Link>
+                </li>
                 <li>
                   <Link href="/activities" onClick={() => setMobileOpen(false)} className="block text-stone-800 text-base">
                     Activities

@@ -5,9 +5,10 @@ import DifficultyBadge from './DifficultyBadge'
 interface Props {
   skill: Skill
   category: SkillCategory
+  showCategory?: boolean
 }
 
-export default function SkillCard({ skill, category }: Props) {
+export default function SkillCard({ skill, category, showCategory = false }: Props) {
   const useCase = skill.useCases[0] ?? skill.whenToUse
   return (
     <Link
@@ -15,6 +16,11 @@ export default function SkillCard({ skill, category }: Props) {
       className="group block h-full bg-white border border-stone-200 rounded-xl shadow-sm hover:shadow-md hover:border-stone-300 transition-all p-6 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-stone-900 focus-visible:ring-offset-2"
     >
       <div className="flex flex-col h-full">
+        {showCategory && (
+          <p className="text-xs uppercase tracking-widest text-[#2d5016] font-medium mb-3">
+            {category.label}
+          </p>
+        )}
         <h3 className="font-serif text-xl text-stone-900 mb-2 leading-snug">{skill.title}</h3>
         <p className="text-stone-600 text-sm leading-relaxed mb-4 flex-1">{skill.tagline}</p>
         {useCase && (
