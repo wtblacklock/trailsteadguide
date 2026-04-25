@@ -7,6 +7,8 @@
 
 import { MetadataRoute } from 'next'
 import { ACTIVITIES } from '@/lib/activities/data'
+import { SKILLS } from '@/lib/skills/data'
+import { SKILL_CATEGORIES, getCategoryById } from '@/lib/skills/categories'
 
 const BASE_URL = 'https://www.trailsteadguide.com'
 
@@ -15,6 +17,22 @@ const RECENT = '2026-03-15' // secondary content: about, faq, quiz, checklist
 const STABLE = '2026-01-10' // rarely changes: legal pages
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const skillEntries: MetadataRoute.Sitemap = [
+    { url: `${BASE_URL}/skills`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.8 },
+    ...SKILL_CATEGORIES.map((c) => ({
+      url: `${BASE_URL}/skills/${c.slug}`,
+      lastModified: FRESH,
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
+    })),
+    ...SKILLS.map((s) => ({
+      url: `${BASE_URL}/skills/${getCategoryById(s.category).slug}/${s.slug}`,
+      lastModified: FRESH,
+      changeFrequency: 'monthly' as const,
+      priority: 0.6,
+    })),
+  ]
+
   return [
     // Home
     { url: `${BASE_URL}/`, lastModified: FRESH, changeFrequency: 'weekly', priority: 1.0 },
@@ -76,5 +94,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/affiliate-disclosure`, lastModified: STABLE, changeFrequency: 'yearly', priority: 0.3 },
     { url: `${BASE_URL}/privacy`, lastModified: STABLE, changeFrequency: 'yearly', priority: 0.3 },
     { url: `${BASE_URL}/terms`, lastModified: STABLE, changeFrequency: 'yearly', priority: 0.3 },
+
+    // Skills (hub, 12 categories, all skill detail pages)
+    ...skillEntries,
   ]
 }

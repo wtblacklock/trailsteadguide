@@ -4,9 +4,9 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { useEffect, useRef, useState } from 'react'
-import { GUIDE_LINKS, TOOL_LINKS } from '@/lib/nav-config'
+import { GUIDE_LINKS, SKILL_LINKS, TOOL_LINKS } from '@/lib/nav-config'
 
-type OpenMenu = 'guides' | 'tools' | null
+type OpenMenu = 'guides' | 'tools' | 'skills' | null
 
 export default function Nav() {
   const [open, setOpen] = useState<OpenMenu>(null)
@@ -82,6 +82,14 @@ export default function Nav() {
             onToggle={() => setOpen(open === 'tools' ? null : 'tools')}
             onClose={() => setOpen(null)}
           />
+          <Dropdown
+            label="Skills"
+            items={SKILL_LINKS}
+            isOpen={open === 'skills'}
+            onToggle={() => setOpen(open === 'skills' ? null : 'skills')}
+            onClose={() => setOpen(null)}
+            wide
+          />
           <NavLink href="/activities">Activities</NavLink>
           <NavLink href="/gear-guide">Gear Guide</NavLink>
           <NavLink href="/about">About</NavLink>
@@ -142,6 +150,7 @@ export default function Nav() {
           <div className="max-w-page mx-auto px-8 py-6 space-y-6">
             <MobileGroup title="Guides" items={GUIDE_LINKS} onNavigate={() => setMobileOpen(false)} />
             <MobileGroup title="Tools" items={TOOL_LINKS} onNavigate={() => setMobileOpen(false)} />
+            <MobileGroup title="Skills" items={SKILL_LINKS} onNavigate={() => setMobileOpen(false)} />
             <div className="pt-2 border-t border-stone-200">
               <ul className="space-y-3">
                 <li>
@@ -185,12 +194,14 @@ function Dropdown({
   isOpen,
   onToggle,
   onClose,
+  wide = false,
 }: {
   label: string
   items: NavItem[]
   isOpen: boolean
   onToggle: () => void
   onClose: () => void
+  wide?: boolean
 }) {
   return (
     <div className="relative">
@@ -219,7 +230,7 @@ function Dropdown({
       </button>
 
       {isOpen && (
-        <div className="absolute left-0 top-full mt-2 w-80 bg-white rounded-xl shadow-lg ring-1 ring-stone-200 overflow-hidden">
+        <div className={`absolute left-0 top-full mt-2 ${wide ? 'w-96' : 'w-80'} bg-white rounded-xl shadow-lg ring-1 ring-stone-200 overflow-hidden max-h-[70vh] overflow-y-auto`}>
           <ul className="py-2">
             {items.map((item) => (
               <li key={item.href}>

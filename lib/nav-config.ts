@@ -55,6 +55,22 @@ export const TOOL_LINKS: NavItem[] = [
   },
 ]
 
+export const SKILL_LINKS: NavItem[] = [
+  { label: 'All Skills', href: '/skills', description: 'The full Camp Skills library.' },
+  { label: 'Knots', href: '/skills/knots' },
+  { label: 'Camp Cooking', href: '/skills/cooking' },
+  { label: 'Fire Basics', href: '/skills/fire' },
+  { label: 'Hiking & Navigation', href: '/skills/hiking' },
+  { label: 'Orienteering', href: '/skills/orienteering' },
+  { label: 'Fishing Basics', href: '/skills/fishing' },
+  { label: 'Shelter Setup', href: '/skills/shelter' },
+  { label: 'Camp Setup', href: '/skills/camp-setup' },
+  { label: 'Safety & First Aid', href: '/skills/safety' },
+  { label: 'Stargazing', href: '/skills/stargazing' },
+  { label: 'Knife Skills', href: '/skills/knife-skills' },
+  { label: 'Woodcarving', href: '/skills/woodcarving' },
+]
+
 export const FOOTER_SECONDARY: NavItem[] = [
   { label: 'How It Works', href: '/how-it-works' },
   { label: 'FAQ', href: '/faq' },
