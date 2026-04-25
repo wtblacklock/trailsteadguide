@@ -6,6 +6,7 @@ import PlanJumpNav from '@/components/plan/PlanJumpNav'
 import Timeline from '@/components/plan/Timeline'
 import GearList from '@/components/plan/GearList'
 import KidActivityPlan from '@/components/plan/KidActivityPlan'
+import RecommendedActivities from '@/components/activities/RecommendedActivities'
 import SafetyNotes from '@/components/plan/SafetyNotes'
 import AffiliateBlock from '@/components/plan/AffiliateBlock'
 import TripPackCta from '@/components/plan/TripPackCta'
@@ -96,7 +97,14 @@ export default async function FirstNightCampPage({
       />
       <div id="timeline" className="scroll-mt-32"><Timeline sections={timelineSections} /></div>
       <div id="gear" className="scroll-mt-32"><GearList items={gearItems} /></div>
-      <div id="activities" className="scroll-mt-32"><KidActivityPlan activities={activityItems} /></div>
+      <div id="activities" className="scroll-mt-32">
+        <KidActivityPlan activities={activityItems} />
+        <RecommendedActivities
+          planSlug="first-night-camp"
+          kidsAgeGroups={['3-6', '7-12']}
+          partySize={{ adults, kids }}
+        />
+      </div>
       <div id="meals" className="scroll-mt-32"><MealPlanAndShopping meals={plan.meals} defaultAdults={adults} defaultKids={kids} /></div>
       <div id="safety" className="scroll-mt-32"><SafetyNotes notes={plan.safetyNotes} /></div>
       {products.length > 0 && (

@@ -74,6 +74,7 @@ export default function Nav() {
             onToggle={() => setOpen(open === 'tools' ? null : 'tools')}
             onClose={() => setOpen(null)}
           />
+          <NavLink href="/activities">Activities</NavLink>
           <NavLink href="/gear-guide">Gear Guide</NavLink>
           <NavLink href="/about">About</NavLink>
         </div>
@@ -135,6 +136,11 @@ export default function Nav() {
             <MobileGroup title="Tools" items={TOOL_LINKS} onNavigate={() => setMobileOpen(false)} />
             <div className="pt-2 border-t border-stone-200">
               <ul className="space-y-3">
+                <li>
+                  <Link href="/activities" onClick={() => setMobileOpen(false)} className="block text-stone-800 text-base">
+                    Activities
+                  </Link>
+                </li>
                 <li>
                   <Link href="/gear-guide" onClick={() => setMobileOpen(false)} className="block text-stone-800 text-base">
                     Gear Guide
