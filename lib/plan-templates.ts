@@ -76,6 +76,37 @@ export const PLAN_TEMPLATES: Record<string, PlanTemplate> = {
       'Keep water bottles inside the tent.',
       'If anyone is genuinely uncomfortable, the house is right there. No shame in going in.',
     ],
+    recommendedActivities: [
+      'flashlight-tag',
+      'glow-stick-ring-toss',
+      'nature-scavenger-hunt',
+      'stargazing-constellation-hunt',
+    ],
+    recommendedSkills: [
+      {
+        skillSlug: 'shelter/pitching-a-tent',
+        rationale:
+          'The whole point of this night is rehearsing the tent. Pitch it as if your campsite was 50 miles away, not 50 feet.',
+      },
+      {
+        skillSlug: 'knots/taut-line-hitch',
+        rationale:
+          'A loose guy line is a saggy fly is a wet floor at 3 a.m. Practice tightening guy lines now, in your yard.',
+      },
+      {
+        skillSlug: 'knife-skills/safe-knife-handling',
+        rationale:
+          'If you’ll let kids near a knife on a real trip, the rules need to land here first — somewhere with no consequences.',
+      },
+    ],
+    activitySchedule: {
+      day1: [
+        'flashlight-tag',
+        'glow-stick-ring-toss',
+        'nature-scavenger-hunt',
+        'stargazing-constellation-hunt',
+      ],
+    },
   },
 
   'first-night-camp': {
@@ -192,6 +223,31 @@ export const PLAN_TEMPLATES: Record<string, PlanTemplate> = {
       'Know the location of the nearest urgent care before you leave home.',
       'Keep the campfire at least 3 feet from the tent and fully extinguished before sleeping.',
     ],
+    recommendedActivities: [
+      'nature-scavenger-hunt',
+      'rock-skipping-contest',
+      'campfire-story-chain',
+    ],
+    recommendedSkills: [
+      {
+        skillSlug: 'shelter/pitching-a-tent',
+        rationale:
+          'Tent up first means your kids have a base before anything else can go wrong. Practice this once before you arrive.',
+      },
+      {
+        skillSlug: 'camp-setup/setup-order',
+        rationale:
+          'Beat the dark on a one-night trip. The right order means dinner is on the stove before headlamps come on.',
+      },
+      {
+        skillSlug: 'cooking/two-burner-stove-basics',
+        rationale:
+          "One simple dinner, cooked outside — that's the moment the trip flips from anxious to fun.",
+      },
+    ],
+    activitySchedule: {
+      day1: ['nature-scavenger-hunt', 'rock-skipping-contest', 'campfire-story-chain'],
+    },
   },
 
   'first-weekend-camp': {
@@ -318,6 +374,38 @@ export const PLAN_TEMPLATES: Record<string, PlanTemplate> = {
       'More sun exposure over two days. Sunscreen every morning and after swimming.',
       'Keep a complete first aid kit accessible the full trip.',
     ],
+    recommendedActivities: [
+      'trail-bingo',
+      'capture-the-flag',
+      'campfire-story-chain',
+      'flashlight-tag',
+    ],
+    recommendedSkills: [
+      {
+        skillSlug: 'camp-setup/campsite-layout',
+        rationale:
+          'Two nights means a real layout — sleep, kitchen, fire — that supports an active weekend without re-doing it.',
+      },
+      {
+        skillSlug: 'cooking/two-burner-stove-basics',
+        rationale:
+          'Five meals over the weekend lean on the stove. Knowing it cold makes Saturday breakfast effortless.',
+      },
+      {
+        skillSlug: 'fire/starting-a-fire',
+        rationale:
+          "Saturday's centerpiece dinner expects a coal bed — getting the fire right early is what makes the day work.",
+      },
+      {
+        skillSlug: 'orienteering/compass-basics',
+        rationale:
+          "Saturday's day-hike is the weekend's main event. Compass + map keeps a marked trail confident and an off-trail spur found.",
+      },
+    ],
+    activitySchedule: {
+      day1: ['trail-bingo', 'capture-the-flag', 'campfire-story-chain'],
+      day2: ['flashlight-tag'],
+    },
   },
 
   'easy-family-basecamp': {
@@ -441,6 +529,38 @@ export const PLAN_TEMPLATES: Record<string, PlanTemplate> = {
       'Keep food stored properly even on comfort trips. Animals are not impressed by your camp rug.',
       'Know the nearest urgent care before you leave. Set it in Maps.',
     ],
+    recommendedActivities: [
+      'nature-scavenger-hunt',
+      'camp-olympics',
+      'campfire-story-chain',
+      'flashlight-tag',
+    ],
+    recommendedSkills: [
+      {
+        skillSlug: 'camp-setup/setup-order',
+        rationale:
+          'A multi-night basecamp lives or dies on a calm, ordered first hour. Run this once and the rest of the trip self-organizes.',
+      },
+      {
+        skillSlug: 'cooking/two-burner-stove-basics',
+        rationale:
+          'Real meals are the point of this plan — the two-burner stove is the workhorse for every breakfast and dinner.',
+      },
+      {
+        skillSlug: 'knots/taut-line-hitch',
+        rationale:
+          'Your canopy and tent guy lines need to stay taut for three nights, even after dew or rain. This is the knot that does it.',
+      },
+      {
+        skillSlug: 'fire/starting-a-fire',
+        rationale:
+          "Comfortable fire time after dinner is the trip's emotional anchor — light it cleanly the first time, every night.",
+      },
+    ],
+    activitySchedule: {
+      day1: ['nature-scavenger-hunt', 'camp-olympics', 'campfire-story-chain'],
+      day2: ['flashlight-tag'],
+    },
   },
 }
 
