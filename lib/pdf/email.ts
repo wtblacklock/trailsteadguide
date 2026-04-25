@@ -1,6 +1,9 @@
 /**
  * Trip Pack purchase-confirmation email. Sent from the Stripe webhook.
  * Uses Resend (already a dependency). No-op if RESEND_API_KEY unset.
+ *
+ * Reads EMAIL_FROM (shared with /api/subscribe) for the sender. Logs a warning
+ * if either env var is missing so the no-op path can't fail silently.
  */
 
 import { Resend } from 'resend'
@@ -22,8 +25,14 @@ type SendArgs = {
 
 export async function sendTripPackEmail(args: SendArgs): Promise<{ ok: boolean; skipped?: boolean; error?: string }> {
   const apiKey = process.env.RESEND_API_KEY
-  const from = process.env.RESEND_FROM_EMAIL
-  if (!apiKey || !from) return { ok: false, skipped: true }
+  const from = process.env.EMAIL_FROM
+  if (!apiKey || !from) {
+    console.warn(
+      '[trip-pack email] skipped — missing env',
+      { hasApiKey: !!apiKey, hasFrom: !!from },
+    )
+    return { ok: false, skipped: true }
+  }
 
   const title = PLAN_TITLES[args.plan]
   const tierLabel = args.tier === 'premium' ? 'Premium' : 'Basic'
