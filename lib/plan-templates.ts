@@ -242,7 +242,7 @@ export const PLAN_TEMPLATES: Record<string, PlanTemplate> = {
       {
         skillSlug: 'cooking/two-burner-stove-basics',
         rationale:
-          "One simple dinner, cooked outside — that's the moment the trip flips from anxious to fun.",
+          "One simple dinner, cooked outside — that’s the moment the trip flips from anxious to fun.",
       },
     ],
     activitySchedule: {
@@ -394,12 +394,12 @@ export const PLAN_TEMPLATES: Record<string, PlanTemplate> = {
       {
         skillSlug: 'fire/starting-a-fire',
         rationale:
-          "Saturday's centerpiece dinner expects a coal bed — getting the fire right early is what makes the day work.",
+          "Saturday’s centerpiece dinner expects a coal bed — getting the fire right early is what makes the day work.",
       },
       {
         skillSlug: 'orienteering/compass-basics',
         rationale:
-          "Saturday's day-hike is the weekend's main event. Compass + map keeps a marked trail confident and an off-trail spur found.",
+          "Saturday’s day-hike is the weekend’s main event. Compass + map keeps a marked trail confident and an off-trail spur found.",
       },
     ],
     activitySchedule: {
@@ -554,7 +554,7 @@ export const PLAN_TEMPLATES: Record<string, PlanTemplate> = {
       {
         skillSlug: 'fire/starting-a-fire',
         rationale:
-          "Comfortable fire time after dinner is the trip's emotional anchor — light it cleanly the first time, every night.",
+          "Comfortable fire time after dinner is the trip’s emotional anchor — light it cleanly the first time, every night.",
       },
     ],
     activitySchedule: {
