@@ -1,51 +1,30 @@
 import Link from 'next/link'
+import {
+  GUIDES,
+  getGuideBySlug,
+  getGuidesByCategoryId,
+} from '@/lib/guides'
+import type { Guide } from '@/lib/guides'
 
-type GuideEntry = {
-  slug: string
-  title: string
-  description: string
+/**
+ * Pick three sibling guides to recommend at the bottom of an article.
+ * Prefer guides in the same category; if there aren't three, fill the
+ * remainder from the rest of the catalogue. Always excludes the
+ * current guide.
+ */
+function pickRelated(currentSlug: string, count = 3): Guide[] {
+  const current = getGuideBySlug(currentSlug)
+  const sameCategory = current
+    ? getGuidesByCategoryId(current.category).filter((g) => g.slug !== currentSlug)
+    : []
+  const others = GUIDES.filter(
+    (g) => g.slug !== currentSlug && !sameCategory.some((s) => s.slug === g.slug),
+  )
+  return [...sameCategory, ...others].slice(0, count)
 }
 
-const ALL_GUIDES: GuideEntry[] = [
-  {
-    slug: 'camping-for-beginners',
-    title: 'Camping for Beginners',
-    description: 'The shortest path from zero to a confident first trip.',
-  },
-  {
-    slug: 'how-to-plan-a-camping-trip',
-    title: 'How to Plan a Camping Trip',
-    description: 'Step-by-step: pick a site, book it, prep the gear.',
-  },
-  {
-    slug: 'camping-with-kids-first-time',
-    title: 'Camping with Kids for the First Time',
-    description: 'What actually keeps kids happy at camp.',
-  },
-  {
-    slug: 'car-camping-beginner-guide',
-    title: 'Car Camping Beginner Guide',
-    description: 'The drive-up, park-next-to-your-tent version.',
-  },
-  {
-    slug: 'first-camping-trip-checklist',
-    title: 'First Camping Trip Checklist',
-    description: 'The real list — not 200 items.',
-  },
-  {
-    slug: 'weekend-camping-packing-list',
-    title: 'Weekend Camping Packing List',
-    description: 'Two-night family pack list, by category.',
-  },
-  {
-    slug: 'first-time-camping-mistakes',
-    title: 'First-Time Camping Mistakes',
-    description: 'The avoidable ones that turn a first trip into never again.',
-  },
-]
-
 export default function RelatedGuides({ currentSlug }: { currentSlug: string }) {
-  const others = ALL_GUIDES.filter((g) => g.slug !== currentSlug).slice(0, 3)
+  const others = pickRelated(currentSlug)
 
   return (
     <section className="max-w-5xl mx-auto px-8 mt-20 mb-32">

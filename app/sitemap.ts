@@ -9,6 +9,7 @@ import { MetadataRoute } from 'next'
 import { ACTIVITIES } from '@/lib/activities/data'
 import { SKILLS } from '@/lib/skills/data'
 import { getCategoryById } from '@/lib/skills/categories'
+import { GUIDES } from '@/lib/guides'
 
 const BASE_URL = 'https://www.trailsteadguide.com'
 
@@ -31,15 +32,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Home
     { url: `${BASE_URL}/`, lastModified: FRESH, changeFrequency: 'weekly', priority: 1.0 },
 
-    // Guides
+    // Guides hub
     { url: `${BASE_URL}/guides`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.9 },
-    { url: `${BASE_URL}/guides/camping-for-beginners`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.9 },
-    { url: `${BASE_URL}/guides/camping-with-kids-first-time`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.9 },
-    { url: `${BASE_URL}/guides/car-camping-beginner-guide`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.9 },
-    { url: `${BASE_URL}/guides/first-camping-trip-checklist`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.9 },
-    { url: `${BASE_URL}/guides/first-time-camping-mistakes`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.9 },
-    { url: `${BASE_URL}/guides/how-to-plan-a-camping-trip`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.9 },
-    { url: `${BASE_URL}/guides/weekend-camping-packing-list`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.9 },
+    // Guide articles (derived from the catalogue)
+    ...GUIDES.map((g) => ({
+      url: `${BASE_URL}/guides/${g.slug}`,
+      lastModified: FRESH,
+      changeFrequency: 'monthly' as const,
+      priority: 0.9,
+    })),
 
     // Plans
     { url: `${BASE_URL}/plan/backyard-test`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.8 },
