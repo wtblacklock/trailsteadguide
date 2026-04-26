@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint .",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "validate:affiliate": "node scripts/validate-affiliate-links.mjs"
   },
   "dependencies": {
     "@sparticuz/chromium": "^147.0.0",

@@ -6,6 +6,7 @@ import RelatedGuides from '@/components/guide/RelatedGuides'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
+import { amazonAffiliateUrl } from '@/lib/affiliate/amazon'
 
 const SLUG = '/guides/camping-with-dogs-first-time'
 const TITLE = 'Camping With Dogs for the First Time'
@@ -239,56 +240,56 @@ export default function Page() {
         <ul>
           <li>
             <strong>Tent.</strong>{' '}
-            <a href="https://amzn.to/4sUKHJs" rel="nofollow sponsored noopener" target="_blank">
+            <a href={amazonAffiliateUrl('B0D7QHY574', 'camping-with-dogs-first-time')} rel="nofollow sponsored noopener" target="_blank">
               Coleman Sundome 4-Person
             </a>{' '}
             (~$116). Size up — a 4-person tent for two adults plus a 50-lb dog is the right floor space.
           </li>
           <li>
             <strong>Sleeping bag.</strong>{' '}
-            <a href="https://amzn.to/4mVpMom" rel="nofollow sponsored noopener" target="_blank">
+            <a href={amazonAffiliateUrl('B07H99CMNP', 'camping-with-dogs-first-time')} rel="nofollow sponsored noopener" target="_blank">
               Kelty Tuck 20
             </a>{' '}
             (~$95). Roomy enough that a small dog can curl up at your feet on a cold night.
           </li>
           <li>
             <strong>Sleeping pad.</strong>{' '}
-            <a href="https://amzn.to/4vG4xdY" rel="nofollow sponsored noopener" target="_blank">
+            <a href={amazonAffiliateUrl('B00HC9QTO8', 'camping-with-dogs-first-time')} rel="nofollow sponsored noopener" target="_blank">
               TETON Sports ComfortLite
             </a>{' '}
             (~$75). For you. The dog gets a closed-cell foam pad or a dedicated dog bed.
           </li>
           <li>
             <strong>Stove.</strong>{' '}
-            <a href="https://amzn.to/4uc7DVG" rel="nofollow sponsored noopener" target="_blank">
+            <a href={amazonAffiliateUrl('B0009PUR5E', 'camping-with-dogs-first-time')} rel="nofollow sponsored noopener" target="_blank">
               Coleman 1-Burner Propane Stove
             </a>{' '}
             (~$40). Fast meals leave more time for the dog walk before bed.
           </li>
           <li>
             <strong>Cooler.</strong>{' '}
-            <a href="https://amzn.to/4d3oHXX" rel="nofollow sponsored noopener" target="_blank">
+            <a href={amazonAffiliateUrl('B08LMVJJ9Q', 'camping-with-dogs-first-time')} rel="nofollow sponsored noopener" target="_blank">
               Coleman Classic Rolling Cooler
             </a>{' '}
             (~$107). Wheels matter when you are also juggling a leash and a water jug.
           </li>
           <li>
             <strong>Lighting.</strong>{' '}
-            <a href="https://amzn.to/4tz86RT" rel="nofollow sponsored noopener" target="_blank">
+            <a href={amazonAffiliateUrl('B082HD5JDH', 'camping-with-dogs-first-time')} rel="nofollow sponsored noopener" target="_blank">
               Consciot LED Camping Lantern (2-pack)
             </a>{' '}
             (~$30). One on the picnic table, one inside the tent for late-night dog needs.
           </li>
           <li>
             <strong>Headlamp.</strong>{' '}
-            <a href="https://amzn.to/4mXLRTe" rel="nofollow sponsored noopener" target="_blank">
+            <a href={amazonAffiliateUrl('B09NQK2581', 'camping-with-dogs-first-time')} rel="nofollow sponsored noopener" target="_blank">
               Black Diamond Spot 400
             </a>{' '}
             (~$50). For the inevitable 3am dog bathroom run.
           </li>
           <li>
             <strong>Camp chair.</strong>{' '}
-            <a href="https://amzn.to/4e8dK8O" rel="nofollow sponsored noopener" target="_blank">
+            <a href={amazonAffiliateUrl('B00D4JYR62', 'camping-with-dogs-first-time')} rel="nofollow sponsored noopener" target="_blank">
               GCI Outdoor Freestyle Rocker
             </a>{' '}
             (~$80). The chair you can sit in for two hours of leash-settle.

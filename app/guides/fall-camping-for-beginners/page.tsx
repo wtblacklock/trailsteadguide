@@ -4,6 +4,7 @@ import RelatedGuides from '@/components/guide/RelatedGuides'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
+import { amazonAffiliateUrl } from '@/lib/affiliate/amazon'
 
 const SLUG = '/guides/fall-camping-for-beginners'
 const TITLE = 'Fall Camping for Beginners'
@@ -202,56 +203,56 @@ export default function Page() {
       <ul>
         <li>
           <strong>Tent.</strong>{' '}
-          <a href="https://amzn.to/4sUKHJs" rel="nofollow sponsored noopener" target="_blank">
+          <a href={amazonAffiliateUrl('B0D7QHY574', 'fall-camping-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
             Coleman Sundome 4-Person
           </a>{' '}
           (~$116). 9×7 ft floor, full-coverage rainfly, weatherproof seams. Sets up in under 15 minutes the first time.
         </li>
         <li>
           <strong>Sleeping bag.</strong>{' '}
-          <a href="https://amzn.to/4mVpMom" rel="nofollow sponsored noopener" target="_blank">
+          <a href={amazonAffiliateUrl('B07H99CMNP', 'fall-camping-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
             Kelty Tuck 20
           </a>{' '}
           (~$95). 20°F rating, roomy fit. The right call from late September through early November.
         </li>
         <li>
           <strong>Sleeping pad.</strong>{' '}
-          <a href="https://amzn.to/4vG4xdY" rel="nofollow sponsored noopener" target="_blank">
+          <a href={amazonAffiliateUrl('B00HC9QTO8', 'fall-camping-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
             TETON Sports ComfortLite Sleeping Pad
           </a>{' '}
           (~$75). Self-inflating, R-value high enough for cold ground.
         </li>
         <li>
           <strong>Stove.</strong>{' '}
-          <a href="https://amzn.to/4uc7DVG" rel="nofollow sponsored noopener" target="_blank">
+          <a href={amazonAffiliateUrl('B0009PUR5E', 'fall-camping-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
             Coleman 1-Burner Propane Stove
           </a>{' '}
           (~$40). Boils water fast in the cold, works in wind, no learning curve in the dark.
         </li>
         <li>
           <strong>Cooler.</strong>{' '}
-          <a href="https://amzn.to/4d3oHXX" rel="nofollow sponsored noopener" target="_blank">
+          <a href={amazonAffiliateUrl('B08LMVJJ9Q', 'fall-camping-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
             Coleman Classic Rolling Cooler
           </a>{' '}
           (~$107). Ice lasts twice as long in fall — the wheels still matter for the load-in from the parking pad.
         </li>
         <li>
           <strong>Lighting.</strong>{' '}
-          <a href="https://amzn.to/4tz86RT" rel="nofollow sponsored noopener" target="_blank">
+          <a href={amazonAffiliateUrl('B082HD5JDH', 'fall-camping-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
             Consciot LED Camping Lantern (2-pack)
           </a>{' '}
           (~$30). The most-used piece of gear after the time change. One on the picnic table, one in the tent.
         </li>
         <li>
           <strong>Headlamp.</strong>{' '}
-          <a href="https://amzn.to/4mXLRTe" rel="nofollow sponsored noopener" target="_blank">
+          <a href={amazonAffiliateUrl('B09NQK2581', 'fall-camping-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
             Black Diamond Spot 400
           </a>{' '}
           (~$50). One per person, no exceptions. Bring spare batteries — cold drains old ones fast.
         </li>
         <li>
           <strong>Camp chair.</strong>{' '}
-          <a href="https://amzn.to/4e8dK8O" rel="nofollow sponsored noopener" target="_blank">
+          <a href={amazonAffiliateUrl('B00D4JYR62', 'fall-camping-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
             GCI Outdoor Freestyle Rocker
           </a>{' '}
           (~$80). The chair you&apos;ll actually sit in for an hour after dinner instead of going to bed at 7pm.

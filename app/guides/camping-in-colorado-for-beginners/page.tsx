@@ -6,6 +6,7 @@ import RelatedGuides from '@/components/guide/RelatedGuides'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
+import { amazonAffiliateUrl } from '@/lib/affiliate/amazon'
 
 const SLUG = '/guides/camping-in-colorado-for-beginners'
 const TITLE = 'Camping in Colorado for Beginners'
@@ -224,56 +225,56 @@ export default function Page() {
       <ul>
         <li>
           <strong>Tent.</strong>{' '}
-          <a href="https://amzn.to/4sUKHJs" rel="nofollow sponsored noopener" target="_blank">
+          <a href={amazonAffiliateUrl('B0D7QHY574', 'camping-in-colorado-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
             Coleman Sundome 4-Person
           </a>{' '}
           (~$116). Stake aggressively and seam-seal the rainfly before the trip — Colorado wind and afternoon downpours expose any weakness.
         </li>
         <li>
           <strong>Sleeping bag.</strong>{' '}
-          <a href="https://amzn.to/4mVpMom" rel="nofollow sponsored noopener" target="_blank">
+          <a href={amazonAffiliateUrl('B07H99CMNP', 'camping-in-colorado-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
             Kelty Tuck 20°F
           </a>{' '}
           (~$95). The right rating for Colorado mountain camping in summer. A 30°F bag works on the Front Range.
         </li>
         <li>
           <strong>Sleeping pad.</strong>{' '}
-          <a href="https://amzn.to/4vG4xdY" rel="nofollow sponsored noopener" target="_blank">
+          <a href={amazonAffiliateUrl('B00HC9QTO8', 'camping-in-colorado-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
             TETON Sports ComfortLite
           </a>{' '}
           (~$75). Insulates from cold ground at altitude — the under-rated piece of warmth.
         </li>
         <li>
           <strong>Stove.</strong>{' '}
-          <a href="https://amzn.to/4uc7DVG" rel="nofollow sponsored noopener" target="_blank">
+          <a href={amazonAffiliateUrl('B0009PUR5E', 'camping-in-colorado-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
             Coleman 1-Burner Propane Stove
           </a>{' '}
           (~$40). Reliable, works under fire restrictions which are common in Colorado summers.
         </li>
         <li>
           <strong>Cooler.</strong>{' '}
-          <a href="https://amzn.to/4d3oHXX" rel="nofollow sponsored noopener" target="_blank">
+          <a href={amazonAffiliateUrl('B08LMVJJ9Q', 'camping-in-colorado-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
             Coleman Classic Rolling Cooler
           </a>{' '}
           (~$107). Lock it in the car or the bear box overnight in any mountain campground.
         </li>
         <li>
           <strong>Lighting.</strong>{' '}
-          <a href="https://amzn.to/4tz86RT" rel="nofollow sponsored noopener" target="_blank">
+          <a href={amazonAffiliateUrl('B082HD5JDH', 'camping-in-colorado-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
             Consciot LED Camping Lantern (2-pack)
           </a>{' '}
           (~$30).
         </li>
         <li>
           <strong>Headlamp.</strong>{' '}
-          <a href="https://amzn.to/4mXLRTe" rel="nofollow sponsored noopener" target="_blank">
+          <a href={amazonAffiliateUrl('B09NQK2581', 'camping-in-colorado-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
             Black Diamond Spot 400
           </a>{' '}
           (~$50). Lithium batteries handle cold mountain nights better than alkaline.
         </li>
         <li>
           <strong>Camp chair.</strong>{' '}
-          <a href="https://amzn.to/4e8dK8O" rel="nofollow sponsored noopener" target="_blank">
+          <a href={amazonAffiliateUrl('B00D4JYR62', 'camping-in-colorado-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
             GCI Outdoor Freestyle Rocker
           </a>{' '}
           (~$80).

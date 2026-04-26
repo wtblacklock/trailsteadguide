@@ -6,6 +6,7 @@ import RelatedGuides from '@/components/guide/RelatedGuides'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
+import { amazonAffiliateUrl } from '@/lib/affiliate/amazon'
 
 const SLUG = '/guides/rainy-camping-trips'
 const TITLE = 'Rainy Camping Trips'
@@ -240,56 +241,56 @@ export default function Page() {
         <ul>
           <li>
             <strong>Tent.</strong>{' '}
-            <a href="https://amzn.to/4sUKHJs" rel="nofollow sponsored noopener" target="_blank">
+            <a href={amazonAffiliateUrl('B0D7QHY574', 'rainy-camping-trips')} rel="nofollow sponsored noopener" target="_blank">
               Coleman Sundome 4-Person
             </a>{' '}
             (~$116). Full-coverage rainfly, sealed seams, real vestibule. The forgiving rain-trip tent.
           </li>
           <li>
             <strong>Sleeping bag.</strong>{' '}
-            <a href="https://amzn.to/4mVpMom" rel="nofollow sponsored noopener" target="_blank">
+            <a href={amazonAffiliateUrl('B07H99CMNP', 'rainy-camping-trips')} rel="nofollow sponsored noopener" target="_blank">
               Kelty Tuck 20
             </a>{' '}
             (~$95). Synthetic fill, 20°F rating, behaves well damp.
           </li>
           <li>
             <strong>Sleeping pad.</strong>{' '}
-            <a href="https://amzn.to/4vG4xdY" rel="nofollow sponsored noopener" target="_blank">
+            <a href={amazonAffiliateUrl('B00HC9QTO8', 'rainy-camping-trips')} rel="nofollow sponsored noopener" target="_blank">
               TETON Sports ComfortLite
             </a>{' '}
             (~$75). Self-inflates; high R-value lifts you off cold wet ground.
           </li>
           <li>
             <strong>Stove.</strong>{' '}
-            <a href="https://amzn.to/4uc7DVG" rel="nofollow sponsored noopener" target="_blank">
+            <a href={amazonAffiliateUrl('B0009PUR5E', 'rainy-camping-trips')} rel="nofollow sponsored noopener" target="_blank">
               Coleman 1-Burner Propane Stove
             </a>{' '}
             (~$40). Lights in wind, runs in light rain, no learning curve when your hands are cold.
           </li>
           <li>
             <strong>Cooler.</strong>{' '}
-            <a href="https://amzn.to/4d3oHXX" rel="nofollow sponsored noopener" target="_blank">
+            <a href={amazonAffiliateUrl('B08LMVJJ9Q', 'rainy-camping-trips')} rel="nofollow sponsored noopener" target="_blank">
               Coleman Classic Rolling Cooler
             </a>{' '}
             (~$107). Wheels matter on a wet pad.
           </li>
           <li>
             <strong>Lighting.</strong>{' '}
-            <a href="https://amzn.to/4tz86RT" rel="nofollow sponsored noopener" target="_blank">
+            <a href={amazonAffiliateUrl('B082HD5JDH', 'rainy-camping-trips')} rel="nofollow sponsored noopener" target="_blank">
               Consciot LED Camping Lantern (2-pack)
             </a>{' '}
             (~$30). Sunset is earlier than people remember on overcast days.
           </li>
           <li>
             <strong>Headlamp.</strong>{' '}
-            <a href="https://amzn.to/4mXLRTe" rel="nofollow sponsored noopener" target="_blank">
+            <a href={amazonAffiliateUrl('B09NQK2581', 'rainy-camping-trips')} rel="nofollow sponsored noopener" target="_blank">
               Black Diamond Spot 400
             </a>{' '}
             (~$50). Waterproof rating that holds up in real weather.
           </li>
           <li>
             <strong>Camp chair.</strong>{' '}
-            <a href="https://amzn.to/4e8dK8O" rel="nofollow sponsored noopener" target="_blank">
+            <a href={amazonAffiliateUrl('B00D4JYR62', 'rainy-camping-trips')} rel="nofollow sponsored noopener" target="_blank">
               GCI Outdoor Freestyle Rocker
             </a>{' '}
             (~$80). The chair you actually want under a covered tarp on a rainy evening.

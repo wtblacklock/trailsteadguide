@@ -6,6 +6,7 @@ import RelatedGuides from '@/components/guide/RelatedGuides'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
+import { amazonAffiliateUrl } from '@/lib/affiliate/amazon'
 
 const SLUG = '/guides/camping-in-california-for-beginners'
 const TITLE = 'Camping in California for Beginners'
@@ -242,49 +243,49 @@ export default function Page() {
       <ul>
         <li>
           <strong>Tent.</strong>{' '}
-          <a href="https://amzn.to/4sUKHJs" rel="nofollow sponsored noopener" target="_blank">
+          <a href={amazonAffiliateUrl('B0D7QHY574', 'camping-in-california-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
             Coleman Sundome 4-Person
           </a>{' '}
           (~$116). Full mesh inner ventilates on warm Sierra afternoons and seals against coastal fog at night.
         </li>
         <li>
           <strong>Stove.</strong>{' '}
-          <a href="https://amzn.to/4uc7DVG" rel="nofollow sponsored noopener" target="_blank">
+          <a href={amazonAffiliateUrl('B0009PUR5E', 'camping-in-california-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
             Coleman 1-Burner Propane Stove
           </a>{' '}
           (~$40). Keeps you cooking under nearly every California fire-restriction level.
         </li>
         <li>
           <strong>Cooler.</strong>{' '}
-          <a href="https://amzn.to/4d3oHXX" rel="nofollow sponsored noopener" target="_blank">
+          <a href={amazonAffiliateUrl('B08LMVJJ9Q', 'camping-in-california-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
             Coleman Classic Rolling Cooler
           </a>{' '}
           (~$107). Empty it into the bear box overnight in Yosemite, Tahoe, and Sequoia — bears will pry open coolers in the dark.
         </li>
         <li>
           <strong>Shade or shelter.</strong>{' '}
-          <a href="https://amzn.to/4cOwo3a" rel="nofollow sponsored noopener" target="_blank">
+          <a href={amazonAffiliateUrl('B01E45EYJY', 'camping-in-california-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
             CORE 10×10 Instant Pop-Up Canopy
           </a>{' '}
           (~$130). Sun in the desert and Sierra; rain shelter on the north coast.
         </li>
         <li>
           <strong>Lantern.</strong>{' '}
-          <a href="https://amzn.to/4tz86RT" rel="nofollow sponsored noopener" target="_blank">
+          <a href={amazonAffiliateUrl('B082HD5JDH', 'camping-in-california-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
             Consciot LED Camping Lantern (2-pack)
           </a>{' '}
           (~$30).
         </li>
         <li>
           <strong>Headlamp.</strong>{' '}
-          <a href="https://amzn.to/4mXLRTe" rel="nofollow sponsored noopener" target="_blank">
+          <a href={amazonAffiliateUrl('B09NQK2581', 'camping-in-california-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
             Black Diamond Spot 400
           </a>{' '}
           (~$50). One per person.
         </li>
         <li>
           <strong>Camp chair.</strong>{' '}
-          <a href="https://amzn.to/4e8dK8O" rel="nofollow sponsored noopener" target="_blank">
+          <a href={amazonAffiliateUrl('B00D4JYR62', 'camping-in-california-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
             GCI Outdoor Freestyle Rocker
           </a>{' '}
           (~$80).

@@ -6,6 +6,7 @@ import RelatedGuides from '@/components/guide/RelatedGuides'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
+import { amazonAffiliateUrl } from '@/lib/affiliate/amazon'
 
 const SLUG = '/guides/first-night-camping-guide'
 const TITLE = 'First Night Camping Guide'
@@ -235,56 +236,56 @@ export default function Page() {
         <ul>
           <li>
             <strong>Tent.</strong>{' '}
-            <a href="https://amzn.to/4sUKHJs" rel="nofollow sponsored noopener" target="_blank">
+            <a href={amazonAffiliateUrl('B0D7QHY574', 'first-night-camping-guide')} rel="nofollow sponsored noopener" target="_blank">
               Coleman Sundome 4-Person
             </a>{' '}
             (~$116). The forgiving first tent — easy pitch, real rainfly, room to sit up.
           </li>
           <li>
             <strong>Sleeping bag.</strong>{' '}
-            <a href="https://amzn.to/4mVpMom" rel="nofollow sponsored noopener" target="_blank">
+            <a href={amazonAffiliateUrl('B07H99CMNP', 'first-night-camping-guide')} rel="nofollow sponsored noopener" target="_blank">
               Kelty Tuck 20
             </a>{' '}
             (~$95). 20°F rating covers spring, summer, and most fall first-trips. Roomy fit.
           </li>
           <li>
             <strong>Sleeping pad.</strong>{' '}
-            <a href="https://amzn.to/4vG4xdY" rel="nofollow sponsored noopener" target="_blank">
+            <a href={amazonAffiliateUrl('B00HC9QTO8', 'first-night-camping-guide')} rel="nofollow sponsored noopener" target="_blank">
               TETON Sports ComfortLite
             </a>{' '}
             (~$75). Self-inflates, R-value high enough for cold ground. The piece that matters most for sleep.
           </li>
           <li>
             <strong>Stove.</strong>{' '}
-            <a href="https://amzn.to/4uc7DVG" rel="nofollow sponsored noopener" target="_blank">
+            <a href={amazonAffiliateUrl('B0009PUR5E', 'first-night-camping-guide')} rel="nofollow sponsored noopener" target="_blank">
               Coleman 1-Burner Propane Stove
             </a>{' '}
             (~$40). Boils water in three minutes, no learning curve.
           </li>
           <li>
             <strong>Headlamp.</strong>{' '}
-            <a href="https://amzn.to/4mXLRTe" rel="nofollow sponsored noopener" target="_blank">
+            <a href={amazonAffiliateUrl('B09NQK2581', 'first-night-camping-guide')} rel="nofollow sponsored noopener" target="_blank">
               Black Diamond Spot 400
             </a>{' '}
             (~$50). One per person, no exceptions.
           </li>
           <li>
             <strong>Lantern.</strong>{' '}
-            <a href="https://amzn.to/4tz86RT" rel="nofollow sponsored noopener" target="_blank">
+            <a href={amazonAffiliateUrl('B082HD5JDH', 'first-night-camping-guide')} rel="nofollow sponsored noopener" target="_blank">
               Consciot LED Camping Lantern (2-pack)
             </a>{' '}
             (~$30). One for the picnic table, one inside the tent.
           </li>
           <li>
             <strong>Cooler.</strong>{' '}
-            <a href="https://amzn.to/4d3oHXX" rel="nofollow sponsored noopener" target="_blank">
+            <a href={amazonAffiliateUrl('B08LMVJJ9Q', 'first-night-camping-guide')} rel="nofollow sponsored noopener" target="_blank">
               Coleman Classic Rolling Cooler
             </a>{' '}
             (~$107). Wheels make the walk in from the parking lot a non-event.
           </li>
           <li>
             <strong>Camp chair.</strong>{' '}
-            <a href="https://amzn.to/4e8dK8O" rel="nofollow sponsored noopener" target="_blank">
+            <a href={amazonAffiliateUrl('B00D4JYR62', 'first-night-camping-guide')} rel="nofollow sponsored noopener" target="_blank">
               GCI Outdoor Freestyle Rocker
             </a>{' '}
             (~$80). One per adult. The chair you actually want to sit in for the long evening.

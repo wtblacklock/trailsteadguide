@@ -4,6 +4,7 @@ import RelatedGuides from '@/components/guide/RelatedGuides'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
+import { amazonAffiliateUrl } from '@/lib/affiliate/amazon'
 
 const SLUG = '/guides/spring-camping-for-beginners'
 const TITLE = 'Spring Camping for Beginners'
@@ -198,56 +199,56 @@ export default function Page() {
       <ul>
         <li>
           <strong>Tent.</strong>{' '}
-          <a href="https://amzn.to/4sUKHJs" rel="nofollow sponsored noopener" target="_blank">
+          <a href={amazonAffiliateUrl('B0D7QHY574', 'spring-camping-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
             Coleman Sundome 4-Person
           </a>{' '}
           (~$116). 9×7 ft floor, full-coverage rainfly, weatherproof seams. The safe first-trip tent in any season.
         </li>
         <li>
           <strong>Sleeping bag.</strong>{' '}
-          <a href="https://amzn.to/4mVpMom" rel="nofollow sponsored noopener" target="_blank">
+          <a href={amazonAffiliateUrl('B07H99CMNP', 'spring-camping-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
             Kelty Tuck 20
           </a>{' '}
           (~$95). 20°F rating, roomy fit. The bag that covers spring without being too hot in early summer.
         </li>
         <li>
           <strong>Sleeping pad.</strong>{' '}
-          <a href="https://amzn.to/4vG4xdY" rel="nofollow sponsored noopener" target="_blank">
+          <a href={amazonAffiliateUrl('B00HC9QTO8', 'spring-camping-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
             TETON Sports ComfortLite Sleeping Pad
           </a>{' '}
           (~$75). Self-inflating, R-value high enough for cold-ground spring nights.
         </li>
         <li>
           <strong>Stove.</strong>{' '}
-          <a href="https://amzn.to/4uc7DVG" rel="nofollow sponsored noopener" target="_blank">
+          <a href={amazonAffiliateUrl('B0009PUR5E', 'spring-camping-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
             Coleman 1-Burner Propane Stove
           </a>{' '}
           (~$40). Boils water fast, runs in the rain, no learning curve when your hands are cold.
         </li>
         <li>
           <strong>Cooler.</strong>{' '}
-          <a href="https://amzn.to/4d3oHXX" rel="nofollow sponsored noopener" target="_blank">
+          <a href={amazonAffiliateUrl('B08LMVJJ9Q', 'spring-camping-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
             Coleman Classic Rolling Cooler
           </a>{' '}
           (~$107). The wheels matter when the parking pad is wet and you don&apos;t want to slog gear in arms.
         </li>
         <li>
           <strong>Lighting.</strong>{' '}
-          <a href="https://amzn.to/4tz86RT" rel="nofollow sponsored noopener" target="_blank">
+          <a href={amazonAffiliateUrl('B082HD5JDH', 'spring-camping-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
             Consciot LED Camping Lantern (2-pack)
           </a>{' '}
           (~$30). Sunset is earlier than people remember; you&apos;ll cook dinner in the dark in March and April.
         </li>
         <li>
           <strong>Headlamp.</strong>{' '}
-          <a href="https://amzn.to/4mXLRTe" rel="nofollow sponsored noopener" target="_blank">
+          <a href={amazonAffiliateUrl('B09NQK2581', 'spring-camping-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
             Black Diamond Spot 400
           </a>{' '}
           (~$50). One per person, no exceptions.
         </li>
         <li>
           <strong>Camp chair.</strong>{' '}
-          <a href="https://amzn.to/4e8dK8O" rel="nofollow sponsored noopener" target="_blank">
+          <a href={amazonAffiliateUrl('B00D4JYR62', 'spring-camping-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
             GCI Outdoor Freestyle Rocker
           </a>{' '}
           (~$80). Folds up, holds up. Worth its weight on a cold spring evening.

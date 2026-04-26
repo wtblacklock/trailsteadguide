@@ -6,6 +6,7 @@ import RelatedGuides from '@/components/guide/RelatedGuides'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
+import { amazonAffiliateUrl } from '@/lib/affiliate/amazon'
 
 const SLUG = '/guides/camping-in-the-appalachians-for-beginners'
 const TITLE = 'Camping in the Appalachians for Beginners'
@@ -232,63 +233,63 @@ export default function Page() {
       <ul>
         <li>
           <strong>Tent.</strong>{' '}
-          <a href="https://amzn.to/4sUKHJs" rel="nofollow sponsored noopener" target="_blank">
+          <a href={amazonAffiliateUrl('B0D7QHY574', 'camping-in-the-appalachians-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
             Coleman Sundome 4-Person
           </a>{' '}
           (~$116). Full mesh inner, full-coverage rainfly. Pitch with the door downwind for ventilation in humid valleys.
         </li>
         <li>
           <strong>Sleeping bag.</strong>{' '}
-          <a href="https://amzn.to/4mVpMom" rel="nofollow sponsored noopener" target="_blank">
+          <a href={amazonAffiliateUrl('B07H99CMNP', 'camping-in-the-appalachians-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
             Kelty Tuck 20°F
           </a>{' '}
           (~$95). Right rating for fall/spring at altitude. A 50°F bag works for low-elevation summer.
         </li>
         <li>
           <strong>Sleeping pad.</strong>{' '}
-          <a href="https://amzn.to/4vG4xdY" rel="nofollow sponsored noopener" target="_blank">
+          <a href={amazonAffiliateUrl('B00HC9QTO8', 'camping-in-the-appalachians-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
             TETON Sports ComfortLite
           </a>{' '}
           (~$75). Insulates from cool damp ground.
         </li>
         <li>
           <strong>Stove.</strong>{' '}
-          <a href="https://amzn.to/4uc7DVG" rel="nofollow sponsored noopener" target="_blank">
+          <a href={amazonAffiliateUrl('B0009PUR5E', 'camping-in-the-appalachians-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
             Coleman 1-Burner Propane Stove
           </a>{' '}
           (~$40). Reliable in damp conditions.
         </li>
         <li>
           <strong>Cooler.</strong>{' '}
-          <a href="https://amzn.to/4d3oHXX" rel="nofollow sponsored noopener" target="_blank">
+          <a href={amazonAffiliateUrl('B08LMVJJ9Q', 'camping-in-the-appalachians-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
             Coleman Classic Rolling Cooler
           </a>{' '}
           (~$107). Bear cable or vehicle lockup overnight in any Appalachian campground.
         </li>
         <li>
           <strong>Tarp / canopy.</strong>{' '}
-          <a href="https://amzn.to/4cOwo3a" rel="nofollow sponsored noopener" target="_blank">
+          <a href={amazonAffiliateUrl('B01E45EYJY', 'camping-in-the-appalachians-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
             CORE 10×10 Instant Pop-Up Canopy
           </a>{' '}
           (~$130). For afternoon rain over the picnic table.
         </li>
         <li>
           <strong>Lighting.</strong>{' '}
-          <a href="https://amzn.to/4tz86RT" rel="nofollow sponsored noopener" target="_blank">
+          <a href={amazonAffiliateUrl('B082HD5JDH', 'camping-in-the-appalachians-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
             Consciot LED Camping Lantern (2-pack)
           </a>{' '}
           (~$30).
         </li>
         <li>
           <strong>Headlamp.</strong>{' '}
-          <a href="https://amzn.to/4mXLRTe" rel="nofollow sponsored noopener" target="_blank">
+          <a href={amazonAffiliateUrl('B09NQK2581', 'camping-in-the-appalachians-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
             Black Diamond Spot 400
           </a>{' '}
           (~$50). One per person. Useful for the cool dark mornings of fall.
         </li>
         <li>
           <strong>Camp chair.</strong>{' '}
-          <a href="https://amzn.to/4e8dK8O" rel="nofollow sponsored noopener" target="_blank">
+          <a href={amazonAffiliateUrl('B00D4JYR62', 'camping-in-the-appalachians-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
             GCI Outdoor Freestyle Rocker
           </a>{' '}
           (~$80).
