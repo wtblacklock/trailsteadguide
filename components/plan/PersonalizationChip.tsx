@@ -13,10 +13,10 @@ export default function PersonalizationChip({ parts }: Props) {
   return (
     <div className="max-w-page mx-auto px-4 md:px-8 mt-6">
       <div className="max-w-content mx-auto">
-        <div className="inline-flex flex-wrap items-center gap-x-2 gap-y-1 rounded-full bg-stone-100 px-4 py-2 text-sm text-stone-700 ring-1 ring-stone-200">
-          <span className="font-medium text-stone-900">Built for:</span>
+        <div className="inline-flex flex-wrap items-center gap-x-2 gap-y-1 rounded-2xl bg-stone-100 px-4 py-2 text-sm text-stone-700 ring-1 ring-stone-200">
+          <span className="font-medium text-stone-900 shrink-0">Built for:</span>
           {parts.map((p, i) => (
-            <span key={i} className="inline-flex items-center gap-2">
+            <span key={i} className="inline-flex items-center gap-2 whitespace-nowrap">
               {i > 0 && <span aria-hidden="true" className="text-stone-300">•</span>}
               <span>{p}</span>
             </span>
