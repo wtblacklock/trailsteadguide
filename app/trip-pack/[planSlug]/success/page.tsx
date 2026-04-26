@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { signToken, verifyToken } from '@/lib/pdf/token'
 import { stripeEnabled } from '@/lib/stripe'
+import TripPackSuccessActions from '@/components/trip-pack/TripPackSuccessActions'
 import type { PlanSlug } from '@/types'
 
 export const dynamic = 'force-dynamic'
@@ -38,6 +39,7 @@ export default async function TripPackSuccessPage({ params, searchParams }: Prop
   let email: string | null = null
   let tier: 'basic' | 'premium' = 'basic'
   let errorMessage: string | null = null
+  let purchased = false
 
   // Email-gate (non-Stripe) path: token handed directly from the paywall.
   if (tokenParam) {
@@ -72,6 +74,7 @@ export default async function TripPackSuccessPage({ params, searchParams }: Prop
         const token = signToken({ plan: metaPlan, adults, kids, nights, email: sessionEmail })
         downloadUrl = `/api/generate-pdf?token=${encodeURIComponent(token)}`
         email = sessionEmail || null
+        purchased = true
       }
     } catch (err) {
       console.error('[trip-pack success] stripe lookup failed', err)
@@ -99,13 +102,13 @@ export default async function TripPackSuccessPage({ params, searchParams }: Prop
         <div className="px-8 py-8 space-y-6">
           {downloadUrl ? (
             <>
-              <a
-                href={downloadUrl}
-                download={`trailstead-${plan}.pdf`}
-                className="block w-full text-center bg-[#1f3622] hover:bg-[#2a4a30] text-white font-semibold py-4 rounded-xl transition-colors"
-              >
-                Download your Trip Pack (PDF)
-              </a>
+              <TripPackSuccessActions
+                downloadUrl={downloadUrl}
+                fileName={`trailstead-${plan}.pdf`}
+                planSlug={plan}
+                tier={tier}
+                purchased={purchased}
+              />
               <div className="text-sm text-stone-600 space-y-2">
                 <p>
                   {email ? (

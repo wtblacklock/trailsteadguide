@@ -2,7 +2,8 @@
 
 import { useReducer, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
-import type { QuizState, QuizAction, QuizAnswers, KidsAgeGroup } from '@/types'
+import { track } from '@/lib/analytics'
+import type { QuizState, QuizAction, QuizAnswers, KidsAgeGroup, PartySize } from '@/types'
 import { QUIZ_QUESTIONS as QUESTIONS } from '@/lib/quiz-questions'
 import { computePlanSlug } from '@/lib/quiz-router'
 import { writeSession } from '@/lib/session'
@@ -13,6 +14,21 @@ import QuizProgress from './QuizProgress'
 import QuizQuestion from './QuizQuestion'
 import MidQuizEmailCapture from './MidQuizEmailCapture'
 import GeneratingPlan from './GeneratingPlan'
+
+// Flatten the answer payload to primitive props for Vercel Analytics.
+// PartySize becomes adults/kids ints; arrays join into a comma string.
+function trackQuizAnswer(questionId: string, value: string | string[] | PartySize) {
+  const props: Record<string, string | number | boolean> = { question: questionId }
+  if (typeof value === 'string') {
+    props.answer = value
+  } else if (Array.isArray(value)) {
+    props.answer = value.join(',')
+  } else if (value && typeof value === 'object') {
+    props.adults = value.adults
+    props.kids = value.kids
+  }
+  track('quiz_answered', props)
+}
 
 function quizReducer(state: QuizState, action: QuizAction): QuizState {
   switch (action.type) {
@@ -87,6 +103,11 @@ export default function QuizShell() {
 
   const { currentIndex, answers, showEmailCapture, status } = state
 
+  // Funnel entry — fires once when the quiz UI mounts on /quiz.
+  useEffect(() => {
+    track('quiz_started')
+  }, [])
+
   useEffect(() => {
     if (status !== 'complete') return
 
@@ -111,6 +132,8 @@ export default function QuizShell() {
 
     const out = deriveQuizOutput(completeAnswers, slug)
     const sp = serializeQuizOutput(out)
+    // Funnel exit — fires when the quiz finishes and we redirect to the plan page.
+    track('quiz_completed', { plan: slug, group: out.groupType })
     router.push(`/plans/${slug}?${sp.toString()}`)
   }, [status, answers, router])
 
@@ -138,13 +161,15 @@ export default function QuizShell() {
             key={QUESTIONS[currentIndex].id}
             question={QUESTIONS[currentIndex]}
             initialValue={answers[QUESTIONS[currentIndex].id]}
-            onAnswer={(value) =>
+            onAnswer={(value) => {
+              // Per-step funnel ping so we can see which question loses users.
+              trackQuizAnswer(QUESTIONS[currentIndex].id, value)
               dispatch({
                 type: 'ANSWER',
                 questionId: QUESTIONS[currentIndex].id,
                 value,
               })
-            }
+            }}
           />
 
           {currentIndex > 0 && (

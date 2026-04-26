@@ -1,6 +1,7 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import { track } from '@/lib/analytics'
 import type { PlanSlug } from '@/types'
 import type {
   ActivityType,
@@ -42,6 +43,18 @@ export default function TripPackPaywall({
   const [downloadUrl, setDownloadUrl] = useState<string | null>(null)
   const [error, setError] = useState<string | null>(null)
 
+  // Mark the funnel impression. Stripe mode = paid paywall; otherwise the
+  // free-PDF email gate. Plan/tier are useful breakdown dimensions later.
+  useEffect(() => {
+    if (stripeEnabled) {
+      track('paywall_shown', { plan: planSlug, tier })
+    } else {
+      track('email_gate_shown', { source: 'trip_pack', plan: planSlug })
+    }
+    // Fire once per mount; tier changes shouldn't re-fire impression.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
   async function handleEmailGate(e: React.FormEvent) {
     e.preventDefault()
     setSubmitting(true)
@@ -67,6 +80,8 @@ export default function TripPackPaywall({
         throw new Error(j?.error || 'Could not generate your pack')
       }
       const j = (await res.json()) as { token?: string; downloadUrl: string }
+      // Email captured for the free-PDF path.
+      track('email_gate_submitted', { source: 'trip_pack', plan: planSlug })
       if (j.token) {
         window.location.href = `/trip-pack/${planSlug}/success?token=${encodeURIComponent(j.token)}`
         return
@@ -145,6 +160,10 @@ export default function TripPackPaywall({
               </p>
               <a
                 href={downloadUrl}
+                onClick={() => {
+                  // PDF download intent — fires once per click on the link.
+                  track('pdf_download_clicked', { plan: planSlug, source: 'trip_pack' })
+                }}
                 className="block bg-emerald-700 hover:bg-emerald-800 transition-colors text-white text-center font-semibold py-3 rounded-lg"
               >
                 Download PDF
