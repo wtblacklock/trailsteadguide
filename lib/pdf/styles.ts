@@ -33,7 +33,7 @@ export const PDF_STYLES = `
   }
   .page {
     width: 210mm;
-    padding: 14mm 16mm 12mm;
+    padding: 16mm 16mm 14mm;
     break-before: page;
     page-break-before: always;
     page-break-inside: auto;
@@ -115,6 +115,13 @@ export const PDF_STYLES = `
   }
   .cover-meta span {
     padding: 6px 12px; border: 1px solid #c9c0aa; border-radius: 999px; background: #fffaf0;
+  }
+  .cover-stamp {
+    margin: 18px auto 0;
+    font-size: 8pt; color: #8a9088;
+    letter-spacing: 0.4px;
+    text-align: center;
+    max-width: 150mm;
   }
   .cover-foot {
     text-align: center;
@@ -394,15 +401,6 @@ export const PDF_STYLES = `
     margin: 12px 0 0;
     font-size: 9.5pt; color: #4a5450;
     letter-spacing: 0.3px;
-  }
-  /* Cover stamps — small muted lines under the chip / subtitle */
-  .cover-stamp {
-    margin: 4px 0 0;
-    font-size: 8.5pt; color: #8a9088;
-    letter-spacing: 0.4px;
-  }
-  .cover-stamp:first-of-type {
-    margin-top: 14px;
   }
   /* Gear systems section */
   .gs-grid {
