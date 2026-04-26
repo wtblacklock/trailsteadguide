@@ -274,12 +274,6 @@ export default function Page() {
           >
             Take the Camping Quiz
           </Link>
-          <Link
-            href="/quiz"
-            className="inline-flex items-center justify-center rounded-md font-medium ring-1 ring-stone-700 text-white hover:bg-stone-800 transition-colors px-5 py-3 text-sm"
-          >
-            Get your full trip plan instantly
-          </Link>
         </div>
       </div>
 
