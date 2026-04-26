@@ -64,7 +64,9 @@ export default function FeaturedPlans() {
                   sizes="(max-width: 768px) 100vw, 50vw"
                   loading="lazy"
                   unoptimized
-                  className="object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+                  className={`object-cover transition-transform duration-300 group-hover:scale-[1.02] ${
+                    plan.slug === 'first-weekend-camp' ? 'object-top' : ''
+                  }`}
                 />
               </div>
               <div className="p-8 md:p-10">

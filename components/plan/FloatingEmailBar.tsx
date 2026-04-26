@@ -23,15 +23,35 @@ const STORAGE_KEY = 'tsg:floating-email-dismissed-v2'
  * Dismissal is sticky for the session via sessionStorage.
  */
 export default function FloatingEmailBar({ planSlug, adults, kids }: Props) {
-  const [visible, setVisible] = useState(true)
+  const [visible, setVisible] = useState(false)
+  const [dismissed, setDismissed] = useState(false)
   const [email, setEmail] = useState('')
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
 
-  // Clear any stale per-tab dismissal so each fresh plan view shows the
-  // bar. Dismissal still works within the current view via dismiss().
+  // Clear any stale per-tab dismissal so each fresh plan view starts clean;
+  // the bar then reveals once the user scrolls past 50% of the page.
   useEffect(() => {
     if (typeof window === 'undefined') return
     sessionStorage.removeItem(STORAGE_KEY)
+
+    function check() {
+      const doc = document.documentElement
+      const scrollable = doc.scrollHeight - window.innerHeight
+      if (scrollable <= 0) {
+        setVisible(true)
+        return
+      }
+      const progress = window.scrollY / scrollable
+      if (progress >= 0.5) setVisible(true)
+    }
+
+    check()
+    window.addEventListener('scroll', check, { passive: true })
+    window.addEventListener('resize', check)
+    return () => {
+      window.removeEventListener('scroll', check)
+      window.removeEventListener('resize', check)
+    }
   }, [])
 
   async function handleSubmit(e: React.FormEvent) {
@@ -45,7 +65,7 @@ export default function FloatingEmailBar({ planSlug, adults, kids }: Props) {
       })
       if (!res.ok) throw new Error('send failed')
       setStatus('success')
-      setTimeout(() => setVisible(false), 2800)
+      setTimeout(() => setDismissed(true), 2800)
     } catch {
       setStatus('error')
     }
@@ -55,7 +75,7 @@ export default function FloatingEmailBar({ planSlug, adults, kids }: Props) {
     if (typeof window !== 'undefined') {
       sessionStorage.setItem(STORAGE_KEY, planSlug)
     }
-    setVisible(false)
+    setDismissed(true)
   }
 
   const tripPackHref = (() => {
@@ -66,7 +86,7 @@ export default function FloatingEmailBar({ planSlug, adults, kids }: Props) {
     return `/trip-pack/${planSlug}${qs ? `?${qs}` : ''}`
   })()
 
-  if (!visible) return null
+  if (!visible || dismissed) return null
 
   return (
     <div
