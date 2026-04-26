@@ -73,7 +73,7 @@ export const PDF_STYLES = `
      cover always owns exactly one physical page without sub-pixel overflow
      bumping a sliver onto page 2. */
   .cover {
-    background: linear-gradient(180deg, #f5efe2 0%, #ece4d2 100%);
+    background: #ffffff;
     width: 210mm;
     min-height: 260mm;
     padding: 26mm 22mm;
