@@ -12,7 +12,7 @@ import type { GuideCategory, GuideCategoryId } from './types'
 export const GUIDE_CATEGORIES: GuideCategory[] = [
   {
     id: 'basics',
-    slug: 'camping-basics',
+    slug: 'basics',
     label: 'Camping Basics',
     blurb: 'Foundational skills and essentials.',
     heroTitle: 'Camping Basics',
@@ -22,7 +22,7 @@ export const GUIDE_CATEGORIES: GuideCategory[] = [
   },
   {
     id: 'scenario',
-    slug: 'scenario-based',
+    slug: 'scenario',
     label: 'Scenario-Based Camping',
     blurb: 'Real-world camping situations and how to handle them.',
     heroTitle: 'Scenario-Based Camping',

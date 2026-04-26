@@ -9,7 +9,7 @@ import {
 
 describe('getCategoryBySlug', () => {
   it('returns a category for a known slug', () => {
-    const cat = getCategoryBySlug('camping-basics')
+    const cat = getCategoryBySlug('basics')
     expect(cat).not.toBeNull()
     expect(cat?.id).toBe('basics')
   })
@@ -21,8 +21,8 @@ describe('getCategoryBySlug', () => {
 
 describe('getCategoryById', () => {
   it('returns the matching category for every defined id', () => {
-    expect(getCategoryById('basics').slug).toBe('camping-basics')
-    expect(getCategoryById('scenario').slug).toBe('scenario-based')
+    expect(getCategoryById('basics').slug).toBe('basics')
+    expect(getCategoryById('scenario').slug).toBe('scenario')
     expect(getCategoryById('seasonal').slug).toBe('seasonal')
     expect(getCategoryById('location').slug).toBe('location')
   })

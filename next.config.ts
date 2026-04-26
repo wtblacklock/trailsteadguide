@@ -2,6 +2,15 @@ import type { NextConfig } from 'next'
 import { SKILL_CATEGORIES } from './lib/skills/categories'
 
 /**
+ * Old guide category slugs that were renamed for cleaner URLs. Anything
+ * indexed at the old slug 301s to the new one.
+ */
+const RENAMED_GUIDE_CATEGORY_SLUGS: Record<string, string> = {
+  'camping-basics': 'basics',
+  'scenario-based': 'scenario',
+}
+
+/**
  * Security headers per OWASP best practices + Vercel platform conventions.
  * Applied to every route.
  *
@@ -66,15 +75,21 @@ const nextConfig: NextConfig = {
     ]
   },
   async redirects() {
-    // Old /skills/[category] landing pages now redirect to filter-prefilled
-    // hub URLs. Generated from SKILL_CATEGORIES so config can never drift
-    // from the data layer. Detail pages /skills/[category]/[skill] are
-    // unchanged.
-    return SKILL_CATEGORIES.map((c) => ({
+    const skillRedirects = SKILL_CATEGORIES.map((c) => ({
       source: `/skills/${c.slug}`,
       destination: `/skills?category=${c.slug}`,
       permanent: true,
     }))
+
+    const guideCategoryRedirects = Object.entries(RENAMED_GUIDE_CATEGORY_SLUGS).map(
+      ([oldSlug, newSlug]) => ({
+        source: `/guides/${oldSlug}`,
+        destination: `/guides/${newSlug}`,
+        permanent: true,
+      }),
+    )
+
+    return [...skillRedirects, ...guideCategoryRedirects]
   },
 }
 
