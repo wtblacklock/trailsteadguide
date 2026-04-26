@@ -56,10 +56,31 @@ export const GUIDES: Guide[] = [
     eyebrow: 'With kids',
   },
   {
+    slug: 'spring-camping-for-beginners',
+    category: 'seasonal',
+    title: 'Spring Camping for Beginners',
+    description: 'Mud, swing temperatures, and the season opener — what to expect and pack.',
+    eyebrow: 'Spring',
+  },
+  {
     slug: 'summer-camping-for-beginners',
     category: 'seasonal',
     title: 'Summer Camping for Beginners',
     description: 'What to expect, what to bring, and how to avoid common mistakes.',
     eyebrow: 'Summer',
+  },
+  {
+    slug: 'fall-camping-for-beginners',
+    category: 'seasonal',
+    title: 'Fall Camping for Beginners',
+    description: 'Cold nights, condensation, early dark — fall done right.',
+    eyebrow: 'Fall',
+  },
+  {
+    slug: 'winter-camping-for-beginners',
+    category: 'seasonal',
+    title: 'Winter Camping for Beginners',
+    description: 'When tenting works, when it doesn’t, and the cabin-first beginner path.',
+    eyebrow: 'Winter',
   },
 ]
