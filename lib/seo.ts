@@ -172,7 +172,7 @@ export function productGraph(p: {
   return {
     '@context': 'https://schema.org',
     '@type': 'Product',
-    '@id': `${SITE_URL}/gear-guide#${p.id}`,
+    '@id': `${SITE_URL}/gear#${p.id}`,
     name: p.name,
     description: p.description,
     image: p.image,

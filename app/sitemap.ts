@@ -71,7 +71,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/tools/camping-checklist-generator`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.7 },
 
     // Gear
-    { url: `${BASE_URL}/gear-guide`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/gear`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/gear/sets/backyard-test`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${BASE_URL}/gear/sets/first-night-camp`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${BASE_URL}/gear/sets/first-weekend-camp`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${BASE_URL}/gear/sets/easy-family-basecamp`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${BASE_URL}/compare/coleman-sundome-3p-vs-4p-vs-6p`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE_URL}/compare/camp-chef-everest-vs-coleman-classic-1-burner`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE_URL}/compare/rolling-cooler-vs-steel-belted-cooler`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.7 },

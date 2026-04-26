@@ -108,7 +108,18 @@ const nextConfig: NextConfig = {
       permanent: true,
     }))
 
-    return [...skillRedirects, ...guideCategoryRedirects, ...planRouteRedirects]
+    const gearHubRedirect = {
+      source: '/gear-guide',
+      destination: '/gear',
+      permanent: true,
+    }
+
+    return [
+      ...skillRedirects,
+      ...guideCategoryRedirects,
+      ...planRouteRedirects,
+      gearHubRedirect,
+    ]
   },
 }
 

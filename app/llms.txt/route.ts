@@ -36,7 +36,7 @@ const BODY = `# Trailstead Guide
 
 ## Gear & tools
 
-- [Camping Gear Guide](https://www.trailsteadguide.com/gear-guide): Three curated bundles and a short per-category catalog — no 100-option lists.
+- [Camping Gear Guide](https://www.trailsteadguide.com/gear): Curated gear bundles tied to each camping plan — no 100-option lists.
 - [Coleman Sundome 3P vs 4P vs 6P](https://www.trailsteadguide.com/compare/coleman-sundome-3p-vs-4p-vs-6p): Side-by-side comparison of the three Sundome tent sizes — floor size, standing height, capacity, and price — to pick the right one.
 - [Camp Chef Everest vs Coleman 1-Burner Stove](https://www.trailsteadguide.com/compare/camp-chef-everest-vs-coleman-classic-1-burner): 2-burner vs 1-burner camp stove comparison — BTU output, wind resistance, ignition, and price — to match the stove to your cooking style.
 - [Coleman Rolling Cooler vs Steel-Belted](https://www.trailsteadguide.com/compare/rolling-cooler-vs-steel-belted-cooler): Rolling vs classic Coleman cooler comparison — ice retention, capacity, portability, and price — to pick the right cooler for your trip length.

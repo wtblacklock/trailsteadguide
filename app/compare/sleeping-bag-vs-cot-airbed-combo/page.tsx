@@ -101,7 +101,7 @@ export default function Page() {
           description: DESCRIPTION,
           breadcrumbs: [
             { name: 'Home', url: `${SITE_URL}/` },
-            { name: 'Gear Guide', url: `${SITE_URL}/gear-guide` },
+            { name: 'Gear Guide', url: `${SITE_URL}/gear` },
             { name: TITLE, url: `${SITE_URL}${SLUG}` },
           ],
         })}
@@ -110,7 +110,7 @@ export default function Page() {
       <Breadcrumbs
         items={[
           { name: 'Home', url: `${SITE_URL}/` },
-          { name: 'Gear Guide', url: `${SITE_URL}/gear-guide` },
+          { name: 'Gear Guide', url: `${SITE_URL}/gear` },
           { name: 'Air Mattress vs Cot Combo vs Pad', url: `${SITE_URL}${SLUG}` },
         ]}
       />
@@ -390,7 +390,7 @@ export default function Page() {
           coolers, lighting — with the same short-list approach.
         </p>
         <Link
-          href="/gear-guide"
+          href="/gear"
           className="inline-flex items-center justify-center rounded-md font-medium bg-stone-900 text-white hover:bg-stone-800 transition-colors px-6 py-3 text-sm"
         >
           See the full gear guide

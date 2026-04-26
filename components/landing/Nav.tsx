@@ -78,7 +78,7 @@ export default function Nav() {
           />
           <NavLink href="/skills">Skills</NavLink>
           <NavLink href="/activities">Activities</NavLink>
-          <NavLink href="/gear-guide">Gear Guide</NavLink>
+          <NavLink href="/gear">Gear Guide</NavLink>
           <NavLink href="/about">About</NavLink>
         </div>
 
@@ -154,7 +154,7 @@ export default function Nav() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/gear-guide" onClick={() => setMobileOpen(false)} className="block text-stone-800 text-base">
+                  <Link href="/gear" onClick={() => setMobileOpen(false)} className="block text-stone-800 text-base">
                     Gear Guide
                   </Link>
                 </li>
