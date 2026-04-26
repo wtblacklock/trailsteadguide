@@ -9,7 +9,7 @@ import { MetadataRoute } from 'next'
 import { ACTIVITIES } from '@/lib/activities/data'
 import { SKILLS } from '@/lib/skills/data'
 import { getCategoryById } from '@/lib/skills/categories'
-import { GUIDES } from '@/lib/guides'
+import { GUIDES, GUIDE_CATEGORIES } from '@/lib/guides'
 
 const BASE_URL = 'https://www.trailsteadguide.com'
 
@@ -34,6 +34,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Guides hub
     { url: `${BASE_URL}/guides`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.9 },
+    // Guide categories (4 hubs — Camping Basics / Scenario / Seasonal / Location)
+    ...GUIDE_CATEGORIES.map((c) => ({
+      url: `${BASE_URL}/guides/${c.slug}`,
+      lastModified: FRESH,
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    })),
     // Guide articles (derived from the catalogue)
     ...GUIDES.map((g) => ({
       url: `${BASE_URL}/guides/${g.slug}`,
