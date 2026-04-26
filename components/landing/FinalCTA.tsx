@@ -1,117 +1,34 @@
-'use client'
-
-import Image from 'next/image'
 import Link from 'next/link'
-import { useEffect, useRef } from 'react'
 
 export default function FinalCTA() {
-  const wrapRef = useRef<HTMLElement>(null)
-
-  useEffect(() => {
-    let raf = 0
-    const apply = () => {
-      raf = 0
-      const wrap = wrapRef.current
-      if (!wrap) return
-      const rect = wrap.getBoundingClientRect()
-      const vh = window.innerHeight || 1
-      // Progress 0 when CTA is just entering viewport from the bottom,
-      // 1 when its top is ~20% down from the viewport top.
-      const start = vh * 1.0
-      const end = vh * 0.2
-      const distance = start - end
-      const pos = start - rect.top
-      const raw = Math.max(0, Math.min(1, pos / distance))
-      const eased = 1 - Math.pow(1 - raw, 2)
-      wrap.style.setProperty('--cta-progress', String(eased))
-    }
-    const onScroll = () => {
-      if (raf) return
-      raf = window.requestAnimationFrame(apply)
-    }
-    apply()
-    window.addEventListener('scroll', onScroll, { passive: true })
-    window.addEventListener('resize', onScroll)
-    return () => {
-      window.removeEventListener('scroll', onScroll)
-      window.removeEventListener('resize', onScroll)
-      if (raf) window.cancelAnimationFrame(raf)
-    }
-  }, [])
-
   return (
-    <section ref={wrapRef} data-reveal className="final-cta-root pb-16">
-      <div className="final-cta-outer">
-        <div className="relative bg-stone-900 final-cta-box overflow-hidden min-h-[480px] flex items-end">
-          <Image
-            src="https://images.unsplash.com/photo-1478827536114-da961b7f86d2?w=1400&auto=format&fit=crop&q=80"
-            alt="Family camping under a starlit sky"
-            fill
-            className="object-cover opacity-40"
-            unoptimized
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-stone-950/90 via-stone-950/40 to-transparent" />
-
-          <div className="relative z-10 w-full max-w-page mx-auto px-8 py-10 md:py-16">
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-end">
-              <div className="col-span-1 md:col-span-7">
-                <h2 className="font-serif text-5xl md:text-6xl font-semibold text-white tracking-tight leading-tight mb-8">
-                  Ready to stop guessing?
-                </h2>
-                <div className="flex flex-wrap items-center gap-6">
-                  <Link
-                    href="/quiz"
-                    className="inline-flex items-center justify-center rounded-md font-medium bg-white text-stone-900 hover:bg-stone-100 transition-colors px-8 py-4 text-base"
-                  >
-                    Start Your Camping Plan
-                  </Link>
-                  <Link
-                    href="/guides"
-                    className="text-base text-stone-300 hover:text-white transition-colors underline underline-offset-4"
-                  >
-                    Explore Guides
-                  </Link>
-                </div>
-              </div>
-              <div className="col-span-1 md:col-span-4 md:col-start-9 flex items-end pb-1">
-                <p className="text-stone-400 leading-relaxed">
-                  A few questions. A complete plan — timeline, gear, meals, kid activities, and safety guidance.
-                </p>
-              </div>
-            </div>
+    <section data-reveal className="py-16 md:py-32 max-w-page mx-auto px-8">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-end">
+        <div className="col-span-1 md:col-span-7">
+          <h2 className="font-serif text-5xl md:text-6xl font-semibold text-stone-950 tracking-tight leading-tight mb-8">
+            Ready to stop guessing?
+          </h2>
+          <div className="flex flex-wrap items-center gap-6">
+            <Link
+              href="/quiz"
+              className="inline-flex items-center justify-center rounded-md font-medium bg-stone-900 text-white hover:bg-stone-800 transition-colors px-8 py-4 text-base"
+            >
+              Start Your Camping Plan
+            </Link>
+            <Link
+              href="/guides"
+              className="text-base text-stone-500 hover:text-stone-700 transition-colors underline underline-offset-4"
+            >
+              Explore Guides
+            </Link>
           </div>
         </div>
+        <div className="col-span-1 md:col-span-4 md:col-start-9 flex items-end pb-1">
+          <p className="text-stone-500 leading-relaxed">
+            A few questions. A complete plan — timeline, gear, meals, kid activities, and safety guidance.
+          </p>
+        </div>
       </div>
-
-      <style jsx>{`
-        .final-cta-root {
-          --cta-progress: 0;
-        }
-        .final-cta-outer {
-          width: 100%;
-          padding-left: calc((1 - var(--cta-progress, 0)) * 2rem);
-          padding-right: calc((1 - var(--cta-progress, 0)) * 2rem);
-          max-width: calc(90rem + (100vw - 90rem) * var(--cta-progress, 0));
-          margin-left: auto;
-          margin-right: auto;
-        }
-        .final-cta-box {
-          border-radius: calc((1 - var(--cta-progress, 0)) * 1.5rem);
-        }
-        @media (max-width: 767px) {
-          .final-cta-outer {
-            max-width: none;
-            padding-left: calc((1 - var(--cta-progress, 0)) * 1.25rem);
-            padding-right: calc((1 - var(--cta-progress, 0)) * 1.25rem);
-          }
-        }
-        @media (prefers-reduced-motion: reduce) {
-          .final-cta-outer,
-          .final-cta-box {
-            transition: none;
-          }
-        }
-      `}</style>
     </section>
   )
 }
