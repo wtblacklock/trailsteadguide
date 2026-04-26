@@ -3,11 +3,6 @@ import type { GuideCategory, GuideCategoryId } from './types'
 /**
  * The 4 Camping Guide categories. Slugs are URL-safe and chosen to not
  * collide with any existing guide slug under `/app/guides/`.
- *
- * Two categories (`seasonal`, `location`) are intentionally placeholders
- * today — the hub still renders all four cards per the content-hub
- * spec, but empty categories funnel into the quiz instead of a guide
- * list.
  */
 export const GUIDE_CATEGORIES: GuideCategory[] = [
   {
@@ -49,7 +44,6 @@ export const GUIDE_CATEGORIES: GuideCategory[] = [
     heroSubhead:
       'State parks, national parks, regional differences, and the campgrounds worth booking.',
     ctaLabel: 'Explore Locations',
-    placeholder: true,
   },
 ]
 

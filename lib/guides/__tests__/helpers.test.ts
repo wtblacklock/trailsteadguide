@@ -47,8 +47,10 @@ describe('getGuidesByCategoryId', () => {
     expect(guides.every((g) => g.category === 'basics')).toBe(true)
   })
 
-  it('returns an empty array for a placeholder category', () => {
-    expect(getGuidesByCategoryId('location')).toEqual([])
+  it('returns guides for the location category', () => {
+    const guides = getGuidesByCategoryId('location')
+    expect(guides.length).toBeGreaterThan(0)
+    expect(guides.every((g) => g.category === 'location')).toBe(true)
   })
 })
 
@@ -61,10 +63,10 @@ describe('getPopulatedCategories', () => {
     }
   })
 
-  it('excludes placeholder categories', () => {
+  it('includes the location category once it has guides', () => {
     const populated = getPopulatedCategories()
     const ids = populated.map((c) => c.id)
-    expect(ids).not.toContain('location')
+    expect(ids).toContain('location')
   })
 })
 
