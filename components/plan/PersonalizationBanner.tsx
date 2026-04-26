@@ -25,10 +25,16 @@ export default function PersonalizationBanner() {
 
   if (!session) return null
 
+  const AGE_LABELS: Record<string, string> = {
+    under_5: 'under 5',
+    '5_10': '5–10',
+    '10+': '10+',
+  }
   const ageGroups = Array.isArray(session.kidsAgeGroup) ? session.kidsAgeGroup : [session.kidsAgeGroup]
-  const kidsText = ageGroups.includes('none') || ageGroups.length === 0
-    ? 'no kids'
-    : `kids aged ${ageGroups.filter((a) => a !== 'none').join(' & ')}`
+  const labeled = ageGroups
+    .filter((a) => a !== 'none')
+    .map((a) => AGE_LABELS[a] ?? a)
+  const kidsText = labeled.length === 0 ? 'no kids' : `kids aged ${labeled.join(' & ')}`
 
   const experienceText = {
     none: 'brand new to camping',

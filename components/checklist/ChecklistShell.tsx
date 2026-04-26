@@ -32,9 +32,9 @@ const QUESTIONS = [
     multiSelect: true,
     options: [
       { label: 'No kids — just adults', value: 'none' },
-      { label: '3–6 years old', value: '3-6' },
-      { label: '7–12 years old', value: '7-12' },
-      { label: 'Teens', value: 'teens' },
+      { label: 'Under 5 (toddlers and preschool)', value: 'under_5' },
+      { label: '5–10 years old', value: '5_10' },
+      { label: '10 and up (incl. teens)', value: '10+' },
     ],
   },
   {

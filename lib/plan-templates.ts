@@ -62,12 +62,12 @@ export const PLAN_TEMPLATES: Record<string, PlanTemplate> = {
       {
         title: 'Night sounds inventory',
         description: 'Before sleep: lie still and identify 3 sounds you can hear from inside the tent.',
-        ageGroup: '7-12',
+        ageGroup: '5_10',
       },
       {
         title: 'Flashlight story time',
         description: 'Stories told by flashlight inside sleeping bags. Let kids lead one.',
-        ageGroup: '3-6',
+        ageGroup: 'under_5',
       },
     ],
     safetyNotes: [
@@ -203,12 +203,12 @@ export const PLAN_TEMPLATES: Record<string, PlanTemplate> = {
       {
         title: 'Junior Ranger program',
         description: 'Most state parks offer free Junior Ranger booklets. Pick one up at the visitor center.',
-        ageGroup: '7-12',
+        ageGroup: '5_10',
       },
       {
         title: 'Rock and stick collection',
         description: 'Give each kid a small bag. Collect 5 interesting things. Share discoveries at dinner.',
-        ageGroup: '3-6',
+        ageGroup: 'under_5',
       },
       {
         title: "S'mores by the fire",
@@ -355,12 +355,12 @@ export const PLAN_TEMPLATES: Record<string, PlanTemplate> = {
       {
         title: 'Fishing (if near water)',
         description: 'Day licenses available at most state park offices. Minimal gear needed — a rod, hook, bait.',
-        ageGroup: '7-12',
+        ageGroup: '5_10',
       },
       {
         title: 'Nature journaling',
         description: 'Each kid gets a small notebook. Draw what you see. No rules, no pressure.',
-        ageGroup: '7-12',
+        ageGroup: '5_10',
       },
       {
         title: 'Camp cooking participation',
@@ -515,7 +515,7 @@ export const PLAN_TEMPLATES: Record<string, PlanTemplate> = {
       {
         title: 'Camp art station',
         description: 'Small table with colored pencils and paper. Kids draw what they see. No prompts needed.',
-        ageGroup: '3-6',
+        ageGroup: 'under_5',
       },
       {
         title: 'Nature scavenger hunt',

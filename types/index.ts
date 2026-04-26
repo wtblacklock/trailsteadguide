@@ -5,10 +5,10 @@ export type PlanSlug =
   | 'easy-family-basecamp'
 
 export type Experience = 'none' | 'some' | 'confident'
-export type Anxiety = 'low' | 'medium' | 'high'
 export type Intent = 'test' | 'real-trip' | 'multi-night'
-export type ComfortPriority = 'low' | 'high'
-export type KidsAgeGroup = 'none' | '3-6' | '7-12' | 'teens'
+export type ComfortLevel = 'minimal' | 'balanced' | 'comfort-first'
+export type ActivityType = 'relaxing' | 'balanced' | 'active'
+export type KidsAgeGroup = 'none' | 'under_5' | '5_10' | '10+'
 
 export type PartySize = { adults: number; kids: number }
 
@@ -17,8 +17,8 @@ export type QuizAnswers = {
   kidsAgeGroup: KidsAgeGroup[]
   partySize: PartySize
   intent: Intent
-  anxiety: Anxiety
-  comfortPriority: ComfortPriority
+  activityType: ActivityType
+  comfortLevel: ComfortLevel
 }
 
 export type SessionSnapshot = QuizAnswers & {

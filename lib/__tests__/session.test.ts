@@ -18,10 +18,10 @@ import type { SessionSnapshot } from '@/types'
 
 const mockSnapshot: SessionSnapshot = {
   experience: 'none',
-  kidsAgeGroup: ['3-6'],
+  kidsAgeGroup: ['under_5'],
   intent: 'real-trip',
-  anxiety: 'high',
-  comfortPriority: 'low',
+  activityType: 'relaxing',
+  comfortLevel: 'balanced',
   partySize: { adults: 2, kids: 2 },
   planSlug: 'first-night-camp',
   timestamp: 1714000000000,

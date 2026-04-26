@@ -3,25 +3,25 @@ import { computePlanSlug } from '../quiz-router'
 import type { QuizAnswers } from '@/types'
 
 describe('computePlanSlug', () => {
-  it('returns easy-family-basecamp for high comfort priority regardless of experience', () => {
+  it('returns easy-family-basecamp for comfort-first regardless of experience', () => {
     const answers: QuizAnswers = {
       experience: 'none',
-      kidsAgeGroup: ['3-6'],
+      kidsAgeGroup: ['under_5'],
       intent: 'real-trip',
-      anxiety: 'high',
-      comfortPriority: 'high',
+      activityType: 'balanced',
+      comfortLevel: 'comfort-first',
       partySize: { adults: 2, kids: 2 },
     }
     expect(computePlanSlug(answers)).toBe('easy-family-basecamp')
   })
 
-  it('returns easy-family-basecamp for high comfort even with confident experience', () => {
+  it('returns easy-family-basecamp for comfort-first even with confident experience', () => {
     const answers: QuizAnswers = {
       experience: 'confident',
       kidsAgeGroup: ['none'],
       intent: 'multi-night',
-      anxiety: 'low',
-      comfortPriority: 'high',
+      activityType: 'active',
+      comfortLevel: 'comfort-first',
       partySize: { adults: 2, kids: 2 },
     }
     expect(computePlanSlug(answers)).toBe('easy-family-basecamp')
@@ -30,10 +30,10 @@ describe('computePlanSlug', () => {
   it('returns backyard-test for no experience + test intent', () => {
     const answers: QuizAnswers = {
       experience: 'none',
-      kidsAgeGroup: ['7-12'],
+      kidsAgeGroup: ['5_10'],
       intent: 'test',
-      anxiety: 'high',
-      comfortPriority: 'low',
+      activityType: 'balanced',
+      comfortLevel: 'minimal',
       partySize: { adults: 2, kids: 2 },
     }
     expect(computePlanSlug(answers)).toBe('backyard-test')
@@ -42,10 +42,10 @@ describe('computePlanSlug', () => {
   it('returns first-weekend-camp for some experience + multi-night', () => {
     const answers: QuizAnswers = {
       experience: 'some',
-      kidsAgeGroup: ['7-12'],
+      kidsAgeGroup: ['5_10'],
       intent: 'multi-night',
-      anxiety: 'medium',
-      comfortPriority: 'low',
+      activityType: 'active',
+      comfortLevel: 'balanced',
       partySize: { adults: 2, kids: 2 },
     }
     expect(computePlanSlug(answers)).toBe('first-weekend-camp')
@@ -54,10 +54,10 @@ describe('computePlanSlug', () => {
   it('returns first-weekend-camp for confident + multi-night', () => {
     const answers: QuizAnswers = {
       experience: 'confident',
-      kidsAgeGroup: ['teens'],
+      kidsAgeGroup: ['10+'],
       intent: 'multi-night',
-      anxiety: 'low',
-      comfortPriority: 'low',
+      activityType: 'active',
+      comfortLevel: 'minimal',
       partySize: { adults: 2, kids: 2 },
     }
     expect(computePlanSlug(answers)).toBe('first-weekend-camp')
@@ -66,10 +66,10 @@ describe('computePlanSlug', () => {
   it('returns first-night-camp as default for no-experience + real-trip', () => {
     const answers: QuizAnswers = {
       experience: 'none',
-      kidsAgeGroup: ['3-6'],
+      kidsAgeGroup: ['under_5'],
       intent: 'real-trip',
-      anxiety: 'high',
-      comfortPriority: 'low',
+      activityType: 'relaxing',
+      comfortLevel: 'balanced',
       partySize: { adults: 2, kids: 2 },
     }
     expect(computePlanSlug(answers)).toBe('first-night-camp')
@@ -78,10 +78,10 @@ describe('computePlanSlug', () => {
   it('returns first-night-camp for some experience + real-trip', () => {
     const answers: QuizAnswers = {
       experience: 'some',
-      kidsAgeGroup: ['teens'],
+      kidsAgeGroup: ['10+'],
       intent: 'real-trip',
-      anxiety: 'medium',
-      comfortPriority: 'low',
+      activityType: 'balanced',
+      comfortLevel: 'balanced',
       partySize: { adults: 2, kids: 2 },
     }
     expect(computePlanSlug(answers)).toBe('first-night-camp')

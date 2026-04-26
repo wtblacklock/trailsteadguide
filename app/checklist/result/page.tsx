@@ -10,7 +10,7 @@ export const metadata = pageMetadata({
   noIndex: true,
 })
 
-const ALLOWED_AGES: KidsAgeGroup[] = ['none', '3-6', '7-12', 'teens']
+const ALLOWED_AGES: KidsAgeGroup[] = ['none', 'under_5', '5_10', '10+']
 
 function clampInt(raw: string | undefined, fallback: number, min: number, max: number): number {
   const n = Number.parseInt(raw ?? '', 10)

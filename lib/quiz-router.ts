@@ -1,7 +1,7 @@
 import type { QuizAnswers, PlanSlug } from '@/types'
 
 export function computePlanSlug(answers: QuizAnswers): PlanSlug {
-  if (answers.comfortPriority === 'high') {
+  if (answers.comfortLevel === 'comfort-first') {
     return 'easy-family-basecamp'
   }
 

@@ -123,14 +123,14 @@ export function buildChecklist({ adults, kids, nights, ages }: ChecklistInput): 
       { id: 'whistle', name: 'Whistle', qty: `×${kids}` },
       { id: 'outfits', name: 'Extra outfit changes', qty: `×${kids * 2}` },
     ]
-    if (ages.includes('3-6')) {
+    if (ages.includes('under_5')) {
       kidItems.push({ id: 'wipes', name: 'Wet wipes (lots)' })
       kidItems.push({ id: 'activity-young', name: 'Coloring books, crayons, simple puzzles' })
     }
-    if (ages.includes('7-12')) {
+    if (ages.includes('5_10')) {
       kidItems.push({ id: 'activity-mid', name: 'Magnifier, nature notebook, playing cards' })
     }
-    if (ages.includes('teens')) {
+    if (ages.includes('10+')) {
       kidItems.push({ id: 'activity-teen', name: 'Book or e-reader, headphones, journal' })
     }
     categories.push({ heading: `For kids (${kids})`, items: kidItems })

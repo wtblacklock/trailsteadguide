@@ -2,10 +2,13 @@
 
 import { useReducer, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
-import type { QuizState, QuizAction, QuizAnswers } from '@/types'
+import type { QuizState, QuizAction, QuizAnswers, KidsAgeGroup } from '@/types'
 import { QUIZ_QUESTIONS as QUESTIONS } from '@/lib/quiz-questions'
 import { computePlanSlug } from '@/lib/quiz-router'
 import { writeSession } from '@/lib/session'
+import { partySizeToPeopleBucket } from '@/lib/personalization/modifiers'
+import { serializeQuizOutput } from '@/lib/personalization/url-params'
+import type { GroupType, KidsAgeBucket, QuizOutput } from '@/lib/personalization/types'
 import QuizProgress from './QuizProgress'
 import QuizQuestion from './QuizQuestion'
 import MidQuizEmailCapture from './MidQuizEmailCapture'
@@ -44,6 +47,40 @@ const initialState: QuizState = {
   status: 'active',
 }
 
+/**
+ * Compress the multi-select kidsAgeGroup answer into the single bucket the
+ * personalization engine uses. Pick the youngest selected bucket so modifiers
+ * default to the most constraining case (under_5 dominates 5_10, etc.).
+ */
+function pickKidsAgeBucket(ages: KidsAgeGroup[]): KidsAgeBucket | undefined {
+  if (ages.includes('under_5')) return 'under_5'
+  if (ages.includes('5_10')) return '5_10'
+  if (ages.includes('10+')) return '10+'
+  return undefined
+}
+
+function deriveQuizOutput(answers: QuizAnswers, planSlug: ReturnType<typeof computePlanSlug>): QuizOutput {
+  const { partySize, kidsAgeGroup } = answers
+  const explicitNoKids = kidsAgeGroup.includes('none') || kidsAgeGroup.length === 0
+  const hasKids = !explicitNoKids && partySize.kids > 0
+  const groupType: GroupType = hasKids
+    ? 'family'
+    : partySize.adults === 1
+      ? 'solo'
+      : 'couple'
+
+  return {
+    planSlug,
+    partySize,
+    groupType,
+    peopleBucket: partySizeToPeopleBucket(partySize.adults, partySize.kids),
+    hasKids,
+    kidsAge: hasKids ? pickKidsAgeBucket(kidsAgeGroup) : undefined,
+    activityType: answers.activityType,
+    comfortLevel: answers.comfortLevel,
+  }
+}
+
 export default function QuizShell() {
   const router = useRouter()
   const [state, dispatch] = useReducer(quizReducer, initialState)
@@ -53,8 +90,15 @@ export default function QuizShell() {
   useEffect(() => {
     if (status !== 'complete') return
 
-    const requiredKeys: (keyof QuizAnswers)[] = ['experience', 'kidsAgeGroup', 'partySize', 'intent', 'anxiety', 'comfortPriority']
-    const isComplete = requiredKeys.every(k => k in answers)
+    const requiredKeys: (keyof QuizAnswers)[] = [
+      'experience',
+      'kidsAgeGroup',
+      'partySize',
+      'intent',
+      'activityType',
+      'comfortLevel',
+    ]
+    const isComplete = requiredKeys.every((k) => k in answers)
     if (!isComplete) return
     const completeAnswers = answers as QuizAnswers
 
@@ -64,8 +108,10 @@ export default function QuizShell() {
       planSlug: slug,
       timestamp: Date.now(),
     })
-    const { adults, kids } = completeAnswers.partySize
-    router.push(`/plans/${slug}?adults=${adults}&kids=${kids}`)
+
+    const out = deriveQuizOutput(completeAnswers, slug)
+    const sp = serializeQuizOutput(out)
+    router.push(`/plans/${slug}?${sp.toString()}`)
   }, [status, answers, router])
 
   // Generating state — show animated loader before redirect.
