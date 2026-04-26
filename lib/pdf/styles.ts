@@ -22,6 +22,8 @@ export const PDF_STYLES = `
     background: #ffffff;
     line-height: 1.5;
     font-size: 10.5pt;
+    orphans: 3;
+    widows: 3;
   }
   /* Safety: nothing may overflow the paper width. */
   img, svg, table, pre { max-width: 100%; }
@@ -31,7 +33,7 @@ export const PDF_STYLES = `
   }
   .page {
     width: 210mm;
-    padding: 16mm 16mm 12mm;
+    padding: 14mm 16mm 12mm;
     break-before: page;
     page-break-before: always;
     page-break-inside: auto;
@@ -125,18 +127,22 @@ export const PDF_STYLES = `
     line-height: 1.5;
   }
 
-  /* SECTION HEADERS */
+  /* SECTION HEADERS — keep stuck to following content so a header is never
+     orphaned at the bottom of a physical page when the section overflows. */
   .section-eyebrow {
     font-size: 8.5pt; letter-spacing: 3px; text-transform: uppercase;
     color: #3a5a3e; margin: 0 0 6px; font-weight: 600;
+    break-after: avoid; page-break-after: avoid;
   }
   .section-title {
     font-size: 22pt; font-weight: 700; letter-spacing: -0.6px;
     line-height: 1.1; margin: 0 0 12px; color: #1f3622;
+    break-after: avoid; page-break-after: avoid;
   }
   .section-lede {
     font-size: 10.5pt; color: #4a5450; max-width: 160mm;
     margin: 0 0 18px; line-height: 1.55;
+    break-after: avoid; page-break-after: avoid;
   }
 
   /* OVERVIEW */
@@ -158,10 +164,12 @@ export const PDF_STYLES = `
 
   /* TIMELINE */
   .timeline-group { margin-bottom: 16px; page-break-inside: auto; }
+  .timeline-group:last-child { margin-bottom: 0; }
   .timeline-group-title {
     font-size: 10pt; font-weight: 700; letter-spacing: 2px;
     text-transform: uppercase; color: #1f3622;
     margin: 0 0 8px; padding-bottom: 5px; border-bottom: 1.5px solid #1f3622;
+    break-after: avoid; page-break-after: avoid;
   }
   .timeline-row {
     display: flex; gap: 12px; padding: 8px 0;
@@ -304,6 +312,7 @@ export const PDF_STYLES = `
     font-size: 10pt; font-weight: 700; letter-spacing: 2px;
     text-transform: uppercase; color: #1f3622;
     margin: 0 0 8px; padding-bottom: 5px; border-bottom: 1.5px solid #1f3622;
+    break-after: avoid; page-break-after: avoid;
   }
   .activity-pdf-day + .activity-pdf-grid { margin-bottom: 18px; }
   .activity-pdf-grid {
