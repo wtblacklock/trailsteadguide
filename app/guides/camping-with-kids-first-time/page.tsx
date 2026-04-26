@@ -30,6 +30,7 @@ export default function Page() {
           breadcrumbs: [
             { name: 'Home', url: `${SITE_URL}/` },
             { name: 'Guides', url: `${SITE_URL}/guides` },
+            { name: 'Scenario-Based Camping', url: `${SITE_URL}/guides/scenario-based` },
             { name: TITLE, url: `${SITE_URL}${SLUG}` },
           ],
         })}
@@ -62,6 +63,7 @@ export default function Page() {
         items={[
           { name: 'Home', url: `${SITE_URL}/` },
           { name: 'Guides', url: `${SITE_URL}/guides` },
+          { name: 'Scenario-Based Camping', url: `${SITE_URL}/guides/scenario-based` },
           { name: TITLE, url: `${SITE_URL}${SLUG}` },
         ]}
       />

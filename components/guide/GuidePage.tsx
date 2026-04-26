@@ -1,21 +1,34 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import type { ReactNode } from 'react'
+import { getCategoryForGuide } from '@/lib/guides'
 
 export type GuidePageProps = {
   eyebrow?: string
   title: string
   lede: string
   heroImage?: { src: string; alt: string }
-  slug: string // current guide slug — kept for API compatibility (RelatedGuides reads it)
+  slug: string // current guide slug — used by RelatedGuides and to derive the category back-link
   children: ReactNode
 }
 
-export function GuidePage({ eyebrow = 'Guide', title, lede, heroImage, children }: GuidePageProps) {
+export function GuidePage({ eyebrow = 'Guide', title, lede, heroImage, slug, children }: GuidePageProps) {
+  const category = getCategoryForGuide(slug)
+
   return (
     <article>
       {/* Editorial header — text-first, narrow column, oversized serif title */}
       <header className="max-w-3xl mx-auto px-8 pt-16 md:pt-28 pb-8">
+        {category && (
+          <p className="text-xs font-semibold tracking-[0.18em] uppercase text-stone-500 mb-6">
+            <Link
+              href={`/guides/${category.slug}`}
+              className="hover:text-stone-900 transition-colors"
+            >
+              ← {category.label}
+            </Link>
+          </p>
+        )}
         <p className="text-xs font-semibold tracking-[0.18em] uppercase text-stone-500 mb-8">
           {eyebrow}
         </p>
@@ -56,7 +69,7 @@ export function GuidePage({ eyebrow = 'Guide', title, lede, heroImage, children 
             Make it yours
           </p>
           <h2 className="font-serif text-3xl md:text-4xl font-semibold text-stone-950 tracking-tight leading-tight mb-4 max-w-xl">
-            Turn this into a plan for your family.
+            Get Your Camping Plan.
           </h2>
           <p className="text-stone-600 text-lg leading-relaxed mb-6 max-w-xl">
             Answer 5 questions. We scale the timeline, gear, and meals to your kids&apos; ages and your party size.
