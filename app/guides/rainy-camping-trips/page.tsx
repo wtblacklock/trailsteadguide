@@ -337,7 +337,7 @@ export default function Page() {
           When the sleeping bag is wet through, when the tent floor is taking on water, when the forecast updates to severe weather, or when kids cannot get warm. Bail in daylight, with a plan to come back next weekend.
         </p>
       </GuidePage>
-      <GuideArticleCTA matchedPlanId="first-weekend-camp" />
+      <GuideArticleCTA />
       <RelatedGuides currentSlug="rainy-camping-trips" />
     </>
   )

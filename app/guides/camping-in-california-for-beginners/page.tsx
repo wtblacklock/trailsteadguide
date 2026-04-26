@@ -324,7 +324,7 @@ export default function Page() {
         A coastal or foothill state park within 2 hours of home, with bear boxes if applicable. Save Yosemite Valley, Big Sur tent sites, and Joshua Tree for trip three or four — they are extraordinary, but harder to reserve and harder to camp in cold.
       </p>
     </GuidePage>
-    <GuideArticleCTA matchedPlanId="easy-family-basecamp" />
+    <GuideArticleCTA />
     <RelatedGuides currentSlug="camping-in-california-for-beginners" />
     </>
   )

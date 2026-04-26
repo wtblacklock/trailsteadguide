@@ -292,7 +292,7 @@ export default function Page() {
         Usually yes. Most western fire bans lift after the first hard rain or freeze in late September or October. Confirm with the campground page or state forestry site the week before, and bring a propane stove either way.
       </p>
     </GuidePage>
-    <GuideArticleCTA matchedPlanId="easy-family-basecamp" />
+    <GuideArticleCTA />
     <RelatedGuides currentSlug="fall-camping-for-beginners" />
     </>
   )

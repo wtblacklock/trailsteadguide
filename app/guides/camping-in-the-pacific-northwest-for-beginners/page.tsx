@@ -324,7 +324,7 @@ export default function Page() {
         A state park within 90 minutes of Seattle or Portland, mid-July through August. Deception Pass, Lake Wenatchee, Cape Disappointment, Beverly Beach, Silver Falls. Save Mt Rainier&apos;s Paradise area, the Hoh Rainforest, and Crater Lake for trip three.
       </p>
     </GuidePage>
-    <GuideArticleCTA matchedPlanId="easy-family-basecamp" />
+    <GuideArticleCTA />
     <RelatedGuides currentSlug="camping-in-the-pacific-northwest-for-beginners" />
     </>
   )

@@ -213,7 +213,7 @@ export default function Page() {
         Burns from the fire pit or the stove, and lacerations from folding chair hinges. Not wildlife. Not scary falls. Brief the kids on both hazards explicitly and keep a proper first aid kit at the top of the car trunk.
       </p>
     </GuidePage>
-    <GuideArticleCTA matchedPlanId="easy-family-basecamp" />
+    <GuideArticleCTA />
     <RelatedGuides currentSlug="first-time-camping-mistakes" />
     </>
   )

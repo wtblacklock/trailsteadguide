@@ -244,7 +244,7 @@ export default function Page() {
         No. Most parks ban it for invasive insect reasons. Buy a bundle at the camp store.
       </p>
     </GuidePage>
-    <GuideArticleCTA matchedPlanId="first-night-camp" />
+    <GuideArticleCTA />
     <RelatedGuides currentSlug="first-camping-trip-checklist" />
     </>
   )

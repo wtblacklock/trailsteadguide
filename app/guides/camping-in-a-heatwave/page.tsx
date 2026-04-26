@@ -350,7 +350,7 @@ export default function Page() {
           Different problems. Desert is brutal mid-day but cools at night. Forest is more bearable mid-day but the night never cools. Pick the one your sleep system can handle.
         </p>
       </GuidePage>
-      <GuideArticleCTA matchedPlanId="backyard-test" />
+      <GuideArticleCTA />
       <RelatedGuides currentSlug="camping-in-a-heatwave" />
     </>
   )

@@ -318,7 +318,7 @@ export default function Page() {
         A Hill Country state park within 90 minutes of home, in shoulder season, with shade trees and water access. Pedernales Falls, Inks Lake, Garner, McKinney Falls, and Lost Maples are proven first-trip parks. Big Bend is unforgettable — and a trip three or four, not a trip one.
       </p>
     </GuidePage>
-    <GuideArticleCTA matchedPlanId="easy-family-basecamp" />
+    <GuideArticleCTA />
     <RelatedGuides currentSlug="camping-in-texas-for-beginners" />
     </>
   )

@@ -331,7 +331,7 @@ export default function Page() {
           No. Borrow the tent, borrow sleeping bags, buy a cheap headlamp and a real sleeping pad. Find out what you actually use before you spend money on the rest.
         </p>
       </GuidePage>
-      <GuideArticleCTA matchedPlanId="first-night-camp" />
+      <GuideArticleCTA />
       <RelatedGuides currentSlug="first-night-camping-guide" />
     </>
   )

@@ -288,7 +288,7 @@ export default function Page() {
         Often not until late April or May. Bring drinking water with you and don&apos;t assume the spigot at the site will run, even at &ldquo;open&rdquo; campgrounds.
       </p>
     </GuidePage>
-    <GuideArticleCTA matchedPlanId="easy-family-basecamp" />
+    <GuideArticleCTA />
     <RelatedGuides currentSlug="spring-camping-for-beginners" />
     </>
   )

@@ -347,7 +347,7 @@ export default function Page() {
         A state park within 2 hours of home, in July–August. Lake George Islands or Eighth Lake (NY); Pillsbury or Bear Brook (NH); Quechee or Smugglers&apos; Notch (VT); Sebago or Lily Bay (ME). Save Acadia, the Presidentials, and the High Peaks for trip three.
       </p>
     </GuidePage>
-    <GuideArticleCTA matchedPlanId="easy-family-basecamp" />
+    <GuideArticleCTA />
     <RelatedGuides currentSlug="camping-in-the-northeast-for-beginners" />
     </>
   )

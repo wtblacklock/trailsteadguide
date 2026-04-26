@@ -205,7 +205,7 @@ export default function Page() {
         One night. Seriously. Go home Saturday, sleep in your bed Saturday night, remember what worked and what didn&apos;t, and book a two-night trip for next month.
       </p>
     </GuidePage>
-    <GuideArticleCTA matchedPlanId="easy-family-basecamp" />
+    <GuideArticleCTA />
     <RelatedGuides currentSlug="camping-for-beginners" />
     </>
   )

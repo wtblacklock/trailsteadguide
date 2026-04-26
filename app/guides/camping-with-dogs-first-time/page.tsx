@@ -334,7 +334,7 @@ export default function Page() {
           One night, close to home. Anything new takes more out of a dog than you expect.
         </p>
       </GuidePage>
-      <GuideArticleCTA matchedPlanId="easy-family-basecamp" />
+      <GuideArticleCTA />
       <RelatedGuides currentSlug="camping-with-dogs-first-time" />
     </>
   )

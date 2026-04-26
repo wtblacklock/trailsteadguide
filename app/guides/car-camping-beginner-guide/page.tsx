@@ -215,7 +215,7 @@ export default function Page() {
         For a family of four on two nights, plan on a full mid-size SUV trunk or a hatchback with a roof bag. Tent, bags, cooler, stove, chairs, kitchen bin — it adds up fast.
       </p>
     </GuidePage>
-    <GuideArticleCTA matchedPlanId="easy-family-basecamp" />
+    <GuideArticleCTA />
     <RelatedGuides currentSlug="car-camping-beginner-guide" />
     </>
   )

@@ -210,7 +210,7 @@ export default function Page() {
         Plan three activities per day: morning walk, afternoon quiet activity at the site, evening fire with s&apos;mores.
       </p>
     </GuidePage>
-    <GuideArticleCTA matchedPlanId="easy-family-basecamp" />
+    <GuideArticleCTA />
     <RelatedGuides currentSlug="camping-with-kids-first-time" />
     </>
   )

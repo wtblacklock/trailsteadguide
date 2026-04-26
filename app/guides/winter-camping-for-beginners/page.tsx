@@ -291,7 +291,7 @@ export default function Page() {
         For a low-elevation campground above 25°F with no snow forecast, a high-quality 3-season tent works. For real snow load, sustained sub-20°F, or any wind, the 4-season tent is the right call. The honest beginner answer is: rent a cabin instead.
       </p>
     </GuidePage>
-    <GuideArticleCTA matchedPlanId="first-weekend-camp" />
+    <GuideArticleCTA />
     <RelatedGuides currentSlug="winter-camping-for-beginners" />
     </>
   )

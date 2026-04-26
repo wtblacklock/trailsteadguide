@@ -271,7 +271,7 @@ export default function Page() {
         Often, but not always. Western states issue fire bans regularly in mid-to-late summer. Check the campground page and the state fire-restriction site the week before. Bring a propane stove either way.
       </p>
     </GuidePage>
-    <GuideArticleCTA matchedPlanId="easy-family-basecamp" />
+    <GuideArticleCTA />
     <RelatedGuides currentSlug="summer-camping-for-beginners" />
     </>
   )

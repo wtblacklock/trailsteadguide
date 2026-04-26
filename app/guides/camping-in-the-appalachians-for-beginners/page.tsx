@@ -328,7 +328,7 @@ export default function Page() {
         A state park within 90 minutes of home, in spring or late September. NC&apos;s Stone Mountain, Mount Mitchell, Hanging Rock; TN&apos;s Fall Creek Falls; VA&apos;s Hungry Mother. Save Cades Cove and Big Meadows for trip three.
       </p>
     </GuidePage>
-    <GuideArticleCTA matchedPlanId="easy-family-basecamp" />
+    <GuideArticleCTA />
     <RelatedGuides currentSlug="camping-in-the-appalachians-for-beginners" />
     </>
   )

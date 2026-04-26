@@ -219,7 +219,7 @@ export default function Page() {
         Most state parks and national forests allow dogs on a leash at campsites and on trails. Always confirm on the park website. Bring a tie-out stake, extra water, a bed, and poop bags. Never leave a dog alone at a site.
       </p>
     </GuidePage>
-    <GuideArticleCTA matchedPlanId="first-night-camp" />
+    <GuideArticleCTA />
     <RelatedGuides currentSlug="how-to-plan-a-camping-trip" />
     </>
   )

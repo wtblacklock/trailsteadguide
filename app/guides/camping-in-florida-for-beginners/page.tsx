@@ -314,7 +314,7 @@ export default function Page() {
         A Florida State Park within 90 minutes of home, November through April — Wekiwa Springs, Hillsborough River, Anastasia, Bahia Honda, Ichetucknee. Save the Everglades for trip three.
       </p>
     </GuidePage>
-    <GuideArticleCTA matchedPlanId="easy-family-basecamp" />
+    <GuideArticleCTA />
     <RelatedGuides currentSlug="camping-in-florida-for-beginners" />
     </>
   )

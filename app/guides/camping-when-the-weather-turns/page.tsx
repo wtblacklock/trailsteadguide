@@ -333,7 +333,7 @@ export default function Page() {
           At the first hard signal: forecast revision, flash flood watch, gusts that lift the tarp, close lightning. Earlier is always cleaner.
         </p>
       </GuidePage>
-      <GuideArticleCTA matchedPlanId="first-weekend-camp" />
+      <GuideArticleCTA />
       <RelatedGuides currentSlug="camping-when-the-weather-turns" />
     </>
   )
