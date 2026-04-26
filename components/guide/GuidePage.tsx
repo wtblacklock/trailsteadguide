@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import type { ReactNode } from 'react'
 import { getCategoryForGuide } from '@/lib/guides'
-import { AUTHOR_NAME } from '@/lib/seo'
+import { AUTHOR_NAME, AUTHOR_IMAGE } from '@/lib/seo'
 
 export type GuidePageProps = {
   eyebrow?: string
@@ -50,10 +50,19 @@ export function GuidePage({ eyebrow = 'Guide', title, lede, heroImage, slug, dat
         <p className="mt-8 text-xl md:text-2xl text-stone-600 leading-[1.5] font-light">
           {lede}
         </p>
-        <p className="mt-8 text-sm text-stone-500">
-          By <Link href="/about" className="text-stone-700 hover:text-stone-900 underline decoration-stone-300 underline-offset-4 transition-colors">{AUTHOR_NAME}</Link>
-          {updatedLabel && <span> · Last updated {updatedLabel}</span>}
-        </p>
+        <div className="mt-8 flex items-center gap-3 text-sm text-stone-500">
+          <Image
+            src={AUTHOR_IMAGE}
+            alt={`${AUTHOR_NAME} headshot`}
+            width={36}
+            height={36}
+            className="h-9 w-9 rounded-full ring-1 ring-stone-200 object-cover"
+          />
+          <p>
+            By <Link href="/about" className="text-stone-700 hover:text-stone-900 underline decoration-stone-300 underline-offset-4 transition-colors">{AUTHOR_NAME}</Link>
+            {updatedLabel && <span> · Last updated {updatedLabel}</span>}
+          </p>
+        </div>
       </header>
 
       {/* Hero image — sits BELOW the lede, full-bleed within page max, editorial caption feel */}

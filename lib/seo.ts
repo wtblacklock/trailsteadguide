@@ -78,6 +78,7 @@ export const organizationNode = {
 export const AUTHOR_NAME = 'William Blacklock'
 export const AUTHOR_BIO =
   'William Blacklock built Trailstead Guide after planning his own family’s first camping trips and realizing the existing checklists assume you already know what you’re doing.'
+export const AUTHOR_IMAGE = '/images/author-william-blacklock.jpg'
 
 export const personNode = {
   '@type': 'Person',
@@ -85,6 +86,7 @@ export const personNode = {
   name: AUTHOR_NAME,
   url: `${SITE_URL}/about`,
   description: AUTHOR_BIO,
+  image: `${SITE_URL}${AUTHOR_IMAGE}`,
   worksFor: { '@id': `${SITE_URL}/#organization` },
 }
 
