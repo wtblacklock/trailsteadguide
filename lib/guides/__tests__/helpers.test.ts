@@ -48,7 +48,6 @@ describe('getGuidesByCategoryId', () => {
   })
 
   it('returns an empty array for a placeholder category', () => {
-    expect(getGuidesByCategoryId('seasonal')).toEqual([])
     expect(getGuidesByCategoryId('location')).toEqual([])
   })
 })
@@ -65,7 +64,6 @@ describe('getPopulatedCategories', () => {
   it('excludes placeholder categories', () => {
     const populated = getPopulatedCategories()
     const ids = populated.map((c) => c.id)
-    expect(ids).not.toContain('seasonal')
     expect(ids).not.toContain('location')
   })
 })

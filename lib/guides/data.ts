@@ -55,4 +55,11 @@ export const GUIDES: Guide[] = [
     description: 'What actually keeps kids happy at camp.',
     eyebrow: 'With kids',
   },
+  {
+    slug: 'summer-camping-for-beginners',
+    category: 'seasonal',
+    title: 'Summer Camping for Beginners',
+    description: 'What to expect, what to bring, and how to avoid common mistakes.',
+    eyebrow: 'Summer',
+  },
 ]

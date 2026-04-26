@@ -39,7 +39,6 @@ export const GUIDE_CATEGORIES: GuideCategory[] = [
     heroSubhead:
       'Spring, summer, fall, winter — what changes, what to pack, and how to pick the right weekend.',
     ctaLabel: 'Explore Seasonal Camping',
-    placeholder: true,
   },
   {
     id: 'location',
