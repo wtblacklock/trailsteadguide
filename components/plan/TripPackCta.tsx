@@ -1,5 +1,11 @@
 import Link from 'next/link'
 import type { PlanSlug } from '@/types'
+import type {
+  ActivityType,
+  ComfortLevel,
+  GroupType,
+  KidsAgeBucket,
+} from '@/lib/personalization/types'
 
 const TITLES: Record<PlanSlug, string> = {
   'backyard-test': 'Backyard Test Night',
@@ -16,12 +22,25 @@ export default function TripPackCta({
   planSlug,
   adults,
   kids,
+  group,
+  kidsAge,
+  activity,
+  comfort,
 }: {
   planSlug: PlanSlug
   adults: number
   kids: number
+  group?: GroupType
+  kidsAge?: KidsAgeBucket
+  activity?: ActivityType
+  comfort?: ComfortLevel
 }) {
-  const qs = new URLSearchParams({ adults: String(adults), kids: String(kids) }).toString()
+  const params = new URLSearchParams({ adults: String(adults), kids: String(kids) })
+  if (group) params.set('group', group)
+  if (kidsAge) params.set('kidsAge', kidsAge)
+  if (activity) params.set('activity', activity)
+  if (comfort) params.set('comfort', comfort)
+  const qs = params.toString()
   return (
     <section className="py-12">
       <div className="max-w-content mx-auto px-6">

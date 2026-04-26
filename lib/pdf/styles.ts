@@ -380,4 +380,58 @@ export const PDF_STYLES = `
   .skill-pdf-link {
     font-size: 8pt; color: #6a7268; margin: 0; letter-spacing: 0.3px;
   }
+  /* Cover personalization chip */
+  .cover-chip {
+    margin: 12px 0 0;
+    font-size: 9.5pt; color: #4a5450;
+    letter-spacing: 0.3px;
+  }
+  /* Gear systems section */
+  .gs-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 8px;
+  }
+  .gs-card {
+    border: 1px solid #e6e0d0;
+    border-radius: 10px;
+    padding: 12px 14px;
+    background: #fbf8f1;
+  }
+  .gs-title {
+    font-size: 11pt; font-weight: 700; color: #1f3622;
+    margin: 0 0 4px;
+  }
+  .gs-desc {
+    font-size: 9pt; color: #4a5450;
+    margin: 0 0 8px; line-height: 1.45;
+  }
+  .gs-structure {
+    list-style: none; padding: 0; margin: 0 0 8px;
+  }
+  .gs-structure li {
+    font-size: 9pt; color: #2c332e;
+    margin: 0 0 2px; padding-left: 12px; position: relative;
+  }
+  .gs-structure li::before {
+    content: "—"; position: absolute; left: 0; color: #b9b09a;
+  }
+  .gs-cat {
+    margin-top: 6px;
+  }
+  .gs-cat-title {
+    font-size: 7.5pt; font-weight: 700; letter-spacing: 1.2px;
+    text-transform: uppercase; color: #6a7268;
+    margin: 0 0 3px;
+  }
+  .gs-products {
+    list-style: none; padding: 0; margin: 0;
+  }
+  .gs-products li {
+    font-size: 9pt; color: #2c332e; margin: 0 0 2px;
+  }
+  .gs-price {
+    color: #6a7268; font-size: 8.5pt;
+  }
 `

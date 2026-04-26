@@ -2,6 +2,12 @@
 
 import { useState } from 'react'
 import type { PlanSlug } from '@/types'
+import type {
+  ActivityType,
+  ComfortLevel,
+  GroupType,
+  KidsAgeBucket,
+} from '@/lib/personalization/types'
 
 /**
  * Sticky paywall card. Email-gate today (instant download); the Stripe path
@@ -13,12 +19,20 @@ export default function TripPackPaywall({
   adults,
   kids,
   nights,
+  group,
+  kidsAge,
+  activity,
+  comfort,
 }: {
   planSlug: PlanSlug
   planTitle: string
   adults: number
   kids: number
   nights: number
+  group?: GroupType
+  kidsAge?: KidsAgeBucket
+  activity?: ActivityType
+  comfort?: ComfortLevel
 }) {
   const stripeEnabled = process.env.NEXT_PUBLIC_STRIPE_ENABLED === 'true'
 
@@ -36,7 +50,17 @@ export default function TripPackPaywall({
       const res = await fetch('/api/trip-pack-token', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ plan: planSlug, adults, kids, nights, email }),
+        body: JSON.stringify({
+          plan: planSlug,
+          adults,
+          kids,
+          nights,
+          email,
+          group,
+          kidsAge,
+          activity,
+          comfort,
+        }),
       })
       if (!res.ok) {
         const j = (await res.json().catch(() => null)) as { error?: string } | null
@@ -62,7 +86,18 @@ export default function TripPackPaywall({
       const res = await fetch('/api/checkout', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ plan: planSlug, adults, kids, nights, tier, email }),
+        body: JSON.stringify({
+          plan: planSlug,
+          adults,
+          kids,
+          nights,
+          tier,
+          email,
+          group,
+          kidsAge,
+          activity,
+          comfort,
+        }),
       })
       if (!res.ok) {
         const j = (await res.json().catch(() => null)) as { error?: string } | null

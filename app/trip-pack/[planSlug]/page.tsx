@@ -3,6 +3,7 @@ import { PLAN_TEMPLATES } from '@/lib/plan-templates'
 import { getPlanContent } from '@/lib/plan-content'
 import { resolveGearSet } from '@/lib/gear-sets'
 import { parsePartySize } from '@/lib/party-size'
+import { parseQuizOutput, type PlanSearchParams } from '@/lib/personalization/url-params'
 import TripPackPaywall from '@/components/trip-pack/TripPackPaywall'
 import TripPackPreview from '@/components/trip-pack/TripPackPreview'
 import { pageMetadata, SITE_URL } from '@/lib/seo'
@@ -39,7 +40,7 @@ export default async function TripPackPage({
   searchParams,
 }: {
   params: Promise<{ planSlug: string }>
-  searchParams: Promise<{ adults?: string; kids?: string; nights?: string }>
+  searchParams: Promise<PlanSearchParams & { nights?: string }>
 }) {
   const { planSlug } = await params
   if (!VALID.includes(planSlug as PlanSlug)) notFound()
@@ -50,6 +51,7 @@ export default async function TripPackPage({
   const gear = resolveGearSet(content.gearSetId)
   const sp = await searchParams
   const { adults, kids } = parsePartySize(sp)
+  const out = parseQuizOutput(slug, sp)
   const nights = clamp(Number(sp.nights ?? NIGHT_DEFAULT[slug]), 1, 7)
 
   return (
@@ -88,6 +90,10 @@ export default async function TripPackPage({
           adults={adults}
           kids={kids}
           nights={nights}
+          group={out.groupType}
+          kidsAge={out.kidsAge}
+          activity={out.activityType}
+          comfort={out.comfortLevel}
         />
       </div>
     </main>

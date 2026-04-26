@@ -9,6 +9,12 @@
 
 import crypto from 'node:crypto'
 import type { PartySize, PlanSlug } from '@/types'
+import type {
+  ActivityType,
+  ComfortLevel,
+  GroupType,
+  KidsAgeBucket,
+} from '@/lib/personalization/types'
 
 const TTL_MS = 24 * 60 * 60 * 1000 // 24h
 
@@ -21,6 +27,11 @@ export type TripPackTokenPayload = {
   iat: number
   /** Optional purchaser email (for analytics, not displayed) */
   email?: string
+  /** Optional personalization modifiers — older tokens omit these. */
+  group?: GroupType
+  kidsAge?: KidsAgeBucket
+  activity?: ActivityType
+  comfort?: ComfortLevel
 }
 
 function getSecret(): string {
@@ -74,10 +85,18 @@ export function tokenToInput(p: TripPackTokenPayload): {
   planSlug: PlanSlug
   party: PartySize
   nights: number
+  group?: GroupType
+  kidsAge?: KidsAgeBucket
+  activity?: ActivityType
+  comfort?: ComfortLevel
 } {
   return {
     planSlug: p.plan,
     party: { adults: p.adults, kids: p.kids },
     nights: p.nights,
+    group: p.group,
+    kidsAge: p.kidsAge,
+    activity: p.activity,
+    comfort: p.comfort,
   }
 }

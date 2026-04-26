@@ -2,6 +2,21 @@ import { NextResponse } from 'next/server'
 import { signToken } from '@/lib/pdf/token'
 import { sendTripPackEmail } from '@/lib/pdf/email'
 import type { PlanSlug } from '@/types'
+import type {
+  ActivityType,
+  ComfortLevel,
+  GroupType,
+  KidsAgeBucket,
+} from '@/lib/personalization/types'
+
+const VALID_GROUP: ReadonlySet<GroupType> = new Set(['solo', 'couple', 'family'])
+const VALID_KIDS_AGE: ReadonlySet<KidsAgeBucket> = new Set(['under_5', '5_10', '10+'])
+const VALID_ACTIVITY: ReadonlySet<ActivityType> = new Set(['relaxing', 'balanced', 'active'])
+const VALID_COMFORT: ReadonlySet<ComfortLevel> = new Set(['minimal', 'balanced', 'comfort-first'])
+
+function pickEnum<T extends string>(raw: unknown, valid: ReadonlySet<T>): T | undefined {
+  return typeof raw === 'string' && valid.has(raw as T) ? (raw as T) : undefined
+}
 
 export const runtime = 'nodejs'
 
@@ -27,6 +42,10 @@ export async function POST(req: Request) {
     kids?: number
     nights?: number
     email?: string
+    group?: string
+    kidsAge?: string
+    activity?: string
+    comfort?: string
   } | null
   if (!body) return NextResponse.json({ error: 'Bad JSON' }, { status: 400 })
 
@@ -41,7 +60,12 @@ export async function POST(req: Request) {
 
   if (!email) return NextResponse.json({ error: 'Email required' }, { status: 400 })
 
-  const token = signToken({ plan, adults, kids, nights, email })
+  const group = pickEnum(body.group, VALID_GROUP)
+  const kidsAge = pickEnum(body.kidsAge, VALID_KIDS_AGE)
+  const activity = pickEnum(body.activity, VALID_ACTIVITY)
+  const comfort = pickEnum(body.comfort, VALID_COMFORT)
+
+  const token = signToken({ plan, adults, kids, nights, email, group, kidsAge, activity, comfort })
   const relativeDownload = `/api/generate-pdf?token=${encodeURIComponent(token)}`
 
   // Build an absolute URL so the email link works from any inbox.

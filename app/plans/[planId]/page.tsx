@@ -183,7 +183,15 @@ export default async function PlanPage({
       {products.length > 0 && (
         <div id="shop" className="scroll-mt-32"><AffiliateBlock products={products} /></div>
       )}
-      <TripPackCta planSlug={slug} adults={adults} kids={kids} />
+      <TripPackCta
+        planSlug={slug}
+        adults={adults}
+        kids={kids}
+        group={out.groupType}
+        kidsAge={out.kidsAge}
+        activity={out.activityType}
+        comfort={out.comfortLevel}
+      />
       <FloatingEmailBar planSlug={slug} adults={adults} kids={kids} />
     </main>
   )
