@@ -155,6 +155,11 @@ function renderCover(
     chipParts.length > 0
       ? `<p class="cover-chip">Built for: ${escapeHtml(chipParts.join(' · '))}</p>`
       : ''
+  const generatedDate = new Date().toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  })
   return `
   <div class="cover">
     ${COVER_LOGO_HTML}
@@ -163,6 +168,8 @@ function renderCover(
       <h1 class="cover-title">${escapeHtml(content.cover.title)}</h1>
       <p class="cover-subtitle">${escapeHtml(personalizedSubtitle)}</p>
       ${chipHtml}
+      <p class="cover-stamp">Generated ${escapeHtml(generatedDate)}</p>
+      <p class="cover-stamp">Pages tailored to your trip</p>
       <div class="cover-meta">
         <span>${escapeHtml(nightLabel)}</span>
         <span>${escapeHtml(partyLabel)}</span>

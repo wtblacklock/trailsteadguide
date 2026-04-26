@@ -386,6 +386,15 @@ export const PDF_STYLES = `
     font-size: 9.5pt; color: #4a5450;
     letter-spacing: 0.3px;
   }
+  /* Cover stamps — small muted lines under the chip / subtitle */
+  .cover-stamp {
+    margin: 4px 0 0;
+    font-size: 8.5pt; color: #8a9088;
+    letter-spacing: 0.4px;
+  }
+  .cover-stamp:first-of-type {
+    margin-top: 14px;
+  }
   /* Gear systems section */
   .gs-grid {
     display: grid;
