@@ -91,21 +91,24 @@ export default function Hero() {
       <div className="max-w-page mx-auto px-8 pt-14 md:pt-24 pb-10 md:pb-16">
         <div ref={textRef} className="max-w-4xl" style={{ willChange: 'opacity, transform' }}>
           <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-semibold text-stone-950 tracking-tight leading-[1.08] mb-5 md:mb-6">
-            Plan your first family camping trip in 2 minutes.
+            Plan your first camping trip in minutes.
           </h1>
           <p className="text-stone-500 text-lg md:text-xl leading-relaxed mb-8 md:mb-10 max-w-2xl">
-            A step-by-step system for first-time campers. Know exactly what to bring, what to do, and what to expect.
+            Get a clear, personalized camping plan based on who you&rsquo;re going with, your experience level, and the type of trip you want.
           </p>
           <div className="flex flex-wrap items-center gap-6">
             <Link
               href="/quiz"
               className="inline-flex items-center justify-center rounded-md font-medium bg-stone-900 text-white hover:bg-stone-800 transition-colors px-8 py-4 text-base"
             >
-              Start Your Trailstead Plan
+              Start Your Camping Plan
             </Link>
-            <a href="#example" className="text-base text-stone-500 hover:text-stone-700 transition-colors underline underline-offset-4">
-              See example plan
-            </a>
+            <Link
+              href="/guides"
+              className="text-base text-stone-500 hover:text-stone-700 transition-colors underline underline-offset-4"
+            >
+              Explore Guides
+            </Link>
           </div>
           <p className="text-stone-400 text-sm mt-6">Free · No account required</p>
         </div>

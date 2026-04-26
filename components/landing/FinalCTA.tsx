@@ -56,18 +56,26 @@ export default function FinalCTA() {
             <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-end">
               <div className="col-span-1 md:col-span-7">
                 <h2 className="font-serif text-5xl md:text-6xl font-semibold text-white tracking-tight leading-tight mb-8">
-                  Your first camping trip starts here.
+                  Ready to stop guessing?
                 </h2>
-                <Link
-                  href="/quiz"
-                  className="inline-flex items-center justify-center rounded-md font-medium bg-white text-stone-900 hover:bg-stone-100 transition-colors px-8 py-4 text-base"
-                >
-                  Start Your Trailstead Plan
-                </Link>
+                <div className="flex flex-wrap items-center gap-6">
+                  <Link
+                    href="/quiz"
+                    className="inline-flex items-center justify-center rounded-md font-medium bg-white text-stone-900 hover:bg-stone-100 transition-colors px-8 py-4 text-base"
+                  >
+                    Start Your Camping Plan
+                  </Link>
+                  <Link
+                    href="/guides"
+                    className="text-base text-stone-300 hover:text-white transition-colors underline underline-offset-4"
+                  >
+                    Explore Guides
+                  </Link>
+                </div>
               </div>
               <div className="col-span-1 md:col-span-4 md:col-start-9 flex items-end pb-1">
                 <p className="text-stone-400 leading-relaxed">
-                  Answer 5 questions. Get a complete trip plan — timeline, gear list, kid activities, and safety guidance. About 2 minutes.
+                  A few questions. A complete plan — timeline, gear, meals, kid activities, and safety guidance.
                 </p>
               </div>
             </div>

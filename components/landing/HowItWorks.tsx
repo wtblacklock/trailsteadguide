@@ -4,18 +4,18 @@ export default function HowItWorks() {
   const steps = [
     {
       number: '01',
-      title: 'Answer 5 quick questions',
-      description: 'Tell us about your experience level, your kids, what kind of trip you want, and what matters most to you. Takes about 2 minutes.',
+      title: 'Answer a few quick questions about your trip',
+      description: 'Experience, party, conditions — the inputs that actually change the plan.',
     },
     {
       number: '02',
-      title: 'Receive your personalized plan',
-      description: "We match you to one of four plan templates built specifically for your family's situation — not generic camping advice.",
+      title: 'We generate your complete camping plan',
+      description: 'Matched to one of four structured templates and tuned to your answers. No generic advice.',
     },
     {
       number: '03',
-      title: 'Follow it on your trip',
-      description: 'Your plan includes a full trip timeline, gear checklist, kid activities, and safety notes. Use it start to finish.',
+      title: 'Get your checklist, timeline, and gear setup',
+      description: 'Everything you need to know — the order to do it in, what to bring, what to expect.',
     },
   ]
 
@@ -25,7 +25,7 @@ export default function HowItWorks() {
       <div className="grid grid-cols-1 md:grid-cols-12 gap-6 mb-12 md:mb-20">
         <div className="col-span-1 md:col-span-5">
           <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-stone-950 tracking-tight">
-            Three steps to your first camping trip.
+            A simple system that removes guesswork.
           </h2>
         </div>
       </div>
@@ -54,7 +54,7 @@ export default function HowItWorks() {
           href="/quiz"
           className="inline-flex items-center justify-center rounded-md font-medium bg-stone-900 text-white hover:bg-stone-800 transition-colors px-8 py-4 text-base"
         >
-          Start Your Trailstead Plan
+          Start Your Plan
         </Link>
       </div>
     </section>
