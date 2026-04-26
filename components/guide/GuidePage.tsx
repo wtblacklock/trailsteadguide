@@ -61,28 +61,6 @@ export function GuidePage({ eyebrow = 'Guide', title, lede, heroImage, slug, chi
       <section className="max-w-3xl mx-auto px-8">
         <div className="prose-editorial">{children}</div>
       </section>
-
-      {/* Divider + inline CTA */}
-      <section className="max-w-3xl mx-auto px-8 mt-20">
-        <div className="border-t border-stone-200 pt-12">
-          <p className="text-xs font-semibold tracking-[0.18em] uppercase text-stone-500 mb-4">
-            Make it yours
-          </p>
-          <h2 className="font-serif text-3xl md:text-4xl font-semibold text-stone-950 tracking-tight leading-tight mb-4 max-w-xl">
-            Get Your Camping Plan.
-          </h2>
-          <p className="text-stone-600 text-lg leading-relaxed mb-6 max-w-xl">
-            Answer 5 questions. We scale the timeline, gear, and meals to your kids&apos; ages and your party size.
-          </p>
-          <Link
-            href="/quiz"
-            className="inline-flex items-center justify-center rounded-md font-medium bg-stone-900 text-white hover:bg-stone-800 transition-colors px-6 py-3 text-sm"
-          >
-            Start Planning
-          </Link>
-        </div>
-      </section>
-
     </article>
   )
 }

@@ -1,4 +1,5 @@
 import { GuidePage } from '@/components/guide/GuidePage'
+import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
@@ -243,6 +244,7 @@ export default function Page() {
         No. Most parks ban it for invasive insect reasons. Buy a bundle at the camp store.
       </p>
     </GuidePage>
+    <GuideArticleCTA matchedPlanId="first-night-camp" />
     <RelatedGuides currentSlug="first-camping-trip-checklist" />
     </>
   )

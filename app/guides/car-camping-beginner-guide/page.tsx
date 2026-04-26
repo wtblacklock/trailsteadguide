@@ -1,4 +1,5 @@
 import { GuidePage } from '@/components/guide/GuidePage'
+import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
@@ -214,6 +215,7 @@ export default function Page() {
         For a family of four on two nights, plan on a full mid-size SUV trunk or a hatchback with a roof bag. Tent, bags, cooler, stove, chairs, kitchen bin — it adds up fast.
       </p>
     </GuidePage>
+    <GuideArticleCTA matchedPlanId="easy-family-basecamp" />
     <RelatedGuides currentSlug="car-camping-beginner-guide" />
     </>
   )

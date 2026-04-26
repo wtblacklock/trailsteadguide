@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { GuidePage } from '@/components/guide/GuidePage'
+import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
@@ -282,31 +283,6 @@ export default function Page() {
         <Link href="/gear" className="font-medium underline underline-offset-4">View Full Gear Setup →</Link>
       </p>
 
-      <div className="not-prose my-12 rounded-2xl bg-stone-900 text-white p-8 md:p-10">
-        <p className="text-xs font-semibold tracking-[0.18em] uppercase text-stone-400 mb-3">
-          Trip-specific plan
-        </p>
-        <h3 className="font-serif text-2xl md:text-3xl font-semibold tracking-tight leading-tight mb-3 max-w-xl">
-          Not sure what setup fits your trip?
-        </h3>
-        <p className="text-stone-300 leading-relaxed mb-6 max-w-xl">
-          Answer 5 questions and we&apos;ll match the timeline, gear, and meals to your dates, your party, and where in Colorado you&apos;re going.
-        </p>
-        <div className="flex flex-wrap gap-3">
-          <Link
-            href="/quiz"
-            className="inline-flex items-center justify-center rounded-md font-medium bg-white text-stone-900 hover:bg-stone-100 transition-colors px-5 py-3 text-sm"
-          >
-            Take the Camping Quiz
-          </Link>
-          <Link
-            href="/quiz"
-            className="inline-flex items-center justify-center rounded-md font-medium ring-1 ring-stone-700 text-white hover:bg-stone-800 transition-colors px-5 py-3 text-sm"
-          >
-            Get your exact plan for Colorado
-          </Link>
-        </div>
-      </div>
 
       <h2>Frequently asked</h2>
       <h3>When is the best time to camp in Colorado?</h3>
@@ -334,6 +310,7 @@ export default function Page() {
         A Front Range or lower-elevation state park within 90 minutes — Cheyenne Mountain, Chatfield, Cherry Creek, Eleven Mile. Below 8,000 ft skips the altitude curve. Save RMNP and the high San Juans for trip three.
       </p>
     </GuidePage>
+    <GuideArticleCTA matchedPlanId="easy-family-basecamp" />
     <RelatedGuides currentSlug="camping-in-colorado-for-beginners" />
     </>
   )

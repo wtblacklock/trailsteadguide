@@ -1,4 +1,5 @@
 import { GuidePage } from '@/components/guide/GuidePage'
+import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
@@ -209,6 +210,7 @@ export default function Page() {
         Plan three activities per day: morning walk, afternoon quiet activity at the site, evening fire with s&apos;mores.
       </p>
     </GuidePage>
+    <GuideArticleCTA matchedPlanId="easy-family-basecamp" />
     <RelatedGuides currentSlug="camping-with-kids-first-time" />
     </>
   )

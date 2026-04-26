@@ -1,5 +1,5 @@
-import Link from 'next/link'
 import { GuidePage } from '@/components/guide/GuidePage'
+import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
@@ -260,31 +260,6 @@ export default function Page() {
         </li>
       </ul>
 
-      <div className="not-prose my-12 rounded-2xl bg-stone-900 text-white p-8 md:p-10">
-        <p className="text-xs font-semibold tracking-[0.18em] uppercase text-stone-400 mb-3">
-          Trip-specific plan
-        </p>
-        <h3 className="font-serif text-2xl md:text-3xl font-semibold tracking-tight leading-tight mb-3 max-w-xl">
-          Not sure what to bring for your exact trip?
-        </h3>
-        <p className="text-stone-300 leading-relaxed mb-6 max-w-xl">
-          Answer 5 questions and we&apos;ll match the timeline, gear, and meals to your dates, your party, and where you&apos;re going. Built for first-timers.
-        </p>
-        <div className="flex flex-wrap gap-3">
-          <Link
-            href="/quiz"
-            className="inline-flex items-center justify-center rounded-md font-medium bg-white text-stone-900 hover:bg-stone-100 transition-colors px-5 py-3 text-sm"
-          >
-            Take the Camping Quiz
-          </Link>
-          <Link
-            href="/quiz"
-            className="inline-flex items-center justify-center rounded-md font-medium ring-1 ring-stone-700 text-white hover:bg-stone-800 transition-colors px-5 py-3 text-sm"
-          >
-            Get your full trip plan instantly
-          </Link>
-        </div>
-      </div>
 
       <h2>Frequently asked</h2>
       <h3>Should beginners actually go winter camping?</h3>
@@ -316,6 +291,7 @@ export default function Page() {
         For a low-elevation campground above 25°F with no snow forecast, a high-quality 3-season tent works. For real snow load, sustained sub-20°F, or any wind, the 4-season tent is the right call. The honest beginner answer is: rent a cabin instead.
       </p>
     </GuidePage>
+    <GuideArticleCTA matchedPlanId="first-weekend-camp" />
     <RelatedGuides currentSlug="winter-camping-for-beginners" />
     </>
   )

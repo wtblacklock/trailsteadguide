@@ -1,4 +1,5 @@
 import { GuidePage } from '@/components/guide/GuidePage'
+import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
@@ -212,6 +213,7 @@ export default function Page() {
         Burns from the fire pit or the stove, and lacerations from folding chair hinges. Not wildlife. Not scary falls. Brief the kids on both hazards explicitly and keep a proper first aid kit at the top of the car trunk.
       </p>
     </GuidePage>
+    <GuideArticleCTA matchedPlanId="easy-family-basecamp" />
     <RelatedGuides currentSlug="first-time-camping-mistakes" />
     </>
   )
