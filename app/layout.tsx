@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Figtree, Source_Serif_4 } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 import './globals.css'
 import { ChromeNav, ChromeFooter } from '@/components/landing/Chrome'
 import ScrollRevealer from '@/components/landing/ScrollRevealer'
@@ -73,6 +74,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <PageTransition>{children}</PageTransition>
         <ChromeFooter />
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   )
