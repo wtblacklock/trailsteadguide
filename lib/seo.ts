@@ -73,7 +73,19 @@ export const organizationNode = {
     width: 512,
     height: 512,
   },
-  sameAs: [] as string[],
+}
+
+export const AUTHOR_NAME = 'Will Blacklock'
+export const AUTHOR_BIO =
+  'Will Blacklock built Trailstead Guide after planning his own family’s first camping trips and realizing the existing checklists assume you already know what you’re doing.'
+
+export const personNode = {
+  '@type': 'Person',
+  '@id': `${SITE_URL}/#author`,
+  name: AUTHOR_NAME,
+  url: `${SITE_URL}/about`,
+  description: AUTHOR_BIO,
+  worksFor: { '@id': `${SITE_URL}/#organization` },
 }
 
 export const websiteNode = {
@@ -124,6 +136,7 @@ export function articleGraph(a: ArticleInput) {
   return {
     '@context': 'https://schema.org',
     '@graph': [
+      personNode,
       {
         '@type': 'Article',
         headline: a.title,
@@ -131,7 +144,7 @@ export function articleGraph(a: ArticleInput) {
         image: a.image ? [a.image] : undefined,
         datePublished: a.datePublished ?? '2026-01-01',
         dateModified: a.dateModified ?? '2026-04-24',
-        author: { '@type': 'Organization', name: SITE_NAME, url: `${SITE_URL}/` },
+        author: { '@id': `${SITE_URL}/#author` },
         publisher: { '@id': `${SITE_URL}/#organization` },
         mainEntityOfPage: url,
       },

@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import type { ReactNode } from 'react'
 import { getCategoryForGuide } from '@/lib/guides'
+import { AUTHOR_NAME } from '@/lib/seo'
 
 export type GuidePageProps = {
   eyebrow?: string
@@ -9,11 +10,22 @@ export type GuidePageProps = {
   lede: string
   heroImage?: { src: string; alt: string }
   slug: string // current guide slug — used by RelatedGuides and to derive the category back-link
+  /** ISO date string (YYYY-MM-DD). Falls back to the schema default modifier. */
+  dateModified?: string
   children: ReactNode
 }
 
-export function GuidePage({ eyebrow = 'Guide', title, lede, heroImage, slug, children }: GuidePageProps) {
+const DEFAULT_DATE_MODIFIED = '2026-04-24'
+
+function formatUpdatedLabel(iso: string): string {
+  const date = new Date(`${iso}T00:00:00Z`)
+  if (Number.isNaN(date.getTime())) return ''
+  return date.toLocaleDateString('en-US', { month: 'long', year: 'numeric', timeZone: 'UTC' })
+}
+
+export function GuidePage({ eyebrow = 'Guide', title, lede, heroImage, slug, dateModified, children }: GuidePageProps) {
   const category = getCategoryForGuide(slug)
+  const updatedLabel = formatUpdatedLabel(dateModified ?? DEFAULT_DATE_MODIFIED)
 
   return (
     <article>
@@ -37,6 +49,10 @@ export function GuidePage({ eyebrow = 'Guide', title, lede, heroImage, slug, chi
         </h1>
         <p className="mt-8 text-xl md:text-2xl text-stone-600 leading-[1.5] font-light">
           {lede}
+        </p>
+        <p className="mt-8 text-sm text-stone-500">
+          By <Link href="/about" className="text-stone-700 hover:text-stone-900 underline decoration-stone-300 underline-offset-4 transition-colors">{AUTHOR_NAME}</Link>
+          {updatedLabel && <span> · Last updated {updatedLabel}</span>}
         </p>
       </header>
 
