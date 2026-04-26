@@ -36,6 +36,26 @@ export type RelatedGearItem = {
   productId?: string
 }
 
+/**
+ * Embedded how-to video. URL must be a youtube-nocookie.com /embed/ URL
+ * so we keep tracking-cookies off the page.
+ */
+export type SkillVideoEmbed = {
+  url: string
+  title: string
+}
+
+/**
+ * Illustration reference (typically a Wikimedia Commons SVG or photo).
+ * Attribution string is rendered alongside the image — Wikimedia requires
+ * artist + license credit.
+ */
+export type SkillIllustration = {
+  url: string
+  alt: string
+  attribution: string
+}
+
 export type Skill = {
   slug: string
   category: SkillCategoryId
@@ -54,6 +74,8 @@ export type Skill = {
   safetyTone?: SafetyTone
   variations?: string[]
   relatedGear?: RelatedGearItem[]
+  videoEmbed?: SkillVideoEmbed
+  illustration?: SkillIllustration
 }
 
 export type SkillCategory = {

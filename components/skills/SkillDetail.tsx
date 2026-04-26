@@ -3,6 +3,7 @@ import type { Skill, SkillCategory } from '@/lib/skills/types'
 import DifficultyBadge from './DifficultyBadge'
 import RelatedGearBlock from './RelatedGearBlock'
 import SafetyBlock from './SafetyBlock'
+import SkillMediaBlock from './SkillMediaBlock'
 
 interface Props {
   skill: Skill
@@ -71,6 +72,10 @@ export default function SkillDetail({ skill, category }: Props) {
         {/* Knife & woodcarving spec: Safety First — prominent, before steps. */}
         {safetyTone === 'critical' && skill.safetyNotes && skill.safetyNotes.length > 0 && (
           <SafetyBlock notes={skill.safetyNotes} tone="critical" title="Safety first" />
+        )}
+
+        {(skill.videoEmbed || skill.illustration) && (
+          <SkillMediaBlock video={skill.videoEmbed} illustration={skill.illustration} />
         )}
 
         <Section title="What you need">

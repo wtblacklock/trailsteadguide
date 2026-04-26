@@ -39,6 +39,15 @@ export const SKILLS: Skill[] = [
     ],
     safetyNotes: ['Never use a square knot for climbing, rescue, or any load that puts a person at risk.'],
     relatedGear: [{ name: 'Paracord (50 ft)' }],
+    videoEmbed: {
+      url: 'https://www.youtube-nocookie.com/embed/0Y_iorha2k4',
+      title: 'How to Tie a Square Knot (Reef Knot) — Animated Knots by Grog',
+    },
+    illustration: {
+      url: 'https://upload.wikimedia.org/wikipedia/commons/8/84/Reef_knot.svg',
+      alt: 'Step-by-step diagram of a reef (square) knot showing two interlocking half-knots',
+      attribution: 'Reef knot diagram by Lucasbosch — Wikimedia Commons (CC BY-SA 3.0)',
+    },
   },
   {
     slug: 'bowline',
@@ -73,6 +82,15 @@ export const SKILLS: Skill[] = [
       'Bowlines can shake loose if cycled (loaded and unloaded repeatedly). Add a stopper knot in the tail for high-stakes use.',
     ],
     relatedGear: [{ name: 'Paracord (50 ft)' }],
+    videoEmbed: {
+      url: 'https://www.youtube-nocookie.com/embed/YXRnPES0Qec',
+      title: 'How to Tie a Bowline Knot — Animated Knots by Grog',
+    },
+    illustration: {
+      url: 'https://upload.wikimedia.org/wikipedia/commons/7/77/Bowline.svg',
+      alt: 'Diagram of a bowline knot with the working end forming a fixed loop',
+      attribution: 'Bowline diagram by Lucasbosch — Wikimedia Commons (CC BY 3.0)',
+    },
   },
   {
     slug: 'taut-line-hitch',
@@ -99,6 +117,15 @@ export const SKILLS: Skill[] = [
       'Loading the line before seating the knot — it can pop loose.',
     ],
     relatedGear: [{ name: 'Reflective guy line (50 ft)' }],
+    videoEmbed: {
+      url: 'https://www.youtube-nocookie.com/embed/I5NTjUyubvE',
+      title: 'How to Tie a Taut-Line Hitch — Eastmans’',
+    },
+    illustration: {
+      url: 'https://upload.wikimedia.org/wikipedia/commons/7/7e/TautlineHitch-ABOK-1800.jpg',
+      alt: 'Step-by-step photographs showing a taut-line hitch being tied around a fixed object',
+      attribution: 'Taut-line hitch (ABoK #1800) by David J. Fred — Wikimedia Commons (CC BY-SA 2.5)',
+    },
   },
   {
     slug: 'clove-hitch',
@@ -126,6 +153,15 @@ export const SKILLS: Skill[] = [
     ],
     safetyNotes: ['Don’t use a clove hitch alone for any load that swings or reverses direction.'],
     relatedGear: [{ name: 'Paracord (50 ft)' }],
+    videoEmbed: {
+      url: 'https://www.youtube-nocookie.com/embed/pwdZTHu5rTI',
+      title: 'How to Tie a Clove Hitch (Rope-End Method) — Animated Knots by Grog',
+    },
+    illustration: {
+      url: 'https://upload.wikimedia.org/wikipedia/commons/a/a4/Webeleinenstek3.svg',
+      alt: 'Diagram of a clove hitch wrapped around a vertical pole',
+      attribution: 'Clove hitch diagram — Wikimedia Commons (CC BY-SA 3.0)',
+    },
   },
 
   // ── COOKING ───────────────────────────────────────────────────────────────
@@ -165,6 +201,10 @@ export const SKILLS: Skill[] = [
       { name: 'Camp Chef Everest 2X 2-Burner Stove', productId: 'stove-2-burner' },
       { name: 'Coleman 1-Burner Propane Stove', productId: 'fwc-stove-coleman-1burner' },
     ],
+    videoEmbed: {
+      url: 'https://www.youtube-nocookie.com/embed/KL90304Qppw',
+      title: 'How to Use a Coleman Propane Camp Stove',
+    },
   },
   {
     slug: 'foil-pack-meals',
@@ -203,6 +243,10 @@ export const SKILLS: Skill[] = [
       'Open packs away from your face.',
     ],
     relatedGear: [{ name: 'Heavy-duty aluminum foil' }, { name: 'Long-handled grill tongs' }],
+    videoEmbed: {
+      url: 'https://www.youtube-nocookie.com/embed/VB_VaT-kZZ4',
+      title: 'How to Make Foil Packets for Camping',
+    },
   },
 
   // ── FIRE BASICS ───────────────────────────────────────────────────────────
@@ -270,6 +314,15 @@ export const SKILLS: Skill[] = [
     ],
     safetyNotes: ['No accelerants. No exceptions.'],
     relatedGear: [{ name: 'Stormproof matches' }, { name: 'Fire starter cubes (Esbit or UCO)' }],
+    videoEmbed: {
+      url: 'https://www.youtube-nocookie.com/embed/0O3Bj8JFcTc',
+      title: 'How to Build a Fire — REI',
+    },
+    illustration: {
+      url: 'https://upload.wikimedia.org/wikipedia/commons/2/29/Camp_Teepee_Fire.svg',
+      alt: 'Diagram of a teepee-style campfire — kindling leaned in a cone over a tinder bundle',
+      attribution: 'Teepee fire diagram by Jazzmanian — Wikimedia Commons (Public domain)',
+    },
   },
   {
     slug: 'fire-structures',
@@ -296,6 +349,15 @@ export const SKILLS: Skill[] = [
       'Stacking logs touching each other in a log cabin — fire needs space between them to breathe.',
       'Building a teepee too tall before it’s burning — tall stacks tip over.',
     ],
+    videoEmbed: {
+      url: 'https://www.youtube-nocookie.com/embed/OvRb04r-Sfw',
+      title: 'How to Build a Campfire — Easy Campfire Building Techniques',
+    },
+    illustration: {
+      url: 'https://upload.wikimedia.org/wikipedia/commons/6/6c/Camp_Log_Cabin_Fire.svg',
+      alt: 'Diagram of a log cabin–style campfire — split logs stacked in a square frame around tinder',
+      attribution: 'Log cabin fire diagram by Jazzmanian — Wikimedia Commons (Public domain)',
+    },
   },
   {
     slug: 'extinguishing-a-fire',
@@ -328,6 +390,10 @@ export const SKILLS: Skill[] = [
       'Never leave a fire ring smoking, even briefly.',
     ],
     safetyTone: 'critical',
+    videoEmbed: {
+      url: 'https://www.youtube-nocookie.com/embed/6CiMTNW2tr0',
+      title: 'How to Safely Extinguish a Campfire & Prevent Wildfires',
+    },
   },
 
   // ── HIKING & NAVIGATION ───────────────────────────────────────────────────
@@ -428,6 +494,15 @@ export const SKILLS: Skill[] = [
     ],
     safetyNotes: ['A compass without a map can keep you on a bearing but won’t tell you where you are. Always carry both.'],
     relatedGear: [{ name: 'Suunto A-10 baseplate compass' }, { name: 'Topo map for your area' }],
+    videoEmbed: {
+      url: 'https://www.youtube-nocookie.com/embed/0cF0ovA3FtY',
+      title: 'How to Use a Compass — REI',
+    },
+    illustration: {
+      url: 'https://upload.wikimedia.org/wikipedia/commons/e/e5/Baseplatecompass.jpg',
+      alt: 'Photograph of a baseplate compass with rotating bezel, magnetic needle, and direction-of-travel arrow',
+      attribution: 'Baseplate compass by Simon Shek — Wikimedia Commons (CC BY-SA 2.0)',
+    },
   },
   {
     slug: 'orienting-a-map',
@@ -555,6 +630,15 @@ export const SKILLS: Skill[] = [
       { name: 'Coleman Sundome 4-Person Tent', productId: 'fwc-tent-sundome' },
       { name: 'Coleman Sundome 6-Person Tent', productId: 'tent-sundome-6' },
     ],
+    videoEmbed: {
+      url: 'https://www.youtube-nocookie.com/embed/ha43JNTtus4',
+      title: 'How to Set Up a Tent',
+    },
+    illustration: {
+      url: 'https://upload.wikimedia.org/wikipedia/commons/1/13/Dome_tent.svg',
+      alt: 'Diagram of a dome tent with crossing pole structure',
+      attribution: 'Dome tent diagram by Germo — Wikimedia Commons (Public domain)',
+    },
   },
   {
     slug: 'site-selection',
@@ -791,6 +875,10 @@ export const SKILLS: Skill[] = [
     ],
     safetyTone: 'critical',
     relatedGear: [{ name: 'Beginner folding knife (Opinel No. 7 or No. 8)' }],
+    videoEmbed: {
+      url: 'https://www.youtube-nocookie.com/embed/oSDXbfmPdhU',
+      title: 'Knife Safety 101: Kids, Scouts, Bushcraft, Camping',
+    },
   },
   {
     slug: 'how-to-hold-a-knife',
@@ -821,6 +909,10 @@ export const SKILLS: Skill[] = [
       'Children should learn the standard grip only, supervised, before any other technique.',
     ],
     safetyTone: 'critical',
+    videoEmbed: {
+      url: 'https://www.youtube-nocookie.com/embed/LcOILLaFo7I',
+      title: '5 Essential Knife Grips for Bushcraft (and How to Use Them)',
+    },
   },
   {
     slug: 'basic-cuts',
@@ -851,6 +943,10 @@ export const SKILLS: Skill[] = [
       'Stop and rest after 15 minutes of carving. Fatigue causes slips.',
     ],
     safetyTone: 'critical',
+    videoEmbed: {
+      url: 'https://www.youtube-nocookie.com/embed/Ve-jVpUIE-E',
+      title: 'Whittling Tips — The 8 Basic Cuts to Master',
+    },
   },
   {
     slug: 'knife-care-and-storage',
@@ -882,6 +978,10 @@ export const SKILLS: Skill[] = [
       'Test sharpness on paper, not your thumb.',
     ],
     relatedGear: [{ name: 'Pull-through sharpener (Lansky or Smith’s)' }, { name: 'Mineral oil (food safe)' }],
+    videoEmbed: {
+      url: 'https://www.youtube-nocookie.com/embed/oF432CMib3c',
+      title: '5 Steps to Sharpen Your Whittling Knife',
+    },
   },
 
   // ── WOODCARVING ───────────────────────────────────────────────────────────
@@ -925,6 +1025,10 @@ export const SKILLS: Skill[] = [
       'Bone the tip white by carving deeper for a decorative tan-and-cream contrast.',
     ],
     relatedGear: [{ name: 'Beginner folding knife (Opinel No. 7 or No. 8)' }],
+    videoEmbed: {
+      url: 'https://www.youtube-nocookie.com/embed/fBlHReffXTY',
+      title: 'Carving a Sharp Point Tip',
+    },
   },
   {
     slug: 'marshmallow-stick',
@@ -963,6 +1067,10 @@ export const SKILLS: Skill[] = [
       'Single point with a notch behind the tip to keep the marshmallow from sliding off',
       'Carved grip: shallow stop-cuts in a ring at the holding end so it’s easy to find in the dark',
     ],
+    videoEmbed: {
+      url: 'https://www.youtube-nocookie.com/embed/HXqbizBWtLU',
+      title: 'Making Campfire Roasting Sticks',
+    },
   },
   {
     slug: 'tent-peg-carving',
@@ -999,6 +1107,10 @@ export const SKILLS: Skill[] = [
       'Carve a shallow groove around the top instead of a shoulder — the line tightens around the groove.',
       'Add a 45° angle to the top so a mallet hits cleanly.',
     ],
+    videoEmbed: {
+      url: 'https://www.youtube-nocookie.com/embed/7C23P5UwTX4',
+      title: 'Bushcraft Basics: How To Make A Tent Stake',
+    },
   },
   {
     slug: 'decorative-notches',
@@ -1035,5 +1147,9 @@ export const SKILLS: Skill[] = [
       'Stained notches: rub charcoal from the fire into the cuts for sharp dark lines.',
       'Date and trip notches: one notch per camping trip, dated below.',
     ],
+    videoEmbed: {
+      url: 'https://www.youtube-nocookie.com/embed/XQVX7BzlldY',
+      title: 'Whittling: How to Make a Stop Cut',
+    },
   },
 ]
