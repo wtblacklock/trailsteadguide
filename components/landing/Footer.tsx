@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { FOOTER_SECONDARY, FOOTER_LEGAL, GUIDE_LINKS, TOOL_LINKS } from '@/lib/nav-config'
+import { FOOTER_SECONDARY, FOOTER_LEGAL, GUIDE_CATEGORY_LINKS, TOOL_LINKS } from '@/lib/nav-config'
 
 export default function Footer() {
   return (
@@ -38,8 +38,8 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Guides */}
-          <FooterCol title="Guides" items={GUIDE_LINKS.slice(0, 5)} />
+          {/* Guides — links to the 4 category hubs */}
+          <FooterCol title="Guides" items={GUIDE_CATEGORY_LINKS} />
 
           {/* Tools + Site */}
           <div className="col-span-1 md:col-span-2 space-y-8">

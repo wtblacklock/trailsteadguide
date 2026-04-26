@@ -4,9 +4,9 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { useEffect, useRef, useState } from 'react'
-import { GUIDE_LINKS, TOOL_LINKS } from '@/lib/nav-config'
+import { TOOL_LINKS } from '@/lib/nav-config'
 
-type OpenMenu = 'guides' | 'tools' | null
+type OpenMenu = 'tools' | null
 
 export default function Nav() {
   const [open, setOpen] = useState<OpenMenu>(null)
@@ -68,13 +68,7 @@ export default function Nav() {
 
         {/* Desktop links */}
         <div className="hidden md:flex items-center gap-1 text-sm text-stone-700">
-          <Dropdown
-            label="Guides"
-            items={GUIDE_LINKS}
-            isOpen={open === 'guides'}
-            onToggle={() => setOpen(open === 'guides' ? null : 'guides')}
-            onClose={() => setOpen(null)}
-          />
+          <NavLink href="/guides">Guides</NavLink>
           <Dropdown
             label="Tools"
             items={TOOL_LINKS}
@@ -141,10 +135,14 @@ export default function Nav() {
       {mobileOpen && (
         <div className="md:hidden border-t border-stone-200 bg-[#F5F3EE]">
           <div className="max-w-page mx-auto px-8 py-6 space-y-6">
-            <MobileGroup title="Guides" items={GUIDE_LINKS} onNavigate={() => setMobileOpen(false)} />
             <MobileGroup title="Tools" items={TOOL_LINKS} onNavigate={() => setMobileOpen(false)} />
             <div className="pt-2 border-t border-stone-200">
               <ul className="space-y-3">
+                <li>
+                  <Link href="/guides" onClick={() => setMobileOpen(false)} className="block text-stone-800 text-base">
+                    Guides
+                  </Link>
+                </li>
                 <li>
                   <Link href="/skills" onClick={() => setMobileOpen(false)} className="block text-stone-800 text-base">
                     Skills

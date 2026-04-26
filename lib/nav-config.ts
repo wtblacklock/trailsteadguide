@@ -1,46 +1,20 @@
+import { GUIDE_CATEGORIES } from '@/lib/guides'
+
 export type NavItem = {
   label: string
   href: string
   description?: string
 }
 
-export const GUIDE_LINKS: NavItem[] = [
-  {
-    label: 'First Camping Trip Checklist',
-    href: '/guides/first-camping-trip-checklist',
-    description: 'The one-page checklist for your first trip.',
-  },
-  {
-    label: 'Camping for Beginners',
-    href: '/guides/camping-for-beginners',
-    description: 'Start here if you have never camped.',
-  },
-  {
-    label: 'How to Plan a Camping Trip',
-    href: '/guides/how-to-plan-a-camping-trip',
-    description: 'A step-by-step planning walkthrough.',
-  },
-  {
-    label: 'Camping With Kids for the First Time',
-    href: '/guides/camping-with-kids-first-time',
-    description: 'What changes when kids are along.',
-  },
-  {
-    label: 'Weekend Camping Packing List',
-    href: '/guides/weekend-camping-packing-list',
-    description: 'Exactly what to bring for 2 nights.',
-  },
-  {
-    label: 'First-Time Camping Mistakes',
-    href: '/guides/first-time-camping-mistakes',
-    description: 'The 12 avoidable ones.',
-  },
-  {
-    label: 'Car Camping Beginner Guide',
-    href: '/guides/car-camping-beginner-guide',
-    description: 'The easiest way to start.',
-  },
-]
+/**
+ * Guide categories surfaced as nav links. Derived from the guides data
+ * layer so the footer (and any future menu) stays in sync with the hub.
+ */
+export const GUIDE_CATEGORY_LINKS: NavItem[] = GUIDE_CATEGORIES.map((c) => ({
+  label: c.label,
+  href: `/guides/${c.slug}`,
+  description: c.blurb,
+}))
 
 export const TOOL_LINKS: NavItem[] = [
   {
