@@ -75,9 +75,9 @@ export const organizationNode = {
   },
 }
 
-export const AUTHOR_NAME = 'Will Blacklock'
+export const AUTHOR_NAME = 'William Blacklock'
 export const AUTHOR_BIO =
-  'Will Blacklock built Trailstead Guide after planning his own family’s first camping trips and realizing the existing checklists assume you already know what you’re doing.'
+  'William Blacklock built Trailstead Guide after planning his own family’s first camping trips and realizing the existing checklists assume you already know what you’re doing.'
 
 export const personNode = {
   '@type': 'Person',
