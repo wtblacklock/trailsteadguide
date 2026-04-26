@@ -124,7 +124,7 @@ export default async function TripPackSuccessPage({ params, searchParams }: Prop
                   What&rsquo;s next
                 </p>
                 <Link
-                  href={`/plan/${plan}`}
+                  href={`/plans/${plan}`}
                   className="block w-full text-center bg-white hover:bg-stone-50 border border-[#1f3622] text-[#1f3622] font-semibold py-3 rounded-xl transition-colors"
                 >
                   Open your {title} itinerary
@@ -148,7 +148,7 @@ export default async function TripPackSuccessPage({ params, searchParams }: Prop
               </div>
               <div className="pt-4 border-t border-stone-100 text-center space-y-2">
                 <Link
-                  href={`/plan/${plan}`}
+                  href={`/plans/${plan}`}
                   className="block w-full text-center bg-[#1f3622] hover:bg-[#2a4a30] text-white font-semibold py-3 rounded-xl transition-colors"
                 >
                   ← Back to your {title} plan

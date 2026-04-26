@@ -65,7 +65,7 @@ export default function QuizShell() {
       timestamp: Date.now(),
     })
     const { adults, kids } = completeAnswers.partySize
-    router.push(`/plan/${slug}?adults=${adults}&kids=${kids}`)
+    router.push(`/plans/${slug}?adults=${adults}&kids=${kids}`)
   }, [status, answers, router])
 
   // Generating state — show animated loader before redirect.

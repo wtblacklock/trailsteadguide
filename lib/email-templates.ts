@@ -32,7 +32,7 @@ export function getPlanEmail(planSlug: string): PlanEmail | null {
   const meta = PLAN_META[planSlug]
   if (!meta) return null
 
-  const planUrl = `${SITE_URL}/plan/${planSlug}`
+  const planUrl = `${SITE_URL}/plans/${planSlug}`
 
   const subject = `Your ${meta.label.toLowerCase()} plan is ready`
 

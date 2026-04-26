@@ -150,7 +150,7 @@ function RecommendedPlans({ planSlugs }: { planSlugs: string[] }) {
         {plans.map((p) => (
           <li key={p.slug}>
             <Link
-              href={`/plan/${p.slug}`}
+              href={`/plans/${p.slug}`}
               className="inline-flex items-center gap-1 text-stone-900 hover:text-[#2d5016] font-medium"
             >
               {p.title}

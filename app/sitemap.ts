@@ -50,10 +50,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
 
     // Plans
-    { url: `${BASE_URL}/plan/backyard-test`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${BASE_URL}/plan/first-night-camp`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${BASE_URL}/plan/first-weekend-camp`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${BASE_URL}/plan/easy-family-basecamp`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE_URL}/plans`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/plans/backyard-test`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE_URL}/plans/first-night-camp`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE_URL}/plans/first-weekend-camp`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE_URL}/plans/easy-family-basecamp`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.8 },
 
     // Activities
     { url: `${BASE_URL}/activities`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.8 },

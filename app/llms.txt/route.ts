@@ -20,10 +20,10 @@ const BODY = `# Trailstead Guide
 
 ## Camping plans
 
-- [Backyard Test](https://www.trailsteadguide.com/plan/backyard-test): A zero-risk first night in your yard to test the gear and the kids.
-- [First Night Camp](https://www.trailsteadguide.com/plan/first-night-camp): One night at a nearby campground — the real just-try-it trip.
-- [First Weekend Camp](https://www.trailsteadguide.com/plan/first-weekend-camp): Two nights, fully planned: meals, gear, schedule, pack list.
-- [Easy Family Basecamp](https://www.trailsteadguide.com/plan/easy-family-basecamp): Three+ nights in one spot with the comfort upgrades.
+- [Backyard Test](https://www.trailsteadguide.com/plans/backyard-test): A zero-risk first night in your yard to test the gear and the kids.
+- [First Night Camp](https://www.trailsteadguide.com/plans/first-night-camp): One night at a nearby campground — the real just-try-it trip.
+- [First Weekend Camp](https://www.trailsteadguide.com/plans/first-weekend-camp): Two nights, fully planned: meals, gear, schedule, pack list.
+- [Easy Family Basecamp](https://www.trailsteadguide.com/plans/easy-family-basecamp): Three+ nights in one spot with the comfort upgrades.
 
 ## Guides
 

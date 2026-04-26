@@ -40,14 +40,14 @@ const BUNDLES: Bundle[] = [
     id: 'first-night',
     name: 'First Night Simple',
     tagline: 'One night, close to home. The just-try-it setup.',
-    planHref: '/plan/first-night-camp',
+    planHref: '/plans/first-night-camp',
     itemIds: ['tent-sundome-3', 'sleeping-bag-family', 'fwc-lantern-consciot', 'fwc-lantern-hanger'],
   },
   {
     id: 'weekend-ready',
     name: 'Weekend Ready',
     tagline: 'Two nights with the family. Everything you actually use.',
-    planHref: '/plan/first-weekend-camp',
+    planHref: '/plans/first-weekend-camp',
     itemIds: [
       'fwc-tent-sundome',
       'stove-2-burner',
@@ -61,7 +61,7 @@ const BUNDLES: Bundle[] = [
     id: 'family-basecamp',
     name: 'Family Basecamp',
     tagline: 'Three+ nights, basecamp style. The upgrade your back will thank you for.',
-    planHref: '/plan/easy-family-basecamp',
+    planHref: '/plans/easy-family-basecamp',
     itemIds: ['tent-sundome-6', 'air-mattress-queen', 'stove-2-burner', 'fwc-cooler-rolling', 'fwc-chair-gci-rocker', 'canopy-camp'],
   },
 ]

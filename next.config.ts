@@ -11,6 +11,19 @@ const RENAMED_GUIDE_CATEGORY_SLUGS: Record<string, string> = {
 }
 
 /**
+ * Plan slugs that historically lived under /plan/<slug> and now live under
+ * /plans/<slug>. Listed here (instead of imported from PLAN_TEMPLATES) so
+ * next.config stays a leaf module — config is loaded synchronously at
+ * startup and importing the templates pulls a tree of dependencies.
+ */
+const PLAN_SLUGS = [
+  'backyard-test',
+  'first-night-camp',
+  'first-weekend-camp',
+  'easy-family-basecamp',
+] as const
+
+/**
  * Security headers per OWASP best practices + Vercel platform conventions.
  * Applied to every route.
  *
@@ -89,7 +102,13 @@ const nextConfig: NextConfig = {
       }),
     )
 
-    return [...skillRedirects, ...guideCategoryRedirects]
+    const planRouteRedirects = PLAN_SLUGS.map((slug) => ({
+      source: `/plan/${slug}`,
+      destination: `/plans/${slug}`,
+      permanent: true,
+    }))
+
+    return [...skillRedirects, ...guideCategoryRedirects, ...planRouteRedirects]
   },
 }
 
