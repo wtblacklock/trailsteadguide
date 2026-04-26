@@ -6,7 +6,7 @@ import { getPlanEmail } from '@/lib/email-templates'
 type SubscribeBody = {
   email: string
   planSlug?: string
-  source?: 'mid-quiz' | 'post-plan'
+  source?: 'mid-quiz' | 'post-plan' | 'homepage'
 }
 
 export async function POST(req: Request) {
