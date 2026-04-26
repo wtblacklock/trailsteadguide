@@ -4,6 +4,8 @@ import { PLAN_TEMPLATES, getPlanTemplate } from '@/lib/plan-templates'
 import { getProductsForTemplate } from '@/lib/affiliate-products'
 import PlanHero from '@/components/plan/PlanHero'
 import PlanJumpNav from '@/components/plan/PlanJumpNav'
+import PersonalizationChip from '@/components/plan/PersonalizationChip'
+import GearSystemsBlock from '@/components/plan/GearSystemsBlock'
 import Timeline from '@/components/plan/Timeline'
 import GearList from '@/components/plan/GearList'
 import KidActivityPlan from '@/components/plan/KidActivityPlan'
@@ -14,7 +16,13 @@ import AffiliateBlock from '@/components/plan/AffiliateBlock'
 import TripPackCta from '@/components/plan/TripPackCta'
 import FloatingEmailBar from '@/components/plan/FloatingEmailBar'
 import MealPlanAndShopping from '@/components/plan/MealPlanAndShopping'
-import { parsePartySize } from '@/lib/party-size'
+import { parseQuizOutput, type PlanSearchParams } from '@/lib/personalization/url-params'
+import { buildModifiers } from '@/lib/personalization/modifiers'
+import { applyModifiers } from '@/lib/personalization/apply-modifiers'
+import { getPlanModifierRules } from '@/lib/personalization/plan-modifiers'
+import { buildGearSystems, buildChipSummary } from '@/lib/personalization/gear-systems'
+import { resolveSystemProducts } from '@/lib/personalization/product-map'
+import { generateIntro } from '@/lib/personalization/intro'
 import JsonLd from '@/components/seo/JsonLd'
 import { pageMetadata, articleGraph, howToGraph, SITE_URL } from '@/lib/seo'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
@@ -80,7 +88,7 @@ export default async function PlanPage({
   searchParams,
 }: {
   params: Promise<Params>
-  searchParams: Promise<{ adults?: string; kids?: string }>
+  searchParams: Promise<PlanSearchParams>
 }) {
   const { planId } = await params
   const meta = PLAN_PAGE_META[planId as PlanSlug]
@@ -89,21 +97,30 @@ export default async function PlanPage({
 
   const slug = planId as PlanSlug
   const products = getProductsForTemplate(slug)
-  const { adults, kids } = parsePartySize(await searchParams)
+  const sp = await searchParams
+
+  const out = parseQuizOutput(slug, sp)
+  const modifiers = buildModifiers(out)
+  const merged = applyModifiers(plan, modifiers, getPlanModifierRules(slug))
+  const systems = buildGearSystems(out, modifiers)
+  const resolved = resolveSystemProducts(systems)
+  const chipParts = buildChipSummary(out, systems)
+  const heroHook = generateIntro(out, plan.tagline)
 
   const path = `/plans/${slug}`
+  const { adults, kids } = out.partySize
 
   const timelineSections = [
-    { heading: 'Before You Leave', items: plan.preTrip.map((i) => `${i.time}: ${i.title} — ${i.description}`) },
-    { heading: 'Arrival & Setup', items: plan.arrival.map((i) => `${i.time}: ${i.title} — ${i.description}`) },
-    { heading: 'Evening Routine', items: plan.evening.map((i) => `${i.time}: ${i.title} — ${i.description}`) },
-    { heading: 'Morning & Pack-Out', items: plan.morning.map((i) => `${i.time}: ${i.title} — ${i.description}`) },
+    { heading: 'Before You Leave', items: merged.preTrip.map((i) => `${i.time}: ${i.title} — ${i.description}`) },
+    { heading: 'Arrival & Setup', items: merged.arrival.map((i) => `${i.time}: ${i.title} — ${i.description}`) },
+    { heading: 'Evening Routine', items: merged.evening.map((i) => `${i.time}: ${i.title} — ${i.description}`) },
+    { heading: 'Morning & Pack-Out', items: merged.morning.map((i) => `${i.time}: ${i.title} — ${i.description}`) },
   ].filter((s) => s.items.length > 0)
 
-  const gearItems = plan.gear.map((g) => g.name)
-  const activityItems = plan.activities.map((a) => `${a.title} — ${a.description}`)
+  const gearItems = merged.gear.map((g) => g.name)
+  const activityItems = merged.activities.map((a) => `${a.title} — ${a.description}`)
 
-  const howToSteps = [...plan.preTrip, ...plan.arrival, ...plan.evening, ...plan.morning].map((s) => ({
+  const howToSteps = [...merged.preTrip, ...merged.arrival, ...merged.evening, ...merged.morning].map((s) => ({
     name: s.title,
     text: `${s.time}: ${s.description}`,
   }))
@@ -137,9 +154,11 @@ export default async function PlanPage({
           { name: meta.title, url: `${SITE_URL}${path}` },
         ]}
       />
-      <PlanHero title={plan.title} hook={plan.tagline} imageUrl={plan.heroImage} />
+      <PlanHero title={plan.title} hook={heroHook} imageUrl={plan.heroImage} />
+      <PersonalizationChip parts={chipParts} />
       <PlanJumpNav
         links={[
+          { id: 'setup', label: 'Your Setup' },
           { id: 'timeline', label: 'Timeline' },
           { id: 'gear', label: 'Gear' },
           { id: 'activities', label: 'What You’ll Do' },
@@ -149,17 +168,18 @@ export default async function PlanPage({
           ...(products.length > 0 ? [{ id: 'shop', label: 'Shop' }] : []),
         ]}
       />
+      <div id="setup" className="scroll-mt-32"><GearSystemsBlock systems={systems} resolved={resolved} /></div>
       <div id="timeline" className="scroll-mt-32"><Timeline sections={timelineSections} /></div>
       <div id="gear" className="scroll-mt-32"><GearList items={gearItems} /></div>
       <div id="activities" className="scroll-mt-32">
         <KidActivityPlan activities={activityItems} />
-        <ActivityScheduleBlock schedule={plan.activitySchedule} />
+        <ActivityScheduleBlock schedule={merged.activitySchedule} />
       </div>
       <div id="skills" className="scroll-mt-32">
-        <SkillsSummaryBlock skillRefs={plan.recommendedSkills} />
+        <SkillsSummaryBlock skillRefs={merged.recommendedSkills} />
       </div>
-      <div id="meals" className="scroll-mt-32"><MealPlanAndShopping meals={plan.meals} defaultAdults={adults} defaultKids={kids} /></div>
-      <div id="safety" className="scroll-mt-32"><SafetyNotes notes={plan.safetyNotes} /></div>
+      <div id="meals" className="scroll-mt-32"><MealPlanAndShopping meals={merged.meals} defaultAdults={adults} defaultKids={kids} /></div>
+      <div id="safety" className="scroll-mt-32"><SafetyNotes notes={merged.safetyNotes} /></div>
       {products.length > 0 && (
         <div id="shop" className="scroll-mt-32"><AffiliateBlock products={products} /></div>
       )}
