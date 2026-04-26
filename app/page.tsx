@@ -3,6 +3,7 @@ import HowItWorks from '@/components/landing/HowItWorks'
 import GuidesGrid from '@/components/landing/GuidesGrid'
 import FeaturedPlans from '@/components/landing/FeaturedPlans'
 import WhyTrailstead from '@/components/landing/WhyTrailstead'
+import AfterPlanRow from '@/components/landing/AfterPlanRow'
 import GearPreview from '@/components/landing/GearPreview'
 import HomepageEmailCapture from '@/components/landing/HomepageEmailCapture'
 import FinalCTA from '@/components/landing/FinalCTA'
@@ -23,6 +24,7 @@ export default function HomePage() {
       <GuidesGrid />
       <FeaturedPlans />
       <WhyTrailstead />
+      <AfterPlanRow />
       <GearPreview />
       <HomepageEmailCapture />
       <FinalCTA />
