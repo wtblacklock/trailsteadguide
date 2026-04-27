@@ -221,7 +221,7 @@ export default function Page() {
             <strong>Trying to drive flooded water.</strong> Six inches of moving water can move a car. Wait. The road will reopen.
           </li>
           <li>
-            <strong>Splitting the party.</strong> One person at the tent, one at the bathroom, one in the car during a storm — do not do this. Stay together.
+            <strong>Pitching under dead or leaning trees.</strong> &ldquo;Widowmakers&rdquo; — dead trunks, hung-up branches, half-fallen limbs — come down in the wind that arrives with a storm. Before you stake the tent, look straight up and at the trees uphill of you. If anything is dead, leaning, or rotten, move the tent. A site that is fine in calm weather can be lethal at 50 mph gusts.
           </li>
           <li>
             <strong>Skipping the rain layers because the forecast was clear.</strong> A clear-weekend forecast can revise overnight. Pack rain gear every trip.

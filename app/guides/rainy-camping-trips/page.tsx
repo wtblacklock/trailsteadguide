@@ -221,7 +221,7 @@ export default function Page() {
             <strong>Skipping the tarp.</strong> Without a covered picnic table you have no campsite once it starts raining — just a tent and a car. Bring the tarp every trip, not just the rainy ones.
           </li>
           <li>
-            <strong>Bringing a down sleeping bag.</strong> Down is great in dry cold. In rain, synthetic fill stays warmer when damp.
+            <strong>Letting the groundsheet stick out past the tent floor.</strong> The most common &ldquo;wet tent&rdquo; story is not a leak — it is a footprint that extends past the tent edge. Rain rolls off the fly, lands on the exposed groundsheet, and pools <em>under</em> the tent floor. Tuck the footprint two to three inches inside the tent perimeter on every side.
           </li>
           <li>
             <strong>Pitching on a low spot.</strong> What looks flat is sometimes the place where water collects. Look for ground that is one or two inches higher than the path next to it.

@@ -217,19 +217,19 @@ export default function Page() {
         <h2>Common dog-camping mistakes</h2>
         <ol>
           <li>
-            <strong>Skipping the leash-settle training.</strong> A dog that cannot settle on a leash for two hours at home will not settle for two hours at a campsite full of squirrels and other dogs. Train it before the trip.
+            <strong>Letting the dog off-leash because &ldquo;she is friendly.&rdquo;</strong> The single biggest dog-camping complaint at any campground is loose dogs that wander into other sites. It does not matter that yours is a sweetheart — other campers, other dogs, and rangers do not know that, and one off-leash incident with a reactive dog turns into a very fast end to your trip. Stay on the 6 ft leash or the long line, every time.
           </li>
           <li>
-            <strong>Letting the dog drink from creeks and lakes.</strong> Giardia, leptospirosis, and toxic blue-green algae are present in most natural water. Bring all the water the dog drinks.
+            <strong>Skipping leash-settle practice.</strong> A dog that cannot settle on a leash for two hours at home will not settle for two hours at a campsite full of squirrels and other dogs. Practice in the backyard a week before the trip, not at the site.
           </li>
           <li>
-            <strong>Underestimating heat risk.</strong> A 90°F campsite can kill a dog left in a car or a fully-sun-exposed campsite. Shade is not optional.
+            <strong>Letting the dog drink from creeks and lakes.</strong> Giardia, leptospirosis, and late-summer blue-green algae are present in most natural water. Bring all the water the dog drinks.
           </li>
           <li>
-            <strong>Leaving the dog tied outside the tent at night.</strong> Quiet-hours rule violations get noticed fast. Inside the tent is warmer, quieter, and what rangers expect.
+            <strong>Underestimating heat — and skipping the tick check.</strong> A 90°F campsite can kill a dog left in a car or a fully-sun-exposed site. Shade is not optional. And run a tick comb over the dog every evening before the tent — Lyme cases are climbing year over year, and one missed tick on the trip becomes a vet visit a week later.
           </li>
           <li>
-            <strong>Booking the wrong park.</strong> National parks restrict dogs from most trails. Pick a state park or a national forest if you want to hike with the dog.
+            <strong>Leaving the dog tied outside the tent at night.</strong> Quiet-hours rule violations get noticed fast, and a tied-out dog is a magnet for raccoons and curious passers-by. Inside the tent is warmer, quieter, and what rangers expect.
           </li>
         </ol>
 

@@ -219,13 +219,13 @@ export default function Page() {
             <strong>Driving in after dark.</strong> The single biggest cause of a miserable first night is arriving at 9pm and pitching a tent by headlamp. Leave the house in time to be at the site by 5pm at the latest.
           </li>
           <li>
-            <strong>Not pitching the tent at home first.</strong> Twenty minutes of pre-trip practice prevents the &ldquo;why does this pole not bend&rdquo; moment in front of an audience.
+            <strong>Only test-pitching the tent — and skipping every other piece of gear.</strong> The tent is rarely what fails on a first trip. The stove that has not been lit since last summer, the air mattress with a slow leak, the lantern with corroded batteries — those are what fail. Run every piece on the driveway.
           </li>
           <li>
             <strong>Cheap sleeping pad.</strong> An $18 foam pad does not insulate you from a 55°F ground. The whole night fails. Spend the $75 on a real pad before you spend anything on premium tents or cookware.
           </li>
           <li>
-            <strong>Forgetting that night is dark.</strong> Headlamp per person, and bring a backup. Dark camp is a different kind of dark than dark city.
+            <strong>Waiting until you are already cold to add layers.</strong> Camp temps drop the moment the sun clears the trees. Put on the fleece, beanie, and warm socks before dinner — once you are cold in a tent, an hour of fire-staring barely brings you back.
           </li>
         </ol>
 
