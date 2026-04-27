@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { GuidePage } from '@/components/guide/GuidePage'
+import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
 import JsonLd from '@/components/seo/JsonLd'
@@ -85,6 +86,10 @@ export default function Page() {
         alt: 'Red sandstone walls and pinyon pines in Zion National Park, Utah',
       }}
     >
+      <QuickAnswer
+        tldr="Winter is prime — October through April. Plan around 35–50°F day-to-night swings, water management, and monsoon flash floods."
+        summary="Camping season in the Desert Southwest is October through April — winter is prime. Summer at lower elevations (Death Valley, lower Grand Canyon, Saguaro, Phoenix-area parks) is dangerous, not just uncomfortable, with daytime highs of 105–115°F that don't break overnight; high-elevation parks (Bryce, Cedar Breaks, the North Rim) are the summer option. Plan for 35–50°F day-to-night swings — a 75°F afternoon at Zion is a 38°F night, so bring a 30°F sleeping bag and a puffy. Water is the limiting factor: 1 gallon per person per day minimum, doubled in summer, and always carry a 5-gallon backup jug. The Southwest monsoon (July–mid-September) brings daily afternoon thunderstorms and flash floods that kill people most years — never camp in a wash, never enter a slot canyon when storms are forecast within 50 miles. Stake aggressively against desert wind, and put a footprint under the tent — cactus spines puncture nylon."
+      />
       <h2>What camping in the Desert Southwest is actually like</h2>
       <ul>
         <li><strong>Inverted season.</strong> Winter is prime — October through April is when the desert is gorgeous and usable. Summer is hot enough to be unsafe at lower elevations.</li>

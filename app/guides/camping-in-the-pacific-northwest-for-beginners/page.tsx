@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { GuidePage } from '@/components/guide/GuidePage'
+import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
 import JsonLd from '@/components/seo/JsonLd'
@@ -85,6 +86,10 @@ export default function Page() {
         alt: 'Pine forest along an alpine lake near Mt Rainier in Washington',
       }}
     >
+      <QuickAnswer
+        tldr="The dry window is mid-July through mid-September. Pack rain gear anyway, and bring a 30°F bag — even July nights are cool."
+        summary="The Pacific Northwest's reliably-dry camping window runs mid-July through mid-September; outside that, expect rain — often cold rain — that makes beginner tent camping genuinely hard west of the Cascades. East of the Cascades (Bend, the Methow, Walla Walla) is the under-rated PNW zone, with half the rainfall and twice the sun. Pack a 30°F sleeping bag at sea level (20°F at altitude — July nights at 4,000 ft drop into the 30s and 40s) and synthetic-or-wool clothing only — cotton stays wet here. Stake the rainfly tight on every guy-out point so it doesn't sag onto the inner mesh and wick condensation onto your bag overnight. Mt Rainier, Olympic, and Crater Lake fill within hours of opening 6 months out — pick a state park or national forest alternative for trip one. Coastal sites are inside the Cascadia tsunami zone; read the evacuation route on arrival."
+      />
       <h2>What camping in the PNW is actually like</h2>
       <ul>
         <li><strong>Short reliably-dry window.</strong> Mid-July through mid-September is the prime camping stretch. Outside that window, expect rain, often cold rain.</li>

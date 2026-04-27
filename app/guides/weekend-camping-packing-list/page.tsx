@@ -1,4 +1,5 @@
 import { GuidePage } from '@/components/guide/GuidePage'
+import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
 import JsonLd from '@/components/seo/JsonLd'
@@ -78,6 +79,10 @@ export default function Page() {
         alt: 'Camping gear laid out before packing the car for a weekend trip',
       }}
     >
+      <QuickAnswer
+        tldr="Pack two nights for a family of four into three labeled bins: kitchen, shelter/sleep, misc."
+        summary="A weekend (two-night) packing list for a family of four fits into three labeled bins plus a cooler. Shelter & sleep: tent, footprint, sleeping bags, pads, pillows. Kitchen: 2-burner stove, full propane plus a spare, lighter in a dry bag, cooler with block ice, one pot, one pan, utensils, dish tub, biodegradable soap, two gallons of water. Per person: one warm layer, a rain jacket, two shirts, two pants, three socks, brimmed hat, beanie. Plan five real meals (two dinners, two breakfasts, one lunch) and double the snacks. Pre-chop and pre-pack at home so camp cooking takes 15 minutes, not 60."
+      />
       <h2>Shelter</h2>
       <ul>
         <li>Tent (rated for 1 more person than you are)</li>

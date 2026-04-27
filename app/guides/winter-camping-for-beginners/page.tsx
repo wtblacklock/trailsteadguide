@@ -1,4 +1,5 @@
 import { GuidePage } from '@/components/guide/GuidePage'
+import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
 import JsonLd from '@/components/seo/JsonLd'
@@ -83,6 +84,10 @@ export default function Page() {
         alt: 'A snow-dusted tent in pine trees on a clear cold winter morning',
       }}
     >
+      <QuickAnswer
+        tldr="Don't tent on your first winter trip — rent a state-park cabin or yurt. Save the tent night for after a fall trip below freezing."
+        summary="Winter camping for beginners should start in a heated state-park cabin or yurt, not a 3-season tent at 15°F. State parks across the U.S. rent winter cabins for $60–$120 per night and give you the snow, the quiet, and the campfire without the cold-night risk — book 3–6 months out. If you do tent, only above 25°F at low elevation in dry conditions: 0°F sleeping bag (not 20°F), two pads stacked for R-value 5+, and a 4-season tent if there's any snow load. The real risks are hypothermia (cold + wet + tired, not just cold), frostbite, and dehydration. Stay dry — sweat is as dangerous as snow — drink water you don't feel thirsty for, and eat a high-fat snack inside your sleeping bag before sleep. Sleep with a hot-water bottle for an unfrozen drink in the morning."
+      />
       <h2>The quick answer</h2>
       <ul>
         <li><strong>Best beginner version:</strong> a drive-up state-park cabin or yurt with a wood stove or electric heat. You get the snow, the quiet, the early sunsets, and the campfire — without sub-freezing tent risk on your first try.</li>

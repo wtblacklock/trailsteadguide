@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { GuidePage } from '@/components/guide/GuidePage'
+import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
 import JsonLd from '@/components/seo/JsonLd'
@@ -85,6 +86,10 @@ export default function Page() {
           alt: 'A small tent on a rise under a starry night sky, the Milky Way overhead',
         }}
       >
+        <QuickAnswer
+          tldr="Tent up before dark, one hot meal outside, asleep at some point — that's the whole bar."
+          summary="A successful first night camping looks small: tent up before dark, one hot thing cooked outside, asleep at some point, home in the morning still on speaking terms. One night, not three. Under 90 minutes from home, ideally a state park within 45. A 50–75°F forecast with low wind. Pitch the tent in your yard the week before and run every piece of gear through a dry test. The single piece that decides whether you sleep: a real sleeping pad with R-value 3+, not an $18 foam square. Plan a fallback in writing — drive home, cabin, or quit-at-4am — before you leave so quitting isn't failure."
+        />
         <h2>The honest goal of your first night</h2>
         <p>
           Your first night camping is not a wilderness adventure. It is a test. You are checking three things, in this order: can you sleep outside, can you cook a meal outside, and can you and the people you brought spend an evening together with no walls. Everything else — the photos, the hike, the campfire songs — is optional.

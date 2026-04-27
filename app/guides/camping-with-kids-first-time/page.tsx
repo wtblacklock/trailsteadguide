@@ -1,4 +1,5 @@
 import { GuidePage } from '@/components/guide/GuidePage'
+import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
 import JsonLd from '@/components/seo/JsonLd'
@@ -78,6 +79,10 @@ export default function Page() {
         alt: 'Two young girls standing next to a tent at their campsite',
       }}
     >
+      <QuickAnswer
+        tldr="A camping trip with kids is a kid activity set in the outdoors — plan it like any other kid weekend."
+        summary="Camping with kids isn't camping plus kids — it's a kid activity that happens to be outside. Scale to the youngest: under 4, one night max within an hour of home; ages 4–7, one or two nights with structured activities; 8+, two nights with real chores. Plan three activities per day (morning walk, afternoon quiet activity, evening fire) — nature does not auto-entertain kids. Bring meals each kid will eat, never debut new food, and over-pack snacks. Night one will be rough, night two is usually fine. The success bar isn't transcendence — it's hearing 'when can we go camping again?'"
+      />
       <h2>The core rule</h2>
       <p>
         A camping trip with kids is not a camping trip plus kids. It&apos;s a <strong>kid activity set in the outdoors.</strong> Plan it like you would any other kid weekend: what will they do every hour they&apos;re awake? Nature doesn&apos;t auto-entertain kids.

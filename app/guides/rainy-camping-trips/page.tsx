@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { GuidePage } from '@/components/guide/GuidePage'
+import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
 import JsonLd from '@/components/seo/JsonLd'
@@ -85,6 +86,10 @@ export default function Page() {
           alt: 'Looking out from inside a tent at a damp, misty forest morning',
         }}
       >
+        <QuickAnswer
+          tldr="Bring a tarp, a synthetic sleeping bag, and dry bags — and don't camp through thunderstorms or flash-flood watches."
+          summary="A camping trip with rain is a different trip, not a ruined one — if you bring three things: a 10×10 ft tarp pitched over the picnic table, a synthetic-fill 20°F sleeping bag (down fails when wet), and dry bags for sleeping bag, dry clothes, and electronics. Pitch the rainfly tight on every guy-out point and vent it — most 'tent leaks' are condensation, not water intrusion. Cancel for severe weather: thunderstorms with high lightning risk, sustained 30+ mph winds, or flash flood watches on a low-lying site. Bail in daylight when the sleeping bag is wet through, the tent floor pools, or kids can't warm up."
+        />
         <h2>The honest version of rain camping</h2>
         <p>
           Rain at camp is rarely the disaster people imagine. A trip with steady rain is a quieter trip, with fewer people on the trail, more time at the picnic table under a tarp, and the kind of weather drama kids end up remembering for years. The risk is not getting rained on — it is being unprepared for it.

@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { GuidePage } from '@/components/guide/GuidePage'
+import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
 import JsonLd from '@/components/seo/JsonLd'
@@ -85,6 +86,10 @@ export default function Page() {
           alt: 'Dark storm clouds gathering over an open landscape',
         }}
       >
+        <QuickAnswer
+          tldr="Earlier is always cleaner. If you're debating whether to leave, the answer is usually yes."
+          summary="When a forecast turns mid-trip, your job isn't to ride out everything — it's to recognize which weather you stay for and which you leave for. Stay for rain, cool nights, broken sleep. Leave preventively for thunderstorms, flash flood watches, sustained 30+ mph winds, or snow on a 3-season setup. Leave immediately for tornado watches, arriving floods, lightning in the campground, or hypothermia signs. Tents are not lightning shelters — a hard-roof bathroom or your car (windows up) is. Use the 30-30 rule: thunder under 30 seconds after a flash means under 6 miles, get inside; stay there 30 minutes after the last thunder. Flash floods kill more campers than lightning, hypothermia, and bears combined — never drive flowing water."
+        />
         <h2>The decision frame</h2>
         <p>
           A forecast turning during a trip is a normal camping experience. It is not an emergency by default — but it becomes one if you treat &ldquo;we already drove here&rdquo; as a reason to stay. The question is not whether to camp in bad weather. The question is which kind of bad weather you stay for and which kind you leave for.

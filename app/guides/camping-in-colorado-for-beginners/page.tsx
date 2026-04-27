@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { GuidePage } from '@/components/guide/GuidePage'
+import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
 import JsonLd from '@/components/seo/JsonLd'
@@ -85,6 +86,10 @@ export default function Page() {
         alt: 'Rocky Mountain peaks and alpine meadow in Colorado',
       }}
     >
+      <QuickAnswer
+        tldr="Plan around afternoon thunderstorms, cold mountain nights even in July, and altitude. Start at a Front Range state park."
+        summary="High-elevation Colorado camping runs mid-June through mid-September; Front Range and lower-elevation parks stretch May–October. Even in July, nights at 9,000+ ft drop into the 30s — bring a 20°F sleeping bag and an R-4 sleeping pad. Summer afternoon thunderstorms build between 1pm and 4pm almost daily; pitch the tent before lunch and turn around hikes by noon to be below treeline before lightning fires up. Altitude is real at 8,000–10,000 ft: drink more water than feels reasonable, skip alcohol the first night, and start lower if you can. Black bears are habituated to mountain campgrounds — use the bear box or lock everything scented in a hard-sided car. For a first trip, pick a Front Range state park (Cheyenne Mountain, Chatfield, Cherry Creek, Eleven Mile) below 8,000 ft and save Rocky Mountain National Park for trip three — RMNP weekends fill within hours of the 6-month booking window opening."
+      />
       <h2>What camping in Colorado is actually like</h2>
       <ul>
         <li><strong>Short high-elevation season.</strong> Realistic camping at 9,000+ ft is mid-June through mid-September. Front Range and lower elevations stretch from May through October.</li>

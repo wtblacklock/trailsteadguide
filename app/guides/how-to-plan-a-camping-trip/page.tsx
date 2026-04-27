@@ -1,4 +1,5 @@
 import { GuidePage } from '@/components/guide/GuidePage'
+import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
 import JsonLd from '@/components/seo/JsonLd'
@@ -78,6 +79,10 @@ export default function Page() {
         alt: 'Map and planning notebook on a wooden table',
       }}
     >
+      <QuickAnswer
+        tldr="Start three weeks out, book the site first, test gear two weeks ahead, plan every meal, leave by 9am."
+        summary="Plan a family camping trip on a three-week runway. Three weeks out, book a site within 90 minutes of home (Recreation.gov for federal, ReserveAmerica or the state site for state parks), prioritizing level ground, afternoon shade, and proximity — but not adjacency — to bathrooms. Two weeks out, pitch the tent in the yard and light the stove. One week out, write down every meal and build a single grocery list. The day before, pack the car completely. Leave by 9am and arrive by noon — never at dusk. The single biggest cause of first-trip stress is arriving late."
+      />
       <h2>3 weeks out: pick the trip</h2>
       <ul>
         <li>Choose a weekend. Block it on the calendar like it&apos;s already paid for</li>

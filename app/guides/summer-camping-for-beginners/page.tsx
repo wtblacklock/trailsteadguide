@@ -1,4 +1,5 @@
 import { GuidePage } from '@/components/guide/GuidePage'
+import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
 import JsonLd from '@/components/seo/JsonLd'
@@ -83,6 +84,10 @@ export default function Page() {
         alt: 'A tent pitched in a sunlit meadow on a clear summer day',
       }}
     >
+      <QuickAnswer
+        tldr="Summer is the easiest season to learn — long days, warm nights, low chance of being rained out. Plan for heat, bugs, and afternoon storms."
+        summary="Summer is the most forgiving season for first-time camping: the longest daylight, the warmest nights, and the lowest chance of being rained or snowed out. The trade-offs are heat, sun exposure, mosquitoes, and afternoon thunderstorms — all manageable with planning. Book 4–6 months out for state parks (6 for national parks). Pitch in afternoon shade, not full sun. Use a 3-season mesh-bodied tent (not 4-season) and a 40°F sleeping bag at low elevation, 20°F above 6,000 ft. Bring twice the water you think you need plus electrolytes — plain water alone causes nausea and headaches in heavy heat. The most underestimated risk is afternoon thunderstorms; pitch the tent and rainfly before lunch and check the fire-ban status the week before."
+      />
       <h2>The quick answer</h2>
       <ul>
         <li><strong>Best conditions:</strong> warm days, the longest daylight of the year, and the lowest chance of being rained or snowed out. Summer is the easiest season to learn on.</li>

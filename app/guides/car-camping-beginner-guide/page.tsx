@@ -1,4 +1,5 @@
 import { GuidePage } from '@/components/guide/GuidePage'
+import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
 import JsonLd from '@/components/seo/JsonLd'
@@ -78,6 +79,10 @@ export default function Page() {
         alt: 'An SUV with a roof-top tent set up at a campsite',
       }}
     >
+      <QuickAnswer
+        tldr="Drive to a numbered site, pitch a tent next to the car, sleep in the car if anything goes wrong."
+        summary="Car camping is the easiest on-ramp to the outdoors: you drive to a numbered campsite at an established campground, pitch a tent on the pad next to your car, and your gear stays in the trunk. Weight doesn't matter, so bring a real cooler, a 2-burner stove, queen air mattress, and full pillows. The car itself is your shelter-of-last-resort if weather or kid meltdowns hit. Any standard sedan works — 4WD only matters for primitive forest-road sites you should skip on a first trip. Plan on filling a mid-size SUV trunk for a family of four."
+      />
       <h2>What is car camping?</h2>
       <p>
         Car camping means you drive your car to a numbered campsite and pitch a tent next to it. You do not hike in. You do not carry your gear. Your stuff stays in the car. This is camping with training wheels — which is exactly what you want for your first trip.

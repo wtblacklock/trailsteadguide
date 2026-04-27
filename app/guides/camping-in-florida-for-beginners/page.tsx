@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { GuidePage } from '@/components/guide/GuidePage'
+import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
 import JsonLd from '@/components/seo/JsonLd'
@@ -85,6 +86,10 @@ export default function Page() {
         alt: 'A river running through cypress forest in the Florida Everglades',
       }}
     >
+      <QuickAnswer
+        tldr="Florida is a winter state — November through April. Skip swamp sites for trip one and pick a spring or beach park."
+        summary="Florida's camping season is the inverse of most of the country: November through April is prime, summer is the off-season. December through March is the sweet spot — 60s–80s days, low humidity, dramatically fewer mosquitoes. Avoid May–October unless you're comfortable with 90°F at 95% humidity, daily afternoon thunderstorms, and active hurricane risk (June 1–November 30, peak August–early October). The state has three site types: spring sites (72°F clear water year-round — the best Florida camping), coastal/beach, and swamp/Everglades — skip swamp for trip one. Permethrin-treat clothing and run a Thermacell at the picnic table; mosquitoes near salt marsh are the worst in the country May–October. Alligators live in essentially every fresh-water body — never swim at dawn/dusk in unposted areas, keep kids and small dogs back from the water's edge."
+      />
       <h2>What camping in Florida is actually like</h2>
       <ul>
         <li><strong>Inverted season.</strong> Florida&apos;s prime camping window is November through April — the rest of the country&apos;s offseason. Summer is hot, humid, buggy, and stormy.</li>

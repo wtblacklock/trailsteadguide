@@ -1,4 +1,5 @@
 import { GuidePage } from '@/components/guide/GuidePage'
+import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
 import JsonLd from '@/components/seo/JsonLd'
@@ -83,6 +84,10 @@ export default function Page() {
         alt: 'A tent in a forest of orange and yellow leaves on a crisp fall morning',
       }}
     >
+      <QuickAnswer
+        tldr="The most underrated season — bug-free, low crowds, peak foliage. Pack a 20°F bag and vent the tent against condensation."
+        summary="Fall is the most underrated camping season for beginners: bugs are gone, daytime temperatures are comfortable, fire bans usually lift after the first hard frost, and crowds drop sharply once kids are back in school. The trade-offs are cold nights (October lows in the 20s–40s, freezing nights normal in November), early sunset, and tent condensation on clear cold nights. Pack a 20°F sleeping bag and an R-3+ sleeping pad — the ground steals more heat than the air. Vent the rainfly to manage condensation; sealing the tent tighter makes it worse. Set up by 4pm in October and 3pm after the November time change. Check hunting calendars and wear blaze orange on trails — and bear-box every wrapper, since fall bears eat 20+ hours a day."
+      />
       <h2>The quick answer</h2>
       <ul>
         <li><strong>Best conditions:</strong> bug-free, comfortable daytime temperatures, foliage at peak in mid-October across much of the country, and the lowest crowd levels of the year once kids are back in school. Fire bans usually lift after the first hard frost.</li>

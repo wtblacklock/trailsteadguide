@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { GuidePage } from '@/components/guide/GuidePage'
+import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
 import JsonLd from '@/components/seo/JsonLd'
@@ -85,6 +86,10 @@ export default function Page() {
         alt: 'Yosemite Valley from Tunnel View — granite walls, El Capitan and Half Dome',
       }}
     >
+      <QuickAnswer
+        tldr="Four climates, four packing lists — and reservations are the hardest part. Book exactly 6 months out at 8am Pacific."
+        summary="California is four different camping states: cool foggy coast (year-round), Sierra Nevada (Memorial Day to mid-October, snow-closed otherwise), redwood north (wet, dense, cool), and southern desert (October–April only — summer is dangerous). The same packing list doesn't work in all four. Reservations are the hardest part: ReserveCalifornia opens 6 months out at 8am Pacific, recreation.gov 5 months out at 7am — popular sites at Yosemite Valley, Big Basin, Pfeiffer Big Sur, and Joshua Tree fill within minutes. Bear boxes are required across the Sierra and parts of the north coast — every scented item (food, toothpaste, chapstick, sunscreen) goes in. Fire restrictions tighten weekly June–October; a propane stove keeps you cooking under most ban levels. For a first trip, pick a coastal or foothill state park within 2 hours of home — save Yosemite Valley for trip three."
+      />
       <h2>What camping in California is actually like</h2>
       <ul>
         <li><strong>Four climates in one state.</strong> Coast (cool, foggy, mild year-round), Sierra Nevada (alpine summer, snow-closed winter), redwood north (wet, dense, cool), and desert south (hot summer, glorious winter). The same packing list does not work in all four.</li>

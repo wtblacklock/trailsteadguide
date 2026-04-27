@@ -1,4 +1,5 @@
 import { GuidePage } from '@/components/guide/GuidePage'
+import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
 import JsonLd from '@/components/seo/JsonLd'
@@ -78,6 +79,10 @@ export default function Page() {
         alt: 'Campfire crackling at dusk at a forest campsite',
       }}
     >
+      <QuickAnswer
+        tldr="One short list: tent + sleep, stove + cooler, headlamps, layers, first aid, kid comfort items. Nothing else for trip one."
+        summary="The complete first-trip checklist fits on one page: a tent that sleeps one more person than your party, sleeping bags rated for the forecast, sleeping pads (not air mattresses — they're cold and leak), a 2-burner stove with fuel, a cooler with block ice, one pot and one pan, headlamps with spare batteries, camp chairs, a real first aid kit, a warm layer and rain jacket per person, bug spray, and a comfort item per kid. Skip the hatchet, dutch oven, and snake-bite kit — none of them earn their weight on a first trip. Lay everything out on the floor, check it off physically, and load category by category."
+      />
       <h2>Before you leave home</h2>
       <ul>
         <li>Book a drive-up campsite (under 90 minutes from home for your first trip)</li>

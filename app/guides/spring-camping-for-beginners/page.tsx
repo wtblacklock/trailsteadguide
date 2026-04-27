@@ -1,4 +1,5 @@
 import { GuidePage } from '@/components/guide/GuidePage'
+import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
 import JsonLd from '@/components/seo/JsonLd'
@@ -83,6 +84,10 @@ export default function Page() {
         alt: 'A tent in a wet spring forest with mist and emerging green leaves',
       }}
     >
+      <QuickAnswer
+        tldr="Empty campgrounds and easy bookings — but pack for mud, swing temperatures, and a 30–40°F day-to-night drop."
+        summary="Spring is a quiet, cheap, easy-booking season — but it punishes anyone who packs by the daytime forecast. Plan for a 30–40°F swing between afternoon high and dawn low, and bring a 20°F sleeping bag (not 40°F) plus a sleeping pad with R-value 3 or higher. Pick a low-elevation site by elevation, not the calendar — mountain campgrounds above 5,000 ft can stay snowed in through May. Bring real rain layers (jacket and pants), a propane stove (wet wood is unreliable), and Y-stakes or 9-inch nail stakes that bite into saturated ground. Treat clothes with permethrin before you go — ticks wake up as soon as nights stay above freezing. Check access-road status before driving in; many forest roads close during mud season."
+      />
       <h2>The quick answer</h2>
       <ul>
         <li><strong>Best conditions:</strong> empty campgrounds, easy weekend bookings, fewer bugs in early spring, and dramatic green-up scenery once trees leaf out. The cheapest, quietest season to learn on.</li>

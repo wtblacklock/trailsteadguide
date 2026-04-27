@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { GuidePage } from '@/components/guide/GuidePage'
+import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
 import JsonLd from '@/components/seo/JsonLd'
@@ -85,6 +86,10 @@ export default function Page() {
           alt: 'A young beagle outdoors looking up at the camera with a wagging tail',
         }}
       >
+        <QuickAnswer
+          tldr="State park, 6-foot leash, dog sleeps inside the tent, hike at dawn or dusk in heat — and prep at home."
+          summary="A first dog-camping trip works at a state park (national parks ban dogs from most trails), one night close to home, on a 6-foot leash at all times. The dog sleeps inside the tent on a foam pad — outside leads to barking complaints and quiet-hours violations. Bring all the dog's water (1 oz per pound per day, doubled in heat) — never let dogs drink from creeks because of giardia and toxic algae. Heat is the most underestimated risk: dogs cool only by panting, which fails above 80°F, so hike at dawn or after 5pm and check pavement with the back of your hand. Practice leash-settle and recall at home for several weeks before the trip."
+        />
         <h2>The version of dog camping that actually works</h2>
         <p>
           A first camping trip with a dog goes well when the dog has been prepared for it — and goes badly when people assume that because their dog is fine in the backyard, the dog is fine at a campground. The unfamiliar smells, the constant leash tether, the closer-than-usual sleep arrangement, and the wildlife outside the tent all stack up. The good news: a few weeks of pre-trip prep make the trip a non-event.

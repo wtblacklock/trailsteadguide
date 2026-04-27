@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { GuidePage } from '@/components/guide/GuidePage'
+import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
 import JsonLd from '@/components/seo/JsonLd'
@@ -85,6 +86,10 @@ export default function Page() {
         alt: 'A still Adirondack lake at dawn with low ridges and pine forest',
       }}
     >
+      <QuickAnswer
+        tldr="Short summer window: late June through mid-September. Don't camp during black-fly hatch (late May–early June) without a head net."
+        summary="The Northeast tent-camping season runs late June through mid-September — snow lingers in the higher Adirondacks and Whites into May, and a hard frost can return in early September above 3,000 ft. Late September through Columbus Day is foliage season: gorgeous and the most-crowded stretch of the year. The single biggest planning trap: black flies in northern New England and the Adirondacks, late May through mid-June, bad enough to drive sane people indoors. Most repellents that work on mosquitoes don't work on black flies — you need permethrin-treated clothing, a head net, and picaridin on exposed skin, or just shift the trip to late June. Reservation systems vary: Acadia opens 6 months out (recreation.gov), NH state parks 11 months, NY/Adirondacks 9 months. Pack a 30°F sleeping bag at sea level, 20°F at altitude — even July nights at 4,000 ft drop into the 30s."
+      />
       <h2>What camping in the Northeast is actually like</h2>
       <ul>
         <li><strong>Short summer window.</strong> Late June through mid-September is the realistic tent-camping season. Snow in the high country lingers into May; black flies own late May–early June.</li>

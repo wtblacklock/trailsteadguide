@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { GuidePage } from '@/components/guide/GuidePage'
+import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
 import JsonLd from '@/components/seo/JsonLd'
@@ -85,6 +86,10 @@ export default function Page() {
           alt: 'Sun-baked desert mountains rising under a bright summer sky',
         }}
       >
+        <QuickAnswer
+          tldr="Reschedule if highs are above 95°F with overnight lows above 78°F for multiple days — especially for a first trip."
+          summary="A heatwave is multi-day extreme heat that doesn't let up at night, and it changes camping from uncomfortable to a managed risk. For a first trip, reschedule when daytime highs over 95°F and overnight lows over 78°F are forecast for multiple days — the tent never cools and sleep breaks down. If you go, the most-used piece of gear is a 10×10 ft canopy. Run the day backwards from heat: outside hours are dawn (5:30am–9am) and dusk (4–9pm), with shade and water from 11am–4pm. Plan 16–20 gallons of water for a family of four on two nights, plus electrolyte tabs — plain water alone in heavy sweat causes cramps and headaches. Know the line between heat exhaustion (act immediately) and heatstroke (911)."
+        />
         <h2>The honest call on heatwave camping</h2>
         <p>
           A heatwave is not a normal hot weekend. It is a multi-day stretch of heat that does not let up at night, and it changes camping from &ldquo;a little uncomfortable&rdquo; to &ldquo;a managed risk.&rdquo; First-timers should not learn to camp in a heatwave — the tent becomes unusable, sleep breaks down, and small mistakes get amplified.

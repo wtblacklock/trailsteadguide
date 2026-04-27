@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { GuidePage } from '@/components/guide/GuidePage'
+import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
 import JsonLd from '@/components/seo/JsonLd'
@@ -85,6 +86,10 @@ export default function Page() {
         alt: 'Desert mountains in Big Bend National Park, West Texas, under a clear sky',
       }}
     >
+      <QuickAnswer
+        tldr="Camp October–April. Hill Country state park within 90 minutes, near water. Save Big Bend for trip three."
+        summary="Camping season in Texas runs mid-October through mid-April — June through September lowland trips are too hot for first-timers (95–105°F days, upper-70s nights, heavy humidity east of I-35). Pick a TPWD state park within 90 minutes of home, ideally a Hill Country park with shade trees, flush toilets, and a swimmable river: Pedernales Falls, Inks Lake, Garner, McKinney Falls, or Lost Maples. Reserve at tpwd.texas.gov 5 months out — popular weekends fill within minutes. The two non-negotiables: a 10×10 ft canopy for shade and bug control with permethrin-treated clothing plus a Thermacell for the picnic table (East Texas and the coast are heavy mosquito country May–October). Check the Texas A&M Forest Service burn ban map the week before — most counties go under ban at some point each summer."
+      />
       <h2>What camping in Texas is actually like</h2>
       <ul>
         <li><strong>Long warm season, short cool season.</strong> Useful camping weather runs roughly mid-October to mid-April. Summer is too hot for first trips across most of the state.</li>

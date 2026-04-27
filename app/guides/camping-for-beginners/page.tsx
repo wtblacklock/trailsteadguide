@@ -1,4 +1,5 @@
 import { GuidePage } from '@/components/guide/GuidePage'
+import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
 import JsonLd from '@/components/seo/JsonLd'
@@ -78,6 +79,10 @@ export default function Page() {
         alt: 'Tent pitched in a forest clearing at golden hour',
       }}
     >
+      <QuickAnswer
+        tldr="Make your first trip small, close, and easy to bail on — everything else follows."
+        summary="The first camping trip you should plan is one night, under 90 minutes from home, at an established state park or public campground with bathrooms, water, and other families nearby. Borrow or rent gear instead of buying — you don't yet know what you like. Arrive by 3pm, set up the tent before anything else, and start dinner before dark. The trip succeeds if everyone sleeps a few hours and someone says 'can we do this again?' Save scenic backcountry sites for trip three or four."
+      />
       <h2>The mindset shift</h2>
       <p>
         Most people overthink their first camping trip. They research tents for three weekends and then never book a site. The truth: your first trip should be <strong>small, close to home, and easy to bail on.</strong> Everything else follows.

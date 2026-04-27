@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { GuidePage } from '@/components/guide/GuidePage'
+import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
 import JsonLd from '@/components/seo/JsonLd'
@@ -85,6 +86,10 @@ export default function Page() {
         alt: 'Layered ridges of the Great Smoky Mountains under morning fog',
       }}
     >
+      <QuickAnswer
+        tldr="Fall is the headline season — leaf colors mid-October. Treat ticks before you go and store food bear-aware."
+        summary="Camping season in the Appalachians peaks twice: April–May for wildflowers, and September through early November for fall foliage (mid-October at Blue Ridge elevations, late October–early November lower down). Summer is humid and buggy at lower elevations. October is the most-crowded stretch of the year nationwide on the Blue Ridge Parkway and in Smokies/Shenandoah — book 6 months out or shift to mid-week. Two non-negotiable disciplines: permethrin-treat clothing 24+ hours before any spring/summer trip (Lyme is endemic, alpha-gal increasingly reported), and bear-aware storage every night. Great Smokies has roughly 1,500 black bears in 800 square miles — habituated bears get destroyed, so your storage discipline is wildlife protection. Use the campground bear cable or box for everything with scent: food, toothpaste, sunscreen, deodorant, even gum wrappers. State parks (Stone Mountain, Hanging Rock, Fall Creek Falls, Hungry Mother) are the right first-trip choice — easier to reserve than the federal headlines."
+      />
       <h2>What camping in the Appalachians is actually like</h2>
       <ul>
         <li><strong>Fall is the headline season.</strong> Mid-October leaf colors at altitude, late-October colors lower down. Crowds peak in those four weeks.</li>

@@ -1,4 +1,5 @@
 import { GuidePage } from '@/components/guide/GuidePage'
+import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
 import JsonLd from '@/components/seo/JsonLd'
@@ -78,6 +79,10 @@ export default function Page() {
         alt: 'Campsite at dusk with a tent lit from inside — the classic late-arrival scramble',
       }}
     >
+      <QuickAnswer
+        tldr="The trip-wreckers: arriving after dark, untested gear, overpacking, no kid plan, and complicated meals."
+        summary="The first-trip mistakes that cause every other problem are predictable: arriving after dark (the single biggest disaster — leave in the morning, arrive by 3pm), not testing gear in your yard first, booking too far from home, booking two nights instead of one, planning ambitious meals, ignoring the weather forecast, and assuming kids will entertain themselves. Smaller quiet mistakes still drain the fun: pitching on a slope, leaving food in the tent, wearing cotton, or forgetting a can opener. The fix isn't more gear — it's a smaller, closer trip with a tested template. A 70%-fun first trip beats a perfect one that never happens."
+      />
       <h2>1. Arriving after dark</h2>
       <p>
         Setting up a tent in a headlamp beam while hungry kids cry in the car is a uniquely American horror. <strong>Arrive by 3pm.</strong> That means leaving in the morning.
