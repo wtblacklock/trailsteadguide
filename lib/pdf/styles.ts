@@ -183,17 +183,26 @@ export const PDF_STYLES = `
   .timeline-title { font-size: 9.5pt; font-weight: 600; color: #1f2622; margin: 0 0 2px; }
   .timeline-desc { font-size: 9pt; color: #4a5450; margin: 0; line-height: 1.4; }
 
-  /* PACKING LIST */
+  /* PACKING LIST — uses CSS multicolumn instead of grid because Chrome's
+     print engine splits multicolumn cleanly across pages but treats grid
+     as an atomic block (an oversized first row would push the entire grid
+     to the next page, leaving the section header alone on a near-empty
+     page). break-inside: avoid on .packing-cat keeps each category whole. */
   .packing-grid {
-    display: grid; grid-template-columns: 1fr 1fr; gap: 8px 18px;
+    column-count: 2;
+    column-gap: 18px;
   }
   .packing-cat {
     background: #fffaf0;
     border: 1px solid #ece4d2;
     border-radius: 8px;
     padding: 9px 14px;
+    margin-bottom: 8px;
     page-break-inside: avoid;
     break-inside: avoid;
+    /* Tells the multicolumn engine each cat box is a column-break candidate. */
+    display: inline-block;
+    width: 100%;
   }
   .packing-cat-title {
     font-size: 9.5pt; font-weight: 700; letter-spacing: 1.5px;
