@@ -69,16 +69,46 @@ async function launchBrowser(): Promise<Browser> {
   })
 }
 
+/**
+ * How long to wait for images (mostly Amazon CDN product photos) before
+ * giving up and rendering anyway. The previous `networkidle0` strategy
+ * blocked indefinitely when m.media-amazon.com stalled — which made CI
+ * fail on slow-network days. With this hard cap, a flaky image at most
+ * costs us this many ms of wait time and renders with a broken-image
+ * placeholder.
+ */
+const IMAGE_LOAD_TIMEOUT_MS = 8000
+
 export async function renderHtmlToPdf(html: string): Promise<Buffer> {
   const browser = await launchBrowser()
   try {
     const page = await browser.newPage()
-    await page.setContent(html, { waitUntil: 'networkidle0' })
+    // domcontentloaded fires as soon as the parser is done — independent of
+    // any sub-resource fetch. We then explicitly await fonts and (capped)
+    // image loads, so a slow remote image can't stall the whole render.
+    await page.setContent(html, { waitUntil: 'domcontentloaded' })
     await page.emulateMediaType('print')
-    // Make sure web fonts (Inter) finish loading before rendering. Without
-    // this, SVG <text> and text-heavy sections can snapshot in a fallback
-    // font or — worse — render invisibly.
-    await page.evaluate(() => (document as Document & { fonts: { ready: Promise<void> } }).fonts.ready)
+    // Web fonts (Inter) — render-blocking, cheap to await.
+    await page.evaluate(() =>
+      (document as Document & { fonts: { ready: Promise<void> } }).fonts.ready,
+    )
+    // Images — best-effort, bounded. Resolve once every image is settled
+    // (loaded OR errored), or once the timeout fires, whichever is first.
+    await page.evaluate((timeoutMs) => {
+      const imgs = Array.from(document.images)
+      const settled = Promise.all(
+        imgs.map((img) =>
+          img.complete && img.naturalWidth > 0
+            ? Promise.resolve()
+            : new Promise<void>((resolve) => {
+                img.addEventListener('load', () => resolve(), { once: true })
+                img.addEventListener('error', () => resolve(), { once: true })
+              }),
+        ),
+      )
+      const cap = new Promise<void>((resolve) => setTimeout(resolve, timeoutMs))
+      return Promise.race([settled.then(() => undefined), cap])
+    }, IMAGE_LOAD_TIMEOUT_MS)
     const pdf = await page.pdf({
       format: 'letter',
       printBackground: true,
