@@ -59,16 +59,9 @@ const escapeHtml = (s: string) =>
 /** Pure-HTML wordmark — no SVG, no font dependency beyond the page's font stack. */
 const COVER_LOGO_HTML = `<div class="cover-logo">TRAILSTEAD GUIDE</div>`
 
-/** Footer wordmark (small, same typographic treatment). */
-const FOOTER_LOGO_HTML = `<span class="footer-wordmark">TRAILSTEAD GUIDE</span>`
-
-function footer(label: string): string {
-  return `
-    <div class="footer">
-      ${FOOTER_LOGO_HTML}
-      <span class="footer-disclosure">${escapeHtml(label)} · trailsteadguide.com</span>
-    </div>`
-}
+// Per-page footer is now rendered by Puppeteer's footerTemplate so it lands
+// at the bottom of every physical page, including section overflow pages.
+// Section names are no longer surfaced in the footer; page numbers are.
 
 export type TripPackInput = {
   planSlug: PlanSlug
@@ -199,7 +192,6 @@ function renderOverview(content: ReturnType<typeof getPlanContent>): string {
         <p class="overview-text">${escapeHtml(content.overview.expectedOutcome)}</p>
       </div>
     </div>
-    ${footer('Overview')}
   </div>`
 }
 
@@ -238,7 +230,6 @@ function renderTimeline(plan: MergedPlan | typeof PLAN_TEMPLATES[string]): strin
     <h2 class="section-title">When to do what</h2>
     <p class="section-lede">Times are suggestions; the order matters. Do these in sequence and the trip self-organizes.</p>
     ${groupHtml}
-    ${footer('Timeline')}
   </div>`
 }
 
@@ -287,7 +278,6 @@ function renderPacking(
     <h2 class="section-title">What to bring</h2>
     <p class="section-lede">Scaled to your party size. Check each box as it goes in the car.</p>
     <div class="packing-grid">${cats}${addedHtml}</div>
-    ${footer('Packing list')}
   </div>`
 }
 
@@ -344,7 +334,6 @@ function renderGearSystems(systems: GearSystemSelection, resolved: ResolvedSyste
       ${card(LIGHTING_SYSTEMS[systems.lighting].title, LIGHTING_SYSTEMS[systems.lighting].description, LIGHTING_SYSTEMS[systems.lighting].structure, resolved.lighting)}
       ${card(COMFORT_SYSTEMS[systems.comfort].title, COMFORT_SYSTEMS[systems.comfort].description, COMFORT_SYSTEMS[systems.comfort].structure, resolved.comfort)}
     </div>
-    ${footer('Gear systems')}
   </div>`
 }
 
@@ -372,7 +361,6 @@ function renderGear(gear: ReturnType<typeof resolveGearSet>): string {
     <h2 class="section-title">Recommended gear</h2>
     <p class="section-lede">A curated kit that matches this plan. Tap a card to view it on Amazon — links include our affiliate code, which helps fund Trailstead.</p>
     <div class="gear-grid">${cards}</div>
-    ${footer('Gear set')}
   </div>`
 }
 
@@ -395,7 +383,6 @@ function renderMistakes(content: ReturnType<typeof getPlanContent>): string {
     <h2 class="section-title">What goes wrong</h2>
     <p class="section-lede">Read these once before you leave. Each one is a real failure mode for this plan type.</p>
     ${blocks}
-    ${footer('Mistake prevention')}
   </div>`
 }
 
@@ -413,7 +400,6 @@ function renderFinalChecklist(content: ReturnType<typeof getPlanContent>): strin
       <p class="final-list-sub">Six items. No more decisions to make.</p>
       ${rows}
     </div>
-    ${footer('Final checklist')}
   </div>`
 }
 
@@ -457,7 +443,6 @@ function renderActivitiesPlan(plan: MergedPlan | typeof PLAN_TEMPLATES[string]):
     <h2 class="section-title">What you&rsquo;ll do</h2>
     <p class="section-lede">A short, balanced lineup. Full step-by-step instructions live on trailsteadguide.com/activities.</p>
     ${groups}
-    ${footer('Activities plan')}
   </div>`
 }
 
@@ -488,7 +473,6 @@ function renderSkillsUsed(plan: MergedPlan | typeof PLAN_TEMPLATES[string]): str
     <h2 class="section-title">How to do it</h2>
     <p class="section-lede">A few core skills this trip leans on. The full guide for each lives at trailsteadguide.com/skills.</p>
     ${blocks}
-    ${footer('Skills you’ll use')}
   </div>`
 }
 

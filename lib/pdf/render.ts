@@ -4,9 +4,40 @@
  *  - Locally: uses your system Chrome via puppeteer-core (no second download)
  *
  * Set PUPPETEER_EXECUTABLE_PATH locally if Chrome is in a non-standard place.
+ *
+ * Page layout: US Letter (8.5 × 11 in). Per-page footer is rendered by
+ * Puppeteer's `footerTemplate` so it lands at the bottom of EVERY printed
+ * page, including overflow pages of long sections — the in-HTML footer
+ * approach can't see physical page boundaries. The CSS reserves the matching
+ * bottom margin so content above the footer is never clipped.
  */
 
 import puppeteer, { type Browser } from 'puppeteer-core'
+
+const FOOTER_TEMPLATE = `
+<div style="
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  font-size: 8pt;
+  color: #8a9088;
+  letter-spacing: 0.4px;
+  padding: 0 14mm;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+">
+  <span style="font-weight: 700; letter-spacing: 3px; color: #3a5a3e; text-transform: uppercase;">
+    TRAILSTEAD GUIDE
+  </span>
+  <span style="text-align: right;">
+    trailsteadguide.com &middot; <span class="pageNumber"></span> / <span class="totalPages"></span>
+  </span>
+</div>`
+
+// An empty-but-non-zero header is required when displayHeaderFooter is true
+// or Chrome falls back to its default header ("date, url"). One non-breaking
+// space inside a hidden div is the standard workaround.
+const HEADER_TEMPLATE = `<div style="display:none;">&nbsp;</div>`
 
 const isVercel = !!process.env.VERCEL || !!process.env.AWS_LAMBDA_FUNCTION_NAME
 
@@ -51,10 +82,16 @@ export async function renderHtmlToPdf(html: string): Promise<Buffer> {
     // font or — worse — render invisibly.
     await page.evaluate(() => (document as Document & { fonts: { ready: Promise<void> } }).fonts.ready)
     const pdf = await page.pdf({
-      format: 'A4',
+      format: 'letter',
       printBackground: true,
-      preferCSSPageSize: true,
-      margin: { top: 0, right: 0, bottom: 0, left: 0 },
+      // We set margins explicitly here (not via @page in CSS) because
+      // displayHeaderFooter needs a non-zero margin to render its templates.
+      // Setting preferCSSPageSize: false ensures these margins win.
+      preferCSSPageSize: false,
+      margin: { top: 0, right: 0, bottom: '12mm', left: 0 },
+      displayHeaderFooter: true,
+      headerTemplate: HEADER_TEMPLATE,
+      footerTemplate: FOOTER_TEMPLATE,
     })
     return Buffer.from(pdf)
   } finally {

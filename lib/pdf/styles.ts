@@ -1,17 +1,26 @@
 /**
  * Print stylesheet for the Trip Pack PDF.
- * Embedded inline; not run through Tailwind. Page size = A4.
+ * Embedded inline; not run through Tailwind. Page size = US Letter.
  *
- * Strategy: @page reserves physical margins. Each logical `.page` section
- * forces a new physical page via `page-break-after`. Content grows naturally
- * so nothing gets clipped — sections that exceed one page flow to the next.
+ * Strategy: @page sets physical paper size. Each logical `.page` section is
+ * a flex column whose `min-height` matches one printed page, so single-page
+ * sections always fill the page. The footer uses `margin-top: auto`, which
+ * pins it to the bottom of the section's last printed page in either case
+ * (single page → bottom of that page; multi-page → bottom of the last).
  *
  * Palette: forest #1f3622 / sage #3a5a3e / sand #f5efe2 / charcoal #1f2622
  */
 
+// Letter is 8.5 × 11 in = 215.9 × 279.4 mm. We bake the page-content area
+// (paper minus padding) into a constant so the cover and `.page` blocks stay
+// in lock-step with @page when paper or margins change.
+const PAGE_PADDING_TOP = '12mm'
+const PAGE_PADDING_X = '14mm'
+const PAGE_PADDING_BOTTOM = '10mm'
+
 export const PDF_STYLES = `
   @page {
-    size: A4;
+    size: Letter;
     margin: 0;
   }
   * { box-sizing: border-box; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
@@ -31,52 +40,27 @@ export const PDF_STYLES = `
     word-wrap: break-word;
     overflow-wrap: break-word;
   }
+  /* Section page. The browser breaks freely inside if content exceeds one
+     printed page; Puppeteer's per-page footer template handles bottom-of-page
+     branding. The bottom padding leaves clearance above that printed footer
+     so content never visually collides with it. */
   .page {
-    width: 210mm;
-    padding: 16mm 16mm 14mm;
+    width: 215.9mm;
+    padding: ${PAGE_PADDING_TOP} ${PAGE_PADDING_X} ${PAGE_PADDING_BOTTOM};
     break-before: page;
     page-break-before: always;
     page-break-inside: auto;
     background: #ffffff;
   }
 
-  /* Footer strip — sits at end of each logical section. Slim margin-top so
-     the footer fits inside the section's page even when content is dense;
-     break-inside: avoid keeps it from splitting across pages on its own. */
-  .footer {
-    margin-top: 6mm;
-    padding-top: 4mm;
-    border-top: 1px solid #ece4d2;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 8mm;
-    font-size: 8pt;
-    color: #8a9088;
-    letter-spacing: 0.4px;
-    break-inside: avoid;
-    page-break-inside: avoid;
-  }
-  .footer-wordmark {
-    font-size: 8pt;
-    font-weight: 700;
-    letter-spacing: 3px;
-    color: #3a5a3e;
-    text-transform: uppercase;
-  }
-  .footer-disclosure {
-    text-align: right;
-    letter-spacing: 0.5px;
-  }
-
-  /* COVER PAGE — content-driven height with a forced break after, so the
-     cover always owns exactly one physical page without sub-pixel overflow
-     bumping a sliver onto page 2. */
+  /* COVER PAGE — Letter content area is 279.4mm minus Puppeteer's 12mm
+     bottom margin = 267.4mm. We size to 263mm to leave a small safety
+     buffer so sub-pixel rounding can never bump a sliver onto page 2. */
   .cover {
     background: #ffffff;
-    width: 210mm;
-    min-height: 260mm;
-    padding: 26mm 22mm;
+    width: 215.9mm;
+    height: 263mm;
+    padding: 22mm 22mm 18mm;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -148,7 +132,7 @@ export const PDF_STYLES = `
   }
   .section-lede {
     font-size: 10.5pt; color: #4a5450; max-width: 160mm;
-    margin: 0 0 18px; line-height: 1.55;
+    margin: 0 0 12px; line-height: 1.55;
     break-after: avoid; page-break-after: avoid;
   }
 
@@ -169,29 +153,35 @@ export const PDF_STYLES = `
     font-size: 10.5pt; line-height: 1.55; color: #2c332e; margin: 0;
   }
 
-  /* TIMELINE */
-  .timeline-group { margin-bottom: 16px; page-break-inside: auto; }
+  /* TIMELINE — tightened so all four groups land on one page when possible.
+     page-break-inside: avoid on the group prevents orphan single rows on
+     the next page; if a group doesn't fit, the whole group pushes over. */
+  .timeline-group {
+    margin-bottom: 10px;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
   .timeline-group:last-child { margin-bottom: 0; }
   .timeline-group-title {
-    font-size: 10pt; font-weight: 700; letter-spacing: 2px;
+    font-size: 9.5pt; font-weight: 700; letter-spacing: 1.8px;
     text-transform: uppercase; color: #1f3622;
-    margin: 0 0 8px; padding-bottom: 5px; border-bottom: 1.5px solid #1f3622;
+    margin: 0 0 5px; padding-bottom: 3px; border-bottom: 1.5px solid #1f3622;
     break-after: avoid; page-break-after: avoid;
   }
   .timeline-row {
-    display: flex; gap: 12px; padding: 8px 0;
+    display: flex; gap: 12px; padding: 5px 0;
     border-bottom: 1px solid #ece4d2;
     page-break-inside: avoid;
   }
   .timeline-row:last-child { border-bottom: none; }
   .timeline-time {
     flex: 0 0 26mm;
-    font-size: 9.5pt; font-weight: 600; color: #3a5a3e;
+    font-size: 9pt; font-weight: 600; color: #3a5a3e;
     letter-spacing: 0.3px;
   }
   .timeline-body { flex: 1; min-width: 0; }
-  .timeline-title { font-size: 10pt; font-weight: 600; color: #1f2622; margin: 0 0 2px; }
-  .timeline-desc { font-size: 9.5pt; color: #4a5450; margin: 0; line-height: 1.45; }
+  .timeline-title { font-size: 9.5pt; font-weight: 600; color: #1f2622; margin: 0 0 2px; }
+  .timeline-desc { font-size: 9pt; color: #4a5450; margin: 0; line-height: 1.4; }
 
   /* PACKING LIST */
   .packing-grid {
