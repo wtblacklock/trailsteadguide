@@ -4,52 +4,98 @@
  * link followed by a one-sentence summary.
  *
  * Spec: https://llmstxt.org
+ *
+ * The body is composed from the same data sources as the rendered pages
+ * (GUIDES, PLAN_TEMPLATES, PLAN_CONTENT) so this list cannot drift from
+ * what the site actually serves.
  */
+
+import { GUIDES } from '@/lib/guides/data'
+import { PLAN_TEMPLATES } from '@/lib/plan-templates'
+import { PLAN_CONTENT } from '@/lib/plan-content'
+import { SITE_URL } from '@/lib/seo'
+import type { PlanSlug } from '@/types'
 
 export const dynamic = 'force-static'
 
-const BODY = `# Trailstead Guide
+const PLAN_ORDER: PlanSlug[] = [
+  'backyard-test',
+  'first-night-camp',
+  'first-weekend-camp',
+  'easy-family-basecamp',
+]
+
+const TRIP_PACK_BLURBS: Record<PlanSlug, string> = {
+  'backyard-test':
+    'Print-ready Backyard Test Night Trip Pack — timeline, packing list, gear set, and mistake prevention. From $14.',
+  'first-night-camp':
+    'Print-ready First Night Camp Trip Pack — timeline, packing list, gear set, and mistake prevention. From $14.',
+  'first-weekend-camp':
+    'Print-ready First Weekend Camp Trip Pack — two-night timeline, meals, packing list, gear set. From $14.',
+  'easy-family-basecamp':
+    'Print-ready Easy Family Basecamp Trip Pack — three-plus-night timeline, meals, comfort gear set. From $14.',
+}
+
+const HEADER = `# Trailstead Guide
 
 > Trailstead Guide helps first-time families plan their first camping trip with confidence. Answer five questions, get a complete personalized plan: gear list, meals, checklist, and a trip you can actually pull off.
 
 ## Start here
 
-- [Camping for Beginners](https://www.trailsteadguide.com/guides/camping-for-beginners): The shortest, least-intimidating path from zero to a great first trip.
-- [How It Works](https://www.trailsteadguide.com/how-it-works): How the 5-question planner turns your answers into a complete camping plan.
-- [Take the quiz](https://www.trailsteadguide.com/quiz): Five questions. Get your personalized trip plan in under two minutes.
+- [Camping for Beginners](${SITE_URL}/guides/camping-for-beginners): The shortest, least-intimidating path from zero to a great first trip.
+- [How It Works](${SITE_URL}/how-it-works): How the 5-question planner turns your answers into a complete camping plan.
+- [Take the quiz](${SITE_URL}/quiz): Five questions. Get your personalized trip plan in under two minutes.
+`
 
-## Camping plans
+const FOOTER = `## Gear & tools
 
-- [Backyard Test](https://www.trailsteadguide.com/plans/backyard-test): A zero-risk first night in your yard to test the gear and the kids.
-- [First Night Camp](https://www.trailsteadguide.com/plans/first-night-camp): One night at a nearby campground — the real just-try-it trip.
-- [First Weekend Camp](https://www.trailsteadguide.com/plans/first-weekend-camp): Two nights, fully planned: meals, gear, schedule, pack list.
-- [Easy Family Basecamp](https://www.trailsteadguide.com/plans/easy-family-basecamp): Three+ nights in one spot with the comfort upgrades.
-
-## Guides
-
-- [How to Plan a Camping Trip](https://www.trailsteadguide.com/guides/how-to-plan-a-camping-trip): Step-by-step: pick a site, book it, prep the gear, don't forget the can opener.
-- [Camping with Kids for the First Time](https://www.trailsteadguide.com/guides/camping-with-kids-first-time): What actually keeps kids happy at camp (and what quietly ruins the trip).
-- [Car Camping Beginner Guide](https://www.trailsteadguide.com/guides/car-camping-beginner-guide): Drive-up, park-next-to-your-tent camping — the only kind we recommend first.
-- [First Camping Trip Checklist](https://www.trailsteadguide.com/guides/first-camping-trip-checklist): The real packing list — not 200 items, just what you'll use.
-- [Weekend Camping Packing List](https://www.trailsteadguide.com/guides/weekend-camping-packing-list): Two-night family pack list, by category, by person.
-- [First-Time Camping Mistakes](https://www.trailsteadguide.com/guides/first-time-camping-mistakes): The avoidable mistakes that turn a first trip into "never again."
-
-## Gear & tools
-
-- [Camping Gear Guide](https://www.trailsteadguide.com/gear): Curated gear bundles tied to each camping plan — no 100-option lists.
-- [Coleman Sundome 3P vs 4P vs 6P](https://www.trailsteadguide.com/compare/coleman-sundome-3p-vs-4p-vs-6p): Side-by-side comparison of the three Sundome tent sizes — floor size, standing height, capacity, and price — to pick the right one.
-- [Camp Chef Everest vs Coleman 1-Burner Stove](https://www.trailsteadguide.com/compare/camp-chef-everest-vs-coleman-classic-1-burner): 2-burner vs 1-burner camp stove comparison — BTU output, wind resistance, ignition, and price — to match the stove to your cooking style.
-- [Coleman Rolling Cooler vs Steel-Belted](https://www.trailsteadguide.com/compare/rolling-cooler-vs-steel-belted-cooler): Rolling vs classic Coleman cooler comparison — ice retention, capacity, portability, and price — to pick the right cooler for your trip length.
-- [Air Mattress vs Cot Combo vs Sleeping Pad](https://www.trailsteadguide.com/compare/sleeping-bag-vs-cot-airbed-combo): Three sleep systems compared for car campers — comfort, setup, packed size, and price — to pick what to actually sleep on.
-- [Camping Checklist Generator](https://www.trailsteadguide.com/tools/camping-checklist-generator): Generate a packing checklist tuned to family size, kid ages, and trip length.
-- [Camping Trip Planner](https://www.trailsteadguide.com/tools/camping-trip-planner): Turn a vague weekend idea into a real plan with meals and a schedule.
+- [Camping Gear Guide](${SITE_URL}/gear): Curated gear bundles tied to each camping plan — no 100-option lists.
+- [Coleman Sundome 3P vs 4P vs 6P](${SITE_URL}/compare/coleman-sundome-3p-vs-4p-vs-6p): Side-by-side comparison of the three Sundome tent sizes — floor size, standing height, capacity, and price — to pick the right one.
+- [Camp Chef Everest vs Coleman 1-Burner Stove](${SITE_URL}/compare/camp-chef-everest-vs-coleman-classic-1-burner): 2-burner vs 1-burner camp stove comparison — BTU output, wind resistance, ignition, and price — to match the stove to your cooking style.
+- [Coleman Rolling Cooler vs Steel-Belted](${SITE_URL}/compare/rolling-cooler-vs-steel-belted-cooler): Rolling vs classic Coleman cooler comparison — ice retention, capacity, portability, and price — to pick the right cooler for your trip length.
+- [Air Mattress vs Cot Combo vs Sleeping Pad](${SITE_URL}/compare/sleeping-bag-vs-cot-airbed-combo): Three sleep systems compared for car campers — comfort, setup, packed size, and price — to pick what to actually sleep on.
+- [Camping Checklist Generator](${SITE_URL}/tools/camping-checklist-generator): Generate a packing checklist tuned to family size, kid ages, and trip length.
+- [Camping Trip Planner](${SITE_URL}/tools/camping-trip-planner): Turn a vague weekend idea into a real plan with meals and a schedule.
 
 ## About
 
-- [About Trailstead Guide](https://www.trailsteadguide.com/about): Who we are, why we built this, how we choose what to recommend.
-- [FAQ](https://www.trailsteadguide.com/faq): Answers to the most common first-time camping questions.
-- [Affiliate Disclosure](https://www.trailsteadguide.com/affiliate-disclosure): How we make money and how that affects (and doesn't affect) our recommendations.
+- [About Trailstead Guide](${SITE_URL}/about): Who we are, why we built this, how we choose what to recommend.
+- [FAQ](${SITE_URL}/faq): Answers to the most common first-time camping questions.
+- [Affiliate Disclosure](${SITE_URL}/affiliate-disclosure): How we make money and how that affects (and doesn't affect) our recommendations.
 `
+
+function buildPlanSection(): string {
+  const lines = PLAN_ORDER.map((slug) => {
+    const plan = PLAN_TEMPLATES[slug]
+    const content = PLAN_CONTENT[slug]
+    const title = content.cover.title
+    return `- [${title}](${SITE_URL}/plans/${slug}): ${plan.tripSummary}`
+  })
+  return `## Camping plans\n\n${lines.join('\n')}\n`
+}
+
+function buildTripPackSection(): string {
+  const lines = PLAN_ORDER.map((slug) => {
+    const title = `${PLAN_CONTENT[slug].cover.title} Trip Pack`
+    return `- [${title}](${SITE_URL}/trip-pack/${slug}): ${TRIP_PACK_BLURBS[slug]}`
+  })
+  return `## Trip Packs (printable PDFs)\n\n${lines.join('\n')}\n`
+}
+
+function buildGuideSection(): string {
+  const lines = GUIDES.map(
+    (g) => `- [${g.title}](${SITE_URL}/guides/${g.slug}): ${g.description}`,
+  )
+  return `## Guides\n\n${lines.join('\n')}\n`
+}
+
+const BODY = [
+  HEADER,
+  buildPlanSection(),
+  buildTripPackSection(),
+  buildGuideSection(),
+  FOOTER,
+].join('\n')
 
 export function GET() {
   return new Response(BODY, {
