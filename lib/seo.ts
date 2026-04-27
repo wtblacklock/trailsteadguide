@@ -200,6 +200,59 @@ function inferBrand(name: string): string {
   return first || 'Generic'
 }
 
+/**
+ * Schema for a Trailstead Trip Pack — a self-published digital product
+ * (printable PDF) with two pricing tiers. Emits Product + AggregateOffer
+ * so Google can display a price range and offer count in rich results.
+ */
+export function tripPackProductGraph(p: {
+  planSlug: string
+  name: string
+  description: string
+  image?: string
+  tiers: { tier: 'basic' | 'premium'; name: string; priceUsd: number }[]
+  breadcrumbs: BreadcrumbItem[]
+}) {
+  const url = `${SITE_URL}/trip-pack/${p.planSlug}`
+  const prices = p.tiers.map((t) => t.priceUsd)
+  const lowPrice = Math.min(...prices).toFixed(2)
+  const highPrice = Math.max(...prices).toFixed(2)
+  return {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'Product',
+        '@id': `${url}#product`,
+        name: p.name,
+        description: p.description,
+        image: p.image ?? DEFAULT_OG_IMAGE,
+        category: 'Camping trip plan (digital download)',
+        brand: { '@type': 'Brand', name: SITE_NAME },
+        offers: {
+          '@type': 'AggregateOffer',
+          url,
+          priceCurrency: 'USD',
+          lowPrice,
+          highPrice,
+          offerCount: p.tiers.length,
+          availability: 'https://schema.org/InStock',
+          seller: { '@id': `${SITE_URL}/#organization` },
+          offers: p.tiers.map((t) => ({
+            '@type': 'Offer',
+            name: `${p.name} — ${t.name}`,
+            url,
+            priceCurrency: 'USD',
+            price: t.priceUsd.toFixed(2),
+            availability: 'https://schema.org/InStock',
+            seller: { '@id': `${SITE_URL}/#organization` },
+          })),
+        },
+      },
+      breadcrumbList(p.breadcrumbs),
+    ],
+  }
+}
+
 export function itemListGraph(input: {
   name: string
   items: { position: number; url: string; name: string }[]

@@ -6,8 +6,9 @@ import { parsePartySize } from '@/lib/party-size'
 import { parseQuizOutput, type PlanSearchParams } from '@/lib/personalization/url-params'
 import TripPackPaywall from '@/components/trip-pack/TripPackPaywall'
 import TripPackPreview from '@/components/trip-pack/TripPackPreview'
-import { pageMetadata, SITE_URL } from '@/lib/seo'
+import { pageMetadata, SITE_URL, tripPackProductGraph } from '@/lib/seo'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
+import JsonLd from '@/components/seo/JsonLd'
 import type { PlanSlug } from '@/types'
 
 const VALID: PlanSlug[] = ['backyard-test', 'first-night-camp', 'first-weekend-camp', 'easy-family-basecamp']
@@ -54,10 +55,25 @@ export default async function TripPackPage({
   const out = parseQuizOutput(slug, sp)
   const nights = clamp(Number(sp.nights ?? NIGHT_DEFAULT[slug]), 1, 7)
 
+  const productSchema = tripPackProductGraph({
+    planSlug: slug,
+    name: `${content.cover.title} Trip Pack`,
+    description: `Print-ready ${content.cover.title} Trip Pack: timeline, packing list, gear set, and mistake prevention — assembled to your party size.`,
+    tiers: [
+      { tier: 'basic', name: 'Basic', priceUsd: 14 },
+      { tier: 'premium', name: 'Premium', priceUsd: 24 },
+    ],
+    breadcrumbs: [
+      { name: 'Home', url: `${SITE_URL}/` },
+      { name: 'Trip Packs', url: `${SITE_URL}/trip-pack` },
+      { name: content.cover.title, url: `${SITE_URL}/trip-pack/${slug}` },
+    ],
+  })
+
   return (
     <main className="min-h-screen bg-stone-50">
+      <JsonLd data={productSchema} />
       <Breadcrumbs
-        emitSchema
         items={[
           { name: 'Home', url: `${SITE_URL}/` },
           { name: 'Trip Packs', url: `${SITE_URL}/trip-pack` },
