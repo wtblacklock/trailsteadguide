@@ -55,6 +55,14 @@ function extractUrls(text) {
       `https://www.amazon.com/dp/${asin}?tag=trailsteadgui-20&ascsubtag=${encodeURIComponent(slug)}`,
     )
   }
+  // Registry entries: any `amazonAsin: '...'` value in source files. Synthesizes
+  // a canonical URL so the validator catches retired ASINs even after the
+  // <AmazonLink /> migration removed inline URL strings from guide pages.
+  for (const m of text.matchAll(/amazonAsin:\s*['"]([A-Z0-9]{10})['"]/g)) {
+    urls.add(
+      `https://www.amazon.com/dp/${m[1]}?tag=trailsteadgui-20&ascsubtag=registry`,
+    )
+  }
   return urls
 }
 
@@ -125,7 +133,8 @@ async function main() {
     for (const { url, status } of failures) console.error(`  [${status}] ${url}`)
     process.exit(1)
   }
-  log(`\nAll ${all.size} affiliate URLs OK.`)
+  // Always print the success summary, even in --quiet mode.
+  console.log(`\nAll ${all.size} affiliate URLs OK.`)
 }
 
 main().catch((err) => {

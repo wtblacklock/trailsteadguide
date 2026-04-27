@@ -6,7 +6,7 @@ import RelatedGuides from '@/components/guide/RelatedGuides'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
-import { amazonAffiliateUrl } from '@/lib/affiliate/amazon'
+import AmazonLink from '@/components/affiliate/AmazonLink'
 
 const SLUG = '/guides/camping-when-the-weather-turns'
 const TITLE = 'Camping When the Weather Turns'
@@ -235,58 +235,42 @@ export default function Page() {
         <ul>
           <li>
             <strong>Tent.</strong>{' '}
-            <a href={amazonAffiliateUrl('B0D7QHY574', 'camping-when-the-weather-turns')} rel="nofollow sponsored noopener" target="_blank">
-              Coleman Sundome 4-Person
-            </a>{' '}
+            <AmazonLink productId="fwc-tent-sundome" pageSlug="camping-when-the-weather-turns" />{' '}
             (~$116). Full-coverage rainfly, sealed seams. Pitch with every guy-out staked.
           </li>
           <li>
             <strong>Sleeping bag.</strong>{' '}
-            <a href={amazonAffiliateUrl('B07H99CMNP', 'camping-when-the-weather-turns')} rel="nofollow sponsored noopener" target="_blank">
-              Kelty Tuck 20
-            </a>{' '}
+            <AmazonLink productId="sleeping-bag-family" pageSlug="camping-when-the-weather-turns" />{' '}
             (~$95). 20°F synthetic fill — handles damp without losing insulation.
           </li>
           <li>
             <strong>Sleeping pad.</strong>{' '}
-            <a href={amazonAffiliateUrl('B00HC9QTO8', 'camping-when-the-weather-turns')} rel="nofollow sponsored noopener" target="_blank">
-              TETON Sports ComfortLite
-            </a>{' '}
+            <AmazonLink productId="sleeping-pad-air" pageSlug="camping-when-the-weather-turns" />{' '}
             (~$75). High R-value lifts you off cold wet ground.
           </li>
           <li>
             <strong>Stove.</strong>{' '}
-            <a href={amazonAffiliateUrl('B0009PUR5E', 'camping-when-the-weather-turns')} rel="nofollow sponsored noopener" target="_blank">
-              Coleman 1-Burner Propane Stove
-            </a>{' '}
+            <AmazonLink productId="fwc-stove-coleman-1burner" pageSlug="camping-when-the-weather-turns" />{' '}
             (~$40). Lights in wind, runs in light rain.
           </li>
           <li>
             <strong>Cooler.</strong>{' '}
-            <a href={amazonAffiliateUrl('B08LMVJJ9Q', 'camping-when-the-weather-turns')} rel="nofollow sponsored noopener" target="_blank">
-              Coleman Classic Rolling Cooler
-            </a>{' '}
+            <AmazonLink productId="fwc-cooler-rolling" pageSlug="camping-when-the-weather-turns" />{' '}
             (~$107). Wheels matter when you are wet-packing.
           </li>
           <li>
             <strong>Lighting.</strong>{' '}
-            <a href={amazonAffiliateUrl('B082HD5JDH', 'camping-when-the-weather-turns')} rel="nofollow sponsored noopener" target="_blank">
-              Consciot LED Camping Lantern (2-pack)
-            </a>{' '}
+            <AmazonLink productId="fwc-lantern-consciot" pageSlug="camping-when-the-weather-turns" />{' '}
             (~$30). One on the picnic table, one inside the tent. Most decisions get made after dark.
           </li>
           <li>
             <strong>Headlamp.</strong>{' '}
-            <a href={amazonAffiliateUrl('B09NQK2581', 'camping-when-the-weather-turns')} rel="nofollow sponsored noopener" target="_blank">
-              Black Diamond Spot 400
-            </a>{' '}
+            <AmazonLink productId="headlamp-family" pageSlug="camping-when-the-weather-turns" />{' '}
             (~$50). Waterproof rated for real weather.
           </li>
           <li>
             <strong>Camp chair.</strong>{' '}
-            <a href={amazonAffiliateUrl('B00D4JYR62', 'camping-when-the-weather-turns')} rel="nofollow sponsored noopener" target="_blank">
-              GCI Outdoor Freestyle Rocker
-            </a>{' '}
+            <AmazonLink productId="fwc-chair-gci-rocker" pageSlug="camping-when-the-weather-turns" />{' '}
             (~$80). The chair you actually want under a covered tarp.
           </li>
           <li>

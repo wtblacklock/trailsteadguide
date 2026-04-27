@@ -6,7 +6,7 @@ import RelatedGuides from '@/components/guide/RelatedGuides'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
-import { amazonAffiliateUrl } from '@/lib/affiliate/amazon'
+import AmazonLink from '@/components/affiliate/AmazonLink'
 
 const SLUG = '/guides/rainy-camping-trips'
 const TITLE = 'Rainy Camping Trips'
@@ -241,58 +241,42 @@ export default function Page() {
         <ul>
           <li>
             <strong>Tent.</strong>{' '}
-            <a href={amazonAffiliateUrl('B0D7QHY574', 'rainy-camping-trips')} rel="nofollow sponsored noopener" target="_blank">
-              Coleman Sundome 4-Person
-            </a>{' '}
+            <AmazonLink productId="fwc-tent-sundome" pageSlug="rainy-camping-trips" />{' '}
             (~$116). Full-coverage rainfly, sealed seams, real vestibule. The forgiving rain-trip tent.
           </li>
           <li>
             <strong>Sleeping bag.</strong>{' '}
-            <a href={amazonAffiliateUrl('B07H99CMNP', 'rainy-camping-trips')} rel="nofollow sponsored noopener" target="_blank">
-              Kelty Tuck 20
-            </a>{' '}
+            <AmazonLink productId="sleeping-bag-family" pageSlug="rainy-camping-trips" />{' '}
             (~$95). Synthetic fill, 20°F rating, behaves well damp.
           </li>
           <li>
             <strong>Sleeping pad.</strong>{' '}
-            <a href={amazonAffiliateUrl('B00HC9QTO8', 'rainy-camping-trips')} rel="nofollow sponsored noopener" target="_blank">
-              TETON Sports ComfortLite
-            </a>{' '}
+            <AmazonLink productId="sleeping-pad-air" pageSlug="rainy-camping-trips" />{' '}
             (~$75). Self-inflates; high R-value lifts you off cold wet ground.
           </li>
           <li>
             <strong>Stove.</strong>{' '}
-            <a href={amazonAffiliateUrl('B0009PUR5E', 'rainy-camping-trips')} rel="nofollow sponsored noopener" target="_blank">
-              Coleman 1-Burner Propane Stove
-            </a>{' '}
+            <AmazonLink productId="fwc-stove-coleman-1burner" pageSlug="rainy-camping-trips" />{' '}
             (~$40). Lights in wind, runs in light rain, no learning curve when your hands are cold.
           </li>
           <li>
             <strong>Cooler.</strong>{' '}
-            <a href={amazonAffiliateUrl('B08LMVJJ9Q', 'rainy-camping-trips')} rel="nofollow sponsored noopener" target="_blank">
-              Coleman Classic Rolling Cooler
-            </a>{' '}
+            <AmazonLink productId="fwc-cooler-rolling" pageSlug="rainy-camping-trips" />{' '}
             (~$107). Wheels matter on a wet pad.
           </li>
           <li>
             <strong>Lighting.</strong>{' '}
-            <a href={amazonAffiliateUrl('B082HD5JDH', 'rainy-camping-trips')} rel="nofollow sponsored noopener" target="_blank">
-              Consciot LED Camping Lantern (2-pack)
-            </a>{' '}
+            <AmazonLink productId="fwc-lantern-consciot" pageSlug="rainy-camping-trips" />{' '}
             (~$30). Sunset is earlier than people remember on overcast days.
           </li>
           <li>
             <strong>Headlamp.</strong>{' '}
-            <a href={amazonAffiliateUrl('B09NQK2581', 'rainy-camping-trips')} rel="nofollow sponsored noopener" target="_blank">
-              Black Diamond Spot 400
-            </a>{' '}
+            <AmazonLink productId="headlamp-family" pageSlug="rainy-camping-trips" />{' '}
             (~$50). Waterproof rating that holds up in real weather.
           </li>
           <li>
             <strong>Camp chair.</strong>{' '}
-            <a href={amazonAffiliateUrl('B00D4JYR62', 'rainy-camping-trips')} rel="nofollow sponsored noopener" target="_blank">
-              GCI Outdoor Freestyle Rocker
-            </a>{' '}
+            <AmazonLink productId="fwc-chair-gci-rocker" pageSlug="rainy-camping-trips" />{' '}
             (~$80). The chair you actually want under a covered tarp on a rainy evening.
           </li>
           <li>

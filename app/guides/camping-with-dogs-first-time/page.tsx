@@ -6,7 +6,7 @@ import RelatedGuides from '@/components/guide/RelatedGuides'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
-import { amazonAffiliateUrl } from '@/lib/affiliate/amazon'
+import AmazonLink from '@/components/affiliate/AmazonLink'
 
 const SLUG = '/guides/camping-with-dogs-first-time'
 const TITLE = 'Camping With Dogs for the First Time'
@@ -240,58 +240,42 @@ export default function Page() {
         <ul>
           <li>
             <strong>Tent.</strong>{' '}
-            <a href={amazonAffiliateUrl('B0D7QHY574', 'camping-with-dogs-first-time')} rel="nofollow sponsored noopener" target="_blank">
-              Coleman Sundome 4-Person
-            </a>{' '}
+            <AmazonLink productId="fwc-tent-sundome" pageSlug="camping-with-dogs-first-time" />{' '}
             (~$116). Size up — a 4-person tent for two adults plus a 50-lb dog is the right floor space.
           </li>
           <li>
             <strong>Sleeping bag.</strong>{' '}
-            <a href={amazonAffiliateUrl('B07H99CMNP', 'camping-with-dogs-first-time')} rel="nofollow sponsored noopener" target="_blank">
-              Kelty Tuck 20
-            </a>{' '}
+            <AmazonLink productId="sleeping-bag-family" pageSlug="camping-with-dogs-first-time" />{' '}
             (~$95). Roomy enough that a small dog can curl up at your feet on a cold night.
           </li>
           <li>
             <strong>Sleeping pad.</strong>{' '}
-            <a href={amazonAffiliateUrl('B00HC9QTO8', 'camping-with-dogs-first-time')} rel="nofollow sponsored noopener" target="_blank">
-              TETON Sports ComfortLite
-            </a>{' '}
+            <AmazonLink productId="sleeping-pad-air" pageSlug="camping-with-dogs-first-time" />{' '}
             (~$75). For you. The dog gets a closed-cell foam pad or a dedicated dog bed.
           </li>
           <li>
             <strong>Stove.</strong>{' '}
-            <a href={amazonAffiliateUrl('B0009PUR5E', 'camping-with-dogs-first-time')} rel="nofollow sponsored noopener" target="_blank">
-              Coleman 1-Burner Propane Stove
-            </a>{' '}
+            <AmazonLink productId="fwc-stove-coleman-1burner" pageSlug="camping-with-dogs-first-time" />{' '}
             (~$40). Fast meals leave more time for the dog walk before bed.
           </li>
           <li>
             <strong>Cooler.</strong>{' '}
-            <a href={amazonAffiliateUrl('B08LMVJJ9Q', 'camping-with-dogs-first-time')} rel="nofollow sponsored noopener" target="_blank">
-              Coleman Classic Rolling Cooler
-            </a>{' '}
+            <AmazonLink productId="fwc-cooler-rolling" pageSlug="camping-with-dogs-first-time" />{' '}
             (~$107). Wheels matter when you are also juggling a leash and a water jug.
           </li>
           <li>
             <strong>Lighting.</strong>{' '}
-            <a href={amazonAffiliateUrl('B082HD5JDH', 'camping-with-dogs-first-time')} rel="nofollow sponsored noopener" target="_blank">
-              Consciot LED Camping Lantern (2-pack)
-            </a>{' '}
+            <AmazonLink productId="fwc-lantern-consciot" pageSlug="camping-with-dogs-first-time" />{' '}
             (~$30). One on the picnic table, one inside the tent for late-night dog needs.
           </li>
           <li>
             <strong>Headlamp.</strong>{' '}
-            <a href={amazonAffiliateUrl('B09NQK2581', 'camping-with-dogs-first-time')} rel="nofollow sponsored noopener" target="_blank">
-              Black Diamond Spot 400
-            </a>{' '}
+            <AmazonLink productId="headlamp-family" pageSlug="camping-with-dogs-first-time" />{' '}
             (~$50). For the inevitable 3am dog bathroom run.
           </li>
           <li>
             <strong>Camp chair.</strong>{' '}
-            <a href={amazonAffiliateUrl('B00D4JYR62', 'camping-with-dogs-first-time')} rel="nofollow sponsored noopener" target="_blank">
-              GCI Outdoor Freestyle Rocker
-            </a>{' '}
+            <AmazonLink productId="fwc-chair-gci-rocker" pageSlug="camping-with-dogs-first-time" />{' '}
             (~$80). The chair you can sit in for two hours of leash-settle.
           </li>
           <li>

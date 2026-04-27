@@ -6,7 +6,7 @@ import RelatedGuides from '@/components/guide/RelatedGuides'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
-import { amazonAffiliateUrl } from '@/lib/affiliate/amazon'
+import AmazonLink from '@/components/affiliate/AmazonLink'
 
 const SLUG = '/guides/camping-in-the-northeast-for-beginners'
 const TITLE = 'Camping in the Northeast for Beginners'
@@ -252,65 +252,47 @@ export default function Page() {
       <ul>
         <li>
           <strong>Tent.</strong>{' '}
-          <a href={amazonAffiliateUrl('B0D7QHY574', 'camping-in-the-northeast-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
-            Coleman Sundome 4-Person
-          </a>{' '}
+          <AmazonLink productId="fwc-tent-sundome" pageSlug="camping-in-the-northeast-for-beginners" />{' '}
           (~$116). Full mesh inner, full-coverage rainfly. Stake firmly — Northeast wind on exposed sites is real.
         </li>
         <li>
           <strong>Sleeping bag.</strong>{' '}
-          <a href={amazonAffiliateUrl('B07H99CMNP', 'camping-in-the-northeast-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
-            Kelty Tuck 20°F
-          </a>{' '}
+          <AmazonLink productId="sleeping-bag-family" pageSlug="camping-in-the-northeast-for-beginners" />{' '}
           (~$95). The right rating for Northeast altitude and fall nights. A 30°F bag is fine at sea level mid-summer.
         </li>
         <li>
           <strong>Sleeping pad.</strong>{' '}
-          <a href={amazonAffiliateUrl('B00HC9QTO8', 'camping-in-the-northeast-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
-            TETON Sports ComfortLite
-          </a>{' '}
+          <AmazonLink productId="sleeping-pad-air" pageSlug="camping-in-the-northeast-for-beginners" />{' '}
           (~$75). Insulates from cool damp ground.
         </li>
         <li>
           <strong>Stove.</strong>{' '}
-          <a href={amazonAffiliateUrl('B0009PUR5E', 'camping-in-the-northeast-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
-            Coleman 1-Burner Propane Stove
-          </a>{' '}
+          <AmazonLink productId="fwc-stove-coleman-1burner" pageSlug="camping-in-the-northeast-for-beginners" />{' '}
           (~$40). Reliable in damp conditions.
         </li>
         <li>
           <strong>Cooler.</strong>{' '}
-          <a href={amazonAffiliateUrl('B08LMVJJ9Q', 'camping-in-the-northeast-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
-            Coleman Classic Rolling Cooler
-          </a>{' '}
+          <AmazonLink productId="fwc-cooler-rolling" pageSlug="camping-in-the-northeast-for-beginners" />{' '}
           (~$107). Bear-proof storage overnight in any northern New England or Adirondack campground.
         </li>
         <li>
           <strong>Tarp / canopy.</strong>{' '}
-          <a href={amazonAffiliateUrl('B01E45EYJY', 'camping-in-the-northeast-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
-            CORE 10×10 Instant Pop-Up Canopy
-          </a>{' '}
+          <AmazonLink productId="canopy-camp" pageSlug="camping-in-the-northeast-for-beginners" />{' '}
           (~$130). For the routine afternoon rain.
         </li>
         <li>
           <strong>Lighting.</strong>{' '}
-          <a href={amazonAffiliateUrl('B082HD5JDH', 'camping-in-the-northeast-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
-            Consciot LED Camping Lantern (2-pack)
-          </a>{' '}
+          <AmazonLink productId="fwc-lantern-consciot" pageSlug="camping-in-the-northeast-for-beginners" />{' '}
           (~$30).
         </li>
         <li>
           <strong>Headlamp.</strong>{' '}
-          <a href={amazonAffiliateUrl('B09NQK2581', 'camping-in-the-northeast-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
-            Black Diamond Spot 400
-          </a>{' '}
+          <AmazonLink productId="headlamp-family" pageSlug="camping-in-the-northeast-for-beginners" />{' '}
           (~$50). Daylight ends fast under the Northeast canopy, especially in fall.
         </li>
         <li>
           <strong>Camp chair.</strong>{' '}
-          <a href={amazonAffiliateUrl('B00D4JYR62', 'camping-in-the-northeast-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
-            GCI Outdoor Freestyle Rocker
-          </a>{' '}
+          <AmazonLink productId="fwc-chair-gci-rocker" pageSlug="camping-in-the-northeast-for-beginners" />{' '}
           (~$80).
         </li>
         <li>

@@ -7,27 +7,29 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
   // ------------------------------------------------------------------
   {
     id: 'tent-sundome-3',
-    name: 'Coleman Sundome 3-Person Tent',
+    name: 'Coleman Sundome 3-Person',
     description: 'The couple or solo-with-gear pick. 7×7 ft floor, sets up in 10 minutes, fits a full-size air bed.',
     amazonAsin: 'B004J2GUOK',
     imageUrl: 'https://m.media-amazon.com/images/S/aplus-media-library-service-media/f19b70cc-14ac-46ae-bec2-33b25b7fd2a9.__CR0,0,1464,600_PT0_SX1464_V1___.png',
     category: 'essential',
     templateSlugs: ['first-night-camp'],
     priceRange: '~$90',
+    tags: ['tent', 'solo', 'budget', 'beginner'],
   },
   {
     id: 'tent-sundome-6',
-    name: 'Coleman Sundome 6-Person Tent',
+    name: 'Coleman Sundome 6-Person',
     description: 'The size-up pick for families of 5+ or anyone who wants room to stand and spread out gear. 10×10 ft floor.',
     amazonAsin: 'B004E4AWYA',
     imageUrl: 'https://m.media-amazon.com/images/S/aplus-media-library-service-media/f19b70cc-14ac-46ae-bec2-33b25b7fd2a9.__CR0,0,1464,600_PT0_SX1464_V1___.png',
     category: 'comfort',
     templateSlugs: ['easy-family-basecamp'],
     priceRange: '~$160',
+    tags: ['tent', 'family', 'mid-range', 'comfort', 'with-kids'],
   },
   {
     id: 'sleeping-bag-family',
-    name: 'Kelty Tuck 20 Sleeping Bag',
+    name: 'Kelty Tuck 20',
     description: 'Rated to 20°F, roomy fit, easy to get into. Works for most 3-season family trips.',
     amazonAsin: 'B07H99CMNP',
     affiliateUrl: 'https://amzn.to/4mVpMom',
@@ -35,10 +37,11 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     category: 'essential',
     templateSlugs: ['first-night-camp'],
     priceRange: '~$95',
+    tags: ['sleeping-bag', 'mid-range', 'beginner', 'cold-ready', 'rain-ready'],
   },
   {
     id: 'sleeping-pad-air',
-    name: 'TETON Sports ComfortLite Sleeping Pad',
+    name: 'TETON Sports ComfortLite',
     description: 'Self-inflating, comfortable, packs small. Real comfort upgrade over foam.',
     amazonAsin: 'B00HC9QTO8',
     affiliateUrl: 'https://amzn.to/4vG4xdY',
@@ -46,6 +49,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     category: 'comfort',
     templateSlugs: [],
     priceRange: '~$75',
+    tags: ['sleeping-pad', 'mid-range', 'comfort', 'cold-ready'],
   },
   {
     id: 'air-mattress-queen',
@@ -57,6 +61,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     category: 'comfort',
     templateSlugs: ['easy-family-basecamp'],
     priceRange: '~$120',
+    tags: ['air-mattress', 'family', 'mid-range', 'comfort', 'with-kids'],
   },
   {
     id: 'stove-2-burner',
@@ -68,10 +73,11 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     category: 'essential',
     templateSlugs: ['first-weekend-camp', 'easy-family-basecamp'],
     priceRange: '~$210',
+    tags: ['stove', 'family', 'premium', 'comfort'],
   },
   {
     id: 'headlamp-family',
-    name: 'Black Diamond Spot 400 Headlamp',
+    name: 'Black Diamond Spot 400',
     description: '400 lumens, red night mode, waterproof. One per person is non-negotiable.',
     amazonAsin: 'B09NQK2581',
     affiliateUrl: 'https://amzn.to/4mXLRTe',
@@ -79,6 +85,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     category: 'essential',
     templateSlugs: ['backyard-test'],
     priceRange: '~$50',
+    tags: ['headlamp', 'mid-range', 'beginner', 'rain-ready'],
   },
   {
     id: 'camp-chairs',
@@ -90,6 +97,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     category: 'comfort',
     templateSlugs: [],
     priceRange: '~$95',
+    tags: ['chair', 'mid-range', 'comfort'],
   },
   {
     id: 'cooler-basic',
@@ -101,10 +109,11 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     category: 'essential',
     templateSlugs: [],
     priceRange: '~$120',
+    tags: ['cooler', 'family', 'mid-range', 'heat-friendly'],
   },
   {
     id: 'canopy-camp',
-    name: 'CORE 10x10 Instant Pop-Up Canopy',
+    name: 'CORE 10×10 Instant Pop-Up Canopy',
     description: 'Sets up in 2 minutes. Shade at camp is a comfort multiplier.',
     amazonAsin: 'B01E45EYJY',
     affiliateUrl: 'https://amzn.to/4cOwo3a',
@@ -112,6 +121,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     category: 'convenience',
     templateSlugs: ['easy-family-basecamp'],
     priceRange: '~$130',
+    tags: ['canopy', 'shade', 'heat-friendly', 'rain-ready', 'family'],
   },
 
   // ------------------------------------------------------------------
@@ -121,7 +131,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
   // ------------------------------------------------------------------
   {
     id: 'fwc-tent-sundome',
-    name: 'Coleman Sundome 4-Person Tent',
+    name: 'Coleman Sundome 4-Person',
     description: 'Best-selling family dome tent. 9×7 ft floor, weatherproof, quick to pitch, fits a queen air bed. The safe first-trip tent.',
     amazonAsin: 'B0D7QHY574',
     affiliateUrl: 'https://amzn.to/4sUKHJs',
@@ -129,6 +139,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     category: 'essential',
     templateSlugs: ['first-weekend-camp'],
     priceRange: '~$116',
+    tags: ['tent', 'family', 'budget', 'beginner', 'rain-ready', 'with-kids'],
   },
   {
     id: 'fwc-stove-coleman-1burner',
@@ -140,17 +151,21 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     category: 'essential',
     templateSlugs: [],
     priceRange: '~$40',
+    tags: ['stove', 'budget', 'beginner', 'rain-ready', 'heat-friendly'],
   },
   {
     id: 'fwc-cooler-rolling',
+    // ASIN reconciled 2026-04-26: amzn.to/4d3oHXX resolves to B08LMVJJ9Q,
+    // not B07N3C6Y5M as previously listed. Switched to the resolved value.
     name: 'Coleman Classic Rolling Cooler',
     description: 'Insulated rolling cooler with telescoping handle. Makes the load-in from the car a non-issue.',
-    amazonAsin: 'B07N3C6Y5M',
+    amazonAsin: 'B08LMVJJ9Q',
     affiliateUrl: 'https://amzn.to/4d3oHXX',
     imageUrl: 'https://m.media-amazon.com/images/S/aplus-media-library-service-media/6a95b9ce-ba2f-46da-a5f8-82593670f6eb.__CR0,0,1464,600_PT0_SX1464_V1___.png',
     category: 'essential',
     templateSlugs: ['first-weekend-camp', 'easy-family-basecamp'],
     priceRange: '~$107',
+    tags: ['cooler', 'family', 'mid-range', 'comfort', 'heat-friendly'],
   },
   {
     id: 'fwc-cot-airbed-combo',
@@ -162,17 +177,21 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     category: 'comfort',
     templateSlugs: [],
     priceRange: '~$30',
+    tags: ['cot', 'air-mattress', 'comfort', 'family'],
   },
   {
     id: 'fwc-lantern-consciot',
+    // ASIN reconciled 2026-04-26: amzn.to/4tz86RT resolves to B082HD5JDH,
+    // not B08D6X8F1L as previously listed. Switched to the resolved value.
     name: 'Consciot LED Camping Lantern (2-pack)',
     description: 'Battery-powered, collapsible, bright enough for the picnic table. Two is the right number.',
-    amazonAsin: 'B08D6X8F1L',
+    amazonAsin: 'B082HD5JDH',
     affiliateUrl: 'https://amzn.to/4tz86RT',
     imageUrl: 'https://m.media-amazon.com/images/I/71ATGzY0CUL._AC_SL1500_.jpg',
     category: 'essential',
     templateSlugs: ['first-night-camp', 'first-weekend-camp'],
     priceRange: '~$30',
+    tags: ['lantern', 'budget', 'beginner', 'rain-ready'],
   },
   {
     id: 'fwc-sleeping-bag-mallome',
@@ -184,6 +203,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     category: 'essential',
     templateSlugs: ['first-weekend-camp'],
     priceRange: '~$26',
+    tags: ['sleeping-bag', 'budget', 'beginner'],
   },
   {
     id: 'fwc-chair-gci-rocker',
@@ -195,6 +215,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     category: 'comfort',
     templateSlugs: ['first-weekend-camp', 'easy-family-basecamp'],
     priceRange: '~$80',
+    tags: ['chair', 'mid-range', 'comfort', 'family'],
   },
   {
     id: 'fwc-projector-tmy',
@@ -206,6 +227,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     category: 'convenience',
     templateSlugs: [],
     priceRange: '~$50',
+    tags: ['projector', 'comfort', 'with-kids', 'budget'],
   },
   {
     id: 'fwc-trash-can-wakeman',
@@ -217,6 +239,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     category: 'convenience',
     templateSlugs: [],
     priceRange: '~$21',
+    tags: ['trash', 'budget'],
   },
   {
     id: 'fwc-lantern-hanger',
@@ -228,9 +251,39 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     category: 'convenience',
     templateSlugs: ['first-night-camp'],
     priceRange: '~$20',
+    tags: ['lantern-hanger', 'budget'],
   },
 ]
 
 export function getProductsForTemplate(slug: PlanSlug): AffiliateProduct[] {
   return AFFILIATE_PRODUCTS.filter((p) => p.templateSlugs.includes(slug))
+}
+
+const PRODUCT_BY_ID: Record<string, AffiliateProduct> = Object.fromEntries(
+  AFFILIATE_PRODUCTS.map((p) => [p.id, p]),
+)
+
+/**
+ * Look up an affiliate product by its registry ID. Throws if the id is
+ * unknown — guides reference these by string and we want a loud failure
+ * at build time rather than a silently-rendered broken link.
+ */
+export function getProductById(id: string): AffiliateProduct {
+  const product = PRODUCT_BY_ID[id]
+  if (!product) {
+    throw new Error(
+      `Unknown affiliate product id: "${id}". Add it to AFFILIATE_PRODUCTS in lib/affiliate-products.ts.`,
+    )
+  }
+  return product
+}
+
+/**
+ * Filter the registry by tag. Useful for editorially picking which gear
+ * to feature on a topical guide (e.g. all `heat-friendly` products).
+ */
+export function getProductsByTag(
+  tag: NonNullable<AffiliateProduct['tags']>[number],
+): AffiliateProduct[] {
+  return AFFILIATE_PRODUCTS.filter((p) => p.tags?.includes(tag))
 }

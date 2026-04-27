@@ -6,7 +6,7 @@ import RelatedGuides from '@/components/guide/RelatedGuides'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
-import { amazonAffiliateUrl } from '@/lib/affiliate/amazon'
+import AmazonLink from '@/components/affiliate/AmazonLink'
 
 const SLUG = '/guides/camping-in-a-heatwave'
 const TITLE = 'Camping in a Heatwave'
@@ -250,51 +250,37 @@ export default function Page() {
         <ul>
           <li>
             <strong>Tent.</strong>{' '}
-            <a href={amazonAffiliateUrl('B0D7QHY574', 'camping-in-a-heatwave')} rel="nofollow sponsored noopener" target="_blank">
-              Coleman Sundome 4-Person
-            </a>{' '}
+            <AmazonLink productId="fwc-tent-sundome" pageSlug="camping-in-a-heatwave" />{' '}
             (~$116). Full mesh inner is the part that matters in heat. Stake the rainfly off the body for max airflow.
           </li>
           <li>
             <strong>Shade.</strong>{' '}
-            <a href={amazonAffiliateUrl('B01E45EYJY', 'camping-in-a-heatwave')} rel="nofollow sponsored noopener" target="_blank">
-              CORE 10x10 Instant Pop-Up Canopy
-            </a>{' '}
+            <AmazonLink productId="canopy-camp" pageSlug="camping-in-a-heatwave" />{' '}
             (~$130). Two minutes to set up; runs the whole hot stretch of the day.
           </li>
           <li>
             <strong>Stove.</strong>{' '}
-            <a href={amazonAffiliateUrl('B0009PUR5E', 'camping-in-a-heatwave')} rel="nofollow sponsored noopener" target="_blank">
-              Coleman 1-Burner Propane Stove
-            </a>{' '}
+            <AmazonLink productId="fwc-stove-coleman-1burner" pageSlug="camping-in-a-heatwave" />{' '}
             (~$40). Works under burn bans, which open fires do not.
           </li>
           <li>
             <strong>Cooler.</strong>{' '}
-            <a href={amazonAffiliateUrl('B08LMVJJ9Q', 'camping-in-a-heatwave')} rel="nofollow sponsored noopener" target="_blank">
-              Coleman Classic Rolling Cooler
-            </a>{' '}
+            <AmazonLink productId="fwc-cooler-rolling" pageSlug="camping-in-a-heatwave" />{' '}
             (~$107). Wheels matter when the parking lot is a long walk in 95°F.
           </li>
           <li>
             <strong>Lighting.</strong>{' '}
-            <a href={amazonAffiliateUrl('B082HD5JDH', 'camping-in-a-heatwave')} rel="nofollow sponsored noopener" target="_blank">
-              Consciot LED Camping Lantern (2-pack)
-            </a>{' '}
+            <AmazonLink productId="fwc-lantern-consciot" pageSlug="camping-in-a-heatwave" />{' '}
             (~$30). One on the picnic table, one inside the tent.
           </li>
           <li>
             <strong>Headlamp.</strong>{' '}
-            <a href={amazonAffiliateUrl('B09NQK2581', 'camping-in-a-heatwave')} rel="nofollow sponsored noopener" target="_blank">
-              Black Diamond Spot 400
-            </a>{' '}
+            <AmazonLink productId="headlamp-family" pageSlug="camping-in-a-heatwave" />{' '}
             (~$50). Useful for the early-morning dawn hike before it gets hot.
           </li>
           <li>
             <strong>Camp chair.</strong>{' '}
-            <a href={amazonAffiliateUrl('B00D4JYR62', 'camping-in-a-heatwave')} rel="nofollow sponsored noopener" target="_blank">
-              GCI Outdoor Freestyle Rocker
-            </a>{' '}
+            <AmazonLink productId="fwc-chair-gci-rocker" pageSlug="camping-in-a-heatwave" />{' '}
             (~$80). The chair you actually want under the canopy for the long midday rest.
           </li>
           <li>

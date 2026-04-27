@@ -6,7 +6,7 @@ import RelatedGuides from '@/components/guide/RelatedGuides'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
-import { amazonAffiliateUrl } from '@/lib/affiliate/amazon'
+import AmazonLink from '@/components/affiliate/AmazonLink'
 
 const SLUG = '/guides/camping-in-colorado-for-beginners'
 const TITLE = 'Camping in Colorado for Beginners'
@@ -225,58 +225,42 @@ export default function Page() {
       <ul>
         <li>
           <strong>Tent.</strong>{' '}
-          <a href={amazonAffiliateUrl('B0D7QHY574', 'camping-in-colorado-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
-            Coleman Sundome 4-Person
-          </a>{' '}
+          <AmazonLink productId="fwc-tent-sundome" pageSlug="camping-in-colorado-for-beginners" />{' '}
           (~$116). Stake aggressively and seam-seal the rainfly before the trip — Colorado wind and afternoon downpours expose any weakness.
         </li>
         <li>
           <strong>Sleeping bag.</strong>{' '}
-          <a href={amazonAffiliateUrl('B07H99CMNP', 'camping-in-colorado-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
-            Kelty Tuck 20°F
-          </a>{' '}
+          <AmazonLink productId="sleeping-bag-family" pageSlug="camping-in-colorado-for-beginners" />{' '}
           (~$95). The right rating for Colorado mountain camping in summer. A 30°F bag works on the Front Range.
         </li>
         <li>
           <strong>Sleeping pad.</strong>{' '}
-          <a href={amazonAffiliateUrl('B00HC9QTO8', 'camping-in-colorado-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
-            TETON Sports ComfortLite
-          </a>{' '}
+          <AmazonLink productId="sleeping-pad-air" pageSlug="camping-in-colorado-for-beginners" />{' '}
           (~$75). Insulates from cold ground at altitude — the under-rated piece of warmth.
         </li>
         <li>
           <strong>Stove.</strong>{' '}
-          <a href={amazonAffiliateUrl('B0009PUR5E', 'camping-in-colorado-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
-            Coleman 1-Burner Propane Stove
-          </a>{' '}
+          <AmazonLink productId="fwc-stove-coleman-1burner" pageSlug="camping-in-colorado-for-beginners" />{' '}
           (~$40). Reliable, works under fire restrictions which are common in Colorado summers.
         </li>
         <li>
           <strong>Cooler.</strong>{' '}
-          <a href={amazonAffiliateUrl('B08LMVJJ9Q', 'camping-in-colorado-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
-            Coleman Classic Rolling Cooler
-          </a>{' '}
+          <AmazonLink productId="fwc-cooler-rolling" pageSlug="camping-in-colorado-for-beginners" />{' '}
           (~$107). Lock it in the car or the bear box overnight in any mountain campground.
         </li>
         <li>
           <strong>Lighting.</strong>{' '}
-          <a href={amazonAffiliateUrl('B082HD5JDH', 'camping-in-colorado-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
-            Consciot LED Camping Lantern (2-pack)
-          </a>{' '}
+          <AmazonLink productId="fwc-lantern-consciot" pageSlug="camping-in-colorado-for-beginners" />{' '}
           (~$30).
         </li>
         <li>
           <strong>Headlamp.</strong>{' '}
-          <a href={amazonAffiliateUrl('B09NQK2581', 'camping-in-colorado-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
-            Black Diamond Spot 400
-          </a>{' '}
+          <AmazonLink productId="headlamp-family" pageSlug="camping-in-colorado-for-beginners" />{' '}
           (~$50). Lithium batteries handle cold mountain nights better than alkaline.
         </li>
         <li>
           <strong>Camp chair.</strong>{' '}
-          <a href={amazonAffiliateUrl('B00D4JYR62', 'camping-in-colorado-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
-            GCI Outdoor Freestyle Rocker
-          </a>{' '}
+          <AmazonLink productId="fwc-chair-gci-rocker" pageSlug="camping-in-colorado-for-beginners" />{' '}
           (~$80).
         </li>
       </ul>

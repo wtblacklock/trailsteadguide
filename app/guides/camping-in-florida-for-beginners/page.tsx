@@ -6,7 +6,7 @@ import RelatedGuides from '@/components/guide/RelatedGuides'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
-import { amazonAffiliateUrl } from '@/lib/affiliate/amazon'
+import AmazonLink from '@/components/affiliate/AmazonLink'
 
 const SLUG = '/guides/camping-in-florida-for-beginners'
 const TITLE = 'Camping in Florida for Beginners'
@@ -233,51 +233,37 @@ export default function Page() {
       <ul>
         <li>
           <strong>Tent.</strong>{' '}
-          <a href={amazonAffiliateUrl('B0D7QHY574', 'camping-in-florida-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
-            Coleman Sundome 4-Person
-          </a>{' '}
+          <AmazonLink productId="fwc-tent-sundome" pageSlug="camping-in-florida-for-beginners" />{' '}
           (~$116). Full mesh inner is the part that matters in Florida. Stake the rainfly off the body for airflow.
         </li>
         <li>
           <strong>Shade.</strong>{' '}
-          <a href={amazonAffiliateUrl('B01E45EYJY', 'camping-in-florida-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
-            CORE 10×10 Instant Pop-Up Canopy
-          </a>{' '}
+          <AmazonLink productId="canopy-camp" pageSlug="camping-in-florida-for-beginners" />{' '}
           (~$130). Two minutes to set up; covers the picnic table all day.
         </li>
         <li>
           <strong>Stove.</strong>{' '}
-          <a href={amazonAffiliateUrl('B0009PUR5E', 'camping-in-florida-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
-            Coleman 1-Burner Propane Stove
-          </a>{' '}
+          <AmazonLink productId="fwc-stove-coleman-1burner" pageSlug="camping-in-florida-for-beginners" />{' '}
           (~$40). Reliable in humidity; works under most Florida burn restrictions.
         </li>
         <li>
           <strong>Cooler.</strong>{' '}
-          <a href={amazonAffiliateUrl('B08LMVJJ9Q', 'camping-in-florida-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
-            Coleman Classic Rolling Cooler
-          </a>{' '}
+          <AmazonLink productId="fwc-cooler-rolling" pageSlug="camping-in-florida-for-beginners" />{' '}
           (~$107). Lock it overnight against raccoons.
         </li>
         <li>
           <strong>Lighting.</strong>{' '}
-          <a href={amazonAffiliateUrl('B082HD5JDH', 'camping-in-florida-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
-            Consciot LED Camping Lantern (2-pack)
-          </a>{' '}
+          <AmazonLink productId="fwc-lantern-consciot" pageSlug="camping-in-florida-for-beginners" />{' '}
           (~$30).
         </li>
         <li>
           <strong>Headlamp.</strong>{' '}
-          <a href={amazonAffiliateUrl('B09NQK2581', 'camping-in-florida-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
-            Black Diamond Spot 400
-          </a>{' '}
+          <AmazonLink productId="headlamp-family" pageSlug="camping-in-florida-for-beginners" />{' '}
           (~$50). Useful for the gator-aware walk to the bathroom.
         </li>
         <li>
           <strong>Camp chair.</strong>{' '}
-          <a href={amazonAffiliateUrl('B00D4JYR62', 'camping-in-florida-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
-            GCI Outdoor Freestyle Rocker
-          </a>{' '}
+          <AmazonLink productId="fwc-chair-gci-rocker" pageSlug="camping-in-florida-for-beginners" />{' '}
           (~$80).
         </li>
         <li>

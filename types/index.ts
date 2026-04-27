@@ -134,6 +134,24 @@ export type PlanTemplate = {
   activitySchedule: PlanActivitySchedule
 }
 
+/**
+ * Discovery tags for affiliate products. Used to filter the registry when
+ * deciding which products to feature on a given guide (e.g. "all rain-ready
+ * tents", "all heat-friendly shade gear"). Free-form additions are fine as
+ * long as the union is updated alongside the registry.
+ */
+export type AffiliateProductTag =
+  // Product types
+  | 'tent' | 'sleeping-bag' | 'sleeping-pad' | 'air-mattress' | 'cot'
+  | 'stove' | 'cooler' | 'lantern' | 'headlamp' | 'chair'
+  | 'canopy' | 'projector' | 'trash' | 'lantern-hanger'
+  // Tier
+  | 'budget' | 'mid-range' | 'premium'
+  // Audience
+  | 'family' | 'solo' | 'beginner' | 'with-kids' | 'with-dogs'
+  // Scenario
+  | 'comfort' | 'heat-friendly' | 'rain-ready' | 'cold-ready' | 'shade'
+
 export type AffiliateProduct = {
   id: string
   name: string
@@ -146,6 +164,8 @@ export type AffiliateProduct = {
   category: 'essential' | 'comfort' | 'convenience'
   templateSlugs: PlanSlug[]
   priceRange: string
+  /** Discovery tags — used by guides to find products by topic. */
+  tags?: AffiliateProductTag[]
 }
 
 export type QuizState = {

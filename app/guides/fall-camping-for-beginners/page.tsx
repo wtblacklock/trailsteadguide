@@ -4,7 +4,7 @@ import RelatedGuides from '@/components/guide/RelatedGuides'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
-import { amazonAffiliateUrl } from '@/lib/affiliate/amazon'
+import AmazonLink from '@/components/affiliate/AmazonLink'
 
 const SLUG = '/guides/fall-camping-for-beginners'
 const TITLE = 'Fall Camping for Beginners'
@@ -203,58 +203,42 @@ export default function Page() {
       <ul>
         <li>
           <strong>Tent.</strong>{' '}
-          <a href={amazonAffiliateUrl('B0D7QHY574', 'fall-camping-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
-            Coleman Sundome 4-Person
-          </a>{' '}
+          <AmazonLink productId="fwc-tent-sundome" pageSlug="fall-camping-for-beginners" />{' '}
           (~$116). 9×7 ft floor, full-coverage rainfly, weatherproof seams. Sets up in under 15 minutes the first time.
         </li>
         <li>
           <strong>Sleeping bag.</strong>{' '}
-          <a href={amazonAffiliateUrl('B07H99CMNP', 'fall-camping-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
-            Kelty Tuck 20
-          </a>{' '}
+          <AmazonLink productId="sleeping-bag-family" pageSlug="fall-camping-for-beginners" />{' '}
           (~$95). 20°F rating, roomy fit. The right call from late September through early November.
         </li>
         <li>
           <strong>Sleeping pad.</strong>{' '}
-          <a href={amazonAffiliateUrl('B00HC9QTO8', 'fall-camping-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
-            TETON Sports ComfortLite Sleeping Pad
-          </a>{' '}
+          <AmazonLink productId="sleeping-pad-air" pageSlug="fall-camping-for-beginners" />{' '}
           (~$75). Self-inflating, R-value high enough for cold ground.
         </li>
         <li>
           <strong>Stove.</strong>{' '}
-          <a href={amazonAffiliateUrl('B0009PUR5E', 'fall-camping-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
-            Coleman 1-Burner Propane Stove
-          </a>{' '}
+          <AmazonLink productId="fwc-stove-coleman-1burner" pageSlug="fall-camping-for-beginners" />{' '}
           (~$40). Boils water fast in the cold, works in wind, no learning curve in the dark.
         </li>
         <li>
           <strong>Cooler.</strong>{' '}
-          <a href={amazonAffiliateUrl('B08LMVJJ9Q', 'fall-camping-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
-            Coleman Classic Rolling Cooler
-          </a>{' '}
+          <AmazonLink productId="fwc-cooler-rolling" pageSlug="fall-camping-for-beginners" />{' '}
           (~$107). Ice lasts twice as long in fall — the wheels still matter for the load-in from the parking pad.
         </li>
         <li>
           <strong>Lighting.</strong>{' '}
-          <a href={amazonAffiliateUrl('B082HD5JDH', 'fall-camping-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
-            Consciot LED Camping Lantern (2-pack)
-          </a>{' '}
+          <AmazonLink productId="fwc-lantern-consciot" pageSlug="fall-camping-for-beginners" />{' '}
           (~$30). The most-used piece of gear after the time change. One on the picnic table, one in the tent.
         </li>
         <li>
           <strong>Headlamp.</strong>{' '}
-          <a href={amazonAffiliateUrl('B09NQK2581', 'fall-camping-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
-            Black Diamond Spot 400
-          </a>{' '}
+          <AmazonLink productId="headlamp-family" pageSlug="fall-camping-for-beginners" />{' '}
           (~$50). One per person, no exceptions. Bring spare batteries — cold drains old ones fast.
         </li>
         <li>
           <strong>Camp chair.</strong>{' '}
-          <a href={amazonAffiliateUrl('B00D4JYR62', 'fall-camping-for-beginners')} rel="nofollow sponsored noopener" target="_blank">
-            GCI Outdoor Freestyle Rocker
-          </a>{' '}
+          <AmazonLink productId="fwc-chair-gci-rocker" pageSlug="fall-camping-for-beginners" />{' '}
           (~$80). The chair you&apos;ll actually sit in for an hour after dinner instead of going to bed at 7pm.
         </li>
         <li>
