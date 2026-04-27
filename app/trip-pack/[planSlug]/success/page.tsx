@@ -22,6 +22,80 @@ const PLAN_SLUGS: PlanSlug[] = [
   'easy-family-basecamp',
 ]
 
+type NextLink = { href: string; label: string; sublabel: string }
+type NextStep = {
+  guide: NextLink
+  skill: NextLink
+  nextPlan: NextLink | null
+}
+
+const NEXT_STEPS: Record<PlanSlug, NextStep> = {
+  'backyard-test': {
+    guide: {
+      href: '/guides/first-night-camping-guide',
+      label: 'Read: First Night Camping Guide',
+      sublabel: 'What to expect on your first real night outside.',
+    },
+    skill: {
+      href: '/skills/cooking/two-burner-stove-basics',
+      label: 'Practice: Two-burner stove basics',
+      sublabel: 'The 5-minute skill that makes camp meals easy.',
+    },
+    nextPlan: {
+      href: '/plans/first-night-camp',
+      label: 'Step up: First Night Camp',
+      sublabel: 'One night at a real campground — your next move.',
+    },
+  },
+  'first-night-camp': {
+    guide: {
+      href: '/guides/first-time-camping-mistakes',
+      label: 'Read: First-Time Camping Mistakes',
+      sublabel: 'The avoidable mistakes that quietly ruin a first trip.',
+    },
+    skill: {
+      href: '/skills/fire/starting-a-fire',
+      label: 'Practice: Starting a fire',
+      sublabel: 'Light it once, light it right — no fuss.',
+    },
+    nextPlan: {
+      href: '/plans/first-weekend-camp',
+      label: 'Step up: First Weekend Camp',
+      sublabel: 'Two nights, fully planned: meals, gear, schedule.',
+    },
+  },
+  'first-weekend-camp': {
+    guide: {
+      href: '/guides/weekend-camping-packing-list',
+      label: 'Read: Weekend Camping Packing List',
+      sublabel: 'Two-night family pack list — by category, by person.',
+    },
+    skill: {
+      href: '/skills/cooking/foil-pack-meals',
+      label: 'Practice: Foil pack meals',
+      sublabel: 'One pan, no dishes, kid-friendly camp dinner.',
+    },
+    nextPlan: {
+      href: '/plans/easy-family-basecamp',
+      label: 'Step up: Easy Family Basecamp',
+      sublabel: 'Three+ nights in one spot with the comfort upgrades.',
+    },
+  },
+  'easy-family-basecamp': {
+    guide: {
+      href: '/guides/camping-with-kids-first-time',
+      label: 'Read: Camping With Kids',
+      sublabel: 'What actually keeps kids happy at camp.',
+    },
+    skill: {
+      href: '/skills/fire/fire-safety-rules',
+      label: 'Practice: Fire safety rules',
+      sublabel: 'The non-negotiables before any campfire.',
+    },
+    nextPlan: null,
+  },
+}
+
 type Props = {
   params: Promise<{ planSlug: string }>
   searchParams: Promise<{ session_id?: string; token?: string }>
@@ -132,11 +206,28 @@ export default async function TripPackSuccessPage({ params, searchParams }: Prop
                 >
                   Open your {title} itinerary
                 </Link>
+              </div>
+
+              <div className="pt-2 space-y-2">
+                {([
+                  NEXT_STEPS[plan].guide,
+                  NEXT_STEPS[plan].skill,
+                  NEXT_STEPS[plan].nextPlan,
+                ].filter(Boolean) as NextLink[]).map((step) => (
+                  <Link
+                    key={step.href}
+                    href={step.href}
+                    className="block px-4 py-3 rounded-xl border border-stone-200 hover:border-[#1f3622] hover:bg-stone-50 transition-colors"
+                  >
+                    <div className="text-sm font-semibold text-[#1f3622]">{step.label}</div>
+                    <div className="text-xs text-stone-500 mt-0.5">{step.sublabel}</div>
+                  </Link>
+                ))}
                 <Link
                   href="/quiz"
-                  className="block text-center text-sm text-stone-500 hover:text-[#1f3622] underline underline-offset-4"
+                  className="block text-center text-xs text-stone-500 hover:text-[#1f3622] underline underline-offset-4 pt-2"
                 >
-                  Plan another trip &mdash; start a new quiz
+                  Or plan another trip &mdash; start a new quiz
                 </Link>
               </div>
             </>
