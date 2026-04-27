@@ -29,9 +29,7 @@ const FOOTER_TEMPLATE = `
   <span style="font-weight: 700; letter-spacing: 3px; color: #3a5a3e; text-transform: uppercase;">
     TRAILSTEAD GUIDE
   </span>
-  <span style="text-align: right;">
-    trailsteadguide.com &middot; <span class="pageNumber"></span> / <span class="totalPages"></span>
-  </span>
+  <span style="text-align: right;">trailsteadguide.com</span>
 </div>`
 
 // An empty-but-non-zero header is required when displayHeaderFooter is true
