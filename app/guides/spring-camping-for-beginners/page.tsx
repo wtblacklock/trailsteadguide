@@ -170,25 +170,25 @@ export default function Page() {
           <strong>Picking the wrong elevation.</strong> A campground at 4,500 ft in late April can be wide open and pleasant; the same park&apos;s upper loop at 7,000 ft can still be closed for snow. Check the elevation, not just the park.
         </li>
         <li>
-          <strong>Underrating the night.</strong> A 70°F day can collapse to 28°F by 5am in early spring. Pack the 20°F bag and a fleece even when the forecast looks generous.
+          <strong>Trusting the 3-day forecast.</strong> The recurring spring story is two beautiful days followed by a snow morning on day 3. Spring forecasts revise hard inside 48 hours — pack the cold-night kit even when Friday looks generous, and pitch the rainfly every night even when the sky is clear at sunset.
         </li>
         <li>
-          <strong>Bringing the wrong stakes.</strong> The wire stakes that ship with most tents bend or pull straight out of saturated ground. Y-stakes or 9-inch nail stakes hold; everything else is a 3am wake-up to a flapping fly.
+          <strong>The wire stakes that ship with the tent.</strong> They bend or pull straight out of saturated spring ground; the first 3am wake-up to a flapping fly will teach you that. Replace them at home with Y-stakes or 9-inch nail stakes before the trip, not at the campground in the rain.
         </li>
         <li>
-          <strong>Driving in on a soft road.</strong> If the forest service or state park notes &ldquo;mud season&rdquo; or &ldquo;road conditions seasonal,&rdquo; assume a low-clearance car will bottom out or get stuck. Call the ranger station the day before.
+          <strong>Driving in on a soft road.</strong> If the forest service or state park notes &ldquo;mud season&rdquo; or &ldquo;road conditions seasonal,&rdquo; assume a low-clearance car will bottom out or get stuck. Call the ranger station the day before — and be honest about what you&apos;re driving.
         </li>
         <li>
-          <strong>Skipping the rain prep when the forecast is clear.</strong> Spring storms move fast and forecast revisions are common. Pitch the tent with the fly on, even on a sunny afternoon.
+          <strong>Banking on a fire for dinner.</strong> The wood you&apos;ll find on the ground in spring is wet, the rain often arrives at the worst possible time, and even seasoned campers describe spending 20 minutes coaxing flames out of damp kindling before a downpour. The propane stove is the actual cooking plan; the fire is the bonus.
         </li>
         <li>
-          <strong>Cotton anywhere.</strong> Cotton soaks up the morning dew and stays cold all day. Synthetic or wool for everything that touches skin.
+          <strong>Cotton anywhere.</strong> Cotton soaks up morning dew and stays cold all day. Synthetic or wool for everything that touches skin — including the t-shirt under the base layer.
         </li>
         <li>
-          <strong>No tick plan.</strong> Ticks emerge with the first warm week. Permethrin on clothes, repellent on skin, full body checks at sundown and on waking. Pull any tick with tweezers, save it in a baggie, and watch for a rash for two weeks.
+          <strong>An untested sleep system.</strong> First-trippers consistently describe their worst nights of sleep on borrowed gear — a too-thin pad, a 40°F bag carried over from summer, a sleeping bag that &ldquo;felt warm enough in the living room.&rdquo; Set the whole system up in your backyard for one cold night before the trip.
         </li>
         <li>
-          <strong>Counting on the campground water.</strong> Many campgrounds don&apos;t turn on their water spigots until late April or even May. Bring drinking water with you.
+          <strong>Leaving the cooler out overnight.</strong> A cooler on the picnic table is an open invitation in spring — raccoons, possums, and the first bears coming out of dens all work the campground in the dark. Lock food in a bear box if there is one, or in the trunk before bed. Critters will end the trip a day early.
         </li>
       </ol>
 

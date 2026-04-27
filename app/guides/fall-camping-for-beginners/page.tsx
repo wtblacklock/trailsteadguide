@@ -171,28 +171,28 @@ export default function Page() {
       </p>
       <ol>
         <li>
-          <strong>Packing the summer sleeping bag.</strong> A 40°F bag at a 30°F night is a long, sleepless six hours. The 20°F bag is the right call from late September through early November almost everywhere.
+          <strong>Packing the summer sleeping bag.</strong> A 40°F bag at a 30°F night is a long, sleepless six hours — the exact regret first-fall trippers report afterwards, often after wearing every layer they brought and stuffing clothes inside the bag for warmth. The 20°F bag is the right call from late September through early November almost everywhere.
         </li>
         <li>
-          <strong>Sealing the tent up tight.</strong> The wet ceiling at dawn isn&apos;t a leaky tent — it&apos;s your breath. Crack the door zipper an inch at the top and stake the fly off the inner body for airflow.
+          <strong>Sealing the tent up tight.</strong> The wet ceiling at dawn isn&apos;t a leaky tent — it&apos;s your breath condensing on the cold rainfly. Crack the door zipper an inch at the top and stake the fly off the inner body for airflow. A pack towel handles the morning wipe-down.
         </li>
         <li>
-          <strong>Forgetting how early it gets dark.</strong> Set up by 4pm in October and 3pm in November, and budget for cooking dinner under headlamp. Plan the meal accordingly.
+          <strong>Forgetting how early it gets dark.</strong> Set up by 4pm in October and 3pm after the November time change. Plan a one-pot dinner — three-component meals don&apos;t survive cooking by headlamp with cold hands.
         </li>
         <li>
-          <strong>No real puffy.</strong> A hoodie is for shoulder season; the puffy is the warm layer that lets you sit out at the picnic table after dinner instead of going to bed at 7pm.
+          <strong>No real puffy.</strong> A hoodie is for shoulder season; the puffy is the warm layer that lets you sit at the picnic table after dinner instead of giving up and going to bed at 7pm.
         </li>
         <li>
-          <strong>Booking peak-foliage weekend two weeks out.</strong> Mid-October weekends in New England, the Smokies, and the upper Midwest fill 2–3 months in advance. Mid-week is wide open if your schedule allows.
+          <strong>Booking peak-foliage weekend two weeks out.</strong> Mid-October in New England, the Smokies, and the upper Midwest fills 2–3 months in advance. Mid-week is wide open if your schedule allows; otherwise either book early or shift the dates a week.
         </li>
         <li>
-          <strong>Cotton anywhere.</strong> Cold sweat is the fast lane to a miserable night. Synthetic or wool for everything that touches skin.
+          <strong>Cotton anywhere.</strong> Cold sweat is the fast lane to a miserable night. Synthetic or wool for everything that touches skin — including the t-shirt under the base layer.
         </li>
         <li>
           <strong>Skipping the hunting check.</strong> Many state forests, national forests, and BLM lands allow firearm hunting in October and November. Check the unit, wear blaze orange on trails, and pick a campground that doesn&apos;t share its access road with hunters at dawn.
         </li>
         <li>
-          <strong>Sleeping with food in the tent.</strong> A bear in October is not the same animal you&apos;d meet in July. Bear box, locker, or trunk — every item with a smell.
+          <strong>Sleeping with food in the tent.</strong> Bears in October are eating 20+ hours a day to put on winter weight, and they remember campgrounds. Bear box, locker, or trunk — every wrapper, every snack, every tube of toothpaste.
         </li>
       </ol>
 

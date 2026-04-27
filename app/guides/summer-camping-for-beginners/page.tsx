@@ -167,22 +167,22 @@ export default function Page() {
           <strong>Underestimating the temperature swing.</strong> A campground that hits 95°F at 4pm can drop into the 50s by 5am, especially above 5,000 ft. Pack the fleece even when the forecast says hot.
         </li>
         <li>
-          <strong>Pitching in full sun.</strong> Walk the site before you set up. Aim for morning sun, afternoon shade. The tent should not be the hottest part of camp.
+          <strong>Pitching in full sun.</strong> Walk the site before you set up. Aim for morning sun, afternoon shade. A tent in full sun is a sauna by 9am and unusable for an afternoon nap — and there&apos;s no fixing it once the stakes are in.
         </li>
         <li>
-          <strong>Overpacking gear.</strong> More stuff means more time setting up, more time breaking down, and more things getting hot, dirty, or lost. Pack the list, not extras &ldquo;just in case.&rdquo;
+          <strong>Overpacking gear.</strong> More stuff means more time setting up, more time breaking down, and a hotter, more cluttered camp. The most upvoted car-camping advice from veterans is to pack to a list, not to &ldquo;just in case.&rdquo;
         </li>
         <li>
-          <strong>Booking the wrong campground.</strong> First summer trip should be under 90 minutes from home, with flush toilets, potable water, and shade trees. Save the dramatic alpine basin for trip four.
+          <strong>Booking too late, then accepting the bad site.</strong> Popular state and national park weekends in July and August fill the day reservation windows open, six months out. Showing up two weeks before with no reservation lands you at the worst loop, next to the dumpster, with a four-hour drive there and back.
         </li>
         <li>
-          <strong>Ignoring afternoon thunderstorms.</strong> Set the tent up by noon. Don&apos;t leave food, chairs, or sleeping bags loose in the open after lunch. Storms move fast.
+          <strong>Ignoring afternoon thunderstorms.</strong> Set the tent and rainfly up by noon. Don&apos;t leave food, chairs, or sleeping bags loose in the open after lunch. Summer storms drop an inch of rain in 30 minutes and lightning is the real hazard — get into the car, not the tent, if a cell rolls in.
         </li>
         <li>
-          <strong>Skipping the fire-ban check.</strong> Many western parks ban open fires in summer. Bring a stove. Know before you go — the rangers will turn you back at the gate if you&apos;ve only got firewood.
+          <strong>Skipping the fire-ban check — and walking away from a &ldquo;small&rdquo; fire.</strong> Many western parks ban open fires from June through September; bring a stove regardless. And if you do have a legal fire: drown it, stir it, drown it again. A still-warm coal in dry pine duff is how wildfires start, and rangers find them every season.
         </li>
         <li>
-          <strong>Drinking only water.</strong> On hot days, water without electrolytes can leave you nauseated and headachy by evening. Sports drinks, electrolyte tabs, or salty snacks fix this.
+          <strong>Drinking only water.</strong> On hot days, water without sodium leaves you nauseated and headachy by evening. Sports drinks, electrolyte tabs, or salty snacks fix this — beginners who finally try electrolytes describe the difference as the trip not ending in a headache.
         </li>
         <li>
           <strong>Wearing cotton.</strong> Cotton soaks sweat, then chills you when the sun drops. Synthetic or wool for everything that touches skin.

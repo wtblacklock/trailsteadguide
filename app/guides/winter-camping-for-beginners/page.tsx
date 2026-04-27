@@ -176,31 +176,31 @@ export default function Page() {
       </p>
       <ol>
         <li>
-          <strong>Tent-camping on the first winter trip.</strong> Do the cabin, the yurt, or the heated lodge first. You&apos;ll learn the cold-weather routines (water management, layering, dawn cooking) in a setting where a mistake is uncomfortable, not dangerous.
+          <strong>Tent-camping on the first winter trip.</strong> The recurring beginner story is &ldquo;I&apos;d never camped properly before — I went solo in winter — I hadn&apos;t tested any of the gear,&rdquo; and it&apos;s a story that ends in luck more than skill. Do the cabin, the yurt, or the heated lodge first. Learn water management, layering, and dawn cooking in a setting where a mistake is uncomfortable, not dangerous.
         </li>
         <li>
-          <strong>Bringing a 20°F bag below 20°F.</strong> Bag ratings are survival, not comfort. The 20°F &ldquo;rating&rdquo; means a fit adult won&apos;t die at 20°F — they will not be sleeping. Buy or rent a 0°F bag.
+          <strong>Bringing a 20°F bag below 20°F.</strong> Bag ratings are survival numbers, not comfort. Beginners who tested a 20°F bag in 27°F backyards report waking up cold; in real winter, that bag is a long sleepless night even with every layer on and clothes stuffed inside. Buy or rent a 0°F bag.
         </li>
         <li>
-          <strong>Skipping the sleeping pad upgrade.</strong> Cold ground steals more body heat than cold air. R-value 3 in fall, R-value 5+ in real winter. Two pads stacked is the easy fix.
+          <strong>Skipping the sleeping pad upgrade.</strong> Cold ground steals more body heat than cold air. R-value 3 in fall, R-value 5+ in real winter. Two pads stacked — closed-cell foam under inflatable — is the easy fix and the one most experienced winter campers settle on.
         </li>
         <li>
           <strong>Cotton anywhere.</strong> Cotton holds sweat, freezes, and conducts heat away from the body. Synthetic or wool for everything that touches skin. The cotton t-shirt you forgot you were wearing under the base layer is the thing that gets you.
         </li>
         <li>
-          <strong>Sweating during setup.</strong> Strip a layer before you start pitching, hauling firewood, or shoveling snow. Stop before you sweat. Put the layer back on the moment you stop moving.
+          <strong>Sweating during setup.</strong> Strip a layer before you pitch the tent, haul firewood, or shovel snow. Stop before you sweat. Put the layer back on the moment you stop moving — damp base layers in 25°F weather is how hypothermia starts, not subzero air.
         </li>
         <li>
-          <strong>Not drinking water.</strong> Cold dulls thirst. Dehydration multiplies hypothermia risk. Drink a liter on arrival, a liter at lunch, and a liter at dinner.
+          <strong>Not drinking water — and not eating before bed.</strong> Cold dulls thirst, and dehydration multiplies hypothermia risk. Drink a liter on arrival, a liter at lunch, and a liter at dinner. Eat a high-fat snack in the bag before sleep — beginners consistently report it&apos;s the difference between a warm night and a shivering one.
         </li>
         <li>
-          <strong>Storing water bottles outside or in the vestibule.</strong> Fill bottles with hot water at bedtime, store them upside-down, and keep one inside the sleeping bag with you.
+          <strong>Storing water bottles outside or in the vestibule.</strong> Fill bottles with hot water at bedtime, store them upside-down (water freezes from the top, so the cap stays free), and keep one inside the sleeping bag with you. A frozen bottle in your bag won&apos;t melt fast enough to drink in the morning if you didn&apos;t start it hot.
         </li>
         <li>
-          <strong>Underestimating the daylight loss.</strong> Set up by 3pm in December. Cooking dinner in 5°F dark with cold hands is the kind of stress that burns through good attitudes fast.
+          <strong>Underestimating the daylight loss.</strong> Set up by 3pm in December. Cooking dinner in 5°F dark with cold hands is the kind of stress that burns through good attitudes fast — and a headlamp won&apos;t make a stove easier to light if your fingers won&apos;t bend.
         </li>
         <li>
-          <strong>No turn-around plan.</strong> Storms in winter close roads in hours, not days. Always have a way to leave that doesn&apos;t require an unplowed mountain pass at 9pm.
+          <strong>No turn-around plan.</strong> Storms in winter close roads in hours, not days. Always have a way to leave that doesn&apos;t require an unplowed mountain pass at 9pm — and tell someone outside your party exactly when you&apos;ll be back.
         </li>
       </ol>
 
