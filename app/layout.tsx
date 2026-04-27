@@ -7,6 +7,7 @@ import { ChromeNav, ChromeFooter } from '@/components/landing/Chrome'
 import ScrollRevealer from '@/components/landing/ScrollRevealer'
 import PageTransition from '@/components/PageTransition'
 import JsonLd from '@/components/seo/JsonLd'
+import AffiliateClickTracker from '@/components/analytics/AffiliateClickTracker'
 import { SITE_URL, SITE_NAME, siteGraph } from '@/lib/seo'
 
 const figtree = Figtree({
@@ -65,6 +66,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <ChromeFooter />
         <Analytics />
         <SpeedInsights />
+        <AffiliateClickTracker />
       </body>
     </html>
   )
