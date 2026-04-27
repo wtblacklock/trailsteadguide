@@ -12,3 +12,9 @@ export const PLAN_TAG_IDS: Record<string, number> = {
 // Generic "started the quiz but no plan yet" tag for mid-quiz capture.
 // 0 = disabled (no tag attached; subscriber lands in form only).
 export const QUIZ_STARTED_TAG_ID = 0
+
+// "Bought a Trip Pack" tag — attached every time a paid checkout completes
+// (Stripe webhook) or an email-gate trip-pack download is issued. Lets you
+// segment buyers from quiz-only subscribers in Kit. 0 = disabled (set the
+// real tag id from your Kit dashboard to enable).
+export const BUYER_TAG_ID = 0

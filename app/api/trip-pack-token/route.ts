@@ -1,6 +1,8 @@
 import { NextResponse } from 'next/server'
 import { signToken } from '@/lib/pdf/token'
 import { sendTripPackEmail } from '@/lib/pdf/email'
+import { subscribeToKit } from '@/lib/kit'
+import { PLAN_TAG_IDS, BUYER_TAG_ID } from '@/lib/kit-tags'
 import type { PlanSlug } from '@/types'
 import type {
   ActivityType,
@@ -75,15 +77,25 @@ export async function POST(req: Request) {
     `https://${req.headers.get('host') || 'www.trailsteadguide.com'}`
   const absoluteDownload = `${origin}${relativeDownload}`
 
-  // Fire the email (no-op if RESEND_* env vars aren't set).
-  const emailResult = await sendTripPackEmail({
-    to: email,
-    plan,
-    downloadUrl: absoluteDownload,
-    tier: 'basic',
-  })
+  // Fire email + Kit subscribe in parallel. Both no-op cleanly if their
+  // env vars are missing, so local dev still returns a usable token.
+  const [emailResult, kitResult] = await Promise.all([
+    sendTripPackEmail({
+      to: email,
+      plan,
+      downloadUrl: absoluteDownload,
+      tier: 'basic',
+    }),
+    subscribeToKit({
+      email,
+      tagIds: [PLAN_TAG_IDS[plan], BUYER_TAG_ID],
+    }),
+  ])
   if (!emailResult.ok && !emailResult.skipped) {
     console.error('[trip-pack-token] email send failed', emailResult.error)
+  }
+  if (!kitResult.ok && !kitResult.skipped) {
+    console.error('[trip-pack-token] kit subscribe failed', kitResult.error)
   }
 
   return NextResponse.json({

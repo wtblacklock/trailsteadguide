@@ -2,6 +2,8 @@ import { NextResponse } from 'next/server'
 import { stripeEnabled } from '@/lib/stripe'
 import { signToken } from '@/lib/pdf/token'
 import { sendTripPackEmail } from '@/lib/pdf/email'
+import { subscribeToKit } from '@/lib/kit'
+import { PLAN_TAG_IDS, BUYER_TAG_ID } from '@/lib/kit-tags'
 import type { PlanSlug } from '@/types'
 
 export const runtime = 'nodejs'
@@ -55,9 +57,21 @@ export async function POST(req: Request) {
 
     if (email) {
       const tier = (meta.tier === 'premium' ? 'premium' : 'basic') as 'basic' | 'premium'
-      const result = await sendTripPackEmail({ to: email, plan, downloadUrl, tier })
-      if (!result.ok && !result.skipped) {
-        console.error('[stripe webhook] email send failed', result.error)
+      // Run email + Kit subscribe in parallel — the buyer should be added
+      // to the Kit list whether or not the Resend send succeeds, and we
+      // shouldn't slow PDF delivery on a Kit hiccup.
+      const [emailResult, kitResult] = await Promise.all([
+        sendTripPackEmail({ to: email, plan, downloadUrl, tier }),
+        subscribeToKit({
+          email,
+          tagIds: [PLAN_TAG_IDS[plan], BUYER_TAG_ID],
+        }),
+      ])
+      if (!emailResult.ok && !emailResult.skipped) {
+        console.error('[stripe webhook] email send failed', emailResult.error)
+      }
+      if (!kitResult.ok && !kitResult.skipped) {
+        console.error('[stripe webhook] kit subscribe failed', kitResult.error)
       }
     } else {
       console.warn('[stripe webhook] no email on session; cannot deliver trip pack', session.id)
