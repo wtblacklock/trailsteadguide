@@ -1,5 +1,7 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import type { Skill, SkillCategory } from '@/lib/skills/types'
+import { AUTHOR_NAME, AUTHOR_IMAGE } from '@/lib/seo'
 import DifficultyBadge from './DifficultyBadge'
 import RelatedGearBlock from './RelatedGearBlock'
 import SafetyBlock from './SafetyBlock'
@@ -8,10 +10,21 @@ import SkillMediaBlock from './SkillMediaBlock'
 interface Props {
   skill: Skill
   category: SkillCategory
+  /** ISO date (YYYY-MM-DD). Falls back to the schema-default modifier. */
+  dateModified?: string
 }
 
-export default function SkillDetail({ skill, category }: Props) {
+const DEFAULT_DATE_MODIFIED = '2026-04-24'
+
+function formatUpdatedLabel(iso: string): string {
+  const date = new Date(`${iso}T00:00:00Z`)
+  if (Number.isNaN(date.getTime())) return ''
+  return date.toLocaleDateString('en-US', { month: 'long', year: 'numeric', timeZone: 'UTC' })
+}
+
+export default function SkillDetail({ skill, category, dateModified }: Props) {
   const safetyTone = skill.safetyTone ?? 'standard'
+  const updatedLabel = formatUpdatedLabel(dateModified ?? DEFAULT_DATE_MODIFIED)
   return (
     <article className="bg-[#F5F3EE]">
       <div className="max-w-content mx-auto px-6 pt-12 pb-6 md:pt-16">
@@ -41,14 +54,27 @@ export default function SkillDetail({ skill, category }: Props) {
         <h1 className="font-serif text-4xl md:text-5xl text-stone-900 tracking-tight leading-[1.1] mb-4">
           {skill.title}
         </h1>
-        <p className="text-lg text-stone-600 leading-relaxed mb-8">{skill.tagline}</p>
-        <div className="flex flex-wrap gap-2">
+        <p className="text-lg text-stone-600 leading-relaxed mb-6">{skill.tagline}</p>
+        <div className="flex flex-wrap gap-2 mb-6">
           <DifficultyBadge difficulty={skill.difficulty} />
           {skill.timeRequired && (
             <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium ring-1 ring-inset bg-stone-100 text-stone-700 ring-stone-200">
               {skill.timeRequired}
             </span>
           )}
+        </div>
+        <div className="flex items-center gap-3 text-sm text-stone-500">
+          <Image
+            src={AUTHOR_IMAGE}
+            alt={`${AUTHOR_NAME} headshot`}
+            width={36}
+            height={36}
+            className="h-9 w-9 rounded-full ring-1 ring-stone-200 object-cover"
+          />
+          <p>
+            By <Link href="/about" className="text-stone-700 hover:text-stone-900 underline decoration-stone-300 underline-offset-4 transition-colors">{AUTHOR_NAME}</Link>
+            {updatedLabel && <span> · Last updated {updatedLabel}</span>}
+          </p>
         </div>
       </div>
 
