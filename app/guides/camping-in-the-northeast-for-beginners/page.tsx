@@ -11,12 +11,14 @@ import AmazonLink from '@/components/affiliate/AmazonLink'
 
 const SLUG = '/guides/camping-in-the-northeast-for-beginners'
 const TITLE = 'Camping in the Northeast for Beginners'
+// SEO-optimized <title>; H1/headline keep TITLE.
+const META_TITLE = 'Northeast Camping for Beginners — Foliage'
 const DESCRIPTION =
   'A practical beginner guide to camping in the Northeast — Adirondacks, White Mountains, Acadia, New England — short summer window, black flies in spring, fall foliage, and cold wet shoulders.'
 const HERO_IMAGE = 'https://images.unsplash.com/photo-1665424283108-3f9c510b6120?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({
-  title: TITLE,
+  title: META_TITLE,
   description: DESCRIPTION,
   path: SLUG,
   type: 'article',

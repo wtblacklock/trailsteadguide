@@ -8,12 +8,14 @@ import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
 
 const SLUG = '/guides/weekend-camping-packing-list'
 const TITLE = 'Weekend Camping Packing List'
+// SEO-optimized <title>; H1/headline keep TITLE.
+const META_TITLE = 'Weekend Camping Packing List (2-Night)'
 const DESCRIPTION =
   'Exactly what to bring for 2 nights of family car camping — grouped by shelter, kitchen, clothing, and safety. Nothing on here you will not actually use.'
 const HERO_IMAGE = 'https://images.unsplash.com/photo-1455763916899-e8b50eca9967?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({
-  title: TITLE,
+  title: META_TITLE,
   description: DESCRIPTION,
   path: SLUG,
   type: 'article',

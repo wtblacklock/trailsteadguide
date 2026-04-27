@@ -14,6 +14,7 @@ export const GUIDE_CATEGORIES: GuideCategory[] = [
     heroSubhead:
       'The starter set: how camping actually works, what to bring, and what to skip on your first trip.',
     ctaLabel: 'Learn Basics',
+    metaTitle: 'Camping Basics for Beginners — Start Here',
   },
   {
     id: 'scenario',
@@ -24,6 +25,7 @@ export const GUIDE_CATEGORIES: GuideCategory[] = [
     heroSubhead:
       'When the situation changes — kids in tow, a rainy weekend, a tricky first night — these guides walk you through it.',
     ctaLabel: 'Explore Scenarios',
+    metaTitle: 'Camping Scenarios — Kids, Rain, Dogs',
   },
   {
     id: 'seasonal',
@@ -34,6 +36,7 @@ export const GUIDE_CATEGORIES: GuideCategory[] = [
     heroSubhead:
       'Spring, summer, fall, winter — what changes, what to pack, and how to pick the right weekend.',
     ctaLabel: 'Explore Seasonal Camping',
+    metaTitle: 'Seasonal Camping Guides — Spring–Winter',
   },
   {
     id: 'location',
@@ -44,6 +47,7 @@ export const GUIDE_CATEGORIES: GuideCategory[] = [
     heroSubhead:
       'State parks, national parks, regional differences, and the campgrounds worth booking.',
     ctaLabel: 'Explore Locations',
+    metaTitle: 'Camping by State + Region for Beginners',
   },
 ]
 

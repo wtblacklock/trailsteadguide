@@ -11,12 +11,14 @@ import AmazonLink from '@/components/affiliate/AmazonLink'
 
 const SLUG = '/guides/camping-in-the-pacific-northwest-for-beginners'
 const TITLE = 'Camping in the Pacific Northwest for Beginners'
+// SEO-optimized <title>; H1/headline keep TITLE.
+const META_TITLE = 'Pacific Northwest Camping for Beginners'
 const DESCRIPTION =
   'A practical beginner guide to camping in the Pacific Northwest — wet weather, dense forest, cool nights even in summer, Olympic and Mt Rainier crowds, and how to actually stay dry.'
 const HERO_IMAGE = 'https://images.unsplash.com/photo-1627844718626-4c6b963baac0?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({
-  title: TITLE,
+  title: META_TITLE,
   description: DESCRIPTION,
   path: SLUG,
   type: 'article',

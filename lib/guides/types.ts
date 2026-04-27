@@ -28,6 +28,13 @@ export type GuideCategory = {
   heroSubhead: string
   ctaLabel: string
   /**
+   * SEO-optimized <title> tag for the category hub page. Front-loaded with
+   * the primary keyword and tighter than `${label} — Camping Guides`.
+   * Total budget is ≤41 chars so the auto-appended " | Trailstead Guide"
+   * keeps the rendered title under Google's ~60-char truncation point.
+   */
+  metaTitle: string
+  /**
    * True when no guides are authored for this category yet. The hub and
    * the category page render a "we're building this out" state and
    * funnel into the quiz instead of a guide list.

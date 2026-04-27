@@ -11,12 +11,14 @@ import AmazonLink from '@/components/affiliate/AmazonLink'
 
 const SLUG = '/guides/camping-in-the-desert-southwest-for-beginners'
 const TITLE = 'Camping in the Desert Southwest for Beginners'
+// SEO-optimized <title>; H1/headline keep TITLE.
+const META_TITLE = 'Desert Southwest Camping for Beginners'
 const DESCRIPTION =
   'A practical beginner guide to camping in the Desert Southwest — Arizona, Utah, and New Mexico — extreme temperature swings, water management, monsoons, and the headline national parks.'
 const HERO_IMAGE = 'https://images.unsplash.com/photo-1524274165673-750e79bf7e2e?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({
-  title: TITLE,
+  title: META_TITLE,
   description: DESCRIPTION,
   path: SLUG,
   type: 'article',

@@ -9,12 +9,14 @@ import AmazonLink from '@/components/affiliate/AmazonLink'
 
 const SLUG = '/guides/spring-camping-for-beginners'
 const TITLE = 'Spring Camping for Beginners'
+// SEO-optimized <title>; H1/headline keep TITLE.
+const META_TITLE = 'Spring Camping for Beginners (Mud, Bugs)'
 const DESCRIPTION =
   'A practical spring camping guide for first-timers — what to expect from the weather, what to pack for swing temperatures and mud, and the mistakes that wreck the season-opener.'
 const HERO_IMAGE = 'https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({
-  title: TITLE,
+  title: META_TITLE,
   description: DESCRIPTION,
   path: SLUG,
   type: 'article',

@@ -11,12 +11,14 @@ import AmazonLink from '@/components/affiliate/AmazonLink'
 
 const SLUG = '/guides/camping-with-dogs-first-time'
 const TITLE = 'Camping With Dogs for the First Time'
+// SEO-optimized <title>; H1/headline keep TITLE.
+const META_TITLE = 'Camping With Dogs — First-Time Guide'
 const DESCRIPTION =
   'A practical guide to your first camping trip with a dog — leash rules, water and food, tent etiquette, heat and cold risk, training that pays off before you go, and the campgrounds that actually welcome dogs.'
 const HERO_IMAGE = 'https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({
-  title: TITLE,
+  title: META_TITLE,
   description: DESCRIPTION,
   path: SLUG,
   type: 'article',

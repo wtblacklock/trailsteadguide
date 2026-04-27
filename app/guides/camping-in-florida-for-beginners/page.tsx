@@ -11,12 +11,14 @@ import AmazonLink from '@/components/affiliate/AmazonLink'
 
 const SLUG = '/guides/camping-in-florida-for-beginners'
 const TITLE = 'Camping in Florida for Beginners'
+// SEO-optimized <title>; H1/headline keep TITLE.
+const META_TITLE = 'Florida Camping for Beginners (Bug Tips)'
 const DESCRIPTION =
   'A practical beginner guide to camping in Florida — heat and humidity, intense bugs, swamp vs. spring vs. coastal sites, gators, and hurricane-season planning.'
 const HERO_IMAGE = 'https://images.unsplash.com/photo-1615941634977-e895245bafa7?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({
-  title: TITLE,
+  title: META_TITLE,
   description: DESCRIPTION,
   path: SLUG,
   type: 'article',

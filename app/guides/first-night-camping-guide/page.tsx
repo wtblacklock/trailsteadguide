@@ -11,12 +11,14 @@ import AmazonLink from '@/components/affiliate/AmazonLink'
 
 const SLUG = '/guides/first-night-camping-guide'
 const TITLE = 'First Night Camping Guide'
+// SEO-optimized <title>; H1/headline keep TITLE.
+const META_TITLE = 'First Night Camping — What to Expect'
 const DESCRIPTION =
   'A practical guide to your first-ever overnight in a tent — what success actually looks like, how to pick a low-stakes site, the fears that fade in the first hour, and the fallback you should plan for from the start.'
 const HERO_IMAGE = 'https://images.unsplash.com/photo-1517824806704-9040b037703b?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({
-  title: TITLE,
+  title: META_TITLE,
   description: DESCRIPTION,
   path: SLUG,
   type: 'article',

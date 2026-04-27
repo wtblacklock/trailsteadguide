@@ -8,12 +8,14 @@ import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
 
 const SLUG = '/guides/first-camping-trip-checklist'
 const TITLE = 'First Camping Trip Checklist'
+// SEO-optimized <title>; H1/headline keep TITLE.
+const META_TITLE = 'First Camping Trip Checklist — Real List'
 const DESCRIPTION =
   'The one-page checklist for your first family camping trip. Everything to book, pack, and plan — shelter, kitchen, safety, and kid essentials.'
 const HERO_IMAGE = 'https://images.unsplash.com/photo-1504851149312-7a075b496cc7?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({
-  title: TITLE,
+  title: META_TITLE,
   description: DESCRIPTION,
   path: SLUG,
   type: 'article',

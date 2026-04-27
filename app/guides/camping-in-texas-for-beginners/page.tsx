@@ -11,12 +11,14 @@ import AmazonLink from '@/components/affiliate/AmazonLink'
 
 const SLUG = '/guides/camping-in-texas-for-beginners'
 const TITLE = 'Camping in Texas for Beginners'
+// SEO-optimized <title>; H1/headline keep TITLE.
+const META_TITLE = 'Texas Camping for Beginners (Heat & Bugs)'
 const DESCRIPTION =
   'A practical beginner guide to camping in Texas — heat and humidity, the bug load, what to expect at TPWD state parks vs. private campgrounds, and a setup that actually works in the Texas climate.'
 const HERO_IMAGE = 'https://images.unsplash.com/photo-1592190057402-2bf1ee02118d?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({
-  title: TITLE,
+  title: META_TITLE,
   description: DESCRIPTION,
   path: SLUG,
   type: 'article',

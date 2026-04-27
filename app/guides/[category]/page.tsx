@@ -26,7 +26,7 @@ export async function generateMetadata({
   const category = getCategoryBySlug(categorySlug)
   if (!category) return {}
   return pageMetadata({
-    title: `${category.label} — Camping Guides`,
+    title: category.metaTitle,
     description: category.heroSubhead,
     path: `/guides/${category.slug}`,
   })

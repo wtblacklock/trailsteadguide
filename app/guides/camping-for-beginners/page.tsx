@@ -8,12 +8,14 @@ import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
 
 const SLUG = '/guides/camping-for-beginners'
 const TITLE = 'Camping for Beginners'
+// SEO-optimized <title>; H1/headline keep TITLE.
+const META_TITLE = 'Camping for Beginners — First Trip Guide'
 const DESCRIPTION =
   'A real, grown-up guide to your first camping trip. No gear worship, no backcountry talk — just what families actually need to know to get outside.'
 const HERO_IMAGE = 'https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({
-  title: TITLE,
+  title: META_TITLE,
   description: DESCRIPTION,
   path: SLUG,
   type: 'article',

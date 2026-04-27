@@ -11,12 +11,14 @@ import AmazonLink from '@/components/affiliate/AmazonLink'
 
 const SLUG = '/guides/camping-in-a-heatwave'
 const TITLE = 'Camping in a Heatwave'
+// SEO-optimized <title>; H1/headline keep TITLE.
+const META_TITLE = 'Camping in a Heatwave — Shade & Hydration'
 const DESCRIPTION =
   'A practical guide to camping in extreme heat — shade siting, hydration math, electrolytes, the line where you reschedule, and the alternative timing that turns a hot trip into a comfortable one.'
 const HERO_IMAGE = 'https://images.unsplash.com/photo-1592190057402-2bf1ee02118d?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({
-  title: TITLE,
+  title: META_TITLE,
   description: DESCRIPTION,
   path: SLUG,
   type: 'article',

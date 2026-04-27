@@ -8,12 +8,14 @@ import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
 
 const SLUG = '/guides/how-to-plan-a-camping-trip'
 const TITLE = 'How to Plan a Camping Trip'
+// SEO-optimized <title>; H1/headline keep TITLE.
+const META_TITLE = 'How to Plan a Camping Trip (3-Week Guide)'
 const DESCRIPTION =
   'A step-by-step walkthrough for planning a family camping trip from scratch. Book the site, inventory gear, plan meals, and arrive calm instead of frazzled.'
 const HERO_IMAGE = 'https://images.unsplash.com/photo-1445308394109-4ec2920981b1?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({
-  title: TITLE,
+  title: META_TITLE,
   description: DESCRIPTION,
   path: SLUG,
   type: 'article',
