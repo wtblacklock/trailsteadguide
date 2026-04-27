@@ -54,10 +54,11 @@ export default function Nav() {
           />
         </Link>
 
-        {/* Desktop links — exactly the 4 spec items minus the primary CTA, which lives in the right rail */}
+        {/* Desktop links — primary library entries on the left, primary CTA on the right rail */}
         <div className="hidden md:flex items-center gap-1 text-sm text-stone-700">
           <NavLink href="/guides">Guides</NavLink>
-          <NavLink href="/gear">Gear Guide</NavLink>
+          <NavLink href="/skills">Skills</NavLink>
+          <NavLink href="/gear">Gear</NavLink>
           <NavLink href="/about">About</NavLink>
         </div>
 
@@ -121,8 +122,13 @@ export default function Nav() {
                 </Link>
               </li>
               <li>
+                <Link href="/skills" onClick={() => setMobileOpen(false)} className="block text-stone-800 text-base">
+                  Skills
+                </Link>
+              </li>
+              <li>
                 <Link href="/gear" onClick={() => setMobileOpen(false)} className="block text-stone-800 text-base">
-                  Gear Guide
+                  Gear
                 </Link>
               </li>
               <li>

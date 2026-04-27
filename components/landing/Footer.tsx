@@ -44,7 +44,7 @@ export default function Footer() {
           {/* Tools + Site */}
           <div className="col-span-1 md:col-span-2 space-y-8">
             <FooterCol title="Tools" items={TOOL_LINKS} bare />
-            <FooterCol title="Site" items={[{ label: 'Gear Guide', href: '/gear' }, { label: 'About', href: '/about' }, ...FOOTER_SECONDARY]} bare />
+            <FooterCol title="Site" items={[{ label: 'Skills', href: '/skills' }, { label: 'Gear', href: '/gear' }, { label: 'About', href: '/about' }, ...FOOTER_SECONDARY]} bare />
           </div>
 
           {/* Start */}
