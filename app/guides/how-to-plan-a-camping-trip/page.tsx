@@ -41,7 +41,7 @@ export default function Page() {
         data={faqPageGraph([
           {
             q: 'How far in advance should I book a campsite?',
-            a: 'For summer weekends at popular state parks or national forests, book 3 to 6 weeks ahead. Prime sites at well-known parks fill up within minutes of their booking window opening, which is often six months out.',
+            a: 'Earlier than you think. Most reservation windows open 6 months out, and at popular state and national parks the prime-weather weekends fill within minutes of the window opening. Headliner parks (Yosemite, Rocky Mountain, Olympic, Acadia) effectively require booking the day the window opens — six months to a year ahead. For lesser-known state parks and shoulder-season weekends, 3 to 6 weeks ahead is usually enough. Mid-week reservations are dramatically easier across the board, and private campgrounds (KOA, Hipcamp) typically have shorter lead time.',
           },
           {
             q: 'What is the best camping reservation website?',
@@ -84,6 +84,9 @@ export default function Page() {
         summary="Plan a family camping trip on a three-week runway. Three weeks out, book a site within 90 minutes of home (Recreation.gov for federal, ReserveAmerica or the state site for state parks), prioritizing level ground, afternoon shade, and proximity — but not adjacency — to bathrooms. Two weeks out, pitch the tent in the yard and light the stove. One week out, write down every meal and build a single grocery list. The day before, pack the car completely. Leave by 9am and arrive by noon — never at dusk. The single biggest cause of first-trip stress is arriving late."
       />
       <h2>3 weeks out: pick the trip</h2>
+      <p>
+        <strong>One caveat on lead time:</strong> 3 weeks works for lesser-known state parks, county parks, and most weeknights. For popular state or national parks on a prime-weather weekend (May–September), you need to book the day the reservation window opens — typically 6 months ahead, sometimes a year for headliners like Yosemite, Rocky Mountain, Olympic, or Acadia. If your target weekend is inside that window and the parks you want are full, switch to mid-week, a smaller park, or a private campground (KOA, Hipcamp).
+      </p>
       <ul>
         <li>Choose a weekend. Block it on the calendar like it&apos;s already paid for</li>
         <li>Pick 3 candidate campgrounds within 90 minutes</li>

@@ -203,7 +203,7 @@ export default function Page() {
       </p>
       <h3>Do I need to reserve a site?</h3>
       <p>
-        Yes. Walk-up sites exist but are unreliable, especially in summer. Book 3–6 weeks ahead at a state park or national forest site through ReserveAmerica or Recreation.gov.
+        Yes — and earlier than you probably think. Walk-up sites exist but are unreliable, especially in summer. Most reservation windows open <strong>6 months out</strong> (recreation.gov, ReserveCalifornia, many state systems), and the prime-weather weekends at popular state and national parks can fill within minutes. For lesser-known parks and shoulder-season weekends, 3–6 weeks ahead is usually enough; for headliner parks (Yosemite, RMNP, Olympic, Acadia) plan a year out. If everything is booked, mid-week is dramatically easier, and private campgrounds (KOA, Hipcamp) are usually open with shorter lead time.
       </p>
       <h3>How long should the first trip be?</h3>
       <p>

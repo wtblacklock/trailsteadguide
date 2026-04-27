@@ -118,9 +118,9 @@ export const PLAN_TEMPLATES: Record<string, PlanTemplate> = {
     tripSummary: "A one-night campsite trip with a clear timeline, a short gear list, and everything your family needs to leave feeling like you'll do it again.",
     preTrip: [
       {
-        time: '1 week before',
+        time: '3–6 months before',
         title: 'Book your campsite',
-        description: 'Pick a developed campsite with restrooms, fire rings, and flat tent pads. State parks are ideal. Reserve.america.com covers most.',
+        description: 'Pick a developed campsite with restrooms, fire rings, and flat tent pads. State parks are ideal. Heads up: popular state-park sites can fill 3–6 months out, and prime-weather weekends (May–September) often book the day the reservation window opens. If a park is full, try lesser-known county parks, private campgrounds (KOA, Hipcamp, Tentrr), or weeknights — those usually have availability. Reserve.america.com and recreation.gov cover most public sites.',
       },
       {
         time: '3 days before',
@@ -259,9 +259,9 @@ export const PLAN_TEMPLATES: Record<string, PlanTemplate> = {
     tripSummary: 'Your first multi-night camping experience — with a full weekend plan, upgraded comfort gear, and the room to actually enjoy it.',
     preTrip: [
       {
-        time: '2 weeks before',
+        time: '6 months before',
         title: 'Book two consecutive nights',
-        description: 'Weekends fill fast at good campsites. Book early. Choose a site with a hiking trail or swimming area nearby.',
+        description: 'Weekends fill fast — at popular state parks, often 6 months out, and the most-loved parks (RMNP, Yosemite, Olympic) can sell out within minutes of the booking window opening. Most systems open exactly 6 months ahead at a fixed time (e.g., ReserveCalifornia 8am Pacific, recreation.gov 7am Pacific). Book as early as you can; if you are inside that window, try mid-week, smaller state parks, or private campgrounds (Hipcamp, KOA). Choose a site with a hiking trail or swimming area nearby.',
       },
       {
         time: '1 week before',
@@ -417,9 +417,9 @@ export const PLAN_TEMPLATES: Record<string, PlanTemplate> = {
     tripSummary: 'A deliberately comfortable family camp experience — designed to reduce friction, maximize enjoyment, and make camping something your family actually wants to repeat.',
     preTrip: [
       {
-        time: '2 weeks before',
+        time: '6–12 months before',
         title: 'Book a premium site',
-        description: 'Look for: electrical hookup, shade, proximity to restrooms, flat ground. Premium sites fill fast. Reserve early.',
+        description: 'Look for: electrical hookup, shade, proximity to restrooms, flat ground. Premium sites are the first to go — for popular state and national parks, plan 6–12 months out and reserve the moment the booking window opens. Headliners like RMNP, Yosemite Valley, and the Olympic Peninsula can sell out within minutes for prime-weather weekends. If everything is full, lesser-known county parks and private campgrounds (KOA, Hipcamp) usually have availability with a shorter lead time, and mid-week stays open up substantially.',
       },
       {
         time: '1 week before',
