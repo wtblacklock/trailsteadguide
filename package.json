@@ -9,7 +9,8 @@
     "lint": "eslint .",
     "test": "vitest run",
     "test:watch": "vitest",
-    "validate:affiliate": "node scripts/validate-affiliate-links.mjs"
+    "validate:affiliate": "node scripts/validate-affiliate-links.mjs",
+    "affiliate:research": "node scripts/affiliate-research.mjs"
   },
   "dependencies": {
     "@sparticuz/chromium": "^147.0.0",
