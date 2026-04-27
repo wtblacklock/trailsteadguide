@@ -148,6 +148,25 @@ export default function Page() {
         <li><strong>Rain jackets packed at the top of the bag</strong> — kids will be the first ones soaked when the weather turns.</li>
       </ul>
 
+      <h2>Common kids-camping mistakes</h2>
+      <ol>
+        <li>
+          <strong>Skipping the home tent rehearsal.</strong> Pitch the tent in the living room or yard a week before the trip. Let kids climb in, zip themselves up, find the headlamp in the dark, and try a nap inside. The first time a 4-year-old sees the inside of a tent should not be at 8:30pm 90 minutes from home.
+        </li>
+        <li>
+          <strong>Driving in over the nap window.</strong> A toddler who slept twenty minutes in the car instead of an hour at home arrives at the site wired and overtired, and the rough first night you were already braced for becomes a two-hour fight. Plan the drive around the kid&apos;s sleep schedule, not yours.
+        </li>
+        <li>
+          <strong>Packing toys instead of role-tools.</strong> A bin of plastic toys gets ignored after thirty minutes. A magnifying glass, a small notebook, a kid&apos;s flashlight, and a real job — firewood gatherer, tent-stake counter — hold a 5-year-old&apos;s attention for an afternoon. Gear that turns the kid into a participant beats any toy.
+        </li>
+        <li>
+          <strong>Banking on snacks alone to manage moods.</strong> Snacks are necessary, not sufficient. A kid who is hungry, cold, and bored will not be saved by a granola bar. Cue the next activity <em>before</em> the meltdown hits — the snack covers the gap, the activity prevents the next one.
+        </li>
+        <li>
+          <strong>Letting cold creep up because nobody says anything.</strong> Kids do not reliably report that they are cold the way adults do. They get quiet, withdrawn, and stop participating well before they get to &ldquo;I&apos;m freezing.&rdquo; Layer them up at sundown — beanie, fleece, dry socks — instead of waiting to be asked.
+        </li>
+      </ol>
+
       <h2>Handling meltdowns and bail-out thresholds</h2>
       <p>
         Every kid trip includes at least one rough hour. What distinguishes a fine trip from a disaster is knowing when to push through and when to call it.
