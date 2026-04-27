@@ -219,10 +219,10 @@ export default function Page() {
           <strong>Swimming at dawn or dusk in alligator water.</strong> Gators are most active at the edges of the day. Stick to designated, posted swim areas.
         </li>
         <li>
-          <strong>Leaving food out for raccoons.</strong> Florida raccoons are aggressive and quick. Lock the cooler; don&apos;t leave food on the picnic table overnight.
+          <strong>Leaving an unlocked cooler on the picnic table.</strong> A Florida raccoon will work a soft cooler open in under a minute, and a hard cooler latch in not much more — and they&apos;ll damage the cooler in the attempt either way. Lock the cooler in the car, or run a ratchet strap through the handle and around the picnic table for the night.
         </li>
         <li>
-          <strong>Ignoring storm warnings in late summer.</strong> Tropical storms can flood a campground in hours. Watch the National Hurricane Center forecasts; have a turn-around plan.
+          <strong>Booking a single-layer tent for July humidity.</strong> Even with the rainfly off, a poorly ventilated tent will leave you sleeping in a puddle of your own breath by morning. Pick a tent that is mostly mesh with a separate rainfly that doesn&apos;t go to ground — and bring a small battery-powered fan.
         </li>
       </ol>
 

@@ -223,13 +223,13 @@ export default function Page() {
           <strong>Trying to book the iconic site two weeks ahead.</strong> Yosemite Valley and Big Sur tent sites for July weekends sell out the morning the reservation window opens, six months out. Pick a less-famous park, or shift to mid-week or shoulder-season.
         </li>
         <li>
-          <strong>Underdressing for Sierra nights.</strong> A 90°F afternoon at 7,500 ft can drop into the 30s by 5am. Bring the puffy and the warm hat even in July.
+          <strong>Underdressing for Sierra nights — or trying the trip in early May.</strong> A 90°F afternoon at 7,500 ft can drop into the 30s by 5am, and most Sierra campgrounds don&apos;t even open until May 15. Bring the puffy and the warm hat even in July, and don&apos;t book your first trip before late June.
         </li>
         <li>
-          <strong>Leaving food in the car or on the picnic table in bear country.</strong> Habituated black bears in Yosemite, Tahoe, and Sequoia know how cars work. Use the bear box for everything with a scent.
+          <strong>Leaving a cooler visible through a car window in Yosemite, Tahoe, or Sequoia.</strong> Habituated black bears recognize cars as food storage and will pop a door, break a window, and tear an interior apart for a cooler they can see — even an empty one that has held food in the past. Empty the car of every scented item and use the bear box. Lock the doors.
         </li>
         <li>
-          <strong>Skipping the fire-restriction check.</strong> Restrictions tighten weekly through summer. The propane stove works under most levels of restriction; open fires often don&apos;t.
+          <strong>Skipping the fire-restriction check the week of the trip.</strong> Restrictions tighten weekly through summer and a level you didn&apos;t expect can shut down the campfire and the charcoal grill. The propane stove works under most levels of restriction; plan around it.
         </li>
         <li>
           <strong>Treating Joshua Tree or Death Valley as a summer trip.</strong> Summer in either is dangerous, not just uncomfortable. Plan October–April for desert California.

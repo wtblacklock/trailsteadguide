@@ -213,7 +213,7 @@ export default function Page() {
           <strong>Trying a shoulder-season trip in your first weekend.</strong> June and October are wet enough that gear failures hit hard. Pick mid-July through August for trip one.
         </li>
         <li>
-          <strong>Treating the rainfly as optional.</strong> Even on a sunny forecast, the morning condensation alone will soak a tent without a rainfly.
+          <strong>Letting the rainfly droop against the tent walls.</strong> The usual cause of a soaked PNW tent is not a leak — it&apos;s a sagging rainfly that touches the inner mesh and wicks condensation straight onto your sleeping bag overnight. Stake the fly tight, guy out every loop, and pick a tent with a rainfly that stops a few inches above the ground for airflow.
         </li>
         <li>
           <strong>Wearing cotton.</strong> A cotton t-shirt under a fleece becomes wet, cold, and stays that way. Synthetic or wool only.</li>

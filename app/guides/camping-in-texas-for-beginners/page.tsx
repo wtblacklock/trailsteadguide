@@ -223,10 +223,10 @@ export default function Page() {
           <strong>Underestimating the bug load east of I-35.</strong> Mosquitoes, ticks, chiggers, and biting flies are real in East Texas, the Big Thicket, and the coast May–October. Permethrin-treat your clothing a full day before the trip.
         </li>
         <li>
-          <strong>Pitching the tent in full sun.</strong> Walk the site at noon, not at check-in. Look up. Aim for morning sun, afternoon shade.
+          <strong>Underestimating wind at Padre Island and the Panhandle.</strong> Padre Island and Palo Duro Canyon get gusts that snap awning poles, drag tents across the site, and grind sand into every zipper, sleeping bag, and cooler seal. Bring 10-inch steel stakes (the wire ones from the box are useless), guy out everything, and accept that a 3-night Padre trip means sand in your gear for the next month.
         </li>
         <li>
-          <strong>Treating Big Bend as a first trip.</strong> Big Bend is 8 hours from Dallas, has limited water, and exposes you to real heat or real cold depending on month and elevation. Get two or three Hill Country trips in first.
+          <strong>Treating Big Bend as a first trip.</strong> Big Bend is 8 hours from Dallas, has limited water, restricts hammocks to free-standing setups, and only allows fires along the river. Get two or three Hill Country trips in before you commit a long weekend to the drive.
         </li>
       </ol>
 

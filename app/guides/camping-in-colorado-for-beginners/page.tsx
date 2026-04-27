@@ -211,10 +211,10 @@ export default function Page() {
           <strong>Using a 50°F sleeping bag in July.</strong> A 75°F afternoon at altitude becomes a 35°F night. The bag rating that worked in Texas does not work in Colorado.
         </li>
         <li>
-          <strong>Leaving food in the cooler outside the car.</strong> Habituated bears in Estes Park, Aspen, and Glenwood Springs corridor will work a cooler out of an unlocked car. Use the bear box. Lock the doors.
+          <strong>Pitching the cheap stakes that came in the box.</strong> Mountain campsites in Colorado get the kind of wind that snaps fiberglass poles and drags an unweighted tent across the loop. Bring 8–10 inch steel stakes, guy out the rainfly, and pick a site with some tree shelter — the open meadow site you reserved on the map is the one that fails first.
         </li>
         <li>
-          <strong>Trying to book RMNP three weeks ahead.</strong> Six months ahead, the morning the window opens, online at 9am Mountain. Otherwise, take state-park or national-forest alternatives.
+          <strong>Trying to book RMNP three weeks ahead.</strong> Six months ahead, the morning the window opens, online at 9am Mountain. Otherwise, look at Roosevelt National Forest dispersed sites or the Indian Peaks Wilderness — both give you the front range without the reservation lottery.
         </li>
       </ol>
 

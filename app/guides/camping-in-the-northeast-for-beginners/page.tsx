@@ -229,13 +229,13 @@ export default function Page() {
       <h2>Common first-time mistakes in the Northeast</h2>
       <ol>
         <li>
-          <strong>Booking a Memorial Day Adirondack trip.</strong> Black flies turn the late-May woods into an ordeal for the unprepared. Move the trip to late June or later.
+          <strong>Booking a Memorial Day Adirondack trip with only DEET in the pack.</strong> Black flies in late May don&apos;t care about DEET — they go for ears, eyes, and nostrils, and they keep coming. The only reliable defense is permethrin-treated clothing, a head net, and a screen room to retreat to. Or: just move the trip to late June.
         </li>
         <li>
           <strong>Underdressing for altitude nights.</strong> July at 4,000 ft in the Whites can drop into the 30s overnight. Bring the warm bag and the puffy.
         </li>
         <li>
-          <strong>Trying to book Acadia or Lafayette Place two months out for foliage weekend.</strong> Acadia opens 6 months out, NH opens 11 months out. Mid-week is the unlock.
+          <strong>Trying to book Acadia or Lafayette Place two months out for foliage weekend.</strong> Blackwoods and Seawall release 60 days ahead and book in seconds; NH state parks open 11 months out. Mid-week is the unlock — or shift to a private campground or a national-forest site outside the park.
         </li>
         <li>
           <strong>Wearing cotton in the rain.</strong> Cool wet rain plus cotton clothing is how hypothermia happens at 50°F. Synthetic and wool only.

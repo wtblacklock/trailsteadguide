@@ -213,7 +213,7 @@ export default function Page() {
           <strong>Trying to book Cades Cove or Big Meadows two weeks ahead in October.</strong> Six months ahead, the morning the recreation.gov window opens. Otherwise pick a state park or NF alternative.
         </li>
         <li>
-          <strong>Storing food in a soft cooler at the picnic table overnight.</strong> Smokies bears will work a soft cooler open in 90 seconds. Use the bear cable. Lock the cooler in the car.
+          <strong>Storing food at the picnic table — even in a cooler.</strong> Smokies bears will work a soft cooler open in 90 seconds and will damage a hard cooler trying. Worse, a cooler visible through a car window is enough to bring them in for the doors and panels. Use the bear cable for everything with a scent and lock the rest deep in the trunk.
         </li>
         <li>
           <strong>Skipping permethrin in tick season.</strong> Lyme is endemic. Treat clothing 24h before the trip; it lasts 6 weeks.

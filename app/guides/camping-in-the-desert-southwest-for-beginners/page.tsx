@@ -237,7 +237,7 @@ export default function Page() {
           <strong>Hiking slot canyons during monsoon storms.</strong> Flash floods kill people in the desert most years. If storms are forecast within 50 miles, the slot canyon is closed for you that day.
         </li>
         <li>
-          <strong>Trying to book Watchman or Mather two weeks ahead.</strong> Six months ahead, the morning the recreation.gov window opens. Otherwise pick a state-park alternative.
+          <strong>Pitching with the wire stakes from the box.</strong> A 30 mph gust at Joshua Tree, Moab, or Page will pull standard tent stakes straight out of the sand and roll the tent across the loop with everything inside. Bring 10–12 inch screw-in or Y-beam stakes, weigh interior corners with rocks, and accept that on a real wind day you will not be able to cook, sleep, or read — pack an indoor backup plan.
         </li>
       </ol>
 
