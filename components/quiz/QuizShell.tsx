@@ -161,6 +161,10 @@ export default function QuizShell() {
             key={QUESTIONS[currentIndex].id}
             question={QUESTIONS[currentIndex]}
             initialValue={answers[QUESTIONS[currentIndex].id]}
+            // Forward the prior "no kids — just adults" answer to the
+            // party-size step so the kids stepper hides and the answer
+            // commits with kids: 0.
+            noKids={answers.kidsAgeGroup?.includes('none') ?? false}
             onAnswer={(value) => {
               // Per-step funnel ping so we can see which question loses users.
               trackQuizAnswer(QUESTIONS[currentIndex].id, value)

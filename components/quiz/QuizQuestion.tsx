@@ -7,9 +7,15 @@ interface QuizQuestionProps {
   question: QuizQuestionType
   onAnswer: (value: string | string[] | PartySize) => void
   initialValue?: string | string[] | PartySize
+  /**
+   * For the party-size step: when true, the user previously chose
+   * "No kids — just adults", so the kids stepper is hidden and the
+   * answer is committed with `kids: 0`.
+   */
+  noKids?: boolean
 }
 
-export default function QuizQuestion({ question, onAnswer, initialValue }: QuizQuestionProps) {
+export default function QuizQuestion({ question, onAnswer, initialValue, noKids }: QuizQuestionProps) {
   const [selected, setSelected] = useState<string[]>(
     Array.isArray(initialValue) ? initialValue : [],
   )
@@ -25,6 +31,7 @@ export default function QuizQuestion({ question, onAnswer, initialValue }: QuizQ
             ? (initialValue as PartySize)
             : undefined
         }
+        noKids={noKids ?? false}
       />
     )
   }
@@ -127,13 +134,18 @@ function PartySizeQuestion({
   question,
   onAnswer,
   initialValue,
+  noKids,
 }: {
   question: QuizQuestionType
   onAnswer: (value: PartySize) => void
   initialValue?: PartySize
+  noKids: boolean
 }) {
   const [adults, setAdults] = useState(initialValue?.adults ?? 2)
-  const [kids, setKids] = useState(initialValue?.kids ?? 2)
+  // When the user said "no kids" on the prior step, the kids count is
+  // pinned to 0 and the stepper is hidden — no point asking how many of
+  // a thing you already said you don't have.
+  const [kids, setKids] = useState(noKids ? 0 : initialValue?.kids ?? 2)
 
   return (
     <div>
@@ -143,10 +155,12 @@ function PartySizeQuestion({
       </div>
       <div className="flex flex-col gap-4">
         <Stepper label="Adults" value={adults} min={1} max={10} onChange={setAdults} />
-        <Stepper label="Kids" value={kids} min={0} max={10} onChange={setKids} />
+        {!noKids && (
+          <Stepper label="Kids" value={kids} min={0} max={10} onChange={setKids} />
+        )}
       </div>
       <button
-        onClick={() => onAnswer({ adults, kids })}
+        onClick={() => onAnswer({ adults, kids: noKids ? 0 : kids })}
         className="mt-8 w-full py-4 px-6 rounded-xl bg-stone-900 text-white font-medium hover:bg-stone-800 transition-colors duration-150"
       >
         Continue
