@@ -30,9 +30,8 @@ export const metadata: Metadata = {
   description:
     'Answer 5 questions. Get a complete, personalized camping plan for your family. Built for first-timers.',
   applicationName: SITE_NAME,
-  icons: {
-    icon: '/images/favicon.png',
-  },
+  // Icons (favicon.ico, icon.tsx, apple-icon.tsx) and the default OG image
+  // (opengraph-image.tsx) auto-mount from app/ — no need to declare them.
   openGraph: {
     type: 'website',
     siteName: SITE_NAME,
@@ -40,14 +39,6 @@ export const metadata: Metadata = {
     title: 'Trailstead Guide — Your First Family Camping Plan',
     description:
       'Answer 5 questions. Get a complete, personalized camping plan for your family. Built for first-timers.',
-    images: [
-      {
-        url: '/images/og-default.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Trailstead Guide — plan your first family camping trip',
-      },
-    ],
     locale: 'en_US',
   },
   twitter: {
@@ -55,7 +46,6 @@ export const metadata: Metadata = {
     title: 'Trailstead Guide — Your First Family Camping Plan',
     description:
       'Answer 5 questions. Get a complete, personalized camping plan for your family. Built for first-timers.',
-    images: ['/images/og-default.jpg'],
   },
   robots: {
     index: true,

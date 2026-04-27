@@ -11,7 +11,13 @@ import type { Metadata } from 'next'
 export const SITE_URL = 'https://www.trailsteadguide.com'
 export const SITE_NAME = 'Trailstead Guide'
 export const SITE_TAGLINE = 'Plan your first camping trip with confidence.'
-export const DEFAULT_OG_IMAGE = '/images/og-default.jpg'
+
+// Default OG image URL — served by app/opengraph-image.tsx (Next.js convention).
+// Each page's pageMetadata() must include this explicitly because Next.js
+// REPLACES openGraph wholesale at the deepest segment that defines it (it does
+// not deep-merge), so without an images entry on the page, the root's
+// convention-mounted image would disappear from the rendered tags.
+export const DEFAULT_OG_IMAGE = `${SITE_URL}/opengraph-image`
 
 /**
  * Build a standardized Metadata object for a page.
@@ -69,9 +75,9 @@ export const organizationNode = {
   url: `${SITE_URL}/`,
   logo: {
     '@type': 'ImageObject',
-    url: `${SITE_URL}/images/favicon.png`,
-    width: 512,
-    height: 512,
+    url: `${SITE_URL}/apple-icon`,
+    width: 180,
+    height: 180,
   },
   sameAs: [] as string[],
 }
