@@ -1,10 +1,45 @@
 import { ImageResponse } from 'next/og'
+import fs from 'node:fs/promises'
+import path from 'node:path'
 
 export const alt = 'Trailstead Guide — plan your first camping trip in minutes'
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
 
+async function loadGoogleFont(family: string, weight: number, italic: boolean) {
+  const ital = italic ? '1' : '0'
+  const cssUrl = `https://fonts.googleapis.com/css2?family=${family.replace(/ /g, '+')}:ital,wght@${ital},${weight}`
+  const css = await (
+    await fetch(cssUrl, {
+      headers: {
+        'User-Agent':
+          'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+      },
+    })
+  ).text()
+  const match = css.match(/src:\s*url\((https?:\/\/[^)]+)\)/)
+  if (!match) throw new Error(`Could not parse font URL for ${family}`)
+  const res = await fetch(match[1])
+  if (!res.ok) throw new Error(`Failed to fetch font binary for ${family}`)
+  return res.arrayBuffer()
+}
+
 export default async function OpengraphImage() {
+  const rawSvg = await fs.readFile(
+    path.join(process.cwd(), 'public/images/trailsteadguide_logo.svg'),
+    'utf8',
+  )
+  const inlinedSvg = rawSvg
+    .replace(/<defs>[\s\S]*?<\/defs>/, '')
+    .replace(/class="cls-1"/g, 'fill="#776a62"')
+    .replace(/class="cls-2"/g, 'fill="#295244"')
+  const logoDataUri = `data:image/svg+xml;base64,${Buffer.from(inlinedSvg).toString('base64')}`
+
+  const serifItalic = await loadGoogleFont('Source Serif 4', 400, true)
+
+  const logoWidth = 800
+  const logoHeight = Math.round((30.26 / 285.08) * logoWidth)
+
   return new ImageResponse(
     (
       <div
@@ -17,54 +52,40 @@ export default async function OpengraphImage() {
           justifyContent: 'center',
           background: '#f5efe2',
           padding: 80,
-          textAlign: 'center',
         }}
       >
-        <svg width="200" height="200" viewBox="0 0 48 48" style={{ marginBottom: 56 }}>
-          <defs>
-            <linearGradient id="og-mark" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0" stopColor="#3a5a3e" />
-              <stop offset="1" stopColor="#1f3622" />
-            </linearGradient>
-          </defs>
-          <circle cx="24" cy="24" r="22" fill="#ffffff" />
-          <path d="M8 34 L20 16 L28 28 L34 20 L42 34 Z" fill="url(#og-mark)" />
-          <line
-            x1="6"
-            y1="38"
-            x2="42"
-            y2="38"
-            stroke="#3a5a3e"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-          />
-        </svg>
+        <img
+          src={logoDataUri}
+          width={logoWidth}
+          height={logoHeight}
+          alt=""
+          style={{ marginBottom: 72 }}
+        />
         <div
           style={{
             display: 'flex',
-            fontSize: 96,
-            fontWeight: 700,
-            color: '#1c1917',
-            letterSpacing: '-0.03em',
-            lineHeight: 1,
-          }}
-        >
-          Trailstead Guide
-        </div>
-        <div
-          style={{
-            display: 'flex',
-            fontSize: 38,
-            color: '#57534e',
-            marginTop: 28,
-            lineHeight: 1.3,
-            maxWidth: 880,
+            fontFamily: 'Source Serif 4',
+            fontStyle: 'italic',
+            fontSize: 48,
+            color: '#295244',
+            lineHeight: 1.25,
+            textAlign: 'center',
           }}
         >
           Plan your first camping trip in minutes.
         </div>
       </div>
     ),
-    { ...size },
+    {
+      ...size,
+      fonts: [
+        {
+          name: 'Source Serif 4',
+          data: serifItalic,
+          style: 'italic',
+          weight: 400,
+        },
+      ],
+    },
   )
 }
