@@ -189,9 +189,14 @@ export default function SkillDetail({ skill, category, dateModified }: Props) {
         )}
 
         {skill.relatedPrintableSlug && <PrintableCompanion slug={skill.relatedPrintableSlug} />}
-
-        <PlanCta />
       </div>
+
+      {/* Full-width plan CTA — sits outside the max-w-content reading column
+          so it spans the page like the closing CTAs on guide and printable
+          landing pages. */}
+      <section className="px-8 pb-16">
+        <PlanCta />
+      </section>
     </article>
   )
 }
@@ -233,31 +238,22 @@ function Section({ title, children }: { title: string; children: React.ReactNode
 
 function PlanCta() {
   return (
-    <section className="bg-stone-900 text-white rounded-xl p-6 md:p-8">
-      <h2 className="font-serif text-xl md:text-2xl mb-2">Ready to put this to use?</h2>
-      <p className="text-stone-300 text-sm md:text-base mb-5">
-        Build a full trip plan in two minutes — gear list, meals, schedule, the works.
+    <div className="bg-stone-900 rounded-3xl p-10 md:p-16 text-white">
+      <p className="text-xs font-semibold tracking-widest uppercase text-stone-400 mb-4">
+        Ready to put this to use
+      </p>
+      <h2 className="font-serif text-3xl md:text-5xl font-semibold tracking-tight mb-4 max-w-2xl">
+        Get a starter trip plan in 5 seconds.
+      </h2>
+      <p className="text-stone-300 text-lg mb-8 max-w-xl">
+        The skill clicks once you use it on a real trip. Build a full trip plan in two minutes — gear list, meals, schedule, the works.
       </p>
       <Link
         href="/quiz"
-        className="inline-flex items-center justify-center gap-2 bg-white text-stone-900 text-sm font-medium rounded-md hover:bg-stone-100 transition-colors px-5 py-2.5"
+        className="inline-flex items-center justify-center rounded-md font-medium bg-white text-stone-900 hover:bg-stone-100 transition-colors px-6 py-3 text-sm"
       >
-        Start your camping plan
-        <svg
-          width="14"
-          height="14"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          aria-hidden="true"
-        >
-          <line x1="5" y1="12" x2="19" y2="12" />
-          <polyline points="12 5 19 12 12 19" />
-        </svg>
+        Start the quiz
       </Link>
-    </section>
+    </div>
   )
 }
