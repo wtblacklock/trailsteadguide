@@ -122,6 +122,27 @@ const nextConfig: NextConfig = {
       gearHubRedirect,
     ]
   },
+  /**
+   * Surface every guide / plan / skill / activity / hub at a `.md` URL so AI
+   * assistants (ChatGPT, Perplexity, Claude) can fetch a clean Markdown
+   * rendering of the same content. The `.md` URLs rewrite to a single
+   * route handler at `/api/md/<original-path>`.
+   */
+  async rewrites() {
+    return [
+      { source: '/guides/:slug.md', destination: '/api/md/guides/:slug' },
+      { source: '/plans/:slug.md', destination: '/api/md/plans/:slug' },
+      {
+        source: '/skills/:category/:slug.md',
+        destination: '/api/md/skills/:category/:slug',
+      },
+      { source: '/activities/:slug.md', destination: '/api/md/activities/:slug' },
+      { source: '/guides.md', destination: '/api/md/guides' },
+      { source: '/skills.md', destination: '/api/md/skills' },
+      { source: '/activities.md', destination: '/api/md/activities' },
+      { source: '/plans.md', destination: '/api/md/plans' },
+    ]
+  },
 }
 
 export default nextConfig
