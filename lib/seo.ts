@@ -81,10 +81,21 @@ export const organizationNode = {
   },
 }
 
-export const AUTHOR_NAME = 'William Blacklock'
+export const AUTHOR_NAME = 'Will Blacklock'
+export const AUTHOR_JOB_TITLE = 'Founder, Trailstead Guide'
+// ≤200 chars; used in JSON-LD Person.description.
 export const AUTHOR_BIO =
-  'William Blacklock built Trailstead Guide after planning his own family’s first camping trips and realizing the existing checklists assume you already know what you’re doing.'
+  'Eagle Scout (earned at 13), former Cub Master and Scout Master, Wood Badge "Gazelle," and Philmont alum. Family camper in Austin, TX, with three outdoor-active kids.'
 export const AUTHOR_IMAGE = '/images/author-william-blacklock.jpg'
+export const AUTHOR_KNOWS_ABOUT = [
+  'Camping',
+  'Outdoor Skills',
+  'Family Travel',
+  'Scouting',
+  'Knot Tying',
+  'Camp Cooking',
+  'Backpacking',
+]
 
 export const personNode = {
   '@type': 'Person',
@@ -93,7 +104,24 @@ export const personNode = {
   url: `${SITE_URL}/about`,
   description: AUTHOR_BIO,
   image: `${SITE_URL}${AUTHOR_IMAGE}`,
+  jobTitle: AUTHOR_JOB_TITLE,
   worksFor: { '@id': `${SITE_URL}/#organization` },
+  knowsAbout: AUTHOR_KNOWS_ABOUT,
+  award: ['Eagle Scout', 'Wood Badge'],
+  alumniOf: {
+    '@type': 'Organization',
+    name: 'Philmont Scout Ranch',
+    url: 'https://www.philmontscoutranch.org/',
+  },
+  homeLocation: {
+    '@type': 'Place',
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Austin',
+      addressRegion: 'TX',
+      addressCountry: 'US',
+    },
+  },
 }
 
 export const websiteNode = {
