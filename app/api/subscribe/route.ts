@@ -6,7 +6,7 @@ import {
   PRINTABLE_GENERIC_TAG_ID,
   QUIZ_STARTED_TAG_ID,
 } from '@/lib/kit-tags'
-import { getPlanEmail } from '@/lib/email-templates'
+import { getPlanEmail, getPrintableEmail } from '@/lib/email-templates'
 
 type SubscribeBody = {
   email: string
@@ -82,33 +82,41 @@ export async function POST(req: Request) {
     // Continue — we'd rather send the plan than block on Kit.
   }
 
-  // 2. Send plan email via Resend (only for post-plan capture with a known slug)
-  if (source === 'post-plan' && planSlug && resendApiKey && fromEmail) {
-    const template = getPlanEmail(planSlug)
-    if (template) {
-      try {
-        const resend = new Resend(resendApiKey)
-        const { error } = await resend.emails.send({
-          from: fromEmail,
-          to: email,
-          subject: template.subject,
-          html: template.html,
-          text: template.text,
-        })
-        if (error) {
-          console.error('Resend send failed', error)
-          return NextResponse.json(
-            { error: 'Email send failed' },
-            { status: 502 }
-          )
-        }
-      } catch (err) {
-        console.error('Resend error', err)
+  // 2. Send the source-specific transactional email via Resend.
+  //    - post-plan → plan email with the link to the personalized plan
+  //    - printable → printable email with the link to the print view
+  //    Anything else (homepage, mid-quiz) lands in Kit only and gets a
+  //    welcome sequence from there.
+  let emailTemplate: ReturnType<typeof getPlanEmail> = null
+  if (source === 'post-plan' && planSlug) {
+    emailTemplate = getPlanEmail(planSlug)
+  } else if (source === 'printable' && printableSlug) {
+    emailTemplate = getPrintableEmail(printableSlug)
+  }
+
+  if (emailTemplate && resendApiKey && fromEmail) {
+    try {
+      const resend = new Resend(resendApiKey)
+      const { error } = await resend.emails.send({
+        from: fromEmail,
+        to: email,
+        subject: emailTemplate.subject,
+        html: emailTemplate.html,
+        text: emailTemplate.text,
+      })
+      if (error) {
+        console.error('Resend send failed', error)
         return NextResponse.json(
-          { error: 'Email send error' },
-          { status: 500 }
+          { error: 'Email send failed' },
+          { status: 502 }
         )
       }
+    } catch (err) {
+      console.error('Resend error', err)
+      return NextResponse.json(
+        { error: 'Email send error' },
+        { status: 500 }
+      )
     }
   }
 
