@@ -18,6 +18,23 @@ const PLAN_TITLES: Record<PlanSlug, string> = {
   'easy-family-basecamp': 'Easy Family Basecamp',
 }
 
+/**
+ * Extract a useful string from a Resend error payload. Naive String()
+ * stringifies `{ message: '...' }` to '[object Object]'; the SDK's
+ * error type carries the message on `.message`.
+ */
+function describeResendError(error: unknown): string {
+  if (error && typeof error === 'object' && 'message' in error) {
+    const msg = (error as { message: unknown }).message
+    if (typeof msg === 'string' && msg.length > 0) return msg
+  }
+  try {
+    return JSON.stringify(error)
+  } catch {
+    return String(error)
+  }
+}
+
 type SendArgs = {
   to: string
   plan: PlanSlug
@@ -93,7 +110,7 @@ If the link expires, reply to this email and we'll send a fresh one.
     })
     if (error) {
       console.error('[trip-pack email] resend error', error)
-      return { ok: false, error: String(error) }
+      return { ok: false, error: describeResendError(error) }
     }
     return { ok: true }
   } catch (err) {
@@ -181,7 +198,7 @@ Questions or second thoughts? Just reply.
     })
     if (error) {
       console.error('[trip-pack abandon] resend error', error)
-      return { ok: false, error: String(error) }
+      return { ok: false, error: describeResendError(error) }
     }
     return { ok: true }
   } catch (err) {
