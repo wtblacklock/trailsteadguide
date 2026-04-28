@@ -85,13 +85,15 @@ export const AUTHOR_NAME = 'Will Blacklock'
 export const AUTHOR_JOB_TITLE = 'Founder, Trailstead Guide'
 // ≤200 chars; used in JSON-LD Person.description.
 export const AUTHOR_BIO =
-  'Eagle Scout (earned at 13), former Cub Master and Scout Master, Wood Badge "Antelope," and Philmont alum. Family camper in Austin, TX, with three outdoor-active kids.'
+  'Eagle Scout (age 13), former Cub Master and Scout Master, Wood Badge Antelope, Philmont alum, founder of ScoutNerd. Camps with his three kids out of Austin.'
 export const AUTHOR_IMAGE = '/images/author-william-blacklock.jpg'
 export const AUTHOR_KNOWS_ABOUT = [
   'Camping',
   'Outdoor Skills',
   'Family Travel',
   'Scouting',
+  'Scouting Leadership',
+  'BSA Wood Badge',
   'Knot Tying',
   'Camp Cooking',
   'Backpacking',
