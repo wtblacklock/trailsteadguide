@@ -15,6 +15,7 @@ import SafetyNotes from '@/components/plan/SafetyNotes'
 import AffiliateBlock from '@/components/plan/AffiliateBlock'
 import TripPackCta from '@/components/plan/TripPackCta'
 import FounderTrustBlock from '@/components/plan/FounderTrustBlock'
+import PlanComparisonLink from '@/components/plan/PlanComparisonLink'
 import FloatingEmailBar from '@/components/plan/FloatingEmailBar'
 import MealPlanAndShopping from '@/components/plan/MealPlanAndShopping'
 import { parseQuizOutput, type PlanSearchParams } from '@/lib/personalization/url-params'
@@ -208,6 +209,7 @@ export default async function PlanPage({
         activity={out.activityType}
         comfort={out.comfortLevel}
       />
+      <PlanComparisonLink planSlug={slug} />
       <FloatingEmailBar planSlug={slug} adults={adults} kids={kids} />
     </main>
   )

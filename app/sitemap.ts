@@ -81,6 +81,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/compare/camp-chef-everest-vs-coleman-classic-1-burner`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE_URL}/compare/rolling-cooler-vs-steel-belted-cooler`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE_URL}/compare/sleeping-bag-vs-cot-airbed-combo`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/compare/backyard-test-vs-first-night-camp`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.75 },
+    { url: `${BASE_URL}/compare/easy-family-basecamp-vs-first-weekend-camp`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.75 },
 
     // Trip Packs (paid downloadable products)
     { url: `${BASE_URL}/trip-pack/backyard-test`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.8 },
