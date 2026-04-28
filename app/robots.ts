@@ -6,11 +6,8 @@
 // MetadataRoute.Robots is the canonical Next.js 15 solution.
 //
 // POLICY:
-//   - All crawlers: allow everything except /checklist/result
-//   - AI crawlers (GPTBot, ClaudeBot, Google-Extended, PerplexityBot, CCBot)
-//     are explicitly allowed — site wants AI citation coverage.
-//   - /checklist/result is blocked because URL-parameterised result pages
-//     would create infinite indexable variants with thin/duplicate content.
+//   - Modern AI crawlers explicitly allowed for citation coverage.
+//   - Default rule allows all, blocks /api/ and /_next/.
 
 import { MetadataRoute } from 'next'
 
@@ -19,32 +16,24 @@ const BASE_URL = 'https://www.trailsteadguide.com'
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
-      // Default rule — allow all, block result pages
+      { userAgent: 'GPTBot', allow: '/' },
+      { userAgent: 'ChatGPT-User', allow: '/' },
+      { userAgent: 'OAI-SearchBot', allow: '/' },
+      { userAgent: 'ClaudeBot', allow: '/' },
+      { userAgent: 'Claude-Web', allow: '/' },
+      { userAgent: 'anthropic-ai', allow: '/' },
+      { userAgent: 'PerplexityBot', allow: '/' },
+      { userAgent: 'Perplexity-User', allow: '/' },
+      { userAgent: 'Google-Extended', allow: '/' },
+      { userAgent: 'Applebot-Extended', allow: '/' },
+      { userAgent: 'Amazonbot', allow: '/' },
+      { userAgent: 'CCBot', allow: '/' },
+      { userAgent: 'cohere-ai', allow: '/' },
+      { userAgent: 'Bytespider', allow: '/' },
       {
         userAgent: '*',
         allow: '/',
-        disallow: '/checklist/result',
-      },
-      // AI crawlers — full access, no disallow
-      {
-        userAgent: 'GPTBot',
-        allow: '/',
-      },
-      {
-        userAgent: 'ClaudeBot',
-        allow: '/',
-      },
-      {
-        userAgent: 'Google-Extended',
-        allow: '/',
-      },
-      {
-        userAgent: 'PerplexityBot',
-        allow: '/',
-      },
-      {
-        userAgent: 'CCBot',
-        allow: '/',
+        disallow: ['/api/', '/_next/'],
       },
     ],
     sitemap: `${BASE_URL}/sitemap.xml`,
