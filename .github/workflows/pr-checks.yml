@@ -3,6 +3,8 @@ name: PR checks
 on:
   pull_request:
     branches: [main, feature/mvp-build]
+  push:
+    branches: [main, feature/mvp-build]
   workflow_dispatch:
 
 concurrency:
@@ -10,6 +12,27 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  lint:
+    name: Lint (fast feedback)
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: ESLint
+        run: npm run lint
+
   test:
     name: Tests + Trip Pack flow
     runs-on: ubuntu-latest
@@ -40,7 +63,7 @@ jobs:
         run: npm test
 
       - name: Type check
-        run: npx tsc --noEmit
+        run: npm run typecheck
 
       - name: Build
         run: npx next build

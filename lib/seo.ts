@@ -211,6 +211,32 @@ export function faqPageGraph(items: FaqItem[]) {
   }
 }
 
+export function contactPageGraph(input: {
+  title: string
+  description: string
+  path: string // e.g. "/contact"
+  breadcrumbs?: BreadcrumbItem[]
+}) {
+  const url = `${SITE_URL}${input.path}`
+  return {
+    '@context': 'https://schema.org',
+    '@graph': [
+      organizationNode,
+      {
+        '@type': 'ContactPage',
+        '@id': `${url}#contactpage`,
+        url,
+        name: input.title,
+        description: input.description,
+        isPartOf: { '@id': `${SITE_URL}/#website` },
+        about: { '@id': `${SITE_URL}/#organization` },
+        mainEntity: { '@id': `${SITE_URL}/#organization` },
+      },
+      ...(input.breadcrumbs ? [breadcrumbList(input.breadcrumbs)] : []),
+    ],
+  }
+}
+
 export function productGraph(p: {
   id: string
   name: string
