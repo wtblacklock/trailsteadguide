@@ -30,7 +30,7 @@ export default function Page() {
       </ul>
       <h2>If you have questions</h2>
       <p>
-        Email us at <a href="mailto:hello@trailsteadguide.com">hello@trailsteadguide.com</a>.
+        <a href="/contact">Send us a note</a> &mdash; we read every message.
       </p>
     </LegalPage>
   )

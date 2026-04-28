@@ -109,7 +109,9 @@ export async function POST(req: Request) {
   }
 
   const categoryLabel = CATEGORIES[category]
-  const inboxAddress = `wtblacklock+${category}@gmail.com`
+  // Single inbound alias so one Gmail filter labels everything as
+  // Trailstead Guide. The category still rides in the subject line.
+  const inboxAddress = 'wtblacklock+trailsteadguide@gmail.com'
   const messagePreview = message.slice(0, 60).replace(/\s+/g, ' ').trim()
   const subject = `[Trailstead / ${categoryLabel}] ${messagePreview}`
   const timestamp = new Date().toISOString()

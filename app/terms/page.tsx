@@ -44,7 +44,7 @@ export default function Page() {
       </p>
       <h2>Contact</h2>
       <p>
-        Questions? <a href="mailto:hello@trailsteadguide.com">hello@trailsteadguide.com</a>.
+        Questions? <a href="/contact">Send us a note</a>.
       </p>
     </LegalPage>
   )
