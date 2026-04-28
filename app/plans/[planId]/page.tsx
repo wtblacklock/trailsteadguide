@@ -14,6 +14,7 @@ import SkillsSummaryBlock from '@/components/plan/SkillsSummaryBlock'
 import SafetyNotes from '@/components/plan/SafetyNotes'
 import AffiliateBlock from '@/components/plan/AffiliateBlock'
 import TripPackCta from '@/components/plan/TripPackCta'
+import FounderTrustBlock from '@/components/plan/FounderTrustBlock'
 import FloatingEmailBar from '@/components/plan/FloatingEmailBar'
 import MealPlanAndShopping from '@/components/plan/MealPlanAndShopping'
 import { parseQuizOutput, type PlanSearchParams } from '@/lib/personalization/url-params'
@@ -197,6 +198,7 @@ export default async function PlanPage({
       {products.length > 0 && (
         <div id="shop" className="scroll-mt-32"><AffiliateBlock products={products} /></div>
       )}
+      <FounderTrustBlock />
       <TripPackCta
         planSlug={slug}
         adults={adults}
