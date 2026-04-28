@@ -82,10 +82,17 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: 'Message is required' }, { status: 400 })
   }
 
-  // Optional Turnstile verification — only enforced if both server secret
-  // and a client token were supplied. Keeps the form working pre-rollout.
+  // Strict Turnstile enforcement: when a server secret is configured,
+  // every submission must carry a verified token. Closes the bot bypass
+  // where a request simply omits turnstileToken to skip verification.
   const turnstileSecret = process.env.TURNSTILE_SECRET_KEY
-  if (turnstileSecret && body.turnstileToken) {
+  if (turnstileSecret) {
+    if (!body.turnstileToken) {
+      return NextResponse.json(
+        { error: 'Please complete the verification challenge.' },
+        { status: 400 },
+      )
+    }
     const ok = await verifyTurnstile(body.turnstileToken, turnstileSecret)
     if (!ok) {
       return NextResponse.json(

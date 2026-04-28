@@ -141,3 +141,44 @@ describe('POST /api/contact', () => {
     expect(sendMock).toHaveBeenCalledTimes(2)
   })
 })
+
+describe('POST /api/contact — strict Turnstile enforcement', () => {
+  beforeAll(() => {
+    process.env.TURNSTILE_SECRET_KEY = 'test_turnstile_secret'
+  })
+
+  beforeEach(() => {
+    sendMock.mockClear()
+    vi.restoreAllMocks()
+  })
+
+  it('rejects 400 when secret is configured but no token submitted', async () => {
+    const res = await POST(buildRequest(validBody))
+    expect(res.status).toBe(400)
+    expect(sendMock).not.toHaveBeenCalled()
+  })
+
+  it('rejects 400 when token fails Cloudflare siteverify', async () => {
+    vi.stubGlobal(
+      'fetch',
+      vi.fn().mockResolvedValue(
+        new Response(JSON.stringify({ success: false }), { status: 200 }),
+      ),
+    )
+    const res = await POST(buildRequest({ ...validBody, turnstileToken: 'bad-token' }))
+    expect(res.status).toBe(400)
+    expect(sendMock).not.toHaveBeenCalled()
+  })
+
+  it('accepts and sends when token passes Cloudflare siteverify', async () => {
+    vi.stubGlobal(
+      'fetch',
+      vi.fn().mockResolvedValue(
+        new Response(JSON.stringify({ success: true }), { status: 200 }),
+      ),
+    )
+    const res = await POST(buildRequest({ ...validBody, turnstileToken: 'good-token' }))
+    expect(res.status).toBe(200)
+    expect(sendMock).toHaveBeenCalledTimes(2)
+  })
+})
