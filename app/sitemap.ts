@@ -13,7 +13,7 @@ import { GUIDES, GUIDE_CATEGORIES } from '@/lib/guides'
 
 const BASE_URL = 'https://www.trailsteadguide.com'
 
-const FRESH = '2026-04-24' // core content: home, guides, plans, tools, gear
+const FRESH = '2026-04-27' // core content: home, guides, plans, tools, gear
 const RECENT = '2026-03-15' // secondary content: about, faq, quiz, checklist
 const STABLE = '2026-01-10' // rarely changes: legal pages
 
