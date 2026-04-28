@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { GuidePage } from '@/components/guide/GuidePage'
 import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
@@ -187,7 +188,7 @@ export default function Page() {
           <strong>Forgetting how early it gets dark.</strong> Set up by 4pm in October and 3pm after the November time change. Plan a one-pot dinner — three-component meals don&apos;t survive cooking by headlamp with cold hands.
         </li>
         <li>
-          <strong>No real puffy.</strong> A hoodie is for shoulder season; the puffy is the warm layer that lets you sit at the picnic table after dinner instead of giving up and going to bed at 7pm.
+          <strong>No real puffy.</strong> A hoodie is for shoulder season; the puffy is the warm layer that lets you sit at the picnic table after dinner instead of giving up and going to bed at 7pm. If you&apos;ve never tested cold-night layering, run a <Link href="/plans/backyard-test">backyard test</Link> on a 35°F night before committing to a state park trip.
         </li>
         <li>
           <strong>Booking peak-foliage weekend two weeks out.</strong> Mid-October in New England, the Smokies, and the upper Midwest fills 2–3 months in advance. Mid-week is wide open if your schedule allows; otherwise either book early or shift the dates a week.
@@ -253,6 +254,10 @@ export default function Page() {
         </li>
       </ul>
 
+      <h2>Where this fits in the plan</h2>
+      <p>
+        Fall is the season most rewarded by structure. Match your trip to a <Link href="/plans/first-weekend-camp">First Weekend Camp</Link> if you want a 2-night cooler-weather build, or <Link href="/quiz">take the 60-second quiz</Link> and we&apos;ll match a starter kit to your dates. If a cold front overshoots and the forecast tips below freezing, jump to <Link href="/guides/winter-camping-for-beginners">winter camping for beginners</Link> for the cabin-first fallback.
+      </p>
 
       <h2>Frequently asked</h2>
       <h3>Is fall a good season for first-time camping?</h3>

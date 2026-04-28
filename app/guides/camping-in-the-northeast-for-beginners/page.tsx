@@ -161,7 +161,7 @@ export default function Page() {
 
       <h2>Best setup for your first trip in the Northeast</h2>
       <p>
-        These are the three beginner trip types that work in the Northeast, mapped to plans on this site.
+        These are the three beginner trip types that work in the Northeast, mapped to plans on this site. <Link href="/quiz">Take the 60-second quiz</Link> if you want one matched to your dates and the foliage window. If a wet shoulder weekend rolls in, see <Link href="/guides/rainy-camping-trips">camping in the rain</Link>.
       </p>
       <ul>
         <li>

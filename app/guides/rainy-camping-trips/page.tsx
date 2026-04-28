@@ -300,7 +300,7 @@ export default function Page() {
           <Link href="/plans/first-weekend-camp">First Weekend Camp</Link> with the rainfly pitched tight and the tarp packed at the top of the car.
         </p>
         <p>
-          See also: <Link href="/guides/spring-camping-for-beginners">Spring Camping for Beginners</Link> for the season this guide overlaps with most, and <Link href="/guides/camping-when-the-weather-turns">Camping When the Weather Turns</Link> for what to do when a clear forecast shifts on you mid-trip.
+          See also: <Link href="/guides/spring-camping-for-beginners">Spring Camping for Beginners</Link> for the season this guide overlaps with most, and <Link href="/guides/camping-when-the-weather-turns">Camping When the Weather Turns</Link> for what to do when a clear forecast shifts on you mid-trip. If you&apos;re still picking dates, <Link href="/quiz">take the 60-second quiz</Link> and we&apos;ll match a starter plan to a drier window.
         </p>
 
         <h2>Frequently asked</h2>

@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { GuidePage } from '@/components/guide/GuidePage'
 import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
@@ -90,7 +91,7 @@ export default function Page() {
         <li>Book a drive-up campsite (under 90 minutes from home for your first trip)</li>
         <li>Confirm the site has water and a fire ring; note the check-in time</li>
         <li>Pack the car the night before — not the morning of</li>
-        <li>Test every piece of gear in the backyard first, including the tent</li>
+        <li>Test every piece of gear in the backyard first, including the tent — a full <Link href="/plans/backyard-test">backyard test</Link> if you have time</li>
         <li>Check the weather 48 hours and 24 hours before</li>
       </ul>
 
@@ -129,6 +130,9 @@ export default function Page() {
         <li>Extra snacks. Then more extra snacks.</li>
         <li>Extra clothes. Kids get wet and dirty; plan for it.</li>
       </ul>
+      <p>
+        For the broader playbook on sleep, snacks, and kid-paced activities, see <Link href="/guides/camping-with-kids-first-time">camping with kids for the first time</Link>.
+      </p>
 
       <h2>The 10 essentials</h2>
       <ul>
@@ -145,7 +149,7 @@ export default function Page() {
       </ul>
 
       <p>
-        <strong>One note:</strong> this is the generic list. Your trip will need 80% of it and none of the stuff you don&apos;t. That&apos;s what the planner builds — a list scaled to your actual family, your actual weather, and your actual campsite.
+        <strong>One note:</strong> this is the generic list. Your trip will need 80% of it and none of the stuff you don&apos;t. That&apos;s what the planner builds — a list scaled to your actual family, your actual weather, and your actual campsite. <Link href="/quiz">Take the 60-second quiz</Link> if you want a custom version.
       </p>
 
       <h2>How to use the checklist (the right way)</h2>

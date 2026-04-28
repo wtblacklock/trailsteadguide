@@ -315,7 +315,7 @@ export default function Page() {
         </p>
         <p>
           See also: <Link href="/guides/summer-camping-for-beginners">Summer Camping for Beginners</Link> for the broader summer playbook, and <Link href="/guides/camping-in-texas-for-beginners">Camping in Texas</Link> or{' '}
-          <Link href="/guides/camping-in-the-desert-southwest-for-beginners">Desert Southwest</Link> if you camp in regions where heat is the default summer condition.
+          <Link href="/guides/camping-in-the-desert-southwest-for-beginners">Desert Southwest</Link> if you camp in regions where heat is the default summer condition. If you&apos;re weighing whether to reschedule, <Link href="/quiz">take the 60-second quiz</Link> and we&apos;ll match a cooler-weather plan to your dates.
         </p>
 
         <h2>Frequently asked</h2>

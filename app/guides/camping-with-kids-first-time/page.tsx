@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { GuidePage } from '@/components/guide/GuidePage'
 import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
@@ -128,7 +129,7 @@ export default function Page() {
       </ul>
 
       <p>
-        The goal for the first trip is not to create a transcendent nature experience. It&apos;s for them to leave saying &quot;when can we go camping again?&quot; That&apos;s a very low bar — and a structured plan clears it easily.
+        The goal for the first trip is not to create a transcendent nature experience. It&apos;s for them to leave saying &quot;when can we go camping again?&quot; That&apos;s a very low bar — and a structured plan clears it easily. If you want one shaped to your kids&apos; ages, <Link href="/quiz">take the 60-second quiz</Link> and we&apos;ll match a starter plan to your party.
       </p>
 
       <h2>The bedtime problem (and how to solve it)</h2>
@@ -158,7 +159,7 @@ export default function Page() {
       <h2>Common kids-camping mistakes</h2>
       <ol>
         <li>
-          <strong>Skipping the home tent rehearsal.</strong> Pitch the tent in the living room or yard a week before the trip. Let kids climb in, zip themselves up, find the headlamp in the dark, and try a nap inside. The first time a 4-year-old sees the inside of a tent should not be at 8:30pm 90 minutes from home.
+          <strong>Skipping the home tent rehearsal.</strong> Pitch the tent in the living room or yard a week before the trip — a full <Link href="/plans/backyard-test">backyard test</Link> if you have time. Let kids climb in, zip themselves up, find the headlamp in the dark, and try a nap inside. The first time a 4-year-old sees the inside of a tent should not be at 8:30pm 90 minutes from home.
         </li>
         <li>
           <strong>Driving in over the nap window.</strong> A toddler who slept twenty minutes in the car instead of an hour at home arrives at the site wired and overtired, and the rough first night you were already braced for becomes a two-hour fight. Plan the drive around the kid&apos;s sleep schedule, not yours.
@@ -212,6 +213,11 @@ export default function Page() {
       </ul>
       <p>
         Kids don&apos;t remember gear, weather, or logistics. They remember the weird little things. Plant those deliberately.
+      </p>
+
+      <h2>Where this fits in the plan</h2>
+      <p>
+        For a first kid trip, the right pacing is short and contained — start with a <Link href="/plans/first-night-camp">First Night Camp</Link> within an hour of home, then graduate to an <Link href="/plans/easy-family-basecamp">Easy Family Basecamp</Link> once everyone has slept in a tent at least once. Pair this guide with the <Link href="/guides/first-camping-trip-checklist">first camping trip checklist</Link> so packing is one less thing to figure out the morning of.
       </p>
 
       <h2>Frequently asked</h2>

@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { GuidePage } from '@/components/guide/GuidePage'
 import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
@@ -183,7 +184,7 @@ export default function Page() {
       </p>
       <ol>
         <li>
-          <strong>Tent-camping on the first winter trip.</strong> The recurring beginner story is &ldquo;I&apos;d never camped properly before — I went solo in winter — I hadn&apos;t tested any of the gear,&rdquo; and it&apos;s a story that ends in luck more than skill. Do the cabin, the yurt, or the heated lodge first. Learn water management, layering, and dawn cooking in a setting where a mistake is uncomfortable, not dangerous.
+          <strong>Tent-camping on the first winter trip.</strong> The recurring beginner story is &ldquo;I&apos;d never camped properly before — I went solo in winter — I hadn&apos;t tested any of the gear,&rdquo; and it&apos;s a story that ends in luck more than skill. Do the cabin, the yurt, or the heated lodge first. Learn water management, layering, and dawn cooking in a setting where a mistake is uncomfortable, not dangerous. Get a <Link href="/guides/fall-camping-for-beginners">fall trip below freezing</Link> in before any tented winter night.
         </li>
         <li>
           <strong>Bringing a 20°F bag below 20°F.</strong> Bag ratings are survival numbers, not comfort. Beginners who tested a 20°F bag in 27°F backyards report waking up cold; in real winter, that bag is a long sleepless night even with every layer on and clothes stuffed inside. Buy or rent a 0°F bag.
@@ -217,7 +218,7 @@ export default function Page() {
       </p>
       <ul>
         <li>
-          <strong>Shelter (cabin or yurt).</strong> Reserve a state-park cabin, yurt, or heated shelter on Recreation.gov, ReserveAmerica, or your state&apos;s park system. This is the right beginner shelter for trip one — not a tent.
+          <strong>Shelter (cabin or yurt).</strong> Reserve a state-park cabin, yurt, or heated shelter on Recreation.gov, ReserveAmerica, or your state&apos;s park system. This is the right beginner shelter for trip one — not a tent. If you want a tighter scope, run a <Link href="/plans/first-night-camp">First Night Camp</Link> at a heated cabin and keep gear failures to one variable.
         </li>
         <li>
           <strong>Tent (only if conditions allow above 25°F, low elevation, no snow forecast).</strong> A 4-season tent is the right call. The{' '}
@@ -258,6 +259,10 @@ export default function Page() {
         </li>
       </ul>
 
+      <h2>Where this fits in the plan</h2>
+      <p>
+        For a first cold-weather trip, the right move is the smallest one — a heated cabin within an hour of home. <Link href="/quiz">Take the 60-second quiz</Link> and we&apos;ll match a starter plan to your dates, party size, and the heat available at the site you&apos;re considering.
+      </p>
 
       <h2>Frequently asked</h2>
       <h3>Should beginners actually go winter camping?</h3>

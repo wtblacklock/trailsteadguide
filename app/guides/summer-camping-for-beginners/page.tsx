@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { GuidePage } from '@/components/guide/GuidePage'
 import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
@@ -171,7 +172,7 @@ export default function Page() {
       </p>
       <ol>
         <li>
-          <strong>Underestimating the temperature swing.</strong> A campground that hits 95°F at 4pm can drop into the 50s by 5am, especially above 5,000 ft. Pack the fleece even when the forecast says hot.
+          <strong>Underestimating the temperature swing.</strong> A campground that hits 95°F at 4pm can drop into the 50s by 5am, especially above 5,000 ft. Pack the fleece even when the forecast says hot. If a multi-day heat dome is forecast, see <Link href="/guides/camping-in-a-heatwave">camping in a heatwave</Link> for the bail/stay call before booking.
         </li>
         <li>
           <strong>Pitching in full sun.</strong> Walk the site before you set up. Aim for morning sun, afternoon shade. A tent in full sun is a sauna by 9am and unusable for an afternoon nap — and there&apos;s no fixing it once the stakes are in.
@@ -195,6 +196,11 @@ export default function Page() {
           <strong>Wearing cotton.</strong> Cotton soaks sweat, then chills you when the sun drops. Synthetic or wool for everything that touches skin.
         </li>
       </ol>
+
+      <h2>Where this fits in the plan</h2>
+      <p>
+        Summer is the easiest season to learn on, but the hottest weekends still reward structure. Match the trip to an <Link href="/plans/easy-family-basecamp">Easy Family Basecamp</Link> at a shaded, water-access site — or <Link href="/quiz">take the 60-second quiz</Link> and we&apos;ll match a starter plan to your dates and party size.
+      </p>
 
       <h2>A starter setup that actually works</h2>
       <p>

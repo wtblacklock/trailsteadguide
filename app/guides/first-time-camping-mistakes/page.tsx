@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { GuidePage } from '@/components/guide/GuidePage'
 import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
@@ -92,7 +93,7 @@ export default function Page() {
 
       <h2>2. Not testing gear at home first</h2>
       <p>
-        That tent you bought two years ago at a Costco sale? Pitch it in the backyard. Pole might be snapped. Rainfly might be missing. You want to learn this in your driveway, not at dusk in the woods.
+        That tent you bought two years ago at a Costco sale? Pitch it in the backyard. Pole might be snapped. Rainfly might be missing. You want to learn this in your driveway, not at dusk in the woods. Run a full <Link href="/plans/backyard-test">backyard tent test</Link> the weekend before — it surfaces missing pieces while the kitchen is still 30 feet away.
       </p>
 
       <h2>3. Overpacking</h2>
@@ -127,7 +128,7 @@ export default function Page() {
 
       <h2>9. No plan for kids</h2>
       <p>
-        &quot;They&apos;ll just play&quot; is a myth at unfamiliar campsites. Bring activities. Plan three per day.
+        &quot;They&apos;ll just play&quot; is a myth at unfamiliar campsites. Bring activities. Plan three per day. The full playbook lives in <Link href="/guides/camping-with-kids-first-time">camping with kids for the first time</Link>.
       </p>
 
       <h2>10. Forgetting the boring essentials</h2>
@@ -142,7 +143,7 @@ export default function Page() {
 
       <h2>12. Planning it all yourself from scratch</h2>
       <p>
-        This is the mistake that causes the other eleven. The details are solved — campsite distance, gear list, meal plan, kid activities, weather-aware layers. <strong>Use a template.</strong> Edit it to fit your family. Go.
+        This is the mistake that causes the other eleven. The details are solved — campsite distance, gear list, meal plan, kid activities, weather-aware layers. <strong>Use a template.</strong> <Link href="/quiz">Take the 60-second quiz</Link> and we&apos;ll match a starter plan to your dates and party size. Edit it to fit your family. Go.
       </p>
 
       <h2>The quiet mistakes nobody warns you about</h2>

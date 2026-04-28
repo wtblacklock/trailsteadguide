@@ -158,7 +158,7 @@ export default function Page() {
 
       <h2>Best setup for your first trip in Florida</h2>
       <p>
-        These are the three beginner trip types that work in Florida, mapped to plans on this site.
+        These are the three beginner trip types that work in Florida, mapped to plans on this site. <Link href="/quiz">Take the 60-second quiz</Link> if you want one matched to your party and the season. For broader summer-heat strategy, see <Link href="/guides/camping-in-a-heatwave">camping in a heatwave</Link>.
       </p>
       <ul>
         <li>

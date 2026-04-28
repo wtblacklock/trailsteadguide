@@ -158,7 +158,7 @@ export default function Page() {
 
       <h2>Best setup for your first trip in the Appalachians</h2>
       <p>
-        These are the three beginner trip types that work in the Appalachians, mapped to plans on this site.
+        These are the three beginner trip types that work in the Appalachians, mapped to plans on this site. <Link href="/quiz">Take the 60-second quiz</Link> if you want one matched to your dates and the foliage window you&apos;re aiming for. For peak fall weekends, also see <Link href="/guides/fall-camping-for-beginners">fall camping for beginners</Link>.
       </p>
       <ul>
         <li>

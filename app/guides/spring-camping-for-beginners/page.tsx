@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { GuidePage } from '@/components/guide/GuidePage'
 import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
@@ -177,7 +178,7 @@ export default function Page() {
           <strong>Picking the wrong elevation.</strong> A campground at 4,500 ft in late April can be wide open and pleasant; the same park&apos;s upper loop at 7,000 ft can still be closed for snow. Check the elevation, not just the park.
         </li>
         <li>
-          <strong>Trusting the 3-day forecast.</strong> The recurring spring story is two beautiful days followed by a snow morning on day 3. Spring forecasts revise hard inside 48 hours — pack the cold-night kit even when Friday looks generous, and pitch the rainfly every night even when the sky is clear at sunset.
+          <strong>Trusting the 3-day forecast.</strong> The recurring spring story is two beautiful days followed by a snow morning on day 3. Spring forecasts revise hard inside 48 hours — pack the cold-night kit even when Friday looks generous, and pitch the rainfly every night even when the sky is clear at sunset. If a real front rolls in, see <Link href="/guides/rainy-camping-trips">camping in the rain</Link> for the bail/stay call.
         </li>
         <li>
           <strong>The wire stakes that ship with the tent.</strong> They bend or pull straight out of saturated spring ground; the first 3am wake-up to a flapping fly will teach you that. Replace them at home with Y-stakes or 9-inch nail stakes before the trip, not at the campground in the rain.
@@ -192,7 +193,7 @@ export default function Page() {
           <strong>Cotton anywhere.</strong> Cotton soaks up morning dew and stays cold all day. Synthetic or wool for everything that touches skin — including the t-shirt under the base layer.
         </li>
         <li>
-          <strong>An untested sleep system.</strong> First-trippers consistently describe their worst nights of sleep on borrowed gear — a too-thin pad, a 40°F bag carried over from summer, a sleeping bag that &ldquo;felt warm enough in the living room.&rdquo; Set the whole system up in your backyard for one cold night before the trip.
+          <strong>An untested sleep system.</strong> First-trippers consistently describe their worst nights of sleep on borrowed gear — a too-thin pad, a 40°F bag carried over from summer, a sleeping bag that &ldquo;felt warm enough in the living room.&rdquo; Run a <Link href="/plans/backyard-test">backyard test</Link> for one cold night before the trip — the cheapest way to find what doesn&apos;t work.
         </li>
         <li>
           <strong>Leaving the cooler out overnight.</strong> A cooler on the picnic table is an open invitation in spring — raccoons, possums, and the first bears coming out of dens all work the campground in the dark. Lock food in a bear box if there is one, or in the trunk before bed. Critters will end the trip a day early.
@@ -249,6 +250,10 @@ export default function Page() {
         </li>
       </ul>
 
+      <h2>Where this fits in the plan</h2>
+      <p>
+        Spring is short, weather-volatile, and best run with a tight scope. Match it to a <Link href="/plans/first-night-camp">First Night Camp</Link> at a low-elevation park within 90 minutes — or <Link href="/quiz">take the 60-second quiz</Link> and we&apos;ll match a plan to your dates and party size.
+      </p>
 
       <h2>Frequently asked</h2>
       <h3>Is spring a good season for first-time camping?</h3>

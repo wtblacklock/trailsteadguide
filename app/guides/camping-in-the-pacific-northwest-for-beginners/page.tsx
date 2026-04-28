@@ -157,7 +157,7 @@ export default function Page() {
 
       <h2>Best setup for your first trip in the PNW</h2>
       <p>
-        These are the three beginner trip types that work in the PNW, mapped to plans on this site.
+        These are the three beginner trip types that work in the PNW, mapped to plans on this site. <Link href="/quiz">Take the 60-second quiz</Link> if you want one matched to your dates and the dry-window you&apos;re aiming for. If rain still finds you, see <Link href="/guides/rainy-camping-trips">camping in the rain</Link>.
       </p>
       <ul>
         <li>

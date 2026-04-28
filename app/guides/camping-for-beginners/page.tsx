@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { GuidePage } from '@/components/guide/GuidePage'
 import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
@@ -105,7 +106,7 @@ export default function Page() {
 
       <h2>Gear: borrow, don&apos;t buy</h2>
       <p>
-        You don&apos;t know what you actually like yet. Borrow a tent and sleeping bags from a friend. Rent the rest from REI or a local outfitter. After your first trip, you&apos;ll know what&apos;s worth buying.
+        You don&apos;t know what you actually like yet. Borrow a tent and sleeping bags from a friend. Rent the rest from REI or a local outfitter. After your first trip, you&apos;ll know what&apos;s worth buying. If you can, run a <Link href="/plans/backyard-test">backyard tent test</Link> the weekend before — it surfaces missing pieces while the kitchen is still 30 feet away.
       </p>
 
       <h2>The three things that will go wrong</h2>
@@ -125,7 +126,7 @@ export default function Page() {
       </ul>
 
       <p>
-        That&apos;s it. Camping is not complicated. It&apos;s just unfamiliar — and a structured plan removes 90% of the unfamiliarity.
+        That&apos;s it. Camping is not complicated. It&apos;s just unfamiliar — and a structured plan removes 90% of the unfamiliarity. If you want one matched to your dates, party size, and kids&apos; ages, <Link href="/quiz">take the 60-second quiz</Link> and we&apos;ll scaffold a starter trip for you.
       </p>
 
       <h2>What to skip on your first trip</h2>
@@ -197,7 +198,7 @@ export default function Page() {
       </p>
       <h3>Is it safe to camp with young kids?</h3>
       <p>
-        At an established campground, yes. You&apos;re not in the wilderness — you&apos;re in a managed site with bathrooms, rangers, and other families nearby. The main risks are small: sunburn, bug bites, a kid wandering off. Give each kid a whistle and teach them the site number.
+        At an established campground, yes. You&apos;re not in the wilderness — you&apos;re in a managed site with bathrooms, rangers, and other families nearby. The main risks are small: sunburn, bug bites, a kid wandering off. Give each kid a whistle and teach them the site number. For more on snacks, sleep, and kid-paced activities, see <Link href="/guides/camping-with-kids-first-time">camping with kids for the first time</Link>.
       </p>
       <h3>What if it rains?</h3>
       <p>

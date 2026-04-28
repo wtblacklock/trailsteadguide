@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { GuidePage } from '@/components/guide/GuidePage'
 import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
@@ -171,7 +172,7 @@ export default function Page() {
 
       <h2>What to skip (and what to add)</h2>
       <p>
-        Things that show up on most packing lists but almost never get used on a weekend car camping trip:
+        Things that show up on most packing lists but almost never get used on a weekend car camping trip — pair this with the <Link href="/guides/first-camping-trip-checklist">first camping trip checklist</Link> if it&apos;s your first time:
       </p>
       <ul>
         <li><strong>Skip:</strong> A full cast-iron set. Bring one skillet if anything.</li>
@@ -191,6 +192,9 @@ export default function Page() {
       </ul>
 
       <h2>Pre-departure checklist (the night before)</h2>
+      <p>
+        Run a <Link href="/plans/backyard-test">backyard test</Link> the weekend before if any piece of gear is new — much easier to find a missing pole 30 feet from the kitchen than 90 minutes from home.
+      </p>
       <ul>
         <li>Charge all phones, the portable battery pack, and every headlamp</li>
         <li>Freeze water bottles and two gallon jugs — these double as ice and drinking water</li>
@@ -220,7 +224,7 @@ export default function Page() {
         <li><strong>Misc bin:</strong> headlamps, first aid, lanterns, rope, tape, bug spray, sunscreen, games. The &ldquo;I need a thing&rdquo; bin.</li>
       </ul>
       <p>
-        Everything else — chairs, cooler, firewood, personal duffels — is loose but has a natural home. Bins mean setup is three trips from the car, not 30.
+        Everything else — chairs, cooler, firewood, personal duffels — is loose but has a natural home. Bins mean setup is three trips from the car, not 30. If you want a packing list scaled to your party size, dates, and weather, <Link href="/quiz">take the 60-second quiz</Link> and we&apos;ll match a starter <Link href="/plans/first-weekend-camp">First Weekend Camp</Link> plan to your trip.
       </p>
 
       <h2>Frequently asked</h2>

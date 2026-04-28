@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { GuidePage } from '@/components/guide/GuidePage'
 import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
@@ -128,7 +129,7 @@ export default function Page() {
       </ul>
 
       <p>
-        Once you&apos;ve done a car camping trip or two, you&apos;ll know whether you want to go further (backpacking, primitive sites, overlanding). But everyone starts here. It&apos;s the easiest, lowest-risk, highest-fun-per-effort way to be outside with your family.
+        Once you&apos;ve done a car camping trip or two, you&apos;ll know whether you want to go further (backpacking, primitive sites, overlanding). But everyone starts here. It&apos;s the easiest, lowest-risk, highest-fun-per-effort way to be outside with your family. For a tighter starter trip, run the <Link href="/plans/first-night-camp">First Night Camp</Link> plan as-is, or <Link href="/quiz">take the 60-second quiz</Link> and we&apos;ll match a starter setup to your dates and party size.
       </p>
 
       <h2>How to pack the car (in the right order)</h2>
@@ -157,7 +158,7 @@ export default function Page() {
         <li><strong>Avoid sites labeled &ldquo;walk-in&rdquo;</strong> — those are usually 100+ yards from parking.</li>
       </ul>
       <p>
-        Photos on ReserveAmerica are mostly reliable. If a site looks good in photos, it&apos;s probably good. If it looks sketchy in photos, it is.
+        Photos on ReserveAmerica are mostly reliable. If a site looks good in photos, it&apos;s probably good. If it looks sketchy in photos, it is. For the broader site-selection workflow, see <Link href="/guides/how-to-plan-a-camping-trip">how to plan a camping trip</Link> from 3 weeks out.
       </p>
 
       <h2>Car camping etiquette (the unwritten rules)</h2>

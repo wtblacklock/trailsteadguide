@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { GuidePage } from '@/components/guide/GuidePage'
 import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
@@ -101,7 +102,7 @@ export default function Page() {
         <li>Lay everything out on the floor of the garage</li>
         <li>Pitch the tent. Look for missing poles, tears, leaks</li>
         <li>Light the stove. Check the fuel canister is not empty</li>
-        <li>Make a list of everything you need to buy, borrow, or rent</li>
+        <li>Make a list of everything you need to buy, borrow, or rent — cross-check against the <Link href="/guides/first-camping-trip-checklist">first camping trip checklist</Link></li>
       </ul>
 
       <h2>1 week out: meals &amp; shopping</h2>
@@ -129,7 +130,7 @@ export default function Page() {
 
       <h2>When to stop planning</h2>
       <p>
-        Over-planning is a real failure mode. Once you have a site booked, a gear list, a meal plan, and a packed car, you&apos;re done. The rest is execution — and execution is much easier once you&apos;re physically there.
+        Over-planning is a real failure mode. Once you have a site booked, a gear list, a meal plan, and a packed car, you&apos;re done. The rest is execution — and execution is much easier once you&apos;re physically there. If you want this whole sequence handed to you for a specific weekend, <Link href="/quiz">take the 60-second quiz</Link> and we&apos;ll match a starter <Link href="/plans/first-night-camp">First Night Camp</Link> or weekend plan to your party.
       </p>
 
       <h2>How to actually pick a campsite (not just a campground)</h2>
