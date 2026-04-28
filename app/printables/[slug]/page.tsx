@@ -4,6 +4,7 @@ import type { Metadata } from 'next'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import PrintableEmailGate from '@/components/printables/PrintableEmailGate'
+import PrintableFloatingBar from '@/components/printables/PrintableFloatingBar'
 import { pageMetadata, printableCreativeWorkGraph, SITE_URL } from '@/lib/seo'
 import { PRINTABLES, getPrintableBySlug } from '@/lib/printables'
 
@@ -173,6 +174,11 @@ export default async function PrintablePage({
           </Link>
         </div>
       </section>
+
+      <PrintableFloatingBar
+        printableSlug={printable.slug}
+        printHref={printHref}
+      />
     </main>
   )
 }

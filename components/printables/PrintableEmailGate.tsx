@@ -12,10 +12,14 @@ type Props = {
 /**
  * Email-capture gate shown on /printables/[slug]. Posts to /api/subscribe
  * with `source: 'printable'` so the visitor lands on the ConvertKit list
- * with both a slug-specific tag and a generic "downloaded a printable"
- * tag (configured in lib/kit-tags.ts). On success, surfaces the
- * print-optimized HTML view as a button + an autofocus link the user can
- * tap or open in a new tab.
+ * (with both a slug-specific tag and a generic "downloaded a printable"
+ * tag from lib/kit-tags.ts) and gets a Resend transactional email with
+ * a link to the print view.
+ *
+ * Visual treatment matches the FloatingEmailBar / TripPackSuccessActions
+ * "download surface" — forest-green panel (#1f3622), sage eyebrow accent
+ * (#c9d4b5), white pill submit button — so every download/results
+ * capture across the site reads as the same family.
  */
 export default function PrintableEmailGate({ printableSlug, printHref }: Props) {
   const [email, setEmail] = useState('')
@@ -42,21 +46,19 @@ export default function PrintableEmailGate({ printableSlug, printHref }: Props) 
 
   if (status === 'success') {
     return (
-      <div className="rounded-2xl bg-stone-900 text-white px-6 py-6 md:px-8 md:py-7">
-        <p className="text-xs font-semibold tracking-[0.18em] uppercase text-stone-300 mb-2">
+      <div className="rounded-2xl bg-[#1f3622] text-white border border-[#2a4a30] px-5 py-5 sm:px-7 sm:py-6">
+        <p className="text-[11px] uppercase tracking-[0.25em] text-[#c9d4b5] font-semibold mb-1.5">
           You’re in
         </p>
-        <h3 className="font-serif text-2xl md:text-3xl tracking-tight mb-3">
-          Open the printable.
-        </h3>
-        <p className="text-stone-300 mb-5 text-sm leading-relaxed">
-          The print view is ready in your browser. Hit ⌘/Ctrl+P or use your browser&apos;s print menu — or save as PDF for later.
+        <p className="text-base sm:text-lg font-semibold leading-tight">Open the printable</p>
+        <p className="text-xs sm:text-sm text-stone-300 leading-snug mt-1 mb-4">
+          We’ve emailed you the link too. Hit ⌘/Ctrl+P from the print view, or save as PDF for later.
         </p>
         <Link
           href={printHref}
           target="_blank"
           rel="noopener"
-          className="inline-flex items-center justify-center gap-2 rounded-md font-medium bg-white text-stone-900 hover:bg-stone-100 transition-colors px-5 py-3 text-sm"
+          className="flex items-center justify-center gap-2 w-full rounded-lg bg-white text-[#1f3622] text-sm font-semibold px-5 py-2.5 hover:bg-stone-100 transition-colors"
         >
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
             <polyline points="6 9 6 2 18 2 18 9" />
@@ -72,21 +74,19 @@ export default function PrintableEmailGate({ printableSlug, printHref }: Props) 
   return (
     <form
       onSubmit={handleSubmit}
-      className="rounded-2xl bg-stone-900 text-white px-6 py-6 md:px-8 md:py-7"
+      className="rounded-2xl bg-[#1f3622] text-white border border-[#2a4a30] px-5 py-5 sm:px-7 sm:py-6"
     >
-      <p className="text-xs font-semibold tracking-[0.18em] uppercase text-stone-300 mb-2">
+      <p className="text-[11px] uppercase tracking-[0.25em] text-[#c9d4b5] font-semibold mb-1.5">
         Free download
       </p>
-      <h3 className="font-serif text-2xl md:text-3xl tracking-tight mb-3">
-        Send me the printable.
-      </h3>
-      <p className="text-stone-300 mb-5 text-sm leading-relaxed">
-        Drop your email — we&apos;ll add you to the Trailstead list and unlock the print view in one tap. One-click unsubscribe, no spam.
+      <p className="text-base sm:text-lg font-semibold leading-tight">Send me the printable</p>
+      <p className="text-xs sm:text-sm text-stone-300 leading-snug mt-1 mb-4">
+        Drop your email — we’ll add you to the Trailstead list and email the print view. One-click unsubscribe, no spam.
       </p>
       <label htmlFor={`printable-email-${printableSlug}`} className="sr-only">
         Email address
       </label>
-      <div className="flex flex-col sm:flex-row gap-3">
+      <div className="flex flex-col sm:flex-row items-stretch gap-2.5">
         <input
           id={`printable-email-${printableSlug}`}
           type="email"
@@ -94,18 +94,18 @@ export default function PrintableEmailGate({ printableSlug, printHref }: Props) 
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="your@email.com"
-          className="flex-1 rounded-md px-4 py-3 bg-white text-stone-900 placeholder:text-stone-400 border border-stone-300 focus:outline-none focus:ring-2 focus:ring-white"
+          className="flex-1 min-w-0 rounded-lg px-3.5 py-2.5 bg-[#2a4a30] text-white text-sm placeholder:text-stone-400 border border-[#3a5a3e] focus:outline-none focus:ring-2 focus:ring-[#c9d4b5]"
         />
         <button
           type="submit"
           disabled={status === 'loading'}
-          className="inline-flex items-center justify-center rounded-md font-medium bg-white text-stone-900 hover:bg-stone-100 transition-colors px-6 py-3 text-sm disabled:opacity-60"
+          className="rounded-lg bg-white text-[#1f3622] text-sm font-semibold px-5 py-2.5 hover:bg-stone-100 transition-colors disabled:opacity-60 disabled:cursor-not-allowed whitespace-nowrap"
         >
           {status === 'loading' ? 'Sending…' : 'Get the printable'}
         </button>
       </div>
       {status === 'error' && (
-        <p className="mt-3 text-sm text-red-300">
+        <p className="mt-3 text-xs text-red-300">
           Something went wrong. Please try again.
         </p>
       )}
