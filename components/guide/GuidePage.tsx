@@ -3,6 +3,7 @@ import Image from 'next/image'
 import type { ReactNode } from 'react'
 import { getCategoryForGuide } from '@/lib/guides'
 import { AUTHOR_NAME, AUTHOR_IMAGE } from '@/lib/seo'
+import StickyQuizCTA from './StickyQuizCTA'
 
 // Avatar initials shown behind the portrait — graceful fallback for a 404
 // on AUTHOR_IMAGE. The user will swap the photo asset later.
@@ -98,6 +99,7 @@ export function GuidePage({ eyebrow = 'Guide', title, lede, heroImage, slug, dat
       <section className="max-w-3xl mx-auto px-8">
         <div className="prose-editorial">{children}</div>
       </section>
+      <StickyQuizCTA />
     </article>
   )
 }
