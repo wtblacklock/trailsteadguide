@@ -1,3 +1,4 @@
+import FounderTrustBlock from '@/components/plan/FounderTrustBlock'
 import QuizShell from '@/components/quiz/QuizShell'
 import { pageMetadata } from '@/lib/seo'
 
@@ -11,6 +12,9 @@ export const metadata = pageMetadata({
 export default function QuizPage() {
   return (
     <main className="min-h-screen bg-stone-50">
+      <div className="mt-8 mb-6">
+        <FounderTrustBlock />
+      </div>
       <QuizShell />
     </main>
   )
