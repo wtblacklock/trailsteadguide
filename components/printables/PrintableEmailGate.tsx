@@ -7,6 +7,19 @@ type Props = {
   printableSlug: string
   /** Where to send the visitor after a successful email submit. */
   printHref: string
+  /**
+   * Optional override headline. When omitted the default "Send me the
+   * printable" copy is used. The skill / activity page passes the
+   * specific printable title here so the form reads as a curated
+   * recommendation rather than a generic gate.
+   */
+  headline?: string
+  /** Optional override eyebrow ("Free download" by default). */
+  eyebrow?: string
+  /** Optional override body copy describing what the visitor will get. */
+  description?: string
+  /** Optional override submit button label ("Get the printable" by default). */
+  submitLabel?: string
 }
 
 /**
@@ -21,7 +34,14 @@ type Props = {
  * (#c9d4b5), white pill submit button — so every download/results
  * capture across the site reads as the same family.
  */
-export default function PrintableEmailGate({ printableSlug, printHref }: Props) {
+export default function PrintableEmailGate({
+  printableSlug,
+  printHref,
+  headline = 'Send me the printable',
+  eyebrow = 'Free download',
+  description = 'Drop your email — we’ll add you to the Trailstead list and email the print view. One-click unsubscribe, no spam.',
+  submitLabel = 'Get the printable',
+}: Props) {
   const [email, setEmail] = useState('')
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
 
@@ -77,11 +97,11 @@ export default function PrintableEmailGate({ printableSlug, printHref }: Props) 
       className="rounded-2xl bg-[#1f3622] text-white border border-[#2a4a30] px-5 py-5 sm:px-7 sm:py-6"
     >
       <p className="text-[11px] uppercase tracking-[0.25em] text-[#c9d4b5] font-semibold mb-1.5">
-        Free download
+        {eyebrow}
       </p>
-      <p className="text-base sm:text-lg font-semibold leading-tight">Send me the printable</p>
+      <p className="text-base sm:text-lg font-semibold leading-tight">{headline}</p>
       <p className="text-xs sm:text-sm text-stone-300 leading-snug mt-1 mb-4">
-        Drop your email — we’ll add you to the Trailstead list and email the print view. One-click unsubscribe, no spam.
+        {description}
       </p>
       <label htmlFor={`printable-email-${printableSlug}`} className="sr-only">
         Email address
@@ -101,7 +121,7 @@ export default function PrintableEmailGate({ printableSlug, printHref }: Props) 
           disabled={status === 'loading'}
           className="rounded-lg bg-white text-[#1f3622] text-sm font-semibold px-5 py-2.5 hover:bg-stone-100 transition-colors disabled:opacity-60 disabled:cursor-not-allowed whitespace-nowrap"
         >
-          {status === 'loading' ? 'Sending…' : 'Get the printable'}
+          {status === 'loading' ? 'Sending…' : submitLabel}
         </button>
       </div>
       {status === 'error' && (

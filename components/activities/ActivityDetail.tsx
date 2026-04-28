@@ -2,6 +2,7 @@ import Link from 'next/link'
 import type { Activity } from '@/lib/activities/types'
 import { getPlanTemplate } from '@/lib/plan-templates'
 import { getPrintableBySlug } from '@/lib/printables'
+import PrintableEmailGate from '@/components/printables/PrintableEmailGate'
 import ActivityBadge from './ActivityBadge'
 
 // Manual activity → printable pairings. Adding a slug here surfaces the
@@ -142,22 +143,24 @@ function PrintableCompanion({ slug }: { slug: string }) {
   const printable = getPrintableBySlug(slug)
   if (!printable) return null
   return (
-    <section className="rounded-xl ring-1 ring-stone-200 p-6 md:p-8 bg-amber-50/40 mb-8">
-      <p className="text-xs font-semibold tracking-[0.18em] uppercase text-stone-500 mb-3">
+    <section aria-labelledby={`printable-companion-${printable.slug}`} className="mb-8">
+      <p
+        id={`printable-companion-${printable.slug}`}
+        className="text-xs font-semibold tracking-[0.18em] uppercase text-stone-500 mb-3"
+      >
         Analog companion
       </p>
-      <h2 className="font-serif text-xl md:text-2xl text-stone-900 tracking-tight mb-2">
-        {printable.title}
-      </h2>
-      <p className="text-stone-600 text-sm md:text-base mb-4 leading-relaxed">
-        {printable.description}
+      <PrintableEmailGate
+        printableSlug={printable.slug}
+        printHref={`/printables/${printable.slug}/print`}
+        eyebrow="Free with email"
+        headline={printable.title}
+        description={printable.tagline}
+        submitLabel="Email it to me"
+      />
+      <p className="mt-3 text-xs text-stone-500">
+        Prefer the full landing page first? <Link href={`/printables/${printable.slug}`} className="underline decoration-stone-300 underline-offset-4 hover:text-stone-900 transition-colors">See the {printable.title.toLowerCase()}</Link>.
       </p>
-      <Link
-        href={`/printables/${printable.slug}`}
-        className="inline-flex items-center gap-2 text-sm font-semibold text-stone-900 hover:text-stone-600 transition-colors"
-      >
-        Get the printable →
-      </Link>
     </section>
   )
 }
