@@ -4,6 +4,13 @@ import type { ReactNode } from 'react'
 import { getCategoryForGuide } from '@/lib/guides'
 import { AUTHOR_NAME, AUTHOR_IMAGE } from '@/lib/seo'
 
+// Avatar initials shown behind the portrait — graceful fallback for a 404
+// on AUTHOR_IMAGE. The user will swap the photo asset later.
+const AUTHOR_INITIALS = AUTHOR_NAME.split(' ')
+  .map((part) => part[0])
+  .filter(Boolean)
+  .join('')
+
 export type GuidePageProps = {
   eyebrow?: string
   title: string
@@ -51,13 +58,18 @@ export function GuidePage({ eyebrow = 'Guide', title, lede, heroImage, slug, dat
           {lede}
         </p>
         <div className="mt-8 flex items-center gap-3 text-sm text-stone-500">
-          <Image
-            src={AUTHOR_IMAGE}
-            alt={`${AUTHOR_NAME} headshot`}
-            width={36}
-            height={36}
-            className="h-9 w-9 rounded-full ring-1 ring-stone-200 object-cover"
-          />
+          <div className="relative h-9 w-9 rounded-full ring-1 ring-stone-200 bg-stone-200 overflow-hidden flex items-center justify-center" aria-hidden="true">
+            <span className="text-[11px] font-semibold text-stone-500 select-none">
+              {AUTHOR_INITIALS}
+            </span>
+            <Image
+              src={AUTHOR_IMAGE}
+              alt={`${AUTHOR_NAME} headshot`}
+              fill
+              sizes="36px"
+              className="object-cover"
+            />
+          </div>
           <p>
             By <Link href="/about#author" className="text-stone-700 hover:text-stone-900 underline decoration-stone-300 underline-offset-4 transition-colors">{AUTHOR_NAME}</Link>
             {updatedLabel && <span> · Last updated {updatedLabel}</span>}

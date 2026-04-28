@@ -86,7 +86,7 @@ export const AUTHOR_JOB_TITLE = 'Founder, Trailstead Guide'
 // ≤200 chars; used in JSON-LD Person.description.
 export const AUTHOR_BIO =
   'Eagle Scout (age 13), former Cub Master and Scout Master, Wood Badge Antelope, Philmont alum, founder of ScoutNerd. Camps with his three kids out of Austin.'
-export const AUTHOR_IMAGE = '/images/author-william-blacklock.jpg'
+export const AUTHOR_IMAGE = '/images/william-blacklock.jpg'
 export const AUTHOR_KNOWS_ABOUT = [
   'Camping',
   'Outdoor Skills',
@@ -98,6 +98,8 @@ export const AUTHOR_KNOWS_ABOUT = [
   'Camp Cooking',
   'Backpacking',
 ]
+
+export const AUTHOR_INSTAGRAM = 'https://instagram.com/wtblacklock'
 
 export const personNode = {
   '@type': 'Person',
@@ -124,6 +126,7 @@ export const personNode = {
       addressCountry: 'US',
     },
   },
+  sameAs: [AUTHOR_INSTAGRAM],
 }
 
 export const websiteNode = {

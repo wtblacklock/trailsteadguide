@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import {
   pageMetadata,
@@ -6,11 +7,19 @@ import {
   organizationNode,
   AUTHOR_NAME,
   AUTHOR_JOB_TITLE,
-  AUTHOR_BIO,
+  AUTHOR_IMAGE,
+  AUTHOR_INSTAGRAM,
   AUTHOR_KNOWS_ABOUT,
 } from '@/lib/seo'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import JsonLd from '@/components/seo/JsonLd'
+
+// Avatar initials shown behind the portrait — surface gracefully if the
+// `<Image>` source ever 404s. The user will swap the photo asset later.
+const AUTHOR_INITIALS = AUTHOR_NAME.split(' ')
+  .map((part) => part[0])
+  .filter(Boolean)
+  .join('')
 
 export const metadata = pageMetadata({
   title: 'About',
@@ -118,10 +127,27 @@ export default function Page() {
           </p>
           <div className="flex flex-col md:flex-row gap-8 md:items-start">
             <div className="flex-shrink-0">
+              {/*
+                Portrait slot. AUTHOR_IMAGE points at /images/author-william-blacklock.jpg —
+                the user will swap the actual photo file in later. The initials sit
+                underneath the <Image> so a missing/404 source surfaces "WB" on stone-200
+                instead of a broken-image icon.
+              */}
               <div
-                className="h-32 w-32 md:h-40 md:w-40 rounded-2xl bg-stone-200 ring-1 ring-stone-300"
+                className="relative h-32 w-32 md:h-40 md:w-40 rounded-2xl bg-stone-200 ring-1 ring-stone-300 overflow-hidden flex items-center justify-center"
                 aria-hidden="true"
-              />
+              >
+                <span className="font-serif text-3xl md:text-4xl font-semibold text-stone-500 select-none">
+                  {AUTHOR_INITIALS}
+                </span>
+                <Image
+                  src={AUTHOR_IMAGE}
+                  alt={`${AUTHOR_NAME} portrait`}
+                  fill
+                  sizes="(max-width: 768px) 128px, 160px"
+                  className="object-cover"
+                />
+              </div>
             </div>
             <div className="flex-1">
               <h2 className="font-serif text-3xl md:text-4xl font-semibold text-stone-950 tracking-tight mb-2">
@@ -146,6 +172,17 @@ export default function Page() {
               </div>
               <p className="mt-6 text-sm text-stone-500">
                 Knows about: {AUTHOR_KNOWS_ABOUT.join(' · ')}
+              </p>
+              <p className="mt-3 text-sm text-stone-500">
+                Follow along:{' '}
+                <a
+                  href={AUTHOR_INSTAGRAM}
+                  rel="me noopener"
+                  target="_blank"
+                  className="text-stone-700 hover:text-stone-900 underline decoration-stone-300 underline-offset-4 transition-colors"
+                >
+                  @wtblacklock on Instagram
+                </a>
               </p>
             </div>
           </div>
