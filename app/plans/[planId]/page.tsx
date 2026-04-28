@@ -18,6 +18,7 @@ import FounderTrustBlock from '@/components/plan/FounderTrustBlock'
 import PlanComparisonLink from '@/components/plan/PlanComparisonLink'
 import FloatingEmailBar from '@/components/plan/FloatingEmailBar'
 import MealPlanAndShopping from '@/components/plan/MealPlanAndShopping'
+import FaqSection from '@/components/site/FaqSection'
 import { parseQuizOutput, type PlanSearchParams } from '@/lib/personalization/url-params'
 import { buildModifiers } from '@/lib/personalization/modifiers'
 import { applyModifiers } from '@/lib/personalization/apply-modifiers'
@@ -65,6 +66,44 @@ const PLAN_PAGE_META: Record<PlanSlug, PlanPageMeta> = {
     totalTime: 'P3D',
   },
 }
+
+const PLAN_FAQ_ITEMS = [
+  {
+    question: 'What’s included in the Trip Pack?',
+    answer:
+      'A printable PDF of the full plan: hour-by-hour timeline, packing checklist, gear setup notes, meal plan with a shopping list scaled to your party size, and the safety notes. Designed to print or live on your phone offline at the campsite.',
+  },
+  {
+    question: 'Can I share it with my spouse or co-parent?',
+    answer:
+      'Yes — family use is fine and expected. Forward the page link or the Trip Pack PDF to whoever is co-planning the trip. One purchase covers your household.',
+  },
+  {
+    question: 'Is the gear list affiliate-linked?',
+    answer:
+      'Yes, transparently. Some gear links are Amazon Associate links that pay Trailstead a small commission if you buy through them. Your price is identical either way, and we only recommend gear we’ve used with our own families.',
+  },
+  {
+    question: 'Do I need camping experience to use this plan?',
+    answer:
+      'No. The plan is built specifically for first-time campers. Every step assumes you’ve never set up a tent, cooked over a stove at a campsite, or slept outside with kids before. If you’ve done five-plus trips, you’ll find it too basic.',
+  },
+  {
+    question: 'What if my trip details change?',
+    answer:
+      'Re-take the five-question quiz with the new details — different ages, different number of nights, different comfort level — and the planner regenerates a fresh plan. The quiz is free and unlimited.',
+  },
+  {
+    question: 'Why this plan instead of the others?',
+    answer:
+      'The four plans map to four pacing archetypes: a single-night backyard test, one easy first night out, a real first weekend, and a relaxed three-night basecamp. The comparison page lays them side-by-side so you can see which one fits your family right now.',
+  },
+  {
+    question: 'Is Trailstead Guide worth it?',
+    answer:
+      'The plan you’re reading is free. The optional Trip Pack PDF is for families who want a printable, offline-friendly version they don’t have to re-build the night before. If a structured first trip is worth less to you than a tank of gas, skip the upgrade and use the free plan as-is.',
+  },
+]
 
 export function generateStaticParams(): Params[] {
   return Object.keys(PLAN_TEMPLATES).map((planId) => ({ planId }))
@@ -210,6 +249,7 @@ export default async function PlanPage({
         comfort={out.comfortLevel}
       />
       <PlanComparisonLink planSlug={slug} />
+      <FaqSection items={PLAN_FAQ_ITEMS} />
       <FloatingEmailBar planSlug={slug} adults={adults} kids={kids} />
     </main>
   )

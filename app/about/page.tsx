@@ -13,6 +13,7 @@ import {
 } from '@/lib/seo'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import JsonLd from '@/components/seo/JsonLd'
+import FaqSection from '@/components/site/FaqSection'
 
 // Avatar initials shown behind the portrait — surface gracefully if the
 // `<Image>` source ever 404s. The user will swap the photo asset later.
@@ -27,6 +28,39 @@ export const metadata = pageMetadata({
     'Meet William Blacklock — Eagle Scout and founder of Trailstead Guide, a structured camping planner that turns five questions into a confident first family trip.',
   path: '/about',
 })
+
+const ABOUT_FAQ_ITEMS = [
+  {
+    question: 'Who built Trailstead Guide?',
+    answer:
+      'William Blacklock — Eagle Scout (earned at 13), former Cub Master and Scout Master, Wood Badge Antelope, Philmont alum, and dad of three outdoor-active kids based in Austin, Texas. Trailstead Guide is the planning system he wished he had as a young dad.',
+  },
+  {
+    question: 'Is Trailstead Guide affiliated with the Boy Scouts of America?',
+    answer:
+      'No. Trailstead Guide is independent and not affiliated with, endorsed by, or sponsored by the Boy Scouts of America or Scouting America. The methodology — structured plans, age-appropriate progression, repeatable routines — draws on William’s scouting background, but BSA is not a partner.',
+  },
+  {
+    question: 'Where do the recommendations come from?',
+    answer:
+      'A blend of personal experience camping with our own families, careful reading of camping subreddits and first-trip post-mortems, and outdoor industry standards from organizations like Leave No Trace. Plans are templates we’ve actually run, not theoretical advice.',
+  },
+  {
+    question: 'Are gear links affiliate links?',
+    answer:
+      'Yes, transparently. Some gear links are Amazon Associate links that pay Trailstead a small commission if you buy through them. Your price is identical either way, and we only recommend gear we’ve used with our own families.',
+  },
+  {
+    question: 'How is this different from other camping sites?',
+    answer:
+      'Most camping sites are blog posts you have to assemble yourself. Trailstead Guide hands you a complete trip — timeline, gear, meals, kid activities, safety — built around four pacing archetypes for first-time families. Read less, plan once, sleep outside.',
+  },
+  {
+    question: 'Can I work with William or get in touch?',
+    answer:
+      'Yes — the easiest way is Instagram (@wtblacklock) or the contact page. For partnerships, guide writing, or feedback on the planner, the contact form goes straight to the inbox.',
+  },
+]
 
 const ABOUT_PERSON_GRAPH = {
   '@context': 'https://schema.org',
@@ -189,7 +223,7 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="max-w-page mx-auto px-8 pb-24">
+      <section className="max-w-page mx-auto px-8 pb-16">
         <div className="max-w-3xl">
           <h2 className="font-serif text-3xl md:text-4xl font-semibold text-stone-950 tracking-tight mb-6">
             How we make money
@@ -201,6 +235,8 @@ export default function Page() {
           </div>
         </div>
       </section>
+
+      <FaqSection items={ABOUT_FAQ_ITEMS} />
     </main>
   )
 }
