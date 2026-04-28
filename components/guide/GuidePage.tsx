@@ -59,7 +59,7 @@ export function GuidePage({ eyebrow = 'Guide', title, lede, heroImage, slug, dat
             className="h-9 w-9 rounded-full ring-1 ring-stone-200 object-cover"
           />
           <p>
-            By <Link href="/about" className="text-stone-700 hover:text-stone-900 underline decoration-stone-300 underline-offset-4 transition-colors">{AUTHOR_NAME}</Link>
+            By <Link href="/about#author" className="text-stone-700 hover:text-stone-900 underline decoration-stone-300 underline-offset-4 transition-colors">{AUTHOR_NAME}</Link>
             {updatedLabel && <span> · Last updated {updatedLabel}</span>}
           </p>
         </div>

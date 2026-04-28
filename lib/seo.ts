@@ -81,7 +81,7 @@ export const organizationNode = {
   },
 }
 
-export const AUTHOR_NAME = 'Will Blacklock'
+export const AUTHOR_NAME = 'William Blacklock'
 export const AUTHOR_JOB_TITLE = 'Founder, Trailstead Guide'
 // ≤200 chars; used in JSON-LD Person.description.
 export const AUTHOR_BIO =

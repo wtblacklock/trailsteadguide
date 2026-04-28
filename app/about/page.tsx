@@ -15,7 +15,7 @@ import JsonLd from '@/components/seo/JsonLd'
 export const metadata = pageMetadata({
   title: 'About',
   description:
-    'Meet Will Blacklock — Eagle Scout and founder of Trailstead Guide, a structured camping planner that turns five questions into a confident first family trip.',
+    'Meet William Blacklock — Eagle Scout and founder of Trailstead Guide, a structured camping planner that turns five questions into a confident first family trip.',
   path: '/about',
 })
 
@@ -111,7 +111,7 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="max-w-page mx-auto px-8 pb-16">
+      <section id="author" className="max-w-page mx-auto px-8 pb-16 scroll-mt-24">
         <div className="max-w-3xl rounded-2xl bg-amber-50/60 ring-1 ring-amber-100 p-8 md:p-12">
           <p className="text-xs font-semibold tracking-[0.18em] uppercase text-stone-500 mb-4">
             About the founder
