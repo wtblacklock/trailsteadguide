@@ -80,7 +80,15 @@ export default async function PrintablePage({
       </header>
 
       <section className="max-w-page mx-auto px-8 pb-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl">
+        {/*
+          Two-column layout: a wider editorial body on the left, a narrower
+          sticky sidebar on the right with the email gate + pair-with card.
+          The lg breakpoint kicks in around 1024px so the sidebar only
+          appears alongside the body once there's room — below that it
+          stacks underneath, which keeps the email gate prominent on
+          mobile without crowding the body copy.
+        */}
+        <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_360px] gap-10 lg:gap-20 max-w-6xl">
           <div>
             <h2 className="font-serif text-2xl md:text-3xl font-semibold text-stone-950 tracking-tight mb-5">
               What you get
@@ -107,14 +115,14 @@ export default async function PrintablePage({
             </ul>
           </div>
 
-          <div>
+          <aside className="lg:sticky lg:top-24 lg:self-start space-y-6">
             <PrintableEmailGate
               printableSlug={printable.slug}
               printHref={printHref}
             />
 
             {(printable.relatedSkillPath || printable.relatedGuideSlug) && (
-              <div className="mt-8 rounded-2xl ring-1 ring-stone-200 p-6 md:p-7">
+              <div className="rounded-2xl ring-1 ring-stone-200 p-6 md:p-7">
                 <p className="text-xs font-semibold tracking-[0.18em] uppercase text-stone-500 mb-3">
                   Pair with
                 </p>
@@ -142,7 +150,7 @@ export default async function PrintablePage({
                 </ul>
               </div>
             )}
-          </div>
+          </aside>
         </div>
       </section>
 
