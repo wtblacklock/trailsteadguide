@@ -1,29 +1,95 @@
 #!/usr/bin/env node
 /**
- * Affiliate audit — extracts the current state of the affiliate program
- * from the source registry, the gear sets, and every guide page that
- * uses <AmazonLink productId="...">. Outputs a single CSV worksheet
- * the operator can open in Sheets to drive research and product swaps.
+ * Affiliate audit — emits two CSVs the operator opens in Sheets to drive
+ * curation and research, plus a stdout summary that calls out gaps.
  *
- *   node scripts/affiliate-audit.mjs            # writes data/affiliate-audit.csv
- *   node scripts/affiliate-audit.mjs --stdout   # prints CSV to stdout
+ *   node scripts/affiliate-audit.mjs
  *
- * Pure node stdlib — no npm install required, runs anywhere with node.
+ * Outputs:
+ *   data/affiliate-audit.csv     — per-product registry view
+ *   data/affiliate-coverage.csv  — per-guide × per-slot worksheet with
+ *                                  image_url and a Reddit research query
+ *                                  on every blank row
  *
- * Output columns:
- *   id, name, asin, canonical_url, short_url, category, tier, price,
- *   plan_slugs, gear_sets, guide_count, guides, audience, scenarios,
- *   product_type, notes
+ * Pure node stdlib — no npm install required.
  *
- * Plus a "Gaps" section appended to the CSV listing audience/scenario
- * tags that are referenced by the type system but have ≤1 product
- * tagged for them — those are the under-served slots.
+ * The slot config (which slots exist, which apply to which guides, which
+ * tags map to which slots) MIRRORS lib/affiliate/gear-slots.ts. If you
+ * add or rename a slot there, update the SLOT_CONFIG block below.
  */
 
 import { readFileSync, writeFileSync, mkdirSync, readdirSync, statSync } from 'node:fs'
 import { join } from 'node:path'
 
 const ROOT = process.cwd()
+
+// ---------- SLOT_CONFIG (mirror of lib/affiliate/gear-slots.ts) ------------
+
+const GEAR_SLOTS = [
+  { id: 'TENT', label: 'Tent', researchQuery: 'best family tent first-time camping' },
+  { id: 'SLEEP_BAG', label: 'Sleeping bag', researchQuery: 'best 3-season sleeping bag car camping' },
+  { id: 'SLEEP_SURFACE', label: 'Sleep surface', researchQuery: 'best sleeping pad family car camping' },
+  { id: 'STOVE', label: 'Stove', researchQuery: 'best 2 burner propane stove car camping' },
+  { id: 'COOKWARE', label: 'Cookware', researchQuery: 'best camping cookware set family' },
+  { id: 'COOLER', label: 'Cooler', researchQuery: 'best cooler for car camping family' },
+  { id: 'LIGHTING', label: 'Lighting', researchQuery: 'best camping lantern beginner' },
+  { id: 'CHAIR', label: 'Chair', researchQuery: 'best camping chair family' },
+  { id: 'CANOPY', label: 'Canopy / shade', researchQuery: 'best pop up canopy camping shade' },
+  { id: 'RAIN_GEAR', label: 'Rain gear', researchQuery: 'best tarp setup rain camping' },
+  { id: 'WINTER_GEAR', label: 'Cold-weather gear', researchQuery: 'winter car camping sleeping bag 0 degree' },
+  { id: 'HOT_GEAR', label: 'Hot-weather gear', researchQuery: 'best tent fan summer camping' },
+  { id: 'DOG_GEAR', label: 'Dog gear', researchQuery: 'dog camping gear tie out water bowl' },
+  { id: 'KID_GEAR', label: 'Kid-specific gear', researchQuery: 'kids camping gear sleeping bag headlamp' },
+  { id: 'SAFETY', label: 'Safety / first aid', researchQuery: 'best first aid kit camping family' },
+  { id: 'POWER', label: 'Power / charging', researchQuery: 'best power bank camping' },
+  { id: 'TRASH', label: 'Trash / cleanup', researchQuery: 'collapsible camping trash can' },
+]
+
+const SLOT_BY_ID = Object.fromEntries(GEAR_SLOTS.map((s) => [s.id, s]))
+
+const TAG_TO_SLOT = {
+  tent: 'TENT',
+  'sleeping-bag': 'SLEEP_BAG',
+  'sleeping-pad': 'SLEEP_SURFACE',
+  'air-mattress': 'SLEEP_SURFACE',
+  cot: 'SLEEP_SURFACE',
+  stove: 'STOVE',
+  cooler: 'COOLER',
+  lantern: 'LIGHTING',
+  headlamp: 'LIGHTING',
+  'lantern-hanger': 'LIGHTING',
+  chair: 'CHAIR',
+  canopy: 'CANOPY',
+  trash: 'TRASH',
+}
+
+const BASE_SLOTS = ['TENT', 'SLEEP_BAG', 'SLEEP_SURFACE', 'STOVE', 'COOLER', 'LIGHTING', 'CHAIR', 'SAFETY']
+
+const SCENARIO_RULES = [
+  { keywords: ['heatwave', 'summer', 'desert', 'texas', 'florida', 'california'], addSlots: ['CANOPY', 'HOT_GEAR'] },
+  { keywords: ['winter', 'fall', 'spring', 'turns'], addSlots: ['WINTER_GEAR'] },
+  { keywords: ['rain', 'turns', 'pacific-northwest', 'appalachians', 'northeast'], addSlots: ['RAIN_GEAR'] },
+  { keywords: ['dogs'], addSlots: ['DOG_GEAR'] },
+  { keywords: [], addSlots: ['KID_GEAR'] }, // family-focused site — KID_GEAR sitewide
+  { keywords: ['weekend', 'how-to-plan', 'first-camping-trip'], addSlots: ['POWER'] },
+]
+
+function slotsForGuide(slug) {
+  const set = new Set(BASE_SLOTS)
+  const lower = slug.toLowerCase()
+  for (const rule of SCENARIO_RULES) {
+    const matches = rule.keywords.length === 0 || rule.keywords.some((k) => lower.includes(k))
+    if (matches) for (const s of rule.addSlots) set.add(s)
+  }
+  return GEAR_SLOTS.map((s) => s.id).filter((id) => set.has(id))
+}
+
+function slotForProduct(product) {
+  for (const tag of product.tags) {
+    if (TAG_TO_SLOT[tag]) return TAG_TO_SLOT[tag]
+  }
+  return null
+}
 
 // ---------- helpers ---------------------------------------------------------
 
@@ -67,6 +133,7 @@ function parseProducts(src) {
       name: get(/name:\s*'([^']+)'/),
       asin: get(/amazonAsin:\s*'([^']+)'/),
       affiliateUrl: get(/affiliateUrl:\s*'([^']+)'/),
+      imageUrl: get(/imageUrl:\s*'([^']+)'/),
       category: get(/category:\s*'([^']+)'/),
       priceRange: get(/priceRange:\s*'([^']+)'/),
       templateSlugs: list(/templateSlugs:\s*\[([^\]]*)\]/),
@@ -99,6 +166,8 @@ function parseGearSets(src) {
 function listGuidePages() {
   const dir = join(ROOT, 'app/guides')
   return readdirSync(dir)
+    // Skip the top-level page.tsx (the index) and any [dynamic] route segments
+    .filter((slug) => !slug.startsWith('[') && !slug.startsWith('.') && !slug.endsWith('.tsx'))
     .map((slug) => ({ slug, path: join(dir, slug, 'page.tsx') }))
     .filter((g) => {
       try {
@@ -177,7 +246,7 @@ function buildCsv(products, gearSets, guideMap) {
   }
 
   const headers = [
-    'id', 'name', 'asin', 'canonical_url', 'short_url',
+    'id', 'name', 'asin', 'canonical_url', 'image_url',
     'category', 'tier', 'price',
     'plan_slugs', 'gear_sets', 'guide_count', 'guides',
     'audience', 'scenarios', 'product_type', 'notes',
@@ -193,7 +262,7 @@ function buildCsv(products, gearSets, guideMap) {
       p.name,
       p.asin || '',
       canonicalUrl(p.asin),
-      p.affiliateUrl || '',
+      p.imageUrl || '',
       p.category,
       tags.tier.join('|'),
       p.priceRange,
@@ -206,6 +275,76 @@ function buildCsv(products, gearSets, guideMap) {
       tags.type.join('|'),
       deriveNotes(p, guides.length),
     ].map(csvEscape).join(','))
+  }
+
+  return rows.join('\n') + '\n'
+}
+
+// ---------- guide × slot coverage CSV (the curation worksheet) -------------
+
+function buildCoverageCsv(products, guideMap) {
+  const productById = Object.fromEntries(products.map((p) => [p.id, p]))
+
+  const headers = [
+    'guide_slug', 'slot_id', 'slot_label', 'status',
+    'current_product_id', 'current_product_name',
+    'current_asin', 'current_amazon_url', 'current_image_url',
+    'current_tier', 'current_price',
+    'research_query',
+    'candidate_asin', 'candidate_name', 'candidate_image_url', 'candidate_price',
+    'notes',
+  ]
+  const rows = [headers.join(',')]
+
+  // Sort guides for stable diffs
+  const guideSlugs = Object.keys(guideMap).concat(
+    listGuidePages().map((g) => g.slug),
+  )
+  const uniqueGuides = [...new Set(guideSlugs)].sort()
+
+  for (const slug of uniqueGuides) {
+    const productIds = guideMap[slug] || []
+    // Index this guide's current products by inferred slot
+    const slotToProducts = {}
+    for (const pid of productIds) {
+      const p = productById[pid]
+      if (!p) continue
+      const slot = slotForProduct(p)
+      if (!slot) continue
+      if (!slotToProducts[slot]) slotToProducts[slot] = []
+      slotToProducts[slot].push(p)
+    }
+
+    for (const slotId of slotsForGuide(slug)) {
+      const slotMeta = SLOT_BY_ID[slotId]
+      const filledProducts = slotToProducts[slotId] || []
+
+      if (filledProducts.length === 0) {
+        // Empty slot — the curation surface
+        rows.push([
+          slug, slotId, slotMeta.label, 'EMPTY',
+          '', '', '', '', '', '', '',
+          slotMeta.researchQuery,
+          '', '', '', '',
+          'Needs research — fill candidate_* columns',
+        ].map(csvEscape).join(','))
+      } else {
+        // One row per product currently in the slot. Multiple products per
+        // slot is fine (e.g. budget chair + premium rocker on the same guide).
+        for (const p of filledProducts) {
+          const tags = partitionTags(p.tags)
+          rows.push([
+            slug, slotId, slotMeta.label, 'FILLED',
+            p.id, p.name,
+            p.asin || '', canonicalUrl(p.asin), p.imageUrl || '',
+            tags.tier.join('|'), p.priceRange,
+            slotMeta.researchQuery,
+            '', '', '', '',
+            '',
+          ].map(csvEscape).join(','))
+        }
+      }
+    }
   }
 
   return rows.join('\n') + '\n'
@@ -263,20 +402,32 @@ function main() {
     if (ids.length) guideMap[g.slug] = ids
   }
 
-  const csv = buildCsv(products, gearSets, guideMap)
+  const productCsv = buildCsv(products, gearSets, guideMap)
+  const coverageCsv = buildCoverageCsv(products, guideMap)
 
   if (process.argv.includes('--stdout')) {
-    process.stdout.write(csv)
-  } else {
-    mkdirSync(join(ROOT, 'data'), { recursive: true })
-    const outPath = 'data/affiliate-audit.csv'
-    writeFileSync(join(ROOT, outPath), csv)
-    console.log(`✓ ${products.length} products → ${outPath}`)
-    console.log(`  ${Object.keys(guideMap).length} guides reference products`)
-    console.log(`  ${Object.keys(gearSets).length} gear sets`)
-    console.log(buildCoverageReport(products))
-    console.log(buildPlanCoverageReport(products))
+    process.stdout.write(productCsv)
+    process.stdout.write('\n--- coverage ---\n')
+    process.stdout.write(coverageCsv)
+    return
   }
+
+  mkdirSync(join(ROOT, 'data'), { recursive: true })
+  writeFileSync(join(ROOT, 'data/affiliate-audit.csv'), productCsv)
+  writeFileSync(join(ROOT, 'data/affiliate-coverage.csv'), coverageCsv)
+
+  // Coverage row counts: how many slots are filled vs empty across all guides.
+  const coverageLines = coverageCsv.trim().split('\n').slice(1)
+  const filled = coverageLines.filter((l) => l.includes(',FILLED,')).length
+  const empty = coverageLines.filter((l) => l.includes(',EMPTY,')).length
+
+  console.log(`✓ ${products.length} products → data/affiliate-audit.csv`)
+  console.log(`✓ ${coverageLines.length} (guide × slot) rows → data/affiliate-coverage.csv`)
+  console.log(`  ${filled} filled, ${empty} empty (${Math.round((filled / (filled + empty)) * 100)}% covered)`)
+  console.log(`  ${Object.keys(guideMap).length} guides reference products`)
+  console.log(`  ${Object.keys(gearSets).length} gear sets`)
+  console.log(buildCoverageReport(products))
+  console.log(buildPlanCoverageReport(products))
 }
 
 main()
