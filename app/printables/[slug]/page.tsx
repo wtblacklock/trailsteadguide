@@ -154,8 +154,8 @@ export default async function PrintablePage({
         </div>
       </section>
 
-      <section className="max-w-page mx-auto px-8 pb-24">
-        <div className="bg-stone-900 rounded-3xl p-10 md:p-16 text-white max-w-4xl">
+      <section className="px-8 pb-24">
+        <div className="bg-stone-900 rounded-3xl p-10 md:p-16 text-white">
           <p className="text-xs font-semibold tracking-widest uppercase text-stone-400 mb-4">
             Want a real plan too
           </p>
