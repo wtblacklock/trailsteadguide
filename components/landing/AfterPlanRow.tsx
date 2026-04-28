@@ -15,6 +15,13 @@ const CARDS = [
     href: '/activities',
     cta: 'Browse activities',
   },
+  {
+    eyebrow: 'Printables',
+    title: 'Free Analog Reference Cards',
+    description: 'Single-page printables for the campsite — star charts, knot cards, fire-starting checklist, cooking conversions. Free with email signup.',
+    href: '/printables',
+    cta: 'Browse printables',
+  },
 ]
 
 export default function AfterPlanRow() {
@@ -28,12 +35,12 @@ export default function AfterPlanRow() {
         </div>
         <div className="col-span-1 md:col-span-5 md:col-start-7 flex items-end mt-4 md:mt-0">
           <p className="text-stone-500 text-lg leading-relaxed">
-            Build the camp skills your plan calls for and pull from a library of kid-tested activities.
+            Build the camp skills your plan calls for, pull from a library of kid-tested activities, and grab free printables to keep on the cooler lid.
           </p>
         </div>
       </div>
 
-      <ul className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <ul className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {CARDS.map((card) => (
           <li key={card.href}>
             <Link
