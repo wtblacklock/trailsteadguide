@@ -170,25 +170,50 @@ export type ArticleInput = {
   datePublished?: string
   dateModified?: string
   breadcrumbs: BreadcrumbItem[]
+  /** Topical section for AI engines (e.g. "Original Research", "Guides"). */
+  articleSection?: string
+  /** Topic keywords. Helps AI engines slot the article into a topic graph. */
+  keywords?: string[]
+  /** Approximate body word count — a citability signal for long-form pieces. */
+  wordCount?: number
+  /** BCP-47 language tag. Defaults to en-US. */
+  inLanguage?: string
+  /**
+   * CSS selectors for content the page wants flagged as voice-readable.
+   * Schema.org SpeakableSpecification — used by AI summaries and voice search.
+   */
+  speakable?: string[]
 }
 
 export function articleGraph(a: ArticleInput) {
   const url = `${SITE_URL}${a.slug}`
+  const articleNode: Record<string, unknown> = {
+    '@type': 'Article',
+    headline: a.title,
+    description: a.description,
+    image: a.image ? [a.image] : undefined,
+    datePublished: a.datePublished ?? '2026-01-01',
+    dateModified: a.dateModified ?? '2026-04-24',
+    author: { '@id': `${SITE_URL}/#author` },
+    publisher: { '@id': `${SITE_URL}/#organization` },
+    mainEntityOfPage: url,
+    inLanguage: a.inLanguage ?? 'en-US',
+  }
+  if (a.articleSection) articleNode.articleSection = a.articleSection
+  if (a.keywords && a.keywords.length) articleNode.keywords = a.keywords
+  if (typeof a.wordCount === 'number') articleNode.wordCount = a.wordCount
+  if (a.speakable && a.speakable.length) {
+    articleNode.speakable = {
+      '@type': 'SpeakableSpecification',
+      cssSelector: a.speakable,
+    }
+  }
+
   return {
     '@context': 'https://schema.org',
     '@graph': [
       personNode,
-      {
-        '@type': 'Article',
-        headline: a.title,
-        description: a.description,
-        image: a.image ? [a.image] : undefined,
-        datePublished: a.datePublished ?? '2026-01-01',
-        dateModified: a.dateModified ?? '2026-04-24',
-        author: { '@id': `${SITE_URL}/#author` },
-        publisher: { '@id': `${SITE_URL}/#organization` },
-        mainEntityOfPage: url,
-      },
+      articleNode,
       breadcrumbList(a.breadcrumbs),
     ],
   }

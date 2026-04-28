@@ -100,6 +100,23 @@ const REGRETS: Regret[] = [
   },
 ]
 
+// Approximate body word count from the regret data so the JSON-LD
+// signal stays in sync with the actual content.
+const BODY_WORD_COUNT = REGRETS.reduce(
+  (sum, r) => sum + (r.title + ' ' + r.why + ' ' + r.fix + ' ' + r.paraphrase).trim().split(/\s+/).length,
+  0,
+) + 200 // intro + stats callout + closing
+
+const KEYWORDS = [
+  'first-time camping',
+  'beginner camping mistakes',
+  'camping regrets',
+  'family camping',
+  'reddit camping analysis',
+  'first camping trip',
+  'camping with kids',
+]
+
 export default function Page() {
   return (
     <>
@@ -110,6 +127,11 @@ export default function Page() {
           description: DESCRIPTION,
           datePublished: PUBLISHED,
           dateModified: MODIFIED,
+          articleSection: 'Original Research',
+          keywords: KEYWORDS,
+          wordCount: BODY_WORD_COUNT,
+          // Voice/AI summaries should pull the headline + the lead paragraph.
+          speakable: ['h1', '[data-speakable]'],
           breadcrumbs: [
             { name: 'Home', url: `${SITE_URL}/` },
             { name: 'Research', url: `${SITE_URL}/research/first-time-camping-regrets` },
@@ -157,7 +179,10 @@ export default function Page() {
           <h1 className="font-serif text-[2.5rem] md:text-[4rem] leading-[1.02] tracking-[-0.02em] font-semibold text-stone-950">
             {HEADLINE}
           </h1>
-          <p className="mt-8 text-xl md:text-2xl text-stone-600 leading-[1.5] font-light">
+          <p
+            data-speakable
+            className="mt-8 text-xl md:text-2xl text-stone-600 leading-[1.5] font-light"
+          >
             We read every top thread on r/camping, r/CampingandHiking, r/CampingGear, and r/Outdoors over the past
             year. Here are the mistakes that show up over and over.{' '}
             <Link

@@ -66,6 +66,10 @@ Every guide, plan, skill, and activity is also available as Markdown at the same
 - [Camping for Beginners](${SITE_URL}/guides/camping-for-beginners): The shortest, least-intimidating path from zero to a great first trip.
 - [How It Works](${SITE_URL}/how-it-works): How the 5-question planner turns your answers into a complete camping plan.
 - [Take the quiz](${SITE_URL}/quiz): Five questions. Get your personalized trip plan in under two minutes.
+
+## Original research
+
+- [What 500 First-Trip Campers Regret](${SITE_URL}/research/first-time-camping-regrets): Analysis of 500 r/camping threads identifying the seven most common first-time camping regrets and the fixes — arrival timing, gear testing, sleep system, trip scope, rain plan, dinner complexity, and template-vs-blank-page planning.
 `
 
 const FOOTER = `## Gear & tools
