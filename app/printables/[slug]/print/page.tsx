@@ -3,7 +3,22 @@ import type { Metadata } from 'next'
 import { PRINTABLES, getPrintableBySlug } from '@/lib/printables'
 import { pageMetadata } from '@/lib/seo'
 import ConstellationWheel from '@/components/printables/ConstellationWheel'
+import CookingConversionCard from '@/components/printables/CookingConversionCard'
+import BackyardTestChecklist from '@/components/printables/BackyardTestChecklist'
+import FireStartingChecklist from '@/components/printables/FireStartingChecklist'
+import KnotReferenceCard from '@/components/printables/KnotReferenceCard'
 import PrintTrigger from '@/components/printables/PrintTrigger'
+
+// Slug → artwork component. Each component renders its full-page print
+// content; the print page wraps it with the shared header / footer chrome
+// and the @media print rules that hide the site nav and footer.
+const ARTWORK_RENDERERS: Record<string, React.ComponentType> = {
+  'northern-hemisphere-constellation-wheel': ConstellationWheel,
+  'camp-cooking-conversion-card': CookingConversionCard,
+  'backyard-test-checklist': BackyardTestChecklist,
+  'fire-starting-checklist': FireStartingChecklist,
+  'knot-reference-card': KnotReferenceCard,
+}
 
 export function generateStaticParams() {
   return PRINTABLES.map((p) => ({ slug: p.slug }))
@@ -148,52 +163,33 @@ export default async function PrintablePrintPage({
         }
       `}</style>
 
-      {printable.slug === 'northern-hemisphere-constellation-wheel' ? (
-        <>
-          <div className="print-toolbar">
-            <PrintTrigger />
-          </div>
-          <div className="header-strip">
-            <div>
-              <p className="meta">Free printable · Trailstead Guide</p>
-              <h1>{printable.title}</h1>
+      {(() => {
+        const Artwork = ARTWORK_RENDERERS[printable.slug]
+        if (!Artwork) {
+          return <p>Print view not available for this printable yet.</p>
+        }
+        return (
+          <>
+            <div className="print-toolbar">
+              <PrintTrigger />
             </div>
-            <span className="brand">trailsteadguide.com</span>
-          </div>
-
-          <ConstellationWheel />
-
-          <div className="legend">
-            <div>
-              <h2>How to use this</h2>
-              <p>
-                Stand outside after full dark, facing north. Hold the page up
-                overhead with the &ldquo;N&rdquo; edge of each disc pointing
-                toward Polaris. Use the disc that matches the current season —
-                the constellations roughly match what&apos;s overhead at 9pm.
-                The sky rotates ~15° per hour, so reorient as the night goes.
-              </p>
+            <div className="header-strip">
+              <div>
+                <p className="meta">Free printable · Trailstead Guide</p>
+                <h1>{printable.title}</h1>
+              </div>
+              <span className="brand">trailsteadguide.com</span>
             </div>
-            <div>
-              <h2>Reading the dots</h2>
-              <p>
-                Brighter stars are bigger dots. Lines connect the
-                most-recognizable shape of each constellation — they aren&apos;t
-                in the actual sky. Polaris is the same point in every disc:
-                the sky pivots around it through the night and across the
-                seasons.
-              </p>
-            </div>
-          </div>
 
-          <div className="footer-strip">
-            <span>© Trailstead Guide · CC BY-NC 4.0 · trailsteadguide.com/printables</span>
-            <span>40°N latitude reference · Stylized positions</span>
-          </div>
-        </>
-      ) : (
-        <p>Print view not available for this printable yet.</p>
-      )}
+            <Artwork />
+
+            <div className="footer-strip">
+              <span>© Trailstead Guide · CC BY-NC 4.0 · trailsteadguide.com/printables</span>
+              <span>{printable.formatNote}</span>
+            </div>
+          </>
+        )
+      })()}
     </main>
   )
 }

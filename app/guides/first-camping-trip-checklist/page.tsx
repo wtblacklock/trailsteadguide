@@ -149,7 +149,7 @@ export default function Page() {
       </ul>
 
       <p>
-        <strong>One note:</strong> this is the generic list. Your trip will need 80% of it and none of the stuff you don&apos;t. That&apos;s what the planner builds — a list scaled to your actual family, your actual weather, and your actual campsite. <Link href="/quiz">Take the 60-second quiz</Link> if you want a custom version.
+        <strong>One note:</strong> this is the generic list. Your trip will need 80% of it and none of the stuff you don&apos;t. That&apos;s what the planner builds — a list scaled to your actual family, your actual weather, and your actual campsite. <Link href="/quiz">Take the 5-second quiz</Link> if you want a custom version.
       </p>
 
       <h2>How to use the checklist (the right way)</h2>

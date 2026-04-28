@@ -129,7 +129,7 @@ export default function Page() {
       </ul>
 
       <p>
-        Once you&apos;ve done a car camping trip or two, you&apos;ll know whether you want to go further (backpacking, primitive sites, overlanding). But everyone starts here. It&apos;s the easiest, lowest-risk, highest-fun-per-effort way to be outside with your family. For a tighter starter trip, run the <Link href="/plans/first-night-camp">First Night Camp</Link> plan as-is, or <Link href="/quiz">take the 60-second quiz</Link> and we&apos;ll match a starter setup to your dates and party size.
+        Once you&apos;ve done a car camping trip or two, you&apos;ll know whether you want to go further (backpacking, primitive sites, overlanding). But everyone starts here. It&apos;s the easiest, lowest-risk, highest-fun-per-effort way to be outside with your family. For a tighter starter trip, run the <Link href="/plans/first-night-camp">First Night Camp</Link> plan as-is, or <Link href="/quiz">take the 5-second quiz</Link> and we&apos;ll match a starter setup to your dates and party size.
       </p>
 
       <h2>How to pack the car (in the right order)</h2>

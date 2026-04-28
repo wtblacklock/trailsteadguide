@@ -130,7 +130,7 @@ export default function Page() {
 
       <h2>When to stop planning</h2>
       <p>
-        Over-planning is a real failure mode. Once you have a site booked, a gear list, a meal plan, and a packed car, you&apos;re done. The rest is execution — and execution is much easier once you&apos;re physically there. If you want this whole sequence handed to you for a specific weekend, <Link href="/quiz">take the 60-second quiz</Link> and we&apos;ll match a starter <Link href="/plans/first-night-camp">First Night Camp</Link> or weekend plan to your party.
+        Over-planning is a real failure mode. Once you have a site booked, a gear list, a meal plan, and a packed car, you&apos;re done. The rest is execution — and execution is much easier once you&apos;re physically there. If you want this whole sequence handed to you for a specific weekend, <Link href="/quiz">take the 5-second quiz</Link> and we&apos;ll match a starter <Link href="/plans/first-night-camp">First Night Camp</Link> or weekend plan to your party.
       </p>
 
       <h2>How to actually pick a campsite (not just a campground)</h2>

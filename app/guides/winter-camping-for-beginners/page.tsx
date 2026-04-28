@@ -261,7 +261,7 @@ export default function Page() {
 
       <h2>Where this fits in the plan</h2>
       <p>
-        For a first cold-weather trip, the right move is the smallest one — a heated cabin within an hour of home. <Link href="/quiz">Take the 60-second quiz</Link> and we&apos;ll match a starter plan to your dates, party size, and the heat available at the site you&apos;re considering.
+        For a first cold-weather trip, the right move is the smallest one — a heated cabin within an hour of home. <Link href="/quiz">Take the 5-second quiz</Link> and we&apos;ll match a starter plan to your dates, party size, and the heat available at the site you&apos;re considering.
       </p>
 
       <h2>Frequently asked</h2>

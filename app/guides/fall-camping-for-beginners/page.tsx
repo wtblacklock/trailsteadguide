@@ -256,7 +256,7 @@ export default function Page() {
 
       <h2>Where this fits in the plan</h2>
       <p>
-        Fall is the season most rewarded by structure. Match your trip to a <Link href="/plans/first-weekend-camp">First Weekend Camp</Link> if you want a 2-night cooler-weather build, or <Link href="/quiz">take the 60-second quiz</Link> and we&apos;ll match a starter kit to your dates. If a cold front overshoots and the forecast tips below freezing, jump to <Link href="/guides/winter-camping-for-beginners">winter camping for beginners</Link> for the cabin-first fallback.
+        Fall is the season most rewarded by structure. Match your trip to a <Link href="/plans/first-weekend-camp">First Weekend Camp</Link> if you want a 2-night cooler-weather build, or <Link href="/quiz">take the 5-second quiz</Link> and we&apos;ll match a starter kit to your dates. If a cold front overshoots and the forecast tips below freezing, jump to <Link href="/guides/winter-camping-for-beginners">winter camping for beginners</Link> for the cabin-first fallback.
       </p>
 
       <h2>Frequently asked</h2>

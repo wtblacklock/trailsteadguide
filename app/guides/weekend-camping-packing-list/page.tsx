@@ -224,7 +224,7 @@ export default function Page() {
         <li><strong>Misc bin:</strong> headlamps, first aid, lanterns, rope, tape, bug spray, sunscreen, games. The &ldquo;I need a thing&rdquo; bin.</li>
       </ul>
       <p>
-        Everything else — chairs, cooler, firewood, personal duffels — is loose but has a natural home. Bins mean setup is three trips from the car, not 30. If you want a packing list scaled to your party size, dates, and weather, <Link href="/quiz">take the 60-second quiz</Link> and we&apos;ll match a starter <Link href="/plans/first-weekend-camp">First Weekend Camp</Link> plan to your trip.
+        Everything else — chairs, cooler, firewood, personal duffels — is loose but has a natural home. Bins mean setup is three trips from the car, not 30. If you want a packing list scaled to your party size, dates, and weather, <Link href="/quiz">take the 5-second quiz</Link> and we&apos;ll match a starter <Link href="/plans/first-weekend-camp">First Weekend Camp</Link> plan to your trip.
       </p>
 
       <h2>Frequently asked</h2>

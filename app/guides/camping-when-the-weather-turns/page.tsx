@@ -296,7 +296,7 @@ export default function Page() {
         </p>
         <p>
           See also: <Link href="/guides/rainy-camping-trips">Rainy Camping Trips</Link> for the more contained version of the same problem, and{' '}
-          <Link href="/guides/spring-camping-for-beginners">Spring Camping for Beginners</Link> for the season most weather-shift drama happens in. If you&apos;re still picking dates, <Link href="/quiz">take the 60-second quiz</Link> and we&apos;ll match a starter plan to a calmer forecast window.
+          <Link href="/guides/spring-camping-for-beginners">Spring Camping for Beginners</Link> for the season most weather-shift drama happens in. If you&apos;re still picking dates, <Link href="/quiz">take the 5-second quiz</Link> and we&apos;ll match a starter plan to a calmer forecast window.
         </p>
 
         <h2>Frequently asked</h2>

@@ -297,7 +297,7 @@ export default function Page() {
         <p>
           A first dog-camping trip works best as a comfortable, low-stakes weekend at a state park. The right plan template is{' '}
           <Link href="/plans/easy-family-basecamp">Easy Family Basecamp</Link> — slow pace, real bathroom access, and the kind of comfortable site where a leash-tethered dog has a place to lie down. If you want to start even smaller, do a{' '}
-          <Link href="/plans/backyard-test">Backyard Test</Link> first to confirm your dog will settle in the tent at all. Or <Link href="/quiz">take the 60-second quiz</Link> and we&apos;ll match a dog-friendly starter plan to your dates.
+          <Link href="/plans/backyard-test">Backyard Test</Link> first to confirm your dog will settle in the tent at all. Or <Link href="/quiz">take the 5-second quiz</Link> and we&apos;ll match a dog-friendly starter plan to your dates.
         </p>
 
         <h2>Frequently asked</h2>

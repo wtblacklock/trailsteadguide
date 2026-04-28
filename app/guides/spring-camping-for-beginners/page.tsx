@@ -252,7 +252,7 @@ export default function Page() {
 
       <h2>Where this fits in the plan</h2>
       <p>
-        Spring is short, weather-volatile, and best run with a tight scope. Match it to a <Link href="/plans/first-night-camp">First Night Camp</Link> at a low-elevation park within 90 minutes — or <Link href="/quiz">take the 60-second quiz</Link> and we&apos;ll match a plan to your dates and party size.
+        Spring is short, weather-volatile, and best run with a tight scope. Match it to a <Link href="/plans/first-night-camp">First Night Camp</Link> at a low-elevation park within 90 minutes — or <Link href="/quiz">take the 5-second quiz</Link> and we&apos;ll match a plan to your dates and party size.
       </p>
 
       <h2>Frequently asked</h2>

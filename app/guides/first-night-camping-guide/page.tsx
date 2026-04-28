@@ -104,7 +104,7 @@ export default function Page() {
 
         <h2>Pick the lowest-stakes version that still counts</h2>
         <p>
-          The biggest first-night mistake is booking too much trip. Three nights, two-hour drive, an &ldquo;epic&rdquo; first destination — that is how a first attempt becomes a last attempt. Pick the smallest version that still teaches you what you need to know — or <Link href="/quiz">take the 60-second quiz</Link> and we&apos;ll match one to your dates and party. There are three reasonable starting points:
+          The biggest first-night mistake is booking too much trip. Three nights, two-hour drive, an &ldquo;epic&rdquo; first destination — that is how a first attempt becomes a last attempt. Pick the smallest version that still teaches you what you need to know — or <Link href="/quiz">take the 5-second quiz</Link> and we&apos;ll match one to your dates and party. There are three reasonable starting points:
         </p>
         <ul>
           <li>

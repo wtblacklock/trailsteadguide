@@ -442,6 +442,50 @@ export default function ConstellationWheel() {
           </div>
         ))}
       </div>
+
+      <div className="constellation-legend">
+        <div>
+          <h2>How to use this</h2>
+          <p>
+            Stand outside after full dark, facing north. Hold the page up
+            overhead with the &ldquo;N&rdquo; edge of each disc pointing
+            toward Polaris. Use the disc that matches the current season —
+            the constellations roughly match what&apos;s overhead at 9pm.
+            The sky rotates ~15° per hour, so reorient as the night goes.
+          </p>
+        </div>
+        <div>
+          <h2>Reading the dots</h2>
+          <p>
+            Brighter stars are bigger dots. Lines connect the
+            most-recognizable shape of each constellation — they aren&apos;t
+            in the actual sky. Polaris is the same point in every disc:
+            the sky pivots around it through the night and across the
+            seasons.
+          </p>
+        </div>
+      </div>
+
+      <style>{`
+        .constellation-legend {
+          margin-top: 18px;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 16px;
+          font-family: 'Source Serif 4', Georgia, serif;
+          font-size: 13px;
+          line-height: 1.55;
+          color: #292524;
+          padding-top: 14px;
+          border-top: 1px solid #D6D3D1;
+        }
+        .constellation-legend h2 {
+          font-size: 13px;
+          font-weight: 600;
+          margin: 0 0 6px;
+          letter-spacing: -0.01em;
+        }
+      `}</style>
     </div>
   )
 }

@@ -199,7 +199,7 @@ export default function Page() {
 
       <h2>Where this fits in the plan</h2>
       <p>
-        Summer is the easiest season to learn on, but the hottest weekends still reward structure. Match the trip to an <Link href="/plans/easy-family-basecamp">Easy Family Basecamp</Link> at a shaded, water-access site — or <Link href="/quiz">take the 60-second quiz</Link> and we&apos;ll match a starter plan to your dates and party size.
+        Summer is the easiest season to learn on, but the hottest weekends still reward structure. Match the trip to an <Link href="/plans/easy-family-basecamp">Easy Family Basecamp</Link> at a shaded, water-access site — or <Link href="/quiz">take the 5-second quiz</Link> and we&apos;ll match a starter plan to your dates and party size.
       </p>
 
       <h2>A starter setup that actually works</h2>

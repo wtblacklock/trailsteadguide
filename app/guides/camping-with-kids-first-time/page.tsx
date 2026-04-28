@@ -129,7 +129,7 @@ export default function Page() {
       </ul>
 
       <p>
-        The goal for the first trip is not to create a transcendent nature experience. It&apos;s for them to leave saying &quot;when can we go camping again?&quot; That&apos;s a very low bar — and a structured plan clears it easily. If you want one shaped to your kids&apos; ages, <Link href="/quiz">take the 60-second quiz</Link> and we&apos;ll match a starter plan to your party.
+        The goal for the first trip is not to create a transcendent nature experience. It&apos;s for them to leave saying &quot;when can we go camping again?&quot; That&apos;s a very low bar — and a structured plan clears it easily. If you want one shaped to your kids&apos; ages, <Link href="/quiz">take the 5-second quiz</Link> and we&apos;ll match a starter plan to your party.
       </p>
 
       <h2>The bedtime problem (and how to solve it)</h2>

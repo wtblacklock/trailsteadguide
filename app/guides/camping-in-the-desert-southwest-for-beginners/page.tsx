@@ -162,7 +162,7 @@ export default function Page() {
 
       <h2>Best setup for your first trip in the Desert Southwest</h2>
       <p>
-        These are the three beginner trip types that work in the Desert Southwest, mapped to plans on this site. <Link href="/quiz">Take the 60-second quiz</Link> if you want one matched to your dates and the parks you&apos;re considering. For the heat-management playbook, see <Link href="/guides/camping-in-a-heatwave">camping in a heatwave</Link>.
+        These are the three beginner trip types that work in the Desert Southwest, mapped to plans on this site. <Link href="/quiz">Take the 5-second quiz</Link> if you want one matched to your dates and the parks you&apos;re considering. For the heat-management playbook, see <Link href="/guides/camping-in-a-heatwave">camping in a heatwave</Link>.
       </p>
       <ul>
         <li>

@@ -151,7 +151,7 @@ export default function Page() {
 
       <h2>Best setup for your first trip in Colorado</h2>
       <p>
-        These are the three beginner trip types that work in Colorado, mapped to plans on this site. <Link href="/quiz">Take the 60-second quiz</Link> if you want one matched to your dates and elevation. If a thunderstorm closes in mid-trip, see <Link href="/guides/camping-when-the-weather-turns">camping when the weather turns</Link> for the lightning rules.
+        These are the three beginner trip types that work in Colorado, mapped to plans on this site. <Link href="/quiz">Take the 5-second quiz</Link> if you want one matched to your dates and elevation. If a thunderstorm closes in mid-trip, see <Link href="/guides/camping-when-the-weather-turns">camping when the weather turns</Link> for the lightning rules.
       </p>
       <ul>
         <li>

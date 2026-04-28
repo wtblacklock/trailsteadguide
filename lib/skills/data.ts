@@ -48,6 +48,7 @@ export const SKILLS: Skill[] = [
       alt: 'Step-by-step diagram of a reef (square) knot showing two interlocking half-knots',
       attribution: 'Reef knot diagram by Lucasbosch — Wikimedia Commons (CC BY-SA 3.0)',
     },
+    relatedPrintableSlug: 'knot-reference-card',
   },
   {
     slug: 'bowline',
@@ -91,6 +92,7 @@ export const SKILLS: Skill[] = [
       alt: 'Diagram of a bowline knot with the working end forming a fixed loop',
       attribution: 'Bowline diagram by Lucasbosch — Wikimedia Commons (CC BY 3.0)',
     },
+    relatedPrintableSlug: 'knot-reference-card',
   },
   {
     slug: 'taut-line-hitch',
@@ -126,6 +128,7 @@ export const SKILLS: Skill[] = [
       alt: 'Step-by-step photographs showing a taut-line hitch being tied around a fixed object',
       attribution: 'Taut-line hitch (ABoK #1800) by David J. Fred — Wikimedia Commons (CC BY-SA 2.5)',
     },
+    relatedPrintableSlug: 'knot-reference-card',
   },
   {
     slug: 'clove-hitch',
@@ -162,6 +165,7 @@ export const SKILLS: Skill[] = [
       alt: 'Diagram of a clove hitch wrapped around a vertical pole',
       attribution: 'Clove hitch diagram — Wikimedia Commons (CC BY-SA 3.0)',
     },
+    relatedPrintableSlug: 'knot-reference-card',
   },
 
   // ── COOKING ───────────────────────────────────────────────────────────────
@@ -205,6 +209,7 @@ export const SKILLS: Skill[] = [
       url: 'https://www.youtube-nocookie.com/embed/KL90304Qppw',
       title: 'How to Use a Coleman Propane Camp Stove',
     },
+    relatedPrintableSlug: 'camp-cooking-conversion-card',
   },
   {
     slug: 'foil-pack-meals',
@@ -247,6 +252,7 @@ export const SKILLS: Skill[] = [
       url: 'https://www.youtube-nocookie.com/embed/VB_VaT-kZZ4',
       title: 'How to Make Foil Packets for Camping',
     },
+    relatedPrintableSlug: 'camp-cooking-conversion-card',
   },
 
   // ── FIRE BASICS ───────────────────────────────────────────────────────────
@@ -281,6 +287,7 @@ export const SKILLS: Skill[] = [
       'Never use gasoline, lighter fluid, or aerosols to boost a fire.',
     ],
     safetyTone: 'critical',
+    relatedPrintableSlug: 'fire-starting-checklist',
   },
   {
     slug: 'starting-a-fire',
@@ -323,6 +330,7 @@ export const SKILLS: Skill[] = [
       alt: 'Diagram of a teepee-style campfire — kindling leaned in a cone over a tinder bundle',
       attribution: 'Teepee fire diagram by Jazzmanian — Wikimedia Commons (Public domain)',
     },
+    relatedPrintableSlug: 'fire-starting-checklist',
   },
   {
     slug: 'fire-structures',
@@ -358,6 +366,7 @@ export const SKILLS: Skill[] = [
       alt: 'Diagram of a log cabin–style campfire — split logs stacked in a square frame around tinder',
       attribution: 'Log cabin fire diagram by Jazzmanian — Wikimedia Commons (Public domain)',
     },
+    relatedPrintableSlug: 'fire-starting-checklist',
   },
   {
     slug: 'extinguishing-a-fire',
@@ -394,6 +403,7 @@ export const SKILLS: Skill[] = [
       url: 'https://www.youtube-nocookie.com/embed/6CiMTNW2tr0',
       title: 'How to Safely Extinguish a Campfire & Prevent Wildfires',
     },
+    relatedPrintableSlug: 'fire-starting-checklist',
   },
 
   // ── HIKING & NAVIGATION ───────────────────────────────────────────────────
@@ -639,6 +649,7 @@ export const SKILLS: Skill[] = [
       alt: 'Diagram of a dome tent with crossing pole structure',
       attribution: 'Dome tent diagram by Germo — Wikimedia Commons (Public domain)',
     },
+    relatedPrintableSlug: 'backyard-test-checklist',
   },
   {
     slug: 'site-selection',

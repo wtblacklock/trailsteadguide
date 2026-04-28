@@ -143,7 +143,7 @@ export default function Page() {
 
       <h2>12. Planning it all yourself from scratch</h2>
       <p>
-        This is the mistake that causes the other eleven. The details are solved — campsite distance, gear list, meal plan, kid activities, weather-aware layers. <strong>Use a template.</strong> <Link href="/quiz">Take the 60-second quiz</Link> and we&apos;ll match a starter plan to your dates and party size. Edit it to fit your family. Go.
+        This is the mistake that causes the other eleven. The details are solved — campsite distance, gear list, meal plan, kid activities, weather-aware layers. <strong>Use a template.</strong> <Link href="/quiz">Take the 5-second quiz</Link> and we&apos;ll match a starter plan to your dates and party size. Edit it to fit your family. Go.
       </p>
 
       <h2>The quiet mistakes nobody warns you about</h2>

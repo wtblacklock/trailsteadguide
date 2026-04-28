@@ -151,7 +151,7 @@ export default function Page() {
 
       <h2>Best setup for your first trip in Texas</h2>
       <p>
-        These are the three beginner trip types that work in Texas, mapped to plans on this site. Pick the smallest one you haven&apos;t done yet, or <Link href="/quiz">take the 60-second quiz</Link> and we&apos;ll match one to your dates and party size. For broader heat strategy, see <Link href="/guides/camping-in-a-heatwave">camping in a heatwave</Link>.
+        These are the three beginner trip types that work in Texas, mapped to plans on this site. Pick the smallest one you haven&apos;t done yet, or <Link href="/quiz">take the 5-second quiz</Link> and we&apos;ll match one to your dates and party size. For broader heat strategy, see <Link href="/guides/camping-in-a-heatwave">camping in a heatwave</Link>.
       </p>
       <ul>
         <li>

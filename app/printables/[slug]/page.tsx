@@ -5,6 +5,7 @@ import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import PrintableEmailGate from '@/components/printables/PrintableEmailGate'
 import PrintableFloatingBar from '@/components/printables/PrintableFloatingBar'
+import PrintablePreview from '@/components/printables/PrintablePreview'
 import { pageMetadata, printableCreativeWorkGraph, SITE_URL } from '@/lib/seo'
 import { PRINTABLES, getPrintableBySlug } from '@/lib/printables'
 
@@ -91,7 +92,9 @@ export default async function PrintablePage({
         */}
         <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_360px] gap-10 lg:gap-20 max-w-6xl">
           <div>
-            <h2 className="font-serif text-2xl md:text-3xl font-semibold text-stone-950 tracking-tight mb-5">
+            <PrintablePreview slug={printable.slug} printHref={printHref} />
+
+            <h2 className="font-serif text-2xl md:text-3xl font-semibold text-stone-950 tracking-tight mt-12 mb-5">
               What you get
             </h2>
             <ul className="space-y-3 text-stone-700 leading-relaxed">
@@ -161,7 +164,7 @@ export default async function PrintablePage({
             Want a real plan too
           </p>
           <h2 className="font-serif text-3xl md:text-5xl font-semibold tracking-tight mb-4 max-w-2xl">
-            Get a starter trip plan in 60 seconds.
+            Get a starter trip plan in 5 seconds.
           </h2>
           <p className="text-stone-300 text-lg mb-8 max-w-xl">
             The printable is a great companion. Pair it with a structured plan — timeline, gear, meals, kid activities — built around your party and dates.

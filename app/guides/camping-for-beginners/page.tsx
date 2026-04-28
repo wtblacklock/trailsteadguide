@@ -126,7 +126,7 @@ export default function Page() {
       </ul>
 
       <p>
-        That&apos;s it. Camping is not complicated. It&apos;s just unfamiliar — and a structured plan removes 90% of the unfamiliarity. If you want one matched to your dates, party size, and kids&apos; ages, <Link href="/quiz">take the 60-second quiz</Link> and we&apos;ll scaffold a starter trip for you.
+        That&apos;s it. Camping is not complicated. It&apos;s just unfamiliar — and a structured plan removes 90% of the unfamiliarity. If you want one matched to your dates, party size, and kids&apos; ages, <Link href="/quiz">take the 5-second quiz</Link> and we&apos;ll scaffold a starter trip for you.
       </p>
 
       <h2>What to skip on your first trip</h2>

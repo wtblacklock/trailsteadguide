@@ -30,6 +30,10 @@ export const BUYER_TAG_ID = 0
  */
 export const PRINTABLE_TAG_IDS: Record<string, number> = {
   'northern-hemisphere-constellation-wheel': 19208433,
+  'camp-cooking-conversion-card': 19208433,
+  'knot-reference-card': 19208433,
+  'backyard-test-checklist': 19208433,
+  'fire-starting-checklist': 19208433,
 }
 
 /**
