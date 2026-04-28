@@ -9,10 +9,11 @@ const PRIMARY_LINKS = [
   { href: '/guides', label: 'Guides' },
   { href: '/skills', label: 'Skills' },
   { href: '/gear', label: 'Gear' },
-  { href: '/about', label: 'About' },
+  { href: '/printables', label: 'Printables' },
 ]
 
 const SECONDARY_LINKS = [
+  { href: '/about', label: 'About' },
   { href: '/how-it-works', label: 'How it works' },
   { href: '/faq', label: 'FAQ' },
   { href: '/contact', label: 'Contact' },
@@ -68,12 +69,12 @@ export default function Nav() {
           />
         </Link>
 
-        {/* Desktop links — primary library entries on the left, primary CTA on the right rail */}
+        {/* Desktop links — primary catalog entries on the left, primary CTA on the right rail */}
         <div className="hidden md:flex items-center gap-1 text-sm text-stone-700">
           <NavLink href="/guides">Guides</NavLink>
           <NavLink href="/skills">Skills</NavLink>
           <NavLink href="/gear">Gear</NavLink>
-          <NavLink href="/about">About</NavLink>
+          <NavLink href="/printables">Printables</NavLink>
         </div>
 
         {/* Right side: CTA + mobile toggle */}
