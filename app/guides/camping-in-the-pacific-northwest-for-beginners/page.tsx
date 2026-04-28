@@ -85,7 +85,7 @@ export default function Page() {
       lede="What to expect, what changes, and how to plan your first trip in Washington and Oregon."
       heroImage={{
         src: HERO_IMAGE,
-        alt: 'Pine forest along an alpine lake near Mt Rainier in Washington',
+        alt: 'Old-growth conifer forest along an alpine lake near Mt Rainier, Washington Pacific Northwest camping',
       }}
     >
       <QuickAnswer
@@ -143,7 +143,7 @@ export default function Page() {
         <div className="relative aspect-[16/9] rounded-2xl overflow-hidden bg-stone-100">
           <Image
             src="https://images.unsplash.com/photo-1515310787031-25ac2d68610d?w=1400&auto=format&fit=crop&q=80"
-            alt="Snow-covered Mt Rainier under broken clouds, Washington"
+            alt="Snow-covered Mt Rainier rising above old-growth forest under broken clouds, Washington summer camping"
             fill
             className="object-cover"
             sizes="(max-width: 768px) 100vw, 768px"

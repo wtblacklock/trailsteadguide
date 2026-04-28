@@ -83,7 +83,7 @@ export default function Page() {
       lede="What to expect, what to bring, and how to avoid common mistakes."
       heroImage={{
         src: HERO_IMAGE,
-        alt: 'A tent pitched in a sunlit meadow on a clear summer day',
+        alt: 'Family tent pitched in a sunlit summer meadow at a state park campground, peak season camping setup',
       }}
     >
       <QuickAnswer

@@ -78,7 +78,7 @@ export default function Page() {
       lede="Camping with kids is a different activity than camping without them. Here&apos;s what actually changes — and what to plan for."
       heroImage={{
         src: HERO_IMAGE,
-        alt: 'Two young girls standing next to a tent at their campsite',
+        alt: 'Two young kids next to their family tent at a state park campsite during a first family camping trip',
       }}
     >
       <QuickAnswer

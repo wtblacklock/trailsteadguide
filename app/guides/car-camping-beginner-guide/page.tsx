@@ -78,7 +78,7 @@ export default function Page() {
       lede="Car camping is the fastest on-ramp to the outdoors. Here&apos;s what it is, why it&apos;s the right choice for your first trip, and how to do it well."
       heroImage={{
         src: HERO_IMAGE,
-        alt: 'An SUV with a roof-top tent set up at a campsite',
+        alt: 'An SUV with a roof-top tent set up at a beginner car-camping site at a public campground',
       }}
     >
       <QuickAnswer

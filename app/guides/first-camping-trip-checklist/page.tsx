@@ -78,7 +78,7 @@ export default function Page() {
       lede="One page. Everything you actually need to book, pack, and plan before your first family camping trip."
       heroImage={{
         src: HERO_IMAGE,
-        alt: 'Campfire crackling at dusk at a forest campsite',
+        alt: 'Campfire crackling at dusk at a forest family campsite — the payoff of a packed first-trip checklist',
       }}
     >
       <QuickAnswer

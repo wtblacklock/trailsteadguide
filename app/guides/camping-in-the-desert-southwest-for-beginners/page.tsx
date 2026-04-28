@@ -85,7 +85,7 @@ export default function Page() {
       lede="What to expect, what changes, and how to plan your first trip in Arizona, Utah, or New Mexico."
       heroImage={{
         src: HERO_IMAGE,
-        alt: 'Red sandstone walls and pinyon pines in Zion National Park, Utah',
+        alt: 'Red sandstone walls and pinyon pines along a Zion National Park canyon, Utah Desert Southwest camping country',
       }}
     >
       <QuickAnswer
@@ -148,7 +148,7 @@ export default function Page() {
         <div className="relative aspect-[16/9] rounded-2xl overflow-hidden bg-stone-100">
           <Image
             src="https://images.unsplash.com/photo-1615551043360-33de8b5f410c?w=1400&auto=format&fit=crop&q=80"
-            alt="The Grand Canyon at sunrise with layers of red and ochre rock"
+            alt="The Grand Canyon at sunrise with layered red and ochre rock walls, Arizona Desert Southwest camping"
             fill
             className="object-cover"
             sizes="(max-width: 768px) 100vw, 768px"
@@ -196,7 +196,7 @@ export default function Page() {
         <div className="relative aspect-[16/9] rounded-2xl overflow-hidden bg-stone-100">
           <Image
             src="https://images.unsplash.com/photo-1581293738298-451cd74b0b45?w=1400&auto=format&fit=crop&q=80"
-            alt="A Joshua tree at sunset with the Mojave Desert behind it"
+            alt="A Joshua tree silhouetted at sunset over the Mojave Desert, Joshua Tree National Park camping country"
             fill
             className="object-cover"
             sizes="(max-width: 768px) 100vw, 768px"

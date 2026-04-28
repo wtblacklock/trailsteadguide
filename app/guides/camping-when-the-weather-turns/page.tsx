@@ -85,7 +85,7 @@ export default function Page() {
         lede="The bail decision, the lightning rules, and what to do when the forecast shifts on you mid-trip."
         heroImage={{
           src: HERO_IMAGE,
-          alt: 'Dark storm clouds gathering over an open landscape',
+          alt: 'Dark storm front gathering over an exposed campsite landscape, the moment a forecast turns mid-trip',
         }}
       >
         <QuickAnswer
@@ -146,7 +146,7 @@ export default function Page() {
           <div className="relative aspect-[16/9] rounded-2xl overflow-hidden bg-stone-100">
             <Image
               src="https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?w=1400&auto=format&fit=crop&q=80"
-              alt="Mountains at dusk under a heavy, color-shifted sky as weather moves through"
+              alt="Mountains at dusk under a heavy color-shifted sky as a weather front moves through a campground"
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 768px"

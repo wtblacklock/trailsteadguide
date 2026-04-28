@@ -85,7 +85,7 @@ export default function Page() {
         lede="What success actually looks like — and how to plan a first night you will repeat."
         heroImage={{
           src: HERO_IMAGE,
-          alt: 'A small tent on a rise under a starry night sky, the Milky Way overhead',
+          alt: 'A small tent on a rise under the Milky Way, a beginner first night camping under a starry sky',
         }}
       >
         <QuickAnswer
@@ -130,7 +130,7 @@ export default function Page() {
           <div className="relative aspect-[16/9] rounded-2xl overflow-hidden bg-stone-100">
             <Image
               src="https://images.unsplash.com/photo-1487730116645-74489c95b41b?w=1400&auto=format&fit=crop&q=80"
-              alt="An illuminated tent at dusk in a quiet pine forest"
+              alt="Illuminated tent at dusk in a quiet pine forest, the first-night view a beginner camper sees"
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 768px"

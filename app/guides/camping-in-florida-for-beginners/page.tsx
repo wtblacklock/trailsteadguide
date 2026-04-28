@@ -85,7 +85,7 @@ export default function Page() {
       lede="What to expect, what changes, and how to plan your first trip in Florida."
       heroImage={{
         src: HERO_IMAGE,
-        alt: 'A river running through cypress forest in the Florida Everglades',
+        alt: 'Slow river winding through cypress forest in the Florida Everglades, prime winter camping country',
       }}
     >
       <QuickAnswer
@@ -144,7 +144,7 @@ export default function Page() {
         <div className="relative aspect-[16/9] rounded-2xl overflow-hidden bg-stone-100">
           <Image
             src="https://images.unsplash.com/photo-1649036853210-39256f4d8885?w=1400&auto=format&fit=crop&q=80"
-            alt="An American alligator resting on the edge of a marsh in Florida"
+            alt="An American alligator resting on the edge of a freshwater marsh at a Florida state park campground"
             fill
             className="object-cover"
             sizes="(max-width: 768px) 100vw, 768px"

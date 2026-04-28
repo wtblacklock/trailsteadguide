@@ -85,7 +85,7 @@ export default function Page() {
         lede="Rain prep, tarp setup, and the line between a different trip and a wrecked one."
         heroImage={{
           src: HERO_IMAGE,
-          alt: 'Looking out from inside a tent at a damp, misty forest morning',
+          alt: 'View from inside a tent doorway at a damp misty forest morning during a rainy camping trip',
         }}
       >
         <QuickAnswer
@@ -146,7 +146,7 @@ export default function Page() {
           <div className="relative aspect-[16/9] rounded-2xl overflow-hidden bg-stone-100">
             <Image
               src="https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?w=1400&auto=format&fit=crop&q=80"
-              alt="Kids playing in a damp, misty forest opening on an overcast day"
+              alt="Kids in rain jackets playing in a damp misty forest clearing on an overcast camping day"
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 768px"

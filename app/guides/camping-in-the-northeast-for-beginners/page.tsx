@@ -85,7 +85,7 @@ export default function Page() {
       lede="What to expect, what changes, and how to plan your first trip in the Adirondacks, White Mountains, Acadia, or New England."
       heroImage={{
         src: HERO_IMAGE,
-        alt: 'A still Adirondack lake at dawn with low ridges and pine forest',
+        alt: 'Still Adirondack lake at dawn with low ridges and pine forest, classic Northeast summer camping scene',
       }}
     >
       <QuickAnswer
@@ -147,7 +147,7 @@ export default function Page() {
         <div className="relative aspect-[16/9] rounded-2xl overflow-hidden bg-stone-100">
           <Image
             src="https://images.unsplash.com/photo-1609697992606-4d6ec6d6178a?w=1400&auto=format&fit=crop&q=80"
-            alt="Rocky shore and pine forest along the Acadia National Park coast in Maine"
+            alt="Rocky shoreline and red pines along the Acadia National Park coast, Mount Desert Island, Maine"
             fill
             className="object-cover"
             sizes="(max-width: 768px) 100vw, 768px"
@@ -200,7 +200,7 @@ export default function Page() {
         <div className="relative aspect-[16/9] rounded-2xl overflow-hidden bg-stone-100">
           <Image
             src="https://images.unsplash.com/photo-1710678088868-134981fd597a?w=1400&auto=format&fit=crop&q=80"
-            alt="A view of the White Mountains under broken clouds, New Hampshire"
+            alt="Granite peaks of the White Mountains under broken summer clouds, New Hampshire backcountry camping"
             fill
             className="object-cover"
             sizes="(max-width: 768px) 100vw, 768px"

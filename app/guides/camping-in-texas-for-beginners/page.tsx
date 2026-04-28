@@ -85,7 +85,7 @@ export default function Page() {
       lede="What to expect, what changes, and how to plan your first trip in Texas."
       heroImage={{
         src: HERO_IMAGE,
-        alt: 'Desert mountains in Big Bend National Park, West Texas, under a clear sky',
+        alt: 'Sun-bleached desert mountains in Big Bend National Park, West Texas, under a clear winter camping sky',
       }}
     >
       <QuickAnswer
@@ -137,7 +137,7 @@ export default function Page() {
         <div className="relative aspect-[16/9] rounded-2xl overflow-hidden bg-stone-100">
           <Image
             src="https://images.unsplash.com/photo-1628111807036-66330114ddf3?w=1400&auto=format&fit=crop&q=80"
-            alt="Open prairie and rolling grassland in the Texas Hill Country"
+            alt="Rolling oak-and-grass prairie in the Texas Hill Country, prime spring and fall camping terrain"
             fill
             className="object-cover"
             sizes="(max-width: 768px) 100vw, 768px"
@@ -185,7 +185,7 @@ export default function Page() {
         <div className="relative aspect-[16/9] rounded-2xl overflow-hidden bg-stone-100">
           <Image
             src="https://images.unsplash.com/photo-1609784632133-3a6ed7c71ac5?w=1400&auto=format&fit=crop&q=80"
-            alt="Paddler on the Rio Grande along Big Bend National Park, Texas"
+            alt="Solo paddler on the Rio Grande between Big Bend canyon walls along the Texas–Mexico border"
             fill
             className="object-cover"
             sizes="(max-width: 768px) 100vw, 768px"

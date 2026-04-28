@@ -85,7 +85,7 @@ export default function Page() {
       lede="What to expect, what changes, and how to plan your first trip in the Smokies, Blue Ridge, or Shenandoah."
       heroImage={{
         src: HERO_IMAGE,
-        alt: 'Layered ridges of the Great Smoky Mountains under morning fog',
+        alt: 'Layered ridges of the Great Smoky Mountains under morning fog, prime fall foliage camping in Tennessee',
       }}
     >
       <QuickAnswer
@@ -144,7 +144,7 @@ export default function Page() {
         <div className="relative aspect-[16/9] rounded-2xl overflow-hidden bg-stone-100">
           <Image
             src="https://images.unsplash.com/photo-1632327894501-0c2bd6a2c8b7?w=1400&auto=format&fit=crop&q=80"
-            alt="Forested ridges fading into haze in the Great Smoky Mountains"
+            alt="Forested Appalachian ridges fading into blue haze, the namesake view of the Smokies and Blue Ridge"
             fill
             className="object-cover"
             sizes="(max-width: 768px) 100vw, 768px"

@@ -78,7 +78,7 @@ export default function Page() {
       lede="We&apos;ve watched a lot of first trips go sideways. Here are the 12 most common, most avoidable mistakes — and what to do instead."
       heroImage={{
         src: HERO_IMAGE,
-        alt: 'Campsite at dusk with a tent lit from inside — the classic late-arrival scramble',
+        alt: 'Tent lit from inside at dusk at a family campsite — the classic late-arrival scramble that ruins first trips',
       }}
     >
       <QuickAnswer

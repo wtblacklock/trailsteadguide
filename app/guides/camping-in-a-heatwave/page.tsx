@@ -85,7 +85,7 @@ export default function Page() {
         lede="Shade strategy, hydration math, and the line where you reschedule the trip."
         heroImage={{
           src: HERO_IMAGE,
-          alt: 'Sun-baked desert mountains rising under a bright summer sky',
+          alt: 'Sun-baked desert mountains under a bright summer sky during a heatwave camping trip',
         }}
       >
         <QuickAnswer
@@ -138,7 +138,7 @@ export default function Page() {
           <div className="relative aspect-[16/9] rounded-2xl overflow-hidden bg-stone-100">
             <Image
               src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1400&auto=format&fit=crop&q=80"
-              alt="A road winding between red rock canyon walls in dry desert heat"
+              alt="Empty highway winding between red sandstone canyon walls under harsh midday heatwave sun"
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 768px"

@@ -85,7 +85,7 @@ export default function Page() {
       lede="What to expect, what changes, and how to plan your first trip in Colorado."
       heroImage={{
         src: HERO_IMAGE,
-        alt: 'Rocky Mountain peaks and alpine meadow in Colorado',
+        alt: 'Snow-capped Rocky Mountain peaks above an alpine meadow on a high-elevation Colorado camping route',
       }}
     >
       <QuickAnswer
@@ -137,7 +137,7 @@ export default function Page() {
         <div className="relative aspect-[16/9] rounded-2xl overflow-hidden bg-stone-100">
           <Image
             src="https://images.unsplash.com/photo-1635822120211-406ab6ffb494?w=1400&auto=format&fit=crop&q=80"
-            alt="Trail through meadow with Rocky Mountain National Park peaks in the background"
+            alt="Hiking trail crossing a wildflower meadow with Rocky Mountain National Park peaks behind, summer in Colorado"
             fill
             className="object-cover"
             sizes="(max-width: 768px) 100vw, 768px"

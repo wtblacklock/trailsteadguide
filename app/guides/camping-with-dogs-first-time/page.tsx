@@ -85,7 +85,7 @@ export default function Page() {
         lede="The leash rules, the prep, and the real heat risk that nobody warns you about."
         heroImage={{
           src: HERO_IMAGE,
-          alt: 'A young beagle outdoors looking up at the camera with a wagging tail',
+          alt: 'A young beagle on a leash outside a tent at a dog-friendly campground, first-time camping with a dog',
         }}
       >
         <QuickAnswer
@@ -138,7 +138,7 @@ export default function Page() {
           <div className="relative aspect-[16/9] rounded-2xl overflow-hidden bg-stone-100">
             <Image
               src="https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?w=1400&auto=format&fit=crop&q=80"
-              alt="A wooded outdoor scene where a leashed dog can settle quietly at camp"
+              alt="Leashed dog settling quietly under a picnic table in a wooded campsite, dog-camping etiquette done right"
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 768px"

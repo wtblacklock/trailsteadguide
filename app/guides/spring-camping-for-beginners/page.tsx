@@ -83,7 +83,7 @@ export default function Page() {
       lede="What to expect, what to bring, and how to avoid common mistakes."
       heroImage={{
         src: HERO_IMAGE,
-        alt: 'A tent in a wet spring forest with mist and emerging green leaves',
+        alt: 'Family tent in a wet spring forest with mist and emerging green leaves, season-opener camping conditions',
       }}
     >
       <QuickAnswer

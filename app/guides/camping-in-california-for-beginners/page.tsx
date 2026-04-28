@@ -85,7 +85,7 @@ export default function Page() {
       lede="What to expect, what changes, and how to plan your first trip in California."
       heroImage={{
         src: HERO_IMAGE,
-        alt: 'Yosemite Valley from Tunnel View — granite walls, El Capitan and Half Dome',
+        alt: 'Yosemite Valley from Tunnel View, California — El Capitan and Half Dome rising over Sierra granite',
       }}
     >
       <QuickAnswer
@@ -135,7 +135,7 @@ export default function Page() {
         <div className="relative aspect-[16/9] rounded-2xl overflow-hidden bg-stone-100">
           <Image
             src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?w=1400&auto=format&fit=crop&q=80"
-            alt="Coastal redwood forest with massive trunks rising into mist"
+            alt="Coastal redwood forest in Northern California with massive old-growth trunks rising into morning mist"
             fill
             className="object-cover"
             sizes="(max-width: 768px) 100vw, 768px"
@@ -188,7 +188,7 @@ export default function Page() {
         <div className="relative aspect-[16/9] rounded-2xl overflow-hidden bg-stone-100">
           <Image
             src="https://images.unsplash.com/photo-1581293738298-451cd74b0b45?w=1400&auto=format&fit=crop&q=80"
-            alt="Joshua Tree at sunset in the Mojave Desert, California"
+            alt="Joshua tree at sunset in the Mojave Desert near Joshua Tree National Park, California"
             fill
             className="object-cover"
             sizes="(max-width: 768px) 100vw, 768px"
