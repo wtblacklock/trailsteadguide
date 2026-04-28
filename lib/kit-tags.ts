@@ -29,13 +29,18 @@ export const BUYER_TAG_ID = 0
  * subscribable_ids=<number>. 0 = no tag (subscriber still lands in form).
  */
 export const PRINTABLE_TAG_IDS: Record<string, number> = {
-  'northern-hemisphere-constellation-wheel': 0,
+  'northern-hemisphere-constellation-wheel': 19208433,
 }
 
 /**
  * Generic "downloaded a printable" tag — applied to every printable
  * email-gate capture regardless of which printable. Useful for a single
  * "lead-magnet downloader" automation.
- * 0 = disabled.
+ *
+ * Currently sharing the same ID as the per-printable tag above so a
+ * single Kit tag drives both: subscribers get tagged once on every
+ * printable download. Swap to a distinct generic-downloader tag id when
+ * the catalogue grows past one printable and per-printable segmentation
+ * matters. 0 = disabled.
  */
-export const PRINTABLE_GENERIC_TAG_ID = 0
+export const PRINTABLE_GENERIC_TAG_ID = 19208433
