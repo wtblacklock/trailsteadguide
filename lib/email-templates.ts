@@ -109,6 +109,81 @@ Trailstead Guide`
 }
 
 /**
+ * Auto-reply sent to a visitor who fills out the /contact form. Mirrors
+ * the cream-wrap layout used by the plan + printable emails so the brand
+ * stays consistent across every transactional touchpoint.
+ */
+export function getContactAutoReplyEmail(args: { name: string }): PlanEmail {
+  const firstName = args.name.trim().split(/\s+/)[0] || 'there'
+
+  const subject = 'We got your message — Trailstead Guide'
+
+  const html = `<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>${subject}</title>
+</head>
+<body style="margin:0; padding:0; background:#F5F3EE; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; color:#1c1917;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#F5F3EE;">
+    <tr>
+      <td align="center" style="padding:40px 20px;">
+        <table role="presentation" width="560" cellpadding="0" cellspacing="0" border="0" style="max-width:560px; background:#ffffff; border-radius:16px; overflow:hidden;">
+          <tr>
+            <td style="padding:40px 40px 24px 40px;">
+              <img src="${SITE_URL}/images/logo_masthead.png" alt="Trailstead Guide" width="160" style="display:block; height:auto; margin:0 0 28px 0; max-width:160px;">
+              <h1 style="margin:0 0 20px 0; font-family:Georgia,serif; font-size:28px; line-height:1.25; font-weight:600; color:#0c0a09;">
+                Hey ${firstName}, thanks for reaching out.
+              </h1>
+              <p style="margin:0 0 20px 0; font-size:16px; line-height:1.6; color:#44403c;">
+                Your message landed in our inbox. William will reply within 48 hours &mdash; usually sooner.
+              </p>
+              <p style="margin:0 0 28px 0; font-size:16px; line-height:1.6; color:#44403c;">
+                In the meantime, if you haven&rsquo;t built your camping plan yet, the quiz is the best place to start.
+              </p>
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="background:#1c1917; border-radius:8px;">
+                    <a href="${SITE_URL}/quiz" style="display:inline-block; padding:14px 28px; font-size:15px; font-weight:500; color:#ffffff; text-decoration:none;">
+                      Build your plan &rarr;
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:24px 40px 32px 40px; border-top:1px solid #e7e5e4;">
+              <p style="margin:0; font-size:13px; line-height:1.6; color:#a8a29e;">
+                Talk soon,<br>
+                William &mdash; Trailstead Guide
+              </p>
+            </td>
+          </tr>
+        </table>
+        <p style="margin:20px 0 0 0; font-size:12px; line-height:1.6; color:#a8a29e;">
+          You&rsquo;re getting this because you wrote to us via trailsteadguide.com/contact.
+        </p>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>`
+
+  const text = `Hey ${firstName}, thanks for reaching out.
+
+Your message landed in our inbox. William will reply within 48 hours — usually sooner.
+
+In the meantime, if you haven't built your camping plan yet, the quiz is the best place to start: ${SITE_URL}/quiz
+
+Talk soon,
+William — Trailstead Guide`
+
+  return { subject, html, text }
+}
+
+/**
  * Email template for a free printable download. Sent immediately by
  * /api/subscribe when the visitor submits the printable email-gate.
  * Body links straight to the print-optimized view so the user can hit
