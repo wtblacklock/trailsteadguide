@@ -11,7 +11,7 @@ const TITLE = 'Camping for Beginners'
 // SEO-optimized <title>; H1/headline keep TITLE.
 const META_TITLE = 'Camping for Beginners — First Trip Guide'
 const DESCRIPTION =
-  'A real, grown-up guide to your first camping trip. No gear worship, no backcountry talk — just what families actually need to know to get outside.'
+  'Camping for beginners: a real first-trip plan — what to skip, what to pack, and the 6-step first-night routine that ends with "can we do this again?"'
 const HERO_IMAGE = 'https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({

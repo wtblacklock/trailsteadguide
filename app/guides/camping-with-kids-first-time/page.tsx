@@ -11,7 +11,7 @@ const TITLE = 'Camping With Kids for the First Time'
 // SEO-optimized <title>; H1/headline keep TITLE.
 const META_TITLE = 'Camping With Kids — First-Time Guide'
 const DESCRIPTION =
-  'What changes when kids come along — sleep, food, activities, safety — and how to build a first family camping trip they actually enjoy.'
+  'Camping with kids for the first time: sleep, snacks, kid-paced activities, and a trip-one structure that ends with "can we do this again?"'
 const HERO_IMAGE = 'https://images.unsplash.com/photo-1674230316788-d9c8b92f0d63?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({

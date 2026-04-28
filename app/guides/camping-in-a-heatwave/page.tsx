@@ -14,7 +14,7 @@ const TITLE = 'Camping in a Heatwave'
 // SEO-optimized <title>; H1/headline keep TITLE.
 const META_TITLE = 'Camping in a Heatwave — Shade & Hydration'
 const DESCRIPTION =
-  'A practical guide to camping in extreme heat — shade siting, hydration math, electrolytes, the line where you reschedule, and the alternative timing that turns a hot trip into a comfortable one.'
+  'Camping in a heatwave: shade siting, hydration math, electrolytes, and the line where you reschedule. Avoid the heat-stroke mistakes first-timers make.'
 const HERO_IMAGE = 'https://images.unsplash.com/photo-1592190057402-2bf1ee02118d?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({

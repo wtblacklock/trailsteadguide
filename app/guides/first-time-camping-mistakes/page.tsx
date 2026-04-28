@@ -11,7 +11,7 @@ const TITLE = 'First-Time Camping Mistakes'
 // SEO-optimized <title>; H1/headline keep TITLE.
 const META_TITLE = '12 First-Time Camping Mistakes to Avoid'
 const DESCRIPTION =
-  'The 12 most avoidable mistakes that ruin first family camping trips — late arrivals, untested gear, over-packing, no kid plan — and how to dodge each.'
+  'The 12 most avoidable first-time camping mistakes — late arrivals, untested gear, no kid plan, gear bloat — and the simple fixes that prevent each one.'
 const HERO_IMAGE = 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({

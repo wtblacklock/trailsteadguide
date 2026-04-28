@@ -14,7 +14,7 @@ const TITLE = 'Camping in Colorado for Beginners'
 // SEO-optimized <title>; H1/headline keep TITLE.
 const META_TITLE = 'Colorado Camping for Beginners (Altitude)'
 const DESCRIPTION =
-  'A practical beginner guide to camping in Colorado — altitude, fast weather, afternoon thunderstorms, RMNP demand, wildlife, and the cold nights even in summer.'
+  'Camping in Colorado for beginners: altitude, afternoon storms, RMNP demand, and the cold July nights that catch first-timers off guard. Plan it right.'
 const HERO_IMAGE = 'https://images.unsplash.com/photo-1600542158543-1faed2d1c05d?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({

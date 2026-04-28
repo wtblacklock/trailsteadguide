@@ -15,6 +15,8 @@ export const GUIDE_CATEGORIES: GuideCategory[] = [
       'The starter set: how camping actually works, what to bring, and what to skip on your first trip.',
     ctaLabel: 'Learn Basics',
     metaTitle: 'Camping Basics for Beginners — Start Here',
+    metaDescription:
+      'Camping basics for beginners: how it works, what to pack, what to skip, and the order to book and arrive — the foundation for a confident first trip.',
   },
   {
     id: 'scenario',
@@ -26,6 +28,8 @@ export const GUIDE_CATEGORIES: GuideCategory[] = [
       'When the situation changes — kids in tow, a rainy weekend, a tricky first night — these guides walk you through it.',
     ctaLabel: 'Explore Scenarios',
     metaTitle: 'Camping Scenarios — Kids, Rain, Dogs',
+    metaDescription:
+      'Camping scenario guides: kids in tow, a rainy weekend, dogs, heatwaves, and the bail-versus-stay call — the hard cases first-timers actually face.',
   },
   {
     id: 'seasonal',
@@ -37,6 +41,8 @@ export const GUIDE_CATEGORIES: GuideCategory[] = [
       'Spring, summer, fall, winter — what changes, what to pack, and how to pick the right weekend.',
     ctaLabel: 'Explore Seasonal Camping',
     metaTitle: 'Seasonal Camping Guides — Spring–Winter',
+    metaDescription:
+      'Seasonal camping guides for beginners: spring mud, summer heat, fall cold snaps, winter cabins. What to pack each season, and the weekends to skip.',
   },
   {
     id: 'location',
@@ -48,6 +54,8 @@ export const GUIDE_CATEGORIES: GuideCategory[] = [
       'State parks, national parks, regional differences, and the campgrounds worth booking.',
     ctaLabel: 'Explore Locations',
     metaTitle: 'Camping by State + Region for Beginners',
+    metaDescription:
+      'Camping by region for beginners: Texas, California, Colorado, Florida, the PNW, and 4 more — what changes by climate and the parks worth booking first.',
   },
 ]
 

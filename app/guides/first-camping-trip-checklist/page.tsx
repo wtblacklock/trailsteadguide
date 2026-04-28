@@ -11,7 +11,7 @@ const TITLE = 'First Camping Trip Checklist'
 // SEO-optimized <title>; H1/headline keep TITLE.
 const META_TITLE = 'First Camping Trip Checklist — Real List'
 const DESCRIPTION =
-  'The one-page checklist for your first family camping trip. Everything to book, pack, and plan — shelter, kitchen, safety, and kid essentials.'
+  'First camping trip checklist: a one-page list covering shelter, kitchen, safety, and kid essentials. No 200-item bloat — only what you’ll use.'
 const HERO_IMAGE = 'https://images.unsplash.com/photo-1504851149312-7a075b496cc7?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({

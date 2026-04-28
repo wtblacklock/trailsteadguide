@@ -11,7 +11,7 @@ const TITLE = 'Car Camping Beginner Guide'
 // SEO-optimized <title>; H1/headline keep TITLE.
 const META_TITLE = 'Car Camping for Beginners (Setup Guide)'
 const DESCRIPTION =
-  'Car camping is the easiest way to start. Here is everything that makes it different — and better — than other kinds of camping for first-time families.'
+  'Car camping for beginners: park next to your tent, no backcountry, no bushcraft. The simplest way to start — exact gear, sites, and a first-night plan.'
 const HERO_IMAGE = 'https://images.unsplash.com/photo-1519443933981-c665c4a62ad4?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({

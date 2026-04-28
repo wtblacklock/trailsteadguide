@@ -14,7 +14,7 @@ const TITLE = 'Rainy Camping Trips'
 // SEO-optimized <title>; H1/headline keep TITLE.
 const META_TITLE = 'Camping in the Rain — Tarp & Bail Guide'
 const DESCRIPTION =
-  'A practical guide to camping in the rain — pre-trip prep, tarp and rainfly setup, condensation management, drying out a wet camp, and how to know when to call it and head home.'
+  'Camping in the rain: pre-trip prep, tarp and rainfly setup, condensation control, drying out a wet camp, and how to know when to bail without regret.'
 const HERO_IMAGE = 'https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({

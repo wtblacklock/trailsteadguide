@@ -14,7 +14,7 @@ const TITLE = 'Camping When the Weather Turns'
 // SEO-optimized <title>; H1/headline keep TITLE.
 const META_TITLE = 'Bad Weather Camping — Lightning & Bail'
 const DESCRIPTION =
-  'A practical guide for the moment a forecast shifts on you mid-trip — lightning rules, the bail decision, what to do if you are stuck in place, the gear that buys you safety, and how to call it without second-guessing.'
+  'Camping when the weather turns: the lightning rule, the bail decision, what to do if you’re stuck, and how to call a trip without second-guessing.'
 const HERO_IMAGE = 'https://images.unsplash.com/photo-1605727216801-e27ce1d0cc28?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({

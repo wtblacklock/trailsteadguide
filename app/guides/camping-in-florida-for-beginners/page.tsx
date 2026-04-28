@@ -14,7 +14,7 @@ const TITLE = 'Camping in Florida for Beginners'
 // SEO-optimized <title>; H1/headline keep TITLE.
 const META_TITLE = 'Florida Camping for Beginners (Bug Tips)'
 const DESCRIPTION =
-  'A practical beginner guide to camping in Florida — heat and humidity, intense bugs, swamp vs. spring vs. coastal sites, gators, and hurricane-season planning.'
+  'Camping in Florida for beginners: why winter is the season, how to manage gators and the bug load, and where to find spring-fed swimming sites.'
 const HERO_IMAGE = 'https://images.unsplash.com/photo-1615941634977-e895245bafa7?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({

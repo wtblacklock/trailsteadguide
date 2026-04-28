@@ -14,7 +14,7 @@ const TITLE = 'Camping in the Desert Southwest for Beginners'
 // SEO-optimized <title>; H1/headline keep TITLE.
 const META_TITLE = 'Desert Southwest Camping for Beginners'
 const DESCRIPTION =
-  'A practical beginner guide to camping in the Desert Southwest — Arizona, Utah, and New Mexico — extreme temperature swings, water management, monsoons, and the headline national parks.'
+  'Camping in the Desert Southwest for beginners: 30°F day-night swings, monsoon flash floods, water-per-day math, and the iconic AZ/UT/NM parks to book.'
 const HERO_IMAGE = 'https://images.unsplash.com/photo-1524274165673-750e79bf7e2e?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({

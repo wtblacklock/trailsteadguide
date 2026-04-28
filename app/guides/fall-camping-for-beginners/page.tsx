@@ -12,7 +12,7 @@ const TITLE = 'Fall Camping for Beginners'
 // SEO-optimized <title>; H1/headline keep TITLE.
 const META_TITLE = 'Fall Camping for Beginners — Cold Nights'
 const DESCRIPTION =
-  'A practical fall camping guide for first-timers — what to expect from cold nights, condensation, early dark, and fire bans, plus a starter gear setup that handles the season-end weather.'
+  'Fall camping for beginners: cold nights, condensation, early-dark schedules, and the gear that handles 30°F mornings without overpacking for winter.'
 const HERO_IMAGE = 'https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({

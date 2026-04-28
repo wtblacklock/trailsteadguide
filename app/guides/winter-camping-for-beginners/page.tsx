@@ -12,7 +12,7 @@ const TITLE = 'Winter Camping for Beginners'
 // SEO-optimized <title>; H1/headline keep TITLE.
 const META_TITLE = 'Winter Camping for Beginners (Cabin Path)'
 const DESCRIPTION =
-  'A practical winter camping guide for first-timers — what changes below freezing, why most beginners should start in a heated cabin, and the gear and water management that keep a tent trip safe.'
+  'Winter camping for beginners: when tenting works, when it doesn’t, and the cabin-first path that keeps a first below-freezing trip safe and warm.'
 const HERO_IMAGE = 'https://images.unsplash.com/photo-1551649001-7a2482d98d05?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({

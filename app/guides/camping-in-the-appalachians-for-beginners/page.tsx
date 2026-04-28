@@ -14,7 +14,7 @@ const TITLE = 'Camping in the Appalachians for Beginners'
 // SEO-optimized <title>; H1/headline keep TITLE.
 const META_TITLE = 'Appalachian Camping for Beginners (Bears)'
 const DESCRIPTION =
-  'A practical beginner guide to camping in the Appalachians — North Carolina, Tennessee, Virginia — Smokies and Blue Ridge crowds, fall foliage, ticks, black bears, and humid summers.'
+  'Camping in the Appalachians for beginners: Smokies and Blue Ridge crowds, fall foliage timing, ticks, and the densest black-bear country in the U.S.'
 const HERO_IMAGE = 'https://images.unsplash.com/photo-1599551528722-6b6d968512a2?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({

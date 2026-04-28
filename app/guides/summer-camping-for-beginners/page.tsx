@@ -12,7 +12,7 @@ const TITLE = 'Summer Camping for Beginners'
 // SEO-optimized <title>; H1/headline keep TITLE.
 const META_TITLE = 'Summer Camping for Beginners (Heat, Bugs)'
 const DESCRIPTION =
-  'A practical summer camping guide for first-timers — what to expect from the weather, what to pack, the mistakes that wreck first trips, and a starter gear setup that actually works.'
+  'Summer camping for beginners: heat, bugs, and crowds — what to pack, when to book, and the starter gear setup that actually works in July humidity.'
 const HERO_IMAGE = 'https://images.unsplash.com/photo-1487730116645-74489c95b41b?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({

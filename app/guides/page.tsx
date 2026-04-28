@@ -11,7 +11,7 @@ import type { GuideCategory } from '@/lib/guides'
 const GUIDES_TITLE = 'Camping Guides'
 const GUIDES_META_TITLE = 'Camping Guides for Beginners — All Topics'
 const GUIDES_DESCRIPTION =
-  'A structured library of beginner camping guides — basics, scenarios, seasons, and locations — that funnel into a personalized trip plan.'
+  'Camping guides for beginners: 24 step-by-step articles on basics, scenarios, seasons, and locations — each routing into a personalized trip plan.'
 
 export const metadata = pageMetadata({
   title: GUIDES_META_TITLE,

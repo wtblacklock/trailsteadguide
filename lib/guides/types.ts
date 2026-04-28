@@ -35,6 +35,12 @@ export type GuideCategory = {
    */
   metaTitle: string
   /**
+   * SEO-optimized meta description for the category hub page (140–155
+   * chars). Separate from `heroSubhead` so the visible page lede can stay
+   * conversational while the SERP snippet is keyword-tight.
+   */
+  metaDescription: string
+  /**
    * True when no guides are authored for this category yet. The hub and
    * the category page render a "we're building this out" state and
    * funnel into the quiz instead of a guide list.

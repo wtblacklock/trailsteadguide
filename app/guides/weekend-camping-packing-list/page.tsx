@@ -11,7 +11,7 @@ const TITLE = 'Weekend Camping Packing List'
 // SEO-optimized <title>; H1/headline keep TITLE.
 const META_TITLE = 'Weekend Camping Packing List (2-Night)'
 const DESCRIPTION =
-  'Exactly what to bring for 2 nights of family car camping — grouped by shelter, kitchen, clothing, and safety. Nothing on here you will not actually use.'
+  'Weekend camping packing list: 2 nights for a family car-camping trip, grouped by shelter, kitchen, clothing, and safety. Nothing here you won’t use.'
 const HERO_IMAGE = 'https://images.unsplash.com/photo-1455763916899-e8b50eca9967?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({

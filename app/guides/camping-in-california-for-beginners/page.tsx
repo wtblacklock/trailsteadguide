@@ -14,7 +14,7 @@ const TITLE = 'Camping in California for Beginners'
 // SEO-optimized <title>; H1/headline keep TITLE.
 const META_TITLE = 'California Camping (4 Climates Guide)'
 const DESCRIPTION =
-  'A practical beginner guide to camping in California — coast vs. mountains vs. desert, fire bans, bear country, and how to actually get a reservation at a popular state park.'
+  'Camping in California for beginners: 4 climates (coast, Sierra, desert, redwoods), bear rules, fire bans, and how to actually score a state-park site.'
 const HERO_IMAGE = 'https://images.unsplash.com/photo-1498429089284-41f8cf3ffd39?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({

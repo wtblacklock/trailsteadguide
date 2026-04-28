@@ -27,7 +27,7 @@ export async function generateMetadata({
   if (!category) return {}
   return pageMetadata({
     title: category.metaTitle,
-    description: category.heroSubhead,
+    description: category.metaDescription,
     path: `/guides/${category.slug}`,
   })
 }

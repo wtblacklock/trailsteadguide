@@ -14,7 +14,7 @@ const TITLE = 'Camping in the Pacific Northwest for Beginners'
 // SEO-optimized <title>; H1/headline keep TITLE.
 const META_TITLE = 'Pacific Northwest Camping for Beginners'
 const DESCRIPTION =
-  'A practical beginner guide to camping in the Pacific Northwest — wet weather, dense forest, cool nights even in summer, Olympic and Mt Rainier crowds, and how to actually stay dry.'
+  'Camping in the Pacific Northwest for beginners: the dry July-September window, dense-forest sites, cool nights, and the rain-management plan that works.'
 const HERO_IMAGE = 'https://images.unsplash.com/photo-1627844718626-4c6b963baac0?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({

@@ -14,7 +14,7 @@ const TITLE = 'Camping With Dogs for the First Time'
 // SEO-optimized <title>; H1/headline keep TITLE.
 const META_TITLE = 'Camping With Dogs — First-Time Guide'
 const DESCRIPTION =
-  'A practical guide to your first camping trip with a dog — leash rules, water and food, tent etiquette, heat and cold risk, training that pays off before you go, and the campgrounds that actually welcome dogs.'
+  'Camping with dogs for the first time: leash rules, heat risk, tent etiquette, the pre-trip training that pays off, and dog-welcoming campgrounds to book.'
 const HERO_IMAGE = 'https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({

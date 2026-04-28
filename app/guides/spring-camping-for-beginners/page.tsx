@@ -12,7 +12,7 @@ const TITLE = 'Spring Camping for Beginners'
 // SEO-optimized <title>; H1/headline keep TITLE.
 const META_TITLE = 'Spring Camping for Beginners (Mud, Bugs)'
 const DESCRIPTION =
-  'A practical spring camping guide for first-timers — what to expect from the weather, what to pack for swing temperatures and mud, and the mistakes that wreck the season-opener.'
+  'Spring camping for beginners: mud, ticks, swing temperatures, and the season-opener mistakes that wreck a first trip — plus a packing list built for it.'
 const HERO_IMAGE = 'https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({
