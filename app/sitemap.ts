@@ -10,6 +10,7 @@ import { ACTIVITIES } from '@/lib/activities/data'
 import { SKILLS } from '@/lib/skills/data'
 import { getCategoryById } from '@/lib/skills/categories'
 import { GUIDES, GUIDE_CATEGORIES } from '@/lib/guides'
+import { PRINTABLES } from '@/lib/printables'
 
 const BASE_URL = 'https://www.trailsteadguide.com'
 
@@ -86,6 +87,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/trip-pack/first-night-camp`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/trip-pack/first-weekend-camp`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/trip-pack/easy-family-basecamp`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.8 },
+
+    // Printables — free, email-gated analog reference cards. Index +
+    // landing page per printable. Print-only views are noindex'd.
+    { url: `${BASE_URL}/printables`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.7 },
+    ...PRINTABLES.map((p) => ({
+      url: `${BASE_URL}/printables/${p.slug}`,
+      lastModified: FRESH,
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
+    })),
 
     // Funnel landings (quiz + checklist index; /checklist/result is noindex)
     { url: `${BASE_URL}/quiz`, lastModified: RECENT, changeFrequency: 'monthly', priority: 0.6 },

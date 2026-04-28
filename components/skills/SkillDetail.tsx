@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import type { Skill, SkillCategory } from '@/lib/skills/types'
 import { AUTHOR_NAME, AUTHOR_IMAGE } from '@/lib/seo'
+import { getPrintableBySlug } from '@/lib/printables'
 import DifficultyBadge from './DifficultyBadge'
 import RelatedGearBlock from './RelatedGearBlock'
 import SafetyBlock from './SafetyBlock'
@@ -186,9 +187,50 @@ export default function SkillDetail({ skill, category, dateModified }: Props) {
           <RelatedGearBlock items={skill.relatedGear} />
         )}
 
+        {skill.relatedPrintableSlug && <PrintableCompanion slug={skill.relatedPrintableSlug} />}
+
         <PlanCta />
       </div>
     </article>
+  )
+}
+
+function PrintableCompanion({ slug }: { slug: string }) {
+  const printable = getPrintableBySlug(slug)
+  if (!printable) return null
+  return (
+    <section className="rounded-xl ring-1 ring-stone-200 p-6 md:p-8 bg-amber-50/40">
+      <p className="text-xs font-semibold tracking-[0.18em] uppercase text-stone-500 mb-3">
+        Analog companion
+      </p>
+      <h2 className="font-serif text-xl md:text-2xl text-stone-900 tracking-tight mb-2">
+        {printable.title}
+      </h2>
+      <p className="text-stone-600 text-sm md:text-base mb-4 leading-relaxed">
+        {printable.description}
+      </p>
+      <Link
+        href={`/printables/${printable.slug}`}
+        className="inline-flex items-center gap-2 text-sm font-semibold text-stone-900 hover:text-stone-600 transition-colors"
+      >
+        Get the printable
+        <svg
+          width="14"
+          height="14"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          aria-hidden="true"
+          className="transition-transform duration-200 group-hover:translate-x-0.5"
+        >
+          <path d="M5 12h14" />
+          <path d="M13 5l7 7-7 7" />
+        </svg>
+      </Link>
+    </section>
   )
 }
 

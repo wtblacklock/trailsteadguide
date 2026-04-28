@@ -13,6 +13,10 @@
 import { GUIDES } from '@/lib/guides/data'
 import { PLAN_TEMPLATES } from '@/lib/plan-templates'
 import { PLAN_CONTENT } from '@/lib/plan-content'
+import { SKILLS } from '@/lib/skills/data'
+import { getCategoryById } from '@/lib/skills/categories'
+import { ACTIVITIES } from '@/lib/activities/data'
+import { PRINTABLES } from '@/lib/printables'
 import { SITE_URL } from '@/lib/seo'
 import type { PlanSlug } from '@/types'
 
@@ -89,11 +93,37 @@ function buildGuideSection(): string {
   return `## Guides\n\n${lines.join('\n')}\n`
 }
 
+function buildSkillSection(): string {
+  const lines = SKILLS.map((s) => {
+    const cat = getCategoryById(s.category)
+    return `- [${s.title}](${SITE_URL}/skills/${cat.slug}/${s.slug}): ${s.tagline}`
+  })
+  return `## Camp skills (how-tos)\n\n${lines.join('\n')}\n`
+}
+
+function buildActivitySection(): string {
+  const lines = ACTIVITIES.map(
+    (a) => `- [${a.title}](${SITE_URL}/activities/${a.slug}): ${a.tagline}`,
+  )
+  return `## Camp activities (kid-friendly)\n\n${lines.join('\n')}\n`
+}
+
+function buildPrintableSection(): string {
+  if (PRINTABLES.length === 0) return ''
+  const lines = PRINTABLES.map(
+    (p) => `- [${p.title}](${SITE_URL}/printables/${p.slug}): ${p.description}`,
+  )
+  return `## Printables (free with email signup)\n\n${lines.join('\n')}\n`
+}
+
 const BODY = [
   HEADER,
   buildPlanSection(),
   buildTripPackSection(),
   buildGuideSection(),
+  buildSkillSection(),
+  buildActivitySection(),
+  buildPrintableSection(),
   FOOTER,
 ].join('\n')
 

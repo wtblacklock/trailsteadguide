@@ -76,6 +76,13 @@ export type Skill = {
   relatedGear?: RelatedGearItem[]
   videoEmbed?: SkillVideoEmbed
   illustration?: SkillIllustration
+  /**
+   * Optional printable companion — the slug of an entry in the
+   * /printables catalogue. When set, the skill detail page renders a
+   * "Pair with" block linking the visitor to the analog version of the
+   * skill (a one-page printable they can carry).
+   */
+  relatedPrintableSlug?: string
 }
 
 export type SkillCategory = {

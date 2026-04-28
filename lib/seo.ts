@@ -366,3 +366,82 @@ export function collectionPageGraph(input: {
     },
   }
 }
+
+/**
+ * Schema for an annual recurring astronomical event (meteor shower, eclipse,
+ * etc.) anchored to a specific year's peak. Powers AI Overview surfaces for
+ * "when is the next [shower]" queries.
+ */
+export function eventGraph(input: {
+  name: string
+  description: string
+  startDate: string // ISO 8601 — typically the peak night
+  endDate?: string
+  url: string
+  image?: string
+}) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Event',
+    name: input.name,
+    description: input.description,
+    startDate: input.startDate,
+    ...(input.endDate && { endDate: input.endDate }),
+    eventStatus: 'https://schema.org/EventScheduled',
+    eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+    location: {
+      '@type': 'VirtualLocation',
+      name: 'Observable from the Northern Hemisphere',
+      url: input.url,
+    },
+    organizer: { '@id': `${SITE_URL}/#organization` },
+    ...(input.image && { image: input.image }),
+  }
+}
+
+/**
+ * Schema for a free downloadable printable (star chart, knot card, etc.).
+ * Emits CreativeWork + a $0 Offer so the asset is discoverable as a free
+ * resource in SERP. The associated landing page handles email capture before
+ * issuing the actual file.
+ */
+export function printableCreativeWorkGraph(input: {
+  slug: string // path like "/printables/northern-hemisphere-constellation-wheel"
+  name: string
+  description: string
+  image?: string
+  fileFormat?: string // e.g. "application/pdf" or "text/html"
+  datePublished?: string
+  breadcrumbs: BreadcrumbItem[]
+}) {
+  const url = `${SITE_URL}${input.slug}`
+  return {
+    '@context': 'https://schema.org',
+    '@graph': [
+      personNode,
+      {
+        '@type': 'CreativeWork',
+        '@id': `${url}#creativework`,
+        name: input.name,
+        description: input.description,
+        url,
+        ...(input.image && { image: input.image }),
+        ...(input.fileFormat && { fileFormat: input.fileFormat }),
+        author: { '@id': `${SITE_URL}/#author` },
+        publisher: { '@id': `${SITE_URL}/#organization` },
+        datePublished: input.datePublished ?? '2026-04-27',
+        license: 'https://creativecommons.org/licenses/by-nc/4.0/',
+        isAccessibleForFree: true,
+        offers: {
+          '@type': 'Offer',
+          price: '0.00',
+          priceCurrency: 'USD',
+          availability: 'https://schema.org/InStock',
+          url,
+          seller: { '@id': `${SITE_URL}/#organization` },
+        },
+      },
+      breadcrumbList(input.breadcrumbs),
+    ],
+  }
+}

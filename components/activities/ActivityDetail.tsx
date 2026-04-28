@@ -1,7 +1,15 @@
 import Link from 'next/link'
 import type { Activity } from '@/lib/activities/types'
 import { getPlanTemplate } from '@/lib/plan-templates'
+import { getPrintableBySlug } from '@/lib/printables'
 import ActivityBadge from './ActivityBadge'
+
+// Manual activity → printable pairings. Adding a slug here surfaces the
+// printable card on that activity's detail page. Keep it slim — these are
+// editorial pairings, not generic recommendations.
+const ACTIVITY_PRINTABLE_PAIRINGS: Record<string, string> = {
+  'stargazing-constellation-hunt': 'northern-hemisphere-constellation-wheel',
+}
 import {
   AGE_LABELS,
   CATEGORY_LABELS,
@@ -118,11 +126,39 @@ export default function ActivityDetail({ activity }: Props) {
           </Section>
         )}
 
+        {ACTIVITY_PRINTABLE_PAIRINGS[activity.slug] && (
+          <PrintableCompanion slug={ACTIVITY_PRINTABLE_PAIRINGS[activity.slug]} />
+        )}
+
         {activity.recommendedFor && activity.recommendedFor.length > 0 && (
           <RecommendedPlans planSlugs={activity.recommendedFor} />
         )}
       </div>
     </article>
+  )
+}
+
+function PrintableCompanion({ slug }: { slug: string }) {
+  const printable = getPrintableBySlug(slug)
+  if (!printable) return null
+  return (
+    <section className="rounded-xl ring-1 ring-stone-200 p-6 md:p-8 bg-amber-50/40 mb-8">
+      <p className="text-xs font-semibold tracking-[0.18em] uppercase text-stone-500 mb-3">
+        Analog companion
+      </p>
+      <h2 className="font-serif text-xl md:text-2xl text-stone-900 tracking-tight mb-2">
+        {printable.title}
+      </h2>
+      <p className="text-stone-600 text-sm md:text-base mb-4 leading-relaxed">
+        {printable.description}
+      </p>
+      <Link
+        href={`/printables/${printable.slug}`}
+        className="inline-flex items-center gap-2 text-sm font-semibold text-stone-900 hover:text-stone-600 transition-colors"
+      >
+        Get the printable →
+      </Link>
+    </section>
   )
 }
 

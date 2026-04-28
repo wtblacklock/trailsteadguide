@@ -18,3 +18,24 @@ export const QUIZ_STARTED_TAG_ID = 0
 // segment buyers from quiz-only subscribers in Kit. 0 = disabled (set the
 // real tag id from your Kit dashboard to enable).
 export const BUYER_TAG_ID = 0
+
+/**
+ * Kit tag IDs per printable slug. Free-printable email-gate captures hit
+ * `/api/subscribe` with `source: 'printable'` and the matching slug; the
+ * subscriber lands in the Kit form and gets the printable-specific tag,
+ * which can be used to drive a Kit automation that emails the download.
+ *
+ * Tag IDs come from the Kit UI — click a tag, check the URL for
+ * subscribable_ids=<number>. 0 = no tag (subscriber still lands in form).
+ */
+export const PRINTABLE_TAG_IDS: Record<string, number> = {
+  'northern-hemisphere-constellation-wheel': 0,
+}
+
+/**
+ * Generic "downloaded a printable" tag — applied to every printable
+ * email-gate capture regardless of which printable. Useful for a single
+ * "lead-magnet downloader" automation.
+ * 0 = disabled.
+ */
+export const PRINTABLE_GENERIC_TAG_ID = 0

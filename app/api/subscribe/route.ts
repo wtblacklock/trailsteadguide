@@ -1,12 +1,18 @@
 import { NextResponse } from 'next/server'
 import { Resend } from 'resend'
-import { PLAN_TAG_IDS, QUIZ_STARTED_TAG_ID } from '@/lib/kit-tags'
+import {
+  PLAN_TAG_IDS,
+  PRINTABLE_TAG_IDS,
+  PRINTABLE_GENERIC_TAG_ID,
+  QUIZ_STARTED_TAG_ID,
+} from '@/lib/kit-tags'
 import { getPlanEmail } from '@/lib/email-templates'
 
 type SubscribeBody = {
   email: string
   planSlug?: string
-  source?: 'mid-quiz' | 'post-plan' | 'homepage'
+  printableSlug?: string
+  source?: 'mid-quiz' | 'post-plan' | 'homepage' | 'printable'
 }
 
 export async function POST(req: Request) {
@@ -29,7 +35,7 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: 'Invalid body' }, { status: 400 })
   }
 
-  const { email, planSlug, source } = body
+  const { email, planSlug, printableSlug, source } = body
   if (!email || !/^\S+@\S+\.\S+$/.test(email)) {
     return NextResponse.json({ error: 'Invalid email' }, { status: 400 })
   }
@@ -41,6 +47,14 @@ export async function POST(req: Request) {
   }
   if (source === 'mid-quiz' && QUIZ_STARTED_TAG_ID) {
     tagIds.push(QUIZ_STARTED_TAG_ID)
+  }
+  if (source === 'printable') {
+    if (printableSlug && PRINTABLE_TAG_IDS[printableSlug]) {
+      tagIds.push(PRINTABLE_TAG_IDS[printableSlug])
+    }
+    if (PRINTABLE_GENERIC_TAG_ID) {
+      tagIds.push(PRINTABLE_GENERIC_TAG_ID)
+    }
   }
 
   // 1. Subscribe to Kit (store for newsletters / tagging)
