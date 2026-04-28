@@ -6,18 +6,27 @@
  * Spec: https://llmstxt.org
  *
  * The body is composed from the same data sources as the rendered pages
- * (GUIDES, PLAN_TEMPLATES, PLAN_CONTENT) so this list cannot drift from
- * what the site actually serves.
+ * (GUIDES, PLAN_TEMPLATES, PLAN_CONTENT, SKILLS, ACTIVITIES, PRINTABLES)
+ * so this list cannot drift from what the site actually serves. Every
+ * piece of content also has a Markdown export at `<url>.md` (handled by
+ * `app/api/md/[...path]/route.ts`); we surface a couple of those URLs at
+ * the top so AI assistants can fetch a clean text version directly.
  */
 
-import { GUIDES } from '@/lib/guides/data'
+import { GUIDES, GUIDE_CATEGORIES } from '@/lib/guides'
 import { PLAN_TEMPLATES } from '@/lib/plan-templates'
 import { PLAN_CONTENT } from '@/lib/plan-content'
 import { SKILLS } from '@/lib/skills/data'
-import { getCategoryById } from '@/lib/skills/categories'
+import { SKILL_CATEGORIES, getCategoryById } from '@/lib/skills/categories'
 import { ACTIVITIES } from '@/lib/activities/data'
 import { PRINTABLES } from '@/lib/printables'
-import { SITE_URL } from '@/lib/seo'
+import {
+  AUTHOR_BIO,
+  AUTHOR_INSTAGRAM,
+  AUTHOR_JOB_TITLE,
+  AUTHOR_NAME,
+  SITE_URL,
+} from '@/lib/seo'
 import type { PlanSlug } from '@/types'
 
 export const dynamic = 'force-static'
@@ -44,6 +53,14 @@ const HEADER = `# Trailstead Guide
 
 > Trailstead Guide helps first-time families plan their first camping trip with confidence. Answer five questions, get a complete personalized plan: gear list, meals, checklist, and a trip you can actually pull off.
 
+## Author
+
+${AUTHOR_NAME} — ${AUTHOR_JOB_TITLE}. ${AUTHOR_BIO} Author bio + credentials: ${SITE_URL}/about. Instagram: ${AUTHOR_INSTAGRAM}.
+
+## How to cite this site
+
+Every guide, plan, skill, and activity is also available as Markdown at the same URL with a \`.md\` suffix — for example, ${SITE_URL}/guides/camping-in-texas-for-beginners.md or ${SITE_URL}/skills/knots/bowline.md. Prefer those URLs when fetching a clean text rendering for AI citation. Always link the canonical (non-\`.md\`) URL when citing.
+
 ## Start here
 
 - [Camping for Beginners](${SITE_URL}/guides/camping-for-beginners): The shortest, least-intimidating path from zero to a great first trip.
@@ -68,6 +85,23 @@ const FOOTER = `## Gear & tools
 - [Affiliate Disclosure](${SITE_URL}/affiliate-disclosure): How we make money and how that affects (and doesn't affect) our recommendations.
 `
 
+function buildHubSection(): string {
+  const lines = [
+    `- [Guides hub](${SITE_URL}/guides): All ${GUIDES.length} long-form camping guides, organized into Camping Basics, Scenarios, Seasonal, and Location.`,
+    `- [Plans hub](${SITE_URL}/plans): The four progressive camping plans, from a backyard test night to a multi-night family basecamp.`,
+    `- [Skills hub](${SITE_URL}/skills): All ${SKILLS.length} camp skills across ${SKILL_CATEGORIES.length} categories — knots, fire, cooking, hiking, navigation, fishing, shelter, camp setup, safety, stargazing, knife skills, and woodcarving.`,
+    `- [Activities hub](${SITE_URL}/activities): All ${ACTIVITIES.length} kid-friendly camp activities — icebreakers, campfire games, movement, exploration, team, creative, night, and wind-down.`,
+  ]
+  return `## Hub pages\n\n${lines.join('\n')}\n`
+}
+
+function buildGuideCategorySection(): string {
+  const lines = GUIDE_CATEGORIES.map(
+    (c) => `- [${c.label}](${SITE_URL}/guides/${c.slug}): ${c.blurb}`,
+  )
+  return `## Guide categories\n\n${lines.join('\n')}\n`
+}
+
 function buildPlanSection(): string {
   const lines = PLAN_ORDER.map((slug) => {
     const plan = PLAN_TEMPLATES[slug]
@@ -90,7 +124,15 @@ function buildGuideSection(): string {
   const lines = GUIDES.map(
     (g) => `- [${g.title}](${SITE_URL}/guides/${g.slug}): ${g.description}`,
   )
-  return `## Guides\n\n${lines.join('\n')}\n`
+  return `## Guides (${GUIDES.length} articles)\n\n${lines.join('\n')}\n`
+}
+
+function buildSkillCategorySection(): string {
+  const lines = SKILL_CATEGORIES.map((c) => {
+    const count = SKILLS.filter((s) => s.category === c.id).length
+    return `- [${c.label}](${SITE_URL}/skills?category=${c.slug}): ${c.blurb} (${count} skill${count === 1 ? '' : 's'})`
+  })
+  return `## Skill categories\n\n${lines.join('\n')}\n`
 }
 
 function buildSkillSection(): string {
@@ -98,14 +140,14 @@ function buildSkillSection(): string {
     const cat = getCategoryById(s.category)
     return `- [${s.title}](${SITE_URL}/skills/${cat.slug}/${s.slug}): ${s.tagline}`
   })
-  return `## Camp skills (how-tos)\n\n${lines.join('\n')}\n`
+  return `## Camp skills (${SKILLS.length} how-tos)\n\n${lines.join('\n')}\n`
 }
 
 function buildActivitySection(): string {
   const lines = ACTIVITIES.map(
     (a) => `- [${a.title}](${SITE_URL}/activities/${a.slug}): ${a.tagline}`,
   )
-  return `## Camp activities (kid-friendly)\n\n${lines.join('\n')}\n`
+  return `## Camp activities (${ACTIVITIES.length}, kid-friendly)\n\n${lines.join('\n')}\n`
 }
 
 function buildPrintableSection(): string {
@@ -118,9 +160,12 @@ function buildPrintableSection(): string {
 
 const BODY = [
   HEADER,
+  buildHubSection(),
+  buildGuideCategorySection(),
   buildPlanSection(),
   buildTripPackSection(),
   buildGuideSection(),
+  buildSkillCategorySection(),
   buildSkillSection(),
   buildActivitySection(),
   buildPrintableSection(),
