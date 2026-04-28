@@ -24,8 +24,9 @@ import { buildGearSystems, buildChipSummary } from '@/lib/personalization/gear-s
 import { resolveSystemProducts } from '@/lib/personalization/product-map'
 import { generateIntro } from '@/lib/personalization/intro'
 import JsonLd from '@/components/seo/JsonLd'
-import { pageMetadata, articleGraph, howToGraph, SITE_URL } from '@/lib/seo'
+import { pageMetadata, articleGraph, howToGraph, planProductGraph, SITE_URL } from '@/lib/seo'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
+import { PRICE_DISPLAY } from '@/lib/stripe'
 import type { PlanSlug } from '@/types'
 
 type Params = { planId: string }
@@ -142,6 +143,19 @@ export default async function PlanPage({
           title: meta.title,
           description: meta.description,
           image: plan.heroImage,
+          breadcrumbs: [
+            { name: 'Home', url: `${SITE_URL}/` },
+            { name: meta.title, url: `${SITE_URL}${path}` },
+          ],
+        })}
+      />
+      <JsonLd
+        data={planProductGraph({
+          planSlug: slug,
+          name: plan.title,
+          description: plan.tagline,
+          image: plan.heroImage,
+          priceUsd: PRICE_DISPLAY.basic / 100,
           breadcrumbs: [
             { name: 'Home', url: `${SITE_URL}/` },
             { name: meta.title, url: `${SITE_URL}${path}` },

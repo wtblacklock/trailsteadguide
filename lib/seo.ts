@@ -249,6 +249,48 @@ function inferBrand(name: string): string {
 }
 
 /**
+ * Product + single Offer for a plan results page. Describes the paid Trip
+ * Pack derived from the plan, with a single entry-tier price and a link to
+ * the actual revenue page. Used on /plans/[planId] so the offer surfaces in
+ * SERP without competing against the AggregateOffer on the trip-pack page.
+ *
+ * No aggregateRating — fabricating ratings risks a Google manual penalty.
+ */
+export function planProductGraph(p: {
+  planSlug: string
+  name: string
+  description: string
+  image: string
+  priceUsd: number
+  breadcrumbs: BreadcrumbItem[]
+}) {
+  const planUrl = `${SITE_URL}/plans/${p.planSlug}`
+  const offerUrl = `${SITE_URL}/trip-pack/${p.planSlug}`
+  return {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'Product',
+        '@id': `${planUrl}#product`,
+        name: p.name,
+        description: p.description,
+        image: p.image,
+        brand: { '@id': `${SITE_URL}/#organization` },
+        offers: {
+          '@type': 'Offer',
+          url: offerUrl,
+          priceCurrency: 'USD',
+          price: p.priceUsd.toFixed(2),
+          availability: 'https://schema.org/InStock',
+          seller: { '@id': `${SITE_URL}/#organization` },
+        },
+      },
+      breadcrumbList(p.breadcrumbs),
+    ],
+  }
+}
+
+/**
  * Schema for a Trailstead Trip Pack — a self-published digital product
  * (printable PDF) with two pricing tiers. Emits Product + AggregateOffer
  * so Google can display a price range and offer count in rich results.
