@@ -100,6 +100,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     })),
 
+    // Original research (backlink magnet)
+    { url: `${BASE_URL}/research/first-time-camping-regrets`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.85 },
+
     // Funnel landings (quiz + checklist index; /checklist/result is noindex)
     { url: `${BASE_URL}/quiz`, lastModified: RECENT, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${BASE_URL}/checklist`, lastModified: RECENT, changeFrequency: 'monthly', priority: 0.6 },
