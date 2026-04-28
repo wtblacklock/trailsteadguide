@@ -184,7 +184,7 @@ export default function Page() {
 
       <h3>National parks and federal lands</h3>
       <p>
-        Olympic, Mt Rainier, North Cascades, and Crater Lake reserve through <a href="https://www.recreation.gov/" rel="noopener" target="_blank">recreation.gov</a>. Each park has multiple campgrounds with different reservation rules. National forest campgrounds (Mt Hood, Gifford Pinchot, Wenatchee, Deschutes, Willamette) are far less competitive and many are spectacular.
+        Olympic, Mt Rainier, North Cascades, and Crater Lake reserve through <a href="https://www.recreation.gov/" rel="noopener" target="_blank">recreation.gov</a>. Each park has multiple campgrounds with different reservation rules: Mt Rainier&apos;s Cougar Rock and Ohanapecosh fill within minutes of opening; White River on the Sunrise side is slightly easier. Olympic&apos;s Hoh, Sol Duc, and Kalaloch are the headline campgrounds and book the same way; Mora and Heart O&apos; the Hills usually have more weekday availability. Crater Lake&apos;s Mazama is the only reservable campground in the park. National forest campgrounds (Mt Hood, Gifford Pinchot, Wenatchee, Deschutes, Willamette) are far less competitive and many are spectacular — Smith Rock&apos;s nearby walk-in tent campground is the gateway for central Oregon&apos;s climbing mecca.
       </p>
 
       <h3>Dispersed camping</h3>
@@ -228,7 +228,7 @@ export default function Page() {
           <strong>Underestimating overnight cold at altitude.</strong> 75°F afternoon at 4,000 ft can become a 38°F night in July. The 50°F bag from the desert trip will not work.
         </li>
         <li>
-          <strong>Booking Mt Rainier or Olympic two weeks ahead.</strong> Six months ahead, the morning the recreation.gov window opens. Otherwise pick a state park or national forest alternative.
+          <strong>Booking Mt Rainier or Olympic two weeks ahead.</strong> Six months ahead, the morning the recreation.gov window opens. Cougar Rock and Hoh are gone in minutes; otherwise pick a state park or national forest alternative — Deception Pass for the San Juan Islands feel, Lake Wenatchee for east-side sun, or any developed Mt Hood NF site as a Rainier-area substitute.
         </li>
       </ol>
 

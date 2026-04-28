@@ -168,12 +168,12 @@ export default function Page() {
       <h2>Where beginners should look</h2>
       <h3>TPWD state parks</h3>
       <p>
-        Texas Parks and Wildlife runs the easiest infrastructure for a first trip. Reserve at <a href="https://tpwd.texas.gov/state-parks/" rel="noopener" target="_blank">tpwd.texas.gov</a>. The reservation window opens 5 months in advance — for a Saturday in April, that means booking around early November. Hill Country and central Texas parks (Pedernales Falls, Garner, Inks Lake, McKinney Falls, Enchanted Rock, Lost Maples) book first; East Texas pine country and the Trans-Pecos have more availability further out.
+        Texas Parks and Wildlife runs the easiest infrastructure for a first trip. Reserve at <a href="https://tpwd.texas.gov/state-parks/" rel="noopener" target="_blank">tpwd.texas.gov</a>. The reservation window opens 5 months in advance — for a Saturday in April, that means booking around early November. Hill Country and central Texas parks (Pedernales Falls, Garner, Inks Lake, McKinney Falls, Enchanted Rock, Lost Maples) book first; Inks Lake and Garner regularly fill the day they open for spring weekends, while Lost Maples often has weekday openings even in peak fall-color season. East Texas pine country and the Trans-Pecos have more availability further out.
       </p>
 
       <h3>Private campgrounds and RV parks</h3>
       <p>
-        Quality varies widely. The good ones cluster around tubing rivers (Guadalupe, Frio, San Marcos, Comal), Lake Travis, and the Hill Country wineries. Read recent reviews on Google and Campendium. KOA-branded parks are predictable but tend to feel more RV than tent.
+        Quality varies widely. The good ones cluster around tubing rivers (Guadalupe, Frio, San Marcos, Comal), Lake Travis, Lake Whitney, and the Hill Country wineries. Read recent reviews on Google and Campendium. KOA-branded parks are predictable but tend to feel more RV than tent.
       </p>
 
       <h3>National parks, forests, and recreation areas</h3>

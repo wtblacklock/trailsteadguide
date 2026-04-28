@@ -111,8 +111,8 @@ export default function Page() {
 
       <h3>Reservations are competitive, not casual</h3>
       <ul>
-        <li>State parks: <a href="https://www.reservecalifornia.com/" rel="noopener" target="_blank">ReserveCalifornia</a> opens 6 months out at 8am Pacific. Be online and signed in at 7:55am for the popular weekends.</li>
-        <li>National parks: <a href="https://www.recreation.gov/" rel="noopener" target="_blank">recreation.gov</a> opens 5 months out at 7am Pacific. Yosemite Valley campgrounds disappear within minutes.</li>
+        <li>State parks: <a href="https://www.reservecalifornia.com/" rel="noopener" target="_blank">ReserveCalifornia</a> opens 6 months out at 8am Pacific. Be online and signed in at 7:55am for the popular weekends — Pfeiffer Big Sur, Andrew Molera, D.L. Bliss on Lake Tahoe, and the Channel Islands ferry-in sites all sell out within minutes.</li>
+        <li>National parks: <a href="https://www.recreation.gov/" rel="noopener" target="_blank">recreation.gov</a> opens 5 months out at 7am Pacific. Yosemite Valley campgrounds (Upper Pines, Lower Pines, North Pines) disappear within minutes.</li>
         <li>Cancellations happen — check 48–72 hours before your dates if your first try sold out.</li>
         <li>Mid-week (Sun–Thu) and shoulder-season (April, late September, October) are dramatically easier.</li>
       </ul>
@@ -159,7 +159,7 @@ export default function Page() {
           <strong><Link href="/plans/first-night-camp">First Night Camp.</Link></strong> One night, one car, a state park within 2 hours. Pick a coastal park (Half Moon Bay, New Brighton, Sunset State Beach, Refugio) or a foothill park (Henry Cowell, Big Basin, Sugarloaf Ridge) — the gear and mental load are smaller than at altitude.
         </li>
         <li>
-          <strong><Link href="/plans/easy-family-basecamp">Easy Family Basecamp.</Link></strong> Two nights at a campground with bear boxes, real bathrooms, and a feature (a beach, a redwood grove, a swimmable creek). Save Yosemite Valley basecamping for after a kid-tested coast or foothill weekend.
+          <strong><Link href="/plans/easy-family-basecamp">Easy Family Basecamp.</Link></strong> Two nights at a campground with bear boxes, real bathrooms, and a feature (a beach, a redwood grove, a swimmable creek). Pfeiffer Big Sur (river swimming under redwoods), Sugarloaf Ridge (foothills, easy access from the Bay), and Manzanita Lake at Lassen Volcanic (a kid-friendly Sierra alternative to Yosemite) are all proven family weekends. Save Yosemite Valley basecamping for after a kid-tested coast or foothill weekend.
         </li>
       </ul>
 
@@ -171,7 +171,7 @@ export default function Page() {
 
       <h3>National parks and federal lands</h3>
       <p>
-        Federal sites (Yosemite, Sequoia, Kings Canyon, Joshua Tree, Death Valley, Pinnacles, Lassen, Redwoods) reserve through <a href="https://www.recreation.gov/" rel="noopener" target="_blank">recreation.gov</a>, 5 months out at 7am Pacific. Each park has different rules: Yosemite Valley campgrounds are a different reservation system than Yosemite&apos;s outlying campgrounds; some Joshua Tree campgrounds are first-come, first-served.
+        Federal sites (Yosemite, Sequoia &amp; Kings Canyon, Joshua Tree, Death Valley, Pinnacles, Lassen Volcanic, Redwood) reserve through <a href="https://www.recreation.gov/" rel="noopener" target="_blank">recreation.gov</a>, 5 months out at 7am Pacific. Each park has different rules: Yosemite Valley campgrounds (Upper/Lower/North Pines) are a different reservation tier than Yosemite&apos;s outlying campgrounds (Wawona, Crane Flat, Hodgdon Meadow); some Joshua Tree campgrounds (Black Rock, Indian Cove) are reservable while a few of the smaller ones remain first-come, first-served. Lassen Volcanic&apos;s Manzanita Lake and Sequoia&apos;s Lodgepole are the underrated &ldquo;not Yosemite Valley&rdquo; alternatives that still deliver iconic Sierra scenery.
       </p>
 
       <h3>Private and county campgrounds, KOAs</h3>

@@ -183,12 +183,12 @@ export default function Page() {
 
       <h3>National parks and federal lands</h3>
       <p>
-        Acadia is the headline national-park experience in the region. Reserve through <a href="https://www.recreation.gov/" rel="noopener" target="_blank">recreation.gov</a>, 6 months out. White Mountain National Forest has dozens of developed campgrounds and is dramatically less competitive. Green Mountain NF and Allegheny NF round out the federal-land options.
+        Acadia is the headline national-park experience in the region — Blackwoods and Seawall on Mount Desert Island are the iconic campgrounds. Reserve through <a href="https://www.recreation.gov/" rel="noopener" target="_blank">recreation.gov</a>, 6 months out. White Mountain National Forest has dozens of developed campgrounds and is dramatically less competitive — Dolly Copp at the foot of Mt Washington and the Kancamagus Highway corridor (Hancock, Big Rock, Passaconaway) are the proven beginner picks. Green Mountain NF and Allegheny NF round out the federal-land options. For Maine&apos;s North Woods, Baxter State Park (its own reservation system, <a href="https://baxterstatepark.org/" rel="noopener" target="_blank">baxterstatepark.org</a>) and the coastal alternative Camden Hills State Park are worth knowing — both run more relaxed than Acadia.
       </p>
 
       <h3>Adirondack Park (New York)</h3>
       <p>
-        Adirondack Park is the largest state park in the country and has its own reservation system through ReserveAmerica. The DEC-operated campgrounds (Eighth Lake, Lake Eaton, Forked Lake, Indian Lake) are excellent and slightly less competitive than the high-traffic NH/VT options.
+        Adirondack Park is the largest state park in the country and has its own reservation system through ReserveAmerica. The DEC-operated campgrounds (Eighth Lake, Fish Creek Pond, Lake Eaton, Forked Lake, Indian Lake) are excellent and slightly less competitive than the high-traffic NH/VT options — Fish Creek Pond on the Saranac chain is the canoe-camping classic, and Eighth Lake along Route 28 is the easiest drive-in waterfront in the central Adirondacks.
       </p>
 
       <h3>Dispersed camping</h3>

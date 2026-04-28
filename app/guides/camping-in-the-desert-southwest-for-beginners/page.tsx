@@ -128,7 +128,7 @@ export default function Page() {
 
       <h3>Headline national parks book early</h3>
       <ul>
-        <li>National parks: <a href="https://www.recreation.gov/" rel="noopener" target="_blank">recreation.gov</a>, 6 months out, popular weekends fill in hours.</li>
+        <li>National parks: <a href="https://www.recreation.gov/" rel="noopener" target="_blank">recreation.gov</a>, 6 months out, popular weekends fill in hours. Watchman in Zion, Devil&apos;s Garden in Arches, Mather on the Grand Canyon South Rim, and Chisos Basin in Big Bend are all reservation-lottery-tier; Bryce&apos;s Sunset and North campgrounds are slightly easier.</li>
         <li>Utah state parks: <a href="https://stateparks.utah.gov/" rel="noopener" target="_blank">stateparks.utah.gov</a>.</li>
         <li>Arizona state parks: <a href="https://azstateparks.com/" rel="noopener" target="_blank">azstateparks.com</a>.</li>
         <li>New Mexico state parks: <a href="https://www.emnrd.nm.gov/spd/" rel="noopener" target="_blank">emnrd.nm.gov/spd</a>.</li>
@@ -189,7 +189,7 @@ export default function Page() {
 
       <h3>National forests and BLM dispersed</h3>
       <p>
-        BLM dispersed camping in southern Utah, northern Arizona, and across New Mexico is among the best free camping in the country. Sites south of Moab, around Sedona, near Bryce, and across the Ojito wilderness are easy to find. No facilities — bring all water. Beginners should start with developed campgrounds first.
+        BLM dispersed camping in southern Utah, northern Arizona, and across New Mexico is among the best free camping in the country. Sites south of Moab, around Sedona, near Bryce, the Lake Powell shoreline at Lone Rock Beach, and across the Ojito wilderness are easy to find. No facilities — bring all water. Beginners should start with developed campgrounds first; Saguaro National Park&apos;s Tucson-adjacent districts (Saguaro East at Rincon, Saguaro West at Tucson Mountain) are a good stepping-stone before BLM.
       </p>
 
       <figure className="not-prose my-12">

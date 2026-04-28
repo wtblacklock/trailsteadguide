@@ -120,8 +120,8 @@ export default function Page() {
 
       <h3>RMNP and the popular state parks book early</h3>
       <ul>
-        <li>Rocky Mountain National Park campgrounds (Moraine Park, Glacier Basin, Aspenglen, Timber Creek) reserve through <a href="https://www.recreation.gov/" rel="noopener" target="_blank">recreation.gov</a> 6 months out. Summer weekends fill in hours.</li>
-        <li>Colorado state parks reserve through <a href="https://cpw.state.co.us/" rel="noopener" target="_blank">CPW</a>, also competitive on summer weekends.</li>
+        <li>Rocky Mountain National Park campgrounds (Moraine Park, Glacier Basin, Aspenglen, Timber Creek) reserve through <a href="https://www.recreation.gov/" rel="noopener" target="_blank">recreation.gov</a> 6 months out. Summer weekends fill in hours; Moraine Park and Glacier Basin sell out fastest because they&apos;re closest to Bear Lake Road.</li>
+        <li>Colorado state parks reserve through <a href="https://cpw.state.co.us/" rel="noopener" target="_blank">CPW</a>, also competitive on summer weekends — Cherry Creek and Chatfield are the Front Range commuter parks; State Forest, Eleven Mile, and Steamboat Lake the mountain alternatives.</li>
         <li>National forest dispersed and developed campgrounds are the easier reservation — Arapaho, Pike-San Isabel, San Juan, White River. Many are first-come, first-served on weekdays.</li>
       </ul>
 
@@ -173,7 +173,7 @@ export default function Page() {
 
       <h3>National parks and federal lands</h3>
       <p>
-        Rocky Mountain National Park, Mesa Verde, Great Sand Dunes, and Black Canyon of the Gunnison reserve through <a href="https://www.recreation.gov/" rel="noopener" target="_blank">recreation.gov</a>. RMNP is the headliner — and the hardest reservation in the state.
+        Rocky Mountain National Park, Mesa Verde, Great Sand Dunes, and Black Canyon of the Gunnison reserve through <a href="https://www.recreation.gov/" rel="noopener" target="_blank">recreation.gov</a>. RMNP is the headliner — and the hardest reservation in the state. Moraine Park and Aspenglen on the east side fill within minutes of opening; Timber Creek on the west side (Grand Lake entrance) is slightly easier and the better choice if you&apos;re coming from I-70 anyway. Great Sand Dunes&apos; Piñon Flats is one of the most underrated beginner trips in the state — flat sites, the highest dunes in North America at the back door, and a fraction of RMNP&apos;s reservation pressure.
       </p>
 
       <h3>National forest campgrounds</h3>

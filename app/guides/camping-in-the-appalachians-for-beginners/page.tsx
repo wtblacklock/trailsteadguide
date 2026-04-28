@@ -185,7 +185,7 @@ export default function Page() {
 
       <h3>National forests</h3>
       <p>
-        Pisgah, Nantahala, Cherokee, Jefferson, George Washington, and Daniel Boone NFs have hundreds of developed campgrounds and many less competitive than the national parks. Many are first-come, first-served outside leaf season.
+        Pisgah, Nantahala, Cherokee, Jefferson, George Washington, and Daniel Boone NFs have hundreds of developed campgrounds and many less competitive than the national parks. Davidson River in Pisgah (the Brevard / Looking Glass Falls corridor) is the most popular tent campground in the region and books accordingly; Linville Gorge Wilderness on the eastern edge of Pisgah and the Roan Mountain highlands on the NC/TN line are dispersed-camping legend without the Smokies reservation pressure. Many forest sites are first-come, first-served outside leaf season.
       </p>
 
       <h3>Dispersed camping</h3>
@@ -226,7 +226,7 @@ export default function Page() {
           <strong>Skipping permethrin in tick season.</strong> Lyme is endemic. Treat clothing 24h before the trip; it lasts 6 weeks.
         </li>
         <li>
-          <strong>Pitching after dark in a leaf-season weekend.</strong> Friday traffic on the Blue Ridge Parkway adds 2–4 hours in October. Arrive by 4pm, or shift to mid-week.
+          <strong>Pitching after dark in a leaf-season weekend.</strong> Friday traffic on the Blue Ridge Parkway between Asheville and Boone adds 2–4 hours in October, and the climb up Mt Mitchell&apos;s access road can sit at a standstill. Arrive by 4pm, or shift to mid-week.
         </li>
         <li>
           <strong>Cotton t-shirts, cotton socks, and cotton pajamas.</strong> Appalachian humidity keeps cotton damp — synthetic or wool only.
