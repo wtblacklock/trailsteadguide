@@ -132,7 +132,7 @@ export default function Page() {
               </p>
               <div className="space-y-4 text-stone-700 leading-relaxed text-lg">
                 <p>
-                  I earned my Eagle Scout at 13 — rare; most Scouts hit it at 16 or 17 — and have spent the years since paying it forward as a Cub Master and Scout Master, Wood Badge graduate (patrol &ldquo;Gazelle&rdquo;), and a Philmont alum from a 12-day backcountry expedition in New Mexico.
+                  I earned my Eagle Scout at 13 — rare; most Scouts hit it at 16 or 17 — and have spent the years since paying it forward as a Cub Master and Scout Master, Wood Badge graduate (patrol &ldquo;Antelope&rdquo;), and a Philmont alum from a 12-day backcountry expedition in New Mexico.
                 </p>
                 <p>
                   Today I camp out of Austin, Texas with three outdoor-active kids — knot-tying, camp cooking, multi-day campouts — and write Trailstead Guide as the planning system I wished I had as a young dad. Structured, beginner-aware, and built to make the first trip work.

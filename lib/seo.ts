@@ -85,7 +85,7 @@ export const AUTHOR_NAME = 'Will Blacklock'
 export const AUTHOR_JOB_TITLE = 'Founder, Trailstead Guide'
 // ≤200 chars; used in JSON-LD Person.description.
 export const AUTHOR_BIO =
-  'Eagle Scout (earned at 13), former Cub Master and Scout Master, Wood Badge "Gazelle," and Philmont alum. Family camper in Austin, TX, with three outdoor-active kids.'
+  'Eagle Scout (earned at 13), former Cub Master and Scout Master, Wood Badge "Antelope," and Philmont alum. Family camper in Austin, TX, with three outdoor-active kids.'
 export const AUTHOR_IMAGE = '/images/author-william-blacklock.jpg'
 export const AUTHOR_KNOWS_ABOUT = [
   'Camping',
