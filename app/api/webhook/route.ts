@@ -1,10 +1,17 @@
 import { NextResponse } from 'next/server'
 import { stripeEnabled } from '@/lib/stripe'
 import { signToken } from '@/lib/pdf/token'
-import { sendTripPackEmail } from '@/lib/pdf/email'
+import { sendTripPackEmail, sendTripPackAbandonEmail } from '@/lib/pdf/email'
 import { subscribeToKit } from '@/lib/kit'
 import { PLAN_TAG_IDS, BUYER_TAG_ID } from '@/lib/kit-tags'
 import type { PlanSlug } from '@/types'
+
+const VALID_PLANS: PlanSlug[] = [
+  'backyard-test',
+  'first-night-camp',
+  'first-weekend-camp',
+  'easy-family-basecamp',
+]
 
 export const runtime = 'nodejs'
 
@@ -75,6 +82,30 @@ export async function POST(req: Request) {
       }
     } else {
       console.warn('[stripe webhook] no email on session; cannot deliver trip pack', session.id)
+    }
+  } else if (event.type === 'checkout.session.expired') {
+    // Cart-abandon recovery. One reminder per expired session — Stripe
+    // emits this event exactly once when the session times out (default
+    // 24h after creation), so we don't need a separate dedupe store.
+    const session = event.data.object as import('stripe').Stripe.Checkout.Session
+    const meta = session.metadata || {}
+    const plan = meta.plan as PlanSlug
+    const email = session.customer_email || meta.email || undefined
+
+    if (!email) {
+      console.log('[stripe webhook] expired session, no email — skipping abandon', session.id)
+    } else if (!plan || !VALID_PLANS.includes(plan)) {
+      console.warn('[stripe webhook] expired session, no valid plan slug — skipping abandon', session.id, plan)
+    } else {
+      const origin =
+        req.headers.get('origin') ||
+        process.env.NEXT_PUBLIC_SITE_URL ||
+        'https://www.trailsteadguide.com'
+      const retryUrl = `${origin}/trip-pack/${plan}?recover=1`
+      const result = await sendTripPackAbandonEmail({ to: email, plan, retryUrl })
+      if (!result.ok && !result.skipped) {
+        console.error('[stripe webhook] abandon email failed', result.error)
+      }
     }
   }
 
