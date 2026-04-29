@@ -23,12 +23,13 @@
  * unique User-Agent so Reddit doesn't rate-limit aggressive crawlers.
  */
 
-import { readFileSync } from 'node:fs'
+import { readFileSync, writeFileSync, mkdirSync } from 'node:fs'
+import { dirname } from 'node:path'
 
 const args = process.argv.slice(2)
 const query = args.filter((a) => !a.startsWith('--'))[0]
 if (!query) {
-  console.error('Usage: npm run affiliate:research -- "<query>" [--subs ...] [--threads N]')
+  console.error('Usage: npm run affiliate:research -- "<query>" [--subs ...] [--threads N] [--csv <path>]')
   process.exit(1)
 }
 
@@ -201,6 +202,39 @@ async function main() {
   console.log(
     `\n${ranked.length} unique ASIN(s); ${newCount} not yet in AFFILIATE_PRODUCTS.`,
   )
+
+  // Optional CSV export — gives the operator a research worksheet
+  // they can open in Sheets to browse top candidates + paste names,
+  // images, prices etc. they look up manually.
+  const csvPath = flag('csv', null)
+  if (csvPath) {
+    const headers = [
+      'rank', 'asin', 'mentions', 'sum_upvotes', 'in_registry',
+      'amazon_url', 'sample_comment',
+      // Blanks for the operator to fill after browsing the Amazon page:
+      'product_name', 'price', 'image_url', 'tier', 'notes',
+    ]
+    const esc = (v) => {
+      const s = v == null ? '' : String(v)
+      return /[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s
+    }
+    const rows = [headers.join(',')]
+    ranked.forEach((h, i) => {
+      rows.push([
+        i + 1,
+        h.asin,
+        h.mentions,
+        h.score,
+        registry.get(h.asin) || '',
+        affiliateUrl(h.asin),
+        h.sample ? h.sample.slice(0, 200).replace(/\s+/g, ' ') : '',
+        '', '', '', '', '',
+      ].map(esc).join(','))
+    })
+    mkdirSync(dirname(csvPath), { recursive: true })
+    writeFileSync(csvPath, rows.join('\n') + '\n')
+    console.log(`\n✓ wrote ${ranked.length} candidates → ${csvPath}`)
+  }
 }
 
 main().catch((err) => {
