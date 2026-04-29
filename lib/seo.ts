@@ -262,6 +262,42 @@ export function contactPageGraph(input: {
   }
 }
 
+/**
+ * OfferShippingDetails for a digital download — free, instant delivery.
+ * Required by Google Merchant Listings rich results; without it Search
+ * Console flags the offer as missing the "shippingDetails" field.
+ */
+export function digitalShippingDetails() {
+  return {
+    '@type': 'OfferShippingDetails',
+    shippingRate: { '@type': 'MonetaryAmount', value: '0', currency: 'USD' },
+    shippingDestination: { '@type': 'DefinedRegion', addressCountry: 'US' },
+    deliveryTime: {
+      '@type': 'ShippingDeliveryTime',
+      handlingTime: { '@type': 'QuantitativeValue', minValue: 0, maxValue: 0, unitCode: 'DAY' },
+      transitTime: { '@type': 'QuantitativeValue', minValue: 0, maxValue: 0, unitCode: 'DAY' },
+    },
+  }
+}
+
+/**
+ * MerchantReturnPolicy for a digital Trip Pack. 14-day refund-by-email
+ * window, free returns (no shipping cost on a digital file). If you
+ * change the policy, update the customer-facing FAQ and the trip-pack
+ * confirmation email to match — these schema values are a public
+ * commitment Google may surface in rich results.
+ */
+export function digitalReturnPolicy(days = 14) {
+  return {
+    '@type': 'MerchantReturnPolicy',
+    applicableCountry: 'US',
+    returnPolicyCategory: 'https://schema.org/MerchantReturnFiniteReturnWindow',
+    merchantReturnDays: days,
+    returnMethod: 'https://schema.org/ReturnByMail',
+    returnFees: 'https://schema.org/FreeReturn',
+  }
+}
+
 export function productGraph(p: {
   id: string
   name: string
@@ -326,7 +362,10 @@ export function planProductGraph(p: {
         name: p.name,
         description: p.description,
         image: p.image,
-        brand: { '@id': `${SITE_URL}/#organization` },
+        // Inline Organization (rather than a bare @id reference) so the
+        // brand field validates as a typed object on its own — Search
+        // Console flags untyped @id refs as "Invalid object type".
+        brand: { '@type': 'Organization', name: SITE_NAME },
         offers: {
           '@type': 'Offer',
           url: offerUrl,
@@ -334,6 +373,8 @@ export function planProductGraph(p: {
           price: p.priceUsd.toFixed(2),
           availability: 'https://schema.org/InStock',
           seller: { '@id': `${SITE_URL}/#organization` },
+          shippingDetails: digitalShippingDetails(),
+          hasMerchantReturnPolicy: digitalReturnPolicy(),
         },
       },
       breadcrumbList(p.breadcrumbs),
@@ -368,7 +409,7 @@ export function tripPackProductGraph(p: {
         description: p.description,
         image: p.image ?? DEFAULT_OG_IMAGE,
         category: 'Camping trip plan (digital download)',
-        brand: { '@type': 'Brand', name: SITE_NAME },
+        brand: { '@type': 'Organization', name: SITE_NAME },
         offers: {
           '@type': 'AggregateOffer',
           url,
@@ -386,6 +427,8 @@ export function tripPackProductGraph(p: {
             price: t.priceUsd.toFixed(2),
             availability: 'https://schema.org/InStock',
             seller: { '@id': `${SITE_URL}/#organization` },
+            shippingDetails: digitalShippingDetails(),
+            hasMerchantReturnPolicy: digitalReturnPolicy(),
           })),
         },
       },
