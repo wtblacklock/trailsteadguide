@@ -5,6 +5,7 @@ import { getSkillByRef } from '@/lib/skills/helpers'
 import { AUTHOR_NAME, AUTHOR_IMAGE } from '@/lib/seo'
 import { getPrintableBySlug } from '@/lib/printables'
 import PrintableEmailGate from '@/components/printables/PrintableEmailGate'
+import PrintableLightbox from '@/components/printables/PrintableLightbox'
 import DifficultyBadge from './DifficultyBadge'
 import RelatedGearBlock from './RelatedGearBlock'
 import SafetyBlock from './SafetyBlock'
@@ -217,14 +218,22 @@ function PrintableCompanion({ slug }: { slug: string }) {
       >
         Analog companion
       </p>
-      <PrintableEmailGate
-        printableSlug={printable.slug}
-        printHref={`/printables/${printable.slug}/print`}
-        eyebrow="Free with email"
-        headline={printable.title}
-        description={printable.tagline}
-        submitLabel="Email it to me"
-      />
+      {/*
+        Two-column layout: a small clickable preview thumbnail on the
+        left so visitors can see what they'll get, the email gate on
+        the right. Stacks on mobile.
+      */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 items-start">
+        <PrintableLightbox slug={printable.slug} triggerVariant="compact" />
+        <PrintableEmailGate
+          printableSlug={printable.slug}
+          printHref={`/printables/${printable.slug}/print`}
+          eyebrow="Free with email"
+          headline={printable.title}
+          description={printable.tagline}
+          submitLabel="Email it to me"
+        />
+      </div>
       <p className="mt-3 text-xs text-stone-500">
         Prefer the full landing page first? <Link href={`/printables/${printable.slug}`} className="underline decoration-stone-300 underline-offset-4 hover:text-stone-900 transition-colors">See the {printable.title.toLowerCase()}</Link>.
       </p>
