@@ -290,6 +290,19 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     tags: ['heat-friendly', 'budget'],
     slot: 'SAFETY',
   },
+  {
+    id: 'katolk-tie-out',
+    name: 'KATOLK Upgraded Dog Tie Out Cable',
+    description:
+      'Heavy-duty trolley-style dog tie-out for camp. Gives the dog real range without letting them wander into the next site.',
+    amazonAsin: 'B0BGH8BS3R',
+    imageUrl: 'https://m.media-amazon.com/images/I/71Owf9HoVIL._AC_SL1500_.jpg',
+    category: 'essential',
+    templateSlugs: [],
+    priceRange: '~$29',
+    tags: ['with-dogs', 'budget'],
+    slot: 'DOG_GEAR',
+  },
 
   // ------------------------------------------------------------------
   // Legacy / deprecated. Kept in the registry so /compare/* editorial

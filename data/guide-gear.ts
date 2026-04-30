@@ -232,6 +232,7 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'CHAIR', productId: 'coleman-portable-chair-cooler' },
     { slot: 'KID_GEAR', productId: 'kidco-gopod' },
     { slot: 'SAFETY', productId: 'thriad-first-aid-430' },
+    { slot: 'DOG_GEAR', productId: 'katolk-tie-out' },
   ],
   'camping-with-kids-first-time': [
     { slot: 'TENT', productId: 'coleman-sundome-4p' },
