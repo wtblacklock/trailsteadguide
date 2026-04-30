@@ -15,7 +15,7 @@ const TITLE = 'Winter Camping for Beginners'
 const META_TITLE = 'Winter Camping for Beginners (Cabin Path)'
 const DESCRIPTION =
   'Winter camping for beginners: when tenting works, when it doesn’t, and the cabin-first path that keeps a first below-freezing trip safe and warm.'
-const HERO_IMAGE = 'https://images.unsplash.com/photo-1551649001-7a2482d98d05?w=1400&auto=format&fit=crop&q=80'
+const HERO_IMAGE = 'https://images.unsplash.com/photo-1776131264822-1e091242f639?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({
   title: META_TITLE,
