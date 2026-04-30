@@ -294,7 +294,7 @@ export default function Page() {
           </li>
         </ul>
         <p>
-          <Link href="/gear" className="font-medium underline underline-offset-4">View Full Gear Setup →</Link>
+          <a href="#recommended-gear" className="font-medium underline underline-offset-4">Jump to recommended gear ↓</a>
         </p>
 
         <h2>Where this fits in the larger plan</h2>

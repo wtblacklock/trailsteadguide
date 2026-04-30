@@ -72,7 +72,7 @@ export default function Page() {
             Get Your Camping Plan.
           </h2>
           <p className="text-stone-300 text-lg mb-8 max-w-xl">
-            Answer 5 questions. Get a full trip plan — timeline, gear, meals, activities — in about 2 minutes.
+            Answer 6 questions. Get a full trip plan — timeline, gear, meals, activities — in about 2 minutes.
           </p>
           <Link
             href="/quiz"

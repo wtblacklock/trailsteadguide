@@ -51,7 +51,7 @@ const TRIP_PACK_BLURBS: Record<PlanSlug, string> = {
 
 const HEADER = `# Trailstead Guide
 
-> Trailstead Guide helps first-time families plan their first camping trip with confidence. Answer five questions, get a complete personalized plan: gear list, meals, checklist, and a trip you can actually pull off.
+> Trailstead Guide helps first-time families plan their first camping trip with confidence. Answer six questions, get a complete personalized plan: gear list, meals, checklist, and a trip you can actually pull off.
 
 ## Author
 
@@ -64,8 +64,8 @@ Every guide, plan, skill, and activity is also available as Markdown at the same
 ## Start here
 
 - [Camping for Beginners](${SITE_URL}/guides/camping-for-beginners): The shortest, least-intimidating path from zero to a great first trip.
-- [How It Works](${SITE_URL}/how-it-works): How the 5-question planner turns your answers into a complete camping plan.
-- [Take the quiz](${SITE_URL}/quiz): Five questions. Get your personalized trip plan in under two minutes.
+- [How It Works](${SITE_URL}/how-it-works): How the 6-question planner turns your answers into a complete camping plan.
+- [Take the quiz](${SITE_URL}/quiz): Six questions. Get your personalized trip plan in under two minutes.
 
 ## Original research
 

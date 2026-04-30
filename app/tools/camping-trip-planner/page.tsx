@@ -26,7 +26,7 @@ export default function Page() {
           The Camping Trip Planner
         </h1>
         <p className="mt-6 text-lg md:text-xl text-stone-600 leading-relaxed max-w-2xl">
-          Five questions. A complete trip plan. Built around your kids&apos; ages, your experience level, and how much time you actually have.
+          Six questions. A complete trip plan. Built around your kids&apos; ages, your experience level, and how much time you actually have.
         </p>
         <div className="mt-8 flex flex-wrap gap-3">
           <Link

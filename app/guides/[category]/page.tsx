@@ -95,7 +95,7 @@ export default async function CategoryPage({
             Get Your Camping Plan.
           </h2>
           <p className="text-stone-300 text-lg mb-8 max-w-xl">
-            Answer 5 questions. We scale the timeline, gear, and meals to your kids&apos; ages and your party size.
+            Answer 6 questions. We scale the timeline, gear, and meals to your kids&apos; ages and your party size.
           </p>
           <Link
             href="/quiz"

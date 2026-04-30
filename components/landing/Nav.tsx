@@ -8,6 +8,7 @@ import { useEffect, useRef, useState } from 'react'
 const PRIMARY_LINKS = [
   { href: '/guides', label: 'Guides' },
   { href: '/skills', label: 'Skills' },
+  { href: '/activities', label: 'Activities' },
   { href: '/gear', label: 'Gear' },
   { href: '/printables', label: 'Printables' },
 ]
@@ -73,6 +74,7 @@ export default function Nav() {
         <div className="hidden md:flex items-center gap-1 text-sm text-stone-700">
           <NavLink href="/guides">Guides</NavLink>
           <NavLink href="/skills">Skills</NavLink>
+          <NavLink href="/activities">Activities</NavLink>
           <NavLink href="/gear">Gear</NavLink>
           <NavLink href="/printables">Printables</NavLink>
         </div>

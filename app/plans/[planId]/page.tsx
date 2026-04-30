@@ -101,7 +101,7 @@ const PLAN_FAQ_ITEMS = [
   {
     question: 'Is Trailstead Guide worth it?',
     answer:
-      'The plan you’re reading is free. The optional Trip Pack PDF is for families who want a printable, offline-friendly version they don’t have to re-build the night before. If a structured first trip is worth less to you than a tank of gas, skip the upgrade and use the free plan as-is.',
+      'The plan you’re reading is free. The optional Trip Pack PDF is a small upgrade — about the cost of a couple of Gatorades — for families who want a printable, offline-friendly version they don’t have to rebuild the night before. Skip the upgrade and use the free plan as-is.',
   },
 ]
 

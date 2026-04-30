@@ -21,7 +21,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     id: 'coleman-sundome-4p',
     name: 'Coleman Sundome 4-Person',
     description:
-      'Best-selling family dome tent. 9×7 ft floor, weatherproof, fits a queen air bed. Sets up in under 15 minutes.',
+      'Best-selling family dome tent. 9×7 ft floor, weatherproof, fits a queen air bed. Sets up in under 15 minutes. Coleman makes the Sundome in 2/3/4/6-person sizes — the price scales with capacity, so pick the size that matches how you want to set up your campsite.',
     amazonAsin: 'B0D7QHY574',
     imageUrl: 'https://m.media-amazon.com/images/I/71wxEg6ubCL._AC_SL1500_.jpg',
     category: 'essential',
