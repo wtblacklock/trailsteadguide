@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import type { Skill, SkillCategory } from '@/lib/skills/types'
+import { getSkillByRef } from '@/lib/skills/helpers'
 import { AUTHOR_NAME, AUTHOR_IMAGE } from '@/lib/seo'
 import { getPrintableBySlug } from '@/lib/printables'
 import PrintableEmailGate from '@/components/printables/PrintableEmailGate'
@@ -189,6 +190,10 @@ export default function SkillDetail({ skill, category, dateModified }: Props) {
         )}
 
         {skill.relatedPrintableSlug && <PrintableCompanion slug={skill.relatedPrintableSlug} />}
+
+        {skill.relatedSkills && skill.relatedSkills.length > 0 && (
+          <RelatedSkillsBlock refs={skill.relatedSkills} />
+        )}
       </div>
 
       {/* Full-width plan CTA — sits outside the max-w-content reading column
@@ -223,6 +228,40 @@ function PrintableCompanion({ slug }: { slug: string }) {
       <p className="mt-3 text-xs text-stone-500">
         Prefer the full landing page first? <Link href={`/printables/${printable.slug}`} className="underline decoration-stone-300 underline-offset-4 hover:text-stone-900 transition-colors">See the {printable.title.toLowerCase()}</Link>.
       </p>
+    </section>
+  )
+}
+
+function RelatedSkillsBlock({ refs }: { refs: string[] }) {
+  const items = refs
+    .map((ref) => getSkillByRef(ref))
+    .filter((entry): entry is { skill: Skill; category: SkillCategory } => entry !== null)
+  if (items.length === 0) return null
+  return (
+    <section aria-labelledby="related-skills-heading">
+      <h2 id="related-skills-heading" className="font-serif text-2xl text-stone-900 mb-5">
+        Continue learning
+      </h2>
+      <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        {items.map(({ skill, category }) => (
+          <li key={`${category.slug}/${skill.slug}`}>
+            <Link
+              href={`/skills/${category.slug}/${skill.slug}`}
+              className="group block h-full p-5 rounded-2xl ring-1 ring-stone-200 bg-white hover:ring-stone-900 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-200"
+            >
+              <p className="text-xs font-semibold tracking-[0.18em] uppercase text-stone-500 mb-2">
+                {category.label}
+              </p>
+              <p className="font-serif text-lg font-medium text-stone-900 leading-snug mb-2 group-hover:text-stone-600 transition-colors">
+                {skill.title}
+              </p>
+              <p className="text-sm text-stone-600 leading-relaxed line-clamp-2">
+                {skill.tagline}
+              </p>
+            </Link>
+          </li>
+        ))}
+      </ul>
     </section>
   )
 }

@@ -83,6 +83,14 @@ export type Skill = {
    * skill (a one-page printable they can carry).
    */
   relatedPrintableSlug?: string
+  /**
+   * Cross-links to related skills as `categorySlug/skillSlug` refs
+   * (e.g. `'stargazing/finding-constellations'`). Rendered as a
+   * "Continue learning" block at the bottom of the skill page so
+   * visitors can move through a topical cluster naturally — and so
+   * Google sees an internal-link graph that signals topical authority.
+   */
+  relatedSkills?: string[]
 }
 
 export type SkillCategory = {
