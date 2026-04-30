@@ -74,6 +74,7 @@ function response(body: string): Response {
     status: 200,
     headers: {
       'Content-Type': 'text/markdown; charset=utf-8',
+      'X-Robots-Tag': 'noindex, nofollow',
       'Cache-Control': 'public, max-age=3600, s-maxage=86400',
     },
   })
