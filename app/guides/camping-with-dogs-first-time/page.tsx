@@ -208,8 +208,11 @@ export default function Page() {
         <h2>What to bring (dog-specific)</h2>
         <h3>The dog kit</h3>
         <ul>
-          <li>6 ft leash + a 15 ft long line for tie-out.</li>
-          <li>Stake or screw-in tie-out anchor for sandy or soft ground.</li>
+          <li>
+            6 ft leash for walks + a 15 ft trolley-style tie-out for the campsite. The{' '}
+            <AmazonLink productId="katolk-tie-out" pageSlug="camping-with-dogs-first-time" />{' '}
+            (~$29) is the one I use — heavy-duty cable, screw-in stake, gives the dog real range without wandering into the next site. Brand-agnostic otherwise — buy what fits your dog.
+          </li>
           <li>Dog bed or closed-cell foam pad for inside the tent.</li>
           <li>Two collapsible bowls — one for food, one for water.</li>
           <li>Dedicated dog water container — a half-gallon jug is enough for a one-night trip with a 50-lb dog; double for two nights or hot weather.</li>
