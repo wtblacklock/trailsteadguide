@@ -3,6 +3,7 @@ import { GuidePage } from '@/components/guide/GuidePage'
 import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
+import GuideGearShelf from '@/components/guide/GuideGearShelf'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
@@ -285,6 +286,7 @@ export default function Page() {
         Often not until late April or May. Bring drinking water with you and don&apos;t assume the spigot at the site will run, even at &ldquo;open&rdquo; campgrounds.
       </p>
     </GuidePage>
+    <GuideGearShelf guideSlug="spring-camping-for-beginners" />
     <GuideArticleCTA />
     <RelatedGuides currentSlug="spring-camping-for-beginners" />
     </>

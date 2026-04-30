@@ -3,6 +3,7 @@ import { GuidePage } from '@/components/guide/GuidePage'
 import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
+import GuideGearShelf from '@/components/guide/GuideGearShelf'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
@@ -289,6 +290,7 @@ export default function Page() {
         Usually yes. Most western fire bans lift after the first hard rain or freeze in late September or October. Confirm with the campground page or state forestry site the week before, and bring a propane stove either way.
       </p>
     </GuidePage>
+    <GuideGearShelf guideSlug="fall-camping-for-beginners" />
     <GuideArticleCTA />
     <RelatedGuides currentSlug="fall-camping-for-beginners" />
     </>

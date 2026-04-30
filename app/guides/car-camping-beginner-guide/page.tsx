@@ -3,6 +3,7 @@ import { GuidePage } from '@/components/guide/GuidePage'
 import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
+import GuideGearShelf from '@/components/guide/GuideGearShelf'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
@@ -223,6 +224,7 @@ export default function Page() {
         For a family of four on two nights, plan on a full mid-size SUV trunk or a hatchback with a roof bag. Tent, bags, cooler, stove, chairs, kitchen bin — it adds up fast.
       </p>
     </GuidePage>
+    <GuideGearShelf guideSlug="car-camping-beginner-guide" />
     <GuideArticleCTA />
     <RelatedGuides currentSlug="car-camping-beginner-guide" />
     </>

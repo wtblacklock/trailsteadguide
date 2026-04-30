@@ -3,6 +3,7 @@ import { GuidePage } from '@/components/guide/GuidePage'
 import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
+import GuideGearShelf from '@/components/guide/GuideGearShelf'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
@@ -271,6 +272,7 @@ export default function Page() {
         Often, but not always. Western states issue fire bans regularly in mid-to-late summer. Check the campground page and the state fire-restriction site the week before. Bring a propane stove either way.
       </p>
     </GuidePage>
+    <GuideGearShelf guideSlug="summer-camping-for-beginners" />
     <GuideArticleCTA />
     <RelatedGuides currentSlug="summer-camping-for-beginners" />
     </>

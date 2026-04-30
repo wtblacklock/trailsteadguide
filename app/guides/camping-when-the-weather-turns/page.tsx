@@ -4,6 +4,7 @@ import { GuidePage } from '@/components/guide/GuidePage'
 import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
+import GuideGearShelf from '@/components/guide/GuideGearShelf'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
@@ -325,6 +326,7 @@ export default function Page() {
           At the first hard signal: forecast revision, flash flood watch, gusts that lift the tarp, close lightning. Earlier is always cleaner.
         </p>
       </GuidePage>
+      <GuideGearShelf guideSlug="camping-when-the-weather-turns" />
       <GuideArticleCTA />
       <RelatedGuides currentSlug="camping-when-the-weather-turns" />
     </>
