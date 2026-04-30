@@ -260,47 +260,47 @@ export default function Page() {
       <ul>
         <li>
           <strong>Tent.</strong>{' '}
-          <AmazonLink productId="fwc-tent-sundome" pageSlug="camping-in-the-northeast-for-beginners" />{' '}
-          (~$116). Full mesh inner, full-coverage rainfly. Stake firmly — Northeast wind on exposed sites is real.
+          <AmazonLink productId="coleman-sundome-4p" pageSlug="camping-in-the-northeast-for-beginners" />{' '}
+          (~$68). Full mesh inner, full-coverage rainfly. Stake firmly — Northeast wind on exposed sites is real.
         </li>
         <li>
           <strong>Sleeping bag.</strong>{' '}
-          <AmazonLink productId="sleeping-bag-family" pageSlug="camping-in-the-northeast-for-beginners" />{' '}
-          (~$95). The right rating for Northeast altitude and fall nights. A 30°F bag is fine at sea level mid-summer.
+          <AmazonLink productId="coleman-brazos-bag" pageSlug="camping-in-the-northeast-for-beginners" />{' '}
+          (~$54). Works sea level mid-summer in the Northeast. For altitude or fall nights, upgrade to a 20–30°F bag.
         </li>
         <li>
           <strong>Sleeping pad.</strong>{' '}
-          <AmazonLink productId="sleeping-pad-air" pageSlug="camping-in-the-northeast-for-beginners" />{' '}
-          (~$75). Insulates from cool damp ground.
+          <AmazonLink productId="big-agnes-divide" pageSlug="camping-in-the-northeast-for-beginners" />{' '}
+          (~$100). Self-inflating, packs small. In damp conditions, lay a closed-cell foam pad underneath.
         </li>
         <li>
           <strong>Stove.</strong>{' '}
-          <AmazonLink productId="fwc-stove-coleman-1burner" pageSlug="camping-in-the-northeast-for-beginners" />{' '}
+          <AmazonLink productId="coleman-1-burner" pageSlug="camping-in-the-northeast-for-beginners" />{' '}
           (~$40). Reliable in damp conditions.
         </li>
         <li>
           <strong>Cooler.</strong>{' '}
-          <AmazonLink productId="fwc-cooler-rolling" pageSlug="camping-in-the-northeast-for-beginners" />{' '}
+          <AmazonLink productId="coleman-classic-rolling-cooler" pageSlug="camping-in-the-northeast-for-beginners" />{' '}
           (~$107). Bear-proof storage overnight in any northern New England or Adirondack campground.
         </li>
         <li>
           <strong>Tarp / canopy.</strong>{' '}
-          <AmazonLink productId="canopy-camp" pageSlug="camping-in-the-northeast-for-beginners" />{' '}
+          <AmazonLink productId="core-10x10-canopy" pageSlug="camping-in-the-northeast-for-beginners" />{' '}
           (~$130). For the routine afternoon rain.
         </li>
         <li>
           <strong>Lighting.</strong>{' '}
-          <AmazonLink productId="fwc-lantern-consciot" pageSlug="camping-in-the-northeast-for-beginners" />{' '}
-          (~$30).
+          <AmazonLink productId="luminaid-packlite-max" pageSlug="camping-in-the-northeast-for-beginners" />{' '}
+          (~$75).
         </li>
         <li>
           <strong>Headlamp.</strong>{' '}
-          <AmazonLink productId="headlamp-family" pageSlug="camping-in-the-northeast-for-beginners" />{' '}
-          (~$50). Daylight ends fast under the Northeast canopy, especially in fall.
+          <AmazonLink productId="black-diamond-spot-400" pageSlug="camping-in-the-northeast-for-beginners" />{' '}
+          (~$60). Daylight ends fast under the Northeast canopy, especially in fall.
         </li>
         <li>
           <strong>Camp chair.</strong>{' '}
-          <AmazonLink productId="fwc-chair-gci-rocker" pageSlug="camping-in-the-northeast-for-beginners" />{' '}
+          <AmazonLink productId="gci-freestyle-rocker" pageSlug="camping-in-the-northeast-for-beginners" />{' '}
           (~$80).
         </li>
         <li>

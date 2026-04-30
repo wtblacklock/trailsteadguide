@@ -240,47 +240,47 @@ export default function Page() {
       <ul>
         <li>
           <strong>Tent.</strong>{' '}
-          <AmazonLink productId="fwc-tent-sundome" pageSlug="camping-in-the-pacific-northwest-for-beginners" />{' '}
-          (~$116). Seam-seal the rainfly before the trip; stake the rainfly off the body for ventilation when it&apos;s only drizzling.
+          <AmazonLink productId="coleman-sundome-4p" pageSlug="camping-in-the-pacific-northwest-for-beginners" />{' '}
+          (~$68). Seam-seal the rainfly before the trip; stake the rainfly off the body for ventilation when it&apos;s only drizzling.
         </li>
         <li>
           <strong>Sleeping bag.</strong>{' '}
-          <AmazonLink productId="sleeping-bag-family" pageSlug="camping-in-the-pacific-northwest-for-beginners" />{' '}
-          (~$95). The right rating for PNW altitude and shoulder-season nights. A 30°F bag works at sea level mid-summer.
+          <AmazonLink productId="coleman-brazos-bag" pageSlug="camping-in-the-pacific-northwest-for-beginners" />{' '}
+          (~$54). Works sea level mid-summer in the PNW. For altitude or shoulder-season nights, upgrade to a 20–30°F bag.
         </li>
         <li>
           <strong>Sleeping pad.</strong>{' '}
-          <AmazonLink productId="sleeping-pad-air" pageSlug="camping-in-the-pacific-northwest-for-beginners" />{' '}
-          (~$75). Insulates from cool wet ground.
+          <AmazonLink productId="big-agnes-divide" pageSlug="camping-in-the-pacific-northwest-for-beginners" />{' '}
+          (~$100). Self-inflating, packs small. Pair with a closed-cell foam pad in damp conditions.
         </li>
         <li>
           <strong>Stove.</strong>{' '}
-          <AmazonLink productId="fwc-stove-coleman-1burner" pageSlug="camping-in-the-pacific-northwest-for-beginners" />{' '}
+          <AmazonLink productId="coleman-1-burner" pageSlug="camping-in-the-pacific-northwest-for-beginners" />{' '}
           (~$40). Reliable in damp conditions.
         </li>
         <li>
           <strong>Cooler.</strong>{' '}
-          <AmazonLink productId="fwc-cooler-rolling" pageSlug="camping-in-the-pacific-northwest-for-beginners" />{' '}
+          <AmazonLink productId="coleman-classic-rolling-cooler" pageSlug="camping-in-the-pacific-northwest-for-beginners" />{' '}
           (~$107). Bear box overnight in any forested campground.
         </li>
         <li>
           <strong>Tarp / canopy.</strong>{' '}
-          <AmazonLink productId="canopy-camp" pageSlug="camping-in-the-pacific-northwest-for-beginners" />{' '}
+          <AmazonLink productId="core-10x10-canopy" pageSlug="camping-in-the-pacific-northwest-for-beginners" />{' '}
           (~$130). Less for shade, more for keeping the picnic table dry.
         </li>
         <li>
           <strong>Lighting.</strong>{' '}
-          <AmazonLink productId="fwc-lantern-consciot" pageSlug="camping-in-the-pacific-northwest-for-beginners" />{' '}
-          (~$30).
+          <AmazonLink productId="luminaid-packlite-max" pageSlug="camping-in-the-pacific-northwest-for-beginners" />{' '}
+          (~$75).
         </li>
         <li>
           <strong>Headlamp.</strong>{' '}
-          <AmazonLink productId="headlamp-family" pageSlug="camping-in-the-pacific-northwest-for-beginners" />{' '}
-          (~$50). Daylight ends fast under PNW canopy.
+          <AmazonLink productId="black-diamond-spot-400" pageSlug="camping-in-the-pacific-northwest-for-beginners" />{' '}
+          (~$60). Daylight ends fast under PNW canopy.
         </li>
         <li>
           <strong>Camp chair.</strong>{' '}
-          <AmazonLink productId="fwc-chair-gci-rocker" pageSlug="camping-in-the-pacific-northwest-for-beginners" />{' '}
+          <AmazonLink productId="gci-freestyle-rocker" pageSlug="camping-in-the-pacific-northwest-for-beginners" />{' '}
           (~$80).
         </li>
       </ul>

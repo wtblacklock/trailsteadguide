@@ -210,37 +210,37 @@ export default function Page() {
       <ul>
         <li>
           <strong>Tent.</strong>{' '}
-          <AmazonLink productId="fwc-tent-sundome" pageSlug="summer-camping-for-beginners" />{' '}
-          (~$116). 9×7 ft floor, full mesh inner, fits a queen air bed. Sets up in under 15 minutes the first time.
+          <AmazonLink productId="coleman-sundome-4p" pageSlug="summer-camping-for-beginners" />{' '}
+          (~$68). 9×7 ft floor, full mesh inner, fits a queen air bed. Sets up in under 15 minutes the first time.
         </li>
         <li>
           <strong>Stove.</strong>{' '}
-          <AmazonLink productId="fwc-stove-coleman-1burner" pageSlug="summer-camping-for-beginners" />{' '}
+          <AmazonLink productId="coleman-1-burner" pageSlug="summer-camping-for-beginners" />{' '}
           (~$40). Reliable under fire bans, boils water fast, no learning curve.
         </li>
         <li>
           <strong>Cooler.</strong>{' '}
-          <AmazonLink productId="fwc-cooler-rolling" pageSlug="summer-camping-for-beginners" />{' '}
+          <AmazonLink productId="coleman-classic-rolling-cooler" pageSlug="summer-camping-for-beginners" />{' '}
           (~$107). The wheels matter when summer parking is a hike from the site.
         </li>
         <li>
           <strong>Shade.</strong>{' '}
-          <AmazonLink productId="canopy-camp" pageSlug="summer-camping-for-beginners" />{' '}
+          <AmazonLink productId="core-10x10-canopy" pageSlug="summer-camping-for-beginners" />{' '}
           (~$130). The gear that gets used the most on hot days. Two minutes to set up.
         </li>
         <li>
           <strong>Lighting.</strong>{' '}
-          <AmazonLink productId="fwc-lantern-consciot" pageSlug="summer-camping-for-beginners" />{' '}
-          (~$30). One on the picnic table, one inside the tent.
+          <AmazonLink productId="luminaid-packlite-max" pageSlug="summer-camping-for-beginners" />{' '}
+          (~$75). One on the picnic table, one inside the tent.
         </li>
         <li>
           <strong>Headlamp.</strong>{' '}
-          <AmazonLink productId="headlamp-family" pageSlug="summer-camping-for-beginners" />{' '}
-          (~$50). One per person, no exceptions.
+          <AmazonLink productId="black-diamond-spot-400" pageSlug="summer-camping-for-beginners" />{' '}
+          (~$60). One per person, no exceptions.
         </li>
         <li>
           <strong>Camp chair.</strong>{' '}
-          <AmazonLink productId="fwc-chair-gci-rocker" pageSlug="summer-camping-for-beginners" />{' '}
+          <AmazonLink productId="gci-freestyle-rocker" pageSlug="summer-camping-for-beginners" />{' '}
           (~$80). The chair you actually want to sit in for an evening.
         </li>
       </ul>

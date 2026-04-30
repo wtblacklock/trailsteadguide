@@ -233,42 +233,42 @@ export default function Page() {
       <ul>
         <li>
           <strong>Tent.</strong>{' '}
-          <AmazonLink productId="fwc-tent-sundome" pageSlug="camping-in-colorado-for-beginners" />{' '}
-          (~$116). Stake aggressively and seam-seal the rainfly before the trip — Colorado wind and afternoon downpours expose any weakness.
+          <AmazonLink productId="coleman-sundome-4p" pageSlug="camping-in-colorado-for-beginners" />{' '}
+          (~$68). Stake aggressively and seam-seal the rainfly before the trip — Colorado wind and afternoon downpours expose any weakness.
         </li>
         <li>
           <strong>Sleeping bag.</strong>{' '}
-          <AmazonLink productId="sleeping-bag-family" pageSlug="camping-in-colorado-for-beginners" />{' '}
-          (~$95). The right rating for Colorado mountain camping in summer. A 30°F bag works on the Front Range.
+          <AmazonLink productId="coleman-brazos-bag" pageSlug="camping-in-colorado-for-beginners" />{' '}
+          (~$54). Works on the Front Range in summer. For mountain altitudes, upgrade to a 20–30°F bag.
         </li>
         <li>
           <strong>Sleeping pad.</strong>{' '}
-          <AmazonLink productId="sleeping-pad-air" pageSlug="camping-in-colorado-for-beginners" />{' '}
-          (~$75). Insulates from cold ground at altitude — the under-rated piece of warmth.
+          <AmazonLink productId="big-agnes-divide" pageSlug="camping-in-colorado-for-beginners" />{' '}
+          (~$100). Self-inflating, packs small. Pair with a closed-cell foam pad at altitude — the under-rated piece of warmth.
         </li>
         <li>
           <strong>Stove.</strong>{' '}
-          <AmazonLink productId="fwc-stove-coleman-1burner" pageSlug="camping-in-colorado-for-beginners" />{' '}
+          <AmazonLink productId="coleman-1-burner" pageSlug="camping-in-colorado-for-beginners" />{' '}
           (~$40). Reliable, works under fire restrictions which are common in Colorado summers.
         </li>
         <li>
           <strong>Cooler.</strong>{' '}
-          <AmazonLink productId="fwc-cooler-rolling" pageSlug="camping-in-colorado-for-beginners" />{' '}
+          <AmazonLink productId="coleman-classic-rolling-cooler" pageSlug="camping-in-colorado-for-beginners" />{' '}
           (~$107). Lock it in the car or the bear box overnight in any mountain campground.
         </li>
         <li>
           <strong>Lighting.</strong>{' '}
-          <AmazonLink productId="fwc-lantern-consciot" pageSlug="camping-in-colorado-for-beginners" />{' '}
-          (~$30).
+          <AmazonLink productId="luminaid-packlite-max" pageSlug="camping-in-colorado-for-beginners" />{' '}
+          (~$75).
         </li>
         <li>
           <strong>Headlamp.</strong>{' '}
-          <AmazonLink productId="headlamp-family" pageSlug="camping-in-colorado-for-beginners" />{' '}
-          (~$50). Lithium batteries handle cold mountain nights better than alkaline.
+          <AmazonLink productId="black-diamond-spot-400" pageSlug="camping-in-colorado-for-beginners" />{' '}
+          (~$60). Lithium batteries handle cold mountain nights better than alkaline.
         </li>
         <li>
           <strong>Camp chair.</strong>{' '}
-          <AmazonLink productId="fwc-chair-gci-rocker" pageSlug="camping-in-colorado-for-beginners" />{' '}
+          <AmazonLink productId="gci-freestyle-rocker" pageSlug="camping-in-colorado-for-beginners" />{' '}
           (~$80).
         </li>
       </ul>
