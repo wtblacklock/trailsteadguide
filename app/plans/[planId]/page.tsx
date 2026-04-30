@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { PLAN_TEMPLATES, getPlanTemplate } from '@/lib/plan-templates'
-import { getProductsForTemplate } from '@/lib/affiliate-products'
+import { getProductsForGuide, PLAN_TO_GUIDE } from '@/lib/affiliate/guide-gear'
 import PlanHero from '@/components/plan/PlanHero'
 import PlanJumpNav from '@/components/plan/PlanJumpNav'
 import PersonalizationChip from '@/components/plan/PersonalizationChip'
@@ -138,10 +138,13 @@ export default async function PlanPage({
   if (!meta || !plan) notFound()
 
   const slug = planId as PlanSlug
-  const products = getProductsForTemplate(slug)
   const sp = await searchParams
 
   const out = parseQuizOutput(slug, sp)
+  // Each plan slug pulls its affiliate gear from a representative guide.
+  // The KID_GEAR slot is filtered out inside <AffiliateBlock> when the
+  // party doesn't include a toddler/infant.
+  const products = getProductsForGuide(PLAN_TO_GUIDE[slug])
   const modifiers = buildModifiers(out)
   const merged = applyModifiers(plan, modifiers, getPlanModifierRules(slug))
   const systems = buildGearSystems(out, modifiers)
@@ -236,7 +239,7 @@ export default async function PlanPage({
       <div id="meals" className="scroll-mt-32"><MealPlanAndShopping meals={merged.meals} defaultAdults={adults} defaultKids={kids} /></div>
       <div id="safety" className="scroll-mt-32"><SafetyNotes notes={merged.safetyNotes} /></div>
       {products.length > 0 && (
-        <div id="shop" className="scroll-mt-32"><AffiliateBlock products={products} /></div>
+        <div id="shop" className="scroll-mt-32"><AffiliateBlock products={products} quizOutput={out} /></div>
       )}
       <FounderTrustBlock />
       <TripPackCta

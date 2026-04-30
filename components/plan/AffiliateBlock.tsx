@@ -1,8 +1,17 @@
 import { AffiliateProduct } from '@/types'
 import { getProductUrl } from '@/lib/amazon'
+import type { QuizOutput } from '@/lib/personalization/types'
 
 interface Props {
   products: AffiliateProduct[]
+  /**
+   * Quiz output, when available. Used to gate kid-specific gear: a product
+   * with `slot === 'KID_GEAR'` only renders when the party includes a
+   * toddler/infant (`hasKids && kidsAge === 'under_5'`). Without this prop,
+   * kid gear renders unconditionally — matches the un-personalized behavior
+   * of static guide pages.
+   */
+  quizOutput?: QuizOutput
 }
 
 const categoryLabel: Record<AffiliateProduct['category'], string> = {
@@ -11,10 +20,31 @@ const categoryLabel: Record<AffiliateProduct['category'], string> = {
   convenience: 'Convenience',
 }
 
-export default function AffiliateBlock({ products }: Props) {
-  if (products.length === 0) return null
+/**
+ * Toddlers/infants are the only audience for KID_GEAR products in the
+ * current registry (KidCo GoPod Activity Center). Older kids don't use it.
+ * Exported for unit testing; called inside `<AffiliateBlock>` and
+ * applicable elsewhere a kid-gear filter is needed.
+ */
+export function shouldRenderKidGear(quizOutput?: QuizOutput): boolean {
+  if (!quizOutput) return true
+  return quizOutput.hasKids && quizOutput.kidsAge === 'under_5'
+}
 
-  const grouped = products.reduce<Record<AffiliateProduct['category'], AffiliateProduct[]>>(
+/** Filter products to those visible given the party composition. */
+export function filterAffiliateProducts(
+  products: AffiliateProduct[],
+  quizOutput?: QuizOutput,
+): AffiliateProduct[] {
+  const showKidGear = shouldRenderKidGear(quizOutput)
+  return products.filter((p) => p.slot !== 'KID_GEAR' || showKidGear)
+}
+
+export default function AffiliateBlock({ products, quizOutput }: Props) {
+  const visible = filterAffiliateProducts(products, quizOutput)
+  if (visible.length === 0) return null
+
+  const grouped = visible.reduce<Record<AffiliateProduct['category'], AffiliateProduct[]>>(
     (acc, p) => { acc[p.category] = [...(acc[p.category] ?? []), p]; return acc },
     { essential: [], comfort: [], convenience: [] }
   )
