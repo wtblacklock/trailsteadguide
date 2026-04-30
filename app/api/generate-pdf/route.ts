@@ -27,18 +27,10 @@ export async function GET(req: Request) {
     const adults = Number(url.searchParams.get('adults') || 2)
     const kids = Number(url.searchParams.get('kids') || 2)
     const nights = Number(url.searchParams.get('nights') || 1)
-    const group = url.searchParams.get('group') || undefined
-    const kidsAge = url.searchParams.get('kidsAge') || undefined
-    const activity = url.searchParams.get('activity') || undefined
-    const comfort = url.searchParams.get('comfort') || undefined
     const html = renderTripPackHtml({
       planSlug: plan,
       party: { adults, kids },
       nights,
-      group: group as 'solo' | 'couple' | 'family' | undefined,
-      kidsAge: kidsAge as 'under_5' | '5_10' | '10+' | undefined,
-      activity: activity as 'relaxing' | 'balanced' | 'active' | undefined,
-      comfort: comfort as 'minimal' | 'balanced' | 'comfort-first' | undefined,
     })
     return new NextResponse(html, {
       status: 200,
