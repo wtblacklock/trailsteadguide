@@ -241,47 +241,47 @@ export default function Page() {
       <ul>
         <li>
           <strong>Tent.</strong>{' '}
-          <AmazonLink productId="fwc-tent-sundome" pageSlug="camping-in-the-appalachians-for-beginners" />{' '}
-          (~$116). Full mesh inner, full-coverage rainfly. Pitch with the door downwind for ventilation in humid valleys.
+          <AmazonLink productId="coleman-sundome-4p" pageSlug="camping-in-the-appalachians-for-beginners" />{' '}
+          (~$68). Full mesh inner, full-coverage rainfly. Pitch with the door downwind for ventilation in humid valleys.
         </li>
         <li>
           <strong>Sleeping bag.</strong>{' '}
-          <AmazonLink productId="sleeping-bag-family" pageSlug="camping-in-the-appalachians-for-beginners" />{' '}
-          (~$95). Right rating for fall/spring at altitude. A 50°F bag works for low-elevation summer.
+          <AmazonLink productId="coleman-brazos-bag" pageSlug="camping-in-the-appalachians-for-beginners" />{' '}
+          (~$54). Works low-elevation summer. For fall/spring at altitude, add a liner or use a 20°F bag.
         </li>
         <li>
           <strong>Sleeping pad.</strong>{' '}
-          <AmazonLink productId="sleeping-pad-air" pageSlug="camping-in-the-appalachians-for-beginners" />{' '}
-          (~$75). Insulates from cool damp ground.
+          <AmazonLink productId="big-agnes-divide" pageSlug="camping-in-the-appalachians-for-beginners" />{' '}
+          (~$100). Self-inflating, packs small. In damp conditions, lay a closed-cell foam pad underneath.
         </li>
         <li>
           <strong>Stove.</strong>{' '}
-          <AmazonLink productId="fwc-stove-coleman-1burner" pageSlug="camping-in-the-appalachians-for-beginners" />{' '}
+          <AmazonLink productId="coleman-1-burner" pageSlug="camping-in-the-appalachians-for-beginners" />{' '}
           (~$40). Reliable in damp conditions.
         </li>
         <li>
           <strong>Cooler.</strong>{' '}
-          <AmazonLink productId="fwc-cooler-rolling" pageSlug="camping-in-the-appalachians-for-beginners" />{' '}
+          <AmazonLink productId="coleman-classic-rolling-cooler" pageSlug="camping-in-the-appalachians-for-beginners" />{' '}
           (~$107). Bear cable or vehicle lockup overnight in any Appalachian campground.
         </li>
         <li>
           <strong>Tarp / canopy.</strong>{' '}
-          <AmazonLink productId="canopy-camp" pageSlug="camping-in-the-appalachians-for-beginners" />{' '}
+          <AmazonLink productId="core-10x10-canopy" pageSlug="camping-in-the-appalachians-for-beginners" />{' '}
           (~$130). For afternoon rain over the picnic table.
         </li>
         <li>
           <strong>Lighting.</strong>{' '}
-          <AmazonLink productId="fwc-lantern-consciot" pageSlug="camping-in-the-appalachians-for-beginners" />{' '}
-          (~$30).
+          <AmazonLink productId="luminaid-packlite-max" pageSlug="camping-in-the-appalachians-for-beginners" />{' '}
+          (~$75).
         </li>
         <li>
           <strong>Headlamp.</strong>{' '}
-          <AmazonLink productId="headlamp-family" pageSlug="camping-in-the-appalachians-for-beginners" />{' '}
-          (~$50). One per person. Useful for the cool dark mornings of fall.
+          <AmazonLink productId="black-diamond-spot-400" pageSlug="camping-in-the-appalachians-for-beginners" />{' '}
+          (~$60). One per person. Useful for the cool dark mornings of fall.
         </li>
         <li>
           <strong>Camp chair.</strong>{' '}
-          <AmazonLink productId="fwc-chair-gci-rocker" pageSlug="camping-in-the-appalachians-for-beginners" />{' '}
+          <AmazonLink productId="gci-freestyle-rocker" pageSlug="camping-in-the-appalachians-for-beginners" />{' '}
           (~$80).
         </li>
         <li>

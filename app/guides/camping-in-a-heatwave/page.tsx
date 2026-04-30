@@ -258,37 +258,37 @@ export default function Page() {
         <ul>
           <li>
             <strong>Tent.</strong>{' '}
-            <AmazonLink productId="fwc-tent-sundome" pageSlug="camping-in-a-heatwave" />{' '}
-            (~$116). Full mesh inner is the part that matters in heat. Stake the rainfly off the body for max airflow.
+            <AmazonLink productId="coleman-sundome-4p" pageSlug="camping-in-a-heatwave" />{' '}
+            (~$68). Full mesh inner is the part that matters in heat. Stake the rainfly off the body for max airflow.
           </li>
           <li>
             <strong>Shade.</strong>{' '}
-            <AmazonLink productId="canopy-camp" pageSlug="camping-in-a-heatwave" />{' '}
+            <AmazonLink productId="core-10x10-canopy" pageSlug="camping-in-a-heatwave" />{' '}
             (~$130). Two minutes to set up; runs the whole hot stretch of the day.
           </li>
           <li>
             <strong>Stove.</strong>{' '}
-            <AmazonLink productId="fwc-stove-coleman-1burner" pageSlug="camping-in-a-heatwave" />{' '}
+            <AmazonLink productId="coleman-1-burner" pageSlug="camping-in-a-heatwave" />{' '}
             (~$40). Works under burn bans, which open fires do not.
           </li>
           <li>
             <strong>Cooler.</strong>{' '}
-            <AmazonLink productId="fwc-cooler-rolling" pageSlug="camping-in-a-heatwave" />{' '}
+            <AmazonLink productId="coleman-classic-rolling-cooler" pageSlug="camping-in-a-heatwave" />{' '}
             (~$107). Wheels matter when the parking lot is a long walk in 95°F.
           </li>
           <li>
             <strong>Lighting.</strong>{' '}
-            <AmazonLink productId="fwc-lantern-consciot" pageSlug="camping-in-a-heatwave" />{' '}
-            (~$30). One on the picnic table, one inside the tent.
+            <AmazonLink productId="luminaid-packlite-max" pageSlug="camping-in-a-heatwave" />{' '}
+            (~$75). One on the picnic table, one inside the tent.
           </li>
           <li>
             <strong>Headlamp.</strong>{' '}
-            <AmazonLink productId="headlamp-family" pageSlug="camping-in-a-heatwave" />{' '}
-            (~$50). Useful for the early-morning dawn hike before it gets hot.
+            <AmazonLink productId="black-diamond-spot-400" pageSlug="camping-in-a-heatwave" />{' '}
+            (~$60). Useful for the early-morning dawn hike before it gets hot.
           </li>
           <li>
             <strong>Camp chair.</strong>{' '}
-            <AmazonLink productId="fwc-chair-gci-rocker" pageSlug="camping-in-a-heatwave" />{' '}
+            <AmazonLink productId="gci-freestyle-rocker" pageSlug="camping-in-a-heatwave" />{' '}
             (~$80). The chair you actually want under the canopy for the long midday rest.
           </li>
           <li>

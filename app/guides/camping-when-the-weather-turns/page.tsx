@@ -243,42 +243,42 @@ export default function Page() {
         <ul>
           <li>
             <strong>Tent.</strong>{' '}
-            <AmazonLink productId="fwc-tent-sundome" pageSlug="camping-when-the-weather-turns" />{' '}
-            (~$116). Full-coverage rainfly, sealed seams. Pitch with every guy-out staked.
+            <AmazonLink productId="coleman-sundome-4p" pageSlug="camping-when-the-weather-turns" />{' '}
+            (~$68). Full-coverage rainfly, sealed seams. Pitch with every guy-out staked.
           </li>
           <li>
             <strong>Sleeping bag.</strong>{' '}
-            <AmazonLink productId="sleeping-bag-family" pageSlug="camping-when-the-weather-turns" />{' '}
-            (~$95). 20°F synthetic fill — handles damp without losing insulation.
+            <AmazonLink productId="coleman-brazos-bag" pageSlug="camping-when-the-weather-turns" />{' '}
+            (~$54). Cool-weather rated (40°F+), synthetic fill that washes easily after a wet trip. Add a liner or upgrade to a 20°F bag for colder nights.
           </li>
           <li>
             <strong>Sleeping pad.</strong>{' '}
-            <AmazonLink productId="sleeping-pad-air" pageSlug="camping-when-the-weather-turns" />{' '}
-            (~$75). High R-value lifts you off cold wet ground.
+            <AmazonLink productId="big-agnes-divide" pageSlug="camping-when-the-weather-turns" />{' '}
+            (~$100). Self-inflating, packs small. Pair with a closed-cell foam pad if the ground is cold or wet.
           </li>
           <li>
             <strong>Stove.</strong>{' '}
-            <AmazonLink productId="fwc-stove-coleman-1burner" pageSlug="camping-when-the-weather-turns" />{' '}
+            <AmazonLink productId="coleman-1-burner" pageSlug="camping-when-the-weather-turns" />{' '}
             (~$40). Lights in wind, runs in light rain.
           </li>
           <li>
             <strong>Cooler.</strong>{' '}
-            <AmazonLink productId="fwc-cooler-rolling" pageSlug="camping-when-the-weather-turns" />{' '}
+            <AmazonLink productId="coleman-classic-rolling-cooler" pageSlug="camping-when-the-weather-turns" />{' '}
             (~$107). Wheels matter when you are wet-packing.
           </li>
           <li>
             <strong>Lighting.</strong>{' '}
-            <AmazonLink productId="fwc-lantern-consciot" pageSlug="camping-when-the-weather-turns" />{' '}
-            (~$30). One on the picnic table, one inside the tent. Most decisions get made after dark.
+            <AmazonLink productId="luminaid-packlite-max" pageSlug="camping-when-the-weather-turns" />{' '}
+            (~$75). One on the picnic table, one inside the tent. Most decisions get made after dark.
           </li>
           <li>
             <strong>Headlamp.</strong>{' '}
-            <AmazonLink productId="headlamp-family" pageSlug="camping-when-the-weather-turns" />{' '}
-            (~$50). Waterproof rated for real weather.
+            <AmazonLink productId="black-diamond-spot-400" pageSlug="camping-when-the-weather-turns" />{' '}
+            (~$60). Waterproof rated for real weather.
           </li>
           <li>
             <strong>Camp chair.</strong>{' '}
-            <AmazonLink productId="fwc-chair-gci-rocker" pageSlug="camping-when-the-weather-turns" />{' '}
+            <AmazonLink productId="gci-freestyle-rocker" pageSlug="camping-when-the-weather-turns" />{' '}
             (~$80). The chair you actually want under a covered tarp.
           </li>
           <li>

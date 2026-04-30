@@ -245,37 +245,37 @@ export default function Page() {
       <ul>
         <li>
           <strong>Tent.</strong>{' '}
-          <AmazonLink productId="fwc-tent-sundome" pageSlug="camping-in-texas-for-beginners" />{' '}
-          (~$116). Full mesh inner is the part that matters in Texas. Stake the rainfly off the body for airflow on warm nights.
+          <AmazonLink productId="coleman-sundome-4p" pageSlug="camping-in-texas-for-beginners" />{' '}
+          (~$68). Full mesh inner is the part that matters in Texas. Stake the rainfly off the body for airflow on warm nights.
         </li>
         <li>
           <strong>Shade.</strong>{' '}
-          <AmazonLink productId="canopy-camp" pageSlug="camping-in-texas-for-beginners" />{' '}
+          <AmazonLink productId="core-10x10-canopy" pageSlug="camping-in-texas-for-beginners" />{' '}
           (~$130). Two minutes to set up, runs the whole hot stretch of the day.
         </li>
         <li>
           <strong>Stove.</strong>{' '}
-          <AmazonLink productId="fwc-stove-coleman-1burner" pageSlug="camping-in-texas-for-beginners" />{' '}
+          <AmazonLink productId="coleman-1-burner" pageSlug="camping-in-texas-for-beginners" />{' '}
           (~$40). Works under nearly every Texas county burn ban, which open fires don&apos;t.
         </li>
         <li>
           <strong>Cooler.</strong>{' '}
-          <AmazonLink productId="fwc-cooler-rolling" pageSlug="camping-in-texas-for-beginners" />{' '}
+          <AmazonLink productId="coleman-classic-rolling-cooler" pageSlug="camping-in-texas-for-beginners" />{' '}
           (~$107). Wheels matter when the parking lot is a long walk in 95°F.
         </li>
         <li>
           <strong>Lighting.</strong>{' '}
-          <AmazonLink productId="fwc-lantern-consciot" pageSlug="camping-in-texas-for-beginners" />{' '}
-          (~$30). One for the picnic table, one inside the tent.
+          <AmazonLink productId="luminaid-packlite-max" pageSlug="camping-in-texas-for-beginners" />{' '}
+          (~$75). One for the picnic table, one inside the tent.
         </li>
         <li>
           <strong>Headlamp.</strong>{' '}
-          <AmazonLink productId="headlamp-family" pageSlug="camping-in-texas-for-beginners" />{' '}
-          (~$50). One per person. Useful for the early-morning bird walk before it gets hot.
+          <AmazonLink productId="black-diamond-spot-400" pageSlug="camping-in-texas-for-beginners" />{' '}
+          (~$60). One per person. Useful for the early-morning bird walk before it gets hot.
         </li>
         <li>
           <strong>Camp chair.</strong>{' '}
-          <AmazonLink productId="fwc-chair-gci-rocker" pageSlug="camping-in-texas-for-beginners" />{' '}
+          <AmazonLink productId="gci-freestyle-rocker" pageSlug="camping-in-texas-for-beginners" />{' '}
           (~$80). The chair you actually want to sit in for the long Texas evening.
         </li>
         <li>

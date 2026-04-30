@@ -208,42 +208,42 @@ export default function Page() {
       <ul>
         <li>
           <strong>Tent.</strong>{' '}
-          <AmazonLink productId="fwc-tent-sundome" pageSlug="spring-camping-for-beginners" />{' '}
-          (~$116). 9×7 ft floor, full-coverage rainfly, weatherproof seams. The safe first-trip tent in any season.
+          <AmazonLink productId="coleman-sundome-4p" pageSlug="spring-camping-for-beginners" />{' '}
+          (~$68). 9×7 ft floor, full-coverage rainfly, weatherproof seams. The safe first-trip tent in any season.
         </li>
         <li>
           <strong>Sleeping bag.</strong>{' '}
-          <AmazonLink productId="sleeping-bag-family" pageSlug="spring-camping-for-beginners" />{' '}
-          (~$95). 20°F rating, roomy fit. The bag that covers spring without being too hot in early summer.
+          <AmazonLink productId="coleman-brazos-bag" pageSlug="spring-camping-for-beginners" />{' '}
+          (~$54). Roomy fit, cool-weather rated. Comfortable in early summer; add a liner for cold spring nights.
         </li>
         <li>
           <strong>Sleeping pad.</strong>{' '}
-          <AmazonLink productId="sleeping-pad-air" pageSlug="spring-camping-for-beginners" />{' '}
-          (~$75). Self-inflating, R-value high enough for cold-ground spring nights.
+          <AmazonLink productId="big-agnes-divide" pageSlug="spring-camping-for-beginners" />{' '}
+          (~$100). Self-inflating, packs small. Add a closed-cell foam pad for cold-ground spring nights.
         </li>
         <li>
           <strong>Stove.</strong>{' '}
-          <AmazonLink productId="fwc-stove-coleman-1burner" pageSlug="spring-camping-for-beginners" />{' '}
+          <AmazonLink productId="coleman-1-burner" pageSlug="spring-camping-for-beginners" />{' '}
           (~$40). Boils water fast, runs in the rain, no learning curve when your hands are cold.
         </li>
         <li>
           <strong>Cooler.</strong>{' '}
-          <AmazonLink productId="fwc-cooler-rolling" pageSlug="spring-camping-for-beginners" />{' '}
+          <AmazonLink productId="coleman-classic-rolling-cooler" pageSlug="spring-camping-for-beginners" />{' '}
           (~$107). The wheels matter when the parking pad is wet and you don&apos;t want to slog gear in arms.
         </li>
         <li>
           <strong>Lighting.</strong>{' '}
-          <AmazonLink productId="fwc-lantern-consciot" pageSlug="spring-camping-for-beginners" />{' '}
-          (~$30). Sunset is earlier than people remember; you&apos;ll cook dinner in the dark in March and April.
+          <AmazonLink productId="luminaid-packlite-max" pageSlug="spring-camping-for-beginners" />{' '}
+          (~$75). Sunset is earlier than people remember; you&apos;ll cook dinner in the dark in March and April.
         </li>
         <li>
           <strong>Headlamp.</strong>{' '}
-          <AmazonLink productId="headlamp-family" pageSlug="spring-camping-for-beginners" />{' '}
-          (~$50). One per person, no exceptions.
+          <AmazonLink productId="black-diamond-spot-400" pageSlug="spring-camping-for-beginners" />{' '}
+          (~$60). One per person, no exceptions.
         </li>
         <li>
           <strong>Camp chair.</strong>{' '}
-          <AmazonLink productId="fwc-chair-gci-rocker" pageSlug="spring-camping-for-beginners" />{' '}
+          <AmazonLink productId="gci-freestyle-rocker" pageSlug="spring-camping-for-beginners" />{' '}
           (~$80). Folds up, holds up. Worth its weight on a cold spring evening.
         </li>
         <li>
