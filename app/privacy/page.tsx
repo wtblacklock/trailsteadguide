@@ -1,4 +1,5 @@
 import { LegalPage } from '@/components/legal/LegalPage'
+import ContactForm from '@/components/contact/ContactForm'
 import { pageMetadata } from '@/lib/seo'
 
 export const metadata = pageMetadata({
@@ -43,9 +44,9 @@ export default function Page() {
       </p>
       <h2>Your rights</h2>
       <p>
-        You can request deletion of any data we hold about you at any time by emailing{' '}
-        <a href="mailto:privacy@trailsteadguide.com">privacy@trailsteadguide.com</a>.
+        You can request deletion of any data we hold about you at any time using the form below.
       </p>
+      <ContactForm initialCategory="privacy" />
       <h2>Changes to this policy</h2>
       <p>
         We will update the &quot;last updated&quot; date above when we make material changes. Significant changes will be announced via a banner on the site.
