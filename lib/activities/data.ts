@@ -425,8 +425,6 @@ export const ACTIVITIES: Activity[] = [
     ],
     recommendedFor: ['first-weekend-camp', 'easy-family-basecamp'],
   },
-]
-
   {
     slug: 'shadow-puppet-theatre',
     title: 'Shadow Puppet Theatre',
