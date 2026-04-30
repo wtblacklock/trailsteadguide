@@ -244,42 +244,42 @@ export default function Page() {
         <ul>
           <li>
             <strong>Tent.</strong>{' '}
-            <AmazonLink productId="fwc-tent-sundome" pageSlug="first-night-camping-guide" />{' '}
-            (~$116). The forgiving first tent — easy pitch, real rainfly, room to sit up.
+            <AmazonLink productId="coleman-sundome-4p" pageSlug="first-night-camping-guide" />{' '}
+            (~$68). The forgiving first tent — easy pitch, real rainfly, room to sit up.
           </li>
           <li>
             <strong>Sleeping bag.</strong>{' '}
-            <AmazonLink productId="sleeping-bag-family" pageSlug="first-night-camping-guide" />{' '}
-            (~$95). 20°F rating covers spring, summer, and most fall first-trips. Roomy fit.
+            <AmazonLink productId="coleman-brazos-bag" pageSlug="first-night-camping-guide" />{' '}
+            (~$54). Roomy fit, cool-weather rated. Covers most spring/summer first-trips; add a liner for cold ones.
           </li>
           <li>
             <strong>Sleeping pad.</strong>{' '}
-            <AmazonLink productId="sleeping-pad-air" pageSlug="first-night-camping-guide" />{' '}
-            (~$75). Self-inflates, R-value high enough for cold ground. The piece that matters most for sleep.
+            <AmazonLink productId="big-agnes-divide" pageSlug="first-night-camping-guide" />{' '}
+            (~$100). Self-inflating, packs small. The piece that matters most for sleep.
           </li>
           <li>
             <strong>Stove.</strong>{' '}
-            <AmazonLink productId="fwc-stove-coleman-1burner" pageSlug="first-night-camping-guide" />{' '}
+            <AmazonLink productId="coleman-1-burner" pageSlug="first-night-camping-guide" />{' '}
             (~$40). Boils water in three minutes, no learning curve.
           </li>
           <li>
             <strong>Headlamp.</strong>{' '}
-            <AmazonLink productId="headlamp-family" pageSlug="first-night-camping-guide" />{' '}
-            (~$50). One per person, no exceptions.
+            <AmazonLink productId="black-diamond-spot-400" pageSlug="first-night-camping-guide" />{' '}
+            (~$60). One per person, no exceptions.
           </li>
           <li>
             <strong>Lantern.</strong>{' '}
-            <AmazonLink productId="fwc-lantern-consciot" pageSlug="first-night-camping-guide" />{' '}
-            (~$30). One for the picnic table, one inside the tent.
+            <AmazonLink productId="luminaid-packlite-max" pageSlug="first-night-camping-guide" />{' '}
+            (~$75). One for the picnic table, one inside the tent.
           </li>
           <li>
             <strong>Cooler.</strong>{' '}
-            <AmazonLink productId="fwc-cooler-rolling" pageSlug="first-night-camping-guide" />{' '}
+            <AmazonLink productId="coleman-classic-rolling-cooler" pageSlug="first-night-camping-guide" />{' '}
             (~$107). Wheels make the walk in from the parking lot a non-event.
           </li>
           <li>
             <strong>Camp chair.</strong>{' '}
-            <AmazonLink productId="fwc-chair-gci-rocker" pageSlug="first-night-camping-guide" />{' '}
+            <AmazonLink productId="gci-freestyle-rocker" pageSlug="first-night-camping-guide" />{' '}
             (~$80). One per adult. The chair you actually want to sit in for the long evening.
           </li>
         </ul>

@@ -249,42 +249,42 @@ export default function Page() {
         <ul>
           <li>
             <strong>Tent.</strong>{' '}
-            <AmazonLink productId="fwc-tent-sundome" pageSlug="rainy-camping-trips" />{' '}
-            (~$116). Full-coverage rainfly, sealed seams, real vestibule. The forgiving rain-trip tent.
+            <AmazonLink productId="coleman-sundome-4p" pageSlug="rainy-camping-trips" />{' '}
+            (~$68). Full-coverage rainfly, sealed seams, real vestibule. The forgiving rain-trip tent.
           </li>
           <li>
             <strong>Sleeping bag.</strong>{' '}
-            <AmazonLink productId="sleeping-bag-family" pageSlug="rainy-camping-trips" />{' '}
-            (~$95). Synthetic fill, 20°F rating, behaves well damp.
+            <AmazonLink productId="coleman-brazos-bag" pageSlug="rainy-camping-trips" />{' '}
+            (~$54). Synthetic fill, washes easily, behaves well damp. Add a liner or use a 20°F bag for cold nights.
           </li>
           <li>
             <strong>Sleeping pad.</strong>{' '}
-            <AmazonLink productId="sleeping-pad-air" pageSlug="rainy-camping-trips" />{' '}
-            (~$75). Self-inflates; high R-value lifts you off cold wet ground.
+            <AmazonLink productId="big-agnes-divide" pageSlug="rainy-camping-trips" />{' '}
+            (~$100). Self-inflating, packs small. Pair with a closed-cell foam pad in cold or wet conditions.
           </li>
           <li>
             <strong>Stove.</strong>{' '}
-            <AmazonLink productId="fwc-stove-coleman-1burner" pageSlug="rainy-camping-trips" />{' '}
+            <AmazonLink productId="coleman-1-burner" pageSlug="rainy-camping-trips" />{' '}
             (~$40). Lights in wind, runs in light rain, no learning curve when your hands are cold.
           </li>
           <li>
             <strong>Cooler.</strong>{' '}
-            <AmazonLink productId="fwc-cooler-rolling" pageSlug="rainy-camping-trips" />{' '}
+            <AmazonLink productId="coleman-classic-rolling-cooler" pageSlug="rainy-camping-trips" />{' '}
             (~$107). Wheels matter on a wet pad.
           </li>
           <li>
             <strong>Lighting.</strong>{' '}
-            <AmazonLink productId="fwc-lantern-consciot" pageSlug="rainy-camping-trips" />{' '}
-            (~$30). Sunset is earlier than people remember on overcast days.
+            <AmazonLink productId="luminaid-packlite-max" pageSlug="rainy-camping-trips" />{' '}
+            (~$75). Sunset is earlier than people remember on overcast days.
           </li>
           <li>
             <strong>Headlamp.</strong>{' '}
-            <AmazonLink productId="headlamp-family" pageSlug="rainy-camping-trips" />{' '}
-            (~$50). Waterproof rating that holds up in real weather.
+            <AmazonLink productId="black-diamond-spot-400" pageSlug="rainy-camping-trips" />{' '}
+            (~$60). Waterproof rating that holds up in real weather.
           </li>
           <li>
             <strong>Camp chair.</strong>{' '}
-            <AmazonLink productId="fwc-chair-gci-rocker" pageSlug="rainy-camping-trips" />{' '}
+            <AmazonLink productId="gci-freestyle-rocker" pageSlug="rainy-camping-trips" />{' '}
             (~$80). The chair you actually want under a covered tarp on a rainy evening.
           </li>
           <li>
