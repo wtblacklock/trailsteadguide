@@ -3,6 +3,7 @@ import { GuidePage } from '@/components/guide/GuidePage'
 import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
+import GuideGearShelf from '@/components/guide/GuideGearShelf'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
@@ -255,6 +256,7 @@ export default function Page() {
         No. Most parks ban it for invasive insect reasons. Buy a bundle at the camp store.
       </p>
     </GuidePage>
+    <GuideGearShelf guideSlug="first-camping-trip-checklist" />
     <GuideArticleCTA />
     <RelatedGuides currentSlug="first-camping-trip-checklist" />
     </>

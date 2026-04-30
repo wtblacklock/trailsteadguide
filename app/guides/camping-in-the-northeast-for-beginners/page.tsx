@@ -4,6 +4,7 @@ import { GuidePage } from '@/components/guide/GuidePage'
 import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
+import GuideGearShelf from '@/components/guide/GuideGearShelf'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
@@ -337,6 +338,7 @@ export default function Page() {
         A state park within 2 hours of home, in July–August. Lake George Islands or Eighth Lake (NY); Pillsbury or Bear Brook (NH); Quechee or Smugglers&apos; Notch (VT); Sebago or Lily Bay (ME). Save Acadia, the Presidentials, and the High Peaks for trip three.
       </p>
     </GuidePage>
+    <GuideGearShelf guideSlug="camping-in-the-northeast-for-beginners" />
     <GuideArticleCTA />
     <RelatedGuides currentSlug="camping-in-the-northeast-for-beginners" />
     </>

@@ -4,6 +4,7 @@ import { GuidePage } from '@/components/guide/GuidePage'
 import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
+import GuideGearShelf from '@/components/guide/GuideGearShelf'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
@@ -314,6 +315,7 @@ export default function Page() {
         A state park within 90 minutes of Seattle or Portland, mid-July through August. Deception Pass, Lake Wenatchee, Cape Disappointment, Beverly Beach, Silver Falls. Save Mt Rainier&apos;s Paradise area, the Hoh Rainforest, and Crater Lake for trip three.
       </p>
     </GuidePage>
+    <GuideGearShelf guideSlug="camping-in-the-pacific-northwest-for-beginners" />
     <GuideArticleCTA />
     <RelatedGuides currentSlug="camping-in-the-pacific-northwest-for-beginners" />
     </>

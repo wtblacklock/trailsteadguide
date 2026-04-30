@@ -3,6 +3,7 @@ import { GuidePage } from '@/components/guide/GuidePage'
 import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
+import GuideGearShelf from '@/components/guide/GuideGearShelf'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
@@ -213,6 +214,7 @@ export default function Page() {
         One night. Seriously. Go home Saturday, sleep in your bed Saturday night, remember what worked and what didn&apos;t, and book a two-night trip for next month.
       </p>
     </GuidePage>
+    <GuideGearShelf guideSlug="camping-for-beginners" />
     <GuideArticleCTA />
     <RelatedGuides currentSlug="camping-for-beginners" />
     </>

@@ -3,6 +3,7 @@ import { GuidePage } from '@/components/guide/GuidePage'
 import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
+import GuideGearShelf from '@/components/guide/GuideGearShelf'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
@@ -221,6 +222,7 @@ export default function Page() {
         Burns from the fire pit or the stove, and lacerations from folding chair hinges. Not wildlife. Not scary falls. Brief the kids on both hazards explicitly and keep a proper first aid kit at the top of the car trunk.
       </p>
     </GuidePage>
+    <GuideGearShelf guideSlug="first-time-camping-mistakes" />
     <GuideArticleCTA />
     <RelatedGuides currentSlug="first-time-camping-mistakes" />
     </>
