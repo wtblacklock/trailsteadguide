@@ -208,8 +208,11 @@ export default function Page() {
         <h2>What to bring (dog-specific)</h2>
         <h3>The dog kit</h3>
         <ul>
-          <li>6 ft leash + a 15 ft long line for tie-out.</li>
-          <li>Stake or screw-in tie-out anchor for sandy or soft ground.</li>
+          <li>
+            6 ft leash for walks + a 15 ft trolley-style tie-out for the campsite. The{' '}
+            <AmazonLink productId="katolk-tie-out" pageSlug="camping-with-dogs-first-time" />{' '}
+            (~$29) is the one I use — heavy-duty cable, screw-in stake, gives the dog real range without wandering into the next site. Brand-agnostic otherwise — buy what fits your dog.
+          </li>
           <li>Dog bed or closed-cell foam pad for inside the tent.</li>
           <li>Two collapsible bowls — one for food, one for water.</li>
           <li>Dedicated dog water container — a half-gallon jug is enough for a one-night trip with a 50-lb dog; double for two nights or hot weather.</li>
@@ -248,42 +251,42 @@ export default function Page() {
         <ul>
           <li>
             <strong>Tent.</strong>{' '}
-            <AmazonLink productId="fwc-tent-sundome" pageSlug="camping-with-dogs-first-time" />{' '}
-            (~$116). Size up — a 4-person tent for two adults plus a 50-lb dog is the right floor space.
+            <AmazonLink productId="coleman-sundome-4p" pageSlug="camping-with-dogs-first-time" />{' '}
+            (~$68). Size up — a 4-person tent for two adults plus a 50-lb dog is the right floor space.
           </li>
           <li>
             <strong>Sleeping bag.</strong>{' '}
-            <AmazonLink productId="sleeping-bag-family" pageSlug="camping-with-dogs-first-time" />{' '}
-            (~$95). Roomy enough that a small dog can curl up at your feet on a cold night.
+            <AmazonLink productId="coleman-brazos-bag" pageSlug="camping-with-dogs-first-time" />{' '}
+            (~$54). Roomy enough that a small dog can curl up at your feet on a cold night.
           </li>
           <li>
             <strong>Sleeping pad.</strong>{' '}
-            <AmazonLink productId="sleeping-pad-air" pageSlug="camping-with-dogs-first-time" />{' '}
-            (~$75). For you. The dog gets a closed-cell foam pad or a dedicated dog bed.
+            <AmazonLink productId="big-agnes-divide" pageSlug="camping-with-dogs-first-time" />{' '}
+            (~$100). For you. The dog gets a closed-cell foam pad or a dedicated dog bed.
           </li>
           <li>
             <strong>Stove.</strong>{' '}
-            <AmazonLink productId="fwc-stove-coleman-1burner" pageSlug="camping-with-dogs-first-time" />{' '}
+            <AmazonLink productId="coleman-1-burner" pageSlug="camping-with-dogs-first-time" />{' '}
             (~$40). Fast meals leave more time for the dog walk before bed.
           </li>
           <li>
             <strong>Cooler.</strong>{' '}
-            <AmazonLink productId="fwc-cooler-rolling" pageSlug="camping-with-dogs-first-time" />{' '}
+            <AmazonLink productId="coleman-classic-rolling-cooler" pageSlug="camping-with-dogs-first-time" />{' '}
             (~$107). Wheels matter when you are also juggling a leash and a water jug.
           </li>
           <li>
             <strong>Lighting.</strong>{' '}
-            <AmazonLink productId="fwc-lantern-consciot" pageSlug="camping-with-dogs-first-time" />{' '}
-            (~$30). One on the picnic table, one inside the tent for late-night dog needs.
+            <AmazonLink productId="luminaid-packlite-max" pageSlug="camping-with-dogs-first-time" />{' '}
+            (~$75). One on the picnic table, one inside the tent for late-night dog needs.
           </li>
           <li>
             <strong>Headlamp.</strong>{' '}
-            <AmazonLink productId="headlamp-family" pageSlug="camping-with-dogs-first-time" />{' '}
-            (~$50). For the inevitable 3am dog bathroom run.
+            <AmazonLink productId="black-diamond-spot-400" pageSlug="camping-with-dogs-first-time" />{' '}
+            (~$60). For the inevitable 3am dog bathroom run.
           </li>
           <li>
             <strong>Camp chair.</strong>{' '}
-            <AmazonLink productId="fwc-chair-gci-rocker" pageSlug="camping-with-dogs-first-time" />{' '}
+            <AmazonLink productId="gci-freestyle-rocker" pageSlug="camping-with-dogs-first-time" />{' '}
             (~$80). The chair you can sit in for two hours of leash-settle.
           </li>
           <li>

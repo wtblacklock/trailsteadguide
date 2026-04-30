@@ -256,47 +256,47 @@ export default function Page() {
       <ul>
         <li>
           <strong>Tent.</strong>{' '}
-          <AmazonLink productId="fwc-tent-sundome" pageSlug="camping-in-the-desert-southwest-for-beginners" />{' '}
-          (~$116). Stake aggressively. Put a footprint or ground tarp under the floor — cactus spines puncture nylon.
+          <AmazonLink productId="coleman-sundome-4p" pageSlug="camping-in-the-desert-southwest-for-beginners" />{' '}
+          (~$68). Stake aggressively. Put a footprint or ground tarp under the floor — cactus spines puncture nylon.
         </li>
         <li>
           <strong>Sleeping bag.</strong>{' '}
-          <AmazonLink productId="sleeping-bag-family" pageSlug="camping-in-the-desert-southwest-for-beginners" />{' '}
-          (~$95). Right rating for cold desert nights. The day–night swing surprises beginners.
+          <AmazonLink productId="coleman-brazos-bag" pageSlug="camping-in-the-desert-southwest-for-beginners" />{' '}
+          (~$54). Works mild desert nights. For cold-desert nights, add a liner or use a 20°F bag — the day-night swing surprises beginners.
         </li>
         <li>
           <strong>Sleeping pad.</strong>{' '}
-          <AmazonLink productId="sleeping-pad-air" pageSlug="camping-in-the-desert-southwest-for-beginners" />{' '}
-          (~$75). Insulates from cold ground.
+          <AmazonLink productId="big-agnes-divide" pageSlug="camping-in-the-desert-southwest-for-beginners" />{' '}
+          (~$100). Self-inflating, packs small. Pair with a closed-cell foam pad in colder weather.
         </li>
         <li>
           <strong>Stove.</strong>{' '}
-          <AmazonLink productId="fwc-stove-coleman-1burner" pageSlug="camping-in-the-desert-southwest-for-beginners" />{' '}
+          <AmazonLink productId="coleman-1-burner" pageSlug="camping-in-the-desert-southwest-for-beginners" />{' '}
           (~$40). Reliable; works under most desert burn restrictions.
         </li>
         <li>
           <strong>Cooler.</strong>{' '}
-          <AmazonLink productId="fwc-cooler-rolling" pageSlug="camping-in-the-desert-southwest-for-beginners" />{' '}
+          <AmazonLink productId="coleman-classic-rolling-cooler" pageSlug="camping-in-the-desert-southwest-for-beginners" />{' '}
           (~$107). Lock overnight in bear-country parks (Grand Canyon, Big Bend, Sky Islands).
         </li>
         <li>
           <strong>Shade.</strong>{' '}
-          <AmazonLink productId="canopy-camp" pageSlug="camping-in-the-desert-southwest-for-beginners" />{' '}
+          <AmazonLink productId="core-10x10-canopy" pageSlug="camping-in-the-desert-southwest-for-beginners" />{' '}
           (~$130). Stake aggressively in desert wind. Shade trees are rare; this is shade.
         </li>
         <li>
           <strong>Lighting.</strong>{' '}
-          <AmazonLink productId="fwc-lantern-consciot" pageSlug="camping-in-the-desert-southwest-for-beginners" />{' '}
-          (~$30).
+          <AmazonLink productId="luminaid-packlite-max" pageSlug="camping-in-the-desert-southwest-for-beginners" />{' '}
+          (~$75).
         </li>
         <li>
           <strong>Headlamp.</strong>{' '}
-          <AmazonLink productId="headlamp-family" pageSlug="camping-in-the-desert-southwest-for-beginners" />{' '}
-          (~$50). Useful for shake-out-the-boots before sunrise hikes.
+          <AmazonLink productId="black-diamond-spot-400" pageSlug="camping-in-the-desert-southwest-for-beginners" />{' '}
+          (~$60). Useful for shake-out-the-boots before sunrise hikes.
         </li>
         <li>
           <strong>Camp chair.</strong>{' '}
-          <AmazonLink productId="fwc-chair-gci-rocker" pageSlug="camping-in-the-desert-southwest-for-beginners" />{' '}
+          <AmazonLink productId="gci-freestyle-rocker" pageSlug="camping-in-the-desert-southwest-for-beginners" />{' '}
           (~$80).
         </li>
       </ul>

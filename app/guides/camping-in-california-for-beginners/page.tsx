@@ -251,37 +251,37 @@ export default function Page() {
       <ul>
         <li>
           <strong>Tent.</strong>{' '}
-          <AmazonLink productId="fwc-tent-sundome" pageSlug="camping-in-california-for-beginners" />{' '}
-          (~$116). Full mesh inner ventilates on warm Sierra afternoons and seals against coastal fog at night.
+          <AmazonLink productId="coleman-sundome-4p" pageSlug="camping-in-california-for-beginners" />{' '}
+          (~$68). Full mesh inner ventilates on warm Sierra afternoons and seals against coastal fog at night.
         </li>
         <li>
           <strong>Stove.</strong>{' '}
-          <AmazonLink productId="fwc-stove-coleman-1burner" pageSlug="camping-in-california-for-beginners" />{' '}
+          <AmazonLink productId="coleman-1-burner" pageSlug="camping-in-california-for-beginners" />{' '}
           (~$40). Keeps you cooking under nearly every California fire-restriction level.
         </li>
         <li>
           <strong>Cooler.</strong>{' '}
-          <AmazonLink productId="fwc-cooler-rolling" pageSlug="camping-in-california-for-beginners" />{' '}
+          <AmazonLink productId="coleman-classic-rolling-cooler" pageSlug="camping-in-california-for-beginners" />{' '}
           (~$107). Empty it into the bear box overnight in Yosemite, Tahoe, and Sequoia — bears will pry open coolers in the dark.
         </li>
         <li>
           <strong>Shade or shelter.</strong>{' '}
-          <AmazonLink productId="canopy-camp" pageSlug="camping-in-california-for-beginners" />{' '}
+          <AmazonLink productId="core-10x10-canopy" pageSlug="camping-in-california-for-beginners" />{' '}
           (~$130). Sun in the desert and Sierra; rain shelter on the north coast.
         </li>
         <li>
           <strong>Lantern.</strong>{' '}
-          <AmazonLink productId="fwc-lantern-consciot" pageSlug="camping-in-california-for-beginners" />{' '}
-          (~$30).
+          <AmazonLink productId="luminaid-packlite-max" pageSlug="camping-in-california-for-beginners" />{' '}
+          (~$75).
         </li>
         <li>
           <strong>Headlamp.</strong>{' '}
-          <AmazonLink productId="headlamp-family" pageSlug="camping-in-california-for-beginners" />{' '}
-          (~$50). One per person.
+          <AmazonLink productId="black-diamond-spot-400" pageSlug="camping-in-california-for-beginners" />{' '}
+          (~$60). One per person.
         </li>
         <li>
           <strong>Camp chair.</strong>{' '}
-          <AmazonLink productId="fwc-chair-gci-rocker" pageSlug="camping-in-california-for-beginners" />{' '}
+          <AmazonLink productId="gci-freestyle-rocker" pageSlug="camping-in-california-for-beginners" />{' '}
           (~$80).
         </li>
         <li>

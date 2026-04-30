@@ -241,37 +241,37 @@ export default function Page() {
       <ul>
         <li>
           <strong>Tent.</strong>{' '}
-          <AmazonLink productId="fwc-tent-sundome" pageSlug="camping-in-florida-for-beginners" />{' '}
-          (~$116). Full mesh inner is the part that matters in Florida. Stake the rainfly off the body for airflow.
+          <AmazonLink productId="coleman-sundome-4p" pageSlug="camping-in-florida-for-beginners" />{' '}
+          (~$68). Full mesh inner is the part that matters in Florida. Stake the rainfly off the body for airflow.
         </li>
         <li>
           <strong>Shade.</strong>{' '}
-          <AmazonLink productId="canopy-camp" pageSlug="camping-in-florida-for-beginners" />{' '}
+          <AmazonLink productId="core-10x10-canopy" pageSlug="camping-in-florida-for-beginners" />{' '}
           (~$130). Two minutes to set up; covers the picnic table all day.
         </li>
         <li>
           <strong>Stove.</strong>{' '}
-          <AmazonLink productId="fwc-stove-coleman-1burner" pageSlug="camping-in-florida-for-beginners" />{' '}
+          <AmazonLink productId="coleman-1-burner" pageSlug="camping-in-florida-for-beginners" />{' '}
           (~$40). Reliable in humidity; works under most Florida burn restrictions.
         </li>
         <li>
           <strong>Cooler.</strong>{' '}
-          <AmazonLink productId="fwc-cooler-rolling" pageSlug="camping-in-florida-for-beginners" />{' '}
+          <AmazonLink productId="coleman-classic-rolling-cooler" pageSlug="camping-in-florida-for-beginners" />{' '}
           (~$107). Lock it overnight against raccoons.
         </li>
         <li>
           <strong>Lighting.</strong>{' '}
-          <AmazonLink productId="fwc-lantern-consciot" pageSlug="camping-in-florida-for-beginners" />{' '}
-          (~$30).
+          <AmazonLink productId="luminaid-packlite-max" pageSlug="camping-in-florida-for-beginners" />{' '}
+          (~$75).
         </li>
         <li>
           <strong>Headlamp.</strong>{' '}
-          <AmazonLink productId="headlamp-family" pageSlug="camping-in-florida-for-beginners" />{' '}
-          (~$50). Useful for the gator-aware walk to the bathroom.
+          <AmazonLink productId="black-diamond-spot-400" pageSlug="camping-in-florida-for-beginners" />{' '}
+          (~$60). Useful for the gator-aware walk to the bathroom.
         </li>
         <li>
           <strong>Camp chair.</strong>{' '}
-          <AmazonLink productId="fwc-chair-gci-rocker" pageSlug="camping-in-florida-for-beginners" />{' '}
+          <AmazonLink productId="gci-freestyle-rocker" pageSlug="camping-in-florida-for-beginners" />{' '}
           (~$80).
         </li>
         <li>

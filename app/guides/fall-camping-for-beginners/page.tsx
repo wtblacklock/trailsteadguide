@@ -212,42 +212,42 @@ export default function Page() {
       <ul>
         <li>
           <strong>Tent.</strong>{' '}
-          <AmazonLink productId="fwc-tent-sundome" pageSlug="fall-camping-for-beginners" />{' '}
-          (~$116). 9×7 ft floor, full-coverage rainfly, weatherproof seams. Sets up in under 15 minutes the first time.
+          <AmazonLink productId="coleman-sundome-4p" pageSlug="fall-camping-for-beginners" />{' '}
+          (~$68). 9×7 ft floor, full-coverage rainfly, weatherproof seams. Sets up in under 15 minutes the first time.
         </li>
         <li>
           <strong>Sleeping bag.</strong>{' '}
-          <AmazonLink productId="sleeping-bag-family" pageSlug="fall-camping-for-beginners" />{' '}
-          (~$95). 20°F rating, roomy fit. The right call from late September through early November.
+          <AmazonLink productId="coleman-brazos-bag" pageSlug="fall-camping-for-beginners" />{' '}
+          (~$54). Roomy fit, cool-weather rated. Add a liner — or upgrade to a 20°F bag — for late-October nights.
         </li>
         <li>
           <strong>Sleeping pad.</strong>{' '}
-          <AmazonLink productId="sleeping-pad-air" pageSlug="fall-camping-for-beginners" />{' '}
-          (~$75). Self-inflating, R-value high enough for cold ground.
+          <AmazonLink productId="big-agnes-divide" pageSlug="fall-camping-for-beginners" />{' '}
+          (~$100). Self-inflating, packs small, easy to set up.
         </li>
         <li>
           <strong>Stove.</strong>{' '}
-          <AmazonLink productId="fwc-stove-coleman-1burner" pageSlug="fall-camping-for-beginners" />{' '}
+          <AmazonLink productId="coleman-1-burner" pageSlug="fall-camping-for-beginners" />{' '}
           (~$40). Boils water fast in the cold, works in wind, no learning curve in the dark.
         </li>
         <li>
           <strong>Cooler.</strong>{' '}
-          <AmazonLink productId="fwc-cooler-rolling" pageSlug="fall-camping-for-beginners" />{' '}
+          <AmazonLink productId="coleman-classic-rolling-cooler" pageSlug="fall-camping-for-beginners" />{' '}
           (~$107). Ice lasts twice as long in fall — the wheels still matter for the load-in from the parking pad.
         </li>
         <li>
           <strong>Lighting.</strong>{' '}
-          <AmazonLink productId="fwc-lantern-consciot" pageSlug="fall-camping-for-beginners" />{' '}
-          (~$30). The most-used piece of gear after the time change. One on the picnic table, one in the tent.
+          <AmazonLink productId="luminaid-packlite-max" pageSlug="fall-camping-for-beginners" />{' '}
+          (~$75). The most-used piece of gear after the time change. One on the picnic table, one in the tent.
         </li>
         <li>
           <strong>Headlamp.</strong>{' '}
-          <AmazonLink productId="headlamp-family" pageSlug="fall-camping-for-beginners" />{' '}
-          (~$50). One per person, no exceptions. Bring spare batteries — cold drains old ones fast.
+          <AmazonLink productId="black-diamond-spot-400" pageSlug="fall-camping-for-beginners" />{' '}
+          (~$60). One per person, no exceptions. Bring spare batteries — cold drains old ones fast.
         </li>
         <li>
           <strong>Camp chair.</strong>{' '}
-          <AmazonLink productId="fwc-chair-gci-rocker" pageSlug="fall-camping-for-beginners" />{' '}
+          <AmazonLink productId="gci-freestyle-rocker" pageSlug="fall-camping-for-beginners" />{' '}
           (~$80). The chair you&apos;ll actually sit in for an hour after dinner instead of going to bed at 7pm.
         </li>
         <li>

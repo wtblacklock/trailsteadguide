@@ -15,7 +15,7 @@ const TITLE = 'Winter Camping for Beginners'
 const META_TITLE = 'Winter Camping for Beginners (Cabin Path)'
 const DESCRIPTION =
   'Winter camping for beginners: when tenting works, when it doesn’t, and the cabin-first path that keeps a first below-freezing trip safe and warm.'
-const HERO_IMAGE = 'https://images.unsplash.com/photo-1551649001-7a2482d98d05?w=1400&auto=format&fit=crop&q=80'
+const HERO_IMAGE = 'https://images.unsplash.com/photo-1776131264822-1e091242f639?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({
   title: META_TITLE,
@@ -223,7 +223,7 @@ export default function Page() {
         </li>
         <li>
           <strong>Tent (only if conditions allow above 25°F, low elevation, no snow forecast).</strong> A 4-season tent is the right call. The{' '}
-          <AmazonLink productId="fwc-tent-sundome" pageSlug="winter-camping-for-beginners" />{' '}
+          <AmazonLink productId="coleman-sundome-4p" pageSlug="winter-camping-for-beginners" />{' '}
           is a 3-season tent and not the right shelter below 25°F or in any real snow load.
         </li>
         <li>
@@ -234,22 +234,22 @@ export default function Page() {
         </li>
         <li>
           <strong>Stove.</strong> A liquid-fuel (white-gas) stove for real winter. The{' '}
-          <AmazonLink productId="fwc-stove-coleman-1burner" pageSlug="winter-camping-for-beginners" />{' '}
+          <AmazonLink productId="coleman-1-burner" pageSlug="winter-camping-for-beginners" />{' '}
           works above 20°F if you warm the canister against your body before lighting; below that, switch to liquid fuel.
         </li>
         <li>
           <strong>Lighting.</strong>{' '}
-          <AmazonLink productId="fwc-lantern-consciot" pageSlug="winter-camping-for-beginners" />{' '}
-          (~$30). Useful daylight ends at 4:30pm in December — the lantern is on for the whole evening.
+          <AmazonLink productId="luminaid-packlite-max" pageSlug="winter-camping-for-beginners" />{' '}
+          (~$75). Useful daylight ends at 4:30pm in December — the lantern is on for the whole evening.
         </li>
         <li>
           <strong>Headlamp.</strong>{' '}
-          <AmazonLink productId="headlamp-family" pageSlug="winter-camping-for-beginners" />{' '}
-          (~$50). Run it on lithium batteries in winter, not alkaline. Carry a backup.
+          <AmazonLink productId="black-diamond-spot-400" pageSlug="winter-camping-for-beginners" />{' '}
+          (~$60). Run it on lithium batteries in winter, not alkaline. Carry a backup.
         </li>
         <li>
           <strong>Camp chair.</strong>{' '}
-          <AmazonLink productId="fwc-chair-gci-rocker" pageSlug="winter-camping-for-beginners" />{' '}
+          <AmazonLink productId="gci-freestyle-rocker" pageSlug="winter-camping-for-beginners" />{' '}
           (~$80). Throw a closed-cell foam pad on the seat to insulate from cold metal.
         </li>
         <li>
