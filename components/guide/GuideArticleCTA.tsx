@@ -16,7 +16,7 @@ export default function GuideArticleCTA() {
           Get Your Personalized Camping Plan.
         </h2>
         <p className="text-stone-600 text-lg leading-relaxed mb-7 max-w-xl">
-          Answer 5 questions and we&apos;ll match the timeline, gear, and meals to your party, your dates, and where you&apos;re going.
+          Answer 6 questions and we&apos;ll match the timeline, gear, and meals to your party, your dates, and where you&apos;re going.
         </p>
 
         <div className="mb-6">

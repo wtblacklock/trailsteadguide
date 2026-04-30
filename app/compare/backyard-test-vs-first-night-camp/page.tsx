@@ -270,7 +270,7 @@ export default function Page() {
           Not sure? Take the 60-second quiz.
         </h2>
         <p className="text-stone-600 text-lg leading-relaxed mb-6 max-w-xl">
-          Five questions about your group, comfort level, and how far you want to drive.
+          Six questions about your group, comfort level, and how far you want to drive.
           You&rsquo;ll land on the right plan, with party-size-scaled gear and meals.
         </p>
         <Link

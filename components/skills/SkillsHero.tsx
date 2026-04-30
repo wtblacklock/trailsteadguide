@@ -2,49 +2,33 @@ import Link from 'next/link'
 
 export default function SkillsHero() {
   return (
-    <section className="bg-[#F5F3EE]">
-      <div className="max-w-content mx-auto px-6 pt-16 pb-12 md:pt-24 md:pb-16">
-        <p className="text-xs uppercase tracking-widest text-[#2d5016] font-medium mb-5">
-          The camp skills system
-        </p>
-        <h1 className="font-serif text-4xl md:text-5xl text-stone-900 tracking-tight leading-[1.1] mb-5">
-          Camp skills made simple.
-          <span className="block text-stone-500">Learn the essentials without overthinking it.</span>
-        </h1>
-        <p className="text-lg text-stone-600 leading-relaxed mb-8 max-w-prose">
-          A practical, scouting-style library of camp skills for first-time campers. Filter by
-          category, difficulty, or safety level — each skill is a short, scannable how-to with
-          safety notes, common mistakes, and pro tips.
-        </p>
-        <div className="flex flex-wrap gap-3">
-          <a
-            href="#filter-bar"
-            className="inline-flex items-center justify-center gap-2 bg-stone-900 text-white text-base font-medium rounded-md hover:bg-stone-800 transition-colors px-6 py-3"
-          >
-            Browse skills
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              aria-hidden="true"
-            >
-              <line x1="12" y1="5" x2="12" y2="19" />
-              <polyline points="19 12 12 19 5 12" />
-            </svg>
-          </a>
-          <Link
-            href="/quiz"
-            className="inline-flex items-center justify-center gap-2 border border-stone-300 text-stone-700 bg-white text-base font-medium rounded-md hover:bg-stone-50 transition-colors px-6 py-3"
-          >
-            Start your camping plan
-          </Link>
-        </div>
+    <header className="max-w-page mx-auto px-8 pt-16 md:pt-24 pb-14 md:pb-20">
+      <p className="text-xs font-semibold tracking-[0.18em] uppercase text-stone-500 mb-6">
+        The camp skills system
+      </p>
+      <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold text-stone-950 tracking-tight leading-[1.04] max-w-4xl">
+        Camp skills made simple.
+        <span className="block text-stone-500">Learn the essentials without overthinking it.</span>
+      </h1>
+      <p className="mt-6 text-lg md:text-xl text-stone-600 leading-relaxed max-w-2xl">
+        A practical, scouting-style library of camp skills for first-time campers. Filter by
+        category, difficulty, or safety level — each skill is a short, scannable how-to with
+        safety notes, common mistakes, and pro tips.
+      </p>
+      <div className="mt-8 flex flex-wrap items-center gap-6">
+        <a
+          href="#filter-bar"
+          className="inline-flex items-center justify-center rounded-md font-medium bg-stone-900 text-white hover:bg-stone-800 transition-colors px-6 py-3 text-sm"
+        >
+          Browse skills
+        </a>
+        <Link
+          href="/quiz"
+          className="inline-flex items-center justify-center text-sm font-medium text-stone-700 hover:text-stone-900 transition-colors"
+        >
+          Not sure where to start? Take the quiz →
+        </Link>
       </div>
-    </section>
+    </header>
   )
 }

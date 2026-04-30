@@ -5,14 +5,14 @@ import Breadcrumbs from '@/components/seo/Breadcrumbs'
 export const metadata = pageMetadata({
   title: 'How It Works',
   description:
-    'How the Trailstead planner turns 5 quick questions into a complete camping trip plan — timeline, gear, meals, and activities scaled to your family.',
+    'How the Trailstead planner turns 6 quick questions into a complete camping trip plan — timeline, gear, meals, and activities scaled to your family.',
   path: '/how-it-works',
 })
 
 const steps = [
   {
     n: '01',
-    title: 'Answer 5 questions',
+    title: 'Answer 6 questions',
     body: 'Kid ages, party size, experience level, trip length, and how far you want to drive. About 2 minutes.',
   },
   {
@@ -45,7 +45,7 @@ export default function Page() {
       <header className="max-w-page mx-auto px-8 pt-16 md:pt-24 pb-12">
         <p className="text-xs font-semibold tracking-widest uppercase text-stone-500 mb-4">How it works</p>
         <h1 className="font-serif text-5xl md:text-7xl font-semibold text-stone-950 tracking-tight leading-tight max-w-4xl">
-          Five questions. One complete plan.
+          Six questions. One complete plan.
         </h1>
       </header>
 

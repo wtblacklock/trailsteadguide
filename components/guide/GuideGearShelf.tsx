@@ -19,7 +19,7 @@ export default function GuideGearShelf({ guideSlug, heading }: Props) {
   if (groups.length === 0) return null
 
   return (
-    <section className="py-16 border-t border-stone-200">
+    <section id="recommended-gear" className="py-16 border-t border-stone-200 scroll-mt-24">
       <div className="max-w-wide mx-auto px-6">
         <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-2 mb-12">
           <h2 className="font-serif text-3xl font-semibold text-stone-950 tracking-tight">

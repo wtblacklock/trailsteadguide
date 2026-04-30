@@ -25,7 +25,7 @@ const AUTHOR_INITIALS = AUTHOR_NAME.split(' ')
 export const metadata = pageMetadata({
   title: 'About',
   description:
-    'Meet William Blacklock — Eagle Scout and founder of Trailstead Guide, a structured camping planner that turns five questions into a confident first family trip.',
+    'Meet William Blacklock — Eagle Scout and founder of Trailstead Guide, a structured camping planner that turns six questions into a confident first family trip.',
   path: '/about',
 })
 
@@ -90,7 +90,7 @@ export default function Page() {
           A structured camping planner.
         </h1>
         <p className="mt-6 text-lg md:text-xl text-stone-600 leading-relaxed max-w-2xl">
-          Trailstead Guide turns five questions into a complete first-trip plan: timeline, gear, meals, kid activities, and safety notes — built around four scenario templates.
+          Trailstead Guide turns six questions into a complete first-trip plan: timeline, gear, meals, kid activities, and safety notes — built around four scenario templates.
         </p>
         <div className="mt-8 flex flex-wrap gap-3">
           <Link
@@ -115,7 +115,7 @@ export default function Page() {
           </h2>
           <div className="space-y-6 text-stone-700 leading-relaxed text-lg">
             <p>
-              We build structured camping plans. Five questions in, you get a complete trip: hour-by-hour timeline, gear list, meal plan, shopping list scaled to your party size, age-appropriate kid activity plan, and safety notes.
+              We build structured camping plans. Six questions in, you get a complete trip: hour-by-hour timeline, gear list, meal plan, shopping list scaled to your party size, age-appropriate kid activity plan, and safety notes.
             </p>
             <p>
               Plans are templates, not fantasies. They map to four pacing archetypes — backyard test, first night, first weekend, easy basecamp — and adjust to your family rather than the other way around.

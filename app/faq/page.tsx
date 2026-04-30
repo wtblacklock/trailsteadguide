@@ -17,7 +17,7 @@ const FAQ_ITEMS = [
   },
   {
     q: 'Do I need an account?',
-    a: 'No. Answer the 5 questions and the plan is yours — no login, no email required to see it.',
+    a: 'No. Answer the 6 questions and the plan is yours — no login, no email required to see it.',
   },
   {
     q: 'Can I save my plan?',
