@@ -12,6 +12,7 @@ export const GUIDES: Guide[] = [
     title: 'Camping for Beginners',
     description: 'The shortest path from zero to a confident first trip.',
     eyebrow: 'Start here',
+    relatedGuides: ['first-night-camping-guide', 'first-camping-trip-checklist', 'how-to-plan-a-camping-trip'],
   },
   {
     slug: 'how-to-plan-a-camping-trip',
@@ -19,6 +20,7 @@ export const GUIDES: Guide[] = [
     title: 'How to Plan a Camping Trip',
     description: 'Step-by-step: pick a site, book it, prep the gear.',
     eyebrow: 'Planning',
+    relatedGuides: ['camping-for-beginners', 'weekend-camping-packing-list', 'first-camping-trip-checklist'],
   },
   {
     slug: 'car-camping-beginner-guide',
@@ -26,6 +28,7 @@ export const GUIDES: Guide[] = [
     title: 'Car Camping Beginner Guide',
     description: 'The drive-up, park-next-to-your-tent version.',
     eyebrow: 'Mode',
+    relatedGuides: ['camping-for-beginners', 'weekend-camping-packing-list', 'first-night-camping-guide'],
   },
   {
     slug: 'first-camping-trip-checklist',
@@ -33,6 +36,7 @@ export const GUIDES: Guide[] = [
     title: 'First Camping Trip Checklist',
     description: 'The real list — not 200 items.',
     eyebrow: 'Checklist',
+    relatedGuides: ['first-night-camping-guide', 'camping-for-beginners', 'weekend-camping-packing-list'],
   },
   {
     slug: 'weekend-camping-packing-list',
@@ -40,6 +44,7 @@ export const GUIDES: Guide[] = [
     title: 'Weekend Camping Packing List',
     description: 'Two-night family pack list, by category.',
     eyebrow: 'Packing',
+    relatedGuides: ['first-camping-trip-checklist', 'how-to-plan-a-camping-trip', 'camping-for-beginners'],
   },
   {
     slug: 'first-time-camping-mistakes',
@@ -47,6 +52,7 @@ export const GUIDES: Guide[] = [
     title: 'First-Time Camping Mistakes',
     description: 'The avoidable ones that turn a first trip into never again.',
     eyebrow: 'Gotchas',
+    relatedGuides: ['camping-for-beginners', 'first-night-camping-guide', 'first-camping-trip-checklist'],
   },
   {
     slug: 'camping-with-kids-first-time',
@@ -54,6 +60,7 @@ export const GUIDES: Guide[] = [
     title: 'Camping With Kids for the First Time',
     description: 'What actually keeps kids happy at camp.',
     eyebrow: 'With kids',
+    relatedGuides: ['first-night-camping-guide', 'first-camping-trip-checklist', 'camping-for-beginners'],
   },
   {
     slug: 'first-night-camping-guide',
@@ -61,6 +68,7 @@ export const GUIDES: Guide[] = [
     title: 'First Night Camping Guide',
     description: 'A low-stakes test for your very first overnight — what success actually looks like.',
     eyebrow: 'First night',
+    relatedGuides: ['camping-for-beginners', 'first-camping-trip-checklist', 'camping-with-kids-first-time'],
   },
   {
     slug: 'rainy-camping-trips',
@@ -68,6 +76,7 @@ export const GUIDES: Guide[] = [
     title: 'Rainy Camping Trips',
     description: 'Tarp setup, condensation, dry-camp recovery, and the call on whether to bail.',
     eyebrow: 'Rain',
+    relatedGuides: ['camping-when-the-weather-turns', 'camping-in-the-pacific-northwest-for-beginners', 'fall-camping-for-beginners'],
   },
   {
     slug: 'camping-with-dogs-first-time',
@@ -75,6 +84,7 @@ export const GUIDES: Guide[] = [
     title: 'Camping With Dogs for the First Time',
     description: 'Leash rules, water and food, tent etiquette, heat risk, and the prep that pays off.',
     eyebrow: 'With dogs',
+    relatedGuides: ['camping-for-beginners', 'camping-with-kids-first-time', 'first-night-camping-guide'],
   },
   {
     slug: 'camping-in-a-heatwave',
@@ -82,6 +92,7 @@ export const GUIDES: Guide[] = [
     title: 'Camping in a Heatwave',
     description: 'Shade siting, hydration, electrolytes, and the line where you reschedule.',
     eyebrow: 'Heatwave',
+    relatedGuides: ['summer-camping-for-beginners', 'camping-in-texas-for-beginners', 'camping-in-the-desert-southwest-for-beginners'],
   },
   {
     slug: 'camping-when-the-weather-turns',
@@ -89,6 +100,7 @@ export const GUIDES: Guide[] = [
     title: 'Camping When the Weather Turns',
     description: 'Lightning rules, the bail decision, what to do if you’re stuck, and how to call it.',
     eyebrow: 'Bad weather',
+    relatedGuides: ['rainy-camping-trips', 'winter-camping-for-beginners', 'fall-camping-for-beginners'],
   },
   {
     slug: 'spring-camping-for-beginners',
@@ -96,6 +108,7 @@ export const GUIDES: Guide[] = [
     title: 'Spring Camping for Beginners',
     description: 'Mud, swing temperatures, and the season opener — what to expect and pack.',
     eyebrow: 'Spring',
+    relatedGuides: ['fall-camping-for-beginners', 'rainy-camping-trips', 'camping-when-the-weather-turns'],
   },
   {
     slug: 'summer-camping-for-beginners',
@@ -103,6 +116,7 @@ export const GUIDES: Guide[] = [
     title: 'Summer Camping for Beginners',
     description: 'What to expect, what to bring, and how to avoid common mistakes.',
     eyebrow: 'Summer',
+    relatedGuides: ['camping-in-a-heatwave', 'camping-in-florida-for-beginners', 'camping-in-texas-for-beginners'],
   },
   {
     slug: 'fall-camping-for-beginners',
@@ -110,6 +124,7 @@ export const GUIDES: Guide[] = [
     title: 'Fall Camping for Beginners',
     description: 'Cold nights, condensation, early dark — fall done right.',
     eyebrow: 'Fall',
+    relatedGuides: ['spring-camping-for-beginners', 'camping-in-the-northeast-for-beginners', 'camping-in-the-appalachians-for-beginners'],
   },
   {
     slug: 'winter-camping-for-beginners',
@@ -117,6 +132,7 @@ export const GUIDES: Guide[] = [
     title: 'Winter Camping for Beginners',
     description: 'When tenting works, when it doesn’t, and the cabin-first beginner path.',
     eyebrow: 'Winter',
+    relatedGuides: ['camping-when-the-weather-turns', 'camping-in-colorado-for-beginners', 'camping-in-the-northeast-for-beginners'],
   },
   {
     slug: 'camping-in-texas-for-beginners',
@@ -124,6 +140,7 @@ export const GUIDES: Guide[] = [
     title: 'Camping in Texas for Beginners',
     description: 'Heat, bugs, TPWD state parks — and a setup that actually works in the Texas climate.',
     eyebrow: 'Texas',
+    relatedGuides: ['camping-in-the-desert-southwest-for-beginners', 'camping-in-florida-for-beginners', 'camping-in-a-heatwave'],
   },
   {
     slug: 'camping-in-california-for-beginners',
@@ -131,6 +148,7 @@ export const GUIDES: Guide[] = [
     title: 'Camping in California for Beginners',
     description: 'Coast, Sierra, desert, and redwoods — four climates, four packing lists.',
     eyebrow: 'California',
+    relatedGuides: ['camping-in-the-pacific-northwest-for-beginners', 'camping-in-the-desert-southwest-for-beginners', 'summer-camping-for-beginners'],
   },
   {
     slug: 'camping-in-colorado-for-beginners',
@@ -138,6 +156,7 @@ export const GUIDES: Guide[] = [
     title: 'Camping in Colorado for Beginners',
     description: 'Altitude, fast weather, afternoon storms, and cold mountain nights even in July.',
     eyebrow: 'Colorado',
+    relatedGuides: ['camping-in-the-pacific-northwest-for-beginners', 'camping-in-the-appalachians-for-beginners', 'winter-camping-for-beginners'],
   },
   {
     slug: 'camping-in-florida-for-beginners',
@@ -145,6 +164,7 @@ export const GUIDES: Guide[] = [
     title: 'Camping in Florida for Beginners',
     description: 'Why winter is the season, how to manage the bug load, and where the springs are.',
     eyebrow: 'Florida',
+    relatedGuides: ['camping-in-texas-for-beginners', 'camping-in-a-heatwave', 'summer-camping-for-beginners'],
   },
   {
     slug: 'camping-in-the-pacific-northwest-for-beginners',
@@ -152,6 +172,7 @@ export const GUIDES: Guide[] = [
     title: 'Camping in the Pacific Northwest for Beginners',
     description: 'The dry summer window, dense forest, cool nights, and how to actually stay dry.',
     eyebrow: 'Pacific Northwest',
+    relatedGuides: ['camping-in-california-for-beginners', 'rainy-camping-trips', 'camping-in-colorado-for-beginners'],
   },
   {
     slug: 'camping-in-the-desert-southwest-for-beginners',
@@ -159,6 +180,7 @@ export const GUIDES: Guide[] = [
     title: 'Camping in the Desert Southwest for Beginners',
     description: 'Big day–night swings, water management, monsoon flash floods, and the iconic parks.',
     eyebrow: 'Desert Southwest',
+    relatedGuides: ['camping-in-texas-for-beginners', 'camping-in-california-for-beginners', 'camping-in-a-heatwave'],
   },
   {
     slug: 'camping-in-the-appalachians-for-beginners',
@@ -166,6 +188,7 @@ export const GUIDES: Guide[] = [
     title: 'Camping in the Appalachians for Beginners',
     description: 'Smokies, Blue Ridge, fall foliage rush, ticks, and the densest bear country in the country.',
     eyebrow: 'Appalachia',
+    relatedGuides: ['camping-in-the-northeast-for-beginners', 'camping-in-colorado-for-beginners', 'fall-camping-for-beginners'],
   },
   {
     slug: 'camping-in-the-northeast-for-beginners',
@@ -173,5 +196,6 @@ export const GUIDES: Guide[] = [
     title: 'Camping in the Northeast for Beginners',
     description: 'Adirondacks, White Mountains, Acadia — short summer, black flies, and foliage season.',
     eyebrow: 'Northeast',
+    relatedGuides: ['camping-in-the-appalachians-for-beginners', 'fall-camping-for-beginners', 'winter-camping-for-beginners'],
   },
 ]

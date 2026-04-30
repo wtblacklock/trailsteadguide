@@ -8,19 +8,52 @@ import type { Guide } from '@/lib/guides'
 
 /**
  * Pick three sibling guides to recommend at the bottom of an article.
- * Prefer guides in the same category; if there aren't three, fill the
- * remainder from the rest of the catalogue. Always excludes the
- * current guide.
+ *
+ * Order of preference:
+ *   1. The current guide's curated `relatedGuides` list (if set).
+ *   2. Other guides in the same category.
+ *   3. Other guides anywhere — only if the first two ran out.
+ *
+ * Always excludes the current guide and dedupes across the three sources.
  */
 function pickRelated(currentSlug: string, count = 3): Guide[] {
   const current = getGuideBySlug(currentSlug)
-  const sameCategory = current
-    ? getGuidesByCategoryId(current.category).filter((g) => g.slug !== currentSlug)
-    : []
-  const others = GUIDES.filter(
-    (g) => g.slug !== currentSlug && !sameCategory.some((s) => s.slug === g.slug),
-  )
-  return [...sameCategory, ...others].slice(0, count)
+  if (!current) return GUIDES.slice(0, count)
+
+  const seen = new Set<string>([currentSlug])
+  const result: Guide[] = []
+  const push = (guide: Guide | null | undefined) => {
+    if (!guide) return
+    if (seen.has(guide.slug)) return
+    seen.add(guide.slug)
+    result.push(guide)
+  }
+
+  // 1) Hand-curated cross-links — these are the ones we want first because
+  //    they encode topical relationships the default category sibling
+  //    pick misses (e.g. Colorado → PNW for high-altitude affinity).
+  for (const slug of current.relatedGuides ?? []) {
+    if (result.length >= count) break
+    push(getGuideBySlug(slug))
+  }
+
+  // 2) Same-category fallback for any remaining slots.
+  if (result.length < count) {
+    for (const sibling of getGuidesByCategoryId(current.category)) {
+      if (result.length >= count) break
+      push(sibling)
+    }
+  }
+
+  // 3) Anywhere-in-catalogue fallback if categories ran out (rare).
+  if (result.length < count) {
+    for (const guide of GUIDES) {
+      if (result.length >= count) break
+      push(guide)
+    }
+  }
+
+  return result
 }
 
 export default function RelatedGuides({ currentSlug }: { currentSlug: string }) {

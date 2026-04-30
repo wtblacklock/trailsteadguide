@@ -17,6 +17,15 @@ export type Guide = {
   title: string
   description: string
   eyebrow?: string
+  /**
+   * Curated cross-links surfaced by `<RelatedGuides />` at the bottom of
+   * each guide article. Slugs of other entries in `GUIDES`. When set,
+   * overrides the default "first 3 same-category siblings" pick — lets us
+   * connect topically-related guides across categories (e.g. Colorado →
+   * Pacific Northwest, Appalachians, winter-camping for altitude/mountain
+   * affinity instead of arbitrary location siblings).
+   */
+  relatedGuides?: string[]
 }
 
 export type GuideCategory = {
