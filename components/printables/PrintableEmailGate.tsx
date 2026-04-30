@@ -107,12 +107,14 @@ export default function PrintableEmailGate({
       className="rounded-2xl bg-[#1f3622] text-white border border-[#2a4a30] px-5 py-5 sm:px-7 sm:py-6"
     >
       {showThumbnail && (
-        <div className="mb-4 -mx-1">
-          <PrintableThumbnail
-            slug={printableSlug}
-            scale={0.22}
-            heightClass="h-32"
-          />
+        <div className="mb-4">
+          <div className="w-24 h-24">
+            <PrintableThumbnail
+              slug={printableSlug}
+              scale={0.22}
+              heightClass="h-24"
+            />
+          </div>
         </div>
       )}
       <p className="text-[11px] uppercase tracking-[0.25em] text-[#c9d4b5] font-semibold mb-1.5">

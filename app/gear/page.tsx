@@ -1,11 +1,16 @@
 import Link from 'next/link'
 import { PLAN_TEMPLATES } from '@/lib/plan-templates'
-import { GEAR_SETS } from '@/lib/gear-sets'
+import { GEAR_SETS, resolveGearSet } from '@/lib/gear-sets'
 import { getPlanContent } from '@/lib/plan-content'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { pageMetadata, collectionPageGraph, SITE_URL } from '@/lib/seo'
 import type { PlanSlug } from '@/types'
+
+function parsePriceRange(range: string): number {
+  const match = range.match(/\d+/)
+  return match ? parseInt(match[0], 10) : 0
+}
 
 const TITLE = 'Camping Gear Guide'
 const DESCRIPTION =
@@ -29,7 +34,9 @@ export default function GearHubPage() {
     const plan = PLAN_TEMPLATES[planSlug]
     const content = getPlanContent(planSlug)
     const set = GEAR_SETS[content.gearSetId]
-    return { planSlug, plan, set }
+    const items = resolveGearSet(content.gearSetId)
+    const total = items.reduce((sum, item) => sum + parsePriceRange(item.product.priceRange ?? ''), 0)
+    return { planSlug, plan, set, items, total }
   }).filter((b) => b.plan && b.set)
 
   return (
@@ -75,7 +82,7 @@ export default function GearHubPage() {
 
       <section className="max-w-page mx-auto px-8 pb-24">
         <ul className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-          {bundles.map(({ planSlug, plan, set }) => (
+          {bundles.map(({ planSlug, plan, set, items, total }) => (
             <li key={planSlug}>
               <Link
                 href={`/gear/sets/${planSlug}`}
@@ -88,6 +95,22 @@ export default function GearHubPage() {
                   {set.title}
                 </h2>
                 <p className="text-stone-600 leading-relaxed mb-6">{set.tagline}</p>
+
+                <ul className="mb-2 divide-y divide-stone-100">
+                  {items.map(({ product }) => (
+                    <li key={product.id} className="flex items-center justify-between gap-4 py-2">
+                      <span className="text-sm text-stone-700 leading-snug">{product.name}</span>
+                      <span className="text-sm text-stone-500 tabular-nums shrink-0">
+                        {product.priceRange ?? '—'}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+                <div className="flex items-center justify-between py-2 mb-6 border-t border-stone-200">
+                  <span className="text-sm font-semibold text-stone-900">Estimated total</span>
+                  <span className="text-sm font-semibold text-stone-900 tabular-nums">~${total}</span>
+                </div>
+
                 <p className="text-sm text-stone-500 mb-8">
                   Pairs with the{' '}
                   <span className="text-stone-700 font-medium">{plan.title}</span> plan.

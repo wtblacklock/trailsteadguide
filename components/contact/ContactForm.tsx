@@ -10,6 +10,7 @@ const CATEGORIES: { slug: string; label: string }[] = [
   { slug: 'affiliate', label: 'Affiliate or sponsorship' },
   { slug: 'bug', label: 'Bug or issue with the site' },
   { slug: 'feedback', label: 'Plan or quiz feedback' },
+  { slug: 'privacy', label: 'Data deletion / privacy request' },
   { slug: 'other', label: 'Other' },
 ]
 
@@ -27,11 +28,11 @@ declare global {
   }
 }
 
-export default function ContactForm() {
+export default function ContactForm({ initialCategory = 'general' }: { initialCategory?: string }) {
   const router = useRouter()
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
-  const [category, setCategory] = useState('general')
+  const [category, setCategory] = useState(initialCategory)
   const [message, setMessage] = useState('')
   const [honeypot, setHoneypot] = useState('')
   const [turnstileToken, setTurnstileToken] = useState<string | null>(null)

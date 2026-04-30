@@ -1,26 +1,17 @@
 /**
  * Print stylesheet for the Trip Pack PDF.
- * Embedded inline; not run through Tailwind. Page size = US Letter.
+ * Embedded inline; not run through Tailwind. Page size = A4.
  *
- * Strategy: @page sets physical paper size. Each logical `.page` section is
- * a flex column whose `min-height` matches one printed page, so single-page
- * sections always fill the page. The footer uses `margin-top: auto`, which
- * pins it to the bottom of the section's last printed page in either case
- * (single page → bottom of that page; multi-page → bottom of the last).
+ * Strategy: @page reserves physical margins. Each logical `.page` section
+ * forces a new physical page via `page-break-after`. Content grows naturally
+ * so nothing gets clipped — sections that exceed one page flow to the next.
  *
  * Palette: forest #1f3622 / sage #3a5a3e / sand #f5efe2 / charcoal #1f2622
  */
 
-// Letter is 8.5 × 11 in = 215.9 × 279.4 mm. We bake the page-content area
-// (paper minus padding) into a constant so the cover and `.page` blocks stay
-// in lock-step with @page when paper or margins change.
-const PAGE_PADDING_TOP = '12mm'
-const PAGE_PADDING_X = '14mm'
-const PAGE_PADDING_BOTTOM = '10mm'
-
 export const PDF_STYLES = `
   @page {
-    size: Letter;
+    size: A4;
     margin: 0;
   }
   * { box-sizing: border-box; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
@@ -31,8 +22,6 @@ export const PDF_STYLES = `
     background: #ffffff;
     line-height: 1.5;
     font-size: 10.5pt;
-    orphans: 3;
-    widows: 3;
   }
   /* Safety: nothing may overflow the paper width. */
   img, svg, table, pre { max-width: 100%; }
@@ -40,27 +29,52 @@ export const PDF_STYLES = `
     word-wrap: break-word;
     overflow-wrap: break-word;
   }
-  /* Section page. The browser breaks freely inside if content exceeds one
-     printed page; Puppeteer's per-page footer template handles bottom-of-page
-     branding. The bottom padding leaves clearance above that printed footer
-     so content never visually collides with it. */
   .page {
-    width: 215.9mm;
-    padding: ${PAGE_PADDING_TOP} ${PAGE_PADDING_X} ${PAGE_PADDING_BOTTOM};
+    width: 210mm;
+    padding: 16mm 16mm 14mm;
     break-before: page;
     page-break-before: always;
     page-break-inside: auto;
     background: #ffffff;
   }
 
-  /* COVER PAGE — Letter content area is 279.4mm minus Puppeteer's 12mm
-     bottom margin = 267.4mm. We size to 263mm to leave a small safety
-     buffer so sub-pixel rounding can never bump a sliver onto page 2. */
+  /* Footer strip — sits at end of each logical section. Slim margin-top so
+     the footer fits inside the section's page even when content is dense;
+     break-inside: avoid keeps it from splitting across pages on its own. */
+  .footer {
+    margin-top: 6mm;
+    padding-top: 4mm;
+    border-top: 1px solid #ece4d2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8mm;
+    font-size: 8pt;
+    color: #8a9088;
+    letter-spacing: 0.4px;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  .footer-wordmark {
+    font-size: 8pt;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #3a5a3e;
+    text-transform: uppercase;
+  }
+  .footer-disclosure {
+    text-align: right;
+    letter-spacing: 0.5px;
+  }
+
+  /* COVER PAGE — content-driven height with a forced break after, so the
+     cover always owns exactly one physical page without sub-pixel overflow
+     bumping a sliver onto page 2. */
   .cover {
-    background: #ffffff;
-    width: 215.9mm;
-    height: 263mm;
-    padding: 22mm 22mm 18mm;
+    background: linear-gradient(180deg, #f5efe2 0%, #ece4d2 100%);
+    width: 210mm;
+    min-height: 260mm;
+    padding: 26mm 22mm;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -118,8 +132,8 @@ export const PDF_STYLES = `
     line-height: 1.5;
   }
 
-  /* SECTION HEADERS — keep stuck to following content so a header is never
-     orphaned at the bottom of a physical page when the section overflows. */
+  /* SECTION HEADERS — break-after: avoid keeps the header glued to its body
+     so a page break can never orphan a title at the bottom of a page. */
   .section-eyebrow {
     font-size: 8.5pt; letter-spacing: 3px; text-transform: uppercase;
     color: #3a5a3e; margin: 0 0 6px; font-weight: 600;
@@ -132,7 +146,7 @@ export const PDF_STYLES = `
   }
   .section-lede {
     font-size: 10.5pt; color: #4a5450; max-width: 160mm;
-    margin: 0 0 12px; line-height: 1.55;
+    margin: 0 0 18px; line-height: 1.55;
     break-after: avoid; page-break-after: avoid;
   }
 
@@ -153,56 +167,40 @@ export const PDF_STYLES = `
     font-size: 10.5pt; line-height: 1.55; color: #2c332e; margin: 0;
   }
 
-  /* TIMELINE — tightened so all four groups land on one page when possible.
-     page-break-inside: avoid on the group prevents orphan single rows on
-     the next page; if a group doesn't fit, the whole group pushes over. */
-  .timeline-group {
-    margin-bottom: 10px;
-    page-break-inside: avoid;
-    break-inside: avoid;
-  }
-  .timeline-group:last-child { margin-bottom: 0; }
+  /* TIMELINE */
+  .timeline-group { margin-bottom: 16px; page-break-inside: auto; }
   .timeline-group-title {
-    font-size: 9.5pt; font-weight: 700; letter-spacing: 1.8px;
+    font-size: 10pt; font-weight: 700; letter-spacing: 2px;
     text-transform: uppercase; color: #1f3622;
-    margin: 0 0 5px; padding-bottom: 3px; border-bottom: 1.5px solid #1f3622;
+    margin: 0 0 8px; padding-bottom: 5px; border-bottom: 1.5px solid #1f3622;
     break-after: avoid; page-break-after: avoid;
   }
   .timeline-row {
-    display: flex; gap: 12px; padding: 5px 0;
+    display: flex; gap: 12px; padding: 8px 0;
     border-bottom: 1px solid #ece4d2;
     page-break-inside: avoid;
   }
   .timeline-row:last-child { border-bottom: none; }
   .timeline-time {
     flex: 0 0 26mm;
-    font-size: 9pt; font-weight: 600; color: #3a5a3e;
+    font-size: 9.5pt; font-weight: 600; color: #3a5a3e;
     letter-spacing: 0.3px;
   }
   .timeline-body { flex: 1; min-width: 0; }
-  .timeline-title { font-size: 9.5pt; font-weight: 600; color: #1f2622; margin: 0 0 2px; }
-  .timeline-desc { font-size: 9pt; color: #4a5450; margin: 0; line-height: 1.4; }
+  .timeline-title { font-size: 10pt; font-weight: 600; color: #1f2622; margin: 0 0 2px; }
+  .timeline-desc { font-size: 9.5pt; color: #4a5450; margin: 0; line-height: 1.45; }
 
-  /* PACKING LIST — uses CSS multicolumn instead of grid because Chrome's
-     print engine splits multicolumn cleanly across pages but treats grid
-     as an atomic block (an oversized first row would push the entire grid
-     to the next page, leaving the section header alone on a near-empty
-     page). break-inside: avoid on .packing-cat keeps each category whole. */
+  /* PACKING LIST */
   .packing-grid {
-    column-count: 2;
-    column-gap: 18px;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 8px 18px;
   }
   .packing-cat {
     background: #fffaf0;
     border: 1px solid #ece4d2;
     border-radius: 8px;
     padding: 9px 14px;
-    margin-bottom: 8px;
     page-break-inside: avoid;
     break-inside: avoid;
-    /* Tells the multicolumn engine each cat box is a column-break candidate. */
-    display: inline-block;
-    width: 100%;
   }
   .packing-cat-title {
     font-size: 9.5pt; font-weight: 700; letter-spacing: 1.5px;
@@ -394,59 +392,5 @@ export const PDF_STYLES = `
   }
   .skill-pdf-link {
     font-size: 8pt; color: #6a7268; margin: 0; letter-spacing: 0.3px;
-  }
-  /* Cover personalization chip */
-  .cover-chip {
-    margin: 12px 0 0;
-    font-size: 9.5pt; color: #4a5450;
-    letter-spacing: 0.3px;
-  }
-  /* Gear systems section */
-  .gs-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
-    margin-top: 8px;
-  }
-  .gs-card {
-    border: 1px solid #e6e0d0;
-    border-radius: 10px;
-    padding: 12px 14px;
-    background: #fbf8f1;
-  }
-  .gs-title {
-    font-size: 11pt; font-weight: 700; color: #1f3622;
-    margin: 0 0 4px;
-  }
-  .gs-desc {
-    font-size: 9pt; color: #4a5450;
-    margin: 0 0 8px; line-height: 1.45;
-  }
-  .gs-structure {
-    list-style: none; padding: 0; margin: 0 0 8px;
-  }
-  .gs-structure li {
-    font-size: 9pt; color: #2c332e;
-    margin: 0 0 2px; padding-left: 12px; position: relative;
-  }
-  .gs-structure li::before {
-    content: "—"; position: absolute; left: 0; color: #b9b09a;
-  }
-  .gs-cat {
-    margin-top: 6px;
-  }
-  .gs-cat-title {
-    font-size: 7.5pt; font-weight: 700; letter-spacing: 1.2px;
-    text-transform: uppercase; color: #6a7268;
-    margin: 0 0 3px;
-  }
-  .gs-products {
-    list-style: none; padding: 0; margin: 0;
-  }
-  .gs-products li {
-    font-size: 9pt; color: #2c332e; margin: 0 0 2px;
-  }
-  .gs-price {
-    color: #6a7268; font-size: 8.5pt;
   }
 `
