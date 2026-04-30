@@ -1,6 +1,7 @@
 import Hero from '@/components/landing/Hero'
 import HowItWorks from '@/components/landing/HowItWorks'
 import GuidesGrid from '@/components/landing/GuidesGrid'
+import AllGuidesRail from '@/components/landing/AllGuidesRail'
 import FeaturedPlans from '@/components/landing/FeaturedPlans'
 import WhyTrailstead from '@/components/landing/WhyTrailstead'
 import AfterPlanRow from '@/components/landing/AfterPlanRow'
@@ -22,6 +23,7 @@ export default function HomePage() {
       <Hero />
       <HowItWorks />
       <GuidesGrid />
+      <AllGuidesRail />
       <FeaturedPlans />
       <WhyTrailstead />
       <AfterPlanRow />
