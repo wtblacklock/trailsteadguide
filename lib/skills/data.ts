@@ -847,9 +847,10 @@ export const SKILLS: Skill[] = [
       'Standing in the campground’s lit area. Walk to the darkest spot you can safely reach.',
     ],
     relatedGear: [
-      { name: 'Black Diamond Spot 400 Headlamp (red mode)', productId: 'headlamp-family' },
+      { name: 'Black Diamond Spot 400 Headlamp (red mode)', productId: 'black-diamond-spot-400' },
       { name: 'Sky Guide or Stellarium Mobile (free app)' },
     ],
+    relatedSkills: ['stargazing/reading-a-star-chart', 'stargazing/constellations-by-season', 'stargazing/using-red-light-at-camp'],
     relatedPrintableSlug: 'northern-hemisphere-constellation-wheel',
   },
   {
@@ -879,13 +880,14 @@ export const SKILLS: Skill[] = [
       'Setting the chart for the wrong time. A 9pm chart used at midnight points you at constellations that have already set.',
     ],
     relatedGear: [
-      { name: 'Black Diamond Spot 400 Headlamp (red mode)', productId: 'headlamp-family' },
+      { name: 'Black Diamond Spot 400 Headlamp (red mode)', productId: 'black-diamond-spot-400' },
       { name: 'A planisphere sized for your latitude (40°N covers most of the lower 48)' },
     ],
     videoEmbed: {
       url: 'https://www.youtube-nocookie.com/embed/6KdMC4Myty0',
       title: 'How to Use a Planisphere (Star Chart) — Astronomy Tutorial',
     },
+    relatedSkills: ['stargazing/finding-constellations', 'stargazing/constellations-by-season', 'stargazing/finding-dark-sky-sites'],
     relatedPrintableSlug: 'northern-hemisphere-constellation-wheel',
   },
   {
@@ -919,6 +921,7 @@ export const SKILLS: Skill[] = [
       alt: 'Star chart of the constellation Orion with bright stars labeled — the iconic winter shape used as a seasonal anchor',
       attribution: 'Orion constellation map by Torsten Bronger / Kxx — Wikimedia Commons (CC BY-SA 3.0)',
     },
+    relatedSkills: ['stargazing/finding-constellations', 'stargazing/reading-a-star-chart', 'stargazing/watching-a-meteor-shower'],
     relatedPrintableSlug: 'northern-hemisphere-constellation-wheel',
   },
   {
@@ -953,6 +956,7 @@ export const SKILLS: Skill[] = [
       alt: 'Diagram of the celestial sphere showing the celestial equator and the ecliptic — the line planets and the Sun travel along the sky',
       attribution: 'Celestial equator and ecliptic by Joshua Cesa — Wikimedia Commons (CC BY-SA 3.0)',
     },
+    relatedSkills: ['stargazing/finding-constellations', 'stargazing/watching-a-meteor-shower', 'stargazing/finding-dark-sky-sites'],
     relatedPrintableSlug: 'northern-hemisphere-constellation-wheel',
   },
   {
@@ -982,7 +986,7 @@ export const SKILLS: Skill[] = [
       'Looking through binoculars. Naked eye only — meteors flash across too much sky for any narrow field of view to catch.',
     ],
     relatedGear: [
-      { name: 'Reclining camp chair', productId: 'fwc-chair-gci-rocker' },
+      { name: 'Reclining camp chair', productId: 'gci-freestyle-rocker' },
     ],
     videoEmbed: {
       url: 'https://www.youtube-nocookie.com/embed/_wN5nJ5Vaks',
@@ -993,6 +997,7 @@ export const SKILLS: Skill[] = [
       alt: 'Diagram of the Perseid meteor shower radiant point in the constellation Perseus — the area of the sky meteors appear to stream from',
       attribution: 'Perseid radiant diagram by Sanu N — Wikimedia Commons (CC BY-SA 4.0)',
     },
+    relatedSkills: ['stargazing/spotting-the-planets', 'stargazing/reading-lunar-phases', 'stargazing/finding-dark-sky-sites'],
     relatedPrintableSlug: 'northern-hemisphere-constellation-wheel',
   },
   {
@@ -1026,6 +1031,7 @@ export const SKILLS: Skill[] = [
       alt: 'Diagram of the eight phases of the moon — from new moon through full moon and back, the 29.5-day lunar cycle',
       attribution: 'Phases of the moon diagram by Horst Frank et al. / MikeRun — Wikimedia Commons (CC BY-SA 3.0)',
     },
+    relatedSkills: ['stargazing/watching-a-meteor-shower', 'stargazing/finding-dark-sky-sites', 'stargazing/finding-constellations'],
     relatedPrintableSlug: 'northern-hemisphere-constellation-wheel',
   },
   {
@@ -1054,8 +1060,9 @@ export const SKILLS: Skill[] = [
       'Forgetting that phone screens are dark-vision-killers. Use the device’s red-screen / "night shift" mode, or just keep the phone in your pocket.',
     ],
     relatedGear: [
-      { name: 'Black Diamond Spot 400 Headlamp (red mode built-in)', productId: 'headlamp-family' },
+      { name: 'Black Diamond Spot 400 Headlamp (red mode built-in)', productId: 'black-diamond-spot-400' },
     ],
+    relatedSkills: ['stargazing/finding-constellations', 'stargazing/reading-a-star-chart', 'stargazing/finding-dark-sky-sites'],
     relatedPrintableSlug: 'northern-hemisphere-constellation-wheel',
   },
   {
@@ -1090,6 +1097,7 @@ export const SKILLS: Skill[] = [
       alt: 'World map of artificial light pollution at night — bright clusters mark heavily urbanized regions, dark areas indicate Bortle 1–3 sky',
       attribution: 'World light pollution map by David Lorenz — Wikimedia Commons (attribution-only license)',
     },
+    relatedSkills: ['stargazing/reading-lunar-phases', 'stargazing/watching-a-meteor-shower', 'stargazing/using-red-light-at-camp'],
     relatedPrintableSlug: 'northern-hemisphere-constellation-wheel',
   },
 
