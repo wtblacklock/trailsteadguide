@@ -1,16 +1,49 @@
+'use client'
+
+import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { AFFILIATE_PRODUCTS } from '@/lib/affiliate-products'
 import type { AffiliateProduct } from '@/types'
 
-const PREVIEW_IDS = ['tent-sundome-3', 'stove-2-burner', 'headlamp-family']
+/**
+ * Three featured-product sets that rotate on each page load. Each set
+ * pulls from the active (non-deprecated) affiliate registry and covers a
+ * recognisable trio: tent → cooking/cooler → lighting/comfort.
+ *
+ * The rotation runs client-side after mount, so the first paint shows
+ * the first set deterministically (good for SEO + no hydration mismatch),
+ * then a single state update swaps to a random set.
+ */
+const PREVIEW_SETS: string[][] = [
+  // Beginner-balanced kit
+  ['coleman-sundome-4p', 'coleman-triton-2-burner', 'black-diamond-spot-400'],
+  // Family-comfort kit
+  ['fanttik-zeta-c6-pro', 'lost-horizon-air-foam-mattress', 'core-10x10-canopy'],
+  // Cold-weather kit
+  ['alps-lynx-4p', 'marmot-mad-river-0', 'rab-ionosphere-5-5'],
+]
 
 function findProduct(id: string): AffiliateProduct | null {
   return AFFILIATE_PRODUCTS.find((p) => p.id === id) ?? null
 }
 
+function resolveSet(setIdx: number): AffiliateProduct[] {
+  const ids = PREVIEW_SETS[setIdx] ?? PREVIEW_SETS[0]
+  return ids.map(findProduct).filter((p): p is AffiliateProduct => p !== null)
+}
+
 export default function GearPreview() {
-  const products = PREVIEW_IDS.map(findProduct).filter((p): p is AffiliateProduct => p !== null)
+  const [setIdx, setSetIdx] = useState(0)
+
+  // Pick a random set after mount so each page load shows a different trio.
+  // Initial render uses set 0 deterministically — keeps server & client in
+  // sync and gives crawlers stable HTML.
+  useEffect(() => {
+    setSetIdx(Math.floor(Math.random() * PREVIEW_SETS.length))
+  }, [])
+
+  const products = resolveSet(setIdx)
 
   return (
     <section data-reveal className="py-16 md:py-32 max-w-page mx-auto px-8">
