@@ -1,3 +1,5 @@
+'use client'
+
 /**
  * PrintablePreview — renders the actual print artwork at reduced scale
  * inside a paper-style frame. Used on the /printables/[slug] landing
@@ -6,6 +8,11 @@
  * The same artwork components power the full-size print pages, so the
  * preview is always 1:1 with what gets printed (no separate asset to
  * keep in sync).
+ *
+ * Anti-copy hardening: text inside cannot be selected, the artwork
+ * itself blocks pointer events (so the SVG can't be dragged out as a
+ * file), and right-click is suppressed. None of this stops a determined
+ * user with devtools — it stops casual copy/paste.
  */
 
 import ConstellationWheel from './ConstellationWheel'
@@ -33,7 +40,12 @@ export default function PrintablePreview({ slug, printHref }: Props) {
   if (!Renderer) return null
 
   return (
-    <figure className="printable-preview not-prose" aria-label="Preview of the printable">
+    <figure
+      className="printable-preview not-prose select-none"
+      aria-label="Preview of the printable"
+      onContextMenu={(e) => e.preventDefault()}
+      style={{ WebkitUserSelect: 'none', userSelect: 'none' }}
+    >
       <style>{`
         .printable-preview {
           margin: 0;
@@ -74,6 +86,20 @@ export default function PrintablePreview({ slug, printHref }: Props) {
           padding: 4px 10px;
           border-radius: 4px;
           /* Keep the badge unscaled visually — zoom inheritance compensated. */
+        }
+        /*
+          Block pointer events on the artwork itself (so SVGs / text
+          can't be dragged out or right-clicked-saved), and block image
+          dragging globally inside the preview.
+        */
+        .printable-preview > *:not(style):not(figcaption):not(a) {
+          pointer-events: none;
+          -webkit-user-drag: none;
+        }
+        .printable-preview img,
+        .printable-preview svg {
+          -webkit-user-drag: none;
+          user-drag: none;
         }
       `}</style>
       <Renderer />
