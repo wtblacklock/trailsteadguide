@@ -291,6 +291,32 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     slot: 'SAFETY',
   },
   {
+    id: 'marmot-mad-river-0',
+    name: 'Marmot Mad River 0',
+    description:
+      '0°F mummy bag for serious cold-weather camping. The upgrade pick when a 40°F bag plus liner stops cutting it.',
+    amazonAsin: 'B0GJMQNGXD',
+    imageUrl: 'https://m.media-amazon.com/images/I/51I4c4UzhIL._AC_SL1500_.jpg',
+    category: 'comfort',
+    templateSlugs: [],
+    priceRange: '~$339',
+    tags: ['sleeping-bag', 'premium', 'cold-ready'],
+    slot: 'SLEEP_BAG',
+  },
+  {
+    id: 'rab-ionosphere-5-5',
+    name: 'Rab Ionosphere 5.5',
+    description:
+      'Insulated backpacking pad with R-value 5.5 — cuts the cold from the ground on shoulder-season and altitude trips. The pair for the Mad River 0.',
+    amazonAsin: 'B0BNX4QNGW',
+    imageUrl: 'https://m.media-amazon.com/images/I/412NOySu6EL._AC_.jpg',
+    category: 'comfort',
+    templateSlugs: [],
+    priceRange: '~$168',
+    tags: ['sleeping-pad', 'premium', 'cold-ready'],
+    slot: 'SLEEP_SURFACE',
+  },
+  {
     id: 'katolk-tie-out',
     name: 'KATOLK Upgraded Dog Tie Out Cable',
     description:
