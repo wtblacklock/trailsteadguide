@@ -1,5 +1,5 @@
 import { getGearForGuide } from '@/lib/affiliate/guide-gear'
-import { amazonAffiliateUrl } from '@/lib/affiliate/amazon'
+import { getProductUrl } from '@/lib/amazon'
 
 type Props = {
   /** Guide slug (e.g. `'camping-for-beginners'`) — keys into GUIDE_GEAR. */
@@ -10,9 +10,10 @@ type Props = {
 
 /**
  * Slot-grouped gear shelf rendered at the bottom of every `/guides/*` page.
- * Reads from `data/guide-gear.ts` and the affiliate registry. Builds Amazon
- * links via `amazonAffiliateUrl(asin, guideSlug)` so per-page `ascsubtag`
- * attribution is preserved.
+ * Reads from `data/guide-gear.ts` and the affiliate registry. Outgoing
+ * URLs come from `getProductUrl(product)`, which prefers each product's
+ * curated long Associates URL (`product.affiliateUrl`) and falls back
+ * to the `/dp/<ASIN>` short form when no curated URL is set.
  */
 export default function GuideGearShelf({ guideSlug, heading }: Props) {
   const groups = getGearForGuide(guideSlug)
@@ -37,12 +38,11 @@ export default function GuideGearShelf({ guideSlug, heading }: Props) {
             </p>
             <div>
               {group.products.map((product) => {
-                const asin = product.amazonAsin
-                if (!asin) return null
+                if (!product.amazonAsin && !product.affiliateUrl) return null
                 return (
                   <a
                     key={product.id}
-                    href={amazonAffiliateUrl(asin, guideSlug)}
+                    href={getProductUrl(product)}
                     target="_blank"
                     rel="sponsored nofollow noopener noreferrer"
                     className="group flex items-center gap-5 sm:gap-6 py-5 border-t border-stone-200"

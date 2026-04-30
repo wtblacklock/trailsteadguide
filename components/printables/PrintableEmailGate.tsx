@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import PrintableThumbnail from './PrintableThumbnail'
 
 type Props = {
   printableSlug: string
@@ -20,6 +21,14 @@ type Props = {
   description?: string
   /** Optional override submit button label ("Get the printable" by default). */
   submitLabel?: string
+  /**
+   * Render a small preview thumbnail of the printable inside the
+   * email-gate box. Used on skill-page analog-companion blocks so the
+   * card becomes visually identifiable. Defaults to false on the
+   * /printables/[slug] detail page where the full preview is rendered
+   * separately.
+   */
+  showThumbnail?: boolean
 }
 
 /**
@@ -41,6 +50,7 @@ export default function PrintableEmailGate({
   eyebrow = 'Free download',
   description = 'Drop your email — we’ll add you to the Trailstead list and email the print view. One-click unsubscribe, no spam.',
   submitLabel = 'Get the printable',
+  showThumbnail = false,
 }: Props) {
   const [email, setEmail] = useState('')
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
@@ -96,6 +106,15 @@ export default function PrintableEmailGate({
       onSubmit={handleSubmit}
       className="rounded-2xl bg-[#1f3622] text-white border border-[#2a4a30] px-5 py-5 sm:px-7 sm:py-6"
     >
+      {showThumbnail && (
+        <div className="mb-4 -mx-1">
+          <PrintableThumbnail
+            slug={printableSlug}
+            scale={0.22}
+            heightClass="h-32"
+          />
+        </div>
+      )}
       <p className="text-[11px] uppercase tracking-[0.25em] text-[#c9d4b5] font-semibold mb-1.5">
         {eyebrow}
       </p>

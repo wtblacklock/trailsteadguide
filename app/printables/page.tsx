@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
-import PrintableLightbox from '@/components/printables/PrintableLightbox'
 import { pageMetadata, collectionPageGraph, SITE_URL } from '@/lib/seo'
 import { PRINTABLES } from '@/lib/printables'
 
@@ -53,19 +52,18 @@ export default function Page() {
       <section className="max-w-page mx-auto px-8 pb-24">
         <ul className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
           {PRINTABLES.map((p) => (
-            <li
-              key={p.slug}
-              className="group h-full flex flex-col p-6 md:p-8 rounded-2xl ring-1 ring-stone-200 bg-white hover:ring-stone-900 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-200"
-            >
-              <PrintableLightbox slug={p.slug} triggerVariant="card" />
-              <Link href={`/printables/${p.slug}`} className="mt-6 block">
-                <p className="text-xs font-semibold tracking-[0.18em] uppercase text-stone-500 mb-3">
+            <li key={p.slug}>
+              <Link
+                href={`/printables/${p.slug}`}
+                className="group block h-full p-8 md:p-10 rounded-2xl ring-1 ring-stone-200 bg-white hover:ring-stone-900 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-200"
+              >
+                <p className="text-xs font-semibold tracking-[0.18em] uppercase text-stone-500 mb-4">
                   {p.formatNote}
                 </p>
-                <h2 className="font-serif text-2xl md:text-3xl font-semibold text-stone-950 tracking-tight leading-tight mb-2 group-hover:text-stone-600 transition-colors">
+                <h2 className="font-serif text-3xl md:text-4xl font-semibold text-stone-950 tracking-tight leading-tight mb-3">
                   {p.title}
                 </h2>
-                <p className="text-stone-600 leading-relaxed mb-5">{p.description}</p>
+                <p className="text-stone-600 leading-relaxed mb-6">{p.description}</p>
                 <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-stone-900 group-hover:text-stone-600 transition-colors">
                   Get the printable
                   <svg
