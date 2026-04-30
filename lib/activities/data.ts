@@ -562,8 +562,6 @@ export const ACTIVITIES: Activity[] = [
     safetyNotes: ['Keep questions inclusive and appropriate for the youngest player present.'],
     recommendedFor: ['backyard-test', 'first-night-camp', 'first-weekend-camp', 'easy-family-basecamp'],
   },
-]
-
   // ── Movement ────────────────────────────────────────────────────────────────
   {
     slug: 'improvised-bocce',
