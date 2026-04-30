@@ -166,6 +166,23 @@ export type AffiliateProduct = {
   priceRange: string
   /** Discovery tags — used by guides to find products by topic. */
   tags?: AffiliateProductTag[]
+  /**
+   * Canonical gear slot from `lib/affiliate/gear-slots.ts`. Set on every
+   * recommendation product so the renderer can group by slot and so quiz
+   * results can filter (e.g. hide KID_GEAR when no toddler in party).
+   * Imported as a plain string here to avoid a circular dep.
+   */
+  slot?:
+    | 'TENT' | 'SLEEP_BAG' | 'SLEEP_SURFACE' | 'STOVE' | 'COOKWARE'
+    | 'COOLER' | 'LIGHTING' | 'CHAIR' | 'CANOPY' | 'RAIN_GEAR'
+    | 'WINTER_GEAR' | 'HOT_GEAR' | 'DOG_GEAR' | 'KID_GEAR' | 'SAFETY'
+    | 'POWER' | 'TRASH'
+  /**
+   * Legacy products kept in the registry for `/compare/*` pages and history
+   * tests. Excluded from new recommendation surfaces (guide gear shelf,
+   * quiz results AffiliateBlock, Trip Pack bundles).
+   */
+  deprecated?: boolean
 }
 
 export type QuizState = {
