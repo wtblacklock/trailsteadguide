@@ -6,10 +6,15 @@
  *   node scripts/affiliate-audit.mjs
  *
  * Outputs:
- *   data/affiliate-audit.csv     — per-product registry view
- *   data/affiliate-coverage.csv  — per-guide × per-slot worksheet with
- *                                  image_url and a Reddit research query
- *                                  on every blank row
+ *   data/affiliate-audit.csv              — per-product registry view
+ *   data/affiliate-coverage.template.csv  — per-guide × per-slot template,
+ *                                           regenerated from current rules
+ *
+ * NOTE: data/affiliate-coverage.csv is the *curated* worksheet (the operator
+ * has filled in real ASINs / images / prices on hundreds of rows). The audit
+ * script intentionally does NOT overwrite it — it writes the regenerated
+ * template to a sibling .template.csv so changes to slot rules can be diffed
+ * against the curated file by hand.
  *
  * Pure node stdlib — no npm install required.
  *
@@ -65,13 +70,13 @@ const TAG_TO_SLOT = {
 
 const BASE_SLOTS = ['TENT', 'SLEEP_BAG', 'SLEEP_SURFACE', 'STOVE', 'COOLER', 'LIGHTING', 'CHAIR', 'SAFETY']
 
+// Pruned to match `lib/affiliate/gear-slots.ts` — keep these in sync.
+// HOT_GEAR / RAIN_GEAR / WINTER_GEAR / POWER and the keyword-based CANOPY
+// auto-adds were dropped because the CSV has no products there today.
 const SCENARIO_RULES = [
-  { keywords: ['heatwave', 'summer', 'desert', 'texas', 'florida', 'california'], addSlots: ['CANOPY', 'HOT_GEAR'] },
-  { keywords: ['winter', 'fall', 'spring', 'turns'], addSlots: ['WINTER_GEAR'] },
-  { keywords: ['rain', 'turns', 'pacific-northwest', 'appalachians', 'northeast'], addSlots: ['RAIN_GEAR'] },
+  { keywords: ['heatwave'], addSlots: ['CANOPY'] },
   { keywords: ['dogs'], addSlots: ['DOG_GEAR'] },
   { keywords: [], addSlots: ['KID_GEAR'] }, // family-focused site — KID_GEAR sitewide
-  { keywords: ['weekend', 'how-to-plan', 'first-camping-trip'], addSlots: ['POWER'] },
 ]
 
 function slotsForGuide(slug) {
@@ -414,7 +419,9 @@ function main() {
 
   mkdirSync(join(ROOT, 'data'), { recursive: true })
   writeFileSync(join(ROOT, 'data/affiliate-audit.csv'), productCsv)
-  writeFileSync(join(ROOT, 'data/affiliate-coverage.csv'), coverageCsv)
+  // Write to a *template* path so we never clobber the curated worksheet.
+  // Diff against data/affiliate-coverage.csv to see what slots have moved.
+  writeFileSync(join(ROOT, 'data/affiliate-coverage.template.csv'), coverageCsv)
 
   // Coverage row counts: how many slots are filled vs empty across all guides.
   const coverageLines = coverageCsv.trim().split('\n').slice(1)
@@ -422,7 +429,7 @@ function main() {
   const empty = coverageLines.filter((l) => l.includes(',EMPTY,')).length
 
   console.log(`✓ ${products.length} products → data/affiliate-audit.csv`)
-  console.log(`✓ ${coverageLines.length} (guide × slot) rows → data/affiliate-coverage.csv`)
+  console.log(`✓ ${coverageLines.length} (guide × slot) rows → data/affiliate-coverage.template.csv`)
   console.log(`  ${filled} filled, ${empty} empty (${Math.round((filled / (filled + empty)) * 100)}% covered)`)
   console.log(`  ${Object.keys(guideMap).length} guides reference products`)
   console.log(`  ${Object.keys(gearSets).length} gear sets`)

@@ -87,22 +87,24 @@ export const BASE_SLOTS: GearSlotId[] = [
 
 /**
  * Adds extra slots to a guide based on keywords in its slug.
- * One guide can match multiple rules (e.g. a "summer florida" guide
- * pulls both summer and hot-weather slots).
+ * One guide can match multiple rules.
+ *
+ * Pruned to match the curated CSV at `data/affiliate-coverage.csv` —
+ * we only auto-add slots that the registry actually has products for
+ * today. Restoring an auto-add (e.g. RAIN_GEAR, HOT_GEAR, WINTER_GEAR,
+ * POWER, or keyword-based CANOPY) is a two-step change: add real
+ * products to the registry, then add the rule back here AND in the
+ * audit script `scripts/affiliate-audit.mjs`.
  */
 export const SCENARIO_RULES: Array<{ keywords: string[]; addSlots: GearSlotId[] }> = [
-  // Hot / sun-heavy
-  { keywords: ['heatwave', 'summer', 'desert', 'texas', 'florida', 'california'], addSlots: ['CANOPY', 'HOT_GEAR'] },
-  // Cold
-  { keywords: ['winter', 'fall', 'spring', 'turns'], addSlots: ['WINTER_GEAR'] },
-  // Rain-prone
-  { keywords: ['rain', 'turns', 'pacific-northwest', 'appalachians', 'northeast'], addSlots: ['RAIN_GEAR'] },
+  // Heatwave-only canopy — the rest of the hot-weather guides don't
+  // currently have a CANOPY row in the CSV. Expand this list when those
+  // guides gain a curated canopy.
+  { keywords: ['heatwave'], addSlots: ['CANOPY'] },
   // Dogs
   { keywords: ['dogs'], addSlots: ['DOG_GEAR'] },
   // Kids — every guide on this site is family-focused, so include sitewide
   { keywords: [], addSlots: ['KID_GEAR'] },
-  // Multi-night → power matters
-  { keywords: ['weekend', 'how-to-plan', 'first-camping-trip'], addSlots: ['POWER'] },
 ]
 
 /** Compute the slot list for a guide based on its slug. */
