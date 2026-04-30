@@ -35,59 +35,62 @@ type ComfortMap = Record<ComfortSystemId, Partial<Record<ComfortCategory, string
 
 export const SLEEP_PRODUCTS: SleepMap = {
   single: {
-    tents: ['tent-sundome-3', 'fwc-tent-sundome'],
-    sleepBags: ['sleeping-bag-family', 'fwc-sleeping-bag-mallome'],
-    pads: ['sleeping-pad-air'],
-    lanterns: ['fwc-lantern-consciot'],
+    tents: ['coleman-sundome-4p'],
+    sleepBags: ['coleman-brazos-bag'],
+    pads: ['big-agnes-divide'],
+    lanterns: ['luminaid-packlite-max'],
   },
   shared: {
-    tents: ['tent-sundome-6', 'fwc-tent-sundome'],
-    sleepBags: ['sleeping-bag-family'],
-    pads: ['sleeping-pad-air', 'air-mattress-queen'],
-    lanterns: ['fwc-lantern-consciot'],
+    tents: ['fanttik-zeta-c6-pro', 'coleman-sundome-4p'],
+    sleepBags: ['coleman-brazos-bag'],
+    pads: ['big-agnes-divide', 'lost-horizon-air-foam-mattress'],
+    lanterns: ['luminaid-packlite-max'],
   },
   flex: {
-    tents: ['tent-sundome-6', 'fwc-tent-sundome', 'tent-sundome-3'],
-    sleepBags: ['sleeping-bag-family', 'fwc-sleeping-bag-mallome'],
-    pads: ['sleeping-pad-air'],
-    lanterns: ['fwc-lantern-consciot'],
+    tents: ['fanttik-zeta-c6-pro', 'coleman-sundome-4p'],
+    sleepBags: ['coleman-brazos-bag'],
+    pads: ['big-agnes-divide'],
+    lanterns: ['luminaid-packlite-max'],
   },
   split: {
-    // Adult tent + kid tent — 2× 3-person dome is the cleanest pairing.
-    tents: ['fwc-tent-sundome', 'tent-sundome-3'],
-    sleepBags: ['sleeping-bag-family', 'fwc-sleeping-bag-mallome'],
-    pads: ['sleeping-pad-air'],
-    lanterns: ['fwc-lantern-consciot'],
+    // Adult tent + kid tent — pair the family-friendly Sundome 4P with the
+    // sturdier ALPS Lynx so adults and kids have distinct setups.
+    tents: ['coleman-sundome-4p', 'alps-lynx-4p'],
+    sleepBags: ['coleman-brazos-bag'],
+    pads: ['big-agnes-divide'],
+    lanterns: ['luminaid-packlite-max'],
   },
 }
 
 export const COOKING_PRODUCTS: CookingMap = {
   minimal: {
-    stoves: ['fwc-stove-coleman-1burner'],
+    stoves: ['coleman-1-burner'],
     cookware: [],
-    coolers: ['cooler-basic'],
+    coolers: ['coleman-classic-rolling-cooler'],
   },
   standard: {
-    stoves: ['stove-2-burner'],
+    stoves: ['coleman-triton-2-burner'],
     cookware: [],
-    coolers: ['cooler-basic', 'fwc-cooler-rolling'],
+    coolers: ['coleman-classic-rolling-cooler'],
   },
   comfort: {
-    stoves: ['stove-2-burner'],
+    stoves: ['coleman-triton-2-burner'],
     cookware: [],
-    coolers: ['fwc-cooler-rolling'],
+    coolers: ['coleman-classic-rolling-cooler'],
   },
 }
 
 export const LIGHTING_PRODUCTS: LightingMap = {
   single_zone: {
-    lanterns: ['fwc-lantern-consciot'],
-    headlamps: ['headlamp-family'],
+    lanterns: ['luminaid-packlite-max'],
+    headlamps: ['black-diamond-spot-400'],
   },
   multi_zone: {
-    // Two lantern positions for split-tent setups.
-    lanterns: ['fwc-lantern-consciot', 'fwc-lantern-hanger'],
-    headlamps: ['headlamp-family'],
+    // Two lantern positions for split-tent setups — the LuminAid hangs in
+    // the picnic-table zone, the Streamlight is the in-tent / find-it-in-
+    // the-dark spot.
+    lanterns: ['luminaid-packlite-max', 'streamlight-protac-2'],
+    headlamps: ['black-diamond-spot-400'],
   },
 }
 
@@ -98,14 +101,14 @@ export const COMFORT_PRODUCTS: ComfortMap = {
     extras: [],
   },
   medium: {
-    chairs: ['camp-chairs', 'fwc-chair-gci-rocker'],
+    chairs: ['coleman-portable-chair-cooler', 'gci-freestyle-rocker'],
     shade: [],
     extras: [],
   },
   high: {
-    chairs: ['fwc-chair-gci-rocker', 'camp-chairs'],
-    shade: ['canopy-camp'],
-    extras: ['fwc-projector-tmy'],
+    chairs: ['gci-freestyle-rocker', 'coleman-portable-chair-cooler'],
+    shade: ['core-10x10-canopy'],
+    extras: [],
   },
 }
 

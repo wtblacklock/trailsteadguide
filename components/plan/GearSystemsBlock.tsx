@@ -76,10 +76,11 @@ function SystemCard<C extends string>({
                     <a
                       href={buildAffiliateUrl(p)}
                       target="_blank"
-                      rel="noopener sponsored"
-                      className="text-stone-900 hover:underline"
+                      rel="noopener sponsored nofollow"
+                      className="text-stone-900 font-medium underline decoration-stone-400 underline-offset-4 hover:decoration-stone-900 transition-colors inline-flex items-baseline gap-1"
                     >
                       {p.name}
+                      <span aria-hidden="true" className="text-stone-400">↗</span>
                     </a>{' '}
                     <span className="text-stone-500">{p.priceRange}</span>
                   </li>

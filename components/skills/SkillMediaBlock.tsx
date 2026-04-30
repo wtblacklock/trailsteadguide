@@ -1,5 +1,5 @@
-import Image from 'next/image'
 import type { SkillIllustration, SkillVideoEmbed } from '@/lib/skills/types'
+import IllustrationLightbox from './IllustrationLightbox'
 
 interface Props {
   video?: SkillVideoEmbed
@@ -10,8 +10,10 @@ interface Props {
  * Renders the optional how-to video + illustration block.
  *
  * Video is loaded from youtube-nocookie.com via iframe with `loading="lazy"`
- * so it doesn't impact LCP. Illustration uses next/image so Wikimedia SVGs
- * and photos go through Vercel's optimizer.
+ * so it doesn't impact LCP. Illustration is wrapped in
+ * `<IllustrationLightbox>` so visitors can click to enlarge — needed
+ * for the knot diagrams and stargazing charts that show fine detail
+ * at a small size.
  */
 export default function SkillMediaBlock({ video, illustration }: Props) {
   return (
@@ -36,16 +38,7 @@ export default function SkillMediaBlock({ video, illustration }: Props) {
         )}
         {illustration && (
           <figure className="space-y-2">
-            <div className="relative aspect-video w-full overflow-hidden rounded-lg bg-white ring-1 ring-stone-200">
-              <Image
-                src={illustration.url}
-                alt={illustration.alt}
-                fill
-                sizes="(min-width: 768px) 50vw, 100vw"
-                className="object-contain p-4"
-                unoptimized={illustration.url.endsWith('.svg')}
-              />
-            </div>
+            <IllustrationLightbox illustration={illustration} />
             <figcaption className="text-xs text-stone-500">{illustration.attribution}</figcaption>
           </figure>
         )}
