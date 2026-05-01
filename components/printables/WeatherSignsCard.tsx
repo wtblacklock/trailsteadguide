@@ -36,6 +36,15 @@ export default function WeatherSignsCard() {
           background: #FAF8F2;
           break-inside: avoid;
         }
+        .wx-card .cloud-panel .cloud-icon {
+          width: 48px;
+          height: 48px;
+          object-fit: contain;
+          display: block;
+          margin: 0 auto 5px;
+          opacity: 0.7;
+          filter: grayscale(1);
+        }
         .wx-card .cloud-panel .cloud-name {
           font-family: 'Figtree', system-ui, sans-serif;
           font-size: 11px;
@@ -118,13 +127,15 @@ export default function WeatherSignsCard() {
       <h2>Cloud Types — What They Signal</h2>
       <div className="clouds-grid">
         {[
-          { name: 'Cumulus', look: 'Puffy white cauliflower clouds, flat base, sharp edges.', signal: 'Fair weather', type: 'ok' },
-          { name: 'Cumulonimbus', look: 'Towering anvil-top cloud, dark base, can span horizon.', signal: 'Storms coming', type: 'bad' },
-          { name: 'Cirrus', look: 'Thin, wispy streaks high in the sky.', signal: 'Change in 24–48h', type: 'warn' },
-          { name: 'Stratus', look: 'Low, flat grey blanket covering the sky.', signal: 'Drizzle likely', type: 'warn' },
-          { name: 'Altocumulus', look: 'Rippled rows of grey-white puffs at mid height.', signal: 'Storms possible', type: 'warn' },
+          { name: 'Cumulus', look: 'Puffy white cauliflower clouds, flat base, sharp edges.', signal: 'Fair weather', type: 'ok', img: 'https://upload.wikimedia.org/wikipedia/commons/b/b1/Cumulus.svg' },
+          { name: 'Cumulonimbus', look: 'Towering anvil-top cloud, dark base, can span horizon.', signal: 'Storms coming', type: 'bad', img: 'https://upload.wikimedia.org/wikipedia/commons/1/12/Cumulonimbus.svg' },
+          { name: 'Cirrus', look: 'Thin, wispy streaks high in the sky.', signal: 'Change in 24–48h', type: 'warn', img: 'https://upload.wikimedia.org/wikipedia/commons/b/ba/Clouds_CH_6.svg' },
+          { name: 'Stratus', look: 'Low, flat grey blanket covering the sky.', signal: 'Drizzle likely', type: 'warn', img: 'https://upload.wikimedia.org/wikipedia/commons/4/47/Stratus.svg' },
+          { name: 'Altocumulus', look: 'Rippled rows of grey-white puffs at mid height.', signal: 'Storms possible', type: 'warn', img: 'https://upload.wikimedia.org/wikipedia/commons/0/07/Symbol_altocumulus.svg' },
         ].map((c) => (
           <div key={c.name} className="cloud-panel">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={c.img} alt={`${c.name} cloud symbol`} className="cloud-icon" draggable={false} />
             <p className="cloud-name">{c.name}</p>
             <p className="cloud-look">{c.look}</p>
             <span className={`cloud-signal signal-${c.type}`}>{c.signal}</span>

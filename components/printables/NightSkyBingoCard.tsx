@@ -96,6 +96,37 @@ export default function NightSkyBingoCard() {
           gap: 16px;
         }
         .bingo-card .rules strong { color: #1C1917; font-weight: 600; }
+        .bingo-card .star-refs {
+          margin-top: 10px;
+          display: flex;
+          gap: 14px;
+          align-items: flex-start;
+          border-top: 1px solid #D6D3D1;
+          padding-top: 8px;
+        }
+        .bingo-card .star-ref {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 4px;
+          flex: 1;
+        }
+        .bingo-card .star-ref img {
+          width: 100%;
+          max-height: 80px;
+          object-fit: contain;
+          filter: grayscale(1);
+          opacity: 0.65;
+        }
+        .bingo-card .star-ref-label {
+          font-family: 'Figtree', system-ui, sans-serif;
+          font-size: 9px;
+          font-weight: 600;
+          letter-spacing: 0.08em;
+          text-transform: uppercase;
+          color: #78716C;
+          text-align: center;
+        }
       `}</style>
 
       <p className="lead">
@@ -115,6 +146,24 @@ export default function NightSkyBingoCard() {
         <span><strong>Bingo:</strong> any row, column, or diagonal.</span>
         <span><strong>Blackout:</strong> all 25 squares — the hardest possible win.</span>
         <span><strong>Dispute rule:</strong> caller must describe it before it counts.</span>
+      </div>
+
+      <div className="star-refs">
+        <div className="star-ref">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Ursa_Major_constellation_map.svg" alt="Ursa Major (Big Dipper) constellation map — the outer two stars of the cup point to Polaris" draggable={false} />
+          <span className="star-ref-label">Big Dipper → Polaris</span>
+        </div>
+        <div className="star-ref">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="https://upload.wikimedia.org/wikipedia/commons/b/bf/Orion_constellation_map.svg" alt="Orion constellation map showing the three-star belt and the surrounding bright stars" draggable={false} />
+          <span className="star-ref-label">Orion (winter)</span>
+        </div>
+        <div className="star-ref">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Cassiopeia_constellation_map.svg" alt="Cassiopeia constellation map — the W or M shape on the opposite side of Polaris from the Big Dipper" draggable={false} />
+          <span className="star-ref-label">Cassiopeia (W shape)</span>
+        </div>
       </div>
     </div>
   )

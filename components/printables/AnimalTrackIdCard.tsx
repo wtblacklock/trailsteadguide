@@ -8,6 +8,7 @@ type TrackPanel = {
   claws: string
   note?: string
   warn?: string
+  trackImg?: { url: string; alt: string }
 }
 
 const TRACKS: TrackPanel[] = [
@@ -20,6 +21,10 @@ const TRACKS: TrackPanel[] = [
     gait: 'Walking: diagonal pattern. Bounding: four tracks clustered together.',
     claws: 'No claws visible',
     note: 'Most common track in wooded campsites. Often found on soft soil near water.',
+    trackImg: {
+      url: 'https://upload.wikimedia.org/wikipedia/commons/a/a6/Whitetail_track.svg',
+      alt: 'White-tailed deer hoofprint — two pointed lobes in a heart shape',
+    },
   },
   {
     animal: 'Raccoon',
@@ -40,6 +45,10 @@ const TRACKS: TrackPanel[] = [
     gait: 'Classic bounding Y-shape: two large hind feet forward, two small fronts behind.',
     claws: 'Faint claws on hind feet',
     note: 'The Y-shape bounding pattern is unmistakable. Often found at wood edges.',
+    trackImg: {
+      url: 'https://upload.wikimedia.org/wikipedia/commons/4/4e/Rabbit_tracks.svg',
+      alt: 'Rabbit bounding track pattern — two large hind feet ahead, two small front feet behind',
+    },
   },
   {
     animal: 'Gray Squirrel',
@@ -60,6 +69,10 @@ const TRACKS: TrackPanel[] = [
     gait: 'Direct-register trot: hind foot lands precisely in front footprint, making a straight line.',
     claws: 'Claws visible, fine and close-set',
     note: 'The perfectly straight line of single prints is the fox signature. Coyote is larger.',
+    trackImg: {
+      url: 'https://upload.wikimedia.org/wikipedia/commons/4/49/Foxprint.svg',
+      alt: 'Red fox paw print — oval shape with 4 toes and a central bar pad',
+    },
   },
   {
     animal: 'Coyote',
@@ -70,6 +83,10 @@ const TRACKS: TrackPanel[] = [
     gait: 'Direct-register trot like fox — straight line. Wider stride than fox.',
     claws: 'Prominent claws clearly visible',
     warn: 'If pups are nearby, adults may be bold. Haze with noise if one approaches camp.',
+    trackImg: {
+      url: 'https://upload.wikimedia.org/wikipedia/commons/6/6f/Canis_lupis_track.svg',
+      alt: 'Canine track — 4 toes with prominent claws above a large central pad',
+    },
   },
   {
     animal: 'Black Bear',
@@ -118,6 +135,24 @@ export default function AnimalTrackIdCard() {
           padding: 10px 12px;
           background: #FAF8F2;
           break-inside: avoid;
+        }
+        .track-card .panel-inner {
+          display: flex;
+          gap: 10px;
+          align-items: flex-start;
+        }
+        .track-card .panel-body {
+          flex: 1;
+          min-width: 0;
+        }
+        .track-card .track-img {
+          width: 58px;
+          height: 72px;
+          flex-shrink: 0;
+          object-fit: contain;
+          opacity: 0.75;
+          filter: grayscale(1);
+          margin-top: 2px;
         }
         .track-card .panel .animal-name {
           font-family: 'Figtree', system-ui, sans-serif;
@@ -178,14 +213,27 @@ export default function AnimalTrackIdCard() {
       <div className="grid">
         {TRACKS.map((t) => (
           <div key={t.animal} className="panel">
-            <p className="animal-name"><span>{t.emoji}</span>{t.animal}</p>
-            <p className="size">{t.sizeInches}</p>
-            <p className="row"><strong>Front</strong> {t.frontTrack}</p>
-            <p className="row"><strong>Hind</strong> {t.hindTrack}</p>
-            <p className="row"><strong>Gait</strong> {t.gait}</p>
-            <p className="row"><strong>Claws</strong> {t.claws}</p>
-            {t.note && <p className="note">{t.note}</p>}
-            {t.warn && <p className="warn">⚠ {t.warn}</p>}
+            <div className="panel-inner">
+              <div className="panel-body">
+                <p className="animal-name"><span>{t.emoji}</span>{t.animal}</p>
+                <p className="size">{t.sizeInches}</p>
+                <p className="row"><strong>Front</strong> {t.frontTrack}</p>
+                <p className="row"><strong>Hind</strong> {t.hindTrack}</p>
+                <p className="row"><strong>Gait</strong> {t.gait}</p>
+                <p className="row"><strong>Claws</strong> {t.claws}</p>
+                {t.note && <p className="note">{t.note}</p>}
+                {t.warn && <p className="warn">⚠ {t.warn}</p>}
+              </div>
+              {t.trackImg && (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img
+                  src={t.trackImg.url}
+                  alt={t.trackImg.alt}
+                  className="track-img"
+                  draggable={false}
+                />
+              )}
+            </div>
           </div>
         ))}
       </div>
