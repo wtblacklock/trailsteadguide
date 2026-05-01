@@ -1,15 +1,40 @@
 'use client'
 
 import { useState } from 'react'
-import type { QuizQuestion as QuizQuestionType } from '@/types'
+import type { QuizQuestion as QuizQuestionType, PartySize } from '@/types'
 
 interface QuizQuestionProps {
   question: QuizQuestionType
-  onAnswer: (value: string | string[]) => void
+  onAnswer: (value: string | string[] | PartySize) => void
+  initialValue?: string | string[] | PartySize
+  /**
+   * For the party-size step: when true, the user previously chose
+   * "No kids — just adults", so the kids stepper is hidden and the
+   * answer is committed with `kids: 0`.
+   */
+  noKids?: boolean
 }
 
-export default function QuizQuestion({ question, onAnswer }: QuizQuestionProps) {
-  const [selected, setSelected] = useState<string[]>([])
+export default function QuizQuestion({ question, onAnswer, initialValue, noKids }: QuizQuestionProps) {
+  const [selected, setSelected] = useState<string[]>(
+    Array.isArray(initialValue) ? initialValue : [],
+  )
+
+  // Party-size stepper
+  if (question.kind === 'party-size') {
+    return (
+      <PartySizeQuestion
+        question={question}
+        onAnswer={onAnswer}
+        initialValue={
+          initialValue && typeof initialValue === 'object' && !Array.isArray(initialValue)
+            ? (initialValue as PartySize)
+            : undefined
+        }
+        noKids={noKids ?? false}
+      />
+    )
+  }
 
   if (!question.multiSelect) {
     return (
@@ -101,6 +126,88 @@ export default function QuizQuestion({ question, onAnswer }: QuizQuestionProps) 
           Continue
         </button>
       )}
+    </div>
+  )
+}
+
+function PartySizeQuestion({
+  question,
+  onAnswer,
+  initialValue,
+  noKids,
+}: {
+  question: QuizQuestionType
+  onAnswer: (value: PartySize) => void
+  initialValue?: PartySize
+  noKids: boolean
+}) {
+  const [adults, setAdults] = useState(initialValue?.adults ?? 2)
+  // When the user said "no kids" on the prior step, the kids count is
+  // pinned to 0 and the stepper is hidden — no point asking how many of
+  // a thing you already said you don't have.
+  const [kids, setKids] = useState(noKids ? 0 : initialValue?.kids ?? 2)
+
+  return (
+    <div>
+      <div className="mb-8">
+        <h2 className="font-serif text-3xl text-stone-900 mb-2">{question.prompt}</h2>
+        {question.subprompt && <p className="text-stone-500">{question.subprompt}</p>}
+      </div>
+      <div className="flex flex-col gap-4">
+        <Stepper label="Adults" value={adults} min={1} max={10} onChange={setAdults} />
+        {!noKids && (
+          <Stepper label="Kids" value={kids} min={0} max={10} onChange={setKids} />
+        )}
+      </div>
+      <button
+        onClick={() => onAnswer({ adults, kids: noKids ? 0 : kids })}
+        className="mt-8 w-full py-4 px-6 rounded-xl bg-stone-900 text-white font-medium hover:bg-stone-800 transition-colors duration-150"
+      >
+        Continue
+      </button>
+    </div>
+  )
+}
+
+function Stepper({
+  label,
+  value,
+  min,
+  max,
+  onChange,
+}: {
+  label: string
+  value: number
+  min: number
+  max: number
+  onChange: (n: number) => void
+}) {
+  return (
+    <div className="flex items-center justify-between py-4 px-6 rounded-xl border border-stone-200 bg-white">
+      <span className="text-stone-800 text-lg">{label}</span>
+      <div className="flex items-center gap-4">
+        <button
+          type="button"
+          aria-label={`Decrease ${label.toLowerCase()}`}
+          onClick={() => onChange(Math.max(min, value - 1))}
+          disabled={value <= min}
+          className="w-10 h-10 rounded-full border border-stone-300 text-stone-700 hover:bg-stone-100 transition-colors disabled:opacity-30 disabled:cursor-not-allowed flex items-center justify-center text-lg leading-none"
+        >
+          −
+        </button>
+        <span className="w-8 text-center font-serif text-2xl tabular-nums text-stone-900">
+          {value}
+        </span>
+        <button
+          type="button"
+          aria-label={`Increase ${label.toLowerCase()}`}
+          onClick={() => onChange(Math.min(max, value + 1))}
+          disabled={value >= max}
+          className="w-10 h-10 rounded-full border border-stone-300 text-stone-700 hover:bg-stone-100 transition-colors disabled:opacity-30 disabled:cursor-not-allowed flex items-center justify-center text-lg leading-none"
+        >
+          +
+        </button>
+      </div>
     </div>
   )
 }

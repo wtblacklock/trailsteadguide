@@ -7,14 +7,24 @@
     "build": "next build --turbopack",
     "start": "next start",
     "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "validate:affiliate": "node scripts/validate-affiliate-links.mjs",
+    "affiliate:research": "node scripts/affiliate-research.mjs",
+    "affiliate:audit": "node scripts/affiliate-audit.mjs",
+    "affiliate:check-images": "node scripts/check-affiliate-images.mjs"
   },
   "dependencies": {
+    "@sparticuz/chromium": "^147.0.0",
     "@vercel/analytics": "^2.0.1",
+    "@vercel/speed-insights": "^2.0.0",
     "next": "15.5.15",
+    "puppeteer-core": "^24.42.0",
     "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "react-dom": "19.1.0",
+    "resend": "^6.12.2",
+    "stripe": "^22.1.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

@@ -2,27 +2,52 @@
 
 import { useReducer, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
-import type { QuizState, QuizAction, QuizAnswers } from '@/types'
-import { QUIZ_QUESTIONS as QUESTIONS, EMAIL_CAPTURE_AFTER_INDEX } from '@/lib/quiz-questions'
+import { track } from '@/lib/analytics'
+import type { QuizState, QuizAction, QuizAnswers, KidsAgeGroup, PartySize } from '@/types'
+import { QUIZ_QUESTIONS as QUESTIONS } from '@/lib/quiz-questions'
 import { computePlanSlug } from '@/lib/quiz-router'
 import { writeSession } from '@/lib/session'
+import { partySizeToPeopleBucket } from '@/lib/personalization/modifiers'
+import { serializeQuizOutput } from '@/lib/personalization/url-params'
+import type { GroupType, KidsAgeBucket, QuizOutput } from '@/lib/personalization/types'
 import QuizProgress from './QuizProgress'
 import QuizQuestion from './QuizQuestion'
 import MidQuizEmailCapture from './MidQuizEmailCapture'
+import GeneratingPlan from './GeneratingPlan'
+
+// Flatten the answer payload to primitive props for Vercel Analytics.
+// PartySize becomes adults/kids ints; arrays join into a comma string.
+function trackQuizAnswer(questionId: string, value: string | string[] | PartySize) {
+  const props: Record<string, string | number | boolean> = { question: questionId }
+  if (typeof value === 'string') {
+    props.answer = value
+  } else if (Array.isArray(value)) {
+    props.answer = value.join(',')
+  } else if (value && typeof value === 'object') {
+    props.adults = value.adults
+    props.kids = value.kids
+  }
+  track('quiz_answered', props)
+}
 
 function quizReducer(state: QuizState, action: QuizAction): QuizState {
   switch (action.type) {
     case 'ANSWER': {
       const newAnswers = { ...state.answers, [action.questionId]: action.value }
       const nextIndex = state.currentIndex + 1
-      // Email capture disabled for now
       if (nextIndex >= QUESTIONS.length) {
-        return { ...state, answers: newAnswers, status: 'complete' }
+        return { ...state, answers: newAnswers, status: 'generating' }
       }
       return { ...state, answers: newAnswers, currentIndex: nextIndex }
     }
+    case 'BACK': {
+      if (state.currentIndex === 0) return state
+      return { ...state, currentIndex: state.currentIndex - 1 }
+    }
     case 'DISMISS_EMAIL_CAPTURE':
       return { ...state, showEmailCapture: false, currentIndex: state.currentIndex + 1 }
+    case 'FINISH_GENERATING':
+      return { ...state, status: 'complete' }
     case 'COMPLETE':
       return { ...state, status: 'complete' }
     default:
@@ -34,7 +59,42 @@ const initialState: QuizState = {
   currentIndex: 0,
   answers: {},
   showEmailCapture: false,
+  emailCaptureShown: false,
   status: 'active',
+}
+
+/**
+ * Compress the multi-select kidsAgeGroup answer into the single bucket the
+ * personalization engine uses. Pick the youngest selected bucket so modifiers
+ * default to the most constraining case (under_5 dominates 5_10, etc.).
+ */
+function pickKidsAgeBucket(ages: KidsAgeGroup[]): KidsAgeBucket | undefined {
+  if (ages.includes('under_5')) return 'under_5'
+  if (ages.includes('5_10')) return '5_10'
+  if (ages.includes('10+')) return '10+'
+  return undefined
+}
+
+function deriveQuizOutput(answers: QuizAnswers, planSlug: ReturnType<typeof computePlanSlug>): QuizOutput {
+  const { partySize, kidsAgeGroup } = answers
+  const explicitNoKids = kidsAgeGroup.includes('none') || kidsAgeGroup.length === 0
+  const hasKids = !explicitNoKids && partySize.kids > 0
+  const groupType: GroupType = hasKids
+    ? 'family'
+    : partySize.adults === 1
+      ? 'solo'
+      : 'couple'
+
+  return {
+    planSlug,
+    partySize,
+    groupType,
+    peopleBucket: partySizeToPeopleBucket(partySize.adults, partySize.kids),
+    hasKids,
+    kidsAge: hasKids ? pickKidsAgeBucket(kidsAgeGroup) : undefined,
+    activityType: answers.activityType,
+    comfortLevel: answers.comfortLevel,
+  }
 }
 
 export default function QuizShell() {
@@ -43,11 +103,23 @@ export default function QuizShell() {
 
   const { currentIndex, answers, showEmailCapture, status } = state
 
+  // Funnel entry — fires once when the quiz UI mounts on /quiz.
+  useEffect(() => {
+    track('quiz_started')
+  }, [])
+
   useEffect(() => {
     if (status !== 'complete') return
 
-    const requiredKeys: (keyof QuizAnswers)[] = ['experience', 'kidsAgeGroup', 'intent', 'anxiety', 'comfortPriority']
-    const isComplete = requiredKeys.every(k => k in answers)
+    const requiredKeys: (keyof QuizAnswers)[] = [
+      'experience',
+      'kidsAgeGroup',
+      'partySize',
+      'intent',
+      'activityType',
+      'comfortLevel',
+    ]
+    const isComplete = requiredKeys.every((k) => k in answers)
     if (!isComplete) return
     const completeAnswers = answers as QuizAnswers
 
@@ -57,8 +129,24 @@ export default function QuizShell() {
       planSlug: slug,
       timestamp: Date.now(),
     })
-    router.push(`/plan/${slug}`)
+
+    const out = deriveQuizOutput(completeAnswers, slug)
+    const sp = serializeQuizOutput(out)
+    // Funnel exit — fires when the quiz finishes and we redirect to the plan page.
+    track('quiz_completed', { plan: slug, group: out.groupType })
+    router.push(`/plans/${slug}?${sp.toString()}`)
   }, [status, answers, router])
+
+  // Generating state — show animated loader before redirect.
+  if (status === 'generating') {
+    return <GeneratingPlan onComplete={() => dispatch({ type: 'FINISH_GENERATING' })} />
+  }
+
+  // Complete — navigation in useEffect is in-flight. Render nothing so the
+  // last question doesn't flash back while router.push resolves.
+  if (status === 'complete') {
+    return null
+  }
 
   return (
     <div className="max-w-2xl mx-auto px-6 py-16">
@@ -70,16 +158,39 @@ export default function QuizShell() {
         <>
           <QuizProgress currentIndex={currentIndex} total={QUESTIONS.length} />
           <QuizQuestion
+            key={QUESTIONS[currentIndex].id}
             question={QUESTIONS[currentIndex]}
-            onAnswer={(value) =>
+            initialValue={answers[QUESTIONS[currentIndex].id]}
+            // Forward the prior "no kids — just adults" answer to the
+            // party-size step so the kids stepper hides and the answer
+            // commits with kids: 0.
+            noKids={answers.kidsAgeGroup?.includes('none') ?? false}
+            onAnswer={(value) => {
+              // Per-step funnel ping so we can see which question loses users.
+              trackQuizAnswer(QUESTIONS[currentIndex].id, value)
               dispatch({
                 type: 'ANSWER',
                 questionId: QUESTIONS[currentIndex].id,
                 value,
               })
-            }
+            }}
           />
 
+          {currentIndex > 0 && (
+            <div className="mt-8 flex items-center justify-start">
+              <button
+                type="button"
+                onClick={() => dispatch({ type: 'BACK' })}
+                className="inline-flex items-center gap-2 text-sm text-stone-500 hover:text-stone-900 transition-colors"
+              >
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <path d="M19 12H5" />
+                  <polyline points="12 19 5 12 12 5" />
+                </svg>
+                Back to previous question
+              </button>
+            </div>
+          )}
         </>
       )}
     </div>

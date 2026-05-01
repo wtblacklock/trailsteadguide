@@ -1,6 +1,7 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import { track } from '@/lib/analytics'
 import Card from '@/components/ui/Card'
 import Button from '@/components/ui/Button'
 
@@ -13,27 +14,29 @@ export default function MidQuizEmailCapture({ onSkip }: MidQuizEmailCaptureProps
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
 
+  // Email gate appeared mid-quiz — distinct from the trip-pack PDF gate via `source`.
+  useEffect(() => {
+    track('email_gate_shown', { source: 'mid_quiz' })
+  }, [])
+
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
     setError(null)
     setLoading(true)
 
     try {
-      const formId = process.env.NEXT_PUBLIC_CONVERTKIT_FORM_ID
-      if (!formId) { setError('Email service not configured.'); setLoading(false); return }
-      const res = await fetch(
-        `https://app.convertkit.com/forms/${formId}/subscriptions`,
-        {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ email_address: email }),
-        }
-      )
+      const res = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, source: 'mid-quiz' }),
+      })
 
       if (!res.ok) {
         throw new Error('Something went wrong. Please try again.')
       }
 
+      // Email captured — no PII in props, only the source bucket.
+      track('email_gate_submitted', { source: 'mid_quiz' })
       setLoading(false)
       onSkip()
     } catch (err) {

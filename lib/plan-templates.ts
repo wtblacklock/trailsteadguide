@@ -1,11 +1,13 @@
 import type { PlanTemplate } from '@/types'
+import { MEALS_BY_PLAN } from './plan-meals'
 
 export const PLAN_TEMPLATES: Record<string, PlanTemplate> = {
   'backyard-test': {
+    meals: MEALS_BY_PLAN['backyard-test'],
     slug: 'backyard-test',
     title: 'Backyard Test Night',
     tagline: 'Before you commit to a campsite, make sure everyone can actually sleep outside.',
-    heroImage: 'https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=1400&auto=format&fit=crop&q=80',
+    heroImage: 'https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?w=1400&auto=format&fit=crop&q=80',
     tripSummary: 'A one-night backyard simulation to test your sleep system, gear setup, and kid readiness — no campsite booking required.',
     preTrip: [
       {
@@ -45,7 +47,7 @@ export const PLAN_TEMPLATES: Record<string, PlanTemplate> = {
     ],
     morning: [],
     gear: [
-      { name: '3-season tent', essential: true, affiliateProductId: 'tent-basic' },
+      { name: '3-season tent', essential: true },
       { name: 'Sleeping bags (age/temp appropriate)', essential: true, affiliateProductId: 'sleeping-bag-family' },
       { name: 'Sleeping pads', essential: true },
       { name: 'Headlamps (one per person)', essential: true, affiliateProductId: 'headlamp-family' },
@@ -60,12 +62,12 @@ export const PLAN_TEMPLATES: Record<string, PlanTemplate> = {
       {
         title: 'Night sounds inventory',
         description: 'Before sleep: lie still and identify 3 sounds you can hear from inside the tent.',
-        ageGroup: '7-12',
+        ageGroup: '5_10',
       },
       {
         title: 'Flashlight story time',
         description: 'Stories told by flashlight inside sleeping bags. Let kids lead one.',
-        ageGroup: '3-6',
+        ageGroup: 'under_5',
       },
     ],
     safetyNotes: [
@@ -74,19 +76,51 @@ export const PLAN_TEMPLATES: Record<string, PlanTemplate> = {
       'Keep water bottles inside the tent.',
       'If anyone is genuinely uncomfortable, the house is right there. No shame in going in.',
     ],
+    recommendedActivities: [
+      'flashlight-tag',
+      'glow-stick-ring-toss',
+      'nature-scavenger-hunt',
+      'stargazing-constellation-hunt',
+    ],
+    recommendedSkills: [
+      {
+        skillSlug: 'shelter/pitching-a-tent',
+        rationale:
+          'The whole point of this night is rehearsing the tent. Pitch it as if your campsite was 50 miles away, not 50 feet.',
+      },
+      {
+        skillSlug: 'knots/taut-line-hitch',
+        rationale:
+          'A loose guy line is a saggy fly is a wet floor at 3 a.m. Practice tightening guy lines now, in your yard.',
+      },
+      {
+        skillSlug: 'knife-skills/safe-knife-handling',
+        rationale:
+          'If you’ll let kids near a knife on a real trip, the rules need to land here first — somewhere with no consequences.',
+      },
+    ],
+    activitySchedule: {
+      day1: [
+        'flashlight-tag',
+        'glow-stick-ring-toss',
+        'nature-scavenger-hunt',
+        'stargazing-constellation-hunt',
+      ],
+    },
   },
 
   'first-night-camp': {
+    meals: MEALS_BY_PLAN['first-night-camp'],
     slug: 'first-night-camp',
     title: 'First Night Camp',
     tagline: 'Your first real campsite trip — done right, without the chaos.',
-    heroImage: 'https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?w=1400&auto=format&fit=crop&q=80',
+    heroImage: 'https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=1400&auto=format&fit=crop&q=80',
     tripSummary: "A one-night campsite trip with a clear timeline, a short gear list, and everything your family needs to leave feeling like you'll do it again.",
     preTrip: [
       {
-        time: '1 week before',
+        time: '3–6 months before',
         title: 'Book your campsite',
-        description: 'Pick a developed campsite with restrooms, fire rings, and flat tent pads. State parks are ideal. Reserve.america.com covers most.',
+        description: 'Pick a developed campsite with restrooms, fire rings, and flat tent pads. State parks are ideal. Heads up: popular state-park sites can fill 3–6 months out, and prime-weather weekends (May–September) often book the day the reservation window opens. If a park is full, try lesser-known county parks, private campgrounds (KOA, Hipcamp, Tentrr), or weeknights — those usually have availability. Reserve.america.com and recreation.gov cover most public sites.',
       },
       {
         time: '3 days before',
@@ -156,7 +190,7 @@ export const PLAN_TEMPLATES: Record<string, PlanTemplate> = {
       },
     ],
     gear: [
-      { name: 'Family tent (4-person min)', essential: true, affiliateProductId: 'tent-family' },
+      { name: 'Family tent (4-person min)', essential: true, affiliateProductId: 'tent-sundome-3' },
       { name: 'Sleeping bags (temp-rated for season)', essential: true, affiliateProductId: 'sleeping-bag-family' },
       { name: 'Sleeping pads or air mattress', essential: true, affiliateProductId: 'sleeping-pad-air' },
       { name: '2-burner camp stove + fuel', essential: true, affiliateProductId: 'stove-2-burner' },
@@ -169,12 +203,12 @@ export const PLAN_TEMPLATES: Record<string, PlanTemplate> = {
       {
         title: 'Junior Ranger program',
         description: 'Most state parks offer free Junior Ranger booklets. Pick one up at the visitor center.',
-        ageGroup: '7-12',
+        ageGroup: '5_10',
       },
       {
         title: 'Rock and stick collection',
         description: 'Give each kid a small bag. Collect 5 interesting things. Share discoveries at dinner.',
-        ageGroup: '3-6',
+        ageGroup: 'under_5',
       },
       {
         title: "S'mores by the fire",
@@ -189,9 +223,35 @@ export const PLAN_TEMPLATES: Record<string, PlanTemplate> = {
       'Know the location of the nearest urgent care before you leave home.',
       'Keep the campfire at least 3 feet from the tent and fully extinguished before sleeping.',
     ],
+    recommendedActivities: [
+      'nature-scavenger-hunt',
+      'rock-skipping-contest',
+      'campfire-story-chain',
+    ],
+    recommendedSkills: [
+      {
+        skillSlug: 'shelter/pitching-a-tent',
+        rationale:
+          'Tent up first means your kids have a base before anything else can go wrong. Practice this once before you arrive.',
+      },
+      {
+        skillSlug: 'camp-setup/setup-order',
+        rationale:
+          'Beat the dark on a one-night trip. The right order means dinner is on the stove before headlamps come on.',
+      },
+      {
+        skillSlug: 'cooking/two-burner-stove-basics',
+        rationale:
+          "One simple dinner, cooked outside — that’s the moment the trip flips from anxious to fun.",
+      },
+    ],
+    activitySchedule: {
+      day1: ['nature-scavenger-hunt', 'rock-skipping-contest', 'campfire-story-chain'],
+    },
   },
 
   'first-weekend-camp': {
+    meals: MEALS_BY_PLAN['first-weekend-camp'],
     slug: 'first-weekend-camp',
     title: 'First Weekend Camp',
     tagline: 'Two nights. Better gear. More confidence. Same family.',
@@ -199,9 +259,9 @@ export const PLAN_TEMPLATES: Record<string, PlanTemplate> = {
     tripSummary: 'Your first multi-night camping experience — with a full weekend plan, upgraded comfort gear, and the room to actually enjoy it.',
     preTrip: [
       {
-        time: '2 weeks before',
+        time: '6 months before',
         title: 'Book two consecutive nights',
-        description: 'Weekends fill fast at good campsites. Book early. Choose a site with a hiking trail or swimming area nearby.',
+        description: 'Weekends fill fast — at popular state parks, often 6 months out, and the most-loved parks (RMNP, Yosemite, Olympic) can sell out within minutes of the booking window opening. Most systems open exactly 6 months ahead at a fixed time (e.g., ReserveCalifornia 8am Pacific, recreation.gov 7am Pacific). Book as early as you can; if you are inside that window, try mid-week, smaller state parks, or private campgrounds (Hipcamp, KOA). Choose a site with a hiking trail or swimming area nearby.',
       },
       {
         time: '1 week before',
@@ -276,7 +336,7 @@ export const PLAN_TEMPLATES: Record<string, PlanTemplate> = {
       },
     ],
     gear: [
-      { name: 'Family tent (6-person or larger)', essential: true, affiliateProductId: 'tent-family' },
+      { name: 'Family tent (6-person or larger)', essential: true, affiliateProductId: 'tent-sundome-6' },
       { name: 'Sleeping bags + liners', essential: true, affiliateProductId: 'sleeping-bag-family' },
       { name: 'Self-inflating sleeping pads', essential: true, affiliateProductId: 'sleeping-pad-air' },
       { name: '2-burner stove + extra fuel', essential: true, affiliateProductId: 'stove-2-burner' },
@@ -295,12 +355,12 @@ export const PLAN_TEMPLATES: Record<string, PlanTemplate> = {
       {
         title: 'Fishing (if near water)',
         description: 'Day licenses available at most state park offices. Minimal gear needed — a rod, hook, bait.',
-        ageGroup: '7-12',
+        ageGroup: '5_10',
       },
       {
         title: 'Nature journaling',
         description: 'Each kid gets a small notebook. Draw what you see. No rules, no pressure.',
-        ageGroup: '7-12',
+        ageGroup: '5_10',
       },
       {
         title: 'Camp cooking participation',
@@ -314,9 +374,42 @@ export const PLAN_TEMPLATES: Record<string, PlanTemplate> = {
       'More sun exposure over two days. Sunscreen every morning and after swimming.',
       'Keep a complete first aid kit accessible the full trip.',
     ],
+    recommendedActivities: [
+      'trail-bingo',
+      'capture-the-flag',
+      'campfire-story-chain',
+      'flashlight-tag',
+    ],
+    recommendedSkills: [
+      {
+        skillSlug: 'camp-setup/campsite-layout',
+        rationale:
+          'Two nights means a real layout — sleep, kitchen, fire — that supports an active weekend without re-doing it.',
+      },
+      {
+        skillSlug: 'cooking/two-burner-stove-basics',
+        rationale:
+          'Five meals over the weekend lean on the stove. Knowing it cold makes Saturday breakfast effortless.',
+      },
+      {
+        skillSlug: 'fire/starting-a-fire',
+        rationale:
+          "Saturday’s centerpiece dinner expects a coal bed — getting the fire right early is what makes the day work.",
+      },
+      {
+        skillSlug: 'orienteering/compass-basics',
+        rationale:
+          "Saturday’s day-hike is the weekend’s main event. Compass + map keeps a marked trail confident and an off-trail spur found.",
+      },
+    ],
+    activitySchedule: {
+      day1: ['trail-bingo', 'capture-the-flag', 'campfire-story-chain'],
+      day2: ['flashlight-tag'],
+    },
   },
 
   'easy-family-basecamp': {
+    meals: MEALS_BY_PLAN['easy-family-basecamp'],
     slug: 'easy-family-basecamp',
     title: 'Easy Family Basecamp',
     tagline: 'Maximum comfort. Minimal chaos. Camping for families who like being comfortable.',
@@ -324,9 +417,9 @@ export const PLAN_TEMPLATES: Record<string, PlanTemplate> = {
     tripSummary: 'A deliberately comfortable family camp experience — designed to reduce friction, maximize enjoyment, and make camping something your family actually wants to repeat.',
     preTrip: [
       {
-        time: '2 weeks before',
+        time: '6–12 months before',
         title: 'Book a premium site',
-        description: 'Look for: electrical hookup, shade, proximity to restrooms, flat ground. Premium sites fill fast. Reserve early.',
+        description: 'Look for: electrical hookup, shade, proximity to restrooms, flat ground. Premium sites are the first to go — for popular state and national parks, plan 6–12 months out and reserve the moment the booking window opens. Headliners like RMNP, Yosemite Valley, and the Olympic Peninsula can sell out within minutes for prime-weather weekends. If everything is full, lesser-known county parks and private campgrounds (KOA, Hipcamp) usually have availability with a shorter lead time, and mid-week stays open up substantially.',
       },
       {
         time: '1 week before',
@@ -396,7 +489,7 @@ export const PLAN_TEMPLATES: Record<string, PlanTemplate> = {
       },
     ],
     gear: [
-      { name: 'Cabin tent or large family tent', essential: true, affiliateProductId: 'tent-cabin' },
+      { name: 'Cabin tent or large family tent', essential: true, affiliateProductId: 'tent-sundome-6' },
       { name: 'Queen air mattress + electric pump', essential: true, affiliateProductId: 'air-mattress-queen' },
       { name: 'Real pillows (bring from home)', essential: true },
       { name: 'Sleeping bags + extra blankets', essential: true, affiliateProductId: 'sleeping-bag-family' },
@@ -422,7 +515,7 @@ export const PLAN_TEMPLATES: Record<string, PlanTemplate> = {
       {
         title: 'Camp art station',
         description: 'Small table with colored pencils and paper. Kids draw what they see. No prompts needed.',
-        ageGroup: '3-6',
+        ageGroup: 'under_5',
       },
       {
         title: 'Nature scavenger hunt',
@@ -436,6 +529,38 @@ export const PLAN_TEMPLATES: Record<string, PlanTemplate> = {
       'Keep food stored properly even on comfort trips. Animals are not impressed by your camp rug.',
       'Know the nearest urgent care before you leave. Set it in Maps.',
     ],
+    recommendedActivities: [
+      'nature-scavenger-hunt',
+      'camp-olympics',
+      'campfire-story-chain',
+      'flashlight-tag',
+    ],
+    recommendedSkills: [
+      {
+        skillSlug: 'camp-setup/setup-order',
+        rationale:
+          'A multi-night basecamp lives or dies on a calm, ordered first hour. Run this once and the rest of the trip self-organizes.',
+      },
+      {
+        skillSlug: 'cooking/two-burner-stove-basics',
+        rationale:
+          'Real meals are the point of this plan — the two-burner stove is the workhorse for every breakfast and dinner.',
+      },
+      {
+        skillSlug: 'knots/taut-line-hitch',
+        rationale:
+          'Your canopy and tent guy lines need to stay taut for multiple nights, even after dew or rain. This is the knot that does it.',
+      },
+      {
+        skillSlug: 'fire/starting-a-fire',
+        rationale:
+          "Comfortable fire time after dinner is the trip’s emotional anchor — light it cleanly the first time, every night.",
+      },
+    ],
+    activitySchedule: {
+      day1: ['nature-scavenger-hunt', 'camp-olympics', 'campfire-story-chain'],
+      day2: ['flashlight-tag'],
+    },
   },
 }
 

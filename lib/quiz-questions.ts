@@ -18,10 +18,17 @@ export const QUIZ_QUESTIONS: QuizQuestion[] = [
     multiSelect: true,
     options: [
       { label: 'No kids — just adults', value: 'none' },
-      { label: '3–6 years old', value: '3-6' },
-      { label: '7–12 years old', value: '7-12' },
-      { label: 'Teens', value: 'teens' },
+      { label: 'Under 5 (toddlers and preschool)', value: 'under_5' },
+      { label: '5–10 years old', value: '5_10' },
+      { label: '10 and up (incl. teens)', value: '10+' },
     ],
+  },
+  {
+    id: 'partySize',
+    kind: 'party-size',
+    prompt: 'Who’s coming?',
+    subprompt: 'We’ll scale the shopping list and meals to fit.',
+    options: [],
   },
   {
     id: 'intent',
@@ -34,21 +41,22 @@ export const QUIZ_QUESTIONS: QuizQuestion[] = [
   },
   // Mid-quiz email capture shown as interstitial after this question (index 2)
   {
-    id: 'anxiety',
-    prompt: 'How prepared do you feel right now?',
-    subprompt: "Totally okay if the answer is \"not at all.\"",
+    id: 'activityType',
+    prompt: 'What kind of trip are you after?',
+    subprompt: 'This shapes the timeline and what we pack.',
     options: [
-      { label: 'Pretty nervous — lots of questions', value: 'high' },
-      { label: 'A little uncertain', value: 'medium' },
-      { label: 'Fairly confident, just need a checklist', value: 'low' },
+      { label: 'Relaxed — slow pace, low effort', value: 'relaxing' },
+      { label: 'Balanced — a mix of activity and chill', value: 'balanced' },
+      { label: 'Active — hike, paddle, or trail-focused', value: 'active' },
     ],
   },
   {
-    id: 'comfortPriority',
-    prompt: 'What matters most on this trip?',
+    id: 'comfortLevel',
+    prompt: 'How much comfort matters?',
     options: [
-      { label: 'Just getting outside — comfort is secondary', value: 'low' },
-      { label: "We need it to feel comfortable or we won't go back", value: 'high' },
+      { label: 'Pack light — comfort is secondary', value: 'minimal' },
+      { label: 'Standard — basic comfort, nothing extra', value: 'balanced' },
+      { label: 'Maximum comfort — real bed, real chairs, real meals', value: 'comfort-first' },
     ],
   },
 ]

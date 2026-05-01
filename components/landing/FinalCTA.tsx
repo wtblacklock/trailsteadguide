@@ -1,39 +1,24 @@
-import Image from 'next/image'
 import Link from 'next/link'
 
 export default function FinalCTA() {
   return (
-    <section className="pb-16 max-w-page mx-auto px-8">
-      <div className="relative bg-stone-900 rounded-3xl overflow-hidden min-h-[480px] flex items-end">
-        {/* Background image */}
-        <Image
-          src="https://images.unsplash.com/photo-1478827536114-da961b7f86d2?w=1400&auto=format&fit=crop&q=80"
-          alt="Family camping under a starlit sky"
-          fill
-          className="object-cover opacity-40"
-          unoptimized
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-stone-950/90 via-stone-950/40 to-transparent" />
-
-        {/* Content */}
-        <div className="relative z-10 grid grid-cols-1 md:grid-cols-12 gap-6 p-10 md:p-16 w-full items-end">
-          <div className="col-span-1 md:col-span-7">
-            <h2 className="font-serif text-5xl md:text-6xl font-semibold text-white tracking-tight leading-tight mb-8">
-              Your first camping trip starts here.
-            </h2>
-            <Link
-              href="/quiz"
-              className="inline-flex items-center justify-center rounded-md font-medium bg-white text-stone-900 hover:bg-stone-100 transition-colors px-8 py-4 text-base"
-            >
-              Start Your Trailstead Plan
-            </Link>
-          </div>
-          <div className="col-span-1 md:col-span-4 md:col-start-9 flex items-end pb-1">
-            <p className="text-stone-400 leading-relaxed">
-              Answer 5 questions. Get a complete trip plan — timeline, gear list, kid activities, and safety guidance. About 2 minutes.
-            </p>
-          </div>
-        </div>
+    <section data-reveal className="px-8 pb-24">
+      <div className="bg-stone-900 rounded-3xl p-10 md:p-16 text-white">
+        <p className="text-xs font-semibold tracking-widest uppercase text-stone-400 mb-4">
+          Ready to stop guessing
+        </p>
+        <h2 className="font-serif text-3xl md:text-5xl font-semibold tracking-tight mb-4 max-w-2xl">
+          Get a starter trip plan in 5 seconds.
+        </h2>
+        <p className="text-stone-300 text-lg mb-8 max-w-xl">
+          A few questions. A complete plan — timeline, gear, meals, kid activities, and safety guidance.
+        </p>
+        <Link
+          href="/quiz"
+          className="inline-flex items-center justify-center rounded-md font-medium bg-white text-stone-900 hover:bg-stone-100 transition-colors px-6 py-3 text-sm"
+        >
+          Start the quiz
+        </Link>
       </div>
     </section>
   )
