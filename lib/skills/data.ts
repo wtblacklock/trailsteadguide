@@ -1684,8 +1684,8 @@ export const SKILLS: Skill[] = [
     ],
     relatedSkills: ['orienteering/compass-basics', 'orienteering/orienting-a-map'],
     videoEmbed: {
-      url: 'https://www.youtube-nocookie.com/embed/CoVcn_oyOYc',
-      title: 'How to Read a Topographic Map — REI',
+      url: 'https://www.youtube-nocookie.com/embed/cl9fqdL9B_8',
+      title: 'How To Read a Topographic Map',
     },
     illustration: {
       url: 'https://upload.wikimedia.org/wikipedia/commons/6/6c/Topographic_map_example.png',
@@ -2038,8 +2038,8 @@ export const SKILLS: Skill[] = [
       { name: 'Lodge 10-inch Camp Dutch Oven (with lid lip)', productId: 'lodge-dutch-oven' },
     ],
     videoEmbed: {
-      url: 'https://www.youtube-nocookie.com/embed/JDqT8bx5MH4',
-      title: 'Dutch Oven Baking Over Campfire Coals',
+      url: 'https://www.youtube-nocookie.com/embed/AFMlhu02xCQ',
+      title: 'How to Use a Dutch Oven at Camp',
     },
     relatedSkills: ['cooking/cast-iron-cooking', 'fire/fire-structures', 'cooking/one-pot-camp-meals'],
     relatedPrintableSlug: '3-day-camp-meal-planner',
@@ -2232,8 +2232,8 @@ export const SKILLS: Skill[] = [
       { name: 'Black Diamond Trail Ergo Cork Trekking Poles' },
     ],
     videoEmbed: {
-      url: 'https://www.youtube-nocookie.com/embed/k_e2Cg0X2Qg',
-      title: 'How to Use Trekking Poles — REI',
+      url: 'https://www.youtube-nocookie.com/embed/dwYBhYLLytI',
+      title: 'How to Use Trekking Poles Like a Pro',
     },
     relatedSkills: ['hiking/day-hike-essentials', 'hiking/blister-prevention', 'hiking/hiking-with-kids'],
   },
