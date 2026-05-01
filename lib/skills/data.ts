@@ -2315,8 +2315,8 @@ export const SKILLS: Skill[] = [
       { name: 'Paracord (50 ft, orange for visibility)' },
     ],
     videoEmbed: {
-      url: 'https://www.youtube-nocookie.com/embed/2G2ElHlQuaM',
-      title: 'How to Set Up a Tarp — Three Configurations',
+      url: 'https://www.youtube-nocookie.com/embed/4W76LyJdNYU',
+      title: '5 Tarp Shelter Setups for Bushcraft and Camping',
     },
     relatedSkills: ['shelter/hammock-setup', 'knots/truckers-hitch', 'knots/bowline'],
   },
