@@ -51,7 +51,7 @@ export default function TripPackCta({
                 Trailstead Trip Pack
               </p>
               <h2 className="text-2xl md:text-3xl font-bold leading-tight mb-2">
-                Take it with you: {TITLES[planSlug]} in a 7-page print-ready PDF.
+                Take it with you: {TITLES[planSlug]} as a print-ready PDF.
               </h2>
               <p className="text-emerald-100/85 text-sm leading-relaxed">
                 Personalized timeline, packing list scaled to your party, curated gear, and a mistake-prevention guide &mdash; one pack, yours forever.
@@ -64,6 +64,9 @@ export default function TripPackCta({
               >
                 Get my Trip Pack &rarr;
               </Link>
+              <p className="text-[11px] text-emerald-300/80 mt-2 text-center">
+                Print-ready PDF. Yours forever. No subscription.
+              </p>
             </div>
           </div>
         </div>

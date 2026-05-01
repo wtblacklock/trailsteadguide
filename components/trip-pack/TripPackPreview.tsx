@@ -33,9 +33,8 @@ export default function TripPackPreview({
         <p className="text-xs uppercase tracking-[0.2em] text-emerald-800 mb-3">
           What&rsquo;s inside
         </p>
-        <div className="grid sm:grid-cols-3 gap-4 text-sm">
+        <div className="grid sm:grid-cols-2 gap-4 text-sm">
           {[
-            { label: 'Pages', value: '7' },
             { label: 'Nights', value: String(nights) },
             { label: 'Party', value: `${adults}A · ${kids}K` },
           ].map((m) => (

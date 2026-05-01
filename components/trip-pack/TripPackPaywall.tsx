@@ -214,7 +214,6 @@ export default function TripPackPaywall({
 
         <div className="bg-stone-50 border-t border-stone-200 px-6 py-4">
           <ul className="text-xs text-stone-600 space-y-1.5">
-            <li>· 7 print-ready pages</li>
             <li>· Curated gear with affiliate-ready links</li>
             <li>· Personalized to {adults}A · {kids}K, {nights}N</li>
             <li>&middot; No login. No account. Yours to keep.</li>
