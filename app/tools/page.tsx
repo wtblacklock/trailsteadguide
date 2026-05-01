@@ -28,6 +28,9 @@ export default function Page() {
         <p className="mt-6 text-lg md:text-xl text-stone-600 leading-relaxed max-w-2xl">
           Two tools that do one thing well: help you stop staring at a blank page and start planning.
         </p>
+        <p className="mt-4 text-base text-stone-500 leading-relaxed max-w-2xl">
+          The trip planner turns 6 quick questions into a full itinerary — timeline, gear list, meals, and activities — built for your specific party and dates. The packing checklist generator scales every item to your group size and number of nights so nothing gets left behind. Both are free, no account needed.
+        </p>
       </header>
 
       <section className="max-w-page mx-auto px-8 pb-24">

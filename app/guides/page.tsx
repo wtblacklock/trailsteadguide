@@ -51,6 +51,9 @@ export default function Page() {
         <p className="mt-6 text-lg md:text-xl text-stone-600 leading-relaxed max-w-2xl">
           Pick a category. Each one walks you through a different angle on family camping — and ends in a plan made for your trip.
         </p>
+        <p className="mt-4 text-base text-stone-500 leading-relaxed max-w-2xl">
+          Twenty-four guides cover the basics of car camping, seasonal conditions like winter and spring trips, specific scenarios like camping with kids or dogs, and beginner-friendly locations across the US. Each guide is written for families on their first or second trip — no experience assumed, no gear jargon.
+        </p>
       </header>
 
       <section className="max-w-page mx-auto px-8 pb-20">

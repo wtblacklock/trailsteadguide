@@ -14,6 +14,9 @@ export default function ActivitiesHero() {
         Activities, games, and challenges built for real campsites. Filter by age, group size, and
         energy level — pick one and go.
       </p>
+      <p className="mt-4 text-base text-stone-500 leading-relaxed max-w-2xl">
+        The library covers exploration walks, classic campsite games, creative and craft activities, nighttime games, and nature-based challenges — all designed for families who don&apos;t want to rely on screens or equipment they don&apos;t already have. Each activity includes step-by-step instructions, suggested age ranges, and a time estimate so you can slot it into your day without planning ahead.
+      </p>
       <div className="mt-8 flex flex-wrap items-center gap-6">
         <a
           href="#filter-bar"
