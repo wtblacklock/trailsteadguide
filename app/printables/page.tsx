@@ -47,6 +47,9 @@ export default function Page() {
         <p className="mt-6 text-lg md:text-xl text-stone-600 leading-relaxed max-w-2xl">
           One-page printables you can fold into a pack — star charts, knot cards, packing lists. Free with email signup.
         </p>
+        <p className="mt-4 text-base text-stone-500 leading-relaxed max-w-2xl">
+          Each printable is a single-page reference card designed to be useful without a phone signal. Print before you leave, fold it into your pack, and use it at the campsite. Formats are sized for standard letter paper and optimized for black-and-white printing.
+        </p>
       </header>
 
       <section className="max-w-page mx-auto px-8 pb-24">

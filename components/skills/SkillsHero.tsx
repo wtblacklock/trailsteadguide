@@ -15,6 +15,9 @@ export default function SkillsHero() {
         category, difficulty, or safety level — each skill is a short, scannable how-to with
         safety notes, common mistakes, and pro tips.
       </p>
+      <p className="mt-4 text-base text-stone-500 leading-relaxed max-w-2xl">
+        The library spans fire-starting, knots, shelter setup, navigation, cooking, safety, fishing, and stargazing — all written for beginners with no prior outdoor experience. Where a video or illustrated guide exists, it&apos;s embedded directly on the skill page so you don&apos;t have to search for it separately.
+      </p>
       <div className="mt-8 flex flex-wrap items-center gap-6">
         <a
           href="#filter-bar"

@@ -1412,4 +1412,469 @@ export const SKILLS: Skill[] = [
       title: 'Whittling: How to Make a Stop Cut',
     },
   },
+
+  // ── COOKING (expanded) ────────────────────────────────────────────────────
+  {
+    slug: 'camp-coffee',
+    category: 'cooking',
+    title: 'Camp Coffee',
+    tagline: 'Hot, strong, made without a machine — three methods that actually work.',
+    difficulty: 'Beginner',
+    useCases: [
+      'Morning ritual on any multi-night trip',
+      'Keeping a night-watch alert',
+      'Rewarding the person who started the fire',
+    ],
+    whenToUse: 'Whenever you need coffee and have a stove, a fire, or boiling water.',
+    materials: [
+      'Ground coffee (medium-coarse grind works for all three methods)',
+      'A heat source and a pot or kettle',
+      'A mug per person',
+      'Cowboy method: nothing else needed',
+      'Pour-over method: a lightweight dripper (Aeropress, GSI Ultralight) and a filter',
+      'Percolator method: a camp percolator',
+    ],
+    steps: [
+      'Boil water. For best flavor, let it cool for 30 seconds off the boil — about 200°F.',
+      'Cowboy coffee: add 2 tablespoons of grounds per 8 oz of water directly to the pot. Simmer 4 minutes. Remove from heat, add a splash of cold water to sink the grounds, pour slowly.',
+      'Pour-over: set the dripper on your mug, add a filter and 2 tablespoons of grounds. Pour water in slow circles. Total brew time 3–4 minutes.',
+      'Percolator: fill the basket with grounds (1 tablespoon per 6 oz of water), fill the pot with cold water below the basket, set on medium heat. Once it starts perking, brew 7–10 minutes.',
+      'Taste before adding anything. Camp coffee is often stronger than expected.',
+    ],
+    proTips: [
+      'Pre-measure grounds at home in a small zip-lock so you\'re not guessing in the dark.',
+      'A pinch of salt cuts bitterness in cowboy or percolator coffee.',
+      'Aeropress makes espresso-strength coffee and cleans up in 30 seconds — worth the weight.',
+    ],
+    commonMistakes: [
+      'Boiling pour-over water too hard — it scorches the grounds and turns coffee bitter.',
+      'Under-dosing grounds to "save weight." Weak coffee is worse than no coffee.',
+    ],
+    safetyNotes: ['Handle boiling water carefully in a moving camp kitchen. Set the pot on flat ground before pouring.'],
+    videoEmbed: {
+      url: 'https://www.youtube-nocookie.com/embed/VSNj0ZjIsJI',
+      title: 'Camp Coffee — Percolator Method',
+    },
+  },
+  {
+    slug: 'cast-iron-cooking',
+    category: 'cooking',
+    title: 'Cast Iron Cooking at Camp',
+    tagline: 'The most durable camp kitchen tool — if you know how to use it.',
+    difficulty: 'Beginner',
+    useCases: [
+      'Cooking directly over a fire or camp stove burner',
+      'Searing proteins with better heat retention than thin pans',
+      'Dutch oven baking over coals',
+    ],
+    whenToUse: 'When you want real cooking results — not just boiling water — and have the car space to carry it.',
+    materials: [
+      'A 10–12 inch cast iron skillet or a 4–6 quart Dutch oven',
+      'A heat-resistant handle mitt or pot lifter',
+      'A stiff brush or chain-mail scrubber for cleaning',
+      'A thin coat of oil for re-seasoning after cleaning',
+    ],
+    steps: [
+      'Preheat slowly. Cast iron holds heat well but heats unevenly if rushed. Low heat for 3–5 minutes, then medium.',
+      'Add oil or butter once the pan is warm. It should shimmer, not smoke.',
+      'Cook as normal. Do not move food until it releases naturally — it sticks when you rush it.',
+      'After cooking, let the pan cool partially before cleaning — never plunge hot cast iron into cold water.',
+      'Scrub with a brush and hot water. No soap for seasoned pans. Dry completely over low heat.',
+      'While still warm, rub a thin film of oil on the cooking surface with a paper towel. Let cool.',
+    ],
+    proTips: [
+      'For campfire cooking: place the skillet on a grate over established coals, not open flame. Steady heat beats big heat.',
+      'Dutch oven baking rule of thumb: two-thirds of the coals on the lid, one-third underneath.',
+      'Acidic foods (tomatoes, citrus) strip seasoning. Cook these last or use a different pot.',
+    ],
+    commonMistakes: [
+      'Using high heat immediately — hot spots warp food, not the pan.',
+      'Leaving it wet. A single night of moisture starts rust.',
+      'Scrubbing off the seasoning with dish soap, then wondering why everything sticks.',
+    ],
+    safetyNotes: [
+      'Cast iron retains heat long after leaving the fire. Use a mitt and set it on a heat-safe surface.',
+      'The handle gets as hot as the pan over a campfire — always use a grip.',
+    ],
+    videoEmbed: {
+      url: 'https://www.youtube-nocookie.com/embed/MDE0TAwJBt4',
+      title: 'Cast Iron Cooking Over a Campfire',
+    },
+    illustration: {
+      url: 'https://upload.wikimedia.org/wikipedia/commons/6/6f/Cast_Iron_Skillet.jpg',
+      alt: 'A seasoned cast iron skillet on an outdoor fire grate',
+      attribution: 'Cast iron skillet photo — Wikimedia Commons (CC0 Public Domain)',
+    },
+  },
+
+  // ── SAFETY (expanded) ─────────────────────────────────────────────────────
+  {
+    slug: 'food-storage-and-bear-bags',
+    category: 'safety',
+    title: 'Food Storage and Bear Bags',
+    tagline: 'The rule is simple: zero food in the tent, ever.',
+    difficulty: 'Beginner',
+    useCases: [
+      'Any campsite in bear country',
+      'Any campsite where wildlife has been reported',
+      'Preventing raccoons, mice, and squirrels from raiding camp',
+    ],
+    whenToUse: 'Every night at camp, without exception. Also at midday if leaving camp unattended.',
+    materials: [
+      'PCT bear hang: 50 ft of paracord and a stuff sack',
+      'Bear canister: an approved hard-sided container (required in some parks)',
+      'Bear box: many established campsites have one — use it',
+    ],
+    steps: [
+      'Identify the hang tree: 200 feet from your tent, a live branch 20+ feet high and 10 feet from the trunk.',
+      'Place all food, scented items (toothpaste, sunscreen, lip balm, trash) in the bag. Nothing scented stays in the tent.',
+      'Tie a small rock to one end of the paracord. Toss it over the branch at least 10 feet out from the trunk.',
+      'Attach the food bag to the rope. Hoist it so the bag hangs at least 12 feet off the ground and 6 feet below the branch.',
+      'Tie off the free end to a separate tree. Check that the bag can\'t be reached from the trunk or pulled down from below.',
+      'At night, hang within 30 minutes of finishing dinner. Bears pattern on camp smells.',
+    ],
+    proTips: [
+      'The PCT hang (counterbalance method) works with a single branch and is faster in practice than the classic two-tree method.',
+      'Ursack sacks are a legal alternative to hard canisters in many areas — lighter and easier to hang.',
+      'Never cook or eat in or near your tent. The smell lingers for hours.',
+    ],
+    commonMistakes: [
+      'Hanging the bag too close to the trunk — a bear can shimmy up and reach it.',
+      'Forgetting scented non-food items. Bears investigate lip balm, bug spray, and dirty dishes.',
+      'Using a branch that\'s too thin — it will bend down to the bear\'s reach under the bag\'s weight.',
+    ],
+    safetyNotes: [
+      'If a bear does enter camp, make yourself large and loud. Do not run.',
+      'Bear spray is effective only if you carry it on your person — not buried in the food bag.',
+      'Report all bear encounters to the camp host or ranger station.',
+    ],
+    safetyTone: 'critical',
+    videoEmbed: {
+      url: 'https://www.youtube-nocookie.com/embed/hIIMwwNpFmY',
+      title: 'How to Hang a Bear Bag — Washington Trails Association',
+    },
+  },
+  {
+    slug: 'water-purification',
+    category: 'safety',
+    title: 'Water Purification',
+    tagline: 'Never drink unfiltered backcountry water. Here\'s how to fix that.',
+    difficulty: 'Beginner',
+    useCases: [
+      'Any trip where you\'re sourcing water from streams, lakes, or springs',
+      'Emergency backup when camp water runs out',
+      'Filtering well water at primitive sites',
+    ],
+    whenToUse: 'Any water source that isn\'t a sealed municipal supply. "Clear" does not mean "clean."',
+    materials: [
+      'Filter method: a squeeze filter (Sawyer Squeeze, Platypus QuickDraw)',
+      'Chemical method: iodine tablets or Aquatabs (chlorine dioxide)',
+      'Boil method: a pot and a heat source',
+      'A collection vessel (water bottle or soft flask)',
+    ],
+    steps: [
+      'Collect water from the fastest-moving, clearest part of the source — upstream of any camp or trail crossing.',
+      'Filter method: fill the dirty bag, screw on the filter, squeeze into a clean vessel. Fast (1 liter in under a minute) and tastes natural.',
+      'Chemical method: drop one tablet per liter. Wait 30 minutes before drinking (4 hours for Giardia-safe treatment with chlorine dioxide). Best as backup.',
+      'Boil method: bring water to a rolling boil for 1 minute (3 minutes above 6,500 ft). Let cool. Most reliable — kills everything. Slowest.',
+      'For turbid (murky) water: pre-filter through a bandana into a separate vessel before using your main filter.',
+    ],
+    proTips: [
+      'A Sawyer Squeeze weighs 3 oz and lasts a lifetime with backflushing. It\'s the easiest upgrade from chemical tabs.',
+      'Keep your dirty and clean bags on opposite sides of your pack. Cross-contamination defeats the purpose.',
+      'At a car campsite with a hose bib: still verify it\'s potable — some non-potable taps exist at trailheads.',
+    ],
+    commonMistakes: [
+      'Touching the dirty bag threads to the clean vessel neck — this bypasses the filter entirely.',
+      'Not backflushing the Sawyer filter after use. It clogs and flow rate drops to unusable.',
+      'Assuming fast-moving water is safe. Giardia cysts float and thrive in any natural source.',
+    ],
+    safetyNotes: [
+      'Boiling is the only method that kills all pathogens, including viruses — filters and most chemicals don\'t.',
+      'Symptoms of Giardia appear 1–3 weeks after exposure. Report any GI illness after a backcountry trip to a doctor.',
+    ],
+    safetyTone: 'critical',
+    videoEmbed: {
+      url: 'https://www.youtube-nocookie.com/embed/DIZz3iiZ2TY',
+      title: 'How to Filter and Purify Water for Camping and Backpacking',
+    },
+  },
+  {
+    slug: 'weather-reading',
+    category: 'safety',
+    title: 'Reading Weather at Camp',
+    tagline: 'The sky tells you what\'s coming — if you know the language.',
+    difficulty: 'Beginner',
+    useCases: [
+      'Deciding whether to break camp before a storm',
+      'Reading afternoon thunderstorm risk on exposed terrain',
+      'Recognizing when to get off a ridge or out of the water',
+    ],
+    whenToUse: 'Every morning at camp — a 2-minute sky read sets your risk profile for the day.',
+    materials: [
+      'Your eyes',
+      'A basic cloud identification chart (downloaded offline before the trip)',
+      'A barometer app (phone) for pressure trend — optional but useful',
+    ],
+    steps: [
+      'Check the sky at sunrise. Flat, high clouds (cirrus, cirrostratus) on their own = fair weather. Thickening clouds that lower through the day = incoming front.',
+      'Watch cloud direction. If upper clouds move in a different direction than lower ones, wind shear is building — conditions can change fast.',
+      'Cumulus towers building vertically by mid-morning are a warning. Flat-topped cumulus = stable. Vertical towers (cumulonimbus anvils) = thunderstorm within hours.',
+      '"Red sky at night, sailor\'s delight. Red sky at morning, sailor\'s warning." Works — red sunrise reflects moisture moving in from the west.',
+      'Pressure drop: if a barometer app shows rapid falling pressure, a storm is approaching. A slow rise means clearing.',
+      'At the first sound of thunder, count seconds to the lightning flash. Every 5 seconds = 1 mile. Under 5 seconds: seek shelter immediately.',
+    ],
+    proTips: [
+      'Download a 7-day forecast and offline radar before leaving cell coverage. Check the 3 PM window — that\'s when afternoon storms peak.',
+      'Mountain weather runs 2–3 hours ahead of valley forecasts. If you\'re above treeline by noon, plan to descend by 1 PM on storm-risk days.',
+    ],
+    commonMistakes: [
+      'Assuming morning clearness means all-day clearness in mountains.',
+      'Waiting for rain to start before acting. By the time you feel drops from a thunderstorm, lightning is already overhead.',
+    ],
+    safetyNotes: [
+      'Lightning rule: if you can hear thunder, you can be struck. No exceptions. Get off ridges, peaks, and open water immediately.',
+      'A vehicle is far safer than a tent in a lightning storm. Use it if nearby.',
+    ],
+    safetyTone: 'critical',
+    videoEmbed: {
+      url: 'https://www.youtube-nocookie.com/embed/tA827C2uyNs',
+      title: 'How to Read Clouds and Predict Weather',
+    },
+    illustration: {
+      url: 'https://upload.wikimedia.org/wikipedia/commons/b/bd/Cloud_types_en.svg',
+      alt: 'Diagram of cloud types by altitude — cirrus, cumulus, stratus, and storm formations',
+      attribution: 'Cloud types diagram — Wikimedia Commons (CC BY-SA 3.0)',
+    },
+  },
+
+  // ── ORIENTEERING (expanded) ───────────────────────────────────────────────
+  {
+    slug: 'reading-a-topo-map',
+    category: 'orienteering',
+    title: 'Reading a Topographic Map',
+    tagline: 'Contour lines turn flat paper into a 3-D picture of the land.',
+    difficulty: 'Intermediate',
+    useCases: [
+      'Planning a hike to understand elevation gain before you start',
+      'Identifying where a trail gets steep, exposed, or cliff-prone',
+      'Locating water sources, saddles, and ridgelines from the map',
+    ],
+    whenToUse: 'Before any hike in unfamiliar terrain and at every route decision point on trail.',
+    materials: [
+      'A 1:24,000 scale USGS topo map of your area (or downloaded via Gaia GPS or CalTopo offline)',
+      'A pencil for marking your route',
+    ],
+    steps: [
+      'Find the contour interval in the map legend — often 40 or 80 feet. Every line represents one interval of elevation change.',
+      'Closely spaced lines = steep terrain. Widely spaced lines = gentle slope. Vertical cliff = lines that merge.',
+      'V-shapes pointing uphill (up-valley) indicate a ridge. V-shapes pointing downhill indicate a drainage or creek valley.',
+      'Index contours are the darker, labeled lines. Read the numbers to understand absolute elevation.',
+      'Identify key features: a summit is a closed loop (usually labeled). A saddle is an hourglass shape between two summits. A cliff is where lines nearly touch.',
+      'Trace your planned route with a finger and "read" the elevation profile — where will you gain, lose, and traverse?',
+    ],
+    proTips: [
+      'Contour lines never cross — if they appear to, one is a cliff overhanging the other, which is shown by hachure marks.',
+      'For distance estimation: on a 1:24,000 map, one inch = 2,000 feet (roughly 0.4 miles).',
+      'Download Gaia GPS with offline maps before the trip. It overlays your GPS position on the topo in real time.',
+    ],
+    commonMistakes: [
+      'Confusing ridge and valley V-shapes. Ridges V toward higher elevation; valleys V toward lower.',
+      'Ignoring the contour interval. An 80-ft interval map looks gentler than a 40-ft map of the same terrain.',
+    ],
+    relatedSkills: ['orienteering/compass-basics', 'orienteering/orienting-a-map'],
+    videoEmbed: {
+      url: 'https://www.youtube-nocookie.com/embed/CoVcn_oyOYc',
+      title: 'How to Read a Topographic Map — REI',
+    },
+    illustration: {
+      url: 'https://upload.wikimedia.org/wikipedia/commons/6/6c/Topographic_map_example.png',
+      alt: 'Example topographic map with contour lines showing hills, valleys, and a stream',
+      attribution: 'Topographic map example — Wikimedia Commons (Public Domain)',
+    },
+  },
+  {
+    slug: 'sun-navigation',
+    category: 'orienteering',
+    title: 'Sun Navigation',
+    tagline: 'Find north with a stick and a shadow — no compass needed.',
+    difficulty: 'Beginner',
+    useCases: [
+      'Confirming direction when compass or phone is unavailable',
+      'Quick cardinal check on an open trail',
+      'Teaching kids a tangible navigation skill',
+    ],
+    whenToUse: 'Any sunny day when you need to verify or find a cardinal direction.',
+    materials: [
+      'A straight stick, 2–3 feet long',
+      'A flat, open patch of ground',
+      'Two small rocks or pegs as markers',
+    ],
+    steps: [
+      'Push the stick vertically into flat ground. Mark the tip of its shadow with a rock. This is your West marker.',
+      'Wait 15–20 minutes. The shadow will move. Mark the new shadow tip with a second rock. This is your East marker.',
+      'Draw an imaginary line between the two marks: West is the first mark, East is the second.',
+      'Stand with West on your left and East on your right. You are now facing North.',
+      'Verify: in the Northern Hemisphere, the sun moves west across the southern sky. The shadow sweeps east.',
+    ],
+    proTips: [
+      'The longer you wait between marks, the more accurate your east-west line.',
+      'Analog watch method (backup): point the hour hand at the sun. The midpoint between the hour hand and 12 is south.',
+      'Works best between 9 AM and 3 PM when shadows are distinct.',
+    ],
+    commonMistakes: [
+      'Rushing the second mark — 5 minutes isn\'t enough for an accurate line.',
+      'Using a tilted stick. It must be perfectly vertical or the shadow arc skews.',
+    ],
+    relatedSkills: ['orienteering/compass-basics', 'orienteering/orienting-a-map'],
+    videoEmbed: {
+      url: 'https://www.youtube-nocookie.com/embed/2-kaTUISfm4',
+      title: 'Shadow Stick Method: Find Direction Without a Compass',
+    },
+    illustration: {
+      url: 'https://upload.wikimedia.org/wikipedia/commons/1/18/Using_watch_and_sun_as_compass.svg',
+      alt: 'Diagram of the analog watch sun-compass method showing hour hand aligned to sun',
+      attribution: 'Watch-compass diagram by Cmglee — Wikimedia Commons (CC BY-SA 3.0)',
+    },
+  },
+
+  // ── SHELTER (expanded) ────────────────────────────────────────────────────
+  {
+    slug: 'hammock-setup',
+    category: 'shelter',
+    title: 'Hammock Setup',
+    tagline: 'Hang level, hang safe, and wake up without back pain.',
+    difficulty: 'Beginner',
+    useCases: [
+      'Car camping or backpacking where two suitable trees exist',
+      'An alternative sleep system for summer and shoulder-season trips',
+      'A daytime lounge spot at basecamp',
+    ],
+    whenToUse: 'When live trees are 12–18 feet apart and the canopy shows no dead overhead branches.',
+    materials: [
+      'A camping hammock with whoopie slings or structural ridgeline',
+      'Two 1-inch wide tree straps (at least 60 inches long each) — narrower straps damage bark',
+      'Carabiners or hooks that came with the hammock',
+      'Optional: a tarp rigged above for rain protection',
+    ],
+    steps: [
+      'Choose trees that are alive, at least 8 inches in diameter, and 12–15 feet apart. Look up — dead branches overhead are "widow makers."',
+      'Wrap each tree strap around the trunk at 5–6 feet high. The straps should be approximately level.',
+      'Clip the hammock end to each strap. The hammock should hang with a 30-degree angle from the anchor point to the hammock end — roughly a 30° sag.',
+      'Sit in the center and check your position: you should lie diagonally across the hammock (not lengthwise) to get a flat lay.',
+      'A properly hung hammock has a slight banana shape. If the angle is too shallow, your weight pulls the trees together. Too steep, and you\'ll feel like a taco.',
+      'Rig a tarp above using a ridgeline tied between the same trees, 18 inches above hammock height.',
+    ],
+    proTips: [
+      'Lie at a 30-degree diagonal to the hammock centerline. This is the secret to a flat, back-friendly sleep.',
+      'Use an underquilt in temperatures below 60°F — sleeping pads compress under you in a hammock and lose insulation.',
+      'The "structural ridgeline" trick: tie a line from end to end at 83% of the hammock\'s length. It sets your hang angle automatically.',
+    ],
+    commonMistakes: [
+      'Hanging too high: a 6-foot hang means a 6-foot fall. 18 inches off the ground is the right sleeping height.',
+      'Hanging too tight: a hammock hung flat like a bridge pushes your back into a painful C-shape.',
+      'Using thin cord or ropes around bark — always use wide straps.',
+    ],
+    safetyNotes: [
+      'Never hang from dead trees or branches, no matter how solid they look.',
+      'Wide tree straps (1 inch minimum) are required in Leave No Trace guidelines to prevent bark damage.',
+    ],
+    relatedGear: [{ name: 'ENO DoubleNest Hammock' }],
+    videoEmbed: {
+      url: 'https://www.youtube-nocookie.com/embed/QB3kYLRoBcU',
+      title: 'How to Hang a Hammock Between Trees — REI',
+    },
+  },
+
+  // ── HIKING (expanded) ─────────────────────────────────────────────────────
+  {
+    slug: 'blister-prevention',
+    category: 'hiking',
+    title: 'Blister Prevention and Treatment',
+    tagline: 'Blisters are optional. Most hikers just don\'t know that yet.',
+    difficulty: 'Beginner',
+    useCases: [
+      'Any hike longer than 3 miles',
+      'Breaking in new boots before a big trip',
+      'Managing hot spots before they become blisters mid-hike',
+    ],
+    whenToUse: 'Before you leave the trailhead — not after you feel a hot spot.',
+    materials: [
+      'Moisture-wicking wool or synthetic hiking socks (cotton = guaranteed blisters)',
+      'Leukotape P or moleskin for hot spots',
+      'Properly fitted boots broken in before the trip',
+      'Blister kit: alcohol wipe, a sterile needle, antibiotic ointment, a bandage',
+    ],
+    steps: [
+      'Prevention first: wear moisture-wicking socks, never cotton. Wool socks are warm but blister-resistant even when wet.',
+      'Lace boots snugly — heel slippage is the primary cause of heel blisters. Use the "heel lock" lacing technique on any boot with an extra eyelet at the top.',
+      'When you feel a hot spot (warmth or friction), stop immediately. Apply Leukotape directly to clean, dry skin over the hot spot. It stays on for days.',
+      'If a blister forms but is intact: leave it. The fluid is sterile and protective. Cover with moleskin with a donut hole cut around the blister.',
+      'If a blister is large and painful: sterilize a needle with an alcohol wipe. Pierce the edge (not the top) at two points. Press fluid out gently. Cover with antibiotic ointment and a bandage.',
+      'Keep the area dry and covered for the rest of the hike.',
+    ],
+    proTips: [
+      'Leukotape is dramatically better than moleskin for prevention. It stays put through sweat and water.',
+      'Break in boots on 2–3 day hikes over several weeks before a long trip. No boot is broken in on its first outing.',
+      'Two-sock system: a thin liner sock under a thick hiking sock eliminates friction at the foot entirely.',
+    ],
+    commonMistakes: [
+      'Wearing cotton socks — they hold moisture against skin and are the single biggest blister cause.',
+      'Waiting to treat until the blister fully forms. A 30-second Leukotape application at the hot spot prevents a 3-day problem.',
+      'Popping a blister at the top — the roof is the best bandage you have. Pierce the side instead.',
+    ],
+    safetyNotes: ['An infected blister (red streaking, pus, fever) requires medical attention. Do not ignore it on a multi-day trip.'],
+    videoEmbed: {
+      url: 'https://www.youtube-nocookie.com/embed/0XuEa2J4SyU',
+      title: 'How to Prevent and Treat Hiking Blisters',
+    },
+    relatedSkills: ['hiking/day-hike-essentials'],
+  },
+
+  // ── FISHING (expanded) ────────────────────────────────────────────────────
+  {
+    slug: 'improved-clinch-knot',
+    category: 'fishing',
+    title: 'Improved Clinch Knot',
+    tagline: 'The knot every angler ties first — attaches any lure or hook to monofilament.',
+    difficulty: 'Beginner',
+    useCases: [
+      'Tying a hook, lure, or swivel to monofilament or fluorocarbon line',
+      'Quick re-rigging after a break-off',
+      'Teaching a first-time fisher a single knot that covers 80% of situations',
+    ],
+    whenToUse: 'Whenever you need to attach a terminal tackle item to monofilament or fluorocarbon line.',
+    materials: [
+      'Your fishing rod with monofilament or fluorocarbon line',
+      'A hook, lure, or swivel',
+    ],
+    steps: [
+      'Thread 6 inches of line through the eye of the hook.',
+      'Hold the hook and the main line together. Wrap the tag end (short end) around the main line 5 times, wrapping away from the hook.',
+      'Pass the tag end through the small loop formed just above the hook eye.',
+      'Now pass the tag end through the large loop you just created (between the wraps and the hook). This is the "improved" step.',
+      'Wet the knot with saliva — this lubricates the line and prevents heat damage as you tighten.',
+      'Pull the tag end and main line simultaneously until the wraps cinch snugly against the eye. Trim the tag end to ¼ inch.',
+    ],
+    proTips: [
+      'Five wraps is standard for line up to 20 lb test. For heavier line (20–30 lb), reduce to 4 wraps — more wraps won\'t seat properly.',
+      'Always wet before tightening. Dry monofilament generates friction heat that weakens the knot by 20–30%.',
+      'Pull slowly and steadily, not with a jerk — the wraps need to seat in order.',
+    ],
+    commonMistakes: [
+      'Skipping the "improved" step (the final pass through the big loop). Without it, you just have a basic clinch knot, which slips under load.',
+      'Too few wraps on light line — the knot rolls and fails.',
+      'Trimming the tag end too short. A ¼ inch tail prevents the knot from slipping back through.',
+    ],
+    relatedSkills: ['fishing/rod-setup-and-casting', 'fishing/catch-and-release'],
+    videoEmbed: {
+      url: 'https://www.youtube-nocookie.com/embed/6zNexwb7TH8',
+      title: 'How to Tie the Improved Clinch Knot',
+    },
+    illustration: {
+      url: 'https://upload.wikimedia.org/wikipedia/commons/d/d8/Clinchknot.jpg',
+      alt: 'Step-by-step diagram of an improved clinch knot tied to a fishing hook eye',
+      attribution: 'Clinch knot diagram — Wikimedia Commons (CC BY-SA 3.0)',
+    },
+  },
 ]

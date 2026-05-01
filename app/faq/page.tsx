@@ -61,6 +61,9 @@ export default function Page() {
         <h1 className="font-serif text-5xl md:text-7xl font-semibold text-stone-950 tracking-tight leading-tight max-w-4xl">
           Questions, answered.
         </h1>
+        <p className="mt-6 text-lg md:text-xl text-stone-600 leading-relaxed max-w-2xl">
+          Common questions about how the planner works, what the guides cover, gear recommendations, and what Trailstead Guide is built for.
+        </p>
       </header>
 
       <section className="max-w-page mx-auto px-8 pb-24">
