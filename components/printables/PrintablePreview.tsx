@@ -20,6 +20,16 @@ import CookingConversionCard from './CookingConversionCard'
 import BackyardTestChecklist from './BackyardTestChecklist'
 import FireStartingChecklist from './FireStartingChecklist'
 import KnotReferenceCard from './KnotReferenceCard'
+import AnimalTrackIdCard from './AnimalTrackIdCard'
+import NatureScavengerHuntCard from './NatureScavengerHuntCard'
+import NightSkyBingoCard from './NightSkyBingoCard'
+import ShadowPuppetHandGuide from './ShadowPuppetHandGuide'
+import KidsCampingPackingList from './KidsCampingPackingList'
+import WeatherSignsCard from './WeatherSignsCard'
+import BearBagFoodStorageCard from './BearBagFoodStorageCard'
+import CampFirstAidQuickReference from './CampFirstAidQuickReference'
+import LeaveNoTraceQuickReference from './LeaveNoTraceQuickReference'
+import CampMealPlanner from './CampMealPlanner'
 
 const RENDERERS: Record<string, React.ComponentType> = {
   'northern-hemisphere-constellation-wheel': ConstellationWheel,
@@ -27,6 +37,16 @@ const RENDERERS: Record<string, React.ComponentType> = {
   'backyard-test-checklist': BackyardTestChecklist,
   'fire-starting-checklist': FireStartingChecklist,
   'knot-reference-card': KnotReferenceCard,
+  'animal-track-id-card': AnimalTrackIdCard,
+  'nature-scavenger-hunt-card': NatureScavengerHuntCard,
+  'night-sky-bingo': NightSkyBingoCard,
+  'shadow-puppet-hand-guide': ShadowPuppetHandGuide,
+  'kids-camping-packing-list': KidsCampingPackingList,
+  'weather-signs-field-card': WeatherSignsCard,
+  'bear-bag-food-storage-card': BearBagFoodStorageCard,
+  'camp-first-aid-quick-reference': CampFirstAidQuickReference,
+  'leave-no-trace-quick-reference': LeaveNoTraceQuickReference,
+  '3-day-camp-meal-planner': CampMealPlanner,
 }
 
 type Props = {
