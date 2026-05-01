@@ -14,6 +14,9 @@ export default function ActivityScheduleBlock({ schedule, showDayHeadings = true
   const day2 = (schedule.day2 ?? [])
     .map(getActivityBySlug)
     .filter((a): a is NonNullable<typeof a> => a !== null)
+  const day3 = (schedule.day3 ?? [])
+    .map(getActivityBySlug)
+    .filter((a): a is NonNullable<typeof a> => a !== null)
 
   if (day1.length === 0 && day2.length === 0) return null
 
@@ -21,6 +24,7 @@ export default function ActivityScheduleBlock({ schedule, showDayHeadings = true
     ? [
         { heading: showDayHeadings ? 'Day 1' : null, items: day1 },
         { heading: showDayHeadings ? 'Day 2' : null, items: day2 },
+        ...(day3.length ? [{ heading: showDayHeadings ? 'Day 3' : null, items: day3 }] : []),
       ]
     : [{ heading: null, items: day1 }]
 

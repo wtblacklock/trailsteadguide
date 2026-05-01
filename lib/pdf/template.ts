@@ -289,6 +289,9 @@ function renderActivitiesPlan(plan: typeof PLAN_TEMPLATES[string]): string {
   const day2 = (plan.activitySchedule.day2 ?? [])
     .map(getActivityBySlug)
     .filter((a): a is NonNullable<typeof a> => a !== null)
+  const day3 = (plan.activitySchedule.day3 ?? [])
+    .map(getActivityBySlug)
+    .filter((a): a is NonNullable<typeof a> => a !== null)
 
   const groupHtml = (heading: string | null, items: typeof day1) => {
     if (items.length === 0) return ''
@@ -313,7 +316,7 @@ function renderActivitiesPlan(plan: typeof PLAN_TEMPLATES[string]): string {
   }
 
   const groups = day2.length
-    ? `${groupHtml('Day 1', day1)}${groupHtml('Day 2', day2)}`
+    ? `${groupHtml('Day 1', day1)}${groupHtml('Day 2', day2)}${groupHtml('Day 3', day3)}`
     : groupHtml(null, day1)
 
   return `

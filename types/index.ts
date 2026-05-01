@@ -76,6 +76,8 @@ export type PlanActivitySchedule = {
   day1: string[]
   /** Optional day 2 schedule. Single-night plans omit this. */
   day2?: string[]
+  /** Optional day 3 schedule. Multi-night plans only. */
+  day3?: string[]
 }
 
 export type IngredientCategory =

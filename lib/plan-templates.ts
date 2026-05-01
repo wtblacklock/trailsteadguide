@@ -94,9 +94,19 @@ export const PLAN_TEMPLATES: Record<string, PlanTemplate> = {
           'A loose guy line is a saggy fly is a wet floor at 3 a.m. Practice tightening guy lines now, in your yard.',
       },
       {
+        skillSlug: 'fire/starting-a-fire',
+        rationale:
+          'If you plan to use a fire ring on a real trip, the backyard is where you build the muscle memory — not your first night away.',
+      },
+      {
+        skillSlug: 'cooking/two-burner-stove-basics',
+        rationale:
+          "Test your stove tonight. A failed ignition at 7 p.m. in your yard is a 30-second fix. On a real trip it's a stressful problem.",
+      },
+      {
         skillSlug: 'knife-skills/safe-knife-handling',
         rationale:
-          'If you’ll let kids near a knife on a real trip, the rules need to land here first — somewhere with no consequences.',
+          "If you'll let kids near a knife on a real trip, the rules need to land here first — somewhere with no consequences.",
       },
     ],
     activitySchedule: {
@@ -105,6 +115,7 @@ export const PLAN_TEMPLATES: Record<string, PlanTemplate> = {
         'glow-stick-ring-toss',
         'nature-scavenger-hunt',
         'stargazing-constellation-hunt',
+        'shadow-puppet-theatre',
       ],
     },
   },
@@ -242,11 +253,27 @@ export const PLAN_TEMPLATES: Record<string, PlanTemplate> = {
       {
         skillSlug: 'cooking/two-burner-stove-basics',
         rationale:
-          "One simple dinner, cooked outside — that’s the moment the trip flips from anxious to fun.",
+          "One simple dinner, cooked outside — that's the moment the trip flips from anxious to fun.",
+      },
+      {
+        skillSlug: 'fire/starting-a-fire',
+        rationale:
+          "A campfire turns a first night from a logistics exercise into a memory. Know how to light it cleanly before you arrive.",
+      },
+      {
+        skillSlug: 'safety/food-storage-and-bear-bags',
+        rationale:
+          'Even at a developed campsite, food left out overnight is a problem. Know where everything goes before dark.',
       },
     ],
     activitySchedule: {
-      day1: ['nature-scavenger-hunt', 'rock-skipping-contest', 'campfire-story-chain'],
+      day1: [
+        'nature-scavenger-hunt',
+        'rock-skipping-contest',
+        'campfire-story-chain',
+        'shadow-puppet-theatre',
+        'campfire-singalong',
+      ],
     },
   },
 
@@ -394,17 +421,33 @@ export const PLAN_TEMPLATES: Record<string, PlanTemplate> = {
       {
         skillSlug: 'fire/starting-a-fire',
         rationale:
-          "Saturday’s centerpiece dinner expects a coal bed — getting the fire right early is what makes the day work.",
+          "Saturday's centerpiece dinner expects a coal bed — getting the fire right early is what makes the day work.",
       },
       {
         skillSlug: 'orienteering/compass-basics',
         rationale:
-          "Saturday’s day-hike is the weekend’s main event. Compass + map keeps a marked trail confident and an off-trail spur found.",
+          "Saturday's day-hike is the weekend's main event. Compass + map keeps a marked trail confident and an off-trail spur found.",
+      },
+      {
+        skillSlug: 'hiking/trail-etiquette',
+        rationale:
+          'A family hike with kids creates plenty of yield-the-trail moments. Knowing the rules prevents awkward encounters with other hikers.',
+      },
+      {
+        skillSlug: 'hiking/trekking-poles',
+        rationale:
+          'On a 2–5 mile Saturday hike, poles reduce knee strain on descents and give kids a confidence tool on rough terrain.',
       },
     ],
     activitySchedule: {
-      day1: ['trail-bingo', 'capture-the-flag', 'campfire-story-chain'],
-      day2: ['flashlight-tag'],
+      day1: ['trail-bingo', 'capture-the-flag', 'campfire-story-chain', 'campfire-singalong'],
+      day2: [
+        'animal-track-hunt',
+        'stone-cairn-challenge',
+        'rock-skipping-contest',
+        'flashlight-tag',
+        'stargazing-constellation-hunt',
+      ],
     },
   },
 
@@ -547,6 +590,11 @@ export const PLAN_TEMPLATES: Record<string, PlanTemplate> = {
           'Real meals are the point of this plan — the two-burner stove is the workhorse for every breakfast and dinner.',
       },
       {
+        skillSlug: 'cooking/cast-iron-cooking',
+        rationale:
+          "This plan brings cast iron — use it right. A seasoned skillet at camp produces food a camp stove alone never could.",
+      },
+      {
         skillSlug: 'knots/taut-line-hitch',
         rationale:
           'Your canopy and tent guy lines need to stay taut for multiple nights, even after dew or rain. This is the knot that does it.',
@@ -554,12 +602,34 @@ export const PLAN_TEMPLATES: Record<string, PlanTemplate> = {
       {
         skillSlug: 'fire/starting-a-fire',
         rationale:
-          "Comfortable fire time after dinner is the trip’s emotional anchor — light it cleanly the first time, every night.",
+          "Comfortable fire time after dinner is the trip's emotional anchor — light it cleanly the first time, every night.",
+      },
+      {
+        skillSlug: 'camp-setup/camp-hygiene',
+        rationale:
+          'Multi-night comfort camping means keeping the camp clean and the kitchen sanitary — easy habits that prevent sick days.',
+      },
+      {
+        skillSlug: 'camp-setup/breaking-camp',
+        rationale:
+          'A site this comfortable takes real effort to pack. Knowing the break-down sequence means nothing gets left behind or damaged.',
       },
     ],
     activitySchedule: {
-      day1: ['nature-scavenger-hunt', 'camp-olympics', 'campfire-story-chain'],
-      day2: ['flashlight-tag'],
+      day1: ['nature-scavenger-hunt', 'camp-olympics', 'campfire-story-chain', 'campfire-singalong'],
+      day2: [
+        'leaf-rubbings',
+        'rock-painting',
+        'improvised-bocce',
+        'flashlight-tag',
+        'night-sound-bingo',
+      ],
+      day3: [
+        'animal-track-hunt',
+        'cloud-watching',
+        'stargazing-constellation-hunt',
+        'campfire-trivia-night',
+      ],
     },
   },
 }
