@@ -1948,8 +1948,8 @@ export const SKILLS: Skill[] = [
     ],
     relatedGear: [{ name: 'Paracord (50 ft)' }],
     videoEmbed: {
-      url: 'https://www.youtube-nocookie.com/embed/TUKSBm4hXcw',
-      title: 'How to Tie a Trucker\'s Hitch — Animated Knots',
+      url: 'https://www.youtube-nocookie.com/embed/ZJJPySetSRw',
+      title: 'How To Tie A Trucker\'s Hitch — A Knot To Know',
     },
     relatedSkills: ['knots/taut-line-hitch', 'knots/bowline', 'shelter/tarp-rigging'],
     relatedPrintableSlug: 'knot-reference-card',
