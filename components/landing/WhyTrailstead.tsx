@@ -26,7 +26,6 @@ export default function WhyTrailstead() {
           fill
           sizes="(max-width: 1024px) 100vw, 1440px"
           loading="lazy"
-          unoptimized
           className="object-cover"
         />
       </div>

@@ -7,6 +7,7 @@ export const metadata = pageMetadata({
   description:
     'Answer 6 quick questions and get a personalized camping plan for your family — timeline, gear list, meals, and age-appropriate kid activities.',
   path: '/quiz',
+  noIndex: true,
 })
 
 export default function QuizPage() {

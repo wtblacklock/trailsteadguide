@@ -89,7 +89,6 @@ export function GuidePage({ eyebrow = 'Guide', title, lede, heroImage, slug, dat
               className="object-cover"
               priority
               sizes="(max-width: 768px) 100vw, 1024px"
-              unoptimized
             />
           </div>
         </figure>

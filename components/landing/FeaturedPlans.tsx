@@ -63,7 +63,6 @@ export default function FeaturedPlans() {
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
                   loading="lazy"
-                  unoptimized
                   className="object-cover transition-transform duration-300 group-hover:scale-[1.02]"
                 />
               </div>

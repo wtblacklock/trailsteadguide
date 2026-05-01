@@ -129,9 +129,9 @@ export default function Hero() {
               src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=1600&auto=format&fit=crop&q=80"
               alt="Family camping in a forest clearing at golden hour"
               fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1280px) calc(100vw - 4rem), 80rem"
               className="object-cover"
               priority
-              unoptimized
             />
           </div>
           <div className="absolute inset-0 bg-gradient-to-t from-stone-950/50 via-transparent to-transparent" />

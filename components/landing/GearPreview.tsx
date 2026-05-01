@@ -73,7 +73,6 @@ export default function GearPreview() {
                 fill
                 sizes="(max-width: 768px) 100vw, 33vw"
                 loading="lazy"
-                unoptimized
                 className="object-cover"
               />
             </div>

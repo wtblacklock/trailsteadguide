@@ -17,8 +17,9 @@ export default function PlanHero({ title, hook, imageUrl }: Props) {
             src={imageUrl}
             alt={title}
             fill
+            sizes="(max-width: 768px) 100vw, 80rem"
             className="object-cover"
-            unoptimized
+            priority
           />
           <div className="absolute inset-0 bg-gradient-to-t from-stone-900/70 to-transparent" />
           <div className="absolute bottom-0 left-0 right-0 px-6 pb-8">
