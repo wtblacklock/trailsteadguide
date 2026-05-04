@@ -25,10 +25,10 @@ export default function ActivitiesHero() {
           Browse activities
         </a>
         <Link
-          href="/quiz"
+          href="/activities/camping-activities-for-kids"
           className="inline-flex items-center justify-center text-sm font-medium text-stone-700 hover:text-stone-900 transition-colors"
         >
-          Plan your trip with the quiz →
+          Camping activities for kids →
         </Link>
       </div>
     </header>

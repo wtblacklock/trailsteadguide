@@ -13,7 +13,7 @@ const META_TITLE = 'Backyard Camping with Kids — How to Do It Right'
 const DESCRIPTION =
   'How to set up a backyard camping night that kids will love: tent setup, campfire alternatives, activities, and how to use it as a dress rehearsal for a real trip.'
 const HERO_IMAGE =
-  'https://images.unsplash.com/photo-1559636564-44a39b0e6a2d?w=1400&auto=format&fit=crop&q=80'
+  'https://images.unsplash.com/jGh5XSUrYNw?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({
   title: META_TITLE,

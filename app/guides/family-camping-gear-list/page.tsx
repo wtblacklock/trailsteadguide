@@ -14,7 +14,7 @@ const META_TITLE = 'Family Camping Gear List — The Real One'
 const DESCRIPTION =
   'A realistic family camping gear list for beginners: what you actually need, what to skip on the first trip, and what order to buy it in.'
 const HERO_IMAGE =
-  'https://images.unsplash.com/photo-1504851149312-7a075b496cc7?w=1400&auto=format&fit=crop&q=80'
+  'https://images.unsplash.com/DM2UgXpV5uE?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({
   title: META_TITLE,

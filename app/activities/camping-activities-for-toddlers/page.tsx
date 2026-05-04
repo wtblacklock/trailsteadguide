@@ -10,7 +10,7 @@ const META_TITLE = 'Camping Activities for Toddlers (Ages 2–5)'
 const DESCRIPTION =
   'The best camping activities for toddlers: sensory exploration, short structured play, and camp games that work for ages 2–5 without needing adult-level attention spans.'
 const HERO_IMAGE =
-  'https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=1400&auto=format&fit=crop&q=80'
+  'https://images.unsplash.com/8n00CqwnqO8?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({
   title: META_TITLE,

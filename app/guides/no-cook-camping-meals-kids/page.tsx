@@ -13,7 +13,7 @@ const META_TITLE = 'No-Cook Camping Meals for Kids — 20 Ideas'
 const DESCRIPTION =
   'No-cook camping meals for kids that are fast, kid-approved, and require nothing but a cooler and a picnic table. Perfect for pack-out mornings, rain days, and exhausted evenings.'
 const HERO_IMAGE =
-  'https://images.unsplash.com/photo-1543339308-43e59d6b73a6?w=1400&auto=format&fit=crop&q=80'
+  'https://images.unsplash.com/WWaDfjWsfuM?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({
   title: META_TITLE,

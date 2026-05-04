@@ -13,7 +13,7 @@ const META_TITLE = 'Family Camping on a Budget — How to Do It Right'
 const DESCRIPTION =
   'Family camping on a budget: how to gear up for under $300, where to find free and cheap campsites, and how to keep the trip cost under $150 total for a family of four.'
 const HERO_IMAGE =
-  'https://images.unsplash.com/photo-1515186813808-8d0644cf8d64?w=1400&auto=format&fit=crop&q=80'
+  'https://images.unsplash.com/TpIqgSQiuxs?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({
   title: META_TITLE,

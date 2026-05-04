@@ -13,7 +13,7 @@ const META_TITLE = 'Family Camping Meal Plan — 3-Day Template'
 const DESCRIPTION =
   'A complete 3-day family camping meal plan: every meal from arrival through pack-out, what to prep at home, and a shopping list you can print and take to the store.'
 const HERO_IMAGE =
-  'https://images.unsplash.com/photo-1472745433479-4556f22e32c2?w=1400&auto=format&fit=crop&q=80'
+  'https://images.unsplash.com/UdnCiHZFMMw?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({
   title: META_TITLE,

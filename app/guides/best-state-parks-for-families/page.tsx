@@ -13,7 +13,7 @@ const META_TITLE = 'Best State Parks for Family Camping (By Region)'
 const DESCRIPTION =
   'Best state parks for family camping by region: the top pick in each area, what makes it beginner-friendly, and how to book before they sell out.'
 const HERO_IMAGE =
-  'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1400&auto=format&fit=crop&q=80'
+  'https://images.unsplash.com/QSHK_Cs0Owo?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({
   title: META_TITLE,
