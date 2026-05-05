@@ -20,19 +20,39 @@ const NIGHT_DEFAULT: Record<PlanSlug, number> = {
   'easy-family-basecamp': 3,
 }
 
+// Personalization params produce per-party rendered content. The bare
+// /trip-pack/[planSlug] is the canonical, indexable version; any URL with
+// these params gets noindex so Google consolidates ranking on the clean URL.
+const PERSONALIZATION_PARAMS = [
+  'adults',
+  'kids',
+  'group',
+  'kidsAge',
+  'activity',
+  'comfort',
+  'nights',
+] as const
+
 export async function generateMetadata({
   params,
+  searchParams,
 }: {
   params: Promise<{ planSlug: string }>
+  searchParams: Promise<Record<string, string | string[] | undefined>>
 }) {
   const { planSlug } = await params
   if (!VALID.includes(planSlug as PlanSlug)) return {}
   const content = getPlanContent(planSlug as PlanSlug)
+  const sp = await searchParams
+  const hasPersonalization = PERSONALIZATION_PARAMS.some(
+    (key) => sp[key] !== undefined,
+  )
   return pageMetadata({
     title: `${content.cover.title} Trip Pack`,
     description: `Download a print-ready Trip Pack for ${content.cover.title}: timeline, packing list, gear set, and mistake prevention — assembled to your party size.`,
     path: `/trip-pack/${planSlug}`,
     type: 'article',
+    noIndex: hasPersonalization,
   })
 }
 

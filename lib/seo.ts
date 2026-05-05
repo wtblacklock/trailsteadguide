@@ -75,7 +75,7 @@ export const organizationNode = {
   url: `${SITE_URL}/`,
   logo: {
     '@type': 'ImageObject',
-    url: `${SITE_URL}/apple-icon`,
+    url: `${SITE_URL}/apple-icon.png`,
     width: 180,
     height: 180,
   },

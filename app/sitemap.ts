@@ -90,6 +90,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/compare/easy-family-basecamp-vs-first-weekend-camp`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.75 },
 
     // Trip Packs (paid downloadable products)
+    { url: `${BASE_URL}/trip-pack`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/trip-pack/backyard-test`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/trip-pack/first-night-camp`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/trip-pack/first-weekend-camp`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.8 },
