@@ -204,6 +204,24 @@ export default function Page() {
                   The promise: read less, plan once, sleep outside.
                 </p>
               </div>
+              <ul
+                aria-label="Credentials"
+                className="mt-6 flex flex-wrap gap-2"
+              >
+                {[
+                  'Eagle Scout — age 13',
+                  'Wood Badge Antelope',
+                  'Philmont alum',
+                  'ScoutNerd founder',
+                ].map((credential) => (
+                  <li
+                    key={credential}
+                    className="inline-flex items-center rounded-full bg-white/70 ring-1 ring-amber-200 px-3 py-1 text-[11px] font-semibold tracking-[0.14em] uppercase text-brand-green"
+                  >
+                    {credential}
+                  </li>
+                ))}
+              </ul>
               <p className="mt-6 text-sm text-stone-500">
                 Knows about: {AUTHOR_KNOWS_ABOUT.join(' · ')}
               </p>
@@ -224,6 +242,48 @@ export default function Page() {
       </section>
 
       <section className="max-w-page mx-auto px-8 pb-16">
+        <div className="max-w-3xl rounded-2xl bg-amber-50/60 ring-1 ring-amber-100 p-8 md:p-12">
+          <p className="text-xs font-semibold tracking-[0.18em] uppercase text-brand-green mb-4">
+            How we build it
+          </p>
+          <h2 className="font-serif text-3xl md:text-4xl font-semibold text-stone-950 tracking-tight mb-6">
+            How we build Trailstead&apos;s recommendations
+          </h2>
+          <div className="space-y-5 text-stone-700 leading-relaxed text-lg">
+            <p>
+              Plans are grounded in 20+ years of personal scouting and family camping — Eagle Scout work, Wood Badge ticket, Philmont, then a steady cadence of trips with my own three kids. That experience gets distilled into structured templates, not freeform stories. If a plan made our family weekend work, it earns a spot.
+            </p>
+            <p>
+              The common-mistakes sections aren&apos;t guesses. They&apos;re drawn from pattern analysis of recurring beginner regrets across r/camping, r/CampingGear, r/CampingandHiking, and r/Outdoors over the trailing year — the same threads where new families admit what actually went sideways. The full reads live at{' '}
+              <Link
+                href="/research/first-time-camping-regrets"
+                className="text-stone-900 underline decoration-stone-300 underline-offset-4 hover:decoration-stone-500 transition-colors"
+              >
+                first-time camping regrets
+              </Link>{' '}
+              and{' '}
+              <Link
+                href="/research/what-1000-campers-actually-pack"
+                className="text-stone-900 underline decoration-stone-300 underline-offset-4 hover:decoration-stone-500 transition-colors"
+              >
+                what 1000 campers actually pack
+              </Link>
+              .
+            </p>
+            <p>
+              Gear picks come from real beginner-family use. Nothing gets recommended that isn&apos;t already trusted by the camping community at large — no obscure dropshipped gear, no &ldquo;sponsored&rdquo; favorites in disguise. Affiliate links are disclosed transparently and have zero influence on what shows up in a plan.
+            </p>
+            <p>
+              Skills sections lean on the BSA Wood Badge curriculum and Cub Scout / Scout BSA program adaptations — the same progression-based teaching used to bring kids and adults up the curve safely. Knot diagrams use public-domain references; technique videos are embedded only when the source permits it.
+            </p>
+            <p>
+              The site keeps moving. Quiz personalization, comparison pages, and seasonal guides are all live and getting iterated based on what readers actually use and ask for. If something&apos;s wrong or unclear, that&apos;s a fixable problem — tell us.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="max-w-page mx-auto px-8 pb-16">
         <div className="max-w-3xl">
           <h2 className="font-serif text-3xl md:text-4xl font-semibold text-stone-950 tracking-tight mb-6">
             How we make money
@@ -233,6 +293,26 @@ export default function Page() {
               The plans, guides, and quiz are free. We earn an Amazon Associate commission when you buy gear through links on our gear pages, and we sell printable Trip Pack PDFs of each plan. Both fund the writing; neither changes what we recommend.
             </p>
           </div>
+        </div>
+      </section>
+
+      <section className="max-w-page mx-auto px-8 pb-16">
+        <div className="max-w-3xl rounded-2xl bg-amber-50/60 ring-1 ring-amber-100 p-8 md:p-10">
+          <p className="text-xs font-semibold tracking-[0.18em] uppercase text-brand-green mb-3">
+            Press &amp; partnerships
+          </p>
+          <h2 className="font-serif text-2xl md:text-3xl font-semibold text-stone-950 tracking-tight mb-4">
+            Want to interview, partner, or feature the methodology?
+          </h2>
+          <p className="text-stone-700 leading-relaxed text-lg mb-6">
+            Take a minute and tell me through the contact form — what you&apos;re working on, what you need, and when. I read every message.
+          </p>
+          <Link
+            href="/contact"
+            className="inline-flex items-center justify-center rounded-md font-medium bg-stone-900 text-white hover:bg-stone-800 transition-colors px-6 py-3 text-sm"
+          >
+            Get in touch
+          </Link>
         </div>
       </section>
 
