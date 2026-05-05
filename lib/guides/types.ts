@@ -18,6 +18,15 @@ export type Guide = {
   description: string
   eyebrow?: string
   /**
+   * SEO-optimized <title> for the guide page. ≤41 chars to keep the rendered
+   * title under Google's ~60-char truncation point after the
+   * " | Trailstead Guide" suffix is appended. Optional — when omitted the
+   * page-level META_TITLE constant in `app/guides/<slug>/page.tsx` is used.
+   */
+  metaTitle?: string
+  /** SEO meta description (≤155 chars) — optional, page-level fallback. */
+  metaDescription?: string
+  /**
    * Curated cross-links surfaced by `<RelatedGuides />` at the bottom of
    * each guide article. Slugs of other entries in `GUIDES`. When set,
    * overrides the default "first 3 same-category siblings" pick — lets us

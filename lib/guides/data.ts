@@ -290,4 +290,27 @@ export const GUIDES: Guide[] = [
     eyebrow: 'Where to camp',
     relatedGuides: ['family-camping-for-beginners', 'how-to-choose-a-family-campsite', 'how-to-plan-a-camping-trip'],
   },
+  // --- High-intent micro-guides: dispersed + reservation strategy ---
+  {
+    slug: 'dispersed-camping-on-blm-and-national-forest-land',
+    category: 'basics',
+    title: 'Dispersed Camping on BLM & National Forest Land',
+    description: 'Free camping on federal land — where it’s legal, the rules that matter, and when it’s the wrong call for a beginner.',
+    eyebrow: 'Free camping',
+    metaTitle: 'Dispersed Camping on BLM & NF Land',
+    metaDescription:
+      'Dispersed camping on BLM and National Forest land: where it’s legal, the rules that matter, fire restrictions, and when it’s the wrong call for a beginner.',
+    relatedGuides: ['camping-for-beginners', 'first-night-camping-guide', 'how-to-plan-a-camping-trip'],
+  },
+  {
+    slug: 'recreation-gov-reservation-strategy',
+    category: 'basics',
+    title: 'Recreation.gov Reservation Strategy',
+    description: 'How recreation.gov actually works — the 6-month rolling window, the 7 a.m. drop, and what to do when nothing’s available.',
+    eyebrow: 'Booking strategy',
+    metaTitle: 'Recreation.gov Reservation Strategy',
+    metaDescription:
+      'How recreation.gov actually works: the 6-month rolling window, the 7am ET drop, and what to do when nothing’s available — a real booking playbook for beginners.',
+    relatedGuides: ['how-to-plan-a-camping-trip', 'camping-for-beginners', 'best-state-parks-for-families'],
+  },
 ]
