@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 interface Props {
   items: string[]
 }
@@ -16,6 +18,16 @@ export default function GearList({ items }: Props) {
             </li>
           ))}
         </ul>
+        <p className="mt-8 text-sm text-stone-500">
+          Picking gear?{' '}
+          <Link
+            href="/compare"
+            className="text-stone-700 underline-offset-4 hover:underline hover:text-stone-900"
+          >
+            See our full picks side by side
+          </Link>{' '}
+          — beginner-grade tents, coolers, stoves, and sleep systems compared.
+        </p>
       </div>
     </section>
   )
