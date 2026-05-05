@@ -101,7 +101,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
 
     // Original research (backlink magnet)
+    { url: `${BASE_URL}/research`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE_URL}/research/first-time-camping-regrets`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/research/what-1000-campers-actually-pack`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.85 },
 
     // Funnel landings (quiz + checklist index; /checklist/result is noindex)
     { url: `${BASE_URL}/quiz`, lastModified: RECENT, changeFrequency: 'monthly', priority: 0.6 },
