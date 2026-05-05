@@ -114,6 +114,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/quiz`, lastModified: RECENT, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${BASE_URL}/checklist`, lastModified: RECENT, changeFrequency: 'monthly', priority: 0.6 },
 
+    // Glossary (reference page — beginner camping vocabulary)
+    { url: `${BASE_URL}/glossary`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.7 },
+
     // Informational
     { url: `${BASE_URL}/about`, lastModified: RECENT, changeFrequency: 'monthly', priority: 0.5 },
     { url: `${BASE_URL}/how-it-works`, lastModified: RECENT, changeFrequency: 'monthly', priority: 0.5 },
