@@ -1455,6 +1455,8 @@ export const SKILLS: Skill[] = [
       url: 'https://www.youtube-nocookie.com/embed/VSNj0ZjIsJI',
       title: 'Camp Coffee — Percolator Method',
     },
+    relatedSkills: ['cooking/two-burner-stove-basics', 'cooking/cast-iron-cooking', 'cooking/one-pot-camp-meals'],
+    relatedPrintableSlug: '3-day-camp-meal-planner',
   },
   {
     slug: 'cast-iron-cooking',
@@ -1505,6 +1507,8 @@ export const SKILLS: Skill[] = [
       alt: 'A seasoned cast iron skillet on an outdoor fire grate',
       attribution: 'Cast iron skillet photo — Wikimedia Commons (CC0 Public Domain)',
     },
+    relatedSkills: ['cooking/two-burner-stove-basics', 'cooking/camp-coffee', 'cooking/one-pot-camp-meals'],
+    relatedPrintableSlug: '3-day-camp-meal-planner',
   },
 
   // ── SAFETY (expanded) ─────────────────────────────────────────────────────
@@ -1995,7 +1999,7 @@ export const SKILLS: Skill[] = [
     relatedGear: [
       { name: 'GSI Outdoors Pinnacle Camper Cookset' },
     ],
-    relatedSkills: ['cooking/two-burner-stove-basics', 'cooking/cast-iron-cooking', 'cooking/camp-food-safety'],
+    relatedSkills: ['cooking/two-burner-stove-basics', 'cooking/cast-iron-cooking', 'cooking/camp-coffee'],
     relatedPrintableSlug: '3-day-camp-meal-planner',
   },
   {

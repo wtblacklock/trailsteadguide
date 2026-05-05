@@ -5,6 +5,7 @@ import AllGuidesRail from '@/components/landing/AllGuidesRail'
 import FeaturedPlans from '@/components/landing/FeaturedPlans'
 import WhyTrailstead from '@/components/landing/WhyTrailstead'
 import AfterPlanRow from '@/components/landing/AfterPlanRow'
+import FeaturedSkillsRail from '@/components/landing/FeaturedSkillsRail'
 import GearPreview from '@/components/landing/GearPreview'
 import HomepageEmailCapture from '@/components/landing/HomepageEmailCapture'
 import FinalCTA from '@/components/landing/FinalCTA'
@@ -27,6 +28,7 @@ export default function HomePage() {
       <FeaturedPlans />
       <WhyTrailstead />
       <AfterPlanRow />
+      <FeaturedSkillsRail />
       <GearPreview />
       <HomepageEmailCapture />
       <FinalCTA />

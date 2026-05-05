@@ -8,6 +8,7 @@ import PrintableFloatingBar from '@/components/printables/PrintableFloatingBar'
 import PrintablePreview from '@/components/printables/PrintablePreview'
 import { pageMetadata, printableCreativeWorkGraph, SITE_URL } from '@/lib/seo'
 import { PRINTABLES, getPrintableBySlug } from '@/lib/printables'
+import { getSkillsLinkedToPrintable } from '@/lib/skills/helpers'
 
 export function generateStaticParams() {
   return PRINTABLES.map((p) => ({ slug: p.slug }))
@@ -41,6 +42,7 @@ export default async function PrintablePage({
 
   const path = `/printables/${printable.slug}`
   const printHref = `${path}/print`
+  const linkedSkills = getSkillsLinkedToPrintable(printable.slug)
 
   return (
     <main>
@@ -157,6 +159,36 @@ export default async function PrintablePage({
           </aside>
         </div>
       </section>
+
+      {linkedSkills.length > 0 && (
+        <section className="max-w-page mx-auto px-8 pb-16">
+          <div className="max-w-3xl">
+            <p className="text-xs font-semibold tracking-[0.18em] uppercase text-stone-500 mb-3">
+              Skills that use this printable
+            </p>
+            <h2 className="font-serif text-2xl md:text-3xl font-semibold text-stone-950 tracking-tight mb-6">
+              Pair the analog card with the technique.
+            </h2>
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {linkedSkills.map(({ skill, category }) => (
+                <li key={`${category.slug}/${skill.slug}`}>
+                  <Link
+                    href={`/skills/${category.slug}/${skill.slug}`}
+                    className="group flex flex-col gap-1 rounded-lg ring-1 ring-stone-200 bg-white px-4 py-3 hover:ring-stone-900 transition-colors"
+                  >
+                    <span className="text-[11px] tracking-[0.14em] uppercase text-stone-500">
+                      {category.label}
+                    </span>
+                    <span className="text-sm font-semibold text-stone-900 group-hover:text-stone-600 transition-colors">
+                      {skill.title}
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      )}
 
       <section className="px-8 pb-24">
         <div className="bg-stone-900 rounded-3xl p-10 md:p-16 text-white">

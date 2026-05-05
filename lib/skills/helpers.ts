@@ -59,4 +59,22 @@ export function getSkillByRef(
   return { skill, category }
 }
 
+/**
+ * All skills that reference the given printable slug via
+ * `relatedPrintableSlug`. Powers the "Skills that use this printable"
+ * block on /printables/[slug] — every printable detail page is in the
+ * sitemap, so this turns indexed printable pages into inbound links
+ * for skill detail pages.
+ */
+export function getSkillsLinkedToPrintable(
+  printableSlug: string,
+): { skill: Skill; category: SkillCategory }[] {
+  return SKILLS.filter((s) => s.relatedPrintableSlug === printableSlug)
+    .map((skill) => {
+      const category = SKILL_CATEGORIES.find((c) => c.id === skill.category)
+      return category ? { skill, category } : null
+    })
+    .filter((r): r is { skill: Skill; category: SkillCategory } => r !== null)
+}
+
 export { SKILLS, SKILL_CATEGORIES }

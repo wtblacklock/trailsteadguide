@@ -66,6 +66,60 @@ export default function Page() {
         </ul>
       </section>
 
+      <section className="max-w-page mx-auto px-8 pb-20">
+        <div className="max-w-3xl">
+          <p className="text-xs font-semibold tracking-[0.18em] uppercase text-stone-500 mb-4">
+            Skill library
+          </p>
+          <h2 className="font-serif text-3xl md:text-4xl font-semibold text-stone-950 tracking-tight mb-4">
+            Build the moves your guides assume.
+          </h2>
+          <p className="text-stone-600 leading-relaxed text-lg mb-8">
+            Every camping guide assumes you can pitch a tent, start a fire, and tie one or two knots that hold a tarp through wind. Each skill below is a short walkthrough — read once, then practice in the backyard.
+          </p>
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
+            {[
+              { href: '/skills/shelter/pitching-a-tent', label: 'Pitching a Tent', cat: 'Shelter' },
+              { href: '/skills/fire/starting-a-fire', label: 'Starting a Fire', cat: 'Fire' },
+              { href: '/skills/knots/taut-line-hitch', label: 'Taut-Line Hitch', cat: 'Knots' },
+              { href: '/skills/safety/lightning-safety', label: 'Lightning Safety', cat: 'Safety' },
+              { href: '/skills/cooking/one-pot-camp-meals', label: 'One-Pot Camp Meals', cat: 'Cooking' },
+              { href: '/skills/hiking/hiking-with-kids', label: 'Hiking With Kids', cat: 'Hiking' },
+            ].map((s) => (
+              <li key={s.href}>
+                <Link
+                  href={s.href}
+                  className="group flex items-baseline justify-between gap-3 rounded-lg ring-1 ring-stone-200 bg-white px-4 py-3 hover:ring-stone-900 transition-colors"
+                >
+                  <span className="text-sm font-semibold text-stone-900">{s.label}</span>
+                  <span className="text-[11px] tracking-[0.14em] uppercase text-stone-500">{s.cat}</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <Link
+            href="/skills"
+            className="inline-flex items-center gap-1.5 text-sm font-semibold text-stone-900 hover:text-stone-600 transition-colors"
+          >
+            Browse the full skill library
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M5 12h14" />
+              <path d="M13 5l7 7-7 7" />
+            </svg>
+          </Link>
+        </div>
+      </section>
+
       <section className="max-w-page mx-auto px-8 pb-24">
         <div className="bg-stone-900 rounded-3xl p-10 md:p-16 text-white">
           <p className="text-xs font-semibold tracking-widest uppercase text-stone-400 mb-4">
