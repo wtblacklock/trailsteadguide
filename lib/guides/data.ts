@@ -60,7 +60,15 @@ export const GUIDES: Guide[] = [
     title: 'Camping With Kids for the First Time',
     description: 'What actually keeps kids happy at camp.',
     eyebrow: 'With kids',
-    relatedGuides: ['first-night-camping-guide', 'first-camping-trip-checklist', 'camping-for-beginners'],
+    relatedGuides: ['camping-with-toddlers', 'first-night-camping-guide', 'first-camping-trip-checklist'],
+  },
+  {
+    slug: 'camping-with-toddlers',
+    category: 'scenario',
+    title: 'Camping With Toddlers',
+    description: 'Protecting the nap, physical containment instead of verbal rules, and a sleep setup that actually works.',
+    eyebrow: 'With kids',
+    relatedGuides: ['camping-with-kids-first-time', 'backyard-camping-with-kids', 'best-camping-sleeping-bag-for-kids'],
   },
   {
     slug: 'first-night-camping-guide',

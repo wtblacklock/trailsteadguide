@@ -211,7 +211,7 @@ export default function Page() {
         <h3>What should kids bring for backyard camping?</h3>
         <p>The exact gear they will bring on the real trip: their sleeping bag, pad, headlamp, and pajamas. The point is to test the gear.</p>
         <h3>Is backyard camping a good idea for toddlers?</h3>
-        <p>Yes — the best introduction for toddlers. The house is a safety net. Most toddlers love the novelty; the ones who don&apos;t will make it clear immediately, which is useful information to have at home.</p>
+        <p>Yes — the best introduction for toddlers. The house is a safety net. Most toddlers love the novelty; the ones who don&apos;t will make it clear immediately, which is useful information to have at home. For the real trip afterward, see <Link href="/guides/camping-with-toddlers">camping with toddlers</Link> for the nap, containment, and sleep-setup logistics.</p>
       </GuidePage>
       <GuideGearShelf guideSlug="backyard-camping-with-kids" />
       <GuideArticleCTA />
