@@ -246,7 +246,7 @@ export const GUIDES: Guide[] = [
     title: 'Best Family Tent for Beginners',
     description: 'What size to buy, dome vs. cabin, and the picks that hold up on real family trips.',
     eyebrow: 'Gear guide',
-    relatedGuides: ['family-camping-gear-list', 'best-camping-sleeping-bag-for-kids', 'family-camping-for-beginners'],
+    relatedGuides: ['best-tent-for-rainy-camping', 'how-to-set-up-a-tent', 'best-camping-sleeping-bag-for-kids'],
   },
   {
     slug: 'best-camping-sleeping-bag-for-kids',
@@ -255,6 +255,30 @@ export const GUIDES: Guide[] = [
     description: 'Temperature ratings, why kids need their own bag, and the picks that keep kids warm.',
     eyebrow: 'Gear guide',
     relatedGuides: ['family-camping-gear-list', 'best-family-tent-for-beginners', 'family-camping-for-beginners'],
+  },
+  {
+    slug: 'how-to-set-up-a-tent',
+    category: 'basics',
+    title: 'How to Set Up a Family Tent',
+    description: 'Site selection, staking, the rainfly, and the mistakes first-timers make.',
+    eyebrow: 'How-to',
+    relatedGuides: ['best-family-tent-for-beginners', 'best-tent-for-rainy-camping', 'family-camping-gear-list'],
+  },
+  {
+    slug: 'best-tent-for-rainy-camping',
+    category: 'scenario',
+    title: 'Best Tent for Camping in the Rain',
+    description: 'Hydrostatic head, fly coverage, and the picks that actually keep a family dry.',
+    eyebrow: 'Gear guide',
+    relatedGuides: ['best-family-tent-for-beginners', 'rainy-camping-trips', 'camping-when-the-weather-turns'],
+  },
+  {
+    slug: 'best-tent-for-hot-weather',
+    category: 'scenario',
+    title: 'Best Tent for Hot Weather and Ventilation',
+    description: 'Mesh, vents, fabric color, and the fly-off setup that keeps a tent from baking.',
+    eyebrow: 'Gear guide',
+    relatedGuides: ['best-family-tent-for-beginners', 'camping-in-a-heatwave', 'camping-in-the-desert-southwest-for-beginners'],
   },
   // --- Meals cluster ---
   {

@@ -83,6 +83,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/compare/best-beginner-stove`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/compare/best-beginner-sleeping-system`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/compare/coleman-sundome-3p-vs-4p-vs-6p`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/compare/6-person-vs-8-person-family-tent`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/compare/dome-tent-vs-cabin-tent`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE_URL}/compare/camp-chef-everest-vs-coleman-classic-1-burner`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE_URL}/compare/rolling-cooler-vs-steel-belted-cooler`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE_URL}/compare/sleeping-bag-vs-cot-airbed-combo`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.7 },

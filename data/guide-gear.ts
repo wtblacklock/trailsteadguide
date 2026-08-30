@@ -40,6 +40,16 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'SLEEP_BAG', productId: 'coleman-brazos-bag' },
     { slot: 'SLEEP_SURFACE', productId: 'lost-horizon-air-foam-mattress' },
   ],
+  'best-tent-for-hot-weather': [
+    { slot: 'TENT', productId: 'coleman-sundome-4p' },
+    { slot: 'TENT', productId: 'core-6p-instant-cabin' },
+    { slot: 'CANOPY', productId: 'core-10x10-canopy' },
+  ],
+  'best-tent-for-rainy-camping': [
+    { slot: 'TENT', productId: 'coleman-sundome-4p' },
+    { slot: 'TENT', productId: 'core-6p-instant-cabin' },
+    { slot: 'TENT', productId: 'tnf-wawona-6' },
+  ],
   'camping-for-beginners': [
     { slot: 'TENT', productId: 'coleman-sundome-4p' },
     { slot: 'TENT', productId: 'core-6p-instant-cabin' },
@@ -543,6 +553,11 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'SAFETY', productId: 'thriad-first-aid-430' },
     { slot: 'POWER', productId: 'anker-zolo-power-bank' },
     { slot: 'TRASH', productId: 'fwc-trash-can-wakeman' },
+  ],
+  'how-to-set-up-a-tent': [
+    { slot: 'TENT', productId: 'coleman-sundome-4p' },
+    { slot: 'TENT', productId: 'core-6p-instant-cabin' },
+    { slot: 'TENT', productId: 'alps-lynx-4p' },
   ],
   'no-cook-camping-meals-kids': [
     { slot: 'COOLER', productId: 'coleman-classic-rolling-cooler' },

@@ -54,6 +54,18 @@ const PRODUCT_COMPARES: CompareCard[] = [
     blurb: 'Same tent family, three sizes. Floor size, standing height, and how each one fits a queen air bed.',
   },
   {
+    href: '/compare/6-person-vs-8-person-family-tent',
+    eyebrow: 'Gear',
+    title: '6-person vs 8-person family tent',
+    blurb: 'The sizing rule that decides it for most families, plus floor size, height, and setup time side by side.',
+  },
+  {
+    href: '/compare/dome-tent-vs-cabin-tent',
+    eyebrow: 'Gear',
+    title: 'Dome tent vs cabin tent',
+    blurb: 'Two shapes, different tradeoffs. Wind resistance versus standing headroom, and which wins for families.',
+  },
+  {
     href: '/compare/camp-chef-everest-vs-coleman-classic-1-burner',
     eyebrow: 'Gear',
     title: 'Camp Chef Everest vs Coleman 1-burner',
