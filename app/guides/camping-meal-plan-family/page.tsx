@@ -3,6 +3,7 @@ import { GuidePage } from '@/components/guide/GuidePage'
 import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
+import GuideGearShelf from '@/components/guide/GuideGearShelf'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { pageMetadata, articleGraph, SITE_URL } from '@/lib/seo'
@@ -248,6 +249,7 @@ export default function Page() {
           Pack in reverse meal order: last meal in first, first meal on top. Pre-freeze proteins to extend ice life. Keep drinks in a second small cooler. Drain melt water daily. See the <Link href="/guides/easy-family-camping-meals">easy family camping meals guide</Link> for full cooler management details.
         </p>
       </GuidePage>
+      <GuideGearShelf guideSlug="camping-meal-plan-family" />
       <GuideArticleCTA />
       <RelatedGuides currentSlug="camping-meal-plan-family" />
     </>
