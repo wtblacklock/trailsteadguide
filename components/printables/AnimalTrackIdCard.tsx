@@ -110,6 +110,36 @@ const TRACKS: TrackPanel[] = [
   },
 ]
 
+import PrintPageBreak from './PrintPageBreak'
+
+function TrackCard({ t }: { t: TrackPanel }) {
+  return (
+    <div className="panel">
+      <div className="panel-inner">
+        <div className="panel-body">
+          <p className="animal-name"><span>{t.emoji}</span>{t.animal}</p>
+          <p className="size">{t.sizeInches}</p>
+          <p className="row"><strong>Front</strong> {t.frontTrack}</p>
+          <p className="row"><strong>Hind</strong> {t.hindTrack}</p>
+          <p className="row"><strong>Gait</strong> {t.gait}</p>
+          <p className="row"><strong>Claws</strong> {t.claws}</p>
+          {t.note && <p className="note">{t.note}</p>}
+          {t.warn && <p className="warn">⚠ {t.warn}</p>}
+        </div>
+        {t.trackImg && (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            src={t.trackImg.url}
+            alt={t.trackImg.alt}
+            className="track-img"
+            draggable={false}
+          />
+        )}
+      </div>
+    </div>
+  )
+}
+
 export default function AnimalTrackIdCard() {
   return (
     <div className="track-card">
@@ -206,36 +236,26 @@ export default function AnimalTrackIdCard() {
         }
       `}</style>
 
-      <p className="lead">
-        Track size varies by age and substrate — mud shows more detail than dust. When in doubt, look for the gait pattern: it&apos;s more reliable than print shape alone.
-      </p>
+      <div className="print-side print-side-1">
+        <p className="lead">
+          Track size varies by age and substrate — mud shows more detail than dust. When in doubt, look for the gait pattern: it&apos;s more reliable than print shape alone.
+        </p>
 
-      <div className="grid">
-        {TRACKS.map((t) => (
-          <div key={t.animal} className="panel">
-            <div className="panel-inner">
-              <div className="panel-body">
-                <p className="animal-name"><span>{t.emoji}</span>{t.animal}</p>
-                <p className="size">{t.sizeInches}</p>
-                <p className="row"><strong>Front</strong> {t.frontTrack}</p>
-                <p className="row"><strong>Hind</strong> {t.hindTrack}</p>
-                <p className="row"><strong>Gait</strong> {t.gait}</p>
-                <p className="row"><strong>Claws</strong> {t.claws}</p>
-                {t.note && <p className="note">{t.note}</p>}
-                {t.warn && <p className="warn">⚠ {t.warn}</p>}
-              </div>
-              {t.trackImg && (
-                // eslint-disable-next-line @next/next/no-img-element
-                <img
-                  src={t.trackImg.url}
-                  alt={t.trackImg.alt}
-                  className="track-img"
-                  draggable={false}
-                />
-              )}
-            </div>
-          </div>
-        ))}
+        <div className="grid">
+          {TRACKS.slice(0, 4).map((t) => (
+            <TrackCard key={t.animal} t={t} />
+          ))}
+        </div>
+      </div>
+
+      <PrintPageBreak />
+
+      <div className="print-side print-side-2">
+        <div className="grid">
+          {TRACKS.slice(4, 8).map((t) => (
+            <TrackCard key={t.animal} t={t} />
+          ))}
+        </div>
       </div>
     </div>
   )
