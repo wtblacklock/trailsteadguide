@@ -690,6 +690,96 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     templateSlugs: [],
     priceRange: '~$10',
   },
+  {
+    id: 'glow-stick-necklaces-bulk',
+    name: 'Glow Stick Necklaces, Bulk Pack',
+    description:
+      'A camp classic — enough for a whole group of kids, bright enough for ring toss or limbo well after dark, and cheap enough that a broken one doesn\'t end the game.',
+    imageUrl: '',
+    category: 'essential',
+    templateSlugs: [],
+    priceRange: '~$15',
+  },
+  {
+    id: 'magnifying-glass-kids',
+    name: 'Kids Magnifying Glass, 2-Pack',
+    description:
+      'Sturdy handle, real glass lens — the tool that turns "found a bug" into an actual close look at it. Standard in any scavenger-hunt or tracking kit.',
+    imageUrl: '',
+    category: 'essential',
+    templateSlugs: [],
+    priceRange: '~$10',
+  },
+  {
+    id: 'field-guide-animal-tracks',
+    name: 'Peterson Field Guide to Animal Tracks',
+    description:
+      'The standard pocket reference for identifying prints, scat, and sign in the field — more reliable than an app when you\'re out of cell signal.',
+    imageUrl: '',
+    category: 'essential',
+    templateSlugs: [],
+    priceRange: '~$15',
+  },
+  {
+    id: 'nature-journal-art-kit',
+    name: 'Kids Nature Journal Art Kit (Colored Pencils + Watercolors)',
+    description:
+      'A compact, camp-durable set of colored pencils and a small watercolor tin — enough range for leaf rubbings, a trail sketch, or anything in between.',
+    imageUrl: '',
+    category: 'essential',
+    templateSlugs: [],
+    priceRange: '~$15',
+  },
+  {
+    id: 'rock-painting-kit',
+    name: 'Outdoor Rock Painting Kit (Paint Pens + Sealant)',
+    description:
+      'Opaque, weather-resistant paint pens in a real color range, plus a sealant coat so a finished rock survives being rained on or left in a pack.',
+    imageUrl: '',
+    category: 'essential',
+    templateSlugs: [],
+    priceRange: '~$16',
+  },
+  {
+    id: 'kids-craft-supply-kit',
+    name: 'Kids Craft Supply Kit (Googly Eyes, Pipe Cleaners, Glue)',
+    description:
+      'The grab-bag of googly eyes, pipe cleaners, and craft glue that turns a pile of pinecones into an afternoon of kid-made creatures.',
+    imageUrl: '',
+    category: 'essential',
+    templateSlugs: [],
+    priceRange: '~$12',
+  },
+  {
+    id: 'outdoor-picnic-blanket',
+    name: 'Water-Resistant Outdoor Picnic Blanket',
+    description:
+      'Sand- and water-resistant underside, packs down small — the difference between a comfortable half-hour of cloud watching and a damp one.',
+    imageUrl: '',
+    category: 'comfort',
+    templateSlugs: [],
+    priceRange: '~$25',
+  },
+  {
+    id: 'camping-ukulele',
+    name: 'Compact Travel Ukulele',
+    description:
+      'Small enough to pack without a case, forgiving enough for someone who\'s never played — the easiest instrument to actually bring camping.',
+    imageUrl: '',
+    category: 'comfort',
+    templateSlugs: [],
+    priceRange: '~$45',
+  },
+  {
+    id: 'kids-medal-ribbons-pack',
+    name: 'Kids Award Medal Ribbons, Multi-Pack',
+    description:
+      'A set of gold/silver/bronze ribbons for the top three finishers — the small ceremony that makes a backyard event feel like a real competition.',
+    imageUrl: '',
+    category: 'essential',
+    templateSlugs: [],
+    priceRange: '~$10',
+  },
 
   // ------------------------------------------------------------------
   // Legacy / deprecated. Kept in the registry so /compare/* editorial

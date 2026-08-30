@@ -127,6 +127,9 @@ export const ACTIVITIES: Activity[] = [
       'Glow sticks contain a non-toxic but bitter fluid. Discard any cracked rings; do not let young kids chew on them.',
     ],
     recommendedFor: ['backyard-test', 'first-night-camp', 'easy-family-basecamp'],
+    relatedGear: [
+      { name: 'Glow Stick Necklaces, Bulk Pack', productId: 'glow-stick-necklaces-bulk' },
+    ],
   },
   {
     slug: 'capture-the-flag',
@@ -198,6 +201,9 @@ export const ACTIVITIES: Activity[] = [
       'Run any race events on flat ground away from fire rings and tent stakes.',
     ],
     recommendedFor: ['first-weekend-camp', 'easy-family-basecamp'],
+    relatedGear: [
+      { name: 'Kids Award Medal Ribbons, Multi-Pack', productId: 'kids-medal-ribbons-pack' },
+    ],
   },
   {
     slug: 'silent-line-up-challenge',
@@ -293,6 +299,9 @@ export const ACTIVITIES: Activity[] = [
       'Each pair carries a whistle. Three blasts = come back now.',
     ],
     recommendedFor: ['first-night-camp', 'first-weekend-camp', 'easy-family-basecamp'],
+    relatedGear: [
+      { name: 'Kids Magnifying Glass, 2-Pack', productId: 'magnifying-glass-kids' },
+    ],
   },
   {
     slug: 'trail-bingo',
@@ -437,6 +446,9 @@ export const ACTIVITIES: Activity[] = [
       'Pack out everything — including pencil shavings.',
     ],
     recommendedFor: ['first-weekend-camp', 'easy-family-basecamp'],
+    relatedGear: [
+      { name: 'Kids Nature Journal Art Kit (Colored Pencils + Watercolors)', productId: 'nature-journal-art-kit' },
+    ],
   },
   {
     slug: 'shadow-puppet-theatre',
@@ -510,6 +522,9 @@ export const ACTIVITIES: Activity[] = [
       'Do not pull leaves from protected or rare plants. Collect from the ground if possible.',
     ],
     recommendedFor: ['backyard-test', 'first-night-camp', 'first-weekend-camp', 'easy-family-basecamp'],
+    relatedGear: [
+      { name: 'Kids Nature Journal Art Kit (Colored Pencils + Watercolors)', productId: 'nature-journal-art-kit' },
+    ],
   },
   {
     slug: 'rock-painting',
@@ -549,6 +564,9 @@ export const ACTIVITIES: Activity[] = [
       'Seal rocks before placing them outdoors so paint does not wash into water sources.',
     ],
     recommendedFor: ['first-night-camp', 'first-weekend-camp', 'easy-family-basecamp'],
+    relatedGear: [
+      { name: 'Outdoor Rock Painting Kit (Paint Pens + Sealant)', productId: 'rock-painting-kit' },
+    ],
   },
   {
     slug: 'campfire-hot-seat',
@@ -647,6 +665,9 @@ export const ACTIVITIES: Activity[] = [
       'If a pair falls, stop the heat and let them recover before continuing.',
     ],
     recommendedFor: ['first-weekend-camp', 'easy-family-basecamp'],
+    relatedGear: [
+      { name: '550 Paracord, 50 ft', productId: 'paracord-550-50ft' },
+    ],
   },
   {
     slug: 'tug-of-war',
@@ -829,6 +850,9 @@ export const ACTIVITIES: Activity[] = [
       'Discard any glow sticks that crack open.',
     ],
     recommendedFor: ['backyard-test', 'first-night-camp', 'first-weekend-camp'],
+    relatedGear: [
+      { name: 'Glow Stick Necklaces, Bulk Pack', productId: 'glow-stick-necklaces-bulk' },
+    ],
   },
   // ── Campfire ─────────────────────────────────────────────────────────────────
   {
@@ -932,6 +956,9 @@ export const ACTIVITIES: Activity[] = [
     ],
     safetyNotes: [],
     recommendedFor: ['backyard-test', 'first-night-camp', 'first-weekend-camp', 'easy-family-basecamp'],
+    relatedGear: [
+      { name: 'Compact Travel Ukulele', productId: 'camping-ukulele' },
+    ],
   },
   // ── Exploration ──────────────────────────────────────────────────────────────
   {
@@ -968,6 +995,10 @@ export const ACTIVITIES: Activity[] = [
       'Fresh bear, mountain lion, or wolf tracks mean the animal is nearby — leave immediately and tell a camp host.',
     ],
     recommendedFor: ['first-weekend-camp', 'easy-family-basecamp'],
+    relatedGear: [
+      { name: 'Peterson Field Guide to Animal Tracks', productId: 'field-guide-animal-tracks' },
+      { name: 'Kids Magnifying Glass, 2-Pack', productId: 'magnifying-glass-kids' },
+    ],
   },
   {
     slug: 'blindfold-trust-walk',
@@ -1074,6 +1105,9 @@ export const ACTIVITIES: Activity[] = [
       'Small craft items (googly eyes, pipe cleaner ends) are choking hazards for children under 3.',
     ],
     recommendedFor: ['backyard-test', 'first-night-camp', 'first-weekend-camp', 'easy-family-basecamp'],
+    relatedGear: [
+      { name: 'Kids Craft Supply Kit (Googly Eyes, Pipe Cleaners, Glue)', productId: 'kids-craft-supply-kit' },
+    ],
   },
   {
     slug: 'stone-cairn-challenge',
@@ -1173,6 +1207,9 @@ export const ACTIVITIES: Activity[] = [
       'Never look directly at the sun — watch only clouds that are not in the sun\'s direct path.',
     ],
     recommendedFor: ['backyard-test', 'first-night-camp', 'first-weekend-camp', 'easy-family-basecamp'],
+    relatedGear: [
+      { name: 'Water-Resistant Outdoor Picnic Blanket', productId: 'outdoor-picnic-blanket' },
+    ],
   },
   {
     slug: 'sunrise-sit',
