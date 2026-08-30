@@ -78,11 +78,11 @@ export default function ShadowPuppetHandGuide() {
           background: #1C1917;
           color: #fff;
           border-radius: 6px;
-          padding: 10px 14px;
-          margin-bottom: 14px;
+          padding: 8px 12px;
+          margin-bottom: 10px;
           font-family: 'Figtree', system-ui, sans-serif;
-          font-size: 11px;
-          line-height: 1.5;
+          font-size: 10.5px;
+          line-height: 1.4;
           display: grid;
           grid-template-columns: 1fr 1fr 1fr;
           gap: 12px;
@@ -98,18 +98,18 @@ export default function ShadowPuppetHandGuide() {
         .puppet-card .grid {
           display: grid;
           grid-template-columns: 1fr 1fr;
-          gap: 9px;
+          gap: 6px;
         }
         .puppet-card .panel {
           border: 1px solid #D6D3D1;
           border-radius: 6px;
-          padding: 10px 12px;
+          padding: 7px 9px;
           background: #FAF8F2;
           break-inside: avoid;
         }
         .puppet-card .animal-name {
           font-family: 'Figtree', system-ui, sans-serif;
-          font-size: 13px;
+          font-size: 12.5px;
           font-weight: 700;
           margin: 0 0 2px 0;
           display: flex;
@@ -118,18 +118,18 @@ export default function ShadowPuppetHandGuide() {
         }
         .puppet-card .hands-note {
           font-family: 'Figtree', system-ui, sans-serif;
-          font-size: 9.5px;
+          font-size: 9px;
           font-weight: 600;
           letter-spacing: 0.06em;
           text-transform: uppercase;
           color: #78716C;
-          margin: 0 0 5px 0;
+          margin: 0 0 4px 0;
         }
         .puppet-card .row {
-          font-size: 11px;
+          font-size: 10.5px;
           color: #44403C;
-          margin: 0 0 4px 0;
-          line-height: 1.4;
+          margin: 0 0 3px 0;
+          line-height: 1.32;
         }
         .puppet-card .row strong {
           font-family: 'Figtree', system-ui, sans-serif;
