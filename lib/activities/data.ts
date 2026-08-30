@@ -55,6 +55,9 @@ export const ACTIVITIES: Activity[] = [
     ],
     safetyNotes: ['Keep stories age-appropriate when younger kids are present.'],
     recommendedFor: ['backyard-test', 'first-night-camp', 'first-weekend-camp', 'easy-family-basecamp'],
+    relatedGear: [
+      { name: 'LuminAID PackLite Max Lantern', productId: 'luminaid-packlite-max' },
+    ],
   },
   {
     slug: 'flashlight-tag',
@@ -87,6 +90,9 @@ export const ACTIVITIES: Activity[] = [
       'Each player keeps a flashlight on them at all times — even when hiding — for emergencies.',
     ],
     recommendedFor: ['first-night-camp', 'first-weekend-camp'],
+    relatedGear: [
+      { name: 'Streamlight ProTac 2AAA Headlamp', productId: 'streamlight-protac-2' },
+    ],
   },
   {
     slug: 'glow-stick-ring-toss',
@@ -354,6 +360,9 @@ export const ACTIVITIES: Activity[] = [
       'Disassemble the shelter before leaving the campsite. Leave no trace.',
     ],
     recommendedFor: ['first-night-camp', 'first-weekend-camp'],
+    relatedGear: [
+      { name: 'Geertop 17x10 Rain Tarp', productId: 'geertop-17x10-tarp' },
+    ],
   },
   {
     slug: 'stargazing-constellation-hunt',
@@ -389,6 +398,10 @@ export const ACTIVITIES: Activity[] = [
       'Stay close to camp; do not wander to find darker sky after lights-out.',
     ],
     recommendedFor: ['backyard-test', 'first-night-camp', 'first-weekend-camp', 'easy-family-basecamp'],
+    relatedGear: [
+      { name: 'Black Diamond Spot 400 Headlamp (red night mode)', productId: 'black-diamond-spot-400' },
+      { name: 'Planisphere Star Wheel (40°N)', productId: 'planisphere' },
+    ],
   },
   {
     slug: 'trail-journal-sketching',
@@ -458,6 +471,9 @@ export const ACTIVITIES: Activity[] = [
       'Use an LED lantern only. No open-flame lanterns inside or against tents.',
     ],
     recommendedFor: ['backyard-test', 'first-night-camp', 'first-weekend-camp', 'easy-family-basecamp'],
+    relatedGear: [
+      { name: 'LuminAID PackLite Max Lantern', productId: 'luminaid-packlite-max' },
+    ],
   },
   {
     slug: 'leaf-rubbings',
@@ -666,6 +682,9 @@ export const ACTIVITIES: Activity[] = [
       'Loser-side players will be moving backward quickly — make sure there is clear space behind them.',
     ],
     recommendedFor: ['first-weekend-camp', 'easy-family-basecamp'],
+    relatedGear: [
+      { name: '550 Paracord, 50 ft', productId: 'paracord-550-50ft' },
+    ],
   },
   {
     slug: 'pinecone-bowling',
@@ -772,6 +791,9 @@ export const ACTIVITIES: Activity[] = [
       'Each player keeps a flashlight within reach.',
     ],
     recommendedFor: ['first-night-camp', 'first-weekend-camp', 'easy-family-basecamp'],
+    relatedGear: [
+      { name: 'Black Diamond Spot 400 Headlamp (red night mode)', productId: 'black-diamond-spot-400' },
+    ],
   },
   {
     slug: 'glow-necklace-limbo',
@@ -846,6 +868,10 @@ export const ACTIVITIES: Activity[] = [
       'Keep kids away from coals during the cooking phase.',
     ],
     recommendedFor: ['first-weekend-camp', 'easy-family-basecamp'],
+    relatedGear: [
+      { name: 'Heavy-Duty Aluminum Foil', productId: 'heavy-duty-aluminum-foil' },
+      { name: 'Long-Handled Grill Tongs', productId: 'camp-grill-tongs' },
+    ],
   },
   {
     slug: 'campfire-trivia-night',
@@ -1181,6 +1207,9 @@ export const ACTIVITIES: Activity[] = [
       'Bring a headlamp for the walk out in the dark.',
     ],
     recommendedFor: ['first-weekend-camp', 'easy-family-basecamp'],
+    relatedGear: [
+      { name: 'Coleman Portable Chair with Cooler', productId: 'coleman-portable-chair-cooler' },
+    ],
   },
   // ── Icebreaker / Team ────────────────────────────────────────────────────────
   {

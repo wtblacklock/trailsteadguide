@@ -26,15 +26,8 @@ export type SkillCategoryId =
 
 export type SafetyTone = 'standard' | 'critical'
 
-/**
- * Optional affiliate-product reference. When `productId` matches an entry
- * in AFFILIATE_PRODUCTS, the related-gear block renders a live product
- * card; otherwise just the plain `name` is rendered.
- */
-export type RelatedGearItem = {
-  name: string
-  productId?: string
-}
+import type { RelatedGearItem } from '@/lib/affiliate/related-gear'
+export type { RelatedGearItem } from '@/lib/affiliate/related-gear'
 
 /**
  * Embedded how-to video. URL must be a youtube-nocookie.com /embed/ URL

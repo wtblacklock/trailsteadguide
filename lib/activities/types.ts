@@ -1,4 +1,5 @@
 import type { PlanSlug } from '@/types'
+import type { RelatedGearItem } from '@/lib/affiliate/related-gear'
 
 export type ActivityCategory =
   | 'icebreaker'
@@ -39,6 +40,13 @@ export type Activity = {
   variations: string[]
   safetyNotes: string[]
   recommendedFor?: PlanSlug[]
+  /**
+   * Optional gear callout — only set where a specific product genuinely
+   * helps (e.g. a red-light headlamp for a night activity). Most
+   * activities use household items already covered in `materials` and
+   * should NOT have this set.
+   */
+  relatedGear?: RelatedGearItem[]
 }
 
 export type ActivityFilters = {
