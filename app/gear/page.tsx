@@ -1,9 +1,10 @@
 import Link from 'next/link'
 import { PLAN_TEMPLATES } from '@/lib/plan-templates'
-import { GEAR_SETS, resolveGearSet } from '@/lib/gear-sets'
+import { GEAR_SETS, resolveGearSet, type GearTier } from '@/lib/gear-sets'
 import { getPlanContent } from '@/lib/plan-content'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
+import GearTierToggle from '@/components/gear/GearTierToggle'
 import { pageMetadata, collectionPageGraph, SITE_URL } from '@/lib/seo'
 import type { PlanSlug } from '@/types'
 
@@ -29,12 +30,23 @@ export const metadata = pageMetadata({
   path: '/gear',
 })
 
-export default function GearHubPage() {
+function parseTier(value: string | string[] | undefined): GearTier {
+  return value === 'budget' || value === 'premium' ? value : 'standard'
+}
+
+export default async function GearHubPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ tier?: string }>
+}) {
+  const sp = await searchParams
+  const tier = parseTier(sp.tier)
+
   const bundles = BUNDLE_ORDER.map((planSlug) => {
     const plan = PLAN_TEMPLATES[planSlug]
     const content = getPlanContent(planSlug)
     const set = GEAR_SETS[content.gearSetId]
-    const items = resolveGearSet(content.gearSetId)
+    const items = resolveGearSet(content.gearSetId, tier)
     const total = items.reduce((sum, item) => sum + parsePriceRange(item.product.priceRange ?? ''), 0)
     return { planSlug, plan, set, items, total }
   }).filter((b) => b.plan && b.set)
@@ -81,6 +93,9 @@ export default function GearHubPage() {
             Not sure which plan? Take the quiz
           </Link>
         </div>
+        <div className="mt-10">
+          <GearTierToggle basePath="/gear" tier={tier} />
+        </div>
       </header>
 
       <section className="max-w-page mx-auto px-8 pb-24">
@@ -88,7 +103,7 @@ export default function GearHubPage() {
           {bundles.map(({ planSlug, plan, set, items, total }) => (
             <li key={planSlug}>
               <Link
-                href={`/gear/sets/${planSlug}`}
+                href={tier === 'standard' ? `/gear/sets/${planSlug}` : `/gear/sets/${planSlug}?tier=${tier}`}
                 className="group block h-full p-8 md:p-10 rounded-2xl ring-1 ring-stone-200 bg-white hover:ring-stone-900 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-200"
               >
                 <p className="text-xs font-semibold tracking-[0.18em] uppercase text-stone-500 mb-4">
@@ -103,15 +118,17 @@ export default function GearHubPage() {
                   {items.map(({ product }) => (
                     <li key={product.id} className="flex items-center justify-between gap-4 py-2">
                       <span className="flex items-center gap-3 min-w-0">
-                        <span className="shrink-0 w-9 h-9 rounded-md bg-stone-100 overflow-hidden ring-1 ring-stone-200">
-                          {/* eslint-disable-next-line @next/next/no-img-element */}
-                          <img
-                            src={product.imageUrl}
-                            alt=""
-                            loading="lazy"
-                            className="w-full h-full object-cover"
-                          />
-                        </span>
+                        {product.imageUrl && (
+                          <span className="shrink-0 w-9 h-9 rounded-md bg-stone-100 overflow-hidden ring-1 ring-stone-200">
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            <img
+                              src={product.imageUrl}
+                              alt=""
+                              loading="lazy"
+                              className="w-full h-full object-cover"
+                            />
+                          </span>
+                        )}
                         <span className="text-sm text-stone-700 leading-snug truncate">{product.name}</span>
                       </span>
                       <span className="text-sm text-stone-500 tabular-nums shrink-0">

@@ -465,6 +465,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     name: 'Opinel No.7 Carbon Steel Folding Knife',
     description:
       'The standard first "real" knife recommendation — carbon-steel blade, beechwood handle, twist-lock collar. Cheap enough to not worry about, sharp enough to actually learn on.',
+    amazonAsin: 'B000UV4NUW',
     imageUrl: '',
     category: 'essential',
     templateSlugs: [],
@@ -475,6 +476,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     name: '550 Paracord, 50 ft',
     description:
       '7-strand nylon paracord, rated to 550 lb. The standard practice line for knot-tying and the standard tie-down for tarps and guylines.',
+    amazonAsin: 'B00GPEJTR0',
     imageUrl: '',
     category: 'essential',
     templateSlugs: [],
@@ -485,6 +487,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     name: 'Reflective Guy Line, 50 ft',
     description:
       'Thin, high-visibility cord that catches headlamp light — the point of a tautline hitch and rainfly guyline is to not trip over it in the dark.',
+    amazonAsin: 'B078L3W42R',
     imageUrl: '',
     category: 'essential',
     templateSlugs: [],
@@ -495,6 +498,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     name: 'Suunto A-10 Baseplate Compass',
     description:
       'The most-recommended beginner baseplate compass — clear housing, simple bezel, no bells and whistles to fumble with while learning to orient a map.',
+    amazonAsin: 'B00TRB49PK',
     imageUrl: '',
     category: 'essential',
     templateSlugs: [],
@@ -505,6 +509,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     name: 'ENO DoubleNest Hammock',
     description:
       'The best-known car-camping and backpacking hammock — packs to the size of a grapefruit, holds two, and is most people’s first hammock.',
+    amazonAsin: 'B01GTP417C',
     imageUrl: '',
     category: 'comfort',
     templateSlugs: [],
@@ -515,6 +520,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     name: 'GSI Outdoors Pinnacle Camper Cookset',
     description:
       'Nesting pot, pan, and two insulated mugs in one compact set — built for one-pot car-camping meals for two.',
+    amazonAsin: 'B006ERS6OU',
     imageUrl: '',
     category: 'comfort',
     templateSlugs: [],
@@ -525,6 +531,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     name: 'Lodge 10.25" Cast Iron Skillet',
     description:
       'Pre-seasoned, made in the USA, and the default answer whenever cast iron comes up — outlasts every nonstick pan and gets better with use.',
+    amazonAsin: 'B00006JSUA',
     imageUrl: '',
     category: 'comfort',
     templateSlugs: [],
@@ -535,6 +542,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     name: 'Heavy-Duty Aluminum Foil',
     description:
       'Thicker than standard household foil — holds up to double-wrapping a foil-packet meal on a campfire grate without tearing.',
+    amazonAsin: 'B00OBGVUQM',
     imageUrl: '',
     category: 'essential',
     templateSlugs: [],
@@ -545,6 +553,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     name: 'Long-Handled Grill Tongs',
     description:
       'Stainless, 16"+ reach — keeps hands off a campfire grate when turning foil packets or flipping over coals.',
+    amazonAsin: 'B06XRC8QF6',
     imageUrl: '',
     category: 'essential',
     templateSlugs: [],
@@ -555,6 +564,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     name: 'UCO Stormproof Match Kit',
     description:
       'Burns 15 seconds even in wind and rain, waterproof case included. The backup fire-starting method that actually works when it’s wet.',
+    amazonAsin: 'B008CL24SA',
     imageUrl: '',
     category: 'essential',
     templateSlugs: [],
@@ -565,6 +575,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     name: 'Esbit Fire Starter Cubes',
     description:
       'Solid fuel tablets that light with a single match and burn hot for several minutes — reliable kindling in wet or wind-scoured conditions.',
+    amazonAsin: 'B0000WR6W8',
     imageUrl: '',
     category: 'essential',
     templateSlugs: [],
@@ -575,6 +586,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     name: 'Black Diamond Trail Ergo Cork Trekking Poles',
     description:
       'Cork grips, adjustable length, and the most commonly recommended beginner trekking pole — takes real load off knees on descents.',
+    amazonAsin: 'B07YLT6DSQ',
     imageUrl: '',
     category: 'comfort',
     templateSlugs: [],
@@ -585,6 +597,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     name: 'Pull-Through Knife Sharpener',
     description:
       'Two-stage carbide/ceramic pull-through sharpener — no angle-guessing, gets a camp knife working-sharp in a few passes.',
+    amazonAsin: 'B001CR10RW',
     imageUrl: '',
     category: 'essential',
     templateSlugs: [],
@@ -595,6 +608,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     name: 'Food-Safe Mineral Oil',
     description:
       'Odorless, non-toxic oil for wiping down a carbon-steel blade after cleaning — the standard rust-prevention step for a camp knife.',
+    amazonAsin: 'B09MXDBNNL',
     imageUrl: '',
     category: 'essential',
     templateSlugs: [],
@@ -605,6 +619,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     name: 'Planisphere Star Wheel (40°N)',
     description:
       'A rotating star chart sized for your latitude — dial in the date and time and it shows exactly what’s overhead. No batteries, works in the cold.',
+    amazonAsin: 'B00Y157YV8',
     imageUrl: '',
     category: 'essential',
     templateSlugs: [],
@@ -615,6 +630,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     name: 'Celestron Outland X 8x42 Binoculars',
     description:
       'The usual first recommendation before buying a telescope — enough magnification to resolve Jupiter’s moons and Saturn’s shape on a clear night.',
+    amazonAsin: 'B004KM82IQ',
     imageUrl: '',
     category: 'comfort',
     templateSlugs: [],
@@ -625,6 +641,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     name: 'Leukotape P Blister Prevention Tape',
     description:
       'Rigid, ultra-sticky athletic tape — applied to hot spots before they become blisters, and the standard answer on hiking forums for "what actually works."',
+    amazonAsin: 'B000E59HXC',
     imageUrl: '',
     category: 'essential',
     templateSlugs: [],
@@ -635,6 +652,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     name: 'Sawyer Squeeze Water Filter',
     description:
       'The most-recommended backpacking and camping water filter — squeeze bag + hollow-fiber filter removes bacteria and protozoa from any freshwater source.',
+    amazonAsin: 'B01MY8CBXB',
     imageUrl: '',
     category: 'essential',
     templateSlugs: [],
@@ -645,6 +663,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     name: 'Zebco 33 Spincast Combo',
     description:
       'The classic beginner rod-and-reel combo — closed-face reel means no backlash to untangle while learning to cast.',
+    amazonAsin: 'B08MM4TX1X',
     imageUrl: '',
     category: 'essential',
     templateSlugs: [],
@@ -655,6 +674,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     name: 'Beginner Tackle Box Lure Assortment',
     description:
       'A pre-picked spread of the handful of lure types that catch most beginner-accessible freshwater fish, in one box.',
+    amazonAsin: 'B0B5KFZ8L1',
     imageUrl: '',
     category: 'essential',
     templateSlugs: [],
@@ -665,6 +685,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     name: 'Lodge 10-inch Camp Dutch Oven (with lid lip)',
     description:
       'Pre-seasoned cast iron with three legs and a flanged lid for stacking coals on top — the standard tool for camp baking and low-and-slow one-pot meals.',
+    amazonAsin: 'B004W4TXZI',
     imageUrl: '',
     category: 'comfort',
     templateSlugs: [],
@@ -675,6 +696,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     name: 'Monofilament Fishing Line, 8 lb Test',
     description:
       'Pre-spooled, beginner-friendly monofilament — forgiving for learning knots and casting, and the standard line weight for panfish and bass off a dock or shore.',
+    amazonAsin: 'B0000AV1LI',
     imageUrl: '',
     category: 'essential',
     templateSlugs: [],
@@ -685,16 +707,44 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     name: 'Fishing Forceps / Hemostat',
     description:
       'Locking forceps for backing a hook out cleanly — the single tool that makes catch-and-release actually low-stress for the fish.',
+    amazonAsin: 'B088PBNSWR',
     imageUrl: '',
     category: 'essential',
     templateSlugs: [],
     priceRange: '~$10',
   },
   {
+    id: 'coleman-xtreme-50-cooler',
+    name: 'Coleman 50-Quart Xtreme Wheeled Cooler',
+    description:
+      'The budget-tier cooler pick — keeps ice up to 5 days, wheels for the walk from the car, no rotomolded price tag. The right call when a cooler just needs to work.',
+    amazonAsin: 'B00363PRIS',
+    imageUrl: '',
+    category: 'essential',
+    templateSlugs: [],
+    priceRange: '~$45',
+    tags: ['cooler', 'family', 'budget', 'heat-friendly'],
+    slot: 'COOLER',
+  },
+  {
+    id: 'rtic-45-cooler',
+    name: 'RTIC 45 QT Ultra-Tough Hard Cooler',
+    description:
+      'The premium-tier cooler pick — rotomolded construction, days-long ice retention, bear-resistant certification. Reddit’s standing recommendation as the "Yeti quality without the Yeti price" rotomolded cooler.',
+    amazonAsin: 'B01M1OJO3B',
+    imageUrl: '',
+    category: 'comfort',
+    templateSlugs: [],
+    priceRange: '~$200',
+    tags: ['cooler', 'family', 'premium', 'heat-friendly'],
+    slot: 'COOLER',
+  },
+  {
     id: 'glow-stick-necklaces-bulk',
     name: 'Glow Stick Necklaces, Bulk Pack',
     description:
       'A camp classic — enough for a whole group of kids, bright enough for ring toss or limbo well after dark, and cheap enough that a broken one doesn\'t end the game.',
+    amazonAsin: 'B00JARAR1Q',
     imageUrl: '',
     category: 'essential',
     templateSlugs: [],
@@ -705,6 +755,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     name: 'Kids Magnifying Glass, 2-Pack',
     description:
       'Sturdy handle, real glass lens — the tool that turns "found a bug" into an actual close look at it. Standard in any scavenger-hunt or tracking kit.',
+    amazonAsin: 'B07CWMYWGW',
     imageUrl: '',
     category: 'essential',
     templateSlugs: [],
@@ -715,6 +766,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     name: 'Peterson Field Guide to Animal Tracks',
     description:
       'The standard pocket reference for identifying prints, scat, and sign in the field — more reliable than an app when you\'re out of cell signal.',
+    amazonAsin: '061851743X',
     imageUrl: '',
     category: 'essential',
     templateSlugs: [],
@@ -745,6 +797,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     name: 'Kids Craft Supply Kit (Googly Eyes, Pipe Cleaners, Glue)',
     description:
       'The grab-bag of googly eyes, pipe cleaners, and craft glue that turns a pile of pinecones into an afternoon of kid-made creatures.',
+    amazonAsin: 'B07ZLT4QCX',
     imageUrl: '',
     category: 'essential',
     templateSlugs: [],
@@ -755,6 +808,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     name: 'Water-Resistant Outdoor Picnic Blanket',
     description:
       'Sand- and water-resistant underside, packs down small — the difference between a comfortable half-hour of cloud watching and a damp one.',
+    amazonAsin: 'B073BG93KR',
     imageUrl: '',
     category: 'comfort',
     templateSlugs: [],
@@ -765,6 +819,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     name: 'Compact Travel Ukulele',
     description:
       'Small enough to pack without a case, forgiving enough for someone who\'s never played — the easiest instrument to actually bring camping.',
+    amazonAsin: 'B01CRCQNXG',
     imageUrl: '',
     category: 'comfort',
     templateSlugs: [],
@@ -775,6 +830,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     name: 'Kids Award Medal Ribbons, Multi-Pack',
     description:
       'A set of gold/silver/bronze ribbons for the top three finishers — the small ceremony that makes a backyard event feel like a real competition.',
+    amazonAsin: 'B07K3Z9YRB',
     imageUrl: '',
     category: 'essential',
     templateSlugs: [],
@@ -839,7 +895,6 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     templateSlugs: [],
     priceRange: '~$75',
     tags: ['sleeping-pad', 'mid-range', 'comfort', 'cold-ready'],
-    deprecated: true,
   },
   {
     id: 'air-mattress-queen',
@@ -865,7 +920,6 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     templateSlugs: [],
     priceRange: '~$210',
     tags: ['stove', 'family', 'premium', 'comfort'],
-    deprecated: true,
   },
   {
     id: 'headlamp-family',
@@ -982,7 +1036,6 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     templateSlugs: [],
     priceRange: '~$30',
     tags: ['lantern', 'budget', 'beginner', 'rain-ready'],
-    deprecated: true,
   },
   {
     id: 'fwc-sleeping-bag-mallome',
@@ -995,7 +1048,6 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     templateSlugs: [],
     priceRange: '~$26',
     tags: ['sleeping-bag', 'budget', 'beginner'],
-    deprecated: true,
   },
   {
     id: 'fwc-chair-gci-rocker',

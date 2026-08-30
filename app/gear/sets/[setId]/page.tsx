@@ -4,12 +4,17 @@ import Image from 'next/image'
 import type { Metadata } from 'next'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
+import GearTierToggle from '@/components/gear/GearTierToggle'
 import { pageMetadata, productGraph, itemListGraph, SITE_URL } from '@/lib/seo'
-import { GEAR_SETS, resolveGearSet } from '@/lib/gear-sets'
+import { GEAR_SETS, resolveGearSet, type GearTier } from '@/lib/gear-sets'
 import { getProductUrl } from '@/lib/amazon'
 import { PLAN_TEMPLATES } from '@/lib/plan-templates'
 import { getPlanContent } from '@/lib/plan-content'
 import type { PlanSlug } from '@/types'
+
+function parseTier(value: string | string[] | undefined): GearTier {
+  return value === 'budget' || value === 'premium' ? value : 'standard'
+}
 
 const SET_PLAN_SLUGS: PlanSlug[] = [
   'backyard-test',
@@ -24,7 +29,7 @@ export function generateStaticParams(): Params[] {
   return SET_PLAN_SLUGS.map((setId) => ({ setId }))
 }
 
-function getSetForPlan(setId: string) {
+function getSetForPlan(setId: string, tier: GearTier) {
   if (!SET_PLAN_SLUGS.includes(setId as PlanSlug)) return null
   const planSlug = setId as PlanSlug
   const plan = PLAN_TEMPLATES[planSlug]
@@ -32,7 +37,7 @@ function getSetForPlan(setId: string) {
   if (!plan || !content) return null
   const set = GEAR_SETS[content.gearSetId]
   if (!set) return null
-  const items = resolveGearSet(content.gearSetId)
+  const items = resolveGearSet(content.gearSetId, tier)
   return { planSlug, plan, set, items }
 }
 
@@ -42,7 +47,7 @@ export async function generateMetadata({
   params: Promise<Params>
 }): Promise<Metadata> {
   const { setId } = await params
-  const data = getSetForPlan(setId)
+  const data = getSetForPlan(setId, 'standard')
   if (!data) return {}
   return pageMetadata({
     title: `${data.set.title} — Gear Set`,
@@ -53,11 +58,15 @@ export async function generateMetadata({
 
 export default async function GearSetPage({
   params,
+  searchParams,
 }: {
   params: Promise<Params>
+  searchParams: Promise<{ tier?: string }>
 }) {
   const { setId } = await params
-  const data = getSetForPlan(setId)
+  const sp = await searchParams
+  const tier = parseTier(sp.tier)
+  const data = getSetForPlan(setId, tier)
   if (!data) notFound()
 
   const { planSlug, plan, set, items } = data
@@ -122,6 +131,9 @@ export default async function GearSetPage({
           </Link>{' '}
           plan.
         </p>
+        <div className="mt-8">
+          <GearTierToggle basePath={path} tier={tier} />
+        </div>
       </header>
 
       <section className="max-w-page mx-auto px-8 pb-20">
@@ -135,15 +147,17 @@ export default async function GearSetPage({
                 className="group block h-full rounded-2xl ring-1 ring-stone-200 bg-white overflow-hidden transition-all duration-200 hover:ring-stone-900 hover:-translate-y-0.5 hover:shadow-lg"
               >
                 <div className="aspect-[4/3] w-full bg-stone-50 relative overflow-hidden">
-                  <Image
-                    src={product.imageUrl}
-                    alt={product.name}
-                    fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 400px"
-                    loading="lazy"
-                    unoptimized
-                    className="object-cover transition-transform duration-300 group-hover:scale-[1.02]"
-                  />
+                  {product.imageUrl && (
+                    <Image
+                      src={product.imageUrl}
+                      alt={product.name}
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 400px"
+                      loading="lazy"
+                      unoptimized
+                      className="object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+                    />
+                  )}
                 </div>
                 <div className="p-6 flex flex-col">
                   <div className="flex items-baseline justify-between gap-4 mb-2">
