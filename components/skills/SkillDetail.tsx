@@ -6,7 +6,7 @@ import { AUTHOR_NAME, AUTHOR_IMAGE } from '@/lib/seo'
 import { getPrintableBySlug } from '@/lib/printables'
 import PrintableEmailGate from '@/components/printables/PrintableEmailGate'
 import DifficultyBadge from './DifficultyBadge'
-import RelatedGearBlock from './RelatedGearBlock'
+import RelatedGearBlock from '@/components/gear/RelatedGearBlock'
 import SafetyBlock from './SafetyBlock'
 import SkillMediaBlock from './SkillMediaBlock'
 

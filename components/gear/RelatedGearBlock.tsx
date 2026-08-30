@@ -1,24 +1,26 @@
 import { AFFILIATE_PRODUCTS } from '@/lib/affiliate-products'
 import { getProductUrl } from '@/lib/amazon'
-import type { RelatedGearItem } from '@/lib/skills/types'
+import type { RelatedGearItem } from '@/lib/affiliate/related-gear'
 
 interface Props {
   items: RelatedGearItem[]
+  /** Defaults to the skill-page copy; pass an override for other content types (e.g. activities). */
+  subtitle?: string
 }
 
 const PRODUCTS_BY_ID = Object.fromEntries(AFFILIATE_PRODUCTS.map((p) => [p.id, p]))
 
 /**
- * Recommended-gear callout for the bottom of a skill detail page.
- * Items with a `productId` matching AFFILIATE_PRODUCTS render as a
+ * Recommended-gear callout for the bottom of a skill or activity detail
+ * page. Items with a `productId` matching AFFILIATE_PRODUCTS render as a
  * linked card; items without one render as a plain text bullet.
  */
-export default function RelatedGearBlock({ items }: Props) {
+export default function RelatedGearBlock({ items, subtitle = 'A short list of what makes this skill easier.' }: Props) {
   if (items.length === 0) return null
   return (
     <section className="bg-white border border-stone-200 rounded-xl p-6 md:p-8">
       <h2 className="font-serif text-xl text-stone-900 mb-2">Recommended gear</h2>
-      <p className="text-stone-600 text-sm mb-5">A short list of what makes this skill easier.</p>
+      <p className="text-stone-600 text-sm mb-5">{subtitle}</p>
       <ul className="space-y-3">
         {items.map((item, i) => {
           const product = item.productId ? PRODUCTS_BY_ID[item.productId] : undefined

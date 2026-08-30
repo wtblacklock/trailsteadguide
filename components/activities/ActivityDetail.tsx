@@ -3,6 +3,7 @@ import type { Activity } from '@/lib/activities/types'
 import { getPlanTemplate } from '@/lib/plan-templates'
 import { getPrintableBySlug } from '@/lib/printables'
 import PrintableEmailGate from '@/components/printables/PrintableEmailGate'
+import RelatedGearBlock from '@/components/gear/RelatedGearBlock'
 import ActivityBadge from './ActivityBadge'
 
 // Manual activity → printable pairings. Adding a slug here surfaces the
@@ -125,6 +126,13 @@ export default function ActivityDetail({ activity }: Props) {
               ))}
             </ul>
           </Section>
+        )}
+
+        {activity.relatedGear && activity.relatedGear.length > 0 && (
+          <RelatedGearBlock
+            items={activity.relatedGear}
+            subtitle="A short list of what makes this activity better."
+          />
         )}
 
         {ACTIVITY_PRINTABLE_PAIRINGS[activity.slug] && (
