@@ -4,6 +4,16 @@
  * page when printed. On screen it renders a visible divider so the preview
  * matches what actually prints; that divider collapses to nothing in print
  * (the browser's own page break does the work there).
+ *
+ * Front/back printable components wrap each side's content in
+ * `<div className="print-side print-side-1">` / `print-side-2`, with this
+ * component between them. These class names are deliberately unscoped
+ * (unlike every other class in these files, which is prefixed with the
+ * component's own root class) — they're shared DOM/measurement hooks used
+ * identically across every front/back card, not per-component styling
+ * classes. No CSS targets them; don't add any without scoping it to a
+ * specific card's own print-side, since these render on the same page as
+ * other printables' markup on the /printables hub.
  */
 export default function PrintPageBreak() {
   return (
