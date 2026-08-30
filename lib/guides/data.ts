@@ -319,7 +319,15 @@ export const GUIDES: Guide[] = [
     title: 'Campfire Recipes for Kids',
     description: 'Beyond s\'mores: build-your-own foil packets, pie iron sandwiches, and roasting stick foods kids can help make.',
     eyebrow: 'Camp food',
-    relatedGuides: ['easy-family-camping-meals', 'camping-meal-plan-family', 'no-cook-camping-meals-kids'],
+    relatedGuides: ['how-to-start-a-campfire', 'easy-family-camping-meals', 'camping-meal-plan-family'],
+  },
+  {
+    slug: 'how-to-start-a-campfire',
+    category: 'basics',
+    title: 'How to Start a Campfire',
+    description: 'Checking before you build, gathering materials, picking a structure, and lighting it — plus wet-weather backups.',
+    eyebrow: 'How-to',
+    relatedGuides: ['campfire-recipes-for-kids', 'how-to-set-up-a-tent', 'family-camping-gear-list'],
   },
   // --- Location: where to camp with family ---
   {

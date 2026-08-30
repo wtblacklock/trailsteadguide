@@ -565,6 +565,10 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'TENT', productId: 'core-6p-instant-cabin' },
     { slot: 'TENT', productId: 'alps-lynx-4p' },
   ],
+  'how-to-start-a-campfire': [
+    { slot: 'SAFETY', productId: 'uco-stormproof-matches' },
+    { slot: 'SAFETY', productId: 'esbit-fire-cubes' },
+  ],
   'no-cook-camping-meals-kids': [
     { slot: 'COOLER', productId: 'coleman-classic-rolling-cooler' },
   ],
