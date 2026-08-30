@@ -128,11 +128,11 @@ export type PlanTemplate = {
   activities: ActivityItem[]
   safetyNotes: string[]
   meals: Meal[]
-  /** Activity slugs curated for this plan (3–5 total). */
+  /** Activity highlight reel for this plan (3–5 total); every one of these must also appear in `activitySchedule`, which may include additional day-by-day activities beyond this list. */
   recommendedActivities: string[]
   /** Skills curated for this plan, with per-plan rationale (3–4 max). */
   recommendedSkills: PlanSkillRef[]
-  /** Day-by-day activity schedule. Each slug must appear in `recommendedActivities`. */
+  /** Day-by-day activity schedule. Every slug must resolve to a real activity (see `getActivityBySlug`). */
   activitySchedule: PlanActivitySchedule
 }
 
