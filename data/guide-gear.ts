@@ -533,6 +533,9 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'CHAIR', productId: 'coleman-portable-chair-cooler' },
     { slot: 'CANOPY', productId: 'core-10x10-canopy' },
   ],
+  'how-to-pack-a-cooler': [
+    { slot: 'COOLER', productId: 'coleman-classic-rolling-cooler' },
+  ],
   'how-to-plan-a-camping-trip': [
     { slot: 'TENT', productId: 'coleman-sundome-4p' },
     { slot: 'TENT', productId: 'core-6p-instant-cabin' },

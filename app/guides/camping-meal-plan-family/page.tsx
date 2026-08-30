@@ -246,7 +246,7 @@ export default function Page() {
 
         <h2>Tips for the cooler</h2>
         <p>
-          Pack in reverse meal order: last meal in first, first meal on top. Pre-freeze proteins to extend ice life. Keep drinks in a second small cooler. Drain melt water daily. See the <Link href="/guides/easy-family-camping-meals">easy family camping meals guide</Link> for full cooler management details.
+          Pack in reverse meal order: last meal in first, first meal on top. Pre-freeze proteins to extend ice life. Keep drinks in a second small cooler. Drain melt water daily. See <Link href="/guides/how-to-pack-a-cooler">how to pack a cooler</Link> for the full breakdown.
         </p>
       </GuidePage>
       <GuideGearShelf guideSlug="camping-meal-plan-family" />

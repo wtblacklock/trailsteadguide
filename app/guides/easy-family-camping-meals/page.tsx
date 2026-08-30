@@ -182,6 +182,10 @@ export default function Page() {
           <li><strong>Pack in reverse meal order.</strong> Last meal in first, first meal out on top. You should not have to dig through the cooler to get dinner.</li>
           <li><strong>Drain water daily.</strong> Standing water from melted ice accelerates cooling loss. Drain it or keep food in waterproof bags.</li>
         </ul>
+        <p>
+          For the full breakdown — layering order, pre-freezing, and how long ice actually lasts
+          by cooler type — see <Link href="/guides/how-to-pack-a-cooler">how to pack a cooler</Link>.
+        </p>
 
         <h2>Food safety at camp</h2>
         <ul>
