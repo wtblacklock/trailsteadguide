@@ -17,6 +17,18 @@ export type GuideGearEntry = {
 }
 
 export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
+  'best-camping-sleeping-bag-for-kids': [
+    { slot: 'SLEEP_BAG', productId: 'coleman-brazos-bag' },
+    { slot: 'SLEEP_BAG', productId: 'vumos-bag-liner' },
+    { slot: 'SLEEP_SURFACE', productId: 'big-agnes-divide' },
+  ],
+  'best-family-tent-for-beginners': [
+    { slot: 'TENT', productId: 'coleman-sundome-4p' },
+    { slot: 'TENT', productId: 'core-6p-instant-cabin' },
+    { slot: 'TENT', productId: 'alps-lynx-4p' },
+    { slot: 'SLEEP_BAG', productId: 'coleman-brazos-bag' },
+    { slot: 'SLEEP_SURFACE', productId: 'lost-horizon-air-foam-mattress' },
+  ],
   'camping-for-beginners': [
     { slot: 'TENT', productId: 'coleman-sundome-4p' },
     { slot: 'TENT', productId: 'core-6p-instant-cabin' },
@@ -300,6 +312,13 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'KID_GEAR', productId: 'kidco-gopod' },
     { slot: 'SAFETY', productId: 'thriad-first-aid-430' },
   ],
+  'family-camping-on-a-budget': [
+    { slot: 'TENT', productId: 'coleman-sundome-4p' },
+    { slot: 'SLEEP_BAG', productId: 'coleman-brazos-bag' },
+    { slot: 'SLEEP_BAG', productId: 'vumos-bag-liner' },
+    { slot: 'STOVE', productId: 'coleman-1-burner' },
+    { slot: 'CHAIR', productId: 'coleman-portable-chair-cooler' },
+  ],
   'first-camping-trip-checklist': [
     { slot: 'TENT', productId: 'coleman-sundome-4p' },
     { slot: 'TENT', productId: 'core-6p-instant-cabin' },
@@ -371,6 +390,9 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'CHAIR', productId: 'coleman-portable-chair-cooler' },
     { slot: 'KID_GEAR', productId: 'kidco-gopod' },
     { slot: 'SAFETY', productId: 'thriad-first-aid-430' },
+  ],
+  'no-cook-camping-meals-kids': [
+    { slot: 'COOLER', productId: 'coleman-classic-rolling-cooler' },
   ],
   'rainy-camping-trips': [
     { slot: 'TENT', productId: 'coleman-sundome-4p' },
