@@ -38,7 +38,7 @@ export const SKILLS: Skill[] = [
       'Using ropes of very different thickness — the knot will roll.',
     ],
     safetyNotes: ['Never use a square knot for climbing, rescue, or any load that puts a person at risk.'],
-    relatedGear: [{ name: 'Paracord (50 ft)' }],
+    relatedGear: [{ name: 'Paracord (50 ft)', productId: 'paracord-550-50ft' }],
     videoEmbed: {
       url: 'https://www.youtube-nocookie.com/embed/0Y_iorha2k4',
       title: 'How to Tie a Square Knot (Reef Knot) — Animated Knots by Grog',
@@ -82,7 +82,7 @@ export const SKILLS: Skill[] = [
     safetyNotes: [
       'Bowlines can shake loose if cycled (loaded and unloaded repeatedly). Add a stopper knot in the tail for high-stakes use.',
     ],
-    relatedGear: [{ name: 'Paracord (50 ft)' }],
+    relatedGear: [{ name: 'Paracord (50 ft)', productId: 'paracord-550-50ft' }],
     videoEmbed: {
       url: 'https://www.youtube-nocookie.com/embed/YXRnPES0Qec',
       title: 'How to Tie a Bowline Knot — Animated Knots by Grog',
@@ -118,7 +118,7 @@ export const SKILLS: Skill[] = [
       'Reversing the wrap direction on the outer turn — the knot won’t grip.',
       'Loading the line before seating the knot — it can pop loose.',
     ],
-    relatedGear: [{ name: 'Reflective guy line (50 ft)' }],
+    relatedGear: [{ name: 'Reflective guy line (50 ft)', productId: 'reflective-guyline-50ft' }],
     videoEmbed: {
       url: 'https://www.youtube-nocookie.com/embed/I5NTjUyubvE',
       title: 'How to Tie a Taut-Line Hitch — Eastmans’',
@@ -155,7 +155,7 @@ export const SKILLS: Skill[] = [
       'Relying on it when the load will pull back and forth — it can work loose.',
     ],
     safetyNotes: ['Don’t use a clove hitch alone for any load that swings or reverses direction.'],
-    relatedGear: [{ name: 'Paracord (50 ft)' }],
+    relatedGear: [{ name: 'Paracord (50 ft)', productId: 'paracord-550-50ft' }],
     videoEmbed: {
       url: 'https://www.youtube-nocookie.com/embed/pwdZTHu5rTI',
       title: 'How to Tie a Clove Hitch (Rope-End Method) — Animated Knots by Grog',
@@ -247,7 +247,10 @@ export const SKILLS: Skill[] = [
       'Use long-handled tongs and welding-style gloves. Foil packs hold steam at scalding temperatures.',
       'Open packs away from your face.',
     ],
-    relatedGear: [{ name: 'Heavy-duty aluminum foil' }, { name: 'Long-handled grill tongs' }],
+    relatedGear: [
+      { name: 'Heavy-duty aluminum foil', productId: 'heavy-duty-aluminum-foil' },
+      { name: 'Long-handled grill tongs', productId: 'camp-grill-tongs' },
+    ],
     videoEmbed: {
       url: 'https://www.youtube-nocookie.com/embed/VB_VaT-kZZ4',
       title: 'How to Make Foil Packets for Camping',
@@ -320,7 +323,10 @@ export const SKILLS: Skill[] = [
       'Packing the tinder too tight — fire needs air more than it needs material.',
     ],
     safetyNotes: ['No accelerants. No exceptions.'],
-    relatedGear: [{ name: 'Stormproof matches' }, { name: 'Fire starter cubes (Esbit or UCO)' }],
+    relatedGear: [
+      { name: 'Stormproof matches', productId: 'uco-stormproof-matches' },
+      { name: 'Fire starter cubes (Esbit or UCO)', productId: 'esbit-fire-cubes' },
+    ],
     videoEmbed: {
       url: 'https://www.youtube-nocookie.com/embed/0O3Bj8JFcTc',
       title: 'How to Build a Fire — REI',
@@ -503,7 +509,10 @@ export const SKILLS: Skill[] = [
       'Forgetting to wait for the needle to settle — moving readings are wrong readings.',
     ],
     safetyNotes: ['A compass without a map can keep you on a bearing but won’t tell you where you are. Always carry both.'],
-    relatedGear: [{ name: 'Suunto A-10 baseplate compass' }, { name: 'Topo map for your area' }],
+    relatedGear: [
+      { name: 'Suunto A-10 baseplate compass', productId: 'suunto-a10-compass' },
+      { name: 'Topo map for your area' },
+    ],
     videoEmbed: {
       url: 'https://www.youtube-nocookie.com/embed/0cF0ovA3FtY',
       title: 'How to Use a Compass — REI',
@@ -538,6 +547,9 @@ export const SKILLS: Skill[] = [
     commonMistakes: [
       'Orienting a map by guessing — you can be 90° off and not realize it for an hour.',
       'Forgetting declination on long off-trail traverses. Small angle errors compound to big distance errors.',
+    ],
+    relatedGear: [
+      { name: 'Suunto A-10 Baseplate Compass', productId: 'suunto-a10-compass' },
     ],
   },
 
@@ -577,7 +589,10 @@ export const SKILLS: Skill[] = [
       'Always look behind you before casting — hooks behind your ear are a common ER visit.',
       'Pinch barbs down with pliers for kids. Easier hook removal, easier release.',
     ],
-    relatedGear: [{ name: 'Zebco 33 spinning combo' }, { name: 'Mono fishing line, 8 lb test' }],
+    relatedGear: [
+      { name: 'Zebco 33 spinning combo', productId: 'zebco-33-spincast-combo' },
+      { name: 'Mono fishing line, 8 lb test', productId: 'monofilament-fishing-line-8lb' },
+    ],
   },
   {
     slug: 'catch-and-release',
@@ -605,6 +620,9 @@ export const SKILLS: Skill[] = [
       'Squeezing the fish to hold it still. Hold gently — they calm down.',
     ],
     safetyNotes: ['Pinch hook barbs with pliers before fishing — kinder to fish, easier on fingers.'],
+    relatedGear: [
+      { name: 'Fishing Forceps / Hemostat', productId: 'fishing-forceps-hemostat' },
+    ],
   },
 
   // ── SHELTER SETUP ─────────────────────────────────────────────────────────
@@ -786,6 +804,9 @@ export const SKILLS: Skill[] = [
       'A first-aid kit is for first response. For anything beyond a scrape or splinter, get the patient to definitive care.',
     ],
     safetyTone: 'critical',
+    relatedGear: [
+      { name: 'Thriad First Aid Kit (430 pcs)', productId: 'thriad-first-aid-430' },
+    ],
   },
   {
     slug: 'common-camp-injuries',
@@ -817,6 +838,9 @@ export const SKILLS: Skill[] = [
       'Any altered mental status, severe bleeding, or unstable injury is a 911 call. Don’t hesitate.',
     ],
     safetyTone: 'critical',
+    relatedGear: [
+      { name: 'Thriad First Aid Kit (430 pcs)', productId: 'thriad-first-aid-430' },
+    ],
   },
 
   // ── STARGAZING ────────────────────────────────────────────────────────────
@@ -881,7 +905,7 @@ export const SKILLS: Skill[] = [
     ],
     relatedGear: [
       { name: 'Black Diamond Spot 400 Headlamp (red mode)', productId: 'black-diamond-spot-400' },
-      { name: 'A planisphere sized for your latitude (40°N covers most of the lower 48)' },
+      { name: 'A planisphere sized for your latitude (40°N covers most of the lower 48)', productId: 'planisphere' },
     ],
     videoEmbed: {
       url: 'https://www.youtube-nocookie.com/embed/6KdMC4Myty0',
@@ -923,6 +947,9 @@ export const SKILLS: Skill[] = [
     },
     relatedSkills: ['stargazing/finding-constellations', 'stargazing/reading-a-star-chart', 'stargazing/watching-a-meteor-shower'],
     relatedPrintableSlug: 'northern-hemisphere-constellation-wheel',
+    relatedGear: [
+      { name: 'Planisphere Star Wheel (40°N)', productId: 'planisphere' },
+    ],
   },
   {
     slug: 'spotting-the-planets',
@@ -958,6 +985,9 @@ export const SKILLS: Skill[] = [
     },
     relatedSkills: ['stargazing/finding-constellations', 'stargazing/watching-a-meteor-shower', 'stargazing/finding-dark-sky-sites'],
     relatedPrintableSlug: 'northern-hemisphere-constellation-wheel',
+    relatedGear: [
+      { name: 'Celestron Outland X 8x42 Binoculars', productId: 'celestron-outland-binoculars' },
+    ],
   },
   {
     slug: 'watching-a-meteor-shower',
@@ -1033,6 +1063,9 @@ export const SKILLS: Skill[] = [
     },
     relatedSkills: ['stargazing/watching-a-meteor-shower', 'stargazing/finding-dark-sky-sites', 'stargazing/finding-constellations'],
     relatedPrintableSlug: 'northern-hemisphere-constellation-wheel',
+    relatedGear: [
+      { name: 'Planisphere Star Wheel (40°N)', productId: 'planisphere' },
+    ],
   },
   {
     slug: 'using-red-light-at-camp',
@@ -1134,7 +1167,7 @@ export const SKILLS: Skill[] = [
       'Stop immediately if you’re tired, distracted, or being interrupted. Set the knife down and re-engage.',
     ],
     safetyTone: 'critical',
-    relatedGear: [{ name: 'Beginner folding knife (Opinel No. 7 or No. 8)' }],
+    relatedGear: [{ name: 'Beginner folding knife (Opinel No. 7 or No. 8)', productId: 'opinel-no7-folding-knife' }],
     videoEmbed: {
       url: 'https://www.youtube-nocookie.com/embed/oSDXbfmPdhU',
       title: 'Knife Safety 101: Kids, Scouts, Bushcraft, Camping',
@@ -1173,6 +1206,9 @@ export const SKILLS: Skill[] = [
       url: 'https://www.youtube-nocookie.com/embed/LcOILLaFo7I',
       title: '5 Essential Knife Grips for Bushcraft (and How to Use Them)',
     },
+    relatedGear: [
+      { name: 'Opinel No.7 Carbon Steel Folding Knife', productId: 'opinel-no7-folding-knife' },
+    ],
   },
   {
     slug: 'basic-cuts',
@@ -1207,6 +1243,9 @@ export const SKILLS: Skill[] = [
       url: 'https://www.youtube-nocookie.com/embed/Ve-jVpUIE-E',
       title: 'Whittling Tips — The 8 Basic Cuts to Master',
     },
+    relatedGear: [
+      { name: 'Opinel No.7 Carbon Steel Folding Knife', productId: 'opinel-no7-folding-knife' },
+    ],
   },
   {
     slug: 'knife-care-and-storage',
@@ -1237,7 +1276,10 @@ export const SKILLS: Skill[] = [
       'A dull knife is a dangerous knife — it slips. Sharpen routinely; don’t wait for total dullness.',
       'Test sharpness on paper, not your thumb.',
     ],
-    relatedGear: [{ name: 'Pull-through sharpener (Lansky or Smith’s)' }, { name: 'Mineral oil (food safe)' }],
+    relatedGear: [
+      { name: 'Pull-through sharpener (Lansky or Smith’s)', productId: 'pull-through-knife-sharpener' },
+      { name: 'Mineral oil (food safe)', productId: 'mineral-oil-food-safe' },
+    ],
     videoEmbed: {
       url: 'https://www.youtube-nocookie.com/embed/oF432CMib3c',
       title: '5 Steps to Sharpen Your Whittling Knife',
@@ -1284,7 +1326,7 @@ export const SKILLS: Skill[] = [
       'Add grip notches near the holding end with shallow stop-cuts and small pull cuts.',
       'Bone the tip white by carving deeper for a decorative tan-and-cream contrast.',
     ],
-    relatedGear: [{ name: 'Beginner folding knife (Opinel No. 7 or No. 8)' }],
+    relatedGear: [{ name: 'Beginner folding knife (Opinel No. 7 or No. 8)', productId: 'opinel-no7-folding-knife' }],
     videoEmbed: {
       url: 'https://www.youtube-nocookie.com/embed/fBlHReffXTY',
       title: 'Carving a Sharp Point Tip',
@@ -1331,6 +1373,9 @@ export const SKILLS: Skill[] = [
       url: 'https://www.youtube-nocookie.com/embed/HXqbizBWtLU',
       title: 'Making Campfire Roasting Sticks',
     },
+    relatedGear: [
+      { name: 'Opinel No.7 Carbon Steel Folding Knife', productId: 'opinel-no7-folding-knife' },
+    ],
   },
   {
     slug: 'tent-peg-carving',
@@ -1371,6 +1416,9 @@ export const SKILLS: Skill[] = [
       url: 'https://www.youtube-nocookie.com/embed/7C23P5UwTX4',
       title: 'Bushcraft Basics: How To Make A Tent Stake',
     },
+    relatedGear: [
+      { name: 'Opinel No.7 Carbon Steel Folding Knife', productId: 'opinel-no7-folding-knife' },
+    ],
   },
   {
     slug: 'decorative-notches',
@@ -1411,6 +1459,9 @@ export const SKILLS: Skill[] = [
       url: 'https://www.youtube-nocookie.com/embed/XQVX7BzlldY',
       title: 'Whittling: How to Make a Stop Cut',
     },
+    relatedGear: [
+      { name: 'Opinel No.7 Carbon Steel Folding Knife', productId: 'opinel-no7-folding-knife' },
+    ],
   },
 
   // ── COOKING (expanded) ────────────────────────────────────────────────────
@@ -1509,6 +1560,9 @@ export const SKILLS: Skill[] = [
     },
     relatedSkills: ['cooking/two-burner-stove-basics', 'cooking/camp-coffee', 'cooking/one-pot-camp-meals'],
     relatedPrintableSlug: '3-day-camp-meal-planner',
+    relatedGear: [
+      { name: 'Lodge 10.25" Cast Iron Skillet', productId: 'lodge-cast-iron-skillet' },
+    ],
   },
 
   // ── SAFETY (expanded) ─────────────────────────────────────────────────────
@@ -1602,6 +1656,9 @@ export const SKILLS: Skill[] = [
       url: 'https://www.youtube-nocookie.com/embed/DIZz3iiZ2TY',
       title: 'How to Filter and Purify Water for Camping and Backpacking',
     },
+    relatedGear: [
+      { name: 'Sawyer Squeeze Water Filter', productId: 'sawyer-squeeze-water-filter' },
+    ],
   },
   {
     slug: 'weather-reading',
@@ -1696,6 +1753,9 @@ export const SKILLS: Skill[] = [
       alt: 'Example topographic map with contour lines showing hills, valleys, and a stream',
       attribution: 'Topographic map example — Wikimedia Commons (Public Domain)',
     },
+    relatedGear: [
+      { name: 'Suunto A-10 Baseplate Compass', productId: 'suunto-a10-compass' },
+    ],
   },
   {
     slug: 'sun-navigation',
@@ -1783,7 +1843,7 @@ export const SKILLS: Skill[] = [
       'Never hang from dead trees or branches, no matter how solid they look.',
       'Wide tree straps (1 inch minimum) are required in Leave No Trace guidelines to prevent bark damage.',
     ],
-    relatedGear: [{ name: 'ENO DoubleNest Hammock' }],
+    relatedGear: [{ name: 'ENO DoubleNest Hammock', productId: 'eno-doublenest-hammock' }],
     videoEmbed: {
       url: 'https://www.youtube-nocookie.com/embed/QB3kYLRoBcU',
       title: 'How to Hang a Hammock Between Trees — REI',
@@ -1833,6 +1893,9 @@ export const SKILLS: Skill[] = [
       title: 'How to Prevent and Treat Hiking Blisters',
     },
     relatedSkills: ['hiking/day-hike-essentials'],
+    relatedGear: [
+      { name: 'Leukotape P Blister Prevention Tape', productId: 'leukotape-blister-prevention' },
+    ],
   },
 
   // ── FISHING (expanded) ────────────────────────────────────────────────────
@@ -1880,6 +1943,9 @@ export const SKILLS: Skill[] = [
       alt: 'Step-by-step diagram of an improved clinch knot tied to a fishing hook eye',
       attribution: 'Clinch knot diagram — Wikimedia Commons (CC BY-SA 3.0)',
     },
+    relatedGear: [
+      { name: 'Monofilament fishing line, 8 lb test', productId: 'monofilament-fishing-line-8lb' },
+    ],
   },
 
   // ── KNOTS (new) ───────────────────────────────────────────────────────────
@@ -1912,7 +1978,7 @@ export const SKILLS: Skill[] = [
       'Tying an overhand knot instead — one pass around is an overhand, two passes make the eight. Count the wraps.',
     ],
     safetyNotes: ['Use a figure-eight on a bight rather than a single-strand figure-eight for any load-bearing application.'],
-    relatedGear: [{ name: 'Paracord (50 ft)' }],
+    relatedGear: [{ name: 'Paracord (50 ft)', productId: 'paracord-550-50ft' }],
     illustration: {
       url: 'https://upload.wikimedia.org/wikipedia/commons/3/3a/Figure_eight_knot.svg',
       alt: 'Step-by-step diagram of a figure-eight knot showing the two crossing passes and the final seated form',
@@ -1950,7 +2016,7 @@ export const SKILLS: Skill[] = [
       'Forgetting the securing half hitches — the knot will creep back under sustained load.',
       'Using a weak mid-line loop that collapses when you start hauling. Twist it twice before threading the working end.',
     ],
-    relatedGear: [{ name: 'Paracord (50 ft)' }],
+    relatedGear: [{ name: 'Paracord (50 ft)', productId: 'paracord-550-50ft' }],
     videoEmbed: {
       url: 'https://www.youtube-nocookie.com/embed/ZJJPySetSRw',
       title: 'How To Tie A Trucker\'s Hitch — A Knot To Know',
@@ -1997,7 +2063,7 @@ export const SKILLS: Skill[] = [
       'Lifting the lid on rice before 18 minutes. The steam is doing the work; letting it out extends cook time significantly.',
     ],
     relatedGear: [
-      { name: 'GSI Outdoors Pinnacle Camper Cookset' },
+      { name: 'GSI Outdoors Pinnacle Camper Cookset', productId: 'gsi-pinnacle-camper-cookset' },
     ],
     relatedSkills: ['cooking/two-burner-stove-basics', 'cooking/cast-iron-cooking', 'cooking/camp-coffee'],
     relatedPrintableSlug: '3-day-camp-meal-planner',
@@ -2088,6 +2154,9 @@ export const SKILLS: Skill[] = [
     ],
     relatedSkills: ['safety/food-storage-and-bear-bags', 'cooking/one-pot-camp-meals', 'camp-setup/camp-hygiene'],
     relatedPrintableSlug: '3-day-camp-meal-planner',
+    relatedGear: [
+      { name: 'Coleman Classic 50-Quart Rolling Cooler', productId: 'coleman-classic-rolling-cooler' },
+    ],
   },
 
   // ── FIRE (new) ────────────────────────────────────────────────────────────
@@ -2127,6 +2196,9 @@ export const SKILLS: Skill[] = [
     ],
     relatedSkills: ['fire/starting-a-fire', 'fire/fire-structures', 'fire/fire-in-wet-conditions'],
     relatedPrintableSlug: 'fire-starting-checklist',
+    relatedGear: [
+      { name: 'Esbit Fire Starter Cubes', productId: 'esbit-fire-cubes' },
+    ],
   },
   {
     slug: 'fire-in-wet-conditions',
@@ -2165,6 +2237,9 @@ export const SKILLS: Skill[] = [
     safetyNotes: ['A fire under a tarp requires the tarp to be high enough and angled correctly. Low tarps catch embers and burn.'],
     relatedSkills: ['fire/tinder-and-kindling', 'fire/starting-a-fire', 'fire/fire-structures'],
     relatedPrintableSlug: 'fire-starting-checklist',
+    relatedGear: [
+      { name: 'UCO Stormproof Match Kit', productId: 'uco-stormproof-matches' },
+    ],
   },
 
   // ── HIKING (new) ──────────────────────────────────────────────────────────
@@ -2233,7 +2308,7 @@ export const SKILLS: Skill[] = [
       'Using the same length uphill and down. The adjustment is 5 minutes; the knee savings are substantial.',
     ],
     relatedGear: [
-      { name: 'Black Diamond Trail Ergo Cork Trekking Poles' },
+      { name: 'Black Diamond Trail Ergo Cork Trekking Poles', productId: 'black-diamond-trekking-poles' },
     ],
     videoEmbed: {
       url: 'https://www.youtube-nocookie.com/embed/dwYBhYLLytI',
@@ -2277,6 +2352,9 @@ export const SKILLS: Skill[] = [
     ],
     relatedSkills: ['hiking/trail-etiquette', 'hiking/blister-prevention', 'hiking/day-hike-essentials'],
     relatedPrintableSlug: 'kids-camping-packing-list',
+    relatedGear: [
+      { name: 'KidCo GoPod Portable Travel Booster Seat', productId: 'kidco-gopod' },
+    ],
   },
 
   // ── SHELTER (new) ─────────────────────────────────────────────────────────
@@ -2316,7 +2394,7 @@ export const SKILLS: Skill[] = [
       'Skipping the stake-outs. One unsecured corner flapping in wind turns a rainy night into a wet one.',
     ],
     relatedGear: [
-      { name: 'Paracord (50 ft, orange for visibility)' },
+      { name: 'Paracord (50 ft, orange for visibility)', productId: 'paracord-550-50ft' },
     ],
     videoEmbed: {
       url: 'https://www.youtube-nocookie.com/embed/4W76LyJdNYU',
@@ -2358,6 +2436,9 @@ export const SKILLS: Skill[] = [
       'Only staking the four main corners and leaving the door and vestibule guylines unpulled. Wind enters the vestibule and lifts the fly.',
     ],
     relatedSkills: ['shelter/pitching-a-tent', 'shelter/site-selection', 'knots/taut-line-hitch'],
+    relatedGear: [
+      { name: 'Reflective Guy Line, 50 ft', productId: 'reflective-guyline-50ft' },
+    ],
   },
   {
     slug: 'tent-care-and-storage',
@@ -2588,6 +2669,9 @@ export const SKILLS: Skill[] = [
     safetyTone: 'critical',
     relatedSkills: ['safety/common-camp-injuries', 'safety/building-a-camp-first-aid-kit', 'hiking/day-hike-essentials'],
     relatedPrintableSlug: 'camp-first-aid-quick-reference',
+    relatedGear: [
+      { name: 'DripDrop Hydration Electrolyte Mix', productId: 'dripdrop-hydration' },
+    ],
   },
 
   // ── FISHING (new) ─────────────────────────────────────────────────────────
@@ -2660,5 +2744,8 @@ export const SKILLS: Skill[] = [
       'Storing nightcrawlers in the sun. They die in minutes in heat. Keep bait in the shade or a cooler.',
     ],
     relatedSkills: ['fishing/rod-setup-and-casting', 'fishing/reading-water', 'fishing/improved-clinch-knot'],
+    relatedGear: [
+      { name: 'Beginner Tackle Box Lure Assortment', productId: 'tackle-box-lure-assortment' },
+    ],
   },
 ]

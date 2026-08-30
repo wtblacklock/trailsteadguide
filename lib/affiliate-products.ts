@@ -438,6 +438,246 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
   },
 
   // ------------------------------------------------------------------
+  // Skills gear — referenced from lib/skills/data.ts `relatedGear`.
+  // These are enthusiast/topic-specific picks named in the skill content
+  // itself, not part of the car-camping gear-shelf catalog above, so no
+  // `slot` or `templateSlugs`. No verified ASIN from this environment —
+  // each resolves via `getProductUrl()`'s tagged Amazon search fallback
+  // instead of a direct product page. Swap in a real ASIN + image when
+  // one is verified.
+  // ------------------------------------------------------------------
+  {
+    id: 'opinel-no7-folding-knife',
+    name: 'Opinel No.7 Carbon Steel Folding Knife',
+    description:
+      'The standard first "real" knife recommendation — carbon-steel blade, beechwood handle, twist-lock collar. Cheap enough to not worry about, sharp enough to actually learn on.',
+    imageUrl: '',
+    category: 'essential',
+    templateSlugs: [],
+    priceRange: '~$18',
+  },
+  {
+    id: 'paracord-550-50ft',
+    name: '550 Paracord, 50 ft',
+    description:
+      '7-strand nylon paracord, rated to 550 lb. The standard practice line for knot-tying and the standard tie-down for tarps and guylines.',
+    imageUrl: '',
+    category: 'essential',
+    templateSlugs: [],
+    priceRange: '~$8',
+  },
+  {
+    id: 'reflective-guyline-50ft',
+    name: 'Reflective Guy Line, 50 ft',
+    description:
+      'Thin, high-visibility cord that catches headlamp light — the point of a tautline hitch and rainfly guyline is to not trip over it in the dark.',
+    imageUrl: '',
+    category: 'essential',
+    templateSlugs: [],
+    priceRange: '~$10',
+  },
+  {
+    id: 'suunto-a10-compass',
+    name: 'Suunto A-10 Baseplate Compass',
+    description:
+      'The most-recommended beginner baseplate compass — clear housing, simple bezel, no bells and whistles to fumble with while learning to orient a map.',
+    imageUrl: '',
+    category: 'essential',
+    templateSlugs: [],
+    priceRange: '~$25',
+  },
+  {
+    id: 'eno-doublenest-hammock',
+    name: 'ENO DoubleNest Hammock',
+    description:
+      'The best-known car-camping and backpacking hammock — packs to the size of a grapefruit, holds two, and is most people’s first hammock.',
+    imageUrl: '',
+    category: 'comfort',
+    templateSlugs: [],
+    priceRange: '~$70',
+  },
+  {
+    id: 'gsi-pinnacle-camper-cookset',
+    name: 'GSI Outdoors Pinnacle Camper Cookset',
+    description:
+      'Nesting pot, pan, and two insulated mugs in one compact set — built for one-pot car-camping meals for two.',
+    imageUrl: '',
+    category: 'comfort',
+    templateSlugs: [],
+    priceRange: '~$70',
+  },
+  {
+    id: 'lodge-cast-iron-skillet',
+    name: 'Lodge 10.25" Cast Iron Skillet',
+    description:
+      'Pre-seasoned, made in the USA, and the default answer whenever cast iron comes up — outlasts every nonstick pan and gets better with use.',
+    imageUrl: '',
+    category: 'comfort',
+    templateSlugs: [],
+    priceRange: '~$20',
+  },
+  {
+    id: 'heavy-duty-aluminum-foil',
+    name: 'Heavy-Duty Aluminum Foil',
+    description:
+      'Thicker than standard household foil — holds up to double-wrapping a foil-packet meal on a campfire grate without tearing.',
+    imageUrl: '',
+    category: 'essential',
+    templateSlugs: [],
+    priceRange: '~$8',
+  },
+  {
+    id: 'camp-grill-tongs',
+    name: 'Long-Handled Grill Tongs',
+    description:
+      'Stainless, 16"+ reach — keeps hands off a campfire grate when turning foil packets or flipping over coals.',
+    imageUrl: '',
+    category: 'essential',
+    templateSlugs: [],
+    priceRange: '~$12',
+  },
+  {
+    id: 'uco-stormproof-matches',
+    name: 'UCO Stormproof Match Kit',
+    description:
+      'Burns 15 seconds even in wind and rain, waterproof case included. The backup fire-starting method that actually works when it’s wet.',
+    imageUrl: '',
+    category: 'essential',
+    templateSlugs: [],
+    priceRange: '~$8',
+  },
+  {
+    id: 'esbit-fire-cubes',
+    name: 'Esbit Fire Starter Cubes',
+    description:
+      'Solid fuel tablets that light with a single match and burn hot for several minutes — reliable kindling in wet or wind-scoured conditions.',
+    imageUrl: '',
+    category: 'essential',
+    templateSlugs: [],
+    priceRange: '~$8',
+  },
+  {
+    id: 'black-diamond-trekking-poles',
+    name: 'Black Diamond Trail Ergo Cork Trekking Poles',
+    description:
+      'Cork grips, adjustable length, and the most commonly recommended beginner trekking pole — takes real load off knees on descents.',
+    imageUrl: '',
+    category: 'comfort',
+    templateSlugs: [],
+    priceRange: '~$140',
+  },
+  {
+    id: 'pull-through-knife-sharpener',
+    name: 'Pull-Through Knife Sharpener',
+    description:
+      'Two-stage carbide/ceramic pull-through sharpener — no angle-guessing, gets a camp knife working-sharp in a few passes.',
+    imageUrl: '',
+    category: 'essential',
+    templateSlugs: [],
+    priceRange: '~$15',
+  },
+  {
+    id: 'mineral-oil-food-safe',
+    name: 'Food-Safe Mineral Oil',
+    description:
+      'Odorless, non-toxic oil for wiping down a carbon-steel blade after cleaning — the standard rust-prevention step for a camp knife.',
+    imageUrl: '',
+    category: 'essential',
+    templateSlugs: [],
+    priceRange: '~$8',
+  },
+  {
+    id: 'planisphere',
+    name: 'Planisphere Star Wheel (40°N)',
+    description:
+      'A rotating star chart sized for your latitude — dial in the date and time and it shows exactly what’s overhead. No batteries, works in the cold.',
+    imageUrl: '',
+    category: 'essential',
+    templateSlugs: [],
+    priceRange: '~$10',
+  },
+  {
+    id: 'celestron-outland-binoculars',
+    name: 'Celestron Outland X 8x42 Binoculars',
+    description:
+      'The usual first recommendation before buying a telescope — enough magnification to resolve Jupiter’s moons and Saturn’s shape on a clear night.',
+    imageUrl: '',
+    category: 'comfort',
+    templateSlugs: [],
+    priceRange: '~$70',
+  },
+  {
+    id: 'leukotape-blister-prevention',
+    name: 'Leukotape P Blister Prevention Tape',
+    description:
+      'Rigid, ultra-sticky athletic tape — applied to hot spots before they become blisters, and the standard answer on hiking forums for "what actually works."',
+    imageUrl: '',
+    category: 'essential',
+    templateSlugs: [],
+    priceRange: '~$9',
+  },
+  {
+    id: 'sawyer-squeeze-water-filter',
+    name: 'Sawyer Squeeze Water Filter',
+    description:
+      'The most-recommended backpacking and camping water filter — squeeze bag + hollow-fiber filter removes bacteria and protozoa from any freshwater source.',
+    imageUrl: '',
+    category: 'essential',
+    templateSlugs: [],
+    priceRange: '~$40',
+  },
+  {
+    id: 'zebco-33-spincast-combo',
+    name: 'Zebco 33 Spincast Combo',
+    description:
+      'The classic beginner rod-and-reel combo — closed-face reel means no backlash to untangle while learning to cast.',
+    imageUrl: '',
+    category: 'essential',
+    templateSlugs: [],
+    priceRange: '~$35',
+  },
+  {
+    id: 'tackle-box-lure-assortment',
+    name: 'Beginner Tackle Box Lure Assortment',
+    description:
+      'A pre-picked spread of the handful of lure types that catch most beginner-accessible freshwater fish, in one box.',
+    imageUrl: '',
+    category: 'essential',
+    templateSlugs: [],
+    priceRange: '~$25',
+  },
+  {
+    id: 'lodge-dutch-oven',
+    name: 'Lodge 10-inch Camp Dutch Oven (with lid lip)',
+    description:
+      'Pre-seasoned cast iron with three legs and a flanged lid for stacking coals on top — the standard tool for camp baking and low-and-slow one-pot meals.',
+    imageUrl: '',
+    category: 'comfort',
+    templateSlugs: [],
+    priceRange: '~$70',
+  },
+  {
+    id: 'monofilament-fishing-line-8lb',
+    name: 'Monofilament Fishing Line, 8 lb Test',
+    description:
+      'Pre-spooled, beginner-friendly monofilament — forgiving for learning knots and casting, and the standard line weight for panfish and bass off a dock or shore.',
+    imageUrl: '',
+    category: 'essential',
+    templateSlugs: [],
+    priceRange: '~$6',
+  },
+  {
+    id: 'fishing-forceps-hemostat',
+    name: 'Fishing Forceps / Hemostat',
+    description:
+      'Locking forceps for backing a hook out cleanly — the single tool that makes catch-and-release actually low-stress for the fish.',
+    imageUrl: '',
+    category: 'essential',
+    templateSlugs: [],
+    priceRange: '~$10',
+  },
+
+  // ------------------------------------------------------------------
   // Legacy / deprecated. Kept in the registry so /compare/* editorial
   // pages and historical references keep rendering. Excluded from
   // recommendation surfaces (guide gear shelf, quiz results, Trip Pack).
