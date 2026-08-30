@@ -265,6 +265,14 @@ export const GUIDES: Guide[] = [
     relatedGuides: ['best-family-tent-for-beginners', 'best-tent-for-rainy-camping', 'family-camping-gear-list'],
   },
   {
+    slug: 'how-to-pack-a-cooler',
+    category: 'basics',
+    title: 'How to Pack a Cooler for Camping',
+    description: 'Pre-chilling, block vs. cubed ice, the two-cooler split, and the packing order that keeps food cold for days.',
+    eyebrow: 'How-to',
+    relatedGuides: ['family-camping-gear-list', 'camping-meal-plan-family', 'easy-family-camping-meals'],
+  },
+  {
     slug: 'best-tent-for-rainy-camping',
     category: 'scenario',
     title: 'Best Tent for Camping in the Rain',

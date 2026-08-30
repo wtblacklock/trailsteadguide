@@ -104,9 +104,9 @@ const RELATED = [
     blurb: 'Wheels and capacity versus ice retention and toughness — head-to-head.',
   },
   {
-    title: 'Best beginner sleeping system',
-    href: '/compare/best-beginner-sleeping-system',
-    blurb: 'Pair the cooler with a sleep system that keeps the family rested and willing to come back.',
+    title: 'How to Pack a Cooler',
+    href: '/guides/how-to-pack-a-cooler',
+    blurb: 'Layering order, block vs. cubed ice, and how long ice actually lasts once you own one.',
   },
   {
     title: 'See the full gear guide',

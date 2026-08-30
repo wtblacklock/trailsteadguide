@@ -324,6 +324,18 @@ export default function Page() {
         </div>
       </section>
 
+      {/* ── Keep reading ─────────────────────────────────────────────────── */}
+      <section className="max-w-3xl mx-auto px-8 pb-16 border-t border-stone-200 pt-16">
+        <p className="text-stone-600 text-lg leading-relaxed">
+          Once you&rsquo;ve picked a cooler, the packing technique matters as much as the cooler
+          itself — see{' '}
+          <Link href="/guides/how-to-pack-a-cooler" className="underline decoration-stone-400 underline-offset-4 hover:decoration-stone-900">
+            how to pack a cooler
+          </Link>{' '}
+          for the layering order and how long ice actually lasts.
+        </p>
+      </section>
+
       {/* ── CTA ─────────────────────────────────────────────────────────── */}
       <section className="max-w-3xl mx-auto px-8 pb-32 border-t border-stone-200 pt-16">
         <p className="text-xs font-semibold tracking-[0.18em] uppercase text-stone-500 mb-4">
