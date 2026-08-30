@@ -742,7 +742,6 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     name: 'Coleman 50-Quart Xtreme Wheeled Cooler',
     description:
       'The budget-tier cooler pick — keeps ice up to 5 days, wheels for the walk from the car, no rotomolded price tag. The right call when a cooler just needs to work.',
-    amazonAsin: 'B00363PRIS',
     imageUrl: '',
     category: 'essential',
     templateSlugs: [],
@@ -755,7 +754,6 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     name: 'RTIC 45 QT Ultra-Tough Hard Cooler',
     description:
       'The premium-tier cooler pick — rotomolded construction, days-long ice retention, bear-resistant certification. Reddit’s standing recommendation as the "Yeti quality without the Yeti price" rotomolded cooler.',
-    amazonAsin: 'B01M1OJO3B',
     imageUrl: '',
     category: 'comfort',
     templateSlugs: [],
@@ -1037,7 +1035,6 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     templateSlugs: [],
     priceRange: '~$95',
     tags: ['chair', 'mid-range', 'comfort'],
-    deprecated: true,
   },
   {
     id: 'cooler-basic',
