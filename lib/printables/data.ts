@@ -114,7 +114,7 @@ export const PRINTABLES: Printable[] = [
     description:
       'A free printable fire-starting checklist with the tinder-kindling-fuelwood stack, lighting steps, and the drown-stir-drown extinguish protocol.',
     tagline:
-      'Build, light, maintain, extinguish. The four-stage fire process every camper should know — front and back.',
+      'Build, light, maintain, extinguish. The four-stage fire process every camper should know, printed front and back.',
     whatYouGet: [
       'The three-tier wood stack: tinder, kindling, fuelwood — sizes and quantities',
       'Teepee vs log cabin build comparison',
@@ -290,7 +290,7 @@ export const PRINTABLES: Printable[] = [
     description:
       'A free printable food storage reference card — what goes in the bear bag, the PCT hang method step-by-step, bear canister sizing, and the campsite food rules that apply across most US public land.',
     tagline:
-      'What goes in. How to hang it. What to do if the bag comes down. Front and back keeps your food — and the bear — safe.',
+      'What goes in. How to hang it. What to do if the bag comes down. Print it front and back and keep your food — and the bear — safe.',
     whatYouGet: [
       'Complete "goes in the bag" checklist: food, wrappers, toiletries, lip balm, dog food',
       'PCT counter-balance hang method with rope length and branch-height specs',
