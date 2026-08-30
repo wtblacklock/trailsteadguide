@@ -147,6 +147,7 @@ export type AffiliateProductTag =
   | 'tent' | 'sleeping-bag' | 'sleeping-pad' | 'air-mattress' | 'cot'
   | 'stove' | 'cooler' | 'lantern' | 'headlamp' | 'chair'
   | 'canopy' | 'projector' | 'trash' | 'lantern-hanger'
+  | 'tarp' | 'fan' | 'power-bank' | 'cookware' | 'hand-warmers'
   // Tier
   | 'budget' | 'mid-range' | 'premium'
   // Audience

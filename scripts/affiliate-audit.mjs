@@ -66,15 +66,21 @@ const TAG_TO_SLOT = {
   chair: 'CHAIR',
   canopy: 'CANOPY',
   trash: 'TRASH',
+  tarp: 'RAIN_GEAR',
+  fan: 'HOT_GEAR',
+  'power-bank': 'POWER',
+  cookware: 'COOKWARE',
+  'hand-warmers': 'WINTER_GEAR',
 }
 
-const BASE_SLOTS = ['TENT', 'SLEEP_BAG', 'SLEEP_SURFACE', 'STOVE', 'COOLER', 'LIGHTING', 'CHAIR', 'SAFETY']
+const BASE_SLOTS = ['TENT', 'SLEEP_BAG', 'SLEEP_SURFACE', 'STOVE', 'COOKWARE', 'COOLER', 'LIGHTING', 'CHAIR', 'SAFETY', 'POWER', 'TRASH']
 
-// Pruned to match `lib/affiliate/gear-slots.ts` — keep these in sync.
-// HOT_GEAR / RAIN_GEAR / WINTER_GEAR / POWER and the keyword-based CANOPY
-// auto-adds were dropped because the CSV has no products there today.
+// Mirror of lib/affiliate/gear-slots.ts — keep these in sync.
 const SCENARIO_RULES = [
-  { keywords: ['heatwave'], addSlots: ['CANOPY'] },
+  { keywords: ['heatwave'], addSlots: ['CANOPY', 'HOT_GEAR'] },
+  { keywords: ['summer', 'texas', 'desert-southwest', 'florida'], addSlots: ['HOT_GEAR'] },
+  { keywords: ['rain', 'weather-turns', 'pacific-northwest', 'spring', 'florida'], addSlots: ['RAIN_GEAR'] },
+  { keywords: ['winter', 'colorado', 'appalachians', 'northeast', 'fall'], addSlots: ['WINTER_GEAR'] },
   { keywords: ['dogs'], addSlots: ['DOG_GEAR'] },
   { keywords: [], addSlots: ['KID_GEAR'] }, // family-focused site — KID_GEAR sitewide
 ]

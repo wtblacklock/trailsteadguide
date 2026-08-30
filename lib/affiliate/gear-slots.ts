@@ -76,31 +76,34 @@ export const TAG_TO_SLOT: Record<string, GearSlotId> = {
   chair: 'CHAIR',
   canopy: 'CANOPY',
   trash: 'TRASH',
-  // No product types yet for: COOKWARE, RAIN_GEAR, WINTER_GEAR, HOT_GEAR,
-  // DOG_GEAR, KID_GEAR, SAFETY, POWER. Those are the gap surface.
+  tarp: 'RAIN_GEAR',
+  fan: 'HOT_GEAR',
+  'power-bank': 'POWER',
+  cookware: 'COOKWARE',
+  'hand-warmers': 'WINTER_GEAR',
+  // No product types yet for: DOG_GEAR, KID_GEAR, SAFETY — those slots
+  // are filled by tags that don't map 1:1 to the slot (with-dogs, etc).
 }
 
 /** Slots every guide gets — the always-relevant baseline. */
 export const BASE_SLOTS: GearSlotId[] = [
-  'TENT', 'SLEEP_BAG', 'SLEEP_SURFACE', 'STOVE', 'COOLER', 'LIGHTING', 'CHAIR', 'SAFETY',
+  'TENT', 'SLEEP_BAG', 'SLEEP_SURFACE', 'STOVE', 'COOKWARE', 'COOLER', 'LIGHTING', 'CHAIR', 'SAFETY', 'POWER', 'TRASH',
 ]
 
 /**
  * Adds extra slots to a guide based on keywords in its slug.
  * One guide can match multiple rules.
  *
- * Pruned to match the curated CSV at `data/affiliate-coverage.csv` —
- * we only auto-add slots that the registry actually has products for
- * today. Restoring an auto-add (e.g. RAIN_GEAR, HOT_GEAR, WINTER_GEAR,
- * POWER, or keyword-based CANOPY) is a two-step change: add real
- * products to the registry, then add the rule back here AND in the
- * audit script `scripts/affiliate-audit.mjs`.
+ * Mirror any change here in the audit script `scripts/affiliate-audit.mjs`.
  */
 export const SCENARIO_RULES: Array<{ keywords: string[]; addSlots: GearSlotId[] }> = [
   // Heatwave-only canopy — the rest of the hot-weather guides don't
   // currently have a CANOPY row in the CSV. Expand this list when those
   // guides gain a curated canopy.
-  { keywords: ['heatwave'], addSlots: ['CANOPY'] },
+  { keywords: ['heatwave'], addSlots: ['CANOPY', 'HOT_GEAR'] },
+  { keywords: ['summer', 'texas', 'desert-southwest', 'florida'], addSlots: ['HOT_GEAR'] },
+  { keywords: ['rain', 'weather-turns', 'pacific-northwest', 'spring', 'florida'], addSlots: ['RAIN_GEAR'] },
+  { keywords: ['winter', 'colorado', 'appalachians', 'northeast', 'fall'], addSlots: ['WINTER_GEAR'] },
   // Dogs
   { keywords: ['dogs'], addSlots: ['DOG_GEAR'] },
   // Kids — every guide on this site is family-focused, so include sitewide
