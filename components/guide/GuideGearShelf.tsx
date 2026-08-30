@@ -1,5 +1,6 @@
 import { getGearForGuide } from '@/lib/affiliate/guide-gear'
 import { getProductUrl } from '@/lib/amazon'
+import { tierLabelForProduct } from '@/lib/gear-sets'
 
 type Props = {
   /** Guide slug (e.g. `'camping-for-beginners'`) — keys into GUIDE_GEAR. */
@@ -59,8 +60,13 @@ export default function GuideGearShelf({ guideSlug, heading }: Props) {
                       </div>
                     )}
                     <div className="flex-1 min-w-0">
-                      <p className="font-serif font-medium text-stone-900 group-hover:text-stone-600 transition-colors mb-1">
+                      <p className="font-serif font-medium text-stone-900 group-hover:text-stone-600 transition-colors mb-1 flex items-center gap-2 flex-wrap">
                         {product.name}
+                        {tierLabelForProduct(product) && (
+                          <span className="font-sans text-[10px] font-semibold uppercase tracking-widest text-stone-400 border border-stone-200 rounded-full px-2 py-0.5">
+                            {tierLabelForProduct(product)}
+                          </span>
+                        )}
                       </p>
                       <p className="text-sm text-stone-500 leading-relaxed line-clamp-2 sm:line-clamp-none">
                         {product.description}
