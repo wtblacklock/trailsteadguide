@@ -3,7 +3,7 @@ import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import QuickAnswer from '@/components/guide/QuickAnswer'
 import { getPlanTemplate } from '@/lib/plan-templates'
-import { pageMetadata, articleGraph, SITE_URL } from '@/lib/seo'
+import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
 
 const SLUG = '/compare/backyard-test-vs-first-night-camp'
 const TITLE = 'Backyard Test vs First Night Camp — First-Trip Comparison'
@@ -125,6 +125,25 @@ const RELATED = [
   },
 ]
 
+const FAQS = [
+  {
+    q: 'Should every family do the Backyard Test before a real trip?',
+    a: 'Not required, but strongly worth it if you\'ve never slept outside as a family or your gear has been sitting unused for a while. It surfaces missing tent stakes, dead headlamp batteries, and kid sleep issues somewhere with a hardware store and a real bed nearby.',
+  },
+  {
+    q: 'Can I skip straight to First Night Camp if we\'re confident?',
+    a: 'Yes — if your gear is proven and the kids have camped or slept away from home comfortably before, the Backyard Test rehearsal adds little. Go straight to a real developed campsite.',
+  },
+  {
+    q: 'How much does First Night Camp cost compared to the Backyard Test?',
+    a: 'The Backyard Test is $0 since it uses your own yard. First Night Camp runs $25-$60 for a developed campsite fee, plus fuel and food — the first real cost of committing to an actual trip.',
+  },
+  {
+    q: 'What if the Backyard Test goes badly?',
+    a: 'That\'s the point of running it first. A bad night in the yard costs you nothing and fixes itself by walking inside. The same problems discovered 90 minutes from home on a real trip are a much bigger deal.',
+  },
+]
+
 export default function Page() {
   return (
     <main>
@@ -140,6 +159,7 @@ export default function Page() {
           ],
         })}
       />
+      <JsonLd data={faqPageGraph(FAQS)} />
       <Breadcrumbs
         items={[
           { name: 'Home', url: `${SITE_URL}/` },
@@ -259,6 +279,23 @@ export default function Page() {
                 {s.title}
               </p>
               <p className="text-stone-700 leading-relaxed">{s.body}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ── FAQ ────────────────────────────────────────────────────────── */}
+      <section className="max-w-3xl mx-auto px-8 pb-16 border-t border-stone-200 pt-16">
+        <h2 className="font-serif text-3xl md:text-4xl font-semibold text-stone-950 tracking-tight leading-tight mb-10">
+          Frequently asked
+        </h2>
+        <div className="space-y-8">
+          {FAQS.map((f) => (
+            <div key={f.q}>
+              <h3 className="font-serif text-xl font-semibold text-stone-900 tracking-tight mb-2">
+                {f.q}
+              </h3>
+              <p className="text-stone-700 leading-relaxed text-lg">{f.a}</p>
             </div>
           ))}
         </div>

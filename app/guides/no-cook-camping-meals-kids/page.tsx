@@ -6,13 +6,13 @@ import RelatedGuides from '@/components/guide/RelatedGuides'
 import GuideGearShelf from '@/components/guide/GuideGearShelf'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
-import { pageMetadata, articleGraph, SITE_URL } from '@/lib/seo'
+import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
 
 const SLUG = '/guides/no-cook-camping-meals-kids'
 const TITLE = 'No-Cook Camping Meals for Kids'
 const META_TITLE = 'No-Cook Camping Meals for Kids — 20 Ideas'
 const DESCRIPTION =
-  'No-cook camping meals for kids that are fast, kid-approved, and require nothing but a cooler and a picnic table. Perfect for pack-out mornings, rain days, and exhausted evenings.'
+  'No-cook camping meals for kids that are fast and kid-approved, needing nothing but a cooler and a picnic table. Perfect for pack-out mornings and rain days.'
 const HERO_IMAGE =
   'https://images.unsplash.com/WWaDfjWsfuM?w=1400&auto=format&fit=crop&q=80'
 
@@ -39,6 +39,26 @@ export default function Page() {
             { name: TITLE, url: `${SITE_URL}${SLUG}` },
           ],
         })}
+      />
+      <JsonLd
+        data={faqPageGraph([
+          {
+            q: 'When should I plan a no-cook meal at camp?',
+            a: 'Three windows: arrival evening (too tired and too late to cook after setting up), pack-out morning (never cook on pack-out morning), and rain days (setting up a stove in the rain is demoralizing). For a single overnight, no-cook for all three meals is entirely doable.',
+          },
+          {
+            q: 'Are no-cook camping meals safe for food storage?',
+            a: 'Yes, if you build around what actually travels well cold: deli meat and cheese, hummus, hard-boiled eggs, and fruit in the cooler, plus shelf-stable options like crackers, trail mix, and boxed milk that need no refrigeration at all. Keep the cooler cold and eat cooler-dependent items within a few days.',
+          },
+          {
+            q: 'What no-cook breakfast do kids actually eat at camp?',
+            a: 'Pre-portioned cereal in cups with shelf-stable boxed milk is the fastest and most kid-friendly — zero dishes, no help needed. Overnight oats made the night before and bagels with cream cheese are close seconds for variety.',
+          },
+          {
+            q: 'Can I do a whole camping trip without cooking?',
+            a: 'Yes, for a single overnight. No-cook works for dinner, breakfast, and lunch without feeling like a compromise, and it eliminates camp dishwashing entirely — a real win on a first trip with young kids.',
+          },
+        ])}
       />
       <Breadcrumbs
         items={[
@@ -196,6 +216,24 @@ export default function Page() {
         </p>
         <p>
           For a full 2–3 night meal plan that balances no-cook and cooked meals, see the <Link href="/guides/camping-meal-plan-family">family camping meal plan</Link>. For the complete camp cooking approach, see <Link href="/guides/easy-family-camping-meals">easy family camping meals</Link>.
+        </p>
+
+        <h2>Frequently asked</h2>
+        <h3>When should I plan a no-cook meal at camp?</h3>
+        <p>
+          Three windows: arrival evening, pack-out morning, and rain days. For a single overnight, no-cook works for all three meals without feeling like a compromise.
+        </p>
+        <h3>Are no-cook camping meals safe for food storage?</h3>
+        <p>
+          Yes, if you build around what travels well cold — deli meat, hummus, hard-boiled eggs, fruit — plus shelf-stable options like crackers and boxed milk that need no refrigeration at all.
+        </p>
+        <h3>What no-cook breakfast do kids actually eat at camp?</h3>
+        <p>
+          Pre-portioned cereal with shelf-stable boxed milk is fastest and most kid-friendly. Overnight oats and bagels with cream cheese are close seconds.
+        </p>
+        <h3>Can I do a whole camping trip without cooking?</h3>
+        <p>
+          Yes, for a single overnight. No-cook covers dinner, breakfast, and lunch, and eliminates camp dishwashing entirely.
         </p>
       </GuidePage>
       <GuideGearShelf guideSlug="no-cook-camping-meals-kids" heading="Keep it cold, keep it simple" />

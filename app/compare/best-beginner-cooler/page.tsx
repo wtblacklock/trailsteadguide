@@ -4,7 +4,7 @@ import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import QuickAnswer from '@/components/guide/QuickAnswer'
 import { AFFILIATE_PRODUCTS } from '@/lib/affiliate-products'
 import { getProductUrl } from '@/lib/amazon'
-import { articleGraph, itemListGraph, pageMetadata, SITE_URL } from '@/lib/seo'
+import { articleGraph, itemListGraph, faqPageGraph, pageMetadata, SITE_URL } from '@/lib/seo'
 import type { AffiliateProduct } from '@/types'
 
 const SLUG = '/compare/best-beginner-cooler'
@@ -115,6 +115,25 @@ const RELATED = [
   },
 ]
 
+const FAQS = [
+  {
+    q: 'How long does ice actually last in a beginner cooler?',
+    a: 'The compact classic and full-size rolling picks both hold ice 4-5 days under normal use — enough for a long weekend without re-icing. Rotomolded premium coolers (Yeti/RTIC tier) stretch that to 7-10 days, which only matters on trips longer than 5 days.',
+  },
+  {
+    q: 'Do I need a rolling cooler or is a classic enough?',
+    a: 'Wheels matter when the parking area is a real walk from the campsite. For sites with parking right at the pad, a classic hard cooler is lighter and cheaper for the same ice retention. See the dedicated rolling vs. steel-belted comparison for the full tradeoff.',
+  },
+  {
+    q: 'Is a premium cooler worth $300+ for a beginner?',
+    a: 'Not for a first trip. The jump to Yeti/RTIC-tier buys multi-day ice retention and bear-resistant durability that only pays off if you camp more than three weekends a year. Start with the budget or mid-tier pick and upgrade once camping is a confirmed habit.',
+  },
+  {
+    q: 'What size cooler do I need for a family of 4?',
+    a: 'A 54-quart cooler (about 85 cans) covers a weekend for a family of four. Step up to the 100-quart size if the trip runs longer than 3 nights or you\'re bringing perishables for real cooked meals rather than just drinks and snacks.',
+  },
+]
+
 export const metadata = pageMetadata({
   title: TITLE,
   description: DESCRIPTION,
@@ -151,6 +170,7 @@ export default function Page() {
           })),
         })}
       />
+      <JsonLd data={faqPageGraph(FAQS)} />
       <Breadcrumbs items={breadcrumbs} />
 
       <header className="max-w-3xl mx-auto px-8 pt-16 md:pt-24 pb-10">
@@ -348,6 +368,23 @@ export default function Page() {
               </div>
             ),
           )}
+        </div>
+      </section>
+
+      {/* ── FAQ ────────────────────────────────────────────────────────── */}
+      <section className="max-w-3xl mx-auto px-8 pb-16 border-t border-stone-200 pt-16">
+        <h2 className="font-serif text-3xl md:text-4xl font-semibold text-stone-950 tracking-tight leading-tight mb-10">
+          Frequently asked
+        </h2>
+        <div className="space-y-8">
+          {FAQS.map((f) => (
+            <div key={f.q}>
+              <h3 className="font-serif text-xl font-semibold text-stone-900 tracking-tight mb-2">
+                {f.q}
+              </h3>
+              <p className="text-stone-700 leading-relaxed text-lg">{f.a}</p>
+            </div>
+          ))}
         </div>
       </section>
 

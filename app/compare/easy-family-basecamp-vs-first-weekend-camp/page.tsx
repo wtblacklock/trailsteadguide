@@ -3,7 +3,7 @@ import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import QuickAnswer from '@/components/guide/QuickAnswer'
 import { getPlanTemplate } from '@/lib/plan-templates'
-import { pageMetadata, articleGraph, SITE_URL } from '@/lib/seo'
+import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
 
 const SLUG = '/compare/easy-family-basecamp-vs-first-weekend-camp'
 const TITLE = 'Easy Family Basecamp vs First Weekend Camp — Comparison'
@@ -130,6 +130,25 @@ const RELATED = [
   },
 ]
 
+const FAQS = [
+  {
+    q: 'Which plan is easier for a family with young kids?',
+    a: 'Easy Family Basecamp — it\'s built around comfort infrastructure (queen air mattress, canopy, real pillows) and a slow pace with no required hiking, which matters more with toddlers and preschoolers than an active itinerary does.',
+  },
+  {
+    q: 'Is First Weekend Camp too active for a first trip?',
+    a: 'Not if your kids are 5 or older and you\'re comfortable with a day-hike centerpiece. It\'s a real weekend with more variables than the Basecamp plan, but the mileage is age-scaled and it\'s still designed as a first-trip plan, not an advanced one.',
+  },
+  {
+    q: 'Do I need a premium campsite for either plan?',
+    a: 'Only for Easy Family Basecamp, which is built around a premium site with electrical hookup and shade to support the comfort gear. First Weekend Camp uses a standard developed site — flat pad and fire ring is enough.',
+  },
+  {
+    q: 'How much more gear does Easy Family Basecamp require?',
+    a: 'More on the comfort side: a cabin tent, queen air mattress, and canopy versus First Weekend Camp\'s 6-person tent and self-inflating pads. The Basecamp gear list trades pack size for a genuinely more comfortable three nights.',
+  },
+]
+
 export default function Page() {
   return (
     <main>
@@ -145,6 +164,7 @@ export default function Page() {
           ],
         })}
       />
+      <JsonLd data={faqPageGraph(FAQS)} />
       <Breadcrumbs
         items={[
           { name: 'Home', url: `${SITE_URL}/` },
@@ -266,6 +286,23 @@ export default function Page() {
                 {s.title}
               </p>
               <p className="text-stone-700 leading-relaxed">{s.body}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ── FAQ ────────────────────────────────────────────────────────── */}
+      <section className="max-w-3xl mx-auto px-8 pb-16 border-t border-stone-200 pt-16">
+        <h2 className="font-serif text-3xl md:text-4xl font-semibold text-stone-950 tracking-tight leading-tight mb-10">
+          Frequently asked
+        </h2>
+        <div className="space-y-8">
+          {FAQS.map((f) => (
+            <div key={f.q}>
+              <h3 className="font-serif text-xl font-semibold text-stone-900 tracking-tight mb-2">
+                {f.q}
+              </h3>
+              <p className="text-stone-700 leading-relaxed text-lg">{f.a}</p>
             </div>
           ))}
         </div>

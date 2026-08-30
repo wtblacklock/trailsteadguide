@@ -12,7 +12,7 @@ const SLUG = '/guides/backyard-camping-with-kids'
 const TITLE = 'Backyard Camping with Kids'
 const META_TITLE = 'Backyard Camping with Kids — How to Do It Right'
 const DESCRIPTION =
-  'How to set up a backyard camping night that kids will love: tent setup, campfire alternatives, activities, and how to use it as a dress rehearsal for a real trip.'
+  'How to set up a backyard camping night kids will love: tent setup, campfire alternatives, activities, and using it as a dress rehearsal for a real trip.'
 const HERO_IMAGE =
   'https://images.unsplash.com/jGh5XSUrYNw?w=1400&auto=format&fit=crop&q=80'
 

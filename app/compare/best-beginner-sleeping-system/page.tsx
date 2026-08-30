@@ -4,13 +4,13 @@ import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import QuickAnswer from '@/components/guide/QuickAnswer'
 import { AFFILIATE_PRODUCTS } from '@/lib/affiliate-products'
 import { getProductUrl } from '@/lib/amazon'
-import { articleGraph, itemListGraph, pageMetadata, SITE_URL } from '@/lib/seo'
+import { articleGraph, itemListGraph, faqPageGraph, pageMetadata, SITE_URL } from '@/lib/seo'
 import type { AffiliateProduct } from '@/types'
 
 const SLUG = '/compare/best-beginner-sleeping-system'
 const TITLE = 'Best Beginner Sleeping System: 3 Picks for First Trips'
 const DESCRIPTION =
-  'Best beginner sleeping system: synthetic bag plus pad, three tiers. Compare temp rating, weight, packed size, and price for budget, comfort, and cold-weather upgrades.'
+  'Best beginner sleeping system: bag plus pad, three tiers. Compare temp rating, weight, and price for budget, comfort, and cold-weather upgrades.'
 const H1 = 'Best beginner sleeping system: 3 picks for your first family trip'
 
 function P(id: string): AffiliateProduct {
@@ -127,6 +127,25 @@ const RELATED = [
   },
 ]
 
+const FAQS = [
+  {
+    q: 'What temperature rating do I need for a 3-season camping trip?',
+    a: 'A bag comfortable to about 40-45°F covers most spring-through-fall car camping. Only step up to a 20°F-rated bag if you\'re camping at altitude, in the shoulder season, or in a region with cold nights — the budget and comfort tiers here both handle typical summer and early-fall trips fine.',
+  },
+  {
+    q: 'Does the sleeping pad matter as much as the bag?',
+    a: 'Often more. The pad insulates from cold ground, which is usually the bigger source of nighttime cold than air temperature — a warm bag on a thin pad still sleeps cold. Pair a mid-tier bag with a good pad before upgrading to a premium bag alone.',
+  },
+  {
+    q: 'Is the cold-weather upgrade worth it for occasional camping?',
+    a: 'Not usually. The 20°F-rated tier is built for shoulder-season and altitude trips specifically. If you camp a few times a summer at moderate elevation, the comfort-tier system at 40°F is the better value — save the upgrade for when you actually plan a cold trip.',
+  },
+  {
+    q: 'Can kids use the same sleeping system as adults?',
+    a: 'A full-size bag works but leaves a lot of dead air space for a small kid to warm, which can actually sleep colder. See the dedicated best sleeping bag for kids guide for kid-sized picks that solve this directly.',
+  },
+]
+
 export const metadata = pageMetadata({
   title: TITLE,
   description: DESCRIPTION,
@@ -166,6 +185,7 @@ export default function Page() {
           items: itemListItems,
         })}
       />
+      <JsonLd data={faqPageGraph(FAQS)} />
       <Breadcrumbs items={breadcrumbs} />
 
       <header className="max-w-3xl mx-auto px-8 pt-16 md:pt-24 pb-10">
@@ -400,6 +420,23 @@ export default function Page() {
                   </div>
                 )}
               </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ── FAQ ────────────────────────────────────────────────────────── */}
+      <section className="max-w-3xl mx-auto px-8 pb-16 border-t border-stone-200 pt-16">
+        <h2 className="font-serif text-3xl md:text-4xl font-semibold text-stone-950 tracking-tight leading-tight mb-10">
+          Frequently asked
+        </h2>
+        <div className="space-y-8">
+          {FAQS.map((f) => (
+            <div key={f.q}>
+              <h3 className="font-serif text-xl font-semibold text-stone-900 tracking-tight mb-2">
+                {f.q}
+              </h3>
+              <p className="text-stone-700 leading-relaxed text-lg">{f.a}</p>
             </div>
           ))}
         </div>

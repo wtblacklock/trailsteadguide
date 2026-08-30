@@ -4,7 +4,7 @@ import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import QuickAnswer from '@/components/guide/QuickAnswer'
 import { AFFILIATE_PRODUCTS } from '@/lib/affiliate-products'
 import { getProductUrl } from '@/lib/amazon'
-import { articleGraph, itemListGraph, pageMetadata, SITE_URL } from '@/lib/seo'
+import { articleGraph, itemListGraph, faqPageGraph, pageMetadata, SITE_URL } from '@/lib/seo'
 import type { AffiliateProduct } from '@/types'
 
 const SLUG = '/compare/best-beginner-stove'
@@ -108,6 +108,25 @@ const RELATED = [
   },
 ]
 
+const FAQS = [
+  {
+    q: 'Is a single-burner stove enough for a family?',
+    a: 'For boiling water, reheating, and simple one-pot meals, yes. Once you want to cook two things at once — eggs and bacon, or a side while the main cooks — a two-burner setup earns its extra size and weight.',
+  },
+  {
+    q: 'How much BTU do I actually need for camp cooking?',
+    a: '10,000 BTU boils water and handles simple meals fine. 22,000 BTU per burner cooks real meals at a normal pace. 40,000 BTU per burner is overkill for most families — it mainly buys faster boil times and better wind resistance, not better food.',
+  },
+  {
+    q: 'Is the premium two-burner stove worth the upgrade?',
+    a: 'Only if you cook in windy conditions often — the three-sided wind screen is the real differentiator, not the extra BTU. For sheltered sites and calm-weather trips, the two-burner classic performs the same for less money.',
+  },
+  {
+    q: 'What fuel do these camp stoves use?',
+    a: 'All three run on propane. The single-burner uses small 1 lb canisters only. Both two-burner options can run on a 1 lb canister or hose to a 20 lb tank — the tank hose is cheaper per-meal and better for a full weekend of cooking.',
+  },
+]
+
 export const metadata = pageMetadata({
   title: TITLE,
   description: DESCRIPTION,
@@ -144,6 +163,7 @@ export default function Page() {
           })),
         })}
       />
+      <JsonLd data={faqPageGraph(FAQS)} />
       <Breadcrumbs items={breadcrumbs} />
 
       <header className="max-w-3xl mx-auto px-8 pt-16 md:pt-24 pb-10">
@@ -320,6 +340,23 @@ export default function Page() {
                 </p>
               </div>
             </a>
+          ))}
+        </div>
+      </section>
+
+      {/* ── FAQ ────────────────────────────────────────────────────────── */}
+      <section className="max-w-3xl mx-auto px-8 pb-16 border-t border-stone-200 pt-16">
+        <h2 className="font-serif text-3xl md:text-4xl font-semibold text-stone-950 tracking-tight leading-tight mb-10">
+          Frequently asked
+        </h2>
+        <div className="space-y-8">
+          {FAQS.map((f) => (
+            <div key={f.q}>
+              <h3 className="font-serif text-xl font-semibold text-stone-900 tracking-tight mb-2">
+                {f.q}
+              </h3>
+              <p className="text-stone-700 leading-relaxed text-lg">{f.a}</p>
+            </div>
           ))}
         </div>
       </section>
