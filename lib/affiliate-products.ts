@@ -37,7 +37,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     description:
       'Pop-up cabin tent for 6+. 60-second setup, near-vertical walls, fits two queen air beds. The size-up pick when you want room to stand. Replaces the discontinued Fanttik Zeta C6 Pro — same footprint and setup speed, and one of the best-reviewed instant cabin tents on Amazon (1,000+ ratings).',
     amazonAsin: 'B00VFGKUIK',
-    affiliateUrl: 'https://www.amazon.com/dp/B00VFGKUIK?tag=trailsteadgui-20&linkCode=ll1&ref_=as_li_ss_tl',
+    affiliateUrl: 'https://amzn.to/4hYGaE3',
     imageUrl: 'https://m.media-amazon.com/images/I/51L7HMRfM3L._AC_SX679_.jpg',
     category: 'comfort',
     templateSlugs: ['backyard-test', 'easy-family-basecamp', 'first-night-camp', 'first-weekend-camp'],
