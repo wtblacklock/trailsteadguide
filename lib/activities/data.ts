@@ -165,6 +165,9 @@ export const ACTIVITIES: Activity[] = [
       'Pause for a head count every 15 minutes if the play area is wooded.',
     ],
     recommendedFor: ['first-weekend-camp'],
+    relatedGear: [
+      { name: 'Team Scrimmage Vests / Pinnies, 12-Pack', productId: 'team-scrimmage-vests-12pack' },
+    ],
   },
   {
     slug: 'camp-olympics',
@@ -630,6 +633,9 @@ export const ACTIVITIES: Activity[] = [
       'Spectators stand to the side, not behind the throwing line.',
     ],
     recommendedFor: ['first-weekend-camp', 'easy-family-basecamp'],
+    relatedGear: [
+      { name: 'GSI Outdoors Backpack Bocce', productId: 'gsi-backpack-bocce' },
+    ],
   },
   {
     slug: 'three-legged-race',
@@ -741,6 +747,9 @@ export const ACTIVITIES: Activity[] = [
       'Make sure no one is standing near the pins when a player rolls.',
     ],
     recommendedFor: ['backyard-test', 'first-night-camp', 'first-weekend-camp', 'easy-family-basecamp'],
+    relatedGear: [
+      { name: 'Wooden Lawn Bowling / Skittles Set', productId: 'lawn-bowling-skittles-set' },
+    ],
   },
   {
     slug: 'stick-javelin',

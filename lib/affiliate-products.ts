@@ -836,6 +836,39 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     templateSlugs: [],
     priceRange: '~$10',
   },
+  {
+    id: 'gsi-backpack-bocce',
+    name: 'GSI Outdoors Backpack Bocce',
+    description:
+      'A real bocce set sized to actually pack — GSI makes camp cookware too, so this is built for a duffel, not a garage shelf. Skip hunting for palm-sized rocks and just bring the real thing.',
+    amazonAsin: 'B007S3O0IU',
+    imageUrl: '',
+    category: 'comfort',
+    templateSlugs: [],
+    priceRange: '~$35',
+  },
+  {
+    id: 'team-scrimmage-vests-12pack',
+    name: 'Team Scrimmage Vests / Pinnies, 12-Pack',
+    description:
+      'Mesh pinnies in two colors — the fast way to split a big group into two visible teams for capture the flag without arguing about who\'s on which side.',
+    amazonAsin: 'B0BVZ4NBL6',
+    imageUrl: '',
+    category: 'essential',
+    templateSlugs: [],
+    priceRange: '~$20',
+  },
+  {
+    id: 'lawn-bowling-skittles-set',
+    name: 'Wooden Lawn Bowling / Skittles Set, 13-Piece',
+    description:
+      'Ten wood pins, two balls, and a carry bag — the campground-marketed version of pinecone bowling for a site with soft ground or no pinecones around.',
+    amazonAsin: 'B01ACYST9M',
+    imageUrl: '',
+    category: 'comfort',
+    templateSlugs: [],
+    priceRange: '~$25',
+  },
 
   // ------------------------------------------------------------------
   // Legacy / deprecated. Kept in the registry so /compare/* editorial
