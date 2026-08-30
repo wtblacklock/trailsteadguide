@@ -19,7 +19,7 @@ export type GuideGearEntry = {
 export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
   'camping-for-beginners': [
     { slot: 'TENT', productId: 'coleman-sundome-4p' },
-    { slot: 'TENT', productId: 'fanttik-zeta-c6-pro' },
+    { slot: 'TENT', productId: 'core-6p-instant-cabin' },
     { slot: 'TENT', productId: 'alps-lynx-4p' },
     { slot: 'SLEEP_BAG', productId: 'coleman-brazos-bag' },
     { slot: 'SLEEP_SURFACE', productId: 'big-agnes-divide' },
@@ -52,7 +52,7 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
   ],
   'camping-in-california-for-beginners': [
     { slot: 'TENT', productId: 'coleman-sundome-4p' },
-    { slot: 'TENT', productId: 'fanttik-zeta-c6-pro' },
+    { slot: 'TENT', productId: 'core-6p-instant-cabin' },
     { slot: 'TENT', productId: 'alps-lynx-4p' },
     { slot: 'SLEEP_BAG', productId: 'coleman-brazos-bag' },
     { slot: 'SLEEP_BAG', productId: 'vumos-bag-liner' },
@@ -70,7 +70,7 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
   ],
   'camping-in-colorado-for-beginners': [
     { slot: 'TENT', productId: 'coleman-sundome-4p' },
-    { slot: 'TENT', productId: 'fanttik-zeta-c6-pro' },
+    { slot: 'TENT', productId: 'core-6p-instant-cabin' },
     { slot: 'TENT', productId: 'alps-lynx-4p' },
     { slot: 'SLEEP_BAG', productId: 'coleman-brazos-bag' },
     { slot: 'SLEEP_BAG', productId: 'vumos-bag-liner' },
@@ -90,7 +90,7 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
   ],
   'camping-in-florida-for-beginners': [
     { slot: 'TENT', productId: 'coleman-sundome-4p' },
-    { slot: 'TENT', productId: 'fanttik-zeta-c6-pro' },
+    { slot: 'TENT', productId: 'core-6p-instant-cabin' },
     { slot: 'TENT', productId: 'alps-lynx-4p' },
     { slot: 'SLEEP_BAG', productId: 'coleman-brazos-bag' },
     { slot: 'SLEEP_BAG', productId: 'vumos-bag-liner' },
@@ -109,7 +109,7 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
   ],
   'camping-in-texas-for-beginners': [
     { slot: 'TENT', productId: 'coleman-sundome-4p' },
-    { slot: 'TENT', productId: 'fanttik-zeta-c6-pro' },
+    { slot: 'TENT', productId: 'core-6p-instant-cabin' },
     { slot: 'TENT', productId: 'alps-lynx-4p' },
     { slot: 'SLEEP_BAG', productId: 'coleman-brazos-bag' },
     { slot: 'SLEEP_BAG', productId: 'vumos-bag-liner' },
@@ -128,7 +128,7 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
   ],
   'camping-in-the-appalachians-for-beginners': [
     { slot: 'TENT', productId: 'coleman-sundome-4p' },
-    { slot: 'TENT', productId: 'fanttik-zeta-c6-pro' },
+    { slot: 'TENT', productId: 'core-6p-instant-cabin' },
     { slot: 'TENT', productId: 'alps-lynx-4p' },
     { slot: 'SLEEP_BAG', productId: 'coleman-brazos-bag' },
     { slot: 'SLEEP_BAG', productId: 'vumos-bag-liner' },
@@ -148,7 +148,7 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
   ],
   'camping-in-the-desert-southwest-for-beginners': [
     { slot: 'TENT', productId: 'coleman-sundome-4p' },
-    { slot: 'TENT', productId: 'fanttik-zeta-c6-pro' },
+    { slot: 'TENT', productId: 'core-6p-instant-cabin' },
     { slot: 'TENT', productId: 'alps-lynx-4p' },
     { slot: 'SLEEP_BAG', productId: 'coleman-brazos-bag' },
     { slot: 'SLEEP_BAG', productId: 'vumos-bag-liner' },
@@ -167,7 +167,7 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
   ],
   'camping-in-the-northeast-for-beginners': [
     { slot: 'TENT', productId: 'coleman-sundome-4p' },
-    { slot: 'TENT', productId: 'fanttik-zeta-c6-pro' },
+    { slot: 'TENT', productId: 'core-6p-instant-cabin' },
     { slot: 'TENT', productId: 'alps-lynx-4p' },
     { slot: 'SLEEP_BAG', productId: 'coleman-brazos-bag' },
     { slot: 'SLEEP_BAG', productId: 'vumos-bag-liner' },
@@ -187,7 +187,7 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
   ],
   'camping-in-the-pacific-northwest-for-beginners': [
     { slot: 'TENT', productId: 'coleman-sundome-4p' },
-    { slot: 'TENT', productId: 'fanttik-zeta-c6-pro' },
+    { slot: 'TENT', productId: 'core-6p-instant-cabin' },
     { slot: 'TENT', productId: 'alps-lynx-4p' },
     { slot: 'SLEEP_BAG', productId: 'coleman-brazos-bag' },
     { slot: 'SLEEP_BAG', productId: 'vumos-bag-liner' },
@@ -207,7 +207,7 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
   ],
   'camping-when-the-weather-turns': [
     { slot: 'TENT', productId: 'coleman-sundome-4p' },
-    { slot: 'TENT', productId: 'fanttik-zeta-c6-pro' },
+    { slot: 'TENT', productId: 'core-6p-instant-cabin' },
     { slot: 'TENT', productId: 'alps-lynx-4p' },
     { slot: 'SLEEP_BAG', productId: 'coleman-brazos-bag' },
     { slot: 'SLEEP_BAG', productId: 'vumos-bag-liner' },
@@ -227,7 +227,7 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
   ],
   'camping-with-dogs-first-time': [
     { slot: 'TENT', productId: 'coleman-sundome-4p' },
-    { slot: 'TENT', productId: 'fanttik-zeta-c6-pro' },
+    { slot: 'TENT', productId: 'core-6p-instant-cabin' },
     { slot: 'TENT', productId: 'alps-lynx-4p' },
     { slot: 'SLEEP_BAG', productId: 'coleman-brazos-bag' },
     { slot: 'SLEEP_BAG', productId: 'vumos-bag-liner' },
@@ -246,7 +246,7 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
   ],
   'camping-with-kids-first-time': [
     { slot: 'TENT', productId: 'coleman-sundome-4p' },
-    { slot: 'TENT', productId: 'fanttik-zeta-c6-pro' },
+    { slot: 'TENT', productId: 'core-6p-instant-cabin' },
     { slot: 'TENT', productId: 'alps-lynx-4p' },
     { slot: 'SLEEP_BAG', productId: 'coleman-brazos-bag' },
     { slot: 'SLEEP_BAG', productId: 'vumos-bag-liner' },
@@ -264,7 +264,7 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
   ],
   'car-camping-beginner-guide': [
     { slot: 'TENT', productId: 'coleman-sundome-4p' },
-    { slot: 'TENT', productId: 'fanttik-zeta-c6-pro' },
+    { slot: 'TENT', productId: 'core-6p-instant-cabin' },
     { slot: 'TENT', productId: 'alps-lynx-4p' },
     { slot: 'SLEEP_BAG', productId: 'coleman-brazos-bag' },
     { slot: 'SLEEP_BAG', productId: 'vumos-bag-liner' },
@@ -282,7 +282,7 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
   ],
   'fall-camping-for-beginners': [
     { slot: 'TENT', productId: 'coleman-sundome-4p' },
-    { slot: 'TENT', productId: 'fanttik-zeta-c6-pro' },
+    { slot: 'TENT', productId: 'core-6p-instant-cabin' },
     { slot: 'TENT', productId: 'alps-lynx-4p' },
     { slot: 'SLEEP_BAG', productId: 'coleman-brazos-bag' },
     { slot: 'SLEEP_BAG', productId: 'vumos-bag-liner' },
@@ -302,7 +302,7 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
   ],
   'first-camping-trip-checklist': [
     { slot: 'TENT', productId: 'coleman-sundome-4p' },
-    { slot: 'TENT', productId: 'fanttik-zeta-c6-pro' },
+    { slot: 'TENT', productId: 'core-6p-instant-cabin' },
     { slot: 'TENT', productId: 'alps-lynx-4p' },
     { slot: 'SLEEP_BAG', productId: 'coleman-brazos-bag' },
     { slot: 'SLEEP_BAG', productId: 'vumos-bag-liner' },
@@ -320,7 +320,7 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
   ],
   'first-night-camping-guide': [
     { slot: 'TENT', productId: 'coleman-sundome-4p' },
-    { slot: 'TENT', productId: 'fanttik-zeta-c6-pro' },
+    { slot: 'TENT', productId: 'core-6p-instant-cabin' },
     { slot: 'TENT', productId: 'alps-lynx-4p' },
     { slot: 'SLEEP_BAG', productId: 'coleman-brazos-bag' },
     { slot: 'SLEEP_BAG', productId: 'vumos-bag-liner' },
@@ -338,7 +338,7 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
   ],
   'first-time-camping-mistakes': [
     { slot: 'TENT', productId: 'coleman-sundome-4p' },
-    { slot: 'TENT', productId: 'fanttik-zeta-c6-pro' },
+    { slot: 'TENT', productId: 'core-6p-instant-cabin' },
     { slot: 'TENT', productId: 'alps-lynx-4p' },
     { slot: 'SLEEP_BAG', productId: 'coleman-brazos-bag' },
     { slot: 'SLEEP_BAG', productId: 'vumos-bag-liner' },
@@ -356,7 +356,7 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
   ],
   'how-to-plan-a-camping-trip': [
     { slot: 'TENT', productId: 'coleman-sundome-4p' },
-    { slot: 'TENT', productId: 'fanttik-zeta-c6-pro' },
+    { slot: 'TENT', productId: 'core-6p-instant-cabin' },
     { slot: 'TENT', productId: 'alps-lynx-4p' },
     { slot: 'SLEEP_BAG', productId: 'coleman-brazos-bag' },
     { slot: 'SLEEP_BAG', productId: 'vumos-bag-liner' },
@@ -374,7 +374,7 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
   ],
   'rainy-camping-trips': [
     { slot: 'TENT', productId: 'coleman-sundome-4p' },
-    { slot: 'TENT', productId: 'fanttik-zeta-c6-pro' },
+    { slot: 'TENT', productId: 'core-6p-instant-cabin' },
     { slot: 'TENT', productId: 'alps-lynx-4p' },
     { slot: 'SLEEP_BAG', productId: 'coleman-brazos-bag' },
     { slot: 'SLEEP_BAG', productId: 'vumos-bag-liner' },
@@ -392,7 +392,7 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
   ],
   'spring-camping-for-beginners': [
     { slot: 'TENT', productId: 'coleman-sundome-4p' },
-    { slot: 'TENT', productId: 'fanttik-zeta-c6-pro' },
+    { slot: 'TENT', productId: 'core-6p-instant-cabin' },
     { slot: 'TENT', productId: 'alps-lynx-4p' },
     { slot: 'SLEEP_BAG', productId: 'coleman-brazos-bag' },
     { slot: 'SLEEP_BAG', productId: 'vumos-bag-liner' },
@@ -412,7 +412,7 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
   ],
   'summer-camping-for-beginners': [
     { slot: 'TENT', productId: 'coleman-sundome-4p' },
-    { slot: 'TENT', productId: 'fanttik-zeta-c6-pro' },
+    { slot: 'TENT', productId: 'core-6p-instant-cabin' },
     { slot: 'TENT', productId: 'alps-lynx-4p' },
     { slot: 'SLEEP_BAG', productId: 'coleman-brazos-bag' },
     { slot: 'SLEEP_BAG', productId: 'vumos-bag-liner' },
@@ -430,7 +430,7 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
   ],
   'weekend-camping-packing-list': [
     { slot: 'TENT', productId: 'coleman-sundome-4p' },
-    { slot: 'TENT', productId: 'fanttik-zeta-c6-pro' },
+    { slot: 'TENT', productId: 'core-6p-instant-cabin' },
     { slot: 'TENT', productId: 'alps-lynx-4p' },
     { slot: 'SLEEP_BAG', productId: 'coleman-brazos-bag' },
     { slot: 'SLEEP_BAG', productId: 'vumos-bag-liner' },
@@ -448,7 +448,7 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
   ],
   'winter-camping-for-beginners': [
     { slot: 'TENT', productId: 'coleman-sundome-4p' },
-    { slot: 'TENT', productId: 'fanttik-zeta-c6-pro' },
+    { slot: 'TENT', productId: 'core-6p-instant-cabin' },
     { slot: 'TENT', productId: 'alps-lynx-4p' },
     { slot: 'SLEEP_BAG', productId: 'coleman-brazos-bag' },
     { slot: 'SLEEP_BAG', productId: 'vumos-bag-liner' },
