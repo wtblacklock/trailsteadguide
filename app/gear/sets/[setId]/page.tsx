@@ -16,6 +16,12 @@ function parseTier(value: string | string[] | undefined): GearTier {
   return value === 'budget' || value === 'premium' ? value : 'standard'
 }
 
+// Content depends entirely on the `?tier=` query string — never cache the
+// HTML shell for this route, at any layer. (generateStaticParams below
+// still enumerates the valid setId values for routing/notFound purposes;
+// it no longer pre-renders a static shell per param.)
+export const dynamic = 'force-dynamic'
+
 const SET_PLAN_SLUGS: PlanSlug[] = [
   'backyard-test',
   'first-night-camp',

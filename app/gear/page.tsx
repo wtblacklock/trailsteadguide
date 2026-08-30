@@ -13,6 +13,10 @@ function parsePriceRange(range: string): number {
   return match ? parseInt(match[0], 10) : 0
 }
 
+// Content depends entirely on the `?tier=` query string — never cache the
+// HTML shell for this route, at any layer.
+export const dynamic = 'force-dynamic'
+
 const TITLE = 'Camping Gear Guide'
 const DESCRIPTION =
   'Curated gear bundles tied to a specific camping plan. Pick the trip you are running and we will tell you exactly what to bring — no 100-option catalog, no overwhelm.'
