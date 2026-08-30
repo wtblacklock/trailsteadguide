@@ -3,6 +3,7 @@ import { GuidePage } from '@/components/guide/GuidePage'
 import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
+import GuideGearShelf from '@/components/guide/GuideGearShelf'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { pageMetadata, articleGraph, SITE_URL } from '@/lib/seo'
@@ -197,6 +198,7 @@ export default function Page() {
           For a full 2–3 night meal plan that balances no-cook and cooked meals, see the <Link href="/guides/camping-meal-plan-family">family camping meal plan</Link>. For the complete camp cooking approach, see <Link href="/guides/easy-family-camping-meals">easy family camping meals</Link>.
         </p>
       </GuidePage>
+      <GuideGearShelf guideSlug="no-cook-camping-meals-kids" heading="Keep it cold, keep it simple" />
       <GuideArticleCTA />
       <RelatedGuides currentSlug="no-cook-camping-meals-kids" />
     </>

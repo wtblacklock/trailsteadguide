@@ -20,7 +20,7 @@ function P(id: string): AffiliateProduct {
 }
 
 const TENT_BEST_SELLER = P('coleman-sundome-4p')
-const TENT_SIZE_UP = P('fanttik-zeta-c6-pro')
+const TENT_SIZE_UP = P('core-6p-instant-cabin')
 const TENT_UPGRADE = P('alps-lynx-4p')
 
 type Tier = 'best-seller' | 'size-up' | 'upgrade'
@@ -52,8 +52,8 @@ const PICKS: Pick[] = [
     label: 'Size up',
     product: TENT_SIZE_UP,
     capacity: '6 people / stand-up',
-    setup: '~5 min, pop-up',
-    weight: '~22 lbs',
+    setup: '60 sec, pop-up',
+    weight: '~23 lbs',
     weather: 'Steady rain, moderate wind',
     priceTier: '$$ Mid',
   },
@@ -85,13 +85,13 @@ const PLAN_MAP: { plan: string; href: string; pick: string; reason: string }[] =
   {
     plan: 'First Weekend Camp',
     href: '/plans/first-weekend-camp',
-    pick: 'Sundome 4P or Fanttik C6 Pro',
-    reason: 'Two nights. Stay with the Sundome if budget matters, step up to the Fanttik for room to stand.',
+    pick: 'Sundome 4P or CORE 6-Person Cabin',
+    reason: 'Two nights. Stay with the Sundome if budget matters, step up to the CORE for room to stand.',
   },
   {
     plan: 'Easy Family Basecamp',
     href: '/plans/easy-family-basecamp',
-    pick: 'Fanttik C6 Pro or ALPS Lynx 4P',
+    pick: 'CORE 6-Person Cabin or ALPS Lynx 4P',
     reason: 'Three nights of comfort. Stand-up height pays off, and so does sturdier pole quality.',
   },
 ]
@@ -175,7 +175,7 @@ export default function Page() {
             <>
               The <strong>Coleman Sundome 4P</strong> is the safest first-tent pick — best-selling,
               weatherproof, fits a queen air bed, sets up in 10 minutes. Step up to the{' '}
-              <strong>Fanttik Zeta C6 Pro</strong> if you want stand-up height and a 6-person
+              <strong>CORE 6-Person Instant Cabin</strong> if you want stand-up height and a 6-person
               footprint. Step up to the <strong>ALPS Mountaineering Lynx 4P</strong> if pole
               quality and stronger weather resistance matter more than the lowest price. Skip the
               backpacking-grade options for now — your first trip rewards floor space, not weight
@@ -251,13 +251,13 @@ export default function Page() {
             <strong>Floor space matters more than spec-sheet capacity.</strong> Tent
             manufacturers count &ldquo;persons&rdquo; assuming everyone sleeps shoulder-to-shoulder
             on a thin pad. In real life, a family of four wants a queen air bed. The Sundome 4P
-            and Lynx 4P both fit one with a narrow gear strip; the Fanttik C6 Pro fits a queen plus
+            and Lynx 4P both fit one with a narrow gear strip; the CORE 6-Person Cabin fits a queen plus
             two kid pads with room to walk around.
           </p>
           <p>
             <strong>Standing height changes the whole experience.</strong> The Sundome and Lynx top
             out at about 4&rsquo;11&quot; — you sit up to change clothes, you crouch to walk
-            across. The Fanttik C6 Pro has near-vertical walls and stand-up height. After two nights,
+            across. The CORE 6-Person Cabin has near-vertical walls and stand-up height. After two nights,
             most parents say the standing room was worth the extra weight and trunk space.
           </p>
           <p>

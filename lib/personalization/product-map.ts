@@ -41,13 +41,13 @@ export const SLEEP_PRODUCTS: SleepMap = {
     lanterns: ['luminaid-packlite-max'],
   },
   shared: {
-    tents: ['fanttik-zeta-c6-pro', 'coleman-sundome-4p'],
+    tents: ['core-6p-instant-cabin', 'coleman-sundome-4p'],
     sleepBags: ['coleman-brazos-bag'],
     pads: ['big-agnes-divide', 'lost-horizon-air-foam-mattress'],
     lanterns: ['luminaid-packlite-max'],
   },
   flex: {
-    tents: ['fanttik-zeta-c6-pro', 'coleman-sundome-4p'],
+    tents: ['core-6p-instant-cabin', 'coleman-sundome-4p'],
     sleepBags: ['coleman-brazos-bag'],
     pads: ['big-agnes-divide'],
     lanterns: ['luminaid-packlite-max'],

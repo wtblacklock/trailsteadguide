@@ -83,7 +83,7 @@ export const GEAR_SETS: Record<GearSetId, GearSet> = {
     tagline: 'Three-night basecamp with real beds, real shade, real meals.',
     entries: [
       // 6+ person pop-up cabin — vertical walls, room for kids and gear.
-      { productId: 'fanttik-zeta-c6-pro', category: 'Tent' },
+      { productId: 'core-6p-instant-cabin', category: 'Tent' },
       // Queen mattress for the adults + a luxury self-inflating pad for
       // the kids' side. Different from Weekend's pad-only sleep system.
       { productId: 'lost-horizon-air-foam-mattress', category: 'Sleep' },

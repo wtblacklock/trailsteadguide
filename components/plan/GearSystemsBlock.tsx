@@ -70,19 +70,34 @@ function SystemCard<C extends string>({
               <p className="text-xs font-medium uppercase tracking-wider text-stone-500 mb-1">
                 {CATEGORY_LABELS[c.category as keyof typeof CATEGORY_LABELS] ?? c.category}
               </p>
-              <ul className="space-y-1">
+              <ul className="space-y-2">
                 {c.products.map((p) => (
                   <li key={p.id} className="text-sm">
                     <a
                       href={buildAffiliateUrl(p)}
                       target="_blank"
                       rel="noopener sponsored nofollow"
-                      className="text-stone-900 font-medium underline decoration-stone-400 underline-offset-4 hover:decoration-stone-900 transition-colors inline-flex items-baseline gap-1"
+                      className="group flex items-center gap-2"
                     >
-                      {p.name}
-                      <span aria-hidden="true" className="text-stone-400">↗</span>
-                    </a>{' '}
-                    <span className="text-stone-500">{p.priceRange}</span>
+                      {p.imageUrl && (
+                        <span className="shrink-0 w-10 h-10 rounded-lg bg-stone-100 overflow-hidden">
+                          {/* eslint-disable-next-line @next/next/no-img-element */}
+                          <img
+                            src={p.imageUrl}
+                            alt=""
+                            loading="lazy"
+                            className="w-full h-full object-cover"
+                          />
+                        </span>
+                      )}
+                      <span className="min-w-0">
+                        <span className="text-stone-900 font-medium underline decoration-stone-400 underline-offset-4 group-hover:decoration-stone-900 transition-colors inline-flex items-baseline gap-1">
+                          {p.name}
+                          <span aria-hidden="true" className="text-stone-400">↗</span>
+                        </span>{' '}
+                        <span className="text-stone-500">{p.priceRange}</span>
+                      </span>
+                    </a>
                   </li>
                 ))}
               </ul>
