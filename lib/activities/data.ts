@@ -167,6 +167,7 @@ export const ACTIVITIES: Activity[] = [
     recommendedFor: ['first-weekend-camp'],
     relatedGear: [
       { name: 'Team Scrimmage Vests / Pinnies, 12-Pack', productId: 'team-scrimmage-vests-12pack' },
+      { name: 'APIGANIZ Cotton Bandanas, 6-Pack', productId: 'team-bandanas-6-pack' },
     ],
   },
   {
@@ -936,6 +937,9 @@ export const ACTIVITIES: Activity[] = [
     ],
     safetyNotes: [],
     recommendedFor: ['first-weekend-camp', 'easy-family-basecamp'],
+    relatedGear: [
+      { name: 'Quokka Trivia Card Game, 500 Questions', productId: 'family-trivia-cards' },
+    ],
   },
   {
     slug: 'campfire-singalong',
@@ -1042,6 +1046,9 @@ export const ACTIVITIES: Activity[] = [
       'Move at a slow walking pace — running blindfolded is never safe.',
     ],
     recommendedFor: ['first-weekend-camp', 'easy-family-basecamp'],
+    relatedGear: [
+      { name: 'APIGANIZ Cotton Bandanas, 6-Pack', productId: 'team-bandanas-6-pack' },
+    ],
   },
   // ── Creative ─────────────────────────────────────────────────────────────────
   {
