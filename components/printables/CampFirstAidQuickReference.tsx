@@ -112,6 +112,8 @@ const KIT_ITEMS = [
   'CPR face shield',
 ]
 
+import PrintPageBreak from './PrintPageBreak'
+
 export default function CampFirstAidQuickReference() {
   return (
     <div className="first-aid">
@@ -247,41 +249,47 @@ export default function CampFirstAidQuickReference() {
         }
       `}</style>
 
-      <div className="grid">
-        {INJURIES.map((inj) => (
-          <div key={inj.name} className="panel">
-            <p className="title"><span>{inj.emoji}</span>{inj.name}</p>
-            <p className="signs">{inj.signs}</p>
-            <ol>
-              {inj.treatment.map((t, i) => <li key={i}>{t}</li>)}
-            </ol>
-            <p className="evac"><strong>Evacuate:</strong> {inj.evacuate}</p>
-          </div>
-        ))}
+      <div className="print-side print-side-1">
+        <div className="grid">
+          {INJURIES.map((inj) => (
+            <div key={inj.name} className="panel">
+              <p className="title"><span>{inj.emoji}</span>{inj.name}</p>
+              <p className="signs">{inj.signs}</p>
+              <ol>
+                {inj.treatment.map((t, i) => <li key={i}>{t}</li>)}
+              </ol>
+              <p className="evac"><strong>Evacuate:</strong> {inj.evacuate}</p>
+            </div>
+          ))}
+        </div>
       </div>
 
-      <div className="bottom-row">
-        <div>
-          <h2>Kit Baseline</h2>
-          <div className="kit-grid">
-            {KIT_ITEMS.map((item) => (
-              <div key={item} className="kit-item">
-                <span className="box" aria-hidden="true" />
-                {item}
-              </div>
-            ))}
+      <PrintPageBreak />
+
+      <div className="print-side print-side-2">
+        <div className="bottom-row">
+          <div>
+            <h2>Kit Baseline</h2>
+            <div className="kit-grid">
+              {KIT_ITEMS.map((item) => (
+                <div key={item} className="kit-item">
+                  <span className="box" aria-hidden="true" />
+                  {item}
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
-        <div className="emergency-box">
-          <h2>Emergency Contacts</h2>
-          <label>Nearest Ranger Station</label>
-          <div className="fill-line" />
-          <label>Nearest Hospital / Urgent Care</label>
-          <div className="fill-line" />
-          <label>Emergency Contact (name + phone)</label>
-          <div className="fill-line" />
-          <label>Trip start / end dates</label>
-          <div className="fill-line" />
+          <div className="emergency-box">
+            <h2>Emergency Contacts</h2>
+            <label>Nearest Ranger Station</label>
+            <div className="fill-line" />
+            <label>Nearest Hospital / Urgent Care</label>
+            <div className="fill-line" />
+            <label>Emergency Contact (name + phone)</label>
+            <div className="fill-line" />
+            <label>Trip start / end dates</label>
+            <div className="fill-line" />
+          </div>
         </div>
       </div>
     </div>

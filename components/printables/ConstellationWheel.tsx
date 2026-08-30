@@ -389,6 +389,8 @@ function SkyDisc({ disc }: { disc: Disc }) {
   )
 }
 
+import PrintPageBreak from './PrintPageBreak'
+
 export default function ConstellationWheel() {
   return (
     <div className="constellation-wheel">
@@ -432,37 +434,54 @@ export default function ConstellationWheel() {
           text-transform: uppercase;
         }
       `}</style>
-      <div className="grid grid-cols-2 gap-6 md:gap-8">
-        {DISCS.map((disc) => (
-          <div key={disc.season}>
-            <SkyDisc disc={disc} />
-            <p className="mt-1 text-center text-xs text-stone-600 italic px-4">
-              {disc.blurb}
-            </p>
-          </div>
-        ))}
+      <div className="print-side print-side-1">
+        <div className="grid grid-cols-2 gap-6 md:gap-8">
+          {DISCS.slice(0, 2).map((disc) => (
+            <div key={disc.season}>
+              <SkyDisc disc={disc} />
+              <p className="mt-1 text-center text-xs text-stone-600 italic px-4">
+                {disc.blurb}
+              </p>
+            </div>
+          ))}
+        </div>
       </div>
 
-      <div className="constellation-legend">
-        <div>
-          <h2>How to use this</h2>
-          <p>
-            Stand outside after full dark, facing north. Hold the page up
-            overhead with the &ldquo;N&rdquo; edge of each disc pointing
-            toward Polaris. Use the disc that matches the current season —
-            the constellations roughly match what&apos;s overhead at 9pm.
-            The sky rotates ~15° per hour, so reorient as the night goes.
-          </p>
+      <PrintPageBreak />
+
+      <div className="print-side print-side-2">
+        <div className="grid grid-cols-2 gap-6 md:gap-8">
+          {DISCS.slice(2, 4).map((disc) => (
+            <div key={disc.season}>
+              <SkyDisc disc={disc} />
+              <p className="mt-1 text-center text-xs text-stone-600 italic px-4">
+                {disc.blurb}
+              </p>
+            </div>
+          ))}
         </div>
-        <div>
-          <h2>Reading the dots</h2>
-          <p>
-            Brighter stars are bigger dots. Lines connect the
-            most-recognizable shape of each constellation — they aren&apos;t
-            in the actual sky. Polaris is the same point in every disc:
-            the sky pivots around it through the night and across the
-            seasons.
-          </p>
+
+        <div className="constellation-legend">
+          <div>
+            <h2>How to use this</h2>
+            <p>
+              Stand outside after full dark, facing north. Hold the page up
+              overhead with the &ldquo;N&rdquo; edge of each disc pointing
+              toward Polaris. Use the disc that matches the current season —
+              the constellations roughly match what&apos;s overhead at 9pm.
+              The sky rotates ~15° per hour, so reorient as the night goes.
+            </p>
+          </div>
+          <div>
+            <h2>Reading the dots</h2>
+            <p>
+              Brighter stars are bigger dots. Lines connect the
+              most-recognizable shape of each constellation — they aren&apos;t
+              in the actual sky. Polaris is the same point in every disc:
+              the sky pivots around it through the night and across the
+              seasons.
+            </p>
+          </div>
         </div>
       </div>
 

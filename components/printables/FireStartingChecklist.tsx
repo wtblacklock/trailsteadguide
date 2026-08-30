@@ -6,6 +6,8 @@
  * extinguish protocol gets a dedicated callout.
  */
 
+import PrintPageBreak from './PrintPageBreak'
+
 export default function FireStartingChecklist() {
   return (
     <div className="fire-card">
@@ -124,68 +126,74 @@ export default function FireStartingChecklist() {
         }
       `}</style>
 
-      <p className="lead">
-        A camp fire works in four stages — build, light, maintain, extinguish. Skip the last one and you&apos;re how a wildfire starts. Run all four every time.
-      </p>
+      <div className="print-side print-side-1">
+        <p className="lead">
+          A camp fire works in four stages — build, light, maintain, extinguish. Skip the last one and you&apos;re how a wildfire starts. Run all four every time.
+        </p>
 
-      <h2>The three-tier stack</h2>
-      <div className="grid-2">
-        <div className="stack">
-          <h3>1 · Tinder</h3>
-          <p>Anything that catches a flame in seconds: dryer lint, birch bark, wax-coated cotton balls, fire-starter cubes, fatwood shavings.</p>
-          <p className="qty">Quantity: a baseball-sized bundle.</p>
+        <h2>The three-tier stack</h2>
+        <div className="grid-2">
+          <div className="stack">
+            <h3>1 · Tinder</h3>
+            <p>Anything that catches a flame in seconds: dryer lint, birch bark, wax-coated cotton balls, fire-starter cubes, fatwood shavings.</p>
+            <p className="qty">Quantity: a baseball-sized bundle.</p>
+          </div>
+          <div className="stack">
+            <h3>2 · Kindling</h3>
+            <p>Pencil-to-thumb-thick dry sticks. Snap, don&apos;t bend. Splits of seasoned firewood work too.</p>
+            <p className="qty">Quantity: a forearm-thick bundle.</p>
+          </div>
+          <div className="stack">
+            <h3>3 · Fuelwood</h3>
+            <p>Wrist- to forearm-thick split logs. Buy bundled at the camp store — never transport from home.</p>
+            <p className="qty">Quantity: 2–3 bundles per evening.</p>
+          </div>
+          <div className="stack">
+            <h3>4 · Lighter / matches</h3>
+            <p>Bic lighter, stormproof matches, or a ferro rod. Bring two redundant sources — at least one waterproof.</p>
+            <p className="qty">Quantity: 2 sources, kept dry.</p>
+          </div>
         </div>
-        <div className="stack">
-          <h3>2 · Kindling</h3>
-          <p>Pencil-to-thumb-thick dry sticks. Snap, don&apos;t bend. Splits of seasoned firewood work too.</p>
-          <p className="qty">Quantity: a forearm-thick bundle.</p>
-        </div>
-        <div className="stack">
-          <h3>3 · Fuelwood</h3>
-          <p>Wrist- to forearm-thick split logs. Buy bundled at the camp store — never transport from home.</p>
-          <p className="qty">Quantity: 2–3 bundles per evening.</p>
-        </div>
-        <div className="stack">
-          <h3>4 · Lighter / matches</h3>
-          <p>Bic lighter, stormproof matches, or a ferro rod. Bring two redundant sources — at least one waterproof.</p>
-          <p className="qty">Quantity: 2 sources, kept dry.</p>
-        </div>
-      </div>
 
-      <h2>Build &amp; light</h2>
-      <ol>
-        <li>Confirm no fire ban. Build only inside an established ring. Clear a 3-foot radius down to mineral soil.</li>
-        <li>Lay the tinder bundle in the center.</li>
-        <li>Build a teepee of kindling around the tinder, with a 2-finger gap on the windward side as the door.</li>
-        <li>Light the tinder bundle from underneath through that windward gap. Never light from above.</li>
-        <li>Once the kindling is burning steadily, add small fuelwood pieces to the structure — don&apos;t smother the kindling.</li>
-        <li>Add larger fuelwood as the fire establishes. Maintain airflow; small adjustments only.</li>
-      </ol>
-
-      <h2>Teepee vs log cabin</h2>
-      <div className="grid-2">
-        <div className="stack">
-          <h3>Teepee</h3>
-          <p>Best for: starting fast, smaller fires, dry conditions. Burns hot and quick, collapses inward.</p>
-        </div>
-        <div className="stack">
-          <h3>Log cabin</h3>
-          <p>Best for: long-burn evenings, cooking grates, wet conditions. Slower to start but steadier.</p>
-        </div>
-      </div>
-
-      <div className="extinguish">
-        <h2>Extinguish protocol — drown · stir · drown</h2>
+        <h2>Build &amp; light</h2>
         <ol>
-          <li><strong>Drown.</strong> Pour water across the entire fire bed, not just the visible flames. Listen for hissing — keep going until it stops.</li>
-          <li><strong>Stir.</strong> Use a stick or shovel to mix ashes, embers, and unburned wood. Embers buried under ash can stay alive for days.</li>
-          <li><strong>Drown again.</strong> A second full pour. Touch the back of your hand to the ashes — if it&apos;s warm, the fire is not out.</li>
+          <li>Confirm no fire ban. Build only inside an established ring. Clear a 3-foot radius down to mineral soil.</li>
+          <li>Lay the tinder bundle in the center.</li>
+          <li>Build a teepee of kindling around the tinder, with a 2-finger gap on the windward side as the door.</li>
+          <li>Light the tinder bundle from underneath through that windward gap. Never light from above.</li>
+          <li>Once the kindling is burning steadily, add small fuelwood pieces to the structure — don&apos;t smother the kindling.</li>
+          <li>Add larger fuelwood as the fire establishes. Maintain airflow; small adjustments only.</li>
         </ol>
       </div>
 
-      <p className="never">
-        <strong>Never:</strong> burn trash, plastic, foil, or pressure-treated wood &middot; use accelerants &middot; leave a fire unattended &middot; trust the rain to put it out &middot; build a fire in burn-ban country.
-      </p>
+      <PrintPageBreak />
+
+      <div className="print-side print-side-2">
+        <h2>Teepee vs log cabin</h2>
+        <div className="grid-2">
+          <div className="stack">
+            <h3>Teepee</h3>
+            <p>Best for: starting fast, smaller fires, dry conditions. Burns hot and quick, collapses inward.</p>
+          </div>
+          <div className="stack">
+            <h3>Log cabin</h3>
+            <p>Best for: long-burn evenings, cooking grates, wet conditions. Slower to start but steadier.</p>
+          </div>
+        </div>
+
+        <div className="extinguish">
+          <h2>Extinguish protocol — drown · stir · drown</h2>
+          <ol>
+            <li><strong>Drown.</strong> Pour water across the entire fire bed, not just the visible flames. Listen for hissing — keep going until it stops.</li>
+            <li><strong>Stir.</strong> Use a stick or shovel to mix ashes, embers, and unburned wood. Embers buried under ash can stay alive for days.</li>
+            <li><strong>Drown again.</strong> A second full pour. Touch the back of your hand to the ashes — if it&apos;s warm, the fire is not out.</li>
+          </ol>
+        </div>
+
+        <p className="never">
+          <strong>Never:</strong> burn trash, plastic, foil, or pressure-treated wood &middot; use accelerants &middot; leave a fire unattended &middot; trust the rain to put it out &middot; build a fire in burn-ban country.
+        </p>
+      </div>
     </div>
   )
 }

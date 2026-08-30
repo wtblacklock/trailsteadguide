@@ -47,11 +47,8 @@ For `BackyardTestChecklist.tsx`, `KnotReferenceCard.tsx`, `ShadowPuppetHandGuide
 For `AnimalTrackIdCard.tsx`, `CampFirstAidQuickReference.tsx`, `FireStartingChecklist.tsx`, `CampMealPlanner.tsx`, `ConstellationWheel.tsx`, `BearBagFoodStorageCard.tsx`:
 
 - Each component splits its content into two logical halves and renders both wrapped in a `<PrintPageBreak />` marker component (new, `components/printables/PrintPageBreak.tsx`) — a `<div>` with `break-after: page` in screen+print CSS, so the screen preview also shows the split (via a visible divider) for accuracy.
-- `app/printables/[slug]/print/page.tsx`: `ARTWORK_RENDERERS` becomes `Record<string, { Component: React.ComponentType; twoPage?: boolean }>`. When `twoPage` is true:
-  - The title/meta header (`header-strip`) renders once, above side 1, as today.
-  - The copyright/format footer (`footer-strip`) renders once, after side 2 (not repeated on side 1).
-  - `@page { size: letter; margin: 0 }` is unaffected — the existing `break-after: page` on `PrintPageBreak` is what forces the second sheet-side onto its own physical page in the browser's print layout.
-- `lib/printables/types.ts`: no schema change needed for this — `twoPage` lives in the print-page's renderer registry, not the `Printable` type, since it's a print-layout concern, not content metadata.
+- `app/printables/[slug]/print/page.tsx` needs **no changes at all**. It already wraps every artwork component with `header-strip` above and `footer-strip` below, unconditionally. Since each front/back artwork component now renders its own `<PrintPageBreak />` internally, those existing wrappers already land in the right place — header before side 1, footer after side 2 — with no `twoPage` flag or `ARTWORK_RENDERERS` shape change needed. (An earlier draft of this spec proposed such a flag; verified during implementation that it was unnecessary and simpler to omit.)
+- `lib/printables/types.ts`: no schema change needed — the split is entirely an artwork-component and print-shell concern, not `Printable` content metadata.
 - `formatNote` for these 6 changes from `'Single-page printable · Letter / A4 · Free with email signup'` to `'Single-sheet printable · front & back · Letter / A4 · Free with email signup'`.
 - Landing-page copy (`whatYouGet` bullet mentioning "Letter / A4 sized...") gets the same front/back wording where present.
 

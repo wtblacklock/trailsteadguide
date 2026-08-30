@@ -14,16 +14,14 @@ const PRE_FLIGHT_GROUPS: Array<{ heading: string; items: string[] }> = [
       'Light the stove on its lowest setting. Confirm fuel canister is full.',
       'Boil 2 cups of water. Time it — calibrate vs the foil-pack card.',
       'Inflate every sleeping pad. Listen for leaks for 60 minutes.',
-      'Power-cycle every headlamp. Replace batteries that flicker.',
-      'Test the lantern at the picnic table — bright enough to cook by?',
-      'Charge phones, the portable battery pack, and any USB headlamps.',
+      'Power-cycle every headlamp and lantern. Replace batteries that flicker, confirm the lantern is bright enough to cook by, and charge phones and any battery packs.',
     ],
   },
   {
     heading: 'Sunset — the real overnight',
     items: [
-      'Sleep in the tent the way you’ll sleep at camp: clothes, bag, pillow, no phone screens after dark.',
-      'Bring the actual book / activity you’d use to wind kids down.',
+      'Sleep in the tent the way you\'ll sleep at camp: clothes, bag, pillow, no phone screens after dark.',
+      'Bring the actual book / activity you\'d use to wind kids down.',
       'Run the kid bedtime ritual end-to-end. Note what missing item bites first.',
       'Eat the dinner you plan for night one. Cook on the camp stove, not the kitchen.',
       'No re-entering the house once the tent is zipped.',
@@ -34,12 +32,11 @@ const PRE_FLIGHT_GROUPS: Array<{ heading: string; items: string[] }> = [
     items: [
       'Pack the tent down in 20 minutes or less. Time it.',
       'Note any wet condensation on the rainfly; it will be worse in real cold.',
-      'Make camp coffee on the stove. Confirm the cooler is still cold.',
-      'Walk the gear pile. Anything you didn’t touch goes home next time.',
+      'Make camp coffee on the stove, confirm the cooler is still cold, then walk the gear pile — anything you didn\'t touch goes home next time.',
     ],
   },
   {
-    heading: 'After-action — the three things you’ll only learn outside',
+    heading: 'After-action — the three things you\'ll only learn outside',
     items: [
       'Whether your sleeping pad keeps you off the cold ground.',
       'Whether your kid will actually fall asleep in a tent.',
@@ -69,7 +66,7 @@ export default function BackyardTestChecklist() {
           border-bottom: 1px solid #D6D3D1;
         }
         .backyard-card .group {
-          margin-bottom: 16px;
+          margin-bottom: 12px;
           break-inside: avoid;
         }
         .backyard-card ul {
@@ -78,9 +75,9 @@ export default function BackyardTestChecklist() {
           margin: 0;
         }
         .backyard-card li {
-          font-size: 12.5px;
-          line-height: 1.45;
-          padding: 5px 0 5px 24px;
+          font-size: 12px;
+          line-height: 1.4;
+          padding: 4px 0 4px 24px;
           position: relative;
           border-bottom: 1px dotted #E7E5E4;
         }

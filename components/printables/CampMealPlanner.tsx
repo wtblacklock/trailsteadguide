@@ -36,6 +36,8 @@ const GROCERY_CATEGORIES = [
   'Beverages & coffee',
 ]
 
+import PrintPageBreak from './PrintPageBreak'
+
 export default function CampMealPlanner() {
   return (
     <div className="meal-planner">
@@ -168,89 +170,95 @@ export default function CampMealPlanner() {
         .meal-planner .scaling td:first-child { color: #78716C; font-weight: 600; }
       `}</style>
 
-      <p className="lead">
-        Fill in the meal column first, then circle a cook method. Transfer each ingredient to the shopping list. Default portions feed 4 people — scale note at the bottom.
-      </p>
+      <div className="print-side print-side-1">
+        <p className="lead">
+          Fill in the meal column first, then circle a cook method. Transfer each ingredient to the shopping list. Default portions feed 4 people — scale note on side 2.
+        </p>
 
-      <h2>Meal Plan Grid</h2>
-      <table className="grid-table">
-        <thead>
-          <tr>
-            <th style={{ width: '15%' }}></th>
-            {DAYS.map((d) => (
-              <th key={d} style={{ width: '28.3%' }}>{d}</th>
-            ))}
-          </tr>
-        </thead>
-        <tbody>
-          {MEALS.map((meal) => {
-            const key = meal.toLowerCase() as keyof typeof MEAL_IDEAS
-            const ideas = MEAL_IDEAS[key]
-            return (
-              <tr key={meal}>
-                <td>
-                  <div className="cell-inner" style={{ background: '#F5F3EE', minHeight: '68px' }}>
-                    <span style={{ fontFamily: '\'Figtree\', system-ui, sans-serif', fontSize: '10px', fontWeight: 700, letterSpacing: '0.06em', textTransform: 'uppercase', color: '#57534E' }}>{meal}</span>
-                    <div className="cell-method">
-                      {COOK_METHODS.map((m) => (
-                        <span key={m} className="method-btn">{m}</span>
-                      ))}
-                    </div>
-                  </div>
-                </td>
-                {DAYS.map((day, di) => {
-                  const idea = di === 0 ? ideas.easy : di === 1 ? ideas.medium : ideas.cast
-                  return (
-                    <td key={day}>
-                      <div className="cell-inner" style={{ minHeight: '68px' }}>
-                        <p className="cell-idea">{idea}</p>
-                        <div className="cell-method">
-                          {COOK_METHODS.map((m) => (
-                            <span key={m} className="method-btn">{m}</span>
-                          ))}
-                        </div>
+        <h2>Meal Plan Grid</h2>
+        <table className="grid-table">
+          <thead>
+            <tr>
+              <th style={{ width: '15%' }}></th>
+              {DAYS.map((d) => (
+                <th key={d} style={{ width: '28.3%' }}>{d}</th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {MEALS.map((meal) => {
+              const key = meal.toLowerCase() as keyof typeof MEAL_IDEAS
+              const ideas = MEAL_IDEAS[key]
+              return (
+                <tr key={meal}>
+                  <td>
+                    <div className="cell-inner" style={{ background: '#F5F3EE', minHeight: '68px' }}>
+                      <span style={{ fontFamily: '\'Figtree\', system-ui, sans-serif', fontSize: '10px', fontWeight: 700, letterSpacing: '0.06em', textTransform: 'uppercase', color: '#57534E' }}>{meal}</span>
+                      <div className="cell-method">
+                        {COOK_METHODS.map((m) => (
+                          <span key={m} className="method-btn">{m}</span>
+                        ))}
                       </div>
-                    </td>
-                  )
-                })}
-              </tr>
-            )
-          })}
-        </tbody>
-      </table>
+                    </div>
+                  </td>
+                  {DAYS.map((day, di) => {
+                    const idea = di === 0 ? ideas.easy : di === 1 ? ideas.medium : ideas.cast
+                    return (
+                      <td key={day}>
+                        <div className="cell-inner" style={{ minHeight: '68px' }}>
+                          <p className="cell-idea">{idea}</p>
+                          <div className="cell-method">
+                            {COOK_METHODS.map((m) => (
+                              <span key={m} className="method-btn">{m}</span>
+                            ))}
+                          </div>
+                        </div>
+                      </td>
+                    )
+                  })}
+                </tr>
+              )
+            })}
+          </tbody>
+        </table>
+      </div>
 
-      <div className="bottom-cols">
-        <div>
-          <h2>Shopping List</h2>
-          {GROCERY_CATEGORIES.map((cat) => (
-            <div key={cat} className="grocery-cat">
-              <h3>{cat}</h3>
-              <div className="fill-lines" />
-              <div className="fill-lines" />
-            </div>
-          ))}
-        </div>
-        <div>
-          <h2>Party Size Scaling</h2>
-          <div className="scaling" style={{ marginBottom: '12px' }}>
-            <h3>Default: 4 people · Adjust by multiplying</h3>
-            <table>
-              <tbody>
-                <tr><td>2 people</td><td>Multiply quantities × 0.5</td></tr>
-                <tr><td>6 people</td><td>Multiply quantities × 1.5</td></tr>
-                <tr><td>8 people</td><td>Multiply quantities × 2</td></tr>
-                <tr><td>Kids under 8</td><td>Count as 0.5 adult portions</td></tr>
-              </tbody>
-            </table>
+      <PrintPageBreak />
+
+      <div className="print-side print-side-2">
+        <div className="bottom-cols">
+          <div>
+            <h2>Shopping List</h2>
+            {GROCERY_CATEGORIES.map((cat) => (
+              <div key={cat} className="grocery-cat">
+                <h3>{cat}</h3>
+                <div className="fill-lines" />
+                <div className="fill-lines" />
+              </div>
+            ))}
           </div>
-          <h2>Notes</h2>
-          {[1,2,3,4].map((i) => (
-            <div key={i} style={{ borderBottom: '1px solid #D6D3D1', height: '22px', marginBottom: '4px' }} />
-          ))}
-          <h2 style={{ marginTop: '12px' }}>Allergies / Restrictions</h2>
-          {[1,2].map((i) => (
-            <div key={i} style={{ borderBottom: '1px solid #D6D3D1', height: '22px', marginBottom: '4px' }} />
-          ))}
+          <div>
+            <h2>Party Size Scaling</h2>
+            <div className="scaling" style={{ marginBottom: '12px' }}>
+              <h3>Default: 4 people · Adjust by multiplying</h3>
+              <table>
+                <tbody>
+                  <tr><td>2 people</td><td>Multiply quantities × 0.5</td></tr>
+                  <tr><td>6 people</td><td>Multiply quantities × 1.5</td></tr>
+                  <tr><td>8 people</td><td>Multiply quantities × 2</td></tr>
+                  <tr><td>Kids under 8</td><td>Count as 0.5 adult portions</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <h2>Notes</h2>
+            {[1,2,3,4].map((i) => (
+              <div key={i} style={{ borderBottom: '1px solid #D6D3D1', height: '22px', marginBottom: '4px' }} />
+            ))}
+            <h2 style={{ marginTop: '12px' }}>Allergies / Restrictions</h2>
+            {[1,2].map((i) => (
+              <div key={i} style={{ borderBottom: '1px solid #D6D3D1', height: '22px', marginBottom: '4px' }} />
+            ))}
+          </div>
         </div>
       </div>
     </div>
