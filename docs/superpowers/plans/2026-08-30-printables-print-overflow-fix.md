@@ -102,7 +102,9 @@ git commit -m "feat(printables): add shared PrintPageBreak component for front/b
 
 ---
 
-## Task 2: Trim — Knot Reference Card (1086px → 937px) ✅ DONE (7398631) — note: merged warning text lost red/⚠ visual distinctiveness, minor follow-up polish possible
+## Task 2: Trim — Knot Reference Card (1086px → 937px) ✅ DONE (df24ad5, on `main` directly — see below) — note: merged warning text lost red/⚠ visual distinctiveness, minor follow-up polish possible
+
+**Provenance note (added post-hoc):** this task's implementer subagent ran in the wrong git checkout and committed `df24ad5` onto an unrelated branch in the main repo directory instead of this plan's worktree — caught during spec review, cherry-picked onto the correct branch as `7398631`, and reviewed there. `df24ad5` was later merged to `main` independently (via the unrelated branch it landed on) before this plan's own branch was rebased onto `main`, so `7398631` became a no-op during that rebase and git correctly dropped it. The fix is live on `main` either way — content-identical, reviewed, verified at 937px. `7398631` is a dangling commit object, not reachable from any branch tip.
 
 **Files:**
 - Modify: `components/printables/KnotReferenceCard.tsx`
