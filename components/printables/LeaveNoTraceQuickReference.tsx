@@ -90,20 +90,20 @@ export default function LeaveNoTraceQuickReference() {
           line-height: 1.45;
         }
         .lnt-card .lead {
-          font-size: 12px;
+          font-size: 11.5px;
           color: #44403C;
-          margin: 0 0 12px 0;
+          margin: 0 0 9px 0;
         }
         .lnt-card .cols {
           display: grid;
           grid-template-columns: 1fr 1fr;
-          gap: 8px;
-          margin-bottom: 12px;
+          gap: 6px;
+          margin-bottom: 9px;
         }
         .lnt-card .principle {
           border: 1px solid #D6D3D1;
           border-radius: 6px;
-          padding: 9px 12px;
+          padding: 7px 10px;
           background: #FAF8F2;
           break-inside: avoid;
         }
@@ -111,7 +111,7 @@ export default function LeaveNoTraceQuickReference() {
           display: flex;
           align-items: baseline;
           gap: 7px;
-          margin-bottom: 5px;
+          margin-bottom: 3px;
         }
         .lnt-card .p-num {
           font-family: 'Figtree', system-ui, sans-serif;
@@ -134,11 +134,11 @@ export default function LeaveNoTraceQuickReference() {
           margin: 0 0 5px 0;
         }
         .lnt-card .actions li {
-          font-size: 10.5px;
+          font-size: 10px;
           color: #292524;
-          padding: 2px 0 2px 12px;
+          padding: 1.5px 0 1.5px 12px;
           position: relative;
-          line-height: 1.35;
+          line-height: 1.28;
         }
         .lnt-card .actions li::before {
           content: '›';
@@ -148,10 +148,10 @@ export default function LeaveNoTraceQuickReference() {
         }
         .lnt-card .broken {
           font-family: 'Figtree', system-ui, sans-serif;
-          font-size: 9.5px;
+          font-size: 9px;
           color: #B91C1C;
-          margin: 4px 0 0 0;
-          line-height: 1.35;
+          margin: 3px 0 0 0;
+          line-height: 1.28;
         }
         .lnt-card .broken strong {
           font-weight: 700;
@@ -163,7 +163,7 @@ export default function LeaveNoTraceQuickReference() {
           background: #1C1917;
           color: #fff;
           border-radius: 6px;
-          padding: 10px 14px;
+          padding: 8px 12px;
         }
         .lnt-card .final h2 {
           font-family: 'Figtree', system-ui, sans-serif;
@@ -174,7 +174,7 @@ export default function LeaveNoTraceQuickReference() {
           color: #A8A29E;
           border-bottom: 1px solid #44403C;
           padding-bottom: 3px;
-          margin: 0 0 8px 0;
+          margin: 0 0 6px 0;
         }
         .lnt-card .final-grid {
           display: grid;
@@ -185,10 +185,10 @@ export default function LeaveNoTraceQuickReference() {
           display: flex;
           align-items: flex-start;
           gap: 7px;
-          font-size: 10.5px;
+          font-size: 10px;
           color: #E7E5E4;
-          padding: 2px 0;
-          line-height: 1.35;
+          padding: 1.5px 0;
+          line-height: 1.28;
         }
         .lnt-card .final-box {
           width: 11px;
