@@ -102,7 +102,18 @@ export default function GearHubPage() {
                 <ul className="mb-2 divide-y divide-stone-100">
                   {items.map(({ product }) => (
                     <li key={product.id} className="flex items-center justify-between gap-4 py-2">
-                      <span className="text-sm text-stone-700 leading-snug">{product.name}</span>
+                      <span className="flex items-center gap-3 min-w-0">
+                        <span className="shrink-0 w-9 h-9 rounded-md bg-stone-100 overflow-hidden ring-1 ring-stone-200">
+                          {/* eslint-disable-next-line @next/next/no-img-element */}
+                          <img
+                            src={product.imageUrl}
+                            alt=""
+                            loading="lazy"
+                            className="w-full h-full object-cover"
+                          />
+                        </span>
+                        <span className="text-sm text-stone-700 leading-snug truncate">{product.name}</span>
+                      </span>
                       <span className="text-sm text-stone-500 tabular-nums shrink-0">
                         {product.priceRange ?? '—'}
                       </span>

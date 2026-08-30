@@ -31,28 +31,41 @@ export default function RelatedGearBlock({ items, subtitle = 'A short list of wh
                   href={getProductUrl(product)}
                   rel="nofollow sponsored noopener"
                   target="_blank"
-                  className="inline-flex items-center gap-1.5 text-stone-900 hover:text-[#2d5016] font-medium"
+                  className="group flex items-center gap-2"
                 >
-                  {product.name}
-                  <svg
-                    width="14"
-                    height="14"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    aria-hidden="true"
-                  >
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                    <polyline points="15 3 21 3 21 9" />
-                    <line x1="10" y1="14" x2="21" y2="3" />
-                  </svg>
+                  {product.imageUrl && (
+                    <span className="shrink-0 w-10 h-10 rounded-lg bg-stone-100 overflow-hidden">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={product.imageUrl}
+                        alt=""
+                        loading="lazy"
+                        className="w-full h-full object-cover"
+                      />
+                    </span>
+                  )}
+                  <span className="inline-flex items-center gap-1.5 text-stone-900 group-hover:text-[#2d5016] font-medium">
+                    {product.name}
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                      <polyline points="15 3 21 3 21 9" />
+                      <line x1="10" y1="14" x2="21" y2="3" />
+                    </svg>
+                  </span>
+                  {product.priceRange && (
+                    <span className="ml-1 text-sm text-stone-500">{product.priceRange}</span>
+                  )}
                 </a>
-                {product.priceRange && (
-                  <span className="ml-2 text-sm text-stone-500">{product.priceRange}</span>
-                )}
               </li>
             )
           }
