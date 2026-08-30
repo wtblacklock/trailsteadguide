@@ -19,7 +19,6 @@ type KnotPanel = {
   attribution: string
   steps: string[]
   useFor: string
-  warn?: string
 }
 
 const KNOTS: KnotPanel[] = [
@@ -33,8 +32,8 @@ const KNOTS: KnotPanel[] = [
       'Now cross the left end over the right, then under and back up.',
       'Pull both ends to tighten. The two loops should sit flat against each other.',
     ],
-    useFor: 'Joining two equal-diameter ropes. Tying a bandage. Bundling a rolled tarp.',
-    warn: 'Never use for climbing, rescue, or any load that puts a person at risk.',
+    useFor:
+      'Joining two equal-diameter ropes, tying a bandage, bundling a rolled tarp — never for climbing, rescue, or any load that risks a person.',
   },
   {
     name: 'Bowline',
@@ -70,8 +69,8 @@ const KNOTS: KnotPanel[] = [
       'On the second pass, tuck the working end under the diagonal cross.',
       'Pull both ends tight. The hitch will grip but slip if the pole rotates.',
     ],
-    useFor: 'Quick start or finish on a tarp ridge. Tying off to a stake or pole.',
-    warn: 'Don\'t use for any load that swings or reverses direction.',
+    useFor:
+      'Quick start or finish on a tarp ridge, tying off to a stake or pole — don\'t use for a load that swings or reverses direction.',
   },
 ]
 
@@ -87,17 +86,17 @@ export default function KnotReferenceCard() {
         .knot-card .lead {
           font-size: 12.5px;
           color: #44403C;
-          margin: 0 0 18px 0;
+          margin: 0 0 14px 0;
         }
         .knot-card .grid-2 {
           display: grid;
           grid-template-columns: 1fr 1fr;
-          gap: 16px;
+          gap: 12px;
         }
         .knot-card .panel {
           border: 1px solid #D6D3D1;
           border-radius: 8px;
-          padding: 14px;
+          padding: 10px;
           background: #FAF8F2;
           break-inside: avoid;
         }
@@ -115,7 +114,7 @@ export default function KnotReferenceCard() {
           display: flex;
           align-items: center;
           justify-content: center;
-          height: 110px;
+          height: 85px;
           margin-bottom: 8px;
         }
         .knot-card .panel img {
@@ -125,14 +124,14 @@ export default function KnotReferenceCard() {
         }
         .knot-card .panel ol {
           padding: 0;
-          margin: 0 0 8px 0;
+          margin: 0 0 6px 0;
           list-style: none;
           counter-reset: knotstep;
         }
         .knot-card .panel ol li {
-          font-size: 11.5px;
-          line-height: 1.45;
-          padding: 3px 0 3px 22px;
+          font-size: 11px;
+          line-height: 1.35;
+          padding: 2px 0 2px 22px;
           position: relative;
           counter-increment: knotstep;
         }
@@ -166,12 +165,6 @@ export default function KnotReferenceCard() {
           display: block;
           margin-bottom: 2px;
         }
-        .knot-card .panel .warn {
-          font-family: 'Figtree', system-ui, sans-serif;
-          font-size: 10px;
-          color: #B91C1C;
-          margin: 4px 0 0 0;
-        }
         .knot-card .panel .attribution {
           font-family: 'Figtree', system-ui, sans-serif;
           font-size: 9px;
@@ -201,7 +194,6 @@ export default function KnotReferenceCard() {
               <strong>Use it for</strong>
               {knot.useFor}
             </p>
-            {knot.warn && <p className="warn">⚠ {knot.warn}</p>}
             <p className="attribution">Diagram: {knot.attribution}</p>
           </div>
         ))}
