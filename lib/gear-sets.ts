@@ -121,9 +121,12 @@ export const GEAR_SETS: Record<GearSetId, GearSet> = {
       { productId: 'rtic-45-cooler', category: 'Cooler', slot: 'COOLER', tier: 'premium' },
       { productId: 'luminaid-packlite-max', category: 'Lighting', slot: 'LIGHTING' },
       { productId: 'fwc-lantern-consciot', category: 'Lighting', slot: 'LIGHTING', tier: 'budget' },
-      { productId: 'streamlight-protac-2', category: 'Lighting' },
+      { productId: 'streamlight-protac-2', category: 'Lighting', slot: 'HEADLAMP' },
+      { productId: 'black-diamond-spot-400', category: 'Lighting', slot: 'HEADLAMP', tier: 'budget' },
       // Rocker chair — the upgrade you remember after night one.
-      { productId: 'gci-freestyle-rocker', category: 'Comfort' },
+      { productId: 'gci-freestyle-rocker', category: 'Comfort', slot: 'CHAIR' },
+      { productId: 'coleman-portable-chair-cooler', category: 'Comfort', slot: 'CHAIR', tier: 'budget' },
+      { productId: 'camp-chairs', category: 'Comfort', slot: 'CHAIR', tier: 'premium' },
     ],
   },
   EASY_FAMILY_BASECAMP_GEAR: {
@@ -148,7 +151,9 @@ export const GEAR_SETS: Record<GearSetId, GearSet> = {
       { productId: 'coleman-xtreme-50-cooler', category: 'Cooler', slot: 'COOLER', tier: 'budget' },
       { productId: 'rtic-45-cooler', category: 'Cooler', slot: 'COOLER', tier: 'premium' },
       // Chair with built-in cooler — kid-friendly, fits anywhere.
-      { productId: 'coleman-portable-chair-cooler', category: 'Comfort' },
+      { productId: 'gci-freestyle-rocker', category: 'Comfort', slot: 'CHAIR' },
+      { productId: 'coleman-portable-chair-cooler', category: 'Comfort', slot: 'CHAIR', tier: 'budget' },
+      { productId: 'camp-chairs', category: 'Comfort', slot: 'CHAIR', tier: 'premium' },
       // Shade for a 3-day stay is worth its weight.
       { productId: 'core-10x10-canopy', category: 'Comfort' },
       // The differentiator: contained play space for the smallest campers.

@@ -27,7 +27,7 @@ export default function GearSetDetailClient({ itemsByTier }: Props) {
 
   return (
     <>
-      <div className="mt-8">
+      <div className="max-w-page mx-auto px-8 mt-8">
         <GearTierToggle tier={tier} onTierChange={setTier} />
       </div>
 

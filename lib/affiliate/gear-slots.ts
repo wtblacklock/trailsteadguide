@@ -22,6 +22,7 @@ export type GearSlotId =
   | 'COOKWARE'
   | 'COOLER'
   | 'LIGHTING'
+  | 'HEADLAMP'
   | 'CHAIR'
   | 'CANOPY'
   | 'RAIN_GEAR'
@@ -49,6 +50,7 @@ export const GEAR_SLOTS: GearSlot[] = [
   { id: 'COOKWARE', label: 'Cookware', description: 'Pots, pans, utensils', researchQuery: 'best camping cookware set family' },
   { id: 'COOLER', label: 'Cooler', description: 'Hard or rolling, 50-60qt range', researchQuery: 'best cooler for car camping family' },
   { id: 'LIGHTING', label: 'Lighting', description: 'Lantern + per-person headlamp', researchQuery: 'best camping lantern beginner' },
+  { id: 'HEADLAMP', label: 'Headlamp', description: 'Per-person headlamp or flashlight', researchQuery: 'best headlamp camping beginner' },
   { id: 'CHAIR', label: 'Chair', description: 'Per-adult seating', researchQuery: 'best camping chair family' },
   { id: 'CANOPY', label: 'Canopy / shade', description: 'Pop-up shade for hot or rainy sites', researchQuery: 'best pop up canopy camping shade' },
   { id: 'RAIN_GEAR', label: 'Rain gear', description: 'Tarp, ponchos, rainfly extras', researchQuery: 'best tarp setup rain camping' },
