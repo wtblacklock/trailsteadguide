@@ -3,6 +3,7 @@ import { GuidePage } from '@/components/guide/GuidePage'
 import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
+import GuideGearShelf from '@/components/guide/GuideGearShelf'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
@@ -212,6 +213,7 @@ export default function Page() {
         <h3>Is backyard camping a good idea for toddlers?</h3>
         <p>Yes — the best introduction for toddlers. The house is a safety net. Most toddlers love the novelty; the ones who don&apos;t will make it clear immediately, which is useful information to have at home.</p>
       </GuidePage>
+      <GuideGearShelf guideSlug="backyard-camping-with-kids" />
       <GuideArticleCTA />
       <RelatedGuides currentSlug="backyard-camping-with-kids" />
     </>

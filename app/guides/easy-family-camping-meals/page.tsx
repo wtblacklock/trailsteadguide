@@ -3,6 +3,7 @@ import { GuidePage } from '@/components/guide/GuidePage'
 import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
+import GuideGearShelf from '@/components/guide/GuideGearShelf'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
@@ -200,6 +201,7 @@ export default function Page() {
         <h3>What is a foil packet meal?</h3>
         <p>Protein + vegetables + seasoning wrapped in double foil, cooked on a campfire grill grate for 25–35 minutes. Each person gets their own packet. No shared dishes.</p>
       </GuidePage>
+      <GuideGearShelf guideSlug="easy-family-camping-meals" />
       <GuideArticleCTA />
       <RelatedGuides currentSlug="easy-family-camping-meals" />
     </>
