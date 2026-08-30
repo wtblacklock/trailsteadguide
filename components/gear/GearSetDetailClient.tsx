@@ -2,10 +2,15 @@
 
 import { useState } from 'react'
 import Image from 'next/image'
+import { useSearchParams } from 'next/navigation'
 import GearTierToggle from '@/components/gear/GearTierToggle'
 import { getProductUrl } from '@/lib/amazon'
-import type { GearCategoryLabel, GearTier } from '@/lib/gear-sets'
+import { GEAR_TIERS, type GearCategoryLabel, type GearTier } from '@/lib/gear-sets'
 import type { AffiliateProduct } from '@/types'
+
+function isGearTier(value: string | null): value is GearTier {
+  return GEAR_TIERS.some((t) => t.id === value)
+}
 
 export type DetailItem = {
   product: AffiliateProduct
@@ -22,7 +27,9 @@ interface Props {
  * request.
  */
 export default function GearSetDetailClient({ itemsByTier }: Props) {
-  const [tier, setTier] = useState<GearTier>('standard')
+  const searchParams = useSearchParams()
+  const requestedTier = searchParams.get('tier')
+  const [tier, setTier] = useState<GearTier>(isGearTier(requestedTier) ? requestedTier : 'standard')
   const items = itemsByTier[tier]
 
   return (

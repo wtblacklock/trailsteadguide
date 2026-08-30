@@ -75,7 +75,7 @@ export default function GearHubClient({ bundles }: Props) {
               </div>
 
               <Link
-                href={`/gear/sets/${bundle.planSlug}`}
+                href={`/gear/sets/${bundle.planSlug}?tier=${tier}`}
                 className="group block px-8 md:px-10 pb-8 md:pb-10 pt-6 hover:bg-stone-50 transition-colors"
               >
                 <ul className="mb-2 divide-y divide-stone-100">

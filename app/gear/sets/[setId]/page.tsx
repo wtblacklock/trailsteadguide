@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation'
+import { Suspense } from 'react'
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import JsonLd from '@/components/seo/JsonLd'
@@ -135,7 +136,9 @@ export default async function GearSetPage({
         </p>
       </header>
 
-      <GearSetDetailClient itemsByTier={itemsByTier} />
+      <Suspense fallback={null}>
+        <GearSetDetailClient itemsByTier={itemsByTier} />
+      </Suspense>
 
       <section className="max-w-page mx-auto px-8 pb-24">
         <div className="bg-stone-900 rounded-3xl p-10 md:p-16 text-white">
