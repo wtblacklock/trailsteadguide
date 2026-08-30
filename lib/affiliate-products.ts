@@ -1040,14 +1040,14 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     id: 'cooler-basic',
     name: 'Coleman 54-Quart Steel-Belted Cooler',
     description:
-      'Keeps ice up to 4 days, 85-can capacity, Have-A-Seat lid. Classic for good reason.',
+      'The premium-tier cooler pick — keeps ice up to 4 days, 85-can capacity, Have-A-Seat lid. Classic for good reason.',
     amazonAsin: 'B0009PURKE',
     imageUrl: 'https://m.media-amazon.com/images/I/91uqAgVltVS._AC_SL1500_.jpg',
     category: 'essential',
     templateSlugs: [],
     priceRange: '~$120',
     tags: ['cooler', 'family', 'mid-range', 'heat-friendly'],
-    deprecated: true,
+    slot: 'COOLER',
   },
   {
     id: 'canopy-camp',
