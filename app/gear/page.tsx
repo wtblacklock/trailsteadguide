@@ -108,6 +108,7 @@ export default async function GearHubPage({
             <li key={planSlug}>
               <Link
                 href={tier === 'standard' ? `/gear/sets/${planSlug}` : `/gear/sets/${planSlug}?tier=${tier}`}
+                prefetch={false}
                 className="group block h-full p-8 md:p-10 rounded-2xl ring-1 ring-stone-200 bg-white hover:ring-stone-900 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-200"
               >
                 <p className="text-xs font-semibold tracking-[0.18em] uppercase text-stone-500 mb-4">
