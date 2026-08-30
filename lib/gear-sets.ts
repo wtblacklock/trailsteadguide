@@ -118,7 +118,7 @@ export const GEAR_SETS: Record<GearSetId, GearSet> = {
       { productId: 'coleman-triton-2-burner', category: 'Cooking', slot: 'STOVE', tier: 'premium' },
       { productId: 'coleman-classic-rolling-cooler', category: 'Cooler', slot: 'COOLER' },
       { productId: 'coleman-xtreme-50-cooler', category: 'Cooler', slot: 'COOLER', tier: 'budget' },
-      { productId: 'rtic-45-cooler', category: 'Cooler', slot: 'COOLER', tier: 'premium' },
+      { productId: 'cooler-basic', category: 'Cooler', slot: 'COOLER', tier: 'premium' },
       { productId: 'luminaid-packlite-max', category: 'Lighting', slot: 'LIGHTING' },
       { productId: 'fwc-lantern-consciot', category: 'Lighting', slot: 'LIGHTING', tier: 'budget' },
       { productId: 'streamlight-protac-2', category: 'Lighting', slot: 'HEADLAMP' },
@@ -149,7 +149,7 @@ export const GEAR_SETS: Record<GearSetId, GearSet> = {
       { productId: 'stove-2-burner', category: 'Cooking', slot: 'STOVE', tier: 'premium' },
       { productId: 'coleman-classic-rolling-cooler', category: 'Cooler', slot: 'COOLER' },
       { productId: 'coleman-xtreme-50-cooler', category: 'Cooler', slot: 'COOLER', tier: 'budget' },
-      { productId: 'rtic-45-cooler', category: 'Cooler', slot: 'COOLER', tier: 'premium' },
+      { productId: 'cooler-basic', category: 'Cooler', slot: 'COOLER', tier: 'premium' },
       // Chair with built-in cooler — kid-friendly, fits anywhere.
       { productId: 'gci-freestyle-rocker', category: 'Comfort', slot: 'CHAIR' },
       { productId: 'coleman-portable-chair-cooler', category: 'Comfort', slot: 'CHAIR', tier: 'budget' },
