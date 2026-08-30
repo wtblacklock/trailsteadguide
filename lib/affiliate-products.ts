@@ -79,7 +79,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     description:
       '8-person step-up from the 6-person size. 12×9 ft floor, near-vertical walls for 20% more headroom, 5-minute setup. The pick for a family of 5+ or two families sharing one tent.',
     amazonAsin: 'B0DWTQR7X8',
-    affiliateUrl: 'https://www.amazon.com/dp/B0DWTQR7X8?tag=trailsteadgui-20&linkCode=ll1&ref_=as_li_ss_tl',
+    affiliateUrl: 'https://amzn.to/4h1vG5L',
     imageUrl: 'https://m.media-amazon.com/images/I/61-lD2oWFoL._AC_SX679_.jpg',
     category: 'comfort',
     templateSlugs: [],
@@ -219,7 +219,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     description:
       'High-output handheld flashlight. Long throw, runs on rechargeable or AA cells. The "find it in the dark" tool.',
     amazonAsin: 'B0F7648NM1',
-    affiliateUrl: 'https://www.amazon.com/dp/B0F7648NM1?tag=trailsteadgui-20&linkCode=ll1&ref_=as_li_ss_tl',
+    affiliateUrl: 'https://amzn.to/4i3LBBI',
     imageUrl: 'https://m.media-amazon.com/images/I/71dbuuM+YsL._AC_SL1500_.jpg',
     category: 'essential',
     templateSlugs: ['backyard-test', 'easy-family-basecamp', 'first-night-camp', 'first-weekend-camp'],
@@ -303,7 +303,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     description:
       '410-piece first aid kit in a waterproof hard case. Comprehensive enough for two cars and a long weekend.',
     amazonAsin: 'B0F1DJ8DPM',
-    affiliateUrl: 'https://www.amazon.com/dp/B0F1DJ8DPM?tag=trailsteadgui-20&linkCode=ll1&ref_=as_li_ss_tl',
+    affiliateUrl: 'https://amzn.to/4x2I62f',
     imageUrl: 'https://m.media-amazon.com/images/I/71jpCrKJ-hL._AC_SL1500_.jpg',
     category: 'essential',
     templateSlugs: ['backyard-test', 'easy-family-basecamp', 'first-night-camp', 'first-weekend-camp'],
@@ -373,7 +373,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     description:
       '172 sq ft of waterproof coverage over the picnic table and cook area when the forecast turns. Reflective guylines and aluminum stakes included; rigs to a tent, trees, or trekking poles.',
     amazonAsin: 'B0F4DG87NJ',
-    affiliateUrl: 'https://www.amazon.com/dp/B0F4DG87NJ?tag=trailsteadgui-20&linkCode=ll1&ref_=as_li_ss_tl',
+    affiliateUrl: 'https://amzn.to/4wVaO4M',
     imageUrl: 'https://m.media-amazon.com/images/I/510GtevM6ZL._AC_SX679_.jpg',
     category: 'essential',
     templateSlugs: [],
@@ -387,7 +387,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     description:
       'Rechargeable tent fan with a hook for hanging overhead, a hanging light, and a remote. 24,000mAh battery runs it all night without waking anyone up to fumble for a switch.',
     amazonAsin: 'B0BVTHPXLB',
-    affiliateUrl: 'https://www.amazon.com/dp/B0BVTHPXLB?tag=trailsteadgui-20&linkCode=ll1&ref_=as_li_ss_tl',
+    affiliateUrl: 'https://amzn.to/4x2IduH',
     imageUrl: 'https://m.media-amazon.com/images/I/71E1s4gODdL._AC_SX679_.jpg',
     category: 'comfort',
     templateSlugs: [],
@@ -401,7 +401,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     description:
       'Built-in USB-C cable, 30W fast charging. Enough capacity to keep phones, headlamps, and the tent fan topped off for a weekend without hunting for an outlet.',
     amazonAsin: 'B0CZ9LH53B',
-    affiliateUrl: 'https://www.amazon.com/dp/B0CZ9LH53B?tag=trailsteadgui-20&linkCode=ll1&ref_=as_li_ss_tl',
+    affiliateUrl: 'https://amzn.to/4ya2OxW',
     imageUrl: 'https://m.media-amazon.com/images/I/61uNRmtEtvL._AC_SX679_.jpg',
     category: 'convenience',
     templateSlugs: [],
@@ -415,7 +415,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     description:
       'Pot, kettle, and frying pan plus 2 sets of cups, plates, and utensils — enough to cook and eat a real meal for two without packing the kitchen. Nests into its own carry bag.',
     amazonAsin: 'B0D2KF98MC',
-    affiliateUrl: 'https://www.amazon.com/dp/B0D2KF98MC?tag=trailsteadgui-20&linkCode=ll1&ref_=as_li_ss_tl',
+    affiliateUrl: 'https://amzn.to/4daCSKt',
     imageUrl: 'https://m.media-amazon.com/images/I/71+w63znCVL._AC_SX679_.jpg',
     category: 'essential',
     templateSlugs: [],
@@ -429,7 +429,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     description:
       'Air-activated, up to 10 hours of heat each. The cheap insurance for cold mornings that makes a 0°F bag and an insulated pad feel like overkill by 8am.',
     amazonAsin: 'B0007ZF4OA',
-    affiliateUrl: 'https://www.amazon.com/dp/B0007ZF4OA?tag=trailsteadgui-20&linkCode=ll1&ref_=as_li_ss_tl',
+    affiliateUrl: 'https://amzn.to/4xnqjDM',
     imageUrl: 'https://m.media-amazon.com/images/I/813kj6AjAuL._AC_SX679_.jpg',
     category: 'essential',
     templateSlugs: [],
@@ -792,7 +792,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     description:
       'The couple or solo-with-gear pick. 7×7 ft floor, sets up in 10 minutes, fits a full-size air bed.',
     amazonAsin: 'B0D7QHXVKJ',
-    affiliateUrl: 'https://www.amazon.com/dp/B0D7QHXVKJ?tag=trailsteadgui-20&linkCode=ll1&ref_=as_li_ss_tl',
+    affiliateUrl: 'https://amzn.to/4xtbzTM',
     imageUrl: 'https://m.media-amazon.com/images/I/71ADgccHF4L._AC_SL1500_.jpg',
     category: 'essential',
     templateSlugs: [],
@@ -806,7 +806,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     description:
       'The size-up pick for families of 5+ or anyone who wants room to stand and spread out gear. 10×10 ft floor.',
     amazonAsin: 'B0D7QFZNS7',
-    affiliateUrl: 'https://www.amazon.com/dp/B0D7QFZNS7?tag=trailsteadgui-20&linkCode=ll1&ref_=as_li_ss_tl',
+    affiliateUrl: 'https://amzn.to/4ycBrU5',
     imageUrl: 'https://m.media-amazon.com/images/I/71+D8rreCgL._AC_SL1500_.jpg',
     category: 'comfort',
     templateSlugs: [],
