@@ -1,3 +1,5 @@
+import PrintPageBreak from './PrintPageBreak'
+
 export default function BearBagFoodStorageCard() {
   const goesIn = [
     'All food — packaged, fresh, cooked, or partially eaten',
@@ -140,51 +142,57 @@ export default function BearBagFoodStorageCard() {
         .bear-card .if-happens h2 { color: #D6D3D1; border-bottom-color: #44403C; }
       `}</style>
 
-      <p className="lead">
-        Bears that get human food become habituated and must be euthanized. Hanging your food correctly takes 10 minutes and protects both your trip and the bear.
-      </p>
+      <div className="print-side print-side-1">
+        <p className="lead">
+          Bears that get human food become habituated and must be euthanized. Hanging your food correctly takes 10 minutes and protects both your trip and the bear.
+        </p>
 
-      <div className="top-cols">
-        <div>
-          <h2>Goes in the Bear Bag</h2>
-          <ul className="check-list">
-            {goesIn.map((item) => (
-              <li key={item}><span className="box" aria-hidden="true" />{item}</li>
-            ))}
-          </ul>
-        </div>
-        <div>
-          <div style={{ marginBottom: '12px' }}>
-            <h2>Stays Out (Safe in Tent)</h2>
-            <ul className="check-list stays-out">
-              {staysOut.map((item) => (
+        <div className="top-cols">
+          <div>
+            <h2>Goes in the Bear Bag</h2>
+            <ul className="check-list">
+              {goesIn.map((item) => (
                 <li key={item}><span className="box" aria-hidden="true" />{item}</li>
               ))}
             </ul>
           </div>
-          <div className="canister">
-            <h2 style={{ marginBottom: '6px' }}>Bear Canister Sizing</h2>
-            <strong>1 night</strong> — 450–500 cu in per person<br />
-            <strong>2–3 nights</strong> — 650–700 cu in per person<br />
-            <strong>4–7 nights</strong> — 900+ cu in per person<br />
-            <span style={{ color: '#78716C', fontSize: '10px' }}>Required by permit in some wilderness areas. Check before you go.</span>
+          <div>
+            <div style={{ marginBottom: '12px' }}>
+              <h2>Stays Out (Safe in Tent)</h2>
+              <ul className="check-list stays-out">
+                {staysOut.map((item) => (
+                  <li key={item}><span className="box" aria-hidden="true" />{item}</li>
+                ))}
+              </ul>
+            </div>
+            <div className="canister">
+              <h2 style={{ marginBottom: '6px' }}>Bear Canister Sizing</h2>
+              <strong>1 night</strong> — 450–500 cu in per person<br />
+              <strong>2–3 nights</strong> — 650–700 cu in per person<br />
+              <strong>4–7 nights</strong> — 900+ cu in per person<br />
+              <span style={{ color: '#78716C', fontSize: '10px' }}>Required by permit in some wilderness areas. Check before you go.</span>
+            </div>
           </div>
+        </div>
+
+        <div className="if-happens">
+          <h2>If a Bear Gets Your Food</h2>
+          Don&apos;t chase it — you won&apos;t win and you could get hurt. Make loud noise to drive it off once it has moved away from camp. Report to the camp host or ranger station: date, time, location, and bear description. The trip is not over — most campers who lose food finish the trip on camp store supplies.
         </div>
       </div>
 
-      <h2>PCT Counter-Balance Hang Method</h2>
-      <ol>
-        {pctSteps.map((s) => (
-          <li key={s.step}>
-            <span className="step-label">{s.step}</span>
-            <span className="step-detail">{s.detail}</span>
-          </li>
-        ))}
-      </ol>
+      <PrintPageBreak />
 
-      <div className="if-happens">
-        <h2>If a Bear Gets Your Food</h2>
-        Don&apos;t chase it — you won&apos;t win and you could get hurt. Make loud noise to drive it off once it has moved away from camp. Report to the camp host or ranger station: date, time, location, and bear description. The trip is not over — most campers who lose food finish the trip on camp store supplies.
+      <div className="print-side print-side-2">
+        <h2>PCT Counter-Balance Hang Method</h2>
+        <ol>
+          {pctSteps.map((s) => (
+            <li key={s.step}>
+              <span className="step-label">{s.step}</span>
+              <span className="step-detail">{s.detail}</span>
+            </li>
+          ))}
+        </ol>
       </div>
     </div>
   )
