@@ -1,10 +1,10 @@
 import Link from 'next/link'
 import { PLAN_TEMPLATES } from '@/lib/plan-templates'
-import { GEAR_SETS, resolveGearSet, type GearTier } from '@/lib/gear-sets'
+import { GEAR_SETS, GEAR_TIERS, resolveGearSet } from '@/lib/gear-sets'
 import { getPlanContent } from '@/lib/plan-content'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
-import GearTierToggle from '@/components/gear/GearTierToggle'
+import GearHubClient, { type HubBundle } from '@/components/gear/GearHubClient'
 import { pageMetadata, collectionPageGraph, SITE_URL } from '@/lib/seo'
 import type { PlanSlug } from '@/types'
 
@@ -12,10 +12,6 @@ function parsePriceRange(range: string): number {
   const match = range.match(/\d+/)
   return match ? parseInt(match[0], 10) : 0
 }
-
-// Content depends entirely on the `?tier=` query string — never cache the
-// HTML shell for this route, at any layer.
-export const dynamic = 'force-dynamic'
 
 const TITLE = 'Camping Gear Guide'
 const DESCRIPTION =
@@ -34,26 +30,33 @@ export const metadata = pageMetadata({
   path: '/gear',
 })
 
-function parseTier(value: string | string[] | undefined): GearTier {
-  return value === 'budget' || value === 'premium' ? value : 'standard'
-}
-
-export default async function GearHubPage({
-  searchParams,
-}: {
-  searchParams: Promise<{ tier?: string }>
-}) {
-  const sp = await searchParams
-  const tier = parseTier(sp.tier)
-
-  const bundles = BUNDLE_ORDER.map((planSlug) => {
+export default function GearHubPage() {
+  const bundles: HubBundle[] = BUNDLE_ORDER.map((planSlug) => {
     const plan = PLAN_TEMPLATES[planSlug]
     const content = getPlanContent(planSlug)
     const set = GEAR_SETS[content.gearSetId]
-    const items = resolveGearSet(content.gearSetId, tier)
-    const total = items.reduce((sum, item) => sum + parsePriceRange(item.product.priceRange ?? ''), 0)
-    return { planSlug, plan, set, items, total }
-  }).filter((b) => b.plan && b.set)
+    if (!plan || !set) return null
+
+    const itemsByTier = Object.fromEntries(
+      GEAR_TIERS.map(({ id }) => [id, resolveGearSet(content.gearSetId, id).map((r) => r.product)]),
+    ) as HubBundle['itemsByTier']
+    const totalByTier = Object.fromEntries(
+      GEAR_TIERS.map(({ id }) => [
+        id,
+        itemsByTier[id].reduce((sum, product) => sum + parsePriceRange(product.priceRange ?? ''), 0),
+      ]),
+    ) as HubBundle['totalByTier']
+
+    return {
+      planSlug,
+      planTitle: plan.title,
+      setTitle: set.title,
+      setTagline: set.tagline,
+      entryCount: set.entries.length,
+      itemsByTier,
+      totalByTier,
+    }
+  }).filter((b): b is HubBundle => b !== null)
 
   return (
     <main>
@@ -63,7 +66,7 @@ export default async function GearHubPage({
           title: TITLE,
           description: DESCRIPTION,
           items: bundles.map((b) => ({
-            name: b.set.title,
+            name: b.setTitle,
             url: `${SITE_URL}/gear/sets/${b.planSlug}`,
           })),
         })}
@@ -97,87 +100,9 @@ export default async function GearHubPage({
             Not sure which plan? Take the quiz
           </Link>
         </div>
-        <div className="mt-10">
-          <GearTierToggle basePath="/gear" tier={tier} />
-        </div>
       </header>
 
-      <section className="max-w-page mx-auto px-8 pb-24">
-        <ul className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-          {bundles.map(({ planSlug, plan, set, items, total }) => (
-            <li key={planSlug}>
-              <Link
-                href={tier === 'standard' ? `/gear/sets/${planSlug}` : `/gear/sets/${planSlug}?tier=${tier}`}
-                prefetch={false}
-                className="group block h-full p-8 md:p-10 rounded-2xl ring-1 ring-stone-200 bg-white hover:ring-stone-900 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-200"
-              >
-                <p className="text-xs font-semibold tracking-[0.18em] uppercase text-stone-500 mb-4">
-                  Gear set · {set.entries.length} items
-                </p>
-                <h2 className="font-serif text-3xl md:text-4xl font-semibold text-stone-950 tracking-tight leading-tight mb-3">
-                  {set.title}
-                </h2>
-                <p className="text-stone-600 leading-relaxed mb-6">{set.tagline}</p>
-
-                <ul className="mb-2 divide-y divide-stone-100">
-                  {items.map(({ product }) => (
-                    <li key={product.id} className="flex items-center justify-between gap-4 py-2">
-                      <span className="flex items-center gap-3 min-w-0">
-                        {product.imageUrl && (
-                          <span className="shrink-0 w-9 h-9 rounded-md bg-stone-100 overflow-hidden ring-1 ring-stone-200">
-                            {/* eslint-disable-next-line @next/next/no-img-element */}
-                            <img
-                              src={product.imageUrl}
-                              alt=""
-                              loading="lazy"
-                              className="w-full h-full object-cover"
-                            />
-                          </span>
-                        )}
-                        <span className="text-sm text-stone-700 leading-snug truncate">{product.name}</span>
-                      </span>
-                      <span className="text-sm text-stone-500 tabular-nums shrink-0">
-                        {product.priceRange ?? '—'}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
-                <div className="flex items-center justify-between py-2 mb-6 border-t border-stone-200">
-                  <span className="text-sm font-semibold text-stone-900">Estimated total</span>
-                  <span className="text-sm font-semibold text-stone-900 tabular-nums">~${total}</span>
-                </div>
-
-                <p className="text-sm text-stone-500 mb-8">
-                  Pairs with the{' '}
-                  <span className="text-stone-700 font-medium">{plan.title}</span> plan.
-                </p>
-                <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-stone-900 group-hover:text-stone-600 transition-colors">
-                  See the gear
-                  <svg
-                    width="14"
-                    height="14"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    aria-hidden="true"
-                    className="transition-transform duration-200 group-hover:translate-x-0.5"
-                  >
-                    <path d="M5 12h14" />
-                    <path d="M13 5l7 7-7 7" />
-                  </svg>
-                </span>
-              </Link>
-            </li>
-          ))}
-        </ul>
-
-        <p className="mt-12 text-xs text-stone-500 max-w-2xl">
-          As an Amazon Associate we earn from qualifying purchases. Links on the bundle pages are affiliate links — clicking them may earn us a small commission at no extra cost to you.
-        </p>
-      </section>
+      <GearHubClient bundles={bundles} />
     </main>
   )
 }
