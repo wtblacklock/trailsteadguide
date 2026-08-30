@@ -2,9 +2,9 @@ name: PR checks
 
 on:
   pull_request:
-    branches: [main, feature/mvp-build]
+    branches: [main]
   push:
-    branches: [main, feature/mvp-build]
+    branches: [main]
   workflow_dispatch:
 
 concurrency:
