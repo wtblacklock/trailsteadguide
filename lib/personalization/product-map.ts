@@ -65,17 +65,17 @@ export const SLEEP_PRODUCTS: SleepMap = {
 export const COOKING_PRODUCTS: CookingMap = {
   minimal: {
     stoves: ['coleman-1-burner'],
-    cookware: [],
+    cookware: ['thtybros-cookware-mess-kit'],
     coolers: ['coleman-classic-rolling-cooler'],
   },
   standard: {
     stoves: ['coleman-triton-2-burner'],
-    cookware: [],
+    cookware: ['thtybros-cookware-mess-kit'],
     coolers: ['coleman-classic-rolling-cooler'],
   },
   comfort: {
     stoves: ['coleman-triton-2-burner'],
-    cookware: [],
+    cookware: ['thtybros-cookware-mess-kit'],
     coolers: ['coleman-classic-rolling-cooler'],
   },
 }
