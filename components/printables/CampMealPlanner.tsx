@@ -36,6 +36,8 @@ const GROCERY_CATEGORIES = [
   'Beverages & coffee',
 ]
 
+import PrintPageBreak from './PrintPageBreak'
+
 export default function CampMealPlanner() {
   return (
     <div className="meal-planner">
@@ -168,8 +170,9 @@ export default function CampMealPlanner() {
         .meal-planner .scaling td:first-child { color: #78716C; font-weight: 600; }
       `}</style>
 
+      <div className="print-side print-side-1">
       <p className="lead">
-        Fill in the meal column first, then circle a cook method. Transfer each ingredient to the shopping list. Default portions feed 4 people — scale note at the bottom.
+        Fill in the meal column first, then circle a cook method. Transfer each ingredient to the shopping list. Default portions feed 4 people — scale note on side 2.
       </p>
 
       <h2>Meal Plan Grid</h2>
@@ -218,7 +221,11 @@ export default function CampMealPlanner() {
           })}
         </tbody>
       </table>
+      </div>
 
+      <PrintPageBreak />
+
+      <div className="print-side print-side-2">
       <div className="bottom-cols">
         <div>
           <h2>Shopping List</h2>
@@ -252,6 +259,7 @@ export default function CampMealPlanner() {
             <div key={i} style={{ borderBottom: '1px solid #D6D3D1', height: '22px', marginBottom: '4px' }} />
           ))}
         </div>
+      </div>
       </div>
     </div>
   )
