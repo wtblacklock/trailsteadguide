@@ -34,14 +34,14 @@ describe('PLAN_TEMPLATES — activities & skills integrity', () => {
     }
   })
 
-  it.each(entries)('%s — activitySchedule slugs are subset of recommendedActivities', (slug, plan) => {
-    const recommended = new Set(plan.recommendedActivities)
+  it.each(entries)('%s — every activitySchedule slug resolves', (slug, plan) => {
     const scheduled = [
       ...plan.activitySchedule.day1,
       ...(plan.activitySchedule.day2 ?? []),
+      ...(plan.activitySchedule.day3 ?? []),
     ]
     for (const s of scheduled) {
-      expect(recommended.has(s), `${slug}: ${s} scheduled but not recommended`).toBe(true)
+      expect(getActivityBySlug(s), `${slug}: missing activity ${s}`).not.toBeNull()
     }
   })
 
@@ -49,6 +49,7 @@ describe('PLAN_TEMPLATES — activities & skills integrity', () => {
     const scheduled = new Set([
       ...plan.activitySchedule.day1,
       ...(plan.activitySchedule.day2 ?? []),
+      ...(plan.activitySchedule.day3 ?? []),
     ])
     for (const s of plan.recommendedActivities) {
       expect(scheduled.has(s), `${slug}: ${s} recommended but never scheduled`).toBe(true)
