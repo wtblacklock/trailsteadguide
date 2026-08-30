@@ -14,7 +14,7 @@ const PRE_FLIGHT_GROUPS: Array<{ heading: string; items: string[] }> = [
       'Light the stove on its lowest setting. Confirm fuel canister is full.',
       'Boil 2 cups of water. Time it — calibrate vs the foil-pack card.',
       'Inflate every sleeping pad. Listen for leaks for 60 minutes.',
-      'Power-cycle every headlamp and lantern. Replace batteries that flicker — confirm the lantern is bright enough to cook by.',
+      'Power-cycle every headlamp and lantern. Replace batteries that flicker, confirm the lantern is bright enough to cook by, and charge phones and any battery packs.',
     ],
   },
   {
