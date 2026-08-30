@@ -298,6 +298,20 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     slot: 'KID_GEAR',
   },
   {
+    id: 'carpathen-smores-sticks',
+    name: 'CARPATHEN Smores Sticks (8-Pack)',
+    description:
+      'Telescoping stainless steel roasting sticks with dull tips and colorful engraved wood handles. Keeps kids a safe distance from the coals while they roast their own marshmallows and hot dogs.',
+    amazonAsin: 'B0CDXVG3C3',
+    affiliateUrl: 'https://www.amazon.com/dp/B0CDXVG3C3?tag=trailsteadgui-20&linkCode=ll1&ref_=as_li_ss_tl',
+    imageUrl: 'https://m.media-amazon.com/images/I/81UhtBMzZWL._AC_SX679_.jpg',
+    category: 'essential',
+    templateSlugs: ['backyard-test', 'easy-family-basecamp', 'first-night-camp', 'first-weekend-camp'],
+    priceRange: '~$15',
+    tags: ['with-kids', 'family', 'budget'],
+    slot: 'KID_GEAR',
+  },
+  {
     id: 'thriad-first-aid-430',
     name: 'Gevoke 410-Piece First Aid Kit',
     description:

@@ -170,6 +170,9 @@ export default function Page() {
         <p>
           The camp stove bypasses this entirely — use the stove for breakfast and anything that needs precise heat, and use the campfire for foil packets and hot dogs once you have coals.
         </p>
+        <p>
+          For hands-on recipes kids can help make themselves — foil packets they build, roasting stick foods, and desserts beyond s&apos;mores — see <Link href="/guides/campfire-recipes-for-kids">campfire recipes for kids</Link>.
+        </p>
 
         <h2>Cooler management</h2>
         <p>

@@ -313,6 +313,14 @@ export const GUIDES: Guide[] = [
     eyebrow: 'Camp food',
     relatedGuides: ['easy-family-camping-meals', 'camping-meal-plan-family', 'family-camping-for-beginners'],
   },
+  {
+    slug: 'campfire-recipes-for-kids',
+    category: 'basics',
+    title: 'Campfire Recipes for Kids',
+    description: 'Beyond s\'mores: build-your-own foil packets, pie iron sandwiches, and roasting stick foods kids can help make.',
+    eyebrow: 'Camp food',
+    relatedGuides: ['easy-family-camping-meals', 'camping-meal-plan-family', 'no-cook-camping-meals-kids'],
+  },
   // --- Location: where to camp with family ---
   {
     slug: 'best-state-parks-for-families',
