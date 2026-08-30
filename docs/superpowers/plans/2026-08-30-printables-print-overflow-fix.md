@@ -34,12 +34,12 @@ git checkout -b fix/printables-print-overflow
 
 ---
 
-## Task 1: Shared `PrintPageBreak` component
+## Task 1: Shared `PrintPageBreak` component ✅ DONE (8c0424d)
 
 **Files:**
 - Create: `components/printables/PrintPageBreak.tsx`
 
-- [ ] **Step 1: Create the component**
+- [x] **Step 1: Create the component**
 
 ```tsx
 /**
@@ -102,7 +102,7 @@ git commit -m "feat(printables): add shared PrintPageBreak component for front/b
 
 ---
 
-## Task 2: Trim — Knot Reference Card (1086px → 937px)
+## Task 2: Trim — Knot Reference Card (1086px → 937px) ✅ DONE (7398631) — note: merged warning text lost red/⚠ visual distinctiveness, minor follow-up polish possible
 
 **Files:**
 - Modify: `components/printables/KnotReferenceCard.tsx`
@@ -344,7 +344,7 @@ git commit -m "fix(printables): trim Knot Reference Card to fit one printed page
 
 ---
 
-## Task 3: Trim — Shadow Puppet Hand Guide (1066px → 966px)
+## Task 3: Trim — Shadow Puppet Hand Guide (1066px → 966px) ✅ DONE (1ea68ba)
 
 **Files:**
 - Modify: `components/printables/ShadowPuppetHandGuide.tsx`
@@ -550,7 +550,7 @@ git commit -m "fix(printables): trim Shadow Puppet Hand Guide to fit one printed
 
 ---
 
-## Task 4: Trim — Leave No Trace Quick Reference (1070px → 942px)
+## Task 4: Trim — Leave No Trace Quick Reference (1070px → 942px) ✅ DONE (e58878b)
 
 **Files:**
 - Modify: `components/printables/LeaveNoTraceQuickReference.tsx`
@@ -820,7 +820,7 @@ git commit -m "fix(printables): trim Leave No Trace Quick Reference to fit one p
 
 ---
 
-## Task 5: Trim — Backyard Test Pre-Flight Checklist (1072px → 933px)
+## Task 5: Trim — Backyard Test Pre-Flight Checklist (1072px → 933px) ✅ DONE (9c54a78 + follow-up 905b962: restored a dropped device-charging clause the plan's own merge had accidentally cut, now 950px)
 
 **Files:**
 - Modify: `components/printables/BackyardTestChecklist.tsx`
@@ -971,7 +971,7 @@ git commit -m "fix(printables): trim Backyard Test Checklist to fit one printed 
 
 ---
 
-## Task 6: Front & back — Bear Bag & Food Storage Card (1497px → 475px + 856px)
+## Task 6: Front & back — Bear Bag & Food Storage Card (1497px → 475px + 856px) ✅ DONE (3992bae; print-side class convention documented in 14643ee)
 
 **Files:**
 - Modify: `components/printables/BearBagFoodStorageCard.tsx`
@@ -1212,7 +1212,7 @@ git commit -m "fix(printables): split Bear Bag & Food Storage Card into front/ba
 
 ---
 
-## Task 7: Front & back — Camp First Aid Quick Reference (1184px → 765px + 255px)
+## Task 7: Front & back — Camp First Aid Quick Reference (1184px → 765px + 255px) ✅ DONE (d2c81a5)
 
 **Files:**
 - Modify: `components/printables/CampFirstAidQuickReference.tsx`
@@ -1542,7 +1542,7 @@ git commit -m "fix(printables): split Camp First Aid Quick Reference into front/
 
 ---
 
-## Task 8: Front & back — Fire-Starting Checklist (1261px → 673px + 421px)
+## Task 8: Front & back — Fire-Starting Checklist (1261px → 673px + 421px) ✅ DONE (d1189c0) — minor editorial note: teepee/log-cabin section arguably fits side 1 (build-time) better than opening side 2, not blocking
 
 **Files:**
 - Modify: `components/printables/FireStartingChecklist.tsx`
@@ -1774,7 +1774,7 @@ git commit -m "fix(printables): split Fire-Starting Checklist into front/back pa
 
 ---
 
-## Task 9: Front & back — 3-Day Camp Meal Planner (1311px → 583px + 563px)
+## Task 9: Front & back — 3-Day Camp Meal Planner (1311px → 583px + 563px) ✅ DONE (c81ad38; reindent fixup c52319a)
 
 **Files:**
 - Modify: `components/printables/CampMealPlanner.tsx`
@@ -2073,7 +2073,7 @@ git commit -m "fix(printables): split 3-Day Camp Meal Planner into front/back pa
 
 ---
 
-## Task 10: Front & back — Northern Hemisphere Constellation Wheel (1349px → 518px + 647px)
+## Task 10: Front & back — Northern Hemisphere Constellation Wheel (1349px → 518px + 647px) ✅ DONE (979825d)
 
 **Files:**
 - Modify: `components/printables/ConstellationWheel.tsx:392-467` (the `ConstellationWheel` default export only — the `DISCS` data array above it, lines 60–301, is untouched)
@@ -2214,7 +2214,7 @@ git commit -m "fix(printables): split Constellation Wheel into front/back pages"
 
 ---
 
-## Task 11: Front & back — Animal Track ID Card (1166px → 567px + 437px)
+## Task 11: Front & back — Animal Track ID Card (1166px → 567px + 437px) ✅ DONE (5921e9e)
 
 **Files:**
 - Modify: `components/printables/AnimalTrackIdCard.tsx`
@@ -2509,7 +2509,7 @@ git commit -m "fix(printables): split Animal Track ID Card into front/back pages
 
 ---
 
-## Task 12: Update landing-page copy for the 6 front/back printables
+## Task 12: Update landing-page copy for the 6 front/back printables ✅ DONE (9b5a52b; tagline polish c7e1f1c) — note: app/printables/page.tsx and components/landing/AfterPlanRow.tsx still make blanket "single-page" catalog claims, out of scope here, flagged for follow-up
 
 **Files:**
 - Modify: `lib/printables/data.ts`
@@ -2780,7 +2780,7 @@ git commit -m "docs(printables): update front/back copy for the 6 restructured p
 
 ---
 
-## Task 13: Full verification and cleanup
+## Task 13: Full verification and cleanup ✅ DONE — all 15 printables re-measured under 979px, 227/227 tests pass, lint clean (5 pre-existing unrelated warnings), production build clean including all print routes, visual spot-check clean on 2 front/back cards
 
 **Files:** none modified — this task only runs checks.
 
