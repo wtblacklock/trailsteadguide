@@ -74,6 +74,20 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     slot: 'TENT',
   },
   {
+    id: 'coleman-skydome-8p',
+    name: 'Coleman Skydome 8-Person Tent',
+    description:
+      '8-person step-up from the 6-person size. 12×9 ft floor, near-vertical walls for 20% more headroom, 5-minute setup. The pick for a family of 5+ or two families sharing one tent.',
+    amazonAsin: 'B0DWTQR7X8',
+    affiliateUrl: 'https://www.amazon.com/dp/B0DWTQR7X8?tag=trailsteadgui-20&linkCode=ll1&ref_=as_li_ss_tl',
+    imageUrl: 'https://m.media-amazon.com/images/I/61-lD2oWFoL._AC_SX679_.jpg',
+    category: 'comfort',
+    templateSlugs: [],
+    priceRange: '~$165',
+    tags: ['tent', 'family', 'mid-range', 'comfort'],
+    slot: 'TENT',
+  },
+  {
     id: 'coleman-brazos-bag',
     name: 'Coleman Brazos Sleeping Bag',
     description:

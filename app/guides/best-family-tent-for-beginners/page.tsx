@@ -95,7 +95,7 @@ export default function Page() {
           A 4-person tent fits 4 adults. It fits a family of 4 if you want to sleep like sardines with your luggage outside and get dressed while lying down. For a family of 4 with kids, buy a 6-person tent. For a family of 5, buy an 8-person tent. The extra floor space holds gear, gives kids room to spread out, and makes the tent feel like a shelter rather than a coffin.
         </p>
         <p>
-          This is the single most common mistake first-time family campers make with tent purchases.
+          This is the single most common mistake first-time family campers make with tent purchases. See our full <Link href="/compare/6-person-vs-8-person-family-tent">6-person vs. 8-person comparison</Link> for the specifics on which size fits which family.
         </p>
 
         <h2>Dome tent vs. cabin tent: which is right for families</h2>
@@ -111,7 +111,7 @@ export default function Page() {
           </li>
         </ul>
         <p>
-          For most first-time family campers doing car camping at established sites, a cabin tent is the better choice. The ability to stand up while dressing a 4-year-old in the morning is not a luxury — it&apos;s an actual quality-of-life difference.
+          For most first-time family campers doing car camping at established sites, a cabin tent is the better choice. The ability to stand up while dressing a 4-year-old in the morning is not a luxury — it&apos;s an actual quality-of-life difference. See the full <Link href="/compare/dome-tent-vs-cabin-tent">dome vs. cabin comparison</Link> for the complete breakdown.
         </p>
 
         <h2>Features that matter for families</h2>
@@ -127,7 +127,7 @@ export default function Page() {
 
         <h3>Weatherproofing — what actually matters</h3>
         <p>
-          For car camping at established sites, you need: a full-coverage rain fly, taped or sealed seams, and a waterproof bathtub-style floor that runs several inches up the wall (so pooling water around the tent doesn&apos;t seep in under the wall). You do not need a tent rated for alpine conditions. A hydrostatic head rating of 1500mm or above is fine for typical campsite rain.
+          For car camping at established sites, you need: a full-coverage rain fly, taped or sealed seams, and a waterproof bathtub-style floor that runs several inches up the wall (so pooling water around the tent doesn&apos;t seep in under the wall). You do not need a tent rated for alpine conditions. A hydrostatic head rating of 1500mm or above is fine for typical campsite rain. If rain is the priority for your trip, see our full <Link href="/guides/best-tent-for-rainy-camping">best tent for rainy camping</Link> guide. Heading somewhere hot instead? See <Link href="/guides/best-tent-for-hot-weather">best tent for hot weather</Link>.
         </p>
 
         <h3>Freestanding vs. non-freestanding</h3>
@@ -187,7 +187,7 @@ export default function Page() {
 
         <h2>How to make your tent last</h2>
         <ul>
-          <li><strong>Pitch it before the trip.</strong> Every tent should be pitched at home at least once before you depend on it in the dark at 7pm at a campsite. The <Link href="/plans/backyard-test">backyard test</Link> is the right time for this.</li>
+          <li><strong>Pitch it before the trip.</strong> Every tent should be pitched at home at least once before you depend on it in the dark at 7pm at a campsite. The <Link href="/plans/backyard-test">backyard test</Link> is the right time for this — see our full <Link href="/guides/how-to-set-up-a-tent">how to set up a tent</Link> walkthrough if it&apos;s your first time.</li>
           <li><strong>Never store a wet tent.</strong> Mold and mildew destroy tent fabric from the inside out. If you pack up in rain, hang the tent to dry in the garage or yard before putting it in the bag.</li>
           <li><strong>Use a footprint or tarp under the floor.</strong> Ground debris punctures tent floors over time. A footprint cut to the tent&apos;s dimensions extends floor life significantly.</li>
           <li><strong>Seam seal once per season.</strong> Even factory-sealed seams degrade over time. A $10 tube of seam sealer applied at the start of camping season keeps the tent watertight.</li>
