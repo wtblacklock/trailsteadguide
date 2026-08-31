@@ -30,6 +30,7 @@ export const PRINTABLES: Printable[] = [
     datePublished: '2026-04-27',
     relatedSkillPath: 'stargazing/reading-a-star-chart',
     relatedGuideSlug: 'first-night-camping-guide',
+    relatedProductIds: ['planisphere', 'celestron-outland-binoculars'],
   },
   {
     slug: 'camp-cooking-conversion-card',
@@ -56,6 +57,7 @@ export const PRINTABLES: Printable[] = [
     datePublished: '2026-04-27',
     relatedSkillPath: 'cooking/two-burner-stove-basics',
     relatedGuideSlug: 'first-camping-trip-checklist',
+    relatedProductIds: ['lodge-cast-iron-skillet'],
   },
   {
     slug: 'backyard-test-checklist',
@@ -106,6 +108,7 @@ export const PRINTABLES: Printable[] = [
     datePublished: '2026-04-27',
     relatedSkillPath: 'knots/square-knot',
     relatedGuideSlug: 'first-camping-trip-checklist',
+    relatedProductIds: ['paracord-550-50ft'],
   },
   {
     slug: 'fire-starting-checklist',
@@ -131,6 +134,7 @@ export const PRINTABLES: Printable[] = [
     datePublished: '2026-04-27',
     relatedSkillPath: 'fire/starting-a-fire',
     relatedGuideSlug: 'first-camping-trip-checklist',
+    relatedProductIds: ['esbit-fire-cubes'],
   },
   // ── New printables ────────────────────────────────────────────────────────
   {
@@ -157,6 +161,7 @@ export const PRINTABLES: Printable[] = [
     datePublished: '2026-05-01',
     relatedSkillPath: 'hiking/day-hike-essentials',
     relatedGuideSlug: 'camping-with-kids-first-time',
+    relatedProductIds: ['field-guide-animal-tracks', 'nature-journal-art-kit'],
   },
   {
     slug: 'nature-scavenger-hunt-card',
@@ -182,6 +187,7 @@ export const PRINTABLES: Printable[] = [
     datePublished: '2026-05-01',
     relatedSkillPath: 'hiking/day-hike-essentials',
     relatedGuideSlug: 'camping-with-kids-first-time',
+    relatedProductIds: ['nature-journal-art-kit'],
   },
   {
     slug: 'night-sky-bingo',
@@ -207,6 +213,7 @@ export const PRINTABLES: Printable[] = [
     datePublished: '2026-05-01',
     relatedSkillPath: 'stargazing/finding-constellations',
     relatedGuideSlug: 'first-night-camping-guide',
+    relatedProductIds: ['planisphere', 'celestron-outland-binoculars'],
   },
   {
     slug: 'shadow-puppet-hand-guide',
@@ -232,6 +239,7 @@ export const PRINTABLES: Printable[] = [
     datePublished: '2026-05-01',
     relatedSkillPath: 'fire/starting-a-fire',
     relatedGuideSlug: 'camping-with-kids-first-time',
+    relatedProductIds: ['luminaid-packlite-max'],
   },
   {
     slug: 'kids-camping-packing-list',
@@ -282,6 +290,7 @@ export const PRINTABLES: Printable[] = [
     datePublished: '2026-05-01',
     relatedSkillPath: 'safety/weather-reading',
     relatedGuideSlug: 'camping-when-the-weather-turns',
+    relatedProductIds: ['geertop-17x10-tarp'],
   },
   {
     slug: 'bear-bag-food-storage-card',
@@ -307,6 +316,7 @@ export const PRINTABLES: Printable[] = [
     datePublished: '2026-05-01',
     relatedSkillPath: 'safety/food-storage-and-bear-bags',
     relatedGuideSlug: 'first-camping-trip-checklist',
+    relatedProductIds: ['paracord-550-50ft'],
   },
   {
     slug: 'camp-first-aid-quick-reference',
@@ -332,6 +342,7 @@ export const PRINTABLES: Printable[] = [
     datePublished: '2026-05-01',
     relatedSkillPath: 'safety/building-a-camp-first-aid-kit',
     relatedGuideSlug: 'first-camping-trip-checklist',
+    relatedProductIds: ['thriad-first-aid-430', 'sawyer-extractor-pump-kit'],
   },
   {
     slug: 'leave-no-trace-quick-reference',
@@ -357,6 +368,7 @@ export const PRINTABLES: Printable[] = [
     datePublished: '2026-05-01',
     relatedSkillPath: 'camp-setup/setup-order',
     relatedGuideSlug: 'camping-for-beginners',
+    relatedProductIds: ['fwc-trash-can-wakeman'],
   },
   {
     slug: '3-day-camp-meal-planner',
@@ -383,6 +395,7 @@ export const PRINTABLES: Printable[] = [
     datePublished: '2026-05-01',
     relatedSkillPath: 'cooking/cast-iron-cooking',
     relatedGuideSlug: 'first-camping-trip-checklist',
+    relatedProductIds: ['lodge-cast-iron-skillet'],
   },
 ]
 

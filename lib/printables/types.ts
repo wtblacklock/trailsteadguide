@@ -29,4 +29,10 @@ export type Printable = {
   relatedSkillPath?: string
   /** Optional related guide slug to cross-link. */
   relatedGuideSlug?: string
+  /**
+   * Optional affiliate product ids (from lib/affiliate-products.ts) to
+   * feature as "gear for this printable" — the physical tool or kit that
+   * pairs with the analog card. Order is display order.
+   */
+  relatedProductIds?: string[]
 }
