@@ -4,7 +4,7 @@ import { pageMetadata } from '@/lib/seo'
 export const metadata = pageMetadata({
   title: 'Terms of Service',
   description:
-    'Terms of service for Trailstead Guide — acceptable use, content ownership, disclaimers of warranty, limitation of liability, and governing law.',
+    'Terms of service for Trailstead Guide - acceptable use, content ownership, disclaimers of warranty, limitation of liability, and governing law.',
   path: '/terms',
 })
 
@@ -20,11 +20,11 @@ export default function Page() {
         Trailstead Guide is an information resource and planning tool. It is not a substitute for professional advice from a medical provider, wilderness safety professional, or local park ranger. You are responsible for your own safety and the safety of your family.
       </p>
       <p>
-        Camping involves risk. Weather, wildlife, terrain, and equipment failure can cause injury or death. We try to give you honest, useful information — but we can&apos;t anticipate every situation, and we don&apos;t guarantee any outcome.
+        Camping involves risk. Weather, wildlife, terrain, and equipment failure can cause injury or death. We try to give you honest, useful information - but we can&apos;t anticipate every situation, and we don&apos;t guarantee any outcome.
       </p>
       <h2>Content on this site</h2>
       <p>
-        All content on Trailstead Guide — text, images, plans, templates — is our intellectual property, or licensed to us. You may print and share individual plans for personal use. You may not republish, resell, or systematically scrape the site.
+        All content on Trailstead Guide - text, images, plans, templates - is our intellectual property, or licensed to us. You may print and share individual plans for personal use. You may not republish, resell, or systematically scrape the site.
       </p>
       <h2>User-submitted content</h2>
       <p>

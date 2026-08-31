@@ -172,7 +172,7 @@ export default function CampMealPlanner() {
 
       <div className="print-side print-side-1">
         <p className="lead">
-          Fill in the meal column first, then circle a cook method. Transfer each ingredient to the shopping list. Default portions feed 4 people — scale note on side 2.
+          Fill in the meal column first, then circle a cook method. Transfer each ingredient to the shopping list. Default portions feed 4 people - scale note on side 2.
         </p>
 
         <h2>Meal Plan Grid</h2>

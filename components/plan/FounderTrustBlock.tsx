@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { AUTHOR_IMAGE, AUTHOR_NAME } from '@/lib/seo'
 
 /**
- * Restrained pre-purchase trust block — sits just above the Trip Pack CTA so
+ * Restrained pre-purchase trust block - sits just above the Trip Pack CTA so
  * the founder's credentials reduce friction at the buying moment.
  */
 export default function FounderTrustBlock() {
@@ -21,7 +21,7 @@ export default function FounderTrustBlock() {
             />
           </div>
           <p className="text-sm text-stone-700 leading-snug flex-1">
-            Built by {AUTHOR_NAME} — Eagle Scout, Wood Badge Antelope, three kids in Austin.
+            Built by {AUTHOR_NAME} - Eagle Scout, Wood Badge Antelope, three kids in Austin.
           </p>
           <Link
             href="/about#author"

@@ -3,7 +3,7 @@ import type { ResolvedGearItem } from '@/lib/gear-sets'
 import type { PlanTemplate } from '@/types'
 
 /**
- * Lossy preview of the Trip Pack — enough to convince, not enough to skip
+ * Lossy preview of the Trip Pack - enough to convince, not enough to skip
  * the paywall. Shows: cover summary, two timeline rows, three gear cards,
  * and one mistake-prevention block. The full PDF has 7 pages.
  */

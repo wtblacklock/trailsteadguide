@@ -10,9 +10,9 @@ import type {
 } from '@/lib/activities/types'
 
 export const AGE_LABELS: Record<AgeRange, string> = {
-  '3-5': 'Ages 3–5',
-  '6-8': 'Ages 6–8',
-  '9-12': 'Ages 9–12',
+  '3-5': 'Ages 3-5',
+  '6-8': 'Ages 6-8',
+  '9-12': 'Ages 9-12',
   '13-17': 'Teens',
   adults: 'Adults',
   'all-ages': 'All ages',
@@ -20,8 +20,8 @@ export const AGE_LABELS: Record<AgeRange, string> = {
 
 export const GROUP_LABELS: Record<GroupSize, string> = {
   solo: 'Solo',
-  '2-4': '2–4 people',
-  '5-10': '5–10 people',
+  '2-4': '2-4 people',
+  '5-10': '5-10 people',
   '10+': 'Large group',
 }
 
@@ -32,9 +32,9 @@ export const ENERGY_LABELS: Record<EnergyLevel, string> = {
 }
 
 export const TIME_LABELS: Record<TimeRequired, string> = {
-  '5-10min': '5–10 min',
-  '15-30min': '15–30 min',
-  '30-60min': '30–60 min',
+  '5-10min': '5-10 min',
+  '15-30min': '15-30 min',
+  '30-60min': '30-60 min',
   '1hour+': '1+ hour',
 }
 

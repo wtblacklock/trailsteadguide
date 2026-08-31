@@ -16,7 +16,7 @@ const VALID_PLANS: PlanSlug[] = [
 export const runtime = 'nodejs'
 
 /**
- * POST /api/webhook — Stripe webhook receiver.
+ * POST /api/webhook - Stripe webhook receiver.
  * On checkout.session.completed, mints a download token from session
  * metadata. The success page reads ?session_id and exchanges it for the
  * token via Stripe metadata lookup.
@@ -64,7 +64,7 @@ export async function POST(req: Request) {
 
     if (email) {
       const tier = (meta.tier === 'premium' ? 'premium' : 'basic') as 'basic' | 'premium'
-      // Run email + Kit subscribe in parallel — the buyer should be added
+      // Run email + Kit subscribe in parallel - the buyer should be added
       // to the Kit list whether or not the Resend send succeeds, and we
       // shouldn't slow PDF delivery on a Kit hiccup.
       const [emailResult, kitResult] = await Promise.all([
@@ -84,7 +84,7 @@ export async function POST(req: Request) {
       console.warn('[stripe webhook] no email on session; cannot deliver trip pack', session.id)
     }
   } else if (event.type === 'checkout.session.expired') {
-    // Cart-abandon recovery. One reminder per expired session — Stripe
+    // Cart-abandon recovery. One reminder per expired session - Stripe
     // emits this event exactly once when the session times out (default
     // 24h after creation), so we don't need a separate dedupe store.
     const session = event.data.object as import('stripe').Stripe.Checkout.Session
@@ -93,9 +93,9 @@ export async function POST(req: Request) {
     const email = session.customer_email || meta.email || undefined
 
     if (!email) {
-      console.log('[stripe webhook] expired session, no email — skipping abandon', session.id)
+      console.log('[stripe webhook] expired session, no email - skipping abandon', session.id)
     } else if (!plan || !VALID_PLANS.includes(plan)) {
-      console.warn('[stripe webhook] expired session, no valid plan slug — skipping abandon', session.id, plan)
+      console.warn('[stripe webhook] expired session, no valid plan slug - skipping abandon', session.id, plan)
     } else {
       const origin =
         req.headers.get('origin') ||

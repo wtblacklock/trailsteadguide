@@ -39,7 +39,7 @@ const PICKS: Pick[] = [
     product: STOVE_SINGLE,
     btu: '10,000 BTU',
     fuel: '1 lb propane canister',
-    cleanup: 'Wipe down — one burner head',
+    cleanup: 'Wipe down - one burner head',
     footprint: '~6 × 6 in',
     priceTier: '$ Budget',
   },
@@ -67,7 +67,7 @@ const PLAN_MAP: { plan: string; href: string; pick: string; reason: string }[] =
   {
     plan: 'Backyard Test',
     href: '/plans/backyard-test',
-    pick: 'Skip — use the kitchen',
+    pick: 'Skip - use the kitchen',
     reason: 'A yard rehearsal doesn\'t need a stove. Cook inside, eat outside, prove the rest of the system first.',
   },
   {
@@ -80,7 +80,7 @@ const PLAN_MAP: { plan: string; href: string; pick: string; reason: string }[] =
     plan: 'First Weekend Camp',
     href: '/plans/first-weekend-camp',
     pick: 'Coleman Triton+ 2-Burner',
-    reason: 'Two nights with a family. The two-burner cooks bacon and eggs at the same time — that\'s the difference between breakfast on time and breakfast in shifts.',
+    reason: 'Two nights with a family. The two-burner cooks bacon and eggs at the same time - that\'s the difference between breakfast on time and breakfast in shifts.',
   },
   {
     plan: 'Easy Family Basecamp',
@@ -94,7 +94,7 @@ const RELATED = [
   {
     title: 'Camp Chef Everest vs Coleman 1-burner',
     href: '/compare/camp-chef-everest-vs-coleman-classic-1-burner',
-    blurb: 'Premium two-burner versus the basic single-burner — head-to-head with the BTU math.',
+    blurb: 'Premium two-burner versus the basic single-burner - head-to-head with the BTU math.',
   },
   {
     title: 'Best beginner cooler',
@@ -104,7 +104,7 @@ const RELATED = [
   {
     title: 'See the full gear guide',
     href: '/gear',
-    blurb: 'The full beginner-grade kit — sleep, lighting, the rest.',
+    blurb: 'The full beginner-grade kit - sleep, lighting, the rest.',
   },
 ]
 
@@ -154,8 +154,8 @@ export default function Page() {
           {H1}
         </h1>
         <p className="mt-6 text-lg md:text-xl text-stone-600 leading-relaxed">
-          A camp stove decides whether breakfast is hot or cold. Here are three picks — single
-          burner, two-burner classic, and premium two-burner — with what actually matters for a
+          A camp stove decides whether breakfast is hot or cold. Here are three picks - single
+          burner, two-burner classic, and premium two-burner - with what actually matters for a
           first family trip.
         </p>
       </header>
@@ -166,11 +166,11 @@ export default function Page() {
           summary={
             <>
               The <strong>Coleman 1-Burner Propane Stove</strong> is the right call for a single
-              overnight or backpacking-leaning trip — boils water fast, fits in any pack, no
+              overnight or backpacking-leaning trip - boils water fast, fits in any pack, no
               learning curve. The <strong>Coleman Triton+ 2-Burner</strong> is the family default:
               22,000 BTU per burner, wind-blocking panels, cooks bacon and eggs at the same time.
               Step up to the <strong>Camp Chef Everest 2X</strong> when you&rsquo;re cooking real
-              meals in shoulder-season weather — 40,000 BTU per burner and a deeper wind screen
+              meals in shoulder-season weather - 40,000 BTU per burner and a deeper wind screen
               change what&rsquo;s possible.
             </>
           }
@@ -237,7 +237,7 @@ export default function Page() {
         </h2>
         <div className="space-y-6 text-stone-700 leading-relaxed text-lg">
           <p>
-            <strong>BTU isn&rsquo;t the headline number — wind is.</strong> A 22,000 BTU burner
+            <strong>BTU isn&rsquo;t the headline number - wind is.</strong> A 22,000 BTU burner
             and a 40,000 BTU burner both boil water fast in calm conditions. The difference shows
             up in 10 mph wind: the Triton+&rsquo;s panels protect a low simmer; the Everest&rsquo;s
             three-sided steel screen keeps a rolling boil going through gusts. If your first trips
@@ -245,7 +245,7 @@ export default function Page() {
           </p>
           <p>
             <strong>One burner versus two is a meal-planning decision.</strong> One burner means
-            you cook in sequence — coffee, then oatmeal, then eggs. Two burners means coffee plus
+            you cook in sequence - coffee, then oatmeal, then eggs. Two burners means coffee plus
             bacon plus eggs all at once. With a family of four and small kids, &ldquo;at the same
             time&rdquo; is the difference between a 20-minute breakfast and a 45-minute one.
           </p>
@@ -257,7 +257,7 @@ export default function Page() {
           <p>
             <strong>Cleanup is the underrated spec.</strong> The Triton+&rsquo;s grease tray
             slides out and the grates go in a dishwasher when you get home. The Everest&rsquo;s
-            wind screen lifts off the same way. The 1-burner has nothing to clean — a wipe-down
+            wind screen lifts off the same way. The 1-burner has nothing to clean - a wipe-down
             is the whole job.
           </p>
         </div>

@@ -13,7 +13,7 @@ const TITLE = 'How to Plan a Camping Trip'
 // SEO-optimized <title>; H1/headline keep TITLE.
 const META_TITLE = 'How to Plan a Camping Trip (3-Week Guide)'
 const DESCRIPTION =
-  'How to plan a camping trip: book the site, inventory the gear, plan the meals, and arrive calm — a 5-step framework for a confident first weekend.'
+  'How to plan a camping trip: book the site, inventory the gear, plan the meals, and arrive calm - a 5-step framework for a confident first weekend.'
 const HERO_IMAGE = 'https://images.unsplash.com/photo-1445308394109-4ec2920981b1?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({
@@ -45,15 +45,15 @@ export default function Page() {
         data={faqPageGraph([
           {
             q: 'How far in advance should I book a campsite?',
-            a: 'Earlier than you think. Most reservation windows open 6 months out, and at popular state and national parks the prime-weather weekends fill within minutes of the window opening. Headliner parks (Yosemite, Rocky Mountain, Olympic, Acadia) effectively require booking the day the window opens — six months to a year ahead. For lesser-known state parks and shoulder-season weekends, 3 to 6 weeks ahead is usually enough. Mid-week reservations are dramatically easier across the board, and private campgrounds (KOA, Hipcamp) typically have shorter lead time.',
+            a: 'Earlier than you think. Most reservation windows open 6 months out, and at popular state and national parks the prime-weather weekends fill within minutes of the window opening. Headliner parks (Yosemite, Rocky Mountain, Olympic, Acadia) effectively require booking the day the window opens - six months to a year ahead. For lesser-known state parks and shoulder-season weekends, 3 to 6 weeks ahead is usually enough. Mid-week reservations are dramatically easier across the board, and private campgrounds (KOA, Hipcamp) typically have shorter lead time.',
           },
           {
             q: 'What is the best camping reservation website?',
-            a: 'Recreation.gov for federal sites (national parks, national forests, Army Corps lakes). ReserveAmerica for many state park systems. Individual state parks sometimes run their own booking systems — start with the state park website directly if those two do not list the site.',
+            a: 'Recreation.gov for federal sites (national parks, national forests, Army Corps lakes). ReserveAmerica for many state park systems. Individual state parks sometimes run their own booking systems - start with the state park website directly if those two do not list the site.',
           },
           {
             q: 'How do I pick between campsites on a booking site?',
-            a: 'Look for level ground, shade during the afternoon, proximity to water and bathrooms but not right next to them, and avoid sites labeled walk-in or primitive for first trips. Check the photos — they are usually accurate.',
+            a: 'Look for level ground, shade during the afternoon, proximity to water and bathrooms but not right next to them, and avoid sites labeled walk-in or primitive for first trips. Check the photos - they are usually accurate.',
           },
           {
             q: 'What time should I arrive at a campsite?',
@@ -80,16 +80,16 @@ export default function Page() {
       lede="A step-by-step planning walkthrough. Start 3 weeks out and you&apos;ll arrive calm instead of frazzled."
       heroImage={{
         src: HERO_IMAGE,
-        alt: 'Topo map, planning notebook, and pen on a wooden table — three weeks out from a family camping trip',
+        alt: 'Topo map, planning notebook, and pen on a wooden table - three weeks out from a family camping trip',
       }}
     >
       <QuickAnswer
         tldr="Start three weeks out, book the site first, test gear two weeks ahead, plan every meal, leave by 9am."
-        summary="Plan a family camping trip on a three-week runway. Three weeks out, book a site within 90 minutes of home (Recreation.gov for federal, ReserveAmerica or the state site for state parks), prioritizing level ground, afternoon shade, and proximity — but not adjacency — to bathrooms. Two weeks out, pitch the tent in the yard and light the stove. One week out, write down every meal and build a single grocery list. The day before, pack the car completely. Leave by 9am and arrive by noon — never at dusk. The single biggest cause of first-trip stress is arriving late."
+        summary="Plan a family camping trip on a three-week runway. Three weeks out, book a site within 90 minutes of home (Recreation.gov for federal, ReserveAmerica or the state site for state parks), prioritizing level ground, afternoon shade, and proximity - but not adjacency - to bathrooms. Two weeks out, pitch the tent in the yard and light the stove. One week out, write down every meal and build a single grocery list. The day before, pack the car completely. Leave by 9am and arrive by noon - never at dusk. The single biggest cause of first-trip stress is arriving late."
       />
       <h2>3 weeks out: pick the trip</h2>
       <p>
-        <strong>One caveat on lead time:</strong> 3 weeks works for lesser-known state parks, county parks, and most weeknights. For popular state or national parks on a prime-weather weekend (May–September), you need to book the day the reservation window opens — typically 6 months ahead, sometimes a year for headliners like Yosemite, Rocky Mountain, Olympic, or Acadia. If your target weekend is inside that window and the parks you want are full, switch to mid-week, a smaller park, or a private campground (KOA, Hipcamp).
+        <strong>One caveat on lead time:</strong> 3 weeks works for lesser-known state parks, county parks, and most weeknights. For popular state or national parks on a prime-weather weekend (May-September), you need to book the day the reservation window opens - typically 6 months ahead, sometimes a year for headliners like Yosemite, Rocky Mountain, Olympic, or Acadia. If your target weekend is inside that window and the parks you want are full, switch to mid-week, a smaller park, or a private campground (KOA, Hipcamp).
       </p>
       <ul>
         <li>Choose a weekend. Block it on the calendar like it&apos;s already paid for</li>
@@ -103,7 +103,7 @@ export default function Page() {
         <li>Lay everything out on the floor of the garage</li>
         <li>Pitch the tent. Look for missing poles, tears, leaks</li>
         <li>Light the stove. Check the fuel canister is not empty</li>
-        <li>Make a list of everything you need to buy, borrow, or rent — cross-check against the <Link href="/guides/first-camping-trip-checklist">first camping trip checklist</Link></li>
+        <li>Make a list of everything you need to buy, borrow, or rent - cross-check against the <Link href="/guides/first-camping-trip-checklist">first camping trip checklist</Link></li>
       </ul>
 
       <h2>1 week out: meals &amp; shopping</h2>
@@ -111,7 +111,7 @@ export default function Page() {
         <li>Write down every meal: Fri dinner, Sat breakfast, Sat lunch, Sat dinner, Sun breakfast</li>
         <li>Keep it simple. Don&apos;t plan anything that requires more than one pot</li>
         <li>Pre-chop vegetables at home and bag them</li>
-        <li>Freeze water bottles — they become ice, then drinking water</li>
+        <li>Freeze water bottles - they become ice, then drinking water</li>
       </ul>
 
       <h2>The day before</h2>
@@ -131,7 +131,7 @@ export default function Page() {
 
       <h2>When to stop planning</h2>
       <p>
-        Over-planning is a real failure mode. Once you have a site booked, a gear list, a meal plan, and a packed car, you&apos;re done. The rest is execution — and execution is much easier once you&apos;re physically there. If you want this whole sequence handed to you for a specific weekend, <Link href="/quiz">take the 5-second quiz</Link> and we&apos;ll match a starter <Link href="/plans/first-night-camp">First Night Camp</Link> or weekend plan to your party.
+        Over-planning is a real failure mode. Once you have a site booked, a gear list, a meal plan, and a packed car, you&apos;re done. The rest is execution - and execution is much easier once you&apos;re physically there. If you want this whole sequence handed to you for a specific weekend, <Link href="/quiz">take the 5-second quiz</Link> and we&apos;ll match a starter <Link href="/plans/first-night-camp">First Night Camp</Link> or weekend plan to your party.
       </p>
 
       <h2>How to actually pick a campsite (not just a campground)</h2>
@@ -146,7 +146,7 @@ export default function Page() {
         <li><strong>Target mid-loop sites on a dead-end spur.</strong> Quiet, walkable, often the best sites.</li>
       </ul>
       <p>
-        If you can choose, pick an even-numbered or odd-numbered side of a loop based on morning sun — east-facing for warmth, west-facing if you hate being woken at 6am by the sun.
+        If you can choose, pick an even-numbered or odd-numbered side of a loop based on morning sun - east-facing for warmth, west-facing if you hate being woken at 6am by the sun.
       </p>
 
       <h2>The pre-trip gear test</h2>
@@ -168,7 +168,7 @@ export default function Page() {
       <ul>
         <li><strong>Rain all weekend:</strong> most state parks let you reschedule for a small fee up to 48 hours out. Check the cancellation policy when you book.</li>
         <li><strong>Sick kid day-of:</strong> go home or don&apos;t leave. Camping with a sick kid is a recipe for a sicker kid.</li>
-        <li><strong>Forgot something essential:</strong> note the nearest Walmart or camp store before you leave. Usually 15–20 minutes out.</li>
+        <li><strong>Forgot something essential:</strong> note the nearest Walmart or camp store before you leave. Usually 15-20 minutes out.</li>
         <li><strong>Gear fails at camp:</strong> Sleep in the car. Buy a replacement in the morning or drive home.</li>
         <li><strong>Unexpected weather alert:</strong> rangers will come around. Listen to them. Severe storms at unfamiliar sites are serious.</li>
       </ul>
@@ -190,15 +190,15 @@ export default function Page() {
         People assume camping is free. It isn&apos;t, but it&apos;s the cheapest real family weekend there is. A realistic budget for a family of four, two nights, if you already own the major gear:
       </p>
       <ul>
-        <li>Campsite × 2 nights: $50–$90</li>
+        <li>Campsite × 2 nights: $50-$90</li>
         <li>Firewood (2 bundles per night): $30</li>
         <li>Block ice × 2: $10</li>
-        <li>Groceries (2 dinners, 2 breakfasts, lunch, snacks): $80–$120</li>
-        <li>Gas: $25–$50 depending on distance</li>
+        <li>Groceries (2 dinners, 2 breakfasts, lunch, snacks): $80-$120</li>
+        <li>Gas: $25-$50 depending on distance</li>
         <li>Reservation fee: $8</li>
       </ul>
       <p>
-        About $200–$300 for two nights out. Compare to a hotel weekend anywhere interesting and it&apos;s roughly a quarter the cost. The marginal cost of the third trip of the year is even lower — gear is paid off, routines are in place.
+        About $200-$300 for two nights out. Compare to a hotel weekend anywhere interesting and it&apos;s roughly a quarter the cost. The marginal cost of the third trip of the year is even lower - gear is paid off, routines are in place.
       </p>
 
       <h2>Frequently asked</h2>

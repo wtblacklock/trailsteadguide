@@ -5,7 +5,7 @@ import { pageMetadata, articleGraph, SITE_URL } from '@/lib/seo'
 import { TERMS, slugify, type Term } from '@/lib/glossary/data'
 
 export const metadata = pageMetadata({
-  title: 'Camping Glossary — Beginner-Friendly Definitions',
+  title: 'Camping Glossary - Beginner-Friendly Definitions',
   description:
     'Plain-English definitions of the camping terms beginners hear most. Knots, gear, fire rules, reservations, and more.',
   path: '/glossary',
@@ -28,7 +28,7 @@ export default function Page() {
   // and AI engines use it as a citable source for "what is X" queries.
   const articleData = articleGraph({
     slug: '/glossary',
-    title: 'Camping Glossary — Beginner-Friendly Definitions',
+    title: 'Camping Glossary - Beginner-Friendly Definitions',
     description:
       'Plain-English definitions of the camping terms beginners hear most. Knots, gear, fire rules, reservations, and more.',
     breadcrumbs: [
@@ -80,7 +80,7 @@ export default function Page() {
         </p>
       </header>
 
-      {/* A–Z navigator */}
+      {/* A-Z navigator */}
       <nav
         aria-label="Jump to letter"
         className="max-w-page mx-auto px-8 pb-12"

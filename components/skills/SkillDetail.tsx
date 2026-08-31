@@ -98,7 +98,7 @@ export default function SkillDetail({ skill, category, dateModified }: Props) {
           </Section>
         )}
 
-        {/* Knife & woodcarving spec: Safety First — prominent, before steps. */}
+        {/* Knife & woodcarving spec: Safety First - prominent, before steps. */}
         {safetyTone === 'critical' && skill.safetyNotes && skill.safetyNotes.length > 0 && (
           <SafetyBlock notes={skill.safetyNotes} tone="critical" title="Safety first" />
         )}
@@ -109,7 +109,7 @@ export default function SkillDetail({ skill, category, dateModified }: Props) {
 
         <Section title="What you need">
           {skill.materials.length === 0 ? (
-            <p className="text-stone-600">Nothing — bring yourself.</p>
+            <p className="text-stone-600">Nothing - bring yourself.</p>
           ) : (
             <ul className="space-y-2">
               {skill.materials.map((m, i) => (
@@ -196,7 +196,7 @@ export default function SkillDetail({ skill, category, dateModified }: Props) {
         )}
       </div>
 
-      {/* Full-width plan CTA — sits outside the max-w-content reading column
+      {/* Full-width plan CTA - sits outside the max-w-content reading column
           so it spans the page like the closing CTAs on guide and printable
           landing pages. */}
       <section className="px-8 pb-16">
@@ -286,7 +286,7 @@ function PlanCta() {
         Get a starter trip plan in 5 seconds.
       </h2>
       <p className="text-stone-300 text-lg mb-8 max-w-xl">
-        The skill clicks once you use it on a real trip. Build a full trip plan in two minutes — gear list, meals, schedule, the works.
+        The skill clicks once you use it on a real trip. Build a full trip plan in two minutes - gear list, meals, schedule, the works.
       </p>
       <Link
         href="/quiz"

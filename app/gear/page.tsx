@@ -15,7 +15,7 @@ function parsePriceRange(range: string): number {
 
 const TITLE = 'Camping Gear Guide'
 const DESCRIPTION =
-  'Curated gear bundles tied to a specific camping plan. Pick the trip you are running and we will tell you exactly what to bring — no 100-option catalog, no overwhelm.'
+  'Curated gear bundles tied to a specific camping plan. Pick the trip you are running and we will tell you exactly what to bring - no 100-option catalog, no overwhelm.'
 
 const BUNDLE_ORDER: PlanSlug[] = [
   'first-night-camp',
@@ -87,10 +87,10 @@ export default function GearHubPage() {
           Beginner gear, simplified.
         </h1>
         <p className="mt-6 text-lg md:text-xl text-stone-600 leading-relaxed max-w-2xl">
-          Every camping plan ships with a curated gear set built for that exact trip. Pick the plan you&rsquo;re running — we&rsquo;ll tell you what to bring.
+          Every camping plan ships with a curated gear set built for that exact trip. Pick the plan you&rsquo;re running - we&rsquo;ll tell you what to bring.
         </p>
         <p className="mt-4 text-base text-stone-500 leading-relaxed max-w-2xl">
-          Each bundle is matched to a specific trip type — a first overnight, a weekend car camp, or a backyard test run — and lists every item with a price estimate and estimated total. No 100-option catalogs, no conflicting reviews. Just the gear that works for that plan, with Amazon links so you can check current prices and ship before your trip date.
+          Each bundle is matched to a specific trip type - a first overnight, a weekend car camp, or a backyard test run - and lists every item with a price estimate and estimated total. No 100-option catalogs, no conflicting reviews. Just the gear that works for that plan, with Amazon links so you can check current prices and ship before your trip date.
         </p>
         <div className="mt-8 flex flex-wrap items-center gap-6">
           <Link

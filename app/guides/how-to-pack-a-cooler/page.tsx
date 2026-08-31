@@ -44,11 +44,11 @@ export default function Page() {
         data={faqPageGraph([
           {
             q: 'Should ice go on the bottom or top of a cooler?',
-            a: 'Both. A layer of block ice on the bottom cools from below and lasts the longest, since cold air sinks and settles there anyway. Fill the remaining gaps around and on top of food with cubed ice, which cools faster but melts faster — the combination covers both jobs.',
+            a: 'Both. A layer of block ice on the bottom cools from below and lasts the longest, since cold air sinks and settles there anyway. Fill the remaining gaps around and on top of food with cubed ice, which cools faster but melts faster - the combination covers both jobs.',
           },
           {
             q: 'How long does ice actually last in a packed cooler?',
-            a: 'A budget cooler holds ice 2-3 days with good packing technique. A mid-tier cooler with thicker insulation gets 4-5 days. A premium rotomolded cooler (Yeti/RTIC tier) can hold ice 7-10 days. Packing technique — pre-chilling, block ice, minimizing how often it\'s opened — affects this as much as the cooler itself.',
+            a: 'A budget cooler holds ice 2-3 days with good packing technique. A mid-tier cooler with thicker insulation gets 4-5 days. A premium rotomolded cooler (Yeti/RTIC tier) can hold ice 7-10 days. Packing technique - pre-chilling, block ice, minimizing how often it\'s opened - affects this as much as the cooler itself.',
           },
           {
             q: 'Do I need a separate cooler for drinks?',
@@ -56,7 +56,7 @@ export default function Page() {
           },
           {
             q: 'Can I use dry ice in a camping cooler?',
-            a: 'Yes, for extending a multi-day trip, but handle it carefully: never touch it bare-handed, keep it wrapped in newspaper or cardboard (not directly on food), and make sure the cooler isn\'t airtight — dry ice releases CO2 gas that needs somewhere to vent.',
+            a: 'Yes, for extending a multi-day trip, but handle it carefully: never touch it bare-handed, keep it wrapped in newspaper or cardboard (not directly on food), and make sure the cooler isn\'t airtight - dry ice releases CO2 gas that needs somewhere to vent.',
           },
         ])}
       />
@@ -79,7 +79,7 @@ export default function Page() {
       >
         <QuickAnswer
           tldr="Pre-chill the cooler, use block ice on the bottom plus cubed ice to fill gaps, pack in reverse meal order, and keep drinks in a separate cooler."
-          summary="How you pack a cooler matters more than which cooler you own. Pre-chill it the night before so it isn't absorbing warmth the moment you load it. Put a layer of block ice on the bottom — it melts slowly and cools from below, where cold air naturally settles. Pack food on top, then fill every remaining gap with cubed ice, which cools fast but melts fast. Pack in reverse meal order so the first meal you'll eat sits on top, not buried at the bottom. And keep drinks in a separate, cheaper cooler — they get opened constantly, and every opening is warm air getting into the cooler that actually needs to stay cold."
+          summary="How you pack a cooler matters more than which cooler you own. Pre-chill it the night before so it isn't absorbing warmth the moment you load it. Put a layer of block ice on the bottom - it melts slowly and cools from below, where cold air naturally settles. Pack food on top, then fill every remaining gap with cubed ice, which cools fast but melts fast. Pack in reverse meal order so the first meal you'll eat sits on top, not buried at the bottom. And keep drinks in a separate, cheaper cooler - they get opened constantly, and every opening is warm air getting into the cooler that actually needs to stay cold."
         />
 
         <h2>Pre-chill before you pack</h2>
@@ -91,7 +91,7 @@ export default function Page() {
           from scratch.
         </p>
 
-        <h2>Block ice vs. cubed ice — use both</h2>
+        <h2>Block ice vs. cubed ice - use both</h2>
         <p>
           Block ice has less surface area relative to its volume, so it melts slowly and holds a
           low temperature for days. Cubed ice has more surface area, so it chills faster on
@@ -114,7 +114,7 @@ export default function Page() {
 
         <h2>Pre-freeze what you can</h2>
         <p>
-          Proteins you&apos;re not cooking until day two or three can go into the cooler frozen solid —
+          Proteins you&apos;re not cooking until day two or three can go into the cooler frozen solid -
           they act as extra ice blocks on the way down and are perfectly thawed by the time you
           need them. The same trick works for juice boxes and water bottles: a few frozen ahead of
           time add cooling capacity and become cold drinks later in the trip.
@@ -125,7 +125,7 @@ export default function Page() {
           This is the single highest-leverage change if ice keeps disappearing faster than
           expected. Drinks get grabbed constantly throughout the day, and every time the lid opens,
           warm air moves in and cold air spills out. A second, cheaper cooler dedicated to drinks
-          means the food cooler — the one that actually needs to stay cold for food safety — gets
+          means the food cooler - the one that actually needs to stay cold for food safety - gets
           opened a fraction as often.
         </p>
 
@@ -158,7 +158,7 @@ export default function Page() {
         <h2>Managing melt water</h2>
         <p>
           Check the drain plug daily and drain accumulated water rather than letting food sit in
-          it — standing water speeds up temperature loss and risks contaminating unsealed items.
+          it - standing water speeds up temperature loss and risks contaminating unsealed items.
           If the cooler doesn&apos;t have a drain plug, tilt it to pour water out instead of opening it
           fully, which limits how much warm air gets in during the process.
         </p>
@@ -179,7 +179,7 @@ export default function Page() {
         <h2>Frequently asked</h2>
         <h3>Should ice go on the bottom or top of a cooler?</h3>
         <p>
-          Both — block ice on the bottom for the long-lasting base layer, cubed ice filling the
+          Both - block ice on the bottom for the long-lasting base layer, cubed ice filling the
           gaps around and on top of food.
         </p>
         <h3>How long does ice actually last in a packed cooler?</h3>
@@ -189,7 +189,7 @@ export default function Page() {
         </p>
         <h3>Do I need a separate cooler for drinks?</h3>
         <p>
-          Not required, but it&apos;s the highest-leverage change available — drinks get opened far
+          Not required, but it&apos;s the highest-leverage change available - drinks get opened far
           more often than food, and every opening lets warm air into whichever cooler it&apos;s in.
         </p>
         <h3>Can I use dry ice in a camping cooler?</h3>

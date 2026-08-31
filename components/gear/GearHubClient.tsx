@@ -41,7 +41,7 @@ function ArrowIcon({ className }: { className?: string }) {
 }
 
 /**
- * All 4 bundle cards, each with its own independent tier toggle — purely
+ * All 4 bundle cards, each with its own independent tier toggle - purely
  * client-side, no navigation or network request. The toggle sits outside
  * the card's <Link> (rather than nested inside it) so clicking a tier
  * button doesn't also trigger navigation to the gear-set page.
@@ -96,7 +96,7 @@ export default function GearHubClient({ bundles }: Props) {
                         <span className="text-sm text-stone-700 leading-snug truncate">{product.name}</span>
                       </span>
                       <span className="text-sm text-stone-500 tabular-nums shrink-0">
-                        {product.priceRange ?? '—'}
+                        {product.priceRange ?? '-'}
                       </span>
                     </li>
                   ))}
@@ -121,7 +121,7 @@ export default function GearHubClient({ bundles }: Props) {
       </ul>
 
       <p className="mt-12 text-xs text-stone-500 max-w-2xl">
-        As an Amazon Associate we earn from qualifying purchases. Links on the bundle pages are affiliate links — clicking them may earn us a small commission at no extra cost to you.
+        As an Amazon Associate we earn from qualifying purchases. Links on the bundle pages are affiliate links - clicking them may earn us a small commission at no extra cost to you.
       </p>
     </section>
   )

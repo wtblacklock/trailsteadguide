@@ -46,13 +46,13 @@ const PLAN_PAGE_META: Record<PlanSlug, PlanPageMeta> = {
   'backyard-test': {
     title: 'Backyard Test Night Plan',
     description:
-      'A one-night backyard simulation that tests your sleep system, gear setup, and kid readiness — no campsite booking required.',
+      'A one-night backyard simulation that tests your sleep system, gear setup, and kid readiness - no campsite booking required.',
     totalTime: 'P1D',
   },
   'first-night-camp': {
     title: 'First Night Camp Plan',
     description:
-      'A personalized first-campsite plan for first-time family campers. Timeline, gear, meals, activities, and safety — tuned for one short, easy night.',
+      'A personalized first-campsite plan for first-time family campers. Timeline, gear, meals, activities, and safety - tuned for one short, easy night.',
     totalTime: 'P1D',
   },
   'first-weekend-camp': {
@@ -78,7 +78,7 @@ const PLAN_FAQ_ITEMS = [
   {
     question: 'Can I share it with my spouse or co-parent?',
     answer:
-      'Yes — family use is fine and expected. Forward the page link or the Trip Pack PDF to whoever is co-planning the trip. One purchase covers your household.',
+      'Yes - family use is fine and expected. Forward the page link or the Trip Pack PDF to whoever is co-planning the trip. One purchase covers your household.',
   },
   {
     question: 'Is the gear list affiliate-linked?',
@@ -93,7 +93,7 @@ const PLAN_FAQ_ITEMS = [
   {
     question: 'What if my trip details change?',
     answer:
-      'Re-take the five-question quiz with the new details — different ages, different number of nights, different comfort level — and the planner regenerates a fresh plan. The quiz is free and unlimited.',
+      'Re-take the five-question quiz with the new details - different ages, different number of nights, different comfort level - and the planner regenerates a fresh plan. The quiz is free and unlimited.',
   },
   {
     question: 'Why this plan instead of the others?',
@@ -103,7 +103,7 @@ const PLAN_FAQ_ITEMS = [
   {
     question: 'Is Trailstead Guide worth it?',
     answer:
-      'The plan you’re reading is free. The optional Trip Pack PDF is a small upgrade — about the cost of a couple of Gatorades — for families who want a printable, offline-friendly version they don’t have to rebuild the night before. Skip the upgrade and use the free plan as-is.',
+      'The plan you’re reading is free. The optional Trip Pack PDF is a small upgrade - about the cost of a couple of Gatorades - for families who want a printable, offline-friendly version they don’t have to rebuild the night before. Skip the upgrade and use the free plan as-is.',
   },
 ]
 
@@ -159,14 +159,14 @@ export default async function PlanPage({
   const { adults, kids } = out.partySize
 
   const timelineSections = [
-    { heading: 'Before You Leave', items: merged.preTrip.map((i) => `${i.time}: ${i.title} — ${i.description}`) },
-    { heading: 'Arrival & Setup', items: merged.arrival.map((i) => `${i.time}: ${i.title} — ${i.description}`) },
-    { heading: 'Evening Routine', items: merged.evening.map((i) => `${i.time}: ${i.title} — ${i.description}`) },
-    { heading: 'Morning & Pack-Out', items: merged.morning.map((i) => `${i.time}: ${i.title} — ${i.description}`) },
+    { heading: 'Before You Leave', items: merged.preTrip.map((i) => `${i.time}: ${i.title} - ${i.description}`) },
+    { heading: 'Arrival & Setup', items: merged.arrival.map((i) => `${i.time}: ${i.title} - ${i.description}`) },
+    { heading: 'Evening Routine', items: merged.evening.map((i) => `${i.time}: ${i.title} - ${i.description}`) },
+    { heading: 'Morning & Pack-Out', items: merged.morning.map((i) => `${i.time}: ${i.title} - ${i.description}`) },
   ].filter((s) => s.items.length > 0)
 
   const gearItems = merged.gear.map((g) => g.name)
-  const activityItems = merged.activities.map((a) => `${a.title} — ${a.description}`)
+  const activityItems = merged.activities.map((a) => `${a.title} - ${a.description}`)
 
   const howToSteps = [...merged.preTrip, ...merged.arrival, ...merged.evening, ...merged.morning].map((s) => ({
     name: s.title,

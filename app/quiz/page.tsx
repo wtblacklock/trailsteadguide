@@ -5,7 +5,7 @@ import { pageMetadata } from '@/lib/seo'
 export const metadata = pageMetadata({
   title: 'Build Your Camping Plan',
   description:
-    'Answer 6 quick questions and get a personalized camping plan for your family — timeline, gear list, meals, and age-appropriate kid activities.',
+    'Answer 6 quick questions and get a personalized camping plan for your family - timeline, gear list, meals, and age-appropriate kid activities.',
   path: '/quiz',
   noIndex: true,
 })

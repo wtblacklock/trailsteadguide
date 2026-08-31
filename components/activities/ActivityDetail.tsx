@@ -7,7 +7,7 @@ import RelatedGearBlock from '@/components/gear/RelatedGearBlock'
 import ActivityBadge from './ActivityBadge'
 
 // Manual activity → printable pairings. Adding a slug here surfaces the
-// printable card on that activity's detail page. Keep it slim — these are
+// printable card on that activity's detail page. Keep it slim - these are
 // editorial pairings, not generic recommendations.
 const ACTIVITY_PRINTABLE_PAIRINGS: Record<string, string> = {
   'stargazing-constellation-hunt': 'northern-hemisphere-constellation-wheel',
@@ -72,7 +72,7 @@ export default function ActivityDetail({ activity }: Props) {
       <div className="max-w-content mx-auto px-6 py-10 md:py-14 space-y-12">
         <Section title="What you need">
           {activity.materials.length === 0 ? (
-            <p className="text-stone-600">Nothing — bring yourself.</p>
+            <p className="text-stone-600">Nothing - bring yourself.</p>
           ) : (
             <ul className="space-y-2">
               {activity.materials.map((m, i) => (

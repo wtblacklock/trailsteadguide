@@ -27,7 +27,7 @@ export default function PersonalizationBanner() {
 
   const AGE_LABELS: Record<string, string> = {
     under_5: 'under 5',
-    '5_10': '5–10',
+    '5_10': '5-10',
     '10+': '10+',
   }
   const ageGroups = Array.isArray(session.kidsAgeGroup) ? session.kidsAgeGroup : [session.kidsAgeGroup]

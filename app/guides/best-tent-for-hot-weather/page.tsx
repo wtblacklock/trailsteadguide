@@ -48,11 +48,11 @@ export default function Page() {
           },
           {
             q: 'Do I need a footprint in the desert?',
-            a: 'Yes, for a different reason than mud — desert ground is often gravelly or has sharp rock underneath sand, and a footprint protects the floor from punctures. It also keeps radiant heat from the ground from transferring into the tent floor as directly.',
+            a: 'Yes, for a different reason than mud - desert ground is often gravelly or has sharp rock underneath sand, and a footprint protects the floor from punctures. It also keeps radiant heat from the ground from transferring into the tent floor as directly.',
           },
           {
             q: 'Can I take the rainfly off in hot weather?',
-            a: 'If the forecast is genuinely dry and the tent has mesh walls under the fly, yes — removing the fly during the day dramatically improves airflow. Keep it staked nearby to throw back on if weather changes, and always put it back on before dark in most climates.',
+            a: 'If the forecast is genuinely dry and the tent has mesh walls under the fly, yes - removing the fly during the day dramatically improves airflow. Keep it staked nearby to throw back on if weather changes, and always put it back on before dark in most climates.',
           },
           {
             q: 'How much mesh should a hot-weather tent have?',
@@ -79,7 +79,7 @@ export default function Page() {
       >
         <QuickAnswer
           tldr="Prioritize mesh wall panels, a removable rainfly, and light-colored fabric. Dark cabin tents trap heat even with good ventilation."
-          summary="A hot-weather tent needs airflow more than weatherproofing. Look for mesh on at least two wall panels plus a mesh ceiling, a rainfly you can remove entirely on dry days, and light-colored fabric — dark tents run noticeably hotter in direct sun. Shade matters as much as the tent itself: a canopy over the tent site cuts interior temperature more than any tent feature can on its own. The Coleman Sundome's cross-ventilation works well for a budget setup; the CORE 6-Person Instant Cabin's mesh ceiling and lower vents handle a hotter, longer stay."
+          summary="A hot-weather tent needs airflow more than weatherproofing. Look for mesh on at least two wall panels plus a mesh ceiling, a rainfly you can remove entirely on dry days, and light-colored fabric - dark tents run noticeably hotter in direct sun. Shade matters as much as the tent itself: a canopy over the tent site cuts interior temperature more than any tent feature can on its own. The Coleman Sundome's cross-ventilation works well for a budget setup; the CORE 6-Person Instant Cabin's mesh ceiling and lower vents handle a hotter, longer stay."
         />
 
         <h2>What actually keeps a tent cool</h2>
@@ -87,21 +87,21 @@ export default function Page() {
           Four things determine how hot a tent gets in direct sun: how much mesh is in the walls,
           whether the ceiling has a vent or mesh panel for rising heat to escape, whether the
           rainfly can come off entirely, and the color of the fabric. Floor space and capacity
-          rating don&apos;t matter here — a huge tent with solid walls and a dark fly still bakes.
+          rating don&apos;t matter here - a huge tent with solid walls and a dark fly still bakes.
         </p>
 
         <h2>Mesh percentage and placement</h2>
         <p>
           More mesh means more airflow, but placement matters as much as quantity. Mesh low on the
-          walls catches cross-breeze at ground level; mesh at the ceiling lets hot air — which
-          rises — actually escape instead of collecting under the peak. A tent with only small
+          walls catches cross-breeze at ground level; mesh at the ceiling lets hot air - which
+          rises - actually escape instead of collecting under the peak. A tent with only small
           mesh windows near the door will feel stuffier than one with two full mesh wall panels,
           even if the total mesh area is similar.
         </p>
 
         <h2>The fly-off setup</h2>
         <p>
-          On a dry, hot day, pitching the tent body alone — mesh walls exposed, no fly — turns it
+          On a dry, hot day, pitching the tent body alone - mesh walls exposed, no fly - turns it
           into an airy shade structure instead of a sealed box. This only works if the tent&apos;s walls
           are mesh under the fly, not solid fabric with the fly as the only barrier. Keep the fly
           staked out nearby so it takes under a minute to throw back on if the sky changes.
@@ -110,7 +110,7 @@ export default function Page() {
         <h2>Fabric color makes a real difference</h2>
         <p>
           Dark green, gray, and black tents absorb more solar radiation and run measurably hotter
-          inside than tan, light gray, or white tents in the same conditions — often a 10-15°F
+          inside than tan, light gray, or white tents in the same conditions - often a 10-15°F
           difference during peak afternoon sun. If a hot-weather trip is the priority, color is
           worth weighing against style preference.
         </p>
@@ -124,8 +124,8 @@ export default function Page() {
         </p>
         <h3>Best for longer hot-weather stays: CORE 6-Person Instant Cabin</h3>
         <p>
-          Ground-level intake vents paired with a mesh ceiling create a chimney effect — cooler air
-          in low, hot air out high — that matters more over a multi-day stay than on a single hot
+          Ground-level intake vents paired with a mesh ceiling create a chimney effect - cooler air
+          in low, hot air out high - that matters more over a multi-day stay than on a single hot
           afternoon. The 60-second setup also means less time exposed while pitching camp.
         </p>
 
@@ -170,7 +170,7 @@ export default function Page() {
         <h2>Frequently asked</h2>
         <h3>Are dark-colored tents hotter than light-colored ones?</h3>
         <p>
-          Yes — dark fabric can run 10-15°F hotter inside during peak sun than a light-colored
+          Yes - dark fabric can run 10-15°F hotter inside during peak sun than a light-colored
           tent with the same mesh and vent design.
         </p>
         <h3>Do I need a footprint in the desert?</h3>
@@ -180,7 +180,7 @@ export default function Page() {
         </p>
         <h3>Can I take the rainfly off in hot weather?</h3>
         <p>
-          On a dry forecast with mesh walls underneath, yes — it dramatically improves airflow.
+          On a dry forecast with mesh walls underneath, yes - it dramatically improves airflow.
           Keep it staked nearby to put back on before dark or if weather changes.
         </p>
         <h3>How much mesh should a hot-weather tent have?</h3>

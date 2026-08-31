@@ -14,7 +14,7 @@ const TITLE = 'Summer Camping for Beginners'
 // SEO-optimized <title>; H1/headline keep TITLE.
 const META_TITLE = 'Summer Camping for Beginners (Heat, Bugs)'
 const DESCRIPTION =
-  'Summer camping for beginners: heat, bugs, and crowds — what to pack, when to book, and the starter gear setup that actually works in July humidity.'
+  'Summer camping for beginners: heat, bugs, and crowds - what to pack, when to book, and the starter gear setup that actually works in July humidity.'
 const HERO_IMAGE = 'https://images.unsplash.com/photo-1487730116645-74489c95b41b?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({
@@ -46,7 +46,7 @@ export default function Page() {
         data={faqPageGraph([
           {
             q: 'Is summer the best season for first-time camping?',
-            a: 'Yes. Summer offers the longest daylight, the warmest nights, the lowest chance of being rained or snowed out, and the most open campgrounds. The trade-off is heat, sun exposure, bugs, and crowds — but those are easier to manage on a first trip than cold or wet weather.',
+            a: 'Yes. Summer offers the longest daylight, the warmest nights, the lowest chance of being rained or snowed out, and the most open campgrounds. The trade-off is heat, sun exposure, bugs, and crowds - but those are easier to manage on a first trip than cold or wet weather.',
           },
           {
             q: 'What temperature is too hot to camp?',
@@ -58,7 +58,7 @@ export default function Page() {
           },
           {
             q: 'Do I need a 4-season tent for summer camping?',
-            a: 'No. A standard 3-season tent with a full mesh inner is the right choice — it ventilates better than a 4-season tent and keeps bugs out. Look for a model with a rainfly that can be staked off the body of the tent for airflow on hot nights.',
+            a: 'No. A standard 3-season tent with a full mesh inner is the right choice - it ventilates better than a 4-season tent and keeps bugs out. Look for a model with a rainfly that can be staked off the body of the tent for airflow on hot nights.',
           },
           {
             q: 'What is the most underestimated summer camping risk?',
@@ -66,7 +66,7 @@ export default function Page() {
           },
           {
             q: 'Are campfires usually allowed in summer?',
-            a: 'Often, but not always. Many western states issue fire bans in mid-to-late summer when conditions are dry. Check the campground page and the state forestry or BLM fire restrictions site the week before your trip. Bring a propane stove regardless — it works under almost every level of fire ban.',
+            a: 'Often, but not always. Many western states issue fire bans in mid-to-late summer when conditions are dry. Check the campground page and the state forestry or BLM fire restrictions site the week before your trip. Bring a propane stove regardless - it works under almost every level of fire ban.',
           },
         ])}
       />
@@ -89,8 +89,8 @@ export default function Page() {
       }}
     >
       <QuickAnswer
-        tldr="Summer is the easiest season to learn — long days, warm nights, low chance of being rained out. Plan for heat, bugs, and afternoon storms."
-        summary="Summer is the most forgiving season for first-time camping: the longest daylight, the warmest nights, and the lowest chance of being rained or snowed out. The trade-offs are heat, sun exposure, mosquitoes, and afternoon thunderstorms — all manageable with planning. Book 4–6 months out for state parks (6 for national parks). Pitch in afternoon shade, not full sun. Use a 3-season mesh-bodied tent (not 4-season) and a 40°F sleeping bag at low elevation, 20°F above 6,000 ft. Bring twice the water you think you need plus electrolytes — plain water alone causes nausea and headaches in heavy heat. The most underestimated risk is afternoon thunderstorms; pitch the tent and rainfly before lunch and check the fire-ban status the week before."
+        tldr="Summer is the easiest season to learn - long days, warm nights, low chance of being rained out. Plan for heat, bugs, and afternoon storms."
+        summary="Summer is the most forgiving season for first-time camping: the longest daylight, the warmest nights, and the lowest chance of being rained or snowed out. The trade-offs are heat, sun exposure, mosquitoes, and afternoon thunderstorms - all manageable with planning. Book 4-6 months out for state parks (6 for national parks). Pitch in afternoon shade, not full sun. Use a 3-season mesh-bodied tent (not 4-season) and a 40°F sleeping bag at low elevation, 20°F above 6,000 ft. Bring twice the water you think you need plus electrolytes - plain water alone causes nausea and headaches in heavy heat. The most underestimated risk is afternoon thunderstorms; pitch the tent and rainfly before lunch and check the fire-ban status the week before."
       />
       <h2>The quick answer</h2>
       <ul>
@@ -112,14 +112,14 @@ export default function Page() {
       <ul>
         <li>Lighter sleeping bag (40°F rating is plenty for most lowland trips, 20°F for high-elevation sites).</li>
         <li>Mesh-bodied tent for ventilation. A footprint helps when ground is dry and dusty.</li>
-        <li>More cooler space and more ice — coolers work harder in summer heat.</li>
+        <li>More cooler space and more ice - coolers work harder in summer heat.</li>
         <li>A separate shade structure (canopy or tarp) becomes the most-used piece of gear at camp.</li>
         <li>Twice as much water capacity as you think you need.</li>
       </ul>
 
       <h3>Common beginner mistakes specific to summer</h3>
       <ul>
-        <li>Pitching the tent in full sun — by 9am it&apos;s a sauna and nobody can nap there.</li>
+        <li>Pitching the tent in full sun - by 9am it&apos;s a sauna and nobody can nap there.</li>
         <li>Booking too late and ending up at a worse site than the trip deserves.</li>
         <li>Not checking the fire ban status until arrival.</li>
         <li>Treating the night-time temperature like the day-time temperature.</li>
@@ -133,14 +133,14 @@ export default function Page() {
         <li>Footprint or ground tarp.</li>
         <li>10×10 ft canopy or a tarp + poles for daytime shade at the picnic table.</li>
         <li>Sleeping bag rated 40°F (lowland) or 20°F (mountains, above 6,000 ft).</li>
-        <li>Sleeping pad — insulates you from cold ground at night and hot ground during the day.</li>
+        <li>Sleeping pad - insulates you from cold ground at night and hot ground during the day.</li>
       </ul>
 
-      <h3>Clothing — layers, not bulk</h3>
+      <h3>Clothing - layers, not bulk</h3>
       <ul>
-        <li>Lightweight long-sleeve sun shirt (UPF 30+) — better than sunscreen on the arms.</li>
+        <li>Lightweight long-sleeve sun shirt (UPF 30+) - better than sunscreen on the arms.</li>
         <li>Wide-brim sun hat. Baseball caps don&apos;t cover the ears or back of the neck.</li>
-        <li>Synthetic or wool t-shirts and shorts — never cotton on hot days; it holds sweat and chills you fast at sundown.</li>
+        <li>Synthetic or wool t-shirts and shorts - never cotton on hot days; it holds sweat and chills you fast at sundown.</li>
         <li>One fleece or hoodie per person for cold mornings and evenings.</li>
         <li>Long pants for after-dark mosquito hours.</li>
         <li>Closed-toe shoes plus sandals.</li>
@@ -148,12 +148,12 @@ export default function Page() {
 
       <h3>Cooking</h3>
       <ul>
-        <li>Propane stove (works under almost every fire ban — fires alone do not).</li>
+        <li>Propane stove (works under almost every fire ban - fires alone do not).</li>
         <li>2 spare propane canisters.</li>
-        <li>Large cooler with block ice on the bottom, drinks on top. Block ice lasts 3–5 days; cubes melt in 24 hours.</li>
+        <li>Large cooler with block ice on the bottom, drinks on top. Block ice lasts 3-5 days; cubes melt in 24 hours.</li>
         <li>1 gallon of drinking water per person per day, plus extra for cooking and cleanup.</li>
         <li>2 no-cook meal options for the hottest day or a fire-banned afternoon (sandwiches, wraps, charcuterie).</li>
-        <li>Insulated bottles or a small soft cooler for the picnic table — drinks warm up fast in the sun.</li>
+        <li>Insulated bottles or a small soft cooler for the picnic table - drinks warm up fast in the sun.</li>
       </ul>
 
       <h3>Safety and comfort</h3>
@@ -161,7 +161,7 @@ export default function Page() {
         <li>SPF 30+ sunscreen, applied at breakfast and again after lunch.</li>
         <li>Mosquito repellent with DEET or picaridin. Treat clothing with permethrin if mosquitoes are heavy where you&apos;re going.</li>
         <li>After-bite cream or hydrocortisone.</li>
-        <li>Electrolyte tabs or packets — water alone is not enough on hot days.</li>
+        <li>Electrolyte tabs or packets - water alone is not enough on hot days.</li>
         <li>First aid kit, with extra blister bandages.</li>
         <li>Phone charger pack (charged) and a paper map; cell coverage at most parks is unreliable.</li>
         <li>Weather app or NOAA radio. Watch for afternoon storm cells.</li>
@@ -169,14 +169,14 @@ export default function Page() {
 
       <h2>The mistakes that wreck most first summer trips</h2>
       <p>
-        These are the ones that come up over and over for beginners — practical errors, not bad luck. Each one is fixable with one decision before you leave.
+        These are the ones that come up over and over for beginners - practical errors, not bad luck. Each one is fixable with one decision before you leave.
       </p>
       <ol>
         <li>
           <strong>Underestimating the temperature swing.</strong> A campground that hits 95°F at 4pm can drop into the 50s by 5am, especially above 5,000 ft. Pack the fleece even when the forecast says hot. If a multi-day heat dome is forecast, see <Link href="/guides/camping-in-a-heatwave">camping in a heatwave</Link> for the bail/stay call before booking.
         </li>
         <li>
-          <strong>Pitching in full sun.</strong> Walk the site before you set up. Aim for morning sun, afternoon shade. A tent in full sun is a sauna by 9am and unusable for an afternoon nap — and there&apos;s no fixing it once the stakes are in.
+          <strong>Pitching in full sun.</strong> Walk the site before you set up. Aim for morning sun, afternoon shade. A tent in full sun is a sauna by 9am and unusable for an afternoon nap - and there&apos;s no fixing it once the stakes are in.
         </li>
         <li>
           <strong>Overpacking gear.</strong> More stuff means more time setting up, more time breaking down, and a hotter, more cluttered camp. The most upvoted car-camping advice from veterans is to pack to a list, not to &ldquo;just in case.&rdquo;
@@ -185,13 +185,13 @@ export default function Page() {
           <strong>Booking too late, then accepting the bad site.</strong> Popular state and national park weekends in July and August fill the day reservation windows open, six months out. Showing up two weeks before with no reservation lands you at the worst loop, next to the dumpster, with a four-hour drive there and back.
         </li>
         <li>
-          <strong>Ignoring afternoon thunderstorms.</strong> Set the tent and rainfly up by noon. Don&apos;t leave food, chairs, or sleeping bags loose in the open after lunch. Summer storms drop an inch of rain in 30 minutes and lightning is the real hazard — get into the car, not the tent, if a cell rolls in.
+          <strong>Ignoring afternoon thunderstorms.</strong> Set the tent and rainfly up by noon. Don&apos;t leave food, chairs, or sleeping bags loose in the open after lunch. Summer storms drop an inch of rain in 30 minutes and lightning is the real hazard - get into the car, not the tent, if a cell rolls in.
         </li>
         <li>
-          <strong>Skipping the fire-ban check — and walking away from a &ldquo;small&rdquo; fire.</strong> Many western parks ban open fires from June through September; bring a stove regardless. And if you do have a legal fire: drown it, stir it, drown it again. A still-warm coal in dry pine duff is how wildfires start, and rangers find them every season.
+          <strong>Skipping the fire-ban check - and walking away from a &ldquo;small&rdquo; fire.</strong> Many western parks ban open fires from June through September; bring a stove regardless. And if you do have a legal fire: drown it, stir it, drown it again. A still-warm coal in dry pine duff is how wildfires start, and rangers find them every season.
         </li>
         <li>
-          <strong>Drinking only water.</strong> On hot days, water without sodium leaves you nauseated and headachy by evening. Sports drinks, electrolyte tabs, or salty snacks fix this — beginners who finally try electrolytes describe the difference as the trip not ending in a headache.
+          <strong>Drinking only water.</strong> On hot days, water without sodium leaves you nauseated and headachy by evening. Sports drinks, electrolyte tabs, or salty snacks fix this - beginners who finally try electrolytes describe the difference as the trip not ending in a headache.
         </li>
         <li>
           <strong>Wearing cotton.</strong> Cotton soaks sweat, then chills you when the sun drops. Synthetic or wool for everything that touches skin.
@@ -200,15 +200,15 @@ export default function Page() {
 
       <h2>Where this fits in the plan</h2>
       <p>
-        Summer is the easiest season to learn on, but the hottest weekends still reward structure. Match the trip to an <Link href="/plans/easy-family-basecamp">Easy Family Basecamp</Link> at a shaded, water-access site — or <Link href="/quiz">take the 5-second quiz</Link> and we&apos;ll match a starter plan to your dates and party size.
+        Summer is the easiest season to learn on, but the hottest weekends still reward structure. Match the trip to an <Link href="/plans/easy-family-basecamp">Easy Family Basecamp</Link> at a shaded, water-access site - or <Link href="/quiz">take the 5-second quiz</Link> and we&apos;ll match a starter plan to your dates and party size.
       </p>
       <p>
-        Camping with young kids specifically? <Link href="/guides/summer-camping-with-kids">Summer camping with kids</Link> covers the heat and sun layer that&apos;s specific to that age group — signs of overheating kids won&apos;t report themselves, sunscreen logistics, and water play as the daily centerpiece.
+        Camping with young kids specifically? <Link href="/guides/summer-camping-with-kids">Summer camping with kids</Link> covers the heat and sun layer that&apos;s specific to that age group - signs of overheating kids won&apos;t report themselves, sunscreen logistics, and water play as the daily centerpiece.
       </p>
 
       <h2>A starter setup that actually works</h2>
       <p>
-        Don&apos;t overthink gear for trip one. This is a working starter kit — proven, mid-range, and simple. Upgrade later when you know what you actually want.
+        Don&apos;t overthink gear for trip one. This is a working starter kit - proven, mid-range, and simple. Upgrade later when you know what you actually want.
       </p>
       <ul>
         <li>
@@ -252,7 +252,7 @@ export default function Page() {
       <h2>Frequently asked</h2>
       <h3>Is summer the best season for first-time camping?</h3>
       <p>
-        Yes. Long daylight, warm nights, and stable weather make it the easiest learning season. The trade-offs — heat, bugs, crowds — are easier to plan around than cold or wet weather.
+        Yes. Long daylight, warm nights, and stable weather make it the easiest learning season. The trade-offs - heat, bugs, crowds - are easier to plan around than cold or wet weather.
       </p>
       <h3>What temperature is too hot to camp?</h3>
       <p>
@@ -264,11 +264,11 @@ export default function Page() {
       </p>
       <h3>Do I need a 4-season tent for summer?</h3>
       <p>
-        No. A 3-season tent with a full mesh inner is better — it ventilates and keeps bugs out. 4-season tents are sealed up for snow and overheat in summer.
+        No. A 3-season tent with a full mesh inner is better - it ventilates and keeps bugs out. 4-season tents are sealed up for snow and overheat in summer.
       </p>
       <h3>What is the most underestimated summer camping risk?</h3>
       <p>
-        Afternoon thunderstorms. Pitch the tent and rainfly before lunch and keep a non-fire dinner option ready. Lightning is the real hazard — get into the car, not the tent, if storms get close.
+        Afternoon thunderstorms. Pitch the tent and rainfly before lunch and keep a non-fire dinner option ready. Lightning is the real hazard - get into the car, not the tent, if storms get close.
       </p>
       <h3>Are fires allowed at summer campgrounds?</h3>
       <p>

@@ -6,7 +6,7 @@ import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
 
 const SLUG = '/activities/camping-activities-for-kids'
 const TITLE = 'Camping Activities for Kids'
-const META_TITLE = 'Camping Activities for Kids — 37 Proven Ideas'
+const META_TITLE = 'Camping Activities for Kids - 37 Proven Ideas'
 const DESCRIPTION =
   'Camping activities for kids sorted by age, energy, and weather: campfire games, nature scavenger hunts, rainy-day ideas, and quiet activities for every camp situation.'
 const HERO_IMAGE =
@@ -21,10 +21,10 @@ export const metadata = pageMetadata({
 })
 
 const AGE_LABELS: Record<string, string> = {
-  '3-5': 'Ages 3–5',
-  '6-8': 'Ages 6–8',
-  '9-12': 'Ages 9–12',
-  '13-17': 'Ages 13–17',
+  '3-5': 'Ages 3-5',
+  '6-8': 'Ages 6-8',
+  '9-12': 'Ages 9-12',
+  '13-17': 'Ages 13-17',
   adults: 'Adults',
   'all-ages': 'All Ages',
 }
@@ -85,19 +85,19 @@ export default function Page() {
         data={faqPageGraph([
           {
             q: 'What are good camping activities for kids?',
-            a: 'Nature scavenger hunts, campfire story chains, rock painting, stick whittling (age 8+), s\'mores making, and flashlight tag are consistently the most popular. Plan three activities per day — morning nature walk, afternoon quiet activity, evening campfire game — and you will not run out of things to do.',
+            a: 'Nature scavenger hunts, campfire story chains, rock painting, stick whittling (age 8+), s\'mores making, and flashlight tag are consistently the most popular. Plan three activities per day - morning nature walk, afternoon quiet activity, evening campfire game - and you will not run out of things to do.',
           },
           {
             q: 'What do kids do all day at a campsite?',
-            a: 'Plan structured activities or expect boredom-driven meltdowns. A morning hike with a scavenger hunt list, an afternoon craft or challenge at the site, and an evening campfire with games covers a full camp day. Nature does not auto-entertain kids — activity planning is the most important pre-trip step.',
+            a: 'Plan structured activities or expect boredom-driven meltdowns. A morning hike with a scavenger hunt list, an afternoon craft or challenge at the site, and an evening campfire with games covers a full camp day. Nature does not auto-entertain kids - activity planning is the most important pre-trip step.',
           },
           {
             q: 'What camping activities are good for toddlers?',
-            a: 'Rock and leaf sorting, puddle jumping, nature walks with a simple two-item list, and chalk drawing on pavement. Keep it sensory and short — 15–20 minute windows. Toddlers at camp are exploring, not completing activities.',
+            a: 'Rock and leaf sorting, puddle jumping, nature walks with a simple two-item list, and chalk drawing on pavement. Keep it sensory and short - 15-20 minute windows. Toddlers at camp are exploring, not completing activities.',
           },
           {
             q: 'What do teenagers do while camping?',
-            a: 'Teens respond well to activities with a real challenge component: map and compass navigation, fire-starting competitions, night hikes, or photography challenges. Give them a job with real responsibility and they typically engage. The worst camp experience for a teen is being supervised — give them autonomy within safety bounds.',
+            a: 'Teens respond well to activities with a real challenge component: map and compass navigation, fire-starting competitions, night hikes, or photography challenges. Give them a job with real responsibility and they typically engage. The worst camp experience for a teen is being supervised - give them autonomy within safety bounds.',
           },
         ])}
       />
@@ -126,7 +126,7 @@ export default function Page() {
         <section className="max-w-3xl mx-auto px-8 prose-editorial">
           <p>
             The biggest mistake in family camping is expecting nature to auto-entertain kids. It
-            doesn&apos;t. A 7-year-old with nothing planned will find something to do — usually
+            doesn&apos;t. A 7-year-old with nothing planned will find something to do - usually
             involving conflict with a sibling. The fix is planning three activities per day before
             you leave home: one for the morning, one for the afternoon, one for the evening fire.
             The list below has all three covered in every condition, including rain.
@@ -207,29 +207,29 @@ export default function Page() {
           </p>
           <ul>
             <li>
-              <strong>Morning (8–11am):</strong> Something active and outside — a nature walk, a
+              <strong>Morning (8-11am):</strong> Something active and outside - a nature walk, a
               scavenger hunt, a short hike. Kids are freshest in the morning; use that energy.
             </li>
             <li>
-              <strong>Afternoon (1–4pm):</strong> Something quieter at the site — a craft, a
+              <strong>Afternoon (1-4pm):</strong> Something quieter at the site - a craft, a
               challenge, free exploration, a nap for younger kids. The post-lunch lull is real.
               Plan for it.
             </li>
             <li>
-              <strong>Evening (5pm–dark):</strong> The campfire. S&apos;mores, a campfire game, a
+              <strong>Evening (5pm-dark):</strong> The campfire. S&apos;mores, a campfire game, a
               story chain. The fire handles the entertainment; your job is just to keep it lit.
             </li>
           </ul>
           <p>
             Three activities, planned in advance, prevents the &ldquo;I&apos;m bored&rdquo;
             cascade that leads to sibling conflict and parent frustration. Nature adds texture to
-            the activities — it doesn&apos;t replace them.
+            the activities - it doesn&apos;t replace them.
           </p>
 
           <h2>Rainy day adjustments</h2>
           <p>
             Rain changes the activities, not the schedule. Move morning walk to a rain-gear
-            adventure instead of canceling it — puddles and mud are intrinsically interesting to
+            adventure instead of canceling it - puddles and mud are intrinsically interesting to
             kids under 10. Afternoon crafts move inside the tent or under a tarp canopy. Evening
             campfire moves to camp games in the car or a downloaded movie in the tent.
           </p>
@@ -247,7 +247,7 @@ export default function Page() {
           </p>
           <ul>
             <li>
-              <strong>Toddlers (2–4):</strong> Sensory, short, and exploratory. Rock sorting, leaf
+              <strong>Toddlers (2-4):</strong> Sensory, short, and exploratory. Rock sorting, leaf
               collecting, puddle jumping. See{' '}
               <Link href="/activities/camping-activities-for-toddlers">
                 camping activities for toddlers
@@ -255,7 +255,7 @@ export default function Page() {
               .
             </li>
             <li>
-              <strong>School age (5–11):</strong> Most activities on this list. Scavenger hunts,
+              <strong>School age (5-11):</strong> Most activities on this list. Scavenger hunts,
               campfire games, challenges, and crafts all land well in this range.
             </li>
             <li>
@@ -270,8 +270,8 @@ export default function Page() {
           </ul>
 
           <p>
-            If you want a complete camp plan matched to your kids&apos; ages — including a day-by-day
-            activity schedule — <Link href="/quiz">take the 2-minute quiz</Link> and we&apos;ll
+            If you want a complete camp plan matched to your kids&apos; ages - including a day-by-day
+            activity schedule - <Link href="/quiz">take the 2-minute quiz</Link> and we&apos;ll
             build one for your family.
           </p>
         </section>

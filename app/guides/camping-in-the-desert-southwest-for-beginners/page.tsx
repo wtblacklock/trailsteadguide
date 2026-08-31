@@ -47,23 +47,23 @@ export default function Page() {
         data={faqPageGraph([
           {
             q: 'When is the best time to camp in the Desert Southwest?',
-            a: 'Mid-October through mid-April. Winter is the prime camping season in the desert — daytime highs in the 60s and 70s, cold nights in the 30s and 40s, dry air, low bug load. Summer (June–August) is dangerously hot in lower-elevation parks (Death Valley, lower Grand Canyon, Phoenix-area parks) — daytime highs of 105–115°F are common, and the heat does not break overnight. High-elevation parks (Bryce, Cedar Breaks, Grand Canyon North Rim, the Sky Islands) are summer-good and winter-snowed-in.',
+            a: 'Mid-October through mid-April. Winter is the prime camping season in the desert - daytime highs in the 60s and 70s, cold nights in the 30s and 40s, dry air, low bug load. Summer (June-August) is dangerously hot in lower-elevation parks (Death Valley, lower Grand Canyon, Phoenix-area parks) - daytime highs of 105-115°F are common, and the heat does not break overnight. High-elevation parks (Bryce, Cedar Breaks, Grand Canyon North Rim, the Sky Islands) are summer-good and winter-snowed-in.',
           },
           {
-            q: 'How big is the day–night temperature swing?',
-            a: 'Routinely 35–50°F. A 75°F afternoon at Zion or Joshua Tree can drop into the upper 30s overnight. The dry desert air does not hold the daytime heat. Plan layered clothing for both ends, and bring a sleeping bag warmer than the day temperatures suggest — a 30°F bag is the right rating for most desert winter camping.',
+            q: 'How big is the day-night temperature swing?',
+            a: 'Routinely 35-50°F. A 75°F afternoon at Zion or Joshua Tree can drop into the upper 30s overnight. The dry desert air does not hold the daytime heat. Plan layered clothing for both ends, and bring a sleeping bag warmer than the day temperatures suggest - a 30°F bag is the right rating for most desert winter camping.',
           },
           {
             q: 'How much water do I really need?',
-            a: 'A minimum of 1 gallon per person per day for drinking, plus another half gallon per person for cooking and cleanup. In summer at lower elevations, double that. Most desert campgrounds have potable water at a central spigot, but boondocking and dispersed sites generally do not. Always carry a 5-gallon jug as backup. Dehydration in the desert is faster than you feel — dry air evaporates sweat before you notice it.',
+            a: 'A minimum of 1 gallon per person per day for drinking, plus another half gallon per person for cooking and cleanup. In summer at lower elevations, double that. Most desert campgrounds have potable water at a central spigot, but boondocking and dispersed sites generally do not. Always carry a 5-gallon jug as backup. Dehydration in the desert is faster than you feel - dry air evaporates sweat before you notice it.',
           },
           {
             q: 'What is the monsoon, and does it affect camping?',
-            a: 'The Southwest monsoon runs roughly July through mid-September, especially across Arizona, New Mexico, and southern Utah. Afternoon thunderstorms build daily, drop heavy rain in 20–40 minutes, and trigger flash floods. Slot canyon hiking is genuinely dangerous in monsoon season — flash floods kill people most years. If you camp in monsoon season, pitch by lunch, never camp in a wash, and never enter a slot canyon when storms are forecast within 50 miles.',
+            a: 'The Southwest monsoon runs roughly July through mid-September, especially across Arizona, New Mexico, and southern Utah. Afternoon thunderstorms build daily, drop heavy rain in 20-40 minutes, and trigger flash floods. Slot canyon hiking is genuinely dangerous in monsoon season - flash floods kill people most years. If you camp in monsoon season, pitch by lunch, never camp in a wash, and never enter a slot canyon when storms are forecast within 50 miles.',
           },
           {
             q: 'How do I book Zion, Arches, Grand Canyon, or Big Bend?',
-            a: 'Reserve 6 months out at recreation.gov, the day the window opens. Watchman (Zion), Devil&apos;s Garden (Arches), Mather (Grand Canyon South Rim), Chisos Basin (Big Bend) are all competitive, and the most popular weekends fill within hours. Some sites are first-come, first-served — Zion&apos;s South Campground was historically; check current rules. Mid-week and shoulder-season are dramatically easier.',
+            a: 'Reserve 6 months out at recreation.gov, the day the window opens. Watchman (Zion), Devil&apos;s Garden (Arches), Mather (Grand Canyon South Rim), Chisos Basin (Big Bend) are all competitive, and the most popular weekends fill within hours. Some sites are first-come, first-served - Zion&apos;s South Campground was historically; check current rules. Mid-week and shoulder-season are dramatically easier.',
           },
           {
             q: 'Where should a Desert Southwest first-timer actually go?',
@@ -90,13 +90,13 @@ export default function Page() {
       }}
     >
       <QuickAnswer
-        tldr="Winter is prime — October through April. Plan around 35–50°F day-to-night swings, water management, and monsoon flash floods."
-        summary="Camping season in the Desert Southwest is October through April — winter is prime. Summer at lower elevations (Death Valley, lower Grand Canyon, Saguaro, Phoenix-area parks) is dangerous, not just uncomfortable, with daytime highs of 105–115°F that don't break overnight; high-elevation parks (Bryce, Cedar Breaks, the North Rim) are the summer option. Plan for 35–50°F day-to-night swings — a 75°F afternoon at Zion is a 38°F night, so bring a 30°F sleeping bag and a puffy. Water is the limiting factor: 1 gallon per person per day minimum, doubled in summer, and always carry a 5-gallon backup jug. The Southwest monsoon (July–mid-September) brings daily afternoon thunderstorms and flash floods that kill people most years — never camp in a wash, never enter a slot canyon when storms are forecast within 50 miles. Stake aggressively against desert wind, and put a footprint under the tent — cactus spines puncture nylon."
+        tldr="Winter is prime - October through April. Plan around 35-50°F day-to-night swings, water management, and monsoon flash floods."
+        summary="Camping season in the Desert Southwest is October through April - winter is prime. Summer at lower elevations (Death Valley, lower Grand Canyon, Saguaro, Phoenix-area parks) is dangerous, not just uncomfortable, with daytime highs of 105-115°F that don't break overnight; high-elevation parks (Bryce, Cedar Breaks, the North Rim) are the summer option. Plan for 35-50°F day-to-night swings - a 75°F afternoon at Zion is a 38°F night, so bring a 30°F sleeping bag and a puffy. Water is the limiting factor: 1 gallon per person per day minimum, doubled in summer, and always carry a 5-gallon backup jug. The Southwest monsoon (July-mid-September) brings daily afternoon thunderstorms and flash floods that kill people most years - never camp in a wash, never enter a slot canyon when storms are forecast within 50 miles. Stake aggressively against desert wind, and put a footprint under the tent - cactus spines puncture nylon."
       />
       <h2>What camping in the Desert Southwest is actually like</h2>
       <ul>
-        <li><strong>Inverted season.</strong> Winter is prime — October through April is when the desert is gorgeous and usable. Summer is hot enough to be unsafe at lower elevations.</li>
-        <li><strong>Big day–night swings.</strong> 75°F afternoon, 38°F night is normal in October at Zion. Plan for both ends.</li>
+        <li><strong>Inverted season.</strong> Winter is prime - October through April is when the desert is gorgeous and usable. Summer is hot enough to be unsafe at lower elevations.</li>
+        <li><strong>Big day-night swings.</strong> 75°F afternoon, 38°F night is normal in October at Zion. Plan for both ends.</li>
         <li><strong>Headline national parks.</strong> Grand Canyon, Zion, Bryce, Arches, Canyonlands, Big Bend, Saguaro, Petrified Forest, Carlsbad Caverns. Each is its own logistics puzzle.</li>
         <li><strong>Beginner focus:</strong> a state-park or national-park developed campground within 90 minutes of a major airport, in shoulder season, with a 30°F bag and a serious water plan. Save Death Valley summer and slot canyons for later trips.</li>
       </ul>
@@ -104,8 +104,8 @@ export default function Page() {
       <h2>What&apos;s different about camping in the Desert Southwest</h2>
       <h3>Heat is dangerous, not just uncomfortable</h3>
       <ul>
-        <li>Lower-elevation parks (Death Valley, Saguaro, lower Grand Canyon, Joshua Tree) routinely hit 105–115°F in summer.</li>
-        <li>The heat does not break overnight in summer — overnight lows in the upper 80s are common.</li>
+        <li>Lower-elevation parks (Death Valley, Saguaro, lower Grand Canyon, Joshua Tree) routinely hit 105-115°F in summer.</li>
+        <li>The heat does not break overnight in summer - overnight lows in the upper 80s are common.</li>
         <li>High-elevation parks (Bryce 8,000 ft, Cedar Breaks 10,000 ft, North Rim 8,200 ft) are summer-good and winter-closed.</li>
         <li>Pitch in shade. Pitch by 10am if you must arrive in the heat.</li>
         <li>Plan activity for early morning and after 5pm. Don&apos;t hike from 11am to 4pm in summer.</li>
@@ -114,12 +114,12 @@ export default function Page() {
       <h3>Water is the limiting factor</h3>
       <ul>
         <li>Bring 1 gallon per person per day minimum. Double in summer.</li>
-        <li>Most developed campgrounds have potable water at a central spigot. Confirm before the trip — some campgrounds are dry sites.</li>
+        <li>Most developed campgrounds have potable water at a central spigot. Confirm before the trip - some campgrounds are dry sites.</li>
         <li>BLM dispersed camping has no water at all. Carry a 5-gallon jug per 2 people per day.</li>
         <li>Desert air evaporates sweat before you feel it. Dehydration sneaks up on you. Drink a glass an hour even if you don&apos;t feel thirsty.</li>
       </ul>
 
-      <h3>Monsoon awareness July–September</h3>
+      <h3>Monsoon awareness July-September</h3>
       <ul>
         <li>Afternoon thunderstorms build daily through monsoon season, especially across Arizona, southern Utah, and New Mexico.</li>
         <li>Flash floods in washes and slot canyons kill people most years. Never camp in a wash, even a dry one.</li>
@@ -133,16 +133,16 @@ export default function Page() {
         <li>Utah state parks: <a href="https://stateparks.utah.gov/" rel="noopener" target="_blank">stateparks.utah.gov</a>.</li>
         <li>Arizona state parks: <a href="https://azstateparks.com/" rel="noopener" target="_blank">azstateparks.com</a>.</li>
         <li>New Mexico state parks: <a href="https://www.emnrd.nm.gov/spd/" rel="noopener" target="_blank">emnrd.nm.gov/spd</a>.</li>
-        <li>BLM dispersed camping is free and abundant — the best value in the country if you&apos;re willing to bring all your own water.</li>
+        <li>BLM dispersed camping is free and abundant - the best value in the country if you&apos;re willing to bring all your own water.</li>
       </ul>
 
       <h3>Wildlife and plants</h3>
       <ul>
-        <li>Rattlesnakes are common — watch where you step and reach.</li>
+        <li>Rattlesnakes are common - watch where you step and reach.</li>
         <li>Scorpions hide in shoes and corners; shake your boots out in the morning.</li>
         <li>Cactus spines puncture tent floors. Pad the area before pitching, or use a footprint.</li>
         <li>Black bears in higher-elevation parks (Grand Canyon, Big Bend, the Sky Islands). Use bear boxes where provided.</li>
-        <li>Javelina at lower-elevation Arizona parks — they raid trash but leave tents alone.</li>
+        <li>Javelina at lower-elevation Arizona parks - they raid trash but leave tents alone.</li>
       </ul>
 
       <figure className="not-prose my-12">
@@ -157,7 +157,7 @@ export default function Page() {
           />
         </div>
         <figcaption className="mt-3 text-sm text-stone-500 italic">
-          The Grand Canyon at sunrise. Mather Campground on the South Rim is the beginner-friendly base — book six months out.
+          The Grand Canyon at sunrise. Mather Campground on the South Rim is the beginner-friendly base - book six months out.
         </figcaption>
       </figure>
 
@@ -167,7 +167,7 @@ export default function Page() {
       </p>
       <ul>
         <li>
-          <strong><Link href="/plans/backyard-test">Backyard Test.</Link></strong> If you live in Phoenix, Tucson, Las Vegas, Albuquerque, or St. George — your backyard is already a desert. Run it on a forecast night under 50°F.
+          <strong><Link href="/plans/backyard-test">Backyard Test.</Link></strong> If you live in Phoenix, Tucson, Las Vegas, Albuquerque, or St. George - your backyard is already a desert. Run it on a forecast night under 50°F.
         </li>
         <li>
           <strong><Link href="/plans/first-night-camp">First Night Camp.</Link></strong> One night, one car, a state park within 90 minutes. Lost Dutchman (AZ), Snow Canyon (UT), Sand Hollow (UT), Cibola (NM) all fit. Pick October through April.
@@ -180,7 +180,7 @@ export default function Page() {
       <h2>Where beginners should look</h2>
       <h3>State parks</h3>
       <p>
-        State parks are the unsung heroes of beginner desert camping — easier to reserve than the headline national parks, often with better facilities, and within an hour of major airports. Utah&apos;s Snow Canyon, Sand Hollow, Goblin Valley, and Dead Horse Point are spectacular. Arizona&apos;s Lost Dutchman, Catalina, and Lyman Lake are well-run. New Mexico&apos;s Cibola, Hyde Memorial, and Storrie Lake are quiet and affordable.
+        State parks are the unsung heroes of beginner desert camping - easier to reserve than the headline national parks, often with better facilities, and within an hour of major airports. Utah&apos;s Snow Canyon, Sand Hollow, Goblin Valley, and Dead Horse Point are spectacular. Arizona&apos;s Lost Dutchman, Catalina, and Lyman Lake are well-run. New Mexico&apos;s Cibola, Hyde Memorial, and Storrie Lake are quiet and affordable.
       </p>
 
       <h3>National parks</h3>
@@ -190,7 +190,7 @@ export default function Page() {
 
       <h3>National forests and BLM dispersed</h3>
       <p>
-        BLM dispersed camping in southern Utah, northern Arizona, and across New Mexico is among the best free camping in the country. Sites south of Moab, around Sedona, near Bryce, the Lake Powell shoreline at Lone Rock Beach, and across the Ojito wilderness are easy to find. No facilities — bring all water. Beginners should start with developed campgrounds first; Saguaro National Park&apos;s Tucson-adjacent districts (Saguaro East at Rincon, Saguaro West at Tucson Mountain) are a good stepping-stone before BLM.
+        BLM dispersed camping in southern Utah, northern Arizona, and across New Mexico is among the best free camping in the country. Sites south of Moab, around Sedona, near Bryce, the Lake Powell shoreline at Lone Rock Beach, and across the Ojito wilderness are easy to find. No facilities - bring all water. Beginners should start with developed campgrounds first; Saguaro National Park&apos;s Tucson-adjacent districts (Saguaro East at Rincon, Saguaro West at Tucson Mountain) are a good stepping-stone before BLM.
       </p>
 
       <figure className="not-prose my-12">
@@ -205,7 +205,7 @@ export default function Page() {
           />
         </div>
         <figcaption className="mt-3 text-sm text-stone-500 italic">
-          Joshua Tree at sunset — the desert at its most photogenic.
+          Joshua Tree at sunset - the desert at its most photogenic.
         </figcaption>
       </figure>
 
@@ -216,24 +216,24 @@ export default function Page() {
       <h3>Add</h3>
       <ul>
         <li>5-gallon water jug per 2 people per night, plus reusable bottles. More for dispersed sites.</li>
-        <li>30°F sleeping bag — desert nights drop further than the day temperatures suggest.</li>
+        <li>30°F sleeping bag - desert nights drop further than the day temperatures suggest.</li>
         <li>Insulated sleeping pad, R-value 4 minimum. Cold ground at night.</li>
-        <li>Layered clothing for 50°F day–night swings: long sleeve sun shirt, warm fleece, puffy jacket, beanie.</li>
+        <li>Layered clothing for 50°F day-night swings: long sleeve sun shirt, warm fleece, puffy jacket, beanie.</li>
         <li>Sunscreen, sunglasses, lip balm, wide-brim hat. UV at altitude is intense.</li>
         <li>10×10 canopy or shade tarp for daytime shade where shade trees are scarce.</li>
         <li>Tent footprint or extra ground tarp to protect the floor from cactus spines.</li>
-        <li>Wind-resistant tent staking and extra stakes — desert wind shreds half-staked tents.</li>
+        <li>Wind-resistant tent staking and extra stakes - desert wind shreds half-staked tents.</li>
       </ul>
       <h3>Skip or downsize</h3>
       <ul>
-        <li>Heavy bug control — most desert sites are nearly bug-free in the cool months.</li>
+        <li>Heavy bug control - most desert sites are nearly bug-free in the cool months.</li>
         <li>4-season tent. A 3-season tent with full mesh inner is the right call.</li>
       </ul>
 
       <h2>Common first-time mistakes in the Desert Southwest</h2>
       <ol>
         <li>
-          <strong>Trying a low-elevation desert trip in summer.</strong> Death Valley, lower Grand Canyon, Saguaro, and Phoenix-area parks above 100°F are dangerous, not just uncomfortable. Reschedule for October–April or move to high elevation.
+          <strong>Trying a low-elevation desert trip in summer.</strong> Death Valley, lower Grand Canyon, Saguaro, and Phoenix-area parks above 100°F are dangerous, not just uncomfortable. Reschedule for October-April or move to high elevation.
         </li>
         <li>
           <strong>Underestimating the night temperature drop.</strong> A 75°F afternoon at Zion in October is a 38°F night. Bring the warm bag and the puffy.
@@ -245,24 +245,24 @@ export default function Page() {
           <strong>Hiking slot canyons during monsoon storms.</strong> Flash floods kill people in the desert most years. If storms are forecast within 50 miles, the slot canyon is closed for you that day.
         </li>
         <li>
-          <strong>Pitching with the wire stakes from the box.</strong> A 30 mph gust at Joshua Tree, Moab, or Page will pull standard tent stakes straight out of the sand and roll the tent across the loop with everything inside. Bring 10–12 inch screw-in or Y-beam stakes, weigh interior corners with rocks, and accept that on a real wind day you will not be able to cook, sleep, or read — pack an indoor backup plan.
+          <strong>Pitching with the wire stakes from the box.</strong> A 30 mph gust at Joshua Tree, Moab, or Page will pull standard tent stakes straight out of the sand and roll the tent across the loop with everything inside. Bring 10-12 inch screw-in or Y-beam stakes, weigh interior corners with rocks, and accept that on a real wind day you will not be able to cook, sleep, or read - pack an indoor backup plan.
         </li>
       </ol>
 
       <h2>Simple gear setup for the Desert Southwest</h2>
       <p>
-        A working starter kit calibrated for the desert — built around shade, water, a warmer sleeping system than the day temperatures suggest, and wind-resistant pitching.
+        A working starter kit calibrated for the desert - built around shade, water, a warmer sleeping system than the day temperatures suggest, and wind-resistant pitching.
       </p>
       <ul>
         <li>
           <strong>Tent.</strong>{' '}
           <AmazonLink productId="coleman-sundome-4p" pageSlug="camping-in-the-desert-southwest-for-beginners" />{' '}
-          (~$68). Stake aggressively. Put a footprint or ground tarp under the floor — cactus spines puncture nylon.
+          (~$68). Stake aggressively. Put a footprint or ground tarp under the floor - cactus spines puncture nylon.
         </li>
         <li>
           <strong>Sleeping bag.</strong>{' '}
           <AmazonLink productId="coleman-brazos-bag" pageSlug="camping-in-the-desert-southwest-for-beginners" />{' '}
-          (~$54). Works mild desert nights. For cold-desert nights, add a liner or use a 20°F bag — the day-night swing surprises beginners.
+          (~$54). Works mild desert nights. For cold-desert nights, add a liner or use a 20°F bag - the day-night swing surprises beginners.
         </li>
         <li>
           <strong>Sleeping pad.</strong>{' '}
@@ -310,9 +310,9 @@ export default function Page() {
       <p>
         Mid-October through mid-April. Winter is the prime camping season at lower elevations. Summer is dangerously hot below 5,000 ft. High-elevation parks (Bryce, Cedar Breaks, North Rim) are summer-good and winter-closed.
       </p>
-      <h3>How big is the day–night temperature swing?</h3>
+      <h3>How big is the day-night temperature swing?</h3>
       <p>
-        Routinely 35–50°F. A 75°F day is a 35–40°F night at Zion or Joshua Tree. Bring a 30°F bag and layered clothing for both ends.
+        Routinely 35-50°F. A 75°F day is a 35-40°F night at Zion or Joshua Tree. Bring a 30°F bag and layered clothing for both ends.
       </p>
       <h3>How much water do I really need?</h3>
       <p>
@@ -320,7 +320,7 @@ export default function Page() {
       </p>
       <h3>What is the monsoon, and does it affect camping?</h3>
       <p>
-        Daily afternoon thunderstorms July–September across Arizona, southern Utah, and New Mexico. Flash floods in washes and slot canyons kill people most years. Pitch by lunch, never camp in a wash, never enter a slot canyon when storms are forecast within 50 miles.
+        Daily afternoon thunderstorms July-September across Arizona, southern Utah, and New Mexico. Flash floods in washes and slot canyons kill people most years. Pitch by lunch, never camp in a wash, never enter a slot canyon when storms are forecast within 50 miles.
       </p>
       <h3>How do I book Zion, Arches, Grand Canyon, or Big Bend?</h3>
       <p>
@@ -328,7 +328,7 @@ export default function Page() {
       </p>
       <h3>Where should a Desert Southwest first-timer actually go?</h3>
       <p>
-        A developed state-park or national-park campground within 90 minutes of a major airport, October–April. Lost Dutchman (AZ), Snow Canyon (UT), Sand Hollow (UT), Joshua Tree NP, Big Bend SP. Save Death Valley summer and slot-canyon trips for after a few weekends.
+        A developed state-park or national-park campground within 90 minutes of a major airport, October-April. Lost Dutchman (AZ), Snow Canyon (UT), Sand Hollow (UT), Joshua Tree NP, Big Bend SP. Save Death Valley summer and slot-canyon trips for after a few weekends.
       </p>
     </GuidePage>
     <GuideGearShelf guideSlug="camping-in-the-desert-southwest-for-beginners" />

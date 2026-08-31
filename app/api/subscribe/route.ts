@@ -75,11 +75,11 @@ export async function POST(req: Request) {
     if (!kitRes.ok) {
       const text = await kitRes.text()
       console.error('Kit subscribe failed', kitRes.status, text)
-      // Don't fail the user-facing flow — continue to Resend.
+      // Don't fail the user-facing flow - continue to Resend.
     }
   } catch (err) {
     console.error('Kit subscribe error', err)
-    // Continue — we'd rather send the plan than block on Kit.
+    // Continue - we'd rather send the plan than block on Kit.
   }
 
   // 2. Send the source-specific transactional email via Resend.

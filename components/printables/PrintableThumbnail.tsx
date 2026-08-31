@@ -1,7 +1,7 @@
 'use client'
 
 /**
- * PrintableThumbnail — a small, scaled-down rendering of the printable
+ * PrintableThumbnail - a small, scaled-down rendering of the printable
  * artwork. Same renderer components as `<PrintablePreview />` so we
  * never duplicate the artwork; only the scaling envelope changes.
  *
@@ -13,7 +13,7 @@
  * Anti-copy hardening: text inside the preview cannot be selected,
  * pointer events on the artwork are disabled (so it can't be dragged
  * out as an image either), and right-click is suppressed. None of this
- * stops a determined user with devtools — it stops casual copy/paste.
+ * stops a determined user with devtools - it stops casual copy/paste.
  */
 
 import ConstellationWheel from './ConstellationWheel'

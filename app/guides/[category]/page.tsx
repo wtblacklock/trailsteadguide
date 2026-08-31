@@ -49,7 +49,7 @@ export default async function CategoryPage({
       <JsonLd
         data={collectionPageGraph({
           slug: `/guides/${category.slug}`,
-          title: `${category.label} — Camping Guides`,
+          title: `${category.label} - Camping Guides`,
           description: category.heroSubhead,
           items: guides.map((g) => ({
             name: g.title,
@@ -149,7 +149,7 @@ function PlaceholderBody({ category }: { category: GuideCategory }) {
             : 'We’re writing this section out by region.'}
         </h2>
         <p className="text-stone-600 leading-relaxed mb-6">
-          The quiz already scaffolds a plan around your dates and where you’re going — start there and we’ll match the timeline to the conditions you’ll actually face.
+          The quiz already scaffolds a plan around your dates and where you’re going - start there and we’ll match the timeline to the conditions you’ll actually face.
         </p>
         <Link
           href="/quiz"

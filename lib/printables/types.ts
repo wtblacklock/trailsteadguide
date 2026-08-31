@@ -11,13 +11,13 @@ export type Printable = {
   category: PrintableCategoryId
   /** Public-facing title used in metadata + headings. */
   title: string
-  /** Short SERP description (140–155 chars). */
+  /** Short SERP description (140-155 chars). */
   description: string
   /** One-sentence hook shown above the email gate. */
   tagline: string
-  /** What you get — bullet list shown on the landing page. */
+  /** What you get - bullet list shown on the landing page. */
   whatYouGet: string[]
-  /** Suggested use cases — bullet list. */
+  /** Suggested use cases - bullet list. */
   useCases: string[]
   /** Format string for the schema/file note ("Single-page PDF · Letter / A4"). */
   formatNote: string

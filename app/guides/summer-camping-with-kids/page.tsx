@@ -10,7 +10,7 @@ import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
 
 const SLUG = '/guides/summer-camping-with-kids'
 const TITLE = 'Summer Camping With Kids'
-const META_TITLE = 'Summer Camping With Kids — Heat & Sun Guide'
+const META_TITLE = 'Summer Camping With Kids - Heat & Sun Guide'
 const DESCRIPTION =
   'Summer camping with kids: heat and dehydration signs kids won\'t self-report, sunscreen logistics, water play as the daily centerpiece, and bug protection for young skin.'
 const HERO_IMAGE =
@@ -44,7 +44,7 @@ export default function Page() {
         data={faqPageGraph([
           {
             q: 'How do you know if a kid is overheating at camp?',
-            a: 'Kids don\'t reliably self-report the way adults do — watch for behavior instead of waiting to be told. Unusual quietness, stopping mid-play, flushed skin without sweating, and irritability are earlier and more reliable signs than a kid actually saying "I\'m hot." By the time a kid complains, they\'re often already fairly overheated.',
+            a: 'Kids don\'t reliably self-report the way adults do - watch for behavior instead of waiting to be told. Unusual quietness, stopping mid-play, flushed skin without sweating, and irritability are earlier and more reliable signs than a kid actually saying "I\'m hot." By the time a kid complains, they\'re often already fairly overheated.',
           },
           {
             q: 'How often should sunscreen be reapplied at camp?',
@@ -52,11 +52,11 @@ export default function Page() {
           },
           {
             q: 'Is bug spray safe for young kids?',
-            a: 'DEET-based repellents are generally considered safe for children over 2 months at concentrations of 30% or less, applied to skin but not hands, and not near eyes or mouth. For younger infants or parents who prefer to avoid DEET entirely, physical barriers — mosquito netting over a stroller or pack-n-play, long sleeves at dawn and dusk — are the alternative.',
+            a: 'DEET-based repellents are generally considered safe for children over 2 months at concentrations of 30% or less, applied to skin but not hands, and not near eyes or mouth. For younger infants or parents who prefer to avoid DEET entirely, physical barriers - mosquito netting over a stroller or pack-n-play, long sleeves at dawn and dusk - are the alternative.',
           },
           {
             q: 'What water activities work for a summer camping trip with kids?',
-            a: 'A shallow lake edge or a kiddie pool brought from home both work well and don\'t require a swimming skill level. A sprinkler or misting fan at the campsite itself covers the hours between real water time. Any actual swimming needs the same hands-on supervision it would at a pool — a campground lake is not a safer environment by default.',
+            a: 'A shallow lake edge or a kiddie pool brought from home both work well and don\'t require a swimming skill level. A sprinkler or misting fan at the campsite itself covers the hours between real water time. Any actual swimming needs the same hands-on supervision it would at a pool - a campground lake is not a safer environment by default.',
           },
         ])}
       />
@@ -79,21 +79,21 @@ export default function Page() {
       >
         <QuickAnswer
           tldr="Watch behavior, not complaints, for overheating. Reapply sunscreen every 2 hours. Build the day around water play, not around it."
-          summary="Summer camping with kids adds a kid-specific layer on top of general hot-weather camping. Kids don't reliably say they're overheating the way adults do — watch for quietness, flushed skin, and stopping mid-play instead of waiting to be told. Sunscreen needs to go on a schedule (every two hours, always after water) rather than a one-time morning application. Water play — a shallow lake edge, a kiddie pool, a sprinkler at camp — should be the centerpiece of the hottest hours, not an occasional treat, since it does double duty as cooling and entertainment. And bug protection matters more for young skin, which reacts faster to both bites and repellent. For the general hot-weather playbook — site selection, shade, adult hydration math — see camping in a heatwave."
+          summary="Summer camping with kids adds a kid-specific layer on top of general hot-weather camping. Kids don't reliably say they're overheating the way adults do - watch for quietness, flushed skin, and stopping mid-play instead of waiting to be told. Sunscreen needs to go on a schedule (every two hours, always after water) rather than a one-time morning application. Water play - a shallow lake edge, a kiddie pool, a sprinkler at camp - should be the centerpiece of the hottest hours, not an occasional treat, since it does double duty as cooling and entertainment. And bug protection matters more for young skin, which reacts faster to both bites and repellent. For the general hot-weather playbook - site selection, shade, adult hydration math - see camping in a heatwave."
         />
 
         <h2>Kids don&apos;t self-report overheating</h2>
         <p>
           The same pattern that shows up with cold shows up with heat: kids don&apos;t reliably say
           &ldquo;I&apos;m too hot&rdquo; the way an adult would. Watch behavior instead of waiting
-          for a complaint — a kid who goes quiet, stops mid-play, or looks flushed without visible
+          for a complaint - a kid who goes quiet, stops mid-play, or looks flushed without visible
           sweating is often already meaningfully overheated by the time it&apos;s obvious.
           Irritability that doesn&apos;t match the situation is another early sign worth taking
           seriously rather than chalking up to a bad mood.
         </p>
         <p>
-          For the adult-focused version of this — hydration math, heat exhaustion signs, when to
-          reschedule entirely — see{' '}
+          For the adult-focused version of this - hydration math, heat exhaustion signs, when to
+          reschedule entirely - see{' '}
           <Link href="/guides/camping-in-a-heatwave">camping in a heatwave</Link>.
         </p>
 
@@ -101,7 +101,7 @@ export default function Page() {
         <p>
           A single morning application doesn&apos;t cover a full camp day. Reapply every two hours
           minimum, and immediately after any water play regardless of what the bottle&apos;s
-          &ldquo;water-resistant&rdquo; claim says — swimming and toweling off both strip most of
+          &ldquo;water-resistant&rdquo; claim says - swimming and toweling off both strip most of
           it. A UPF-rated rash guard or sun shirt cuts down how often bare skin needs
           reapplication at all, which matters more than it sounds like when you&apos;re also
           managing meals, naps, and everything else.
@@ -109,7 +109,7 @@ export default function Page() {
 
         <h2>Build the day around water, not just shade</h2>
         <p>
-          Water play does double duty at a summer trip with kids — it&apos;s cooling and it&apos;s
+          Water play does double duty at a summer trip with kids - it&apos;s cooling and it&apos;s
           entertainment, and both matter equally during the hottest hours. A shallow lake edge, a
           kiddie pool packed from home, or a sprinkler set up at the campsite all work without
           requiring any real swimming skill. Plan the hottest part of the day, roughly late morning
@@ -117,7 +117,7 @@ export default function Page() {
           activities as the fallback rather than the plan.
         </p>
         <p>
-          Any actual swimming — a lake, a river, a campground pool — needs the same hands-on
+          Any actual swimming - a lake, a river, a campground pool - needs the same hands-on
           supervision it would anywhere else. A campground isn&apos;t a safer water environment by
           default just because it feels more relaxed than a public pool.
         </p>
@@ -141,19 +141,19 @@ export default function Page() {
           comfortably be outside the tent at all during peak sun.
         </p>
 
-        <h2>When to call it and go inside — or home</h2>
+        <h2>When to call it and go inside - or home</h2>
         <p>
           If a kid stops responding to shade, water, and a rest break within 30 minutes, that&apos;s
           past the point of waiting it out. Move to full shade or an air-conditioned space (the
-          car counts), and if symptoms don&apos;t improve — persistent flushed skin, no sweating,
-          confusion or unusual sleepiness — treat it as a medical situation, not a camp
+          car counts), and if symptoms don&apos;t improve - persistent flushed skin, no sweating,
+          confusion or unusual sleepiness - treat it as a medical situation, not a camp
           inconvenience.
         </p>
 
         <h2>Frequently asked</h2>
         <h3>How do you know if a kid is overheating at camp?</h3>
         <p>
-          Watch behavior, not complaints — quietness, stopping mid-play, and flushed skin without
+          Watch behavior, not complaints - quietness, stopping mid-play, and flushed skin without
           sweating show up before a kid says anything.
         </p>
         <h3>How often should sunscreen be reapplied at camp?</h3>
@@ -169,7 +169,7 @@ export default function Page() {
         <h3>What water activities work for a summer trip with kids?</h3>
         <p>
           A shallow lake edge, a kiddie pool from home, or a campsite sprinkler all work without
-          requiring swimming skill — but any real swimming still needs hands-on supervision.
+          requiring swimming skill - but any real swimming still needs hands-on supervision.
         </p>
       </GuidePage>
       <GuideGearShelf guideSlug="summer-camping-with-kids" heading="Gear for the hottest hours" />

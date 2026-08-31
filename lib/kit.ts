@@ -1,7 +1,7 @@
 /**
  * ConvertKit (Kit) subscriber helper. One place that calls the Kit
  * /v3/forms/<id>/subscribe endpoint so every email-capturing surface
- * — quiz, paywall, Stripe webhook — funnels into the same audience.
+ * - quiz, paywall, Stripe webhook - funnels into the same audience.
  *
  * No-op (returns { ok: false, skipped: true }) when CONVERTKIT_API_KEY
  * or NEXT_PUBLIC_CONVERTKIT_FORM_ID is unset, so local dev and tests
@@ -14,13 +14,13 @@ export async function subscribeToKit(input: {
   email: string
   /** Optional Kit tag IDs to attach to the subscriber. */
   tagIds?: number[]
-  /** Optional fields object (e.g. first_name) — passed straight to the API. */
+  /** Optional fields object (e.g. first_name) - passed straight to the API. */
   fields?: Record<string, string | number | boolean>
 }): Promise<KitResult> {
   const apiKey = process.env.CONVERTKIT_API_KEY
   const formId = process.env.NEXT_PUBLIC_CONVERTKIT_FORM_ID
   if (!apiKey || !formId) {
-    console.warn('[kit] subscribe skipped — missing env', {
+    console.warn('[kit] subscribe skipped - missing env', {
       hasApiKey: !!apiKey,
       hasFormId: !!formId,
     })

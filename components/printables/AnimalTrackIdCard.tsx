@@ -17,13 +17,13 @@ const TRACKS: TrackPanel[] = [
     emoji: '🦌',
     frontTrack: 'Two elongated, pointed lobes (hooves) forming a heart shape. Dewclaws show in soft mud.',
     hindTrack: 'Slightly smaller than front, same heart shape.',
-    sizeInches: '2–3 in long',
+    sizeInches: '2-3 in long',
     gait: 'Walking: diagonal pattern. Bounding: four tracks clustered together.',
     claws: 'No claws visible',
     note: 'Most common track in wooded campsites. Often found on soft soil near water.',
     trackImg: {
       url: 'https://upload.wikimedia.org/wikipedia/commons/a/a6/Whitetail_track.svg',
-      alt: 'White-tailed deer hoofprint — two pointed lobes in a heart shape',
+      alt: 'White-tailed deer hoofprint - two pointed lobes in a heart shape',
     },
   },
   {
@@ -31,23 +31,23 @@ const TRACKS: TrackPanel[] = [
     emoji: '🦝',
     frontTrack: '5 long, finger-like toes splayed wide. Looks like a tiny human hand.',
     hindTrack: 'Longer than front, heel often visible. Walks flat-footed.',
-    sizeInches: '2–3 in wide',
+    sizeInches: '2-3 in wide',
     gait: 'Hind foot prints near front foot, offset left/right.',
     claws: 'Claws visible on all 5 toes',
-    note: 'Often found near water or trash. Mostly nocturnal — morning tracks are common.',
+    note: 'Often found near water or trash. Mostly nocturnal - morning tracks are common.',
   },
   {
     animal: 'Eastern Cottontail',
     emoji: '🐇',
     frontTrack: '4 toes, small round print. Lands behind the larger hind feet when bounding.',
-    hindTrack: 'Much larger than front — elongated oval, side by side when bounding.',
+    hindTrack: 'Much larger than front - elongated oval, side by side when bounding.',
     sizeInches: 'Front: 1 in · Hind: 3 in',
     gait: 'Classic bounding Y-shape: two large hind feet forward, two small fronts behind.',
     claws: 'Faint claws on hind feet',
     note: 'The Y-shape bounding pattern is unmistakable. Often found at wood edges.',
     trackImg: {
       url: 'https://upload.wikimedia.org/wikipedia/commons/4/4e/Rabbit_tracks.svg',
-      alt: 'Rabbit bounding track pattern — two large hind feet ahead, two small front feet behind',
+      alt: 'Rabbit bounding track pattern - two large hind feet ahead, two small front feet behind',
     },
   },
   {
@@ -56,7 +56,7 @@ const TRACKS: TrackPanel[] = [
     frontTrack: '4 toes in a tight cluster. Small and round.',
     hindTrack: '5 toes, longer and wider than front. Often lands ahead of front in bounding.',
     sizeInches: 'Front: ¾ in · Hind: 1½ in',
-    gait: 'Bounding pairs: small fronts together, large hinds ahead — square cluster pattern.',
+    gait: 'Bounding pairs: small fronts together, large hinds ahead - square cluster pattern.',
     claws: 'Thin claws visible',
     note: 'The square cluster is the key ID. Common at every campsite with trees.',
   },
@@ -64,14 +64,14 @@ const TRACKS: TrackPanel[] = [
     animal: 'Red Fox',
     emoji: '🦊',
     frontTrack: '4 toes in an oval, with a bar-shaped central pad. Often shows fur between toes.',
-    hindTrack: 'Nearly identical to front — slightly smaller.',
-    sizeInches: '2–2½ in long',
+    hindTrack: 'Nearly identical to front - slightly smaller.',
+    sizeInches: '2-2½ in long',
     gait: 'Direct-register trot: hind foot lands precisely in front footprint, making a straight line.',
     claws: 'Claws visible, fine and close-set',
     note: 'The perfectly straight line of single prints is the fox signature. Coyote is larger.',
     trackImg: {
       url: 'https://upload.wikimedia.org/wikipedia/commons/4/49/Foxprint.svg',
-      alt: 'Red fox paw print — oval shape with 4 toes and a central bar pad',
+      alt: 'Red fox paw print - oval shape with 4 toes and a central bar pad',
     },
   },
   {
@@ -79,22 +79,22 @@ const TRACKS: TrackPanel[] = [
     emoji: '🐺',
     frontTrack: '4 toes, oval shape, larger than fox. Less fur between toes.',
     hindTrack: 'Slightly smaller than front, same oval form.',
-    sizeInches: '2½–3 in long',
-    gait: 'Direct-register trot like fox — straight line. Wider stride than fox.',
+    sizeInches: '2½-3 in long',
+    gait: 'Direct-register trot like fox - straight line. Wider stride than fox.',
     claws: 'Prominent claws clearly visible',
     warn: 'If pups are nearby, adults may be bold. Haze with noise if one approaches camp.',
     trackImg: {
       url: 'https://upload.wikimedia.org/wikipedia/commons/6/6f/Canis_lupis_track.svg',
-      alt: 'Canine track — 4 toes with prominent claws above a large central pad',
+      alt: 'Canine track - 4 toes with prominent claws above a large central pad',
     },
   },
   {
     animal: 'Black Bear',
     emoji: '🐻',
     frontTrack: '5 toes in a wide arc above a large, chunky pad. Pigeon-toed.',
-    hindTrack: 'Much longer — resembles a wide human foot with 5 toes.',
-    sizeInches: 'Front: 4–5 in · Hind: 6–7 in',
-    gait: 'Shuffling walk — hind foot lands slightly inside front track.',
+    hindTrack: 'Much longer - resembles a wide human foot with 5 toes.',
+    sizeInches: 'Front: 4-5 in · Hind: 6-7 in',
+    gait: 'Shuffling walk - hind foot lands slightly inside front track.',
     claws: 'Long curved claws up to 2 in ahead of toes',
     warn: 'Secure all food immediately. Never leave smelly items in tent. Report to camp host.',
   },
@@ -103,9 +103,9 @@ const TRACKS: TrackPanel[] = [
     emoji: '🦨',
     frontTrack: '5 toes with prominent long claws (used for digging). Compact pad.',
     hindTrack: 'Shorter claws, rounder toes. Heel visible.',
-    sizeInches: '1–1½ in wide',
-    gait: 'Slow, waddling walk — front and hind on same side move together.',
-    claws: 'Very long front claws — most distinctive feature',
+    sizeInches: '1-1½ in wide',
+    gait: 'Slow, waddling walk - front and hind on same side move together.',
+    claws: 'Very long front claws - most distinctive feature',
     note: 'Tracks often found near logs, disturbed soil, and grubs. Mostly nocturnal.',
   },
 ]
@@ -238,7 +238,7 @@ export default function AnimalTrackIdCard() {
 
       <div className="print-side print-side-1">
         <p className="lead">
-          Track size varies by age and substrate — mud shows more detail than dust. When in doubt, look for the gait pattern: it&apos;s more reliable than print shape alone.
+          Track size varies by age and substrate - mud shows more detail than dust. When in doubt, look for the gait pattern: it&apos;s more reliable than print shape alone.
         </p>
 
         <div className="grid">

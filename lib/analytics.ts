@@ -6,7 +6,7 @@ type Props = Record<string, string | number | boolean>
  * Vercel Analytics' `track()` calls `window.va?.(...)` and silently no-ops if
  * the `<Analytics />` component hasn't installed the queue stub yet. Because
  * `<Analytics />` is wrapped in <Suspense> (it uses `useSearchParams`), its
- * mount effect can run *after* sibling components' mount effects — meaning
+ * mount effect can run *after* sibling components' mount effects - meaning
  * the first mount-time track call from a quiz/paywall component is dropped.
  *
  * This wrapper pushes directly to `window.vaq` when `window.va` isn't ready;

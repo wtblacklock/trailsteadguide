@@ -47,7 +47,7 @@ export async function sendTripPackEmail(args: SendArgs): Promise<{ ok: boolean; 
   const from = process.env.EMAIL_FROM
   if (!apiKey || !from) {
     console.warn(
-      '[trip-pack email] skipped — missing env',
+      '[trip-pack email] skipped - missing env',
       { hasApiKey: !!apiKey, hasFrom: !!from },
     )
     return { ok: false, skipped: true }
@@ -97,7 +97,7 @@ ${args.downloadUrl}
 
 If the link expires, reply to this email and we'll send a fresh one.
 
-— Trailstead Guide`
+- Trailstead Guide`
 
   try {
     const resend = new Resend(apiKey)
@@ -129,7 +129,7 @@ type AbandonArgs = {
 /**
  * Cart-abandonment recovery email. Fired from the Stripe webhook on
  * checkout.session.expired (default 24h after creation). One reminder,
- * not a sequence — keep it light and unobtrusive.
+ * not a sequence - keep it light and unobtrusive.
  */
 export async function sendTripPackAbandonEmail(
   args: AbandonArgs,
@@ -137,7 +137,7 @@ export async function sendTripPackAbandonEmail(
   const apiKey = process.env.RESEND_API_KEY
   const from = process.env.EMAIL_FROM
   if (!apiKey || !from) {
-    console.warn('[trip-pack abandon] skipped — missing env', {
+    console.warn('[trip-pack abandon] skipped - missing env', {
       hasApiKey: !!apiKey,
       hasFrom: !!from,
     })
@@ -178,14 +178,14 @@ export async function sendTripPackAbandonEmail(
 
   const text = `Your ${title} Trip Pack is still waiting.
 
-No pressure — we just don't want you to lose your spot. Your checkout
+No pressure - we just don't want you to lose your spot. Your checkout
 link expired, but everything you set up is one click away:
 
 ${args.retryUrl}
 
 Questions or second thoughts? Just reply.
 
-— Trailstead Guide`
+- Trailstead Guide`
 
   try {
     const resend = new Resend(apiKey)

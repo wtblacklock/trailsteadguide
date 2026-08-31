@@ -36,7 +36,7 @@ type Pick = {
   packedSize: string
   priceTier: string
   priceTotal: string
-  /** When set, the pad tier has no affiliate match yet — render a flagged card. */
+  /** When set, the pad tier has no affiliate match yet - render a flagged card. */
   padNoLink?: { name: string; description: string }
 }
 
@@ -48,13 +48,13 @@ const PICKS: Pick[] = [
     bag: BAG_BUDGET,
     padNoLink: {
       name: 'Closed-cell foam pad (any brand)',
-      description: 'Closed-cell foam roll-up pad, R-value ~2. The classic backup pad — cheap, indestructible, fine in summer.',
+      description: 'Closed-cell foam roll-up pad, R-value ~2. The classic backup pad - cheap, indestructible, fine in summer.',
     },
     tempRating: 'Comfortable to ~45°F',
     weightTotal: '~5 lbs',
     packedSize: 'Medium roll',
     priceTier: '$ Budget',
-    priceTotal: '~$60–$80',
+    priceTotal: '~$60-$80',
   },
   {
     label: 'Comfort',
@@ -86,20 +86,20 @@ const PLAN_MAP: { plan: string; href: string; pick: string; reason: string }[] =
   {
     plan: 'Backyard Test',
     href: '/plans/backyard-test',
-    pick: 'Whatever you have — borrow if needed',
+    pick: 'Whatever you have - borrow if needed',
     reason: 'A yard rehearsal is for proving the rest of the system. Use blankets and a couch cushion if that\'s what\'s in the closet.',
   },
   {
     plan: 'First Night Camp',
     href: '/plans/first-night-camp',
     pick: 'Brazos Bag + foam pad (budget)',
-    reason: 'One summer night. The budget combo is enough — you don\'t need a $300 sleep system to find out if you like camping.',
+    reason: 'One summer night. The budget combo is enough - you don\'t need a $300 sleep system to find out if you like camping.',
   },
   {
     plan: 'First Weekend Camp',
     href: '/plans/first-weekend-camp',
     pick: 'Brazos Bag + Big Agnes Divide (comfort)',
-    reason: 'Two nights. The pad upgrade is the difference between waking up rested and waking up sore — worth the $100.',
+    reason: 'Two nights. The pad upgrade is the difference between waking up rested and waking up sore - worth the $100.',
   },
   {
     plan: 'Easy Family Basecamp',
@@ -113,7 +113,7 @@ const RELATED = [
   {
     title: 'Sleeping bag setup vs cot + airbed combo',
     href: '/compare/sleeping-bag-vs-cot-airbed-combo',
-    blurb: 'Floor sleep system vs an off-the-ground combo — the comfort-versus-packing tradeoff.',
+    blurb: 'Floor sleep system vs an off-the-ground combo - the comfort-versus-packing tradeoff.',
   },
   {
     title: 'Best beginner cooler',
@@ -123,7 +123,7 @@ const RELATED = [
   {
     title: 'See the full gear guide',
     href: '/gear',
-    blurb: 'The full beginner-grade kit — tent, cooking, lighting, the rest.',
+    blurb: 'The full beginner-grade kit - tent, cooking, lighting, the rest.',
   },
 ]
 
@@ -176,7 +176,7 @@ export default function Page() {
           {H1}
         </h1>
         <p className="mt-6 text-lg md:text-xl text-stone-600 leading-relaxed">
-          A sleep system is a bag plus a pad — and the pad is the part most beginners
+          A sleep system is a bag plus a pad - and the pad is the part most beginners
           underestimate. Here are three tiers, with what actually matters for a first family trip.
         </p>
       </header>
@@ -187,11 +187,11 @@ export default function Page() {
           summary={
             <>
               For a summer first trip, the <strong>Coleman Brazos Bag with a foam pad</strong> is
-              enough — under $80, comfortable to about 45°F, washable. The single best comfort
+              enough - under $80, comfortable to about 45°F, washable. The single best comfort
               upgrade on a first trip is swapping the foam for the{' '}
-              <strong>Big Agnes Divide self-inflating pad</strong> — that&rsquo;s the difference
+              <strong>Big Agnes Divide self-inflating pad</strong> - that&rsquo;s the difference
               between waking up rested and waking up sore. For shoulder-season trips below 40°F,
-              step up to the <strong>Marmot Mad River 0 plus an R-5.5 insulated pad</strong> — a
+              step up to the <strong>Marmot Mad River 0 plus an R-5.5 insulated pad</strong> - a
               0°F bag with R-5.5 ground insulation keeps the trip comfortable instead of
               survivable.
             </>
@@ -256,14 +256,14 @@ export default function Page() {
         <div className="space-y-6 text-stone-700 leading-relaxed text-lg">
           <p>
             <strong>The pad matters more than the bag.</strong> A great bag on a thin foam pad is
-            still cold — the ground sucks heat out of you faster than air does. Swapping a foam
+            still cold - the ground sucks heat out of you faster than air does. Swapping a foam
             pad for a self-inflating one (R-value ~3) is the single biggest comfort upgrade for
             $100. For shoulder-season trips, an R-5+ insulated pad does more for warmth than going
             to a colder-rated bag.
           </p>
           <p>
             <strong>Synthetic bags forgive beginners; down bags don&rsquo;t.</strong> The Brazos
-            and Mad River are both synthetic — they keep insulating when wet, dry fast, and
+            and Mad River are both synthetic - they keep insulating when wet, dry fast, and
             survive being machine-washed. Down compresses smaller and lasts longer, but it
             collapses if it gets wet. For first trips, synthetic is the safer choice.
           </p>
@@ -275,7 +275,7 @@ export default function Page() {
           <p>
             <strong>Family math: stack the pads, not the bags.</strong> If you&rsquo;re sharing a
             queen air bed, a single high-R pad covers both adults. If kids are sleeping on
-            separate pads, give them the warmer pad — they&rsquo;re smaller and lose heat faster.
+            separate pads, give them the warmer pad - they&rsquo;re smaller and lose heat faster.
           </p>
         </div>
       </section>

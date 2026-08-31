@@ -3,7 +3,7 @@ type PackItem = { label: string; note?: string }
 const UNIVERSAL: PackItem[] = [
   { label: 'Sleeping bag rated for expected temps' },
   { label: 'Sleeping pad (insulation from ground)' },
-  { label: 'Headlamp + spare batteries', note: 'Kids lose these constantly — get a bright one with a red-light mode' },
+  { label: 'Headlamp + spare batteries', note: 'Kids lose these constantly - get a bright one with a red-light mode' },
   { label: 'Rain jacket or poncho' },
   { label: 'Sunscreen SPF 30+ and lip balm' },
   { label: 'Insect repellent (DEET or Picaridin)' },
@@ -26,7 +26,7 @@ const TODDLER: PackItem[] = [
 ]
 
 const ELEMENTARY: PackItem[] = [
-  { label: 'Headlamp of their own (not shared)', note: 'Ownership matters — they\'ll actually use it' },
+  { label: 'Headlamp of their own (not shared)', note: 'Ownership matters - they\'ll actually use it' },
   { label: 'Small backpack for day hikes' },
   { label: 'Water bottle (insulated)' },
   { label: 'Outdoor journal and pencil' },
@@ -38,8 +38,8 @@ const ELEMENTARY: PackItem[] = [
 
 const OLDER_KIDS: PackItem[] = [
   { label: 'Their own headlamp (bright, reliable)' },
-  { label: 'Pocket knife (with training)', note: 'Age-appropriate — supervise fire and knife use' },
-  { label: 'Map of the area', note: 'Teach them to follow along — pairs with Map & Compass printable' },
+  { label: 'Pocket knife (with training)', note: 'Age-appropriate - supervise fire and knife use' },
+  { label: 'Map of the area', note: 'Teach them to follow along - pairs with Map & Compass printable' },
   { label: 'Outdoor journal and field guide' },
   { label: 'Small personal first aid kit' },
   { label: 'Water filter (Sawyer Squeeze or similar)' },
@@ -53,7 +53,7 @@ function CheckItem({ item }: { item: PackItem }) {
       <span className="box" aria-hidden="true" />
       <span className="label">
         {item.label}
-        {item.note && <span className="note"> — {item.note}</span>}
+        {item.note && <span className="note"> - {item.note}</span>}
       </span>
     </div>
   )
@@ -129,7 +129,7 @@ export default function KidsCampingPackingList() {
       </p>
 
       <div className="section" style={{ marginBottom: '12px' }}>
-        <h2>Every Child — Universal Layer</h2>
+        <h2>Every Child - Universal Layer</h2>
         <div className="universal-cols">
           {UNIVERSAL.map((item) => (
             <CheckItem key={item.label} item={item} />
@@ -139,20 +139,20 @@ export default function KidsCampingPackingList() {
 
       <div className="cols">
         <div className="section">
-          <h2>Toddlers · Ages 2–4</h2>
+          <h2>Toddlers · Ages 2-4</h2>
           {TODDLER.map((item) => (
             <CheckItem key={item.label} item={item} />
           ))}
         </div>
         <div>
           <div className="section" style={{ marginBottom: '12px' }}>
-            <h2>Early Elementary · Ages 5–8</h2>
+            <h2>Early Elementary · Ages 5-8</h2>
             {ELEMENTARY.map((item) => (
               <CheckItem key={item.label} item={item} />
             ))}
           </div>
           <div className="section">
-            <h2>Older Kids · Ages 9–12</h2>
+            <h2>Older Kids · Ages 9-12</h2>
             {OLDER_KIDS.map((item) => (
               <CheckItem key={item.label} item={item} />
             ))}

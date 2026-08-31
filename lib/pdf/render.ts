@@ -7,7 +7,7 @@
  *
  * Page layout: US Letter (8.5 × 11 in). Per-page footer is rendered by
  * Puppeteer's `footerTemplate` so it lands at the bottom of EVERY printed
- * page, including overflow pages of long sections — the in-HTML footer
+ * page, including overflow pages of long sections - the in-HTML footer
  * approach can't see physical page boundaries. The CSS reserves the matching
  * bottom margin so content above the footer is never clipped.
  */
@@ -72,7 +72,7 @@ async function launchBrowser(): Promise<Browser> {
 /**
  * How long to wait for images (mostly Amazon CDN product photos) before
  * giving up and rendering anyway. The previous `networkidle0` strategy
- * blocked indefinitely when m.media-amazon.com stalled — which made CI
+ * blocked indefinitely when m.media-amazon.com stalled - which made CI
  * fail on slow-network days. With this hard cap, a flaky image at most
  * costs us this many ms of wait time and renders with a broken-image
  * placeholder.
@@ -83,16 +83,16 @@ export async function renderHtmlToPdf(html: string): Promise<Buffer> {
   const browser = await launchBrowser()
   try {
     const page = await browser.newPage()
-    // domcontentloaded fires as soon as the parser is done — independent of
+    // domcontentloaded fires as soon as the parser is done - independent of
     // any sub-resource fetch. We then explicitly await fonts and (capped)
     // image loads, so a slow remote image can't stall the whole render.
     await page.setContent(html, { waitUntil: 'domcontentloaded' })
     await page.emulateMediaType('print')
-    // Web fonts (Inter) — render-blocking, cheap to await.
+    // Web fonts (Inter) - render-blocking, cheap to await.
     await page.evaluate(() =>
       (document as Document & { fonts: { ready: Promise<void> } }).fonts.ready,
     )
-    // Images — best-effort, bounded. Resolve once every image is settled
+    // Images - best-effort, bounded. Resolve once every image is settled
     // (loaded OR errored), or once the timeout fires, whichever is first.
     await page.evaluate((timeoutMs) => {
       const imgs = Array.from(document.images)

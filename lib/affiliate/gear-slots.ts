@@ -4,7 +4,7 @@
  *
  * Each guide gets a curated list of slots (BASE_SLOTS plus any matching
  * scenario slots). The audit script asks: "for guide X and slot Y, which
- * product in the registry — if any — currently fills it?" Empty cells in
+ * product in the registry - if any - currently fills it?" Empty cells in
  * the worksheet are the curation surface.
  *
  * Adding a new slot:
@@ -83,11 +83,11 @@ export const TAG_TO_SLOT: Record<string, GearSlotId> = {
   'power-bank': 'POWER',
   cookware: 'COOKWARE',
   'hand-warmers': 'WINTER_GEAR',
-  // No product types yet for: DOG_GEAR, KID_GEAR, SAFETY — those slots
+  // No product types yet for: DOG_GEAR, KID_GEAR, SAFETY - those slots
   // are filled by tags that don't map 1:1 to the slot (with-dogs, etc).
 }
 
-/** Slots every guide gets — the always-relevant baseline. */
+/** Slots every guide gets - the always-relevant baseline. */
 export const BASE_SLOTS: GearSlotId[] = [
   'TENT', 'SLEEP_BAG', 'SLEEP_SURFACE', 'STOVE', 'COOKWARE', 'COOLER', 'LIGHTING', 'CHAIR', 'SAFETY', 'POWER', 'TRASH',
 ]
@@ -99,7 +99,7 @@ export const BASE_SLOTS: GearSlotId[] = [
  * Mirror any change here in the audit script `scripts/affiliate-audit.mjs`.
  */
 export const SCENARIO_RULES: Array<{ keywords: string[]; addSlots: GearSlotId[] }> = [
-  // Heatwave-only canopy — the rest of the hot-weather guides don't
+  // Heatwave-only canopy - the rest of the hot-weather guides don't
   // currently have a CANOPY row in the CSV. Expand this list when those
   // guides gain a curated canopy.
   { keywords: ['heatwave'], addSlots: ['CANOPY', 'HOT_GEAR'] },
@@ -108,7 +108,7 @@ export const SCENARIO_RULES: Array<{ keywords: string[]; addSlots: GearSlotId[] 
   { keywords: ['winter', 'colorado', 'appalachians', 'northeast', 'fall'], addSlots: ['WINTER_GEAR'] },
   // Dogs
   { keywords: ['dogs'], addSlots: ['DOG_GEAR'] },
-  // Kids — every guide on this site is family-focused, so include sitewide
+  // Kids - every guide on this site is family-focused, so include sitewide
   { keywords: [], addSlots: ['KID_GEAR'] },
 ]
 
@@ -122,6 +122,6 @@ export function slotsForGuide(slug: string): GearSlotId[] {
       for (const s of rule.addSlots) set.add(s)
     }
   }
-  // Stable display order — match GEAR_SLOTS declaration order
+  // Stable display order - match GEAR_SLOTS declaration order
   return GEAR_SLOTS.map((s) => s.id).filter((id) => set.has(id))
 }

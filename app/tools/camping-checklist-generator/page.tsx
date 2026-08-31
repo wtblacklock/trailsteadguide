@@ -5,7 +5,7 @@ import Breadcrumbs from '@/components/seo/Breadcrumbs'
 export const metadata = pageMetadata({
   title: 'Camping Checklist Generator',
   description:
-    'Generate a packing checklist tuned to your family size, kid ages, and trip length. Categorized, scaled, printable — skip generic one-size lists.',
+    'Generate a packing checklist tuned to your family size, kid ages, and trip length. Categorized, scaled, printable - skip generic one-size lists.',
   path: '/tools/camping-checklist-generator',
 })
 
@@ -26,7 +26,7 @@ export default function Page() {
           Camping Checklist Generator
         </h1>
         <p className="mt-6 text-lg md:text-xl text-stone-600 leading-relaxed max-w-2xl">
-          Three questions. A printable packing list scaled to your family and trip length. No timeline, no meal plan — just the list.
+          Three questions. A printable packing list scaled to your family and trip length. No timeline, no meal plan - just the list.
         </p>
         <div className="mt-8 flex flex-wrap gap-3">
           <Link
@@ -52,7 +52,7 @@ export default function Page() {
           <ul className="space-y-4 text-stone-700 leading-relaxed text-lg">
             <li><strong>It scales.</strong> 2 adults + 3 kids gets different quantities than 2 adults + 1 kid.</li>
             <li><strong>It adapts.</strong> Kids under 4 get different gear than kids over 8.</li>
-            <li><strong>It&apos;s categorized.</strong> Shelter, kitchen, clothing, safety — so you pack the car in the right order.</li>
+            <li><strong>It&apos;s categorized.</strong> Shelter, kitchen, clothing, safety - so you pack the car in the right order.</li>
             <li><strong>It&apos;s honest.</strong> Stuff you actually need is in. Stuff you&apos;ll never touch is out.</li>
           </ul>
         </div>

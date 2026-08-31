@@ -11,7 +11,7 @@ import { SITE_URL, collectionPageGraph, pageMetadata } from '@/lib/seo'
 const PATH = '/skills'
 const TITLE = 'Camp Skills Made Simple'
 const DESCRIPTION =
-  'Browse the full Camp Skills library. Filter by category, difficulty, or safety level — pick a skill and learn it before your next trip.'
+  'Browse the full Camp Skills library. Filter by category, difficulty, or safety level - pick a skill and learn it before your next trip.'
 
 export const metadata = pageMetadata({
   title: TITLE,

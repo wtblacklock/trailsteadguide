@@ -15,7 +15,7 @@ import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import JsonLd from '@/components/seo/JsonLd'
 import FaqSection from '@/components/site/FaqSection'
 
-// Avatar initials shown behind the portrait — surface gracefully if the
+// Avatar initials shown behind the portrait - surface gracefully if the
 // `<Image>` source ever 404s. The user will swap the photo asset later.
 const AUTHOR_INITIALS = AUTHOR_NAME.split(' ')
   .map((part) => part[0])
@@ -25,7 +25,7 @@ const AUTHOR_INITIALS = AUTHOR_NAME.split(' ')
 export const metadata = pageMetadata({
   title: 'About',
   description:
-    'Meet William Blacklock — Eagle Scout and founder of Trailstead Guide, a structured camping planner that turns six questions into a confident first family trip.',
+    'Meet William Blacklock - Eagle Scout and founder of Trailstead Guide, a structured camping planner that turns six questions into a confident first family trip.',
   path: '/about',
 })
 
@@ -33,12 +33,12 @@ const ABOUT_FAQ_ITEMS = [
   {
     question: 'Who built Trailstead Guide?',
     answer:
-      'William Blacklock — Eagle Scout (earned at 13), former Cub Master and Scout Master, Wood Badge Antelope, Philmont alum, and dad of three outdoor-active kids based in Austin, Texas. Trailstead Guide is the planning system he wished he had as a young dad.',
+      'William Blacklock - Eagle Scout (earned at 13), former Cub Master and Scout Master, Wood Badge Antelope, Philmont alum, and dad of three outdoor-active kids based in Austin, Texas. Trailstead Guide is the planning system he wished he had as a young dad.',
   },
   {
     question: 'Is Trailstead Guide affiliated with the Boy Scouts of America?',
     answer:
-      'No. Trailstead Guide is independent and not affiliated with, endorsed by, or sponsored by the Boy Scouts of America or Scouting America. The methodology — structured plans, age-appropriate progression, repeatable routines — draws on William’s scouting background, but BSA is not a partner.',
+      'No. Trailstead Guide is independent and not affiliated with, endorsed by, or sponsored by the Boy Scouts of America or Scouting America. The methodology - structured plans, age-appropriate progression, repeatable routines - draws on William’s scouting background, but BSA is not a partner.',
   },
   {
     question: 'Where do the recommendations come from?',
@@ -53,12 +53,12 @@ const ABOUT_FAQ_ITEMS = [
   {
     question: 'How is this different from other camping sites?',
     answer:
-      'Most camping sites are blog posts you have to assemble yourself. Trailstead Guide hands you a complete trip — timeline, gear, meals, kid activities, safety — built around four pacing archetypes for first-time families. Read less, plan once, sleep outside.',
+      'Most camping sites are blog posts you have to assemble yourself. Trailstead Guide hands you a complete trip - timeline, gear, meals, kid activities, safety - built around four pacing archetypes for first-time families. Read less, plan once, sleep outside.',
   },
   {
     question: 'Can I work with William or get in touch?',
     answer:
-      'Yes — the easiest way is Instagram (@wtblacklock) or the contact page. For partnerships, guide writing, or feedback on the planner, the contact form goes straight to the inbox.',
+      'Yes - the easiest way is Instagram (@wtblacklock) or the contact page. For partnerships, guide writing, or feedback on the planner, the contact form goes straight to the inbox.',
   },
 ]
 
@@ -90,7 +90,7 @@ export default function Page() {
           A structured camping planner.
         </h1>
         <p className="mt-6 text-lg md:text-xl text-stone-600 leading-relaxed max-w-2xl">
-          Trailstead Guide turns six questions into a complete first-trip plan: timeline, gear, meals, kid activities, and safety notes — built around four scenario templates.
+          Trailstead Guide turns six questions into a complete first-trip plan: timeline, gear, meals, kid activities, and safety notes - built around four scenario templates.
         </p>
         <div className="mt-8 flex flex-wrap gap-3">
           <Link
@@ -118,7 +118,7 @@ export default function Page() {
               We build structured camping plans. Six questions in, you get a complete trip: hour-by-hour timeline, gear list, meal plan, shopping list scaled to your party size, age-appropriate kid activity plan, and safety notes.
             </p>
             <p>
-              Plans are templates, not fantasies. They map to four pacing archetypes — backyard test, first night, first weekend, easy basecamp — and adjust to your family rather than the other way around.
+              Plans are templates, not fantasies. They map to four pacing archetypes - backyard test, first night, first weekend, easy basecamp - and adjust to your family rather than the other way around.
             </p>
           </div>
         </div>
@@ -162,7 +162,7 @@ export default function Page() {
           <div className="flex flex-col md:flex-row gap-8 md:items-start">
             <div className="flex-shrink-0">
               {/*
-                Portrait slot. AUTHOR_IMAGE points at /images/author-william-blacklock.jpg —
+                Portrait slot. AUTHOR_IMAGE points at /images/author-william-blacklock.jpg -
                 the user will swap the actual photo file in later. The initials sit
                 underneath the <Image> so a missing/404 source surfaces "WB" on stone-200
                 instead of a broken-image icon.
@@ -192,7 +192,7 @@ export default function Page() {
               </p>
               <div className="space-y-4 text-stone-700 leading-relaxed text-lg">
                 <p>
-                  I earned my Eagle Scout at 13 — rare; most Scouts hit it at 16 or 17 — and have spent the years since paying it forward as a Cub Master, Scout Master, and Wood Badge Antelope.
+                  I earned my Eagle Scout at 13 - rare; most Scouts hit it at 16 or 17 - and have spent the years since paying it forward as a Cub Master, Scout Master, and Wood Badge Antelope.
                 </p>
                 <p>
                   As part of my Wood Badge ticket, I founded <strong>ScoutNerd</strong>, a site that reviewed apps and workflows to help Scouting leaders run better troops. A Philmont alum from a 12-day backcountry expedition in New Mexico, I now camp regularly with my three outdoor-active kids out of Austin, Texas.
@@ -209,7 +209,7 @@ export default function Page() {
                 className="mt-6 flex flex-wrap gap-2"
               >
                 {[
-                  'Eagle Scout — age 13',
+                  'Eagle Scout - age 13',
                   'Wood Badge Antelope',
                   'Philmont alum',
                   'ScoutNerd founder',
@@ -251,10 +251,10 @@ export default function Page() {
           </h2>
           <div className="space-y-5 text-stone-700 leading-relaxed text-lg">
             <p>
-              Plans are grounded in 20+ years of personal scouting and family camping — Eagle Scout work, Wood Badge ticket, Philmont, then a steady cadence of trips with my own three kids. That experience gets distilled into structured templates, not freeform stories. If a plan made our family weekend work, it earns a spot.
+              Plans are grounded in 20+ years of personal scouting and family camping - Eagle Scout work, Wood Badge ticket, Philmont, then a steady cadence of trips with my own three kids. That experience gets distilled into structured templates, not freeform stories. If a plan made our family weekend work, it earns a spot.
             </p>
             <p>
-              The common-mistakes sections aren&apos;t guesses. They&apos;re drawn from pattern analysis of recurring beginner regrets across r/camping, r/CampingGear, r/CampingandHiking, and r/Outdoors over the trailing year — the same threads where new families admit what actually went sideways. The full reads live at{' '}
+              The common-mistakes sections aren&apos;t guesses. They&apos;re drawn from pattern analysis of recurring beginner regrets across r/camping, r/CampingGear, r/CampingandHiking, and r/Outdoors over the trailing year - the same threads where new families admit what actually went sideways. The full reads live at{' '}
               <Link
                 href="/research/first-time-camping-regrets"
                 className="text-stone-900 underline decoration-stone-300 underline-offset-4 hover:decoration-stone-500 transition-colors"
@@ -271,13 +271,13 @@ export default function Page() {
               .
             </p>
             <p>
-              Gear picks come from real beginner-family use. Nothing gets recommended that isn&apos;t already trusted by the camping community at large — no obscure dropshipped gear, no &ldquo;sponsored&rdquo; favorites in disguise. Affiliate links are disclosed transparently and have zero influence on what shows up in a plan.
+              Gear picks come from real beginner-family use. Nothing gets recommended that isn&apos;t already trusted by the camping community at large - no obscure dropshipped gear, no &ldquo;sponsored&rdquo; favorites in disguise. Affiliate links are disclosed transparently and have zero influence on what shows up in a plan.
             </p>
             <p>
-              Skills sections lean on the BSA Wood Badge curriculum and Cub Scout / Scout BSA program adaptations — the same progression-based teaching used to bring kids and adults up the curve safely. Knot diagrams use public-domain references; technique videos are embedded only when the source permits it.
+              Skills sections lean on the BSA Wood Badge curriculum and Cub Scout / Scout BSA program adaptations - the same progression-based teaching used to bring kids and adults up the curve safely. Knot diagrams use public-domain references; technique videos are embedded only when the source permits it.
             </p>
             <p>
-              The site keeps moving. Quiz personalization, comparison pages, and seasonal guides are all live and getting iterated based on what readers actually use and ask for. If something&apos;s wrong or unclear, that&apos;s a fixable problem — tell us.
+              The site keeps moving. Quiz personalization, comparison pages, and seasonal guides are all live and getting iterated based on what readers actually use and ask for. If something&apos;s wrong or unclear, that&apos;s a fixable problem - tell us.
             </p>
           </div>
         </div>
@@ -305,7 +305,7 @@ export default function Page() {
             Want to interview, partner, or feature the methodology?
           </h2>
           <p className="text-stone-700 leading-relaxed text-lg mb-6">
-            Take a minute and tell me through the contact form — what you&apos;re working on, what you need, and when. I read every message.
+            Take a minute and tell me through the contact form - what you&apos;re working on, what you need, and when. I read every message.
           </p>
           <Link
             href="/contact"

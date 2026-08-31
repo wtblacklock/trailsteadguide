@@ -100,7 +100,7 @@ const RELATED = [
   {
     title: 'Coleman Sundome 3P vs 4P vs 6P',
     href: '/compare/coleman-sundome-3p-vs-4p-vs-6p',
-    blurb: 'Same tent family, three sizes — including the couples-sized 3P for a smaller setup.',
+    blurb: 'Same tent family, three sizes - including the couples-sized 3P for a smaller setup.',
   },
   {
     title: 'Camping for Beginners',
@@ -110,7 +110,7 @@ const RELATED = [
   {
     title: 'See the full gear guide',
     href: '/gear',
-    blurb: 'Sleep, cooking, lighting — the full beginner-grade kit, not just tents.',
+    blurb: 'Sleep, cooking, lighting - the full beginner-grade kit, not just tents.',
   },
 ]
 
@@ -162,7 +162,7 @@ export default function Page() {
         </h1>
         <p className="mt-6 text-lg md:text-xl text-stone-600 leading-relaxed">
           A tent is the one piece of gear that decides whether your first trip is a good
-          memory. Here are three picks — best-seller, size-up, and sturdier upgrade — with
+          memory. Here are three picks - best-seller, size-up, and sturdier upgrade - with
           clear differences and which Trailstead plan they fit.
         </p>
       </header>
@@ -173,12 +173,12 @@ export default function Page() {
           tldr="For most families, the Coleman Sundome 4P is the right first tent. Step up only if you want to stand up inside or expect rough weather."
           summary={
             <>
-              The <strong>Coleman Sundome 4P</strong> is the safest first-tent pick — best-selling,
+              The <strong>Coleman Sundome 4P</strong> is the safest first-tent pick - best-selling,
               weatherproof, fits a queen air bed, sets up in 10 minutes. Step up to the{' '}
               <strong>CORE 6-Person Instant Cabin</strong> if you want stand-up height and a 6-person
               footprint. Step up to the <strong>ALPS Mountaineering Lynx 4P</strong> if pole
               quality and stronger weather resistance matter more than the lowest price. Skip the
-              backpacking-grade options for now — your first trip rewards floor space, not weight
+              backpacking-grade options for now - your first trip rewards floor space, not weight
               savings.
             </>
           }
@@ -256,13 +256,13 @@ export default function Page() {
           </p>
           <p>
             <strong>Standing height changes the whole experience.</strong> The Sundome and Lynx top
-            out at about 4&rsquo;11&quot; — you sit up to change clothes, you crouch to walk
+            out at about 4&rsquo;11&quot; - you sit up to change clothes, you crouch to walk
             across. The CORE 6-Person Cabin has near-vertical walls and stand-up height. After two nights,
             most parents say the standing room was worth the extra weight and trunk space.
           </p>
           <p>
             <strong>Pole quality is the upgrade hidden in the price.</strong> The Sundome uses
-            Coleman&rsquo;s standard fiberglass pole — fine in calm weather, fragile if it bends
+            Coleman&rsquo;s standard fiberglass pole - fine in calm weather, fragile if it bends
             under load. The ALPS Lynx uses aluminum poles with a stronger guy-line system. If your
             first trip is in shoulder-season weather, that difference shows up the first time the
             wind picks up at 2am.
@@ -270,7 +270,7 @@ export default function Page() {
           <p>
             <strong>None of these are backpacking tents.</strong> If you&rsquo;re carrying the tent
             from car to site, all three are fine. If you&rsquo;re hiking miles in, look at a 2-person
-            backpacking tent instead — that&rsquo;s a different category and a different conversation.
+            backpacking tent instead - that&rsquo;s a different category and a different conversation.
           </p>
         </div>
       </section>

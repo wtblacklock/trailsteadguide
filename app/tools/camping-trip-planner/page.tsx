@@ -5,7 +5,7 @@ import Breadcrumbs from '@/components/seo/Breadcrumbs'
 export const metadata = pageMetadata({
   title: 'Camping Trip Planner',
   description:
-    'Build a full family camping trip plan in 2 minutes. Timeline, gear, meals, and kid activities — all scaled to your family size and experience level.',
+    'Build a full family camping trip plan in 2 minutes. Timeline, gear, meals, and kid activities - all scaled to your family size and experience level.',
   path: '/tools/camping-trip-planner',
 })
 
@@ -49,7 +49,7 @@ export default function Page() {
           {[
             { step: '01', title: 'Tell us about your family', text: 'Kid ages, party size, experience level.' },
             { step: '02', title: 'Pick the shape of the trip', text: 'How long, how ambitious, how far from home.' },
-            { step: '03', title: 'Get the full plan', text: 'Timeline, gear, meals, activities — delivered in 2 minutes.' },
+            { step: '03', title: 'Get the full plan', text: 'Timeline, gear, meals, activities - delivered in 2 minutes.' },
           ].map((s) => (
             <div key={s.step} className="p-8 rounded-2xl ring-1 ring-stone-200">
               <p className="text-xs uppercase tracking-widest text-stone-500 mb-3">Step {s.step}</p>

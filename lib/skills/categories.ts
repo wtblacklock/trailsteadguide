@@ -2,7 +2,7 @@ import type { SkillCategory, SkillCategoryId } from './types'
 
 /**
  * The 12 Camp Skills categories. URL slugs match the Camp Skills spec
- * exactly — short, learner-facing terms ("cooking", not "camp-cooking").
+ * exactly - short, learner-facing terms ("cooking", not "camp-cooking").
  */
 export const SKILL_CATEGORIES: SkillCategory[] = [
   {
@@ -21,14 +21,14 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
     navLabel: 'Camp Cooking',
     blurb: 'Stove basics, simple meals, food safety, and cleanup that doesn’t take all night.',
     heroTitle: 'Camp cooking without the chaos',
-    heroSubhead: 'Light a stove, cook real food, and clean up fast — even with kids running through the kitchen.',
+    heroSubhead: 'Light a stove, cook real food, and clean up fast - even with kids running through the kitchen.',
   },
   {
     id: 'fire',
     slug: 'fire',
     label: 'Fire Basics',
     navLabel: 'Fire Basics',
-    blurb: 'Build a fire that lights on the first try — and goes out cold when you’re done.',
+    blurb: 'Build a fire that lights on the first try - and goes out cold when you’re done.',
     heroTitle: 'Build a fire you can trust',
     heroSubhead: 'Safety rules, two reliable structures, and the right way to put it out.',
   },
@@ -57,7 +57,7 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
     navLabel: 'Fishing Basics',
     blurb: 'Set up a rod, bait a hook, cast cleanly, and release fish unharmed.',
     heroTitle: 'Fishing, the simple version',
-    heroSubhead: 'Rod setup, bait basics, and a clean catch-and-release — no tackle-shop intimidation.',
+    heroSubhead: 'Rod setup, bait basics, and a clean catch-and-release - no tackle-shop intimidation.',
   },
   {
     id: 'shelter',
@@ -100,7 +100,7 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
     slug: 'knife-skills',
     label: 'Knife Skills',
     navLabel: 'Knife Skills',
-    blurb: 'Use a knife at camp safely and confidently — from food prep to cutting cord.',
+    blurb: 'Use a knife at camp safely and confidently - from food prep to cutting cord.',
     heroTitle: 'Knife Skills for Camping',
     heroSubhead: 'Use a knife safely and confidently. Safety first, every time.',
   },
@@ -111,7 +111,7 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
     navLabel: 'Woodcarving',
     blurb: 'Simple, safe carving projects anyone can try.',
     heroTitle: 'Woodcarving at Camp',
-    heroSubhead: 'Simple carving projects anyone can try safely — starting with a sharpened stick.',
+    heroSubhead: 'Simple carving projects anyone can try safely - starting with a sharpened stick.',
   },
 ]
 

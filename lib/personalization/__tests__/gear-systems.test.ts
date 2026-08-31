@@ -14,7 +14,7 @@ const familyOut: QuizOutput = {
   comfortLevel: 'balanced',
 }
 
-describe('buildGearSystems — sleep system', () => {
+describe('buildGearSystems - sleep system', () => {
   it.each([
     [{ ...familyOut, hasKids: false, groupType: 'couple', kidsAge: undefined }, 'single'],
     [{ ...familyOut, kidsAge: 'under_5' }, 'shared'],
@@ -26,7 +26,7 @@ describe('buildGearSystems — sleep system', () => {
   })
 })
 
-describe('buildGearSystems — cooking + comfort tiers', () => {
+describe('buildGearSystems - cooking + comfort tiers', () => {
   it('uses minimal/low when comfortLevel=minimal', () => {
     const out: QuizOutput = { ...familyOut, comfortLevel: 'minimal' }
     const sys = buildGearSystems(out, buildModifiers(out))
@@ -48,7 +48,7 @@ describe('buildGearSystems — cooking + comfort tiers', () => {
   })
 })
 
-describe('buildGearSystems — lighting', () => {
+describe('buildGearSystems - lighting', () => {
   it('multi_zone only when sleep=split (10+ kids)', () => {
     const split: QuizOutput = { ...familyOut, kidsAge: '10+' }
     expect(buildGearSystems(split, buildModifiers(split)).lighting).toBe('multi_zone')

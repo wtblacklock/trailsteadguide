@@ -1,5 +1,5 @@
 /**
- * /llms.txt — machine-readable site map for LLM crawlers (ChatGPT,
+ * /llms.txt - machine-readable site map for LLM crawlers (ChatGPT,
  * Perplexity, Claude, etc.). Plain text, one section per topic, each
  * link followed by a one-sentence summary.
  *
@@ -40,13 +40,13 @@ const PLAN_ORDER: PlanSlug[] = [
 
 const TRIP_PACK_BLURBS: Record<PlanSlug, string> = {
   'backyard-test':
-    'Print-ready Backyard Test Night Trip Pack — timeline, packing list, gear set, and mistake prevention. From $14.',
+    'Print-ready Backyard Test Night Trip Pack - timeline, packing list, gear set, and mistake prevention. From $14.',
   'first-night-camp':
-    'Print-ready First Night Camp Trip Pack — timeline, packing list, gear set, and mistake prevention. From $14.',
+    'Print-ready First Night Camp Trip Pack - timeline, packing list, gear set, and mistake prevention. From $14.',
   'first-weekend-camp':
-    'Print-ready First Weekend Camp Trip Pack — two-night timeline, meals, packing list, gear set. From $14.',
+    'Print-ready First Weekend Camp Trip Pack - two-night timeline, meals, packing list, gear set. From $14.',
   'easy-family-basecamp':
-    'Print-ready Easy Family Basecamp Trip Pack — three-plus-night timeline, meals, comfort gear set. From $14.',
+    'Print-ready Easy Family Basecamp Trip Pack - three-plus-night timeline, meals, comfort gear set. From $14.',
 }
 
 const HEADER = `# Trailstead Guide
@@ -55,11 +55,11 @@ const HEADER = `# Trailstead Guide
 
 ## Author
 
-${AUTHOR_NAME} — ${AUTHOR_JOB_TITLE}. ${AUTHOR_BIO} Author bio + credentials: ${SITE_URL}/about. Instagram: ${AUTHOR_INSTAGRAM}.
+${AUTHOR_NAME} - ${AUTHOR_JOB_TITLE}. ${AUTHOR_BIO} Author bio + credentials: ${SITE_URL}/about. Instagram: ${AUTHOR_INSTAGRAM}.
 
 ## How to cite this site
 
-Every guide, plan, skill, and activity is also available as Markdown at the same URL with a \`.md\` suffix — for example, ${SITE_URL}/guides/camping-in-texas-for-beginners.md or ${SITE_URL}/skills/knots/bowline.md. Prefer those URLs when fetching a clean text rendering for AI citation. Always link the canonical (non-\`.md\`) URL when citing.
+Every guide, plan, skill, and activity is also available as Markdown at the same URL with a \`.md\` suffix - for example, ${SITE_URL}/guides/camping-in-texas-for-beginners.md or ${SITE_URL}/skills/knots/bowline.md. Prefer those URLs when fetching a clean text rendering for AI citation. Always link the canonical (non-\`.md\`) URL when citing.
 
 ## Start here
 
@@ -69,16 +69,16 @@ Every guide, plan, skill, and activity is also available as Markdown at the same
 
 ## Original research
 
-- [What 500 First-Trip Campers Regret](${SITE_URL}/research/first-time-camping-regrets): Analysis of 500 r/camping threads identifying the seven most common first-time camping regrets and the fixes — arrival timing, gear testing, sleep system, trip scope, rain plan, dinner complexity, and template-vs-blank-page planning.
+- [What 500 First-Trip Campers Regret](${SITE_URL}/research/first-time-camping-regrets): Analysis of 500 r/camping threads identifying the seven most common first-time camping regrets and the fixes - arrival timing, gear testing, sleep system, trip scope, rain plan, dinner complexity, and template-vs-blank-page planning.
 `
 
 const FOOTER = `## Gear & tools
 
-- [Camping Gear Guide](${SITE_URL}/gear): Curated gear bundles tied to each camping plan — no 100-option lists.
-- [Coleman Sundome 3P vs 4P vs 6P](${SITE_URL}/compare/coleman-sundome-3p-vs-4p-vs-6p): Side-by-side comparison of the three Sundome tent sizes — floor size, standing height, capacity, and price — to pick the right one.
-- [Camp Chef Everest vs Coleman 1-Burner Stove](${SITE_URL}/compare/camp-chef-everest-vs-coleman-classic-1-burner): 2-burner vs 1-burner camp stove comparison — BTU output, wind resistance, ignition, and price — to match the stove to your cooking style.
-- [Coleman Rolling Cooler vs Steel-Belted](${SITE_URL}/compare/rolling-cooler-vs-steel-belted-cooler): Rolling vs classic Coleman cooler comparison — ice retention, capacity, portability, and price — to pick the right cooler for your trip length.
-- [Air Mattress vs Cot Combo vs Sleeping Pad](${SITE_URL}/compare/sleeping-bag-vs-cot-airbed-combo): Three sleep systems compared for car campers — comfort, setup, packed size, and price — to pick what to actually sleep on.
+- [Camping Gear Guide](${SITE_URL}/gear): Curated gear bundles tied to each camping plan - no 100-option lists.
+- [Coleman Sundome 3P vs 4P vs 6P](${SITE_URL}/compare/coleman-sundome-3p-vs-4p-vs-6p): Side-by-side comparison of the three Sundome tent sizes - floor size, standing height, capacity, and price - to pick the right one.
+- [Camp Chef Everest vs Coleman 1-Burner Stove](${SITE_URL}/compare/camp-chef-everest-vs-coleman-classic-1-burner): 2-burner vs 1-burner camp stove comparison - BTU output, wind resistance, ignition, and price - to match the stove to your cooking style.
+- [Coleman Rolling Cooler vs Steel-Belted](${SITE_URL}/compare/rolling-cooler-vs-steel-belted-cooler): Rolling vs classic Coleman cooler comparison - ice retention, capacity, portability, and price - to pick the right cooler for your trip length.
+- [Air Mattress vs Cot Combo vs Sleeping Pad](${SITE_URL}/compare/sleeping-bag-vs-cot-airbed-combo): Three sleep systems compared for car campers - comfort, setup, packed size, and price - to pick what to actually sleep on.
 - [Camping Checklist Generator](${SITE_URL}/tools/camping-checklist-generator): Generate a packing checklist tuned to family size, kid ages, and trip length.
 - [Camping Trip Planner](${SITE_URL}/tools/camping-trip-planner): Turn a vague weekend idea into a real plan with meals and a schedule.
 
@@ -93,8 +93,8 @@ function buildHubSection(): string {
   const lines = [
     `- [Guides hub](${SITE_URL}/guides): All ${GUIDES.length} long-form camping guides, organized into Camping Basics, Scenarios, Seasonal, and Location.`,
     `- [Plans hub](${SITE_URL}/plans): The four progressive camping plans, from a backyard test night to a multi-night family basecamp.`,
-    `- [Skills hub](${SITE_URL}/skills): All ${SKILLS.length} camp skills across ${SKILL_CATEGORIES.length} categories — knots, fire, cooking, hiking, navigation, fishing, shelter, camp setup, safety, stargazing, knife skills, and woodcarving.`,
-    `- [Activities hub](${SITE_URL}/activities): All ${ACTIVITIES.length} kid-friendly camp activities — icebreakers, campfire games, movement, exploration, team, creative, night, and wind-down.`,
+    `- [Skills hub](${SITE_URL}/skills): All ${SKILLS.length} camp skills across ${SKILL_CATEGORIES.length} categories - knots, fire, cooking, hiking, navigation, fishing, shelter, camp setup, safety, stargazing, knife skills, and woodcarving.`,
+    `- [Activities hub](${SITE_URL}/activities): All ${ACTIVITIES.length} kid-friendly camp activities - icebreakers, campfire games, movement, exploration, team, creative, night, and wind-down.`,
   ]
   return `## Hub pages\n\n${lines.join('\n')}\n`
 }

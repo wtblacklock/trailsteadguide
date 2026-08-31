@@ -10,7 +10,7 @@ import { SITE_URL, collectionPageGraph, pageMetadata } from '@/lib/seo'
 const PATH = '/activities'
 const TITLE = 'Camp Activities, Games & Challenges'
 const DESCRIPTION =
-  'A structured library of scouting-style camp activities. Filter by age, group size, energy, and time — pick one and go.'
+  'A structured library of scouting-style camp activities. Filter by age, group size, energy, and time - pick one and go.'
 
 export const metadata = pageMetadata({
   title: TITLE,

@@ -1,7 +1,7 @@
 // @vitest-environment node
 /**
  * Meal-scaling pipeline test. These four functions back the Trip Pack
- * shopping list and the on-site meal planner — wrong arithmetic here
+ * shopping list and the on-site meal planner - wrong arithmetic here
  * means the PDF tells a buyer to buy too little (or too much) food.
  */
 
@@ -98,7 +98,7 @@ describe('buildShoppingList', () => {
     expect(eggLine.packLabel).toBe('dozen')
   })
 
-  it('always rounds packs up — never short', () => {
+  it('always rounds packs up - never short', () => {
     // 1 adult, 1 kid → 3 eggs needed → 1 dozen (not 0).
     const list = buildShoppingList([breakfast], 1, 1)
     const eggLine = list.protein.find((i) => i.name === 'Eggs')!
@@ -108,7 +108,7 @@ describe('buildShoppingList', () => {
   })
 
   it('forces at least one pack when raw amount > 0', () => {
-    // Math.max(1, ceil(0.01 / 12)) = 1 — catches any "round to zero" bug.
+    // Math.max(1, ceil(0.01 / 12)) = 1 - catches any "round to zero" bug.
     const trace: Ingredient = {
       ...eggs,
       perAdult: 0.01,
@@ -173,7 +173,7 @@ describe('formatBuyLine', () => {
   it('renders pack-rounded ingredients with pack count + raw amount', () => {
     const list = buildShoppingList([breakfast, dinner], 2, 2)
     const eggLine = list.protein.find((i) => i.name === 'Eggs')!
-    expect(formatBuyLine(eggLine)).toBe('1 × dozen (12 count — need 12)')
+    expect(formatBuyLine(eggLine)).toBe('1 × dozen (12 count - need 12)')
   })
 
   it('renders unitised ingredients with no pack info', () => {

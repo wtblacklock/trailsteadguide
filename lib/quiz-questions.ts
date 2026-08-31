@@ -4,7 +4,7 @@ export const QUIZ_QUESTIONS: QuizQuestion[] = [
   {
     id: 'experience',
     prompt: 'Have you been camping before?',
-    subprompt: 'Be honest — this helps us build the right plan for you.',
+    subprompt: 'Be honest - this helps us build the right plan for you.',
     options: [
       { label: 'Never camped', value: 'none' },
       { label: 'A few times, but not recently with kids', value: 'some' },
@@ -17,9 +17,9 @@ export const QUIZ_QUESTIONS: QuizQuestion[] = [
     subprompt: 'Select all that apply.',
     multiSelect: true,
     options: [
-      { label: 'No kids — just adults', value: 'none' },
+      { label: 'No kids - just adults', value: 'none' },
       { label: 'Under 5 (toddlers and preschool)', value: 'under_5' },
-      { label: '5–10 years old', value: '5_10' },
+      { label: '5-10 years old', value: '5_10' },
       { label: '10 and up (incl. teens)', value: '10+' },
     ],
   },
@@ -45,18 +45,18 @@ export const QUIZ_QUESTIONS: QuizQuestion[] = [
     prompt: 'What kind of trip are you after?',
     subprompt: 'This shapes the timeline and what we pack.',
     options: [
-      { label: 'Relaxed — slow pace, low effort', value: 'relaxing' },
-      { label: 'Balanced — a mix of activity and chill', value: 'balanced' },
-      { label: 'Active — hike, paddle, or trail-focused', value: 'active' },
+      { label: 'Relaxed - slow pace, low effort', value: 'relaxing' },
+      { label: 'Balanced - a mix of activity and chill', value: 'balanced' },
+      { label: 'Active - hike, paddle, or trail-focused', value: 'active' },
     ],
   },
   {
     id: 'comfortLevel',
     prompt: 'How much comfort matters?',
     options: [
-      { label: 'Pack light — comfort is secondary', value: 'minimal' },
-      { label: 'Standard — basic comfort, nothing extra', value: 'balanced' },
-      { label: 'Maximum comfort — real bed, real chairs, real meals', value: 'comfort-first' },
+      { label: 'Pack light - comfort is secondary', value: 'minimal' },
+      { label: 'Standard - basic comfort, nothing extra', value: 'balanced' },
+      { label: 'Maximum comfort - real bed, real chairs, real meals', value: 'comfort-first' },
     ],
   },
 ]

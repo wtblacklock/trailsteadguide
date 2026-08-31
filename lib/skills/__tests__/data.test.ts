@@ -40,7 +40,7 @@ describe('SKILLS dataset', () => {
     }
   })
 
-  it('depth check — knife-skills, woodcarving, knots, fire each have 4+ skills', () => {
+  it('depth check - knife-skills, woodcarving, knots, fire each have 4+ skills', () => {
     const counts = SKILLS.reduce<Record<string, number>>((acc, s) => {
       acc[s.category] = (acc[s.category] ?? 0) + 1
       return acc

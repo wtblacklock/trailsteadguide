@@ -94,7 +94,7 @@ export function buildShoppingList(meals: Meal[], adults: number, kids: number): 
 /** Format a scaled ingredient for display. */
 export function formatBuyLine(item: ScaledIngredient): string {
   if (item.packs && item.packLabel) {
-    return `${item.packs} × ${item.packLabel} (${item.buyAmount} ${item.unit} — need ${item.rawAmount})`
+    return `${item.packs} × ${item.packLabel} (${item.buyAmount} ${item.unit} - need ${item.rawAmount})`
   }
   return `${item.buyAmount} ${item.unit}`
 }

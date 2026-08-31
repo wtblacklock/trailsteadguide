@@ -39,8 +39,8 @@ type Props = {
  * a link to the print view.
  *
  * Visual treatment matches the FloatingEmailBar / TripPackSuccessActions
- * "download surface" — forest-green panel (#1f3622), sage eyebrow accent
- * (#c9d4b5), white pill submit button — so every download/results
+ * "download surface" - forest-green panel (#1f3622), sage eyebrow accent
+ * (#c9d4b5), white pill submit button - so every download/results
  * capture across the site reads as the same family.
  */
 export default function PrintableEmailGate({
@@ -48,7 +48,7 @@ export default function PrintableEmailGate({
   printHref,
   headline = 'Send me the printable',
   eyebrow = 'Free download',
-  description = 'Drop your email — we’ll add you to the Trailstead list and email the print view. One-click unsubscribe, no spam.',
+  description = 'Drop your email - we’ll add you to the Trailstead list and email the print view. One-click unsubscribe, no spam.',
   submitLabel = 'Get the printable',
   showThumbnail = false,
 }: Props) {

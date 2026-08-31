@@ -36,7 +36,7 @@ export default function FeaturedSkillsRail() {
         <div className="col-span-1 md:col-span-5 md:col-start-7 flex items-end mt-4 md:mt-0">
           <p className="text-stone-500 text-lg leading-relaxed">
             Short, beginner-friendly walkthroughs of the moves a confident first trip
-            assumes you can do — pitching a tent, starting a fire, tying the one knot
+            assumes you can do - pitching a tent, starting a fire, tying the one knot
             that holds a tarp taut overnight.
           </p>
         </div>

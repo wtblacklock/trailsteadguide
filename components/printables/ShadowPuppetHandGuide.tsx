@@ -25,7 +25,7 @@ const PUPPETS: PuppetPanel[] = [
     animal: 'Bird',
     emoji: '🐦',
     hands: 'Both hands.',
-    position: 'Join thumbs together side by side. Spread all fingers wide — these are the wings. Face hands sideways toward the screen.',
+    position: 'Join thumbs together side by side. Spread all fingers wide - these are the wings. Face hands sideways toward the screen.',
     animate: 'Flap both hands up and down together for flying. Open and close one hand slightly for the beak.',
   },
   {
@@ -33,27 +33,27 @@ const PUPPETS: PuppetPanel[] = [
     emoji: '🦋',
     hands: 'Both hands.',
     position: 'Join thumbs, face palms toward screen. Spread all fingers wide. Cross wrists slightly so hands overlap at center.',
-    animate: 'Slowly open and close both hands simultaneously — a gentle flutter is more convincing than fast flapping.',
+    animate: 'Slowly open and close both hands simultaneously - a gentle flutter is more convincing than fast flapping.',
   },
   {
     animal: 'Fox',
     emoji: '🦊',
     hands: 'One hand.',
-    position: 'Hold hand upright, fingers together. Fold ring and middle fingers down to touch palm. Keep index, pinky, and thumb extended — index and pinky are ears, thumb is the snout.',
+    position: 'Hold hand upright, fingers together. Fold ring and middle fingers down to touch palm. Keep index, pinky, and thumb extended - index and pinky are ears, thumb is the snout.',
     animate: 'Bring thumb toward palm and back out for mouth movement. Tilt wrist for the fox to look around.',
   },
   {
     animal: 'Bear',
     emoji: '🐻',
     hands: 'One hand.',
-    position: 'Hold hand in loose fist. Keep all fingers curled but rounded — not tight. Extend thumb slightly for the snout. The rounded knuckles form the bear\'s head.',
-    animate: 'Open fist slightly and close for a growling mouth. Move the whole hand slowly — bears are deliberate.',
+    position: 'Hold hand in loose fist. Keep all fingers curled but rounded - not tight. Extend thumb slightly for the snout. The rounded knuckles form the bear\'s head.',
+    animate: 'Open fist slightly and close for a growling mouth. Move the whole hand slowly - bears are deliberate.',
   },
   {
     animal: 'Deer',
     emoji: '🦌',
     hands: 'Both hands.',
-    position: 'Make two fists. Extend all fingers on one hand upward — this is the antler rack. Place the other fist below it as the head, with index and middle fingers as ears.',
+    position: 'Make two fists. Extend all fingers on one hand upward - this is the antler rack. Place the other fist below it as the head, with index and middle fingers as ears.',
     animate: 'Keep the antler hand very still. Move the head-fist slightly side to side. Tilt ears forward to show alertness.',
   },
   {
@@ -146,11 +146,11 @@ export default function ShadowPuppetHandGuide() {
       <div className="setup">
         <div className="setup-item">
           <strong>Light source</strong>
-          Lantern or phone flashlight. Point light toward a flat surface — tent wall or white tarp works perfectly.
+          Lantern or phone flashlight. Point light toward a flat surface - tent wall or white tarp works perfectly.
         </div>
         <div className="setup-item">
           <strong>Distance</strong>
-          Hold hands 12–18 inches from the light for a sharp shadow. Move closer for a larger, softer shape.
+          Hold hands 12-18 inches from the light for a sharp shadow. Move closer for a larger, softer shape.
         </div>
         <div className="setup-item">
           <strong>Starter story</strong>

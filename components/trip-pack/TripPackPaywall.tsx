@@ -161,7 +161,7 @@ export default function TripPackPaywall({
               <a
                 href={downloadUrl}
                 onClick={() => {
-                  // PDF download intent — fires once per click on the link.
+                  // PDF download intent - fires once per click on the link.
                   track('pdf_download_clicked', { plan: planSlug, source: 'trip_pack' })
                 }}
                 className="block bg-emerald-700 hover:bg-emerald-800 transition-colors text-white text-center font-semibold py-3 rounded-lg"
@@ -197,7 +197,7 @@ export default function TripPackPaywall({
                 {submitting
                   ? 'Working…'
                   : stripeEnabled
-                    ? `Get my Trip Pack — ${tier === 'basic' ? '$14' : '$24'}`
+                    ? `Get my Trip Pack - ${tier === 'basic' ? '$14' : '$24'}`
                     : 'Send me my Trip Pack'}
               </button>
 
@@ -206,7 +206,7 @@ export default function TripPackPaywall({
               <p className="text-[11px] text-stone-500 leading-relaxed text-center">
                 {stripeEnabled
                   ? 'Secure checkout via Stripe. Instant download after payment.'
-                  : 'Free during early access. Instant download — no spam, ever.'}
+                  : 'Free during early access. Instant download - no spam, ever.'}
               </p>
             </form>
           )}

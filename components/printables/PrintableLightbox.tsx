@@ -5,7 +5,7 @@ import PrintableThumbnail from './PrintableThumbnail'
 import PrintablePreview from './PrintablePreview'
 
 type Props = {
-  /** Printable slug — resolves the renderer in PrintableThumbnail / PrintablePreview. */
+  /** Printable slug - resolves the renderer in PrintableThumbnail / PrintablePreview. */
   slug: string
   /**
    * Visual size of the trigger thumbnail. `card` is for the /printables hub

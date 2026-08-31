@@ -1,5 +1,5 @@
 // app/sitemap.ts
-// Next.js 15 App Router — generates /sitemap.xml at runtime.
+// Next.js 15 App Router - generates /sitemap.xml at runtime.
 //
 // Uniform lastmod across a sitemap is a known low-quality signal to
 // Google; freshness should correlate with how often the content
@@ -35,7 +35,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Guides hub
     { url: `${BASE_URL}/guides`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.9 },
-    // Guide categories (4 hubs — Camping Basics / Scenario / Seasonal / Location)
+    // Guide categories (4 hubs - Camping Basics / Scenario / Seasonal / Location)
     ...GUIDE_CATEGORIES.map((c) => ({
       url: `${BASE_URL}/guides/${c.slug}`,
       lastModified: FRESH,
@@ -98,7 +98,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/trip-pack/first-weekend-camp`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/trip-pack/easy-family-basecamp`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.8 },
 
-    // Printables — free, email-gated analog reference cards. Index +
+    // Printables - free, email-gated analog reference cards. Index +
     // landing page per printable. Print-only views are noindex'd.
     { url: `${BASE_URL}/printables`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.7 },
     ...PRINTABLES.map((p) => ({
@@ -117,7 +117,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/quiz`, lastModified: RECENT, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${BASE_URL}/checklist`, lastModified: RECENT, changeFrequency: 'monthly', priority: 0.6 },
 
-    // Glossary (reference page — beginner camping vocabulary)
+    // Glossary (reference page - beginner camping vocabulary)
     { url: `${BASE_URL}/glossary`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.7 },
 
     // Informational
@@ -131,7 +131,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/privacy`, lastModified: STABLE, changeFrequency: 'yearly', priority: 0.3 },
     { url: `${BASE_URL}/terms`, lastModified: STABLE, changeFrequency: 'yearly', priority: 0.3 },
 
-    // Skills (hub + all skill detail pages — category landing pages 301 to /skills?category=)
+    // Skills (hub + all skill detail pages - category landing pages 301 to /skills?category=)
     ...skillEntries,
   ]
 }

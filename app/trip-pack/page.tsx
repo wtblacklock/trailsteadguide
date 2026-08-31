@@ -7,9 +7,9 @@ import { PLAN_TEMPLATES } from '@/lib/plan-templates'
 import type { PlanSlug } from '@/types'
 
 const TITLE = 'Trip Packs'
-const META_TITLE = 'Camping Trip Packs — Print-Ready Family Camping Plans'
+const META_TITLE = 'Camping Trip Packs - Print-Ready Family Camping Plans'
 const DESCRIPTION =
-  'Print-ready Trip Packs for first-time family campers — timeline, packing list, gear set, meal plan, and mistake prevention, scaled to your party size.'
+  'Print-ready Trip Packs for first-time family campers - timeline, packing list, gear set, meal plan, and mistake prevention, scaled to your party size.'
 
 const ORDER: PlanSlug[] = [
   'backyard-test',
@@ -54,7 +54,7 @@ export default function Page() {
           Print-ready trip plans, scaled to your family.
         </h1>
         <p className="mt-6 text-lg md:text-xl text-stone-600 leading-relaxed max-w-2xl">
-          Each Trip Pack is a complete, printable plan for one of our four pacing archetypes — timeline, gear set, packing list, meal plan, kid activities, and the mistakes most beginners make.
+          Each Trip Pack is a complete, printable plan for one of our four pacing archetypes - timeline, gear set, packing list, meal plan, kid activities, and the mistakes most beginners make.
         </p>
         <p className="mt-4 text-base text-stone-500 leading-relaxed max-w-2xl">
           Built around four scenarios that match how families actually start camping. Pick the one that matches where you are, and you get a complete weekend instead of a reading list.
@@ -111,7 +111,7 @@ export default function Page() {
           </h2>
           <ul className="space-y-3 text-stone-700 leading-relaxed text-lg list-none">
             <li>Hour-by-hour trip timeline scaled to your party size.</li>
-            <li>Curated gear set — the exact items we recommend, no fluff.</li>
+            <li>Curated gear set - the exact items we recommend, no fluff.</li>
             <li>Printable packing checklist sized for letter paper.</li>
             <li>Meal plan with a shopping list scaled to adults and kids.</li>
             <li>Kid activities mapped to age range and time of day.</li>

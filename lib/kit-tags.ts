@@ -1,5 +1,5 @@
 // Kit tag IDs per plan slug.
-// Tag IDs come from the Kit UI — click a tag, check the URL for
+// Tag IDs come from the Kit UI - click a tag, check the URL for
 // subscribable_ids=<number>.
 
 export const PLAN_TAG_IDS: Record<string, number> = {
@@ -13,7 +13,7 @@ export const PLAN_TAG_IDS: Record<string, number> = {
 // 0 = disabled (no tag attached; subscriber lands in form only).
 export const QUIZ_STARTED_TAG_ID = 0
 
-// "Bought a Trip Pack" tag — attached every time a paid checkout completes
+// "Bought a Trip Pack" tag - attached every time a paid checkout completes
 // (Stripe webhook) or an email-gate trip-pack download is issued. Lets you
 // segment buyers from quiz-only subscribers in Kit. 0 = disabled (set the
 // real tag id from your Kit dashboard to enable).
@@ -25,7 +25,7 @@ export const BUYER_TAG_ID = 0
  * subscriber lands in the Kit form and gets the printable-specific tag,
  * which can be used to drive a Kit automation that emails the download.
  *
- * Tag IDs come from the Kit UI — click a tag, check the URL for
+ * Tag IDs come from the Kit UI - click a tag, check the URL for
  * subscribable_ids=<number>. 0 = no tag (subscriber still lands in form).
  */
 export const PRINTABLE_TAG_IDS: Record<string, number> = {
@@ -37,7 +37,7 @@ export const PRINTABLE_TAG_IDS: Record<string, number> = {
 }
 
 /**
- * Generic "downloaded a printable" tag — applied to every printable
+ * Generic "downloaded a printable" tag - applied to every printable
  * email-gate capture regardless of which printable. Useful for a single
  * "lead-magnet downloader" automation.
  *

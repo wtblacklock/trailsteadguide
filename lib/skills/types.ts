@@ -1,7 +1,7 @@
 /**
  * Skill schema for the Camp Skills System.
  *
- * Unifies the spec's "Skill" and "Project" shapes into one type — both
+ * Unifies the spec's "Skill" and "Project" shapes into one type - both
  * shapes are subsets, with woodcarving-style projects setting `outcome`
  * and `timeRequired` while general skills lean on `whenToUse` and
  * `useCases`. All non-essential fields are optional so a skill record
@@ -40,7 +40,7 @@ export type SkillVideoEmbed = {
 
 /**
  * Illustration reference (typically a Wikimedia Commons SVG or photo).
- * Attribution string is rendered alongside the image — Wikimedia requires
+ * Attribution string is rendered alongside the image - Wikimedia requires
  * artist + license credit.
  */
 export type SkillIllustration = {
@@ -70,7 +70,7 @@ export type Skill = {
   videoEmbed?: SkillVideoEmbed
   illustration?: SkillIllustration
   /**
-   * Optional printable companion — the slug of an entry in the
+   * Optional printable companion - the slug of an entry in the
    * /printables catalogue. When set, the skill detail page renders a
    * "Pair with" block linking the visitor to the analog version of the
    * skill (a one-page printable they can carry).
@@ -80,7 +80,7 @@ export type Skill = {
    * Cross-links to related skills as `categorySlug/skillSlug` refs
    * (e.g. `'stargazing/finding-constellations'`). Rendered as a
    * "Continue learning" block at the bottom of the skill page so
-   * visitors can move through a topical cluster naturally — and so
+   * visitors can move through a topical cluster naturally - and so
    * Google sees an internal-link graph that signals topical authority.
    */
   relatedSkills?: string[]

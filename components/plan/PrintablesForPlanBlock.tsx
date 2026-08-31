@@ -12,7 +12,7 @@ export default function PrintablesForPlanBlock({ printables }: Props) {
     <section className="py-12 max-w-content mx-auto px-6">
       <h2 className="text-2xl font-serif font-medium text-stone-900 mb-2">Free printables for this trip</h2>
       <p className="text-stone-500 text-sm mb-8">
-        Analog reference cards for this plan — no phone, no signal needed at the campsite.
+        Analog reference cards for this plan - no phone, no signal needed at the campsite.
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         {printables.map((printable) => (

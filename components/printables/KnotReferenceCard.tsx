@@ -1,14 +1,14 @@
 /**
- * Camp Knots Reference Card — print asset.
+ * Camp Knots Reference Card - print asset.
  *
  * Four knot panels in a 2×2 grid: square knot, bowline, taut-line hitch,
  * clove hitch. Each panel has the Wikimedia Commons illustration (used
- * under the same license as the existing skill pages — already attributed
+ * under the same license as the existing skill pages - already attributed
  * in the skill records), three steps, and a "use it for" line.
  *
  * The eslint-disable below is intentional: next/image won't accept
  * arbitrary external SVG hosts without next.config tweaks, and these
- * pages are content-style PDFs that print at 1× — perf optimizations
+ * pages are content-style PDFs that print at 1× - perf optimizations
  * from next/image aren't relevant. Plain <img> is correct here.
  */
 
@@ -25,21 +25,21 @@ const KNOTS: KnotPanel[] = [
   {
     name: 'Square Knot',
     imageSrc: 'https://upload.wikimedia.org/wikipedia/commons/8/84/Reef_knot.svg',
-    imageAlt: 'Square (reef) knot — two interlocking half-knots',
-    attribution: 'Lucasbosch — Wikimedia Commons (CC BY-SA 3.0)',
+    imageAlt: 'Square (reef) knot - two interlocking half-knots',
+    attribution: 'Lucasbosch - Wikimedia Commons (CC BY-SA 3.0)',
     steps: [
       'Cross the right end over the left, then under and back up.',
       'Now cross the left end over the right, then under and back up.',
       'Pull both ends to tighten. The two loops should sit flat against each other.',
     ],
     useFor:
-      'Joining two equal-diameter ropes, tying a bandage, bundling a rolled tarp — never for climbing, rescue, or any load that risks a person.',
+      'Joining two equal-diameter ropes, tying a bandage, bundling a rolled tarp - never for climbing, rescue, or any load that risks a person.',
   },
   {
     name: 'Bowline',
     imageSrc: 'https://upload.wikimedia.org/wikipedia/commons/7/77/Bowline.svg',
     imageAlt: 'Bowline knot with a fixed loop',
-    attribution: 'Lucasbosch — Wikimedia Commons (CC BY 3.0)',
+    attribution: 'Lucasbosch - Wikimedia Commons (CC BY 3.0)',
     steps: [
       'Make a small loop in the standing line, leaving plenty of working end.',
       'Thread the working end up through the loop, around the standing line, and back down through the same loop.',
@@ -51,7 +51,7 @@ const KNOTS: KnotPanel[] = [
     name: 'Taut-Line Hitch',
     imageSrc: 'https://upload.wikimedia.org/wikipedia/commons/7/7e/TautlineHitch-ABOK-1800.jpg',
     imageAlt: 'Taut-line hitch tied around a fixed object',
-    attribution: 'David J. Fred — Wikimedia Commons (CC BY-SA 2.5)',
+    attribution: 'David J. Fred - Wikimedia Commons (CC BY-SA 2.5)',
     steps: [
       'Wrap the working end twice around the standing line on the load side.',
       'Make one more wrap on the other side, then pass the end through and dress the wraps tight.',
@@ -70,7 +70,7 @@ const KNOTS: KnotPanel[] = [
       'Pull both ends tight. The hitch will grip but slip if the pole rotates.',
     ],
     useFor:
-      'Quick start or finish on a tarp ridge, tying off to a stake or pole — don\'t use for a load that swings or reverses direction.',
+      'Quick start or finish on a tarp ridge, tying off to a stake or pole - don\'t use for a load that swings or reverses direction.',
   },
 ]
 

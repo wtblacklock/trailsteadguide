@@ -13,7 +13,7 @@ import AmazonLink from '@/components/affiliate/AmazonLink'
 const SLUG = '/guides/rainy-camping-trips'
 const TITLE = 'Rainy Camping Trips'
 // SEO-optimized <title>; H1/headline keep TITLE.
-const META_TITLE = 'Camping in the Rain — Tarp & Bail Guide'
+const META_TITLE = 'Camping in the Rain - Tarp & Bail Guide'
 const DESCRIPTION =
   'Camping in the rain: pre-trip prep, tarp and rainfly setup, condensation control, drying out a wet camp, and how to know when to bail without regret.'
 const HERO_IMAGE = 'https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=1400&auto=format&fit=crop&q=80'
@@ -47,15 +47,15 @@ export default function Page() {
         data={faqPageGraph([
           {
             q: 'Should I cancel my camping trip if rain is in the forecast?',
-            a: 'Usually no. A trip with light to moderate rain is a different trip, not a ruined one — and a tarp, dry layers, and a propane stove cover the gap. Cancel for severe weather: thunderstorms with a high lightning probability, sustained winds over 30 mph, flash flood warnings on a low-lying site, or any multi-day rain in the 0.5+ inch/hour range. Routine spring or summer rain showers are camp-able with the right setup.',
+            a: 'Usually no. A trip with light to moderate rain is a different trip, not a ruined one - and a tarp, dry layers, and a propane stove cover the gap. Cancel for severe weather: thunderstorms with a high lightning probability, sustained winds over 30 mph, flash flood warnings on a low-lying site, or any multi-day rain in the 0.5+ inch/hour range. Routine spring or summer rain showers are camp-able with the right setup.',
           },
           {
             q: 'How do I keep my tent dry inside?',
-            a: 'Three things: pitch the rainfly tight on every guy-out point, set up an over-tarp above the tent if you have one, and manage condensation by leaving the rainfly vents open and avoiding wet gear inside the tent. Most "tent leaked" stories are actually condensation — a wet tent inside on a clear-but-cold night is your own breath, not a fly failure.',
+            a: 'Three things: pitch the rainfly tight on every guy-out point, set up an over-tarp above the tent if you have one, and manage condensation by leaving the rainfly vents open and avoiding wet gear inside the tent. Most "tent leaked" stories are actually condensation - a wet tent inside on a clear-but-cold night is your own breath, not a fly failure.',
           },
           {
             q: 'What is the most-overlooked piece of rain camping gear?',
-            a: 'A real tarp, big enough to cover the picnic table — 12x12 ft or 10x10 ft. The picnic table tarp is what makes the difference between sitting in your tent for 6 hours or having a campsite. Also: a contractor-grade trash bag for keeping a wet tent in the car on the drive home.',
+            a: 'A real tarp, big enough to cover the picnic table - 12x12 ft or 10x10 ft. The picnic table tarp is what makes the difference between sitting in your tent for 6 hours or having a campsite. Also: a contractor-grade trash bag for keeping a wet tent in the car on the drive home.',
           },
           {
             q: 'What sleeping bag do I need for a rainy trip?',
@@ -67,7 +67,7 @@ export default function Page() {
           },
           {
             q: 'When should I bail on a rainy trip?',
-            a: 'When you have lost a critical piece of dry gear — your sleeping bag is wet, the kids cannot get warm, or the tent floor is taking on water. Or when the forecast updates to severe weather: thunderstorms moving through, flash flood watch, sustained high wind. Bail early, in daylight, with the option to come back next weekend.',
+            a: 'When you have lost a critical piece of dry gear - your sleeping bag is wet, the kids cannot get warm, or the tent floor is taking on water. Or when the forecast updates to severe weather: thunderstorms moving through, flash flood watch, sustained high wind. Bail early, in daylight, with the option to come back next weekend.',
           },
         ])}
       />
@@ -90,32 +90,32 @@ export default function Page() {
         }}
       >
         <QuickAnswer
-          tldr="Bring a tarp, a synthetic sleeping bag, and dry bags — and don't camp through thunderstorms or flash-flood watches."
-          summary="A camping trip with rain is a different trip, not a ruined one — if you bring three things: a 10×10 ft tarp pitched over the picnic table, a synthetic-fill 20°F sleeping bag (down fails when wet), and dry bags for sleeping bag, dry clothes, and electronics. Pitch the rainfly tight on every guy-out point and vent it — most 'tent leaks' are condensation, not water intrusion. Cancel for severe weather: thunderstorms with high lightning risk, sustained 30+ mph winds, or flash flood watches on a low-lying site. Bail in daylight when the sleeping bag is wet through, the tent floor pools, or kids can't warm up."
+          tldr="Bring a tarp, a synthetic sleeping bag, and dry bags - and don't camp through thunderstorms or flash-flood watches."
+          summary="A camping trip with rain is a different trip, not a ruined one - if you bring three things: a 10×10 ft tarp pitched over the picnic table, a synthetic-fill 20°F sleeping bag (down fails when wet), and dry bags for sleeping bag, dry clothes, and electronics. Pitch the rainfly tight on every guy-out point and vent it - most 'tent leaks' are condensation, not water intrusion. Cancel for severe weather: thunderstorms with high lightning risk, sustained 30+ mph winds, or flash flood watches on a low-lying site. Bail in daylight when the sleeping bag is wet through, the tent floor pools, or kids can't warm up."
         />
         <h2>The honest version of rain camping</h2>
         <p>
-          Rain at camp is rarely the disaster people imagine. A trip with steady rain is a quieter trip, with fewer people on the trail, more time at the picnic table under a tarp, and the kind of weather drama kids end up remembering for years. The risk is not getting rained on — it is being unprepared for it.
+          Rain at camp is rarely the disaster people imagine. A trip with steady rain is a quieter trip, with fewer people on the trail, more time at the picnic table under a tarp, and the kind of weather drama kids end up remembering for years. The risk is not getting rained on - it is being unprepared for it.
         </p>
         <ul>
           <li><strong>Manageable rain:</strong> showers, all-day light rain, the typical spring or summer afternoon storm. With a tarp, a rainfly pitched tight, and dry layers in a dry bag, you camp through it.</li>
           <li><strong>Trip-ending rain:</strong> sustained downpour on a low-lying site, flash flood watch, or any thunderstorm in open or exposed terrain.</li>
-          <li><strong>The actual risk:</strong> wet gear that cannot be replaced — sleeping bag, sleeping pad, dry change of clothes. Protect those three and most rainy trips are fine.</li>
+          <li><strong>The actual risk:</strong> wet gear that cannot be replaced - sleeping bag, sleeping pad, dry change of clothes. Protect those three and most rainy trips are fine.</li>
         </ul>
 
         <h2>Pre-trip: the calls you make before you leave home</h2>
         <h3>Read the forecast like a camper, not like a commuter</h3>
         <ul>
-          <li><strong>Hourly forecast, not just daily.</strong> &ldquo;60% rain&rdquo; for the day matters less than where the storm cells land — most summer storms move through in a 2-hour window and leave the rest of the day usable.</li>
+          <li><strong>Hourly forecast, not just daily.</strong> &ldquo;60% rain&rdquo; for the day matters less than where the storm cells land - most summer storms move through in a 2-hour window and leave the rest of the day usable.</li>
           <li><strong>Lightning probability, separately.</strong> A summer thunderstorm raises lightning risk far past what the rain percentage suggests. Above 30% lightning chance, treat the trip differently.</li>
-          <li><strong>Watch for flash-flood watches</strong> if your site is in a canyon, near a creek, or downstream of mountain terrain. The rain at your site is not the rain that matters — the rain upstream is.</li>
+          <li><strong>Watch for flash-flood watches</strong> if your site is in a canyon, near a creek, or downstream of mountain terrain. The rain at your site is not the rain that matters - the rain upstream is.</li>
           <li><strong>Refresh the forecast the morning of the trip.</strong> Forecasts update overnight; spring and summer forecasts more so. The trip you packed for last night is not always the trip you are about to take.</li>
         </ul>
 
         <h3>Pack as if it will rain even if the forecast is clear</h3>
         <ul>
           <li>Tarp, big enough for the picnic table (10x10 ft minimum, 12x12 better) plus 50 ft of paracord and 4 stakes.</li>
-          <li>Real rain layers — jacket and pants, not a poncho. One per person.</li>
+          <li>Real rain layers - jacket and pants, not a poncho. One per person.</li>
           <li>Dry bags or contractor trash bags for sleeping bags, dry clothes, and electronics. Plan as if everything in the car will get wet.</li>
           <li>Two changes of socks per person. Wet feet at sundown is how trips end early.</li>
           <li>A sealed tub of dry kindling and real fire-starter (wax cubes or fatwood). Wet wood is unreliable.</li>
@@ -126,11 +126,11 @@ export default function Page() {
         <p>
           The picnic-table tarp is the most underappreciated piece of rain-camp gear. Without it, you and your party are in the tent the moment it starts raining, which means six hours of cabin-fever in a 9x7 ft floor space. With it, you have a covered outdoor room and the trip continues.
         </p>
-        <h3>Tarp pitch — in five minutes</h3>
+        <h3>Tarp pitch - in five minutes</h3>
         <ol>
           <li>Pick the high ground. Avoid pitching the tarp where water naturally pools.</li>
-          <li>Tie the two corners closest to your &ldquo;upwind&rdquo; side high — to a tree or a tall pole, 7+ ft up.</li>
-          <li>Stake the two opposite corners low — 2–3 ft off the ground. The tarp now has a slope: rain runs off the low side, not the table.</li>
+          <li>Tie the two corners closest to your &ldquo;upwind&rdquo; side high - to a tree or a tall pole, 7+ ft up.</li>
+          <li>Stake the two opposite corners low - 2-3 ft off the ground. The tarp now has a slope: rain runs off the low side, not the table.</li>
           <li>Use ridgeline cord taut across the middle to prevent sag and pooling.</li>
           <li>Pitch the picnic table directly under the slope, with the bench seats on the high side. The table is now your kitchen, dining room, and rainy-evening living room.</li>
         </ol>
@@ -140,7 +140,7 @@ export default function Page() {
           <li>Pitch the inner tent. Then put the rainfly over it, attached at every clip and stake-out point.</li>
           <li>Stake the fly so it does not sag onto the tent body. The half-inch gap between fly and tent is the part that keeps the inside dry.</li>
           <li>Tighten every guy-out line. In rain, the wet fly stretches; if it touches the inner tent, water tracks through by capillary action.</li>
-          <li>Put a footprint or a tarp under the tent — and trim the corners so it does not extend past the fly. A footprint that catches rain becomes a swimming pool under your floor.</li>
+          <li>Put a footprint or a tarp under the tent - and trim the corners so it does not extend past the fly. A footprint that catches rain becomes a swimming pool under your floor.</li>
         </ul>
 
         <figure className="not-prose my-12">
@@ -155,20 +155,20 @@ export default function Page() {
             />
           </div>
           <figcaption className="mt-3 text-sm text-stone-500 italic">
-            A forest in light rain is one of the better experiences in camping — once you have a tarp up and dry layers on.
+            A forest in light rain is one of the better experiences in camping - once you have a tarp up and dry layers on.
           </figcaption>
         </figure>
 
-        <h2>Condensation — the &ldquo;leak&rdquo; that is not a leak</h2>
+        <h2>Condensation - the &ldquo;leak&rdquo; that is not a leak</h2>
         <p>
-          A surprising number of &ldquo;my tent leaked&rdquo; stories are condensation, not water intrusion. A single sleeping adult breathes off about a pint of water vapor a night. With the rainfly closed up tight on a cold night, that moisture has nowhere to go and ends up beaded on the inside of the fly — and then rolls down onto the inner tent or onto your sleeping bag.
+          A surprising number of &ldquo;my tent leaked&rdquo; stories are condensation, not water intrusion. A single sleeping adult breathes off about a pint of water vapor a night. With the rainfly closed up tight on a cold night, that moisture has nowhere to go and ends up beaded on the inside of the fly - and then rolls down onto the inner tent or onto your sleeping bag.
         </p>
         <h3>Manage condensation:</h3>
         <ul>
-          <li><strong>Vent.</strong> Most rainflies have small vents at the top — open them, even in light rain. The vents are designed not to let rain in.</li>
+          <li><strong>Vent.</strong> Most rainflies have small vents at the top - open them, even in light rain. The vents are designed not to let rain in.</li>
           <li><strong>Door cracked open at the top.</strong> If the fly has a top mesh panel that is rain-protected, leave it open. Airflow is the only fix.</li>
           <li><strong>No wet gear inside the tent.</strong> Wet boots, wet rain jackets, wet anything stays in the vestibule.</li>
-          <li><strong>Pee bottle or pre-bed bathroom run.</strong> Moisture inside the tent is moisture you breathed out — minimize it.</li>
+          <li><strong>Pee bottle or pre-bed bathroom run.</strong> Moisture inside the tent is moisture you breathed out - minimize it.</li>
           <li><strong>Gap between fly and inner tent.</strong> If the wet fly touches the mesh, water tracks through. A taut pitch keeps the air gap.</li>
         </ul>
 
@@ -176,23 +176,23 @@ export default function Page() {
         <h3>Add to your standard kit</h3>
         <ul>
           <li>10x10 ft or 12x12 ft tarp + 50 ft paracord + 4 extra stakes.</li>
-          <li>Synthetic-fill 20°F sleeping bag. Down loses heat when wet — synthetic does not.</li>
+          <li>Synthetic-fill 20°F sleeping bag. Down loses heat when wet - synthetic does not.</li>
           <li>Sleeping pad with R-value 4 or higher. Wet ground is colder than dry ground.</li>
           <li>Two contractor-grade trash bags. One for the wet tent on the drive home; one as a backup ground tarp.</li>
           <li>Dry bags for sleeping bag, dry clothes, electronics. Compression sacks usually count.</li>
-          <li>Camp shoes that do not absorb water — Crocs, light-duty rubber clogs.</li>
-          <li>Pack towel — you will dry something, every day.</li>
+          <li>Camp shoes that do not absorb water - Crocs, light-duty rubber clogs.</li>
+          <li>Pack towel - you will dry something, every day.</li>
           <li>Hand warmers, the cheap chemical kind. A $10 box rescues a cold morning.</li>
         </ul>
 
         <h3>Skip or downsize</h3>
         <ul>
-          <li>Cotton anything — it gets wet, stays wet, and stays cold all day.</li>
+          <li>Cotton anything - it gets wet, stays wet, and stays cold all day.</li>
           <li>Down sleeping bag (unless you have a high-end synthetic-treated one and a dry bag for it).</li>
-          <li>Open-fire dependence — bring the propane stove and assume the fire is for ambiance only.</li>
+          <li>Open-fire dependence - bring the propane stove and assume the fire is for ambiance only.</li>
         </ul>
 
-        <h2>When to bail — and how to do it cleanly</h2>
+        <h2>When to bail - and how to do it cleanly</h2>
         <p>
           Bailing on a rainy trip is not failure. The skill of camping in weather includes the skill of leaving when the conditions cross a line. The earlier you leave, the cleaner the bail.
         </p>
@@ -200,16 +200,16 @@ export default function Page() {
         <ul>
           <li><strong>Sleeping bag wet through.</strong> Once the bag is soaked, the night is unsafe at most temperatures. Leave in daylight.</li>
           <li><strong>Tent floor taking on water.</strong> If puddles form inside the tent, the floor coating has failed or the site is below the water table. Move sites or leave.</li>
-          <li><strong>Forecast updates to severe weather.</strong> Thunderstorms, sustained 30+ mph winds, flash flood watch — leave before the storm front arrives.</li>
-          <li><strong>Kids cannot get warm.</strong> Hypothermia in kids is faster and quieter than in adults. Cold, shivering, withdrawn — pack the car.</li>
+          <li><strong>Forecast updates to severe weather.</strong> Thunderstorms, sustained 30+ mph winds, flash flood watch - leave before the storm front arrives.</li>
+          <li><strong>Kids cannot get warm.</strong> Hypothermia in kids is faster and quieter than in adults. Cold, shivering, withdrawn - pack the car.</li>
           <li><strong>Driving access at risk.</strong> Forest service dirt roads turn impassable in rain. If the rangers say a road is closing, leave before it does.</li>
         </ul>
 
         <h3>How to bail:</h3>
         <ol>
-          <li>Pack the dry stuff first — sleeping bags, clothes, electronics — into trash bags or dry bags inside the car.</li>
+          <li>Pack the dry stuff first - sleeping bags, clothes, electronics - into trash bags or dry bags inside the car.</li>
           <li>Break the tent down with the fly still over it; collapse the inner first. The wet outside ends up on the outside of your bundle.</li>
-          <li>Wet tent into a contractor trash bag, then into the car. Do not roll it tight — rolled wet tents grow mildew in 24 hours.</li>
+          <li>Wet tent into a contractor trash bag, then into the car. Do not roll it tight - rolled wet tents grow mildew in 24 hours.</li>
           <li>Wipe off the worst, drive out, set the tent up at home within 24 hours to dry it.</li>
           <li>Re-book for next weekend. The trip happens; it is just shifted.</li>
         </ol>
@@ -226,10 +226,10 @@ export default function Page() {
         <h2>Common rain-camping mistakes</h2>
         <ol>
           <li>
-            <strong>Skipping the tarp.</strong> Without a covered picnic table you have no campsite once it starts raining — just a tent and a car. Bring the tarp every trip, not just the rainy ones.
+            <strong>Skipping the tarp.</strong> Without a covered picnic table you have no campsite once it starts raining - just a tent and a car. Bring the tarp every trip, not just the rainy ones.
           </li>
           <li>
-            <strong>Letting the groundsheet stick out past the tent floor.</strong> The most common &ldquo;wet tent&rdquo; story is not a leak — it is a footprint that extends past the tent edge. Rain rolls off the fly, lands on the exposed groundsheet, and pools <em>under</em> the tent floor. Tuck the footprint two to three inches inside the tent perimeter on every side.
+            <strong>Letting the groundsheet stick out past the tent floor.</strong> The most common &ldquo;wet tent&rdquo; story is not a leak - it is a footprint that extends past the tent edge. Rain rolls off the fly, lands on the exposed groundsheet, and pools <em>under</em> the tent floor. Tuck the footprint two to three inches inside the tent perimeter on every side.
           </li>
           <li>
             <strong>Pitching on a low spot.</strong> What looks flat is sometimes the place where water collects. Look for ground that is one or two inches higher than the path next to it.
@@ -238,7 +238,7 @@ export default function Page() {
             <strong>Confusing condensation with a leak.</strong> Most &ldquo;tent leaks&rdquo; are sealed-up rainflies on cold nights. Vent the fly, even when it is raining.
           </li>
           <li>
-            <strong>Over-pitching the trip.</strong> A 3-night trip in steady rain is a hard week. A 1-night trip with a steady-rain forecast is an easy yes — you camp through one wet night and go home.
+            <strong>Over-pitching the trip.</strong> A 3-night trip in steady rain is a hard week. A 1-night trip with a steady-rain forecast is an easy yes - you camp through one wet night and go home.
           </li>
         </ol>
 
@@ -288,7 +288,7 @@ export default function Page() {
             (~$80). The chair you actually want under a covered tarp on a rainy evening.
           </li>
           <li>
-            <strong>Tarp + rope.</strong> A 10x10 ft heavy-duty tarp with grommets, 50 ft of paracord, and 4 extra stakes. Brand-agnostic — buy what is in stock at the hardware store.
+            <strong>Tarp + rope.</strong> A 10x10 ft heavy-duty tarp with grommets, 50 ft of paracord, and 4 extra stakes. Brand-agnostic - buy what is in stock at the hardware store.
           </li>
         </ul>
         <p>
@@ -297,7 +297,7 @@ export default function Page() {
 
         <h2>Where this fits in the larger plan</h2>
         <p>
-          A rainy first trip is harder than a dry first trip. If you have not camped in dry weather yet, do that one first. Rain belongs on trip two or three — once you know how your tent pitches, how your stove behaves, and what your sleep system actually does. For your first multi-night trip in the rain, the right plan is{' '}
+          A rainy first trip is harder than a dry first trip. If you have not camped in dry weather yet, do that one first. Rain belongs on trip two or three - once you know how your tent pitches, how your stove behaves, and what your sleep system actually does. For your first multi-night trip in the rain, the right plan is{' '}
           <Link href="/plans/first-weekend-camp">First Weekend Camp</Link> with the rainfly pitched tight and the tarp packed at the top of the car.
         </p>
         <p>

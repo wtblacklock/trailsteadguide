@@ -8,7 +8,7 @@ import { useEffect, useRef } from 'react'
  * Hero with cinematic scroll-driven expansion.
  *
  * IMPORTANT: the resting (un-scrolled) state uses plain Tailwind classes so
- * it renders correctly on the very first paint — even in production where
+ * it renders correctly on the very first paint - even in production where
  * styled-jsx CSS can arrive a frame late. The scroll-driven transforms are
  * applied as inline styles on a rAF-throttled scroll handler; at rest we
  * remove them entirely so the Tailwind classes win.
@@ -69,7 +69,7 @@ export default function Hero() {
       raf = window.requestAnimationFrame(apply)
     }
 
-    // Respect reduced motion — never apply the transforms
+    // Respect reduced motion - never apply the transforms
     const reduce =
       typeof window !== 'undefined' &&
       window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
@@ -115,7 +115,7 @@ export default function Hero() {
       </div>
 
       {/* Resting state: max-w-page with Tailwind padding + rounded-2xl. No CSS
-          vars, no styled-jsx — renders correctly on the very first paint. */}
+          vars, no styled-jsx - renders correctly on the very first paint. */}
       <div
         ref={outerRef}
         className="w-full max-w-page mx-auto px-4 md:px-8 pb-8"

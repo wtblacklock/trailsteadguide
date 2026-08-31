@@ -7,9 +7,9 @@ import { useEffect, useRef, useState } from 'react'
  * Smooth page-change fade-out → navigate → fade-in.
  *
  * Uses plain CSS transitions on inline styles. State machine:
- *   - 'visible'  — normal; opacity 1, no translate
- *   - 'leaving'  — link clicked, playing fade-out
- *   - 'entering' — pathname just changed; start invisible, then flip to
+ *   - 'visible'  - normal; opacity 1, no translate
+ *   - 'leaving'  - link clicked, playing fade-out
+ *   - 'entering' - pathname just changed; start invisible, then flip to
  *                  'visible' on the next animation frame so the browser
  *                  interpolates the opacity/transform back to normal.
  *

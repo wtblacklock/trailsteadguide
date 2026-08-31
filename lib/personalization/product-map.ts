@@ -1,5 +1,5 @@
 /**
- * Product map — the affiliate-layer bridge for the gear-system spec.
+ * Product map - the affiliate-layer bridge for the gear-system spec.
  *
  * Shape: PRODUCT_MAP[system][tier][category] → productId[]
  *
@@ -53,7 +53,7 @@ export const SLEEP_PRODUCTS: SleepMap = {
     lanterns: ['luminaid-packlite-max'],
   },
   split: {
-    // Adult tent + kid tent — pair the family-friendly Sundome 4P with the
+    // Adult tent + kid tent - pair the family-friendly Sundome 4P with the
     // sturdier ALPS Lynx so adults and kids have distinct setups.
     tents: ['coleman-sundome-4p', 'alps-lynx-4p'],
     sleepBags: ['coleman-brazos-bag'],
@@ -86,7 +86,7 @@ export const LIGHTING_PRODUCTS: LightingMap = {
     headlamps: ['black-diamond-spot-400'],
   },
   multi_zone: {
-    // Two lantern positions for split-tent setups — the LuminAid hangs in
+    // Two lantern positions for split-tent setups - the LuminAid hangs in
     // the picnic-table zone, the Streamlight is the in-tent / find-it-in-
     // the-dark spot.
     lanterns: ['luminaid-packlite-max', 'streamlight-protac-2'],

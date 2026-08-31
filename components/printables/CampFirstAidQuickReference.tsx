@@ -12,7 +12,7 @@ const INJURIES: Injury[] = [
     emoji: '🩹',
     signs: 'Hot spot, then fluid-filled bubble on foot or heel.',
     treatment: [
-      'Leave intact if small — drain only if large and painful.',
+      'Leave intact if small - drain only if large and painful.',
       'To drain: sterilize needle, pierce edge, let fluid out, leave skin flap.',
       'Cover with moleskin donut or blister pad. Keep dry.',
     ],
@@ -45,11 +45,11 @@ const INJURIES: Injury[] = [
     emoji: '🐝',
     signs: 'Sharp pain, localized swelling and redness.',
     treatment: [
-      'Remove stinger by scraping (bee) — don\'t squeeze with tweezers.',
+      'Remove stinger by scraping (bee) - don\'t squeeze with tweezers.',
       'Ice for swelling. Antihistamine (Benadryl) for itch.',
       'Monitor for signs of allergy.',
     ],
-    evacuate: 'Throat tightening, hives beyond sting site, dizziness, shortness of breath — use EpiPen if available, call 911.',
+    evacuate: 'Throat tightening, hives beyond sting site, dizziness, shortness of breath - use EpiPen if available, call 911.',
   },
   {
     name: 'Sunburn',
@@ -58,7 +58,7 @@ const INJURIES: Injury[] = [
     treatment: [
       'Get out of sun. Cool with wet cloth (not ice).',
       'Aloe vera or hydrocortisone cream for pain.',
-      'Hydrate aggressively — sunburn dehydrates.',
+      'Hydrate aggressively - sunburn dehydrates.',
     ],
     evacuate: 'Blistering over large area, fever over 103°F, confusion, or vomiting.',
   },
@@ -67,7 +67,7 @@ const INJURIES: Injury[] = [
     emoji: '💧',
     signs: 'Dark urine, headache, fatigue, dizziness, dry mouth.',
     treatment: [
-      'Stop activity. Sit in shade. Drink water steadily — not all at once.',
+      'Stop activity. Sit in shade. Drink water steadily - not all at once.',
       'Add electrolytes: sports drink, electrolyte tablets, or a pinch of salt + sugar.',
       'Rest 30+ min before returning to activity.',
     ],
@@ -76,12 +76,12 @@ const INJURIES: Injury[] = [
   {
     name: 'Hypothermia',
     emoji: '🥶',
-    signs: 'Early: shivering, cold/pale skin, clumsiness. Moderate: slurred speech — handle gently, no exertion.',
+    signs: 'Early: shivering, cold/pale skin, clumsiness. Moderate: slurred speech - handle gently, no exertion.',
     treatment: [
       'Get out of wind and wet clothing immediately.',
       'Insulate with dry layers + sleeping bag. Add head cover.',
-      'Warm fluids if alert and swallowing normally — skip if confused/slurring.',
-      'No heat packs? Body heat from another person can help — skin-to-skin under dry insulation.',
+      'Warm fluids if alert and swallowing normally - skip if confused/slurring.',
+      'No heat packs? Body heat from another person can help - skin-to-skin under dry insulation.',
     ],
     evacuate: 'Stops shivering but still cold (severe hypothermia), loss of consciousness, heart irregularity.',
   },
@@ -90,7 +90,7 @@ const INJURIES: Injury[] = [
     emoji: '🔥',
     signs: 'Redness and pain from campfire, stove, or hot cookware.',
     treatment: [
-      'Cool immediately: run cool (not cold) water over burn for 10–20 min.',
+      'Cool immediately: run cool (not cold) water over burn for 10-20 min.',
       'Do not apply ice, butter, or toothpaste.',
       'Cover with non-stick sterile bandage. Ibuprofen for pain.',
     ],

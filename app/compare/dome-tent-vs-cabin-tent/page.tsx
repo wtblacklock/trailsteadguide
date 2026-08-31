@@ -30,7 +30,7 @@ const CABIN = P('core-6p-instant-cabin')
 const FAQS = [
   {
     q: 'Can a cabin tent handle wind as well as a dome tent?',
-    a: 'No, not as well. A dome tent\'s curved pole structure sheds wind more effectively because the shape has no flat surface for gusts to push against. A cabin tent\'s near-vertical walls catch more wind — stake it out fully and use all the guylines in exposed or windy sites.',
+    a: 'No, not as well. A dome tent\'s curved pole structure sheds wind more effectively because the shape has no flat surface for gusts to push against. A cabin tent\'s near-vertical walls catch more wind - stake it out fully and use all the guylines in exposed or windy sites.',
   },
   {
     q: 'Is a cabin tent worth the extra weight for car camping?',
@@ -38,11 +38,11 @@ const FAQS = [
   },
   {
     q: 'Do dome tents pitch faster than cabin tents?',
-    a: 'Traditionally yes, though modern instant/pop-up cabin tents have closed the gap — some cabin tents now pitch in 60 seconds, faster than a manual-pole dome tent. Compare specific models rather than assuming the style alone decides setup speed.',
+    a: 'Traditionally yes, though modern instant/pop-up cabin tents have closed the gap - some cabin tents now pitch in 60 seconds, faster than a manual-pole dome tent. Compare specific models rather than assuming the style alone decides setup speed.',
   },
   {
     q: 'Which style is better for a rainy trip?',
-    a: 'Either can handle rain well if it has a full-coverage rainfly and a bathtub floor — style isn\'t the deciding factor for weatherproofing. See our full guide on the best tent for rainy camping for what actually matters.',
+    a: 'Either can handle rain well if it has a full-coverage rainfly and a bathtub floor - style isn\'t the deciding factor for weatherproofing. See our full guide on the best tent for rainy camping for what actually matters.',
   },
 ]
 
@@ -54,10 +54,10 @@ type Row = {
 
 const ROWS: Row[] = [
   { label: 'Setup time', dome: '~10 min, 2 poles', cabin: '60 sec, pop-up' },
-  { label: 'Wind resistance', dome: 'Best — curved shape sheds wind', cabin: 'Good — stake and guy fully' },
-  { label: 'Standing headroom', dome: 'Low — sit up, don\'t stand', cabin: 'High — most adults stand upright' },
+  { label: 'Wind resistance', dome: 'Best - curved shape sheds wind', cabin: 'Good - stake and guy fully' },
+  { label: 'Standing headroom', dome: 'Low - sit up, don\'t stand', cabin: 'High - most adults stand upright' },
   { label: 'Weight', dome: 'Lighter, ~10 lbs', cabin: 'Heavier, ~23 lbs' },
-  { label: 'Usable floor space', dome: 'Less — walls slope inward', cabin: 'More — matches rated floor size' },
+  { label: 'Usable floor space', dome: 'Less - walls slope inward', cabin: 'More - matches rated floor size' },
   { label: 'Price', dome: DOME.priceRange ?? '', cabin: CABIN.priceRange ?? '' },
 ]
 
@@ -101,7 +101,7 @@ export default function Page() {
             Short answer
           </p>
           <p className="text-stone-800 leading-relaxed text-[17px]">
-            <strong>Cabin tents</strong> win for most car-camping families — standing room to dress
+            <strong>Cabin tents</strong> win for most car-camping families - standing room to dress
             kids and organize gear is worth the extra weight and setup time when the tent travels
             in a trunk, not a backpack. Pick a <strong>dome tent</strong> instead if you want the
             lightest, cheapest option, or you&rsquo;re camping somewhere windy where the curved
@@ -156,13 +156,13 @@ export default function Page() {
         <p className="text-stone-700 leading-relaxed text-lg mb-4">
           A dome tent uses curved, flexible poles that cross at the top, creating the classic
           rounded shape. The walls slope inward from the floor, which means the floor is larger
-          than the usable space inside — you can&rsquo;t stand or sit upright near the edges. That
+          than the usable space inside - you can&rsquo;t stand or sit upright near the edges. That
           curve is also what sheds wind well: there&rsquo;s no flat surface for gusts to push
           against.
         </p>
         <p className="text-stone-700 leading-relaxed text-lg">
           A cabin tent uses near-vertical or fully vertical wall poles, closer to the frame of a
-          small room. The ceiling is higher — most adults can stand upright at the center — and the
+          small room. The ceiling is higher - most adults can stand upright at the center - and the
           usable floor space matches the rated footprint almost exactly. The tradeoff is more
           surface area for wind to catch and a heavier overall structure.
         </p>
@@ -198,7 +198,7 @@ export default function Page() {
               Budget and simplicity
             </h3>
             <p className="text-stone-700 leading-relaxed text-lg">
-              Dome tents win — they&apos;re typically cheaper, lighter, and simpler for a first-ever
+              Dome tents win - they&apos;re typically cheaper, lighter, and simpler for a first-ever
               tent purchase when you&apos;re not sure camping will stick.
             </p>
           </div>

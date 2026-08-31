@@ -3,7 +3,7 @@ import { getProductUrl } from '@/lib/amazon'
 import { tierLabelForProduct } from '@/lib/gear-sets'
 
 type Props = {
-  /** Guide slug (e.g. `'camping-for-beginners'`) — keys into GUIDE_GEAR. */
+  /** Guide slug (e.g. `'camping-for-beginners'`) - keys into GUIDE_GEAR. */
   guideSlug: string
   /** Optional heading override; defaults to "Recommended gear for this trip". */
   heading?: string

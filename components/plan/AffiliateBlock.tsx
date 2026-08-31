@@ -8,7 +8,7 @@ interface Props {
    * Quiz output, when available. Used to gate kid-specific gear: a product
    * with `slot === 'KID_GEAR'` only renders when the party includes a
    * toddler/infant (`hasKids && kidsAge === 'under_5'`). Without this prop,
-   * kid gear renders unconditionally — matches the un-personalized behavior
+   * kid gear renders unconditionally - matches the un-personalized behavior
    * of static guide pages.
    */
   quizOutput?: QuizOutput

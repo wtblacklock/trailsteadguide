@@ -1,5 +1,5 @@
 /**
- * Stripe scaffold — env-gated. To enable:
+ * Stripe scaffold - env-gated. To enable:
  *   1. npm i stripe
  *   2. Set STRIPE_SECRET_KEY, STRIPE_WEBHOOK_SECRET in env
  *   3. Set NEXT_PUBLIC_STRIPE_ENABLED=true (flips the paywall UI)
@@ -20,6 +20,6 @@ export const STRIPE_PRICES = {
 }
 
 export const PRICE_DISPLAY = {
-  basic: 1400, // cents — $14
-  premium: 2400, // cents — $24
+  basic: 1400, // cents - $14
+  premium: 2400, // cents - $24
 }

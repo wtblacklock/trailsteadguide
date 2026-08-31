@@ -13,7 +13,7 @@ export const COMPARE_PAGES: ComparePageEntry[] = [
   },
   {
     slug: 'backyard-test-vs-first-night-camp',
-    title: 'Backyard Test vs First Night Camp — First-Trip Comparison',
+    title: 'Backyard Test vs First Night Camp - First-Trip Comparison',
     excerpt:
       'Backyard Test vs First Night Camp: which plan fits your first trip? Compare gear, duration, and risk. Pick the right starting point in 60 seconds.',
   },
@@ -61,7 +61,7 @@ export const COMPARE_PAGES: ComparePageEntry[] = [
   },
   {
     slug: 'easy-family-basecamp-vs-first-weekend-camp',
-    title: 'Easy Family Basecamp vs First Weekend Camp — Comparison',
+    title: 'Easy Family Basecamp vs First Weekend Camp - Comparison',
     excerpt:
       'Easy Family Basecamp vs First Weekend Camp: pick the right multi-night plan. Compare comfort, ambition, gear, hike day, and which fits your family.',
   },

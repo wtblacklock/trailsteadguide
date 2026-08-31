@@ -12,7 +12,7 @@ const VALID_PLANS: PlanSlug[] = [
 ]
 
 /**
- * POST /api/checkout — creates a Stripe Checkout session and returns its URL.
+ * POST /api/checkout - creates a Stripe Checkout session and returns its URL.
  * Falls back to a clean 503 when Stripe is not configured, so the UI can
  * gracefully revert to email-gate.
  */

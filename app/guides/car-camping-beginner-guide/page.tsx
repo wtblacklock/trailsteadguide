@@ -13,7 +13,7 @@ const TITLE = 'Car Camping Beginner Guide'
 // SEO-optimized <title>; H1/headline keep TITLE.
 const META_TITLE = 'Car Camping for Beginners (Setup Guide)'
 const DESCRIPTION =
-  'Car camping for beginners: park next to your tent, no backcountry, no bushcraft. The simplest way to start — exact gear, sites, and a first-night plan.'
+  'Car camping for beginners: park next to your tent, no backcountry, no bushcraft. The simplest way to start - exact gear, sites, and a first-night plan.'
 const HERO_IMAGE = 'https://images.unsplash.com/photo-1519443933981-c665c4a62ad4?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({
@@ -85,17 +85,17 @@ export default function Page() {
     >
       <QuickAnswer
         tldr="Drive to a numbered site, pitch a tent next to the car, sleep in the car if anything goes wrong."
-        summary="Car camping is the easiest on-ramp to the outdoors: you drive to a numbered campsite at an established campground, pitch a tent on the pad next to your car, and your gear stays in the trunk. Weight doesn't matter, so bring a real cooler, a 2-burner stove, queen air mattress, and full pillows. The car itself is your shelter-of-last-resort if weather or kid meltdowns hit. Any standard sedan works — 4WD only matters for primitive forest-road sites you should skip on a first trip. Plan on filling a mid-size SUV trunk for a family of four."
+        summary="Car camping is the easiest on-ramp to the outdoors: you drive to a numbered campsite at an established campground, pitch a tent on the pad next to your car, and your gear stays in the trunk. Weight doesn't matter, so bring a real cooler, a 2-burner stove, queen air mattress, and full pillows. The car itself is your shelter-of-last-resort if weather or kid meltdowns hit. Any standard sedan works - 4WD only matters for primitive forest-road sites you should skip on a first trip. Plan on filling a mid-size SUV trunk for a family of four."
       />
       <h2>What is car camping?</h2>
       <p>
-        Car camping means you drive your car to a numbered campsite and pitch a tent next to it. You do not hike in. You do not carry your gear. Your stuff stays in the car. This is camping with training wheels — which is exactly what you want for your first trip.
+        Car camping means you drive your car to a numbered campsite and pitch a tent next to it. You do not hike in. You do not carry your gear. Your stuff stays in the car. This is camping with training wheels - which is exactly what you want for your first trip.
       </p>
 
       <h2>Why it&apos;s the right first trip</h2>
       <ul>
         <li><strong>Weight doesn&apos;t matter.</strong> Bring the heavy cooler, the big tent, the real pillows</li>
-        <li><strong>The car is your shelter-of-last-resort.</strong> Rainstorm, kid meltdown, bear scare — you sleep in the car.</li>
+        <li><strong>The car is your shelter-of-last-resort.</strong> Rainstorm, kid meltdown, bear scare - you sleep in the car.</li>
         <li><strong>It&apos;s forgiving.</strong> Forgot something? You drive into town.</li>
         <li><strong>It&apos;s near bathrooms.</strong> This is a bigger deal than you realize.</li>
       </ul>
@@ -103,7 +103,7 @@ export default function Page() {
       <h2>What makes a good car camping site</h2>
       <ul>
         <li>Level, dry ground for the tent</li>
-        <li>A picnic table and a fire ring — almost every established site has both</li>
+        <li>A picnic table and a fire ring - almost every established site has both</li>
         <li>Potable water within a short walk</li>
         <li>Bathroom with actual toilets (not a pit latrine) for your first trip</li>
         <li>Shade for the hot part of the day</li>
@@ -123,10 +123,10 @@ export default function Page() {
 
       <h2>Logistics that will save you</h2>
       <ul>
-        <li>Reserve your site 3–6 weeks ahead; summer weekends fill up fast</li>
+        <li>Reserve your site 3-6 weeks ahead; summer weekends fill up fast</li>
         <li>Ask for a site far from the bathroom block (foot traffic, smell, light)</li>
         <li>Arrive during daylight. Always.</li>
-        <li>Back the car into the site — so the trunk opens toward your living area</li>
+        <li>Back the car into the site - so the trunk opens toward your living area</li>
       </ul>
 
       <p>
@@ -135,7 +135,7 @@ export default function Page() {
 
       <h2>How to pack the car (in the right order)</h2>
       <p>
-        A badly-packed car means you&apos;re unloading the whole trunk to find the cooler at 6pm. A well-packed car means the right thing is on top at the right time. Load in this order — first in, last out:
+        A badly-packed car means you&apos;re unloading the whole trunk to find the cooler at 6pm. A well-packed car means the right thing is on top at the right time. Load in this order - first in, last out:
       </p>
       <ol>
         <li><strong>Bottom layer:</strong> tent, sleeping bags, sleeping pads. You won&apos;t touch them until you&apos;re at the site.</li>
@@ -156,7 +156,7 @@ export default function Page() {
         <li><strong>Tent pad separate from the car parking.</strong> You don&apos;t want exhaust smell where you sleep.</li>
         <li><strong>Not a pull-through.</strong> Dead-end sites have less foot traffic.</li>
         <li><strong>Shade during the hot part of the day.</strong> A south-facing tent at 2pm is brutal.</li>
-        <li><strong>Avoid sites labeled &ldquo;walk-in&rdquo;</strong> — those are usually 100+ yards from parking.</li>
+        <li><strong>Avoid sites labeled &ldquo;walk-in&rdquo;</strong> - those are usually 100+ yards from parking.</li>
       </ul>
       <p>
         Photos on ReserveAmerica are mostly reliable. If a site looks good in photos, it&apos;s probably good. If it looks sketchy in photos, it is. For the broader site-selection workflow, see <Link href="/guides/how-to-plan-a-camping-trip">how to plan a camping trip</Link> from 3 weeks out.
@@ -167,16 +167,16 @@ export default function Page() {
         Established campgrounds are neighborhoods. You have neighbors ten feet away. A few things that keep everyone happy:
       </p>
       <ul>
-        <li><strong>Quiet hours are real.</strong> Usually 10pm–7am. The campground host will warn you once, then ticket you.</li>
+        <li><strong>Quiet hours are real.</strong> Usually 10pm-7am. The campground host will warn you once, then ticket you.</li>
         <li><strong>Don&apos;t cut through other people&apos;s sites</strong> to get to the bathroom. Walk the road.</li>
         <li><strong>Keep your dog on a leash even if it&apos;s friendly.</strong> Most campgrounds require it. Other dogs aren&apos;t always friendly.</li>
-        <li><strong>Food away, trash out.</strong> Bears and raccoons are opportunists — your neighbors pay the price if you&apos;re sloppy.</li>
+        <li><strong>Food away, trash out.</strong> Bears and raccoons are opportunists - your neighbors pay the price if you&apos;re sloppy.</li>
         <li><strong>Don&apos;t leave your fire unattended.</strong> Even a smoldering one. Drown it before bed.</li>
       </ul>
 
       <h2>The car-camping cooking setup</h2>
       <p>
-        Because your kitchen doesn&apos;t need to be portable, car camping cooking can be as good as anything you do at home — if you set it up right. A realistic two-zone kitchen on the picnic table:
+        Because your kitchen doesn&apos;t need to be portable, car camping cooking can be as good as anything you do at home - if you set it up right. A realistic two-zone kitchen on the picnic table:
       </p>
       <ul>
         <li><strong>Cooking zone:</strong> 2-burner stove at one end. Cutting board, knife, and oil next to it. Pot and pan nested on a small tray.</li>
@@ -189,12 +189,12 @@ export default function Page() {
 
       <h2>Car camping in the shoulder seasons</h2>
       <p>
-        Summer campgrounds are full. Shoulder seasons — April, May, late September, October — are the underrated sweet spot for car camping:
+        Summer campgrounds are full. Shoulder seasons - April, May, late September, October - are the underrated sweet spot for car camping:
       </p>
       <ul>
         <li><strong>Easier reservations.</strong> Premium sites that are booked six months out in July are wide open on a May weekend.</li>
-        <li><strong>Fewer bugs.</strong> Mosquitos and biting flies peak in June–August. October has essentially none.</li>
-        <li><strong>Better fire weather.</strong> Many western states ban campfires July–September. Shoulder-season fires are usually allowed.</li>
+        <li><strong>Fewer bugs.</strong> Mosquitos and biting flies peak in June-August. October has essentially none.</li>
+        <li><strong>Better fire weather.</strong> Many western states ban campfires July-September. Shoulder-season fires are usually allowed.</li>
         <li><strong>Nights actually cool.</strong> 65&deg;F and a sleeping bag beats 85&deg;F and sweating in a tent.</li>
         <li><strong>Fewer rowdy neighbors.</strong> Peak-summer campgrounds attract peak-summer crowds.</li>
       </ul>
@@ -213,7 +213,7 @@ export default function Page() {
       </p>
       <h3>Do I need 4WD?</h3>
       <p>
-        No. Standard sedans reach nearly all established campgrounds. 4WD only matters for primitive dispersed sites on rough forest roads — which you shouldn&apos;t be doing on a first trip anyway.
+        No. Standard sedans reach nearly all established campgrounds. 4WD only matters for primitive dispersed sites on rough forest roads - which you shouldn&apos;t be doing on a first trip anyway.
       </p>
       <h3>Can I sleep in my car instead of a tent?</h3>
       <p>
@@ -221,7 +221,7 @@ export default function Page() {
       </p>
       <h3>How much trunk space will the gear take?</h3>
       <p>
-        For a family of four on two nights, plan on a full mid-size SUV trunk or a hatchback with a roof bag. Tent, bags, cooler, stove, chairs, kitchen bin — it adds up fast.
+        For a family of four on two nights, plan on a full mid-size SUV trunk or a hatchback with a roof bag. Tent, bags, cooler, stove, chairs, kitchen bin - it adds up fast.
       </p>
     </GuidePage>
     <GuideGearShelf guideSlug="car-camping-beginner-guide" />

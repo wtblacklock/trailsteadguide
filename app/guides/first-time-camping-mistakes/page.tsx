@@ -13,7 +13,7 @@ const TITLE = 'First-Time Camping Mistakes'
 // SEO-optimized <title>; H1/headline keep TITLE.
 const META_TITLE = '12 First-Time Camping Mistakes to Avoid'
 const DESCRIPTION =
-  'The 12 most avoidable first-time camping mistakes — late arrivals, untested gear, no kid plan, gear bloat — and the simple fixes that prevent each one.'
+  'The 12 most avoidable first-time camping mistakes - late arrivals, untested gear, no kid plan, gear bloat - and the simple fixes that prevent each one.'
 const HERO_IMAGE = 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({
@@ -61,7 +61,7 @@ export default function Page() {
           },
           {
             q: 'What food mistakes do first-time campers make?',
-            a: 'Overambitious meals are the top mistake — dutch-oven breads, complex skillet dinners. Second: not bringing enough snacks. Third: bringing unfamiliar food that picky kids refuse. Stick to hot dogs, mac and cheese, and foil packets the first time.',
+            a: 'Overambitious meals are the top mistake - dutch-oven breads, complex skillet dinners. Second: not bringing enough snacks. Third: bringing unfamiliar food that picky kids refuse. Stick to hot dogs, mac and cheese, and foil packets the first time.',
           },
         ])}
       />
@@ -77,15 +77,15 @@ export default function Page() {
       slug="first-time-camping-mistakes"
       eyebrow="Mistakes"
       title="First-Time Camping Mistakes"
-      lede="We&apos;ve watched a lot of first trips go sideways. Here are the 12 most common, most avoidable mistakes — and what to do instead."
+      lede="We&apos;ve watched a lot of first trips go sideways. Here are the 12 most common, most avoidable mistakes - and what to do instead."
       heroImage={{
         src: HERO_IMAGE,
-        alt: 'Tent lit from inside at dusk at a family campsite — the classic late-arrival scramble that ruins first trips',
+        alt: 'Tent lit from inside at dusk at a family campsite - the classic late-arrival scramble that ruins first trips',
       }}
     >
       <QuickAnswer
         tldr="The trip-wreckers: arriving after dark, untested gear, overpacking, no kid plan, and complicated meals."
-        summary="The first-trip mistakes that cause every other problem are predictable: arriving after dark (the single biggest disaster — leave in the morning, arrive by 3pm), not testing gear in your yard first, booking too far from home, booking two nights instead of one, planning ambitious meals, ignoring the weather forecast, and assuming kids will entertain themselves. Smaller quiet mistakes still drain the fun: pitching on a slope, leaving food in the tent, wearing cotton, or forgetting a can opener. The fix isn't more gear — it's a smaller, closer trip with a tested template. A 70%-fun first trip beats a perfect one that never happens."
+        summary="The first-trip mistakes that cause every other problem are predictable: arriving after dark (the single biggest disaster - leave in the morning, arrive by 3pm), not testing gear in your yard first, booking too far from home, booking two nights instead of one, planning ambitious meals, ignoring the weather forecast, and assuming kids will entertain themselves. Smaller quiet mistakes still drain the fun: pitching on a slope, leaving food in the tent, wearing cotton, or forgetting a can opener. The fix isn't more gear - it's a smaller, closer trip with a tested template. A 70%-fun first trip beats a perfect one that never happens."
       />
       <h2>1. Arriving after dark</h2>
       <p>
@@ -94,7 +94,7 @@ export default function Page() {
 
       <h2>2. Not testing gear at home first</h2>
       <p>
-        That tent you bought two years ago at a Costco sale? Pitch it in the backyard. Pole might be snapped. Rainfly might be missing. You want to learn this in your driveway, not at dusk in the woods. Run a full <Link href="/plans/backyard-test">backyard tent test</Link> the weekend before — it surfaces missing pieces while the kitchen is still 30 feet away.
+        That tent you bought two years ago at a Costco sale? Pitch it in the backyard. Pole might be snapped. Rainfly might be missing. You want to learn this in your driveway, not at dusk in the woods. Run a full <Link href="/plans/backyard-test">backyard tent test</Link> the weekend before - it surfaces missing pieces while the kitchen is still 30 feet away.
       </p>
 
       <h2>3. Overpacking</h2>
@@ -104,7 +104,7 @@ export default function Page() {
 
       <h2>4. Underpacking warm layers</h2>
       <p>
-        Nights are 15–20°F colder than the daytime high. Everyone brings a fleece and a beanie. Everyone.
+        Nights are 15-20°F colder than the daytime high. Everyone brings a fleece and a beanie. Everyone.
       </p>
 
       <h2>5. Booking too far from home</h2>
@@ -119,7 +119,7 @@ export default function Page() {
 
       <h2>7. Complicated meals</h2>
       <p>
-        Skip the cast-iron dutch oven bread. Eat hot dogs, pasta, foil-packet dinners. Your job at camp is not to plate food — it&apos;s to feed people before they melt down.
+        Skip the cast-iron dutch oven bread. Eat hot dogs, pasta, foil-packet dinners. Your job at camp is not to plate food - it&apos;s to feed people before they melt down.
       </p>
 
       <h2>8. Ignoring the weather</h2>
@@ -144,7 +144,7 @@ export default function Page() {
 
       <h2>12. Planning it all yourself from scratch</h2>
       <p>
-        This is the mistake that causes the other eleven. The details are solved — campsite distance, gear list, meal plan, kid activities, weather-aware layers. <strong>Use a template.</strong> <Link href="/quiz">Take the 5-second quiz</Link> and we&apos;ll match a starter plan to your dates and party size. Edit it to fit your family. Go.
+        This is the mistake that causes the other eleven. The details are solved - campsite distance, gear list, meal plan, kid activities, weather-aware layers. <strong>Use a template.</strong> <Link href="/quiz">Take the 5-second quiz</Link> and we&apos;ll match a starter plan to your dates and party size. Edit it to fit your family. Go.
       </p>
 
       <h2>The quiet mistakes nobody warns you about</h2>
@@ -159,7 +159,7 @@ export default function Page() {
         <li><strong>Not checking the fire ban status.</strong> Many parks ban campfires in summer. Check the state&apos;s fire restrictions page the week before.</li>
         <li><strong>Forgetting a can opener.</strong> Chili in a can with no opener is a quiet tragedy.</li>
         <li><strong>Leaving the rainfly off &ldquo;because it&apos;s clear tonight.&rdquo;</strong> Dew soaks the tent by morning. Rainfly goes on, always.</li>
-        <li><strong>Burning everything in the fire pit.</strong> Plastic, foil, foam — these create toxic smoke you&apos;re breathing. Trash goes in the dumpster.</li>
+        <li><strong>Burning everything in the fire pit.</strong> Plastic, foil, foam - these create toxic smoke you&apos;re breathing. Trash goes in the dumpster.</li>
       </ul>
 
       <h2>What to do when things go wrong (and they will)</h2>
@@ -183,7 +183,7 @@ export default function Page() {
       </p>
       <ul>
         <li><strong>Trying to &ldquo;do camping right.&rdquo;</strong> There&apos;s no right. Car camping with hot dogs and a tablecloth is camping. So is minimalist backpacking. Pick the easiest version.</li>
-        <li><strong>Treating it as a test of your family.</strong> It isn&apos;t. If the kids cry, the trip isn&apos;t failing — it&apos;s just a kid crying. They do that at home too.</li>
+        <li><strong>Treating it as a test of your family.</strong> It isn&apos;t. If the kids cry, the trip isn&apos;t failing - it&apos;s just a kid crying. They do that at home too.</li>
         <li><strong>Buying your way to confidence.</strong> $800 of new gear doesn&apos;t make you better at camping. Going camping makes you better at camping.</li>
         <li><strong>Comparing to Instagram camping.</strong> Those photos are a 15-second slice of a 48-hour trip, 90% of which was logistics and dirt. Your reality is normal.</li>
         <li><strong>Needing it to be perfect.</strong> A trip that was 70% fun is a great trip. Nothing will be 100%.</li>
@@ -215,7 +215,7 @@ export default function Page() {
       </p>
       <h3>Should I tell the ranger it&apos;s my first trip?</h3>
       <p>
-        Yes. Every campground host and ranger we&apos;ve met is happy to help first-timers — they&apos;d rather answer questions at check-in than respond to problems at 11pm. Ask about the fire policy, the nearest store, and whether there&apos;s a site you should avoid.
+        Yes. Every campground host and ranger we&apos;ve met is happy to help first-timers - they&apos;d rather answer questions at check-in than respond to problems at 11pm. Ask about the fire policy, the nearest store, and whether there&apos;s a site you should avoid.
       </p>
       <h3>What&apos;s the most common injury at a family campground?</h3>
       <p>

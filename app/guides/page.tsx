@@ -9,9 +9,9 @@ import {
 import type { GuideCategory } from '@/lib/guides'
 
 const GUIDES_TITLE = 'Camping Guides'
-const GUIDES_META_TITLE = 'Camping Guides for Beginners — All Topics'
+const GUIDES_META_TITLE = 'Camping Guides for Beginners - All Topics'
 const GUIDES_DESCRIPTION =
-  'Camping guides for beginners: 24 step-by-step articles on basics, scenarios, seasons, and locations — each routing into a personalized trip plan.'
+  'Camping guides for beginners: 24 step-by-step articles on basics, scenarios, seasons, and locations - each routing into a personalized trip plan.'
 
 export const metadata = pageMetadata({
   title: GUIDES_META_TITLE,
@@ -49,10 +49,10 @@ export default function Page() {
           A structured path to your first trip.
         </h1>
         <p className="mt-6 text-lg md:text-xl text-stone-600 leading-relaxed max-w-2xl">
-          Pick a category. Each one walks you through a different angle on family camping — and ends in a plan made for your trip.
+          Pick a category. Each one walks you through a different angle on family camping - and ends in a plan made for your trip.
         </p>
         <p className="mt-4 text-base text-stone-500 leading-relaxed max-w-2xl">
-          Twenty-four guides cover the basics of car camping, seasonal conditions like winter and spring trips, specific scenarios like camping with kids or dogs, and beginner-friendly locations across the US. Each guide is written for families on their first or second trip — no experience assumed, no gear jargon.
+          Twenty-four guides cover the basics of car camping, seasonal conditions like winter and spring trips, specific scenarios like camping with kids or dogs, and beginner-friendly locations across the US. Each guide is written for families on their first or second trip - no experience assumed, no gear jargon.
         </p>
       </header>
 
@@ -75,7 +75,7 @@ export default function Page() {
             Build the moves your guides assume.
           </h2>
           <p className="text-stone-600 leading-relaxed text-lg mb-8">
-            Every camping guide assumes you can pitch a tent, start a fire, and tie one or two knots that hold a tarp through wind. Each skill below is a short walkthrough — read once, then practice in the backyard.
+            Every camping guide assumes you can pitch a tent, start a fire, and tie one or two knots that hold a tarp through wind. Each skill below is a short walkthrough - read once, then practice in the backyard.
           </p>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
             {[
@@ -129,7 +129,7 @@ export default function Page() {
             Get Your Camping Plan.
           </h2>
           <p className="text-stone-300 text-lg mb-8 max-w-xl">
-            Answer 6 questions. Get a full trip plan — timeline, gear, meals, activities — in about 2 minutes.
+            Answer 6 questions. Get a full trip plan - timeline, gear, meals, activities - in about 2 minutes.
           </p>
           <Link
             href="/quiz"

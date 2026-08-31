@@ -9,13 +9,13 @@ type Props = {
   printHref: string
 }
 
-// Per-pageview dismissal key — cleared on mount so each fresh printable
+// Per-pageview dismissal key - cleared on mount so each fresh printable
 // view shows the bar; only an explicit X click in the current view
 // suppresses it for the rest of the session on this slug.
 const STORAGE_KEY = 'tsg:printable-floating-dismissed-v1'
 
 /**
- * Floating bottom bar — renders on every printable landing page from
+ * Floating bottom bar - renders on every printable landing page from
  * initial mount. Mirrors the FloatingEmailBar pattern used on plan pages
  * so every download/capture surface across the site reads as the same
  * family.

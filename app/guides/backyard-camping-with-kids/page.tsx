@@ -10,7 +10,7 @@ import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
 
 const SLUG = '/guides/backyard-camping-with-kids'
 const TITLE = 'Backyard Camping with Kids'
-const META_TITLE = 'Backyard Camping with Kids — How to Do It Right'
+const META_TITLE = 'Backyard Camping with Kids - How to Do It Right'
 const DESCRIPTION =
   'How to set up a backyard camping night that kids will love: tent setup, campfire alternatives, activities, and how to use it as a dress rehearsal for a real trip.'
 const HERO_IMAGE =
@@ -56,7 +56,7 @@ export default function Page() {
           },
           {
             q: 'Is backyard camping a good idea for toddlers?',
-            a: 'Yes — it is the ideal introduction to tent sleeping for toddlers. The safety net of being at home means you can bail at 2am without a big consequence. Most toddlers love the novelty of sleeping in the tent. The ones who don\'t will tell you that immediately, which is more valuable information at home than at a campsite.',
+            a: 'Yes - it is the ideal introduction to tent sleeping for toddlers. The safety net of being at home means you can bail at 2am without a big consequence. Most toddlers love the novelty of sleeping in the tent. The ones who don\'t will tell you that immediately, which is more valuable information at home than at a campsite.',
           },
         ])}
       />
@@ -71,7 +71,7 @@ export default function Page() {
         slug="backyard-camping-with-kids"
         eyebrow="Getting started"
         title="Backyard Camping with Kids"
-        lede="The smartest move before your first real camping trip — how to run a backyard night that shakes out gear issues, excites kids, and costs nothing."
+        lede="The smartest move before your first real camping trip - how to run a backyard night that shakes out gear issues, excites kids, and costs nothing."
         heroImage={{
           src: HERO_IMAGE,
           alt: 'Kids helping pitch a tent in a backyard with camping gear laid out',
@@ -104,7 +104,7 @@ export default function Page() {
 
         <h3>Pitch the real tent</h3>
         <p>
-          Not a play tent, not a pop-up beach shelter — the actual tent you are taking on the trip. This is the dress rehearsal. If pitching the tent in good weather with no time pressure is confusing, the instructions are somewhere, and you can fix it tonight. You should not be reading the manual at 6pm at a campsite.
+          Not a play tent, not a pop-up beach shelter - the actual tent you are taking on the trip. This is the dress rehearsal. If pitching the tent in good weather with no time pressure is confusing, the instructions are somewhere, and you can fix it tonight. You should not be reading the manual at 6pm at a campsite.
         </p>
         <p>
           Time the pitch: if it takes more than 20 minutes, practice until it takes 10. Two adults pitching a 6-person tent in 10 minutes is a realistic goal for most tent models after two practices. Put the kids to work: they can carry stakes, hold a pole upright, and stuff the fly back into the bag.
@@ -125,7 +125,7 @@ export default function Page() {
 
         <h3>One structured evening activity</h3>
         <p>
-          After dinner, before dark: one activity you will actually do at camp. A nature scavenger hunt around the yard (modify for whatever is findable in your outdoor space), a campfire story chain, or a flashlight tag once it gets dark. This tests whether the activity actually works with your kids, and it signals that backyard camping has structure — it&apos;s not just sleeping outside.
+          After dinner, before dark: one activity you will actually do at camp. A nature scavenger hunt around the yard (modify for whatever is findable in your outdoor space), a campfire story chain, or a flashlight tag once it gets dark. This tests whether the activity actually works with your kids, and it signals that backyard camping has structure - it&apos;s not just sleeping outside.
         </p>
         <p>
           See the <Link href="/activities/camping-activities-for-kids">camping activities for kids</Link> list for options that work in a backyard with no trails or forest.
@@ -133,7 +133,7 @@ export default function Page() {
 
         <h3>Stargazing as the wind-down</h3>
         <p>
-          Lay out a blanket, turn off yard lights, and spend 15 minutes looking at the sky before bed. You don&apos;t need to know the constellations — pointing at stars and making up names for them is perfectly adequate. This builds a sky-watching habit that pays off at the real campsite, which will have much better darkness.
+          Lay out a blanket, turn off yard lights, and spend 15 minutes looking at the sky before bed. You don&apos;t need to know the constellations - pointing at stars and making up names for them is perfectly adequate. This builds a sky-watching habit that pays off at the real campsite, which will have much better darkness.
         </p>
 
         <h3>Set and enforce tent rules</h3>
@@ -157,7 +157,7 @@ export default function Page() {
         </p>
         <ul>
           <li>If a child is genuinely scared and distressed at 11pm, bring them inside. Don&apos;t make backyard camping a traumatic memory.</li>
-          <li>If the weather turns bad (thunder, heavy rain), it&apos;s okay to move inside. You will have the rain at camp experience eventually — tonight doesn&apos;t have to be it.</li>
+          <li>If the weather turns bad (thunder, heavy rain), it&apos;s okay to move inside. You will have the rain at camp experience eventually - tonight doesn&apos;t have to be it.</li>
           <li>If the youngest child absolutely refuses to sleep in the tent and nothing works, that is important information. Better to know it tonight than on a real trip.</li>
         </ul>
         <p>
@@ -172,10 +172,10 @@ export default function Page() {
           <li>Did everyone sleep reasonably well, or is there a specific problem to solve?</li>
           <li>Were there any gear surprises (broken zippers, deflated pads, missing pieces)?</li>
           <li>Did the tent stay dry (look for pooling or condensation inside)?</li>
-          <li>Did the stove work cleanly — no ignition issues, no fuel-level surprises?</li>
+          <li>Did the stove work cleanly - no ignition issues, no fuel-level surprises?</li>
           <li>Does anyone have a headlamp that needs new batteries?</li>
           <li>Are there any items on the gear list you realized you&apos;re missing?</li>
-          <li>Did the kids actually enjoy it — and what specifically did they enjoy most?</li>
+          <li>Did the kids actually enjoy it - and what specifically did they enjoy most?</li>
         </ul>
         <p>
           The answers to these questions shape your real trip. Fix the gear issues, lean into what the kids loved, and adjust anything that didn&apos;t work.
@@ -189,7 +189,7 @@ export default function Page() {
           The right next step after a successful backyard night is a one-night trip at a nearby state park. Use the <Link href="/plans/first-night-camp">First Night Camp</Link> plan if you want a structured guide to that first real overnight.
         </p>
         <p>
-          If you want a full plan matched to your family&apos;s situation — ages, gear level, and how far you want to travel — <Link href="/quiz">take the 2-minute quiz</Link>. The plan includes a day-by-day schedule, gear list, and meal ideas.
+          If you want a full plan matched to your family&apos;s situation - ages, gear level, and how far you want to travel - <Link href="/quiz">take the 2-minute quiz</Link>. The plan includes a day-by-day schedule, gear list, and meal ideas.
         </p>
 
         <h2>Backyard camping without a yard</h2>
@@ -199,7 +199,7 @@ export default function Page() {
         <ul>
           <li><strong>Living room tent pitch.</strong> Set up the tent in the living room and sleep in it. Loses the outdoor cooking element but gets the gear-test and tent-sleeping goals done.</li>
           <li><strong>A neighbor&apos;s yard or friend&apos;s property.</strong> If you know someone with a yard, a sleepover camping night there gives the outdoor element back.</li>
-          <li><strong>A local park or green space (check rules).</strong> Some city parks allow tent pitching during the day. You can&apos;t sleep there, but you can pitch, test gear, cook on a portable stove, and pack up — enough to shake out the main gear issues.</li>
+          <li><strong>A local park or green space (check rules).</strong> Some city parks allow tent pitching during the day. You can&apos;t sleep there, but you can pitch, test gear, cook on a portable stove, and pack up - enough to shake out the main gear issues.</li>
           <li><strong>A nearby city campground or county park.</strong> Many metro areas have campgrounds within 30 minutes. These are low-stakes enough to function as a dress rehearsal while still being a &ldquo;real&rdquo; camping night.</li>
         </ul>
 
@@ -211,7 +211,7 @@ export default function Page() {
         <h3>What should kids bring for backyard camping?</h3>
         <p>The exact gear they will bring on the real trip: their sleeping bag, pad, headlamp, and pajamas. The point is to test the gear.</p>
         <h3>Is backyard camping a good idea for toddlers?</h3>
-        <p>Yes — the best introduction for toddlers. The house is a safety net. Most toddlers love the novelty; the ones who don&apos;t will make it clear immediately, which is useful information to have at home. For the real trip afterward, see <Link href="/guides/camping-with-toddlers">camping with toddlers</Link> for the nap, containment, and sleep-setup logistics.</p>
+        <p>Yes - the best introduction for toddlers. The house is a safety net. Most toddlers love the novelty; the ones who don&apos;t will make it clear immediately, which is useful information to have at home. For the real trip afterward, see <Link href="/guides/camping-with-toddlers">camping with toddlers</Link> for the nap, containment, and sleep-setup logistics.</p>
       </GuidePage>
       <GuideGearShelf guideSlug="backyard-camping-with-kids" />
       <GuideArticleCTA />

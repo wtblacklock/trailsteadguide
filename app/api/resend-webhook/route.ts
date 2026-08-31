@@ -3,7 +3,7 @@ import crypto from 'node:crypto'
 
 export const runtime = 'nodejs'
 
-const TIMESTAMP_TOLERANCE_SECONDS = 300 // 5 minutes — Svix recommendation
+const TIMESTAMP_TOLERANCE_SECONDS = 300 // 5 minutes - Svix recommendation
 
 type ResendEvent = {
   type?: string
@@ -25,9 +25,9 @@ type ResendEvent = {
  * Verifies a Svix-style signed webhook (the format Resend uses).
  *
  * Header contract:
- *   svix-id        — unique message id
- *   svix-timestamp — unix seconds
- *   svix-signature — space-separated list of "v1,<base64>" entries
+ *   svix-id        - unique message id
+ *   svix-timestamp - unix seconds
+ *   svix-signature - space-separated list of "v1,<base64>" entries
  *
  * Secret format `whsec_<base64>`. The bytes after the prefix are
  * base64-decoded to produce the raw HMAC key.
@@ -90,7 +90,7 @@ function recipientsOf(event: ResendEvent): string {
  * Receives signed delivery events from Resend. Logs hard bounces and spam
  * complaints to stdout where they're picked up by Vercel logs. Resend
  * suppresses bounced/complained addresses on its side automatically, so
- * we don't keep a second suppression list — this endpoint is the audit
+ * we don't keep a second suppression list - this endpoint is the audit
  * trail and the future seam for Kit-side deactivation.
  *
  * Set RESEND_WEBHOOK_SECRET (Resend dashboard → Webhooks → reveal secret).

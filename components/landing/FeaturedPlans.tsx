@@ -6,7 +6,7 @@ import type { PlanSlug } from '@/types'
 /**
  * Plan order and per-card hook copy per the homepage spec. The hook is a
  * shorter beat than PlanTemplate.tagline (which leans into trip narrative);
- * this wording is the routing-system version — outcome + scenario in one
+ * this wording is the routing-system version - outcome + scenario in one
  * line.
  */
 const FEATURED_ORDER: { slug: PlanSlug; hook: string }[] = [

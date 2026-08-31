@@ -4,7 +4,7 @@ import type { AffiliateProduct, PlanSlug } from '@/types'
  * Affiliate product registry.
  *
  * The first block (no `deprecated` flag) is the active recommendation
- * set — these are what render on guide gear shelves, the quiz results
+ * set - these are what render on guide gear shelves, the quiz results
  * `<AffiliateBlock>`, and the Trip Pack PDF bundles. Sourced from the
  * curated worksheet in `data/affiliate-coverage.csv`.
  *
@@ -15,13 +15,13 @@ import type { AffiliateProduct, PlanSlug } from '@/types'
  */
 export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
   // ------------------------------------------------------------------
-  // Active recommendation set — sourced from data/affiliate-coverage.csv
+  // Active recommendation set - sourced from data/affiliate-coverage.csv
   // ------------------------------------------------------------------
   {
     id: 'coleman-sundome-4p',
     name: 'Coleman Sundome 4-Person',
     description:
-      'Best-selling family dome tent. 9×7 ft floor, weatherproof, fits a queen air bed. Sets up in under 15 minutes. Coleman makes the Sundome in 2/3/4/6-person sizes — the price scales with capacity, so pick the size that matches how you want to set up your campsite.',
+      'Best-selling family dome tent. 9×7 ft floor, weatherproof, fits a queen air bed. Sets up in under 15 minutes. Coleman makes the Sundome in 2/3/4/6-person sizes - the price scales with capacity, so pick the size that matches how you want to set up your campsite.',
     amazonAsin: 'B0D7QHY574',
     affiliateUrl: 'https://www.amazon.com/Coleman-Weatherproof-Festivals-Backyard-Sleepovers/dp/B014LSDUA8?crid=3MOAVIUB84GDZ&dib=eyJ2IjoiMSJ9.0tQWSmCU69vhKp5wEzg7z70DSRLn7xdDafF8ubM9ecUO7JaFy8khwwmXNOXM6y178YQZFX4aeoYuU84CD5klfXdQtwMdYCjxsiHTPU4DAqe66bM8u1MCb2fPvvc7uXZkvRC-R_bHFo5JTCJsRtGVCvhUToRQN_VQYaFUoQvdokAp0KHng1QoaOULTckEzleB41Mv-Lkq6skuFw2bXkuGnWruuTk5g68ihWeazZ60eJQ.BiVIwtlKXEkmKlfIrIRnWrA7ZAaJa83-r5-68kU1R48&dib_tag=se&keywords=coleman%2Bsundome%2B4-person%2Btent&qid=1777560530&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=coleman%2Bsund%2Caps%2C168&sr=8-3&th=1&linkCode=ll2&tag=trailsteadgui-20&linkId=cd38bd0b52000c5b15696eb881e6c92d&language=en_US&ref_=as_li_ss_tl',
     imageUrl: 'https://m.media-amazon.com/images/I/71wxEg6ubCL._AC_SL1500_.jpg',
@@ -35,7 +35,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     id: 'core-6p-instant-cabin',
     name: 'CORE 6-Person Instant Cabin Tent',
     description:
-      'Pop-up cabin tent for 6+. 60-second setup, near-vertical walls, fits two queen air beds. The size-up pick when you want room to stand. Replaces the discontinued Fanttik Zeta C6 Pro — same footprint and setup speed, and one of the best-reviewed instant cabin tents on Amazon (1,000+ ratings).',
+      'Pop-up cabin tent for 6+. 60-second setup, near-vertical walls, fits two queen air beds. The size-up pick when you want room to stand. Replaces the discontinued Fanttik Zeta C6 Pro - same footprint and setup speed, and one of the best-reviewed instant cabin tents on Amazon (1,000+ ratings).',
     amazonAsin: 'B00VFGKUIK',
     affiliateUrl: 'https://amzn.to/4hYGaE3',
     imageUrl: 'https://m.media-amazon.com/images/I/51L7HMRfM3L._AC_SX679_.jpg',
@@ -203,7 +203,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     id: 'luminaid-packlite-max',
     name: 'LuminAid PackLite Max 2-in-1',
     description:
-      'Inflatable solar lantern + phone charger. Bright, packable, and weather-resistant — pulls double duty.',
+      'Inflatable solar lantern + phone charger. Bright, packable, and weather-resistant - pulls double duty.',
     amazonAsin: 'B08JX5STJ6',
     affiliateUrl: 'https://www.amazon.com/Camping-Lantern-Solar-Phone-Charger/dp/B08JX5STJ6?crid=2V0N7H24Y51QX&dib=eyJ2IjoiMSJ9.bE_Y7oRAONyEn8g7g80JySNWYW6-F9x1pZERcPSu0wM_Nyp4r_4kQNv2ANHrSDBkmVb-X_UaVuZ9M-3YHA4LrA5JJsrEuVaR9wHLOXMAVWJtDbBAPuGJKGYJIvaYn0GPRn6s4GtFT1beLReg_TKOHkpAS_EB_KDYMS4gTtq9pBmpVlgnW20pxj_pezP5CrshYwUSKD2LJIXGXsgWK3isXdH6GIGdnqBoWmPmWOaSeVSr74N-RNmyoG63TQ0r-I0ct7Q0MJwkGp3GTuDgFQluPcaMePTvVA3bQu5wYEkgSmw.n-D9h1CDB0HVV011xXZwR_E2qPfz7UEhwwCL31vnZ7U&dib_tag=se&keywords=LuminAid+Packlite+Max+2-in-1&qid=1777559482&s=sporting-goods&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=luminaid+packlite+max+2-in-1+%2Csporting%2C158&sr=1-6&linkCode=ll2&tag=trailsteadgui-20&linkId=babddd1fd95a01677d30fc48cf0457e6&language=en_US&ref_=as_li_ss_tl',
     imageUrl: 'https://m.media-amazon.com/images/I/717hSIbDzlL._AC_SL1500_.jpg',
@@ -371,7 +371,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     id: 'rab-ionosphere-5-5',
     name: 'Rab Ionosphere 5.5',
     description:
-      'Insulated backpacking pad with R-value 5.5 — cuts the cold from the ground on shoulder-season and altitude trips. The pair for the Mad River 0.',
+      'Insulated backpacking pad with R-value 5.5 - cuts the cold from the ground on shoulder-season and altitude trips. The pair for the Mad River 0.',
     amazonAsin: 'B0BNX4QNGW',
     affiliateUrl: 'https://www.amazon.com/RAB-Ionosphere-Lightweight-Insulated-Backpacking/dp/B0BNX4QNGW?crid=RC7IF1JBE5QP&dib=eyJ2IjoiMSJ9.wgoH0-Zk5GV52paruXR0YQ.dBzbneh3saeeVaCh5rxeASccW9UgvaCccocFTWRoRNA&dib_tag=se&keywords=Rab%2BIonosphere%2B5.5&qid=1777573278&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=rab%2Bionosphere%2B5.5%2Caps%2C170&sr=8-1&th=1&linkCode=ll2&tag=trailsteadgui-20&linkId=6b03245ffac043485e9d2602475daca3&language=en_US&ref_=as_li_ss_tl',
     imageUrl: 'https://m.media-amazon.com/images/I/412NOySu6EL._AC_.jpg',
@@ -441,7 +441,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     id: 'thtybros-cookware-mess-kit',
     name: 'THTYBROS 17-Piece Camping Cookware Mess Kit',
     description:
-      'Pot, kettle, and frying pan plus 2 sets of cups, plates, and utensils — enough to cook and eat a real meal for two without packing the kitchen. Nests into its own carry bag.',
+      'Pot, kettle, and frying pan plus 2 sets of cups, plates, and utensils - enough to cook and eat a real meal for two without packing the kitchen. Nests into its own carry bag.',
     amazonAsin: 'B0D2KF98MC',
     affiliateUrl: 'https://amzn.to/4daCSKt',
     imageUrl: 'https://m.media-amazon.com/images/I/71+w63znCVL._AC_SX679_.jpg',
@@ -469,7 +469,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     id: 'fwc-trash-can-wakeman',
     name: 'Wakeman Outdoor Collapsible Trash Can',
     description:
-      'Folds flat, pops open at camp. 46-gallon capacity with a zippered lid and stakes to keep it put — keeps the site tidy and critter-resistant.',
+      'Folds flat, pops open at camp. 46-gallon capacity with a zippered lid and stakes to keep it put - keeps the site tidy and critter-resistant.',
     amazonAsin: 'B0CHKGXSQ6',
     imageUrl: 'https://m.media-amazon.com/images/I/913OeuUhboL._AC_SL1500_.jpg',
     category: 'convenience',
@@ -480,10 +480,10 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
   },
 
   // ------------------------------------------------------------------
-  // Skills gear — referenced from lib/skills/data.ts `relatedGear`.
+  // Skills gear - referenced from lib/skills/data.ts `relatedGear`.
   // These are enthusiast/topic-specific picks named in the skill content
   // itself, not part of the car-camping gear-shelf catalog above, so no
-  // `slot` or `templateSlugs`. No verified ASIN from this environment —
+  // `slot` or `templateSlugs`. No verified ASIN from this environment -
   // each resolves via `getProductUrl()`'s tagged Amazon search fallback
   // instead of a direct product page. Swap in a real ASIN + image when
   // one is verified.
@@ -492,7 +492,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     id: 'opinel-no7-folding-knife',
     name: 'Opinel No.7 Carbon Steel Folding Knife',
     description:
-      'The standard first "real" knife recommendation — carbon-steel blade, beechwood handle, twist-lock collar. Cheap enough to not worry about, sharp enough to actually learn on.',
+      'The standard first "real" knife recommendation - carbon-steel blade, beechwood handle, twist-lock collar. Cheap enough to not worry about, sharp enough to actually learn on.',
     amazonAsin: 'B000UV4NUW',
     imageUrl: '',
     category: 'essential',
@@ -515,7 +515,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     id: 'reflective-guyline-50ft',
     name: 'Reflective Guy Line, 50 ft',
     description:
-      'Thin, high-visibility cord that catches headlamp light — the point of a tautline hitch and rainfly guyline is to not trip over it in the dark.',
+      'Thin, high-visibility cord that catches headlamp light - the point of a tautline hitch and rainfly guyline is to not trip over it in the dark.',
     amazonAsin: 'B078L3W42R',
     imageUrl: '',
     category: 'essential',
@@ -526,7 +526,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     id: 'suunto-a10-compass',
     name: 'Suunto A-10 Baseplate Compass',
     description:
-      'The most-recommended beginner baseplate compass — clear housing, simple bezel, no bells and whistles to fumble with while learning to orient a map.',
+      'The most-recommended beginner baseplate compass - clear housing, simple bezel, no bells and whistles to fumble with while learning to orient a map.',
     amazonAsin: 'B00TRB49PK',
     imageUrl: '',
     category: 'essential',
@@ -537,7 +537,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     id: 'eno-doublenest-hammock',
     name: 'ENO DoubleNest Hammock',
     description:
-      'The best-known car-camping and backpacking hammock — packs to the size of a grapefruit, holds two, and is most people’s first hammock.',
+      'The best-known car-camping and backpacking hammock - packs to the size of a grapefruit, holds two, and is most people’s first hammock.',
     amazonAsin: 'B01GTP417C',
     imageUrl: '',
     category: 'comfort',
@@ -548,7 +548,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     id: 'gsi-pinnacle-camper-cookset',
     name: 'GSI Outdoors Pinnacle Camper Cookset',
     description:
-      'Nesting pot, pan, and two insulated mugs in one compact set — built for one-pot car-camping meals for two.',
+      'Nesting pot, pan, and two insulated mugs in one compact set - built for one-pot car-camping meals for two.',
     amazonAsin: 'B006ERS6OU',
     imageUrl: '',
     category: 'comfort',
@@ -559,7 +559,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     id: 'lodge-cast-iron-skillet',
     name: 'Lodge 10.25" Cast Iron Skillet',
     description:
-      'Pre-seasoned, made in the USA, and the default answer whenever cast iron comes up — outlasts every nonstick pan and gets better with use.',
+      'Pre-seasoned, made in the USA, and the default answer whenever cast iron comes up - outlasts every nonstick pan and gets better with use.',
     amazonAsin: 'B00006JSUA',
     imageUrl: '',
     category: 'comfort',
@@ -570,7 +570,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     id: 'heavy-duty-aluminum-foil',
     name: 'Reynolds Wrap Heavy-Duty Aluminum Foil (2-Pack)',
     description:
-      'Thicker than standard household foil — holds up to double-wrapping a foil-packet meal on a campfire grate without tearing.',
+      'Thicker than standard household foil - holds up to double-wrapping a foil-packet meal on a campfire grate without tearing.',
     amazonAsin: 'B0D14YNCF9',
     affiliateUrl: 'https://www.amazon.com/dp/B0D14YNCF9?tag=trailsteadgui-20&linkCode=ll1&ref_=as_li_ss_tl',
     imageUrl: 'https://m.media-amazon.com/images/I/61qUnHW0p0L._AC_SX679_.jpg',
@@ -582,7 +582,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     id: 'camp-grill-tongs',
     name: 'HINMAY 16" Long-Handled Grill Tongs',
     description:
-      'Stainless, 16"+ reach — keeps hands off a campfire grate when turning foil packets or flipping over coals.',
+      'Stainless, 16"+ reach - keeps hands off a campfire grate when turning foil packets or flipping over coals.',
     amazonAsin: 'B087CM37DP',
     affiliateUrl: 'https://www.amazon.com/dp/B087CM37DP?tag=trailsteadgui-20&linkCode=ll1&ref_=as_li_ss_tl',
     imageUrl: 'https://m.media-amazon.com/images/I/61UAljpFWtL._AC_SX679_.jpg',
@@ -608,7 +608,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     id: 'esbit-fire-cubes',
     name: 'Esbit Fire Starter Cubes',
     description:
-      'Solid fuel tablets that light with a single match and burn hot for several minutes — reliable kindling in wet or wind-scoured conditions.',
+      'Solid fuel tablets that light with a single match and burn hot for several minutes - reliable kindling in wet or wind-scoured conditions.',
     amazonAsin: 'B005NGMJLY',
     affiliateUrl: 'https://www.amazon.com/dp/B005NGMJLY?tag=trailsteadgui-20&linkCode=ll1&ref_=as_li_ss_tl',
     imageUrl: 'https://m.media-amazon.com/images/I/81kfVbL68ML._AC_SX679_.jpg',
@@ -622,7 +622,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     id: 'black-diamond-trekking-poles',
     name: 'Black Diamond Trail Ergo Cork Trekking Poles',
     description:
-      'Cork grips, adjustable length, and the most commonly recommended beginner trekking pole — takes real load off knees on descents.',
+      'Cork grips, adjustable length, and the most commonly recommended beginner trekking pole - takes real load off knees on descents.',
     amazonAsin: 'B07YLT6DSQ',
     imageUrl: '',
     category: 'comfort',
@@ -633,7 +633,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     id: 'pull-through-knife-sharpener',
     name: 'Pull-Through Knife Sharpener',
     description:
-      'Two-stage carbide/ceramic pull-through sharpener — no angle-guessing, gets a camp knife working-sharp in a few passes.',
+      'Two-stage carbide/ceramic pull-through sharpener - no angle-guessing, gets a camp knife working-sharp in a few passes.',
     amazonAsin: 'B001CR10RW',
     imageUrl: '',
     category: 'essential',
@@ -644,7 +644,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     id: 'mineral-oil-food-safe',
     name: 'Food-Safe Mineral Oil',
     description:
-      'Odorless, non-toxic oil for wiping down a carbon-steel blade after cleaning — the standard rust-prevention step for a camp knife.',
+      'Odorless, non-toxic oil for wiping down a carbon-steel blade after cleaning - the standard rust-prevention step for a camp knife.',
     amazonAsin: 'B09MXDBNNL',
     imageUrl: '',
     category: 'essential',
@@ -655,7 +655,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     id: 'planisphere',
     name: 'The Night Sky 30°-40° Star Finder',
     description:
-      'A rotating star chart sized for your latitude — dial in the date and time and it shows exactly what’s overhead. No batteries, works in the cold.',
+      'A rotating star chart sized for your latitude - dial in the date and time and it shows exactly what’s overhead. No batteries, works in the cold.',
     amazonAsin: '1891938029',
     affiliateUrl: 'https://www.amazon.com/dp/1891938029?tag=trailsteadgui-20&linkCode=ll1&ref_=as_li_ss_tl',
     imageUrl: 'https://m.media-amazon.com/images/I/51lvsqIE0YL.jpg',
@@ -667,7 +667,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     id: 'celestron-outland-binoculars',
     name: 'Celestron Outland X 8x42 Binoculars',
     description:
-      'The usual first recommendation before buying a telescope — enough magnification to resolve Jupiter’s moons and Saturn’s shape on a clear night.',
+      'The usual first recommendation before buying a telescope - enough magnification to resolve Jupiter’s moons and Saturn’s shape on a clear night.',
     amazonAsin: 'B004KM82IQ',
     imageUrl: '',
     category: 'comfort',
@@ -678,7 +678,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     id: 'leukotape-blister-prevention',
     name: 'Leukotape P Blister Prevention Tape',
     description:
-      'Rigid, ultra-sticky athletic tape — applied to hot spots before they become blisters, and the standard answer on hiking forums for "what actually works."',
+      'Rigid, ultra-sticky athletic tape - applied to hot spots before they become blisters, and the standard answer on hiking forums for "what actually works."',
     amazonAsin: 'B000E59HXC',
     imageUrl: '',
     category: 'essential',
@@ -689,7 +689,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     id: 'sawyer-squeeze-water-filter',
     name: 'Sawyer Squeeze Water Filter',
     description:
-      'The most-recommended backpacking and camping water filter — squeeze bag + hollow-fiber filter removes bacteria and protozoa from any freshwater source.',
+      'The most-recommended backpacking and camping water filter - squeeze bag + hollow-fiber filter removes bacteria and protozoa from any freshwater source.',
     amazonAsin: 'B01MY8CBXB',
     imageUrl: '',
     category: 'essential',
@@ -700,7 +700,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     id: 'zebco-33-spincast-combo',
     name: 'Zebco 33 Spincast Combo',
     description:
-      'The classic beginner rod-and-reel combo — closed-face reel means no backlash to untangle while learning to cast.',
+      'The classic beginner rod-and-reel combo - closed-face reel means no backlash to untangle while learning to cast.',
     amazonAsin: 'B08MM4TX1X',
     imageUrl: '',
     category: 'essential',
@@ -722,7 +722,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     id: 'lodge-dutch-oven',
     name: 'Lodge 10-inch Camp Dutch Oven (with lid lip)',
     description:
-      'Pre-seasoned cast iron with three legs and a flanged lid for stacking coals on top — the standard tool for camp baking and low-and-slow one-pot meals.',
+      'Pre-seasoned cast iron with three legs and a flanged lid for stacking coals on top - the standard tool for camp baking and low-and-slow one-pot meals.',
     amazonAsin: 'B004W4TXZI',
     imageUrl: '',
     category: 'comfort',
@@ -733,7 +733,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     id: 'monofilament-fishing-line-8lb',
     name: 'Monofilament Fishing Line, 8 lb Test',
     description:
-      'Pre-spooled, beginner-friendly monofilament — forgiving for learning knots and casting, and the standard line weight for panfish and bass off a dock or shore.',
+      'Pre-spooled, beginner-friendly monofilament - forgiving for learning knots and casting, and the standard line weight for panfish and bass off a dock or shore.',
     amazonAsin: 'B0000AV1LI',
     imageUrl: '',
     category: 'essential',
@@ -744,7 +744,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     id: 'fishing-forceps-hemostat',
     name: 'Fishing Forceps / Hemostat',
     description:
-      'Locking forceps for backing a hook out cleanly — the single tool that makes catch-and-release actually low-stress for the fish.',
+      'Locking forceps for backing a hook out cleanly - the single tool that makes catch-and-release actually low-stress for the fish.',
     amazonAsin: 'B088PBNSWR',
     imageUrl: '',
     category: 'essential',
@@ -755,7 +755,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     id: 'coleman-xtreme-50-cooler',
     name: 'Coleman 50-Quart Xtreme Wheeled Cooler',
     description:
-      'The budget-tier cooler pick — keeps ice up to 5 days, wheels for the walk from the car, no rotomolded price tag. The right call when a cooler just needs to work.',
+      'The budget-tier cooler pick - keeps ice up to 5 days, wheels for the walk from the car, no rotomolded price tag. The right call when a cooler just needs to work.',
     affiliateUrl: 'https://amzn.to/45YaiIp',
     imageUrl: 'https://m.media-amazon.com/images/I/31vvJgd+FpL._AC_.jpg',
     category: 'essential',
@@ -768,7 +768,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     id: 'rtic-45-cooler',
     name: 'RTIC 45 QT Ultra-Tough Hard Cooler',
     description:
-      'The premium-tier cooler pick — rotomolded construction, days-long ice retention, bear-resistant certification. Reddit’s standing recommendation as the "Yeti quality without the Yeti price" rotomolded cooler.',
+      'The premium-tier cooler pick - rotomolded construction, days-long ice retention, bear-resistant certification. Reddit’s standing recommendation as the "Yeti quality without the Yeti price" rotomolded cooler.',
     imageUrl: '',
     category: 'comfort',
     templateSlugs: [],
@@ -780,7 +780,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     id: 'glow-stick-necklaces-bulk',
     name: 'PartySticks Glow Sticks, 100-Pack',
     description:
-      'A camp classic — enough for a whole group of kids, bright enough for ring toss or limbo well after dark, and cheap enough that a broken one doesn\'t end the game.',
+      'A camp classic - enough for a whole group of kids, bright enough for ring toss or limbo well after dark, and cheap enough that a broken one doesn\'t end the game.',
     amazonAsin: 'B00N1QPNMA',
     affiliateUrl: 'https://www.amazon.com/dp/B00N1QPNMA?tag=trailsteadgui-20&linkCode=ll1&ref_=as_li_ss_tl',
     imageUrl: 'https://m.media-amazon.com/images/I/81JYNlch58L._AC_SX679_.jpg',
@@ -792,7 +792,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     id: 'magnifying-glass-kids',
     name: 'Carson BugView 5X Bug-Catcher Magnifier',
     description:
-      'Sturdy handle, real glass lens — the tool that turns "found a bug" into an actual close look at it. Standard in any scavenger-hunt or tracking kit.',
+      'Sturdy handle, real glass lens - the tool that turns "found a bug" into an actual close look at it. Standard in any scavenger-hunt or tracking kit.',
     amazonAsin: 'B000JQ5AZK',
     affiliateUrl: 'https://www.amazon.com/dp/B000JQ5AZK?tag=trailsteadgui-20&linkCode=ll1&ref_=as_li_ss_tl',
     imageUrl: 'https://m.media-amazon.com/images/I/71VqvkzbNiL._AC_SX679_.jpg',
@@ -804,7 +804,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     id: 'field-guide-animal-tracks',
     name: 'Peterson Field Guide to Animal Tracks',
     description:
-      'The standard pocket reference for identifying prints, scat, and sign in the field — more reliable than an app when you\'re out of cell signal.',
+      'The standard pocket reference for identifying prints, scat, and sign in the field - more reliable than an app when you\'re out of cell signal.',
     amazonAsin: '061851743X',
     affiliateUrl: 'https://www.amazon.com/dp/061851743X?tag=trailsteadgui-20&linkCode=ll1&ref_=as_li_ss_tl',
     imageUrl: 'https://m.media-amazon.com/images/I/81TPGOBfoOL._SY522_.jpg',
@@ -816,7 +816,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     id: 'nature-journal-art-kit',
     name: 'Caliart Sketching Kit with Nature Journal',
     description:
-      'A compact, camp-durable set of colored pencils and a small watercolor tin — enough range for leaf rubbings, a trail sketch, or anything in between.',
+      'A compact, camp-durable set of colored pencils and a small watercolor tin - enough range for leaf rubbings, a trail sketch, or anything in between.',
     amazonAsin: 'B0B7N2Q1NQ',
     affiliateUrl: 'https://www.amazon.com/dp/B0B7N2Q1NQ?tag=trailsteadgui-20&linkCode=ll1&ref_=as_li_ss_tl',
     imageUrl: 'https://m.media-amazon.com/images/I/81fdzjwyfcL._AC_SX679_.jpg',
@@ -852,7 +852,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     id: 'outdoor-picnic-blanket',
     name: 'WEKAPO Sandproof Waterproof Beach Blanket',
     description:
-      'Sand- and water-resistant underside, packs down small — the difference between a comfortable half-hour of cloud watching and a damp one.',
+      'Sand- and water-resistant underside, packs down small - the difference between a comfortable half-hour of cloud watching and a damp one.',
     amazonAsin: 'B08X6VQBGJ',
     affiliateUrl: 'https://www.amazon.com/dp/B08X6VQBGJ?tag=trailsteadgui-20&linkCode=ll1&ref_=as_li_ss_tl',
     imageUrl: 'https://m.media-amazon.com/images/I/71JKPyUX-RL._AC_SX679_.jpg',
@@ -864,7 +864,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     id: 'camping-ukulele',
     name: 'Donner Soprano Ukulele Beginner Kit',
     description:
-      'Small enough to pack without a case, forgiving enough for someone who\'s never played — the easiest instrument to actually bring camping.',
+      'Small enough to pack without a case, forgiving enough for someone who\'s never played - the easiest instrument to actually bring camping.',
     amazonAsin: 'B0C3TS9VVJ',
     affiliateUrl: 'https://www.amazon.com/dp/B0C3TS9VVJ?tag=trailsteadgui-20&linkCode=ll1&ref_=as_li_ss_tl',
     imageUrl: 'https://m.media-amazon.com/images/I/71ky2h9+S9L._AC_SX679_.jpg',
@@ -876,7 +876,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     id: 'kids-medal-ribbons-pack',
     name: 'Berenlu Award Medal Ribbons, 48-Pack',
     description:
-      'A set of gold/silver/bronze ribbons for the top three finishers — the small ceremony that makes a backyard event feel like a real competition.',
+      'A set of gold/silver/bronze ribbons for the top three finishers - the small ceremony that makes a backyard event feel like a real competition.',
     amazonAsin: 'B0C8HS1M1G',
     affiliateUrl: 'https://www.amazon.com/dp/B0C8HS1M1G?tag=trailsteadgui-20&linkCode=ll1&ref_=as_li_ss_tl',
     imageUrl: 'https://m.media-amazon.com/images/I/81n8Kuyyi7L._AC_SX679_.jpg',
@@ -888,7 +888,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     id: 'team-bandanas-6-pack',
     name: 'APIGANIZ Cotton Bandanas, 6-Pack',
     description:
-      'Six 21"x21" cotton bandanas in assorted colors — team markers for capture the flag, or a clean blindfold for trust-walk games.',
+      'Six 21"x21" cotton bandanas in assorted colors - team markers for capture the flag, or a clean blindfold for trust-walk games.',
     amazonAsin: 'B0DRCTMC5W',
     affiliateUrl: 'https://www.amazon.com/dp/B0DRCTMC5W?tag=trailsteadgui-20&linkCode=ll1&ref_=as_li_ss_tl',
     imageUrl: 'https://m.media-amazon.com/images/I/81XYhFgYqkL._AC_SX679_.jpg',
@@ -900,7 +900,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     id: 'gsi-backpack-bocce',
     name: 'GSI Outdoors Backpack Bocce',
     description:
-      'A real bocce set sized to actually pack — GSI makes camp cookware too, so this is built for a duffel, not a garage shelf. Skip hunting for palm-sized rocks and just bring the real thing.',
+      'A real bocce set sized to actually pack - GSI makes camp cookware too, so this is built for a duffel, not a garage shelf. Skip hunting for palm-sized rocks and just bring the real thing.',
     amazonAsin: 'B007S3O0IU',
     imageUrl: '',
     category: 'comfort',
@@ -911,7 +911,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     id: 'team-scrimmage-vests-12pack',
     name: 'Team Scrimmage Vests / Pinnies, 12-Pack',
     description:
-      'Mesh pinnies in two colors — the fast way to split a big group into two visible teams for capture the flag without arguing about who\'s on which side.',
+      'Mesh pinnies in two colors - the fast way to split a big group into two visible teams for capture the flag without arguing about who\'s on which side.',
     amazonAsin: 'B0BVZ4NBL6',
     imageUrl: '',
     category: 'essential',
@@ -922,7 +922,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     id: 'lawn-bowling-skittles-set',
     name: 'Wooden Lawn Bowling / Skittles Set, 13-Piece',
     description:
-      'Ten wood pins, two balls, and a carry bag — the campground-marketed version of pinecone bowling for a site with soft ground or no pinecones around.',
+      'Ten wood pins, two balls, and a carry bag - the campground-marketed version of pinecone bowling for a site with soft ground or no pinecones around.',
     amazonAsin: 'B01ACYST9M',
     imageUrl: '',
     category: 'comfort',
@@ -933,7 +933,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     id: 'family-trivia-cards',
     name: 'Quokka Trivia Card Game, 500 Questions',
     description:
-      'General-knowledge trivia cards with 5 questions and answers per card — passes around the circle easily and works for a mixed-age family group.',
+      'General-knowledge trivia cards with 5 questions and answers per card - passes around the circle easily and works for a mixed-age family group.',
     amazonAsin: 'B0DDCPG8FF',
     affiliateUrl: 'https://www.amazon.com/dp/B0DDCPG8FF?tag=trailsteadgui-20&linkCode=ll1&ref_=as_li_ss_tl',
     imageUrl: 'https://m.media-amazon.com/images/I/71NrbH2cAgL._AC_SX679_.jpg',
@@ -1055,7 +1055,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     id: 'cooler-basic',
     name: 'Coleman 54-Quart Steel-Belted Cooler',
     description:
-      'The premium-tier cooler pick — keeps ice up to 4 days, 85-can capacity, Have-A-Seat lid. Classic for good reason.',
+      'The premium-tier cooler pick - keeps ice up to 4 days, 85-can capacity, Have-A-Seat lid. Classic for good reason.',
     amazonAsin: 'B0009PURKE',
     imageUrl: 'https://m.media-amazon.com/images/I/91uqAgVltVS._AC_SL1500_.jpg',
     category: 'essential',
@@ -1170,7 +1170,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     id: 'fwc-projector-tmy',
     name: 'TMY 1080P Mini Projector',
     description:
-      'Portable Bluetooth projector. Movie night on the side of the tent — an unfair advantage with kids.',
+      'Portable Bluetooth projector. Movie night on the side of the tent - an unfair advantage with kids.',
     amazonAsin: 'B082F13J55',
     imageUrl:
       'https://m.media-amazon.com/images/S/aplus-media-library-service-media/bb0c1152-f522-4772-98ea-c3cac62e88bf.__CR0,0,1464,600_PT0_SX1464_V1___.jpg',
@@ -1212,7 +1212,7 @@ const PRODUCT_BY_ID: Record<string, AffiliateProduct> = Object.fromEntries(
 
 /**
  * Look up an affiliate product by its registry ID. Throws if the id is
- * unknown — guides reference these by string and we want a loud failure
+ * unknown - guides reference these by string and we want a loud failure
  * at build time rather than a silently-rendered broken link.
  */
 export function getProductById(id: string): AffiliateProduct {
@@ -1228,7 +1228,7 @@ export function getProductById(id: string): AffiliateProduct {
 /**
  * Filter the registry by tag. Useful for editorially picking which gear
  * to feature on a topical guide (e.g. all `heat-friendly` products).
- * Excludes deprecated entries by default — pass `{ includeDeprecated: true }`
+ * Excludes deprecated entries by default - pass `{ includeDeprecated: true }`
  * to opt in.
  */
 export function getProductsByTag(

@@ -16,7 +16,7 @@ export type SearchDocument = {
   /** Shown under the title in results. */
   excerpt: string
   url: string
-  /** Extra matchable text (tags/category) — not displayed. */
+  /** Extra matchable text (tags/category) - not displayed. */
   keywords?: string
 }
 

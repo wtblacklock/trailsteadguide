@@ -91,7 +91,7 @@ const BREAKFAST_QUICK: Meal = {
 
 const SNACKS_DAY: Meal = {
   day: 2,
-  dayLabel: 'Saturday — snacks & drinks',
+  dayLabel: 'Saturday - snacks & drinks',
   slot: 'snack',
   title: 'Snack bin + hydration',
   description: 'Keep a snack bin accessible. Frequent small snacks prevent kid meltdowns.',

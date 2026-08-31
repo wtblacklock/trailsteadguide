@@ -1,11 +1,11 @@
 /**
- * Per-guide gear assignments — which product fills which slot on each
+ * Per-guide gear assignments - which product fills which slot on each
  * `/guides/<slug>/` page. Sourced from `data/affiliate-coverage.csv`
  * (the curation worksheet) and consumed by `getGearForGuide()` in
  * `lib/affiliate/guide-gear.ts`.
  *
  * Guides not present in this map render no gear shelf. Each entry is
- * resolved against `AFFILIATE_PRODUCTS` at render time — invalid product
+ * resolved against `AFFILIATE_PRODUCTS` at render time - invalid product
  * ids throw at build via `getProductById()`.
  */
 

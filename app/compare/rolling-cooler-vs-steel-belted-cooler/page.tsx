@@ -30,11 +30,11 @@ const STEEL_BELTED = P('cooler-basic')
 const FAQS = [
   {
     q: 'How long does ice last in a Coleman Steel-Belted cooler?',
-    a: 'In normal summer conditions (75–85°F ambient), a pre-chilled Coleman Steel-Belted holds block ice 3 to 4 days. Keep it in the shade, pack it mostly full, and only open when you need something. The Rolling Cooler holds ice closer to 2 to 3 days because of the lighter walls.',
+    a: 'In normal summer conditions (75-85°F ambient), a pre-chilled Coleman Steel-Belted holds block ice 3 to 4 days. Keep it in the shade, pack it mostly full, and only open when you need something. The Rolling Cooler holds ice closer to 2 to 3 days because of the lighter walls.',
   },
   {
     q: 'Is a rolling cooler worth it for camping?',
-    a: 'If the cooler has to move more than 30 feet from the car to the site — walk-in sites, longer pad-to-picnic-table distances, or any setup where you\'re carrying gear repeatedly — yes. For drive-up sites where the car is right next to the picnic table, the wheels are mostly dead weight.',
+    a: 'If the cooler has to move more than 30 feet from the car to the site - walk-in sites, longer pad-to-picnic-table distances, or any setup where you\'re carrying gear repeatedly - yes. For drive-up sites where the car is right next to the picnic table, the wheels are mostly dead weight.',
   },
   {
     q: 'How heavy is the Coleman Steel-Belted cooler when full?',
@@ -46,7 +46,7 @@ const FAQS = [
   },
   {
     q: 'What size cooler do I need for a weekend camping trip?',
-    a: 'For a family of four over two nights, 50 to 60 quarts is the sweet spot. Both of these coolers are in that range — the Steel-Belted is 54 quarts, the Rolling Cooler is in the 50-quart neighborhood. Smaller and you\'re stuffing it; bigger and you\'re wasting cold air on empty space.',
+    a: 'For a family of four over two nights, 50 to 60 quarts is the sweet spot. Both of these coolers are in that range - the Steel-Belted is 54 quarts, the Rolling Cooler is in the 50-quart neighborhood. Smaller and you\'re stuffing it; bigger and you\'re wasting cold air on empty space.',
   },
 ]
 
@@ -66,7 +66,7 @@ const ROWS: Row[] = [
     product: ROLLING,
     label: 'Coleman Rolling Cooler',
     capacity: '~50 qt',
-    ice: '~2–3 days',
+    ice: '~2-3 days',
     portability: 'Wheels + handle',
     durability: 'Solid plastic',
     bestFor: 'Walk-in sites / short trips',
@@ -76,7 +76,7 @@ const ROWS: Row[] = [
     product: STEEL_BELTED,
     label: 'Coleman 54-Qt Steel-Belted',
     capacity: '54 qt',
-    ice: '~3–4 days',
+    ice: '~3-4 days',
     portability: 'Two-handle carry',
     durability: 'Steel-belted shell',
     bestFor: 'Drive-up sites / long trips',
@@ -118,8 +118,8 @@ export default function Page() {
         </h1>
         <p className="mt-6 text-lg md:text-xl text-stone-600 leading-relaxed">
           Same brand, very different coolers. The Rolling Cooler is about
-          getting there — wheels, telescoping handle, easy drag from car to
-          site. The Steel-Belted is about keeping cold — classic insulated
+          getting there - wheels, telescoping handle, easy drag from car to
+          site. The Steel-Belted is about keeping cold - classic insulated
           shell, longer ice retention, the cooler that lives in the trunk for
           years.
         </p>
@@ -130,7 +130,7 @@ export default function Page() {
           </p>
           <p className="text-stone-800 leading-relaxed text-[17px]">
             Short answer: Pick the <strong>Coleman Rolling Cooler</strong> if
-            you have any carry distance at all — walk-in sites, multiple trips
+            you have any carry distance at all - walk-in sites, multiple trips
             from the car, a kid who can&rsquo;t help lift. Pick the{' '}
             <strong>Coleman Steel-Belted 54-Qt</strong> if you&rsquo;re
             drive-up, you want maximum ice retention, and you don&rsquo;t mind
@@ -216,7 +216,7 @@ export default function Page() {
         </ul>
         <h3 className="font-serif text-xl font-semibold text-stone-900 mb-3">Tradeoffs</h3>
         <ul className="text-stone-700 leading-relaxed list-disc pl-6 space-y-1 mb-8">
-          <li>Thinner walls than the Steel-Belted — ice retention is ~1 day shorter</li>
+          <li>Thinner walls than the Steel-Belted - ice retention is ~1 day shorter</li>
           <li>Wheels are plastic; not great on sand, mud, or rough trail</li>
           <li>Telescoping handle is the first thing to fail over years of use</li>
         </ul>
@@ -238,7 +238,7 @@ export default function Page() {
         <p className="text-stone-600 leading-relaxed text-lg mb-8">
           The heirloom cooler. Thick-walled steel-belted shell, 54-quart
           capacity, ice retention measured in days rather than hours. It
-          weighs 17 pounds empty and looks the part — the cooler that sits in
+          weighs 17 pounds empty and looks the part - the cooler that sits in
           the garage for twenty years.
         </p>
         {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -252,15 +252,15 @@ export default function Page() {
         />
         <h3 className="font-serif text-xl font-semibold text-stone-900 mb-3">Pros</h3>
         <ul className="text-stone-700 leading-relaxed list-disc pl-6 space-y-1 mb-6">
-          <li>Block ice lasts 3–4 days in summer conditions</li>
+          <li>Block ice lasts 3-4 days in summer conditions</li>
           <li>54-quart capacity holds a weekend of food + drinks easily</li>
-          <li>Steel belts and classic design — nearly indestructible</li>
+          <li>Steel belts and classic design - nearly indestructible</li>
           <li>&ldquo;Have-A-Seat&rdquo; lid supports 250 lbs as extra seating</li>
         </ul>
         <h3 className="font-serif text-xl font-semibold text-stone-900 mb-3">Tradeoffs</h3>
         <ul className="text-stone-700 leading-relaxed list-disc pl-6 space-y-1 mb-8">
           <li>No wheels; a full load is a two-person carry</li>
-          <li>17 lbs empty — heavier than most rolling coolers</li>
+          <li>17 lbs empty - heavier than most rolling coolers</li>
           <li>Takes up more trunk space than a rolling equivalent</li>
         </ul>
         <a
@@ -328,7 +328,7 @@ export default function Page() {
       <section className="max-w-3xl mx-auto px-8 pb-16 border-t border-stone-200 pt-16">
         <p className="text-stone-600 text-lg leading-relaxed">
           Once you&rsquo;ve picked a cooler, the packing technique matters as much as the cooler
-          itself — see{' '}
+          itself - see{' '}
           <Link href="/guides/how-to-pack-a-cooler" className="underline decoration-stone-400 underline-offset-4 hover:decoration-stone-900">
             how to pack a cooler
           </Link>{' '}
@@ -345,8 +345,8 @@ export default function Page() {
           See the full gear guide.
         </h2>
         <p className="text-stone-600 text-lg leading-relaxed mb-6 max-w-xl">
-          Coolers are one piece. The full guide covers the other categories —
-          tents, sleep, stoves, lighting — with the same short-list approach.
+          Coolers are one piece. The full guide covers the other categories -
+          tents, sleep, stoves, lighting - with the same short-list approach.
         </p>
         <Link
           href="/gear"

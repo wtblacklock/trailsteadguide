@@ -52,7 +52,7 @@ export function OffTrailLayout({ eyebrow, headline, body, extraCta }: OffTrailLa
 }
 
 function TippedLantern({ className }: { className?: string }) {
-  // A tipped-over camping lantern in three strokes — handle arc, body, and a small offset flame.
+  // A tipped-over camping lantern in three strokes - handle arc, body, and a small offset flame.
   return (
     <svg
       viewBox="0 0 96 96"

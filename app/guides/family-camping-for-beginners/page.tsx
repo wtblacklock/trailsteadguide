@@ -10,7 +10,7 @@ import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
 
 const SLUG = '/guides/family-camping-for-beginners'
 const TITLE = 'Family Camping for Beginners'
-const META_TITLE = 'Family Camping for Beginners — Complete Guide'
+const META_TITLE = 'Family Camping for Beginners - Complete Guide'
 const DESCRIPTION =
   'Family camping for beginners: how to pick your first site, what gear you actually need, how to keep kids engaged, and what a successful first trip looks like.'
 const HERO_IMAGE =
@@ -45,7 +45,7 @@ export default function Page() {
         data={faqPageGraph([
           {
             q: 'Where should a family go camping for the first time?',
-            a: 'A state park within 90 minutes of home with drive-up sites, flush toilets, and a camp host on duty. Avoid dispersed or backcountry sites for your first trip — the extra logistics will overwhelm the experience. Popular picks: state park campgrounds with electric hookups let you bring a fan and phone charger, which helps with kids.',
+            a: 'A state park within 90 minutes of home with drive-up sites, flush toilets, and a camp host on duty. Avoid dispersed or backcountry sites for your first trip - the extra logistics will overwhelm the experience. Popular picks: state park campgrounds with electric hookups let you bring a fan and phone charger, which helps with kids.',
           },
           {
             q: 'What gear does a family need for their first camping trip?',
@@ -53,19 +53,19 @@ export default function Page() {
           },
           {
             q: 'How do you keep kids entertained while camping?',
-            a: 'Plan three structured activities per day before you leave home. Nature scavenger hunts, stick collecting, rock skipping, and campfire games fill mornings and afternoons. Evening campfire with s\'mores covers dinner through bedtime. The mistake is expecting nature to auto-entertain kids — it does not.',
+            a: 'Plan three structured activities per day before you leave home. Nature scavenger hunts, stick collecting, rock skipping, and campfire games fill mornings and afternoons. Evening campfire with s\'mores covers dinner through bedtime. The mistake is expecting nature to auto-entertain kids - it does not.',
           },
           {
             q: 'How long should a first family camping trip be?',
-            a: 'One night for kids under 5. Two nights for kids 5 and up. Three nights only after a successful two-night trip. The first trip will be harder than expected — keep it short enough that everyone leaves wanting more rather than relieved to be home.',
+            a: 'One night for kids under 5. Two nights for kids 5 and up. Three nights only after a successful two-night trip. The first trip will be harder than expected - keep it short enough that everyone leaves wanting more rather than relieved to be home.',
           },
           {
             q: 'How do you keep a family tent warm at night?',
-            a: 'Start with sleeping bags rated 10 degrees below the forecast low. Sleeping pads insulate from cold ground — this matters more than the bag. Layer kids in long underwear and a fleece inside their bag. Close all tent vents at bedtime and keep wet clothes in a separate bag outside the sleeping area.',
+            a: 'Start with sleeping bags rated 10 degrees below the forecast low. Sleeping pads insulate from cold ground - this matters more than the bag. Layer kids in long underwear and a fleece inside their bag. Close all tent vents at bedtime and keep wet clothes in a separate bag outside the sleeping area.',
           },
           {
             q: 'Is family camping expensive?',
-            a: 'The gear investment is $300–600 for a family of four if you buy carefully. After that, campsite fees run $25–45 per night at state parks, and food costs no more than eating at home. After the first year, camping is one of the cheapest family vacations available.',
+            a: 'The gear investment is $300-600 for a family of four if you buy carefully. After that, campsite fees run $25-45 per night at state parks, and food costs no more than eating at home. After the first year, camping is one of the cheapest family vacations available.',
           },
         ])}
       />
@@ -81,7 +81,7 @@ export default function Page() {
         slug="family-camping-for-beginners"
         eyebrow="Family camping"
         title="Family Camping for Beginners"
-        lede="Everything you need to take your family camping for the first time — from picking the right site to keeping everyone fed, warm, and happy enough to come back."
+        lede="Everything you need to take your family camping for the first time - from picking the right site to keeping everyone fed, warm, and happy enough to come back."
         heroImage={{
           src: HERO_IMAGE,
           alt: 'Family of four setting up a tent at a state park campsite during a first family camping trip',
@@ -89,7 +89,7 @@ export default function Page() {
       >
         <QuickAnswer
           tldr="Start with one night at a state park within 90 minutes of home. Pick a drive-up site with flush toilets."
-          summary="Family camping starts with one night, nearby. A state park within 90 minutes, drive-up site, flush toilets on site. Bring a tent one size up from your headcount, sleeping bags rated 10&deg;F below forecast, pads, a two-burner stove, and one headlamp per person. Plan three activities per day before you leave — nature does not auto-entertain kids. Over-pack snacks. Expect a rough first night; night two is almost always fine. The goal on trip one is not a transcendent experience — it&apos;s everyone leaving saying &ldquo;can we do this again?&rdquo;"
+          summary="Family camping starts with one night, nearby. A state park within 90 minutes, drive-up site, flush toilets on site. Bring a tent one size up from your headcount, sleeping bags rated 10&deg;F below forecast, pads, a two-burner stove, and one headlamp per person. Plan three activities per day before you leave - nature does not auto-entertain kids. Over-pack snacks. Expect a rough first night; night two is almost always fine. The goal on trip one is not a transcendent experience - it&apos;s everyone leaving saying &ldquo;can we do this again?&rdquo;"
         />
 
         <h2>Why most families overcomplicate this</h2>
@@ -110,12 +110,12 @@ export default function Page() {
         <ul>
           <li><strong>Drive-up access.</strong> You park your car next to the site. No hiking gear in. With kids, this is non-negotiable for trip one.</li>
           <li><strong>Flush toilets.</strong> Vault toilets and pit toilets work, but they&apos;re a harder adjustment for kids. Flush toilets remove one friction point.</li>
-          <li><strong>Within 90 minutes of home.</strong> When something goes wrong — and something will — you want to be able to cut the trip short without a 4-hour drive. Being close also means you forgot the sleeping pads isn&apos;t a disaster.</li>
+          <li><strong>Within 90 minutes of home.</strong> When something goes wrong - and something will - you want to be able to cut the trip short without a 4-hour drive. Being close also means you forgot the sleeping pads isn&apos;t a disaster.</li>
           <li><strong>A camp host on site.</strong> State parks typically have a camp host who can answer questions, help with site issues, and provide a non-emergency safety net.</li>
           <li><strong>Electric hookups optional but nice.</strong> If available, a powered site lets you bring a fan for white noise (kids sleep better) and keep phones charged for safety.</li>
         </ul>
         <p>
-          State parks are the answer for first-time family camping in almost every region of the United States. They&apos;re well-maintained, have consistent amenities, typically cost $25–40 per night, and you can browse and book them on Reserve America or your state&apos;s parks website.
+          State parks are the answer for first-time family camping in almost every region of the United States. They&apos;re well-maintained, have consistent amenities, typically cost $25-40 per night, and you can browse and book them on Reserve America or your state&apos;s parks website.
         </p>
         <p>
           Avoid first-trip mistakes: national park campgrounds book out months in advance and have more crowds; dispersed camping on national forest land requires knowing where water is and managing your own waste; private campgrounds can be comfortable but vary wildly in quality. For trip one, stick to a state park.
@@ -139,8 +139,8 @@ export default function Page() {
 
         <h3>Shelter</h3>
         <ul>
-          <li><strong>Tent — one size up from headcount.</strong> A family of four should bring a 6-person tent. The extra floor space fits gear, gives kids room to move around inside, and prevents the feeling of sleeping in a closet. Freestanding dome or cabin tents both work; cabin tents are easier to stand up in but harder to pitch in wind.</li>
-          <li><strong>Sleeping bags for every person.</strong> Rated at least 10&deg;F below the forecast low for the coldest night. Kids should have kid-sized bags — adult bags are too long and kids lose body heat in the empty foot space.</li>
+          <li><strong>Tent - one size up from headcount.</strong> A family of four should bring a 6-person tent. The extra floor space fits gear, gives kids room to move around inside, and prevents the feeling of sleeping in a closet. Freestanding dome or cabin tents both work; cabin tents are easier to stand up in but harder to pitch in wind.</li>
+          <li><strong>Sleeping bags for every person.</strong> Rated at least 10&deg;F below the forecast low for the coldest night. Kids should have kid-sized bags - adult bags are too long and kids lose body heat in the empty foot space.</li>
           <li><strong>Sleeping pads or air mattresses.</strong> Cold ground pulls heat from a sleeping bag much faster than cold air. Even in summer, a pad matters. Foam pads are cheap and never deflate; self-inflating pads balance comfort and packability.</li>
           <li><strong>Tarp or canopy (optional on trip 1).</strong> Useful if rain is in the forecast or for afternoon shade. Skip for trip one unless the forecast calls for rain.</li>
         </ul>
@@ -149,14 +149,14 @@ export default function Page() {
         <ul>
           <li><strong>Two-burner propane stove.</strong> The most useful piece of camp cooking gear for families. You can make coffee and cook eggs simultaneously. A Coleman two-burner or equivalent is the standard starting point.</li>
           <li><strong>Lighter and fire-starting materials.</strong> Even if you plan to cook on a stove, the campfire is the center of family camp life. Bring a long-reach lighter, newspaper or firestarter bricks, and know whether the site allows fires before packing firewood.</li>
-          <li><strong>Cooler — larger than you think you need.</strong> A 50-quart cooler is the minimum for a family of four on a two-night trip. Ice management is the main campsite chore — keep drinks in a separate small cooler so the food cooler stays sealed and cold.</li>
+          <li><strong>Cooler - larger than you think you need.</strong> A 50-quart cooler is the minimum for a family of four on a two-night trip. Ice management is the main campsite chore - keep drinks in a separate small cooler so the food cooler stays sealed and cold.</li>
           <li><strong>Camp pots, pans, and utensils.</strong> One medium pot, one 10-inch skillet, a camp spatula, and a ladle covers almost every camp meal. Stainless steel or cast iron both work; cast iron is heavy but holds heat for campfire cooking.</li>
           <li><strong>Biodegradable dish soap, a wash basin, and a drying towel.</strong> Keep used water at least 200 feet from any water source when disposing.</li>
         </ul>
 
         <h3>Safety and comfort</h3>
         <ul>
-          <li><strong>One headlamp per person.</strong> Flashlights are harder for kids to manage hands-free. Every person needs their own headlamp. Buy extras — they disappear.</li>
+          <li><strong>One headlamp per person.</strong> Flashlights are harder for kids to manage hands-free. Every person needs their own headlamp. Buy extras - they disappear.</li>
           <li><strong>A camp lantern.</strong> For the table and tent interior. LED lanterns run for days on batteries and are safer around kids than propane lanterns.</li>
           <li><strong>First aid kit.</strong> Bandages, antiseptic wipes, tweezers (ticks), moleskin (blisters), ibuprofen and children&apos;s acetaminophen, and any family-specific medications.</li>
           <li><strong>Bug spray and sunscreen.</strong> Both. Reapply both. DEET or picaridin for bugs if you are in tick country.</li>
@@ -177,12 +177,12 @@ export default function Page() {
           This is the step most first-time family campers skip. The biggest mistake in family camping is expecting nature to auto-entertain kids. It doesn&apos;t. A bored 7-year-old at a campsite with nothing to do will make sure everyone knows about it.
         </p>
         <p>
-          The formula that works: <strong>three structured activities per day</strong> — morning, afternoon, evening. Not elaborate, not expensive. Just planned.
+          The formula that works: <strong>three structured activities per day</strong> - morning, afternoon, evening. Not elaborate, not expensive. Just planned.
         </p>
         <ul>
-          <li><strong>Morning:</strong> A nature walk with a printed scavenger hunt list. &ldquo;Find a feather, find three different-colored rocks, spot a bird.&rdquo; The list is the game — kids who are hunting for things stay engaged longer than kids just walking a trail.</li>
+          <li><strong>Morning:</strong> A nature walk with a printed scavenger hunt list. &ldquo;Find a feather, find three different-colored rocks, spot a bird.&rdquo; The list is the game - kids who are hunting for things stay engaged longer than kids just walking a trail.</li>
           <li><strong>Afternoon:</strong> Something quiet at the site. Bark rubbings with crayons and paper. Rock painting with small watercolor sets. Reading in the tent. Building a fairy house from sticks and leaves.</li>
-          <li><strong>Evening:</strong> The campfire. S&apos;mores, a story, songs, or a round of campfire games. The fire handles the entertainment — your job is just to keep it going.</li>
+          <li><strong>Evening:</strong> The campfire. S&apos;mores, a story, songs, or a round of campfire games. The fire handles the entertainment - your job is just to keep it going.</li>
         </ul>
         <p>
           For a fuller list of activities organized by age, energy level, and whether it&apos;s raining, see the <Link href="/activities/camping-activities-for-kids">camping activities for kids</Link> guide.
@@ -195,7 +195,7 @@ export default function Page() {
 
         <h3>A proven first-trip meal plan</h3>
         <ul>
-          <li><strong>Day 1 dinner (arrive tired):</strong> Hot dogs or sausages over the fire or on the grill. Side of pre-cut vegetables or chips. This is not a meal worth planning — cook it in 15 minutes and move on.</li>
+          <li><strong>Day 1 dinner (arrive tired):</strong> Hot dogs or sausages over the fire or on the grill. Side of pre-cut vegetables or chips. This is not a meal worth planning - cook it in 15 minutes and move on.</li>
           <li><strong>Day 2 breakfast:</strong> Scrambled eggs with bacon on the two-burner stove. Coffee for adults, hot chocolate or juice for kids. One of the best camp meals because the morning air makes it taste better.</li>
           <li><strong>Day 2 lunch:</strong> Sandwiches from the cooler. PB&amp;J, deli meat, whatever the kids will eat reliably. No cooking needed in the middle of the day.</li>
           <li><strong>Day 2 dinner:</strong> Foil packet meals. Each person&apos;s protein and vegetables wrapped in aluminum foil, cooked on the grill grate over the fire. 30 minutes, no dishes. Chicken thighs, potatoes, and onions is a reliable version.</li>
@@ -213,10 +213,10 @@ export default function Page() {
         </p>
         <ul>
           <li><strong>Keep the bedtime ritual the same as home.</strong> Same book. Same songs. Same order. Familiar routines lower anxiety in unfamiliar environments.</li>
-          <li><strong>Bring a small battery-powered fan.</strong> White noise masks camp sounds — other campers, animals, wind in trees — and helps kids sleep longer. This is the single highest-impact sleep intervention for camp with kids.</li>
+          <li><strong>Bring a small battery-powered fan.</strong> White noise masks camp sounds - other campers, animals, wind in trees - and helps kids sleep longer. This is the single highest-impact sleep intervention for camp with kids.</li>
           <li><strong>Give every kid a glow stick or small tap light.</strong> The fear of total pitch-black darkness in an unfamiliar place is real for kids. A dim light inside the tent takes that fear off the table.</li>
           <li><strong>Wear them out before dinner.</strong> A 4 or 5pm hike, game of frisbee, or playground visit ensures kids are genuinely tired at bedtime. Camp kids who aren&apos;t tired enough will explore the tent zippers for an hour.</li>
-          <li><strong>Go to bed earlier than you would at home.</strong> The camp rhythm runs earlier — sunrise happens, sounds happen, and there&apos;s not much to do after dark. Fighting the early bedtime loses.</li>
+          <li><strong>Go to bed earlier than you would at home.</strong> The camp rhythm runs earlier - sunrise happens, sounds happen, and there&apos;s not much to do after dark. Fighting the early bedtime loses.</li>
         </ul>
         <p>
           Night two is almost always fine. Build your expectations around that reality rather than writing off camp after a rough first night.
@@ -243,12 +243,12 @@ export default function Page() {
         </p>
         <ol>
           <li>The trip was short enough that nobody got to the relief-to-be-home stage.</li>
-          <li>Each kid had at least one moment that was clearly theirs — a rock they found, a fire they helped build, a s&apos;more they made themselves.</li>
+          <li>Each kid had at least one moment that was clearly theirs - a rock they found, a fire they helped build, a s&apos;more they made themselves.</li>
           <li>There was at least one special treat that only happens at camp.</li>
           <li>The adults modeled &ldquo;this is fun&rdquo; rather than &ldquo;this is exhausting,&rdquo; even when it was a little exhausting.</li>
         </ol>
         <p>
-          If you want a structured plan matched to your family&apos;s ages and situation — one that includes a timeline, gear list, meal ideas, and a day-by-day activity schedule — <Link href="/quiz">take the 2-minute quiz</Link>. We&apos;ll match you to the right starter plan.
+          If you want a structured plan matched to your family&apos;s ages and situation - one that includes a timeline, gear list, meal ideas, and a day-by-day activity schedule - <Link href="/quiz">take the 2-minute quiz</Link>. We&apos;ll match you to the right starter plan.
         </p>
 
         <h2>Building toward longer trips</h2>
@@ -256,10 +256,10 @@ export default function Page() {
           The progression most successful camping families follow:
         </p>
         <ol>
-          <li><strong><Link href="/plans/backyard-test">Backyard test night</Link></strong> — Pitch the tent in the yard, sleep in it one night. Shakes out gear issues, gets kids excited, costs nothing.</li>
-          <li><strong><Link href="/plans/first-night-camp">First Night Camp</Link></strong> — One night at a nearby state park. Low stakes, easy bail-out.</li>
-          <li><strong><Link href="/plans/first-weekend-camp">First Weekend Camp</Link></strong> — Two nights, a day hike, a second breakfast at camp.</li>
-          <li><strong><Link href="/plans/easy-family-basecamp">Easy Family Basecamp</Link></strong> — Three nights, real camp rhythm, kids with camp jobs, evenings around the fire.</li>
+          <li><strong><Link href="/plans/backyard-test">Backyard test night</Link></strong> - Pitch the tent in the yard, sleep in it one night. Shakes out gear issues, gets kids excited, costs nothing.</li>
+          <li><strong><Link href="/plans/first-night-camp">First Night Camp</Link></strong> - One night at a nearby state park. Low stakes, easy bail-out.</li>
+          <li><strong><Link href="/plans/first-weekend-camp">First Weekend Camp</Link></strong> - Two nights, a day hike, a second breakfast at camp.</li>
+          <li><strong><Link href="/plans/easy-family-basecamp">Easy Family Basecamp</Link></strong> - Three nights, real camp rhythm, kids with camp jobs, evenings around the fire.</li>
         </ol>
         <p>
           Each step builds the skills, gear knowledge, and family camping confidence that makes the next one easier. Most families skip the backyard test and pay for it at the campsite. Don&apos;t skip the backyard test.
@@ -284,11 +284,11 @@ export default function Page() {
         </p>
         <h3>How do you keep a family tent warm at night?</h3>
         <p>
-          Sleeping pads insulate from cold ground — this matters more than the bag. Add a kid-sized sleeping bag rated 10&deg;F below forecast, plus long underwear and a fleece inside the bag.
+          Sleeping pads insulate from cold ground - this matters more than the bag. Add a kid-sized sleeping bag rated 10&deg;F below forecast, plus long underwear and a fleece inside the bag.
         </p>
         <h3>Is family camping expensive?</h3>
         <p>
-          Gear investment of $300–600 for a family of four, then $25–45 per night for the site. Food costs no more than a trip at home. After year one, it&apos;s one of the cheapest family vacations.
+          Gear investment of $300-600 for a family of four, then $25-45 per night for the site. Food costs no more than a trip at home. After year one, it&apos;s one of the cheapest family vacations.
         </p>
       </GuidePage>
       <GuideGearShelf guideSlug="family-camping-for-beginners" />

@@ -1,8 +1,8 @@
 /**
- * Camp Cooking Conversion Card — print asset.
+ * Camp Cooking Conversion Card - print asset.
  *
  * Single-page reference card. Pure typography (no SVG) so it prints
- * crisp on any device. Kept text-dense intentionally — that's the
+ * crisp on any device. Kept text-dense intentionally - that's the
  * point of a camp cheat sheet.
  */
 
@@ -131,7 +131,7 @@ export default function CookingConversionCard() {
               <tr><td>Cubed potatoes</td><td>20 min</td><td>30 min</td></tr>
               <tr><td>Sliced onions / peppers</td><td>10 min</td><td>15 min</td></tr>
               <tr><td>Salmon fillet (1 in)</td><td>10 min</td><td>14 min</td></tr>
-              <tr><td>Chicken thigh, boneless</td><td>30 min</td><td>35–40 min</td></tr>
+              <tr><td>Chicken thigh, boneless</td><td>30 min</td><td>35-40 min</td></tr>
               <tr><td>Sausage, pre-cooked</td><td>8 min</td><td>10 min</td></tr>
               <tr><td>Banana boats</td><td>5 min</td><td>7 min</td></tr>
             </tbody>
@@ -146,14 +146,14 @@ export default function CookingConversionCard() {
               <tr><th>Activity level</th><th>Calories / day</th></tr>
             </thead>
             <tbody>
-              <tr><td>Basecamp / kids 5–10</td><td>1,800–2,200</td></tr>
-              <tr><td>Light hiking adult</td><td>2,500–2,800</td></tr>
-              <tr><td>Active adult, full days</td><td>3,000–3,500</td></tr>
-              <tr><td>Backpacking, miles + elevation</td><td>3,500–4,500</td></tr>
+              <tr><td>Basecamp / kids 5-10</td><td>1,800-2,200</td></tr>
+              <tr><td>Light hiking adult</td><td>2,500-2,800</td></tr>
+              <tr><td>Active adult, full days</td><td>3,000-3,500</td></tr>
+              <tr><td>Backpacking, miles + elevation</td><td>3,500-4,500</td></tr>
             </tbody>
           </table>
           <p className="note">
-            Cold weather adds ~200–400 cal/day. Pack snacks aggressively — running a calorie deficit at camp turns into a kid meltdown by 4pm.
+            Cold weather adds ~200-400 cal/day. Pack snacks aggressively - running a calorie deficit at camp turns into a kid meltdown by 4pm.
           </p>
         </section>
       </div>

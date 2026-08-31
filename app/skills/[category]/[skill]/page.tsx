@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: PageProps) {
     })
   }
   return pageMetadata({
-    title: `${skill.title} — Camp Skills`,
+    title: `${skill.title} - Camp Skills`,
     description: skill.tagline,
     path: `/skills/${categorySlug}/${skill.slug}`,
     type: 'article',

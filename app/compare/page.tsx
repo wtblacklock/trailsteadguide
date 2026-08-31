@@ -27,7 +27,7 @@ const PRODUCT_COMPARES: CompareCard[] = [
     href: '/compare/best-beginner-tent',
     eyebrow: 'Gear',
     title: 'Best beginner tent',
-    blurb: 'Three picks across capacity and price — a 4-person dome, a stand-up size-up, and a sturdier upgrade. The right first tent in 60 seconds.',
+    blurb: 'Three picks across capacity and price - a 4-person dome, a stand-up size-up, and a sturdier upgrade. The right first tent in 60 seconds.',
   },
   {
     href: '/compare/best-beginner-cooler',
@@ -69,7 +69,7 @@ const PRODUCT_COMPARES: CompareCard[] = [
     href: '/compare/camp-chef-everest-vs-coleman-classic-1-burner',
     eyebrow: 'Gear',
     title: 'Camp Chef Everest vs Coleman 1-burner',
-    blurb: 'Premium two-burner versus the basic one-burner. When BTU and footprint actually matter — and when they don’t.',
+    blurb: 'Premium two-burner versus the basic one-burner. When BTU and footprint actually matter - and when they don’t.',
   },
   {
     href: '/compare/rolling-cooler-vs-steel-belted-cooler',
@@ -133,7 +133,7 @@ export default function Page() {
           Comparisons for first-trip families
         </h1>
         <p className="mt-6 text-lg md:text-xl text-stone-600 leading-relaxed">
-          Beginner-grade picks, side by side. No spec sheets, no gear-snob noise — just the
+          Beginner-grade picks, side by side. No spec sheets, no gear-snob noise - just the
           three options that actually matter for your first trip, and how to pick.
         </p>
       </header>
@@ -146,7 +146,7 @@ export default function Page() {
             <>
               Each comparison shows three picks, one decision matrix, and a short
               &ldquo;what changes in practice&rdquo; section. We map products to the four
-              Trailstead plans so you can see which gear actually fits your trip — and we
+              Trailstead plans so you can see which gear actually fits your trip - and we
               flag tiers we don&rsquo;t have a link for yet rather than guessing. If
               you&rsquo;re still unsure, the 60-second quiz lands you on the right plan
               first, then the gear follows.

@@ -57,7 +57,7 @@ export const PLAN_CONTENT: Record<PlanSlug, PlanContent> = {
       whyItWorks:
         'A real campground is 60+ minutes from your front door, and that drive home at 2am is the worst possible time to discover a leaky air mattress or that your kids are scared of the dark. The backyard removes that risk entirely. If anything fails, you walk inside.',
       expectedOutcome:
-        'By tomorrow morning you\'ll know exactly which gear works, who in your family is ready, and what one or two things to upgrade before you book a campsite. That\'s the entire goal — gathered information, not heroics.',
+        'By tomorrow morning you\'ll know exactly which gear works, who in your family is ready, and what one or two things to upgrade before you book a campsite. That\'s the entire goal - gathered information, not heroics.',
     },
     mistakePrevention: [
       {
@@ -72,7 +72,7 @@ export const PLAN_CONTENT: Record<PlanSlug, PlanContent> = {
       },
       {
         title: 'Skipping the cook step',
-        why: 'You\'ll discover your stove doesn\'t work on the actual trip — when you\'re hungry and far from home.',
+        why: 'You\'ll discover your stove doesn\'t work on the actual trip - when you\'re hungry and far from home.',
         fix: 'Cook at least one full meal outside, even if it\'s just hot dogs.',
       },
       {
@@ -101,9 +101,9 @@ export const PLAN_CONTENT: Record<PlanSlug, PlanContent> = {
     },
     overview: {
       whatThisIs:
-        'A single overnight at a real campground, deliberately undersized so nothing can go badly wrong. One tent, one cooler, one stove, one fire — and home by Sunday lunch.',
+        'A single overnight at a real campground, deliberately undersized so nothing can go badly wrong. One tent, one cooler, one stove, one fire - and home by Sunday lunch.',
       whyItWorks:
-        'Most first-time camping trips fail because families try to do three nights when they\'ve never done one. Compression of the unknown into a 20-hour window means your worst case is "we drove home tired" — not "we ruined a long weekend."',
+        'Most first-time camping trips fail because families try to do three nights when they\'ve never done one. Compression of the unknown into a 20-hour window means your worst case is "we drove home tired" - not "we ruined a long weekend."',
       expectedOutcome:
         'You\'ll come home with one of two clear outcomes: confidence to book a two-night trip, or a specific list of three things to fix first. Both outcomes are wins.',
     },
@@ -158,7 +158,7 @@ export const PLAN_CONTENT: Record<PlanSlug, PlanContent> = {
       whyItWorks:
         'Two nights is the inflection point where camping starts to feel like a vacation and not a chore. Night one teaches you the campground. Day two is when you actually relax. Night two is when the kids ask when you\'re coming back.',
       expectedOutcome:
-        'You\'ll leave with the muscle memory of a full camping weekend — the rhythm of cooking, cleaning, and resetting camp. From here, you can scale to anywhere.',
+        'You\'ll leave with the muscle memory of a full camping weekend - the rhythm of cooking, cleaning, and resetting camp. From here, you can scale to anywhere.',
     },
     mistakePrevention: [
       {
@@ -207,7 +207,7 @@ export const PLAN_CONTENT: Record<PlanSlug, PlanContent> = {
     },
     overview: {
       whatThisIs:
-        'A three-night family basecamp at a developed campground — bigger tent, real airbed, full kitchen, canopy for shade. Built for comfort, not minimalism.',
+        'A three-night family basecamp at a developed campground - bigger tent, real airbed, full kitchen, canopy for shade. Built for comfort, not minimalism.',
       whyItWorks:
         'Comfort is the differentiator between "we tried camping" and "we camp every summer." This plan trades pack-weight for sleep quality and meal quality, because those are the two things that determine whether you go again.',
       expectedOutcome:

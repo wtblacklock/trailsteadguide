@@ -20,7 +20,7 @@ export async function generateMetadata({
   const printable = getPrintableBySlug(slug)
   if (!printable) return {}
   return pageMetadata({
-    title: `${printable.title} — Print View`,
+    title: `${printable.title} - Print View`,
     description: printable.description,
     path: `/printables/${printable.slug}/print`,
     noIndex: true, // Print view is for download; landing page is the indexable one.
@@ -46,7 +46,7 @@ export default async function PrintablePrintPage({
   return (
     <main className="printable-print">
       <style>{`
-        /* Screen styles — quiet, paper-like preview. */
+        /* Screen styles - quiet, paper-like preview. */
         body { background: #F5F3EE; }
         .printable-print {
           max-width: 8.5in;

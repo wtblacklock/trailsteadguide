@@ -12,7 +12,7 @@ import type { Guide } from '@/lib/guides'
  * Order of preference:
  *   1. The current guide's curated `relatedGuides` list (if set).
  *   2. Other guides in the same category.
- *   3. Other guides anywhere — only if the first two ran out.
+ *   3. Other guides anywhere - only if the first two ran out.
  *
  * Always excludes the current guide and dedupes across the three sources.
  */
@@ -29,7 +29,7 @@ function pickRelated(currentSlug: string, count = 3): Guide[] {
     result.push(guide)
   }
 
-  // 1) Hand-curated cross-links — these are the ones we want first because
+  // 1) Hand-curated cross-links - these are the ones we want first because
   //    they encode topical relationships the default category sibling
   //    pick misses (e.g. Colorado → PNW for high-altitude affinity).
   for (const slug of current.relatedGuides ?? []) {

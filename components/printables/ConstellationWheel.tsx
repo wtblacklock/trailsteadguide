@@ -1,22 +1,22 @@
 /**
- * Northern Hemisphere Constellation Wheel — print asset.
+ * Northern Hemisphere Constellation Wheel - print asset.
  *
  * Four circular sky maps, one per season, each centered on Polaris (true
- * for ~40°N latitude — covers the lower 48 reasonably). Star positions
+ * for ~40°N latitude - covers the lower 48 reasonably). Star positions
  * are stylized rather than astronomically precise: the goal is "I can
  * find this shape in the sky" not "use this for celestial navigation."
  *
- * Coordinates within each disc are normalized 0–100, with (50, 50) at
+ * Coordinates within each disc are normalized 0-100, with (50, 50) at
  * the zenith (center) and edge = horizon. Polaris sits high in the
  * north (y ≈ 22) in every season.
  */
 
 type Star = {
-  /** Relative x position, 0–100. */
+  /** Relative x position, 0-100. */
   x: number
-  /** Relative y position, 0–100. */
+  /** Relative y position, 0-100. */
   y: number
-  /** Visual size — roughly maps to magnitude (1 = brightest). */
+  /** Visual size - roughly maps to magnitude (1 = brightest). */
   mag?: 1 | 2 | 3
   /** Star name shown next to the dot. */
   label?: string
@@ -24,7 +24,7 @@ type Star = {
 
 type Constellation = {
   name: string
-  /** Where to place the name label inside the disc, normalized 0–100. */
+  /** Where to place the name label inside the disc, normalized 0-100. */
   labelAt: { x: number; y: number }
   stars: Star[]
   /** Pairs of star indices to connect with a line. */
@@ -42,7 +42,7 @@ const DISC_RADIUS = 180
 const DISC_CX = 200
 const DISC_CY = 200
 
-// Polaris reference point — the same in every disc (Northern Hemisphere
+// Polaris reference point - the same in every disc (Northern Hemisphere
 // stargazing is built around this anchor). Roughly 40°N latitude. The
 // dot itself is unlabeled; the constellation-name label below the dot is
 // what visitors read.
@@ -60,10 +60,10 @@ const POLARIS_CONSTELLATION: Constellation = {
 const DISCS: Disc[] = [
   {
     season: 'Spring',
-    monthRange: 'March – May, 9pm',
+    monthRange: 'March - May, 9pm',
     blurb: 'Big Dipper overhead. Leo riding the meridian. Cassiopeia low north.',
     constellations: [
-      // Big Dipper — high overhead in spring, north of zenith
+      // Big Dipper - high overhead in spring, north of zenith
       {
         name: 'Big Dipper',
         labelAt: { x: 38, y: 35 },
@@ -78,7 +78,7 @@ const DISCS: Disc[] = [
         ],
         lines: [[0, 1], [1, 2], [2, 3], [3, 4], [4, 5], [5, 6], [3, 0]],
       },
-      // Cassiopeia — low in the north opposite the Dipper
+      // Cassiopeia - low in the north opposite the Dipper
       {
         name: 'Cassiopeia',
         labelAt: { x: 60, y: 6 },
@@ -92,7 +92,7 @@ const DISCS: Disc[] = [
         lines: [[0, 1], [1, 2], [2, 3], [3, 4]],
       },
       POLARIS_CONSTELLATION,
-      // Leo — overhead, rough sickle + triangle
+      // Leo - overhead, rough sickle + triangle
       {
         name: 'Leo',
         labelAt: { x: 65, y: 70 },
@@ -123,7 +123,7 @@ const DISCS: Disc[] = [
   },
   {
     season: 'Summer',
-    monthRange: 'June – August, 9pm',
+    monthRange: 'June - August, 9pm',
     blurb: 'Summer Triangle overhead. Big Dipper sliding west. Scorpius low south.',
     constellations: [
       // Summer Triangle: Vega, Deneb, Altair
@@ -137,7 +137,7 @@ const DISCS: Disc[] = [
         ],
         lines: [[0, 1], [1, 2], [2, 0]],
       },
-      // Cygnus — the Northern Cross — built around Deneb
+      // Cygnus - the Northern Cross - built around Deneb
       {
         name: 'Cygnus',
         labelAt: { x: 66, y: 38 },
@@ -151,7 +151,7 @@ const DISCS: Disc[] = [
         ],
         lines: [[0, 1], [1, 2], [2, 3], [4, 1], [1, 5]],
       },
-      // Big Dipper — low west
+      // Big Dipper - low west
       {
         name: 'Big Dipper',
         labelAt: { x: 16, y: 36 },
@@ -167,7 +167,7 @@ const DISCS: Disc[] = [
         lines: [[0, 1], [1, 2], [2, 3], [3, 4], [4, 5], [5, 6], [3, 0]],
       },
       POLARIS_CONSTELLATION,
-      // Scorpius — low south, with Antares
+      // Scorpius - low south, with Antares
       {
         name: 'Scorpius',
         labelAt: { x: 50, y: 90 },
@@ -185,7 +185,7 @@ const DISCS: Disc[] = [
   },
   {
     season: 'Fall',
-    monthRange: 'September – November, 9pm',
+    monthRange: 'September - November, 9pm',
     blurb: 'The Great Square overhead. Cassiopeia high. Big Dipper low north.',
     constellations: [
       // Great Square of Pegasus
@@ -200,7 +200,7 @@ const DISCS: Disc[] = [
         ],
         lines: [[0, 1], [1, 2], [2, 3], [3, 0]],
       },
-      // Andromeda — chain off the upper-left of the Square
+      // Andromeda - chain off the upper-left of the Square
       {
         name: 'Andromeda',
         labelAt: { x: 70, y: 36 },
@@ -212,7 +212,7 @@ const DISCS: Disc[] = [
         ],
         lines: [[0, 1], [1, 2], [2, 3]],
       },
-      // Cassiopeia — high in north
+      // Cassiopeia - high in north
       {
         name: 'Cassiopeia',
         labelAt: { x: 30, y: 22 },
@@ -226,7 +226,7 @@ const DISCS: Disc[] = [
         lines: [[0, 1], [1, 2], [2, 3], [3, 4]],
       },
       POLARIS_CONSTELLATION,
-      // Big Dipper — low north, partially below horizon for some latitudes
+      // Big Dipper - low north, partially below horizon for some latitudes
       {
         name: 'Big Dipper',
         labelAt: { x: 60, y: 14 },
@@ -245,10 +245,10 @@ const DISCS: Disc[] = [
   },
   {
     season: 'Winter',
-    monthRange: 'December – February, 9pm',
+    monthRange: 'December - February, 9pm',
     blurb: 'Orion in the south. Taurus and the Pleiades west. Sirius blazing low.',
     constellations: [
-      // Orion — central, mid-south
+      // Orion - central, mid-south
       {
         name: 'Orion',
         labelAt: { x: 50, y: 80 },
@@ -275,7 +275,7 @@ const DISCS: Disc[] = [
         ],
         lines: [[0, 1], [0, 2], [1, 3]],
       },
-      // Sirius — Canis Major, low SE
+      // Sirius - Canis Major, low SE
       {
         name: 'Canis Major',
         labelAt: { x: 70, y: 86 },
@@ -283,7 +283,7 @@ const DISCS: Disc[] = [
         lines: [],
       },
       POLARIS_CONSTELLATION,
-      // Cassiopeia — high in northwest
+      // Cassiopeia - high in northwest
       {
         name: 'Cassiopeia',
         labelAt: { x: 28, y: 18 },
@@ -301,7 +301,7 @@ const DISCS: Disc[] = [
 ]
 
 function pct(v: number): number {
-  // Map normalized 0–100 inside disc → SVG coordinates around the disc center.
+  // Map normalized 0-100 inside disc → SVG coordinates around the disc center.
   // 50,50 → cx,cy. Edges at 0,0 → cx − r, cy − r.
   return (v - 50) * (DISC_RADIUS / 50)
 }
@@ -467,7 +467,7 @@ export default function ConstellationWheel() {
             <p>
               Stand outside after full dark, facing north. Hold the page up
               overhead with the &ldquo;N&rdquo; edge of each disc pointing
-              toward Polaris. Use the disc that matches the current season —
+              toward Polaris. Use the disc that matches the current season -
               the constellations roughly match what&apos;s overhead at 9pm.
               The sky rotates ~15° per hour, so reorient as the night goes.
             </p>
@@ -476,7 +476,7 @@ export default function ConstellationWheel() {
             <h2>Reading the dots</h2>
             <p>
               Brighter stars are bigger dots. Lines connect the
-              most-recognizable shape of each constellation — they aren&apos;t
+              most-recognizable shape of each constellation - they aren&apos;t
               in the actual sky. Polaris is the same point in every disc:
               the sky pivots around it through the night and across the
               seasons.

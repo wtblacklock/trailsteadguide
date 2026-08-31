@@ -62,11 +62,11 @@ const PICKS: Pick[] = [
     name: 'Yeti Tundra 65 / RTIC equivalent',
     description:
       'Rotomolded hard cooler in the Yeti or RTIC tier. Multi-day ice retention, bear-resistant build, lifetime durability. The pick when you camp more than three weekends a year.',
-    iceRetention: '7–10 days',
-    capacity: '60–65 qt / ~40 cans + ice',
+    iceRetention: '7-10 days',
+    capacity: '60-65 qt / ~40 cans + ice',
     weight: '~30 lbs empty',
     priceTier: '$$$ Premium',
-    priceLabel: '$300–$400',
+    priceLabel: '$300-$400',
   },
 ]
 
@@ -74,8 +74,8 @@ const PLAN_MAP: { plan: string; href: string; pick: string; reason: string }[] =
   {
     plan: 'Backyard Test',
     href: '/plans/backyard-test',
-    pick: 'Skip — use the kitchen fridge',
-    reason: 'You\'re 50 feet from the back door. A cooler is overkill for a yard rehearsal — drinks live in the fridge.',
+    pick: 'Skip - use the kitchen fridge',
+    reason: 'You\'re 50 feet from the back door. A cooler is overkill for a yard rehearsal - drinks live in the fridge.',
   },
   {
     plan: 'First Night Camp',
@@ -92,7 +92,7 @@ const PLAN_MAP: { plan: string; href: string; pick: string; reason: string }[] =
   {
     plan: 'Easy Family Basecamp',
     href: '/plans/easy-family-basecamp',
-    pick: 'Rolling 100QT — or upgrade to Yeti tier',
+    pick: 'Rolling 100QT - or upgrade to Yeti tier',
     reason: 'Three nights of comfort in summer. The rolling 100QT works; if you\'re camping more than a few times a year, the rotomolded upgrade pays for itself.',
   },
 ]
@@ -101,7 +101,7 @@ const RELATED = [
   {
     title: 'Rolling cooler vs steel-belted cooler',
     href: '/compare/rolling-cooler-vs-steel-belted-cooler',
-    blurb: 'Wheels and capacity versus ice retention and toughness — head-to-head.',
+    blurb: 'Wheels and capacity versus ice retention and toughness - head-to-head.',
   },
   {
     title: 'How to Pack a Cooler',
@@ -111,7 +111,7 @@ const RELATED = [
   {
     title: 'See the full gear guide',
     href: '/gear',
-    blurb: 'The full beginner-grade kit — sleep, cooking, lighting, the rest.',
+    blurb: 'The full beginner-grade kit - sleep, cooking, lighting, the rest.',
   },
 ]
 
@@ -162,7 +162,7 @@ export default function Page() {
         </h1>
         <p className="mt-6 text-lg md:text-xl text-stone-600 leading-relaxed">
           Cooler size and ice retention quietly decide what you eat on day two. Here are three
-          picks — compact classic, full-size rolling, and a premium upgrade path — with what
+          picks - compact classic, full-size rolling, and a premium upgrade path - with what
           actually matters for a first family trip.
         </p>
       </header>
@@ -173,11 +173,11 @@ export default function Page() {
           summary={
             <>
               For a single overnight, a <strong>54-quart classic cooler</strong> holds plenty and
-              keeps ice up to four days — fine. For two or three nights with a family, the{' '}
+              keeps ice up to four days - fine. For two or three nights with a family, the{' '}
               <strong>Coleman Classic Rolling 100QT</strong> covers two full days of meals plus
               snacks without re-icing, and the wheels matter when summer parking is a hike.
-              Premium <strong>rotomolded coolers</strong> (Yeti, RTIC) hold ice for 7–10 days and
-              outlast everything else — the upgrade pays for itself once you camp more than a few
+              Premium <strong>rotomolded coolers</strong> (Yeti, RTIC) hold ice for 7-10 days and
+              outlast everything else - the upgrade pays for itself once you camp more than a few
               times a year.
             </>
           }
@@ -230,7 +230,7 @@ export default function Page() {
         </div>
         <p className="mt-4 text-xs text-stone-500">
           Prices approximate and subject to change on Amazon. The premium tier is a generic
-          recommendation — we don&rsquo;t carry an affiliate link for it yet.
+          recommendation - we don&rsquo;t carry an affiliate link for it yet.
         </p>
       </section>
 
@@ -241,22 +241,22 @@ export default function Page() {
         <div className="space-y-6 text-stone-700 leading-relaxed text-lg">
           <p>
             <strong>Capacity is about meals, not cans.</strong> A 54-quart cooler holds about
-            two days of food for a family of four if you pack with intent — drinks in a separate
+            two days of food for a family of four if you pack with intent - drinks in a separate
             soft cooler, food in the main one. The 100-quart rolling cooler buys you the slack to
             ignore packing logic and still have ice on day three.
           </p>
           <p>
             <strong>Wheels turn out to matter more than ice retention.</strong> For mid-grade
-            coolers, both Coleman options keep ice 4–5 days with proper pre-chilling and a frozen
+            coolers, both Coleman options keep ice 4-5 days with proper pre-chilling and a frozen
             jug at the bottom. The real differentiator on summer trips is whether you can wheel
             it from the parking pad to the site or you&rsquo;re carrying 60 pounds of food across
             gravel.
           </p>
           <p>
             <strong>Rotomolded coolers (Yeti, RTIC) play a different game.</strong> The price
-            jumps to $300+, but ice survives 7–10 days, the body absorbs abuse without cracking,
+            jumps to $300+, but ice survives 7-10 days, the body absorbs abuse without cracking,
             and they&rsquo;re bear-resistant where required. The upgrade math: if you camp three
-            weekends a year for five years, that&rsquo;s 75 nights — under $5/night for a
+            weekends a year for five years, that&rsquo;s 75 nights - under $5/night for a
             cooler that outlasts every other piece of gear in the kit.
           </p>
         </div>
@@ -268,8 +268,8 @@ export default function Page() {
         </h2>
         <p className="text-stone-700 leading-relaxed text-lg mb-6">
           A cooler decides what you eat. A sleep system decides whether the family wants to come
-          back. The sleeping-system comparison maps three tiers — budget, comfort, and
-          cold-weather upgrade — onto the same plan structure as this page.
+          back. The sleeping-system comparison maps three tiers - budget, comfort, and
+          cold-weather upgrade - onto the same plan structure as this page.
         </p>
         <Link
           href="/compare/best-beginner-sleeping-system"
@@ -357,7 +357,7 @@ export default function Page() {
         </h2>
         <p className="text-stone-600 text-lg leading-relaxed mb-6 max-w-xl">
           Six questions about your group, comfort level, and how far you want to drive.
-          You&rsquo;ll land on the right plan — and the right cooler size for that plan.
+          You&rsquo;ll land on the right plan - and the right cooler size for that plan.
         </p>
         <div className="flex flex-wrap gap-3">
           <Link

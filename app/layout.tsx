@@ -25,26 +25,26 @@ const sourceSerif4 = Source_Serif_4({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: 'Trailstead Guide — Your First Family Camping Plan',
+    default: 'Trailstead Guide - Your First Family Camping Plan',
     template: '%s | Trailstead Guide',
   },
   description:
     'Answer 6 questions. Get a complete, personalized camping plan for your family. Built for first-timers.',
   applicationName: SITE_NAME,
   // Icons (favicon.ico, icon.tsx, apple-icon.tsx) and the default OG image
-  // (opengraph-image.tsx) auto-mount from app/ — no need to declare them.
+  // (opengraph-image.tsx) auto-mount from app/ - no need to declare them.
   openGraph: {
     type: 'website',
     siteName: SITE_NAME,
     url: SITE_URL,
-    title: 'Trailstead Guide — Your First Family Camping Plan',
+    title: 'Trailstead Guide - Your First Family Camping Plan',
     description:
       'Answer 6 questions. Get a complete, personalized camping plan for your family. Built for first-timers.',
     locale: 'en_US',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Trailstead Guide — Your First Family Camping Plan',
+    title: 'Trailstead Guide - Your First Family Camping Plan',
     description:
       'Answer 6 questions. Get a complete, personalized camping plan for your family. Built for first-timers.',
   },

@@ -20,16 +20,16 @@ export type Guide = {
   /**
    * SEO-optimized <title> for the guide page. ≤41 chars to keep the rendered
    * title under Google's ~60-char truncation point after the
-   * " | Trailstead Guide" suffix is appended. Optional — when omitted the
+   * " | Trailstead Guide" suffix is appended. Optional - when omitted the
    * page-level META_TITLE constant in `app/guides/<slug>/page.tsx` is used.
    */
   metaTitle?: string
-  /** SEO meta description (≤155 chars) — optional, page-level fallback. */
+  /** SEO meta description (≤155 chars) - optional, page-level fallback. */
   metaDescription?: string
   /**
    * Curated cross-links surfaced by `<RelatedGuides />` at the bottom of
    * each guide article. Slugs of other entries in `GUIDES`. When set,
-   * overrides the default "first 3 same-category siblings" pick — lets us
+   * overrides the default "first 3 same-category siblings" pick - lets us
    * connect topically-related guides across categories (e.g. Colorado →
    * Pacific Northwest, Appalachians, winter-camping for altitude/mountain
    * affinity instead of arbitrary location siblings).
@@ -47,13 +47,13 @@ export type GuideCategory = {
   ctaLabel: string
   /**
    * SEO-optimized <title> tag for the category hub page. Front-loaded with
-   * the primary keyword and tighter than `${label} — Camping Guides`.
+   * the primary keyword and tighter than `${label} - Camping Guides`.
    * Total budget is ≤41 chars so the auto-appended " | Trailstead Guide"
    * keeps the rendered title under Google's ~60-char truncation point.
    */
   metaTitle: string
   /**
-   * SEO-optimized meta description for the category hub page (140–155
+   * SEO-optimized meta description for the category hub page (140-155
    * chars). Separate from `heroSubhead` so the visible page lede can stay
    * conversational while the SERP snippet is keyword-tight.
    */

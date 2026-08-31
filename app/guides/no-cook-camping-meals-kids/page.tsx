@@ -10,7 +10,7 @@ import { pageMetadata, articleGraph, SITE_URL } from '@/lib/seo'
 
 const SLUG = '/guides/no-cook-camping-meals-kids'
 const TITLE = 'No-Cook Camping Meals for Kids'
-const META_TITLE = 'No-Cook Camping Meals for Kids — 20 Ideas'
+const META_TITLE = 'No-Cook Camping Meals for Kids - 20 Ideas'
 const DESCRIPTION =
   'No-cook camping meals for kids that are fast, kid-approved, and require nothing but a cooler and a picnic table. Perfect for pack-out mornings, rain days, and exhausted evenings.'
 const HERO_IMAGE =
@@ -51,7 +51,7 @@ export default function Page() {
         slug="no-cook-camping-meals-kids"
         eyebrow="Camp food"
         title="No-Cook Camping Meals for Kids"
-        lede="When the stove is packed, the rain won&apos;t stop, or you&apos;re just too tired to cook — 20 no-prep meals and snacks that kids will actually eat at camp."
+        lede="When the stove is packed, the rain won&apos;t stop, or you&apos;re just too tired to cook - 20 no-prep meals and snacks that kids will actually eat at camp."
         heroImage={{
           src: HERO_IMAGE,
           alt: 'Kids eating sandwiches and fruit at a picnic table at a campsite',
@@ -59,12 +59,12 @@ export default function Page() {
       >
         <QuickAnswer
           tldr="Deli sandwiches, wraps, and cooler snacks cover every no-cook meal window at camp."
-          summary="No-cook camping meals are for three situations: pack-out mornings (no time to cook), rain days (no motivation to cook outside), and exhausted arrival evenings (no energy to cook). The best no-cook camp meals for kids build around what travels well in a cooler: deli meat and cheese, peanut butter, hummus, hard-boiled eggs, and fruit. Supplement with shelf-stable options that need no refrigeration: crackers, trail mix, cereal with boxed milk, and granola bars. The key to no-cook success is packing intentionally — everything you need for a no-cook day should be in one designated cooler shelf or bag."
+          summary="No-cook camping meals are for three situations: pack-out mornings (no time to cook), rain days (no motivation to cook outside), and exhausted arrival evenings (no energy to cook). The best no-cook camp meals for kids build around what travels well in a cooler: deli meat and cheese, peanut butter, hummus, hard-boiled eggs, and fruit. Supplement with shelf-stable options that need no refrigeration: crackers, trail mix, cereal with boxed milk, and granola bars. The key to no-cook success is packing intentionally - everything you need for a no-cook day should be in one designated cooler shelf or bag."
         />
 
         <h2>When no-cook meals are the right call</h2>
         <p>
-          No-cook isn&apos;t a compromise — it&apos;s a strategic choice for specific camp windows:
+          No-cook isn&apos;t a compromise - it&apos;s a strategic choice for specific camp windows:
         </p>
         <ul>
           <li><strong>Arrival evening.</strong> You drove two hours, set up the tent, and it&apos;s 7:30pm. No-cook is the right call. PB&amp;J and apple slices while the campfire gets going is fine.</li>
@@ -104,7 +104,7 @@ export default function Page() {
 
         <h3>6. Build-your-own sandwich bar</h3>
         <p>
-          Deli meat, sliced cheese, bread, condiment packets, and produce laid out on the picnic table. Each person builds their own. Self-assembly equals better compliance — kids who made their sandwich eat it. Takes 5 minutes to set up, zero cooking.
+          Deli meat, sliced cheese, bread, condiment packets, and produce laid out on the picnic table. Each person builds their own. Self-assembly equals better compliance - kids who made their sandwich eat it. Takes 5 minutes to set up, zero cooking.
         </p>
 
         <h3>7. Wraps</h3>
@@ -124,7 +124,7 @@ export default function Page() {
 
         <h3>10. PB&amp;J on crackers</h3>
         <p>
-          Peanut butter and jam with crackers instead of bread — less mess, better cooler stability, and kids eat it more reliably than a soggy sandwich. Individual peanut butter cups (Justin&apos;s or similar) eliminate double-dipping issues.
+          Peanut butter and jam with crackers instead of bread - less mess, better cooler stability, and kids eat it more reliably than a soggy sandwich. Individual peanut butter cups (Justin&apos;s or similar) eliminate double-dipping issues.
         </p>
 
         <h3>11. Cheese quesadillas (cold)</h3>
@@ -134,7 +134,7 @@ export default function Page() {
 
         <h2>No-cook dinners for camp kids</h2>
         <p>
-          No-cook dinners are the most challenging category — hot food at dinner is a psychological anchor for most families. The options that work:
+          No-cook dinners are the most challenging category - hot food at dinner is a psychological anchor for most families. The options that work:
         </p>
 
         <h3>12. Charcuterie camp board</h3>
@@ -144,12 +144,12 @@ export default function Page() {
 
         <h3>13. Cold pasta salad</h3>
         <p>
-          Made at home: cooked pasta, cherry tomatoes, cucumber, olives, mozzarella, and Italian dressing in a sealed container. Eat cold at camp. This is a one-container meal that holds 2–3 days in the cooler. Kids who eat cold pasta at home will eat it at camp.
+          Made at home: cooked pasta, cherry tomatoes, cucumber, olives, mozzarella, and Italian dressing in a sealed container. Eat cold at camp. This is a one-container meal that holds 2-3 days in the cooler. Kids who eat cold pasta at home will eat it at camp.
         </p>
 
         <h3>14. Bean and cheese wraps</h3>
         <p>
-          Canned beans (rinsed), shredded cheese, salsa, and a flour tortilla. Wrapped and eaten cold. Filling, kid-friendly, and requires nothing beyond opening a can — which technically counts as &ldquo;no cooking.&rdquo;
+          Canned beans (rinsed), shredded cheese, salsa, and a flour tortilla. Wrapped and eaten cold. Filling, kid-friendly, and requires nothing beyond opening a can - which technically counts as &ldquo;no cooking.&rdquo;
         </p>
 
         <h3>15. Pre-cooked rotisserie chicken</h3>
@@ -177,8 +177,8 @@ export default function Page() {
         </p>
         <ul>
           <li><strong>Dedicate one cooler shelf or zone to each day&apos;s meals.</strong> Day 1 on top, Day 3 on bottom. Pull from the top each day.</li>
-          <li><strong>Pre-assemble no-cook meal bags.</strong> A labeled zip-lock bag containing everything for one meal — deli meat, cheese, condiment packets, pre-sliced produce. Pull the bag out, lay it on the table, eat.</li>
-          <li><strong>Keep snacks in a separate bag.</strong> Not in the cooler — in a mesh bag or tote that lives on the picnic table. Available at all times without opening the cooler.</li>
+          <li><strong>Pre-assemble no-cook meal bags.</strong> A labeled zip-lock bag containing everything for one meal - deli meat, cheese, condiment packets, pre-sliced produce. Pull the bag out, lay it on the table, eat.</li>
+          <li><strong>Keep snacks in a separate bag.</strong> Not in the cooler - in a mesh bag or tote that lives on the picnic table. Available at all times without opening the cooler.</li>
           <li><strong>Dry goods in a crate or box, not in the cooler.</strong> Crackers, granola bars, cereal, and shelf-stable snacks stay organized in a separate dry goods bin.</li>
         </ul>
 
@@ -195,7 +195,7 @@ export default function Page() {
           Zero cooking, zero dishes beyond rinsing a mason jar. For a first camping trip with toddlers, this approach eliminates a significant source of stress and lets you focus on the experience rather than the logistics.
         </p>
         <p>
-          For a full 2–3 night meal plan that balances no-cook and cooked meals, see the <Link href="/guides/camping-meal-plan-family">family camping meal plan</Link>. For the complete camp cooking approach, see <Link href="/guides/easy-family-camping-meals">easy family camping meals</Link>.
+          For a full 2-3 night meal plan that balances no-cook and cooked meals, see the <Link href="/guides/camping-meal-plan-family">family camping meal plan</Link>. For the complete camp cooking approach, see <Link href="/guides/easy-family-camping-meals">easy family camping meals</Link>.
         </p>
       </GuidePage>
       <GuideGearShelf guideSlug="no-cook-camping-meals-kids" heading="Keep it cold, keep it simple" />

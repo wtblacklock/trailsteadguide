@@ -1,5 +1,5 @@
 /**
- * Backyard Test Pre-Flight Checklist — print asset.
+ * Backyard Test Pre-Flight Checklist - print asset.
  *
  * Single-page typographic checklist. Designed to be physically checked
  * off with a pen, so the boxes are real.
@@ -7,18 +7,18 @@
 
 const PRE_FLIGHT_GROUPS: Array<{ heading: string; items: string[] }> = [
   {
-    heading: 'Day before — gear test (allow 60 min)',
+    heading: 'Day before - gear test (allow 60 min)',
     items: [
       'Pitch the tent on a flat patch of grass. Stake every guy-out point.',
       'Crawl in. Lie down. Note hot spots where you can feel the ground.',
       'Light the stove on its lowest setting. Confirm fuel canister is full.',
-      'Boil 2 cups of water. Time it — calibrate vs the foil-pack card.',
+      'Boil 2 cups of water. Time it - calibrate vs the foil-pack card.',
       'Inflate every sleeping pad. Listen for leaks for 60 minutes.',
       'Power-cycle every headlamp and lantern. Replace batteries that flicker, confirm the lantern is bright enough to cook by, and charge phones and any battery packs.',
     ],
   },
   {
-    heading: 'Sunset — the real overnight',
+    heading: 'Sunset - the real overnight',
     items: [
       'Sleep in the tent the way you\'ll sleep at camp: clothes, bag, pillow, no phone screens after dark.',
       'Bring the actual book / activity you\'d use to wind kids down.',
@@ -28,15 +28,15 @@ const PRE_FLIGHT_GROUPS: Array<{ heading: string; items: string[] }> = [
     ],
   },
   {
-    heading: 'Morning — pack-down rehearsal',
+    heading: 'Morning - pack-down rehearsal',
     items: [
       'Pack the tent down in 20 minutes or less. Time it.',
       'Note any wet condensation on the rainfly; it will be worse in real cold.',
-      'Make camp coffee on the stove, confirm the cooler is still cold, then walk the gear pile — anything you didn\'t touch goes home next time.',
+      'Make camp coffee on the stove, confirm the cooler is still cold, then walk the gear pile - anything you didn\'t touch goes home next time.',
     ],
   },
   {
-    heading: 'After-action — the three things you\'ll only learn outside',
+    heading: 'After-action - the three things you\'ll only learn outside',
     items: [
       'Whether your sleeping pad keeps you off the cold ground.',
       'Whether your kid will actually fall asleep in a tent.',

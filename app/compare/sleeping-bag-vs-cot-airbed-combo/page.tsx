@@ -31,7 +31,7 @@ const PAD = P('sleeping-pad-air')
 const FAQS = [
   {
     q: 'Which is more comfortable for car camping: an air mattress or a cot combo?',
-    a: 'A queen air mattress like the SoundAsleep Dream Series is the most bed-like option — closest to sleeping at home. A cot-airbed combo gets you off the ground, which is warmer and easier on backs, but the cot frame can feel firmer at the edges. A sleeping pad is the least comfortable of the three but the easiest to pack and the cheapest.',
+    a: 'A queen air mattress like the SoundAsleep Dream Series is the most bed-like option - closest to sleeping at home. A cot-airbed combo gets you off the ground, which is warmer and easier on backs, but the cot frame can feel firmer at the edges. A sleeping pad is the least comfortable of the three but the easiest to pack and the cheapest.',
   },
   {
     q: 'Do I need a sleeping pad if I have an air mattress?',
@@ -39,11 +39,11 @@ const FAQS = [
   },
   {
     q: 'How long does it take to set up a queen air mattress vs a cot combo?',
-    a: 'A queen air mattress with a built-in pump inflates in about 4 minutes. A cot-airbed combo takes about 8 to 10 minutes — the cot frame snaps together, then the airbed inflates on top. A sleeping pad self-inflates in 5 to 10 minutes with no pump needed.',
+    a: 'A queen air mattress with a built-in pump inflates in about 4 minutes. A cot-airbed combo takes about 8 to 10 minutes - the cot frame snaps together, then the airbed inflates on top. A sleeping pad self-inflates in 5 to 10 minutes with no pump needed.',
   },
   {
     q: 'Will a queen air mattress fit in a 4-person tent?',
-    a: 'Yes, in a Coleman Sundome 4P with a narrow gear strip alongside it. In a 3-person tent, a queen is too wide — use a full-size air mattress instead. In a 6-person tent, a queen plus two sleeping pads fits with room to walk around.',
+    a: 'Yes, in a Coleman Sundome 4P with a narrow gear strip alongside it. In a 3-person tent, a queen is too wide - use a full-size air mattress instead. In a 6-person tent, a queen plus two sleeping pads fits with room to walk around.',
   },
   {
     q: 'Are cot-airbed combos worth the extra cost?',
@@ -75,8 +75,8 @@ const ROWS: Row[] = [
     product: COT_COMBO,
     label: 'Coleman Queen Airbed Cot Combo',
     comfort: 'Off the ground, firmer edges',
-    setup: '~8–10 min (frame + airbed)',
-    packed: 'Long duffel — takes trunk space',
+    setup: '~8-10 min (frame + airbed)',
+    packed: 'Long duffel - takes trunk space',
     bestFor: 'Multi-night trips / back issues',
     price: '~$30',
   },
@@ -84,7 +84,7 @@ const ROWS: Row[] = [
     product: PAD,
     label: 'TETON Sports ComfortLite Pad',
     comfort: 'Firm but warm',
-    setup: '~5–10 min (self-inflating)',
+    setup: '~5-10 min (self-inflating)',
     packed: 'Compact, fits backpack',
     bestFor: 'Budget / minimal trips',
     price: '~$75',
@@ -124,7 +124,7 @@ export default function Page() {
           Air mattress vs cot combo vs sleeping pad: what to sleep on
         </h1>
         <p className="mt-6 text-lg md:text-xl text-stone-600 leading-relaxed">
-          Three legitimate ways to sleep at a campsite — bed-like, off-the-ground,
+          Three legitimate ways to sleep at a campsite - bed-like, off-the-ground,
           or compact-and-cheap. Here&rsquo;s how to pick.
         </p>
 
@@ -210,15 +210,15 @@ export default function Page() {
         />
         <h3 className="font-serif text-xl font-semibold text-stone-900 mb-3">Pros</h3>
         <ul className="text-stone-700 leading-relaxed list-disc pl-6 space-y-1 mb-6">
-          <li>Bed-like comfort — fits sheets and pillows from home</li>
+          <li>Bed-like comfort - fits sheets and pillows from home</li>
           <li>Built-in primary pump plus a backup valve for top-up</li>
           <li>40 ComfortCoils stay flat instead of bowing in the middle</li>
           <li>Queen size fits a Coleman Sundome 4P or larger</li>
         </ul>
         <h3 className="font-serif text-xl font-semibold text-stone-900 mb-3">Tradeoffs</h3>
         <ul className="text-stone-700 leading-relaxed list-disc pl-6 space-y-1 mb-8">
-          <li>Cold underneath in shoulder seasons — add a thin pad below</li>
-          <li>Bulky packed — takes up trunk space when deflated</li>
+          <li>Cold underneath in shoulder seasons - add a thin pad below</li>
+          <li>Bulky packed - takes up trunk space when deflated</li>
           <li>Pump needs a 110V outlet (electric site or inverter)</li>
         </ul>
         <a
@@ -238,7 +238,7 @@ export default function Page() {
         </h2>
         <p className="text-stone-600 leading-relaxed text-lg mb-8">
           A folding steel cot with a queen airbed mounted on top. Gets you a
-          full foot off the ground — warmer, easier to climb in and out of, and
+          full foot off the ground - warmer, easier to climb in and out of, and
           a noticeable difference for anyone with back issues. Setup is longer
           than a plain air mattress, but the comfort upgrade is real.
         </p>
@@ -253,17 +253,17 @@ export default function Page() {
         />
         <h3 className="font-serif text-xl font-semibold text-stone-900 mb-3">Pros</h3>
         <ul className="text-stone-700 leading-relaxed list-disc pl-6 space-y-1 mb-6">
-          <li>Off the ground — warmer in shoulder seasons</li>
+          <li>Off the ground - warmer in shoulder seasons</li>
           <li>Side tables fold out for headlamps, water, glasses</li>
           <li>Easier to get in and out of than a floor mattress</li>
           <li>Queen size fits two adults comfortably</li>
         </ul>
         <h3 className="font-serif text-xl font-semibold text-stone-900 mb-3">Tradeoffs</h3>
         <ul className="text-stone-700 leading-relaxed list-disc pl-6 space-y-1 mb-8">
-          <li>Longer setup — frame plus airbed inflation</li>
+          <li>Longer setup - frame plus airbed inflation</li>
           <li>Heavier and bulkier packed than a plain mattress</li>
           <li>Frame edges can feel firm if you sleep near the side</li>
-          <li>Needs more tent floor space — verify your tent fits the footprint</li>
+          <li>Needs more tent floor space - verify your tent fits the footprint</li>
         </ul>
         <a
           href={getProductUrl(COT_COMBO)}
@@ -281,7 +281,7 @@ export default function Page() {
           TETON Sports ComfortLite Sleeping Pad
         </h2>
         <p className="text-stone-600 leading-relaxed text-lg mb-8">
-          A self-inflating foam pad — open the valve, walk away, come back to a
+          A self-inflating foam pad - open the valve, walk away, come back to a
           ready-to-sleep mat. Less comfortable than a real mattress but warmer
           than air alone, and packs down small enough to throw in any duffel.
         </p>
@@ -296,15 +296,15 @@ export default function Page() {
         />
         <h3 className="font-serif text-xl font-semibold text-stone-900 mb-3">Pros</h3>
         <ul className="text-stone-700 leading-relaxed list-disc pl-6 space-y-1 mb-6">
-          <li>No pump needed — self-inflates in 5 to 10 minutes</li>
+          <li>No pump needed - self-inflates in 5 to 10 minutes</li>
           <li>Warmer than air mattresses thanks to foam insulation</li>
-          <li>Compact when rolled — fits in any car or backpack</li>
+          <li>Compact when rolled - fits in any car or backpack</li>
           <li>Cheapest of the three options</li>
         </ul>
         <h3 className="font-serif text-xl font-semibold text-stone-900 mb-3">Tradeoffs</h3>
         <ul className="text-stone-700 leading-relaxed list-disc pl-6 space-y-1 mb-8">
-          <li>Firmer than a mattress — adjusts to take some getting used to</li>
-          <li>Single-person — couples need two pads</li>
+          <li>Firmer than a mattress - adjusts to take some getting used to</li>
+          <li>Single-person - couples need two pads</li>
           <li>You feel the ground under you, just less of it</li>
         </ul>
         <a
@@ -386,8 +386,8 @@ export default function Page() {
           See the full gear guide.
         </h2>
         <p className="text-stone-600 text-lg leading-relaxed mb-6 max-w-xl">
-          Sleep is one piece. The full guide covers the rest — tents, stoves,
-          coolers, lighting — with the same short-list approach.
+          Sleep is one piece. The full guide covers the rest - tents, stoves,
+          coolers, lighting - with the same short-list approach.
         </p>
         <Link
           href="/gear"

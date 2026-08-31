@@ -13,7 +13,7 @@ import type { SearchDocument } from './types'
 /**
  * Builds the full site search index from every content source. Called at
  * build time by `app/search-index.json/route.ts`. Throws if any content
- * item is missing a title or url — a broken search entry is a build
+ * item is missing a title or url - a broken search entry is a build
  * failure, not a silently-skipped item.
  */
 export function buildSearchIndex(): SearchDocument[] {

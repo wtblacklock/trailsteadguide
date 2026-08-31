@@ -22,7 +22,7 @@ interface Props {
 }
 
 /**
- * The item grid for one gear set, tier-toggleable purely client-side —
+ * The item grid for one gear set, tier-toggleable purely client-side -
  * switching tiers swaps in already-fetched data, no navigation or network
  * request.
  */

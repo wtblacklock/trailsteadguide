@@ -5,9 +5,9 @@ import { pageMetadata, collectionPageGraph, SITE_URL } from '@/lib/seo'
 import { PRINTABLES } from '@/lib/printables'
 
 const TITLE = 'Printables'
-const META_TITLE = 'Free Camping Printables — Star Charts, Knot Cards'
+const META_TITLE = 'Free Camping Printables - Star Charts, Knot Cards'
 const DESCRIPTION =
-  'Free, printable camping reference cards — star charts, knot guides, fire-starting checklists. Single-page analog tools for the campsite.'
+  'Free, printable camping reference cards - star charts, knot guides, fire-starting checklists. Single-page analog tools for the campsite.'
 
 export const metadata = pageMetadata({
   title: META_TITLE,
@@ -45,7 +45,7 @@ export default function Page() {
           Analog tools for the campsite.
         </h1>
         <p className="mt-6 text-lg md:text-xl text-stone-600 leading-relaxed max-w-2xl">
-          One-page printables you can fold into a pack — star charts, knot cards, packing lists. Free with email signup.
+          One-page printables you can fold into a pack - star charts, knot cards, packing lists. Free with email signup.
         </p>
         <p className="mt-4 text-base text-stone-500 leading-relaxed max-w-2xl">
           Each printable is a single-page reference card designed to be useful without a phone signal. Print before you leave, fold it into your pack, and use it at the campsite. Formats are sized for standard letter paper and optimized for black-and-white printing.
