@@ -85,6 +85,19 @@ export default function SearchOverlay({ open, onClose }: Props) {
     return () => clearTimeout(id)
   }, [query])
 
+  // Body scroll lock while the overlay is open. Without this the page
+  // underneath scrolls (and can rubber-band sideways on mobile) when the
+  // user drags inside the overlay — same fix already applied to the
+  // full-screen mobile menu in Nav.tsx.
+  useEffect(() => {
+    if (!open) return
+    const previousOverflow = document.body.style.overflow
+    document.body.style.overflow = 'hidden'
+    return () => {
+      document.body.style.overflow = previousOverflow
+    }
+  }, [open])
+
   const allResults = useMemo<SearchDocument[]>(() => {
     if (!engine) return []
     return searchDocuments(engine, debouncedQuery)
