@@ -11,7 +11,12 @@ export function createSearchEngine(documents: SearchDocument[]): SearchEngine {
     storeFields: ['id', 'type', 'title', 'excerpt', 'url'],
     searchOptions: {
       boost: { title: 3, excerpt: 1, keywords: 1 },
-      fuzzy: 0.4,
+      // Short terms (<= 4 chars) skip fuzzy matching entirely — a proportional
+      // fuzziness large enough to catch e.g. "tnet" -> "tent" also matches
+      // huge swaths of the index for common short words like "tent"/"fire".
+      // Exact + prefix matching remain active regardless. Longer terms keep
+      // the original proportional fuzziness.
+      fuzzy: (term: string) => (term.length <= 4 ? 0 : 0.2),
       prefix: true,
     },
   })

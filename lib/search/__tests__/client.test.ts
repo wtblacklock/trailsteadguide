@@ -11,14 +11,19 @@ describe('search engine', () => {
     expect(results.some((r) => r.title.toLowerCase().includes('tent'))).toBe(true)
   })
 
-  it('is typo-tolerant', () => {
-    const results = searchDocuments(engine, 'tnet')
-    expect(results.some((r) => r.title.toLowerCase().includes('tent'))).toBe(true)
+  it('is typo-tolerant on longer words', () => {
+    const results = searchDocuments(engine, 'campfir')
+    expect(results.some((r) => r.title.toLowerCase().includes('campfire'))).toBe(true)
   })
 
   it('matches on a partial/prefix word', () => {
     const results = searchDocuments(engine, 'campfi')
     expect(results.length).toBeGreaterThan(0)
+  })
+
+  it('does not flood results for a short common query', () => {
+    const results = searchDocuments(engine, 'tent')
+    expect(results.length).toBeLessThan(60)
   })
 
   it('returns an empty array for a query matching nothing', () => {
