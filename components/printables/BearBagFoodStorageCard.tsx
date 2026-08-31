@@ -10,11 +10,11 @@ export default function BearBagFoodStorageCard() {
     'Pet food and water bowls',
     'Empty water bottles that held flavored drinks',
     'Scented candles, air fresheners, baby wipes',
+    'Prescription and OTC medications',
   ]
 
   const staysOut = [
     'Water (unflavored)',
-    'Prescription medications (keep in tent pocket, ask ranger if unsure)',
     'Empty pots rinsed clean and aired out',
   ]
 
@@ -78,6 +78,13 @@ export default function BearBagFoodStorageCard() {
         }
         .bear-card .stays-out li { color: #57534E; font-style: italic; }
         .bear-card .stays-out .box { border-style: dashed; }
+        .bear-card .med-note {
+          font-size: 9.5px;
+          color: #78716C;
+          font-style: italic;
+          line-height: 1.4;
+          margin: 6px 0 0 0;
+        }
         .bear-card ol {
           list-style: none;
           padding: 0;
@@ -155,6 +162,9 @@ export default function BearBagFoodStorageCard() {
                 <li key={item}><span className="box" aria-hidden="true" />{item}</li>
               ))}
             </ul>
+            <p className="med-note">
+              Exception: keep one dose of an emergency medication — EpiPen, inhaler — on your person if you need immediate access.
+            </p>
           </div>
           <div>
             <div style={{ marginBottom: '12px' }}>
