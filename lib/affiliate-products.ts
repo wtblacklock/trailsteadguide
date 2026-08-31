@@ -340,6 +340,18 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     slot: 'SAFETY',
   },
   {
+    id: 'sawyer-extractor-pump-kit',
+    name: 'Sawyer Extractor Pump Kit',
+    description:
+      'A reusable suction pump for snake, bee, wasp, and mosquito bites and stings — no blades, one-handed to use. Not a substitute for emergency care on a venomous bite; get to help first.',
+    amazonAsin: 'B000AU9PEC',
+    imageUrl: 'https://images-na.ssl-images-amazon.com/images/P/B000AU9PEC.01.L.jpg',
+    category: 'essential',
+    templateSlugs: [],
+    priceRange: '~$15',
+    tags: ['family', 'budget'],
+  },
+  {
     id: 'dripdrop-hydration',
     name: 'DripDrop Hydration Packets',
     description:
@@ -575,7 +587,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     description:
       'Pre-seasoned, made in the USA, and the default answer whenever cast iron comes up - outlasts every nonstick pan and gets better with use.',
     amazonAsin: 'B00006JSUA',
-    imageUrl: '',
+    imageUrl: 'https://images-na.ssl-images-amazon.com/images/P/B00006JSUA.01.L.jpg',
     category: 'comfort',
     templateSlugs: [],
     priceRange: '~$20',
@@ -683,7 +695,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     description:
       'The usual first recommendation before buying a telescope - enough magnification to resolve Jupiter’s moons and Saturn’s shape on a clear night.',
     amazonAsin: 'B004KM82IQ',
-    imageUrl: '',
+    imageUrl: 'https://images-na.ssl-images-amazon.com/images/P/B004KM82IQ.01.L.jpg',
     category: 'comfort',
     templateSlugs: [],
     priceRange: '~$70',

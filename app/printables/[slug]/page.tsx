@@ -5,6 +5,7 @@ import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import PrintableEmailGate from '@/components/printables/PrintableEmailGate'
 import PrintableFloatingBar from '@/components/printables/PrintableFloatingBar'
+import PrintableGearCard from '@/components/printables/PrintableGearCard'
 import PrintablePreview from '@/components/printables/PrintablePreview'
 import { pageMetadata, printableCreativeWorkGraph, SITE_URL } from '@/lib/seo'
 import { PRINTABLES, getPrintableBySlug } from '@/lib/printables'
@@ -131,6 +132,8 @@ export default async function PrintablePage({
               printableSlug={printable.slug}
               printHref={printHref}
             />
+
+            <PrintableGearCard productIds={printable.relatedProductIds ?? []} />
 
             {(printable.relatedSkillPath || printable.relatedGuideSlug) && (
               <div className="rounded-2xl ring-1 ring-stone-200 p-6 md:p-7">
