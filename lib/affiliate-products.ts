@@ -742,7 +742,8 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     name: 'Coleman 50-Quart Xtreme Wheeled Cooler',
     description:
       'The budget-tier cooler pick — keeps ice up to 5 days, wheels for the walk from the car, no rotomolded price tag. The right call when a cooler just needs to work.',
-    imageUrl: '',
+    amazonAsin: 'B0CDNJC1LV',
+    imageUrl: 'https://images-na.ssl-images-amazon.com/images/P/B0CDNJC1LV.01.L.jpg',
     category: 'essential',
     templateSlugs: [],
     priceRange: '~$45',
