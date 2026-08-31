@@ -39,9 +39,18 @@ const POPULAR_LINKS = [
   { href: '/gear', label: 'See the gear guide' },
 ]
 
+function getFocusableElements(container: HTMLElement): HTMLElement[] {
+  return Array.from(
+    container.querySelectorAll<HTMLElement>(
+      'input, button:not([tabindex="-1"]), a:not([tabindex="-1"]), [tabindex]:not([tabindex="-1"])',
+    ),
+  )
+}
+
 export default function SearchOverlay({ open, onClose }: Props) {
   const router = useRouter()
   const inputRef = useRef<HTMLInputElement>(null)
+  const dialogRef = useRef<HTMLDivElement>(null)
   const [status, setStatus] = useState<Status>('idle')
   const [engine, setEngine] = useState<SearchEngine | null>(null)
   const [query, setQuery] = useState('')
@@ -95,11 +104,36 @@ export default function SearchOverlay({ open, onClose }: Props) {
     setHighlightedIndex(0)
   }, [debouncedQuery, activeType])
 
-  function handleKeyDown(e: React.KeyboardEvent<HTMLInputElement>) {
+  function handleDialogKeyDown(e: React.KeyboardEvent<HTMLDivElement>) {
     if (e.key === 'Escape') {
       onClose()
       return
     }
+
+    if (e.key === 'Tab') {
+      const dialog = dialogRef.current
+      if (!dialog) return
+      const focusable = getFocusableElements(dialog)
+      if (focusable.length === 0) return
+      const first = focusable[0]
+      const last = focusable[focusable.length - 1]
+      if (e.shiftKey) {
+        if (document.activeElement === first) {
+          e.preventDefault()
+          last.focus()
+        }
+      } else if (document.activeElement === last) {
+        e.preventDefault()
+        first.focus()
+      }
+      return
+    }
+
+    // Arrow/Enter navigation only makes sense while the input is focused —
+    // chip buttons have their own native button behavior and shouldn't have
+    // arrow-key side effects.
+    if (document.activeElement !== inputRef.current) return
+
     if (e.key === 'ArrowDown') {
       e.preventDefault()
       setHighlightedIndex((i) => Math.min(i + 1, Math.max(filteredResults.length - 1, 0)))
@@ -138,14 +172,17 @@ export default function SearchOverlay({ open, onClose }: Props) {
     <div className="fixed inset-0 z-[70] flex items-start justify-center pt-24 px-4">
       <button
         type="button"
+        tabIndex={-1}
         aria-label="Close search"
         onClick={onClose}
         className="absolute inset-0 bg-stone-950/40 backdrop-blur-sm"
       />
       <div
+        ref={dialogRef}
         role="dialog"
         aria-modal="true"
         aria-label="Site search"
+        onKeyDown={handleDialogKeyDown}
         className="relative w-full max-w-xl bg-white rounded-2xl shadow-2xl ring-1 ring-stone-200 overflow-hidden flex flex-col max-h-[70vh]"
       >
         <div className="flex items-center gap-3 px-4 py-3 border-b border-stone-200 shrink-0">
@@ -158,7 +195,6 @@ export default function SearchOverlay({ open, onClose }: Props) {
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            onKeyDown={handleKeyDown}
             placeholder="Search guides, skills, gear, and more…"
             className="flex-1 outline-none text-stone-900 placeholder:text-stone-400"
             aria-label="Search"
