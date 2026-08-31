@@ -23,7 +23,7 @@ export default function GearSystemsBlock({ systems, resolved }: Props) {
           The four systems for this trip
         </h2>
         <p className="text-stone-500 mt-2 text-sm">
-          Each system is picked from your answers — sleep, cook, light, comfort. Tap any link to
+          Each system is picked from your answers - sleep, cook, light, comfort. Tap any link to
           view a product on Amazon (affiliate links help fund Trailstead).
         </p>
       </div>
@@ -55,7 +55,7 @@ function SystemCard<C extends string>({
           {def.structure.map((s, i) => (
             <li key={i} className="flex gap-2">
               <span className="text-stone-300" aria-hidden="true">
-                —
+                -
               </span>
               <span>{s}</span>
             </li>

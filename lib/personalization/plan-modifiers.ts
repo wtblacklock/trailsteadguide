@@ -2,11 +2,11 @@
  * Per-plan modifier rule tables.
  *
  * Each plan implements only the modifiers that meaningfully change behavior
- * for that plan. Rules are deterministic and inspectable — `applyModifiers`
+ * for that plan. Rules are deterministic and inspectable - `applyModifiers`
  * reads them in `MODIFIER_ORDER`, so output is stable regardless of object
  * key iteration order.
  *
- * Authoring convention: keep `addPacking` items short (4–8 words),
+ * Authoring convention: keep `addPacking` items short (4-8 words),
  * `addNotes` to one-sentence safety/framing reminders, and `addTimeline`
  * to single rows that slot naturally into the existing timeline.
  */
@@ -23,7 +23,7 @@ const BACKYARD_TEST: ModifierRules = {
       'A favorite stuffed animal',
     ],
     addNotes: [
-      'Toddlers often need a pre-bed warm-up — let them play in the tent for 30 min before lights out.',
+      'Toddlers often need a pre-bed warm-up - let them play in the tent for 30 min before lights out.',
     ],
   },
   kids5to10: {
@@ -38,11 +38,11 @@ const BACKYARD_TEST: ModifierRules = {
   },
   isMinimal: {
     removePacking: ['Camp stove'],
-    addNotes: ['You can skip the stove on a backyard test — the kitchen is 50 ft away.'],
+    addNotes: ['You can skip the stove on a backyard test - the kitchen is 50 ft away.'],
   },
   isLargeGroup: {
     addNotes: [
-      'With 5+ people the backyard test reveals whether one tent fits — log that finding tonight.',
+      'With 5+ people the backyard test reveals whether one tent fits - log that finding tonight.',
     ],
   },
 }
@@ -66,7 +66,7 @@ const FIRST_NIGHT_CAMP: ModifierRules = {
       ],
     },
     addNotes: [
-      'Plan for one full nighttime wake — bring a small lantern and a snack for the parent on duty.',
+      'Plan for one full nighttime wake - bring a small lantern and a snack for the parent on duty.',
     ],
   },
   kids5to10: {
@@ -75,7 +75,7 @@ const FIRST_NIGHT_CAMP: ModifierRules = {
   kids10plus: {
     addPacking: ['Headlamp per kid (their own, not shared)', 'Pocket knife (with rules)'],
     addNotes: [
-      'Older kids do better with a real role at camp — assign tent setup, fire prep, or dish duty.',
+      'Older kids do better with a real role at camp - assign tent setup, fire prep, or dish duty.',
     ],
   },
   isActiveTrip: {
@@ -85,7 +85,7 @@ const FIRST_NIGHT_CAMP: ModifierRules = {
         {
           time: '8:30 AM',
           title: 'Short hike before pack-out',
-          description: '60–90 minutes on a marked loop. Snacks and water, no destination pressure.',
+          description: '60-90 minutes on a marked loop. Snacks and water, no destination pressure.',
         },
       ],
     },
@@ -124,7 +124,7 @@ const FIRST_WEEKEND_CAMP: ModifierRules = {
       ],
     },
     addNotes: [
-      'Two nights with a toddler benefits from a midday rest window — protect 1–3 PM Saturday for it.',
+      'Two nights with a toddler benefits from a midday rest window - protect 1-3 PM Saturday for it.',
     ],
   },
   kids5to10: {
@@ -156,13 +156,13 @@ const FIRST_WEEKEND_CAMP: ModifierRules = {
         {
           time: 'Saturday 9 AM',
           title: 'Main hike',
-          description: '3–6 miles depending on the group. Pack lunch + extra water; aim to be back by 2 PM.',
+          description: '3-6 miles depending on the group. Pack lunch + extra water; aim to be back by 2 PM.',
         },
       ],
     },
   },
   isRelaxedTrip: {
-    addNotes: ['Saturday is a "do nothing" day — read, wade, nap. The trip works without a centerpiece activity.'],
+    addNotes: ['Saturday is a "do nothing" day - read, wade, nap. The trip works without a centerpiece activity.'],
   },
   isComfortFocused: {
     addPacking: [
@@ -192,7 +192,7 @@ const EASY_FAMILY_BASECAMP: ModifierRules = {
       'Toddler plates and cups',
     ],
     addNotes: [
-      'A 3-night basecamp with a toddler is much easier with a daily rhythm — set wake / nap / dinner times early.',
+      'A 3-night basecamp with a toddler is much easier with a daily rhythm - set wake / nap / dinner times early.',
     ],
   },
   kids5to10: {
@@ -218,7 +218,7 @@ const EASY_FAMILY_BASECAMP: ModifierRules = {
         {
           time: 'Day 2 9 AM',
           title: 'Main outing',
-          description: 'Hike, paddle, or bike — whatever the area offers. This is the centerpiece day.',
+          description: 'Hike, paddle, or bike - whatever the area offers. This is the centerpiece day.',
         },
       ],
     },
@@ -237,7 +237,7 @@ const EASY_FAMILY_BASECAMP: ModifierRules = {
   },
   isLargeGroup: {
     addPacking: ['Second air mattress', 'Extra cooler', 'Folding table extension'],
-    addNotes: ['With 5+, claim two adjacent sites if available — the kitchen runs better with the room.'],
+    addNotes: ['With 5+, claim two adjacent sites if available - the kitchen runs better with the room.'],
   },
 }
 

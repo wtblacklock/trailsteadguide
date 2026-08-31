@@ -23,7 +23,7 @@ export default function HomepageEmailCapture() {
 
   return (
     <section data-reveal className="px-8 pb-16">
-      {/* Forest-green download surface — same palette as the printable
+      {/* Forest-green download surface - same palette as the printable
           email gate, the floating bar, and the trip-pack download CTA so
           every capture surface on the site reads as the same family. */}
       <div className="bg-[#1f3622] text-white rounded-3xl border border-[#2a4a30] p-10 md:p-16">
@@ -44,7 +44,7 @@ export default function HomepageEmailCapture() {
             {status === 'success' ? (
               <div className="rounded-lg bg-[#2a4a30] border border-[#3a5a3e] px-5 py-4">
                 <p className="text-sm font-medium text-[#c9d4b5]">
-                  ✓ Check your inbox — your checklist is on the way.
+                  ✓ Check your inbox - your checklist is on the way.
                 </p>
               </div>
             ) : (

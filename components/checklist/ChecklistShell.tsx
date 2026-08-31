@@ -14,7 +14,7 @@ type Answers = {
 
 /**
  * Shorter 3-question flow that produces a checklist-only output.
- * Questions are deliberately cast to QuizQuestionType — we reuse the existing
+ * Questions are deliberately cast to QuizQuestionType - we reuse the existing
  * quiz rendering component but the `nights` id isn't part of QuizAnswers.
  */
 const QUESTIONS = [
@@ -31,9 +31,9 @@ const QUESTIONS = [
     subprompt: 'Select all that apply.',
     multiSelect: true,
     options: [
-      { label: 'No kids — just adults', value: 'none' },
+      { label: 'No kids - just adults', value: 'none' },
       { label: 'Under 5 (toddlers and preschool)', value: 'under_5' },
-      { label: '5–10 years old', value: '5_10' },
+      { label: '5-10 years old', value: '5_10' },
       { label: '10 and up (incl. teens)', value: '10+' },
     ],
   },

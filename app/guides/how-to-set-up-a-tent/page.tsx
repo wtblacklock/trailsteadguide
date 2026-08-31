@@ -48,15 +48,15 @@ export default function Page() {
           },
           {
             q: 'Do I need a mallet for tent stakes?',
-            a: 'For soft ground, no — you can usually push stakes in by hand or with your foot. For hard-packed or rocky ground, a small rubber mallet makes a real difference and prevents bent stakes. Many tents include one; a $10 mallet is worth adding if yours doesn\'t.',
+            a: 'For soft ground, no - you can usually push stakes in by hand or with your foot. For hard-packed or rocky ground, a small rubber mallet makes a real difference and prevents bent stakes. Many tents include one; a $10 mallet is worth adding if yours doesn\'t.',
           },
           {
             q: 'Can one person set up a family tent alone?',
-            a: 'Yes, for most instant/pop-up cabin tents — that\'s their main selling point. Traditional pole tents are doable solo but noticeably easier and faster with a second person, especially for anything larger than a 4-person size.',
+            a: 'Yes, for most instant/pop-up cabin tents - that\'s their main selling point. Traditional pole tents are doable solo but noticeably easier and faster with a second person, especially for anything larger than a 4-person size.',
           },
           {
             q: 'What if I forgot to bring stakes?',
-            a: 'Heavy rocks piled on the tent corners and guyline loops work in calm weather. It is not a substitute for real stakes in wind or rain — the tent can shift or the rainfly can pull loose. Treat it as an emergency fix, not a plan.',
+            a: 'Heavy rocks piled on the tent corners and guyline loops work in calm weather. It is not a substitute for real stakes in wind or rain - the tent can shift or the rainfly can pull loose. Treat it as an emergency fix, not a plan.',
           },
         ])}
       />
@@ -79,15 +79,15 @@ export default function Page() {
       >
         <QuickAnswer
           tldr="Pick flat, debris-free ground. Stake the corners, raise the poles, attach the rainfly, then guy it out. 15 minutes with two people."
-          summary="Setting up a family tent has five steps that don't change no matter what tent you own: pick the site, lay out and stake the footprint, raise the poles, attach the rainfly, then tension the guylines. Instant/pop-up cabin tents compress steps two through three into under a minute; traditional pole tents take 10-15 minutes with two people. The rainfly is where most first-timers cut corners — skipping it because the sky looks clear is the single most common regret campers report after an unexpected overnight shower."
+          summary="Setting up a family tent has five steps that don't change no matter what tent you own: pick the site, lay out and stake the footprint, raise the poles, attach the rainfly, then tension the guylines. Instant/pop-up cabin tents compress steps two through three into under a minute; traditional pole tents take 10-15 minutes with two people. The rainfly is where most first-timers cut corners - skipping it because the sky looks clear is the single most common regret campers report after an unexpected overnight shower."
         />
 
         <h2>Before you leave the car: picking the spot</h2>
         <p>
-          Walk the site before you unpack the tent. Look for flat ground — even a slight slope
+          Walk the site before you unpack the tent. Look for flat ground - even a slight slope
           means someone slides toward the tent wall all night. Clear visible rocks, roots, and
           pinecones by hand; anything under the floor becomes a pressure point that can eventually
-          wear through the fabric. Avoid the lowest point of the site, even if it looks flat — it&apos;s
+          wear through the fabric. Avoid the lowest point of the site, even if it looks flat - it&apos;s
           where water pools if it rains.
         </p>
 
@@ -95,7 +95,7 @@ export default function Page() {
         <ol>
           <li>
             <strong>Lay out the tent body</strong> on the cleared spot, doors facing where you want
-            them — away from prevailing wind if you know the direction, toward the fire ring or
+            them - away from prevailing wind if you know the direction, toward the fire ring or
             common area otherwise.
           </li>
           <li>
@@ -104,19 +104,19 @@ export default function Page() {
             sliding while you work.
           </li>
           <li>
-            <strong>Raise the poles.</strong> On a pop-up/instant tent, this is largely automatic —
+            <strong>Raise the poles.</strong> On a pop-up/instant tent, this is largely automatic -
             unfold and let the pre-attached poles lock into place. On a traditional dome tent, feed
             poles through their sleeves or clip them in, then walk the tent up by pushing the pole
             ends into their corner grommets.
           </li>
           <li>
-            <strong>Attach the rainfly</strong> — every time, regardless of forecast. Clip or
+            <strong>Attach the rainfly</strong> - every time, regardless of forecast. Clip or
             buckle it at all four corners, then close the door and window flaps.
           </li>
           <li>
             <strong>Stake and tension the guylines</strong> at an angle away from the tent, not
             straight down. This is what actually keeps the fly taut and off the tent body in wind
-            and rain — see the full technique in{' '}
+            and rain - see the full technique in{' '}
             <Link href="/skills/shelter/rainfly-and-guylines">rainfly and guylines</Link>.
           </li>
         </ol>
@@ -125,7 +125,7 @@ export default function Page() {
         <p>
           It&apos;s tempting to leave the rainfly in the bag on a clear evening. Weather at a campsite
           changes faster than a phone forecast accounts for, and putting the fly on in the dark
-          during a surprise shower is a genuinely bad experience. Attach it every time — leave it
+          during a surprise shower is a genuinely bad experience. Attach it every time - leave it
           rolled back and unclipped at the top if you want ventilation on a clear night, but keep
           it on the tent, staked and ready to unroll in seconds.
         </p>
@@ -134,16 +134,16 @@ export default function Page() {
         <ul>
           <li>
             <strong>Pitching on a slope without noticing.</strong> Stand at the site and roll an
-            empty water bottle — if it moves, so will everyone&apos;s sleeping pad overnight.
+            empty water bottle - if it moves, so will everyone&apos;s sleeping pad overnight.
           </li>
           <li>
             <strong>Skipping stakes because the tent is &ldquo;freestanding.&rdquo;</strong>{' '}
-            Freestanding means it holds its shape without stakes — it does not mean it stays put in
+            Freestanding means it holds its shape without stakes - it does not mean it stays put in
             wind. Always stake it, even on a calm night.
           </li>
           <li>
             <strong>Attaching the rainfly backwards.</strong> Most flies have a door that should
-            align with the tent&apos;s door — check before clipping in all four corners, not after.
+            align with the tent&apos;s door - check before clipping in all four corners, not after.
           </li>
           <li>
             <strong>Guying the lines straight down instead of at an angle.</strong> A straight-down
@@ -158,7 +158,7 @@ export default function Page() {
         <h2>Breaking camp and drying it out</h2>
         <p>
           Reverse the order: guylines and stakes first, then the rainfly, then collapse the poles.
-          Never pack a wet tent for longer than the drive home — mold and mildew set in within a
+          Never pack a wet tent for longer than the drive home - mold and mildew set in within a
           day and ruin the fabric permanently. Hang it in a garage or over a fence to dry completely
           before storing it. Full detail on drying, folding, and off-season storage is in{' '}
           <Link href="/skills/shelter/tent-care-and-storage">tent care and storage</Link>.
@@ -183,7 +183,7 @@ export default function Page() {
         </p>
         <h3>Do I need a mallet for tent stakes?</h3>
         <p>
-          Not on soft ground — hand or foot pressure works. On hard-packed or rocky ground, a small
+          Not on soft ground - hand or foot pressure works. On hard-packed or rocky ground, a small
           rubber mallet prevents bent stakes and is worth carrying.
         </p>
         <h3>Can one person set up a family tent alone?</h3>
@@ -193,7 +193,7 @@ export default function Page() {
         </p>
         <h3>What if I forgot to bring stakes?</h3>
         <p>
-          Heavy rocks on the corners and guyline loops work as an emergency fix in calm weather —
+          Heavy rocks on the corners and guyline loops work as an emergency fix in calm weather -
           not a reliable plan in wind or rain.
         </p>
       </GuidePage>

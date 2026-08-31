@@ -44,7 +44,7 @@ export default function Page() {
         data={faqPageGraph([
           {
             q: 'What do teenagers do while camping?',
-            a: 'Teens engage best with activities that have real challenge, stakes, or autonomy: map and compass navigation, fire-starting competitions, night hikes, photography challenges, and games with competitive scoring. Give them a job with real responsibility. The worst camp experience for a teen is being supervised — give them autonomy within safety bounds.',
+            a: 'Teens engage best with activities that have real challenge, stakes, or autonomy: map and compass navigation, fire-starting competitions, night hikes, photography challenges, and games with competitive scoring. Give them a job with real responsibility. The worst camp experience for a teen is being supervised - give them autonomy within safety bounds.',
           },
           {
             q: 'How do you get teenagers interested in camping?',
@@ -73,7 +73,7 @@ export default function Page() {
             Camping Activities for Teenagers
           </h1>
           <p className="mt-8 text-xl md:text-2xl text-stone-600 leading-[1.5] font-light">
-            Challenge-based, autonomy-forward activities that hold teen attention — and what to do
+            Challenge-based, autonomy-forward activities that hold teen attention - and what to do
             when yours says camping sounds boring.
           </p>
         </header>
@@ -157,7 +157,7 @@ export default function Page() {
 
           <h3>Map and compass navigation</h3>
           <p>
-            Give them a topographic map and a compass. Set a destination 1–2 miles away. They
+            Give them a topographic map and a compass. Set a destination 1-2 miles away. They
             navigate, you follow. This is genuinely challenging for most teenagers and has real
             stakes. A teen who gets the group to the destination correctly feels accomplished in
             a way that a &ldquo;follow the blue trail blazes&rdquo; hike doesn&apos;t produce.
@@ -167,7 +167,7 @@ export default function Page() {
           <p>
             Each person gets a pile of materials and 15 minutes to start a fire using only matches
             or a lighter (no lighter fluid, no firestarter blocks). Judge by who has the largest
-            sustained fire at 15 minutes. This is more engaging than it sounds — teens take it
+            sustained fire at 15 minutes. This is more engaging than it sounds - teens take it
             seriously and the skill is actually useful.
           </p>
 
@@ -183,13 +183,13 @@ export default function Page() {
           <p>
             Download a star chart app before the trip (works offline). After dark, find 5
             constellations, locate a planet, and try to identify the Milky Way. This is better
-            with a printed paper chart alongside the app — teens who explain the constellation
+            with a printed paper chart alongside the app - teens who explain the constellation
             to someone else learn it faster. Competitive: first person to confirm 5 constellations.
           </p>
 
           <h3>Wilderness survival scenarios</h3>
           <p>
-            Pose a scenario: &ldquo;You&apos;re 5 miles from camp and the trail marker is gone —
+            Pose a scenario: &ldquo;You&apos;re 5 miles from camp and the trail marker is gone -
             what do you do?&rdquo; Walk through wilderness survival priorities as a conversation,
             not a lecture. Teens engage with the problem-solving framing. Follow with the real
             skills that answer the scenario: navigation, fire, water, signaling.
@@ -210,7 +210,7 @@ export default function Page() {
             for younger kids or left to passive observation. The fix:
           </p>
           <ol>
-            <li>Give them a real job — not a fake job. Camp photographer, dinner lead, navigation lead for tomorrow&apos;s hike.</li>
+            <li>Give them a real job - not a fake job. Camp photographer, dinner lead, navigation lead for tomorrow&apos;s hike.</li>
             <li>Introduce a challenge with competitive structure. Most teens will engage with &ldquo;let&apos;s see who can start a fire faster&rdquo; even if they resisted the activity when framed as &ldquo;want to learn fire starting?&rdquo;</li>
             <li>Take a night hike. The dark changes the environment enough to reset the boredom. Bring headlamps, go slowly, listen.</li>
             <li>Accept that some downtime is okay. Teens at camp who are reading, sketching, or just sitting are not bored in a problem-requiring-intervention way. Let it be.</li>
@@ -218,7 +218,7 @@ export default function Page() {
 
           <p>
             For a camp plan that accounts for teen ages alongside younger siblings,{' '}
-            <Link href="/quiz">take the 2-minute quiz</Link> — we&apos;ll match a structured plan
+            <Link href="/quiz">take the 2-minute quiz</Link> - we&apos;ll match a structured plan
             to your family&apos;s ages and experience level.
           </p>
         </section>

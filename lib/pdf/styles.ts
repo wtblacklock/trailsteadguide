@@ -4,7 +4,7 @@
  *
  * Strategy: @page reserves physical margins. Each logical `.page` section
  * forces a new physical page via `page-break-after`. Content grows naturally
- * so nothing gets clipped — sections that exceed one page flow to the next.
+ * so nothing gets clipped - sections that exceed one page flow to the next.
  *
  * Palette: forest #1f3622 / sage #3a5a3e / sand #f5efe2 / charcoal #1f2622
  */
@@ -38,7 +38,7 @@ export const PDF_STYLES = `
     background: #ffffff;
   }
 
-  /* Footer strip — sits at end of each logical section. Slim margin-top so
+  /* Footer strip - sits at end of each logical section. Slim margin-top so
      the footer fits inside the section's page even when content is dense;
      break-inside: avoid keeps it from splitting across pages on its own. */
   .footer {
@@ -67,7 +67,7 @@ export const PDF_STYLES = `
     letter-spacing: 0.5px;
   }
 
-  /* COVER PAGE — content-driven height with a forced break after, so the
+  /* COVER PAGE - content-driven height with a forced break after, so the
      cover always owns exactly one physical page without sub-pixel overflow
      bumping a sliver onto page 2. */
   .cover {
@@ -132,7 +132,7 @@ export const PDF_STYLES = `
     line-height: 1.5;
   }
 
-  /* SECTION HEADERS — break-after: avoid keeps the header glued to its body
+  /* SECTION HEADERS - break-after: avoid keeps the header glued to its body
      so a page break can never orphan a title at the bottom of a page. */
   .section-eyebrow {
     font-size: 8.5pt; letter-spacing: 3px; text-transform: uppercase;

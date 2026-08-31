@@ -1,5 +1,5 @@
 // app/robots.ts
-// Next.js 15 App Router — generates /robots.txt at runtime.
+// Next.js 15 App Router - generates /robots.txt at runtime.
 // Place this file at: app/robots.ts
 //
 // WHY: Static public/robots.txt is overwritten by `next build` output.

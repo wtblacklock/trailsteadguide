@@ -21,7 +21,7 @@ describe('parsePartySize', () => {
     expect(parsePartySize({ adults: 'banana', kids: 'pear' })).toEqual({ adults: 2, kids: 2 })
   })
 
-  it('clamps adults to a minimum of 1 — using default when below', () => {
+  it('clamps adults to a minimum of 1 - using default when below', () => {
     // adults=0 fails the `>= 1` guard, defaults to 2.
     expect(parsePartySize({ adults: '0', kids: '3' })).toEqual({ adults: 2, kids: 3 })
   })
@@ -30,7 +30,7 @@ describe('parsePartySize', () => {
     expect(parsePartySize({ adults: '2', kids: '0' })).toEqual({ adults: 2, kids: 0 })
   })
 
-  it('rejects negative kids — falls back to default', () => {
+  it('rejects negative kids - falls back to default', () => {
     expect(parsePartySize({ adults: '2', kids: '-3' })).toEqual({ adults: 2, kids: 2 })
   })
 
@@ -43,7 +43,7 @@ describe('parsePartySize', () => {
   })
 
   it('parses leading-numeric strings via parseInt semantics', () => {
-    // parseInt('3 adults', 10) === 3 — documenting intentional behavior.
+    // parseInt('3 adults', 10) === 3 - documenting intentional behavior.
     expect(parsePartySize({ adults: '3 adults', kids: '4 kids' })).toEqual({ adults: 3, kids: 4 })
   })
 

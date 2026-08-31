@@ -10,17 +10,17 @@ import type {
 } from './types'
 
 export const AGE_OPTIONS: { value: AgeRange; label: string }[] = [
-  { value: '3-5', label: 'Ages 3–5' },
-  { value: '6-8', label: 'Ages 6–8' },
-  { value: '9-12', label: 'Ages 9–12' },
-  { value: '13-17', label: 'Teens (13–17)' },
+  { value: '3-5', label: 'Ages 3-5' },
+  { value: '6-8', label: 'Ages 6-8' },
+  { value: '9-12', label: 'Ages 9-12' },
+  { value: '13-17', label: 'Teens (13-17)' },
   { value: 'adults', label: 'Adults' },
 ]
 
 export const GROUP_OPTIONS: { value: GroupSize; label: string }[] = [
   { value: 'solo', label: 'Solo' },
-  { value: '2-4', label: '2–4 people' },
-  { value: '5-10', label: '5–10 people' },
+  { value: '2-4', label: '2-4 people' },
+  { value: '5-10', label: '5-10 people' },
   { value: '10+', label: 'Large group (10+)' },
 ]
 
@@ -31,9 +31,9 @@ export const ENERGY_OPTIONS: { value: EnergyLevel; label: string }[] = [
 ]
 
 export const TIME_OPTIONS: { value: TimeRequired; label: string }[] = [
-  { value: '5-10min', label: '5–10 min' },
-  { value: '15-30min', label: '15–30 min' },
-  { value: '30-60min', label: '30–60 min' },
+  { value: '5-10min', label: '5-10 min' },
+  { value: '15-30min', label: '15-30 min' },
+  { value: '30-60min', label: '30-60 min' },
   { value: '1hour+', label: '1+ hour' },
 ]
 

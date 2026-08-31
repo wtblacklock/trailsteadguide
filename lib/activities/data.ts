@@ -12,7 +12,7 @@ export const ACTIVITIES: Activity[] = [
     timeRequired: '5-10min',
     setupDifficulty: 'none',
     vibe: 'calm',
-    materials: ['Nothing — just a circle of people'],
+    materials: ['Nothing - just a circle of people'],
     instructions: [
       'Sit in a circle around the picnic table or fire ring.',
       'Each person shares three statements about themselves: two true and one false. At least one statement should be camp- or outdoor-related (e.g. "I have hiked a 14er").',
@@ -41,10 +41,10 @@ export const ACTIVITIES: Activity[] = [
     vibe: 'calm',
     materials: ['A campfire (or lantern) and a circle of seats'],
     instructions: [
-      'Pick a starter — usually the youngest, or whoever has the marshmallow stick.',
+      'Pick a starter - usually the youngest, or whoever has the marshmallow stick.',
       'The starter says one sentence to begin a story. ("It was the third night of the trip when we noticed the lights.")',
       'Each player adds one sentence, going around the circle.',
-      'No vetoing — every contribution stays. Keep it kid-friendly.',
+      'No vetoing - every contribution stays. Keep it kid-friendly.',
       'End the story when it reaches a natural close, or after three full laps of the circle.',
     ],
     winCondition: 'The group lands on an ending everyone agrees feels right.',
@@ -62,7 +62,7 @@ export const ACTIVITIES: Activity[] = [
   {
     slug: 'flashlight-tag',
     title: 'Flashlight Tag',
-    tagline: 'Hide-and-seek after dark — the camp classic.',
+    tagline: 'Hide-and-seek after dark - the camp classic.',
     category: 'night',
     ageRange: '9-12',
     groupSize: '5-10',
@@ -72,7 +72,7 @@ export const ACTIVITIES: Activity[] = [
     vibe: 'competitive',
     materials: ['One flashlight per player', 'A defined play area with clear boundaries'],
     instructions: [
-      'Walk the play boundary together before starting. Identify hard limits — fire ring, road, water.',
+      'Walk the play boundary together before starting. Identify hard limits - fire ring, road, water.',
       'Pick one player as "It." It counts to 30 with eyes closed.',
       'Everyone else hides within the boundary. Flashlights stay off while hiding.',
       'It hunts with their flashlight on. If the beam lands on a hider and It calls their name, that hider is tagged.',
@@ -87,7 +87,7 @@ export const ACTIVITIES: Activity[] = [
     safetyNotes: [
       'Walk the boundary together before lights-out so everyone knows the limits.',
       'No hiding in trees, water, or anywhere requiring climbing.',
-      'Each player keeps a flashlight on them at all times — even when hiding — for emergencies.',
+      'Each player keeps a flashlight on them at all times - even when hiding - for emergencies.',
     ],
     recommendedFor: ['first-night-camp', 'first-weekend-camp'],
     relatedGear: [
@@ -106,8 +106,8 @@ export const ACTIVITIES: Activity[] = [
     setupDifficulty: 'minimal',
     vibe: 'competitive',
     materials: [
-      'A pack of glow-stick necklaces (8–12)',
-      'Three short stakes or sticks driven into the ground 6–10 feet away',
+      'A pack of glow-stick necklaces (8-12)',
+      'Three short stakes or sticks driven into the ground 6-10 feet away',
     ],
     instructions: [
       'Activate all glow sticks and connect into rings using their connector caps.',
@@ -150,7 +150,7 @@ export const ACTIVITIES: Activity[] = [
       'Split into two teams. Each team picks a "home" half of the field and a flag location visible to the other team.',
       'Mark a clear midline. No tagging happens on your own side.',
       'On "go," players cross the midline to grab the other team\'s flag.',
-      'If you are tagged on the opposing side, you go to "jail" — a designated spot near their flag — until a teammate frees you.',
+      'If you are tagged on the opposing side, you go to "jail" - a designated spot near their flag - until a teammate frees you.',
       'A team wins by carrying the opposing flag back across the midline without being tagged.',
     ],
     winCondition: 'Carry the opposing team\'s flag across the midline to your home side.',
@@ -183,12 +183,12 @@ export const ACTIVITIES: Activity[] = [
     vibe: 'competitive',
     materials: [
       'A score sheet and pen',
-      '4–6 small props depending on events: rope, balls, buckets, sticks',
+      '4-6 small props depending on events: rope, balls, buckets, sticks',
       'Optional: medals or ribbons for the top three',
     ],
     instructions: [
-      'Pick 4–6 short events. Suggested: tug-of-war, three-legged race, stick toss for distance, water-bucket relay, scavenger sprint, balance walk.',
-      'Split players into teams of 3–5. Teams pick names.',
+      'Pick 4-6 short events. Suggested: tug-of-war, three-legged race, stick toss for distance, water-bucket relay, scavenger sprint, balance walk.',
+      'Split players into teams of 3-5. Teams pick names.',
       'Run each event one at a time. Score 5 points for first, 3 for second, 1 for third.',
       'Track scores on the sheet. Announce running totals between events.',
       'After the last event, the team with the most total points wins.',
@@ -263,7 +263,7 @@ export const ACTIVITIES: Activity[] = [
       'Family relay: each family member gets one throw; total skips per family.',
     ],
     safetyNotes: [
-      'Check the throwing line is clear behind you — backswings have hit kids and adults.',
+      'Check the throwing line is clear behind you - backswings have hit kids and adults.',
       'Do not throw near swimmers, fishing lines, or boats.',
     ],
     recommendedFor: ['first-weekend-camp', 'easy-family-basecamp'],
@@ -285,13 +285,13 @@ export const ACTIVITIES: Activity[] = [
       'A pencil',
     ],
     instructions: [
-      'Write a list of 8–12 items kids can spot or collect. Examples: a feather, a smooth rock, a yellow leaf, an acorn, a Y-shaped stick, something soft, something rough.',
+      'Write a list of 8-12 items kids can spot or collect. Examples: a feather, a smooth rock, a yellow leaf, an acorn, a Y-shaped stick, something soft, something rough.',
       'Add a few "look but don\'t collect" items: a spider web, a bird, an animal track.',
       'Set a clear boundary for the search and a return time.',
       'Send kids out in pairs. Adults shadow at a distance.',
       'Regroup at the picnic table. Each kid shares their finds and crosses items off the list.',
     ],
-    winCondition: 'A kid completes the list — or finds the most items in the time window.',
+    winCondition: 'A kid completes the list - or finds the most items in the time window.',
     variations: [
       'Color hunt: find one item of every color of the rainbow.',
       'Texture hunt: rough, smooth, soft, scratchy, sticky.',
@@ -323,10 +323,10 @@ export const ACTIVITIES: Activity[] = [
       'A pencil',
     ],
     instructions: [
-      'Before the trail: each kid fills their grid with 25 items they might see — bird, mushroom, anthill, woodpecker hole, three different leaf shapes, a creek, etc.',
+      'Before the trail: each kid fills their grid with 25 items they might see - bird, mushroom, anthill, woodpecker hole, three different leaf shapes, a creek, etc.',
       'On the trail, kids cross out a square each time they spot one of their items.',
       'The first to mark five in a row (across, down, or diagonal) calls "bingo."',
-      'Continue walking — they can keep playing for blackout (every square crossed off).',
+      'Continue walking - they can keep playing for blackout (every square crossed off).',
     ],
     winCondition: 'First kid to mark five in a row calls bingo. Blackout is the bonus round.',
     variations: [
@@ -334,7 +334,7 @@ export const ACTIVITIES: Activity[] = [
       'Family card: one shared card, anyone can mark.',
       'Photo bingo: phone photos required for proof.',
     ],
-    safetyNotes: ['Keep eyes up between marks — kids tend to walk while staring at the card.'],
+    safetyNotes: ['Keep eyes up between marks - kids tend to walk while staring at the card.'],
     recommendedFor: ['first-weekend-camp', 'easy-family-basecamp'],
   },
   {
@@ -350,14 +350,14 @@ export const ACTIVITIES: Activity[] = [
     vibe: 'creative',
     materials: [
       'Fallen sticks and branches (no breaking from live trees)',
-      'A "ridge" — a downed log, a low fork between two trees, or a tightly-rigged guy line',
+      'A "ridge" - a downed log, a low fork between two trees, or a tightly-rigged guy line',
       'Optional: a tarp or emergency blanket for the final layer',
     ],
     instructions: [
       'Pick a ridge: a fallen log, a fork between trees, or a low rigged line. The ridge becomes the spine of the shelter.',
       'Lean long sticks against the ridge at an angle to form a frame on each side. Cover the full length.',
       'Layer shorter sticks across the frame to fill gaps.',
-      'Pile leaves, pine needles, or grass on top — at least one foot thick — for weatherproofing.',
+      'Pile leaves, pine needles, or grass on top - at least one foot thick - for weatherproofing.',
       'Add a tarp on top if available for actual rain protection.',
       'Crawl in. Time how long it takes for everyone inside to feel warmer.',
     ],
@@ -368,7 +368,7 @@ export const ACTIVITIES: Activity[] = [
       'Survival add-on: place a flashlight inside and time how long the warmth holds.',
     ],
     safetyNotes: [
-      'Only collect from the ground — never break branches off live trees.',
+      'Only collect from the ground - never break branches off live trees.',
       'Avoid building under dead overhead branches ("widow makers").',
       'Disassemble the shelter before leaving the campsite. Leave no trace.',
     ],
@@ -389,25 +389,25 @@ export const ACTIVITIES: Activity[] = [
     setupDifficulty: 'none',
     vibe: 'calm',
     materials: [
-      'A sky chart or star app (Sky Guide, SkyView, Stellarium — download the offline maps before leaving cell coverage)',
+      'A sky chart or star app (Sky Guide, SkyView, Stellarium - download the offline maps before leaving cell coverage)',
       'A red flashlight or red filter on a headlamp to preserve night vision',
       'Optional: a blanket or sleeping pads to lie on',
     ],
     instructions: [
-      'Walk away from any lit areas — even small camp lanterns wash out the sky.',
+      'Walk away from any lit areas - even small camp lanterns wash out the sky.',
       'Lie on your backs. Take 5 minutes for eyes to adjust to the dark.',
-      'Find the Big Dipper first — it is the easiest anchor.',
+      'Find the Big Dipper first - it is the easiest anchor.',
       'From the Big Dipper, trace the line through the two front-edge stars upward to find Polaris (the North Star).',
       'Use a sky chart or app to find one new constellation per night. Cassiopeia, Orion, and the Summer Triangle are great starters.',
     ],
     winCondition: 'Everyone can point to one new constellation by the end of the session.',
     variations: [
       'Meteor watch: lie still for 10 minutes during a known shower (Perseids in August, Geminids in December).',
-      'Satellite spotting: track ISS pass-overs using a free app — visible to the naked eye.',
+      'Satellite spotting: track ISS pass-overs using a free app - visible to the naked eye.',
       'Story round: each constellation gets a one-sentence story made up by the group.',
     ],
     safetyNotes: [
-      'Use a red flashlight only — white light wipes out 20 minutes of dark adaptation.',
+      'Use a red flashlight only - white light wipes out 20 minutes of dark adaptation.',
       'Stay close to camp; do not wander to find darker sky after lights-out.',
     ],
     recommendedFor: ['backyard-test', 'first-night-camp', 'first-weekend-camp', 'easy-family-basecamp'],
@@ -433,21 +433,21 @@ export const ACTIVITIES: Activity[] = [
       'Optional: a small set of colored pencils or watercolors',
     ],
     instructions: [
-      'Find a spot alone — a log, a flat rock, the picnic table — within sight of camp.',
+      'Find a spot alone - a log, a flat rock, the picnic table - within sight of camp.',
       'Set a 30-minute timer. Do not check it.',
       'Pick one subject: a tree, the fire pit, the view from your seat. Sketch it loosely. The goal is observation, not realism.',
       'Add three written notes: a sound you hear, a smell, a thought you want to remember.',
       'Date the page. That is the entry.',
     ],
-    winCondition: 'A finished page in the journal — sketch plus notes.',
+    winCondition: 'A finished page in the journal - sketch plus notes.',
     variations: [
       'Two-page spread: left side sketch, right side full written entry.',
       'Group share: at the end, each person reads one note (not the sketch) aloud.',
-      'Daily streak: same activity each evening of a multi-night trip — see how the entries evolve.',
+      'Daily streak: same activity each evening of a multi-night trip - see how the entries evolve.',
     ],
     safetyNotes: [
       'Stay within shouting distance of camp.',
-      'Pack out everything — including pencil shavings.',
+      'Pack out everything - including pencil shavings.',
     ],
     recommendedFor: ['first-weekend-camp', 'easy-family-basecamp'],
     relatedGear: [
@@ -457,7 +457,7 @@ export const ACTIVITIES: Activity[] = [
   {
     slug: 'shadow-puppet-theatre',
     title: 'Shadow Puppet Theatre',
-    tagline: 'Hand shadows on the tent wall — the original camp entertainment.',
+    tagline: 'Hand shadows on the tent wall - the original camp entertainment.',
     category: 'campfire',
     ageRange: '3-5',
     groupSize: '2-4',
@@ -483,7 +483,7 @@ export const ACTIVITIES: Activity[] = [
       'Audience guess: one person makes a shape, everyone else guesses what it is.',
     ],
     safetyNotes: [
-      'Keep the lantern on the ground — never hang a hot lantern against a tent wall.',
+      'Keep the lantern on the ground - never hang a hot lantern against a tent wall.',
       'Use an LED lantern only. No open-flame lanterns inside or against tents.',
     ],
     recommendedFor: ['backyard-test', 'first-night-camp', 'first-weekend-camp', 'easy-family-basecamp'],
@@ -506,10 +506,10 @@ export const ACTIVITIES: Activity[] = [
       'Thin printer paper or a journal page',
       'Crayons or colored pencils with the paper wrapper removed',
       'A flat, hard surface (a book, a clipboard, or the picnic table)',
-      'Fresh leaves with visible veins — maple, oak, and fern work best',
+      'Fresh leaves with visible veins - maple, oak, and fern work best',
     ],
     instructions: [
-      'Collect 4–6 leaves of different shapes and sizes. Leaves still slightly flexible (not fully dried) give the best detail.',
+      'Collect 4-6 leaves of different shapes and sizes. Leaves still slightly flexible (not fully dried) give the best detail.',
       'Place a leaf vein-side up on the flat surface. Lay a sheet of paper on top.',
       'Hold the paper still with one hand. With the other, rub a crayon lengthwise across the paper over the leaf. Press firmly and evenly.',
       'Lift the paper to reveal the leaf print. Label it with the tree name if you know it.',
@@ -522,7 +522,7 @@ export const ACTIVITIES: Activity[] = [
       'Postcard: address the finished page to someone at home and mail it.',
     ],
     safetyNotes: [
-      'Wash hands after handling unknown plants — some leaves cause skin irritation.',
+      'Wash hands after handling unknown plants - some leaves cause skin irritation.',
       'Do not pull leaves from protected or rare plants. Collect from the ground if possible.',
     ],
     recommendedFor: ['backyard-test', 'first-night-camp', 'first-weekend-camp', 'easy-family-basecamp'],
@@ -549,7 +549,7 @@ export const ACTIVITIES: Activity[] = [
       'Optional: a clear coat spray or Mod Podge to seal finished rocks',
     ],
     instructions: [
-      'Each person collects 2–3 smooth rocks from around camp. Flat, palm-sized rocks hold paint best.',
+      'Each person collects 2-3 smooth rocks from around camp. Flat, palm-sized rocks hold paint best.',
       'Rinse rocks and let them dry fully. Paint does not stick to wet stone.',
       'Sketch a loose design in pencil first if needed. Simple shapes work best: animals, geometric patterns, words, emojis.',
       'Apply paint in thin layers. Let each layer dry for 5 minutes before adding details.',
@@ -563,7 +563,7 @@ export const ACTIVITIES: Activity[] = [
       'Story rocks: each person paints a character; arrange them to tell a story around the fire.',
     ],
     safetyNotes: [
-      'Only collect rocks from the ground — never remove rocks embedded in trails, stream beds, or protected areas.',
+      'Only collect rocks from the ground - never remove rocks embedded in trails, stream beds, or protected areas.',
       'Use water-based, non-toxic paint around younger kids.',
       'Seal rocks before placing them outdoors so paint does not wash into water sources.',
     ],
@@ -575,7 +575,7 @@ export const ACTIVITIES: Activity[] = [
   {
     slug: 'campfire-hot-seat',
     title: 'Campfire Hot Seat',
-    tagline: 'One person in the chair, five rapid-fire questions — answers must be instant.',
+    tagline: 'One person in the chair, five rapid-fire questions - answers must be instant.',
     category: 'icebreaker',
     ageRange: 'all-ages',
     groupSize: '5-10',
@@ -583,19 +583,19 @@ export const ACTIVITIES: Activity[] = [
     timeRequired: '15-30min',
     setupDifficulty: 'none',
     vibe: 'calm',
-    materials: ['Nothing — just seats around the fire'],
+    materials: ['Nothing - just seats around the fire'],
     instructions: [
-      'One person sits in the "hot seat" — the chair closest to the fire, or just a designated spot.',
-      'The group takes turns asking questions. The hot seat must answer immediately — no pausing to think.',
+      'One person sits in the "hot seat" - the chair closest to the fire, or just a designated spot.',
+      'The group takes turns asking questions. The hot seat must answer immediately - no pausing to think.',
       'Keep questions light and camp-flavored: "Best thing about today?", "What would your camp name be?", "What scared you as a kid?", "Tent or hammock?"',
       'After five questions, the hot-seat player picks the next person.',
-      'No skipping questions. If the answer is "I don\'t know," that counts — the group decides if it\'s valid.',
+      'No skipping questions. If the answer is "I don\'t know," that counts - the group decides if it\'s valid.',
     ],
     winCondition: undefined,
     variations: [
       'Would you rather: every question is a would-you-rather. ("Eat only trail mix for a week, or sleep in the rain every night?")',
       'Theme rounds: all questions must be about camping, food, or childhood memories.',
-      'All-in: everyone answers the same question simultaneously — call it out on three.',
+      'All-in: everyone answers the same question simultaneously - call it out on three.',
     ],
     safetyNotes: ['Keep questions inclusive and appropriate for the youngest player present.'],
     recommendedFor: ['backyard-test', 'first-night-camp', 'first-weekend-camp', 'easy-family-basecamp'],
@@ -618,7 +618,7 @@ export const ACTIVITIES: Activity[] = [
     ],
     instructions: [
       'Mark a clear throwing line with a stick. All players throw from behind it.',
-      'Toss the jack stone 10–20 feet out. It lands where it lands — that is the target.',
+      'Toss the jack stone 10-20 feet out. It lands where it lands - that is the target.',
       'Players alternate tossing their rocks toward the jack. The goal is to land closest.',
       'After all rocks are thrown, the player whose rock is closest to the jack scores one point for each of their rocks that is closer than the opponent\'s nearest rock.',
       'The winner of each round tosses the next jack. First to 11 wins.',
@@ -651,10 +651,10 @@ export const ACTIVITIES: Activity[] = [
     vibe: 'competitive',
     materials: [
       'One bandana or short rope per pair',
-      'A flat, clear track 30–50 feet long',
+      'A flat, clear track 30-50 feet long',
     ],
     instructions: [
-      'Pair players up. Stand side by side — the inside legs get tied together at the ankle with the bandana.',
+      'Pair players up. Stand side by side - the inside legs get tied together at the ankle with the bandana.',
       'Walk one practice lap before racing. Find a rhythm: "left, right, left" works for most pairs.',
       'Line all pairs up at the start. On "go," race to a clear finish line and back.',
       'The first pair to return and cross the start wins.',
@@ -668,7 +668,7 @@ export const ACTIVITIES: Activity[] = [
     ],
     safetyNotes: [
       'Walk the course beforehand and remove any tent stakes, rocks, or trip hazards.',
-      'Tie the bandana snugly but not tight — a quick-release knot is fine.',
+      'Tie the bandana snugly but not tight - a quick-release knot is fine.',
       'If a pair falls, stop the heat and let them recover before continuing.',
     ],
     recommendedFor: ['first-weekend-camp', 'easy-family-basecamp'],
@@ -688,7 +688,7 @@ export const ACTIVITIES: Activity[] = [
     setupDifficulty: 'minimal',
     vibe: 'competitive',
     materials: [
-      'A 20–30 foot rope (a tow rope, guy-line bundle, or tied paracord works)',
+      'A 20-30 foot rope (a tow rope, guy-line bundle, or tied paracord works)',
       'A center marker on the rope (tie a bandana at the midpoint)',
       'Two ground stakes or sticks marking the winning line on each side',
     ],
@@ -701,13 +701,13 @@ export const ACTIVITIES: Activity[] = [
     winCondition: 'Pull the center marker past your ground line to win a round. Best of three wins.',
     variations: [
       'Circle tug: tie the rope into a loop, four teams pull from four directions. Last team standing wins.',
-      'Slow pull: count to 20 — whoever has pulled the most by the count wins, no sudden burst allowed.',
+      'Slow pull: count to 20 - whoever has pulled the most by the count wins, no sudden burst allowed.',
       'Mixed teams: adults and kids on the same side, balanced by total weight estimate.',
     ],
     safetyNotes: [
       'Never wrap the rope around your hands, wrists, or body.',
       'Clear the pull zone of tent stakes, rocks, and fire rings.',
-      'Loser-side players will be moving backward quickly — make sure there is clear space behind them.',
+      'Loser-side players will be moving backward quickly - make sure there is clear space behind them.',
     ],
     recommendedFor: ['first-weekend-camp', 'easy-family-basecamp'],
     relatedGear: [
@@ -726,13 +726,13 @@ export const ACTIVITIES: Activity[] = [
     setupDifficulty: 'minimal',
     vibe: 'competitive',
     materials: [
-      'Six to ten straight sticks (8–10 inches, roughly the same size)',
+      'Six to ten straight sticks (8-10 inches, roughly the same size)',
       'One large, round pinecone per roll',
       'A flat patch of dirt or grass',
     ],
     instructions: [
-      'Collect sticks and stand them upright in a triangle pattern in the dirt, wide end first — like bowling pins. Pack soil around the base if needed to keep them standing.',
-      'Mark a rolling line with a stick, 8–10 feet away.',
+      'Collect sticks and stand them upright in a triangle pattern in the dirt, wide end first - like bowling pins. Pack soil around the base if needed to keep them standing.',
+      'Mark a rolling line with a stick, 8-10 feet away.',
       'Each player rolls the pinecone underhand along the ground toward the pins.',
       'Count the knocked-down sticks. Reset fallen ones for the next player.',
       'Two rolls per turn, just like real bowling. Highest total after five turns wins.',
@@ -744,7 +744,7 @@ export const ACTIVITIES: Activity[] = [
       'Team turns: parent and kid alternate rolls and share a score.',
     ],
     safetyNotes: [
-      'Keep rolls along the ground — no throwing.',
+      'Keep rolls along the ground - no throwing.',
       'Make sure no one is standing near the pins when a player rolls.',
     ],
     recommendedFor: ['backyard-test', 'first-night-camp', 'first-weekend-camp', 'easy-family-basecamp'],
@@ -768,7 +768,7 @@ export const ACTIVITIES: Activity[] = [
       'A marker (rock or stick) per player to track their best throw',
     ],
     instructions: [
-      'Each player finds the straightest fallen stick they can — no breaking from live trees.',
+      'Each player finds the straightest fallen stick they can - no breaking from live trees.',
       'Mark a throwing line. All players throw from behind it.',
       'Throw the stick overhand, aiming for maximum distance. Hold near the back third of the stick.',
       'Mark where the stick first hits the ground (not where it slides to). Each player gets three throws.',
@@ -776,13 +776,13 @@ export const ACTIVITIES: Activity[] = [
     ],
     winCondition: 'Longest single throw wins.',
     variations: [
-      'Target mode: toss at a hula-hoop-sized circle drawn in the dirt — point for landing inside.',
+      'Target mode: toss at a hula-hoop-sized circle drawn in the dirt - point for landing inside.',
       'Accuracy round: throw for a bucket or a ring of stones at a fixed 20-foot distance.',
       'Multi-round: three rounds, cumulative distance wins.',
     ],
     safetyNotes: [
       'Set a clearly marked no-entry zone downrange. No one stands in front of the line.',
-      'Throw one at a time — never simultaneously.',
+      'Throw one at a time - never simultaneously.',
       'Inspect sticks for sharp ends. Snap off any points before throwing.',
     ],
     recommendedFor: ['first-night-camp', 'first-weekend-camp'],
@@ -805,16 +805,16 @@ export const ACTIVITIES: Activity[] = [
       'A red-filtered headlamp for marking without ruining night vision',
     ],
     instructions: [
-      'Before dark, write nine sounds in the grid — one per square. Examples: owl, cricket, frog, wind in leaves, a branch snap, distant dog, running water, bat, silence for 10 seconds.',
+      'Before dark, write nine sounds in the grid - one per square. Examples: owl, cricket, frog, wind in leaves, a branch snap, distant dog, running water, bat, silence for 10 seconds.',
       'After dark, sit quietly at camp or on a blanket. No talking except to whisper "got it" when marking a square.',
       'When you hear a sound on your card, mark it off.',
-      'First to complete a row, column, or diagonal calls "bingo" — whispered, not shouted.',
+      'First to complete a row, column, or diagonal calls "bingo" - whispered, not shouted.',
       'Run a second round with a harder card after the first winner is declared.',
     ],
     winCondition: 'First to mark five in a row wins.',
     variations: [
       'Blackout: mark every square on the card. Takes longer but builds patience.',
-      'Community card: one shared card read aloud — the group decides together if a sound counts.',
+      'Community card: one shared card read aloud - the group decides together if a sound counts.',
       'Identification challenge: after bingo, name what made each sound.',
     ],
     safetyNotes: [
@@ -845,7 +845,7 @@ export const ACTIVITIES: Activity[] = [
     instructions: [
       'Activate the glow necklaces and connect them into one long bar.',
       'Two holders face each other and hold the bar at shoulder height.',
-      'Players line up and pass under the bar one at a time, bending backward — no touching the bar, no hands on the ground.',
+      'Players line up and pass under the bar one at a time, bending backward - no touching the bar, no hands on the ground.',
       'Lower the bar one hand-width after every full round.',
       'A player is out if they touch the bar or put a hand on the ground. Last player standing wins.',
     ],
@@ -853,7 +853,7 @@ export const ACTIVITIES: Activity[] = [
     variations: [
       'Glow accessories: everyone wears at least one glow bracelet or necklace.',
       'Team limbo: pairs hold hands while going under together.',
-      'Speed round: a timer counts down 10 seconds per player — rush the line.',
+      'Speed round: a timer counts down 10 seconds per player - rush the line.',
     ],
     safetyNotes: [
       'Play on flat, clear ground away from fire rings and tent stakes.',
@@ -868,7 +868,7 @@ export const ACTIVITIES: Activity[] = [
   {
     slug: 'foil-packet-cook-off',
     title: 'Foil Packet Cook-Off',
-    tagline: 'Each team builds a mystery foil packet — the fire decides the winner.',
+    tagline: 'Each team builds a mystery foil packet - the fire decides the winner.',
     category: 'campfire',
     ageRange: 'adults',
     groupSize: '5-10',
@@ -879,18 +879,18 @@ export const ACTIVITIES: Activity[] = [
     materials: [
       'Heavy-duty aluminum foil (two sheets per packet)',
       'A shared pantry of ingredients: potatoes, onion, carrots, any protein, olive oil, salt, pepper, spices',
-      'Campfire coals (30–40 minutes of burn before you need them)',
+      'Campfire coals (30-40 minutes of burn before you need them)',
       'Tongs and heat-resistant gloves for handling hot packets',
     ],
     instructions: [
       'Let the fire burn down to coals. High flame burns packets; coals cook them.',
       'Each team gets equal access to the ingredient pile. Build one foil packet per team. Double-wrap it.',
-      'Seal packets tightly — fold the edges over at least twice so steam doesn\'t escape.',
-      'Place packets directly on coals. Cook for 20–25 minutes, flipping once at the halfway mark.',
-      'Pull packets off with tongs. Let rest for 2 minutes before opening — steam inside is scalding.',
+      'Seal packets tightly - fold the edges over at least twice so steam doesn\'t escape.',
+      'Place packets directly on coals. Cook for 20-25 minutes, flipping once at the halfway mark.',
+      'Pull packets off with tongs. Let rest for 2 minutes before opening - steam inside is scalding.',
       'Judge on taste, creativity, and whether it actually cooked through.',
     ],
-    winCondition: 'Group vote on best packet — taste, creativity, and cook quality each count.',
+    winCondition: 'Group vote on best packet - taste, creativity, and cook quality each count.',
     variations: [
       'Blind tasting: remove packets from foil into bowls before judging so no one knows who made what.',
       'Theme round: all ingredients must fit a theme (e.g., "Italian night," "breakfast all day").',
@@ -910,7 +910,7 @@ export const ACTIVITIES: Activity[] = [
   {
     slug: 'campfire-trivia-night',
     title: 'Campfire Trivia Night',
-    tagline: 'Pub-quiz format around the fire — no internet required.',
+    tagline: 'Pub-quiz format around the fire - no internet required.',
     category: 'campfire',
     ageRange: 'adults',
     groupSize: '5-10',
@@ -919,19 +919,19 @@ export const ACTIVITIES: Activity[] = [
     setupDifficulty: 'none',
     vibe: 'competitive',
     materials: [
-      'A prepared list of 20–30 questions (written at home or downloaded offline)',
+      'A prepared list of 20-30 questions (written at home or downloaded offline)',
       'One small notepad and pencil per team',
     ],
     instructions: [
-      'Prepare questions at home across 4–5 categories. Good camp categories: Nature & Wildlife, Knots & Gear, Geography, Food & Cooking, Pop Culture.',
-      'Split into teams of 2–4. Each team gets a notepad for answers.',
-      'Read each question once. Teams write their answer — no calling out.',
+      'Prepare questions at home across 4-5 categories. Good camp categories: Nature & Wildlife, Knots & Gear, Geography, Food & Cooking, Pop Culture.',
+      'Split into teams of 2-4. Each team gets a notepad for answers.',
+      'Read each question once. Teams write their answer - no calling out.',
       'After each category, reveal answers and award 1 point per correct answer.',
       'Tally after all categories. Winning team picks tomorrow\'s breakfast spot.',
     ],
     winCondition: 'Highest total score after all categories wins.',
     variations: [
-      'Lightning round: final category is spoken-answer speed — first team to shout the correct answer gets the point.',
+      'Lightning round: final category is spoken-answer speed - first team to shout the correct answer gets the point.',
       'Wager round: before the final category, teams bet up to 5 points.',
       'Mixed-age version: include a Kids category with easier questions; kids can answer on behalf of their team.',
     ],
@@ -953,11 +953,11 @@ export const ACTIVITIES: Activity[] = [
     setupDifficulty: 'none',
     vibe: 'calm',
     materials: [
-      'A guitar, ukulele, or any instrument (optional — a cappella works fine)',
+      'A guitar, ukulele, or any instrument (optional - a cappella works fine)',
       'A phone with lyrics downloaded offline if needed',
     ],
     instructions: [
-      'Pick a starter song everyone knows — "Country Roads," "You Are My Sunshine," or any camp classic.',
+      'Pick a starter song everyone knows - "Country Roads," "You Are My Sunshine," or any camp classic.',
       'Go around the circle: each person picks the next song, or passes.',
       'For repeat-after-me songs (Boom Chicka Boom, John Jacob), the leader sings a line and the group echoes.',
       'Keep going until the fire burns low or everyone is ready for bed.',
@@ -977,7 +977,7 @@ export const ACTIVITIES: Activity[] = [
   {
     slug: 'animal-track-hunt',
     title: 'Animal Track Hunt',
-    tagline: 'Read the ground like a story — every print is a clue.',
+    tagline: 'Read the ground like a story - every print is a clue.',
     category: 'exploration',
     ageRange: '6-8',
     groupSize: '2-4',
@@ -1000,12 +1000,12 @@ export const ACTIVITIES: Activity[] = [
     winCondition: 'Most unique species identified wins.',
     variations: [
       'Track cast: mix plaster of Paris with water and pour into a clear print for a permanent cast.',
-      'Night check: revisit a muddy spot at night with red headlamps — nocturnal animals leave overnight prints.',
+      'Night check: revisit a muddy spot at night with red headlamps - nocturnal animals leave overnight prints.',
       'Photo catalog: photograph each print next to a coin for scale and create a camp field guide.',
     ],
     safetyNotes: [
       'Do not follow tracks off-trail into dense vegetation.',
-      'Fresh bear, mountain lion, or wolf tracks mean the animal is nearby — leave immediately and tell a camp host.',
+      'Fresh bear, mountain lion, or wolf tracks mean the animal is nearby - leave immediately and tell a camp host.',
     ],
     recommendedFor: ['first-weekend-camp', 'easy-family-basecamp'],
     relatedGear: [
@@ -1026,11 +1026,11 @@ export const ACTIVITIES: Activity[] = [
     vibe: 'calm',
     materials: [
       'One bandana or sleep mask per pair (the guide does not wear one)',
-      'A clear 50–100 foot path with minor obstacles',
+      'A clear 50-100 foot path with minor obstacles',
     ],
     instructions: [
       'One player wears the blindfold; the other is the guide. Switch roles after each run.',
-      'The guide may only use words — no touching, no grabbing. Directions only: "step left," "duck now," "root at your right foot."',
+      'The guide may only use words - no touching, no grabbing. Directions only: "step left," "duck now," "root at your right foot."',
       'Walk the pre-set path from start to finish. The guide walks alongside but slightly behind.',
       'After both players have gone, discuss: what instructions were clearest? What was hard to describe?',
       'Increase difficulty by adding more obstacles or lengthening the course.',
@@ -1038,12 +1038,12 @@ export const ACTIVITIES: Activity[] = [
     variations: [
       'Silence challenge: guide can only make two sounds (e.g. a click for "safe" and a snap for "stop").',
       'Obstacle course: set up 5 simple obstacles (log to step over, low branch to duck, tight gap).',
-      'Full group chain: line of 3–4 people, each with a hand on the shoulder of the one ahead. Only the last person can see.',
+      'Full group chain: line of 3-4 people, each with a hand on the shoulder of the one ahead. Only the last person can see.',
     ],
     safetyNotes: [
       'Walk the course yourself before running it with a blindfolded partner.',
       'Clear any sharp rocks, roots, or stakes from the path.',
-      'Move at a slow walking pace — running blindfolded is never safe.',
+      'Move at a slow walking pace - running blindfolded is never safe.',
     ],
     recommendedFor: ['first-weekend-camp', 'easy-family-basecamp'],
     relatedGear: [
@@ -1054,7 +1054,7 @@ export const ACTIVITIES: Activity[] = [
   {
     slug: 'nature-mandala',
     title: 'Nature Mandala',
-    tagline: 'Arrange what you find into a pattern — then photograph it and leave it.',
+    tagline: 'Arrange what you find into a pattern - then photograph it and leave it.',
     category: 'creative',
     ageRange: '13-17',
     groupSize: 'solo',
@@ -1068,11 +1068,11 @@ export const ACTIVITIES: Activity[] = [
       'A phone or camera to photograph the finished piece',
     ],
     instructions: [
-      'Spend 10–15 minutes collecting materials from the ground. Aim for variety in color, texture, and size. Take nothing from living plants.',
+      'Spend 10-15 minutes collecting materials from the ground. Aim for variety in color, texture, and size. Take nothing from living plants.',
       'Find a flat surface and place a single rock, cone, or flower at the center.',
       'Build outward in concentric rings, alternating materials for pattern and contrast. Each ring should reflect the one inside it.',
       'Work slowly. The goal is observation, not speed.',
-      'Photograph the finished mandala from directly above. Then scatter it — leave the materials where you found them.',
+      'Photograph the finished mandala from directly above. Then scatter it - leave the materials where you found them.',
     ],
     variations: [
       'Timed sprint: 20 minutes total including collection. Go.',
@@ -1080,7 +1080,7 @@ export const ACTIVITIES: Activity[] = [
       'Themed palette: only one color family allowed (all reds and browns, or all greens).',
     ],
     safetyNotes: [
-      'Collect only from the ground — no picking flowers, breaking branches, or disturbing nests.',
+      'Collect only from the ground - no picking flowers, breaking branches, or disturbing nests.',
       'Leave the mandala materials scattered when done. No burying.',
     ],
     recommendedFor: ['first-weekend-camp', 'easy-family-basecamp'],
@@ -1104,7 +1104,7 @@ export const ACTIVITIES: Activity[] = [
       'Markers for faces and details',
     ],
     instructions: [
-      'Each child picks their pinecone and decides what kind of creature it will be — hedgehog, owl, spider, alien.',
+      'Each child picks their pinecone and decides what kind of creature it will be - hedgehog, owl, spider, alien.',
       'Glue googly eyes onto the pinecone scales using craft glue. Let dry 2 minutes.',
       'Bend pipe cleaners into legs, tails, or antennae and push them between the pinecone scales to secure.',
       'Add any feathers, sticks, or leaves for wings or fins.',
@@ -1112,7 +1112,7 @@ export const ACTIVITIES: Activity[] = [
       'Name the creature. Tell a one-sentence story about where it lives.',
     ],
     variations: [
-      'Full family: adults make creatures too — who made the weirdest one?',
+      'Full family: adults make creatures too - who made the weirdest one?',
       'Story circle: each creature joins a group story told around the table.',
       'Leave-no-trace version: skip glue, use only natural materials pushed between scales.',
     ],
@@ -1137,24 +1137,24 @@ export const ACTIVITIES: Activity[] = [
     setupDifficulty: 'none',
     vibe: 'creative',
     materials: [
-      'A collection of 10–15 flat and rounded stones per builder',
+      'A collection of 10-15 flat and rounded stones per builder',
       'A flat starting surface (a picnic table, a large flat rock, or packed dirt)',
     ],
     instructions: [
       'Spend 5 minutes collecting stones of mixed sizes near camp. A variety of flat and irregular shapes builds more interesting towers.',
       'Start with the largest, flattest stone as a base.',
       'Stack one stone at a time, finding the balance point before adding the next.',
-      'The tower must stand on its own — no hands allowed after each stone is placed.',
+      'The tower must stand on its own - no hands allowed after each stone is placed.',
       'Count the stones when the tower falls. Try to beat your count on the next attempt.',
     ],
     winCondition: 'Tallest standing tower after 15 minutes wins.',
     variations: [
       'Timed speed: who can stack 10 stones fastest without toppling?',
-      'Sculpture mode: build a shape, not just a tower — arch, spiral, row.',
+      'Sculpture mode: build a shape, not just a tower - arch, spiral, row.',
       'Group mega-cairn: all players take turns adding one stone to a single shared tower.',
     ],
     safetyNotes: [
-      'Only collect loose surface rocks. Do not dismantle existing trail cairns — they serve as navigation markers.',
+      'Only collect loose surface rocks. Do not dismantle existing trail cairns - they serve as navigation markers.',
       'Scatter your stones after the activity to restore the area.',
     ],
     recommendedFor: ['backyard-test', 'first-night-camp', 'first-weekend-camp', 'easy-family-basecamp'],
@@ -1176,7 +1176,7 @@ export const ACTIVITIES: Activity[] = [
       'Optional: a timer (phone stopwatch)',
     ],
     instructions: [
-      'One player is the drawer. They think of a word — or another player whispers one to them.',
+      'One player is the drawer. They think of a word - or another player whispers one to them.',
       'The drawer has 60 seconds to draw the word in the dirt without letters or numbers.',
       'All other players shout their guesses freely.',
       'If someone guesses correctly before time is up, both the guesser and the drawer score a point.',
@@ -1209,18 +1209,18 @@ export const ACTIVITIES: Activity[] = [
     ],
     instructions: [
       'Lay blankets on the ground in an open area. Everyone lies on their back.',
-      'Spend the first two minutes just looking — no talking.',
+      'Spend the first two minutes just looking - no talking.',
       'One person points to a cloud and names a shape. "That one looks like a running dog."',
       'The next person must find a different cloud and name a different shape. Go around the group.',
       'Optional game: vote on the best shape each round. Three votes to confirm.',
     ],
     variations: [
       'Story chain: each cloud shape becomes the next character or scene in an ongoing story.',
-      'Cloud ID: try to name the cloud type — cumulus, cirrus, stratus. Download a cloud chart beforehand.',
+      'Cloud ID: try to name the cloud type - cumulus, cirrus, stratus. Download a cloud chart beforehand.',
       'Time lapse: watch a single cloud for 5 minutes and describe how it changes.',
     ],
     safetyNotes: [
-      'Never look directly at the sun — watch only clouds that are not in the sun\'s direct path.',
+      'Never look directly at the sun - watch only clouds that are not in the sun\'s direct path.',
     ],
     recommendedFor: ['backyard-test', 'first-night-camp', 'first-weekend-camp', 'easy-family-basecamp'],
     relatedGear: [
@@ -1248,11 +1248,11 @@ export const ACTIVITIES: Activity[] = [
       'Carry a chair or pad to an east-facing spot with a clear view. Get there before first light.',
       'Sit quietly. No phone, no book. Just watch the sky shift.',
       'Notice: the order of color (grey → indigo → orange → yellow), the first sounds, the first movement.',
-      'Stay until full sun clears the horizon. That is usually 20–25 minutes.',
+      'Stay until full sun clears the horizon. That is usually 20-25 minutes.',
     ],
     variations: [
       'Sunrise journal: bring a notebook and write one observation per minute for 20 minutes.',
-      'Shared sit: two people, same spot, no talking — compare notes after.',
+      'Shared sit: two people, same spot, no talking - compare notes after.',
       'Photo sequence: one photo every 2 minutes from first glow to full sun.',
     ],
     safetyNotes: [
@@ -1268,7 +1268,7 @@ export const ACTIVITIES: Activity[] = [
   {
     slug: 'camp-charades',
     title: 'Camp Charades',
-    tagline: 'All-nature, all-camp vocabulary — harder than it sounds.',
+    tagline: 'All-nature, all-camp vocabulary - harder than it sounds.',
     category: 'icebreaker',
     ageRange: 'all-ages',
     groupSize: '5-10',
@@ -1290,8 +1290,8 @@ export const ACTIVITIES: Activity[] = [
     winCondition: 'Team with the most correct guesses wins.',
     variations: [
       'One word limit: the actor can only use one repeated gesture the whole time.',
-      'Relay: the actor must tag their next teammate mid-round to continue acting — team keeps guessing.',
-      'All-in: everyone acts simultaneously for the same word and everyone guesses — pure chaos.',
+      'Relay: the actor must tag their next teammate mid-round to continue acting - team keeps guessing.',
+      'All-in: everyone acts simultaneously for the same word and everyone guesses - pure chaos.',
     ],
     safetyNotes: [],
     recommendedFor: ['backyard-test', 'first-night-camp', 'first-weekend-camp', 'easy-family-basecamp'],
@@ -1310,19 +1310,19 @@ export const ACTIVITIES: Activity[] = [
     materials: ['An open flat area big enough for the group to stand in a circle'],
     instructions: [
       'Everyone stands in a tight circle, shoulder to shoulder.',
-      'Each person reaches across and grabs two different people\'s hands — not the person directly next to them.',
+      'Each person reaches across and grabs two different people\'s hands - not the person directly next to them.',
       'Without letting go of any hands, the group must untangle itself into a standing circle.',
       'Allowed: stepping over, ducking under, rotating grips. Not allowed: releasing and re-grabbing.',
       'Success: a clean circle (or two interlocked circles, which also counts).',
     ],
     winCondition: 'Untangle into a single standing circle without releasing any hands.',
     variations: [
-      'Silent mode: no talking allowed — communicate with tugs and eye contact only.',
+      'Silent mode: no talking allowed - communicate with tugs and eye contact only.',
       'Timed challenge: run it twice and try to beat your first time.',
-      'Larger group: split into two groups of 6–8 and race.',
+      'Larger group: split into two groups of 6-8 and race.',
     ],
     safetyNotes: [
-      'Move slowly when stepping over joined hands — pulled joints are a real risk.',
+      'Move slowly when stepping over joined hands - pulled joints are a real risk.',
       'Players with shoulder or wrist injuries should sit this one out or be an observer/coach.',
     ],
     recommendedFor: ['first-weekend-camp', 'easy-family-basecamp'],

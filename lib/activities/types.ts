@@ -41,7 +41,7 @@ export type Activity = {
   safetyNotes: string[]
   recommendedFor?: PlanSlug[]
   /**
-   * Optional gear callout — only set where a specific product genuinely
+   * Optional gear callout - only set where a specific product genuinely
    * helps (e.g. a red-light headlamp for a night activity). Most
    * activities use household items already covered in `materials` and
    * should NOT have this set.

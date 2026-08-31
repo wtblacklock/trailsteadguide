@@ -9,12 +9,12 @@ interface Props {
 
 const TIER_COPY: Record<GearTier, string> = {
   budget: 'Cheapest gear that still works for the trip.',
-  standard: 'Our default pick — the best balance of price and quality.',
+  standard: 'Our default pick - the best balance of price and quality.',
   premium: 'Upgraded gear worth the extra cost if you\'re camping often.',
 }
 
 /**
- * Client-side tier switcher. Deliberately NOT link/URL-based — switching
+ * Client-side tier switcher. Deliberately NOT link/URL-based - switching
  * tiers is pure local state, no navigation and no network request. (An
  * earlier version used `?tier=` query-string navigation; that round-trip
  * turned out to be unreliable in production, so tier state now lives

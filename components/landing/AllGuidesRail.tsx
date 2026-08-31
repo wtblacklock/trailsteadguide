@@ -8,7 +8,7 @@ import { GUIDE_CATEGORIES, getGuidesByCategoryId } from '@/lib/guides'
  * who'd rather scan a list than enter a category.
  *
  * Each guide gets a one-click path from the homepage, which is the main
- * fix for the "Discovered – currently not indexed" cluster in GSC where
+ * fix for the "Discovered - currently not indexed" cluster in GSC where
  * specific guides sit because they were 2 clicks deep from home.
  */
 export default function AllGuidesRail() {

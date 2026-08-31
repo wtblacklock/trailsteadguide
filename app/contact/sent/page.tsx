@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Message sent — Trailstead Guide',
+  title: 'Message sent - Trailstead Guide',
   description: "Thanks for reaching out. We'll be in touch within 48 hours.",
   robots: { index: false, follow: true },
 }
@@ -16,7 +16,7 @@ export default function ContactSentPage() {
           Message received
         </p>
         <h1 className="font-serif text-[2.5rem] md:text-[3.75rem] leading-[1.05] tracking-[-0.02em] font-semibold text-stone-950">
-          Got it — we&rsquo;ll be in touch within 48 hours.
+          Got it - we&rsquo;ll be in touch within 48 hours.
         </h1>
         <p className="mt-6 text-lg md:text-xl text-stone-600 leading-[1.55] font-light">
           Your message just landed in our inbox. While you wait, the camping plan quiz is the best place to start.

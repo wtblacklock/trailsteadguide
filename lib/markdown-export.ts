@@ -125,7 +125,7 @@ function renderGuide(slug: string): Response {
   parts.push(
     section(
       'Read the full guide',
-      `The full article — including specifics, mistakes to avoid, and pre-trip checklist — lives at ${SITE_URL}${canonicalPath}.`,
+      `The full article - including specifics, mistakes to avoid, and pre-trip checklist - lives at ${SITE_URL}${canonicalPath}.`,
     ),
   )
   parts.push(footer(canonicalPath))
@@ -256,7 +256,7 @@ function renderGuidesHub(): Response {
   const body = [
     '# Camping Guides',
     metaBlock(canonicalPath),
-    'Long-form, beginner-friendly camping guides — basics, scenarios, seasons, and locations.',
+    'Long-form, beginner-friendly camping guides - basics, scenarios, seasons, and locations.',
     '## Categories',
     byCategory.join('\n\n'),
     footer(canonicalPath),
@@ -279,7 +279,7 @@ function renderSkillsHub(): Response {
   const body = [
     '# Camp Skills',
     metaBlock(canonicalPath),
-    'Hands-on camping skills, organized into 12 categories — knots, cooking, fire, hiking, orienteering, fishing, shelter, camp setup, safety, stargazing, knife skills, and woodcarving.',
+    'Hands-on camping skills, organized into 12 categories - knots, cooking, fire, hiking, orienteering, fishing, shelter, camp setup, safety, stargazing, knife skills, and woodcarving.',
     '## Categories',
     sections.join('\n\n'),
     footer(canonicalPath),
@@ -298,7 +298,7 @@ function renderActivitiesHub(): Response {
   const body = [
     '# Camp Activities',
     metaBlock(canonicalPath),
-    'Kid-friendly camp activities — icebreakers, campfire games, movement, exploration, team challenges, creative play, night games, and wind-down activities.',
+    'Kid-friendly camp activities - icebreakers, campfire games, movement, exploration, team challenges, creative play, night games, and wind-down activities.',
     '## All activities',
     lines.join('\n'),
     footer(canonicalPath),
@@ -318,7 +318,7 @@ function renderPlansHub(): Response {
   const body = [
     '# Camping Plans',
     metaBlock(canonicalPath),
-    'Four progressive camping plans — from a one-night backyard test to a multi-night family basecamp. Each plan ships with a timeline, gear set, meals, and activity schedule.',
+    'Four progressive camping plans - from a one-night backyard test to a multi-night family basecamp. Each plan ships with a timeline, gear set, meals, and activity schedule.',
     '## Plans',
     lines.join('\n'),
     footer(canonicalPath),

@@ -2,7 +2,7 @@ import PrintPageBreak from './PrintPageBreak'
 
 export default function BearBagFoodStorageCard() {
   const goesIn = [
-    'All food — packaged, fresh, cooked, or partially eaten',
+    'All food - packaged, fresh, cooked, or partially eaten',
     'Food wrappers, foil, and cooking waste',
     'Cooking pots, utensils, plates with food residue',
     'Toothpaste, lip balm, chapstick',
@@ -19,9 +19,9 @@ export default function BearBagFoodStorageCard() {
   ]
 
   const pctSteps = [
-    { step: 'Rope', detail: '50–70 ft of 550 paracord. Attach to bag with a bowline.' },
-    { step: 'Find the branch', detail: 'At least 20 ft high, 10 ft from trunk, 4 inches thick — enough to support ~20 lbs.' },
-    { step: 'Throw one end over', detail: 'Tie a stick or rock to the throw end. Aim for 5–6 ft out from the trunk.' },
+    { step: 'Rope', detail: '50-70 ft of 550 paracord. Attach to bag with a bowline.' },
+    { step: 'Find the branch', detail: 'At least 20 ft high, 10 ft from trunk, 4 inches thick - enough to support ~20 lbs.' },
+    { step: 'Throw one end over', detail: 'Tie a stick or rock to the throw end. Aim for 5-6 ft out from the trunk.' },
     { step: 'Attach first bag', detail: 'Clip the food bag to the rope as high as you can reach.' },
     { step: 'Attach second weight', detail: 'Tie the second bag or a counterweight to the free end, same height as the food bag.' },
     { step: 'Push up with a stick', detail: 'Use a long stick to push the bags up until they\'re equal height, at least 12 ft off the ground.' },
@@ -163,7 +163,7 @@ export default function BearBagFoodStorageCard() {
               ))}
             </ul>
             <p className="med-note">
-              Exception: keep one dose of an emergency medication — EpiPen, inhaler — on your person if you need immediate access.
+              Exception: keep one dose of an emergency medication - EpiPen, inhaler - on your person if you need immediate access.
             </p>
           </div>
           <div>
@@ -177,9 +177,9 @@ export default function BearBagFoodStorageCard() {
             </div>
             <div className="canister">
               <h2 style={{ marginBottom: '6px' }}>Bear Canister Sizing</h2>
-              <strong>1 night</strong> — 450–500 cu in per person<br />
-              <strong>2–3 nights</strong> — 650–700 cu in per person<br />
-              <strong>4–7 nights</strong> — 900+ cu in per person<br />
+              <strong>1 night</strong> - 450-500 cu in per person<br />
+              <strong>2-3 nights</strong> - 650-700 cu in per person<br />
+              <strong>4-7 nights</strong> - 900+ cu in per person<br />
               <span style={{ color: '#78716C', fontSize: '10px' }}>Required by permit in some wilderness areas. Check before you go.</span>
             </div>
           </div>
@@ -187,7 +187,7 @@ export default function BearBagFoodStorageCard() {
 
         <div className="if-happens">
           <h2>If a Bear Gets Your Food</h2>
-          Don&apos;t chase it — you won&apos;t win and you could get hurt. Make loud noise to drive it off once it has moved away from camp. Report to the camp host or ranger station: date, time, location, and bear description. The trip is not over — most campers who lose food finish the trip on camp store supplies.
+          Don&apos;t chase it - you won&apos;t win and you could get hurt. Make loud noise to drive it off once it has moved away from camp. Report to the camp host or ranger station: date, time, location, and bear description. The trip is not over - most campers who lose food finish the trip on camp store supplies.
         </div>
       </div>
 

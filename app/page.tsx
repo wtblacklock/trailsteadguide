@@ -14,7 +14,7 @@ import { pageMetadata } from '@/lib/seo'
 export const metadata = pageMetadata({
   title: 'Your First Family Camping Plan',
   description:
-    'A routing system for first-time family campers — answer a few questions, get a complete personalized camping plan with timeline, gear, and meals.',
+    'A routing system for first-time family campers - answer a few questions, get a complete personalized camping plan with timeline, gear, and meals.',
   path: '/',
 })
 

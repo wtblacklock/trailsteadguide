@@ -1,5 +1,5 @@
 /**
- * Quiz personalization engine — types.
+ * Quiz personalization engine - types.
  *
  * The quiz produces a `QuizOutput` object which feeds two deterministic
  * pure builders:

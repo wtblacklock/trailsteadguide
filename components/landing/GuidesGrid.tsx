@@ -4,7 +4,7 @@ import type { GuideCategory, GuideCategoryId } from '@/lib/guides'
 
 /**
  * Spec example titles surfaced when a category has fewer than 3 published
- * guides. The card always links to /guides/<slug> regardless — sparse
+ * guides. The card always links to /guides/<slug> regardless - sparse
  * categories funnel into the quiz on the category page itself.
  */
 const SPEC_EXAMPLES: Record<GuideCategoryId, string[]> = {

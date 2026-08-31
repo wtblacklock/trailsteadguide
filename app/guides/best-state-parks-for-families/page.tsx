@@ -44,11 +44,11 @@ export default function Page() {
         data={faqPageGraph([
           {
             q: 'What state parks are best for first-time family camping?',
-            a: 'The best first-family-camping state parks share four traits: drive-up sites so you park next to your tent, flush toilets, a camp host on site, and sites within 90 minutes of a metro area. Every region has several that fit this — the key is finding them before they book out.',
+            a: 'The best first-family-camping state parks share four traits: drive-up sites so you park next to your tent, flush toilets, a camp host on site, and sites within 90 minutes of a metro area. Every region has several that fit this - the key is finding them before they book out.',
           },
           {
             q: 'How do you book a state park campsite?',
-            a: 'Most state parks use Reserve America (reserveamerica.com) or their state\'s own parks portal. Popular sites open reservations 3–6 months in advance. Set a calendar reminder for when your target park opens. Midweek sites (Tuesday–Thursday) are almost always available with less lead time.',
+            a: 'Most state parks use Reserve America (reserveamerica.com) or their state\'s own parks portal. Popular sites open reservations 3-6 months in advance. Set a calendar reminder for when your target park opens. Midweek sites (Tuesday-Thursday) are almost always available with less lead time.',
           },
           {
             q: 'Are state parks good for camping with kids?',
@@ -56,7 +56,7 @@ export default function Page() {
           },
           {
             q: 'What is the difference between a state park and a national park for camping?',
-            a: 'State parks are state-funded, less crowded, easier to book, and typically cost $25–40 per night. National parks are federally funded, significantly more crowded at popular sites, require bookings 4–6 months out for summer weekends, and cost $20–35 per night plus a park entrance fee. For first-time family camping, state parks are the better choice.',
+            a: 'State parks are state-funded, less crowded, easier to book, and typically cost $25-40 per night. National parks are federally funded, significantly more crowded at popular sites, require bookings 4-6 months out for summer weekends, and cost $20-35 per night plus a park entrance fee. For first-time family camping, state parks are the better choice.',
           },
         ])}
       />
@@ -71,7 +71,7 @@ export default function Page() {
         slug="best-state-parks-for-families"
         eyebrow="Where to camp"
         title="Best State Parks for Family Camping"
-        lede="The top family-friendly state park picks by region — what makes each one beginner-friendly, what to bring, and how to book before the weekend slots disappear."
+        lede="The top family-friendly state park picks by region - what makes each one beginner-friendly, what to bring, and how to book before the weekend slots disappear."
         heroImage={{
           src: HERO_IMAGE,
           alt: 'Family hiking a trail through a state park forest with kids',
@@ -79,23 +79,23 @@ export default function Page() {
       >
         <QuickAnswer
           tldr="State parks win for first-time families: closer, cheaper, easier to book, and consistently good amenities."
-          summary="State parks are the right starting point for first-time family camping. They have flush toilets, camp hosts, drive-up sites, and consistent maintenance that national parks often lack at their price point. The best ones for families share a few traits: sites close enough to park next to, a camp host on duty for non-emergencies, and some combination of a beach, lake, or kid-appropriate trail to anchor the day. Booking tips vary by region — see each section below for the reservation window and how far out to plan."
+          summary="State parks are the right starting point for first-time family camping. They have flush toilets, camp hosts, drive-up sites, and consistent maintenance that national parks often lack at their price point. The best ones for families share a few traits: sites close enough to park next to, a camp host on duty for non-emergencies, and some combination of a beach, lake, or kid-appropriate trail to anchor the day. Booking tips vary by region - see each section below for the reservation window and how far out to plan."
         />
 
         <h2>Why state parks beat national parks for first-time families</h2>
         <p>
-          The most common first-time family camping mistake is booking a national park campsite. Yosemite Valley, Zion, and the Grand Canyon are bucket-list destinations — they are also among the most crowded, most competitive-to-book, and most difficult-to-navigate campgrounds in the country.
+          The most common first-time family camping mistake is booking a national park campsite. Yosemite Valley, Zion, and the Grand Canyon are bucket-list destinations - they are also among the most crowded, most competitive-to-book, and most difficult-to-navigate campgrounds in the country.
         </p>
         <p>
           State parks offer:
         </p>
         <ul>
-          <li><strong>Consistent flush toilets and hot showers</strong> at most campgrounds — not guaranteed at national park primitive sites</li>
+          <li><strong>Consistent flush toilets and hot showers</strong> at most campgrounds - not guaranteed at national park primitive sites</li>
           <li><strong>Drive-up sites</strong> as the standard, not the exception</li>
           <li><strong>A camp host on site</strong> for questions and non-emergency help</li>
-          <li><strong>Less competition for reservations</strong> — most state parks can be booked 2–4 months out rather than 6+ months</li>
+          <li><strong>Less competition for reservations</strong> - most state parks can be booked 2-4 months out rather than 6+ months</li>
           <li><strong>Ranger programs designed for kids</strong> at many locations, often free</li>
-          <li><strong>Lower cost</strong> — $25–40 per night vs. $30–40 plus a $35 park entrance fee</li>
+          <li><strong>Lower cost</strong> - $25-40 per night vs. $30-40 plus a $35 park entrance fee</li>
         </ul>
         <p>
           After a few successful state park trips, national park camping becomes enjoyable rather than overwhelming. Start with state parks.
@@ -108,8 +108,8 @@ export default function Page() {
         <ul>
           <li><strong>Drive-up or pull-through sites.</strong> You park right next to your tent. No hauling gear on a path.</li>
           <li><strong>Flush toilets within easy walking distance.</strong> Pit toilets are fine for adults; for kids in the middle of the night, a short walk to flush toilets is much easier.</li>
-          <li><strong>A water feature.</strong> A lake, river, or beach gives kids an anchor activity that requires no planning or equipment — they will spend hours at the water&apos;s edge.</li>
-          <li><strong>Short kid-appropriate trails.</strong> One 1–2 mile loop they can complete without being carried is the sweet spot for families with kids under 8.</li>
+          <li><strong>A water feature.</strong> A lake, river, or beach gives kids an anchor activity that requires no planning or equipment - they will spend hours at the water&apos;s edge.</li>
+          <li><strong>Short kid-appropriate trails.</strong> One 1-2 mile loop they can complete without being carried is the sweet spot for families with kids under 8.</li>
           <li><strong>A camp host or ranger station.</strong> For non-emergencies, questions, and the reassurance of having someone nearby on the first trip.</li>
         </ul>
 
@@ -121,7 +121,7 @@ export default function Page() {
         </p>
         <p>
           <strong>Best for:</strong> Northeast families who want river access and forest scenery without driving to the Adirondacks.<br />
-          <strong>Book:</strong> 6 months in advance for summer weekends. Midweek available with 2–4 weeks notice.
+          <strong>Book:</strong> 6 months in advance for summer weekends. Midweek available with 2-4 weeks notice.
         </p>
         <p>See <Link href="/guides/camping-in-the-northeast-for-beginners">camping in the Northeast for beginners</Link> for more options.</p>
 
@@ -131,7 +131,7 @@ export default function Page() {
         </p>
         <p>
           <strong>Best for:</strong> Families who want lake swimming and fishing without leaving the campground.<br />
-          <strong>Book:</strong> Reserve America. 4–6 months out for summer weekends.
+          <strong>Book:</strong> Reserve America. 4-6 months out for summer weekends.
         </p>
 
         <h2>Southeast</h2>
@@ -142,13 +142,13 @@ export default function Page() {
         </p>
         <p>
           <strong>Best for:</strong> Southeast families who want waterfalls, swimming, and easy trail access in a single park.<br />
-          <strong>Book:</strong> Alabama State Parks system. 2–3 months out for summer.
+          <strong>Book:</strong> Alabama State Parks system. 2-3 months out for summer.
         </p>
         <p>See <Link href="/guides/camping-in-the-appalachians-for-beginners">camping in the Appalachians for beginners</Link> for surrounding region options.</p>
 
         <h3>Myakka River State Park (FL)</h3>
         <p>
-          Florida&apos;s largest state park. An airboat tour of the river gives kids something genuinely memorable. The campground is large, has flush toilets, and is one of the best places in Florida to see alligators, wading birds, and deer from camp. Sites are shaded — a significant advantage in Florida heat.
+          Florida&apos;s largest state park. An airboat tour of the river gives kids something genuinely memorable. The campground is large, has flush toilets, and is one of the best places in Florida to see alligators, wading birds, and deer from camp. Sites are shaded - a significant advantage in Florida heat.
         </p>
         <p>
           <strong>Best for:</strong> Florida families who want wildlife density near Tampa/Sarasota.<br />
@@ -164,7 +164,7 @@ export default function Page() {
         </p>
         <p>
           <strong>Best for:</strong> Midwest families close to Chicago who want dramatic scenery without driving to the UP or the Boundary Waters.<br />
-          <strong>Book:</strong> Illinois DNR system. 6 months out for summer weekends — this one books fast.
+          <strong>Book:</strong> Illinois DNR system. 6 months out for summer weekends - this one books fast.
         </p>
 
         <h3>Pictured Rocks National Lakeshore (MI)</h3>
@@ -180,7 +180,7 @@ export default function Page() {
 
         <h3>Guadalupe River State Park (TX)</h3>
         <p>
-          Spring-fed Guadalupe River swimming is the anchor activity — the river is cold, clear, and genuinely one of the best swimming spots in Texas. Sites have electric hookups, flush toilets, and shade. Within 45 minutes of San Antonio.
+          Spring-fed Guadalupe River swimming is the anchor activity - the river is cold, clear, and genuinely one of the best swimming spots in Texas. Sites have electric hookups, flush toilets, and shade. Within 45 minutes of San Antonio.
         </p>
         <p>
           <strong>Best for:</strong> Texas families who want river swimming and Hill Country scenery near San Antonio.<br />
@@ -190,7 +190,7 @@ export default function Page() {
 
         <h3>Slide Rock State Park (AZ)</h3>
         <p>
-          A natural waterslide carved by Oak Creek through red rock — one of the most uniquely fun family camping destinations in the Southwest. The park itself is day-use only, but Coconino National Forest campgrounds within 5 minutes are the base. Kids will not stop talking about the rock slide.
+          A natural waterslide carved by Oak Creek through red rock - one of the most uniquely fun family camping destinations in the Southwest. The park itself is day-use only, but Coconino National Forest campgrounds within 5 minutes are the base. Kids will not stop talking about the rock slide.
         </p>
         <p>
           <strong>Best for:</strong> Southwest families who want a unique, memorable anchor activity for the trip.<br />
@@ -202,7 +202,7 @@ export default function Page() {
 
         <h3>Cape Lookout State Park (OR)</h3>
         <p>
-          Old-growth forest, Pacific Ocean beach, and a campground with full amenities (electric, hot showers, flush toilets) at a stunning location. The short Cape Lookout Trail to the headland overlook is manageable for families and has one of the best views on the Oregon coast. Year-round camping — Oregon coast summer is reliably cool compared to inland.
+          Old-growth forest, Pacific Ocean beach, and a campground with full amenities (electric, hot showers, flush toilets) at a stunning location. The short Cape Lookout Trail to the headland overlook is manageable for families and has one of the best views on the Oregon coast. Year-round camping - Oregon coast summer is reliably cool compared to inland.
         </p>
         <p>
           <strong>Best for:</strong> Pacific Northwest families who want ocean access and forest camping in the same trip.<br />
@@ -224,7 +224,7 @@ export default function Page() {
 
         <h3>Mueller State Park (CO)</h3>
         <p>
-          Pikes Peak views, 80+ miles of trails ranging from easy to strenuous, and a well-maintained campground with flush toilets, hot showers, and electric hookups. At 9,500 feet elevation — cooler than Denver summers, good for families who run hot. Wildlife-rich: deer, elk, and black bears are regularly seen.
+          Pikes Peak views, 80+ miles of trails ranging from easy to strenuous, and a well-maintained campground with flush toilets, hot showers, and electric hookups. At 9,500 feet elevation - cooler than Denver summers, good for families who run hot. Wildlife-rich: deer, elk, and black bears are regularly seen.
         </p>
         <p>
           <strong>Best for:</strong> Colorado Front Range families who want mountain scenery and wildlife without the Estes Park crowds.<br />
@@ -238,24 +238,24 @@ export default function Page() {
         </p>
         <ol>
           <li>Find your target park&apos;s booking system by searching &ldquo;[park name] campsite reservation&rdquo;</li>
-          <li>Note the reservation opening window — most state parks open 3–6 months in advance</li>
+          <li>Note the reservation opening window - most state parks open 3-6 months in advance</li>
           <li>Set a calendar reminder for the exact opening time. Popular sites sell within hours on opening day.</li>
-          <li>Have backup dates ready — Friday to Sunday books faster than Saturday to Monday or midweek</li>
+          <li>Have backup dates ready - Friday to Sunday books faster than Saturday to Monday or midweek</li>
           <li>Book the site type that fits your setup: tent only, electric hookup (brings a fan and phone charging), or full hookup if you want water and sewer for a large family</li>
         </ol>
         <p>
-          For first-time family camping, an electric hookup site is worth the small extra cost ($5–15 per night). The ability to bring a battery fan for white noise makes a significant difference in how well kids sleep.
+          For first-time family camping, an electric hookup site is worth the small extra cost ($5-15 per night). The ability to bring a battery fan for white noise makes a significant difference in how well kids sleep.
         </p>
 
         <h2>Frequently asked</h2>
         <h3>What state parks are best for first-time family camping?</h3>
-        <p>Drive-up sites with flush toilets, a camp host, and a water feature. Every region has options — the sections above cover the best picks by area.</p>
+        <p>Drive-up sites with flush toilets, a camp host, and a water feature. Every region has options - the sections above cover the best picks by area.</p>
         <h3>How do you book a state park campsite?</h3>
-        <p>Reserve America or the state parks website. Set a reminder for when the reservation window opens — 3–6 months out for most parks. Midweek availability is much better than weekends.</p>
+        <p>Reserve America or the state parks website. Set a reminder for when the reservation window opens - 3-6 months out for most parks. Midweek availability is much better than weekends.</p>
         <h3>Are state parks good for camping with kids?</h3>
-        <p>Yes — better than national parks for beginners. Consistent amenities, easier booking, lower cost, and ranger programs for kids at many locations.</p>
+        <p>Yes - better than national parks for beginners. Consistent amenities, easier booking, lower cost, and ranger programs for kids at many locations.</p>
         <h3>What is the difference between a state park and national park for camping?</h3>
-        <p>State parks: less crowded, easier to book, $25–40/night, consistent flush toilets. National parks: more famous scenery, 6+ month booking windows for popular sites, $30–40/night plus entrance fees. Start with state parks.</p>
+        <p>State parks: less crowded, easier to book, $25-40/night, consistent flush toilets. National parks: more famous scenery, 6+ month booking windows for popular sites, $30-40/night plus entrance fees. Start with state parks.</p>
       </GuidePage>
       <GuideGearShelf guideSlug="best-state-parks-for-families" />
       <GuideArticleCTA />

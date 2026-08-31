@@ -11,7 +11,7 @@ interface Props {
  *
  * Video is loaded from youtube-nocookie.com via iframe with `loading="lazy"`
  * so it doesn't impact LCP. Illustration is wrapped in
- * `<IllustrationLightbox>` so visitors can click to enlarge — needed
+ * `<IllustrationLightbox>` so visitors can click to enlarge - needed
  * for the knot diagrams and stargazing charts that show fine detail
  * at a small size.
  */

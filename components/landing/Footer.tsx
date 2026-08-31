@@ -38,7 +38,7 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Guides — links to the 4 category hubs */}
+          {/* Guides - links to the 4 category hubs */}
           <FooterCol title="Guides" items={GUIDE_CATEGORY_LINKS} />
 
           {/* Tools + Site */}

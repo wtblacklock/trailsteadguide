@@ -53,7 +53,7 @@ export async function generateMetadata({
   const data = getSetForPlan(setId)
   if (!data) return {}
   return pageMetadata({
-    title: `${data.set.title} — Gear Set`,
+    title: `${data.set.title} - Gear Set`,
     description: `${data.set.tagline} The curated gear bundle for the ${data.plan.title} plan.`,
     path: `/gear/sets/${setId}`,
   })
@@ -71,7 +71,7 @@ export default async function GearSetPage({
   const { planSlug, plan, set, itemsByTier } = data
   const path = `/gear/sets/${setId}`
   // Standard tier is the canonical view for schema.org markup and the
-  // header's item count — crawlers and metadata don't need to reflect
+  // header's item count - crawlers and metadata don't need to reflect
   // client-side tier state.
   const standardItems = itemsByTier.standard
 
@@ -149,7 +149,7 @@ export default async function GearSetPage({
             See the {plan.title} plan
           </h2>
           <p className="text-stone-300 text-lg mb-8 max-w-xl">
-            Full timeline, meals, kid activities, and safety notes — built around exactly this gear.
+            Full timeline, meals, kid activities, and safety notes - built around exactly this gear.
           </p>
           <Link
             href={`/plans/${planSlug}`}
@@ -160,7 +160,7 @@ export default async function GearSetPage({
         </div>
 
         <p className="mt-8 text-xs text-stone-500 max-w-2xl">
-          As an Amazon Associate we earn from qualifying purchases. The links above are affiliate links — clicking them may earn us a small commission at no extra cost to you.
+          As an Amazon Associate we earn from qualifying purchases. The links above are affiliate links - clicking them may earn us a small commission at no extra cost to you.
         </p>
       </section>
     </main>

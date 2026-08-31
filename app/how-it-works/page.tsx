@@ -5,7 +5,7 @@ import Breadcrumbs from '@/components/seo/Breadcrumbs'
 export const metadata = pageMetadata({
   title: 'How It Works',
   description:
-    'How the Trailstead planner turns 6 quick questions into a complete camping trip plan — timeline, gear, meals, and activities scaled to your family.',
+    'How the Trailstead planner turns 6 quick questions into a complete camping trip plan - timeline, gear, meals, and activities scaled to your family.',
   path: '/how-it-works',
 })
 
@@ -18,7 +18,7 @@ const steps = [
   {
     n: '02',
     title: 'We match you to a template',
-    body: 'We have four plan templates — Backyard Test, First Night Camp, First Weekend Camp, and Easy Family Basecamp — tuned for different comfort levels.',
+    body: 'We have four plan templates - Backyard Test, First Night Camp, First Weekend Camp, and Easy Family Basecamp - tuned for different comfort levels.',
   },
   {
     n: '03',
@@ -71,7 +71,7 @@ export default function Page() {
             <li>Complete gear list grouped by category</li>
             <li>Meal plan with a shopping list scaled to your party size</li>
             <li>Age-appropriate activity suggestions for every kid in your group</li>
-            <li>Safety notes — what to watch for, what to pre-brief the kids on</li>
+            <li>Safety notes - what to watch for, what to pre-brief the kids on</li>
           </ul>
           <div className="mt-10">
             <Link

@@ -42,7 +42,7 @@ const FAQS = [
   },
   {
     q: 'Is the Camp Chef Everest wind-resistant?',
-    a: 'Yes. The Everest has three-sided wind baffles and performs well in 15 to 20 mph wind. The Coleman Classic 1-Burner has no windscreen and struggles in any breeze — you will need to rig a foil wind block or cook in the lee of the car.',
+    a: 'Yes. The Everest has three-sided wind baffles and performs well in 15 to 20 mph wind. The Coleman Classic 1-Burner has no windscreen and struggles in any breeze - you will need to rig a foil wind block or cook in the lee of the car.',
   },
   {
     q: 'Do both stoves use the same propane canisters?',
@@ -118,7 +118,7 @@ export default function Page() {
         </h1>
         <p className="mt-6 text-lg md:text-xl text-stone-600 leading-relaxed">
           Two very different stoves, two very different trips. The Everest is a
-          real outdoor kitchen — 40,000 BTU, two burners, matchless ignition.
+          real outdoor kitchen - 40,000 BTU, two burners, matchless ignition.
           The Coleman 1-Burner is a $40 solution for boiling water and cooking
           one thing at a time. Here&rsquo;s how to pick.
         </p>
@@ -130,10 +130,10 @@ export default function Page() {
           <p className="text-stone-800 leading-relaxed text-[17px]">
             Short answer: Pick the <strong>Camp Chef Everest 2X</strong> if
             you&rsquo;re cooking for a family or want to make real meals at
-            camp — two 20,000 BTU burners, wind baffles, and an electric
+            camp - two 20,000 BTU burners, wind baffles, and an electric
             igniter change the experience completely. Pick the{' '}
             <strong>Coleman Classic 1-Burner</strong> if it&rsquo;s one or two
-            people doing simple meals, or if budget is tight — it&rsquo;s a
+            people doing simple meals, or if budget is tight - it&rsquo;s a
             rock-solid $40 stove that boils water and cooks a skillet.
           </p>
         </div>
@@ -208,16 +208,16 @@ export default function Page() {
         />
         <h3 className="font-serif text-xl font-semibold text-stone-900 mb-3">Pros</h3>
         <ul className="text-stone-700 leading-relaxed list-disc pl-6 space-y-1 mb-6">
-          <li>20,000 BTU per burner — boils water fast, sears well</li>
+          <li>20,000 BTU per burner - boils water fast, sears well</li>
           <li>Matchless electric ignition (no hunting for the lighter)</li>
-          <li>Wind baffles actually work; usable in 15–20 mph winds</li>
+          <li>Wind baffles actually work; usable in 15-20 mph winds</li>
           <li>Fits two 12-inch skillets or pots side by side</li>
           <li>Independent burner knobs with good low-flame control</li>
         </ul>
         <h3 className="font-serif text-xl font-semibold text-stone-900 mb-3">Tradeoffs</h3>
         <ul className="text-stone-700 leading-relaxed list-disc pl-6 space-y-1 mb-8">
           <li>~$210 is a real investment compared to single-burner options</li>
-          <li>Heavier and larger packed — takes a meaningful chunk of trunk space</li>
+          <li>Heavier and larger packed - takes a meaningful chunk of trunk space</li>
           <li>A 1-pound propane canister runs it ~1 hour on high, so longer trips want a 20-pound tank adapter</li>
         </ul>
         <a
@@ -253,13 +253,13 @@ export default function Page() {
         <h3 className="font-serif text-xl font-semibold text-stone-900 mb-3">Pros</h3>
         <ul className="text-stone-700 leading-relaxed list-disc pl-6 space-y-1 mb-6">
           <li>$40 is the lowest real entry point for a decent camp stove</li>
-          <li>Compact — packs small, fits in a single crate</li>
+          <li>Compact - packs small, fits in a single crate</li>
           <li>Uses the same 1-pound propane bottles as the Everest</li>
           <li>Nearly indestructible; the design has been unchanged for decades</li>
         </ul>
         <h3 className="font-serif text-xl font-semibold text-stone-900 mb-3">Tradeoffs</h3>
         <ul className="text-stone-700 leading-relaxed list-disc pl-6 space-y-1 mb-8">
-          <li>Only one burner — realistic family cooking requires you to stage dishes</li>
+          <li>Only one burner - realistic family cooking requires you to stage dishes</li>
           <li>No wind protection; even a light breeze drops the effective output significantly</li>
           <li>Match-lit; no igniter</li>
           <li>10-inch skillet is the practical max pan size</li>
@@ -333,8 +333,8 @@ export default function Page() {
           See the full gear guide.
         </h2>
         <p className="text-stone-600 text-lg leading-relaxed mb-6 max-w-xl">
-          Stoves are one piece. The full guide covers the other categories —
-          tents, sleep, coolers, lighting — with the same short-list approach.
+          Stoves are one piece. The full guide covers the other categories -
+          tents, sleep, coolers, lighting - with the same short-list approach.
         </p>
         <Link
           href="/gear"

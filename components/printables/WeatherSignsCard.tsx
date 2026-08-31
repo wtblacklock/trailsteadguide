@@ -121,15 +121,15 @@ export default function WeatherSignsCard() {
       `}</style>
 
       <p className="lead">
-        Weather moves faster than forecasts. Learn the local signs and you&apos;ll know what&apos;s coming 2–6 hours before it arrives — long enough to set a rain fly, shorten a hike, or get back to camp.
+        Weather moves faster than forecasts. Learn the local signs and you&apos;ll know what&apos;s coming 2-6 hours before it arrives - long enough to set a rain fly, shorten a hike, or get back to camp.
       </p>
 
-      <h2>Cloud Types — What They Signal</h2>
+      <h2>Cloud Types - What They Signal</h2>
       <div className="clouds-grid">
         {[
           { name: 'Cumulus', look: 'Puffy white cauliflower clouds, flat base, sharp edges.', signal: 'Fair weather', type: 'ok', img: 'https://upload.wikimedia.org/wikipedia/commons/b/b1/Cumulus.svg' },
           { name: 'Cumulonimbus', look: 'Towering anvil-top cloud, dark base, can span horizon.', signal: 'Storms coming', type: 'bad', img: 'https://upload.wikimedia.org/wikipedia/commons/1/12/Cumulonimbus.svg' },
-          { name: 'Cirrus', look: 'Thin, wispy streaks high in the sky.', signal: 'Change in 24–48h', type: 'warn', img: 'https://upload.wikimedia.org/wikipedia/commons/b/ba/Clouds_CH_6.svg' },
+          { name: 'Cirrus', look: 'Thin, wispy streaks high in the sky.', signal: 'Change in 24-48h', type: 'warn', img: 'https://upload.wikimedia.org/wikipedia/commons/b/ba/Clouds_CH_6.svg' },
           { name: 'Stratus', look: 'Low, flat grey blanket covering the sky.', signal: 'Drizzle likely', type: 'warn', img: 'https://upload.wikimedia.org/wikipedia/commons/4/47/Stratus.svg' },
           { name: 'Altocumulus', look: 'Rippled rows of grey-white puffs at mid height.', signal: 'Storms possible', type: 'warn', img: 'https://upload.wikimedia.org/wikipedia/commons/0/07/Symbol_altocumulus.svg' },
         ].map((c) => (
@@ -148,7 +148,7 @@ export default function WeatherSignsCard() {
           <h2>Wind Signs</h2>
           <ul className="info-list">
             <li><strong>Sudden calm after breeze</strong>A squall line may be approaching. Look for a dark shelf cloud on the horizon.</li>
-            <li><strong>Wind shifting to the south</strong>Warm front approaching — rain likely within 12 hours.</li>
+            <li><strong>Wind shifting to the south</strong>Warm front approaching - rain likely within 12 hours.</li>
             <li><strong>Backing wind (clockwise to counter-clockwise)</strong>Deteriorating conditions. Watch the sky.</li>
             <li><strong>Steady strong wind from the west</strong>Usually clearing weather following a front. Good sign.</li>
           </ul>
@@ -156,8 +156,8 @@ export default function WeatherSignsCard() {
         <div>
           <h2>Sky Color Rules</h2>
           <ul className="info-list">
-            <li><strong>Red sky at night</strong>Sailors&apos; delight. High pressure moving in from the west — fair weather ahead.</li>
-            <li><strong>Red sky in morning</strong>Sailors take warning. Moisture moving in from the west — rain likely.</li>
+            <li><strong>Red sky at night</strong>Sailors&apos; delight. High pressure moving in from the west - fair weather ahead.</li>
+            <li><strong>Red sky in morning</strong>Sailors take warning. Moisture moving in from the west - rain likely.</li>
             <li><strong>Yellow/green sky before sunset</strong>Hail or tornado risk in severe weather regions. Seek shelter.</li>
             <li><strong>Dark purple horizon to the west</strong>Heavy rain cell approaching. Set up rain protection now.</li>
           </ul>

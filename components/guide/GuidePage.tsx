@@ -5,7 +5,7 @@ import { getCategoryForGuide } from '@/lib/guides'
 import { AUTHOR_NAME, AUTHOR_IMAGE } from '@/lib/seo'
 import StickyQuizCTA from './StickyQuizCTA'
 
-// Avatar initials shown behind the portrait — graceful fallback for a 404
+// Avatar initials shown behind the portrait - graceful fallback for a 404
 // on AUTHOR_IMAGE. The user will swap the photo asset later.
 const AUTHOR_INITIALS = AUTHOR_NAME.split(' ')
   .map((part) => part[0])
@@ -17,7 +17,7 @@ export type GuidePageProps = {
   title: string
   lede: string
   heroImage?: { src: string; alt: string }
-  slug: string // current guide slug — used by RelatedGuides and to derive the category back-link
+  slug: string // current guide slug - used by RelatedGuides and to derive the category back-link
   /** ISO date string (YYYY-MM-DD). Falls back to the schema default modifier. */
   dateModified?: string
   children: ReactNode
@@ -37,7 +37,7 @@ export function GuidePage({ eyebrow = 'Guide', title, lede, heroImage, slug, dat
 
   return (
     <article>
-      {/* Editorial header — text-first, narrow column, oversized serif title */}
+      {/* Editorial header - text-first, narrow column, oversized serif title */}
       <header className="max-w-3xl mx-auto px-8 pt-16 md:pt-28 pb-8">
         {category && (
           <p className="text-xs font-semibold tracking-[0.18em] uppercase text-stone-500 mb-6">
@@ -78,7 +78,7 @@ export function GuidePage({ eyebrow = 'Guide', title, lede, heroImage, slug, dat
         </div>
       </header>
 
-      {/* Hero image — sits BELOW the lede, full-bleed within page max, editorial caption feel */}
+      {/* Hero image - sits BELOW the lede, full-bleed within page max, editorial caption feel */}
       {heroImage && (
         <figure className="max-w-5xl mx-auto px-8 mt-6 mb-20">
           <div className="relative aspect-[16/9] md:aspect-[21/9] rounded-2xl overflow-hidden bg-stone-100">
@@ -94,7 +94,7 @@ export function GuidePage({ eyebrow = 'Guide', title, lede, heroImage, slug, dat
         </figure>
       )}
 
-      {/* Body — narrow reading column, quiet typography */}
+      {/* Body - narrow reading column, quiet typography */}
       <section className="max-w-3xl mx-auto px-8">
         <div className="prose-editorial">{children}</div>
       </section>

@@ -1,14 +1,14 @@
 import type { ReactNode } from 'react'
 
 export type QuickAnswerProps = {
-  /** 60–120 word Q&A-style answer — the meaty takeaway. */
+  /** 60-120 word Q&A-style answer - the meaty takeaway. */
   summary: ReactNode
   /** Optional ≤25-word ultra-tight version, shown above the summary. */
   tldr?: string
 }
 
 /**
- * Quick Answer block — placed at the top of each guide, immediately after
+ * Quick Answer block - placed at the top of each guide, immediately after
  * the hero, before the first content section. Authored to be the single
  * passage AI Overviews / Perplexity / ChatGPT search will quote.
  */

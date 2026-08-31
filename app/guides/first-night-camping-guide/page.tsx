@@ -13,7 +13,7 @@ import AmazonLink from '@/components/affiliate/AmazonLink'
 const SLUG = '/guides/first-night-camping-guide'
 const TITLE = 'First Night Camping Guide'
 // SEO-optimized <title>; H1/headline keep TITLE.
-const META_TITLE = 'First Night Camping — What to Expect'
+const META_TITLE = 'First Night Camping - What to Expect'
 const DESCRIPTION =
   'First-night camping guide: how to set up before dark, what success actually looks like, the fears that fade in hour one, and a fallback if it falls apart.'
 const HERO_IMAGE = 'https://images.unsplash.com/photo-1517824806704-9040b037703b?w=1400&auto=format&fit=crop&q=80'
@@ -47,7 +47,7 @@ export default function Page() {
         data={faqPageGraph([
           {
             q: 'What does a successful first night camping actually look like?',
-            a: 'You get the tent up before dark, you cook one hot thing outside, you sleep in the tent for at least part of the night, and you go home in the morning still on speaking terms with whoever came with you. Distance hiked, photos taken, and how cleanly you packed up are not the success metric — completing the overnight is.',
+            a: 'You get the tent up before dark, you cook one hot thing outside, you sleep in the tent for at least part of the night, and you go home in the morning still on speaking terms with whoever came with you. Distance hiked, photos taken, and how cleanly you packed up are not the success metric - completing the overnight is.',
           },
           {
             q: 'Should I pick a campground or do a backyard test first?',
@@ -55,19 +55,19 @@ export default function Page() {
           },
           {
             q: 'How long should the first night be?',
-            a: 'One night. Maybe two if you have a confident partner along. The most common first-trip mistake is booking three nights and finding out on night one that the sleeping pad does not work — by night two everyone is exhausted and the trip has soured. One night is plenty to learn, plenty to enjoy, and short enough that you will book a second one.',
+            a: 'One night. Maybe two if you have a confident partner along. The most common first-trip mistake is booking three nights and finding out on night one that the sleeping pad does not work - by night two everyone is exhausted and the trip has soured. One night is plenty to learn, plenty to enjoy, and short enough that you will book a second one.',
           },
           {
             q: 'What if I cannot sleep at all?',
-            a: 'Plan for it. The first night in a tent is unfamiliar — every twig, every wind shift, every passing car sounds different. Bring earplugs, an eye mask, and a 4am exit plan that does not feel like failure. Most people sleep terribly the first night and fine the second. Knowing that in advance turns a bad night into a normal first-time experience instead of a reason to quit.',
+            a: 'Plan for it. The first night in a tent is unfamiliar - every twig, every wind shift, every passing car sounds different. Bring earplugs, an eye mask, and a 4am exit plan that does not feel like failure. Most people sleep terribly the first night and fine the second. Knowing that in advance turns a bad night into a normal first-time experience instead of a reason to quit.',
           },
           {
             q: 'How far from home should the first campsite be?',
-            a: 'Under 90 minutes drive, ideally under 45. The whole point is a low-stakes test — short drive in, short drive out, and the option to bail without a four-hour highway leg in the dark. Save the destination park for trip three or four.',
+            a: 'Under 90 minutes drive, ideally under 45. The whole point is a low-stakes test - short drive in, short drive out, and the option to bail without a four-hour highway leg in the dark. Save the destination park for trip three or four.',
           },
           {
             q: 'Do I need to buy all the gear before I go?',
-            a: 'No. Borrow the tent if you can. Rent or borrow sleeping bags. The first trip is for finding out what you actually need — an over-bought first trip wastes money on gear that does not fit your real preferences. Buy a headlamp and a basic sleeping pad, borrow the rest, and only invest after you have a night of real-world data.',
+            a: 'No. Borrow the tent if you can. Rent or borrow sleeping bags. The first trip is for finding out what you actually need - an over-bought first trip wastes money on gear that does not fit your real preferences. Buy a headlamp and a basic sleeping pad, borrow the rest, and only invest after you have a night of real-world data.',
           },
         ])}
       />
@@ -83,19 +83,19 @@ export default function Page() {
         slug="first-night-camping-guide"
         eyebrow="First night"
         title="First Night Camping Guide"
-        lede="What success actually looks like — and how to plan a first night you will repeat."
+        lede="What success actually looks like - and how to plan a first night you will repeat."
         heroImage={{
           src: HERO_IMAGE,
           alt: 'A small tent on a rise under the Milky Way, a beginner first night camping under a starry sky',
         }}
       >
         <QuickAnswer
-          tldr="Tent up before dark, one hot meal outside, asleep at some point — that's the whole bar."
-          summary="A successful first night camping looks small: tent up before dark, one hot thing cooked outside, asleep at some point, home in the morning still on speaking terms. One night, not three. Under 90 minutes from home, ideally a state park within 45. A 50–75°F forecast with low wind. Pitch the tent in your yard the week before and run every piece of gear through a dry test. The single piece that decides whether you sleep: a real sleeping pad with R-value 3+, not an $18 foam square. Plan a fallback in writing — drive home, cabin, or quit-at-4am — before you leave so quitting isn't failure."
+          tldr="Tent up before dark, one hot meal outside, asleep at some point - that's the whole bar."
+          summary="A successful first night camping looks small: tent up before dark, one hot thing cooked outside, asleep at some point, home in the morning still on speaking terms. One night, not three. Under 90 minutes from home, ideally a state park within 45. A 50-75°F forecast with low wind. Pitch the tent in your yard the week before and run every piece of gear through a dry test. The single piece that decides whether you sleep: a real sleeping pad with R-value 3+, not an $18 foam square. Plan a fallback in writing - drive home, cabin, or quit-at-4am - before you leave so quitting isn't failure."
         />
         <h2>The honest goal of your first night</h2>
         <p>
-          Your first night camping is not a wilderness adventure. It is a test. You are checking three things, in this order: can you sleep outside, can you cook a meal outside, and can you and the people you brought spend an evening together with no walls. Everything else — the photos, the hike, the campfire songs — is optional.
+          Your first night camping is not a wilderness adventure. It is a test. You are checking three things, in this order: can you sleep outside, can you cook a meal outside, and can you and the people you brought spend an evening together with no walls. Everything else - the photos, the hike, the campfire songs - is optional.
         </p>
         <ul>
           <li><strong>Success looks like:</strong> tent up before dark, one hot thing cooked outside, asleep at some point, awake and intact in the morning.</li>
@@ -105,11 +105,11 @@ export default function Page() {
 
         <h2>Pick the lowest-stakes version that still counts</h2>
         <p>
-          The biggest first-night mistake is booking too much trip. Three nights, two-hour drive, an &ldquo;epic&rdquo; first destination — that is how a first attempt becomes a last attempt. Pick the smallest version that still teaches you what you need to know — or <Link href="/quiz">take the 5-second quiz</Link> and we&apos;ll match one to your dates and party. There are three reasonable starting points:
+          The biggest first-night mistake is booking too much trip. Three nights, two-hour drive, an &ldquo;epic&rdquo; first destination - that is how a first attempt becomes a last attempt. Pick the smallest version that still teaches you what you need to know - or <Link href="/quiz">take the 5-second quiz</Link> and we&apos;ll match one to your dates and party. There are three reasonable starting points:
         </p>
         <ul>
           <li>
-            <strong><Link href="/plans/backyard-test">Backyard Test.</Link></strong> The right first call if you have never slept in a tent. You learn whether your sleeping pad works, whether the tent leaks, and whether your kid can settle without the bedroom — and the house is twenty feet away if anything goes sideways.
+            <strong><Link href="/plans/backyard-test">Backyard Test.</Link></strong> The right first call if you have never slept in a tent. You learn whether your sleeping pad works, whether the tent leaks, and whether your kid can settle without the bedroom - and the house is twenty feet away if anything goes sideways.
           </li>
           <li>
             <strong><Link href="/plans/first-night-camp">First Night Camp.</Link></strong> One night, one car, a state park within 45 to 90 minutes of home. The whole evening reads like a forgiving rehearsal for everything bigger.
@@ -124,7 +124,7 @@ export default function Page() {
           <li><strong>Under 90 minutes drive.</strong> Short drive in, short drive out. If the night does not work, bailing should be a 90-minute drive, not a four-hour highway slog.</li>
           <li><strong>State park, not dispersed land.</strong> Real bathrooms, potable water, a ranger on call. Wait until trip three to discover the romance of the national forest dirt road.</li>
           <li><strong>A site you can pull a car next to.</strong> The first trip is car camping. Walking gear in over a quarter-mile is a trip-three move.</li>
-          <li><strong>Forecast: 50–75°F nights, low wind, no rain.</strong> Pick the calmest weather window you can. Save weather drama for after you have one trip in.</li>
+          <li><strong>Forecast: 50-75°F nights, low wind, no rain.</strong> Pick the calmest weather window you can. Save weather drama for after you have one trip in.</li>
         </ul>
 
         <figure className="not-prose my-12">
@@ -143,7 +143,7 @@ export default function Page() {
           </figcaption>
         </figure>
 
-        <h2>The fears that almost everyone has — and what actually happens</h2>
+        <h2>The fears that almost everyone has - and what actually happens</h2>
         <h3>&ldquo;What if I cannot sleep?&rdquo;</h3>
         <p>
           You probably will not sleep well. Almost no one does on night one. Every passing car, every wind shift, every owl is unfamiliar. Pack earplugs and an eye mask, accept that you will be tired the next day, and notice that the second night in a tent is almost always better than the first. The poor first sleep is the rite of passage, not the reason to quit.
@@ -161,7 +161,7 @@ export default function Page() {
 
         <h3>&ldquo;What if I cannot get the tent up?&rdquo;</h3>
         <p>
-          Pitch it once at home in the backyard or living room before you leave. Twenty minutes of practice in the daylight beats forty-five minutes of stress at the campsite at 7pm. Watch the manufacturer&apos;s pitch video. Most modern tents are color-coded — pole-color matches grommet-color — and once you see it once, the muscle memory holds.
+          Pitch it once at home in the backyard or living room before you leave. Twenty minutes of practice in the daylight beats forty-five minutes of stress at the campsite at 7pm. Watch the manufacturer&apos;s pitch video. Most modern tents are color-coded - pole-color matches grommet-color - and once you see it once, the muscle memory holds.
         </p>
 
         <h3>&ldquo;What if the kids hate it?&rdquo;</h3>
@@ -182,7 +182,7 @@ export default function Page() {
 
         <h2>What to actually pack for the first night</h2>
         <p>
-          Stop optimizing. The first-night packing list is not a backpacking list — you have a car. Bring the comfortable thing. You will trim later trips down once you know what you actually use.
+          Stop optimizing. The first-night packing list is not a backpacking list - you have a car. Bring the comfortable thing. You will trim later trips down once you know what you actually use.
         </p>
         <h3>Sleep system (the one part to get right)</h3>
         <ul>
@@ -195,7 +195,7 @@ export default function Page() {
         <h3>Cooking and food</h3>
         <ul>
           <li>Propane stove, one canister, lighter, plus a backup lighter.</li>
-          <li>One cooked dinner, planned and pre-prepped at home. Foil-pack chicken, hot dogs, or pasta — pick the one you would cook on a Tuesday.</li>
+          <li>One cooked dinner, planned and pre-prepped at home. Foil-pack chicken, hot dogs, or pasta - pick the one you would cook on a Tuesday.</li>
           <li>Breakfast: instant coffee or a pour-over, oatmeal, fruit. Do not invent a 4-step breakfast on day one.</li>
           <li>One gallon of drinking water per person. Do not assume the campground spigot is on.</li>
           <li>Snacks. More than you think.</li>
@@ -213,7 +213,7 @@ export default function Page() {
           <li>Basic first-aid kit. Bandaids, ibuprofen, anti-itch cream, tweezers.</li>
           <li>Bug spray (DEET or picaridin) and sunscreen.</li>
           <li>Hand sanitizer and toilet paper, even at a campground with bathrooms.</li>
-          <li>Trash bags. More than you think — wet clothes, dirty dishes, packing out.</li>
+          <li>Trash bags. More than you think - wet clothes, dirty dishes, packing out.</li>
           <li>Earplugs and an eye mask, one set per adult.</li>
           <li>A book, a deck of cards, or a downloaded movie. The evening is longer than you expect once the sun goes down.</li>
         </ul>
@@ -227,25 +227,25 @@ export default function Page() {
             <strong>Driving in after dark.</strong> The single biggest cause of a miserable first night is arriving at 9pm and pitching a tent by headlamp. Leave the house in time to be at the site by 5pm at the latest.
           </li>
           <li>
-            <strong>Only test-pitching the tent — and skipping every other piece of gear.</strong> The tent is rarely what fails on a first trip. The stove that has not been lit since last summer, the air mattress with a slow leak, the lantern with corroded batteries — those are what fail. Run every piece on the driveway.
+            <strong>Only test-pitching the tent - and skipping every other piece of gear.</strong> The tent is rarely what fails on a first trip. The stove that has not been lit since last summer, the air mattress with a slow leak, the lantern with corroded batteries - those are what fail. Run every piece on the driveway.
           </li>
           <li>
             <strong>Cheap sleeping pad.</strong> An $18 foam pad does not insulate you from a 55°F ground. The whole night fails. Spend the $75 on a real pad before you spend anything on premium tents or cookware.
           </li>
           <li>
-            <strong>Waiting until you are already cold to add layers.</strong> Camp temps drop the moment the sun clears the trees. Put on the fleece, beanie, and warm socks before dinner — once you are cold in a tent, an hour of fire-staring barely brings you back.
+            <strong>Waiting until you are already cold to add layers.</strong> Camp temps drop the moment the sun clears the trees. Put on the fleece, beanie, and warm socks before dinner - once you are cold in a tent, an hour of fire-staring barely brings you back.
           </li>
         </ol>
 
         <h2>Simple gear setup for night one</h2>
         <p>
-          A first-night kit calibrated for &ldquo;will I do this again&rdquo; — not for a thru-hike. Mid-range, proven, replaceable. Skip the boutique brands until you know what you actually want.
+          A first-night kit calibrated for &ldquo;will I do this again&rdquo; - not for a thru-hike. Mid-range, proven, replaceable. Skip the boutique brands until you know what you actually want.
         </p>
         <ul>
           <li>
             <strong>Tent.</strong>{' '}
             <AmazonLink productId="coleman-sundome-4p" pageSlug="first-night-camping-guide" />{' '}
-            (~$68). The forgiving first tent — easy pitch, real rainfly, room to sit up.
+            (~$68). The forgiving first tent - easy pitch, real rainfly, room to sit up.
           </li>
           <li>
             <strong>Sleeping bag.</strong>{' '}
@@ -290,9 +290,9 @@ export default function Page() {
         <h2>The night, hour by hour</h2>
         <ul>
           <li><strong>By 5pm:</strong> at the site. Tent up. Sleeping bags out. The hard work is done in the daylight.</li>
-          <li><strong>5–6pm:</strong> walk the campground. Locate the bathroom. Note the route from your tent.</li>
+          <li><strong>5-6pm:</strong> walk the campground. Locate the bathroom. Note the route from your tent.</li>
           <li><strong>6pm:</strong> light the stove, cook the dinner you planned at home. One pot, one pan, hot.</li>
-          <li><strong>7–9pm:</strong> dishes, sit, talk. This is the hour the trip is actually for.</li>
+          <li><strong>7-9pm:</strong> dishes, sit, talk. This is the hour the trip is actually for.</li>
           <li><strong>9pm:</strong> headlamp and a book in the tent. Lights out by 10.</li>
           <li><strong>3am:</strong> probably awake. You expected this. Sip water, listen to the woods, sleep again.</li>
           <li><strong>7am:</strong> coffee, pack up, drive home. You did it.</li>
@@ -305,7 +305,7 @@ export default function Page() {
         </p>
         <h3>Should I do a backyard test or go straight to a campsite?</h3>
         <p>
-          A backyard test is the lowest-stakes version. If you have never tent-camped, do that first — it costs nothing, you can bail to the house, and you find broken gear on a forgiving night.
+          A backyard test is the lowest-stakes version. If you have never tent-camped, do that first - it costs nothing, you can bail to the house, and you find broken gear on a forgiving night.
         </p>
         <h3>How far from home for the first trip?</h3>
         <p>

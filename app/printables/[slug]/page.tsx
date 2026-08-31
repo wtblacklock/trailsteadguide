@@ -27,7 +27,7 @@ export async function generateMetadata({
   const printable = getPrintableBySlug(slug)
   if (!printable) return {}
   return pageMetadata({
-    title: `${printable.title} — Free Printable`,
+    title: `${printable.title} - Free Printable`,
     description: printable.description,
     path: `/printables/${printable.slug}`,
   })
@@ -93,7 +93,7 @@ export default async function PrintablePage({
           Two-column layout: a wider editorial body on the left, a narrower
           sticky sidebar on the right with the email gate + pair-with card.
           The lg breakpoint kicks in around 1024px so the sidebar only
-          appears alongside the body once there's room — below that it
+          appears alongside the body once there's room - below that it
           stacks underneath, which keeps the email gate prominent on
           mobile without crowding the body copy.
         */}
@@ -231,7 +231,7 @@ export default async function PrintablePage({
             Get a starter trip plan in 5 seconds.
           </h2>
           <p className="text-stone-300 text-lg mb-8 max-w-xl">
-            The printable is a great companion. Pair it with a structured plan — timeline, gear, meals, kid activities — built around your party and dates.
+            The printable is a great companion. Pair it with a structured plan - timeline, gear, meals, kid activities - built around your party and dates.
           </p>
           <Link
             href="/quiz"

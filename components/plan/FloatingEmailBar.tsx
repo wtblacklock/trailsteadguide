@@ -15,10 +15,10 @@ type Props = {
 const STORAGE_KEY = 'tsg:floating-email-dismissed-v2'
 
 /**
- * Floating bottom bar — renders on every plan page from initial mount.
+ * Floating bottom bar - renders on every plan page from initial mount.
  * Two calls to action:
  *   1. Email this plan (lightweight capture to /api/subscribe)
- *   2. Download the Trip Pack PDF — routes to /trip-pack/<slug>
+ *   2. Download the Trip Pack PDF - routes to /trip-pack/<slug>
  *
  * Dismissal is sticky for the session via sessionStorage.
  */

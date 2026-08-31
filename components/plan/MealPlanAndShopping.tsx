@@ -29,7 +29,7 @@ export default function MealPlanAndShopping({ meals, defaultAdults, defaultKids 
     <section className="py-12 bg-white">
       <div className="max-w-content mx-auto px-6">
         <h2 className="text-2xl font-serif font-medium text-stone-900 mb-2">Meal plan &amp; shopping list</h2>
-        <p className="text-stone-500 mb-8">Scaled to your party. Bump the counts to match who&apos;s actually coming — the shopping list updates automatically.</p>
+        <p className="text-stone-500 mb-8">Scaled to your party. Bump the counts to match who&apos;s actually coming - the shopping list updates automatically.</p>
 
         <div className="flex flex-wrap gap-4 mb-10">
           <Stepper label="Adults" value={adults} min={1} max={12} onChange={setAdults} />
@@ -75,7 +75,7 @@ export default function MealPlanAndShopping({ meals, defaultAdults, defaultKids 
                         />
                         <span className="flex-1">
                           <span className="text-stone-900">{item.name}</span>
-                          <span className="text-stone-500"> — {formatBuyLine(item)}</span>
+                          <span className="text-stone-500"> - {formatBuyLine(item)}</span>
                         </span>
                       </li>
                     ))}

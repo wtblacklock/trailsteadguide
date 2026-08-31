@@ -49,7 +49,7 @@ export async function generateMetadata({
   )
   return pageMetadata({
     title: `${content.cover.title} Trip Pack`,
-    description: `Download a print-ready Trip Pack for ${content.cover.title}: timeline, packing list, gear set, and mistake prevention — assembled to your party size.`,
+    description: `Download a print-ready Trip Pack for ${content.cover.title}: timeline, packing list, gear set, and mistake prevention - assembled to your party size.`,
     path: `/trip-pack/${planSlug}`,
     type: 'article',
     noIndex: hasPersonalization,
@@ -78,7 +78,7 @@ export default async function TripPackPage({
   const productSchema = tripPackProductGraph({
     planSlug: slug,
     name: `${content.cover.title} Trip Pack`,
-    description: `Print-ready ${content.cover.title} Trip Pack: timeline, packing list, gear set, and mistake prevention — assembled to your party size.`,
+    description: `Print-ready ${content.cover.title} Trip Pack: timeline, packing list, gear set, and mistake prevention - assembled to your party size.`,
     tiers: [
       { tier: 'basic', name: 'Basic', priceUsd: 14 },
       { tier: 'premium', name: 'Premium', priceUsd: 24 },

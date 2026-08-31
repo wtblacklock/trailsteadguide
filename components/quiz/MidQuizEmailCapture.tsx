@@ -14,7 +14,7 @@ export default function MidQuizEmailCapture({ onSkip }: MidQuizEmailCaptureProps
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
 
-  // Email gate appeared mid-quiz — distinct from the trip-pack PDF gate via `source`.
+  // Email gate appeared mid-quiz - distinct from the trip-pack PDF gate via `source`.
   useEffect(() => {
     track('email_gate_shown', { source: 'mid_quiz' })
   }, [])
@@ -35,7 +35,7 @@ export default function MidQuizEmailCapture({ onSkip }: MidQuizEmailCaptureProps
         throw new Error('Something went wrong. Please try again.')
       }
 
-      // Email captured — no PII in props, only the source bucket.
+      // Email captured - no PII in props, only the source bucket.
       track('email_gate_submitted', { source: 'mid_quiz' })
       setLoading(false)
       onSkip()
@@ -52,7 +52,7 @@ export default function MidQuizEmailCapture({ onSkip }: MidQuizEmailCaptureProps
       </h2>
       <p className="text-stone-500 mb-6">
         Drop your email and we&apos;ll send your personalized camping plan straight to
-        you — no spam, ever.
+        you - no spam, ever.
       </p>
 
       <form onSubmit={handleSubmit} className="flex flex-col gap-4">

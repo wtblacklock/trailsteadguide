@@ -10,9 +10,9 @@ import type {
 
 /**
  * URL params for /plans/[planId]:
- *   adults, kids                    — existing (numeric)
- *   group     ∈ solo|couple|family  — new
- *   kidsAge   ∈ under_5|5_10|10+    — new (only when family)
+ *   adults, kids                    - existing (numeric)
+ *   group     ∈ solo|couple|family  - new
+ *   kidsAge   ∈ under_5|5_10|10+    - new (only when family)
  *   activity  ∈ relaxing|balanced|active
  *   comfort   ∈ minimal|balanced|comfort-first
  *

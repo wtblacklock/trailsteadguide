@@ -8,7 +8,7 @@
  * Resend is mocked at the SDK level so no real email goes out, but the
  * actual Resend code path executes (constructor + emails.send call shape
  * verified). The PDF render uses real Puppeteer against the local Chrome
- * binary — CI sets PUPPETEER_EXECUTABLE_PATH to a setup-chrome install.
+ * binary - CI sets PUPPETEER_EXECUTABLE_PATH to a setup-chrome install.
  */
 
 import { describe, expect, it, vi, beforeAll } from 'vitest'
@@ -63,7 +63,7 @@ describe('trip-pack purchase → PDF → email', () => {
       expect(pdf.byteLength, 'PDF should be non-trivial').toBeGreaterThan(20_000)
       expect(pdf.subarray(0, 5).toString('ascii')).toBe('%PDF-')
 
-      // 4. Email dispatch — Resend SDK is mocked, but sendTripPackEmail
+      // 4. Email dispatch - Resend SDK is mocked, but sendTripPackEmail
       //    still constructs Resend(apiKey) and calls emails.send().
       const downloadUrl = `https://www.trailsteadguide.com/api/generate-pdf?token=${token}`
       const result = await sendTripPackEmail({

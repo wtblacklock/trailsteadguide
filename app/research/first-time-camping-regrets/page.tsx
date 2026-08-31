@@ -39,7 +39,7 @@ const REGRETS: Regret[] = [
     n: '01',
     title: 'They didn’t test the gear at home.',
     why:
-      'A new tent, a borrowed stove, and a sleeping pad still in the box make for a campsite full of surprises. Every failure mode — a missing pole, a stove that won’t prime, a pad with a slow leak — lands at sundown when nothing can be fixed. The single most repeated story in beginner threads is some version of “we found out at the campsite that…”',
+      'A new tent, a borrowed stove, and a sleeping pad still in the box make for a campsite full of surprises. Every failure mode - a missing pole, a stove that won’t prime, a pad with a slow leak - lands at sundown when nothing can be fixed. The single most repeated story in beginner threads is some version of “we found out at the campsite that…”',
     fix: 'Pitch the tent in the yard, light the stove on the patio, and inflate the pad on the floor a week before the trip.',
     paraphrase:
       'First-time campers consistently report that the gear they trusted on the drive in was the gear that failed them after dark.',
@@ -58,7 +58,7 @@ const REGRETS: Regret[] = [
     title: 'They packed for the daytime, not the night.',
     why:
       'The forecast is almost always a daytime number. The night number, especially in shoulder seasons, can be 30 to 40 degrees colder. Beginners pack a 40-degree summer bag for a 70-degree weekend and wake up at 3 a.m. wearing every piece of clothing they brought. A thin foam pad on cold ground steals more heat than a thin sleeping bag does.',
-    fix: 'Pack for the overnight low, not the afternoon high — a 20°F bag and a sleeping pad rated R-value 3 or higher cover almost every three-season trip.',
+    fix: 'Pack for the overnight low, not the afternoon high - a 20°F bag and a sleeping pad rated R-value 3 or higher cover almost every three-season trip.',
     paraphrase:
       'First-time campers consistently report that the cold of the second half of the night was the part nobody warned them about.',
   },
@@ -66,8 +66,8 @@ const REGRETS: Regret[] = [
     n: '04',
     title: 'They booked a trip that was too big.',
     why:
-      'Two nights, a four-hour drive, an unfamiliar park, and a campsite chosen from a map are the conditions for a difficult weekend. Beginners describe spending the first night learning what doesn’t work, the second night too tired to enjoy it, and the drive home agreeing that “maybe camping isn’t for us.” The fix isn’t more practice — it’s a smaller first trip.',
-    fix: 'One night, ninety minutes from home, on the easiest site you can book — then graduate to two nights once a one-night trip feels routine.',
+      'Two nights, a four-hour drive, an unfamiliar park, and a campsite chosen from a map are the conditions for a difficult weekend. Beginners describe spending the first night learning what doesn’t work, the second night too tired to enjoy it, and the drive home agreeing that “maybe camping isn’t for us.” The fix isn’t more practice - it’s a smaller first trip.',
+    fix: 'One night, ninety minutes from home, on the easiest site you can book - then graduate to two nights once a one-night trip feels routine.',
     paraphrase:
       'First-time campers consistently report that the trip they wish they’d taken was shorter and closer than the one they planned.',
   },
@@ -75,17 +75,17 @@ const REGRETS: Regret[] = [
     n: '05',
     title: 'They had no plan for rain.',
     why:
-      'A clear forecast on Wednesday is not a clear weekend. Rain on a first trip is the moment beginners discover that a poncho is not a rain layer, that wood on the ground is wet, that the rainfly should have been on from the start, and that the campfire is not a cooking plan. The trip doesn’t fail because of the rain — it fails because there was no plan for it.',
+      'A clear forecast on Wednesday is not a clear weekend. Rain on a first trip is the moment beginners discover that a poncho is not a rain layer, that wood on the ground is wet, that the rainfly should have been on from the start, and that the campfire is not a cooking plan. The trip doesn’t fail because of the rain - it fails because there was no plan for it.',
     fix: 'Pitch the rainfly every night even when the sky is clear, bring a propane stove as the actual cooking plan, and pack real waterproof rain layers per person.',
     paraphrase:
-      'First-time campers consistently report that the rain itself was tolerable — the absence of any plan for it was not.',
+      'First-time campers consistently report that the rain itself was tolerable - the absence of any plan for it was not.',
   },
   {
     n: '06',
     title: 'They tried to cook a real dinner.',
     why:
-      'Dutch-oven bread, three-burner skillet meals, and the spice rack from home turn dinner into a ninety-minute project at the worst time of day — cold, dark, and tired. The recurring beginner regret is not that the food was bad. It’s that they spent the best part of the evening producing it instead of sitting around the fire.',
-    fix: 'Hot dogs, foil-packet dinners, mac and cheese, and twice as many snacks as you think you need — boring food is correct food on a first trip.',
+      'Dutch-oven bread, three-burner skillet meals, and the spice rack from home turn dinner into a ninety-minute project at the worst time of day - cold, dark, and tired. The recurring beginner regret is not that the food was bad. It’s that they spent the best part of the evening producing it instead of sitting around the fire.',
+    fix: 'Hot dogs, foil-packet dinners, mac and cheese, and twice as many snacks as you think you need - boring food is correct food on a first trip.',
     paraphrase:
       'First-time campers consistently report that they wish they’d cooked simpler food and spent the saved hour at the fire.',
   },
@@ -93,7 +93,7 @@ const REGRETS: Regret[] = [
     n: '07',
     title: 'They planned the whole trip from scratch.',
     why:
-      'The mistake that causes most of the others is upstream of any of them: deciding, alone, with no template, what gear to bring, where to go, what to cook, what the kids will do, and what the weather will require. The decisions are not hard individually — they’re hard in aggregate, and beginners report quitting the planning before quitting the trip.',
+      'The mistake that causes most of the others is upstream of any of them: deciding, alone, with no template, what gear to bring, where to go, what to cook, what the kids will do, and what the weather will require. The decisions are not hard individually - they’re hard in aggregate, and beginners report quitting the planning before quitting the trip.',
     fix: 'Borrow a starter plan that already answers the boring questions, and edit it to fit the people going.',
     paraphrase:
       'First-time campers consistently report that the planning, not the camping, was the part that almost stopped them from going.',
@@ -159,7 +159,7 @@ export default function Page() {
           },
           {
             q: 'What is the rain regret first-time campers report?',
-            a: 'Not the rain itself — the absence of a plan for it. Beginners describe leaving the rainfly off because the sky looked clear at sunset, packing a poncho instead of a real rain jacket, and assuming the campfire would be the cooking plan. A propane stove, real waterproof rain layers, and the rainfly pitched every night address all three.',
+            a: 'Not the rain itself - the absence of a plan for it. Beginners describe leaving the rainfly off because the sky looked clear at sunset, packing a poncho instead of a real rain jacket, and assuming the campfire would be the cooking plan. A propane stove, real waterproof rain layers, and the rainfly pitched every night address all three.',
           },
         ])}
       />
@@ -205,7 +205,7 @@ export default function Page() {
           </div>
         </header>
 
-        {/* Stats callout — sand-colored editorial summary box */}
+        {/* Stats callout - sand-colored editorial summary box */}
         <div className="max-w-3xl mx-auto px-8 mb-16 mt-4">
           <div className="rounded-2xl bg-[#efe7d8] border border-[#e2d5bb] px-7 py-6 md:px-10 md:py-8">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase text-stone-700 mb-4">
@@ -286,20 +286,20 @@ export default function Page() {
             </p>
             <ul>
               <li>
-                <strong>If untested gear is the worry</strong> — you’ve bought a tent, you’ve borrowed a stove, you
-                don’t know what works — the answer is the{' '}
+                <strong>If untested gear is the worry</strong> - you’ve bought a tent, you’ve borrowed a stove, you
+                don’t know what works - the answer is the{' '}
                 <Link href="/plans/backyard-test">Backyard Test</Link>. One night in the yard finds the gear
                 failures while you can still walk inside.
               </li>
               <li>
-                <strong>If the trip itself feels too big</strong> — you’re considering two nights, an unfamiliar
-                park, and a long drive — the answer is the{' '}
+                <strong>If the trip itself feels too big</strong> - you’re considering two nights, an unfamiliar
+                park, and a long drive - the answer is the{' '}
                 <Link href="/plans/first-night-camp">First Night Camp</Link>. One night, close to home, on an
                 easy site.
               </li>
               <li>
-                <strong>If it’s the planning that’s stopping you</strong> — not any single decision, but the
-                aggregate of them — the answer is to start from a template instead of a blank page. The two-minute{' '}
+                <strong>If it’s the planning that’s stopping you</strong> - not any single decision, but the
+                aggregate of them - the answer is to start from a template instead of a blank page. The two-minute{' '}
                 <Link href="/quiz">starter quiz</Link> matches a plan to your dates, party size, and the gear you
                 already have.
               </li>
@@ -323,7 +323,7 @@ export default function Page() {
             <p>
               No quotes are reproduced verbatim. The italicized paraphrases at the end of each regret are
               composite summaries of patterns observed across multiple threads, not statements made by any single
-              user. Numbers are approximate — “500+ threads” reflects the combined volume of read posts and
+              user. Numbers are approximate - “500+ threads” reflects the combined volume of read posts and
               their top comment trees, not a precise count.
             </p>
             <p>
@@ -335,7 +335,7 @@ export default function Page() {
             <h2>If these match your situation</h2>
             <p>
               The two-minute <Link href="/quiz">starter quiz</Link> matches a Trailstead plan to your dates, your
-              party size, and the gear you already own. It’s built around the seven regrets above — the things
+              party size, and the gear you already own. It’s built around the seven regrets above - the things
               first-time campers wish they’d known the week before.
             </p>
           </div>

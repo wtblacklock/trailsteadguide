@@ -6,7 +6,7 @@ import { getPlanTemplate } from '@/lib/plan-templates'
 import { pageMetadata, articleGraph, SITE_URL } from '@/lib/seo'
 
 const SLUG = '/compare/backyard-test-vs-first-night-camp'
-const TITLE = 'Backyard Test vs First Night Camp — First-Trip Comparison'
+const TITLE = 'Backyard Test vs First Night Camp - First-Trip Comparison'
 const DESCRIPTION =
   'Backyard Test vs First Night Camp: which plan fits your first trip? Compare gear, duration, and risk. Pick the right starting point in 60 seconds.'
 const H1 = 'Backyard Test vs First Night Camp: which plan fits your first trip?'
@@ -38,13 +38,13 @@ const ROWS: Row[] = [
   },
   {
     axis: 'Difficulty',
-    a: 'Lowest possible — house is 50 feet away',
-    b: 'Real first trip — committed to the site',
+    a: 'Lowest possible - house is 50 feet away',
+    b: 'Real first trip - committed to the site',
   },
   {
     axis: 'Booking required',
     a: 'None',
-    b: 'Yes — developed campsite, week ahead',
+    b: 'Yes - developed campsite, week ahead',
   },
   {
     axis: 'Gear floor',
@@ -58,13 +58,13 @@ const ROWS: Row[] = [
   },
   {
     axis: 'First-trip risk',
-    a: 'Near zero — bail to the house anytime',
-    b: 'Manageable — bring a backup plan',
+    a: 'Near zero - bail to the house anytime',
+    b: 'Manageable - bring a backup plan',
   },
   {
     axis: 'Cost',
-    a: '$0 — uses your yard',
-    b: '$25–$60 site fee + fuel + food',
+    a: '$0 - uses your yard',
+    b: '$25-$60 site fee + fuel + food',
   },
   {
     axis: 'Best for',
@@ -92,7 +92,7 @@ const SCENARIOS: Scenario[] = [
   },
   {
     title: 'You camped as a kid and the family is excited.',
-    body: 'Skip to First Night Camp. You already trust the basics. A short, developed-campground trip is the right shape — proven structure, low risk, real reward.',
+    body: 'Skip to First Night Camp. You already trust the basics. A short, developed-campground trip is the right shape - proven structure, low risk, real reward.',
     pick: 'B',
   },
   {
@@ -116,7 +116,7 @@ const RELATED = [
   {
     title: 'First Night Camping Guide',
     href: '/guides/first-night-camping-guide',
-    blurb: 'A low-stakes test for your very first overnight — what success actually looks like.',
+    blurb: 'A low-stakes test for your very first overnight - what success actually looks like.',
   },
   {
     title: 'First-Time Camping Mistakes',
@@ -169,10 +169,10 @@ export default function Page() {
           summary={
             <>
               If you&rsquo;ve never slept outside as a family or your gear hasn&rsquo;t left the
-              garage in years, pick <strong>Backyard Test</strong> — it&rsquo;s a $0, one-night
+              garage in years, pick <strong>Backyard Test</strong> - it&rsquo;s a $0, one-night
               rehearsal with the house as your safety net. If you&rsquo;ve already done a backyard
               night, or you grew up camping and just need a clean plan, pick{' '}
-              <strong>First Night Camp</strong> — one developed-campground night, full timeline,
+              <strong>First Night Camp</strong> - one developed-campground night, full timeline,
               real reward. Both feed into the same quiz, and you can switch later.
             </>
           }
@@ -216,19 +216,19 @@ export default function Page() {
           <p>
             <strong>The Backyard Test takes about 4 hours of active time.</strong> You set up at
             5pm, eat outside, sleep in the tent, and pack up before breakfast. The First Night
-            takes a weekend — Friday afternoon to mid-morning Sunday — because you have to drive,
+            takes a weekend - Friday afternoon to mid-morning Sunday - because you have to drive,
             arrive, set up, settle the kids, sleep, and break camp without rushing.
           </p>
           <p>
             <strong>The gear floor is different.</strong> Backyard Test runs on a tent, sleeping
-            bags, pads, and headlamps — the stove is optional because the kitchen is right there.
+            bags, pads, and headlamps - the stove is optional because the kitchen is right there.
             First Night Camp adds a 2-burner stove, fuel, cooler, and a real first-aid kit. If you
             don&rsquo;t own those yet, the Backyard Test is a $0 way to find out you need them.
           </p>
           <p>
             <strong>The risk profile changes the conversation.</strong> When the back door is 50
             feet away, &ldquo;I&rsquo;m cold&rdquo; or &ldquo;I want to come in&rdquo; ends the
-            night without ending the trip. At a campsite, you&rsquo;re committed — that&rsquo;s
+            night without ending the trip. At a campsite, you&rsquo;re committed - that&rsquo;s
             the point, but it&rsquo;s also why a successful backyard night first makes the
             campsite feel like a reward, not a gamble.
           </p>

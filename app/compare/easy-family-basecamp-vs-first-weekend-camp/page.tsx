@@ -6,7 +6,7 @@ import { getPlanTemplate } from '@/lib/plan-templates'
 import { pageMetadata, articleGraph, SITE_URL } from '@/lib/seo'
 
 const SLUG = '/compare/easy-family-basecamp-vs-first-weekend-camp'
-const TITLE = 'Easy Family Basecamp vs First Weekend Camp — Comparison'
+const TITLE = 'Easy Family Basecamp vs First Weekend Camp - Comparison'
 const DESCRIPTION =
   'Easy Family Basecamp vs First Weekend Camp: pick the right multi-night plan. Compare comfort, ambition, gear, hike day, and which fits your family.'
 const H1 = 'Easy Family Basecamp vs First Weekend Camp: which plan fits your first trip?'
@@ -38,8 +38,8 @@ const ROWS: Row[] = [
   },
   {
     axis: 'Difficulty',
-    a: 'Lowest possible for multi-night — comfort-first',
-    b: 'Moderate — real weekend with a day-hike centerpiece',
+    a: 'Lowest possible for multi-night - comfort-first',
+    b: 'Moderate - real weekend with a day-hike centerpiece',
   },
   {
     axis: 'Daytime activity',
@@ -54,7 +54,7 @@ const ROWS: Row[] = [
   {
     axis: 'Site type',
     a: 'Premium site with electrical hookup, shaded',
-    b: 'Standard developed site — flat pad, fire ring',
+    b: 'Standard developed site - flat pad, fire ring',
   },
   {
     axis: 'Group fit',
@@ -63,13 +63,13 @@ const ROWS: Row[] = [
   },
   {
     axis: 'First-trip risk',
-    a: 'Lowest — comfort base means few surprises',
-    b: 'Moderate — weather and hike pace are real variables',
+    a: 'Lowest - comfort base means few surprises',
+    b: 'Moderate - weather and hike pace are real variables',
   },
   {
     axis: 'Cost',
-    a: 'Higher — premium site, more gear',
-    b: 'Mid — standard site, lighter kit',
+    a: 'Higher - premium site, more gear',
+    b: 'Mid - standard site, lighter kit',
   },
   {
     axis: 'Best for',
@@ -92,7 +92,7 @@ const SCENARIOS: Scenario[] = [
   },
   {
     title: 'Your kids are 7+ and ask “when are we hiking?”',
-    body: 'First Weekend Camp. The Saturday day-hike or lake day is the centerpiece — exactly the energy outlet older kids need, with a fire-cooked dinner waiting back at camp.',
+    body: 'First Weekend Camp. The Saturday day-hike or lake day is the centerpiece - exactly the energy outlet older kids need, with a fire-cooked dinner waiting back at camp.',
     pick: 'B',
   },
   {
@@ -107,7 +107,7 @@ const SCENARIOS: Scenario[] = [
   },
   {
     title: 'You want a Saturday centerpiece with a real meal you cooked outside.',
-    body: 'First Weekend Camp. Day hike, Dutch-oven dinner, longer campfire — the plan is built around making Saturday the memory the family keeps.',
+    body: 'First Weekend Camp. Day hike, Dutch-oven dinner, longer campfire - the plan is built around making Saturday the memory the family keeps.',
     pick: 'B',
   },
 ]
@@ -176,9 +176,9 @@ export default function Page() {
             <>
               If you have young kids, a camping-skeptical adult in the group, or you just want
               the trip to feel like a slow weekend at home with a fire pit, pick{' '}
-              <strong>Easy Family Basecamp</strong> — three nights, premium site, comfort
+              <strong>Easy Family Basecamp</strong> - three nights, premium site, comfort
               infrastructure. If your kids are 7+ and want a real day-hike or lake day as the
-              Saturday centerpiece, pick <strong>First Weekend Camp</strong> — two nights, lighter
+              Saturday centerpiece, pick <strong>First Weekend Camp</strong> - two nights, lighter
               kit, more ambition. Both feed into the same quiz, and you can switch later.
             </>
           }
@@ -222,26 +222,26 @@ export default function Page() {
           <p>
             <strong>Easy Family Basecamp is built around the camp itself.</strong> A queen air
             mattress, canopy, real lighting, and chairs in a circle turn the site into a
-            destination. The day plan is intentionally loose — slow walks, card games, kids
+            destination. The day plan is intentionally loose - slow walks, card games, kids
             exploring a defined radius. Nothing strenuous required, and that&rsquo;s the point.
           </p>
           <p>
             <strong>First Weekend Camp is built around Saturday.</strong> Friday is a quiet
-            arrival, Sunday is a clean pack-out — but Saturday holds a 2 to 5 mile age-scaled day
+            arrival, Sunday is a clean pack-out - but Saturday holds a 2 to 5 mile age-scaled day
             hike (or lake/river day), a real fire-cooked dinner, and a longer campfire. The plan
             assumes you came to do something specific outside, not just to be outside.
           </p>
           <p>
             <strong>The gear floors diverge meaningfully.</strong> Basecamp expects an electrical
             hookup, queen air mattress and pump, real pillows from home, and a 6-person cabin
-            tent — comfort gear that takes trunk space and adds cost. First Weekend Camp runs
+            tent - comfort gear that takes trunk space and adds cost. First Weekend Camp runs
             lighter: a 6-person tent, self-inflating pads, canopy as optional, and a Dutch oven
             if you want to lean into Saturday&rsquo;s dinner.
           </p>
           <p>
             <strong>The risk profiles flip on what can go wrong.</strong> Basecamp&rsquo;s risk
-            is boredom — three nights with no centerpiece can feel long for kids over 7. First
-            Weekend&rsquo;s risk is over-ambition — a hike too far on a day too hot can become
+            is boredom - three nights with no centerpiece can feel long for kids over 7. First
+            Weekend&rsquo;s risk is over-ambition - a hike too far on a day too hot can become
             the whole memory. Pick the one whose failure mode is the one your family handles
             best.
           </p>

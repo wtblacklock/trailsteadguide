@@ -5,7 +5,7 @@ export default function HowItWorks() {
     {
       number: '01',
       title: 'Answer a few quick questions about your trip',
-      description: 'Experience, party, conditions — the inputs that actually change the plan.',
+      description: 'Experience, party, conditions - the inputs that actually change the plan.',
     },
     {
       number: '02',
@@ -15,7 +15,7 @@ export default function HowItWorks() {
     {
       number: '03',
       title: 'Get your checklist, timeline, and gear setup',
-      description: 'Everything you need to know — the order to do it in, what to bring, what to expect.',
+      description: 'Everything you need to know - the order to do it in, what to bring, what to expect.',
     },
   ]
 

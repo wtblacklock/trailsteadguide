@@ -1,5 +1,5 @@
 /**
- * Trip Pack HTML template — assembled from plan + gear-set + party-size
+ * Trip Pack HTML template - assembled from plan + gear-set + party-size
  * inputs and handed to Puppeteer for PDF rendering.
  *
  * Pure string construction, no React. Self-contained: includes inline CSS
@@ -29,7 +29,7 @@ const escapeHtml = (s: string) =>
  * other SVG on the page.
  */
 
-/** Pure-HTML wordmark — no SVG, no font dependency beyond the page's font stack. */
+/** Pure-HTML wordmark - no SVG, no font dependency beyond the page's font stack. */
 const COVER_LOGO_HTML = `<div class="cover-logo">TRAILSTEAD GUIDE</div>`
 
 /** Footer wordmark (small, same typographic treatment). */
@@ -69,7 +69,7 @@ export function renderTripPackHtml(input: TripPackInput): string {
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>${escapeHtml(content.cover.title)} — Trailstead Trip Pack</title>
+  <title>${escapeHtml(content.cover.title)} - Trailstead Trip Pack</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -195,7 +195,7 @@ function renderPacking(
             (it) => `
           <div class="packing-item">
             <span class="box"></span>
-            <span>${escapeHtml(it.name)}${it.qty ? `<span class="qty">${escapeHtml(it.qty)}</span>` : ''}${it.note ? `<span class="note"> — ${escapeHtml(it.note)}</span>` : ''}</span>
+            <span>${escapeHtml(it.name)}${it.qty ? `<span class="qty">${escapeHtml(it.qty)}</span>` : ''}${it.note ? `<span class="note"> - ${escapeHtml(it.note)}</span>` : ''}</span>
           </div>`,
           )
           .join('')}
@@ -235,7 +235,7 @@ function renderGear(gear: ReturnType<typeof resolveGearSet>): string {
   <div class="page">
     <p class="section-eyebrow">Your gear set</p>
     <h2 class="section-title">Recommended gear</h2>
-    <p class="section-lede">A curated kit that matches this plan. Tap a card to view it on Amazon — links include our affiliate code, which helps fund Trailstead.</p>
+    <p class="section-lede">A curated kit that matches this plan. Tap a card to view it on Amazon - links include our affiliate code, which helps fund Trailstead.</p>
     <div class="gear-grid">${cards}</div>
     ${footer('Gear set')}
   </div>`

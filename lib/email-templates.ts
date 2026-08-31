@@ -1,5 +1,5 @@
 // Plan email templates. One per plan slug.
-// Keep emails short and warm — the site is the source of truth.
+// Keep emails short and warm - the site is the source of truth.
 
 import { getPrintableBySlug } from './printables'
 
@@ -22,7 +22,7 @@ const PLAN_META: Record<string, { label: string; pitch: string }> = {
   },
   'first-weekend-camp': {
     label: 'First Weekend Camping',
-    pitch: 'A two-night trip built for first-timers. Here&rsquo;s your complete plan — timeline, gear, meals, kid activities.',
+    pitch: 'A two-night trip built for first-timers. Here&rsquo;s your complete plan - timeline, gear, meals, kid activities.',
   },
   'easy-family-basecamp': {
     label: 'Easy Family Basecamp',
@@ -100,7 +100,7 @@ ${meta.pitch.replace(/&rsquo;/g, "'")}
 
 View your full plan: ${planUrl}
 
-Inside you'll find the timeline, gear list, meals, kid activities, and safety notes — everything you need to walk out the door confident.
+Inside you'll find the timeline, gear list, meals, kid activities, and safety notes - everything you need to walk out the door confident.
 
 Happy camping,
 Trailstead Guide`
@@ -116,7 +116,7 @@ Trailstead Guide`
 export function getContactAutoReplyEmail(args: { name: string }): PlanEmail {
   const firstName = args.name.trim().split(/\s+/)[0] || 'there'
 
-  const subject = 'We got your message — Trailstead Guide'
+  const subject = 'We got your message - Trailstead Guide'
 
   const html = `<!DOCTYPE html>
 <html>
@@ -173,12 +173,12 @@ export function getContactAutoReplyEmail(args: { name: string }): PlanEmail {
 
   const text = `Hey ${firstName}, thanks for reaching out.
 
-Your message landed in our inbox. William will reply within 48 hours — usually sooner.
+Your message landed in our inbox. William will reply within 48 hours - usually sooner.
 
 In the meantime, if you haven't built your camping plan yet, the quiz is the best place to start: ${SITE_URL}/quiz
 
 Talk soon,
-William — Trailstead Guide`
+William - Trailstead Guide`
 
   return { subject, html, text }
 }
@@ -232,7 +232,7 @@ export function getPrintableEmail(printableSlug: string): PlanEmail | null {
                 Hit &#8984;/Ctrl+P from the print view to print on a single sheet, or save it as a PDF for later. Letter or A4 both work.
               </p>
               <p style="margin:20px 0 0 0; font-size:14px; line-height:1.6; color:#78716c;">
-                Bookmark the <a href="${landingUrl}" style="color:#1c1917; text-decoration:underline;">printable page</a> if you want to come back later — and the rest of the analog guides will land here as we build them.
+                Bookmark the <a href="${landingUrl}" style="color:#1c1917; text-decoration:underline;">printable page</a> if you want to come back later - and the rest of the analog guides will land here as we build them.
               </p>
             </td>
           </tr>

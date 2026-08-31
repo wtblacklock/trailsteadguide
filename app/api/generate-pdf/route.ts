@@ -11,7 +11,7 @@ export const maxDuration = 60
  *   Verifies a signed token, renders the Trip Pack PDF, streams it back.
  *
  * GET /api/generate-pdf?preview=1&plan=first-night-camp&adults=2&kids=2
- *   Dev-only HTML preview (no token, no PDF) — handy while iterating on
+ *   Dev-only HTML preview (no token, no PDF) - handy while iterating on
  *   the template. Disabled in production.
  */
 export async function GET(req: Request) {

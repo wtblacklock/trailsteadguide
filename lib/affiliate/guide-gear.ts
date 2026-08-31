@@ -62,7 +62,7 @@ export function getGearForGuide(guideSlug: string): GuideGearGroup[] {
 /**
  * Convenience: flat list of products for a guide (no slot grouping).
  * Use this when you want a "products in this guide's recommended set"
- * filter — for the quiz results AffiliateBlock or related-product blocks.
+ * filter - for the quiz results AffiliateBlock or related-product blocks.
  */
 export function getProductsForGuide(guideSlug: string): AffiliateProduct[] {
   return getGearForGuide(guideSlug).flatMap((g) => g.products)

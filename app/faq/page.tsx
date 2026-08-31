@@ -17,11 +17,11 @@ const FAQ_ITEMS = [
   },
   {
     q: 'Do I need an account?',
-    a: 'No. Answer the 6 questions and the plan is yours — no login, no email required to see it.',
+    a: 'No. Answer the 6 questions and the plan is yours - no login, no email required to see it.',
   },
   {
     q: 'Can I save my plan?',
-    a: 'Yes — bookmark the URL or print the page. We also offer an optional email capture at the end if you want it sent to you.',
+    a: 'Yes - bookmark the URL or print the page. We also offer an optional email capture at the end if you want it sent to you.',
   },
   {
     q: 'What if my kids are different ages?',
@@ -33,7 +33,7 @@ const FAQ_ITEMS = [
   },
   {
     q: 'Do you recommend specific campgrounds?',
-    a: 'Not yet. Right now we help you structure the trip — campground selection is on the roadmap.',
+    a: 'Not yet. Right now we help you structure the trip - campground selection is on the roadmap.',
   },
   {
     q: 'Can I trust the gear recommendations?',

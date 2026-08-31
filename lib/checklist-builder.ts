@@ -24,7 +24,7 @@ const xN = (n: number) => (n > 1 ? `×${n}` : undefined)
 
 /**
  * Build a packing checklist scaled to party size, trip length, and kid ages.
- * Pure function — same input always produces same output, so a URL with the
+ * Pure function - same input always produces same output, so a URL with the
  * right query params is a shareable, printable checklist.
  */
 export function buildChecklist({ adults, kids, nights, ages }: ChecklistInput): ChecklistCategory[] {
@@ -76,7 +76,7 @@ export function buildChecklist({ adults, kids, nights, ages }: ChecklistInput): 
   const socks = Math.max(3, nights + 2)
 
   categories.push({
-    heading: `Clothing — per person (×${party})`,
+    heading: `Clothing - per person (×${party})`,
     items: [
       { id: 'warm-layer', name: 'Warm layer (fleece or puffy)' },
       { id: 'rain', name: 'Rain jacket' },
@@ -115,7 +115,7 @@ export function buildChecklist({ adults, kids, nights, ages }: ChecklistInput): 
     ],
   })
 
-  // Kids — only if kids > 0
+  // Kids - only if kids > 0
   if (hasKids) {
     const kidItems: ChecklistItem[] = [
       { id: 'comfort', name: 'Comfort item (stuffed animal, blanket)', qty: `×${kids}` },

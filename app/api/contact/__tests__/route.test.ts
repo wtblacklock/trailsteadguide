@@ -1,7 +1,7 @@
 // @vitest-environment node
 /**
  * /api/contact route test. Resend SDK mocked at the module level so no
- * real email is sent, but the actual handler executes — including
+ * real email is sent, but the actual handler executes - including
  * validation, honeypot short-circuit, and the two send calls (inbound +
  * auto-reply).
  */
@@ -105,7 +105,7 @@ describe('POST /api/contact', () => {
 
     const auto = sendMock.mock.calls[1][0]
     expect(auto.to).toBe('jane@example.com')
-    expect(auto.subject).toBe('We got your message — Trailstead Guide')
+    expect(auto.subject).toBe('We got your message - Trailstead Guide')
     expect(auto.html).toContain('Hey Jane')
   })
 
@@ -142,7 +142,7 @@ describe('POST /api/contact', () => {
   })
 })
 
-describe('POST /api/contact — strict Turnstile enforcement', () => {
+describe('POST /api/contact - strict Turnstile enforcement', () => {
   beforeAll(() => {
     process.env.TURNSTILE_SECRET_KEY = 'test_turnstile_secret'
   })

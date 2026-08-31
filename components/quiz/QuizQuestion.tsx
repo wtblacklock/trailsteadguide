@@ -9,7 +9,7 @@ interface QuizQuestionProps {
   initialValue?: string | string[] | PartySize
   /**
    * For the party-size step: when true, the user previously chose
-   * "No kids — just adults", so the kids stepper is hidden and the
+   * "No kids - just adults", so the kids stepper is hidden and the
    * answer is committed with `kids: 0`.
    */
   noKids?: boolean
@@ -143,7 +143,7 @@ function PartySizeQuestion({
 }) {
   const [adults, setAdults] = useState(initialValue?.adults ?? 2)
   // When the user said "no kids" on the prior step, the kids count is
-  // pinned to 0 and the stepper is hidden — no point asking how many of
+  // pinned to 0 and the stepper is hidden - no point asking how many of
   // a thing you already said you don't have.
   const [kids, setKids] = useState(noKids ? 0 : initialValue?.kids ?? 2)
 

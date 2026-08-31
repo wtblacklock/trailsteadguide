@@ -17,7 +17,7 @@ type Status = 'idle' | 'loading' | 'ready' | 'error'
 
 // Empirically, broad prefix matches (e.g. "camp") can match well over 100 of
 // the ~314 indexed documents. An overlay showing 100+ results defeats the
-// purpose of "instant search" — cap what's displayed to the top N
+// purpose of "instant search" - cap what's displayed to the top N
 // (MiniSearch already returns results ranked by relevance, best first).
 const MAX_DISPLAYED_RESULTS = 30
 
@@ -99,7 +99,7 @@ export default function SearchOverlay({ open, onClose }: Props) {
 
   const filteredResults = useMemo(() => {
     const byType = activeType === 'all' ? allResults : allResults.filter((r) => r.type === activeType)
-    // See MAX_DISPLAYED_RESULTS comment above — cap after type filtering so
+    // See MAX_DISPLAYED_RESULTS comment above - cap after type filtering so
     // a narrowed-down chip view still shows up to N relevant matches within
     // that type, rather than N matches from the unfiltered top of the list.
     return byType.slice(0, MAX_DISPLAYED_RESULTS)
@@ -134,7 +134,7 @@ export default function SearchOverlay({ open, onClose }: Props) {
       return
     }
 
-    // Arrow/Enter navigation only makes sense while the input is focused —
+    // Arrow/Enter navigation only makes sense while the input is focused -
     // chip buttons have their own native button behavior and shouldn't have
     // arrow-key side effects.
     if (document.activeElement !== inputRef.current) return
@@ -156,7 +156,7 @@ export default function SearchOverlay({ open, onClose }: Props) {
       // Delegate to the result's own anchor rather than reimplementing
       // navigation (e.g. via router.push): the rendered <Link>/<a> already
       // handles gear's target="_blank" and, critically, in-page hash anchors
-      // (glossary entries link to `/glossary#term-id`) — router.push updates
+      // (glossary entries link to `/glossary#term-id`) - router.push updates
       // the URL but doesn't scroll to the fragment the way a real anchor
       // click does, which left keyboard users stranded at the top of the
       // page instead of at the highlighted entry.
@@ -166,11 +166,11 @@ export default function SearchOverlay({ open, onClose }: Props) {
 
   if (!open) return null
 
-  // Drives aria-activedescendant below — SearchResults gives each option an
+  // Drives aria-activedescendant below - SearchResults gives each option an
   // id of `search-option-${doc.id}`, added specifically so the input can
   // reference the virtually-highlighted option for screen readers, since
   // DOM focus intentionally stays on the input (see SearchResults' tabIndex={-1}
-  // on each result link — arrow keys/Enter drive navigation, not Tab).
+  // on each result link - arrow keys/Enter drive navigation, not Tab).
   const activeDescendantId = filteredResults[highlightedIndex]
     ? `search-option-${filteredResults[highlightedIndex].id}`
     : undefined

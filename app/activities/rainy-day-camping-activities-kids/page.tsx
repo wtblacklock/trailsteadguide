@@ -6,7 +6,7 @@ import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
 
 const SLUG = '/activities/rainy-day-camping-activities-kids'
 const TITLE = 'Rainy Day Camping Activities for Kids'
-const META_TITLE = 'Rainy Day Camping Activities for Kids — 15 Ideas'
+const META_TITLE = 'Rainy Day Camping Activities for Kids - 15 Ideas'
 const DESCRIPTION =
   'Rainy day camping activities for kids that actually work: tent games, tarp adventures, mud play, and what to do when it rains and you can\'t go home.'
 const HERO_IMAGE =
@@ -44,11 +44,11 @@ export default function Page() {
         data={faqPageGraph([
           {
             q: 'What do you do with kids when it rains while camping?',
-            a: 'Rain changes the activities, not the camp day. Outside: put on rain gear and embrace it — puddle jumping, mud play, and walking in rain are genuinely fun for kids who are dressed for it. Under a tarp: card games, storytelling, and craft activities. Inside the tent: downloaded movies, story chains, shadow puppets. Go home only if lightning or severe weather is in the forecast.',
+            a: 'Rain changes the activities, not the camp day. Outside: put on rain gear and embrace it - puddle jumping, mud play, and walking in rain are genuinely fun for kids who are dressed for it. Under a tarp: card games, storytelling, and craft activities. Inside the tent: downloaded movies, story chains, shadow puppets. Go home only if lightning or severe weather is in the forecast.',
           },
           {
             q: 'How do you keep kids entertained in a tent on a rainy day?',
-            a: 'Pre-download movies and shows before the trip for guaranteed no-signal access. Bring a physical card game (Uno, Go Fish, Crazy Eights). Pack a small craft activity that can be done lying in a sleeping bag. Campfire Story Chain requires nothing but people. Plan for rain before you go — discovering you have no entertainment options at hour two of a tent day is avoidable.',
+            a: 'Pre-download movies and shows before the trip for guaranteed no-signal access. Bring a physical card game (Uno, Go Fish, Crazy Eights). Pack a small craft activity that can be done lying in a sleeping bag. Campfire Story Chain requires nothing but people. Plan for rain before you go - discovering you have no entertainment options at hour two of a tent day is avoidable.',
           },
           {
             q: 'Is camping in the rain worth it with kids?',
@@ -77,7 +77,7 @@ export default function Page() {
             Rainy Day Camping Activities for Kids
           </h1>
           <p className="mt-8 text-xl md:text-2xl text-stone-600 leading-[1.5] font-light">
-            What to do when the forecast was wrong — activities that work outside in rain, under a
+            What to do when the forecast was wrong - activities that work outside in rain, under a
             tarp, and inside the tent.
           </p>
         </header>
@@ -126,7 +126,7 @@ export default function Page() {
           <p>
             The activity that requires no planning, no materials, and no adult facilitation. Kids
             with rain boots jump in puddles. Kids at camp jump in mud. This is universally excellent
-            for ages 2–10 and requires exactly one thing: the willingness to let them do it and
+            for ages 2-10 and requires exactly one thing: the willingness to let them do it and
             the spare dry clothes to change into after.
           </p>
 
@@ -142,7 +142,7 @@ export default function Page() {
           <h3>3. Puddle art</h3>
           <p>
             Use sticks to draw in mud puddles. Make a map of the campsite in mud. Write names.
-            Make a mud pie. Children 2–7 engage with this for longer than you expect, especially
+            Make a mud pie. Children 2-7 engage with this for longer than you expect, especially
             if an adult is genuinely participating rather than watching.
           </p>
 
@@ -161,7 +161,7 @@ export default function Page() {
           <h3>5. Card games</h3>
           <p>
             Uno, Go Fish, Crazy Eights, and War all work at the camp table under a tarp. Pack a
-            standard deck of cards — it covers 10+ games for every age. This is the highest-value,
+            standard deck of cards - it covers 10+ games for every age. This is the highest-value,
             lowest-weight rain-day item you can bring.
           </p>
 
@@ -214,7 +214,7 @@ export default function Page() {
         <section className="max-w-3xl mx-auto px-8 mt-16 prose-editorial">
           <h2>The rainy camp day kit</h2>
           <p>
-            Pack these specifically for rain contingency — they go in a labeled bag in the car
+            Pack these specifically for rain contingency - they go in a labeled bag in the car
             and come out when the weather turns:
           </p>
           <ul>
@@ -223,9 +223,9 @@ export default function Page() {
             <li>Spare dry clothes in a dry bag</li>
             <li>A deck of cards</li>
             <li>One blank notebook + colored pencils</li>
-            <li>Phone or tablet with 1–2 movies pre-downloaded</li>
+            <li>Phone or tablet with 1-2 movies pre-downloaded</li>
             <li>A physical book for each reader</li>
-            <li>Extra snacks — rainy days feel longer and snacks help</li>
+            <li>Extra snacks - rainy days feel longer and snacks help</li>
           </ul>
 
           <h2>When to go home in rain</h2>
@@ -235,7 +235,7 @@ export default function Page() {
           <ul>
             <li><strong>Lightning in the area.</strong> Clear the tent and get in a hardshell vehicle. If lightning persists for more than 30 minutes, going home is reasonable.</li>
             <li><strong>Cold rain and a child who can&apos;t warm up.</strong> Hypothermia risk is real in cold wet conditions. If a child has been shivering for 20 minutes despite warming efforts, go home.</li>
-            <li><strong>Flash flood risk near your site.</strong> Know the terrain — a site near a creek that becomes a flood risk in sustained heavy rain is a real danger.</li>
+            <li><strong>Flash flood risk near your site.</strong> Know the terrain - a site near a creek that becomes a flood risk in sustained heavy rain is a real danger.</li>
           </ul>
           <p>
             Light to moderate rain with no lightning, even for an entire day, is not an emergency.

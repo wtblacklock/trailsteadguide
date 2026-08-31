@@ -54,7 +54,7 @@ describe('shouldRenderKidGear()', () => {
     expect(shouldRenderKidGear(out({ hasKids: true, kidsAge: 'under_5' }))).toBe(true)
   })
 
-  it('hides when kids are 5–10', () => {
+  it('hides when kids are 5-10', () => {
     expect(shouldRenderKidGear(out({ hasKids: true, kidsAge: '5_10' }))).toBe(false)
   })
 

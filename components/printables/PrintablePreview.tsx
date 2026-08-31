@@ -1,7 +1,7 @@
 'use client'
 
 /**
- * PrintablePreview — renders the actual print artwork at reduced scale
+ * PrintablePreview - renders the actual print artwork at reduced scale
  * inside a paper-style frame. Used on the /printables/[slug] landing
  * page so visitors see what they'll get before they email-gate it.
  *
@@ -12,7 +12,7 @@
  * Anti-copy hardening: text inside cannot be selected, the artwork
  * itself blocks pointer events (so the SVG can't be dragged out as a
  * file), and right-click is suppressed. None of this stops a determined
- * user with devtools — it stops casual copy/paste.
+ * user with devtools - it stops casual copy/paste.
  */
 
 import ConstellationWheel from './ConstellationWheel'
@@ -105,7 +105,7 @@ export default function PrintablePreview({ slug, printHref }: Props) {
           text-transform: uppercase;
           padding: 4px 10px;
           border-radius: 4px;
-          /* Keep the badge unscaled visually — zoom inheritance compensated. */
+          /* Keep the badge unscaled visually - zoom inheritance compensated. */
         }
         /*
           Block pointer events on the artwork itself (so SVGs / text

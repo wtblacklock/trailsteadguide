@@ -6,7 +6,7 @@ import Breadcrumbs from '@/components/seo/Breadcrumbs'
 export const metadata = pageMetadata({
   title: 'Camping Tools',
   description:
-    'Free, simple tools to help you plan your first family camping trip — a full trip planner and a personalized packing checklist generator.',
+    'Free, simple tools to help you plan your first family camping trip - a full trip planner and a personalized packing checklist generator.',
   path: '/tools',
 })
 
@@ -29,7 +29,7 @@ export default function Page() {
           Two tools that do one thing well: help you stop staring at a blank page and start planning.
         </p>
         <p className="mt-4 text-base text-stone-500 leading-relaxed max-w-2xl">
-          The trip planner turns 6 quick questions into a full itinerary — timeline, gear list, meals, and activities — built for your specific party and dates. The packing checklist generator scales every item to your group size and number of nights so nothing gets left behind. Both are free, no account needed.
+          The trip planner turns 6 quick questions into a full itinerary - timeline, gear list, meals, and activities - built for your specific party and dates. The packing checklist generator scales every item to your group size and number of nights so nothing gets left behind. Both are free, no account needed.
         </p>
       </header>
 

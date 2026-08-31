@@ -37,7 +37,7 @@ export default function Nav() {
   // onClose/onNavigate callbacks passed into SearchOverlay: those callbacks
   // fire synchronously on click, but Next.js Link navigations run inside a
   // transition, and empirically the resulting setState can lose the race
-  // against the route change committing — leaving the overlay stuck open on
+  // against the route change committing - leaving the overlay stuck open on
   // top of the newly-navigated page. Reacting to pathname directly guarantees
   // the overlay closes whenever the route actually changes.
   useEffect(() => {
@@ -53,7 +53,7 @@ export default function Nav() {
     return () => document.removeEventListener('keydown', onKey)
   }, [])
 
-  // Global search shortcut — works from anywhere on the site since Nav
+  // Global search shortcut - works from anywhere on the site since Nav
   // is rendered in the root layout.
   useEffect(() => {
     function onKey(e: KeyboardEvent) {
@@ -90,7 +90,7 @@ export default function Nav() {
           />
         </Link>
 
-        {/* Desktop links — primary catalog entries on the left, primary CTA on the right rail */}
+        {/* Desktop links - primary catalog entries on the left, primary CTA on the right rail */}
         <div className="hidden md:flex items-center gap-1 text-sm text-stone-700">
           <NavLink href="/guides">Guides</NavLink>
           <NavLink href="/skills">Skills</NavLink>
@@ -168,7 +168,7 @@ export default function Nav() {
             : 'opacity-0 translate-y-2 pointer-events-none invisible'
         }`}
       >
-        {/* Top row inside overlay — mirrors nav height with logo + close */}
+        {/* Top row inside overlay - mirrors nav height with logo + close */}
         <div className="h-16 flex items-center justify-between px-8 border-b border-stone-200/60 shrink-0">
           <Link
             href="/"
@@ -213,7 +213,7 @@ export default function Nav() {
           </div>
         </div>
 
-        {/* Primary nav — large serif links, generous tap targets */}
+        {/* Primary nav - large serif links, generous tap targets */}
         <div className="flex-1 overflow-y-auto px-8 py-10">
           <ul className="space-y-1">
             {PRIMARY_LINKS.map((item, index) => {
@@ -273,7 +273,7 @@ export default function Nav() {
           </div>
         </div>
 
-        {/* Sticky CTA at bottom — full-width tap target */}
+        {/* Sticky CTA at bottom - full-width tap target */}
         <div className="px-8 pb-8 pt-4 shrink-0 border-t border-stone-200/60 bg-[#F5F3EE]">
           <Link
             href="/quiz"

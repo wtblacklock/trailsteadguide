@@ -11,9 +11,9 @@ import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
 const SLUG = '/guides/camping-for-beginners'
 const TITLE = 'Camping for Beginners'
 // SEO-optimized <title>; H1/headline keep TITLE.
-const META_TITLE = 'Camping for Beginners — First Trip Guide'
+const META_TITLE = 'Camping for Beginners - First Trip Guide'
 const DESCRIPTION =
-  'Camping for beginners: a real first-trip plan — what to skip, what to pack, and the 6-step first-night routine that ends with "can we do this again?"'
+  'Camping for beginners: a real first-trip plan - what to skip, what to pack, and the 6-step first-night routine that ends with "can we do this again?"'
 const HERO_IMAGE = 'https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({
@@ -53,7 +53,7 @@ export default function Page() {
           },
           {
             q: 'What if it rains on my first camping trip?',
-            a: 'A dome tent with its rainfly handles regular rain fine, as long as you stake the rainfly out. If the forecast is genuinely bad, reschedule — there is no reason to camp in a downpour on your first trip.',
+            a: 'A dome tent with its rainfly handles regular rain fine, as long as you stake the rainfly out. If the forecast is genuinely bad, reschedule - there is no reason to camp in a downpour on your first trip.',
           },
           {
             q: 'Do I need to reserve a campsite ahead of time?',
@@ -84,8 +84,8 @@ export default function Page() {
       }}
     >
       <QuickAnswer
-        tldr="Make your first trip small, close, and easy to bail on — everything else follows."
-        summary="The first camping trip you should plan is one night, under 90 minutes from home, at an established state park or public campground with bathrooms, water, and other families nearby. Borrow or rent gear instead of buying — you don't yet know what you like. Arrive by 3pm, set up the tent before anything else, and start dinner before dark. The trip succeeds if everyone sleeps a few hours and someone says 'can we do this again?' Save scenic backcountry sites for trip three or four."
+        tldr="Make your first trip small, close, and easy to bail on - everything else follows."
+        summary="The first camping trip you should plan is one night, under 90 minutes from home, at an established state park or public campground with bathrooms, water, and other families nearby. Borrow or rent gear instead of buying - you don't yet know what you like. Arrive by 3pm, set up the tent before anything else, and start dinner before dark. The trip succeeds if everyone sleeps a few hours and someone says 'can we do this again?' Save scenic backcountry sites for trip three or four."
       />
       <h2>The mindset shift</h2>
       <p>
@@ -94,7 +94,7 @@ export default function Page() {
 
       <h2>What &quot;camping&quot; actually means for beginners</h2>
       <p>
-        There are many kinds of camping. You want <strong>car camping</strong> at an established campground — you drive to a numbered site, park next to it, and pitch a tent. It has bathrooms, running water, and other humans within shouting distance. This is the only kind of camping we&apos;ll talk about here.
+        There are many kinds of camping. You want <strong>car camping</strong> at an established campground - you drive to a numbered site, park next to it, and pitch a tent. It has bathrooms, running water, and other humans within shouting distance. This is the only kind of camping we&apos;ll talk about here.
       </p>
 
       <h2>Pick the right first trip</h2>
@@ -102,12 +102,12 @@ export default function Page() {
         <li>One night, not two or three</li>
         <li>Within 90 minutes of home</li>
         <li>A state park or established public campground, not a remote BLM site</li>
-        <li>A weekend with a mild, dry forecast — cheat on the weather</li>
+        <li>A weekend with a mild, dry forecast - cheat on the weather</li>
       </ul>
 
       <h2>Gear: borrow, don&apos;t buy</h2>
       <p>
-        You don&apos;t know what you actually like yet. Borrow a tent and sleeping bags from a friend. Rent the rest from REI or a local outfitter. After your first trip, you&apos;ll know what&apos;s worth buying. If you can, run a <Link href="/plans/backyard-test">backyard tent test</Link> the weekend before — it surfaces missing pieces while the kitchen is still 30 feet away.
+        You don&apos;t know what you actually like yet. Borrow a tent and sleeping bags from a friend. Rent the rest from REI or a local outfitter. After your first trip, you&apos;ll know what&apos;s worth buying. If you can, run a <Link href="/plans/backyard-test">backyard tent test</Link> the weekend before - it surfaces missing pieces while the kitchen is still 30 feet away.
       </p>
 
       <h2>The three things that will go wrong</h2>
@@ -122,12 +122,12 @@ export default function Page() {
         <li>Walk the site with your family. Pick a flat spot for the tent</li>
         <li>Set up the tent first, before you do anything else</li>
         <li>Unpack the kitchen second</li>
-        <li>Start dinner prep before it gets dark — you can&apos;t cook by headlamp the first time</li>
+        <li>Start dinner prep before it gets dark - you can&apos;t cook by headlamp the first time</li>
         <li>Build the fire after dinner, not before</li>
       </ul>
 
       <p>
-        That&apos;s it. Camping is not complicated. It&apos;s just unfamiliar — and a structured plan removes 90% of the unfamiliarity. If you want one matched to your dates, party size, and kids&apos; ages, <Link href="/quiz">take the 5-second quiz</Link> and we&apos;ll scaffold a starter trip for you.
+        That&apos;s it. Camping is not complicated. It&apos;s just unfamiliar - and a structured plan removes 90% of the unfamiliarity. If you want one matched to your dates, party size, and kids&apos; ages, <Link href="/quiz">take the 5-second quiz</Link> and we&apos;ll scaffold a starter trip for you.
       </p>
 
       <h2>What to skip on your first trip</h2>
@@ -150,14 +150,14 @@ export default function Page() {
         People assume camping requires a thousand dollars of gear before you can start. It doesn&apos;t. A realistic first-trip budget, if you borrow a tent and sleeping bags:
       </p>
       <ul>
-        <li>Campsite for one night: $25–$45</li>
+        <li>Campsite for one night: $25-$45</li>
         <li>Firewood from the camp store: $8</li>
         <li>Block of ice: $5</li>
-        <li>Groceries for 2 meals + snacks: $40–$60</li>
+        <li>Groceries for 2 meals + snacks: $40-$60</li>
         <li>Gas (under 90 minutes each way): $20</li>
       </ul>
       <p>
-        Call it ~$120 for a family of four for a one-night trip. That&apos;s cheaper than most movie nights once you factor in dinner. If you buy a $120 Sundome 4P tent, you break even on the second trip — every trip after that is nearly free.
+        Call it ~$120 for a family of four for a one-night trip. That&apos;s cheaper than most movie nights once you factor in dinner. If you buy a $120 Sundome 4P tent, you break even on the second trip - every trip after that is nearly free.
       </p>
 
       <h2>The first-night routine that works</h2>
@@ -195,19 +195,19 @@ export default function Page() {
       <h2>Frequently asked</h2>
       <h3>Do I need a 4-season tent?</h3>
       <p>
-        No. Unless you&apos;re camping in snow, a standard 3-season dome tent — Coleman Sundome or similar — is the right pick. Four-season tents are built for mountaineering and are overkill (and uncomfortable) for car camping.
+        No. Unless you&apos;re camping in snow, a standard 3-season dome tent - Coleman Sundome or similar - is the right pick. Four-season tents are built for mountaineering and are overkill (and uncomfortable) for car camping.
       </p>
       <h3>Is it safe to camp with young kids?</h3>
       <p>
-        At an established campground, yes. You&apos;re not in the wilderness — you&apos;re in a managed site with bathrooms, rangers, and other families nearby. The main risks are small: sunburn, bug bites, a kid wandering off. Give each kid a whistle and teach them the site number. For more on snacks, sleep, and kid-paced activities, see <Link href="/guides/camping-with-kids-first-time">camping with kids for the first time</Link>.
+        At an established campground, yes. You&apos;re not in the wilderness - you&apos;re in a managed site with bathrooms, rangers, and other families nearby. The main risks are small: sunburn, bug bites, a kid wandering off. Give each kid a whistle and teach them the site number. For more on snacks, sleep, and kid-paced activities, see <Link href="/guides/camping-with-kids-first-time">camping with kids for the first time</Link>.
       </p>
       <h3>What if it rains?</h3>
       <p>
-        A dome tent with its rainfly handles a regular rainstorm fine. Problems start when people don&apos;t stake the rainfly out or leave gear outside. If the forecast is genuinely bad — steady rain all weekend, storms — cancel and rebook. You&apos;re not obligated to camp in a downpour on trip one.
+        A dome tent with its rainfly handles a regular rainstorm fine. Problems start when people don&apos;t stake the rainfly out or leave gear outside. If the forecast is genuinely bad - steady rain all weekend, storms - cancel and rebook. You&apos;re not obligated to camp in a downpour on trip one.
       </p>
       <h3>Do I need to reserve a site?</h3>
       <p>
-        Yes — and earlier than you probably think. Walk-up sites exist but are unreliable, especially in summer. Most reservation windows open <strong>6 months out</strong> (recreation.gov, ReserveCalifornia, many state systems), and the prime-weather weekends at popular state and national parks can fill within minutes. For lesser-known parks and shoulder-season weekends, 3–6 weeks ahead is usually enough; for headliner parks (Yosemite, RMNP, Olympic, Acadia) plan a year out. If everything is booked, mid-week is dramatically easier, and private campgrounds (KOA, Hipcamp) are usually open with shorter lead time.
+        Yes - and earlier than you probably think. Walk-up sites exist but are unreliable, especially in summer. Most reservation windows open <strong>6 months out</strong> (recreation.gov, ReserveCalifornia, many state systems), and the prime-weather weekends at popular state and national parks can fill within minutes. For lesser-known parks and shoulder-season weekends, 3-6 weeks ahead is usually enough; for headliner parks (Yosemite, RMNP, Olympic, Acadia) plan a year out. If everything is booked, mid-week is dramatically easier, and private campgrounds (KOA, Hipcamp) are usually open with shorter lead time.
       </p>
       <h3>How long should the first trip be?</h3>
       <p>

@@ -4,7 +4,7 @@
  * Builds a canonical product URL with our Associates tag and a per-page
  * `ascsubtag` so Amazon's reports show which guide drove each click.
  * `amzn.to` short links work too, but they strip query params on redirect
- * — meaning all clicks bucket together with no per-page attribution.
+ * - meaning all clicks bucket together with no per-page attribution.
  *
  * Usage:
  *   <a href={amazonAffiliateUrl('B0D7QHY574', 'first-night-camping-guide')}>...</a>
@@ -20,7 +20,7 @@ export function amazonAffiliateUrl(asin: string, contextSlug: string): string {
 /**
  * Resolved mapping of every short link previously hardcoded across the site,
  * captured 2026-04-26. Useful for the migration sweep and the link validator
- * — not consumed at runtime by guide pages, which call `amazonAffiliateUrl`
+ * - not consumed at runtime by guide pages, which call `amazonAffiliateUrl`
  * with the ASIN directly.
  */
 export const SHORT_LINK_TO_ASIN: Record<string, string> = {

@@ -7,8 +7,8 @@ import { track } from '@/lib/analytics'
 /**
  * Single global delegator for affiliate-link clicks. Listens at the document
  * root and fires `affiliate_clicked` whenever the user clicks an `<a>` whose
- * href points at Amazon. Catches every affiliate link site-wide — guides,
- * gear sets, comparisons, plan pages, gear systems — without per-component
+ * href points at Amazon. Catches every affiliate link site-wide - guides,
+ * gear sets, comparisons, plan pages, gear systems - without per-component
  * wiring, and survives any future affiliate links being added.
  *
  * Event props:

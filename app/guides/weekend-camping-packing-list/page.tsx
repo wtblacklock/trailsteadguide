@@ -57,7 +57,7 @@ export default function Page() {
           },
           {
             q: 'Block ice or cube ice for the cooler?',
-            a: 'Block ice. A 10-pound block lasts 3 to 5 days; the same weight in cubes melts in about 24 hours. Use cubes only for drinks. Freeze water bottles at home too — they act as ice and become drinking water.',
+            a: 'Block ice. A 10-pound block lasts 3 to 5 days; the same weight in cubes melts in about 24 hours. Use cubes only for drinks. Freeze water bottles at home too - they act as ice and become drinking water.',
           },
           {
             q: 'How much water should I bring for a weekend?',
@@ -77,7 +77,7 @@ export default function Page() {
       slug="weekend-camping-packing-list"
       eyebrow="Packing"
       title="Weekend Camping Packing List"
-      lede="Two nights. Four people. One car. Here&apos;s the complete packing list, grouped by category — and nothing is on here that you don&apos;t need."
+      lede="Two nights. Four people. One car. Here&apos;s the complete packing list, grouped by category - and nothing is on here that you don&apos;t need."
       heroImage={{
         src: HERO_IMAGE,
         alt: 'Family camping gear organized in piles before packing the car for a 2-night weekend trip',
@@ -173,7 +173,7 @@ export default function Page() {
 
       <h2>What to skip (and what to add)</h2>
       <p>
-        Things that show up on most packing lists but almost never get used on a weekend car camping trip — pair this with the <Link href="/guides/first-camping-trip-checklist">first camping trip checklist</Link> if it&apos;s your first time:
+        Things that show up on most packing lists but almost never get used on a weekend car camping trip - pair this with the <Link href="/guides/first-camping-trip-checklist">first camping trip checklist</Link> if it&apos;s your first time:
       </p>
       <ul>
         <li><strong>Skip:</strong> A full cast-iron set. Bring one skillet if anything.</li>
@@ -185,20 +185,20 @@ export default function Page() {
         Things that aren&apos;t always listed but make a real difference:
       </p>
       <ul>
-        <li><strong>Add:</strong> A picnic tablecloth with clips — food prep on raw wood is gross.</li>
+        <li><strong>Add:</strong> A picnic tablecloth with clips - food prep on raw wood is gross.</li>
         <li><strong>Add:</strong> Baby wipes, even if you have no babies. Quick hand cleanup.</li>
         <li><strong>Add:</strong> A small deck of playing cards or a travel game for rain evenings.</li>
         <li><strong>Add:</strong> A packable rain tarp with paracord to rig over the picnic table.</li>
-        <li><strong>Add:</strong> A collapsible water jug — refilling from a spigot 100 yards away gets old fast.</li>
+        <li><strong>Add:</strong> A collapsible water jug - refilling from a spigot 100 yards away gets old fast.</li>
       </ul>
 
       <h2>Pre-departure checklist (the night before)</h2>
       <p>
-        Run a <Link href="/plans/backyard-test">backyard test</Link> the weekend before if any piece of gear is new — much easier to find a missing pole 30 feet from the kitchen than 90 minutes from home.
+        Run a <Link href="/plans/backyard-test">backyard test</Link> the weekend before if any piece of gear is new - much easier to find a missing pole 30 feet from the kitchen than 90 minutes from home.
       </p>
       <ul>
         <li>Charge all phones, the portable battery pack, and every headlamp</li>
-        <li>Freeze water bottles and two gallon jugs — these double as ice and drinking water</li>
+        <li>Freeze water bottles and two gallon jugs - these double as ice and drinking water</li>
         <li>Pre-chop vegetables, crack eggs into a bottle, assemble foil packets</li>
         <li>Screenshot driving directions and your reservation confirmation</li>
         <li>Print one copy of the packing list and physically check items off as they go in the car</li>
@@ -212,12 +212,12 @@ export default function Page() {
       <ul>
         <li><strong>Rain likely:</strong> add a 10×10 rain tarp with 30 feet of paracord. Rig it over the picnic table. Add rubber boots or waterproof overshoes. Double the socks per person. Bring a pack of microfiber towels.</li>
         <li><strong>Overnight lows under 50&deg;F:</strong> swap 40&deg;F sleeping bags for 20&deg;F bags. Add thermal base layers. Add a thicker sleeping pad (R-value 3+). Bring a hot-water bottle for each kid to clip into their bag before bedtime.</li>
-        <li><strong>Wind likely (gusts 20+ mph):</strong> add extra tent stakes and guy-line cord. Orient the tent door downwind. Don&apos;t rely on the canopy — it becomes a sail.</li>
+        <li><strong>Wind likely (gusts 20+ mph):</strong> add extra tent stakes and guy-line cord. Orient the tent door downwind. Don&apos;t rely on the canopy - it becomes a sail.</li>
       </ul>
 
       <h2>Packing bins, not loose piles</h2>
       <p>
-        Loose gear in the trunk is chaos. Use three clear plastic bins or duffels, each with a single purpose — and label them. This is the single biggest upgrade to a car camping setup:
+        Loose gear in the trunk is chaos. Use three clear plastic bins or duffels, each with a single purpose - and label them. This is the single biggest upgrade to a car camping setup:
       </p>
       <ul>
         <li><strong>Kitchen bin:</strong> stove, fuel, pot, pan, utensils, plates, cups, dish tub, soap, towels, lighter, foil, ziplocs. If it relates to food-prep, it lives here.</li>
@@ -225,7 +225,7 @@ export default function Page() {
         <li><strong>Misc bin:</strong> headlamps, first aid, lanterns, rope, tape, bug spray, sunscreen, games. The &ldquo;I need a thing&rdquo; bin.</li>
       </ul>
       <p>
-        Everything else — chairs, cooler, firewood, personal duffels — is loose but has a natural home. Bins mean setup is three trips from the car, not 30. If you want a packing list scaled to your party size, dates, and weather, <Link href="/quiz">take the 5-second quiz</Link> and we&apos;ll match a starter <Link href="/plans/first-weekend-camp">First Weekend Camp</Link> plan to your trip.
+        Everything else - chairs, cooler, firewood, personal duffels - is loose but has a natural home. Bins mean setup is three trips from the car, not 30. If you want a packing list scaled to your party size, dates, and weather, <Link href="/quiz">take the 5-second quiz</Link> and we&apos;ll match a starter <Link href="/plans/first-weekend-camp">First Weekend Camp</Link> plan to your trip.
       </p>
 
       <h2>Frequently asked</h2>
@@ -243,7 +243,7 @@ export default function Page() {
       </p>
       <h3>Block ice or cubes?</h3>
       <p>
-        Block ice for the main cooler — lasts days. Cubes are for drinks only.
+        Block ice for the main cooler - lasts days. Cubes are for drinks only.
       </p>
       <h3>How much water for a weekend?</h3>
       <p>
@@ -251,7 +251,7 @@ export default function Page() {
       </p>
       <h3>Can I rent camping gear instead of buying?</h3>
       <p>
-        Yes. REI rents tents, sleeping bags, pads, and stoves at most stores. A weekend rental for a family of four runs about $60–$90. It&apos;s the right move for trip one before you know what you actually like, and cheaper than guessing wrong on a full gear purchase.
+        Yes. REI rents tents, sleeping bags, pads, and stoves at most stores. A weekend rental for a family of four runs about $60-$90. It&apos;s the right move for trip one before you know what you actually like, and cheaper than guessing wrong on a full gear purchase.
       </p>
       <h3>How do I keep food cold for two days?</h3>
       <p>

@@ -16,7 +16,7 @@ const SKILLS_BY_CATEGORY: Record<SkillCategoryId, Skill[]> = SKILL_CATEGORIES.re
 
 /**
  * Look up a skill by its category and skill slug. Returns null when no
- * matching skill exists — used by the per-skill route to trigger 404.
+ * matching skill exists - used by the per-skill route to trigger 404.
  */
 export function getSkillBySlugs(categorySlug: string, skillSlug: string): Skill | null {
   const category = getCategoryBySlug(categorySlug)
@@ -62,7 +62,7 @@ export function getSkillByRef(
 /**
  * All skills that reference the given printable slug via
  * `relatedPrintableSlug`. Powers the "Skills that use this printable"
- * block on /printables/[slug] — every printable detail page is in the
+ * block on /printables/[slug] - every printable detail page is in the
  * sitemap, so this turns indexed printable pages into inbound links
  * for skill detail pages.
  */

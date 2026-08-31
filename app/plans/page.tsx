@@ -7,7 +7,7 @@ import type { PlanSlug } from '@/types'
 
 const TITLE = 'Camping Plans'
 const DESCRIPTION =
-  'Four proven camping setups for first-time families. Pick the plan that matches your trip — or take the quiz and we will pick for you.'
+  'Four proven camping setups for first-time families. Pick the plan that matches your trip - or take the quiz and we will pick for you.'
 
 const PLAN_ORDER: PlanSlug[] = [
   'easy-family-basecamp',
@@ -59,7 +59,7 @@ export default function PlansIndexPage() {
           Choose a proven camping setup.
         </h1>
         <p className="mt-6 text-lg md:text-xl text-stone-600 leading-relaxed max-w-2xl">
-          Four structured plans for the four real first-time scenarios. Pick the one that fits — or take the quiz and we&apos;ll match you.
+          Four structured plans for the four real first-time scenarios. Pick the one that fits - or take the quiz and we&apos;ll match you.
         </p>
         <div className="mt-8">
           <Link

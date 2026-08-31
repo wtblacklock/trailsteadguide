@@ -11,9 +11,9 @@ import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
 const SLUG = '/guides/first-camping-trip-checklist'
 const TITLE = 'First Camping Trip Checklist'
 // SEO-optimized <title>; H1/headline keep TITLE.
-const META_TITLE = 'First Camping Trip Checklist — Real List'
+const META_TITLE = 'First Camping Trip Checklist - Real List'
 const DESCRIPTION =
-  'First camping trip checklist: a one-page list covering shelter, kitchen, safety, and kid essentials. No 200-item bloat — only what you’ll use.'
+  'First camping trip checklist: a one-page list covering shelter, kitchen, safety, and kid essentials. No 200-item bloat - only what you’ll use.'
 const HERO_IMAGE = 'https://images.unsplash.com/photo-1504851149312-7a075b496cc7?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({
@@ -53,7 +53,7 @@ export default function Page() {
           },
           {
             q: 'Do I need a sleeping pad or an air mattress?',
-            a: 'A sleeping pad, for the first trip. Air mattresses are comfortable but cold — the air inside them conducts ground cold straight to your back. They also leak. A closed-cell or self-inflating pad is more reliable and warmer.',
+            a: 'A sleeping pad, for the first trip. Air mattresses are comfortable but cold - the air inside them conducts ground cold straight to your back. They also leak. A closed-cell or self-inflating pad is more reliable and warmer.',
           },
           {
             q: 'How many changes of clothes do I need for camping?',
@@ -80,19 +80,19 @@ export default function Page() {
       lede="One page. Everything you actually need to book, pack, and plan before your first family camping trip."
       heroImage={{
         src: HERO_IMAGE,
-        alt: 'Campfire crackling at dusk at a forest family campsite — the payoff of a packed first-trip checklist',
+        alt: 'Campfire crackling at dusk at a forest family campsite - the payoff of a packed first-trip checklist',
       }}
     >
       <QuickAnswer
         tldr="One short list: tent + sleep, stove + cooler, headlamps, layers, first aid, kid comfort items. Nothing else for trip one."
-        summary="The complete first-trip checklist fits on one page: a tent that sleeps one more person than your party, sleeping bags rated for the forecast, sleeping pads (not air mattresses — they're cold and leak), a 2-burner stove with fuel, a cooler with block ice, one pot and one pan, headlamps with spare batteries, camp chairs, a real first aid kit, a warm layer and rain jacket per person, bug spray, and a comfort item per kid. Skip the hatchet, dutch oven, and snake-bite kit — none of them earn their weight on a first trip. Lay everything out on the floor, check it off physically, and load category by category."
+        summary="The complete first-trip checklist fits on one page: a tent that sleeps one more person than your party, sleeping bags rated for the forecast, sleeping pads (not air mattresses - they're cold and leak), a 2-burner stove with fuel, a cooler with block ice, one pot and one pan, headlamps with spare batteries, camp chairs, a real first aid kit, a warm layer and rain jacket per person, bug spray, and a comfort item per kid. Skip the hatchet, dutch oven, and snake-bite kit - none of them earn their weight on a first trip. Lay everything out on the floor, check it off physically, and load category by category."
       />
       <h2>Before you leave home</h2>
       <ul>
         <li>Book a drive-up campsite (under 90 minutes from home for your first trip)</li>
         <li>Confirm the site has water and a fire ring; note the check-in time</li>
-        <li>Pack the car the night before — not the morning of</li>
-        <li>Test every piece of gear in the backyard first, including the tent — a full <Link href="/plans/backyard-test">backyard test</Link> if you have time</li>
+        <li>Pack the car the night before - not the morning of</li>
+        <li>Test every piece of gear in the backyard first, including the tent - a full <Link href="/plans/backyard-test">backyard test</Link> if you have time</li>
         <li>Check the weather 48 hours and 24 hours before</li>
       </ul>
 
@@ -101,7 +101,7 @@ export default function Page() {
         <li>Tent that fits your family + one (easier entry/exit with kids)</li>
         <li>Ground tarp or footprint</li>
         <li>Sleeping bag per person, temperature-rated for the forecast</li>
-        <li>Sleeping pads — skip the air mattress for the first trip</li>
+        <li>Sleeping pads - skip the air mattress for the first trip</li>
         <li>A pillow for each person (stuff sack with a fleece works)</li>
       </ul>
 
@@ -120,14 +120,14 @@ export default function Page() {
         <li>One headlamp per person (plus spare batteries)</li>
         <li>Camp chairs</li>
         <li>Bug spray and sunscreen</li>
-        <li>Warm layer per person — nights are colder than you think</li>
+        <li>Warm layer per person - nights are colder than you think</li>
         <li>Rain jacket per person, even if the forecast is clear</li>
       </ul>
 
       <h2>For the kids</h2>
       <ul>
         <li>One familiar comfort item per kid (stuffed animal, blanket)</li>
-        <li>A small activity kit — magnifying glass, notebook, crayons</li>
+        <li>A small activity kit - magnifying glass, notebook, crayons</li>
         <li>Extra snacks. Then more extra snacks.</li>
         <li>Extra clothes. Kids get wet and dirty; plan for it.</li>
       </ul>
@@ -150,7 +150,7 @@ export default function Page() {
       </ul>
 
       <p>
-        <strong>One note:</strong> this is the generic list. Your trip will need 80% of it and none of the stuff you don&apos;t. That&apos;s what the planner builds — a list scaled to your actual family, your actual weather, and your actual campsite. <Link href="/quiz">Take the 5-second quiz</Link> if you want a custom version.
+        <strong>One note:</strong> this is the generic list. Your trip will need 80% of it and none of the stuff you don&apos;t. That&apos;s what the planner builds - a list scaled to your actual family, your actual weather, and your actual campsite. <Link href="/quiz">Take the 5-second quiz</Link> if you want a custom version.
       </p>
 
       <h2>How to use the checklist (the right way)</h2>
@@ -162,7 +162,7 @@ export default function Page() {
         <li>Lay everything out in one pile in the living room or garage</li>
         <li>Check each item off with a pen as it goes into a bag or bin</li>
         <li>Load bags into the car as each category is complete</li>
-        <li>Don&apos;t start loading until a category is fully checked — mixed piles cause confusion</li>
+        <li>Don&apos;t start loading until a category is fully checked - mixed piles cause confusion</li>
       </ol>
       <p>
         This is 20 extra minutes of work and prevents the one-in-three chance that you forget the stove fuel, the tent stakes, or the can opener.
@@ -173,12 +173,12 @@ export default function Page() {
         Most prepackaged first aid kits contain 200 adhesive bandages and one gauze pad. Useless. Build a minimal kit that covers the real injuries at a car campsite:
       </p>
       <ul>
-        <li>Adhesive bandages in two sizes — regular and finger-wrap</li>
+        <li>Adhesive bandages in two sizes - regular and finger-wrap</li>
         <li>Butterfly closures for cuts that would otherwise need stitches</li>
         <li>Gauze pads + medical tape</li>
         <li>Antiseptic wipes</li>
         <li>Tweezers (splinters, ticks)</li>
-        <li>Benadryl or Zyrtec — bee stings, unknown plant reactions</li>
+        <li>Benadryl or Zyrtec - bee stings, unknown plant reactions</li>
         <li>Ibuprofen and acetaminophen, adult and kid doses</li>
         <li>Moleskin for blisters</li>
         <li>Ace bandage</li>
@@ -195,7 +195,7 @@ export default function Page() {
       <ul>
         <li>Screenshot the reservation confirmation (site number, check-in code)</li>
         <li>Download the campground map offline</li>
-        <li>Download offline Google Maps for the area — just in case GPS fails</li>
+        <li>Download offline Google Maps for the area - just in case GPS fails</li>
         <li>Write the campground&apos;s physical address and phone number on paper</li>
         <li>Note the nearest hospital or urgent care with address</li>
         <li>Tell someone at home where you&apos;re going and when you&apos;ll be back</li>
@@ -206,7 +206,7 @@ export default function Page() {
         Even with everything packed the night before, the morning adds one last sweep. Thirty seconds per item, done while drinking coffee:
       </p>
       <ul>
-        <li>Phone chargers in the car — not in a kitchen drawer</li>
+        <li>Phone chargers in the car - not in a kitchen drawer</li>
         <li>Cooler has ice or frozen bottles in it, not waiting in the freezer</li>
         <li>Wallet and campground reservation confirmation in the glove box</li>
         <li>Dog&apos;s food and leash (if dog is coming)</li>

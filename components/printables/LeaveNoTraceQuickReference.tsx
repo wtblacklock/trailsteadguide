@@ -3,7 +3,7 @@ const PRINCIPLES = [
     number: 1,
     title: 'Plan ahead and prepare',
     actions: [
-      'Check fire and permit conditions before you leave — not at the trailhead.',
+      'Check fire and permit conditions before you leave - not at the trailhead.',
       'Bring a paper map. Cell service fails in most wilderness and many campgrounds.',
       'Tell someone your itinerary and expected return time.',
     ],
@@ -14,17 +14,17 @@ const PRINCIPLES = [
     title: 'Travel and camp on durable surfaces',
     actions: [
       'Walk single-file on established trails. Widening the trail by walking beside it causes erosion.',
-      'Camp on existing tent pads or bare mineral soil — not on vegetation.',
+      'Camp on existing tent pads or bare mineral soil - not on vegetation.',
       'Avoid crushing young plants. If the ground springs back, it\'s recovering.',
     ],
-    broken: 'Cutting switchbacks. It looks like a shortcut — it causes lasting erosion.',
+    broken: 'Cutting switchbacks. It looks like a shortcut - it causes lasting erosion.',
   },
   {
     number: 3,
     title: 'Dispose of waste properly',
     actions: [
       'Pack out all trash, food waste, and packaging. "Biodegradable" food still attracts animals.',
-      'Human waste: cat hole 6–8 inches deep, 200 ft from water, trail, and camp.',
+      'Human waste: cat hole 6-8 inches deep, 200 ft from water, trail, and camp.',
       'Dishes: strain food particles, scatter gray water 200 ft from water sources.',
     ],
     broken: 'Burying food scraps. They get dug up. Pack them out.',
@@ -35,7 +35,7 @@ const PRINCIPLES = [
     actions: [
       'Leave rocks, plants, feathers, and historical artifacts exactly where you found them.',
       'Don\'t build cairns, furniture, or fire rings beyond existing ones.',
-      'Avoid introducing invasive species — clean boots, boats, and gear before a new area.',
+      'Avoid introducing invasive species - clean boots, boats, and gear before a new area.',
     ],
     broken: null,
   },
@@ -44,7 +44,7 @@ const PRINCIPLES = [
     title: 'Minimize campfire impact',
     actions: [
       'Use established fire rings only. Never build a new ring.',
-      'Use only down, dead, small wood you can break by hand — don\'t cut standing trees.',
+      'Use only down, dead, small wood you can break by hand - don\'t cut standing trees.',
       'Let wood burn to ash. Drown, stir, drown. Cold to the touch before you leave.',
     ],
     broken: 'Bringing firewood from home. It spreads invasive insects. Buy it within 50 miles.',
@@ -57,17 +57,17 @@ const PRINCIPLES = [
       'Store food, waste, and scented items in a bear bag or canister every night.',
       'Keep pets under control. Off-leash dogs stress wildlife and other campers.',
     ],
-    broken: 'Feeding wildlife — any wildlife. It kills them.',
+    broken: 'Feeding wildlife - any wildlife. It kills them.',
   },
   {
     number: 7,
     title: 'Be considerate of others',
     actions: [
-      'Quiet hours at established campgrounds are typically 10 pm – 6 am. Honor them.',
+      'Quiet hours at established campgrounds are typically 10 pm - 6 am. Honor them.',
       'Yield to uphill hikers, horses, and mountain bikers on singletrack.',
       'Camp out of sight and earshot of others when in dispersed areas.',
     ],
-    broken: 'Bluetooth speakers on trails. Carry them to camp if you must — not on the trail.',
+    broken: 'Bluetooth speakers on trails. Carry them to camp if you must - not on the trail.',
   },
 ]
 
@@ -201,7 +201,7 @@ export default function LeaveNoTraceQuickReference() {
       `}</style>
 
       <p className="lead">
-        LNT isn&apos;t about being perfect. It&apos;s seven habits that compound — the more people who follow them, the better the wild places get. These are the car-camping and day-hiking versions, not just backcountry rules.
+        LNT isn&apos;t about being perfect. It&apos;s seven habits that compound - the more people who follow them, the better the wild places get. These are the car-camping and day-hiking versions, not just backcountry rules.
       </p>
 
       <div className="cols">

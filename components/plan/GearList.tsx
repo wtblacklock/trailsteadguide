@@ -26,7 +26,7 @@ export default function GearList({ items }: Props) {
           >
             See our full picks side by side
           </Link>{' '}
-          — beginner-grade tents, coolers, stoves, and sleep systems compared.
+          - beginner-grade tents, coolers, stoves, and sleep systems compared.
         </p>
       </div>
     </section>

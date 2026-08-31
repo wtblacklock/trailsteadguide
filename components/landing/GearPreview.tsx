@@ -37,7 +37,7 @@ export default function GearPreview() {
   const [setIdx, setSetIdx] = useState(0)
 
   // Pick a random set after mount so each page load shows a different trio.
-  // Initial render uses set 0 deterministically — keeps server & client in
+  // Initial render uses set 0 deterministically - keeps server & client in
   // sync and gives crawlers stable HTML.
   useEffect(() => {
     setSetIdx(Math.floor(Math.random() * PREVIEW_SETS.length))

@@ -59,7 +59,7 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: 'Invalid body' }, { status: 400 })
   }
 
-  // Honeypot — silently 200 to fool bots, but don't send anything.
+  // Honeypot - silently 200 to fool bots, but don't send anything.
   if (body.honeypot && body.honeypot.trim() !== '') {
     return NextResponse.json({ ok: true })
   }
@@ -147,7 +147,7 @@ export async function POST(req: Request) {
   </table>
 </body></html>`
 
-  const inboundText = `New contact form message — ${categoryLabel}
+  const inboundText = `New contact form message - ${categoryLabel}
 
 Name: ${name}
 Email: ${email}
@@ -156,7 +156,7 @@ Category: ${categoryLabel} (${category})
 Message:
 ${message}
 
-—
+-
 Sent via ${SITE_URL}/contact at ${timestamp}`
 
   try {
@@ -187,7 +187,7 @@ Sent via ${SITE_URL}/contact at ${timestamp}`
       text: autoReply.text,
     })
     if (autoErr) {
-      // Don't fail the user-facing flow on auto-reply errors — the inbound
+      // Don't fail the user-facing flow on auto-reply errors - the inbound
       // message already landed, which is the load-bearing part.
       console.error('[contact] auto-reply send failed', autoErr)
     }

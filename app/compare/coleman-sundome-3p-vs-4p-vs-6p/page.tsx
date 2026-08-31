@@ -31,15 +31,15 @@ const SUNDOME_6 = P('tent-sundome-6')
 const FAQS = [
   {
     q: 'Can two adults fit in a Coleman Sundome 3P?',
-    a: 'Yes — two adults fit comfortably in the Sundome 3P with a full-size air bed, plus room for a small duffel. Two adults plus a child or a full queen bed is too tight; step up to the 4P for that.',
+    a: 'Yes - two adults fit comfortably in the Sundome 3P with a full-size air bed, plus room for a small duffel. Two adults plus a child or a full queen bed is too tight; step up to the 4P for that.',
   },
   {
     q: 'Is the Coleman Sundome 4P too small for a family of 4?',
-    a: 'It works for a family of 3–4 if the kids are small. Two adults plus two kids under 8 fit on a queen air bed plus two sleeping pads. Two adults plus two bigger kids will feel cramped — consider the 6P.',
+    a: 'It works for a family of 3-4 if the kids are small. Two adults plus two kids under 8 fit on a queen air bed plus two sleeping pads. Two adults plus two bigger kids will feel cramped - consider the 6P.',
   },
   {
     q: 'How weatherproof are Coleman Sundome tents?',
-    a: 'All three Sundome sizes share the same WeatherTec system — welded corners, inverted seams, and a rainfly over the roof vents. They handle steady rain and moderate wind well. They are not four-season tents; skip them for heavy snow or sustained 40+ mph winds.',
+    a: 'All three Sundome sizes share the same WeatherTec system - welded corners, inverted seams, and a rainfly over the roof vents. They handle steady rain and moderate wind well. They are not four-season tents; skip them for heavy snow or sustained 40+ mph winds.',
   },
   {
     q: 'Are Coleman Sundome tents free-standing?',
@@ -67,7 +67,7 @@ const ROWS: Row[] = [
     label: 'Coleman Sundome 3P',
     floor: '7 × 7 ft',
     height: "4'11\" center",
-    bestFor: '1–2 adults',
+    bestFor: '1-2 adults',
     setup: '~10 min',
     price: '~$90',
   },
@@ -76,7 +76,7 @@ const ROWS: Row[] = [
     label: 'Coleman Sundome 4P',
     floor: '9 × 7 ft',
     height: "4'11\" center",
-    bestFor: 'Family of 3–4',
+    bestFor: 'Family of 3-4',
     setup: '~10 min',
     price: '~$116',
   },
@@ -136,7 +136,7 @@ export default function Page() {
           <p className="text-stone-800 leading-relaxed text-[17px]">
             Short answer: Pick the <strong>Sundome 3P</strong> if it&rsquo;s one
             or two adults. Pick the <strong>Sundome 4P</strong> if you&rsquo;re
-            a family of three or four with small kids — it&rsquo;s the
+            a family of three or four with small kids - it&rsquo;s the
             best-selling, safest first-trip choice and fits a queen air bed.
             Pick the <strong>Sundome 6P</strong> if you have a family of five
             or more, or you simply want to stand up inside the tent.
@@ -197,7 +197,7 @@ export default function Page() {
         <p className="text-stone-600 leading-relaxed text-lg mb-8">
           The right pick if it&rsquo;s a couple, a solo camper with a lot of
           gear, or a parent-and-one-kid setup. 7 × 7 ft floor, 4&rsquo;11&quot;
-          peak height — you sit up, you don&rsquo;t stand up.
+          peak height - you sit up, you don&rsquo;t stand up.
         </p>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
@@ -210,7 +210,7 @@ export default function Page() {
         />
         <h3 className="font-serif text-xl font-semibold text-stone-900 mb-3">Pros</h3>
         <ul className="text-stone-700 leading-relaxed list-disc pl-6 space-y-1 mb-6">
-          <li>Lightest and cheapest of the three — easy to store and carry</li>
+          <li>Lightest and cheapest of the three - easy to store and carry</li>
           <li>Fits a full-size air bed with room for a small duffel</li>
           <li>Same WeatherTec rainfly and welded corners as the larger sizes</li>
           <li>Sets up in about 10 minutes with two poles</li>
@@ -218,7 +218,7 @@ export default function Page() {
         <h3 className="font-serif text-xl font-semibold text-stone-900 mb-3">Tradeoffs</h3>
         <ul className="text-stone-700 leading-relaxed list-disc pl-6 space-y-1 mb-8">
           <li>Too small for two adults plus a child with a queen air bed</li>
-          <li>You cannot stand up inside — changing clothes is a crouch</li>
+          <li>You cannot stand up inside - changing clothes is a crouch</li>
         </ul>
         <a
           href={getProductUrl(SUNDOME_3)}
@@ -238,7 +238,7 @@ export default function Page() {
         <p className="text-stone-600 leading-relaxed text-lg mb-8">
           The default first-trip tent for families of three or four. 9 × 7 ft
           floor fits a queen air bed with a narrow gear strip, and it&rsquo;s
-          the best-selling dome tent in its price bracket for a reason — it
+          the best-selling dome tent in its price bracket for a reason - it
           just works.
         </p>
         {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -252,14 +252,14 @@ export default function Page() {
         />
         <h3 className="font-serif text-xl font-semibold text-stone-900 mb-3">Pros</h3>
         <ul className="text-stone-700 leading-relaxed list-disc pl-6 space-y-1 mb-6">
-          <li>Fits a queen air bed — the single biggest comfort upgrade on a first trip</li>
+          <li>Fits a queen air bed - the single biggest comfort upgrade on a first trip</li>
           <li>Same 10-minute setup as the 3P; the extra two feet of floor is &ldquo;free&rdquo;</li>
           <li>Proven weatherproofing with years of real-world reviews</li>
-          <li>Small packed size — fits in any trunk</li>
+          <li>Small packed size - fits in any trunk</li>
         </ul>
         <h3 className="font-serif text-xl font-semibold text-stone-900 mb-3">Tradeoffs</h3>
         <ul className="text-stone-700 leading-relaxed list-disc pl-6 space-y-1 mb-8">
-          <li>Still only 4&rsquo;11&quot; peak height — no standing room</li>
+          <li>Still only 4&rsquo;11&quot; peak height - no standing room</li>
           <li>Tight for a family of four once the kids are over age 8</li>
         </ul>
         <a
@@ -278,7 +278,7 @@ export default function Page() {
           Coleman Sundome 6P
         </h2>
         <p className="text-stone-600 leading-relaxed text-lg mb-8">
-          The basecamp pick. 10 × 10 ft square floor, 6 ft center height — you
+          The basecamp pick. 10 × 10 ft square floor, 6 ft center height - you
           can stand up, change clothes, and fit a queen air bed plus two
           sleeping pads. The right call for a family of five, or any family
           that wants to camp more than once.
@@ -297,12 +297,12 @@ export default function Page() {
           <li>Genuine 6&rsquo;0&quot; standing height in the center</li>
           <li>Square 10 × 10 floor is more flexible than the rectangular 4P</li>
           <li>Comfortably fits two adults and two or three kids</li>
-          <li>Same WeatherTec system — handles real rain</li>
+          <li>Same WeatherTec system - handles real rain</li>
         </ul>
         <h3 className="font-serif text-xl font-semibold text-stone-900 mb-3">Tradeoffs</h3>
         <ul className="text-stone-700 leading-relaxed list-disc pl-6 space-y-1 mb-8">
           <li>Setup takes about 15 minutes and is easier with two people</li>
-          <li>Larger packed size — takes up more trunk space</li>
+          <li>Larger packed size - takes up more trunk space</li>
         </ul>
         <a
           href={getProductUrl(SUNDOME_6)}
@@ -352,7 +352,7 @@ export default function Page() {
             <p className="text-stone-700 leading-relaxed text-lg">
               You&rsquo;re a family of five or more, you have taller kids, or
               you already know you want to camp more than a couple of times a
-              year. Standing room changes the experience — it&rsquo;s worth
+              year. Standing room changes the experience - it&rsquo;s worth
               the extra ~$45 and five minutes of setup.
             </p>
           </div>
@@ -385,8 +385,8 @@ export default function Page() {
           See the full gear guide.
         </h2>
         <p className="text-stone-600 text-lg leading-relaxed mb-6 max-w-xl">
-          Tents are one piece. The full guide covers the other categories —
-          sleep, cooking, coolers, lighting — with the same short-list approach.
+          Tents are one piece. The full guide covers the other categories -
+          sleep, cooking, coolers, lighting - with the same short-list approach.
         </p>
         <Link
           href="/gear"

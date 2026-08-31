@@ -8,7 +8,7 @@ import {
 } from '@/lib/seo'
 
 const SLUG = '/research'
-const META_TITLE = 'Original Research — Trailstead Guide'
+const META_TITLE = 'Original Research - Trailstead Guide'
 const DESCRIPTION =
   'Reddit-grounded pattern analyses on first-time camping. What beginners regret, what they pack, and what they wish they’d known.'
 
@@ -40,7 +40,7 @@ const PIECES: Piece[] = [
     kicker: 'Pattern analysis',
     title: 'What 500 First-Trip Campers Regret: A Reddit Analysis',
     summary:
-      'Five hundred r/camping threads, seven recurring regrets. The mistakes that wreck a first trip are not about the camping — they are about the decisions made the week before.',
+      'Five hundred r/camping threads, seven recurring regrets. The mistakes that wreck a first trip are not about the camping - they are about the decisions made the week before.',
     date: 'April 2026',
   },
 ]
@@ -76,7 +76,7 @@ export default function Page() {
         </h1>
         <p className="mt-8 text-xl md:text-2xl text-stone-600 leading-[1.5] font-light">
           Reddit-grounded synthesis on the questions every beginner asks before their
-          first trip — what to pack, what to skip, and what they’ll wish they’d known.
+          first trip - what to pack, what to skip, and what they’ll wish they’d known.
         </p>
       </header>
 

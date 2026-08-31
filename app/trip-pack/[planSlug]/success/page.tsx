@@ -44,7 +44,7 @@ const NEXT_STEPS: Record<PlanSlug, NextStep> = {
     nextPlan: {
       href: '/plans/first-night-camp',
       label: 'Step up: First Night Camp',
-      sublabel: 'One night at a real campground — your next move.',
+      sublabel: 'One night at a real campground - your next move.',
     },
   },
   'first-night-camp': {
@@ -56,7 +56,7 @@ const NEXT_STEPS: Record<PlanSlug, NextStep> = {
     skill: {
       href: '/skills/fire/starting-a-fire',
       label: 'Practice: Starting a fire',
-      sublabel: 'Light it once, light it right — no fuss.',
+      sublabel: 'Light it once, light it right - no fuss.',
     },
     nextPlan: {
       href: '/plans/first-weekend-camp',
@@ -68,7 +68,7 @@ const NEXT_STEPS: Record<PlanSlug, NextStep> = {
     guide: {
       href: '/guides/weekend-camping-packing-list',
       label: 'Read: Weekend Camping Packing List',
-      sublabel: 'Two-night family pack list — by category, by person.',
+      sublabel: 'Two-night family pack list - by category, by person.',
     },
     skill: {
       href: '/skills/cooking/foil-pack-meals',
@@ -135,7 +135,7 @@ export default async function TripPackSuccessPage({ params, searchParams }: Prop
       const session = await stripe.checkout.sessions.retrieve(session_id)
 
       if (session.payment_status !== 'paid') {
-        errorMessage = 'Your payment is still processing. Check your email shortly — the download link is on its way.'
+        errorMessage = 'Your payment is still processing. Check your email shortly - the download link is on its way.'
       } else {
         const meta = session.metadata || {}
         const metaPlan = (meta.plan as PlanSlug) || plan

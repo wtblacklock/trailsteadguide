@@ -3,7 +3,7 @@ import type { SearchDocument } from './types'
 
 export type SearchEngine = MiniSearch<SearchDocument>
 
-/** Builds a MiniSearch engine over the given documents. Pure — no I/O. */
+/** Builds a MiniSearch engine over the given documents. Pure - no I/O. */
 export function createSearchEngine(documents: SearchDocument[]): SearchEngine {
   const engine = new MiniSearch<SearchDocument>({
     idField: 'id',
@@ -11,7 +11,7 @@ export function createSearchEngine(documents: SearchDocument[]): SearchEngine {
     storeFields: ['id', 'type', 'title', 'excerpt', 'url'],
     searchOptions: {
       boost: { title: 3, excerpt: 1, keywords: 1 },
-      // Short terms (<= 4 chars) skip fuzzy matching entirely — a proportional
+      // Short terms (<= 4 chars) skip fuzzy matching entirely - a proportional
       // fuzziness large enough to catch e.g. "tnet" -> "tent" also matches
       // huge swaths of the index for common short words like "tent"/"fire".
       // Exact + prefix matching remain active regardless. Longer terms keep
@@ -41,7 +41,7 @@ let cachedEnginePromise: Promise<SearchEngine> | null = null
 
 /**
  * Fetches the search index and builds the engine, memoized for the life of
- * the page session — only the first call to open the search overlay pays
+ * the page session - only the first call to open the search overlay pays
  * the fetch + index-build cost.
  */
 export function getSearchEngine(): Promise<SearchEngine> {

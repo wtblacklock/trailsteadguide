@@ -28,10 +28,10 @@ const ITEMS: HuntItem[] = [
 ]
 
 const TIER_LABELS: Record<HuntItem['tier'], string> = {
-  easy: 'Easy — Always Findable',
-  medium: 'Medium — Look Around',
-  tricky: 'Tricky — Takes Patience',
-  bonus: 'Bonus — Explorer Level',
+  easy: 'Easy - Always Findable',
+  medium: 'Medium - Look Around',
+  tricky: 'Tricky - Takes Patience',
+  bonus: 'Bonus - Explorer Level',
 }
 
 const TIER_POINTS: Record<HuntItem['tier'], string> = {
@@ -118,7 +118,7 @@ export default function NatureScavengerHuntCard() {
       `}</style>
 
       <p className="lead">
-        Work solo or as a team. First to find all 6 easy items calls time — then count up everyone&apos;s totals. Bonus items are worth the most: don&apos;t skip them.
+        Work solo or as a team. First to find all 6 easy items calls time - then count up everyone&apos;s totals. Bonus items are worth the most: don&apos;t skip them.
       </p>
 
       <div className="cols">

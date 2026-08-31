@@ -5,7 +5,7 @@ import { pageMetadata } from '@/lib/seo'
 export const metadata = pageMetadata({
   title: 'Privacy Policy',
   description:
-    'How Trailstead Guide collects and uses data — what we store from the planner, email handling, analytics, cookies, and your rights to request deletion.',
+    'How Trailstead Guide collects and uses data - what we store from the planner, email handling, analytics, cookies, and your rights to request deletion.',
   path: '/privacy',
 })
 
@@ -17,7 +17,7 @@ export default function Page() {
         When you use the planner, we store your quiz answers temporarily in your browser&apos;s session storage so we can generate your plan. These answers are not tied to your identity unless you give us your email.
       </p>
       <p>
-        If you submit your email to save a plan, we store your email address and the plan ID. We use this address only to send you the plan and — if you opt in — occasional updates. We never sell your email.
+        If you submit your email to save a plan, we store your email address and the plan ID. We use this address only to send you the plan and - if you opt in - occasional updates. We never sell your email.
       </p>
       <p>
         When you send us a message through the contact form, we receive your name, email, the category you selected, and your message. We use this information solely to reply to you and keep a record of the correspondence. We do not add contact-form submitters to any marketing list.

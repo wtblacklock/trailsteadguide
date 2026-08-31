@@ -103,7 +103,7 @@ export default function QuizShell() {
 
   const { currentIndex, answers, showEmailCapture, status } = state
 
-  // Funnel entry — fires once when the quiz UI mounts on /quiz.
+  // Funnel entry - fires once when the quiz UI mounts on /quiz.
   useEffect(() => {
     track('quiz_started')
   }, [])
@@ -132,17 +132,17 @@ export default function QuizShell() {
 
     const out = deriveQuizOutput(completeAnswers, slug)
     const sp = serializeQuizOutput(out)
-    // Funnel exit — fires when the quiz finishes and we redirect to the plan page.
+    // Funnel exit - fires when the quiz finishes and we redirect to the plan page.
     track('quiz_completed', { plan: slug, group: out.groupType })
     router.push(`/plans/${slug}?${sp.toString()}`)
   }, [status, answers, router])
 
-  // Generating state — show animated loader before redirect.
+  // Generating state - show animated loader before redirect.
   if (status === 'generating') {
     return <GeneratingPlan onComplete={() => dispatch({ type: 'FINISH_GENERATING' })} />
   }
 
-  // Complete — navigation in useEffect is in-flight. Render nothing so the
+  // Complete - navigation in useEffect is in-flight. Render nothing so the
   // last question doesn't flash back while router.push resolves.
   if (status === 'complete') {
     return null
@@ -161,7 +161,7 @@ export default function QuizShell() {
             key={QUESTIONS[currentIndex].id}
             question={QUESTIONS[currentIndex]}
             initialValue={answers[QUESTIONS[currentIndex].id]}
-            // Forward the prior "no kids — just adults" answer to the
+            // Forward the prior "no kids - just adults" answer to the
             // party-size step so the kids stepper hides and the answer
             // commits with kids: 0.
             noKids={answers.kidsAgeGroup?.includes('none') ?? false}

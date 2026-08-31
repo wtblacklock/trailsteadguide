@@ -32,7 +32,7 @@ export default function Page() {
           Say hi.
         </h1>
         <p className="mt-6 max-w-2xl text-lg md:text-xl text-stone-600 leading-[1.55] font-light">
-          Feedback, press, partnerships, or something on the site that&rsquo;s broken — we read every message and reply within 48 hours.
+          Feedback, press, partnerships, or something on the site that&rsquo;s broken - we read every message and reply within 48 hours.
         </p>
       </header>
 

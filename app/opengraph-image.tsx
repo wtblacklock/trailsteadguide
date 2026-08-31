@@ -2,7 +2,7 @@ import { ImageResponse } from 'next/og'
 import fs from 'node:fs/promises'
 import path from 'node:path'
 
-export const alt = 'Trailstead Guide — plan your first camping trip in minutes'
+export const alt = 'Trailstead Guide - plan your first camping trip in minutes'
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
 

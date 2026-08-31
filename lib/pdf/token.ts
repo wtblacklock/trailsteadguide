@@ -1,6 +1,6 @@
 /**
  * Stateless signed download tokens. Encodes the plan + party + nights + a
- * timestamp; HMAC-signed with TRIP_PACK_SECRET. No DB needed — the link
+ * timestamp; HMAC-signed with TRIP_PACK_SECRET. No DB needed - the link
  * itself proves entitlement.
  *
  * Tokens are valid for 24 hours so an email link works the next morning
@@ -27,7 +27,7 @@ export type TripPackTokenPayload = {
   iat: number
   /** Optional purchaser email (for analytics, not displayed) */
   email?: string
-  /** Optional personalization modifiers — older tokens omit these. */
+  /** Optional personalization modifiers - older tokens omit these. */
   group?: GroupType
   kidsAge?: KidsAgeBucket
   activity?: ActivityType

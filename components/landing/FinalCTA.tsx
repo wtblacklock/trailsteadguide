@@ -11,7 +11,7 @@ export default function FinalCTA() {
           Get a starter trip plan in 5 seconds.
         </h2>
         <p className="text-stone-300 text-lg mb-8 max-w-xl">
-          A few questions. A complete plan — timeline, gear, meals, kid activities, and safety guidance.
+          A few questions. A complete plan - timeline, gear, meals, kid activities, and safety guidance.
         </p>
         <Link
           href="/quiz"

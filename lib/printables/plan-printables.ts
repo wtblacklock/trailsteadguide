@@ -11,7 +11,7 @@ import type { Printable } from './types'
  * plan a visitor lands on after the quiz.
  *
  * Curated from each plan's actual recommendedSkills / activitySchedule /
- * safetyNotes in lib/plan-templates.ts — not a generic "show everything"
+ * safetyNotes in lib/plan-templates.ts - not a generic "show everything"
  * list.
  */
 export const PLAN_PRINTABLES: Record<PlanSlug, string[]> = {
@@ -63,7 +63,7 @@ export function getPlansLinkedToPrintable(printableSlug: string): PlanSlug[] {
   )
 }
 
-/** Every printable slug referenced by at least one plan — used only by the completeness test below. */
+/** Every printable slug referenced by at least one plan - used only by the completeness test below. */
 export function allPlanPrintableSlugs(): string[] {
   return Array.from(new Set(Object.values(PLAN_PRINTABLES).flat()))
 }

@@ -1,5 +1,5 @@
 /**
- * Gear Sets — curated, reusable bundles of affiliate products mapped to a
+ * Gear Sets - curated, reusable bundles of affiliate products mapped to a
  * GearSetId. Plans reference a GearSetId rather than a flat list, so the same
  * bundle can power both the gear-guide page and the PDF Trip Pack.
  *
@@ -8,10 +8,10 @@
  *
  * Quality tiers: an entry can optionally declare a `slot` (the same
  * GearSlotId vocabulary the guide gear shelf uses) and a `tier`. Multiple
- * entries can share a `slot` — one per tier — and `resolveGearSet()` picks
+ * entries can share a `slot` - one per tier - and `resolveGearSet()` picks
  * the one matching the requested tier, falling back to 'standard' (or the
  * first entry for that slot) when a slot has no variant for the requested
- * tier. Entries with no `slot` are untiered and always included — most
+ * tier. Entries with no `slot` are untiered and always included - most
  * comfort/fun-upgrade items don't have a meaningfully different budget or
  * premium version, so they're left constant across tiers.
  */
@@ -45,7 +45,7 @@ export type GearSetEntry = {
   pdfBlurb?: string
   /**
    * Which role this fills, for tier-swap grouping (e.g. 'TENT',
-   * 'SLEEP_BAG'). Only set on entries that vary by quality tier — an entry
+   * 'SLEEP_BAG'). Only set on entries that vary by quality tier - an entry
    * without a slot is always included, regardless of the selected tier.
    */
   slot?: GearSlotId
@@ -90,7 +90,7 @@ export const GEAR_SETS: Record<GearSetId, GearSet> = {
       { productId: 'sleeping-pad-air', category: 'Sleep', slot: 'SLEEP_SURFACE', tier: 'budget' },
       { productId: 'mondoking-3d-pad', category: 'Sleep', slot: 'SLEEP_SURFACE', tier: 'premium' },
       // Lantern is the tiered lighting item; the headlamp is untiered and
-      // included at every tier — one per person is non-negotiable regardless of budget.
+      // included at every tier - one per person is non-negotiable regardless of budget.
       { productId: 'luminaid-packlite-max', category: 'Lighting', slot: 'LIGHTING' },
       { productId: 'fwc-lantern-consciot', category: 'Lighting', slot: 'LIGHTING', tier: 'budget' },
       { productId: 'black-diamond-spot-400', category: 'Lighting' },
@@ -102,7 +102,7 @@ export const GEAR_SETS: Record<GearSetId, GearSet> = {
     tagline: 'Two-night comfort without overpacking the car.',
     entries: [
       // Step up from the entry-level Sundome to a sturdier 4P with better
-      // pole + fly quality — worth it once you know you'll go back out.
+      // pole + fly quality - worth it once you know you'll go back out.
       { productId: 'alps-lynx-4p', category: 'Tent', slot: 'TENT' },
       { productId: 'coleman-sundome-4p', category: 'Tent', slot: 'TENT', tier: 'budget' },
       { productId: 'tnf-wawona-6', category: 'Tent', slot: 'TENT', tier: 'premium' },
@@ -112,7 +112,7 @@ export const GEAR_SETS: Record<GearSetId, GearSet> = {
       { productId: 'big-agnes-divide', category: 'Sleep', slot: 'SLEEP_SURFACE' },
       { productId: 'sleeping-pad-air', category: 'Sleep', slot: 'SLEEP_SURFACE', tier: 'budget' },
       { productId: 'mondoking-3d-pad', category: 'Sleep', slot: 'SLEEP_SURFACE', tier: 'premium' },
-      // Single-burner is the right call for a weekend — fewer parts, faster
+      // Single-burner is the right call for a weekend - fewer parts, faster
       // setup, still cooks real food. Save the 2-burner for basecamp.
       { productId: 'coleman-1-burner', category: 'Cooking', slot: 'STOVE' },
       { productId: 'coleman-triton-2-burner', category: 'Cooking', slot: 'STOVE', tier: 'premium' },
@@ -123,7 +123,7 @@ export const GEAR_SETS: Record<GearSetId, GearSet> = {
       { productId: 'fwc-lantern-consciot', category: 'Lighting', slot: 'LIGHTING', tier: 'budget' },
       { productId: 'streamlight-protac-2', category: 'Lighting', slot: 'HEADLAMP' },
       { productId: 'black-diamond-spot-400', category: 'Lighting', slot: 'HEADLAMP', tier: 'budget' },
-      // Rocker chair — the upgrade you remember after night one.
+      // Rocker chair - the upgrade you remember after night one.
       { productId: 'gci-freestyle-rocker', category: 'Comfort', slot: 'CHAIR' },
       { productId: 'coleman-portable-chair-cooler', category: 'Comfort', slot: 'CHAIR', tier: 'budget' },
       { productId: 'camp-chairs', category: 'Comfort', slot: 'CHAIR', tier: 'premium' },
@@ -134,7 +134,7 @@ export const GEAR_SETS: Record<GearSetId, GearSet> = {
     title: 'Family Basecamp Kit',
     tagline: 'Three-night basecamp with real beds, real shade, real meals.',
     entries: [
-      // 6+ person pop-up cabin — vertical walls, room for kids and gear.
+      // 6+ person pop-up cabin - vertical walls, room for kids and gear.
       { productId: 'core-6p-instant-cabin', category: 'Tent', slot: 'TENT' },
       { productId: 'coleman-sundome-4p', category: 'Tent', slot: 'TENT', tier: 'budget' },
       { productId: 'tnf-wawona-6', category: 'Tent', slot: 'TENT', tier: 'premium' },
@@ -143,14 +143,14 @@ export const GEAR_SETS: Record<GearSetId, GearSet> = {
       { productId: 'lost-horizon-air-foam-mattress', category: 'Sleep', slot: 'SLEEP_SURFACE' },
       { productId: 'sleeping-pad-air', category: 'Sleep', slot: 'SLEEP_SURFACE', tier: 'budget' },
       { productId: 'mondoking-3d-pad', category: 'Sleep' },
-      // 2-burner stove — three nights = real meals, not just boiling water.
+      // 2-burner stove - three nights = real meals, not just boiling water.
       { productId: 'coleman-triton-2-burner', category: 'Cooking', slot: 'STOVE' },
       { productId: 'coleman-1-burner', category: 'Cooking', slot: 'STOVE', tier: 'budget' },
       { productId: 'stove-2-burner', category: 'Cooking', slot: 'STOVE', tier: 'premium' },
       { productId: 'coleman-classic-rolling-cooler', category: 'Cooler', slot: 'COOLER' },
       { productId: 'coleman-xtreme-50-cooler', category: 'Cooler', slot: 'COOLER', tier: 'budget' },
       { productId: 'cooler-basic', category: 'Cooler', slot: 'COOLER', tier: 'premium' },
-      // Chair with built-in cooler — kid-friendly, fits anywhere.
+      // Chair with built-in cooler - kid-friendly, fits anywhere.
       { productId: 'gci-freestyle-rocker', category: 'Comfort', slot: 'CHAIR' },
       { productId: 'coleman-portable-chair-cooler', category: 'Comfort', slot: 'CHAIR', tier: 'budget' },
       { productId: 'camp-chairs', category: 'Comfort', slot: 'CHAIR', tier: 'premium' },
@@ -175,7 +175,7 @@ export type ResolvedGearItem = {
  *
  * For each `slot` that has multiple tier variants, picks the entry
  * matching `tier`, falling back to the 'standard' entry (or the first
- * variant) when this slot has no dedicated pick for the requested tier —
+ * variant) when this slot has no dedicated pick for the requested tier -
  * so requesting 'budget' on a set with no budget tent just shows the
  * standard tent rather than omitting it.
  */
@@ -242,7 +242,7 @@ export function buildAffiliateUrl(
   tag = 'trailsteadgui-20',
 ): string {
   if (product.affiliateUrl) {
-    // Curated short link already includes the tag — return as-is.
+    // Curated short link already includes the tag - return as-is.
     return product.affiliateUrl
   }
   if (product.amazonAsin) {

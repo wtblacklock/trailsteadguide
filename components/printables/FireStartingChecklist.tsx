@@ -1,5 +1,5 @@
 /**
- * Fire-Starting Checklist — print asset.
+ * Fire-Starting Checklist - print asset.
  *
  * Single-page guide to building, lighting, maintaining, and extinguishing
  * a campfire. Visual hierarchy walks the four stages. The drown-stir-drown
@@ -128,7 +128,7 @@ export default function FireStartingChecklist() {
 
       <div className="print-side print-side-1">
         <p className="lead">
-          A camp fire works in four stages — build, light, maintain, extinguish. Skip the last one and you&apos;re how a wildfire starts. Run all four every time.
+          A camp fire works in four stages - build, light, maintain, extinguish. Skip the last one and you&apos;re how a wildfire starts. Run all four every time.
         </p>
 
         <h2>The three-tier stack</h2>
@@ -145,12 +145,12 @@ export default function FireStartingChecklist() {
           </div>
           <div className="stack">
             <h3>3 · Fuelwood</h3>
-            <p>Wrist- to forearm-thick split logs. Buy bundled at the camp store — never transport from home.</p>
-            <p className="qty">Quantity: 2–3 bundles per evening.</p>
+            <p>Wrist- to forearm-thick split logs. Buy bundled at the camp store - never transport from home.</p>
+            <p className="qty">Quantity: 2-3 bundles per evening.</p>
           </div>
           <div className="stack">
             <h3>4 · Lighter / matches</h3>
-            <p>Bic lighter, stormproof matches, or a ferro rod. Bring two redundant sources — at least one waterproof.</p>
+            <p>Bic lighter, stormproof matches, or a ferro rod. Bring two redundant sources - at least one waterproof.</p>
             <p className="qty">Quantity: 2 sources, kept dry.</p>
           </div>
         </div>
@@ -161,7 +161,7 @@ export default function FireStartingChecklist() {
           <li>Lay the tinder bundle in the center.</li>
           <li>Build a teepee of kindling around the tinder, with a 2-finger gap on the windward side as the door.</li>
           <li>Light the tinder bundle from underneath through that windward gap. Never light from above.</li>
-          <li>Once the kindling is burning steadily, add small fuelwood pieces to the structure — don&apos;t smother the kindling.</li>
+          <li>Once the kindling is burning steadily, add small fuelwood pieces to the structure - don&apos;t smother the kindling.</li>
           <li>Add larger fuelwood as the fire establishes. Maintain airflow; small adjustments only.</li>
         </ol>
       </div>
@@ -182,11 +182,11 @@ export default function FireStartingChecklist() {
         </div>
 
         <div className="extinguish">
-          <h2>Extinguish protocol — drown · stir · drown</h2>
+          <h2>Extinguish protocol - drown · stir · drown</h2>
           <ol>
-            <li><strong>Drown.</strong> Pour water across the entire fire bed, not just the visible flames. Listen for hissing — keep going until it stops.</li>
+            <li><strong>Drown.</strong> Pour water across the entire fire bed, not just the visible flames. Listen for hissing - keep going until it stops.</li>
             <li><strong>Stir.</strong> Use a stick or shovel to mix ashes, embers, and unburned wood. Embers buried under ash can stay alive for days.</li>
-            <li><strong>Drown again.</strong> A second full pour. Touch the back of your hand to the ashes — if it&apos;s warm, the fire is not out.</li>
+            <li><strong>Drown again.</strong> A second full pour. Touch the back of your hand to the ashes - if it&apos;s warm, the fire is not out.</li>
           </ol>
         </div>
 

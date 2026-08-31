@@ -9,7 +9,7 @@
  * `<div className="print-side print-side-1">` / `print-side-2`, with this
  * component between them. These class names are deliberately unscoped
  * (unlike every other class in these files, which is prefixed with the
- * component's own root class) — they're shared DOM/measurement hooks used
+ * component's own root class) - they're shared DOM/measurement hooks used
  * identically across every front/back card, not per-component styling
  * classes. No CSS targets them; don't add any without scoping it to a
  * specific card's own print-side, since these render on the same page as
@@ -33,7 +33,7 @@ export default function PrintPageBreak() {
           text-align: center;
         }
         .print-page-break::after {
-          content: 'Side 2 — prints on the back';
+          content: 'Side 2 - prints on the back';
         }
         @media print {
           .print-page-break {

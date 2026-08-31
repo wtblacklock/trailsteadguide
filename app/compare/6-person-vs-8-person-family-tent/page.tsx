@@ -30,11 +30,11 @@ const TENT_8P = P('coleman-skydome-8p')
 const FAQS = [
   {
     q: 'Can 2 adults and 3 kids fit in a 6-person tent?',
-    a: 'Yes, comfortably — that\'s 5 people in a tent rated for 6, which is exactly the sizing rule at work. Add a queen air mattress for the parents and the kids on pads or a twin mattress, and there\'s still room to move. Once a family hits 6 people or the kids get bigger, step up to 8P.',
+    a: 'Yes, comfortably - that\'s 5 people in a tent rated for 6, which is exactly the sizing rule at work. Add a queen air mattress for the parents and the kids on pads or a twin mattress, and there\'s still room to move. Once a family hits 6 people or the kids get bigger, step up to 8P.',
   },
   {
     q: 'Does an 8-person tent take longer to set up than a 6-person?',
-    a: 'Slightly — both the CORE 6P and Coleman Skydome 8P use pre-attached poles, so setup is 60 seconds to 5 minutes either way. The bigger difference is breaking it down and folding it back into the bag; the 8P takes a bit more care to pack.',
+    a: 'Slightly - both the CORE 6P and Coleman Skydome 8P use pre-attached poles, so setup is 60 seconds to 5 minutes either way. The bigger difference is breaking it down and folding it back into the bag; the 8P takes a bit more care to pack.',
   },
   {
     q: 'Is an 8-person tent worth it for a family of 5?',
@@ -62,7 +62,7 @@ const ROWS: Row[] = [
     label: 'CORE 6-Person Instant Cabin',
     floor: '11 × 9 ft',
     height: "6'0\" center",
-    bestFor: 'Family of 4–5',
+    bestFor: 'Family of 4-5',
     setup: '60 sec',
     price: '~$200',
   },
@@ -197,7 +197,7 @@ export default function Page() {
         </h2>
         <p className="text-stone-600 leading-relaxed text-lg mb-8">
           11×9 ft floor, 6&rsquo;0&quot; center height, fits two queen air beds. The right call for
-          a family of 4–5 that wants to stand up inside without stepping up to 8-person size and
+          a family of 4-5 that wants to stand up inside without stepping up to 8-person size and
           price.
         </p>
         {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -209,7 +209,7 @@ export default function Page() {
         />
         <h3 className="font-serif text-xl font-semibold text-stone-900 mb-3">Pros</h3>
         <ul className="text-stone-700 leading-relaxed list-disc pl-6 space-y-1 mb-6">
-          <li>60-second pop-up setup — the fastest pitch of any tent in this comparison</li>
+          <li>60-second pop-up setup - the fastest pitch of any tent in this comparison</li>
           <li>Near-vertical walls give genuine stand-up room in a compact footprint</li>
           <li>Cheaper and smaller to pack than the 8-person step-up</li>
         </ul>
@@ -247,7 +247,7 @@ export default function Page() {
         <h3 className="font-serif text-xl font-semibold text-stone-900 mb-3">Pros</h3>
         <ul className="text-stone-700 leading-relaxed list-disc pl-6 space-y-1 mb-6">
           <li>Fits a queen bed plus a second full-size mattress with room to walk around</li>
-          <li>Tallest standing height of the two — 6&rsquo;4&quot; at the center</li>
+          <li>Tallest standing height of the two - 6&rsquo;4&quot; at the center</li>
           <li>WeatherTec system tested to 35 mph winds</li>
         </ul>
         <h3 className="font-serif text-xl font-semibold text-stone-900 mb-3">Tradeoffs</h3>

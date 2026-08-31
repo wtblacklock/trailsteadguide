@@ -118,7 +118,7 @@ export default function ContactForm({ initialCategory = 'general' }: { initialCa
       onSubmit={handleSubmit}
       className="bg-cream rounded-2xl border border-stone-200 p-6 md:p-10 space-y-6"
     >
-      {/* Honeypot — bots fill it, humans don't. */}
+      {/* Honeypot - bots fill it, humans don't. */}
       <input
         type="text"
         name="website"

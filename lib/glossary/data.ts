@@ -18,19 +18,19 @@ export const TERMS: Term[] = [
   {
     term: 'Bear box',
     definition:
-      'A metal locker provided at many campsites for storing food and scented items overnight. Use it where it exists — your cooler is not bear-proof.',
+      'A metal locker provided at many campsites for storing food and scented items overnight. Use it where it exists - your cooler is not bear-proof.',
   },
   {
     term: 'Bearing',
     definition:
-      'A direction expressed in degrees (0–360) from north. You take a bearing with a compass to head toward a known landmark.',
+      'A direction expressed in degrees (0-360) from north. You take a bearing with a compass to head toward a known landmark.',
     href: '/skills/orienteering/compass-basics',
     linkText: 'Compass basics',
   },
   {
     term: 'Bivy',
     definition:
-      'Short for "bivouac sack" — a single-person waterproof shell that goes over a sleeping bag. Lighter than a tent, but cramped.',
+      'Short for "bivouac sack" - a single-person waterproof shell that goes over a sleeping bag. Lighter than a tent, but cramped.',
   },
   {
     term: 'BLM',
@@ -51,7 +51,7 @@ export const TERMS: Term[] = [
   {
     term: 'Cathole',
     definition:
-      'A 6–8 inch hole dug at least 200 feet from water for human waste in the backcountry. Pack out toilet paper. Part of Leave No Trace.',
+      'A 6-8 inch hole dug at least 200 feet from water for human waste in the backcountry. Pack out toilet paper. Part of Leave No Trace.',
   },
   {
     term: 'Clove hitch',
@@ -70,7 +70,7 @@ export const TERMS: Term[] = [
   {
     term: 'Daypack',
     definition:
-      'A small backpack (15–25 liters) for carrying water, snacks, and a layer on a day hike from camp. Not a full backpacking pack.',
+      'A small backpack (15-25 liters) for carrying water, snacks, and a layer on a day hike from camp. Not a full backpacking pack.',
   },
   {
     term: 'Dead reckoning',
@@ -85,7 +85,7 @@ export const TERMS: Term[] = [
   {
     term: 'Dehydrated meal',
     definition:
-      'A pre-cooked meal with the moisture removed; you add boiling water in the bag. Light, fast, and clean — ideal for backpacking and easy car camping.',
+      'A pre-cooked meal with the moisture removed; you add boiling water in the bag. Light, fast, and clean - ideal for backpacking and easy car camping.',
   },
   {
     term: 'Dew point',
@@ -102,12 +102,12 @@ export const TERMS: Term[] = [
   {
     term: 'Dome tent',
     definition:
-      'A tent with two crossing poles that arch over the top, forming a dome. The most common beginner tent — easy to pitch, sheds wind well.',
+      'A tent with two crossing poles that arch over the top, forming a dome. The most common beginner tent - easy to pitch, sheds wind well.',
   },
   {
     term: 'Douse',
     definition:
-      'To fully extinguish a campfire with water — soak, stir, soak again until the ashes are cold to the touch. The only acceptable way to leave a fire.',
+      'To fully extinguish a campfire with water - soak, stir, soak again until the ashes are cold to the touch. The only acceptable way to leave a fire.',
     href: '/skills/fire/extinguishing-a-fire',
     linkText: 'How to extinguish a fire',
   },
@@ -133,14 +133,14 @@ export const TERMS: Term[] = [
   {
     term: 'Ember',
     definition:
-      'A glowing chunk of charcoal left from a fire. Embers stay hot for hours and are how dutch ovens cook — and how forest fires start.',
+      'A glowing chunk of charcoal left from a fire. Embers stay hot for hours and are how dutch ovens cook - and how forest fires start.',
   },
 
   // F
   {
     term: 'FCFS',
     definition:
-      'First-come, first-served. A campsite that can\'t be reserved — you show up and claim what\'s open. Arrive early on summer Fridays or expect to be turned away.',
+      'First-come, first-served. A campsite that can\'t be reserved - you show up and claim what\'s open. Arrive early on summer Fridays or expect to be turned away.',
     href: '/guides/recreation-gov-reservation-strategy',
     linkText: 'Reservation strategy',
   },
@@ -159,7 +159,7 @@ export const TERMS: Term[] = [
   {
     term: 'Foil pack',
     definition:
-      'A meal of meat, vegetables, and seasoning wrapped in heavy-duty foil and cooked over coals. Great kid food — almost no cleanup.',
+      'A meal of meat, vegetables, and seasoning wrapped in heavy-duty foil and cooked over coals. Great kid food - almost no cleanup.',
     href: '/skills/cooking/foil-pack-meals',
     linkText: 'Foil pack meals',
   },
@@ -173,7 +173,7 @@ export const TERMS: Term[] = [
   {
     term: 'Ground cloth',
     definition:
-      'A generic tarp or sheet under your tent — same role as a footprint, but cut from any material. Tuck it inside the tent\'s perimeter or rain runs under you.',
+      'A generic tarp or sheet under your tent - same role as a footprint, but cut from any material. Tuck it inside the tent\'s perimeter or rain runs under you.',
   },
   {
     term: 'Guy line',
@@ -187,7 +187,7 @@ export const TERMS: Term[] = [
   {
     term: 'Headlamp lumens',
     definition:
-      'The brightness rating of a headlamp. 100 lumens is enough for camp tasks; 300+ for trail walking. Higher isn\'t always better — it kills your night vision.',
+      'The brightness rating of a headlamp. 100 lumens is enough for camp tasks; 300+ for trail walking. Higher isn\'t always better - it kills your night vision.',
   },
   {
     term: 'Heat exhaustion',
@@ -197,7 +197,7 @@ export const TERMS: Term[] = [
   {
     term: 'Hydration bladder',
     definition:
-      'A flexible water reservoir (1.5–3 L) that lives inside your daypack with a hose to your shoulder strap. Easier to drink while moving than reaching for a bottle.',
+      'A flexible water reservoir (1.5-3 L) that lives inside your daypack with a hose to your shoulder strap. Easier to drink while moving than reaching for a bottle.',
   },
   {
     term: 'Hypothermia',
@@ -249,14 +249,14 @@ export const TERMS: Term[] = [
   {
     term: 'NPS / National Park',
     definition:
-      'Land managed by the National Park Service. Stricter rules than National Forest — campfires only in fire rings, no dispersed camping, food storage strictly enforced.',
+      'Land managed by the National Park Service. Stricter rules than National Forest - campfires only in fire rings, no dispersed camping, food storage strictly enforced.',
   },
 
   // O
   {
     term: 'Orienteering',
     definition:
-      'The skill of navigating with map and compass alone. Foundational backcountry knowledge even if you usually rely on GPS — batteries die.',
+      'The skill of navigating with map and compass alone. Foundational backcountry knowledge even if you usually rely on GPS - batteries die.',
     href: '/skills/orienteering/compass-basics',
     linkText: 'Compass basics',
   },
@@ -265,12 +265,12 @@ export const TERMS: Term[] = [
   {
     term: 'Paracord',
     definition:
-      'A lightweight nylon kernmantle rope (550 lb test) originally used for parachute suspension lines. The general-purpose camp rope — every kit should have 25–50 feet.',
+      'A lightweight nylon kernmantle rope (550 lb test) originally used for parachute suspension lines. The general-purpose camp rope - every kit should have 25-50 feet.',
   },
   {
     term: 'Primitive site',
     definition:
-      'A campsite with no hookups and minimal amenities — usually just a fire ring and a flat tent pad. Sometimes no toilet. Cheaper, quieter, more work.',
+      'A campsite with no hookups and minimal amenities - usually just a fire ring and a flat tent pad. Sometimes no toilet. Cheaper, quieter, more work.',
   },
 
   // Q
@@ -284,7 +284,7 @@ export const TERMS: Term[] = [
   {
     term: 'Rainfly',
     definition:
-      'The waterproof outer layer of a tent that goes over the mesh body. Pitch it taut — sagging fabric leaks where it touches the inner wall.',
+      'The waterproof outer layer of a tent that goes over the mesh body. Pitch it taut - sagging fabric leaks where it touches the inner wall.',
   },
   {
     term: 'Recreation.gov',
@@ -315,7 +315,7 @@ export const TERMS: Term[] = [
   {
     term: 'Sleeping pad',
     definition:
-      'The cushion between you and the ground — air, foam, or self-inflating. Without one, the cold ground will steal your warmth no matter how good your sleeping bag is.',
+      'The cushion between you and the ground - air, foam, or self-inflating. Without one, the cold ground will steal your warmth no matter how good your sleeping bag is.',
   },
   {
     term: 'Square knot',
@@ -327,7 +327,7 @@ export const TERMS: Term[] = [
   {
     term: 'State park',
     definition:
-      'Land managed by the state, not the federal government. Reservation systems, fee structures, and rules vary by state — check the state\'s parks website, not Recreation.gov.',
+      'Land managed by the state, not the federal government. Reservation systems, fee structures, and rules vary by state - check the state\'s parks website, not Recreation.gov.',
   },
 
   // T
@@ -346,21 +346,21 @@ export const TERMS: Term[] = [
   {
     term: 'Teepee fire',
     definition:
-      'A fire structure built with kindling leaning into a central peak over tinder. Lights fast, burns hot, collapses early — best for getting things started.',
+      'A fire structure built with kindling leaning into a central peak over tinder. Lights fast, burns hot, collapses early - best for getting things started.',
     href: '/skills/fire/fire-structures',
     linkText: 'Fire structures',
   },
   {
     term: 'Tinder',
     definition:
-      'Highly flammable, fluffy material that catches a spark — dry grass, birch bark, dryer lint, fatwood shavings. Distinct from kindling, which is one step bigger.',
+      'Highly flammable, fluffy material that catches a spark - dry grass, birch bark, dryer lint, fatwood shavings. Distinct from kindling, which is one step bigger.',
     href: '/skills/fire/starting-a-fire',
     linkText: 'How to start a fire',
   },
   {
     term: 'Two-burner stove',
     definition:
-      'A propane-fueled car-camping stove with two side-by-side burners. The standard family-camping cook setup — coffee on one side, breakfast on the other.',
+      'A propane-fueled car-camping stove with two side-by-side burners. The standard family-camping cook setup - coffee on one side, breakfast on the other.',
     href: '/skills/cooking/two-burner-stove-basics',
     linkText: 'Two-burner stove basics',
   },
@@ -376,7 +376,7 @@ export const TERMS: Term[] = [
   {
     term: 'Widowmaker',
     definition:
-      'A dead branch or top hung up in a tree, ready to fall in wind. Look up before pitching your tent — never camp under one.',
+      'A dead branch or top hung up in a tree, ready to fall in wind. Look up before pitching your tent - never camp under one.',
   },
 ]
 

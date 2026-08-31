@@ -6,9 +6,9 @@ import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
 
 const SLUG = '/activities/camping-activities-for-toddlers'
 const TITLE = 'Camping Activities for Toddlers'
-const META_TITLE = 'Camping Activities for Toddlers (Ages 2–5)'
+const META_TITLE = 'Camping Activities for Toddlers (Ages 2-5)'
 const DESCRIPTION =
-  'The best camping activities for toddlers: sensory exploration, short structured play, and camp games that work for ages 2–5 without needing adult-level attention spans.'
+  'The best camping activities for toddlers: sensory exploration, short structured play, and camp games that work for ages 2-5 without needing adult-level attention spans.'
 const HERO_IMAGE =
   'https://images.unsplash.com/8n00CqwnqO8?w=1400&auto=format&fit=crop&q=80'
 
@@ -44,11 +44,11 @@ export default function Page() {
         data={faqPageGraph([
           {
             q: 'What camping activities are good for toddlers?',
-            a: 'Sensory activities that involve touching, collecting, and observing: rock and leaf sorting, puddle jumping, nature walks with a simple two-item list, and water play at a stream or lake edge. Keep activities to 15–20 minute windows — toddlers at camp are exploring, not completing structured activities.',
+            a: 'Sensory activities that involve touching, collecting, and observing: rock and leaf sorting, puddle jumping, nature walks with a simple two-item list, and water play at a stream or lake edge. Keep activities to 15-20 minute windows - toddlers at camp are exploring, not completing structured activities.',
           },
           {
             q: 'Can a 2-year-old go camping?',
-            a: 'Yes. Keep the trip one night, choose a site with flush toilets, stay within an hour of home, and accept that the trip is mostly logistics rather than relaxation. Most families find that age 4 is the real sweet spot where camping becomes genuinely fun for everyone. Toddler camping is more work than family camping — plan accordingly.',
+            a: 'Yes. Keep the trip one night, choose a site with flush toilets, stay within an hour of home, and accept that the trip is mostly logistics rather than relaxation. Most families find that age 4 is the real sweet spot where camping becomes genuinely fun for everyone. Toddler camping is more work than family camping - plan accordingly.',
           },
           {
             q: 'How do you keep a toddler entertained while camping?',
@@ -71,27 +71,27 @@ export default function Page() {
       <article>
         <header className="max-w-3xl mx-auto px-8 pt-16 md:pt-28 pb-8">
           <p className="text-xs font-semibold tracking-[0.18em] uppercase text-stone-500 mb-8">
-            Activities · Ages 2–5
+            Activities · Ages 2-5
           </p>
           <h1 className="font-serif text-[2.75rem] md:text-[4.25rem] leading-[1.02] tracking-[-0.02em] font-semibold text-stone-950">
             Camping Activities for Toddlers
           </h1>
           <p className="mt-8 text-xl md:text-2xl text-stone-600 leading-[1.5] font-light">
-            Sensory play, short-window activities, and camp games that work for ages 2–5 — the
+            Sensory play, short-window activities, and camp games that work for ages 2-5 - the
             ones that match how toddlers actually explore rather than how adults expect them to.
           </p>
         </header>
 
         <section className="max-w-3xl mx-auto px-8 prose-editorial">
           <p>
-            Toddlers at camp are not completing activities — they are exploring. The activities
-            that work for ages 2–5 follow their attention, not a structured plan. A toddler who
+            Toddlers at camp are not completing activities - they are exploring. The activities
+            that work for ages 2-5 follow their attention, not a structured plan. A toddler who
             finds an interesting stick will spend 25 minutes with that stick. Your job is to be
             present for whatever they find, not to direct them toward what you planned.
           </p>
           <p>
             That said, having structured fallbacks helps during the windows when exploration stalls.
-            The activities below work in 10–20 minute windows and require minimal setup.
+            The activities below work in 10-20 minute windows and require minimal setup.
           </p>
           <p>
             For older kids: see{' '}
@@ -110,7 +110,7 @@ export default function Page() {
             The activities that reliably hold toddler attention share a few traits:
           </p>
           <ul>
-            <li><strong>Sensory.</strong> Touching, smelling, listening, splashing. Dirt, water, bark, and leaves are intrinsically interesting to ages 2–4.</li>
+            <li><strong>Sensory.</strong> Touching, smelling, listening, splashing. Dirt, water, bark, and leaves are intrinsically interesting to ages 2-4.</li>
             <li><strong>Collecting.</strong> A container to fill is an open-ended activity that occupies a toddler for as long as there are things to collect. Bring a small bucket.</li>
             <li><strong>Movement without destination.</strong> Toddlers walk, run, squat, and get up dozens of times per minute. Activities that accommodate that movement (not ones that require sitting still) work.</li>
             <li><strong>Parallel adult activity.</strong> Toddlers engage more when doing something alongside an adult. You gather rocks, they gather rocks. You write in a notebook, they draw in a notebook.</li>
@@ -153,7 +153,7 @@ export default function Page() {
             Beyond structured activities, most of a toddler&apos;s camp day is absorbed by these:
           </p>
           <ul>
-            <li><strong>Stream or lake edge play.</strong> If your campsite is near water, this can fill 2–3 hours. Bring stacking cups, a small net, and a change of clothes. Do not try to stop a toddler from getting wet — plan for it instead.</li>
+            <li><strong>Stream or lake edge play.</strong> If your campsite is near water, this can fill 2-3 hours. Bring stacking cups, a small net, and a change of clothes. Do not try to stop a toddler from getting wet - plan for it instead.</li>
             <li><strong>Dirt digging.</strong> A small plastic shovel and a designated digging zone. Toddlers will dig until stopped. This is not a formal activity, it&apos;s free play, but it works reliably for extended windows.</li>
             <li><strong>Stick and leaf collection.</strong> Give them a bag. They fill it. Sort the contents together when they&apos;re done.</li>
             <li><strong>Shadow chasing.</strong> In the late afternoon, when the sun is lower, shadows are long and interesting to toddlers. Jump on your shadow, chase someone else&apos;s shadow, make shadow puppets on the tent.</li>

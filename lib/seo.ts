@@ -12,7 +12,7 @@ export const SITE_URL = 'https://www.trailsteadguide.com'
 export const SITE_NAME = 'Trailstead Guide'
 export const SITE_TAGLINE = 'Plan your first camping trip with confidence.'
 
-// Default OG image URL — served by app/opengraph-image.tsx (Next.js convention).
+// Default OG image URL - served by app/opengraph-image.tsx (Next.js convention).
 // Each page's pageMetadata() must include this explicitly because Next.js
 // REPLACES openGraph wholesale at the deepest segment that defines it (it does
 // not deep-merge), so without an images entry on the page, the root's
@@ -174,13 +174,13 @@ export type ArticleInput = {
   articleSection?: string
   /** Topic keywords. Helps AI engines slot the article into a topic graph. */
   keywords?: string[]
-  /** Approximate body word count — a citability signal for long-form pieces. */
+  /** Approximate body word count - a citability signal for long-form pieces. */
   wordCount?: number
   /** BCP-47 language tag. Defaults to en-US. */
   inLanguage?: string
   /**
    * CSS selectors for content the page wants flagged as voice-readable.
-   * Schema.org SpeakableSpecification — used by AI summaries and voice search.
+   * Schema.org SpeakableSpecification - used by AI summaries and voice search.
    */
   speakable?: string[]
 }
@@ -263,7 +263,7 @@ export function contactPageGraph(input: {
 }
 
 /**
- * OfferShippingDetails for a digital download — free, instant delivery.
+ * OfferShippingDetails for a digital download - free, instant delivery.
  * Required by Google Merchant Listings rich results; without it Search
  * Console flags the offer as missing the "shippingDetails" field.
  */
@@ -284,7 +284,7 @@ export function digitalShippingDetails() {
  * MerchantReturnPolicy for a digital Trip Pack. 14-day refund-by-email
  * window, free returns (no shipping cost on a digital file). If you
  * change the policy, update the customer-facing FAQ and the trip-pack
- * confirmation email to match — these schema values are a public
+ * confirmation email to match - these schema values are a public
  * commitment Google may surface in rich results.
  */
 export function digitalReturnPolicy(days = 14) {
@@ -341,7 +341,7 @@ function inferBrand(name: string): string {
  * the actual revenue page. Used on /plans/[planId] so the offer surfaces in
  * SERP without competing against the AggregateOffer on the trip-pack page.
  *
- * No aggregateRating — fabricating ratings risks a Google manual penalty.
+ * No aggregateRating - fabricating ratings risks a Google manual penalty.
  */
 export function planProductGraph(p: {
   planSlug: string
@@ -363,7 +363,7 @@ export function planProductGraph(p: {
         description: p.description,
         image: p.image,
         // Inline Organization (rather than a bare @id reference) so the
-        // brand field validates as a typed object on its own — Search
+        // brand field validates as a typed object on its own - Search
         // Console flags untyped @id refs as "Invalid object type".
         brand: { '@type': 'Organization', name: SITE_NAME },
         offers: {
@@ -383,7 +383,7 @@ export function planProductGraph(p: {
 }
 
 /**
- * Schema for a Trailstead Trip Pack — a self-published digital product
+ * Schema for a Trailstead Trip Pack - a self-published digital product
  * (printable PDF) with two pricing tiers. Emits Product + AggregateOffer
  * so Google can display a price range and offer count in rich results.
  */
@@ -421,7 +421,7 @@ export function tripPackProductGraph(p: {
           seller: { '@id': `${SITE_URL}/#organization` },
           offers: p.tiers.map((t) => ({
             '@type': 'Offer',
-            name: `${p.name} — ${t.name}`,
+            name: `${p.name} - ${t.name}`,
             url,
             priceCurrency: 'USD',
             price: t.priceUsd.toFixed(2),
@@ -511,7 +511,7 @@ export function collectionPageGraph(input: {
 export function eventGraph(input: {
   name: string
   description: string
-  startDate: string // ISO 8601 — typically the peak night
+  startDate: string // ISO 8601 - typically the peak night
   endDate?: string
   url: string
   image?: string
