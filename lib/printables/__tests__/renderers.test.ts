@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest'
 import { PRINTABLES } from '@/lib/printables'
 import { RENDERERS as PREVIEW_RENDERERS } from '@/components/printables/PrintablePreview'
 import { RENDERERS as THUMBNAIL_RENDERERS } from '@/components/printables/PrintableThumbnail'
-import { ARTWORK_RENDERERS } from '@/app/printables/[slug]/print/page'
+import { ARTWORK_RENDERERS } from '@/lib/printables/artwork-renderers'
 
 describe('printable renderer maps stay in sync with the registry', () => {
   const slugs = PRINTABLES.map((p) => p.slug)
