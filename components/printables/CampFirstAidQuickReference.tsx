@@ -74,13 +74,14 @@ const INJURIES: Injury[] = [
     evacuate: 'Cannot keep fluids down, severe headache, confusion, no urination for 8+ hours.',
   },
   {
-    name: 'Hypothermia (early)',
+    name: 'Hypothermia',
     emoji: '🥶',
-    signs: 'Shivering, cold/pale skin, clumsiness, slurred speech.',
+    signs: 'Early: shivering, cold/pale skin, clumsiness. Moderate: slurred speech — handle gently, no exertion.',
     treatment: [
       'Get out of wind and wet clothing immediately.',
-      'Insulate with dry layers and sleeping bag. Add head cover.',
-      'Warm fluids if conscious. Body heat from another person is effective.',
+      'Insulate with dry layers + sleeping bag. Add head cover.',
+      'Warm fluids if alert and swallowing normally — skip if confused/slurring.',
+      'No heat packs? Body heat from another person can help — skin-to-skin under dry insulation.',
     ],
     evacuate: 'Stops shivering but still cold (severe hypothermia), loss of consciousness, heart irregularity.',
   },
