@@ -34,12 +34,13 @@ export default function SearchResults({ results, highlightedIndex, onNavigate }:
 
         if (doc.type === 'gear') {
           return (
-            <li key={doc.id} role="option" aria-selected={isHighlighted}>
+            <li id={`search-option-${doc.id}`} key={doc.id} role="option" aria-selected={isHighlighted}>
               <a
                 href={doc.url}
                 target="_blank"
                 rel="nofollow sponsored noopener"
                 onClick={onNavigate}
+                tabIndex={-1}
                 className={rowClasses}
               >
                 {inner}
@@ -49,8 +50,8 @@ export default function SearchResults({ results, highlightedIndex, onNavigate }:
         }
 
         return (
-          <li key={doc.id} role="option" aria-selected={isHighlighted}>
-            <Link href={doc.url} onClick={onNavigate} className={rowClasses}>
+          <li id={`search-option-${doc.id}`} key={doc.id} role="option" aria-selected={isHighlighted}>
+            <Link href={doc.url} onClick={onNavigate} tabIndex={-1} className={rowClasses}>
               {inner}
             </Link>
           </li>
