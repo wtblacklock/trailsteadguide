@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { useEffect, useRef, useState } from 'react'
 import SearchOverlay from '@/components/search/SearchOverlay'
+import MobileStickyStartPlanning from './MobileStickyStartPlanning'
 import { useBodyScrollLock } from '@/lib/hooks/useBodyScrollLock'
 
 const PRIMARY_LINKS = [
@@ -72,7 +73,7 @@ export default function Nav() {
 
   return (
     <nav ref={navRef} className="sticky top-0 z-50 bg-[#F5F3EE]/95 backdrop-blur-sm border-b border-stone-200/60">
-      <div className="max-w-page mx-auto px-8 h-16 flex items-center justify-between gap-6">
+      <div className="max-w-page mx-auto px-4 sm:px-6 md:px-8 h-16 flex items-center justify-between gap-3 md:gap-6">
         {/* Logo */}
         <Link
           href="/"
@@ -116,7 +117,7 @@ export default function Nav() {
           <Link
             href="/quiz"
             aria-label="Start Planning"
-            className="shrink-0 inline-flex items-center justify-center gap-2 text-sm font-medium bg-stone-900 text-white rounded-md hover:bg-stone-800 transition-colors px-3 py-2.5 md:px-5"
+            className="hidden md:inline-flex shrink-0 items-center justify-center gap-2 text-sm font-medium bg-stone-900 text-white rounded-md hover:bg-stone-800 transition-colors px-5 py-2.5"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -134,7 +135,7 @@ export default function Nav() {
               <rect x="9" y="3" width="6" height="4" rx="1" />
               <path d="M9 12l2 2 4-4" />
             </svg>
-            <span className="hidden sm:inline">Start Planning</span>
+            Start Planning
           </Link>
 
           <button
@@ -302,6 +303,7 @@ export default function Nav() {
       </div>
 
       <SearchOverlay open={searchOpen} onClose={() => setSearchOpen(false)} />
+      <MobileStickyStartPlanning suppressed={mobileOpen || searchOpen} />
     </nav>
   )
 }
