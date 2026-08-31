@@ -4,6 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { useEffect, useRef, useState } from 'react'
+import SearchOverlay from '@/components/search/SearchOverlay'
 
 const PRIMARY_LINKS = [
   { href: '/guides', label: 'Guides' },
@@ -22,6 +23,7 @@ const SECONDARY_LINKS = [
 
 export default function Nav() {
   const [mobileOpen, setMobileOpen] = useState(false)
+  const [searchOpen, setSearchOpen] = useState(false)
   const navRef = useRef<HTMLElement>(null)
   const pathname = usePathname()
 
@@ -34,6 +36,19 @@ export default function Nav() {
   useEffect(() => {
     function onKey(e: KeyboardEvent) {
       if (e.key === 'Escape') setMobileOpen(false)
+    }
+    document.addEventListener('keydown', onKey)
+    return () => document.removeEventListener('keydown', onKey)
+  }, [])
+
+  // Global search shortcut — works from anywhere on the site since Nav
+  // is rendered in the root layout.
+  useEffect(() => {
+    function onKey(e: KeyboardEvent) {
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
+        e.preventDefault()
+        setSearchOpen(true)
+      }
     }
     document.addEventListener('keydown', onKey)
     return () => document.removeEventListener('keydown', onKey)
@@ -81,6 +96,18 @@ export default function Nav() {
 
         {/* Right side: CTA + mobile toggle */}
         <div className="flex items-center gap-2">
+          <button
+            type="button"
+            onClick={() => setSearchOpen(true)}
+            aria-label="Search"
+            className="inline-flex items-center justify-center w-10 h-10 rounded-md text-stone-700 hover:bg-stone-200/60 transition-colors"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="8" />
+              <path d="m21 21-4.35-4.35" />
+            </svg>
+          </button>
+
           <Link
             href="/quiz"
             aria-label="Start Planning"
@@ -252,6 +279,8 @@ export default function Nav() {
           </Link>
         </div>
       </div>
+
+      <SearchOverlay open={searchOpen} onClose={() => setSearchOpen(false)} />
     </nav>
   )
 }
