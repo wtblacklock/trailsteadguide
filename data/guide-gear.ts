@@ -362,6 +362,7 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
   'summer-camping-with-kids': [
     { slot: 'HOT_GEAR', productId: 'frizcol-camping-fan' },
     { slot: 'KID_GEAR', productId: 'kidco-gopod' },
+    { slot: 'SAFETY', productId: 'aveeno-kids-sunscreen-lotion' },
     { slot: 'SAFETY', productId: 'dripdrop-hydration' },
     { slot: 'CANOPY', productId: 'core-10x10-canopy' },
   ],
@@ -369,6 +370,7 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'KID_GEAR', productId: 'kidco-gopod' },
     { slot: 'SLEEP_BAG', productId: 'coleman-brazos-bag' },
     { slot: 'SLEEP_BAG', productId: 'vumos-bag-liner' },
+    { slot: 'SAFETY', productId: 'aveeno-kids-sunscreen-lotion' },
     { slot: 'SAFETY', productId: 'thriad-first-aid-430' },
   ],
   'car-camping-beginner-guide': [

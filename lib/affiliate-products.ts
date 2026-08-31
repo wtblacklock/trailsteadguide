@@ -340,6 +340,20 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     slot: 'SAFETY',
   },
   {
+    id: 'aveeno-kids-sunscreen-lotion',
+    name: 'Aveeno Kids Sunscreen Lotion SPF 50',
+    description:
+      'Zinc oxide mineral sunscreen for kids, oxybenzone-free and tear-free. The reapply-every-two-hours bottle for a full day outside.',
+    amazonAsin: 'B07LCW7CZD',
+    affiliateUrl: 'https://www.amazon.com/dp/B07LCW7CZD?tag=trailsteadgui-20',
+    imageUrl: 'https://m.media-amazon.com/images/I/71-iW3CiWSL._SX679_.jpg',
+    category: 'essential',
+    templateSlugs: [],
+    priceRange: '~$16',
+    tags: ['with-kids', 'family', 'budget', 'heat-friendly'],
+    slot: 'SAFETY',
+  },
+  {
     id: 'marmot-mad-river-0',
     name: 'Marmot Mad River 0',
     description:
