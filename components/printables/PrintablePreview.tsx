@@ -31,7 +31,7 @@ import CampFirstAidQuickReference from './CampFirstAidQuickReference'
 import LeaveNoTraceQuickReference from './LeaveNoTraceQuickReference'
 import CampMealPlanner from './CampMealPlanner'
 
-const RENDERERS: Record<string, React.ComponentType> = {
+export const RENDERERS: Record<string, React.ComponentType> = {
   'northern-hemisphere-constellation-wheel': ConstellationWheel,
   'camp-cooking-conversion-card': CookingConversionCard,
   'backyard-test-checklist': BackyardTestChecklist,

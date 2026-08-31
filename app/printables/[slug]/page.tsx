@@ -9,6 +9,8 @@ import PrintablePreview from '@/components/printables/PrintablePreview'
 import { pageMetadata, printableCreativeWorkGraph, SITE_URL } from '@/lib/seo'
 import { PRINTABLES, getPrintableBySlug } from '@/lib/printables'
 import { getSkillsLinkedToPrintable } from '@/lib/skills/helpers'
+import { getPlansLinkedToPrintable } from '@/lib/printables/plan-printables'
+import { getPlanTemplate } from '@/lib/plan-templates'
 
 export function generateStaticParams() {
   return PRINTABLES.map((p) => ({ slug: p.slug }))
@@ -43,6 +45,9 @@ export default async function PrintablePage({
   const path = `/printables/${printable.slug}`
   const printHref = `${path}/print`
   const linkedSkills = getSkillsLinkedToPrintable(printable.slug)
+  const linkedPlans = getPlansLinkedToPrintable(printable.slug)
+    .map((slug) => getPlanTemplate(slug))
+    .filter((p): p is NonNullable<ReturnType<typeof getPlanTemplate>> => p !== null)
 
   return (
     <main>
@@ -181,6 +186,33 @@ export default async function PrintablePage({
                     </span>
                     <span className="text-sm font-semibold text-stone-900 group-hover:text-stone-600 transition-colors">
                       {skill.title}
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      )}
+
+      {linkedPlans.length > 0 && (
+        <section className="max-w-page mx-auto px-8 pb-16">
+          <div className="max-w-3xl">
+            <p className="text-xs font-semibold tracking-[0.18em] uppercase text-stone-500 mb-3">
+              Plans that use this printable
+            </p>
+            <h2 className="font-serif text-2xl md:text-3xl font-semibold text-stone-950 tracking-tight mb-6">
+              Part of these trip plans.
+            </h2>
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {linkedPlans.map((plan) => (
+                <li key={plan.slug}>
+                  <Link
+                    href={`/plans/${plan.slug}`}
+                    className="group flex flex-col gap-1 rounded-lg ring-1 ring-stone-200 bg-white px-4 py-3 hover:ring-stone-900 transition-colors"
+                  >
+                    <span className="text-sm font-semibold text-stone-900 group-hover:text-stone-600 transition-colors">
+                      {plan.title}
                     </span>
                   </Link>
                 </li>

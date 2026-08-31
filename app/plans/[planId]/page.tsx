@@ -11,6 +11,7 @@ import GearList from '@/components/plan/GearList'
 import KidActivityPlan from '@/components/plan/KidActivityPlan'
 import ActivityScheduleBlock from '@/components/plan/ActivityScheduleBlock'
 import SkillsSummaryBlock from '@/components/plan/SkillsSummaryBlock'
+import PrintablesForPlanBlock from '@/components/plan/PrintablesForPlanBlock'
 import SafetyNotes from '@/components/plan/SafetyNotes'
 import AffiliateBlock from '@/components/plan/AffiliateBlock'
 import TripPackCta from '@/components/plan/TripPackCta'
@@ -26,6 +27,7 @@ import { getPlanModifierRules } from '@/lib/personalization/plan-modifiers'
 import { buildGearSystems, buildChipSummary } from '@/lib/personalization/gear-systems'
 import { resolveSystemProducts } from '@/lib/personalization/product-map'
 import { generateIntro } from '@/lib/personalization/intro'
+import { getPrintablesForPlan } from '@/lib/printables/plan-printables'
 import JsonLd from '@/components/seo/JsonLd'
 import { pageMetadata, articleGraph, howToGraph, planProductGraph, SITE_URL } from '@/lib/seo'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
@@ -151,6 +153,7 @@ export default async function PlanPage({
   const resolved = resolveSystemProducts(systems)
   const chipParts = buildChipSummary(out, systems)
   const heroHook = generateIntro(out, plan.tagline)
+  const printables = getPrintablesForPlan(slug)
 
   const path = `/plans/${slug}`
   const { adults, kids } = out.partySize
@@ -221,6 +224,7 @@ export default async function PlanPage({
           { id: 'gear', label: 'Gear' },
           { id: 'activities', label: 'What You’ll Do' },
           { id: 'skills', label: 'Skills' },
+          { id: 'printables', label: 'Printables' },
           { id: 'meals', label: 'Meals' },
           { id: 'safety', label: 'Safety' },
           ...(products.length > 0 ? [{ id: 'shop', label: 'Shop' }] : []),
@@ -235,6 +239,9 @@ export default async function PlanPage({
       </div>
       <div id="skills" className="scroll-mt-32">
         <SkillsSummaryBlock skillRefs={merged.recommendedSkills} />
+      </div>
+      <div id="printables" className="scroll-mt-32">
+        <PrintablesForPlanBlock printables={printables} />
       </div>
       <div id="meals" className="scroll-mt-32"><MealPlanAndShopping meals={merged.meals} defaultAdults={adults} defaultKids={kids} /></div>
       <div id="safety" className="scroll-mt-32"><SafetyNotes notes={merged.safetyNotes} /></div>

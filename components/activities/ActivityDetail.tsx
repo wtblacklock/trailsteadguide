@@ -11,6 +11,8 @@ import ActivityBadge from './ActivityBadge'
 // editorial pairings, not generic recommendations.
 const ACTIVITY_PRINTABLE_PAIRINGS: Record<string, string> = {
   'stargazing-constellation-hunt': 'northern-hemisphere-constellation-wheel',
+  'nature-scavenger-hunt': 'nature-scavenger-hunt-card',
+  'shadow-puppet-theatre': 'shadow-puppet-hand-guide',
 }
 import {
   AGE_LABELS,
@@ -165,6 +167,7 @@ function PrintableCompanion({ slug }: { slug: string }) {
         headline={printable.title}
         description={printable.tagline}
         submitLabel="Email it to me"
+        showThumbnail
       />
       <p className="mt-3 text-xs text-stone-500">
         Prefer the full landing page first? <Link href={`/printables/${printable.slug}`} className="underline decoration-stone-300 underline-offset-4 hover:text-stone-900 transition-colors">See the {printable.title.toLowerCase()}</Link>.
