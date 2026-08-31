@@ -9,7 +9,7 @@ let previousOverflow = ''
  * Locks page scroll while `active` is true.
  *
  * Reference-counted so multiple overlays that can be open at the same time
- * (e.g. the mobile menu and the search overlay — the mobile menu has its own
+ * (e.g. the mobile menu and the search overlay - the mobile menu has its own
  * search trigger, and Cmd+K doesn't close the menu) don't fight over
  * restoring `document.body.style.overflow`. Scroll only unlocks once every
  * active lock has released, regardless of which overlay closes first.

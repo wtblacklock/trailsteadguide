@@ -88,7 +88,7 @@ export default function SearchOverlay({ open, onClose }: Props) {
 
   // Body scroll lock while the overlay is open. Without this the page
   // underneath scrolls (and can rubber-band sideways on mobile) when the
-  // user drags inside the overlay — same fix already applied to the
+  // user drags inside the overlay - same fix already applied to the
   // full-screen mobile menu in Nav.tsx.
   useBodyScrollLock(open)
 
