@@ -3,6 +3,7 @@
 import { useEffect, useId, useState, useCallback } from 'react'
 import PrintableThumbnail from './PrintableThumbnail'
 import PrintablePreview from './PrintablePreview'
+import { useBodyScrollLock } from '@/lib/hooks/useBodyScrollLock'
 
 type Props = {
   /** Printable slug — resolves the renderer in PrintableThumbnail / PrintablePreview. */
@@ -42,13 +43,12 @@ export default function PrintableLightbox({
       if (e.key === 'Escape') close()
     }
     document.addEventListener('keydown', onKey)
-    const previousOverflow = document.body.style.overflow
-    document.body.style.overflow = 'hidden'
     return () => {
       document.removeEventListener('keydown', onKey)
-      document.body.style.overflow = previousOverflow
     }
   }, [open, close])
+
+  useBodyScrollLock(open)
 
   const heightClass = triggerVariant === 'compact' ? 'h-40' : 'h-56 md:h-64'
   const scale = triggerVariant === 'compact' ? 0.22 : 0.32
