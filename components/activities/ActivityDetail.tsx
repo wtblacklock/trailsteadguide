@@ -11,6 +11,8 @@ import ActivityBadge from './ActivityBadge'
 // editorial pairings, not generic recommendations.
 const ACTIVITY_PRINTABLE_PAIRINGS: Record<string, string> = {
   'stargazing-constellation-hunt': 'northern-hemisphere-constellation-wheel',
+  'nature-scavenger-hunt': 'nature-scavenger-hunt-card',
+  'shadow-puppet-theatre': 'shadow-puppet-hand-guide',
 }
 import {
   AGE_LABELS,
