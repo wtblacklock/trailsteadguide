@@ -10,7 +10,7 @@ import { pageMetadata, printableCreativeWorkGraph, SITE_URL } from '@/lib/seo'
 import { PRINTABLES, getPrintableBySlug } from '@/lib/printables'
 import { getSkillsLinkedToPrintable } from '@/lib/skills/helpers'
 import { getPlansLinkedToPrintable } from '@/lib/printables/plan-printables'
-import { PLAN_TEMPLATES } from '@/lib/plan-templates'
+import { getPlanTemplate } from '@/lib/plan-templates'
 
 export function generateStaticParams() {
   return PRINTABLES.map((p) => ({ slug: p.slug }))
@@ -46,6 +46,8 @@ export default async function PrintablePage({
   const printHref = `${path}/print`
   const linkedSkills = getSkillsLinkedToPrintable(printable.slug)
   const linkedPlans = getPlansLinkedToPrintable(printable.slug)
+    .map((slug) => getPlanTemplate(slug))
+    .filter((p): p is NonNullable<ReturnType<typeof getPlanTemplate>> => p !== null)
 
   return (
     <main>
@@ -203,14 +205,14 @@ export default async function PrintablePage({
               Part of these trip plans.
             </h2>
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              {linkedPlans.map((planSlug) => (
-                <li key={planSlug}>
+              {linkedPlans.map((plan) => (
+                <li key={plan.slug}>
                   <Link
-                    href={`/plans/${planSlug}`}
+                    href={`/plans/${plan.slug}`}
                     className="group flex flex-col gap-1 rounded-lg ring-1 ring-stone-200 bg-white px-4 py-3 hover:ring-stone-900 transition-colors"
                   >
                     <span className="text-sm font-semibold text-stone-900 group-hover:text-stone-600 transition-colors">
-                      {PLAN_TEMPLATES[planSlug].title}
+                      {plan.title}
                     </span>
                   </Link>
                 </li>
