@@ -22,14 +22,14 @@ const MAX_DISPLAYED_RESULTS = 30
 
 const TYPE_CHIPS: Array<{ id: SearchDocType | 'all'; label: string }> = [
   { id: 'all', label: 'All' },
-  { id: 'guide', label: SEARCH_TYPE_LABELS.guide + 's' },
-  { id: 'skill', label: SEARCH_TYPE_LABELS.skill + 's' },
-  { id: 'activity', label: SEARCH_TYPE_LABELS.activity + 's' },
-  { id: 'printable', label: SEARCH_TYPE_LABELS.printable + 's' },
+  { id: 'guide', label: 'Guides' },
+  { id: 'skill', label: 'Skills' },
+  { id: 'activity', label: 'Activities' },
+  { id: 'printable', label: 'Printables' },
   { id: 'gear', label: SEARCH_TYPE_LABELS.gear },
   { id: 'glossary', label: SEARCH_TYPE_LABELS.glossary },
   { id: 'compare', label: SEARCH_TYPE_LABELS.compare },
-  { id: 'plan', label: SEARCH_TYPE_LABELS.plan + 's' },
+  { id: 'plan', label: 'Plans' },
 ]
 
 const POPULAR_LINKS = [
