@@ -49,7 +49,7 @@ export default function Page() {
           },
           {
             q: 'What is the best family camping tent for beginners?',
-            a: 'The Coleman Sundome 6-Person is the most consistently recommended beginner family tent. It pitches in under 15 minutes, has a large door and window for ventilation, holds up in light rain, and costs under $120. The Coleman Skydome 6-Person is a step up with a nearly vertical wall that adds significant usable floor space.',
+            a: 'The Coleman Sundome is the most consistently recommended beginner family tent. Coleman sells it in 2/3/4/6-person sizes, so buy the size that matches your family - one size up from headcount. It pitches in under 15 minutes, has a large door and window for ventilation, holds up in light rain, and the 6-person size runs under $120. If you want to stand up inside, the CORE Instant Cabin Tent has near-vertical walls that add significant usable floor space.',
           },
           {
             q: 'Should a family camping tent have a divider?',
@@ -84,7 +84,7 @@ export default function Page() {
       >
         <QuickAnswer
           tldr="Buy one size up from your headcount. A family of 4 buys a 6-person tent. Under $150."
-          summary="Tent capacity ratings are optimistic - a &ldquo;4-person&rdquo; tent fits 4 adults with no gear, no movement, and no dignity. Buy one size up: family of 4 buys a 6-person, family of 5 buys an 8-person. For a first family tent, spend $80-150. The Coleman Skydome 6P is the best beginner pick in 2025 - near-vertical walls, fast setup, durable in light rain. If you want to stand up inside, upgrade to a cabin tent. Avoid ultralight backpacking tents for car camping with kids - they are miserable for the job."
+          summary="Tent capacity ratings are optimistic - a &ldquo;4-person&rdquo; tent fits 4 adults with no gear, no movement, and no dignity. Buy one size up: family of 4 buys a 6-person, family of 5 buys an 8-person. For a first family tent, spend $80-150. The Coleman Sundome is the most-recommended beginner pick - fast setup, proven weather resistance, and Coleman sells it in the exact size your family needs. If you want to stand up inside, upgrade to a cabin tent like the CORE Instant Cabin. Avoid ultralight backpacking tents for car camping with kids - they are miserable for the job."
         />
 
         <h2>The one rule that changes everything: buy one size up</h2>
@@ -137,36 +137,28 @@ export default function Page() {
 
         <h2>Top picks for beginner family campers</h2>
 
-        <h3>Best overall: Coleman Skydome 6-Person</h3>
+        <h3>Best overall: Coleman Sundome</h3>
         <p>
-          The Coleman Skydome is the most recommended family tent for beginners in 2025 and has been for several years. Near-vertical walls give 20% more headroom than the traditional Coleman Sundome. Single-pole setup takes 5 minutes with practice. Pre-attached poles mean less fumbling. The WeatherTec system handles light to moderate rain without leaking. At $110-130, it&apos;s the benchmark.
+          The Coleman Sundome has been the entry-level recommendation for 20+ years for a reason: it works. Classic dome shape, straightforward two-pole setup, large window, strong rain fly that handles light to moderate rain without leaking. Coleman sells it in 2/3/4/6-person sizes at the same basic quality, so buy the size that matches your family - one size up from headcount, per the rule above. At $80-150 depending on size, it&apos;s the tent most beginner families should start with.
         </p>
         <p>
-          <strong>Best for:</strong> First-time families wanting reliability, fast setup, and proven weather resistance without overthinking the purchase.
-        </p>
-
-        <h3>Best budget pick: Coleman Sundome 6-Person</h3>
-        <p>
-          The original Coleman Sundome has been the entry-level recommendation for 20+ years for a reason: it works. Classic dome shape, straightforward two-pole setup, large window, strong rain fly. At $80-100, it&apos;s the least expensive tent you can buy that will reliably get your family through a weekend without disaster.
-        </p>
-        <p>
-          <strong>Best for:</strong> Families who aren&apos;t sure camping will stick and don&apos;t want to invest heavily before the first few trips.
+          <strong>Best for:</strong> First-time families wanting a proven, no-surprises tent without overthinking the purchase.
         </p>
 
-        <h3>Best cabin tent: Core 9-Person Extended Dome</h3>
+        <h3>Best cabin tent: CORE 6-Person Instant Cabin</h3>
         <p>
-          The Core 9-Person Extended Dome hits the sweet spot between cabin tent comfort and dome tent weather resistance. The walls are significantly more vertical than a traditional dome, you can stand upright in the center, and it has a room divider for separating sleeping areas. The extended area at the front functions as a covered gear vestibule. At $160-200, it&apos;s a step up but holds up well for several years of regular use.
+          The CORE Instant Cabin trades dome-tent simplicity for cabin-tent comfort. Near-vertical walls mean you can stand upright in the center, and the footprint fits two queen air beds. Setup is genuinely fast for a cabin tent - a pop-up frame gets it standing in about 60 seconds despite the extra headroom. At around $200, it&apos;s a step up in price, but the standing-room difference matters for dressing kids and organizing gear in the morning.
         </p>
         <p>
-          <strong>Best for:</strong> Families of 4-6 who want to stand up inside and separate kids&apos; sleeping area from parents&apos;.
+          <strong>Best for:</strong> Families of 4-6 who want to stand up inside and don&apos;t mind paying more for it.
         </p>
 
-        <h3>Best for multi-room families: ALPS Mountaineering Lynx 4+4</h3>
+        <h3>Best build quality: ALPS Mountaineering Lynx</h3>
         <p>
-          The ALPS Lynx splits into two connected rooms with a gear vestibule between them. This works well for families with older kids who want separation or families camping alongside extended family. The ALPS build quality is noticeably higher than Coleman - poles are sturdier, fabric is thicker, zipper quality is better. It pitches in about 20 minutes. At $300+, it&apos;s a long-term investment rather than a starter tent.
+          The ALPS Lynx is noticeably sturdier than the Coleman options - thicker fabric, better pole quality, better zippers. It&apos;s a freestanding dome tent, not a cabin tent, so it pitches faster than the CORE but you won&apos;t be standing up inside. At around $190, it&apos;s the pick for families who know camping is a habit and want a tent that lasts 5-10 years rather than 2-3.
         </p>
         <p>
-          <strong>Best for:</strong> Families who camp regularly and want a tent that lasts 5-10 years.
+          <strong>Best for:</strong> Families who camp regularly and want the most durable build in this price range.
         </p>
 
         <h2>What to avoid</h2>
@@ -202,7 +194,7 @@ export default function Page() {
         <h3>What size tent do I need for a family of 4?</h3>
         <p>Buy a 6-person tent. Rated capacity is unrealistically tight - one size up gives real room for a family.</p>
         <h3>What is the best family camping tent for beginners?</h3>
-        <p>The Coleman Skydome 6-Person at $110-130. Near-vertical walls, 5-minute setup, and reliable rain protection.</p>
+        <p>The Coleman Sundome, in the 6-person size for a family of 4. Fast setup, proven weather resistance, and Coleman sells it in the exact size your family needs, from $80-150 depending on size.</p>
         <h3>Should a family camping tent have a divider?</h3>
         <p>Only if you have a teenager who wants privacy, or you want to separate sleeping areas. For families with young kids, a single open interior is simpler.</p>
         <h3>How much should I spend on a family tent?</h3>
