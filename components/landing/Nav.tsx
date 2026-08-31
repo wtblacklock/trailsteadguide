@@ -5,7 +5,6 @@ import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { useEffect, useRef, useState } from 'react'
 import SearchOverlay from '@/components/search/SearchOverlay'
-import MobileStickyStartPlanning from './MobileStickyStartPlanning'
 import { useBodyScrollLock } from '@/lib/hooks/useBodyScrollLock'
 
 const PRIMARY_LINKS = [
@@ -73,12 +72,11 @@ export default function Nav() {
 
   // Fragment, not a single <nav> wrapper: <nav> has backdrop-blur-sm, and
   // backdrop-filter establishes a new containing block for `position: fixed`
-  // descendants per spec. SearchOverlay and MobileStickyStartPlanning both
-  // rely on `fixed` anchoring to the real viewport (inset-0 / bottom-0) -
-  // nested inside <nav> they'd instead anchor to <nav>'s own ~64px-tall box,
-  // breaking SearchOverlay's full-screen dismiss backdrop and making
-  // MobileStickyStartPlanning render on top of the header instead of the
-  // bottom of the screen. Keeping both as siblings of <nav> avoids that.
+  // descendants per spec. SearchOverlay's `fixed inset-0` dismiss backdrop
+  // relies on anchoring to the real viewport - nested inside <nav> it was
+  // silently resolving against <nav>'s own ~64px-tall box instead, so
+  // clicking anywhere below the header to close search never worked.
+  // Keeping it as a sibling of <nav> avoids that.
   return (
     <>
       <nav ref={navRef} className="sticky top-0 z-50 bg-[#F5F3EE]/95 backdrop-blur-sm border-b border-stone-200/60">
@@ -312,7 +310,6 @@ export default function Nav() {
         </div>
       </nav>
       <SearchOverlay open={searchOpen} onClose={() => setSearchOpen(false)} />
-      <MobileStickyStartPlanning suppressed={mobileOpen || searchOpen} />
     </>
   )
 }
