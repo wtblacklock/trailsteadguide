@@ -161,7 +161,9 @@ export default function Page() {
           Never pack a wet tent for longer than the drive home - mold and mildew set in within a
           day and ruin the fabric permanently. Hang it in a garage or over a fence to dry completely
           before storing it. Full detail on drying, folding, and off-season storage is in{' '}
-          <Link href="/skills/shelter/tent-care-and-storage">tent care and storage</Link>.
+          <Link href="/skills/shelter/tent-care-and-storage">tent care and storage</Link>, and the
+          full site teardown order, fire, cooler, trash, then the tent, is in{' '}
+          <Link href="/guides/how-to-break-camp">how to break camp</Link>.
         </p>
 
         <h2>Already picking out a tent?</h2>

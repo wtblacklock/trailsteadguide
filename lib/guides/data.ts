@@ -278,7 +278,7 @@ export const GUIDES: Guide[] = [
     title: 'How to Set Up a Family Tent',
     description: 'Site selection, staking, the rainfly, and the mistakes first-timers make.',
     eyebrow: 'How-to',
-    relatedGuides: ['best-family-tent-for-beginners', 'best-tent-for-rainy-camping', 'family-camping-gear-list'],
+    relatedGuides: ['how-to-break-camp', 'best-family-tent-for-beginners', 'best-tent-for-rainy-camping'],
   },
   {
     slug: 'how-to-pack-a-cooler',
@@ -287,6 +287,14 @@ export const GUIDES: Guide[] = [
     description: 'Pre-chilling, block vs. cubed ice, the two-cooler split, and the packing order that keeps food cold for days.',
     eyebrow: 'How-to',
     relatedGuides: ['family-camping-gear-list', 'camping-meal-plan-family', 'easy-family-camping-meals'],
+  },
+  {
+    slug: 'how-to-break-camp',
+    category: 'basics',
+    title: 'How to Break Camp',
+    description: 'The teardown order that actually works: fire out cold, tent packed dry, trash gone, and the car loaded once instead of twice.',
+    eyebrow: 'How-to',
+    relatedGuides: ['how-to-set-up-a-tent', 'how-to-start-a-campfire', 'how-to-pack-a-cooler'],
   },
   {
     slug: 'best-tent-for-rainy-camping',
