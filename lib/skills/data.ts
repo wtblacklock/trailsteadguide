@@ -694,6 +694,10 @@ export const SKILLS: Skill[] = [
       'Pitching in the lowest, flattest spot. Lowest = wettest after a storm.',
       'Setting up directly under a "perfect" big tree. Branches break.',
     ],
+    videoEmbed: {
+      url: 'https://www.youtube-nocookie.com/embed/JprjFmg07f8',
+      title: 'REI Family Camping Tip: Choosing a Campsite',
+    },
   },
 
   // ── CAMP SETUP ────────────────────────────────────────────────────────────
@@ -1979,6 +1983,10 @@ export const SKILLS: Skill[] = [
     ],
     safetyNotes: ['Use a figure-eight on a bight rather than a single-strand figure-eight for any load-bearing application.'],
     relatedGear: [{ name: 'Paracord (50 ft)', productId: 'paracord-550-50ft' }],
+    videoEmbed: {
+      url: 'https://www.youtube-nocookie.com/embed/GFlwrvggas0',
+      title: 'How to Tie a Figure 8 Knot for Climbing - Everything You Need to Know || REI',
+    },
     illustration: {
       url: 'https://upload.wikimedia.org/wikipedia/commons/3/3a/Figure_eight_knot.svg',
       alt: 'Step-by-step diagram of a figure-eight knot showing the two crossing passes and the final seated form',
@@ -2065,6 +2073,10 @@ export const SKILLS: Skill[] = [
     relatedGear: [
       { name: 'GSI Outdoors Pinnacle Camper Cookset', productId: 'gsi-pinnacle-camper-cookset' },
     ],
+    videoEmbed: {
+      url: 'https://www.youtube-nocookie.com/embed/IYzD4OgH7oM',
+      title: 'REI Camp Recipes: One-Skillet Salmon & Veggies',
+    },
     relatedSkills: ['cooking/two-burner-stove-basics', 'cooking/cast-iron-cooking', 'cooking/camp-coffee'],
     relatedPrintableSlug: '3-day-camp-meal-planner',
   },
