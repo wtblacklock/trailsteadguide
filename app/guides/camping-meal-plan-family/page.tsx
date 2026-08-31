@@ -6,13 +6,13 @@ import RelatedGuides from '@/components/guide/RelatedGuides'
 import GuideGearShelf from '@/components/guide/GuideGearShelf'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
-import { pageMetadata, articleGraph, SITE_URL } from '@/lib/seo'
+import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
 
 const SLUG = '/guides/camping-meal-plan-family'
 const TITLE = 'Family Camping Meal Plan'
 const META_TITLE = 'Family Camping Meal Plan - 3-Day Template'
 const DESCRIPTION =
-  'A complete 3-day family camping meal plan: every meal from arrival through pack-out, what to prep at home, and a shopping list you can print and take to the store.'
+  'A complete 3-day family camping meal plan: every meal from arrival through pack-out, what to prep at home, and a printable shopping list to take to the store.'
 const HERO_IMAGE =
   'https://images.unsplash.com/UdnCiHZFMMw?w=1400&auto=format&fit=crop&q=80'
 
@@ -39,6 +39,26 @@ export default function Page() {
             { name: TITLE, url: `${SITE_URL}${SLUG}` },
           ],
         })}
+      />
+      <JsonLd
+        data={faqPageGraph([
+          {
+            q: 'How much food should I buy for a 3-day family camping trip?',
+            a: 'For a family of four over 3 nights, plan on roughly 2 lbs of protein per day split across meals, a dozen eggs, 2-3 boxes of shelf-stable milk, and 2-3 snacks per person per day. The full shopping list in this plan is sized exactly for that trip length and party size — scale it up or down proportionally for a different group.',
+          },
+          {
+            q: 'What camping meals can I prep at home before the trip?',
+            a: 'Pre-slice vegetables for foil packets, marinate chicken the night before in a sealable bag, and make overnight oats in the cooler the night before pack-out morning. Anything that needs a knife or a bowl is easier done at home than at a picnic table in the dark.',
+          },
+          {
+            q: 'How do I keep the cooler organized for a multi-day trip?',
+            a: 'Pack in reverse meal order — the last meal you’ll eat goes in first, at the bottom, and the first meal sits on top. Pre-freeze proteins to extend ice life, keep drinks in a separate small cooler so it isn’t opened as often, and drain melt water daily.',
+          },
+          {
+            q: 'What should we eat on pack-out morning?',
+            a: 'Keep it entirely no-cook: cereal with shelf-stable milk, granola bars and fruit, or overnight oats prepped the night before. Every minute spent cooking on pack-out morning is a minute not spent breaking down camp, which always takes longer than expected.',
+          },
+        ])}
       />
       <Breadcrumbs
         items={[
@@ -247,6 +267,24 @@ export default function Page() {
         <h2>Tips for the cooler</h2>
         <p>
           Pack in reverse meal order: last meal in first, first meal on top. Pre-freeze proteins to extend ice life. Keep drinks in a second small cooler. Drain melt water daily. See <Link href="/guides/how-to-pack-a-cooler">how to pack a cooler</Link> for the full breakdown.
+        </p>
+
+        <h2>Frequently asked</h2>
+        <h3>How much food should I buy for a 3-day family camping trip?</h3>
+        <p>
+          For a family of four over 3 nights: roughly 2 lbs of protein per day, a dozen eggs, 2-3 boxes of shelf-stable milk, and 2-3 snacks per person per day. The shopping list above is sized exactly for that trip length and party size.
+        </p>
+        <h3>What camping meals can I prep at home before the trip?</h3>
+        <p>
+          Pre-slice vegetables for foil packets, marinate chicken the night before, and make overnight oats in the cooler ahead of pack-out morning. Anything needing a knife or a bowl is easier done at home.
+        </p>
+        <h3>How do I keep the cooler organized for a multi-day trip?</h3>
+        <p>
+          Pack in reverse meal order — last meal in first, first meal on top. Pre-freeze proteins to extend ice life, keep drinks in a separate small cooler, and drain melt water daily.
+        </p>
+        <h3>What should we eat on pack-out morning?</h3>
+        <p>
+          Keep it entirely no-cook: cereal with shelf-stable milk, granola bars and fruit, or overnight oats prepped the night before. Every minute cooking is a minute not spent breaking down camp.
         </p>
       </GuidePage>
       <GuideGearShelf guideSlug="camping-meal-plan-family" />

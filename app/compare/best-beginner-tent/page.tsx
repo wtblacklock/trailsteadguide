@@ -4,7 +4,7 @@ import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import QuickAnswer from '@/components/guide/QuickAnswer'
 import { AFFILIATE_PRODUCTS } from '@/lib/affiliate-products'
 import { getProductUrl } from '@/lib/amazon'
-import { articleGraph, itemListGraph, pageMetadata, SITE_URL } from '@/lib/seo'
+import { articleGraph, itemListGraph, faqPageGraph, pageMetadata, SITE_URL } from '@/lib/seo'
 import type { AffiliateProduct } from '@/types'
 
 const SLUG = '/compare/best-beginner-tent'
@@ -114,6 +114,25 @@ const RELATED = [
   },
 ]
 
+const FAQS = [
+  {
+    q: 'Is the Coleman Sundome 4P good enough for a first trip?',
+    a: 'Yes — it\'s the safest first-tent pick precisely because it\'s the most proven. Best-selling, weatherproof, fits a queen air bed, and sets up in 10 minutes. Step up only if you specifically want standing room or expect rougher weather.',
+  },
+  {
+    q: 'Is it worth paying more for the ALPS Lynx over the Sundome?',
+    a: 'Only if pole quality and stronger weather resistance matter more than price to you. The ALPS uses aluminum poles and a stronger guy-line system — a real difference if your first trip is in shoulder-season wind, but not something a fair-weather beginner needs to pay extra for.',
+  },
+  {
+    q: 'Do I need a 6-person tent for a family of 4?',
+    a: 'Only if you want to stand up inside. Capacity ratings assume shoulder-to-shoulder sleeping with no gear, so a 4-person tent is genuinely tight for a family of 4. A 6-person cabin tent adds real floor space and standing height at a moderate price step-up.',
+  },
+  {
+    q: 'Can any of these three tents handle real rain?',
+    a: 'All three handle steady rain fine with their stock rainfly — none are backpacking-grade single-wall tents. For genuinely wet climates or multi-day rain, see the dedicated best tent for rainy camping guide for what to look for beyond these picks.',
+  },
+]
+
 export const metadata = pageMetadata({
   title: TITLE,
   description: DESCRIPTION,
@@ -150,6 +169,7 @@ export default function Page() {
           })),
         })}
       />
+      <JsonLd data={faqPageGraph(FAQS)} />
       <Breadcrumbs items={breadcrumbs} />
 
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
@@ -334,6 +354,23 @@ export default function Page() {
                 </p>
               </div>
             </a>
+          ))}
+        </div>
+      </section>
+
+      {/* ── FAQ ────────────────────────────────────────────────────────── */}
+      <section className="max-w-3xl mx-auto px-8 pb-16 border-t border-stone-200 pt-16">
+        <h2 className="font-serif text-3xl md:text-4xl font-semibold text-stone-950 tracking-tight leading-tight mb-10">
+          Frequently asked
+        </h2>
+        <div className="space-y-8">
+          {FAQS.map((f) => (
+            <div key={f.q}>
+              <h3 className="font-serif text-xl font-semibold text-stone-900 tracking-tight mb-2">
+                {f.q}
+              </h3>
+              <p className="text-stone-700 leading-relaxed text-lg">{f.a}</p>
+            </div>
           ))}
         </div>
       </section>
