@@ -217,6 +217,11 @@ export default function Page() {
       <p>
         If you want a stepping-stone, look for <strong>primitive sites inside developed campgrounds</strong> (often the back loop, walk-in tent sites, or “no hookups” section). Same self-reliance, but with a vault toilet 200 feet away if it all goes sideways.
       </p>
+      <p>
+        Dispersed camping is also the honest fallback on a fully-booked holiday weekend — see{' '}
+        <Link href="/guides/labor-day-weekend-camping">Labor Day weekend camping</Link> for the
+        full rundown of what still has openings when reservations are gone.
+      </p>
 
       <h2>Frequently asked</h2>
       <h3>Is dispersed camping really free?</h3>
