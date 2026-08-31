@@ -140,7 +140,7 @@ export const GUIDES: Guide[] = [
     title: 'Fall Camping for Beginners',
     description: 'Cold nights, condensation, early dark — fall done right.',
     eyebrow: 'Fall',
-    relatedGuides: ['spring-camping-for-beginners', 'camping-in-the-northeast-for-beginners', 'camping-in-the-appalachians-for-beginners'],
+    relatedGuides: ['labor-day-weekend-camping', 'spring-camping-for-beginners', 'camping-in-the-northeast-for-beginners'],
   },
   {
     slug: 'winter-camping-for-beginners',
@@ -364,7 +364,7 @@ export const GUIDES: Guide[] = [
     metaTitle: 'Dispersed Camping on BLM & NF Land',
     metaDescription:
       'Dispersed camping on BLM and National Forest land: where it’s legal, the rules that matter, fire restrictions, and when it’s the wrong call for a beginner.',
-    relatedGuides: ['camping-for-beginners', 'first-night-camping-guide', 'how-to-plan-a-camping-trip'],
+    relatedGuides: ['camping-for-beginners', 'labor-day-weekend-camping', 'how-to-plan-a-camping-trip'],
   },
   {
     slug: 'recreation-gov-reservation-strategy',
@@ -375,6 +375,17 @@ export const GUIDES: Guide[] = [
     metaTitle: 'Recreation.gov Reservation Strategy',
     metaDescription:
       'How recreation.gov actually works: the 6-month rolling window, the 7am ET drop, and what to do when nothing’s available — a real booking playbook for beginners.',
-    relatedGuides: ['how-to-plan-a-camping-trip', 'camping-for-beginners', 'best-state-parks-for-families'],
+    relatedGuides: ['labor-day-weekend-camping', 'how-to-plan-a-camping-trip', 'best-state-parks-for-families'],
+  },
+  {
+    slug: 'labor-day-weekend-camping',
+    category: 'scenario',
+    title: 'Labor Day Weekend Camping',
+    description: 'Why the popular spots filled up months ago, what still has openings, and packing for the summer-to-fall turn.',
+    eyebrow: 'Holiday weekend',
+    metaTitle: 'Labor Day Weekend Camping — What to Actually Expect',
+    metaDescription:
+      'Labor Day weekend camping: why the popular spots filled up months ago, what still has openings, holiday-weekend crowd etiquette, and packing for the summer-to-fall transition.',
+    relatedGuides: ['recreation-gov-reservation-strategy', 'dispersed-camping-on-blm-and-national-forest-land', 'fall-camping-for-beginners'],
   },
 ]

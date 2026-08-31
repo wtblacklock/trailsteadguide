@@ -221,7 +221,7 @@ export default function Page() {
 
       <h2>Recommended next step</h2>
       <p>
-        Booking a site is half the trip. The other half is the plan — what to bring, how to arrive, what the first night actually looks like. If you’re booking your very first family trip, take the <Link href="/quiz">5-second quiz</Link> for a custom plan, or jump to the <Link href="/plans/first-weekend-camp">first-weekend camp plan</Link> for a 2-night structured walkthrough. For the broader fundamentals, <Link href="/guides/how-to-plan-a-camping-trip">how to plan a camping trip</Link> covers the full sequence from picking a park to the morning-of checklist.
+        Booking a site is half the trip. The other half is the plan — what to bring, how to arrive, what the first night actually looks like. If you’re booking your very first family trip, take the <Link href="/quiz">5-second quiz</Link> for a custom plan, or jump to the <Link href="/plans/first-weekend-camp">first-weekend camp plan</Link> for a 2-night structured walkthrough. For the broader fundamentals, <Link href="/guides/how-to-plan-a-camping-trip">how to plan a camping trip</Link> covers the full sequence from picking a park to the morning-of checklist. Trying to book this late for a holiday weekend specifically? See <Link href="/guides/labor-day-weekend-camping">Labor Day weekend camping</Link> for what still has real openings.
       </p>
 
       <h2>Frequently asked</h2>
