@@ -2,7 +2,6 @@
 
 import { useEffect, useMemo, useRef, useState } from 'react'
 import Link from 'next/link'
-import { useRouter } from 'next/navigation'
 import { getSearchEngine, searchDocuments, type SearchEngine } from '@/lib/search/client'
 import type { SearchDocType, SearchDocument } from '@/lib/search/types'
 import { SEARCH_TYPE_LABELS } from '@/lib/search/types'
@@ -48,7 +47,6 @@ function getFocusableElements(container: HTMLElement): HTMLElement[] {
 }
 
 export default function SearchOverlay({ open, onClose }: Props) {
-  const router = useRouter()
   const inputRef = useRef<HTMLInputElement>(null)
   const dialogRef = useRef<HTMLDivElement>(null)
   const [status, setStatus] = useState<Status>('idle')
@@ -148,12 +146,14 @@ export default function SearchOverlay({ open, onClose }: Props) {
       const target = filteredResults[highlightedIndex]
       if (!target) return
       e.preventDefault()
-      if (target.type === 'gear') {
-        window.open(target.url, '_blank', 'noopener,noreferrer')
-      } else {
-        router.push(target.url)
-      }
-      onClose()
+      // Delegate to the result's own anchor rather than reimplementing
+      // navigation (e.g. via router.push): the rendered <Link>/<a> already
+      // handles gear's target="_blank" and, critically, in-page hash anchors
+      // (glossary entries link to `/glossary#term-id`) — router.push updates
+      // the URL but doesn't scroll to the fragment the way a real anchor
+      // click does, which left keyboard users stranded at the top of the
+      // page instead of at the highlighted entry.
+      document.getElementById(`search-option-${target.id}`)?.querySelector('a')?.click()
     }
   }
 

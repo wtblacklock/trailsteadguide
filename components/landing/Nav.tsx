@@ -32,6 +32,17 @@ export default function Nav() {
     setMobileOpen(false)
   }, [pathname])
 
+  // Close search on route change. Belt-and-suspenders alongside the
+  // onClose/onNavigate callbacks passed into SearchOverlay: those callbacks
+  // fire synchronously on click, but Next.js Link navigations run inside a
+  // transition, and empirically the resulting setState can lose the race
+  // against the route change committing — leaving the overlay stuck open on
+  // top of the newly-navigated page. Reacting to pathname directly guarantees
+  // the overlay closes whenever the route actually changes.
+  useEffect(() => {
+    setSearchOpen(false)
+  }, [pathname])
+
   // Close on Escape
   useEffect(() => {
     function onKey(e: KeyboardEvent) {
