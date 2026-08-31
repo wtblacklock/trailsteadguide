@@ -298,6 +298,20 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     slot: 'KID_GEAR',
   },
   {
+    id: 'graco-pack-n-play-on-the-go',
+    name: 'Graco Pack \'n Play On The Go Playard',
+    description:
+      'A firm, flat, portable crib that folds down small enough for the trunk. The safer alternative to a shared adult air mattress for a toddler sleeping in a tent.',
+    amazonAsin: 'B09MWHG3ZT',
+    affiliateUrl: 'https://www.amazon.com/dp/B09MWHG3ZT?tag=trailsteadgui-20',
+    imageUrl: 'https://m.media-amazon.com/images/I/81sSJhCojNL._SX679_.jpg',
+    category: 'essential',
+    templateSlugs: [],
+    priceRange: '~$80',
+    tags: ['with-kids', 'family', 'comfort'],
+    slot: 'KID_GEAR',
+  },
+  {
     id: 'carpathen-smores-sticks',
     name: 'CARPATHEN Smores Sticks (8-Pack)',
     description:

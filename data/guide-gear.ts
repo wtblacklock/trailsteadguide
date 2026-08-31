@@ -368,10 +368,12 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
   ],
   'camping-with-toddlers': [
     { slot: 'KID_GEAR', productId: 'kidco-gopod' },
+    { slot: 'KID_GEAR', productId: 'graco-pack-n-play-on-the-go' },
     { slot: 'SLEEP_BAG', productId: 'coleman-brazos-bag' },
     { slot: 'SLEEP_BAG', productId: 'vumos-bag-liner' },
     { slot: 'SAFETY', productId: 'aveeno-kids-sunscreen-lotion' },
     { slot: 'SAFETY', productId: 'thriad-first-aid-430' },
+    { slot: 'TRASH', productId: 'fwc-trash-can-wakeman' },
   ],
   'car-camping-beginner-guide': [
     { slot: 'TENT', productId: 'coleman-sundome-4p' },
