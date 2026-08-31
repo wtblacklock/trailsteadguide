@@ -22,7 +22,7 @@ import PrintTrigger from '@/components/printables/PrintTrigger'
 // Slug → artwork component. Each component renders its full-page print
 // content; the print page wraps it with the shared header / footer chrome
 // and the @media print rules that hide the site nav and footer.
-const ARTWORK_RENDERERS: Record<string, React.ComponentType> = {
+export const ARTWORK_RENDERERS: Record<string, React.ComponentType> = {
   'northern-hemisphere-constellation-wheel': ConstellationWheel,
   'camp-cooking-conversion-card': CookingConversionCard,
   'backyard-test-checklist': BackyardTestChecklist,
