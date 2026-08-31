@@ -131,12 +131,12 @@ export default function CookingConversionCard() {
               <tr><td>Cubed potatoes</td><td>20 min</td><td>30 min</td></tr>
               <tr><td>Sliced onions / peppers</td><td>10 min</td><td>15 min</td></tr>
               <tr><td>Salmon fillet (1 in)</td><td>10 min</td><td>14 min</td></tr>
-              <tr><td>Chicken thigh, boneless</td><td>15 min</td><td>20 min</td></tr>
+              <tr><td>Chicken thigh, boneless</td><td>30 min</td><td>35–40 min</td></tr>
               <tr><td>Sausage, pre-cooked</td><td>8 min</td><td>10 min</td></tr>
               <tr><td>Banana boats</td><td>5 min</td><td>7 min</td></tr>
             </tbody>
           </table>
-          <p className="note">Flip halfway. Heavy-duty foil only; double-wrap for coals.</p>
+          <p className="note">Flip halfway. Heavy-duty foil only; double-wrap for coals. Chicken: cook to 165°F / juices run clear.</p>
         </section>
 
         <section className="panel">
