@@ -218,7 +218,7 @@ export default function Page() {
 
       <h2>Where this fits in the plan</h2>
       <p>
-        For a first kid trip, the right pacing is short and contained — start with a <Link href="/plans/first-night-camp">First Night Camp</Link> within an hour of home, then graduate to an <Link href="/plans/easy-family-basecamp">Easy Family Basecamp</Link> once everyone has slept in a tent at least once. Pair this guide with the <Link href="/guides/first-camping-trip-checklist">first camping trip checklist</Link> so packing is one less thing to figure out the morning of.
+        For a first kid trip, the right pacing is short and contained — start with a <Link href="/plans/first-night-camp">First Night Camp</Link> within an hour of home, then graduate to an <Link href="/plans/easy-family-basecamp">Easy Family Basecamp</Link> once everyone has slept in a tent at least once. Pair this guide with the <Link href="/guides/first-camping-trip-checklist">first camping trip checklist</Link> so packing is one less thing to figure out the morning of. If your youngest is a toddler, see <Link href="/guides/camping-with-toddlers">camping with toddlers</Link>; if your trip lands in peak summer heat, see <Link href="/guides/summer-camping-with-kids">summer camping with kids</Link>.
       </p>
 
       <h2>Frequently asked</h2>

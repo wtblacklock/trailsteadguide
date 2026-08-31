@@ -202,6 +202,9 @@ export default function Page() {
       <p>
         Summer is the easiest season to learn on, but the hottest weekends still reward structure. Match the trip to an <Link href="/plans/easy-family-basecamp">Easy Family Basecamp</Link> at a shaded, water-access site — or <Link href="/quiz">take the 5-second quiz</Link> and we&apos;ll match a starter plan to your dates and party size.
       </p>
+      <p>
+        Camping with young kids specifically? <Link href="/guides/summer-camping-with-kids">Summer camping with kids</Link> covers the heat and sun layer that&apos;s specific to that age group — signs of overheating kids won&apos;t report themselves, sunscreen logistics, and water play as the daily centerpiece.
+      </p>
 
       <h2>A starter setup that actually works</h2>
       <p>

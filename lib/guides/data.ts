@@ -60,7 +60,7 @@ export const GUIDES: Guide[] = [
     title: 'Camping With Kids for the First Time',
     description: 'What actually keeps kids happy at camp.',
     eyebrow: 'With kids',
-    relatedGuides: ['camping-with-toddlers', 'first-night-camping-guide', 'first-camping-trip-checklist'],
+    relatedGuides: ['camping-with-toddlers', 'summer-camping-with-kids', 'first-camping-trip-checklist'],
   },
   {
     slug: 'camping-with-toddlers',
@@ -69,6 +69,14 @@ export const GUIDES: Guide[] = [
     description: 'Protecting the nap, physical containment instead of verbal rules, and a sleep setup that actually works.',
     eyebrow: 'With kids',
     relatedGuides: ['camping-with-kids-first-time', 'backyard-camping-with-kids', 'best-camping-sleeping-bag-for-kids'],
+  },
+  {
+    slug: 'summer-camping-with-kids',
+    category: 'scenario',
+    title: 'Summer Camping With Kids',
+    description: 'Heat signs kids won’t tell you about, sunscreen logistics, and water play as the daily centerpiece.',
+    eyebrow: 'With kids',
+    relatedGuides: ['camping-in-a-heatwave', 'summer-camping-for-beginners', 'camping-with-kids-first-time'],
   },
   {
     slug: 'first-night-camping-guide',
@@ -100,7 +108,7 @@ export const GUIDES: Guide[] = [
     title: 'Camping in a Heatwave',
     description: 'Shade siting, hydration, electrolytes, and the line where you reschedule.',
     eyebrow: 'Heatwave',
-    relatedGuides: ['summer-camping-for-beginners', 'camping-in-texas-for-beginners', 'camping-in-the-desert-southwest-for-beginners'],
+    relatedGuides: ['summer-camping-with-kids', 'summer-camping-for-beginners', 'camping-in-texas-for-beginners'],
   },
   {
     slug: 'camping-when-the-weather-turns',
@@ -124,7 +132,7 @@ export const GUIDES: Guide[] = [
     title: 'Summer Camping for Beginners',
     description: 'What to expect, what to bring, and how to avoid common mistakes.',
     eyebrow: 'Summer',
-    relatedGuides: ['camping-in-a-heatwave', 'camping-in-florida-for-beginners', 'camping-in-texas-for-beginners'],
+    relatedGuides: ['summer-camping-with-kids', 'camping-in-a-heatwave', 'camping-in-florida-for-beginners'],
   },
   {
     slug: 'fall-camping-for-beginners',
