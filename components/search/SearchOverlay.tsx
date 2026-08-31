@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { getSearchEngine, searchDocuments, type SearchEngine } from '@/lib/search/client'
 import type { SearchDocType, SearchDocument } from '@/lib/search/types'
 import { SEARCH_TYPE_LABELS } from '@/lib/search/types'
+import { useBodyScrollLock } from '@/lib/hooks/useBodyScrollLock'
 import SearchResults from './SearchResults'
 
 type Props = {
@@ -89,14 +90,7 @@ export default function SearchOverlay({ open, onClose }: Props) {
   // underneath scrolls (and can rubber-band sideways on mobile) when the
   // user drags inside the overlay — same fix already applied to the
   // full-screen mobile menu in Nav.tsx.
-  useEffect(() => {
-    if (!open) return
-    const previousOverflow = document.body.style.overflow
-    document.body.style.overflow = 'hidden'
-    return () => {
-      document.body.style.overflow = previousOverflow
-    }
-  }, [open])
+  useBodyScrollLock(open)
 
   const allResults = useMemo<SearchDocument[]>(() => {
     if (!engine) return []

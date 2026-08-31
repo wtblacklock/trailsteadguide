@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useId, useState } from 'react'
 import Image from 'next/image'
 import type { SkillIllustration } from '@/lib/skills/types'
+import { useBodyScrollLock } from '@/lib/hooks/useBodyScrollLock'
 
 type Props = {
   illustration: SkillIllustration
@@ -29,13 +30,12 @@ export default function IllustrationLightbox({ illustration }: Props) {
       if (e.key === 'Escape') close()
     }
     document.addEventListener('keydown', onKey)
-    const previousOverflow = document.body.style.overflow
-    document.body.style.overflow = 'hidden'
     return () => {
       document.removeEventListener('keydown', onKey)
-      document.body.style.overflow = previousOverflow
     }
   }, [open, close])
+
+  useBodyScrollLock(open)
 
   const isSvg = illustration.url.endsWith('.svg')
 

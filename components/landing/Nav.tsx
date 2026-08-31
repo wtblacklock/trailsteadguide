@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { useEffect, useRef, useState } from 'react'
 import SearchOverlay from '@/components/search/SearchOverlay'
+import { useBodyScrollLock } from '@/lib/hooks/useBodyScrollLock'
 
 const PRIMARY_LINKS = [
   { href: '/guides', label: 'Guides' },
@@ -67,14 +68,7 @@ export default function Nav() {
 
   // Body scroll lock while the full-screen menu is open. Without this the page
   // underneath scrolls when the user drags inside the overlay.
-  useEffect(() => {
-    if (!mobileOpen) return
-    const previousOverflow = document.body.style.overflow
-    document.body.style.overflow = 'hidden'
-    return () => {
-      document.body.style.overflow = previousOverflow
-    }
-  }, [mobileOpen])
+  useBodyScrollLock(mobileOpen)
 
   return (
     <nav ref={navRef} className="sticky top-0 z-50 bg-[#F5F3EE]/95 backdrop-blur-sm border-b border-stone-200/60">
