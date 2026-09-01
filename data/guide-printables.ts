@@ -1,4 +1,3 @@
-// data/guide-printables.ts
 /**
  * Per-guide printable curation - which free printable(s) get surfaced on
  * each `/guides/<slug>/` page. Mirrors the `data/guide-gear.ts` pattern:

@@ -39,7 +39,6 @@ git checkout -b feat/guide-printables-cross-linking
 - [ ] **Step 1: Create the curated data file**
 
 ```ts
-// data/guide-printables.ts
 /**
  * Per-guide printable curation - which free printable(s) get surfaced on
  * each `/guides/<slug>/` page. Mirrors the `data/guide-gear.ts` pattern:
@@ -116,7 +115,6 @@ git commit -m "feat(printables): add curated guide-printable mapping data"
 - [ ] **Step 1: Write the failing test**
 
 ```ts
-// lib/printables/__tests__/guide-printables.test.ts
 import { describe, expect, it } from 'vitest'
 import { PRINTABLES } from '@/lib/printables'
 import { GUIDES } from '@/lib/guides'
@@ -184,7 +182,6 @@ Expected: FAIL — `../guide-printables` module not found.
 - [ ] **Step 3: Write the resolver module**
 
 ```ts
-// lib/printables/guide-printables.ts
 import { GUIDE_PRINTABLES } from '@/data/guide-printables'
 import { getPrintableBySlug } from './data'
 import type { Printable } from './types'
@@ -247,7 +244,6 @@ Mirrors `components/plan/PrintablesForPlanBlock.tsx` (same card-grid visual patt
 - [ ] **Step 1: Write the component**
 
 ```tsx
-// components/guide/GuidePrintablesBlock.tsx
 import Link from 'next/link'
 import { getPrintablesForGuide } from '@/lib/printables'
 
