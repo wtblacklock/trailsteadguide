@@ -4,6 +4,7 @@ import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
 import GuideGearShelf from '@/components/guide/GuideGearShelf'
+import GuidePrintablesBlock from '@/components/guide/GuidePrintablesBlock'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
@@ -191,6 +192,7 @@ export default function Page() {
           sticks cover the same hands-on ground without any special equipment.
         </p>
       </GuidePage>
+      <GuidePrintablesBlock guideSlug="campfire-recipes-for-kids" />
       <GuideGearShelf guideSlug="campfire-recipes-for-kids" heading="Gear that makes campfire cooking kid-led" />
       <GuideArticleCTA />
       <RelatedGuides currentSlug="campfire-recipes-for-kids" />

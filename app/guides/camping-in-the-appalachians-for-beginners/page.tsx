@@ -5,6 +5,7 @@ import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
 import GuideGearShelf from '@/components/guide/GuideGearShelf'
+import GuidePrintablesBlock from '@/components/guide/GuidePrintablesBlock'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
@@ -319,6 +320,7 @@ export default function Page() {
         A state park within 90 minutes of home, in spring or late September. NC&apos;s Stone Mountain, Mount Mitchell, Hanging Rock; TN&apos;s Fall Creek Falls; VA&apos;s Hungry Mother. Save Cades Cove and Big Meadows for trip three.
       </p>
     </GuidePage>
+    <GuidePrintablesBlock guideSlug="camping-in-the-appalachians-for-beginners" />
     <GuideGearShelf guideSlug="camping-in-the-appalachians-for-beginners" />
     <GuideArticleCTA />
     <RelatedGuides currentSlug="camping-in-the-appalachians-for-beginners" />

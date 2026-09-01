@@ -4,6 +4,7 @@ import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
 import GuideGearShelf from '@/components/guide/GuideGearShelf'
+import GuidePrintablesBlock from '@/components/guide/GuidePrintablesBlock'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
@@ -189,6 +190,7 @@ export default function Page() {
           door.
         </p>
       </GuidePage>
+      <GuidePrintablesBlock guideSlug="best-tent-for-hot-weather" />
       <GuideGearShelf guideSlug="best-tent-for-hot-weather" heading="Gear that keeps the heat out" />
       <GuideArticleCTA />
       <RelatedGuides currentSlug="best-tent-for-hot-weather" />

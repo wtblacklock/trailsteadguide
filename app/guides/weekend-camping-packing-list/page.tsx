@@ -4,6 +4,7 @@ import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
 import GuideGearShelf from '@/components/guide/GuideGearShelf'
+import GuidePrintablesBlock from '@/components/guide/GuidePrintablesBlock'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
@@ -258,6 +259,7 @@ export default function Page() {
         Pre-chill the cooler with a bag of ice the night before, then drain it. Pack with block ice on the bottom, then frozen meats, then cold drinks on top. Keep the cooler in the shade. A quality cooler like the Coleman Steel-Belted holds ice for 3+ days in summer.
       </p>
     </GuidePage>
+    <GuidePrintablesBlock guideSlug="weekend-camping-packing-list" />
     <GuideGearShelf guideSlug="weekend-camping-packing-list" />
     <GuideArticleCTA />
     <RelatedGuides currentSlug="weekend-camping-packing-list" />

@@ -4,6 +4,7 @@ import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
 import GuideGearShelf from '@/components/guide/GuideGearShelf'
+import GuidePrintablesBlock from '@/components/guide/GuidePrintablesBlock'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
@@ -291,6 +292,7 @@ export default function Page() {
           Gear investment of $300-600 for a family of four, then $25-45 per night for the site. Food costs no more than a trip at home. After year one, it&apos;s one of the cheapest family vacations.
         </p>
       </GuidePage>
+      <GuidePrintablesBlock guideSlug="family-camping-for-beginners" />
       <GuideGearShelf guideSlug="family-camping-for-beginners" />
       <GuideArticleCTA />
       <RelatedGuides currentSlug="family-camping-for-beginners" />

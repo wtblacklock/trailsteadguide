@@ -5,6 +5,7 @@ import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
 import GuideGearShelf from '@/components/guide/GuideGearShelf'
+import GuidePrintablesBlock from '@/components/guide/GuidePrintablesBlock'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
@@ -202,6 +203,7 @@ export default function Page() {
         <h3>Are cabin tents or dome tents better for families?</h3>
         <p>Cabin tents for comfort - you can stand upright. Dome tents for fast setup and wind resistance. For car camping, cabin tents are the better daily-use choice.</p>
       </GuidePage>
+      <GuidePrintablesBlock guideSlug="best-family-tent-for-beginners" />
       <GuideGearShelf guideSlug="best-family-tent-for-beginners" />
       <GuideArticleCTA />
       <RelatedGuides currentSlug="best-family-tent-for-beginners" />

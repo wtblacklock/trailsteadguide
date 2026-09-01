@@ -4,6 +4,7 @@ import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
 import GuideGearShelf from '@/components/guide/GuideGearShelf'
+import GuidePrintablesBlock from '@/components/guide/GuidePrintablesBlock'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
@@ -184,6 +185,7 @@ export default function Page() {
           land, check current fire restrictions before assuming an open fire is allowed at all.
         </p>
       </GuidePage>
+      <GuidePrintablesBlock guideSlug="how-to-start-a-campfire" />
       <GuideGearShelf guideSlug="how-to-start-a-campfire" heading="Backup fire-starting gear worth carrying" />
       <GuideArticleCTA />
       <RelatedGuides currentSlug="how-to-start-a-campfire" />

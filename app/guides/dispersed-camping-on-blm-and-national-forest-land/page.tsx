@@ -4,6 +4,7 @@ import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
 import GuideGearShelf from '@/components/guide/GuideGearShelf'
+import GuidePrintablesBlock from '@/components/guide/GuidePrintablesBlock'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
@@ -245,6 +246,7 @@ export default function Page() {
         Pack out all trash, including food scraps. For human waste, dig a 6-8 inch cathole at least 200 feet from water, trail, and camp. Pack out used toilet paper in a sealed bag - it doesn’t decompose fast enough. In high-use desert areas, a wag bag is required.
       </p>
     </GuidePage>
+    <GuidePrintablesBlock guideSlug="dispersed-camping-on-blm-and-national-forest-land" />
     <GuideGearShelf guideSlug="dispersed-camping-on-blm-and-national-forest-land" />
     <GuideArticleCTA />
     <RelatedGuides currentSlug="dispersed-camping-on-blm-and-national-forest-land" />

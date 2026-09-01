@@ -5,6 +5,7 @@ import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
 import GuideGearShelf from '@/components/guide/GuideGearShelf'
+import GuidePrintablesBlock from '@/components/guide/GuidePrintablesBlock'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
@@ -331,6 +332,7 @@ export default function Page() {
         A developed state-park or national-park campground within 90 minutes of a major airport, October-April. Lost Dutchman (AZ), Snow Canyon (UT), Sand Hollow (UT), Joshua Tree NP, Big Bend SP. Save Death Valley summer and slot-canyon trips for after a few weekends.
       </p>
     </GuidePage>
+    <GuidePrintablesBlock guideSlug="camping-in-the-desert-southwest-for-beginners" />
     <GuideGearShelf guideSlug="camping-in-the-desert-southwest-for-beginners" />
     <GuideArticleCTA />
     <RelatedGuides currentSlug="camping-in-the-desert-southwest-for-beginners" />

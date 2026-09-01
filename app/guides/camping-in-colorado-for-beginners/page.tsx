@@ -5,6 +5,7 @@ import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
 import GuideGearShelf from '@/components/guide/GuideGearShelf'
+import GuidePrintablesBlock from '@/components/guide/GuidePrintablesBlock'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
@@ -303,6 +304,7 @@ export default function Page() {
         A Front Range or lower-elevation state park within 90 minutes - Cheyenne Mountain, Chatfield, Cherry Creek, Eleven Mile. Below 8,000 ft skips the altitude curve. Save RMNP and the high San Juans for trip three.
       </p>
     </GuidePage>
+    <GuidePrintablesBlock guideSlug="camping-in-colorado-for-beginners" />
     <GuideGearShelf guideSlug="camping-in-colorado-for-beginners" />
     <GuideArticleCTA />
     <RelatedGuides currentSlug="camping-in-colorado-for-beginners" />

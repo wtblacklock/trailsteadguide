@@ -4,6 +4,7 @@ import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
 import GuideGearShelf from '@/components/guide/GuideGearShelf'
+import GuidePrintablesBlock from '@/components/guide/GuidePrintablesBlock'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
@@ -257,6 +258,7 @@ export default function Page() {
         <h3>What is the difference between a state park and national park for camping?</h3>
         <p>State parks: less crowded, easier to book, $25-40/night, consistent flush toilets. National parks: more famous scenery, 6+ month booking windows for popular sites, $30-40/night plus entrance fees. Start with state parks.</p>
       </GuidePage>
+      <GuidePrintablesBlock guideSlug="best-state-parks-for-families" />
       <GuideGearShelf guideSlug="best-state-parks-for-families" />
       <GuideArticleCTA />
       <RelatedGuides currentSlug="best-state-parks-for-families" />

@@ -4,6 +4,7 @@ import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
 import GuideGearShelf from '@/components/guide/GuideGearShelf'
+import GuidePrintablesBlock from '@/components/guide/GuidePrintablesBlock'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
@@ -199,6 +200,7 @@ export default function Page() {
         <h3>Can you rent camping gear for a family?</h3>
         <p>Yes. REI rents tents, bags, pads, and stoves at most locations. Renting makes sense before you know camping is a regular habit.</p>
       </GuidePage>
+      <GuidePrintablesBlock guideSlug="family-camping-gear-list" />
       <GuideGearShelf guideSlug="family-camping-gear-list" />
       <GuideArticleCTA />
       <RelatedGuides currentSlug="family-camping-gear-list" />

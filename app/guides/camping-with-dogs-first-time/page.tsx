@@ -5,6 +5,7 @@ import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
 import GuideGearShelf from '@/components/guide/GuideGearShelf'
+import GuidePrintablesBlock from '@/components/guide/GuidePrintablesBlock'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
@@ -330,6 +331,7 @@ export default function Page() {
           One night, close to home. Anything new takes more out of a dog than you expect.
         </p>
       </GuidePage>
+      <GuidePrintablesBlock guideSlug="camping-with-dogs-first-time" />
       <GuideGearShelf guideSlug="camping-with-dogs-first-time" />
       <GuideArticleCTA />
       <RelatedGuides currentSlug="camping-with-dogs-first-time" />
