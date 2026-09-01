@@ -12,6 +12,8 @@ import { PRINTABLES, getPrintableBySlug } from '@/lib/printables'
 import { getSkillsLinkedToPrintable } from '@/lib/skills/helpers'
 import { getPlansLinkedToPrintable } from '@/lib/printables/plan-printables'
 import { getPlanTemplate } from '@/lib/plan-templates'
+import { getGuidesLinkedToPrintable } from '@/lib/printables/guide-printables'
+import { getGuideBySlug } from '@/lib/guides'
 
 export function generateStaticParams() {
   return PRINTABLES.map((p) => ({ slug: p.slug }))
@@ -49,6 +51,9 @@ export default async function PrintablePage({
   const linkedPlans = getPlansLinkedToPrintable(printable.slug)
     .map((slug) => getPlanTemplate(slug))
     .filter((p): p is NonNullable<ReturnType<typeof getPlanTemplate>> => p !== null)
+  const linkedGuides = getGuidesLinkedToPrintable(printable.slug)
+    .map((slug) => getGuideBySlug(slug))
+    .filter((g): g is NonNullable<ReturnType<typeof getGuideBySlug>> => g !== null)
 
   return (
     <main>
@@ -216,6 +221,33 @@ export default async function PrintablePage({
                   >
                     <span className="text-sm font-semibold text-stone-900 group-hover:text-stone-600 transition-colors">
                       {plan.title}
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      )}
+
+      {linkedGuides.length > 0 && (
+        <section className="max-w-page mx-auto px-8 pb-16">
+          <div className="max-w-3xl">
+            <p className="text-xs font-semibold tracking-[0.18em] uppercase text-stone-500 mb-3">
+              Guides that use this printable
+            </p>
+            <h2 className="font-serif text-2xl md:text-3xl font-semibold text-stone-950 tracking-tight mb-6">
+              Read the guide, then print the card.
+            </h2>
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {linkedGuides.map((guide) => (
+                <li key={guide.slug}>
+                  <Link
+                    href={`/guides/${guide.slug}`}
+                    className="group flex flex-col gap-1 rounded-lg ring-1 ring-stone-200 bg-white px-4 py-3 hover:ring-stone-900 transition-colors"
+                  >
+                    <span className="text-sm font-semibold text-stone-900 group-hover:text-stone-600 transition-colors">
+                      {guide.title}
                     </span>
                   </Link>
                 </li>
