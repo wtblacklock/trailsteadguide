@@ -89,4 +89,10 @@ export const COMPARE_PAGES: ComparePageEntry[] = [
     excerpt:
       'Air mattress vs cot-airbed combo vs sleeping pad compared for car campers: comfort, setup, packed size, durability, and price. Pick the right sleep system.',
   },
+  {
+    slug: 'lantern-vs-headlamp-vs-flashlight',
+    title: 'Camping Lantern vs Headlamp vs Flashlight: What You Need',
+    excerpt:
+      'Camping lantern vs headlamp vs flashlight compared: light pattern, hands-free use, and the real job each one does. Which to buy first for a first family trip.',
+  },
 ]

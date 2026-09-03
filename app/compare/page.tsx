@@ -83,6 +83,12 @@ const PRODUCT_COMPARES: CompareCard[] = [
     title: 'Sleeping bag setup vs cot + airbed combo',
     blurb: 'Floor sleep system versus an off-the-ground combo. Comfort, weight, packing, and which one survives kids.',
   },
+  {
+    href: '/compare/lantern-vs-headlamp-vs-flashlight',
+    eyebrow: 'Gear',
+    title: 'Lantern vs headlamp vs flashlight',
+    blurb: 'Three different lighting jobs, not three tiers of the same one. Which to buy first, and why most families end up with all three.',
+  },
 ]
 
 const PLAN_COMPARES: CompareCard[] = [

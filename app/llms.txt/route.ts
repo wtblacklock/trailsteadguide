@@ -14,6 +14,7 @@
  */
 
 import { GUIDES, GUIDE_CATEGORIES } from '@/lib/guides'
+import { COMPARE_PAGES } from '@/lib/compare'
 import { PLAN_TEMPLATES } from '@/lib/plan-templates'
 import { PLAN_CONTENT } from '@/lib/plan-content'
 import { SKILLS } from '@/lib/skills/data'
@@ -81,10 +82,6 @@ Every guide, plan, skill, and activity is also available as Markdown at the same
 const FOOTER = `## Gear & tools
 
 - [Camping Gear Guide](${SITE_URL}/gear): Curated gear bundles tied to each camping plan - no 100-option lists.
-- [Coleman Sundome 3P vs 4P vs 6P](${SITE_URL}/compare/coleman-sundome-3p-vs-4p-vs-6p): Side-by-side comparison of the three Sundome tent sizes - floor size, standing height, capacity, and price - to pick the right one.
-- [Camp Chef Everest vs Coleman 1-Burner Stove](${SITE_URL}/compare/camp-chef-everest-vs-coleman-classic-1-burner): 2-burner vs 1-burner camp stove comparison - BTU output, wind resistance, ignition, and price - to match the stove to your cooking style.
-- [Coleman Rolling Cooler vs Steel-Belted](${SITE_URL}/compare/rolling-cooler-vs-steel-belted-cooler): Rolling vs classic Coleman cooler comparison - ice retention, capacity, portability, and price - to pick the right cooler for your trip length.
-- [Air Mattress vs Cot Combo vs Sleeping Pad](${SITE_URL}/compare/sleeping-bag-vs-cot-airbed-combo): Three sleep systems compared for car campers - comfort, setup, packed size, and price - to pick what to actually sleep on.
 - [Camping Checklist Generator](${SITE_URL}/tools/camping-checklist-generator): Generate a packing checklist tuned to family size, kid ages, and trip length.
 - [Camping Trip Planner](${SITE_URL}/tools/camping-trip-planner): Turn a vague weekend idea into a real plan with meals and a schedule.
 
@@ -137,6 +134,13 @@ function buildGuideSection(): string {
   return `## Guides (${GUIDES.length} articles)\n\n${lines.join('\n')}\n`
 }
 
+function buildCompareSection(): string {
+  const lines = COMPARE_PAGES.map(
+    (c) => `- [${c.title}](${SITE_URL}/compare/${c.slug}): ${c.excerpt}`,
+  )
+  return `## Comparisons (${COMPARE_PAGES.length} head-to-head guides)\n\n${lines.join('\n')}\n`
+}
+
 function buildSkillCategorySection(): string {
   const lines = SKILL_CATEGORIES.map((c) => {
     const count = SKILLS.filter((s) => s.category === c.id).length
@@ -175,6 +179,7 @@ const BODY = [
   buildPlanSection(),
   buildTripPackSection(),
   buildGuideSection(),
+  buildCompareSection(),
   buildSkillCategorySection(),
   buildSkillSection(),
   buildActivitySection(),
