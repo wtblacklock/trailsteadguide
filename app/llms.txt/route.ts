@@ -20,6 +20,7 @@ import { PLAN_CONTENT } from '@/lib/plan-content'
 import { SKILLS } from '@/lib/skills/data'
 import { SKILL_CATEGORIES, getCategoryById } from '@/lib/skills/categories'
 import { ACTIVITIES } from '@/lib/activities/data'
+import { ACTIVITY_LANDING_PAGES } from '@/lib/activities/landing-pages'
 import { PRINTABLES } from '@/lib/printables'
 import {
   AUTHOR_BIO,
@@ -94,12 +95,36 @@ const FOOTER = `## Gear & tools
 
 function buildHubSection(): string {
   const lines = [
+    `- [Trailstead Guide home](${SITE_URL}/): The six-question planner and the entry point to every plan, guide, skill, and activity.`,
     `- [Guides hub](${SITE_URL}/guides): All ${GUIDES.length} long-form camping guides, organized into Camping Basics, Scenarios, Seasonal, and Location.`,
     `- [Plans hub](${SITE_URL}/plans): The four progressive camping plans, from a backyard test night to a multi-night family basecamp.`,
     `- [Skills hub](${SITE_URL}/skills): All ${SKILLS.length} camp skills across ${SKILL_CATEGORIES.length} categories - knots, fire, cooking, hiking, navigation, fishing, shelter, camp setup, safety, stargazing, knife skills, and woodcarving.`,
     `- [Activities hub](${SITE_URL}/activities): All ${ACTIVITIES.length} kid-friendly camp activities - icebreakers, campfire games, movement, exploration, team, creative, night, and wind-down.`,
+    `- [Comparisons hub](${SITE_URL}/compare): All ${COMPARE_PAGES.length} head-to-head comparisons - gear matchups and plan-vs-plan decisions.`,
+    `- [Gear hub](${SITE_URL}/gear): Curated gear bundles tied to each camping plan.`,
+    `- [Tools hub](${SITE_URL}/tools): Free planning tools - the trip planner and the packing checklist generator.`,
+    `- [Printables hub](${SITE_URL}/printables): Free print-ready reference cards for camp.`,
+    `- [Trip Packs hub](${SITE_URL}/trip-pack): The paid print-ready trip packs, one per plan.`,
+    `- [Research hub](${SITE_URL}/research): Original Trailstead Guide studies, with methodology and citable findings.`,
+    `- [Packing checklist](${SITE_URL}/checklist): Build a packing checklist tuned to your party and trip length.`,
+    `- [Contact](${SITE_URL}/contact): Reach the Trailstead Guide team for partnerships, corrections, or feedback.`,
   ]
   return `## Hub pages\n\n${lines.join('\n')}\n`
+}
+
+function buildActivityLandingSection(): string {
+  const lines = ACTIVITY_LANDING_PAGES.map(
+    (p) => `- [${p.title}](${SITE_URL}/activities/${p.slug}): ${p.description}`,
+  )
+  return `## Activity roundups (curated by age and weather)\n\n${lines.join('\n')}\n`
+}
+
+function buildGearSetSection(): string {
+  const lines = PLAN_ORDER.map((slug) => {
+    const title = PLAN_CONTENT[slug].cover.title
+    return `- [${title} gear set](${SITE_URL}/gear/sets/${slug}): The exact gear bundle for the ${title} plan, grouped by system with budget and upgrade picks.`
+  })
+  return `## Gear sets (one per plan)\n\n${lines.join('\n')}\n`
 }
 
 function buildGuideCategorySection(): string {
@@ -183,6 +208,8 @@ const BODY = [
   buildSkillCategorySection(),
   buildSkillSection(),
   buildActivitySection(),
+  buildActivityLandingSection(),
+  buildGearSetSection(),
   buildPrintableSection(),
   FOOTER,
 ].join('\n')

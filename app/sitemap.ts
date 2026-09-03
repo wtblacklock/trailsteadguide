@@ -7,6 +7,7 @@
 
 import { MetadataRoute } from 'next'
 import { ACTIVITIES } from '@/lib/activities/data'
+import { ACTIVITY_LANDING_PAGES } from '@/lib/activities/landing-pages'
 import { SKILLS } from '@/lib/skills/data'
 import { getCategoryById } from '@/lib/skills/categories'
 import { GUIDES, GUIDE_CATEGORIES } from '@/lib/guides'
@@ -67,10 +68,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
     // Hand-written activity landing pages. These are keyword-targeted
     // roundups, not entries in ACTIVITIES, so they need listing explicitly.
-    { url: `${BASE_URL}/activities/camping-activities-for-kids`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${BASE_URL}/activities/camping-activities-for-toddlers`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.75 },
-    { url: `${BASE_URL}/activities/camping-activities-for-teenagers`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.75 },
-    { url: `${BASE_URL}/activities/rainy-day-camping-activities-kids`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.75 },
+    ...ACTIVITY_LANDING_PAGES.map((p) => ({
+      url: `${BASE_URL}/activities/${p.slug}`,
+      lastModified: FRESH,
+      changeFrequency: 'monthly' as const,
+      priority: p.priority,
+    })),
 
     // Tools
     { url: `${BASE_URL}/tools`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.7 },
