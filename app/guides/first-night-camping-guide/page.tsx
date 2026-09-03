@@ -5,6 +5,7 @@ import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
 import GuideGearShelf from '@/components/guide/GuideGearShelf'
+import GuidePrintablesBlock from '@/components/guide/GuidePrintablesBlock'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
@@ -324,6 +325,7 @@ export default function Page() {
           No. Borrow the tent, borrow sleeping bags, buy a cheap headlamp and a real sleeping pad. Find out what you actually use before you spend money on the rest.
         </p>
       </GuidePage>
+      <GuidePrintablesBlock guideSlug="first-night-camping-guide" />
       <GuideGearShelf guideSlug="first-night-camping-guide" />
       <GuideArticleCTA />
       <RelatedGuides currentSlug="first-night-camping-guide" />

@@ -4,6 +4,7 @@ import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
 import GuideGearShelf from '@/components/guide/GuideGearShelf'
+import GuidePrintablesBlock from '@/components/guide/GuidePrintablesBlock'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
@@ -175,6 +176,7 @@ export default function Page() {
         <h3>What campsite type is best for families?</h3>
         <p>Standard electric site at a state park. The electrical outlet lets you run a fan overnight, which significantly helps kids sleep at camp.</p>
       </GuidePage>
+      <GuidePrintablesBlock guideSlug="how-to-choose-a-family-campsite" />
       <GuideGearShelf guideSlug="how-to-choose-a-family-campsite" />
       <GuideArticleCTA />
       <RelatedGuides currentSlug="how-to-choose-a-family-campsite" />

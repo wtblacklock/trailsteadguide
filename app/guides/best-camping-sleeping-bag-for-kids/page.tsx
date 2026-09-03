@@ -4,6 +4,7 @@ import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
 import GuideGearShelf from '@/components/guide/GuideGearShelf'
+import GuidePrintablesBlock from '@/components/guide/GuidePrintablesBlock'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
@@ -186,6 +187,7 @@ export default function Page() {
         <h3>Should I buy a sleeping bag that a kid can grow into?</h3>
         <p>Avoid too-long bags - they defeat the insulation. Choose bags with adjustable footboxes instead, which fit the child now and can be opened as they grow.</p>
       </GuidePage>
+      <GuidePrintablesBlock guideSlug="best-camping-sleeping-bag-for-kids" />
       <GuideGearShelf guideSlug="best-camping-sleeping-bag-for-kids" />
       <GuideArticleCTA />
       <RelatedGuides currentSlug="best-camping-sleeping-bag-for-kids" />

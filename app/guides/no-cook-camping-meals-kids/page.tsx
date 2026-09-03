@@ -4,6 +4,7 @@ import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
 import GuideGearShelf from '@/components/guide/GuideGearShelf'
+import GuidePrintablesBlock from '@/components/guide/GuidePrintablesBlock'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
@@ -236,6 +237,7 @@ export default function Page() {
           Yes, for a single overnight. No-cook covers dinner, breakfast, and lunch, and eliminates camp dishwashing entirely.
         </p>
       </GuidePage>
+      <GuidePrintablesBlock guideSlug="no-cook-camping-meals-kids" />
       <GuideGearShelf guideSlug="no-cook-camping-meals-kids" heading="Keep it cold, keep it simple" />
       <GuideArticleCTA />
       <RelatedGuides currentSlug="no-cook-camping-meals-kids" />

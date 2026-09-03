@@ -4,6 +4,7 @@ import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
 import GuideGearShelf from '@/components/guide/GuideGearShelf'
+import GuidePrintablesBlock from '@/components/guide/GuidePrintablesBlock'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
@@ -199,6 +200,7 @@ export default function Page() {
           not a reliable plan in wind or rain.
         </p>
       </GuidePage>
+      <GuidePrintablesBlock guideSlug="how-to-set-up-a-tent" />
       <GuideGearShelf guideSlug="how-to-set-up-a-tent" heading="Tents that pitch fast" />
       <GuideArticleCTA />
       <RelatedGuides currentSlug="how-to-set-up-a-tent" />

@@ -4,6 +4,7 @@ import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
 import GuideGearShelf from '@/components/guide/GuideGearShelf'
+import GuidePrintablesBlock from '@/components/guide/GuidePrintablesBlock'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
@@ -179,6 +180,7 @@ export default function Page() {
           much quieter for almost no change in weather.
         </p>
       </GuidePage>
+      <GuidePrintablesBlock guideSlug="labor-day-weekend-camping" />
       <GuideGearShelf guideSlug="labor-day-weekend-camping" heading="Gear for a crowded-weekend trip" />
       <GuideArticleCTA />
       <RelatedGuides currentSlug="labor-day-weekend-camping" />

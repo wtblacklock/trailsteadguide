@@ -4,6 +4,7 @@ import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
 import GuideGearShelf from '@/components/guide/GuideGearShelf'
+import GuidePrintablesBlock from '@/components/guide/GuidePrintablesBlock'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
@@ -243,6 +244,7 @@ export default function Page() {
         Plan three activities per day: morning walk, afternoon quiet activity at the site, evening fire with s&apos;mores.
       </p>
     </GuidePage>
+    <GuidePrintablesBlock guideSlug="camping-with-kids-first-time" />
     <GuideGearShelf guideSlug="camping-with-kids-first-time" />
     <GuideArticleCTA />
     <RelatedGuides currentSlug="camping-with-kids-first-time" />

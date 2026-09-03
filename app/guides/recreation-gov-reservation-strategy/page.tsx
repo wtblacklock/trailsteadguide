@@ -4,6 +4,7 @@ import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
 import GuideGearShelf from '@/components/guide/GuideGearShelf'
+import GuidePrintablesBlock from '@/components/guide/GuidePrintablesBlock'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
@@ -246,6 +247,7 @@ export default function Page() {
         For Sunday-Thursday in summer, yes. For Friday afternoons in July, no. Arrive Thursday or before noon Friday if you’re depending on a first-come site.
       </p>
     </GuidePage>
+    <GuidePrintablesBlock guideSlug="recreation-gov-reservation-strategy" />
     <GuideGearShelf guideSlug="recreation-gov-reservation-strategy" />
     <GuideArticleCTA />
     <RelatedGuides currentSlug="recreation-gov-reservation-strategy" />

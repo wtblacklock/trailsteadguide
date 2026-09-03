@@ -5,6 +5,7 @@ import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
 import GuideGearShelf from '@/components/guide/GuideGearShelf'
+import GuidePrintablesBlock from '@/components/guide/GuidePrintablesBlock'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
@@ -319,6 +320,7 @@ export default function Page() {
         A coastal or foothill state park within 2 hours of home, with bear boxes if applicable. Save Yosemite Valley, Big Sur tent sites, and Joshua Tree for trip three or four - they are extraordinary, but harder to reserve and harder to camp in cold.
       </p>
     </GuidePage>
+    <GuidePrintablesBlock guideSlug="camping-in-california-for-beginners" />
     <GuideGearShelf guideSlug="camping-in-california-for-beginners" />
     <GuideArticleCTA />
     <RelatedGuides currentSlug="camping-in-california-for-beginners" />

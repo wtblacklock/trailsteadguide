@@ -4,6 +4,7 @@ import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
 import GuideGearShelf from '@/components/guide/GuideGearShelf'
+import GuidePrintablesBlock from '@/components/guide/GuidePrintablesBlock'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
@@ -295,6 +296,7 @@ export default function Page() {
         For a low-elevation campground above 25°F with no snow forecast, a high-quality 3-season tent works. For real snow load, sustained sub-20°F, or any wind, the 4-season tent is the right call. The honest beginner answer is: rent a cabin instead.
       </p>
     </GuidePage>
+    <GuidePrintablesBlock guideSlug="winter-camping-for-beginners" />
     <GuideGearShelf guideSlug="winter-camping-for-beginners" />
     <GuideArticleCTA />
     <RelatedGuides currentSlug="winter-camping-for-beginners" />

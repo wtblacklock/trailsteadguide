@@ -5,6 +5,7 @@ import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
 import GuideGearShelf from '@/components/guide/GuideGearShelf'
+import GuidePrintablesBlock from '@/components/guide/GuidePrintablesBlock'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
@@ -330,6 +331,7 @@ export default function Page() {
           When the sleeping bag is wet through, when the tent floor is taking on water, when the forecast updates to severe weather, or when kids cannot get warm. Bail in daylight, with a plan to come back next weekend.
         </p>
       </GuidePage>
+      <GuidePrintablesBlock guideSlug="rainy-camping-trips" />
       <GuideGearShelf guideSlug="rainy-camping-trips" />
       <GuideArticleCTA />
       <RelatedGuides currentSlug="rainy-camping-trips" />

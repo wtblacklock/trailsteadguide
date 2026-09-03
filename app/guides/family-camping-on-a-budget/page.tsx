@@ -4,6 +4,7 @@ import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
 import GuideGearShelf from '@/components/guide/GuideGearShelf'
+import GuidePrintablesBlock from '@/components/guide/GuidePrintablesBlock'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
@@ -212,6 +213,7 @@ export default function Page() {
         <h3>Is camping cheaper than a hotel with kids?</h3>
         <p>Significantly cheaper. Hotel + restaurant dining for 4 runs $400-800 per weekend. Camping runs $80-120 for the same period after gear is owned.</p>
       </GuidePage>
+      <GuidePrintablesBlock guideSlug="family-camping-on-a-budget" />
       <GuideGearShelf guideSlug="family-camping-on-a-budget" heading="Budget-tier gear that still holds up" />
       <GuideArticleCTA />
       <RelatedGuides currentSlug="family-camping-on-a-budget" />

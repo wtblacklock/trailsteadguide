@@ -4,6 +4,7 @@ import { QuickAnswer } from '@/components/guide/QuickAnswer'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
 import GuideGearShelf from '@/components/guide/GuideGearShelf'
+import GuidePrintablesBlock from '@/components/guide/GuidePrintablesBlock'
 import JsonLd from '@/components/seo/JsonLd'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
@@ -198,6 +199,7 @@ export default function Page() {
           touching food directly, and don&apos;t seal the cooler completely airtight.
         </p>
       </GuidePage>
+      <GuidePrintablesBlock guideSlug="how-to-pack-a-cooler" />
       <GuideGearShelf guideSlug="how-to-pack-a-cooler" heading="Coolers that hold up on a real trip" />
       <GuideArticleCTA />
       <RelatedGuides currentSlug="how-to-pack-a-cooler" />
