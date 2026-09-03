@@ -11,7 +11,7 @@ import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
 
 const SLUG = '/guides/best-camping-sleeping-bag-for-kids'
 const TITLE = "Best Camping Sleeping Bag for Kids"
-const META_TITLE = "Best Kids Camping Sleeping Bag (2025)"
+const META_TITLE = "Best Kids Camping Sleeping Bag (2026)"
 const DESCRIPTION =
   "The best camping sleeping bags for kids: what temperature rating to buy, why kids need their own bag, and the picks that work across age ranges."
 const HERO_IMAGE =
