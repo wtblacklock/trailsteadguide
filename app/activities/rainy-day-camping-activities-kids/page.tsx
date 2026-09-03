@@ -10,7 +10,7 @@ const META_TITLE = 'Rainy Day Camping Activities for Kids'
 const DESCRIPTION =
   'Rainy day camping activities for kids that actually work: tent games, tarp adventures, mud play, and what to do when it rains and you can\'t go home.'
 const HERO_IMAGE =
-  'https://images.unsplash.com/Ppz6b-YUDHw?w=1400&auto=format&fit=crop&q=80'
+  'https://images.unsplash.com/photo-1571687949921-1306bfb24b72?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({
   title: META_TITLE,

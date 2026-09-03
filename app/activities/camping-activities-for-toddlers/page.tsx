@@ -10,7 +10,7 @@ const META_TITLE = 'Camping Activities for Toddlers 2-5'
 const DESCRIPTION =
   'Camping activities for toddlers: sensory exploration, short structured play, and camp games that work for ages 2-5 without adult-level attention spans.'
 const HERO_IMAGE =
-  'https://images.unsplash.com/8n00CqwnqO8?w=1400&auto=format&fit=crop&q=80'
+  'https://images.unsplash.com/photo-1619581038486-7effeb377455?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({
   title: META_TITLE,

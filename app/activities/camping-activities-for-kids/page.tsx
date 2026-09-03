@@ -10,7 +10,7 @@ const META_TITLE = 'Camping Activities for Kids: 37 Ideas'
 const DESCRIPTION =
   'Camping activities for kids sorted by age, energy, and weather: campfire games, nature scavenger hunts, rainy-day ideas, and quiet time that works.'
 const HERO_IMAGE =
-  'https://images.unsplash.com/LazgZx2HvB0?w=1400&auto=format&fit=crop&q=80'
+  'https://images.unsplash.com/photo-1776243773206-a29b683c97fb?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({
   title: META_TITLE,

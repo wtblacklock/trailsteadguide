@@ -15,7 +15,7 @@ const META_TITLE = 'How to Choose a Family Campsite'
 const DESCRIPTION =
   'How to choose a family campsite: what site features matter with kids, how to read campground maps, and how to book before the good sites disappear.'
 const HERO_IMAGE =
-  'https://images.unsplash.com/cqv_DVAMByg?w=1400&auto=format&fit=crop&q=80'
+  'https://images.unsplash.com/photo-1580842693665-cdae6f59814f?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({
   title: META_TITLE,

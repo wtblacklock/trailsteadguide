@@ -15,7 +15,7 @@ const META_TITLE = 'Family Camping on a Budget'
 const DESCRIPTION =
   'Family camping on a budget: gear up for under $300, find free and cheap campsites, and keep the trip cost under $150 total for a family of four.'
 const HERO_IMAGE =
-  'https://images.unsplash.com/TpIqgSQiuxs?w=1400&auto=format&fit=crop&q=80'
+  'https://images.unsplash.com/photo-1620439032751-d2011065c735?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({
   title: META_TITLE,
