@@ -258,6 +258,61 @@ export const GUIDES: Guide[] = [
       'Camping in Georgia for beginners: North Georgia mountain parks, Cumberland Island, heat and humidity, bugs, snakes, and the setup that handles it.',
     relatedGuides: ['camping-in-florida-for-beginners', 'camping-in-a-heatwave', 'summer-camping-for-beginners'],
   },
+  {
+    slug: 'camping-in-wisconsin-for-beginners',
+    category: 'location',
+    title: 'Camping in Wisconsin for Beginners',
+    description: 'Northwoods lakes, Devils Lake, Door County, and an 11-month booking window you have to plan around.',
+    eyebrow: 'Wisconsin',
+    metaTitle: 'Wisconsin Camping for Beginners (Lakes)',
+    metaDescription:
+      'Camping in Wisconsin for beginners: Northwoods lakes, Devils Lake, Door County, the 11-month booking race, and a tick routine that works.',
+    relatedGuides: ['camping-in-michigan-for-beginners', 'summer-camping-for-beginners', 'how-to-choose-a-family-campsite'],
+  },
+  {
+    slug: 'camping-in-wyoming-for-beginners',
+    category: 'location',
+    title: 'Camping in Wyoming for Beginners',
+    description: 'Yellowstone and the Tetons, grizzly food rules, altitude, and wind that punishes cheap stakes.',
+    eyebrow: 'Wyoming',
+    metaTitle: 'Wyoming Camping for Beginners (Bears)',
+    metaDescription:
+      'Camping in Wyoming for beginners: Yellowstone and Teton campgrounds, grizzly food rules, altitude, wind, and a three-month season.',
+    relatedGuides: ['camping-in-montana-for-beginners', 'camping-in-colorado-for-beginners', 'recreation-gov-reservation-strategy'],
+  },
+  {
+    slug: 'camping-in-montana-for-beginners',
+    category: 'location',
+    title: 'Camping in Montana for Beginners',
+    description: 'Glacier access rules that change yearly, grizzly country, and an August wildfire smoke season.',
+    eyebrow: 'Montana',
+    metaTitle: 'Montana Camping for Beginners (Glacier)',
+    metaDescription:
+      'Camping in Montana for beginners: Glacier access rules, grizzly food storage, wildfire smoke season, and a short high-country summer.',
+    relatedGuides: ['camping-in-wyoming-for-beginners', 'camping-in-the-pacific-northwest-for-beginners', 'camping-when-the-weather-turns'],
+  },
+  {
+    slug: 'camping-in-utah-for-beginners',
+    category: 'location',
+    title: 'Camping in Utah for Beginners',
+    description: 'The Mighty 5, flash flood season, no shade, no water, and where to camp when the parks are full.',
+    eyebrow: 'Utah',
+    metaTitle: 'Utah Camping for Beginners (Mighty 5)',
+    metaDescription:
+      'Camping in Utah for beginners: the Mighty 5 national parks, flash flood season, desert heat, water planning, and easier state park bases.',
+    relatedGuides: ['camping-in-the-desert-southwest-for-beginners', 'camping-in-arizona-for-beginners', 'spring-camping-for-beginners'],
+  },
+  {
+    slug: 'camping-in-arizona-for-beginners',
+    category: 'location',
+    title: 'Camping in Arizona for Beginners',
+    description: 'Camp high in summer, low in winter - plus monsoon floods, scorpions, and constant fire bans.',
+    eyebrow: 'Arizona',
+    metaTitle: 'Arizona Camping for Beginners (Heat)',
+    metaDescription:
+      'Camping in Arizona for beginners: camp high in summer and low in winter, monsoon flash floods, Grand Canyon rims, and constant fire bans.',
+    relatedGuides: ['camping-in-the-desert-southwest-for-beginners', 'camping-in-utah-for-beginners', 'camping-in-a-heatwave'],
+  },
   // --- Gap content: family-focused cluster ---
   {
     slug: 'family-camping-for-beginners',
