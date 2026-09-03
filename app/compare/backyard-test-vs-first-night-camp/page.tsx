@@ -132,11 +132,11 @@ const FAQS = [
   },
   {
     q: 'Can I skip straight to First Night Camp if we\'re confident?',
-    a: 'Yes — if your gear is proven and the kids have camped or slept away from home comfortably before, the Backyard Test rehearsal adds little. Go straight to a real developed campsite.',
+    a: 'Yes - if your gear is proven and the kids have camped or slept away from home comfortably before, the Backyard Test rehearsal adds little. Go straight to a real developed campsite.',
   },
   {
     q: 'How much does First Night Camp cost compared to the Backyard Test?',
-    a: 'The Backyard Test is $0 since it uses your own yard. First Night Camp runs $25-$60 for a developed campsite fee, plus fuel and food — the first real cost of committing to an actual trip.',
+    a: 'The Backyard Test is $0 since it uses your own yard. First Night Camp runs $25-$60 for a developed campsite fee, plus fuel and food - the first real cost of committing to an actual trip.',
   },
   {
     q: 'What if the Backyard Test goes badly?',

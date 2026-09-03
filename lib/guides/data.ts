@@ -481,7 +481,7 @@ export const GUIDES: Guide[] = [
     eyebrow: 'Booking strategy',
     metaTitle: 'Recreation.gov Reservation Strategy',
     metaDescription:
-      'How recreation.gov actually works: the 6-month rolling window, the 7am ET drop, and what to do when nothing’s available - a real booking playbook for beginners.',
+      'How recreation.gov actually works: the 6-month rolling window, the 10am ET drop, and what to do when nothing is available. A playbook for beginners.',
     relatedGuides: ['labor-day-weekend-camping', 'how-to-plan-a-camping-trip', 'best-state-parks-for-families'],
   },
   {
@@ -490,9 +490,9 @@ export const GUIDES: Guide[] = [
     title: 'Labor Day Weekend Camping',
     description: 'Why the popular spots filled up months ago, what still has openings, and packing for the summer-to-fall turn.',
     eyebrow: 'Holiday weekend',
-    metaTitle: 'Labor Day Weekend Camping - What to Actually Expect',
+    metaTitle: 'Labor Day Weekend Camping: What to Expect',
     metaDescription:
-      'Labor Day weekend camping: why the popular spots filled up months ago, what still has openings, holiday-weekend crowd etiquette, and packing for the summer-to-fall transition.',
+      'Labor Day camping: why the good spots filled up months ago, what still has openings, holiday crowd etiquette, and packing for the summer-to-fall turn.',
     relatedGuides: ['recreation-gov-reservation-strategy', 'dispersed-camping-on-blm-and-national-forest-land', 'fall-camping-for-beginners'],
   },
 ]

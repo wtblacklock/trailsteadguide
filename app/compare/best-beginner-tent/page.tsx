@@ -117,11 +117,11 @@ const RELATED = [
 const FAQS = [
   {
     q: 'Is the Coleman Sundome 4P good enough for a first trip?',
-    a: 'Yes — it\'s the safest first-tent pick precisely because it\'s the most proven. Best-selling, weatherproof, fits a queen air bed, and sets up in 10 minutes. Step up only if you specifically want standing room or expect rougher weather.',
+    a: 'Yes - it\'s the safest first-tent pick precisely because it\'s the most proven. Best-selling, weatherproof, fits a queen air bed, and sets up in 10 minutes. Step up only if you specifically want standing room or expect rougher weather.',
   },
   {
     q: 'Is it worth paying more for the ALPS Lynx over the Sundome?',
-    a: 'Only if pole quality and stronger weather resistance matter more than price to you. The ALPS uses aluminum poles and a stronger guy-line system — a real difference if your first trip is in shoulder-season wind, but not something a fair-weather beginner needs to pay extra for.',
+    a: 'Only if pole quality and stronger weather resistance matter more than price to you. The ALPS uses aluminum poles and a stronger guy-line system - a real difference if your first trip is in shoulder-season wind, but not something a fair-weather beginner needs to pay extra for.',
   },
   {
     q: 'Do I need a 6-person tent for a family of 4?',
@@ -129,7 +129,7 @@ const FAQS = [
   },
   {
     q: 'Can any of these three tents handle real rain?',
-    a: 'All three handle steady rain fine with their stock rainfly — none are backpacking-grade single-wall tents. For genuinely wet climates or multi-day rain, see the dedicated best tent for rainy camping guide for what to look for beyond these picks.',
+    a: 'All three handle steady rain fine with their stock rainfly - none are backpacking-grade single-wall tents. For genuinely wet climates or multi-day rain, see the dedicated best tent for rainy camping guide for what to look for beyond these picks.',
   },
 ]
 

@@ -11,7 +11,7 @@ import {
 
 const SLUG = '/research/first-time-camping-regrets'
 const HEADLINE = 'What 500 First-Trip Campers Regret: A Reddit Analysis'
-const META_TITLE = 'First-Time Camping Regrets: 500-Thread Analysis'
+const META_TITLE = 'First-Time Camping Regrets: 7 Mistakes'
 const DESCRIPTION =
   'We analyzed 500 r/camping threads. Here are the 7 mistakes first-time campers say they wish they’d avoided.'
 const PUBLISHED = '2026-04-28'

@@ -12,7 +12,7 @@ const SLUG = '/guides/how-to-break-camp'
 const TITLE = 'How to Break Camp'
 const META_TITLE = 'How to Break Camp (Complete Guide)'
 const DESCRIPTION =
-  'How to break camp and pack up a campsite the right way: putting the fire out cold, packing a dry tent, the site sweep for Leave No Trace, and loading the car in an order that works.'
+  'How to break camp the right way: putting the fire out cold, packing a dry tent, the site sweep for Leave No Trace, and loading the car in a smart order.'
 const HERO_IMAGE =
   'https://images.unsplash.com/photo-1526491109672-74740652b963?w=1400&auto=format&fit=crop&q=80'
 

@@ -6,9 +6,9 @@ import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
 
 const SLUG = '/activities/camping-activities-for-kids'
 const TITLE = 'Camping Activities for Kids'
-const META_TITLE = 'Camping Activities for Kids - 37 Proven Ideas'
+const META_TITLE = 'Camping Activities for Kids: 37 Ideas'
 const DESCRIPTION =
-  'Camping activities for kids sorted by age, energy, and weather: campfire games, nature scavenger hunts, rainy-day ideas, and quiet activities for every camp situation.'
+  'Camping activities for kids sorted by age, energy, and weather: campfire games, nature scavenger hunts, rainy-day ideas, and quiet time that works.'
 const HERO_IMAGE =
   'https://images.unsplash.com/LazgZx2HvB0?w=1400&auto=format&fit=crop&q=80'
 

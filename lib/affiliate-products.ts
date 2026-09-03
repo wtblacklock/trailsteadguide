@@ -343,7 +343,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     id: 'sawyer-extractor-pump-kit',
     name: 'Sawyer Extractor Pump Kit',
     description:
-      'A reusable suction pump for snake, bee, wasp, and mosquito bites and stings — no blades, one-handed to use. Not a substitute for emergency care on a venomous bite; get to help first.',
+      'A reusable suction pump for snake, bee, wasp, and mosquito bites and stings - no blades, one-handed to use. Not a substitute for emergency care on a venomous bite; get to help first.',
     amazonAsin: 'B000AU9PEC',
     imageUrl: 'https://images-na.ssl-images-amazon.com/images/P/B000AU9PEC.01.L.jpg',
     category: 'essential',

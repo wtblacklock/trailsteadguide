@@ -12,7 +12,7 @@ const SLUG = '/guides/campfire-recipes-for-kids'
 const TITLE = 'Campfire Recipes for Kids'
 const META_TITLE = 'Campfire Recipes for Kids - 10 Ideas'
 const DESCRIPTION =
-  'Campfire recipes for kids beyond s\'mores: build-your-own foil packets, pie iron sandwiches, roasting stick foods, and desserts kids can help make themselves.'
+  'Campfire recipes for kids beyond s\'mores: build-your-own foil packets, pie iron sandwiches, roasting stick foods, and desserts kids can help make.'
 const HERO_IMAGE =
   'https://images.unsplash.com/photo-1756719097664-82e33a1b1ac2?w=1400&auto=format&fit=crop&q=80'
 

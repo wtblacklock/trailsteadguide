@@ -5,7 +5,7 @@ import { pageMetadata, collectionPageGraph, SITE_URL } from '@/lib/seo'
 import { PRINTABLES } from '@/lib/printables'
 
 const TITLE = 'Printables'
-const META_TITLE = 'Free Camping Printables - Star Charts, Knot Cards'
+const META_TITLE = 'Free Camping Printables for Families'
 const DESCRIPTION =
   'Free, printable camping reference cards - star charts, knot guides, fire-starting checklists. Single-page analog tools for the campsite.'
 

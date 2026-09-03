@@ -6,9 +6,9 @@ import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
 
 const SLUG = '/activities/camping-activities-for-teenagers'
 const TITLE = 'Camping Activities for Teenagers'
-const META_TITLE = 'Camping Activities for Teenagers (That Actually Work)'
+const META_TITLE = 'Camping Activities for Teenagers'
 const DESCRIPTION =
-  'Camping activities for teenagers that hold their attention: challenge-based games, navigation, night activities, and things to do when a teen says camping is boring.'
+  'Camping activities for teenagers that hold their attention: challenge-based games, navigation, night activities, and fixes for a bored teen.'
 const HERO_IMAGE =
   'https://images.unsplash.com/iW5jy46axgs?w=1400&auto=format&fit=crop&q=80'
 

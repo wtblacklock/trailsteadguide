@@ -6,7 +6,7 @@ import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
 
 const SLUG = '/activities/rainy-day-camping-activities-kids'
 const TITLE = 'Rainy Day Camping Activities for Kids'
-const META_TITLE = 'Rainy Day Camping Activities for Kids - 15 Ideas'
+const META_TITLE = 'Rainy Day Camping Activities for Kids'
 const DESCRIPTION =
   'Rainy day camping activities for kids that actually work: tent games, tarp adventures, mud play, and what to do when it rains and you can\'t go home.'
 const HERO_IMAGE =

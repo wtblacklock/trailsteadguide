@@ -176,7 +176,7 @@ export default function Page() {
       <h2>Where beginners should look</h2>
       <h3>Florida State Parks</h3>
       <p>
-        Florida State Parks runs 175+ parks. Reserve at <a href="https://www.floridastateparks.org/" rel="noopener" target="_blank">floridastateparks.org</a>. The reservation window is 11 months out - for a December weekend, you can book in January. Bahia Honda in the Keys and the spring-side sites at Wekiwa, Manatee, and Ichetucknee fill the day they open. Anastasia (St. Augustine) and Hillsborough River (Tampa) are slightly easier, and inland river/forest sites usually have more availability further in.
+        Florida State Parks runs 175+ parks. Reserve at <a href="https://www.floridastateparks.org/" rel="noopener" target="_blank">floridastateparks.org</a>. The reservation window is 11 months out for Florida residents and 10 months for everyone else, so a resident can book a December weekend in January and an out-of-state visitor in February. Bahia Honda in the Keys and the spring-side sites at Wekiwa, Manatee, and Ichetucknee fill the day they open. Anastasia (St. Augustine) and Hillsborough River (Tampa) are slightly easier, and inland river/forest sites usually have more availability further in.
       </p>
 
       <h3>National parks and federal lands</h3>

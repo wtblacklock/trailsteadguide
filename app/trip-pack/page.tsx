@@ -7,7 +7,7 @@ import { PLAN_TEMPLATES } from '@/lib/plan-templates'
 import type { PlanSlug } from '@/types'
 
 const TITLE = 'Trip Packs'
-const META_TITLE = 'Camping Trip Packs - Print-Ready Family Camping Plans'
+const META_TITLE = 'Camping Trip Packs: Print-Ready Plans'
 const DESCRIPTION =
   'Print-ready Trip Packs for first-time family campers - timeline, packing list, gear set, meal plan, and mistake prevention, scaled to your party size.'
 

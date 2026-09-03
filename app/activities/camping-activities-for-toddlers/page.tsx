@@ -6,9 +6,9 @@ import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
 
 const SLUG = '/activities/camping-activities-for-toddlers'
 const TITLE = 'Camping Activities for Toddlers'
-const META_TITLE = 'Camping Activities for Toddlers (Ages 2-5)'
+const META_TITLE = 'Camping Activities for Toddlers 2-5'
 const DESCRIPTION =
-  'The best camping activities for toddlers: sensory exploration, short structured play, and camp games that work for ages 2-5 without needing adult-level attention spans.'
+  'Camping activities for toddlers: sensory exploration, short structured play, and camp games that work for ages 2-5 without adult-level attention spans.'
 const HERO_IMAGE =
   'https://images.unsplash.com/8n00CqwnqO8?w=1400&auto=format&fit=crop&q=80'
 

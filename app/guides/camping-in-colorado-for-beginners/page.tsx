@@ -222,7 +222,7 @@ export default function Page() {
           <strong>Pitching the cheap stakes that came in the box.</strong> Mountain campsites in Colorado get the kind of wind that snaps fiberglass poles and drags an unweighted tent across the loop. Bring 8-10 inch steel stakes, guy out the rainfly, and pick a site with some tree shelter - the open meadow site you reserved on the map is the one that fails first.
         </li>
         <li>
-          <strong>Trying to book RMNP three weeks ahead.</strong> Six months ahead, the morning the window opens, online at 9am Mountain. Otherwise, look at Roosevelt National Forest dispersed sites or the Indian Peaks Wilderness - both give you the front range without the reservation lottery.
+          <strong>Trying to book RMNP three weeks ahead.</strong> Six months ahead, the morning the window opens, online at 8am Mountain. Otherwise, look at Roosevelt National Forest dispersed sites or the Indian Peaks Wilderness - both give you the front range without the reservation lottery.
         </li>
       </ol>
 
@@ -292,7 +292,7 @@ export default function Page() {
       </p>
       <h3>How early do I need to book Rocky Mountain National Park?</h3>
       <p>
-        Six months for popular weekends - the morning the recreation.gov window opens at 9am Mountain. Mid-week and late September are easier. State and national-forest alternatives are far less competitive.
+        Six months for popular weekends - the morning the recreation.gov window opens at 8am Mountain. Mid-week and late September are easier. State and national-forest alternatives are far less competitive.
       </p>
       <h3>Are there bears? Do I need a bear canister?</h3>
       <p>

@@ -10,9 +10,9 @@ import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
 
 const SLUG = '/guides/labor-day-weekend-camping'
 const TITLE = 'Labor Day Weekend Camping'
-const META_TITLE = 'Labor Day Weekend Camping - What to Actually Expect'
+const META_TITLE = 'Labor Day Weekend Camping: What to Expect'
 const DESCRIPTION =
-  'Labor Day weekend camping: why the popular spots filled up months ago, what still has openings, holiday-weekend crowd etiquette, and packing for the summer-to-fall transition.'
+  'Labor Day camping: why the good spots filled up months ago, what still has openings, holiday crowd etiquette, and packing for the summer-to-fall turn.'
 const HERO_IMAGE =
   'https://images.unsplash.com/photo-1695413714769-20776c880342?w=1400&auto=format&fit=crop&q=80'
 

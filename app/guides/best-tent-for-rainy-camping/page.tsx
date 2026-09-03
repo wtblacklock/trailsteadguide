@@ -12,7 +12,7 @@ const SLUG = '/guides/best-tent-for-rainy-camping'
 const TITLE = 'Best Tent for Camping in the Rain'
 const META_TITLE = 'Best Tent for Rainy Camping (2026)'
 const DESCRIPTION =
-  'The best tents for rainy camping: what hydrostatic head rating actually means, why fly coverage matters more than the number, and which tents keep a family dry.'
+  'The best tents for rainy camping: what hydrostatic head actually means, why fly coverage matters more than the number, and which tents keep you dry.'
 const HERO_IMAGE =
   'https://images.unsplash.com/photo-1571687949921-1306bfb24b72?w=1400&auto=format&fit=crop&q=80'
 

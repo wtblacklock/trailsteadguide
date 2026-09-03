@@ -1,6 +1,6 @@
 # Content Gap Analysis — Trailstead Guide
 
-A backlog-shaped audit of the current content surface, what's missing, and what's worth shipping next. Snapshot taken 2026-05-05 against branch `claude/brave-wilbur-b32349`.
+A backlog-shaped audit of the current content surface, what's missing, and what's worth shipping next. Snapshot re-baselined 2026-09-03 against `main` (previous baseline: 2026-05-05).
 
 ---
 
@@ -8,22 +8,24 @@ A backlog-shaped audit of the current content surface, what's missing, and what'
 
 | Area | Count | Status |
 |---|---|---|
-| Plans | 4 | Foundation set — all introductory (backyard / first night / first weekend / family basecamp). No intermediate or activity-specific. |
-| Guides — Basics | 12 | Strong coverage of beginner core + family meal/gear sub-niche. |
-| Guides — Scenario | 10 | After-kids backfill is complete; broader scenario coverage thin. |
-| Guides — Seasonal | 4 | Generic spring/summer/fall/winter. No holiday-weekend or shoulder-season variants. |
-| Guides — Location | 9 | 8 US regions + 1 best-state-parks roundup. Major US camping geographies still missing. |
-| Skills | 68 / 12 categories | Foundational + a solid intermediate layer. Several adjacent categories absent. |
-| Activities | 37 / 8 categories | Decent breadth across icebreaker / campfire / night / team / movement / exploration / creative / wind-down. Age-bucketed and water-based gaps. |
-| Comparison pages | 6 | 2 plan-vs-plan + 4 product compares. No tent / cooler / stove versus type breakdowns. |
-| Research | 1 | One Reddit-analysis piece. The biggest backlink lever and least-built area. |
-| Gear bundles | 4 | One per plan. No budget-tier, kid-only, or season-specific bundles. |
-| Affiliate catalog | 44 products | Wide enough; gaps surface only in compares and budget tiers. |
-| Trip Packs (paid) | 4 | One per plan — already shipped. |
-| Printables (free, email-gated) | 15 | Strong analog asset library (star charts, knot cards, weather signs, LNT, etc.). |
+| Plans | 4 | Foundation set — all introductory (backyard / first night / first weekend / family basecamp). No intermediate or activity-specific. Unchanged since the last baseline. |
+| Guides — total | 56 | Up from 35. The location cluster absorbed most of the growth. |
+| Guides — Basics | 19 | Beginner core, family meal/gear sub-niche, plus the dispersed-camping and Recreation.gov micro-guides. Densest category. |
+| Guides — Scenario | 15 | Family scenarios complete; holiday-weekend entry added. Broader life-situation scenarios (group, mobility, allergy) still absent. |
+| Guides — Seasonal | 4 | Generic spring/summer/fall/winter, unchanged. Now the thinnest category at 7% of the guide surface. |
+| Guides — Location | 18 | 8 US regions + best-state-parks roundup + 9 single-state guides (NY, MI, PA, GA, WI, WY, MT, UT, AZ). |
+| Skills | 68 / 12 categories | Unchanged. Foundational + intermediate layer solid; several adjacent categories still absent. |
+| Activities | 37 / 8 categories | Activity content unchanged, but 4 age/weather landing pages (kids, teenagers, toddlers, rainy-day) now ship as browse surfaces. Water-based category still missing. |
+| Comparison pages | 15 | Up from 6, plus a `/compare` index. Tent / cooler / stove / sleeping-system type compares all shipped. |
+| Research | 2 | Up from 1, plus a `/research` index. Regrets + pack-analysis pieces live. |
+| Gear bundles | 4 | Unchanged. One per plan. No budget-tier, kid-only, or season-specific bundles. |
+| Affiliate catalog | 93 products | Up from 44. Breadth is no longer the constraint. |
+| Trip Packs (paid) | 4 | One per plan — unchanged. |
+| Printables (free, email-gated) | 15 | Unchanged. Strong analog asset library. |
+| Glossary | 58 terms | New since last baseline. Shipped at `/glossary`. |
 | About / trust | 1 bio | Founder story, FAQ. No testimonials wall, press, or logo strip. |
 | Quiz | 6 questions | Question coverage is sufficient for current personalization output. |
-| Tools | 2 | trip-planner + checklist-generator. Sitemap, glossary, /research index, /compare index missing as discoverable surfaces. |
+| Tools | 2 | trip-planner + checklist-generator. `/research`, `/compare` and `/glossary` have shipped; a human-readable HTML sitemap is still missing. |
 
 ---
 
@@ -199,29 +201,29 @@ Sized as **S** (≤ a day), **M** (2–4 days), **L** (a week+). Lift = expected
 
 ### Tier 1 — biggest impact-to-effort, ship next
 
-1. **Compare hub page + 4 high-intent product compares** (tent type, cooler type, stove type, sleeping system) — **M effort, high lift.** Compare pages convert well, rank fast, and the format is already proven. Building a `/compare` index alongside doubles internal-link value.
-2. **Research piece #2: "What 1,000 first-time campers actually packed"** — **M effort, high lift.** First piece is the biggest backlink lever; second piece doubles authority and unlocks the `/research` index.
-3. **Guide: "How to find dispersed camping on BLM and National Forest land"** — **S effort, high lift.** Clear search demand ("free camping near me"), low competition for a structured beginner version.
-4. **Guide: "Campsite reservation strategy (Recreation.gov)"** — **S effort, high lift.** Universal beginner blocker, evergreen, internal-link magnet for plan + location guides.
-5. **Glossary page (/glossary)** — **S effort, medium-high lift.** Cheap to build, strong for AI-citation, links from every guide. One-time win.
-6. **Guide: "What NOT to bring camping"** — **S effort, medium-high lift.** Counter-list to existing packing guides, high CTR, easy social.
+1. ~~**Compare hub page + 4 high-intent product compares**~~ — **SHIPPED.** `/compare` index plus 15 compare pages, including dome-vs-cabin tent, beginner cooler, beginner stove, and beginner sleeping system.
+2. ~~**Research piece #2: "What 1,000 first-time campers actually packed"**~~ — **SHIPPED**, along with the `/research` index.
+3. ~~**Guide: "How to find dispersed camping on BLM and National Forest land"**~~ — **SHIPPED** as `dispersed-camping-on-blm-and-national-forest-land`.
+4. ~~**Guide: "Campsite reservation strategy (Recreation.gov)"**~~ — **SHIPPED** as `recreation-gov-reservation-strategy`.
+5. ~~**Glossary page (/glossary)**~~ — **SHIPPED**, 58 terms.
+6. **Guide: "What NOT to bring camping"** — **S effort, medium-high lift.** Counter-list to existing packing guides, high CTR, easy social. Still the cheapest unbuilt Tier 1 item.
 7. **About page trust upgrade: testimonials wall + methodology block** — **S effort, medium lift.** Conversion lift on key landing pages, especially before the quiz.
 
 ### Tier 2 — worth doing, sequence after Tier 1
 
-8. **Compare: "Trailstead Guide vs winging it" + "Easy Family Basecamp vs renting a cabin"** — M / high lift. Brand-search + mid-decision conversion pages.
-9. **Guide cluster: 4 missing high-intent state guides (NY, MI, PA, GA)** — M / high lift each. Slots into existing location structure.
+8. ~~**Compare: "Trailstead Guide vs winging it" + "Easy Family Basecamp vs renting a cabin"**~~ — **SHIPPED** as `trailstead-guide-vs-winging-it` and `family-camping-vs-cabin-rental`.
+9. ~~**Guide cluster: 4 missing high-intent state guides (NY, MI, PA, GA)**~~ — **SHIPPED**, and over-delivered: WI, WY, MT, UT and AZ shipped alongside them, taking the location cluster from 9 to 18.
 10. **Skill category: Leave No Trace (5–7 skills)** — M / medium lift. AI-citation; pairs with planned methodology block.
 11. **Skill category: Camp Hygiene (4–6 skills)** — S / medium lift. Searchable, scattered topics now.
 12. **Gear: Under-$200 budget bundle + Under-$500 mid bundle** — S each / medium-high lift. Captures "cheap camping gear" intent and gives quiz comfort-tier outputs distinct destinations.
 13. **Guide: "Camping etiquette" + "How to read a campsite map"** — S each / medium lift. Tactical micro-guides; both are easy AI-citation passages.
 14. **Research piece #3: "Campsite booking timing (Recreation.gov data)"** — M / high lift. Citable stats; supports the new reservation-strategy guide.
-15. **Activities: water-games category (5 activities) + age-bucketed activity browse view** — S–M / medium lift. Activity surface area is decent; this fills the most obvious cuts.
+15. **Activities: water-games category (5 activities)** — S–M / medium lift. The age-bucketed browse half of this item **SHIPPED** (kids / teenagers / toddlers / rainy-day landing pages); the water-games content did not. Activity count is still 37 across 8 categories.
 16. **Plan: 4-night intermediate state-park stay** — L / medium lift. Repeat-customer destination; later in the funnel than the existing four.
 
 ### Tier 3 — nice to have, later or never
 
-- New seasonal sub-guides (holiday weekends, shoulder season).
+- New seasonal sub-guides (holiday weekends, shoulder season). Labor Day **SHIPPED** as `labor-day-weekend-camping`; Memorial Day and July 4 remain.
 - Cold-weather plan (only after `winter-camping-for-beginners` traffic justifies it).
 - Email drip sequence (defer until traffic data justifies — user flagged as far-out).
 - Quiz dark-comfort question (only if a corresponding plan-output change ships).
@@ -229,6 +231,16 @@ Sized as **S** (≤ a day), **M** (2–4 days), **L** (a week+). Lift = expected
 - Skill: knot lashings, batoning, fire-by-friction (advanced — defer until traffic shows scout-level demand).
 - Sober camping / pregnancy / food-allergy guides (real demand, but niche; sequence after general scenario-guide gaps fill).
 - Canada / Mexico location guides (defer until US gaps close).
+
+### New gaps identified in the 2026-09-03 re-baseline
+
+These come from the current catalogue rather than the original May snapshot.
+
+- **Canonical reservation-systems reference (one table, one source of truth)** — **S effort, high lift.** The 18 location guides plus `recreation-gov-reservation-strategy` now each assert their own booking window, release time, and reservation URL independently. The 2026-09-03 audit found three mutually inconsistent statements of the *same* Recreation.gov release time across three guides. A single sourced table (state, system, URL, window, release time) is both a citable asset and the structural fix that stops the drift. Everything else on this list is optional; this one is maintenance debt that compounds every time a state guide ships.
+- **Seasonal is now structurally underweight** — **M effort, medium lift.** Seasonal sat at 4 guides in May and is still 4, while the catalogue grew from 35 to 56. It is now 7% of the guide surface with no holiday-weekend siblings to `labor-day-weekend-camping` and no shoulder-season entry, despite the template already existing.
+- **Second wave of state guides: WA, OR, NC, TN** — **M effort each, high lift.** The region guides already link these agencies (`parks.wa.gov`, `stateparks.oregon.gov`, `ncparks.gov`, `tnstateparks.com`) without a dedicated destination. They are the highest-volume states left after the nine that shipped, and the guide template is now well established.
+- **Location index / state picker** — **S effort, medium lift.** 18 location guides have no browse surface between the guides hub and the individual article. A simple state-and-region picker would convert the cluster's internal-link value.
+- **Gear bundles have not kept pace with the catalogue** — **S–M effort, medium-high lift.** The affiliate catalogue more than doubled (44 to 93 products) while bundles stayed at 4, so most of the catalogue has no bundle surface. This strengthens the existing budget-tier bundle items (#12) rather than replacing them.
 
 ---
 

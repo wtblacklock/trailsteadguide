@@ -130,15 +130,15 @@ const RELATED = [
 const FAQS = [
   {
     q: 'What temperature rating do I need for a 3-season camping trip?',
-    a: 'A bag comfortable to about 40-45°F covers most spring-through-fall car camping. Only step up to a 20°F-rated bag if you\'re camping at altitude, in the shoulder season, or in a region with cold nights — the budget and comfort tiers here both handle typical summer and early-fall trips fine.',
+    a: 'A bag comfortable to about 40-45°F covers most spring-through-fall car camping. Only step up to a 20°F-rated bag if you\'re camping at altitude, in the shoulder season, or in a region with cold nights - the budget and comfort tiers here both handle typical summer and early-fall trips fine.',
   },
   {
     q: 'Does the sleeping pad matter as much as the bag?',
-    a: 'Often more. The pad insulates from cold ground, which is usually the bigger source of nighttime cold than air temperature — a warm bag on a thin pad still sleeps cold. Pair a mid-tier bag with a good pad before upgrading to a premium bag alone.',
+    a: 'Often more. The pad insulates from cold ground, which is usually the bigger source of nighttime cold than air temperature - a warm bag on a thin pad still sleeps cold. Pair a mid-tier bag with a good pad before upgrading to a premium bag alone.',
   },
   {
     q: 'Is the cold-weather upgrade worth it for occasional camping?',
-    a: 'Not usually. The 20°F-rated tier is built for shoulder-season and altitude trips specifically. If you camp a few times a summer at moderate elevation, the comfort-tier system at 40°F is the better value — save the upgrade for when you actually plan a cold trip.',
+    a: 'Not usually. The 20°F-rated tier is built for shoulder-season and altitude trips specifically. If you camp a few times a summer at moderate elevation, the comfort-tier system at 40°F is the better value - save the upgrade for when you actually plan a cold trip.',
   },
   {
     q: 'Can kids use the same sleeping system as adults?',

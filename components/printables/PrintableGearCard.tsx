@@ -55,7 +55,7 @@ export default function PrintableGearCard({ productIds }: Props) {
         ))}
       </ul>
       <p className="mt-4 text-[11px] text-stone-400 leading-relaxed">
-        Affiliate links — we may earn a small commission at no extra cost to you.
+        Affiliate links - we may earn a small commission at no extra cost to you.
       </p>
     </div>
   )

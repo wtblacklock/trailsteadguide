@@ -12,7 +12,7 @@ const SLUG = '/guides/camping-meal-plan-family'
 const TITLE = 'Family Camping Meal Plan'
 const META_TITLE = 'Family Camping Meal Plan - 3-Day Template'
 const DESCRIPTION =
-  'A complete 3-day family camping meal plan: every meal from arrival through pack-out, what to prep at home, and a printable shopping list to take to the store.'
+  'A complete 3-day family camping meal plan: every meal from arrival through pack-out, what to prep at home, and a printable shopping list.'
 const HERO_IMAGE =
   'https://images.unsplash.com/UdnCiHZFMMw?w=1400&auto=format&fit=crop&q=80'
 
@@ -44,7 +44,7 @@ export default function Page() {
         data={faqPageGraph([
           {
             q: 'How much food should I buy for a 3-day family camping trip?',
-            a: 'For a family of four over 3 nights, plan on roughly 2 lbs of protein per day split across meals, a dozen eggs, 2-3 boxes of shelf-stable milk, and 2-3 snacks per person per day. The full shopping list in this plan is sized exactly for that trip length and party size — scale it up or down proportionally for a different group.',
+            a: 'For a family of four over 3 nights, plan on roughly 2 lbs of protein per day split across meals, a dozen eggs, 2-3 boxes of shelf-stable milk, and 2-3 snacks per person per day. The full shopping list in this plan is sized exactly for that trip length and party size - scale it up or down proportionally for a different group.',
           },
           {
             q: 'What camping meals can I prep at home before the trip?',
@@ -52,7 +52,7 @@ export default function Page() {
           },
           {
             q: 'How do I keep the cooler organized for a multi-day trip?',
-            a: 'Pack in reverse meal order — the last meal you’ll eat goes in first, at the bottom, and the first meal sits on top. Pre-freeze proteins to extend ice life, keep drinks in a separate small cooler so it isn’t opened as often, and drain melt water daily.',
+            a: 'Pack in reverse meal order - the last meal you’ll eat goes in first, at the bottom, and the first meal sits on top. Pre-freeze proteins to extend ice life, keep drinks in a separate small cooler so it isn’t opened as often, and drain melt water daily.',
           },
           {
             q: 'What should we eat on pack-out morning?',
@@ -280,7 +280,7 @@ export default function Page() {
         </p>
         <h3>How do I keep the cooler organized for a multi-day trip?</h3>
         <p>
-          Pack in reverse meal order — last meal in first, first meal on top. Pre-freeze proteins to extend ice life, keep drinks in a separate small cooler, and drain melt water daily.
+          Pack in reverse meal order - last meal in first, first meal on top. Pre-freeze proteins to extend ice life, keep drinks in a separate small cooler, and drain melt water daily.
         </p>
         <h3>What should we eat on pack-out morning?</h3>
         <p>

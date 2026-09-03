@@ -12,7 +12,7 @@ const SLUG = '/guides/how-to-start-a-campfire'
 const TITLE = 'How to Start a Campfire'
 const META_TITLE = 'How to Start a Campfire (Complete Guide)'
 const DESCRIPTION =
-  'How to start a campfire from checking for fire bans to lighting it: gathering materials, picking a structure, wet-weather backups, and putting it out safely.'
+  'How to start a campfire from checking for fire bans to lighting it: gathering materials, picking a structure, wet-weather backups, and putting it out.'
 const HERO_IMAGE =
   'https://images.unsplash.com/photo-1464808646948-8f732deb6e4b?w=1400&auto=format&fit=crop&q=80'
 

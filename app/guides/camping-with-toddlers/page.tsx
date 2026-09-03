@@ -12,7 +12,7 @@ const SLUG = '/guides/camping-with-toddlers'
 const TITLE = 'Camping With Toddlers'
 const META_TITLE = 'Camping With Toddlers - A Practical Guide'
 const DESCRIPTION =
-  'Camping with toddlers: protecting the nap, physical containment instead of verbal rules, diapering logistics, and the sleep setup that actually works in a tent.'
+  'Camping with toddlers: protecting the nap, physical containment instead of verbal rules, diapering logistics, and a sleep setup that works in a tent.'
 const HERO_IMAGE =
   'https://images.unsplash.com/photo-1762143977635-afc21010c313?w=1400&auto=format&fit=crop&q=80'
 

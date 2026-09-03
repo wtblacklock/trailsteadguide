@@ -11,7 +11,7 @@ import {
 
 const SLUG = '/research/what-1000-campers-actually-pack'
 const HEADLINE = 'What 1,000 First-Time Campers Actually Pack: A Reddit Analysis'
-const META_TITLE = 'What 1,000 Campers Actually Pack: A Reddit Analysis'
+const META_TITLE = 'What 1,000 Campers Actually Pack'
 const DESCRIPTION =
   'Top items first-time campers forget - and what they overpack. From a year of r/camping pattern analysis.'
 const PUBLISHED = '2026-05-05'

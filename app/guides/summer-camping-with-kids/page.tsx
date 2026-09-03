@@ -10,9 +10,9 @@ import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
 
 const SLUG = '/guides/summer-camping-with-kids'
 const TITLE = 'Summer Camping With Kids'
-const META_TITLE = 'Summer Camping With Kids - Heat & Sun Guide'
+const META_TITLE = 'Summer Camping With Kids: Heat & Sun'
 const DESCRIPTION =
-  'Summer camping with kids: heat and dehydration signs kids won\'t self-report, sunscreen logistics, water play as the daily centerpiece, and bug protection for young skin.'
+  'Summer camping with kids: heat and dehydration signs kids won\'t report, sunscreen logistics, water play as the daily centerpiece, and bug protection.'
 const HERO_IMAGE =
   'https://images.unsplash.com/photo-1775582225177-2f3c76c9791f?w=1400&auto=format&fit=crop&q=80'
 

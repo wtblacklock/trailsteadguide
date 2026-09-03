@@ -13,7 +13,7 @@ const TITLE = 'Recreation.gov Reservation Strategy'
 // SEO-optimized <title>; H1/headline keep TITLE.
 const META_TITLE = 'Recreation.gov Reservation Strategy'
 const DESCRIPTION =
-  'How recreation.gov actually works: the 6-month rolling window, the 7am ET drop, and what to do when nothing’s available - a real booking playbook for beginners.'
+  'How recreation.gov actually works: the 6-month rolling window, the 10am ET drop, and what to do when nothing is available. A playbook for beginners.'
 const HERO_IMAGE = 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({
@@ -45,11 +45,11 @@ export default function Page() {
         data={faqPageGraph([
           {
             q: 'How far in advance can I book on recreation.gov?',
-            a: 'Most National Park campgrounds release sites on a 6-month rolling window - at 7 a.m. Mountain Time on the day exactly six months before the first night of your stay. Some popular parks (Yosemite, Rocky Mountain, Zion) use a full-month release instead, dropping a calendar month at once. National Forest sites also commonly use a 6-month window. Always check the specific campground page for its release rule.',
+            a: 'Most National Park campgrounds release sites on a 6-month rolling window - at 7 a.m. Pacific (10 a.m. Eastern) on the day exactly six months before the first night of your stay. Some popular parks (Yosemite, Rocky Mountain, Zion) use a full-month release instead, dropping a calendar month at once. National Forest sites also commonly use a 6-month window. Always check the specific campground page for its release rule.',
           },
           {
             q: 'What time do recreation.gov reservations open?',
-            a: 'For most rolling-window campgrounds, 7 a.m. Mountain Time / 9 a.m. Eastern. For full-month-release parks (Yosemite is the canonical example), 7 a.m. Pacific Time / 10 a.m. Eastern on the 15th of the month, five months ahead. Have your account logged in 5 minutes before, payment saved, and the exact site URL bookmarked.',
+            a: 'For most rolling-window campgrounds, 7 a.m. Pacific / 8 a.m. Mountain / 10 a.m. Eastern. Release times are set per facility, so check the campground\'s Seasons and Fees tab. For full-month-release parks (Yosemite is the canonical example), 7 a.m. Pacific Time / 10 a.m. Eastern on the 15th of the month, five months ahead. Have your account logged in 5 minutes before, payment saved, and the exact site URL bookmarked.',
           },
           {
             q: 'What do I do if everything is booked?',
@@ -77,17 +77,17 @@ export default function Page() {
       slug="recreation-gov-reservation-strategy"
       eyebrow="Booking strategy"
       title="Recreation.gov Reservation Strategy"
-      lede="How the booking system actually works - rolling windows, the 7 a.m. drop, refresh strategy, and what to do when there’s nothing left two weeks out."
+      lede="How the booking system actually works - rolling windows, the 7 a.m. Pacific drop, refresh strategy, and what to do when there’s nothing left two weeks out."
       heroImage={{
         src: HERO_IMAGE,
         alt: 'A National Park valley at sunrise - the kind of campground that requires a 6-month-out reservation strategy',
       }}
     >
       <QuickAnswer
-        tldr="Three things matter: the 6-month rolling window, the 7 a.m. local drop, and a Plan B for when nothing’s open."
+        tldr="Three things matter: the 6-month rolling window, the 7 a.m. Pacific drop, and a Plan B for when nothing’s open."
         summary={
           <>
-            Recreation.gov releases most National Park and National Forest campsites on a 6-month rolling window - sites for the first night of your stay drop at 7 a.m. local time exactly six months out. Have an account ready, be logged in 5 minutes early, and refresh-and-book at the second the clock turns. If everything’s gone, three plays: set up cancellation alerts (free on recreation.gov; aggressive via Campnab/Campflare/Schnerp), shift to Sunday-Thursday nights (much easier), or pivot to a state park, FCFS site, or dispersed camping. Always have a Plan B before booking.
+            Recreation.gov releases most National Park and National Forest campsites on a 6-month rolling window - sites for the first night of your stay drop at 7 a.m. Pacific (10 a.m. Eastern) exactly six months out. Have an account ready, be logged in 5 minutes early, and refresh-and-book at the second the clock turns. If everything’s gone, three plays: set up cancellation alerts (free on recreation.gov; aggressive via Campnab/Campflare/Schnerp), shift to Sunday-Thursday nights (much easier), or pivot to a state park, FCFS site, or dispersed camping. Always have a Plan B before booking.
           </>
         }
       />
@@ -231,7 +231,7 @@ export default function Page() {
       </p>
       <h3>What time do reservations open?</h3>
       <p>
-        For rolling-window sites, 7 a.m. local time on the day six months out. For Yosemite-style block releases, 7 a.m. Pacific on the 15th of the month. The campground page lists the exact rule.
+        For rolling-window sites, 7 a.m. Pacific / 8 a.m. Mountain / 10 a.m. Eastern on the day six months out. For Yosemite-style block releases, 7 a.m. Pacific on the 15th of the month. The campground page lists the exact rule.
       </p>
       <h3>What do I do if everything’s booked?</h3>
       <p>

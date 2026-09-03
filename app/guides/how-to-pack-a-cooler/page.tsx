@@ -12,7 +12,7 @@ const SLUG = '/guides/how-to-pack-a-cooler'
 const TITLE = 'How to Pack a Cooler for Camping'
 const META_TITLE = 'How to Pack a Cooler for Camping'
 const DESCRIPTION =
-  'How to pack a camping cooler so ice actually lasts: pre-chilling, block vs. cubed ice, the two-cooler split, and the packing order that keeps food cold for days.'
+  'How to pack a camping cooler so ice actually lasts: pre-chilling, block vs. cubed ice, the two-cooler split, and the order that keeps food cold.'
 const HERO_IMAGE =
   'https://images.unsplash.com/photo-1685395802119-674108d9c7b8?w=1400&auto=format&fit=crop&q=80'
 

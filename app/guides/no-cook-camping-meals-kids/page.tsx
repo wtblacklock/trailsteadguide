@@ -12,7 +12,7 @@ const SLUG = '/guides/no-cook-camping-meals-kids'
 const TITLE = 'No-Cook Camping Meals for Kids'
 const META_TITLE = 'No-Cook Camping Meals for Kids - 20 Ideas'
 const DESCRIPTION =
-  'No-cook camping meals for kids that are fast and kid-approved, needing nothing but a cooler and a picnic table. Perfect for pack-out mornings and rain days.'
+  'No-cook camping meals for kids that are fast and kid-approved, needing only a cooler and a picnic table. Perfect for pack-out mornings and rain days.'
 const HERO_IMAGE =
   'https://images.unsplash.com/WWaDfjWsfuM?w=1400&auto=format&fit=crop&q=80'
 
@@ -52,11 +52,11 @@ export default function Page() {
           },
           {
             q: 'What no-cook breakfast do kids actually eat at camp?',
-            a: 'Pre-portioned cereal in cups with shelf-stable boxed milk is the fastest and most kid-friendly — zero dishes, no help needed. Overnight oats made the night before and bagels with cream cheese are close seconds for variety.',
+            a: 'Pre-portioned cereal in cups with shelf-stable boxed milk is the fastest and most kid-friendly - zero dishes, no help needed. Overnight oats made the night before and bagels with cream cheese are close seconds for variety.',
           },
           {
             q: 'Can I do a whole camping trip without cooking?',
-            a: 'Yes, for a single overnight. No-cook works for dinner, breakfast, and lunch without feeling like a compromise, and it eliminates camp dishwashing entirely — a real win on a first trip with young kids.',
+            a: 'Yes, for a single overnight. No-cook works for dinner, breakfast, and lunch without feeling like a compromise, and it eliminates camp dishwashing entirely - a real win on a first trip with young kids.',
           },
         ])}
       />
@@ -225,7 +225,7 @@ export default function Page() {
         </p>
         <h3>Are no-cook camping meals safe for food storage?</h3>
         <p>
-          Yes, if you build around what travels well cold — deli meat, hummus, hard-boiled eggs, fruit — plus shelf-stable options like crackers and boxed milk that need no refrigeration at all.
+          Yes, if you build around what travels well cold - deli meat, hummus, hard-boiled eggs, fruit - plus shelf-stable options like crackers and boxed milk that need no refrigeration at all.
         </p>
         <h3>What no-cook breakfast do kids actually eat at camp?</h3>
         <p>

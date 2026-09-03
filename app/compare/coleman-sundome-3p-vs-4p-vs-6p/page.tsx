@@ -9,7 +9,7 @@ import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
 const SLUG = '/compare/coleman-sundome-3p-vs-4p-vs-6p'
 const TITLE = 'Coleman Sundome 3P vs 4P vs 6P: Which Size?'
 const DESCRIPTION =
-  'Coleman Sundome 3P vs 4P vs 6P compared: floor size, standing height, real capacity, setup time, and price. Pick the right size for your first camping trip.'
+  'Coleman Sundome 3P vs 4P vs 6P compared: floor size, standing height, real capacity, setup time, and price. Pick the right size for a first trip.'
 
 export const metadata = pageMetadata({
   title: TITLE,

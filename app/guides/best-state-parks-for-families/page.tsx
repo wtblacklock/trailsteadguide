@@ -10,7 +10,7 @@ import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
 
 const SLUG = '/guides/best-state-parks-for-families'
 const TITLE = 'Best State Parks for Family Camping'
-const META_TITLE = 'Best State Parks for Family Camping (By Region)'
+const META_TITLE = 'Best State Parks for Family Camping'
 const DESCRIPTION =
   'Best state parks for family camping by region: the top pick in each area, what makes it beginner-friendly, and how to book before they sell out.'
 const HERO_IMAGE =

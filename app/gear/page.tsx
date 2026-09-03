@@ -15,7 +15,7 @@ function parsePriceRange(range: string): number {
 
 const TITLE = 'Camping Gear Guide'
 const DESCRIPTION =
-  'Curated gear bundles tied to a specific camping plan. Pick the trip you are running and we will tell you exactly what to bring - no 100-option catalog, no overwhelm.'
+  'Curated gear bundles tied to a specific camping plan. Pick the trip you are running and we will tell you exactly what to bring. No 100-option catalog.'
 
 const BUNDLE_ORDER: PlanSlug[] = [
   'first-night-camp',

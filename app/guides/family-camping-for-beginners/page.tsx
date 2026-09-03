@@ -10,9 +10,9 @@ import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
 
 const SLUG = '/guides/family-camping-for-beginners'
 const TITLE = 'Family Camping for Beginners'
-const META_TITLE = 'Family Camping for Beginners - Complete Guide'
+const META_TITLE = 'Family Camping for Beginners'
 const DESCRIPTION =
-  'Family camping for beginners: how to pick your first site, what gear you actually need, how to keep kids engaged, and what a successful first trip looks like.'
+  'Family camping for beginners: how to pick your first site, what gear you actually need, how to keep kids engaged, and what a good first trip looks like.'
 const HERO_IMAGE =
   'https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=1400&auto=format&fit=crop&q=80'
 

@@ -133,7 +133,7 @@ const RELATED = [
 const FAQS = [
   {
     q: 'Which plan is easier for a family with young kids?',
-    a: 'Easy Family Basecamp — it\'s built around comfort infrastructure (queen air mattress, canopy, real pillows) and a slow pace with no required hiking, which matters more with toddlers and preschoolers than an active itinerary does.',
+    a: 'Easy Family Basecamp - it\'s built around comfort infrastructure (queen air mattress, canopy, real pillows) and a slow pace with no required hiking, which matters more with toddlers and preschoolers than an active itinerary does.',
   },
   {
     q: 'Is First Weekend Camp too active for a first trip?',
@@ -141,7 +141,7 @@ const FAQS = [
   },
   {
     q: 'Do I need a premium campsite for either plan?',
-    a: 'Only for Easy Family Basecamp, which is built around a premium site with electrical hookup and shade to support the comfort gear. First Weekend Camp uses a standard developed site — flat pad and fire ring is enough.',
+    a: 'Only for Easy Family Basecamp, which is built around a premium site with electrical hookup and shade to support the comfort gear. First Weekend Camp uses a standard developed site - flat pad and fire ring is enough.',
   },
   {
     q: 'How much more gear does Easy Family Basecamp require?',

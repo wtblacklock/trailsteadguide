@@ -10,9 +10,9 @@ import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
 
 const SLUG = '/guides/easy-family-camping-meals'
 const TITLE = 'Easy Family Camping Meals'
-const META_TITLE = 'Easy Family Camping Meals - 15 Proven Recipes'
+const META_TITLE = 'Easy Family Camping Meals: 15 Recipes'
 const DESCRIPTION =
-  'Easy family camping meals that actually work: simple recipes for every meal, a two-night meal plan, and what to prep at home so camp cooking stays low-stress.'
+  'Easy family camping meals that actually work: simple recipes for every meal, a two-night meal plan, and what to prep at home to stay low-stress.'
 const HERO_IMAGE =
   'https://images.unsplash.com/hlDlZYORtu8?w=1400&auto=format&fit=crop&q=80'
 

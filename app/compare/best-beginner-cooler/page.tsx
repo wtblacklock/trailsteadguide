@@ -118,7 +118,7 @@ const RELATED = [
 const FAQS = [
   {
     q: 'How long does ice actually last in a beginner cooler?',
-    a: 'The compact classic and full-size rolling picks both hold ice 4-5 days under normal use — enough for a long weekend without re-icing. Rotomolded premium coolers (Yeti/RTIC tier) stretch that to 7-10 days, which only matters on trips longer than 5 days.',
+    a: 'The compact classic and full-size rolling picks both hold ice 4-5 days under normal use - enough for a long weekend without re-icing. Rotomolded premium coolers (Yeti/RTIC tier) stretch that to 7-10 days, which only matters on trips longer than 5 days.',
   },
   {
     q: 'Do I need a rolling cooler or is a classic enough?',

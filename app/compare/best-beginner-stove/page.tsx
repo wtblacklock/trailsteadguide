@@ -111,19 +111,19 @@ const RELATED = [
 const FAQS = [
   {
     q: 'Is a single-burner stove enough for a family?',
-    a: 'For boiling water, reheating, and simple one-pot meals, yes. Once you want to cook two things at once — eggs and bacon, or a side while the main cooks — a two-burner setup earns its extra size and weight.',
+    a: 'For boiling water, reheating, and simple one-pot meals, yes. Once you want to cook two things at once - eggs and bacon, or a side while the main cooks - a two-burner setup earns its extra size and weight.',
   },
   {
     q: 'How much BTU do I actually need for camp cooking?',
-    a: '10,000 BTU boils water and handles simple meals fine. 22,000 BTU per burner cooks real meals at a normal pace. 40,000 BTU per burner is overkill for most families — it mainly buys faster boil times and better wind resistance, not better food.',
+    a: '10,000 BTU boils water and handles simple meals fine. 22,000 BTU per burner cooks real meals at a normal pace. 40,000 BTU per burner is overkill for most families - it mainly buys faster boil times and better wind resistance, not better food.',
   },
   {
     q: 'Is the premium two-burner stove worth the upgrade?',
-    a: 'Only if you cook in windy conditions often — the three-sided wind screen is the real differentiator, not the extra BTU. For sheltered sites and calm-weather trips, the two-burner classic performs the same for less money.',
+    a: 'Only if you cook in windy conditions often - the three-sided wind screen is the real differentiator, not the extra BTU. For sheltered sites and calm-weather trips, the two-burner classic performs the same for less money.',
   },
   {
     q: 'What fuel do these camp stoves use?',
-    a: 'All three run on propane. The single-burner uses small 1 lb canisters only. Both two-burner options can run on a 1 lb canister or hose to a 20 lb tank — the tank hose is cheaper per-meal and better for a full weekend of cooking.',
+    a: 'All three run on propane. The single-burner uses small 1 lb canisters only. Both two-burner options can run on a 1 lb canister or hose to a 20 lb tank - the tank hose is cheaper per-meal and better for a full weekend of cooking.',
   },
 ]
 

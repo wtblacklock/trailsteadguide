@@ -10,7 +10,7 @@ import type { AffiliateProduct } from '@/types'
 const SLUG = '/compare/lantern-vs-headlamp-vs-flashlight'
 const TITLE = 'Camping Lantern vs Headlamp vs Flashlight: What You Need'
 const DESCRIPTION =
-  'Camping lantern vs headlamp vs flashlight compared: light pattern, hands-free use, and the real job each one does. Which to buy first for a first family trip.'
+  'Camping lantern vs headlamp vs flashlight compared: light pattern, hands-free use, and the real job each one does. Which to buy first for a family.'
 const H1 = 'Lantern vs headlamp vs flashlight: what you actually need'
 
 function P(id: string): AffiliateProduct {
