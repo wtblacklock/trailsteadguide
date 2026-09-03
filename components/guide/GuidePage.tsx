@@ -4,6 +4,7 @@ import type { ReactNode } from 'react'
 import { getCategoryForGuide } from '@/lib/guides'
 import { AUTHOR_NAME, AUTHOR_IMAGE } from '@/lib/seo'
 import StickyQuizCTA from './StickyQuizCTA'
+import GuideQuickPicks from './GuideQuickPicks'
 
 // Avatar initials shown behind the portrait - graceful fallback for a 404
 // on AUTHOR_IMAGE. The user will swap the photo asset later.
@@ -93,6 +94,8 @@ export function GuidePage({ eyebrow = 'Guide', title, lede, heroImage, slug, dat
           </div>
         </figure>
       )}
+
+      <GuideQuickPicks guideSlug={slug} />
 
       {/* Body - narrow reading column, quiet typography */}
       <section className="max-w-3xl mx-auto px-8">
