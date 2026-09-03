@@ -16,6 +16,10 @@ import { track } from '@/lib/analytics'
  *   - location: current pathname (e.g. /guides/camping-with-kids-first-time)
  *   - linkText: visible text of the clicked element, capped to 60 chars
  *   - subtag:   ascsubtag from the URL when present (set by amazonAffiliateUrl)
+ *
+ * The same payload is beaconed to /api/affiliate-alert, which emails it.
+ * Amazon Associates has no real-time sale notification, so the outbound
+ * click is the only live signal available - see that route for detail.
  */
 const AMAZON_HOST_RE = /(^|\.)amazon\.(com|co\.uk|ca|de|fr|it|es)$/i
 
@@ -47,6 +51,25 @@ export default function AffiliateClickTracker() {
         linkText,
         ...(subtag ? { subtag } : {}),
       })
+
+      // Fire-and-forget email alert. sendBeacon is queued by the browser and
+      // survives the navigation to Amazon that starts a moment later; a plain
+      // fetch() would be cancelled mid-flight. Never let this throw - the
+      // outbound click matters more than the notification.
+      try {
+        const payload = JSON.stringify({
+          product,
+          location: pathname || '/',
+          linkText,
+          subtag,
+        })
+        navigator.sendBeacon?.(
+          '/api/affiliate-alert',
+          new Blob([payload], { type: 'application/json' }),
+        )
+      } catch {
+        // no-op
+      }
     }
 
     // capture: true so we run before any link's own onClick can stopPropagation.
