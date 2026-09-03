@@ -17,7 +17,7 @@ export const metadata = pageMetadata({
 
 type CompareCard = {
   href: string
-  eyebrow: 'Gear' | 'Plan'
+  eyebrow: 'Gear' | 'Plan' | 'Approach'
   title: string
   blurb: string
 }
@@ -100,7 +100,22 @@ const PLAN_COMPARES: CompareCard[] = [
   },
 ]
 
-const ALL_COMPARES = [...PRODUCT_COMPARES, ...PLAN_COMPARES]
+const APPROACH_COMPARES: CompareCard[] = [
+  {
+    href: '/compare/trailstead-guide-vs-winging-it',
+    eyebrow: 'Approach',
+    title: 'Trailstead Guide vs winging it',
+    blurb: 'Do you actually need a plan? What winging it saves, what structure saves, and the cases where we are the wrong tool.',
+  },
+  {
+    href: '/compare/family-camping-vs-cabin-rental',
+    eyebrow: 'Approach',
+    title: 'Family camping vs cabin rental',
+    blurb: 'A $200 cabin night against a $40 site fee plus gear you keep. Real cost per night, comfort, weather, and what kids remember.',
+  },
+]
+
+const ALL_COMPARES = [...PRODUCT_COMPARES, ...PLAN_COMPARES, ...APPROACH_COMPARES]
 
 export default function Page() {
   return (
@@ -180,12 +195,36 @@ export default function Page() {
       </section>
 
       {/* ── Plan comparisons ─────────────────────────────────────────────── */}
-      <section className="max-w-5xl mx-auto px-8 pb-20">
+      <section className="max-w-5xl mx-auto px-8 pb-12">
         <h2 className="font-serif text-2xl md:text-3xl font-semibold text-stone-950 tracking-tight leading-tight mb-6">
           Plan comparisons
         </h2>
         <div className="grid gap-5 md:grid-cols-2">
           {PLAN_COMPARES.map((c) => (
+            <Link
+              key={c.href}
+              href={c.href}
+              className="group block rounded-2xl ring-1 ring-stone-200 hover:ring-stone-300 bg-cream/70 hover:bg-cream transition px-6 py-6 md:px-7 md:py-7"
+            >
+              <p className="text-xs font-semibold tracking-[0.18em] uppercase text-brand-green mb-3">
+                {c.eyebrow}
+              </p>
+              <p className="font-serif text-xl md:text-2xl font-semibold text-stone-950 group-hover:text-stone-700 mb-2 leading-snug">
+                {c.title}
+              </p>
+              <p className="text-stone-600 leading-relaxed text-[15px]">{c.blurb}</p>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* ── Approach comparisons ─────────────────────────────────────────── */}
+      <section className="max-w-5xl mx-auto px-8 pb-20">
+        <h2 className="font-serif text-2xl md:text-3xl font-semibold text-stone-950 tracking-tight leading-tight mb-6">
+          Is it worth it?
+        </h2>
+        <div className="grid gap-5 md:grid-cols-2">
+          {APPROACH_COMPARES.map((c) => (
             <Link
               key={c.href}
               href={c.href}

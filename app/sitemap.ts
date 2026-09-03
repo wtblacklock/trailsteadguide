@@ -90,6 +90,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/compare/sleeping-bag-vs-cot-airbed-combo`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE_URL}/compare/backyard-test-vs-first-night-camp`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.75 },
     { url: `${BASE_URL}/compare/easy-family-basecamp-vs-first-weekend-camp`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.75 },
+    { url: `${BASE_URL}/compare/trailstead-guide-vs-winging-it`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.75 },
+    { url: `${BASE_URL}/compare/family-camping-vs-cabin-rental`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.75 },
 
     // Trip Packs (paid downloadable products)
     { url: `${BASE_URL}/trip-pack`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.8 },

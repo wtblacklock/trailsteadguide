@@ -60,6 +60,18 @@ export const COMPARE_PAGES: ComparePageEntry[] = [
       'Dome tent vs. cabin tent compared for family camping: setup time, wind resistance, headroom, weight, and price. Which style actually wins for car camping.',
   },
   {
+    slug: 'family-camping-vs-cabin-rental',
+    title: 'Family Camping vs Cabin Rental - Real Tradeoffs',
+    excerpt:
+      'Family camping vs cabin rental: real per-night cost after gear, comfort, weather risk, and what kids actually remember. An honest way to pick your weekend.',
+  },
+  {
+    slug: 'trailstead-guide-vs-winging-it',
+    title: 'Trailstead Guide vs Winging It - First-Trip Reality',
+    excerpt:
+      'Trailstead Guide vs winging it: what a structured first-trip plan actually buys you, and when figuring it out yourself is genuinely the better call.',
+  },
+  {
     slug: 'easy-family-basecamp-vs-first-weekend-camp',
     title: 'Easy Family Basecamp vs First Weekend Camp - Comparison',
     excerpt:

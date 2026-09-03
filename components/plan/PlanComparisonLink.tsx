@@ -43,6 +43,16 @@ export default function PlanComparisonLink({ planSlug }: { planSlug: PlanSlug })
               Comparing plans?
             </p>
             <p className="text-stone-800 leading-relaxed">{pairing.hook}</p>
+            <p className="mt-2 text-sm text-stone-600 leading-relaxed">
+              Wondering whether you need a plan at all?{' '}
+              <Link
+                href="/compare/trailstead-guide-vs-winging-it"
+                className="underline underline-offset-2 hover:text-stone-900"
+              >
+                See the honest comparison
+              </Link>
+              .
+            </p>
           </div>
           <Link
             href={pairing.comparePath}
