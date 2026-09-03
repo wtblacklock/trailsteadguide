@@ -83,6 +83,9 @@ export default async function GearSetPage({
       image: i.product.imageUrl,
       offerUrl: getProductUrl(i.product),
       priceRange: i.product.priceRange,
+      // ASIN where we have one - it is the real Amazon SKU. Falls back to
+      // our own registry id inside productGraph().
+      sku: i.product.amazonAsin,
     }),
   )
 

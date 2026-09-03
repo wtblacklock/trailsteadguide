@@ -267,6 +267,27 @@ export function contactPageGraph(input: {
  * Required by Google Merchant Listings rich results; without it Search
  * Console flags the offer as missing the "shippingDetails" field.
  */
+/**
+ * `priceValidUntil` for an Offer, as YYYY-MM-DD.
+ *
+ * Search Console's Product snippets report lists this under "Improve item
+ * appearance" when absent. It is only a hint about when Google should stop
+ * trusting the price, but a date in the PAST is worse than no date at all -
+ * it can drop the offer from rich results - so this is computed from build
+ * time rather than hardcoded, and every deploy pushes it forward. The site
+ * ships several times a week, so it cannot silently go stale.
+ *
+ * Horizon differs by who controls the price:
+ *   12 months - our own digital products, where we set the price
+ *    3 months - third-party gear, where Amazon moves the price and a long
+ *               window would assert a validity we do not actually have
+ */
+export function priceValidUntil(months = 12): string {
+  const d = new Date()
+  d.setMonth(d.getMonth() + months)
+  return d.toISOString().slice(0, 10)
+}
+
 export function digitalShippingDetails() {
   return {
     '@type': 'OfferShippingDetails',
@@ -306,6 +327,12 @@ export function productGraph(p: {
   brand?: string
   offerUrl: string
   priceRange?: string
+  /**
+   * Stock identifier. Callers pass the Amazon ASIN where we have one - it
+   * is the genuine SKU for these items - and fall back to our own product
+   * id, which is stable and unique within the registry.
+   */
+  sku?: string
 }) {
   // Extract a numeric price from "~$120" if present, default undefined.
   const priceMatch = p.priceRange?.match(/\d+(\.\d+)?/)
@@ -317,12 +344,16 @@ export function productGraph(p: {
     name: p.name,
     description: p.description,
     image: p.image,
+    sku: p.sku ?? p.id,
     brand: { '@type': 'Brand', name: p.brand ?? inferBrand(p.name) },
     offers: {
       '@type': 'Offer',
       url: p.offerUrl,
       priceCurrency: 'USD',
       ...(price && { price }),
+      // Only meaningful alongside a price, and short-dated because Amazon
+      // moves these, not us. See priceValidUntil().
+      ...(price && { priceValidUntil: priceValidUntil(3) }),
       availability: 'https://schema.org/InStock',
       seller: { '@type': 'Organization', name: 'Amazon' },
     },
@@ -362,6 +393,7 @@ export function planProductGraph(p: {
         name: p.name,
         description: p.description,
         image: p.image,
+        sku: `plan-${p.planSlug}`,
         // Inline Organization (rather than a bare @id reference) so the
         // brand field validates as a typed object on its own - Search
         // Console flags untyped @id refs as "Invalid object type".
@@ -371,6 +403,7 @@ export function planProductGraph(p: {
           url: offerUrl,
           priceCurrency: 'USD',
           price: p.priceUsd.toFixed(2),
+          priceValidUntil: priceValidUntil(),
           availability: 'https://schema.org/InStock',
           seller: { '@id': `${SITE_URL}/#organization` },
           shippingDetails: digitalShippingDetails(),
@@ -409,6 +442,7 @@ export function tripPackProductGraph(p: {
         description: p.description,
         image: p.image ?? DEFAULT_OG_IMAGE,
         category: 'Camping trip plan (digital download)',
+        sku: `trip-pack-${p.planSlug}`,
         brand: { '@type': 'Organization', name: SITE_NAME },
         offers: {
           '@type': 'AggregateOffer',
@@ -423,8 +457,10 @@ export function tripPackProductGraph(p: {
             '@type': 'Offer',
             name: `${p.name} - ${t.name}`,
             url,
+            sku: `trip-pack-${p.planSlug}-${t.tier}`,
             priceCurrency: 'USD',
             price: t.priceUsd.toFixed(2),
+            priceValidUntil: priceValidUntil(),
             availability: 'https://schema.org/InStock',
             seller: { '@id': `${SITE_URL}/#organization` },
             shippingDetails: digitalShippingDetails(),
