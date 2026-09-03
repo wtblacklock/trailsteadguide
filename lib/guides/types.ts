@@ -18,6 +18,17 @@ export type Guide = {
   description: string
   eyebrow?: string
   /**
+   * Short scannable name for chip-style listings, e.g. 'Texas' for
+   * "Camping in Texas for Beginners". Set on categories whose titles share
+   * a prefix - 17 of the 18 location guides begin "Camping in ...", which
+   * makes a stacked list of full titles nearly impossible to scan.
+   *
+   * Deliberately a field rather than a regex over the title: the pattern
+   * already has an exception ("Best State Parks for Family Camping"), and
+   * a parser would emit nonsense for the next title that does not conform.
+   */
+  shortLabel?: string
+  /**
    * SEO-optimized <title> for the guide page. ≤41 chars to keep the rendered
    * title under Google's ~60-char truncation point after the
    * " | Trailstead Guide" suffix is appended. Optional - when omitted the
@@ -45,6 +56,16 @@ export type GuideCategory = {
   heroTitle: string
   heroSubhead: string
   ctaLabel: string
+  /**
+   * How this category renders in the homepage guides section.
+   *
+   * 'chips' is for categories whose guides carry a `shortLabel` and read as
+   * a set you pick your own from (states, seasons) - they compress ~18 rows
+   * into ~3. 'list' keeps full titles for categories where the wording
+   * carries the meaning, showing a lead handful with the rest behind a
+   * disclosure.
+   */
+  homeDisplay: 'chips' | 'list'
   /**
    * SEO-optimized <title> tag for the category hub page. Front-loaded with
    * the primary keyword and tighter than `${label} - Camping Guides`.

@@ -6,6 +6,8 @@ import { usePathname } from 'next/navigation'
 import { useEffect, useRef, useState } from 'react'
 import SearchOverlay from '@/components/search/SearchOverlay'
 import { useBodyScrollLock } from '@/lib/hooks/useBodyScrollLock'
+import { OPEN_SEARCH_EVENT, type OpenSearchDetail } from '@/lib/search/open-event'
+import type { SearchDocType } from '@/lib/search/types'
 
 const PRIMARY_LINKS = [
   { href: '/guides', label: 'Guides' },
@@ -25,6 +27,7 @@ const SECONDARY_LINKS = [
 export default function Nav() {
   const [mobileOpen, setMobileOpen] = useState(false)
   const [searchOpen, setSearchOpen] = useState(false)
+  const [searchType, setSearchType] = useState<SearchDocType | 'all'>('all')
   const navRef = useRef<HTMLElement>(null)
   const pathname = usePathname()
 
@@ -59,11 +62,24 @@ export default function Nav() {
     function onKey(e: KeyboardEvent) {
       if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
         e.preventDefault()
+        setSearchType('all')
         setSearchOpen(true)
       }
     }
     document.addEventListener('keydown', onKey)
     return () => document.removeEventListener('keydown', onKey)
+  }, [])
+
+  // Lets surfaces outside this subtree open the overlay, optionally scoped to
+  // one result type. See lib/search/open-event.ts.
+  useEffect(() => {
+    function onOpenSearch(e: Event) {
+      const detail = (e as CustomEvent<OpenSearchDetail>).detail
+      setSearchType(detail?.type ?? 'all')
+      setSearchOpen(true)
+    }
+    window.addEventListener(OPEN_SEARCH_EVENT, onOpenSearch)
+    return () => window.removeEventListener(OPEN_SEARCH_EVENT, onOpenSearch)
   }, [])
 
   // Body scroll lock while the full-screen menu is open. Without this the page
@@ -111,7 +127,10 @@ export default function Nav() {
           <div className="flex items-center gap-2">
             <button
               type="button"
-              onClick={() => setSearchOpen(true)}
+              onClick={() => {
+                setSearchType('all')
+                setSearchOpen(true)
+              }}
               aria-label="Search"
               className="inline-flex items-center justify-center w-10 h-10 rounded-md text-stone-700 hover:bg-stone-200/60 transition-colors"
             >
@@ -197,6 +216,7 @@ export default function Nav() {
                 type="button"
                 onClick={() => {
                   setMobileOpen(false)
+                  setSearchType('all')
                   setSearchOpen(true)
                 }}
                 aria-label="Search"
@@ -309,7 +329,11 @@ export default function Nav() {
           </div>
         </div>
       </nav>
-      <SearchOverlay open={searchOpen} onClose={() => setSearchOpen(false)} />
+      <SearchOverlay
+        open={searchOpen}
+        initialType={searchType}
+        onClose={() => setSearchOpen(false)}
+      />
     </>
   )
 }
