@@ -7,6 +7,7 @@ import {
   QUIZ_STARTED_TAG_ID,
 } from '@/lib/kit-tags'
 import { getPlanEmail, getPrintableEmail } from '@/lib/email-templates'
+import { sendSignupAlert } from '@/lib/signup-alert'
 
 type SubscribeBody = {
   email: string
@@ -58,6 +59,7 @@ export async function POST(req: Request) {
   }
 
   // 1. Subscribe to Kit (store for newsletters / tagging)
+  let kitOk = false
   try {
     const kitRes = await fetch(
       `https://api.convertkit.com/v3/forms/${formId}/subscribe`,
@@ -72,6 +74,7 @@ export async function POST(req: Request) {
       }
     )
 
+    kitOk = kitRes.ok
     if (!kitRes.ok) {
       const text = await kitRes.text()
       console.error('Kit subscribe failed', kitRes.status, text)
@@ -81,6 +84,18 @@ export async function POST(req: Request) {
     console.error('Kit subscribe error', err)
     // Continue - we'd rather send the plan than block on Kit.
   }
+
+  // 1b. Tell the owner a signup happened. Fire-and-forget: awaited so it
+  //     runs before the serverless instance can be frozen, but its own
+  //     failures are swallowed inside sendSignupAlert and never surface here.
+  await sendSignupAlert({
+    email,
+    source,
+    planSlug,
+    printableSlug,
+    tagIds,
+    kitOk,
+  })
 
   // 2. Send the source-specific transactional email via Resend.
   //    - post-plan → plan email with the link to the personalized plan
