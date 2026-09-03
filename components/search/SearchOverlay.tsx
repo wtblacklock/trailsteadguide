@@ -11,6 +11,12 @@ import SearchResults from './SearchResults'
 type Props = {
   open: boolean
   onClose: () => void
+  /**
+   * Result-type chip selected when the overlay opens. Lets a caller scope
+   * the overlay to what the user was already looking at (the homepage
+   * guides section opens it on 'guide'). Defaults to unscoped.
+   */
+  initialType?: SearchDocType | 'all'
 }
 
 type Status = 'idle' | 'loading' | 'ready' | 'error'
@@ -47,7 +53,7 @@ function getFocusableElements(container: HTMLElement): HTMLElement[] {
   )
 }
 
-export default function SearchOverlay({ open, onClose }: Props) {
+export default function SearchOverlay({ open, onClose, initialType = 'all' }: Props) {
   const inputRef = useRef<HTMLInputElement>(null)
   const dialogRef = useRef<HTMLDivElement>(null)
   const [status, setStatus] = useState<Status>('idle')
@@ -74,11 +80,11 @@ export default function SearchOverlay({ open, onClose }: Props) {
     if (!open) return
     setQuery('')
     setDebouncedQuery('')
-    setActiveType('all')
+    setActiveType(initialType)
     setHighlightedIndex(0)
     const id = setTimeout(() => inputRef.current?.focus(), 0)
     return () => clearTimeout(id)
-  }, [open])
+  }, [open, initialType])
 
   // Debounce the query.
   useEffect(() => {
