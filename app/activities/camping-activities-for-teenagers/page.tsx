@@ -10,7 +10,7 @@ const META_TITLE = 'Camping Activities for Teenagers'
 const DESCRIPTION =
   'Camping activities for teenagers that hold their attention: challenge-based games, navigation, night activities, and fixes for a bored teen.'
 const HERO_IMAGE =
-  'https://images.unsplash.com/iW5jy46axgs?w=1400&auto=format&fit=crop&q=80'
+  'https://images.unsplash.com/photo-1629185752152-fe65698ddee4?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({
   title: META_TITLE,

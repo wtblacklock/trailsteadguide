@@ -15,7 +15,7 @@ const META_TITLE = 'Backyard Camping with Kids'
 const DESCRIPTION =
   'How to set up a backyard camping night kids will love: tent setup, campfire alternatives, activities, and using it as a dress rehearsal for a real trip.'
 const HERO_IMAGE =
-  'https://images.unsplash.com/jGh5XSUrYNw?w=1400&auto=format&fit=crop&q=80'
+  'https://images.unsplash.com/photo-1784568537415-3020f0515741?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({
   title: META_TITLE,

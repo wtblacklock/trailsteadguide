@@ -16,7 +16,7 @@ const META_TITLE = 'Best Family Tent for Beginners (2026)'
 const DESCRIPTION =
   'The best family camping tents for beginners: what size to buy, which features actually matter, and which tents hold up without costing a fortune.'
 const HERO_IMAGE =
-  'https://images.unsplash.com/cqv_DVAMByg?w=1400&auto=format&fit=crop&q=80'
+  'https://images.unsplash.com/photo-1578645510447-e20b4311e3ce?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({
   title: META_TITLE,

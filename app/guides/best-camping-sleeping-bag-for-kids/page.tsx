@@ -15,7 +15,7 @@ const META_TITLE = "Best Kids Camping Sleeping Bag (2026)"
 const DESCRIPTION =
   "The best camping sleeping bags for kids: what temperature rating to buy, why kids need their own bag, and the picks that work across age ranges."
 const HERO_IMAGE =
-  'https://images.unsplash.com/pGrjfgxTTyU?w=1400&auto=format&fit=crop&q=80'
+  'https://images.unsplash.com/photo-1674230316788-d9c8b92f0d63?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({
   title: META_TITLE,

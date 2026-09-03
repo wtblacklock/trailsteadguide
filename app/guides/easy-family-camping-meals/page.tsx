@@ -15,7 +15,7 @@ const META_TITLE = 'Easy Family Camping Meals: 15 Recipes'
 const DESCRIPTION =
   'Easy family camping meals that actually work: simple recipes for every meal, a two-night meal plan, and what to prep at home to stay low-stress.'
 const HERO_IMAGE =
-  'https://images.unsplash.com/hlDlZYORtu8?w=1400&auto=format&fit=crop&q=80'
+  'https://images.unsplash.com/photo-1701318967976-aba1311c21ae?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({
   title: META_TITLE,
