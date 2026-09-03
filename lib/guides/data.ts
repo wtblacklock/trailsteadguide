@@ -143,7 +143,7 @@ export const GUIDES: Guide[] = [
     shortLabel: 'Fall',
     description: 'Cold nights, condensation, early dark - fall done right.',
     eyebrow: 'Fall',
-    relatedGuides: ['labor-day-weekend-camping', 'spring-camping-for-beginners', 'camping-in-the-northeast-for-beginners'],
+    relatedGuides: ['halloween-camping-with-kids', 'labor-day-weekend-camping', 'camping-in-the-northeast-for-beginners'],
   },
   {
     slug: 'winter-camping-for-beginners',
@@ -515,6 +515,17 @@ export const GUIDES: Guide[] = [
     metaTitle: 'Labor Day Weekend Camping: What to Expect',
     metaDescription:
       'Labor Day camping: why the good spots filled up months ago, what still has openings, holiday crowd etiquette, and packing for the summer-to-fall turn.',
-    relatedGuides: ['recreation-gov-reservation-strategy', 'dispersed-camping-on-blm-and-national-forest-land', 'fall-camping-for-beginners'],
+    relatedGuides: ['recreation-gov-reservation-strategy', 'halloween-camping-with-kids', 'fall-camping-for-beginners'],
+  },
+  {
+    slug: 'halloween-camping-with-kids',
+    category: 'scenario',
+    title: 'Halloween Camping With Kids',
+    description: 'Why campground trick-or-treat weekends run in mid-October, how the loop-road candy route works, and costumes that fit over warm layers.',
+    eyebrow: 'Holiday weekend',
+    metaTitle: 'Halloween Camping With Kids - Campground Trick-or-Treat',
+    metaDescription:
+      'Halloween camping with kids: how campground trick-or-treat weekends actually work, why they run in mid-October, costumes that fit over warm layers, and lighting a dark campground loop.',
+    relatedGuides: ['fall-camping-for-beginners', 'labor-day-weekend-camping', 'backyard-camping-with-kids'],
   },
 ]

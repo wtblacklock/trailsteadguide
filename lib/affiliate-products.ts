@@ -803,6 +803,20 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     slot: 'COOLER',
   },
   {
+    id: 'everbrite-headlamp-5-pack',
+    name: 'EverBrite LED Headlamp, 5-Pack',
+    description:
+      'Five lightweight headlamps for the price of one premium model, with a red night mode and batteries included. The practical way to get a light on every kid for a dark campground loop.',
+    amazonAsin: 'B09WDGNHCY',
+    affiliateUrl: 'https://www.amazon.com/dp/B09WDGNHCY?tag=trailsteadgui-20',
+    imageUrl: 'https://m.media-amazon.com/images/I/71jJVJfN+vL._AC_SX679_.jpg',
+    category: 'essential',
+    templateSlugs: [],
+    priceRange: '~$22',
+    tags: ['headlamp', 'family', 'budget', 'with-kids'],
+    slot: 'LIGHTING',
+  },
+  {
     id: 'glow-stick-necklaces-bulk',
     name: 'PartySticks Glow Sticks, 100-Pack',
     description:
