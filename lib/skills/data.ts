@@ -1558,9 +1558,9 @@ export const SKILLS: Skill[] = [
       title: 'Cast Iron Cooking Over a Campfire',
     },
     illustration: {
-      url: 'https://upload.wikimedia.org/wikipedia/commons/6/6f/Cast_Iron_Skillet.jpg',
-      alt: 'A seasoned cast iron skillet on an outdoor fire grate',
-      attribution: 'Cast iron skillet photo - Wikimedia Commons (CC0 Public Domain)',
+      url: 'https://upload.wikimedia.org/wikipedia/commons/f/f7/Griswold_cast_iron_skillet.jpg',
+      alt: 'A seasoned cast iron skillet with a pour spout and long handle',
+      attribution: 'Cast iron skillet photo by NMorales (WMF) - Wikimedia Commons (CC BY-SA 4.0)',
     },
     relatedSkills: ['cooking/two-burner-stove-basics', 'cooking/camp-coffee', 'cooking/one-pot-camp-meals'],
     relatedPrintableSlug: '3-day-camp-meal-planner',
@@ -1707,7 +1707,7 @@ export const SKILLS: Skill[] = [
       title: 'How to Read Clouds and Predict Weather',
     },
     illustration: {
-      url: 'https://upload.wikimedia.org/wikipedia/commons/b/bd/Cloud_types_en.svg',
+      url: 'https://upload.wikimedia.org/wikipedia/commons/5/57/Cloud_types_en.svg',
       alt: 'Diagram of cloud types by altitude - cirrus, cumulus, stratus, and storm formations',
       attribution: 'Cloud types diagram - Wikimedia Commons (CC BY-SA 3.0)',
     },
@@ -1753,7 +1753,7 @@ export const SKILLS: Skill[] = [
       title: 'How To Read a Topographic Map',
     },
     illustration: {
-      url: 'https://upload.wikimedia.org/wikipedia/commons/6/6c/Topographic_map_example.png',
+      url: 'https://upload.wikimedia.org/wikipedia/commons/7/79/Topographic_map_example.png',
       alt: 'Example topographic map with contour lines showing hills, valleys, and a stream',
       attribution: 'Topographic map example - Wikimedia Commons (Public Domain)',
     },
@@ -1800,7 +1800,7 @@ export const SKILLS: Skill[] = [
       title: 'Shadow Stick Method: Find Direction Without a Compass',
     },
     illustration: {
-      url: 'https://upload.wikimedia.org/wikipedia/commons/1/18/Using_watch_and_sun_as_compass.svg',
+      url: 'https://upload.wikimedia.org/wikipedia/commons/b/ba/Using_watch_and_sun_as_compass.svg',
       alt: 'Diagram of the analog watch sun-compass method showing hour hand aligned to sun',
       attribution: 'Watch-compass diagram by Cmglee - Wikimedia Commons (CC BY-SA 3.0)',
     },
@@ -1943,9 +1943,9 @@ export const SKILLS: Skill[] = [
       title: 'How to Tie the Improved Clinch Knot',
     },
     illustration: {
-      url: 'https://upload.wikimedia.org/wikipedia/commons/d/d8/Clinchknot.jpg',
-      alt: 'Step-by-step diagram of an improved clinch knot tied to a fishing hook eye',
-      attribution: 'Clinch knot diagram - Wikimedia Commons (CC BY-SA 3.0)',
+      url: 'https://upload.wikimedia.org/wikipedia/commons/c/cf/KlammerknotenLose.JPG',
+      alt: 'A clinch knot tied to a fishing hook eye, shown loosely for clarity',
+      attribution: 'Clinch knot photo by StromBer - Wikimedia Commons (CC BY-SA 2.0 DE)',
     },
     relatedGear: [
       { name: 'Monofilament fishing line, 8 lb test', productId: 'monofilament-fishing-line-8lb' },
@@ -1988,9 +1988,9 @@ export const SKILLS: Skill[] = [
       title: 'How to Tie a Figure 8 Knot for Climbing - Everything You Need to Know || REI',
     },
     illustration: {
-      url: 'https://upload.wikimedia.org/wikipedia/commons/3/3a/Figure_eight_knot.svg',
-      alt: 'Step-by-step diagram of a figure-eight knot showing the two crossing passes and the final seated form',
-      attribution: 'Figure-eight knot diagram by Jim Thomas - Wikimedia Commons (GNU FDL)',
+      url: 'https://upload.wikimedia.org/wikipedia/commons/d/db/Figure-eight_knot.svg',
+      alt: 'Diagram of a finished figure-eight knot',
+      attribution: 'Figure-eight knot diagram by Lucasbosch - Wikimedia Commons (CC BY-SA 3.0)',
     },
     relatedSkills: ['knots/bowline', 'knots/square-knot'],
     relatedPrintableSlug: 'knot-reference-card',

@@ -151,7 +151,7 @@ export default function NightSkyBingoCard() {
       <div className="star-refs">
         <div className="star-ref">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Ursa_Major_constellation_map.svg" alt="Ursa Major (Big Dipper) constellation map - the outer two stars of the cup point to Polaris" draggable={false} />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Ursa_Major_constellation_map.svg" alt="Ursa Major (Big Dipper) constellation map - the outer two stars of the cup point to Polaris" draggable={false} />
           <span className="star-ref-label">Big Dipper → Polaris</span>
         </div>
         <div className="star-ref">
@@ -161,7 +161,7 @@ export default function NightSkyBingoCard() {
         </div>
         <div className="star-ref">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Cassiopeia_constellation_map.svg" alt="Cassiopeia constellation map - the W or M shape on the opposite side of Polaris from the Big Dipper" draggable={false} />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Cassiopeia_constellation_map.svg" alt="Cassiopeia constellation map - the W or M shape on the opposite side of Polaris from the Big Dipper" draggable={false} />
           <span className="star-ref-label">Cassiopeia (W shape)</span>
         </div>
       </div>
