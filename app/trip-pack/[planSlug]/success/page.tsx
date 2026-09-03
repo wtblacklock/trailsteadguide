@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { signToken, verifyToken } from '@/lib/pdf/token'
@@ -7,6 +8,13 @@ import type { PlanSlug } from '@/types'
 
 export const dynamic = 'force-dynamic'
 export const runtime = 'nodejs'
+
+// Post-purchase confirmation. Reachable only with a Stripe session token,
+// but keep it out of the index so a shared URL never surfaces in search.
+export const metadata: Metadata = {
+  title: 'Your Trip Pack',
+  robots: { index: false, follow: true },
+}
 
 const PLAN_TITLES: Record<PlanSlug, string> = {
   'backyard-test': 'Backyard Test Night',

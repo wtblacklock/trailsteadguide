@@ -144,8 +144,52 @@ export default function ActivityDetail({ activity }: Props) {
         {activity.recommendedFor && activity.recommendedFor.length > 0 && (
           <RecommendedPlans planSlugs={activity.recommendedFor} />
         )}
+
+        <ActivityNextStep />
       </div>
     </article>
+  )
+}
+
+// Activity pages were a dead end for internal linking: hub, plans, and
+// printables only. This routes readers into the planner and the skills
+// library, which is where the rest of the site lives.
+function ActivityNextStep() {
+  return (
+    <section className="bg-white border border-stone-200 rounded-xl p-6 md:p-8">
+      <h2 className="font-serif text-xl text-stone-900 mb-2">
+        Need the trip around the activity?
+      </h2>
+      <p className="text-stone-600 text-sm mb-5 max-w-xl">
+        Six questions and you get a full plan: timeline, gear, meals, and a kid
+        activity schedule built for your group.
+      </p>
+      <div className="flex flex-wrap items-center gap-x-5 gap-y-3">
+        <Link
+          href="/quiz"
+          className="inline-flex items-center justify-center rounded-md font-medium bg-stone-900 text-white hover:bg-stone-800 transition-colors px-5 py-2.5 text-sm"
+        >
+          Take the camping quiz
+        </Link>
+        <p className="text-sm text-stone-600">
+          Or browse the{' '}
+          <Link
+            href="/skills"
+            className="text-stone-800 underline decoration-stone-300 underline-offset-4 hover:text-stone-900 transition-colors"
+          >
+            camp skills library
+          </Link>{' '}
+          and the{' '}
+          <Link
+            href="/guides"
+            className="text-stone-800 underline decoration-stone-300 underline-offset-4 hover:text-stone-900 transition-colors"
+          >
+            camping guides
+          </Link>
+          .
+        </p>
+      </div>
+    </section>
   )
 }
 

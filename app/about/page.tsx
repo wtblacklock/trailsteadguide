@@ -5,6 +5,7 @@ import {
   SITE_URL,
   personNode,
   organizationNode,
+  breadcrumbList,
   AUTHOR_NAME,
   AUTHOR_JOB_TITLE,
   AUTHOR_IMAGE,
@@ -62,6 +63,10 @@ const ABOUT_FAQ_ITEMS = [
   },
 ]
 
+// Person + Organization carry the author credentials; the Article node gives
+// the page itself something for AI engines to cite when asked "who is behind
+// Trailstead Guide". Breadcrumbs are emitted here rather than by <Breadcrumbs>
+// so the page ships a single BreadcrumbList.
 const ABOUT_PERSON_GRAPH = {
   '@context': 'https://schema.org',
   '@graph': [
@@ -70,6 +75,23 @@ const ABOUT_PERSON_GRAPH = {
       ...personNode,
       mainEntityOfPage: `${SITE_URL}/about`,
     },
+    {
+      '@type': 'Article',
+      headline: 'About Trailstead Guide',
+      description:
+        'Who is behind Trailstead Guide, why it exists, and how gear and plan recommendations are chosen.',
+      author: { '@id': `${SITE_URL}/#author` },
+      publisher: { '@id': `${SITE_URL}/#organization` },
+      mainEntityOfPage: `${SITE_URL}/about`,
+      articleSection: 'About',
+      inLanguage: 'en-US',
+      datePublished: '2026-01-01',
+      dateModified: '2026-09-02',
+    },
+    breadcrumbList([
+      { name: 'Home', url: `${SITE_URL}/` },
+      { name: 'About', url: `${SITE_URL}/about` },
+    ]),
   ],
 }
 
@@ -78,7 +100,6 @@ export default function Page() {
     <main>
       <JsonLd data={ABOUT_PERSON_GRAPH} />
       <Breadcrumbs
-        emitSchema
         items={[
           { name: 'Home', url: `${SITE_URL}/` },
           { name: 'About', url: `${SITE_URL}/about` },

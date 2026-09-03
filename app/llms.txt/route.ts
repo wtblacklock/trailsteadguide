@@ -70,6 +70,12 @@ Every guide, plan, skill, and activity is also available as Markdown at the same
 ## Original research
 
 - [What 500 First-Trip Campers Regret](${SITE_URL}/research/first-time-camping-regrets): Analysis of 500 r/camping threads identifying the seven most common first-time camping regrets and the fixes - arrival timing, gear testing, sleep system, trip scope, rain plan, dinner complexity, and template-vs-blank-page planning.
+- [What 1,000 Campers Actually Pack](${SITE_URL}/research/what-1000-campers-actually-pack): Analysis of 1,000 real packing lists showing which items families actually bring, which get forgotten most often, and which "essentials" go unused.
+- [Research index](${SITE_URL}/research): All original Trailstead Guide research studies, with methodology and citable findings.
+
+## Reference
+
+- [Camping Glossary](${SITE_URL}/glossary): Plain-English definitions of the camping terms beginners hear most - knots, gear, fire rules, reservations, and campground jargon. Marked up as a DefinedTermSet for "what is X" lookups.
 `
 
 const FOOTER = `## Gear & tools

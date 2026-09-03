@@ -65,6 +65,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly' as const,
       priority: 0.7,
     })),
+    // Hand-written activity landing pages. These are keyword-targeted
+    // roundups, not entries in ACTIVITIES, so they need listing explicitly.
+    { url: `${BASE_URL}/activities/camping-activities-for-kids`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE_URL}/activities/camping-activities-for-toddlers`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.75 },
+    { url: `${BASE_URL}/activities/camping-activities-for-teenagers`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.75 },
+    { url: `${BASE_URL}/activities/rainy-day-camping-activities-kids`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.75 },
 
     // Tools
     { url: `${BASE_URL}/tools`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.7 },

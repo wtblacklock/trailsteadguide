@@ -36,6 +36,13 @@ export default function GuideArticleCTA() {
           >
             see the full gear setup
           </Link>{' '}
+          or{' '}
+          <Link
+            href="/plans"
+            className="text-stone-700 underline underline-offset-4 hover:text-brand-green transition-colors"
+          >
+            browse the four camping plans
+          </Link>{' '}
           first.
         </p>
       </div>

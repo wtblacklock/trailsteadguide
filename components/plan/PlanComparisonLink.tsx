@@ -1,4 +1,6 @@
 import Link from 'next/link'
+import { PLAN_TO_GUIDE } from '@/lib/affiliate/guide-gear'
+import { getGuideBySlug } from '@/lib/guides'
 import type { PlanSlug } from '@/types'
 
 type Pairing = {
@@ -34,6 +36,10 @@ export default function PlanComparisonLink({ planSlug }: { planSlug: PlanSlug })
   const pairing = PAIRINGS[planSlug]
   if (!pairing) return null
 
+  // Plans linked out to comparisons but never into the guide library. The
+  // plan-to-guide map already exists for gear; reuse it for the reading path.
+  const guide = getGuideBySlug(PLAN_TO_GUIDE[planSlug] ?? '')
+
   return (
     <section className="py-8">
       <div className="max-w-content mx-auto px-6">
@@ -53,6 +59,18 @@ export default function PlanComparisonLink({ planSlug }: { planSlug: PlanSlug })
               </Link>
               .
             </p>
+            {guide && (
+              <p className="mt-2 text-sm text-stone-600 leading-relaxed">
+                Want the background reading first?{' '}
+                <Link
+                  href={`/guides/${guide.slug}`}
+                  className="underline underline-offset-2 hover:text-stone-900"
+                >
+                  {guide.title}
+                </Link>
+                .
+              </p>
+            )}
           </div>
           <Link
             href={pairing.comparePath}
