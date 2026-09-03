@@ -119,6 +119,13 @@ export type PlanTemplate = {
   title: string
   tagline: string
   heroImage: string
+  /**
+   * CSS object-position for heroImage, e.g. '50% 85%'. Hero images are
+   * cropped hard into wide boxes (16/10 on the homepage card, roughly 3/1
+   * in <PlanHero>), so a photo whose subject is not vertically centred
+   * loses it to the centre crop. Omit for images that centre-crop fine.
+   */
+  heroImagePosition?: string
   tripSummary: string
   preTrip: TimelineItem[]
   arrival: TimelineItem[]

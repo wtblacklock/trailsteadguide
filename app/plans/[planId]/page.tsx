@@ -215,7 +215,12 @@ export default async function PlanPage({
           { name: meta.title, url: `${SITE_URL}${path}` },
         ]}
       />
-      <PlanHero title={plan.title} hook={heroHook} imageUrl={plan.heroImage} />
+      <PlanHero
+        title={plan.title}
+        hook={heroHook}
+        imageUrl={plan.heroImage}
+        imagePosition={plan.heroImagePosition}
+      />
       <PersonalizationChip parts={chipParts} />
       <PlanJumpNav
         links={[

@@ -5,9 +5,11 @@ interface Props {
   title: string
   hook: string
   imageUrl: string
+  /** CSS object-position for imageUrl. See PlanTemplate.heroImagePosition. */
+  imagePosition?: string
 }
 
-export default function PlanHero({ title, hook, imageUrl }: Props) {
+export default function PlanHero({ title, hook, imageUrl, imagePosition }: Props) {
   return (
     <section className="relative">
       <PersonalizationBanner />
@@ -18,6 +20,7 @@ export default function PlanHero({ title, hook, imageUrl }: Props) {
             alt={title}
             fill
             sizes="(max-width: 768px) 100vw, 80rem"
+            style={{ objectPosition: imagePosition ?? '50% 50%' }}
             className="object-cover"
             priority
           />

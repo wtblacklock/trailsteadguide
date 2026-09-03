@@ -276,6 +276,10 @@ export const PLAN_TEMPLATES: Record<string, PlanTemplate> = {
     title: 'First Weekend Camp',
     tagline: 'Two nights. Better gear. More confidence. Same family.',
     heroImage: 'https://images.unsplash.com/photo-1537905569824-f89f14cceb68?w=1400&auto=format&fit=crop&q=80',
+    // Portrait source (1000x1444) in a 16/10 card: only 43% of its height
+    // survives the crop. The tent sits at ~76% down, so a centre crop shows
+    // sky and clips the tent. Bias the window down to frame the tent.
+    heroImagePosition: '50% 85%',
     tripSummary: 'Your first multi-night camping experience - with a full weekend plan, upgraded comfort gear, and the room to actually enjoy it.',
     preTrip: [
       {

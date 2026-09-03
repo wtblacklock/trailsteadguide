@@ -63,6 +63,7 @@ export default function FeaturedPlans() {
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
                   loading="lazy"
+                  style={{ objectPosition: plan.heroImagePosition ?? '50% 50%' }}
                   className="object-cover transition-transform duration-300 group-hover:scale-[1.02]"
                 />
               </div>
