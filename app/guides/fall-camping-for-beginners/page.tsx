@@ -187,7 +187,7 @@ export default function Page() {
           <strong>Sealing the tent up tight.</strong> The wet ceiling at dawn isn&apos;t a leaky tent - it&apos;s your breath condensing on the cold rainfly. Crack the door zipper an inch at the top and stake the fly off the inner body for airflow. A pack towel handles the morning wipe-down.
         </li>
         <li>
-          <strong>Forgetting how early it gets dark.</strong> Set up by 4pm in October and 3pm after the November time change. Plan a one-pot dinner - three-component meals don&apos;t survive cooking by headlamp with cold hands.
+          <strong>Forgetting how early it gets dark.</strong> Set up by 4pm in October and 3pm after the November time change. Plan a one-pot dinner - three-component meals don&apos;t survive cooking by headlamp with cold hands. This bites hardest on an event weekend with a fixed evening schedule, like <Link href="/guides/halloween-camping-with-kids">Halloween camping with kids</Link>.
         </li>
         <li>
           <strong>No real puffy.</strong> A hoodie is for shoulder season; the puffy is the warm layer that lets you sit at the picnic table after dinner instead of giving up and going to bed at 7pm. If you&apos;ve never tested cold-night layering, run a <Link href="/plans/backyard-test">backyard test</Link> on a 35°F night before committing to a state park trip.
