@@ -214,6 +214,50 @@ export const GUIDES: Guide[] = [
     eyebrow: 'Northeast',
     relatedGuides: ['camping-in-the-appalachians-for-beginners', 'fall-camping-for-beginners', 'winter-camping-for-beginners'],
   },
+  {
+    slug: 'camping-in-new-york-for-beginners',
+    category: 'location',
+    title: 'Camping in New York for Beginners',
+    description: 'Adirondack lakes, black fly season, and the foliage weekends that book out in minutes.',
+    eyebrow: 'New York',
+    metaTitle: 'New York Camping for Beginners (Bugs)',
+    metaDescription:
+      'Camping in New York for beginners: Adirondack and Catskill campgrounds, black fly season, foliage weekends, and a setup for cold summer nights.',
+    relatedGuides: ['camping-in-the-northeast-for-beginners', 'fall-camping-for-beginners', 'how-to-choose-a-family-campsite'],
+  },
+  {
+    slug: 'camping-in-michigan-for-beginners',
+    category: 'location',
+    title: 'Camping in Michigan for Beginners',
+    description: 'Upper Peninsula waterfalls, Great Lakes shoreline sites, heavy bugs, and a six-month booking race.',
+    eyebrow: 'Michigan',
+    metaTitle: 'Michigan Camping for Beginners (The UP)',
+    metaDescription:
+      'Camping in Michigan for beginners: Upper Peninsula parks, Great Lakes shoreline sites, brutal mosquito season, and how to win the reservation race.',
+    relatedGuides: ['camping-in-the-northeast-for-beginners', 'summer-camping-for-beginners', 'recreation-gov-reservation-strategy'],
+  },
+  {
+    slug: 'camping-in-pennsylvania-for-beginners',
+    category: 'location',
+    title: 'Camping in Pennsylvania for Beginners',
+    description: 'Ricketts Glen, the Poconos, the Allegheny, and the tick routine you cannot skip.',
+    eyebrow: 'Pennsylvania',
+    metaTitle: 'Pennsylvania Camping for Beginners',
+    metaDescription:
+      'Camping in Pennsylvania for beginners: Ricketts Glen, the Poconos, Allegheny National Forest, and a tick routine that keeps Lyme off your trip.',
+    relatedGuides: ['camping-in-the-appalachians-for-beginners', 'rainy-camping-trips', 'fall-camping-for-beginners'],
+  },
+  {
+    slug: 'camping-in-georgia-for-beginners',
+    category: 'location',
+    title: 'Camping in Georgia for Beginners',
+    description: 'North Georgia waterfalls, Cumberland Island, and a summer that decides your calendar for you.',
+    eyebrow: 'Georgia',
+    metaTitle: 'Georgia Camping for Beginners (Heat)',
+    metaDescription:
+      'Camping in Georgia for beginners: North Georgia mountain parks, Cumberland Island, heat and humidity, bugs, snakes, and the setup that handles it.',
+    relatedGuides: ['camping-in-florida-for-beginners', 'camping-in-a-heatwave', 'summer-camping-for-beginners'],
+  },
   // --- Gap content: family-focused cluster ---
   {
     slug: 'family-camping-for-beginners',
