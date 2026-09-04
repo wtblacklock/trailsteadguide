@@ -143,7 +143,7 @@ export const GUIDES: Guide[] = [
     shortLabel: 'Fall',
     description: 'Cold nights, condensation, early dark - fall done right.',
     eyebrow: 'Fall',
-    relatedGuides: ['halloween-camping-with-kids', 'labor-day-weekend-camping', 'camping-in-the-northeast-for-beginners'],
+    relatedGuides: ['how-to-keep-kids-warm-camping', 'halloween-camping-with-kids', 'labor-day-weekend-camping'],
   },
   {
     slug: 'winter-camping-for-beginners',
@@ -390,7 +390,7 @@ export const GUIDES: Guide[] = [
     title: 'Best Camping Sleeping Bag for Kids',
     description: 'Temperature ratings, why kids need their own bag, and the picks that keep kids warm.',
     eyebrow: 'Gear guide',
-    relatedGuides: ['family-camping-gear-list', 'best-family-tent-for-beginners', 'family-camping-for-beginners'],
+    relatedGuides: ['how-to-keep-kids-warm-camping', 'family-camping-gear-list', 'best-family-tent-for-beginners'],
   },
   {
     slug: 'how-to-set-up-a-tent',
@@ -527,5 +527,16 @@ export const GUIDES: Guide[] = [
     metaDescription:
       'Halloween camping with kids: how campground trick-or-treat weekends actually work, why they run in mid-October, costumes that fit over warm layers, and lighting a dark campground loop.',
     relatedGuides: ['fall-camping-for-beginners', 'labor-day-weekend-camping', 'backyard-camping-with-kids'],
+  },
+  {
+    slug: 'how-to-keep-kids-warm-camping',
+    category: 'scenario',
+    title: 'How to Keep Kids Warm Camping',
+    description: 'The ground-up sleep system, what to wear to bed, and what to do when a kid wakes up cold at 2 a.m.',
+    eyebrow: 'Cold nights',
+    metaTitle: 'How to Keep Kids Warm Camping on Cold Nights',
+    metaDescription:
+      'How to keep kids warm camping: the ground-up sleep system, what to wear to bed, the mistakes that make kids cold, and how to warm a shivering child at 2 a.m.',
+    relatedGuides: ['best-camping-sleeping-bag-for-kids', 'fall-camping-for-beginners', 'winter-camping-for-beginners'],
   },
 ]
