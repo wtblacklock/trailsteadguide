@@ -3,9 +3,16 @@
 //
 // Uniform lastmod across a sitemap is a known low-quality signal to
 // Google; freshness should correlate with how often the content
-// actually changes. We bucket URLs into three tiers.
+// actually changes.
+//
+// Real per-URL dates come from data/content-dates.json, generated from git
+// by `npm run content-dates`. The three tier constants below remain only as
+// a fallback for routes with no recorded date. Before this map existed every
+// URL took a tier constant, so 228 of 237 claimed the same lastmod while the
+// repo was committed to daily.
 
 import { MetadataRoute } from 'next'
+import { contentDate } from '@/lib/content-dates'
 import { ACTIVITIES } from '@/lib/activities/data'
 import { ACTIVITY_LANDING_PAGES } from '@/lib/activities/landing-pages'
 import { SKILLS } from '@/lib/skills/data'
@@ -15,9 +22,14 @@ import { PRINTABLES } from '@/lib/printables'
 
 const BASE_URL = 'https://www.trailsteadguide.com'
 
-const FRESH = '2026-04-27' // core content: home, guides, plans, tools, gear
-const RECENT = '2026-03-15' // secondary content: about, faq, quiz, checklist
-const STABLE = '2026-01-10' // rarely changes: legal pages
+const FRESH = '2026-04-27' // fallback only: core content
+const RECENT = '2026-03-15' // fallback only: secondary content
+const STABLE = '2026-01-10' // fallback only: legal pages
+
+/** The date a URL's source actually last changed, if we recorded one. */
+function realDate(url: string): string | undefined {
+  return contentDate(url.replace(BASE_URL, '') || '/')
+}
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const skillEntries: MetadataRoute.Sitemap = [
@@ -30,7 +42,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
   ]
 
-  return [
+  const entries: MetadataRoute.Sitemap = [
     // Home
     { url: `${BASE_URL}/`, lastModified: FRESH, changeFrequency: 'weekly', priority: 1.0 },
 
@@ -146,4 +158,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Skills (hub + all skill detail pages - category landing pages 301 to /skills?category=)
     ...skillEntries,
   ]
+
+  return entries.map((entry) => {
+    const real = realDate(entry.url)
+    return real ? { ...entry, lastModified: real } : entry
+  })
 }

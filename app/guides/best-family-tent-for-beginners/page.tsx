@@ -12,9 +12,9 @@ import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
 
 const SLUG = '/guides/best-family-tent-for-beginners'
 const TITLE = 'Best Family Tent for Beginners'
-const META_TITLE = 'Best Family Tent for Beginners (2026)'
+const META_TITLE = '3 Best Family Tents for Beginners (2026)'
 const DESCRIPTION =
-  'The best family camping tents for beginners: what size to buy, which features actually matter, and which tents hold up without costing a fortune.'
+  'Three family tents for a first trip, about $70 to $200: the overall pick, a stand-up cabin option, and the buy-one-size-up rule that matters more than any spec.'
 const HERO_IMAGE =
   'https://images.unsplash.com/photo-1578645510447-e20b4311e3ce?w=1400&auto=format&fit=crop&q=80'
 
