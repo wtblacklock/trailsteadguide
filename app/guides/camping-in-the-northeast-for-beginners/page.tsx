@@ -134,7 +134,7 @@ export default function Page() {
         <li>New Hampshire: <a href="https://www.nhstateparks.org/" rel="noopener" target="_blank">nhstateparks.org</a>, 11 months out - earliest in the country.</li>
         <li>Vermont: <a href="https://vtstateparks.com/" rel="noopener" target="_blank">vtstateparks.com</a>.</li>
         <li>Maine: <a href="https://www.maine.gov/dacf/parks/" rel="noopener" target="_blank">maine.gov/dacf/parks</a>.</li>
-        <li>Massachusetts: <a href="https://www.mass.gov/dcr-state-parks-list" rel="noopener" target="_blank">mass.gov</a>.</li>
+        <li>Massachusetts: <a href="https://www.mass.gov/visit-massachusetts-state-parks" rel="noopener" target="_blank">mass.gov</a>.</li>
       </ul>
 
       <h3>Bears, moose, and ticks</h3>
