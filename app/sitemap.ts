@@ -12,7 +12,7 @@
 // repo was committed to daily.
 
 import { MetadataRoute } from 'next'
-import CONTENT_DATES from '@/data/content-dates.json'
+import { contentDate } from '@/lib/content-dates'
 import { ACTIVITIES } from '@/lib/activities/data'
 import { ACTIVITY_LANDING_PAGES } from '@/lib/activities/landing-pages'
 import { SKILLS } from '@/lib/skills/data'
@@ -26,29 +26,9 @@ const FRESH = '2026-04-27' // fallback only: core content
 const RECENT = '2026-03-15' // fallback only: secondary content
 const STABLE = '2026-01-10' // fallback only: legal pages
 
-const DATES: Record<string, string> = CONTENT_DATES
-
-// Sections whose pages all render from one shared data module, so every
-// entry honestly shares that module's commit date.
-const SHARED_SECTIONS: ReadonlyArray<readonly [string, string]> = [
-  ['/skills', '__shared__app/skills'],
-  ['/activities', '__shared__app/activities'],
-  ['/plans', '__shared__app/plans'],
-  ['/printables', '__shared__app/printables'],
-  ['/gear', '__shared__app/gear'],
-  ['/trip-pack', '__shared__app/trip-pack'],
-  // Only the category hubs reach this; each /guides/<slug> matches its own file.
-  ['/guides', '__shared__app/guides'],
-]
-
 /** The date a URL's source actually last changed, if we recorded one. */
 function realDate(url: string): string | undefined {
-  const path = url.replace(BASE_URL, '') || '/'
-  if (DATES[path]) return DATES[path]
-  for (const [prefix, key] of SHARED_SECTIONS) {
-    if (path === prefix || path.startsWith(`${prefix}/`)) return DATES[key]
-  }
-  return undefined
+  return contentDate(url.replace(BASE_URL, '') || '/')
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {

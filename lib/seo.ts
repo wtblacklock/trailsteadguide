@@ -7,6 +7,7 @@
  */
 
 import type { Metadata } from 'next'
+import { contentDate } from '@/lib/content-dates'
 
 export const SITE_URL = 'https://www.trailsteadguide.com'
 export const SITE_NAME = 'Trailstead Guide'
@@ -193,7 +194,9 @@ export function articleGraph(a: ArticleInput) {
     description: a.description,
     image: a.image ? [a.image] : undefined,
     datePublished: a.datePublished ?? '2026-01-01',
-    dateModified: a.dateModified ?? '2026-04-24',
+    // Real per-route date from git, so the Article node stops claiming every
+    // page was last touched on one hardcoded day.
+    dateModified: a.dateModified ?? contentDate(a.slug) ?? '2026-04-24',
     author: { '@id': `${SITE_URL}/#author` },
     publisher: { '@id': `${SITE_URL}/#organization` },
     mainEntityOfPage: url,
