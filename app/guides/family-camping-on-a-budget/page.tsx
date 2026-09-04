@@ -11,9 +11,9 @@ import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
 
 const SLUG = '/guides/family-camping-on-a-budget'
 const TITLE = 'Family Camping on a Budget'
-const META_TITLE = 'Family Camping on a Budget'
+const META_TITLE = 'Family Camping on a Budget: Under $300 (2026)'
 const DESCRIPTION =
-  'Family camping on a budget: gear up for under $300, find free and cheap campsites, and keep the trip cost under $150 total for a family of four.'
+  'Gear up a family of four for under $300, find free and cheap campsites, and keep the first weekend under $150. Plus what camping really costs per year after that.'
 const HERO_IMAGE =
   'https://images.unsplash.com/photo-1620439032751-d2011065c735?w=1400&auto=format&fit=crop&q=80'
 
