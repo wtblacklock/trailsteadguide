@@ -23,7 +23,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     description:
       'Best-selling family dome tent. 9×7 ft floor, weatherproof, fits a queen air bed. Sets up in under 15 minutes. Coleman makes the Sundome in 2/3/4/6-person sizes - the price scales with capacity, so pick the size that matches how you want to set up your campsite.',
     amazonAsin: 'B0D7QHY574',
-    affiliateUrl: 'https://www.amazon.com/Coleman-Weatherproof-Festivals-Backyard-Sleepovers/dp/B014LSDUA8?crid=3MOAVIUB84GDZ&dib=eyJ2IjoiMSJ9.0tQWSmCU69vhKp5wEzg7z70DSRLn7xdDafF8ubM9ecUO7JaFy8khwwmXNOXM6y178YQZFX4aeoYuU84CD5klfXdQtwMdYCjxsiHTPU4DAqe66bM8u1MCb2fPvvc7uXZkvRC-R_bHFo5JTCJsRtGVCvhUToRQN_VQYaFUoQvdokAp0KHng1QoaOULTckEzleB41Mv-Lkq6skuFw2bXkuGnWruuTk5g68ihWeazZ60eJQ.BiVIwtlKXEkmKlfIrIRnWrA7ZAaJa83-r5-68kU1R48&dib_tag=se&keywords=coleman%2Bsundome%2B4-person%2Btent&qid=1777560530&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=coleman%2Bsund%2Caps%2C168&sr=8-3&th=1&linkCode=ll2&tag=trailsteadgui-20&linkId=cd38bd0b52000c5b15696eb881e6c92d&language=en_US&ref_=as_li_ss_tl',
+    affiliateUrl: 'https://www.amazon.com/dp/B0D7QHY574?tag=trailsteadgui-20',
     imageUrl: 'https://m.media-amazon.com/images/I/71wxEg6ubCL._AC_SL1500_.jpg',
     category: 'essential',
     templateSlugs: ['backyard-test', 'easy-family-basecamp', 'first-night-camp', 'first-weekend-camp'],
@@ -232,7 +232,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     name: 'Black Diamond Spot 400 Headlamp',
     description:
       '400-lumen headlamp with red night mode and waterproof rating. One per person is non-negotiable.',
-    amazonAsin: 'B09NQK2581',
+    amazonAsin: 'B09NQL4S1L',
     affiliateUrl: 'https://www.amazon.com/Black-Diamond-Equipment-Headlamp-Olive/dp/B09NQL4S1L?dib=eyJ2IjoiMSJ9.lNMp_XUB8EvU2Qf0jZWsMSLMhF3TDnO5XCLCLVJMBFW8cO05jl7sMnfnpwCO9kOObA3hWdgcFkgxCfjOUlmRfWHtX6cYqTe1XjXjBS7Uw9Rz6H1QHsK54dgU2LsZu6Jn2-y5ym9volks3UhRDs7LJt7iwMdzjlJBRIvP9iHqxP8D9jfSCBKd-O-sv3wr56FVutQa2pa6TLZxZU2m3shPtKp4eGTHgsSHHO6aDNfcMeh_dP8sxwLyhhI1UF-mLq6Y6wBb0Xb4-07JPpZE1DG6kdC2FWSVI7usPgOamp1Vgqc.dxRBnrGeDEnx082xHrmcqiWG5VP_uFmcXYiQ3vF7xjs&dib_tag=se&keywords=BLACK%2BDIAMOND%2BSpot%2B400&qid=1777561924&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-7&th=1&linkCode=ll2&tag=trailsteadgui-20&linkId=1ffdebba9657f75ca8f5a3f7797fd5bd&language=en_US&ref_=as_li_ss_tl',
     imageUrl: 'https://m.media-amazon.com/images/I/71MiiDPJZZL._AC_SL1500_.jpg',
     category: 'essential',
