@@ -215,7 +215,7 @@ export const GUIDES: Guide[] = [
     shortLabel: 'Appalachians',
     description: 'Smokies, Blue Ridge, fall foliage rush, ticks, and the densest bear country in the country.',
     eyebrow: 'Appalachia',
-    relatedGuides: ['camping-in-the-northeast-for-beginners', 'camping-in-colorado-for-beginners', 'fall-camping-for-beginners'],
+    relatedGuides: ['fall-foliage-camping-with-kids', 'camping-in-the-northeast-for-beginners', 'fall-camping-for-beginners'],
   },
   {
     slug: 'camping-in-the-northeast-for-beginners',
@@ -224,7 +224,7 @@ export const GUIDES: Guide[] = [
     shortLabel: 'Northeast',
     description: 'Adirondacks, White Mountains, Acadia - short summer, black flies, and foliage season.',
     eyebrow: 'Northeast',
-    relatedGuides: ['camping-in-the-appalachians-for-beginners', 'fall-camping-for-beginners', 'winter-camping-for-beginners'],
+    relatedGuides: ['fall-foliage-camping-with-kids', 'camping-in-the-appalachians-for-beginners', 'fall-camping-for-beginners'],
   },
   {
     slug: 'camping-in-new-york-for-beginners',
@@ -516,6 +516,17 @@ export const GUIDES: Guide[] = [
     metaDescription:
       'Labor Day camping: why the good spots filled up months ago, what still has openings, holiday crowd etiquette, and packing for the summer-to-fall turn.',
     relatedGuides: ['recreation-gov-reservation-strategy', 'halloween-camping-with-kids', 'fall-camping-for-beginners'],
+  },
+  {
+    slug: 'fall-foliage-camping-with-kids',
+    category: 'scenario',
+    title: 'Fall Foliage Camping With Kids',
+    description: 'When peak color actually lands by region, why elevation beats the calendar, and how to book the hardest weekend of the fall.',
+    eyebrow: 'Fall trips',
+    metaTitle: 'Fall Foliage Camping With Kids (Peak Timing)',
+    metaDescription:
+      'Fall foliage camping with kids: when peak color actually lands by region, why elevation beats the calendar, how to book a leaf-peeping weekend, and what to do at camp.',
+    relatedGuides: ['fall-camping-for-beginners', 'camping-in-the-appalachians-for-beginners', 'recreation-gov-reservation-strategy'],
   },
   {
     slug: 'halloween-camping-with-kids',
