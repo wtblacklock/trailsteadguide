@@ -33,6 +33,7 @@ export type GearSlotId =
   | 'SAFETY'
   | 'POWER'
   | 'TRASH'
+  | 'STORAGE'
 
 export type GearSlot = {
   id: GearSlotId
@@ -61,6 +62,7 @@ export const GEAR_SLOTS: GearSlot[] = [
   { id: 'SAFETY', label: 'Safety / first aid', description: 'First-aid kit, whistle, bear spray (where relevant)', researchQuery: 'best first aid kit camping family' },
   { id: 'POWER', label: 'Power / charging', description: 'Power bank, solar panel, battery box', researchQuery: 'best power bank camping' },
   { id: 'TRASH', label: 'Trash / cleanup', description: 'Collapsible can, bags, dish kit', researchQuery: 'collapsible camping trash can' },
+  { id: 'STORAGE', label: 'Storage & off-season care', description: 'Gasketed bins, desiccant, gear wash and re-proofing', researchQuery: 'best storage bins camping gear off season' },
 ]
 
 /** Map product `tags` entries to the slot they fill. */
@@ -83,6 +85,7 @@ export const TAG_TO_SLOT: Record<string, GearSlotId> = {
   'power-bank': 'POWER',
   cookware: 'COOKWARE',
   'hand-warmers': 'WINTER_GEAR',
+  storage: 'STORAGE',
   // No product types yet for: DOG_GEAR, KID_GEAR, SAFETY - those slots
   // are filled by tags that don't map 1:1 to the slot (with-dogs, etc).
 }
@@ -106,6 +109,9 @@ export const SCENARIO_RULES: Array<{ keywords: string[]; addSlots: GearSlotId[] 
   { keywords: ['summer', 'texas', 'desert-southwest', 'florida'], addSlots: ['HOT_GEAR'] },
   { keywords: ['rain', 'weather-turns', 'pacific-northwest', 'spring', 'florida'], addSlots: ['RAIN_GEAR'] },
   { keywords: ['winter', 'colorado', 'appalachians', 'northeast', 'fall'], addSlots: ['WINTER_GEAR'] },
+  // Off-season storage - only the storage guide curates bins and gear wash,
+  // so this stays off the baseline instead of adding an empty row everywhere.
+  { keywords: ['store'], addSlots: ['STORAGE'] },
   // Dogs
   { keywords: ['dogs'], addSlots: ['DOG_GEAR'] },
   // Kids - every guide on this site is family-focused, so include sitewide

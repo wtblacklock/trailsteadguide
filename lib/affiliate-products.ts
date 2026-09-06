@@ -504,6 +504,49 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     tags: ['trash', 'budget'],
     slot: 'TRASH',
   },
+  {
+    id: 'iris-weatherpro-44qt-bins',
+    name: 'IRIS USA 44 Qt Gasket-Lid Storage Bins, 2-Pack',
+    description:
+      'Latching bins with a gasketed lid that blocks the dust and damp air a garage or basement throws at gear all winter. Two of them hold a full family car-camping kit minus the tent and bags.',
+    amazonAsin: 'B092LVGNZ7',
+    affiliateUrl: 'https://www.amazon.com/dp/B092LVGNZ7?tag=trailsteadgui-20',
+    imageUrl:
+      'https://m.media-amazon.com/images/I/71fCiZzjiES._AC_SX679_PIbundle-2,TopRight,0,0_SH20_.jpg',
+    category: 'convenience',
+    templateSlugs: [],
+    priceRange: '~$50',
+    tags: ['storage', 'family', 'mid-range'],
+    slot: 'STORAGE',
+  },
+  {
+    id: 'drytote-desiccant-packs',
+    name: 'DryTote Rechargeable Desiccant Packs, 5-Pack',
+    description:
+      'Color-indicating silica gel that turns from orange to green when it is saturated. Drop one in each sealed bin so gear that went in dry stays dry, then bake them and reuse them next season.',
+    amazonAsin: 'B098ZB33DP',
+    affiliateUrl: 'https://www.amazon.com/dp/B098ZB33DP?tag=trailsteadgui-20',
+    imageUrl: 'https://m.media-amazon.com/images/I/81f1Je-Ga+S._AC_SX679_.jpg',
+    category: 'convenience',
+    templateSlugs: [],
+    priceRange: '~$37',
+    tags: ['storage', 'mid-range'],
+    slot: 'STORAGE',
+  },
+  {
+    id: 'nikwax-tent-gear-solarproof',
+    name: 'Nikwax Tent & Gear SolarProof, 500ml',
+    description:
+      'Spray-on re-proofer for a rainfly that has stopped beading. The end-of-season job worth doing while the tent is already up drying, so it is ready in spring instead of leaking in spring.',
+    amazonAsin: 'B002XZTNFS',
+    affiliateUrl: 'https://www.amazon.com/dp/B002XZTNFS?tag=trailsteadgui-20',
+    imageUrl: 'https://m.media-amazon.com/images/I/61UBMGdDyrL._AC_SX679_.jpg',
+    category: 'convenience',
+    templateSlugs: [],
+    priceRange: '~$20',
+    tags: ['storage', 'rain-ready', 'budget'],
+    slot: 'STORAGE',
+  },
 
   // ------------------------------------------------------------------
   // Skills gear - referenced from lib/skills/data.ts `relatedGear`.

@@ -795,6 +795,11 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'SAFETY', productId: 'uco-stormproof-matches' },
     { slot: 'SAFETY', productId: 'esbit-fire-cubes' },
   ],
+  'how-to-store-camping-gear': [
+    { slot: 'STORAGE', productId: 'iris-weatherpro-44qt-bins' },
+    { slot: 'STORAGE', productId: 'drytote-desiccant-packs' },
+    { slot: 'STORAGE', productId: 'nikwax-tent-gear-solarproof' },
+  ],
   'no-cook-camping-meals-kids': [
     { slot: 'COOLER', productId: 'coleman-classic-rolling-cooler' },
   ],

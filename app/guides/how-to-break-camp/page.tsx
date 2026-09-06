@@ -149,7 +149,12 @@ export default function Page() {
           home, since mold and mildew set in within a day and ruin the fabric permanently. Hang it
           in a garage or over a fence to finish drying as soon as you get home. The full setup
           walkthrough, including this same teardown step in more detail, is in{' '}
-          <Link href="/guides/how-to-set-up-a-tent">how to set up a family tent</Link>.
+          <Link href="/guides/how-to-set-up-a-tent">how to set up a family tent</Link>. If this is
+          the last trip of the season, the drying step becomes the first move in{' '}
+          <Link href="/guides/how-to-store-camping-gear">
+            how to store camping gear for the off-season
+          </Link>
+          .
         </p>
 
         <h2>The site sweep: Leave No Trace and what gets forgotten</h2>
