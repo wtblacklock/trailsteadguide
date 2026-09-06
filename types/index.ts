@@ -155,6 +155,7 @@ export type AffiliateProductTag =
   | 'stove' | 'cooler' | 'lantern' | 'headlamp' | 'chair'
   | 'canopy' | 'projector' | 'trash' | 'lantern-hanger'
   | 'tarp' | 'fan' | 'power-bank' | 'cookware' | 'hand-warmers'
+  | 'storage'
   // Tier
   | 'budget' | 'mid-range' | 'premium'
   // Audience
@@ -186,7 +187,7 @@ export type AffiliateProduct = {
     | 'TENT' | 'SLEEP_BAG' | 'SLEEP_SURFACE' | 'STOVE' | 'COOKWARE'
     | 'COOLER' | 'LIGHTING' | 'CHAIR' | 'CANOPY' | 'RAIN_GEAR'
     | 'WINTER_GEAR' | 'HOT_GEAR' | 'DOG_GEAR' | 'KID_GEAR' | 'SAFETY'
-    | 'POWER' | 'TRASH'
+    | 'POWER' | 'TRASH' | 'STORAGE'
   /**
    * Legacy products kept in the registry for `/compare/*` pages and history
    * tests. Excluded from new recommendation surfaces (guide gear shelf,

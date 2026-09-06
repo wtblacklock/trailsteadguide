@@ -414,7 +414,19 @@ export const GUIDES: Guide[] = [
     title: 'How to Break Camp',
     description: 'The teardown order that actually works: fire out cold, tent packed dry, trash gone, and the car loaded once instead of twice.',
     eyebrow: 'How-to',
-    relatedGuides: ['how-to-set-up-a-tent', 'how-to-start-a-campfire', 'how-to-pack-a-cooler'],
+    relatedGuides: ['how-to-store-camping-gear', 'how-to-set-up-a-tent', 'how-to-start-a-campfire'],
+  },
+  {
+    slug: 'how-to-store-camping-gear',
+    category: 'basics',
+    title: 'How to Store Camping Gear for the Off-Season',
+    description:
+      'The end-of-season pass that decides whether your kit works in spring: dry the tent, uncompress the bags, pull every battery, and bin the rest.',
+    eyebrow: 'How-to',
+    metaTitle: 'How to Store Camping Gear for the Off-Season',
+    metaDescription:
+      'How to store camping gear over winter: drying the tent, storing sleeping bags uncompressed, pulling batteries before they corrode, propane rules, and a bin system that survives a garage.',
+    relatedGuides: ['how-to-break-camp', 'fall-camping-for-beginners', 'family-camping-gear-list'],
   },
   {
     slug: 'best-tent-for-rainy-camping',

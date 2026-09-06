@@ -48,6 +48,7 @@ const GEAR_SLOTS = [
   { id: 'SAFETY', label: 'Safety / first aid', researchQuery: 'best first aid kit camping family' },
   { id: 'POWER', label: 'Power / charging', researchQuery: 'best power bank camping' },
   { id: 'TRASH', label: 'Trash / cleanup', researchQuery: 'collapsible camping trash can' },
+  { id: 'STORAGE', label: 'Storage & off-season care', researchQuery: 'best storage bins camping gear off season' },
 ]
 
 const SLOT_BY_ID = Object.fromEntries(GEAR_SLOTS.map((s) => [s.id, s]))
@@ -71,6 +72,7 @@ const TAG_TO_SLOT = {
   'power-bank': 'POWER',
   cookware: 'COOKWARE',
   'hand-warmers': 'WINTER_GEAR',
+  storage: 'STORAGE',
 }
 
 const BASE_SLOTS = ['TENT', 'SLEEP_BAG', 'SLEEP_SURFACE', 'STOVE', 'COOKWARE', 'COOLER', 'LIGHTING', 'CHAIR', 'SAFETY', 'POWER', 'TRASH']
@@ -81,6 +83,7 @@ const SCENARIO_RULES = [
   { keywords: ['summer', 'texas', 'desert-southwest', 'florida'], addSlots: ['HOT_GEAR'] },
   { keywords: ['rain', 'weather-turns', 'pacific-northwest', 'spring', 'florida'], addSlots: ['RAIN_GEAR'] },
   { keywords: ['winter', 'colorado', 'appalachians', 'northeast', 'fall'], addSlots: ['WINTER_GEAR'] },
+  { keywords: ['store'], addSlots: ['STORAGE'] },
   { keywords: ['dogs'], addSlots: ['DOG_GEAR'] },
   { keywords: [], addSlots: ['KID_GEAR'] }, // family-focused site — KID_GEAR sitewide
 ]
