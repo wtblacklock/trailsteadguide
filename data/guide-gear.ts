@@ -588,6 +588,16 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'LIGHTING', productId: 'luminaid-packlite-max' },
     { slot: 'SAFETY', productId: 'thriad-first-aid-430' },
   ],
+  'camping-after-dark-with-kids': [
+    { slot: 'LIGHTING', productId: 'everbrite-headlamp-5-pack' },
+    { slot: 'LIGHTING', productId: 'luminaid-packlite-max' },
+    { slot: 'LIGHTING', productId: 'black-diamond-spot-400' },
+    { slot: 'LIGHTING', productId: 'streamlight-protac-2' },
+    { slot: 'KID_GEAR', productId: 'glow-stick-necklaces-bulk' },
+    { slot: 'KID_GEAR', productId: 'planisphere' },
+    { slot: 'KID_GEAR', productId: 'family-trivia-cards' },
+    { slot: 'POWER', productId: 'anker-zolo-power-bank' },
+  ],
   'halloween-camping-with-kids': [
     { slot: 'TENT', productId: 'coleman-sundome-4p' },
     { slot: 'SLEEP_BAG', productId: 'coleman-brazos-bag' },
