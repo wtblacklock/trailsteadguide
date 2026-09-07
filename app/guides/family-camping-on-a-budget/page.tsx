@@ -77,6 +77,7 @@ export default function Page() {
           src: HERO_IMAGE,
           alt: 'Family eating a simple meal at a campsite with basic gear set up',
         }}
+        dateModified="2026-09-07"
       >
         <QuickAnswer
           tldr="Borrow gear before buying. Use state parks for $25-40/night. Cook your own food. Total trip cost: $80-120 after gear."
@@ -127,14 +128,20 @@ export default function Page() {
 
         <h3>Budget gear breakdown under $300</h3>
         <ul>
-          <li>Coleman Sundome 6-person tent: $80-100 (or borrow)</li>
+          <li>Coleman Sundome tent: $70-100 (or borrow)</li>
           <li>2 adult sleeping bags: $80-120 (Coleman or similar)</li>
           <li>2 kids sleeping bags: $60-80</li>
-          <li>4 foam sleeping pads: $30-50 total</li>
-          <li><em>Total for the sleep system: $250-350 new</em></li>
+          <li>4 foam sleeping pads: $40-140 total, depending on where you buy</li>
+          <li><em>Total for the sleep system: $250-440 new</em></li>
         </ul>
         <p>
-          Borrow or defer on the first trip: camp stove, cooler, cookware, lantern. Use the campground facilities for cooking if a stove isn&apos;t available, and use the host store for ice. You can make a first trip work with less than the full setup.
+          One honest note on the pads, because this is where most budget breakdowns online quietly cheat: the thin blue roll-up pads at big-box stores really do run $8-12 each, and they are better than nothing. But a full-length closed-cell pad with a real R-value runs closer to $35 each. Pads are the item where going too cheap costs you the night, because the ground pulls more heat out of a kid than the air does. If the budget only stretches to two good pads, put them under the kids.
+        </p>
+        <p>
+          Two things not to defer: a light for every person, and a way to keep food cold. A five-pack of headlamps runs about $22, which is less than the cost of one bad night, and a budget wheeled cooler is around $45. Everything else can wait - borrow or skip the camp stove, cookware, chairs, and lantern on the first trip. Use the campground facilities for cooking if a stove isn&apos;t available, and buy ice at the host store. You can make a first trip work with well under the full setup.
+        </p>
+        <p>
+          If you would rather see the whole kit laid out in priority order before deciding what to cut, our <Link href="/guides/family-camping-gear-list">family camping gear list</Link> sorts it into six categories by how much each one actually matters.
         </p>
 
         <h2>Finding cheap and free campsites</h2>

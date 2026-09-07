@@ -821,6 +821,20 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     priceRange: '~$10',
   },
   {
+    id: 'redcamp-foam-sleeping-pad',
+    name: 'REDCAMP Closed-Cell Foam Sleeping Pad, 72 x 22 in',
+    description:
+      'The budget-tier sleep surface: closed-cell foam, R-2.1, nothing to inflate and nothing to puncture. Not as plush as an air pad, but it is the cheapest honest insulation between a kid and cold ground.',
+    amazonAsin: 'B07MNR63QC',
+    affiliateUrl: 'https://www.amazon.com/dp/B07MNR63QC?tag=trailsteadgui-20',
+    imageUrl: 'https://m.media-amazon.com/images/I/71GxADTtjeL._AC_SY879_.jpg',
+    category: 'essential',
+    templateSlugs: [],
+    priceRange: '~$36',
+    tags: ['sleeping-pad', 'budget', 'beginner'],
+    slot: 'SLEEP_SURFACE',
+  },
+  {
     id: 'coleman-xtreme-50-cooler',
     name: 'Coleman 50-Quart Xtreme Wheeled Cooler',
     description:

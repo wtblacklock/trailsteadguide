@@ -103,6 +103,9 @@ export default function Page() {
       <p>
         The appeal is real: it’s free, it’s quiet, and on a Friday night in July it’s a whole different planet from a packed state park. The cost is that everything that was handled for you at a developed campground - water, toilet, fire safety, site selection, neighbors who’d notice if you didn’t come back - is now your problem.
       </p>
+      <p>
+        Worth being clear about what &quot;free&quot; buys you, though: the site fee is usually the smallest line in a family camping budget, not the biggest. If cost is the reason you are looking at dispersed camping, <Link href="/guides/family-camping-on-a-budget">family camping on a budget</Link> covers the two places the money actually goes, and how to get a first trip under $150 without leaving developed campgrounds.
+      </p>
 
       <h2>Where it’s legal</h2>
       <p>
