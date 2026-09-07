@@ -10,9 +10,9 @@ import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
 
 const SLUG = '/guides/halloween-camping-with-kids'
 const TITLE = 'Halloween Camping With Kids'
-const META_TITLE = 'Halloween Camping With Kids - Campground Trick-or-Treat'
+const META_TITLE = 'Halloween Camping Kids Trick-or-Treat'
 const DESCRIPTION =
-  'Halloween camping with kids: how campground trick-or-treat weekends actually work, why they run in mid-October, costumes that fit over warm layers, and lighting a dark campground loop.'
+  'Halloween camping with kids: how campground trick-or-treat weekends work, why they run in mid-October, and costumes that fit over warm layers.'
 const HERO_IMAGE =
   'https://images.unsplash.com/photo-1603738397297-a374b78e9626?w=1400&auto=format&fit=crop&q=80'
 

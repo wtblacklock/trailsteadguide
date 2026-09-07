@@ -10,9 +10,9 @@ import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
 
 const SLUG = '/guides/how-to-store-camping-gear'
 const TITLE = 'How to Store Camping Gear for the Off-Season'
-const META_TITLE = 'How to Store Camping Gear for the Off-Season'
+const META_TITLE = 'How to Store Camping Gear Off-Season'
 const DESCRIPTION =
-  'How to store camping gear over winter: drying the tent, storing sleeping bags uncompressed, pulling batteries before they corrode, propane rules, and a bin system that survives a garage.'
+  'How to store camping gear over winter: drying the tent, storing sleeping bags uncompressed, pulling batteries before they corrode, and propane rules.'
 const HERO_IMAGE =
   'https://images.unsplash.com/photo-1476041800959-2f6bb412c8ce?w=1400&auto=format&fit=crop&q=80'
 
