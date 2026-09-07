@@ -143,7 +143,7 @@ export const GUIDES: Guide[] = [
     shortLabel: 'Fall',
     description: 'Cold nights, condensation, early dark - fall done right.',
     eyebrow: 'Fall',
-    relatedGuides: ['halloween-camping-with-kids', 'labor-day-weekend-camping', 'camping-in-the-northeast-for-beginners'],
+    relatedGuides: ['camping-after-dark-with-kids', 'halloween-camping-with-kids', 'labor-day-weekend-camping'],
   },
   {
     slug: 'winter-camping-for-beginners',
@@ -538,6 +538,17 @@ export const GUIDES: Guide[] = [
     metaTitle: 'Halloween Camping Kids Trick-or-Treat',
     metaDescription:
       'Halloween camping with kids: how campground trick-or-treat weekends work, why they run in mid-October, and costumes that fit over warm layers.',
-    relatedGuides: ['fall-camping-for-beginners', 'labor-day-weekend-camping', 'backyard-camping-with-kids'],
+    relatedGuides: ['camping-after-dark-with-kids', 'fall-camping-for-beginners', 'labor-day-weekend-camping'],
+  },
+  {
+    slug: 'camping-after-dark-with-kids',
+    category: 'scenario',
+    title: 'Camping After Dark With Kids',
+    description: 'Fall evenings run four or five hours long. How to light a family campsite, and what to do with all that darkness.',
+    eyebrow: 'After dark',
+    metaTitle: 'Camping After Dark With Kids',
+    metaDescription:
+      'Camping after dark with kids: how much daylight fall costs you, the three-layer lighting setup for a campsite, and what to do with a long evening.',
+    relatedGuides: ['fall-camping-for-beginners', 'halloween-camping-with-kids', 'first-night-camping-guide'],
   },
 ]
