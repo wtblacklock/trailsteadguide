@@ -685,7 +685,10 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'TENT', productId: 'coleman-sundome-4p' },
     { slot: 'SLEEP_BAG', productId: 'coleman-brazos-bag' },
     { slot: 'SLEEP_BAG', productId: 'vumos-bag-liner' },
+    { slot: 'SLEEP_SURFACE', productId: 'redcamp-foam-sleeping-pad' },
     { slot: 'STOVE', productId: 'coleman-1-burner' },
+    { slot: 'COOLER', productId: 'coleman-xtreme-50-cooler' },
+    { slot: 'LIGHTING', productId: 'everbrite-headlamp-5-pack' },
     { slot: 'CHAIR', productId: 'coleman-portable-chair-cooler' },
   ],
   'first-camping-trip-checklist': [

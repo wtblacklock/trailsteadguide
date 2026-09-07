@@ -374,7 +374,7 @@ export const GUIDES: Guide[] = [
     title: 'Family Camping Gear List',
     description: 'The real list - six categories of gear for car camping with kids, in priority order.',
     eyebrow: 'Gear',
-    relatedGuides: ['best-family-tent-for-beginners', 'best-camping-sleeping-bag-for-kids', 'family-camping-for-beginners'],
+    relatedGuides: ['family-camping-on-a-budget', 'best-family-tent-for-beginners', 'best-camping-sleeping-bag-for-kids'],
   },
   {
     slug: 'best-family-tent-for-beginners',
@@ -493,7 +493,7 @@ export const GUIDES: Guide[] = [
     shortLabel: 'State Parks',
     description: 'The top family-friendly state park picks by region - what makes each one beginner-friendly.',
     eyebrow: 'Where to camp',
-    relatedGuides: ['family-camping-for-beginners', 'how-to-choose-a-family-campsite', 'how-to-plan-a-camping-trip'],
+    relatedGuides: ['family-camping-on-a-budget', 'how-to-choose-a-family-campsite', 'family-camping-for-beginners'],
   },
   // --- High-intent micro-guides: dispersed + reservation strategy ---
   {
@@ -505,7 +505,7 @@ export const GUIDES: Guide[] = [
     metaTitle: 'Dispersed Camping on BLM & NF Land',
     metaDescription:
       'Dispersed camping on BLM and National Forest land: where it’s legal, the rules that matter, fire restrictions, and when it’s the wrong call for a beginner.',
-    relatedGuides: ['camping-for-beginners', 'labor-day-weekend-camping', 'how-to-plan-a-camping-trip'],
+    relatedGuides: ['family-camping-on-a-budget', 'camping-for-beginners', 'how-to-plan-a-camping-trip'],
   },
   {
     slug: 'recreation-gov-reservation-strategy',

@@ -80,6 +80,9 @@ export default function Page() {
         />
 
         <h2>The complete family car camping list</h2>
+        <p>
+          Everything below is sorted by how much it actually matters, not by what a gear catalog wants to sell you. If the total is the sticking point, <Link href="/guides/family-camping-on-a-budget">family camping on a budget</Link> works the same list from the other direction: what to borrow, what to buy used, and what to buy new for a setup under $300.
+        </p>
 
         <h3>Shelter - the non-negotiables</h3>
         <ul>
