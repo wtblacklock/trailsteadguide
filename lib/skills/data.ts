@@ -551,6 +551,10 @@ export const SKILLS: Skill[] = [
     relatedGear: [
       { name: 'Suunto A-10 Baseplate Compass', productId: 'suunto-a10-compass' },
     ],
+    videoEmbed: {
+      url: 'https://www.youtube-nocookie.com/embed/0cF0ovA3FtY',
+      title: 'How to Use a Compass - REI',
+    },
   },
 
   // ── FISHING BASICS ────────────────────────────────────────────────────────
@@ -2211,6 +2215,10 @@ export const SKILLS: Skill[] = [
     relatedGear: [
       { name: 'Esbit Fire Starter Cubes', productId: 'esbit-fire-cubes' },
     ],
+    videoEmbed: {
+      url: 'https://www.youtube-nocookie.com/embed/0O3Bj8JFcTc',
+      title: 'How to Build a Fire - REI',
+    },
   },
   {
     slug: 'fire-in-wet-conditions',
@@ -2286,6 +2294,10 @@ export const SKILLS: Skill[] = [
     ],
     relatedSkills: ['hiking/day-hike-essentials', 'hiking/hiking-with-kids', 'safety/food-storage-and-bear-bags'],
     relatedPrintableSlug: 'leave-no-trace-quick-reference',
+    videoEmbed: {
+      url: 'https://www.youtube-nocookie.com/embed/9rsAKWxs4fM',
+      title: 'Leave No Trace 7 Principles Explained - Leave No Trace Center for Outdoor Ethics',
+    },
   },
   {
     slug: 'trekking-poles',
@@ -2367,6 +2379,10 @@ export const SKILLS: Skill[] = [
     relatedGear: [
       { name: 'KidCo GoPod Portable Travel Booster Seat', productId: 'kidco-gopod' },
     ],
+    videoEmbed: {
+      url: 'https://www.youtube-nocookie.com/embed/HZwEEPN0WSQ',
+      title: 'Basics of Hiking with Kids - Kids in Parks',
+    },
   },
 
   // ── SHELTER (new) ─────────────────────────────────────────────────────────
@@ -2600,6 +2616,10 @@ export const SKILLS: Skill[] = [
     safetyTone: 'critical',
     relatedSkills: ['safety/weather-reading', 'safety/building-a-camp-first-aid-kit'],
     relatedPrintableSlug: 'weather-signs-field-card',
+    videoEmbed: {
+      url: 'https://www.youtube-nocookie.com/embed/p4V1eFa1vxw',
+      title: 'Outdoor Lightning Safety - NOAA National Weather Service',
+    },
   },
   {
     slug: 'wildlife-encounters',
