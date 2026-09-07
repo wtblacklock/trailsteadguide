@@ -291,6 +291,10 @@ export const SKILLS: Skill[] = [
     ],
     safetyTone: 'critical',
     relatedPrintableSlug: 'fire-starting-checklist',
+    videoEmbed: {
+      url: 'https://www.youtube-nocookie.com/embed/XCX_eFOtXKU',
+      title: 'Smokey Bear Campfire Safety Steps - USDA Forest Service',
+    },
   },
   {
     slug: 'starting-a-fire',
@@ -480,6 +484,10 @@ export const SKILLS: Skill[] = [
       { name: 'Black Diamond Spot 400 Headlamp', productId: 'headlamp-family' },
       { name: 'Lightweight day pack' },
     ],
+    videoEmbed: {
+      url: 'https://www.youtube-nocookie.com/embed/J-Ae6OKjb6I',
+      title: 'What are The Ten Essentials? - REI',
+    },
   },
 
   // ── ORIENTEERING ──────────────────────────────────────────────────────────
@@ -597,6 +605,10 @@ export const SKILLS: Skill[] = [
       { name: 'Zebco 33 spinning combo', productId: 'zebco-33-spincast-combo' },
       { name: 'Mono fishing line, 8 lb test', productId: 'monofilament-fishing-line-8lb' },
     ],
+    videoEmbed: {
+      url: 'https://www.youtube-nocookie.com/embed/G2OsYbHPTOE',
+      title: 'Spincast Rod and Reel Basics - Vermont Fish and Wildlife Department',
+    },
   },
   {
     slug: 'catch-and-release',
@@ -627,6 +639,10 @@ export const SKILLS: Skill[] = [
     relatedGear: [
       { name: 'Fishing Forceps / Hemostat', productId: 'fishing-forceps-hemostat' },
     ],
+    videoEmbed: {
+      url: 'https://www.youtube-nocookie.com/embed/wJ3zz-UCKCo',
+      title: 'How to Handle Fish for Safe Catch and Release - Pennsylvania Fish and Boat Commission',
+    },
   },
 
   // ── SHELTER SETUP ─────────────────────────────────────────────────────────
@@ -734,6 +750,10 @@ export const SKILLS: Skill[] = [
       { name: 'CORE 10x10 Instant Pop-Up Canopy', productId: 'canopy-camp' },
       { name: 'ALPS Mountaineering Leisure Chair', productId: 'camp-chairs' },
     ],
+    videoEmbed: {
+      url: 'https://www.youtube-nocookie.com/embed/dfpE0x6xTPU',
+      title: 'How to Select a Campsite - REI',
+    },
   },
   {
     slug: 'setup-order',
@@ -815,6 +835,10 @@ export const SKILLS: Skill[] = [
     relatedGear: [
       { name: 'Thriad First Aid Kit (430 pcs)', productId: 'thriad-first-aid-430' },
     ],
+    videoEmbed: {
+      url: 'https://www.youtube-nocookie.com/embed/mYWmUsTHLKo',
+      title: '10 Must-Haves for Your Hiking First-Aid Kit - REI with NOLS Wilderness Medicine',
+    },
   },
   {
     slug: 'common-camp-injuries',
@@ -1074,6 +1098,10 @@ export const SKILLS: Skill[] = [
     relatedGear: [
       { name: 'Planisphere Star Wheel (40°N)', productId: 'planisphere' },
     ],
+    videoEmbed: {
+      url: 'https://www.youtube-nocookie.com/embed/SDhlPEMkiOo',
+      title: 'STEMonstrations: Moon Phases - NASA',
+    },
   },
   {
     slug: 'using-red-light-at-camp',
@@ -1140,6 +1168,10 @@ export const SKILLS: Skill[] = [
     },
     relatedSkills: ['stargazing/reading-lunar-phases', 'stargazing/watching-a-meteor-shower', 'stargazing/using-red-light-at-camp'],
     relatedPrintableSlug: 'northern-hemisphere-constellation-wheel',
+    videoEmbed: {
+      url: 'https://www.youtube-nocookie.com/embed/nGSjIujumIA',
+      title: 'Losing the Dark - International Dark-Sky Association',
+    },
   },
 
   // ── KNIFE SKILLS ──────────────────────────────────────────────────────────
@@ -2503,6 +2535,10 @@ export const SKILLS: Skill[] = [
       'Using dish soap to clean the fly. It strips the DWR coating and the tent becomes a sponge in rain.',
     ],
     relatedSkills: ['shelter/pitching-a-tent', 'shelter/rainfly-and-guylines'],
+    videoEmbed: {
+      url: 'https://www.youtube-nocookie.com/embed/NzDQecIg84Q',
+      title: 'How to Clean a Tent - REI',
+    },
   },
 
   // ── CAMP-SETUP (new) ──────────────────────────────────────────────────────
@@ -2704,6 +2740,10 @@ export const SKILLS: Skill[] = [
     relatedGear: [
       { name: 'DripDrop Hydration Electrolyte Mix', productId: 'dripdrop-hydration' },
     ],
+    videoEmbed: {
+      url: 'https://www.youtube-nocookie.com/embed/u75svo0KdTo',
+      title: 'How to Stay Safe in Extreme Heat - American Red Cross',
+    },
   },
 
   // ── FISHING (new) ─────────────────────────────────────────────────────────
@@ -2779,5 +2819,9 @@ export const SKILLS: Skill[] = [
     relatedGear: [
       { name: 'Beginner Tackle Box Lure Assortment', productId: 'tackle-box-lure-assortment' },
     ],
+    videoEmbed: {
+      url: 'https://www.youtube-nocookie.com/embed/2Is1nxPRtV0',
+      title: 'Fishing 101: Bait and Lures - Texas Parks and Wildlife',
+    },
   },
 ]
