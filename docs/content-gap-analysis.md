@@ -1,6 +1,6 @@
 # Content Gap Analysis — Trailstead Guide
 
-A backlog-shaped audit of the current content surface, what's missing, and what's worth shipping next. Snapshot re-baselined 2026-09-03 against `main` (previous baseline: 2026-05-05).
+A backlog-shaped audit of the current content surface, what's missing, and what's worth shipping next. Snapshot re-baselined 2026-09-07 against `main` (previous baseline: 2026-09-03).
 
 ---
 
@@ -9,17 +9,17 @@ A backlog-shaped audit of the current content surface, what's missing, and what'
 | Area | Count | Status |
 |---|---|---|
 | Plans | 4 | Foundation set — all introductory (backyard / first night / first weekend / family basecamp). No intermediate or activity-specific. Unchanged since the last baseline. |
-| Guides — total | 56 | Up from 35. The location cluster absorbed most of the growth. |
-| Guides — Basics | 19 | Beginner core, family meal/gear sub-niche, plus the dispersed-camping and Recreation.gov micro-guides. Densest category. |
-| Guides — Scenario | 15 | Family scenarios complete; holiday-weekend entry added. Broader life-situation scenarios (group, mobility, allergy) still absent. |
-| Guides — Seasonal | 4 | Generic spring/summer/fall/winter, unchanged. Now the thinnest category at 7% of the guide surface. |
+| Guides — total | 58 | Up from 56 on 2026-09-03. Two guides landed since: off-season gear storage and Halloween camping. |
+| Guides — Basics | 20 | Beginner core, family meal/gear sub-niche, plus the dispersed-camping and Recreation.gov micro-guides. `how-to-store-camping-gear` added. Densest category. |
+| Guides — Scenario | 16 | Family scenarios complete; `halloween-camping-with-kids` added as a second holiday entry. Broader life-situation scenarios (group, mobility, allergy) still absent. |
+| Guides — Seasonal | 4 | Generic spring/summer/fall/winter, unchanged for two baselines. Now the thinnest category at 7% of the guide surface, and the two most recent season-shaped guides were filed under basics and scenario instead. |
 | Guides — Location | 18 | 8 US regions + best-state-parks roundup + 9 single-state guides (NY, MI, PA, GA, WI, WY, MT, UT, AZ). |
 | Skills | 68 / 12 categories | Unchanged. Foundational + intermediate layer solid; several adjacent categories still absent. |
 | Activities | 37 / 8 categories | Activity content unchanged, but 4 age/weather landing pages (kids, teenagers, toddlers, rainy-day) now ship as browse surfaces. Water-based category still missing. |
 | Comparison pages | 15 | Up from 6, plus a `/compare` index. Tent / cooler / stove / sleeping-system type compares all shipped. |
 | Research | 2 | Up from 1, plus a `/research` index. Regrets + pack-analysis pieces live. |
 | Gear bundles | 4 | Unchanged. One per plan. No budget-tier, kid-only, or season-specific bundles. |
-| Affiliate catalog | 93 products | Up from 44. Breadth is no longer the constraint. |
+| Affiliate catalog | 97 products | Up from 93. Breadth is no longer the constraint. |
 | Trip Packs (paid) | 4 | One per plan — unchanged. |
 | Printables (free, email-gated) | 15 | Unchanged. Strong analog asset library. |
 | Glossary | 58 terms | New since last baseline. Shipped at `/glossary`. |
@@ -40,7 +40,7 @@ Missing:
 - **National-park-specific plan template** (e.g. "Great Smoky Mountains weekend with kids") — captures one of the fattest beginner intent buckets and slots cleanly under the existing location guides.
 - **Cold-weather plan** — paired naturally with `winter-camping-for-beginners` guide; current plans assume 3-season.
 
-### Guides — Basics (12)
+### Guides — Basics (20)
 Coverage is dense. Most gaps are tactical micro-topics, not whole guides.
 
 Missing (5–8 high-intent titles):
@@ -53,7 +53,7 @@ Missing (5–8 high-intent titles):
 - **Camping on a budget** (separate from the family-budget guide) — single + couple version with annual cost breakdown.
 - **Tent setup intermediate: pitching in wind/slope/uneven ground** — graduation step from beginner pitch.
 
-### Guides — Scenario (10)
+### Guides — Scenario (16)
 Family-specific scenarios are well-covered. Broader life-situation scenarios are missing.
 
 Missing (5–8 titles):
@@ -72,10 +72,10 @@ Four broad seasons covered. Sub-seasonal scenarios untouched.
 Missing (3–5 titles):
 - **Holiday-weekend camping (Memorial / July 4 / Labor Day)** — crowd strategy, reservation timing, alternatives.
 - **Shoulder-season camping (April / October)** — dedicated guide for unpredictable weather.
-- **Pre-season prep / off-season teardown** — stretches storage SEO — gear care, mildew prevention.
+- ~~**Pre-season prep / off-season teardown**~~ - **SHIPPED** as `how-to-store-camping-gear` (filed under basics, not seasonal).
 - **First warm-weekend camping** — for family audience emerging from winter, distinct from "spring camping for beginners."
 
-### Guides — Location (9)
+### Guides — Location (18)
 US regions are 70% covered; specific high-traffic states are missing.
 
 Missing (5–8 titles):
@@ -117,7 +117,7 @@ Missing categories / segments:
 - **Group games for 10+** — modified versions of existing activities for larger parties, paired with the missing "group camping" guide.
 - **Evening rituals / cooldown** — existing wind-down (4) is thin; gratitude rounds, "best part of today," song circles.
 
-### Comparison pages (6)
+### Comparison pages (15)
 Plan-vs-plan: 2. Product compares: 4. Format works; surface area is small.
 
 Missing (highest leverage):
@@ -130,7 +130,7 @@ Missing (highest leverage):
 - **Plan vs alternative experience: "Backyard Test vs glamping"** — same shape, different segment.
 - **Headlamp vs lantern vs string lights** — short, high-conversion lighting compare.
 
-### Research / data pieces (1)
+### Research / data pieces (2)
 The biggest growth lever. One piece live (`first-time-camping-regrets`). Format is proven for backlinks and AI citation.
 
 Missing (4–6 follow-on ideas):
@@ -141,7 +141,7 @@ Missing (4–6 follow-on ideas):
 - **Beginner gear failure rates: which items break first (forum complaint analysis)** — feeds the gear-failure-recovery guide and product compare reasoning.
 - **What kids actually remember about camping (parent survey / reddit thread synthesis)** — soft-emotional piece, high social shares.
 
-### Gear (4 bundles, 44 products)
+### Gear (4 bundles, 97 products)
 Bundles map 1:1 to plans. Missing the budget and life-stage cuts.
 
 Missing:
@@ -223,7 +223,7 @@ Sized as **S** (≤ a day), **M** (2–4 days), **L** (a week+). Lift = expected
 
 ### Tier 3 — nice to have, later or never
 
-- New seasonal sub-guides (holiday weekends, shoulder season). Labor Day **SHIPPED** as `labor-day-weekend-camping`; Memorial Day and July 4 remain.
+- New seasonal sub-guides (holiday weekends, shoulder season). Labor Day **SHIPPED** as `labor-day-weekend-camping` and Halloween as `halloween-camping-with-kids` (filed under scenario); Memorial Day, July 4 and a shoulder-season entry remain.
 - Cold-weather plan (only after `winter-camping-for-beginners` traffic justifies it).
 - Email drip sequence (defer until traffic data justifies — user flagged as far-out).
 - Quiz dark-comfort question (only if a corresponding plan-output change ships).
@@ -241,6 +241,22 @@ These come from the current catalogue rather than the original May snapshot.
 - **Second wave of state guides: WA, OR, NC, TN** — **M effort each, high lift.** The region guides already link these agencies (`parks.wa.gov`, `stateparks.oregon.gov`, `ncparks.gov`, `tnstateparks.com`) without a dedicated destination. They are the highest-volume states left after the nine that shipped, and the guide template is now well established.
 - **Location index / state picker** — **S effort, medium lift.** 18 location guides have no browse surface between the guides hub and the individual article. A simple state-and-region picker would convert the cluster's internal-link value.
 - **Gear bundles have not kept pace with the catalogue** — **S–M effort, medium-high lift.** The affiliate catalogue more than doubled (44 to 93 products) while bundles stayed at 4, so most of the catalogue has no bundle surface. This strengthens the existing budget-tier bundle items (#12) rather than replacing them.
+
+### Movement in the 2026-09-07 re-baseline
+
+Two guides landed since 2026-09-03 (`how-to-store-camping-gear`, `halloween-camping-with-kids`),
+taking the catalogue from 56 to 58. Both were season-shaped topics filed under basics and
+scenario, so **seasonal is still at 4** and its share of the guide surface fell again. The
+category is not being starved of ideas; it is being routed around.
+
+The **canonical reservation-systems reference** item above got stronger, not weaker. The
+2026-09-07 audit found the drift it predicts had spread to a fourth guide:
+`camping-in-california-for-beginners` applied Yosemite's 5-month block-release window to every
+federal park in the state (Sequoia, Joshua Tree, Death Valley, Pinnacles, Lassen, Redwood), all
+of which use the standard 6-month rolling window, and `camping-in-utah-for-beginners` asserted a
+"twelve months out" federal booking race that matches no system. Both were corrected in this
+audit, but that is now two consecutive audits fixing the same class of error in different files.
+Ship the table.
 
 ---
 

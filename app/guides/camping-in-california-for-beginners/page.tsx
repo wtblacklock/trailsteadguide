@@ -92,7 +92,7 @@ export default function Page() {
     >
       <QuickAnswer
         tldr="Four climates, four packing lists - and reservations are the hardest part. Book exactly 6 months out at 8am Pacific."
-        summary="California is four different camping states: cool foggy coast (year-round), Sierra Nevada (Memorial Day to mid-October, snow-closed otherwise), redwood north (wet, dense, cool), and southern desert (October-April only - summer is dangerous). The same packing list doesn't work in all four. Reservations are the hardest part: ReserveCalifornia opens 6 months out at 8am Pacific, recreation.gov 5 months out at 7am - popular sites at Yosemite Valley, Big Basin, Pfeiffer Big Sur, and Joshua Tree fill within minutes. Bear boxes are required across the Sierra and parts of the north coast - every scented item (food, toothpaste, chapstick, sunscreen) goes in. Fire restrictions tighten weekly June-October; a propane stove keeps you cooking under most ban levels. For a first trip, pick a coastal or foothill state park within 2 hours of home - save Yosemite Valley for trip three."
+        summary="California is four different camping states: cool foggy coast (year-round), Sierra Nevada (Memorial Day to mid-October, snow-closed otherwise), redwood north (wet, dense, cool), and southern desert (October-April only - summer is dangerous). The same packing list doesn't work in all four. Reservations are the hardest part: ReserveCalifornia opens 6 months out at 8am Pacific, recreation.gov 6 months out at 7am Pacific (Yosemite is the exception, releasing a month at a time on the 15th, five months ahead) - popular sites at Yosemite Valley, Big Basin, Pfeiffer Big Sur, and Joshua Tree fill within minutes. Bear boxes are required across the Sierra and parts of the north coast - every scented item (food, toothpaste, chapstick, sunscreen) goes in. Fire restrictions tighten weekly June-October; a propane stove keeps you cooking under most ban levels. For a first trip, pick a coastal or foothill state park within 2 hours of home - save Yosemite Valley for trip three."
       />
       <h2>What camping in California is actually like</h2>
       <ul>
@@ -114,7 +114,7 @@ export default function Page() {
       <h3>Reservations are competitive, not casual</h3>
       <ul>
         <li>State parks: <a href="https://www.reservecalifornia.com/" rel="noopener" target="_blank">ReserveCalifornia</a> opens 6 months out at 8am Pacific. Be online and signed in at 7:55am for the popular weekends - Pfeiffer Big Sur, Andrew Molera, D.L. Bliss on Lake Tahoe, and the Channel Islands ferry-in sites all sell out within minutes.</li>
-        <li>National parks: <a href="https://www.recreation.gov/" rel="noopener" target="_blank">recreation.gov</a> opens 5 months out at 7am Pacific. Yosemite Valley campgrounds (Upper Pines, Lower Pines, North Pines) disappear within minutes.</li>
+        <li>National parks: <a href="https://www.recreation.gov/" rel="noopener" target="_blank">recreation.gov</a> opens 6 months out at 7am Pacific on a rolling daily release. Yosemite is the exception: its campgrounds release a full month of inventory at once on the 15th, five months ahead, and Yosemite Valley (Upper Pines, Lower Pines, North Pines) disappears within minutes.</li>
         <li>Cancellations happen - check 48-72 hours before your dates if your first try sold out.</li>
         <li>Mid-week (Sun-Thu) and shoulder-season (April, late September, October) are dramatically easier.</li>
       </ul>
@@ -173,7 +173,7 @@ export default function Page() {
 
       <h3>National parks and federal lands</h3>
       <p>
-        Federal sites (Yosemite, Sequoia &amp; Kings Canyon, Joshua Tree, Death Valley, Pinnacles, Lassen Volcanic, Redwood) reserve through <a href="https://www.recreation.gov/" rel="noopener" target="_blank">recreation.gov</a>, 5 months out at 7am Pacific. Each park has different rules: Yosemite Valley campgrounds (Upper/Lower/North Pines) are a different reservation tier than Yosemite&apos;s outlying campgrounds (Wawona, Crane Flat, Hodgdon Meadow); some Joshua Tree campgrounds (Black Rock, Indian Cove) are reservable while a few of the smaller ones remain first-come, first-served. Lassen Volcanic&apos;s Manzanita Lake and Sequoia&apos;s Lodgepole are the underrated &ldquo;not Yosemite Valley&rdquo; alternatives that still deliver iconic Sierra scenery.
+        Federal sites (Yosemite, Sequoia &amp; Kings Canyon, Joshua Tree, Death Valley, Pinnacles, Lassen Volcanic, Redwood) reserve through <a href="https://www.recreation.gov/" rel="noopener" target="_blank">recreation.gov</a>, 6 months out at 7am Pacific on a rolling daily release. Each park has different rules: Yosemite is the big exception, releasing a full month of inventory at once on the 15th, five months ahead, and its Valley campgrounds (Upper/Lower/North Pines) are a different reservation tier than the outlying ones (Wawona, Crane Flat, Hodgdon Meadow); some Joshua Tree campgrounds (Black Rock, Indian Cove) are reservable while a few of the smaller ones remain first-come, first-served. Lassen Volcanic&apos;s Manzanita Lake and Sequoia&apos;s Lodgepole are the underrated &ldquo;not Yosemite Valley&rdquo; alternatives that still deliver iconic Sierra scenery.
       </p>
 
       <h3>Private and county campgrounds, KOAs</h3>
@@ -229,7 +229,7 @@ export default function Page() {
       <h2>Common first-time mistakes in California</h2>
       <ol>
         <li>
-          <strong>Trying to book the iconic site two weeks ahead.</strong> Yosemite Valley and Big Sur tent sites for July weekends sell out the morning the reservation window opens, six months out. Pick a less-famous park, or shift to mid-week or shoulder-season.
+          <strong>Trying to book the iconic site two weeks ahead.</strong> Yosemite Valley and Big Sur tent sites for July weekends sell out the morning their reservation window opens - six months out for Big Sur, five for Yosemite Valley. Pick a less-famous park, or shift to mid-week or shoulder-season.
         </li>
         <li>
           <strong>Underdressing for Sierra nights - or trying the trip in early May.</strong> A 90°F afternoon at 7,500 ft can drop into the 30s by 5am, and most Sierra campgrounds don&apos;t even open until May 15. Bring the puffy and the warm hat even in July, and don&apos;t book your first trip before late June.

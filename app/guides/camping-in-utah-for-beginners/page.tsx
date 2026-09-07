@@ -59,7 +59,7 @@ export default function Page() {
           },
           {
             q: 'Where should a Utah first-timer camp?',
-            a: 'A Utah state park near the national parks rather than inside them. Dead Horse Point is minutes from Canyonlands with a view that rivals anything in the park. Sand Hollow and Snow Canyon are close to Zion and St. George. Goblin Valley and Kodachrome Basin are excellent, weird, and far easier to book. State park campgrounds have real bathrooms and water, cost less, and do not require you to win a booking race twelve months out.',
+            a: 'A Utah state park near the national parks rather than inside them. Dead Horse Point is minutes from Canyonlands with a view that rivals anything in the park. Sand Hollow and Snow Canyon are close to Zion and St. George. Goblin Valley and Kodachrome Basin are excellent, weird, and far easier to book. State park campgrounds have real bathrooms and water, cost less, and do not require you to win a booking race six months out.',
           },
           {
             q: 'How much water do I need for desert camping in Utah?',

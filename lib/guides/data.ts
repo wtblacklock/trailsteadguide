@@ -423,9 +423,9 @@ export const GUIDES: Guide[] = [
     description:
       'The end-of-season pass that decides whether your kit works in spring: dry the tent, uncompress the bags, pull every battery, and bin the rest.',
     eyebrow: 'How-to',
-    metaTitle: 'How to Store Camping Gear for the Off-Season',
+    metaTitle: 'How to Store Camping Gear Off-Season',
     metaDescription:
-      'How to store camping gear over winter: drying the tent, storing sleeping bags uncompressed, pulling batteries before they corrode, propane rules, and a bin system that survives a garage.',
+      'How to store camping gear over winter: drying the tent, storing sleeping bags uncompressed, pulling batteries before they corrode, and propane rules.',
     relatedGuides: ['how-to-break-camp', 'fall-camping-for-beginners', 'family-camping-gear-list'],
   },
   {
@@ -535,9 +535,9 @@ export const GUIDES: Guide[] = [
     title: 'Halloween Camping With Kids',
     description: 'Why campground trick-or-treat weekends run in mid-October, how the loop-road candy route works, and costumes that fit over warm layers.',
     eyebrow: 'Holiday weekend',
-    metaTitle: 'Halloween Camping With Kids - Campground Trick-or-Treat',
+    metaTitle: 'Halloween Camping Kids Trick-or-Treat',
     metaDescription:
-      'Halloween camping with kids: how campground trick-or-treat weekends actually work, why they run in mid-October, costumes that fit over warm layers, and lighting a dark campground loop.',
+      'Halloween camping with kids: how campground trick-or-treat weekends work, why they run in mid-October, and costumes that fit over warm layers.',
     relatedGuides: ['fall-camping-for-beginners', 'labor-day-weekend-camping', 'backyard-camping-with-kids'],
   },
 ]
