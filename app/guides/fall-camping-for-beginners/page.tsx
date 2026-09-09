@@ -199,7 +199,7 @@ export default function Page() {
           <strong>Cotton anywhere.</strong> Cold sweat is the fast lane to a miserable night. Synthetic or wool for everything that touches skin - including the t-shirt under the base layer.
         </li>
         <li>
-          <strong>Skipping the hunting check.</strong> Many state forests, national forests, and BLM lands allow firearm hunting in October and November. Check the unit, wear blaze orange on trails, and pick a campground that doesn&apos;t share its access road with hunters at dawn.
+          <strong>Skipping the hunting check.</strong> Many state forests, national forests, and BLM lands allow firearm hunting in October and November. Check the unit, wear blaze orange on trails, and pick a campground that doesn&apos;t share its access road with hunters at dawn. Our guide to <Link href="/guides/camping-during-hunting-season">camping during hunting season with kids</Link> walks through which public land allows hunting and how to read a state season calendar.
         </li>
         <li>
           <strong>Sleeping with food in the tent.</strong> Bears in October are eating 20+ hours a day to put on winter weight, and they remember campgrounds. Bear box, locker, or trunk - every wrapper, every snack, every tube of toothpaste.
