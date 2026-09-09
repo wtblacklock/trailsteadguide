@@ -516,7 +516,7 @@ export const GUIDES: Guide[] = [
     metaTitle: 'Recreation.gov Reservation Strategy',
     metaDescription:
       'How recreation.gov actually works: the 6-month rolling window, the 10am ET drop, and what to do when nothing is available. A playbook for beginners.',
-    relatedGuides: ['labor-day-weekend-camping', 'how-to-plan-a-camping-trip', 'best-state-parks-for-families'],
+    relatedGuides: ['when-do-campgrounds-close', 'labor-day-weekend-camping', 'how-to-plan-a-camping-trip'],
   },
   {
     slug: 'labor-day-weekend-camping',
@@ -550,5 +550,16 @@ export const GUIDES: Guide[] = [
     metaDescription:
       'Camping after dark with kids: how much daylight fall costs you, the three-layer lighting setup for a campsite, and what to do with a long evening.',
     relatedGuides: ['fall-camping-for-beginners', 'halloween-camping-with-kids', 'first-night-camping-guide'],
+  },
+  {
+    slug: 'when-do-campgrounds-close',
+    category: 'basics',
+    title: 'When Do Campgrounds Close for the Season?',
+    description: 'Every campground has two closing dates, and the water goes off before either one.',
+    eyebrow: 'Off-season',
+    metaTitle: 'When Do Campgrounds Close for Winter?',
+    metaDescription:
+      'When campgrounds close for the season, why the water gets shut off first, what stays open all winter, and how to check the real dates before you book.',
+    relatedGuides: ['recreation-gov-reservation-strategy', 'fall-camping-for-beginners', 'winter-camping-for-beginners'],
   },
 ]
