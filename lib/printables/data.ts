@@ -397,6 +397,31 @@ export const PRINTABLES: Printable[] = [
     relatedGuideSlug: 'first-camping-trip-checklist',
     relatedProductIds: ['lodge-cast-iron-skillet'],
   },
+  {
+    slug: 'camping-with-dogs-field-card',
+    category: 'safety',
+    title: 'Camping With Dogs Field Card',
+    description:
+      'A free printable field card for camping with a dog - tie-out and leash setup, a campsite dog-proofing checklist, and heat and paw-safety rules for the trail.',
+    tagline:
+      'Leash rules, a dog-proofing checklist, and the heat test that keeps paws safe. One page, made for the dog kit.',
+    whatYouGet: [
+      'Leash and tie-out setup: walking leash length, campsite tie-out range, and where to anchor it',
+      'Leave No Trace rules applied to dogs - waste, water sources, and quiet hours',
+      'An 8-item campsite dog-proofing checklist',
+      'A heat and paw-safety reference: the back-of-hand pavement test, hiking times, and heatstroke signs',
+      'Letter / A4 sized, one-color print',
+    ],
+    useCases: [
+      'Pack alongside the leash and tie-out before a first dog-camping trip',
+      'Brief a co-camper who is handling the dog for the first time',
+      'Keep clipped inside the dog-gear bin as a standing reference',
+    ],
+    formatNote: 'Single-page printable · Letter / A4 · Free with email signup',
+    datePublished: '2026-09-09',
+    relatedGuideSlug: 'camping-with-dogs-first-time',
+    relatedProductIds: ['katolk-tie-out'],
+  },
 ]
 
 const PRINTABLE_BY_SLUG: Record<string, Printable> = Object.fromEntries(
