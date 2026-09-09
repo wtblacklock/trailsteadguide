@@ -340,6 +340,34 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     slot: 'SAFETY',
   },
   {
+    id: 'allen-blaze-orange-vest',
+    name: 'Allen Company Blaze Orange Safety Vest',
+    description:
+      'Plain blaze orange vest with a hook-and-loop closure, cut to fit over a jacket. The cheapest way to make an adult unmistakably visible in fall woods, and it packs down to nothing in a daypack. Adult and child sizes both available on the same listing.',
+    amazonAsin: 'B001SGZHT4',
+    affiliateUrl: 'https://www.amazon.com/dp/B001SGZHT4?tag=trailsteadgui-20',
+    imageUrl: 'https://m.media-amazon.com/images/I/71chKCLA+FS._AC_SL1500_.jpg',
+    category: 'essential',
+    templateSlugs: [],
+    priceRange: '~$5',
+    tags: ['family', 'budget', 'cold-ready'],
+    slot: 'SAFETY',
+  },
+  {
+    id: 'quietwear-youth-blaze-vest',
+    name: 'Quietwear Youth Blaze Orange Vest',
+    description:
+      'Zip-front blaze orange vest sized for kids, with real pockets so it does not read as a costume. The pick when a hand-me-down adult vest swallows a seven-year-old and slides off one shoulder all day.',
+    amazonAsin: 'B0785ZK8RK',
+    affiliateUrl: 'https://www.amazon.com/dp/B0785ZK8RK?tag=trailsteadgui-20',
+    imageUrl: 'https://m.media-amazon.com/images/I/61jlKZ9qWAL._AC_SL1500_.jpg',
+    category: 'essential',
+    templateSlugs: [],
+    priceRange: '~$17',
+    tags: ['family', 'with-kids', 'budget', 'cold-ready'],
+    slot: 'SAFETY',
+  },
+  {
     id: 'sawyer-extractor-pump-kit',
     name: 'Sawyer Extractor Pump Kit',
     description:

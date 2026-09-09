@@ -143,7 +143,7 @@ export const GUIDES: Guide[] = [
     shortLabel: 'Fall',
     description: 'Cold nights, condensation, early dark - fall done right.',
     eyebrow: 'Fall',
-    relatedGuides: ['camping-after-dark-with-kids', 'halloween-camping-with-kids', 'labor-day-weekend-camping'],
+    relatedGuides: ['camping-after-dark-with-kids', 'camping-during-hunting-season', 'halloween-camping-with-kids'],
   },
   {
     slug: 'winter-camping-for-beginners',
@@ -550,5 +550,17 @@ export const GUIDES: Guide[] = [
     metaDescription:
       'Camping after dark with kids: how much daylight fall costs you, the three-layer lighting setup for a campsite, and what to do with a long evening.',
     relatedGuides: ['fall-camping-for-beginners', 'halloween-camping-with-kids', 'first-night-camping-guide'],
+  },
+  {
+    slug: 'camping-during-hunting-season',
+    category: 'seasonal',
+    title: 'Camping During Hunting Season With Kids',
+    shortLabel: 'Hunting season',
+    description: 'Which public land allows hunting, how to read the season dates, and the blaze orange rules for a family.',
+    eyebrow: 'Fall safety',
+    metaTitle: 'Camping During Hunting Season',
+    metaDescription:
+      'Camping during hunting season with kids: which public land allows hunting, how to check season dates, and the blaze orange and timing rules for families.',
+    relatedGuides: ['fall-camping-for-beginners', 'dispersed-camping-on-blm-and-national-forest-land', 'camping-after-dark-with-kids'],
   },
 ]
