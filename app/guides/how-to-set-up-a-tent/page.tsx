@@ -130,6 +130,12 @@ export default function Page() {
           rolled back and unclipped at the top if you want ventilation on a clear night, but keep
           it on the tent, staked and ready to unroll in seconds.
         </p>
+        <p>
+          Pitching the whole tent in the dark is its own skill, and it is the normal outcome of a
+          Friday-after-work arrival once the fall sunset gets early. The arrival math and the setup
+          order are in{' '}
+          <Link href="/guides/setting-up-camp-in-the-dark">setting up camp in the dark</Link>.
+        </p>
 
         <h2>Common first-timer mistakes</h2>
         <ul>
