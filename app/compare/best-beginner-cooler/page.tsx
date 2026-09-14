@@ -8,7 +8,7 @@ import { articleGraph, itemListGraph, faqPageGraph, pageMetadata, SITE_URL } fro
 import type { AffiliateProduct } from '@/types'
 
 const SLUG = '/compare/best-beginner-cooler'
-const TITLE = 'Best Beginner Cooler: 3 Picks for First-Trip Comfort'
+const TITLE = 'Best Beginner Cooler: 3 First-Trip Picks'
 const DESCRIPTION =
   'Best beginner cooler: a compact classic, a full-size rolling cooler, and a premium upgrade path. Compare ice retention, capacity, weight, and price.'
 const H1 = 'Best beginner cooler: 3 picks for your first family trip'

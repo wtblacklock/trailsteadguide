@@ -6,7 +6,7 @@ import { getPlanTemplate } from '@/lib/plan-templates'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
 
 const SLUG = '/compare/backyard-test-vs-first-night-camp'
-const TITLE = 'Backyard Test vs First Night Camp - First-Trip Comparison'
+const TITLE = 'Backyard Test vs First Night Camp'
 const DESCRIPTION =
   'Backyard Test vs First Night Camp: which plan fits your first trip? Compare gear, duration, and risk. Pick the right starting point in 60 seconds.'
 const H1 = 'Backyard Test vs First Night Camp: which plan fits your first trip?'

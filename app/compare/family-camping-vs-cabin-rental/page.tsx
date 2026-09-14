@@ -5,7 +5,7 @@ import QuickAnswer from '@/components/guide/QuickAnswer'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
 
 const SLUG = '/compare/family-camping-vs-cabin-rental'
-const TITLE = 'Family Camping vs Cabin Rental - Real Tradeoffs'
+const TITLE = 'Family Camping vs Cabin Rental: Tradeoffs'
 const DESCRIPTION =
   'Family camping vs cabin rental: real per-night cost after gear, comfort, weather risk, and what kids actually remember. An honest way to pick your weekend.'
 const H1 = 'Family camping vs cabin rental: which weekend is worth it?'
