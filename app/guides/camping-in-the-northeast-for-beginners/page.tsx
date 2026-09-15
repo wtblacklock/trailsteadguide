@@ -244,7 +244,7 @@ export default function Page() {
           <strong>Underdressing for altitude nights.</strong> July at 4,000 ft in the Whites can drop into the 30s overnight. Bring the warm bag and the puffy.
         </li>
         <li>
-          <strong>Trying to book Acadia or Lafayette Place two months out for foliage weekend.</strong> Blackwoods and Seawall release 60 days ahead and book in seconds; NH state parks open 11 months out. Mid-week is the unlock - or shift to a private campground or a national-forest site outside the park.
+          <strong>Trying to book Acadia or Lafayette Place two months out for foliage weekend.</strong> Blackwoods and Seawall release 90% of sites six months ahead and hold the last 10% until two weeks out, so two months is exactly the dead zone; NH state parks open 11 months out. Mid-week is the unlock - or shift to a private campground or a national-forest site outside the park.
         </li>
         <li>
           <strong>Wearing cotton in the rain.</strong> Cool wet rain plus cotton clothing is how hypothermia happens at 50°F. Synthetic and wool only.

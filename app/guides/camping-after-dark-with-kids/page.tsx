@@ -12,7 +12,7 @@ const SLUG = '/guides/camping-after-dark-with-kids'
 const TITLE = 'Camping After Dark With Kids'
 const META_TITLE = 'Camping After Dark With Kids'
 const DESCRIPTION =
-  'Camping after dark with kids: how much daylight fall costs you, the three-layer lighting setup for a family campsite, and what to do with a long dark evening.'
+  'Camping after dark with kids: how much daylight fall costs you, the three-layer lighting setup for a campsite, and what to do with a long dark evening.'
 const HERO_IMAGE =
   'https://images.unsplash.com/photo-1587547131116-a0655a526190?w=1400&auto=format&fit=crop&q=80'
 

@@ -7,7 +7,7 @@ import type { AffiliateProduct } from '@/types'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
 
 const SLUG = '/compare/coleman-sundome-3p-vs-4p-vs-6p'
-const TITLE = 'Coleman Sundome 3P vs 4P vs 6P: Which Size?'
+const TITLE = 'Coleman Sundome 3P vs 4P vs 6P'
 const DESCRIPTION =
   'Coleman Sundome 3P vs 4P vs 6P compared: floor size, standing height, real capacity, setup time, and price. Pick the right size for a first trip.'
 

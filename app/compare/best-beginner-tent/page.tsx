@@ -8,7 +8,7 @@ import { articleGraph, itemListGraph, faqPageGraph, pageMetadata, SITE_URL } fro
 import type { AffiliateProduct } from '@/types'
 
 const SLUG = '/compare/best-beginner-tent'
-const TITLE = 'Best Beginner Tent: 3 Picks for First-Trip Comfort'
+const TITLE = 'Best Beginner Tent: 3 First-Trip Picks'
 const DESCRIPTION =
   'Best beginner tent: a 4-person dome, a stand-up family size-up, and a sturdier upgrade. Compare capacity, setup, weather rating, and price.'
 const H1 = 'Best beginner tent: 3 picks for your first family trip'

@@ -7,7 +7,7 @@ import type { AffiliateProduct } from '@/types'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
 
 const SLUG = '/compare/sleeping-bag-vs-cot-airbed-combo'
-const TITLE = 'Air Mattress vs Cot Combo vs Pad: What to Sleep On'
+const TITLE = 'Air Mattress vs Cot Combo vs Pad'
 const DESCRIPTION =
   'Air mattress vs cot-airbed combo vs sleeping pad compared for car campers: comfort, setup, packed size, durability, and price. Pick the right sleep system.'
 

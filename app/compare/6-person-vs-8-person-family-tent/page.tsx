@@ -7,7 +7,7 @@ import type { AffiliateProduct } from '@/types'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
 
 const SLUG = '/compare/6-person-vs-8-person-family-tent'
-const TITLE = '6-Person vs 8-Person Family Tent: Which Size?'
+const TITLE = '6-Person vs 8-Person Family Tent'
 const DESCRIPTION =
   '6-person vs 8-person family tent compared: floor size, standing height, real capacity, setup time, and price. The sizing rule that decides it.'
 
