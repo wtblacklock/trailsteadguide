@@ -181,7 +181,7 @@ export default function Page() {
       </p>
       <ol>
         <li>
-          <strong>Packing the summer sleeping bag.</strong> A 40°F bag at a 30°F night is a long, sleepless six hours - the exact regret first-fall trippers report afterwards, often after wearing every layer they brought and stuffing clothes inside the bag for warmth. The 20°F bag is the right call from late September through early November almost everywhere.
+          <strong>Packing the summer sleeping bag.</strong> A 40°F bag at a 30°F night is a long, sleepless six hours - the exact regret first-fall trippers report afterwards, often after wearing every layer they brought and stuffing clothes inside the bag for warmth. The 20°F bag is the right call from late September through early November almost everywhere. Kids run colder than adults in the same tent, so build their setup warmer on purpose - see <Link href="/guides/how-to-keep-kids-warm-camping">how to keep kids warm camping</Link>.
         </li>
         <li>
           <strong>Sealing the tent up tight.</strong> The wet ceiling at dawn isn&apos;t a leaky tent - it&apos;s your breath condensing on the cold rainfly. Crack the door zipper an inch at the top and stake the fly off the inner body for airflow. A pack towel handles the morning wipe-down.
