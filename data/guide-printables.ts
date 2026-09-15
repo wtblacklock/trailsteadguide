@@ -52,4 +52,5 @@ export const GUIDE_PRINTABLES: Record<string, string[]> = {
   'best-state-parks-for-families': ['leave-no-trace-quick-reference', 'weather-signs-field-card'],
   'dispersed-camping-on-blm-and-national-forest-land': ['bear-bag-food-storage-card', 'leave-no-trace-quick-reference'],
   'labor-day-weekend-camping': ['weather-signs-field-card', 'camp-first-aid-quick-reference'],
+  'camping-with-dogs-first-time': ['camping-with-dogs-field-card'],
 }

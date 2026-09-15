@@ -13,6 +13,7 @@ import BearBagFoodStorageCard from '@/components/printables/BearBagFoodStorageCa
 import CampFirstAidQuickReference from '@/components/printables/CampFirstAidQuickReference'
 import LeaveNoTraceQuickReference from '@/components/printables/LeaveNoTraceQuickReference'
 import CampMealPlanner from '@/components/printables/CampMealPlanner'
+import CampingWithDogsFieldCard from '@/components/printables/CampingWithDogsFieldCard'
 
 // Slug → artwork component. Each component renders its full-page print
 // content; the print page wraps it with the shared header / footer chrome
@@ -33,4 +34,5 @@ export const ARTWORK_RENDERERS: Record<string, React.ComponentType> = {
   'camp-first-aid-quick-reference': CampFirstAidQuickReference,
   'leave-no-trace-quick-reference': LeaveNoTraceQuickReference,
   '3-day-camp-meal-planner': CampMealPlanner,
+  'camping-with-dogs-field-card': CampingWithDogsFieldCard,
 }
