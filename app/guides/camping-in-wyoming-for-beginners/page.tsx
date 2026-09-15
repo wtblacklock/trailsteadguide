@@ -110,6 +110,9 @@ export default function Page() {
         <li>Carry bear spray on your hip where you can reach it, not buried in a pack. Buy it locally, since you cannot fly with it.</li>
         <li>Some campsites in the region are restricted to hard-sided units when bear activity is high. Check current status before you commit to a tent site.</li>
       </ul>
+      <p>
+        If this is your family&apos;s first trip into grizzly country, our guide to <Link href="/guides/camping-in-bear-country-with-kids">camping in bear country with kids</Link> covers the same food discipline in kid-sized terms, plus what to do if one walks through your loop.
+      </p>
 
       <h3>Altitude is a planning factor</h3>
       <ul>

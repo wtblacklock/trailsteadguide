@@ -1041,6 +1041,34 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     templateSlugs: [],
     priceRange: '~$15',
   },
+  {
+    id: 'sabre-frontiersman-max-bear-spray',
+    name: 'SABRE Frontiersman MAX Bear Spray',
+    description:
+      'EPA-registered bear deterrent at the maximum legal 2% major capsaicinoid strength, with a 40-foot spray range and a holster. The item you carry on trails in grizzly country and hope never to unclip - it rides on a hip belt, never inside the tent, and never with a kid.',
+    amazonAsin: 'B0CQMVHGK8',
+    affiliateUrl: 'https://www.amazon.com/dp/B0CQMVHGK8?tag=trailsteadgui-20',
+    imageUrl: 'https://m.media-amazon.com/images/I/812WUKnpXLL._AC_SX679_.jpg',
+    category: 'essential',
+    templateSlugs: [],
+    priceRange: '~$40',
+    tags: ['family'],
+    slot: 'SAFETY',
+  },
+  {
+    id: 'bearvault-food-canister',
+    name: 'BearVault Bear-Resistant Food Canister',
+    description:
+      'A hard-sided, certified bear-resistant food container in four sizes. The answer when you are camping somewhere with no bear box and no car to lock food in - dispersed sites, walk-in sites, and the backcountry permits that now require one.',
+    amazonAsin: 'B0019LSGQE',
+    affiliateUrl: 'https://www.amazon.com/dp/B0019LSGQE?tag=trailsteadgui-20',
+    imageUrl: 'https://m.media-amazon.com/images/I/61OCF-RHRCL._AC_SX679_.jpg',
+    category: 'essential',
+    templateSlugs: [],
+    priceRange: '~$85',
+    tags: ['family'],
+    slot: 'SAFETY',
+  },
 
   // ------------------------------------------------------------------
   // Legacy / deprecated. Kept in the registry so /compare/* editorial
