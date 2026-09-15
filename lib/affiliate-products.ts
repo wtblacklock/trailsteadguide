@@ -326,6 +326,20 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     slot: 'KID_GEAR',
   },
   {
+    id: 'peterson-first-guide-trees',
+    name: 'Peterson First Guide to Trees',
+    description:
+      'A pocket-sized beginner tree guide covering 243 species, organized by leaf shape so a kid can actually work it out themselves. The right size to hand over on a leaf hunt.',
+    amazonAsin: '0395911834',
+    affiliateUrl: 'https://www.amazon.com/dp/0395911834?tag=trailsteadgui-20',
+    imageUrl: 'https://m.media-amazon.com/images/I/81Taqmsg46L._SY522_.jpg',
+    category: 'comfort',
+    templateSlugs: [],
+    priceRange: '~$9',
+    tags: ['with-kids', 'family', 'budget'],
+    slot: 'KID_GEAR',
+  },
+  {
     id: 'thriad-first-aid-430',
     name: 'Gevoke 410-Piece First Aid Kit',
     description:
