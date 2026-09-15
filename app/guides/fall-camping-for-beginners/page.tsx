@@ -202,7 +202,7 @@ export default function Page() {
           <strong>Skipping the hunting check.</strong> Many state forests, national forests, and BLM lands allow firearm hunting in October and November. Check the unit, wear blaze orange on trails, and pick a campground that doesn&apos;t share its access road with hunters at dawn.
         </li>
         <li>
-          <strong>Sleeping with food in the tent.</strong> Bears in October are eating 20+ hours a day to put on winter weight, and they remember campgrounds. Bear box, locker, or trunk - every wrapper, every snack, every tube of toothpaste.
+          <strong>Sleeping with food in the tent.</strong> Bears in October are eating 20+ hours a day to put on winter weight, and they remember campgrounds. Bear box, locker, or trunk - every wrapper, every snack, every tube of toothpaste. Our guide to <Link href="/guides/camping-in-bear-country-with-kids">camping in bear country with kids</Link> has the full list of what counts as a scented item and the three rules worth teaching kids.
         </li>
       </ol>
 

@@ -143,7 +143,7 @@ export const GUIDES: Guide[] = [
     shortLabel: 'Fall',
     description: 'Cold nights, condensation, early dark - fall done right.',
     eyebrow: 'Fall',
-    relatedGuides: ['camping-after-dark-with-kids', 'how-to-keep-kids-warm-camping', 'halloween-camping-with-kids'],
+    relatedGuides: ['camping-after-dark-with-kids', 'how-to-keep-kids-warm-camping', 'camping-in-bear-country-with-kids'],
   },
   {
     slug: 'winter-camping-for-beginners',
@@ -296,7 +296,7 @@ export const GUIDES: Guide[] = [
     metaTitle: 'Wyoming Camping for Beginners (Bears)',
     metaDescription:
       'Camping in Wyoming for beginners: Yellowstone and Teton campgrounds, grizzly food rules, altitude, wind, and a three-month season.',
-    relatedGuides: ['camping-in-montana-for-beginners', 'camping-in-colorado-for-beginners', 'recreation-gov-reservation-strategy'],
+    relatedGuides: ['camping-in-bear-country-with-kids', 'camping-in-montana-for-beginners', 'camping-in-colorado-for-beginners'],
   },
   {
     slug: 'camping-in-montana-for-beginners',
@@ -561,5 +561,16 @@ export const GUIDES: Guide[] = [
     metaDescription:
       'How to keep kids warm camping: the ground-up sleep system, what to wear to bed, the mistakes that make kids cold, and how to warm a shivering child at 2 a.m.',
     relatedGuides: ['best-camping-sleeping-bag-for-kids', 'fall-camping-for-beginners', 'winter-camping-for-beginners'],
+  },
+  {
+    slug: 'camping-in-bear-country-with-kids',
+    category: 'scenario',
+    title: 'Camping in Bear Country With Kids',
+    description: 'The food rule applied to a real family campsite, three rules kids can remember, and what to do if one walks through your loop.',
+    eyebrow: 'Wildlife',
+    metaTitle: 'Camping in Bear Country With Kids',
+    metaDescription:
+      'Camping in bear country with kids: why fall is the busiest bear season, what actually goes in the bear box, three rules kids can remember, and what to do if you see one.',
+    relatedGuides: ['fall-camping-for-beginners', 'camping-in-wyoming-for-beginners', 'dispersed-camping-on-blm-and-national-forest-land'],
   },
 ]

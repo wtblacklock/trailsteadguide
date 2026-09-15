@@ -588,6 +588,17 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'LIGHTING', productId: 'luminaid-packlite-max' },
     { slot: 'SAFETY', productId: 'thriad-first-aid-430' },
   ],
+  'camping-in-bear-country-with-kids': [
+    { slot: 'COOLER', productId: 'rtic-45-cooler' },
+    { slot: 'COOLER', productId: 'coleman-xtreme-50-cooler' },
+    { slot: 'LIGHTING', productId: 'streamlight-protac-2' },
+    { slot: 'LIGHTING', productId: 'everbrite-headlamp-5-pack' },
+    { slot: 'KID_GEAR', productId: 'field-guide-animal-tracks' },
+    { slot: 'SAFETY', productId: 'sabre-frontiersman-max-bear-spray' },
+    { slot: 'SAFETY', productId: 'bearvault-food-canister' },
+    { slot: 'SAFETY', productId: 'thriad-first-aid-430' },
+    { slot: 'TRASH', productId: 'fwc-trash-can-wakeman' },
+  ],
   'camping-after-dark-with-kids': [
     { slot: 'LIGHTING', productId: 'everbrite-headlamp-5-pack' },
     { slot: 'LIGHTING', productId: 'luminaid-packlite-max' },
