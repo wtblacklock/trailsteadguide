@@ -397,6 +397,33 @@ export const PRINTABLES: Printable[] = [
     relatedGuideSlug: 'first-camping-trip-checklist',
     relatedProductIds: ['lodge-cast-iron-skillet'],
   },
+  {
+    slug: 'junior-ranger-activity-sheet',
+    category: 'kids',
+    title: 'Junior Ranger Activity Sheet',
+    description:
+      'A free printable Junior Ranger-style activity sheet for camping trips - fill-in-the-blank nature notes, a sky check, and a sketch box for kids.',
+    tagline:
+      'One page, one pencil. Fill in what you noticed, sketch what you found, and sign your own ranger pledge - inspired by the booklets parks hand out at the visitor center.',
+    whatYouGet: [
+      'A fill-in-the-blank campsite report: park name, date, weather, and a temperature guess',
+      'Four open-ended observation prompts for animals, tracks, sounds, and questions',
+      'A sky check box for one cloud shape and one thing spotted after dark',
+      'A blank sketch box for a leaf, rock, or bug found on the trail',
+      'A simple ranger pledge kids sign themselves',
+      'Letter / A4 sized, one page',
+    ],
+    useCases: [
+      'A quiet-time activity while the official park Junior Ranger booklet is picked up at the visitor center',
+      'Something to fill out at the picnic table before or after a hike',
+      'A keepsake page for a trip journal or scrapbook',
+    ],
+    formatNote: 'Single-page printable · Letter / A4 · Free with email signup',
+    datePublished: '2026-09-16',
+    relatedSkillPath: 'hiking/day-hike-essentials',
+    relatedGuideSlug: 'camping-with-kids-first-time',
+    relatedProductIds: ['kidco-gopod'],
+  },
 ]
 
 const PRINTABLE_BY_SLUG: Record<string, Printable> = Object.fromEntries(

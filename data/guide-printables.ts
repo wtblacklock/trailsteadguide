@@ -18,7 +18,7 @@ export const GUIDE_PRINTABLES: Record<string, string[]> = {
   'first-time-camping-mistakes': ['leave-no-trace-quick-reference', 'camp-first-aid-quick-reference'],
   'camping-with-kids-first-time': ['animal-track-id-card', 'nature-scavenger-hunt-card', 'shadow-puppet-hand-guide'],
   'camping-with-toddlers': ['kids-camping-packing-list'],
-  'summer-camping-with-kids': ['kids-camping-packing-list', 'nature-scavenger-hunt-card'],
+  'summer-camping-with-kids': ['kids-camping-packing-list', 'nature-scavenger-hunt-card', 'junior-ranger-activity-sheet'],
   'first-night-camping-guide': ['northern-hemisphere-constellation-wheel', 'night-sky-bingo'],
   'rainy-camping-trips': ['weather-signs-field-card'],
   'camping-in-a-heatwave': ['weather-signs-field-card'],

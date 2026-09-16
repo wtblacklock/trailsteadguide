@@ -31,7 +31,7 @@ export const PLAN_PRINTABLES: Record<PlanSlug, string[]> = {
   ],
   'first-weekend-camp': [
     'northern-hemisphere-constellation-wheel',
-    'animal-track-id-card',
+    'junior-ranger-activity-sheet',
     'weather-signs-field-card',
     'bear-bag-food-storage-card',
     'leave-no-trace-quick-reference',
