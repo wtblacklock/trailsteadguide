@@ -147,6 +147,9 @@ export default function Page() {
           rain shell, rather than carrying over July&apos;s packing list unchanged. For the fuller
           seasonal-transition playbook, see{' '}
           <Link href="/guides/fall-camping-for-beginners">fall camping for beginners</Link>.
+          If you are already eyeing the next long weekend, see{' '}
+          <Link href="/guides/columbus-day-weekend-camping">Columbus Day weekend camping</Link>,
+          which brings foliage crowds and end-of-season closures of its own.
         </p>
 
         <h2>If solitude matters more than the specific date</h2>

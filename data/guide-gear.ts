@@ -588,6 +588,16 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'LIGHTING', productId: 'luminaid-packlite-max' },
     { slot: 'SAFETY', productId: 'thriad-first-aid-430' },
   ],
+  'columbus-day-weekend-camping': [
+    { slot: 'SLEEP_BAG', productId: 'coleman-brazos-bag' },
+    { slot: 'SLEEP_BAG', productId: 'vumos-bag-liner' },
+    { slot: 'SLEEP_SURFACE', productId: 'redcamp-foam-sleeping-pad' },
+    { slot: 'WINTER_GEAR', productId: 'hothands-hand-warmers-bulk' },
+    { slot: 'LIGHTING', productId: 'everbrite-headlamp-5-pack' },
+    { slot: 'STOVE', productId: 'coleman-triton-2-burner' },
+    { slot: 'RAIN_GEAR', productId: 'geertop-17x10-tarp' },
+    { slot: 'SAFETY', productId: 'thriad-first-aid-430' },
+  ],
   'camping-in-bear-country-with-kids': [
     { slot: 'COOLER', productId: 'rtic-45-cooler' },
     { slot: 'COOLER', productId: 'coleman-xtreme-50-cooler' },
