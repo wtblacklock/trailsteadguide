@@ -209,7 +209,9 @@ export default function Page() {
           <Link href="/guides/fall-camping-for-beginners">fall camping for beginners</Link>, and if
           this would be your family&apos;s first night in a tent, run a{' '}
           <Link href="/guides/backyard-camping-with-kids">backyard camping</Link> trial on a cold
-          night before committing to the real thing.
+          night before committing to the real thing. A Halloween weekend also makes a good dress
+          rehearsal for the colder, darker trip a month later: see{' '}
+          <Link href="/guides/thanksgiving-camping-with-kids">Thanksgiving camping with kids</Link>.
         </p>
 
         <h2>Decorating a site without wrecking it</h2>
