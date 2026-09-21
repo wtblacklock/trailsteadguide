@@ -20,6 +20,7 @@ export const GUIDE_PRINTABLES: Record<string, string[]> = {
   'camping-with-toddlers': ['kids-camping-packing-list'],
   'summer-camping-with-kids': ['kids-camping-packing-list', 'nature-scavenger-hunt-card'],
   'first-night-camping-guide': ['northern-hemisphere-constellation-wheel', 'night-sky-bingo'],
+  'camping-after-dark-with-kids': ['northern-hemisphere-constellation-wheel', 'shadow-puppet-hand-guide'],
   'rainy-camping-trips': ['weather-signs-field-card'],
   'camping-in-a-heatwave': ['weather-signs-field-card'],
   'camping-when-the-weather-turns': ['weather-signs-field-card'],
@@ -51,5 +52,6 @@ export const GUIDE_PRINTABLES: Record<string, string[]> = {
   'how-to-start-a-campfire': ['fire-starting-checklist'],
   'best-state-parks-for-families': ['leave-no-trace-quick-reference', 'weather-signs-field-card'],
   'dispersed-camping-on-blm-and-national-forest-land': ['bear-bag-food-storage-card', 'leave-no-trace-quick-reference'],
+  'camping-in-bear-country-with-kids': ['bear-bag-food-storage-card'],
   'labor-day-weekend-camping': ['weather-signs-field-card', 'camp-first-aid-quick-reference'],
 }
