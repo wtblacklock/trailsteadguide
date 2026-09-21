@@ -14,9 +14,9 @@ import AmazonLink from '@/components/affiliate/AmazonLink'
 const SLUG = '/guides/how-to-keep-kids-warm-camping'
 const TITLE = 'How to Keep Kids Warm Camping'
 // SEO-optimized <title>; H1/headline keep TITLE.
-const META_TITLE = 'How to Keep Kids Warm Camping on Cold Nights'
+const META_TITLE = 'How to Keep Kids Warm Camping at Night'
 const DESCRIPTION =
-  'How to keep kids warm camping: the ground-up sleep system, what to wear to bed, the mistakes that make kids cold, and how to warm a shivering child at 2 a.m.'
+  'How to keep kids warm camping: the ground-up sleep system, what to wear to bed, mistakes that make kids cold, and how to warm a shivering child at 2 a.m.'
 const HERO_IMAGE =
   'https://images.unsplash.com/photo-1624923686627-514dd5e57bae?w=1400&auto=format&fit=crop&q=80'
 
