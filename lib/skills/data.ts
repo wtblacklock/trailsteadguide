@@ -2467,6 +2467,10 @@ export const SKILLS: Skill[] = [
     relatedGear: [
       { name: 'Reflective Guy Line, 50 ft', productId: 'reflective-guyline-50ft' },
     ],
+    videoEmbed: {
+      url: 'https://www.youtube-nocookie.com/embed/bhaalWtIQHU',
+      title: 'How to Guy Out a Tent - REI',
+    },
   },
   {
     slug: 'tent-care-and-storage',
@@ -2542,6 +2546,10 @@ export const SKILLS: Skill[] = [
       'Washing dishes in a stream or lake. Even biodegradable soap harms aquatic ecosystems. Always wash on land.',
     ],
     relatedSkills: ['camp-setup/campsite-layout', 'camp-setup/breaking-camp', 'safety/food-storage-and-bear-bags'],
+    videoEmbed: {
+      url: 'https://www.youtube-nocookie.com/embed/hODEilheaPc',
+      title: 'Dishwashing for Frontcountry - Leave No Trace',
+    },
     relatedPrintableSlug: 'leave-no-trace-quick-reference',
   },
   {
@@ -2575,6 +2583,10 @@ export const SKILLS: Skill[] = [
       'Waiting until morning to start packing. The kitchen and gear prep happens the night before.',
     ],
     relatedSkills: ['camp-setup/campsite-layout', 'camp-setup/camp-hygiene', 'fire/extinguishing-a-fire'],
+    videoEmbed: {
+      url: 'https://www.youtube-nocookie.com/embed/J2Sns-F-cLw',
+      title: 'How Long Does Trash Last - Leave No Trace',
+    },
     relatedPrintableSlug: 'leave-no-trace-quick-reference',
   },
 

@@ -4,21 +4,17 @@ Products spotted during the weekly gear-rotation pass that look worth a slot but
 were not wired in yet. Each entry says what still needs to happen before it can
 ship. Trim this file as items are actioned or go stale.
 
-Last reviewed: 2026-09-07
+Last reviewed: 2026-09-21
 
 ## Not yet verified
 
-### LuminAID PackLite Max 2-in-1 (200 lumens)
+None open this week.
 
-- Candidate ASIN: `B08YC6H4F6` (seen in search results only, product page not opened)
-- Why: the registry's `luminaid-packlite-max` entry now correctly resolves to the
-  **Titan** (300 lumens, ~$68). The 200-lumen Max sits around $40 and would give the
-  LIGHTING slot a real budget tier under the Titan instead of jumping straight from
-  a headlamp to a $68 lantern.
-- Before adding: open `https://www.amazon.com/dp/B08YC6H4F6`, confirm the title,
-  rating, review count and stock, curl-verify the tagged link and the image, then
-  add it as a new registry id (do not reuse `luminaid-packlite-max`, which several
-  guides already point at).
+## Retired this run
+
+- **LuminAID PackLite Max 2-in-1 (200 lumens)**: `B08YC6H4F6` now redirects to a
+  relisted `B0CVYMMHJ4` at $59.99 with only 418 ratings. That is not a meaningful
+  budget tier under the $68 Titan, so it was dropped rather than added.
 
 ## Deferred, not a sourcing problem
 
@@ -26,18 +22,18 @@ Last reviewed: 2026-09-07
 
 PR #74 ("align gear shelves with the products the prose recommends") has been open
 against `data/guide-gear.ts` since 2026-09-03 and rewrites STOVE and CHAIR rows
-across most regional guides. This run only touched the `how-to-pack-a-cooler`
-block, which that PR does not modify, to avoid handing the owner a merge conflict.
+across most regional guides. Gear-rotation runs avoid the blocks it touches.
 
-Still thin after this run, worth revisiting once #74 lands:
+`campfire-recipes-for-kids` and `no-cook-camping-meals-kids` were filled on
+2026-09-21. Still thin, worth revisiting once #74 lands:
 
-- `campfire-recipes-for-kids` - 1 product (KID_GEAR only)
-- `no-cook-camping-meals-kids` - 1 product
-- `how-to-start-a-campfire` - 2 products
+- `how-to-start-a-campfire` - 2 products (matches and fire cubes). A fire-safety
+  item (bucket or extinguisher) would fit, but none is in the registry yet.
 
-### Incomplete registry entries
+### Sleeping-bag slot
 
-`rtic-45-cooler` and `coleman-xtreme-50-cooler` were repaired this run. A sweep of
-`lib/affiliate-products.ts` found no other entry missing both `amazonAsin` and
-`affiliateUrl`, which is the combination that makes a product silently disappear
-from gear shelves (see the guard in `components/guide/GuideGearShelf.tsx`).
+`teton-celsius-xxl-0` was added on 2026-09-21 to the Montana, Wyoming and winter
+shelves as the mid-price 0°F tier. Other cold-weather shelves (Colorado,
+Appalachians, Northeast, Pacific Northwest, fall, `camping-when-the-weather-turns`)
+sit inside PR #74 hunks and were left alone to avoid a merge conflict. Add it there
+once #74 merges.
