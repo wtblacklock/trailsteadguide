@@ -633,6 +633,16 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'POWER', productId: 'anker-zolo-power-bank' },
     { slot: 'TRASH', productId: 'fwc-trash-can-wakeman' },
   ],
+  'cold-weather-camping-meals': [
+    { slot: 'STOVE', productId: 'coleman-triton-2-burner' },
+    { slot: 'COOKWARE', productId: 'thermos-stainless-king-40oz' },
+    { slot: 'COOKWARE', productId: 'lodge-cast-iron-skillet' },
+    { slot: 'COOKWARE', productId: 'thtybros-cookware-mess-kit' },
+    { slot: 'COOLER', productId: 'coleman-classic-rolling-cooler' },
+    { slot: 'CANOPY', productId: 'core-10x10-canopy' },
+    { slot: 'WINTER_GEAR', productId: 'hothands-hand-warmers-bulk' },
+    { slot: 'KID_GEAR', productId: 'thermos-funtainer-food-jar' },
+  ],
   'easy-family-camping-meals': [
     { slot: 'STOVE', productId: 'coleman-triton-2-burner' },
     { slot: 'COOKWARE', productId: 'thtybros-cookware-mess-kit' },

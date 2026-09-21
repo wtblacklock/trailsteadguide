@@ -451,7 +451,7 @@ export const GUIDES: Guide[] = [
     title: 'Easy Family Camping Meals',
     description: '15 camp meals that travel well, cook fast, and kids will actually eat.',
     eyebrow: 'Camp food',
-    relatedGuides: ['camping-meal-plan-family', 'no-cook-camping-meals-kids', 'family-camping-for-beginners'],
+    relatedGuides: ['camping-meal-plan-family', 'no-cook-camping-meals-kids', 'cold-weather-camping-meals'],
   },
   {
     slug: 'camping-meal-plan-family',
@@ -476,6 +476,17 @@ export const GUIDES: Guide[] = [
     description: 'Beyond s\'mores: build-your-own foil packets, pie iron sandwiches, and roasting stick foods kids can help make.',
     eyebrow: 'Camp food',
     relatedGuides: ['how-to-start-a-campfire', 'easy-family-camping-meals', 'camping-meal-plan-family'],
+  },
+  {
+    slug: 'cold-weather-camping-meals',
+    category: 'basics',
+    title: 'Cold-Weather Camping Meals for Families',
+    description: 'Warm one-pot dinners made at home, a hot-drink station that runs all day, and the bedtime snack that keeps kids warm.',
+    eyebrow: 'Camp food',
+    metaTitle: 'Cold-Weather Camping Meals for Families',
+    metaDescription:
+      'Cold-weather camping meals for families: warm one-pot dinners made at home, a hot-drink station that runs all day, and the bedtime snack that keeps kids warm.',
+    relatedGuides: ['how-to-keep-kids-warm-camping', 'easy-family-camping-meals', 'fall-camping-for-beginners'],
   },
   {
     slug: 'how-to-start-a-campfire',
