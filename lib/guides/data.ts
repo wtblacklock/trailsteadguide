@@ -557,9 +557,9 @@ export const GUIDES: Guide[] = [
     title: 'How to Keep Kids Warm Camping',
     description: 'The ground-up sleep system, what to wear to bed, and what to do when a kid wakes up cold at 2 a.m.',
     eyebrow: 'Cold nights',
-    metaTitle: 'How to Keep Kids Warm Camping on Cold Nights',
+    metaTitle: 'How to Keep Kids Warm Camping at Night',
     metaDescription:
-      'How to keep kids warm camping: the ground-up sleep system, what to wear to bed, the mistakes that make kids cold, and how to warm a shivering child at 2 a.m.',
+      'How to keep kids warm camping: the ground-up sleep system, what to wear to bed, mistakes that make kids cold, and how to warm a shivering child at 2 a.m.',
     relatedGuides: ['best-camping-sleeping-bag-for-kids', 'fall-camping-for-beginners', 'winter-camping-for-beginners'],
   },
   {
@@ -570,7 +570,7 @@ export const GUIDES: Guide[] = [
     eyebrow: 'Wildlife',
     metaTitle: 'Camping in Bear Country With Kids',
     metaDescription:
-      'Camping in bear country with kids: why fall is the busiest bear season, what actually goes in the bear box, three rules kids can remember, and what to do if you see one.',
+      'Camping in bear country with kids: why fall is peak bear season, what goes in the bear box, three rules kids can remember, and what to do if you see one.',
     relatedGuides: ['fall-camping-for-beginners', 'camping-in-wyoming-for-beginners', 'dispersed-camping-on-blm-and-national-forest-land'],
   },
 ]
