@@ -92,7 +92,7 @@ export const GUIDES: Guide[] = [
     title: 'Rainy Camping Trips',
     description: 'Tarp setup, condensation, dry-camp recovery, and the call on whether to bail.',
     eyebrow: 'Rain',
-    relatedGuides: ['camping-when-the-weather-turns', 'camping-in-the-pacific-northwest-for-beginners', 'fall-camping-for-beginners'],
+    relatedGuides: ['how-to-prevent-tent-condensation', 'camping-when-the-weather-turns', 'fall-camping-for-beginners'],
   },
   {
     slug: 'camping-with-dogs-first-time',
@@ -415,6 +415,17 @@ export const GUIDES: Guide[] = [
     description: 'The teardown order that actually works: fire out cold, tent packed dry, trash gone, and the car loaded once instead of twice.',
     eyebrow: 'How-to',
     relatedGuides: ['how-to-store-camping-gear', 'how-to-set-up-a-tent', 'how-to-start-a-campfire'],
+  },
+  {
+    slug: 'how-to-prevent-tent-condensation',
+    category: 'basics',
+    title: 'How to Prevent Tent Condensation',
+    description: 'Why the tent is wet inside when it never rained, and the venting, pitching, and site habits that keep sleeping bags dry on cold nights.',
+    eyebrow: 'How-to',
+    metaTitle: 'How to Prevent Tent Condensation (Why Your Tent Is Wet Inside)',
+    metaDescription:
+      'How to prevent tent condensation: why the tent is wet inside when it never rained, how to vent and pitch the rainfly, where to camp, and what to do when the ceiling is dripping.',
+    relatedGuides: ['rainy-camping-trips', 'fall-camping-for-beginners', 'how-to-set-up-a-tent'],
   },
   {
     slug: 'how-to-store-camping-gear',

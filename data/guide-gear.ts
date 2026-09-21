@@ -837,6 +837,14 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'STORAGE', productId: 'drytote-desiccant-packs' },
     { slot: 'STORAGE', productId: 'nikwax-tent-gear-solarproof' },
   ],
+  'how-to-prevent-tent-condensation': [
+    { slot: 'TENT', productId: 'coleman-sundome-4p' },
+    { slot: 'TENT', productId: 'alps-lynx-4p' },
+    { slot: 'RAIN_GEAR', productId: 'rainleaf-microfiber-towel' },
+    { slot: 'RAIN_GEAR', productId: 'geertop-17x10-tarp' },
+    { slot: 'SLEEP_BAG', productId: 'vumos-bag-liner' },
+    { slot: 'SLEEP_SURFACE', productId: 'big-agnes-divide' },
+  ],
   'no-cook-camping-meals-kids': [
     { slot: 'COOLER', productId: 'coleman-classic-rolling-cooler' },
   ],

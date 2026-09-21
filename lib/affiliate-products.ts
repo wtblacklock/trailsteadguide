@@ -547,6 +547,20 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     tags: ['storage', 'rain-ready', 'budget'],
     slot: 'STORAGE',
   },
+  {
+    id: 'rainleaf-microfiber-towel',
+    name: 'Rainleaf Microfiber Quick-Dry Towel, 60 x 30 in',
+    description:
+      'The morning condensation towel. Wipe the inside of the rainfly and the tent ceiling before the drips land on sleeping bags, wring it out, and it is dry again by lunch. Packs down to the size of a water bottle.',
+    amazonAsin: 'B01A4ZY02Y',
+    affiliateUrl: 'https://www.amazon.com/dp/B01A4ZY02Y?tag=trailsteadgui-20',
+    imageUrl: 'https://m.media-amazon.com/images/I/61DMeWCuEJL._AC_SX679_.jpg',
+    category: 'essential',
+    templateSlugs: [],
+    priceRange: '~$17',
+    tags: ['rain-ready', 'cold-ready', 'budget'],
+    slot: 'RAIN_GEAR',
+  },
 
   // ------------------------------------------------------------------
   // Skills gear - referenced from lib/skills/data.ts `relatedGear`.
