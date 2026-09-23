@@ -397,6 +397,31 @@ export const PRINTABLES: Printable[] = [
     relatedGuideSlug: 'first-camping-trip-checklist',
     relatedProductIds: ['lodge-cast-iron-skillet'],
   },
+  {
+    slug: 'campsite-setup-diagram',
+    category: 'planning',
+    title: 'Campsite Setup Diagram',
+    description:
+      'A free printable top-down campsite layout card - where to put the tent, kitchen, fire ring, food storage, and car relative to each other, with spacing guidance for each zone.',
+    tagline:
+      'A labeled site plan for the five things every campsite needs placed well: tent, kitchen, fire, food, and the car.',
+    whatYouGet: [
+      'A labeled top-down diagram: tent zone, kitchen zone, fire ring, food storage, and parking',
+      'Spacing guidance for each zone, including the fire-ring clearance distance campgrounds and the National Park Service recommend',
+      'A wind-direction note so smoke and cooking smells blow away from the tent',
+      'A reminder on where food storage actually belongs and when to defer to bear-country rules instead',
+      'Letter / A4 sized, one-color print',
+    ],
+    useCases: [
+      'Walk the site once before unloading the car, then set up in the right order',
+      'Settle the "where does the tent go" debate before anyone starts pitching it',
+      'Brief a co-camper or older kid who is helping set up camp for the first time',
+    ],
+    formatNote: 'Single-page printable · Letter / A4 · Free with email signup',
+    datePublished: '2026-09-23',
+    relatedGuideSlug: 'how-to-choose-a-family-campsite',
+    relatedProductIds: ['coleman-sundome-4p', 'canopy-camp', 'camp-chairs'],
+  },
 ]
 
 const PRINTABLE_BY_SLUG: Record<string, Printable> = Object.fromEntries(
