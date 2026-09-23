@@ -38,7 +38,7 @@ export const GUIDE_PRINTABLES: Record<string, string[]> = {
   'camping-in-the-northeast-for-beginners': ['bear-bag-food-storage-card', 'weather-signs-field-card'],
   'family-camping-for-beginners': ['leave-no-trace-quick-reference', 'kids-camping-packing-list'],
   'backyard-camping-with-kids': ['backyard-test-checklist', 'shadow-puppet-hand-guide'],
-  'how-to-choose-a-family-campsite': ['leave-no-trace-quick-reference'],
+  'how-to-choose-a-family-campsite': ['leave-no-trace-quick-reference', 'campsite-setup-diagram'],
   'family-camping-gear-list': ['kids-camping-packing-list', 'backyard-test-checklist'],
   'best-family-tent-for-beginners': ['backyard-test-checklist'],
   'best-camping-sleeping-bag-for-kids': ['kids-camping-packing-list'],
