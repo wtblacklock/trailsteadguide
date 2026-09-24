@@ -116,7 +116,7 @@ export const GUIDES: Guide[] = [
     title: 'Camping When the Weather Turns',
     description: 'Lightning rules, the bail decision, what to do if you’re stuck, and how to call it.',
     eyebrow: 'Bad weather',
-    relatedGuides: ['rainy-camping-trips', 'winter-camping-for-beginners', 'fall-camping-for-beginners'],
+    relatedGuides: ['rainy-camping-trips', 'camping-in-high-wind', 'fall-camping-for-beginners'],
   },
   {
     slug: 'spring-camping-for-beginners',
@@ -572,5 +572,16 @@ export const GUIDES: Guide[] = [
     metaDescription:
       'Camping in bear country with kids: why fall is the busiest bear season, what actually goes in the bear box, three rules kids can remember, and what to do if you see one.',
     relatedGuides: ['fall-camping-for-beginners', 'camping-in-wyoming-for-beginners', 'dispersed-camping-on-blm-and-national-forest-land'],
+  },
+  {
+    slug: 'camping-in-high-wind',
+    category: 'scenario',
+    title: 'Camping in High Wind With Kids',
+    description: 'What the forecast numbers mean, how to site and stake a tent that stays put, and the wind speed where you pack up.',
+    eyebrow: 'Wind',
+    metaTitle: 'Camping in High Wind With Kids',
+    metaDescription:
+      'Camping in high wind with kids: what sustained and gust numbers mean, how to site and stake a family tent, what turns into a projectile, and when to leave.',
+    relatedGuides: ['camping-when-the-weather-turns', 'how-to-set-up-a-tent', 'fall-camping-for-beginners'],
   },
 ]
