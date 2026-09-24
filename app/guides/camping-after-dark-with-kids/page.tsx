@@ -287,7 +287,9 @@ export default function Page() {
             <strong>Stargazing, which fall is genuinely better for.</strong> Cooler, drier air means
             steadier viewing, and dark arrives while kids are still awake, which is not true in June.
             A paper star chart set to your latitude beats a phone screen here, because the phone
-            wrecks everyone&apos;s night vision the moment it comes out.
+            wrecks everyone&apos;s night vision the moment it comes out. For picking a dark site,
+            timing a trip around the moon, and this fall&apos;s meteor showers, see{' '}
+            <Link href="/guides/stargazing-camping-with-kids">stargazing camping with kids</Link>.
           </li>
           <li>
             <strong>The fire, once it is actually built.</strong> Kids stay engaged much longer when
