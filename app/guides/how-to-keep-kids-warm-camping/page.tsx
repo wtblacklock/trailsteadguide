@@ -259,7 +259,9 @@ export default function Page() {
           experience, treat about 40°F overnight as the sensible floor. Between 30 and 40°F you
           need the full system above: a 20°F or warmer bag per person, an insulated pad, dry base
           layers, and hats. Below freezing, tent camping with kids becomes a real skill with real
-          consequences, and toddlers and infants have less margin than school-age kids do.
+          consequences, and toddlers and infants have less margin than school-age kids do. For
+          dressing an infant under a sleep sack instead of blankets, see{' '}
+          <Link href="/guides/camping-with-a-baby">camping with a baby</Link>.
         </p>
         <p>
           There is no shame in the cabin-first path when the forecast turns. A cabin or yurt
