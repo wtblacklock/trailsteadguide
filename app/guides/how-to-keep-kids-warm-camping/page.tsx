@@ -250,7 +250,10 @@ export default function Page() {
         <p>
           Never run a propane heater, a grill, or a stove inside a tent to warm it up. Carbon
           monoxide from burning fuel in an enclosed space is odorless and kills people every year,
-          and a tent is not ventilated enough to make it safe. Warm the kids, not the air.
+          and a tent is not ventilated enough to make it safe. Warm the kids, not the air.{' '}
+          <Link href="/guides/tent-heater-safety">Tent heater safety</Link> covers why the
+          oxygen-depletion sensor on a portable heater does not change that answer, and where a
+          carbon monoxide alarm does belong.
         </p>
 
         <h2>How cold is too cold</h2>

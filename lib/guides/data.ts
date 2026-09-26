@@ -560,7 +560,7 @@ export const GUIDES: Guide[] = [
     metaTitle: 'How to Keep Kids Warm Camping on Cold Nights',
     metaDescription:
       'How to keep kids warm camping: the ground-up sleep system, what to wear to bed, the mistakes that make kids cold, and how to warm a shivering child at 2 a.m.',
-    relatedGuides: ['best-camping-sleeping-bag-for-kids', 'fall-camping-for-beginners', 'winter-camping-for-beginners'],
+    relatedGuides: ['best-camping-sleeping-bag-for-kids', 'tent-heater-safety', 'fall-camping-for-beginners'],
   },
   {
     slug: 'camping-in-bear-country-with-kids',
@@ -572,5 +572,16 @@ export const GUIDES: Guide[] = [
     metaDescription:
       'Camping in bear country with kids: why fall is the busiest bear season, what actually goes in the bear box, three rules kids can remember, and what to do if you see one.',
     relatedGuides: ['fall-camping-for-beginners', 'camping-in-wyoming-for-beginners', 'dispersed-camping-on-blm-and-national-forest-land'],
+  },
+  {
+    slug: 'tent-heater-safety',
+    category: 'scenario',
+    title: 'Tent Heater Safety',
+    description: 'Why no fuel-burning heater belongs in a family tent, what oxygen-depletion sensors do not cover, and the warm setup to use instead.',
+    eyebrow: 'Cold nights',
+    metaTitle: 'Are Propane Tent Heaters Safe?',
+    metaDescription:
+      'Are tent heaters safe? Why fuel-burning heaters never belong in a tent, the limits of oxygen-depletion sensors, and the sleep system to use instead.',
+    relatedGuides: ['how-to-keep-kids-warm-camping', 'fall-camping-for-beginners', 'winter-camping-for-beginners'],
   },
 ]
