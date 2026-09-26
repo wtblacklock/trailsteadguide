@@ -312,6 +312,20 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     slot: 'KID_GEAR',
   },
   {
+    id: 'halo-sleepsack-micro-fleece',
+    name: 'HALO SleepSack Micro-Fleece Wearable Blanket (TOG 1.0)',
+    description:
+      'A zip-up micro-fleece wearable blanket that replaces loose blankets in a travel crib. The safe-sleep way to add warmth for a baby on a cool fall night in a tent.',
+    amazonAsin: 'B000069EXO',
+    affiliateUrl: 'https://www.amazon.com/dp/B000069EXO?tag=trailsteadgui-20',
+    imageUrl: 'https://m.media-amazon.com/images/I/41djwG+LBzL._AC_SX679_.jpg',
+    category: 'essential',
+    templateSlugs: [],
+    priceRange: '~$30',
+    tags: ['with-kids', 'family', 'cold-ready'],
+    slot: 'KID_GEAR',
+  },
+  {
     id: 'carpathen-smores-sticks',
     name: 'CARPATHEN Smores Sticks (8-Pack)',
     description:
