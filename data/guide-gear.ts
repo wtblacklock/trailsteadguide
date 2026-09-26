@@ -959,4 +959,16 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'POWER', productId: 'anker-zolo-power-bank' },
     { slot: 'TRASH', productId: 'fwc-trash-can-wakeman' },
   ],
+  'camping-in-high-wind': [
+    { slot: 'TENT', productId: 'coleman-sundome-4p' },
+    { slot: 'TENT', productId: 'alps-lynx-4p' },
+    { slot: 'STOVE', productId: 'coleman-1-burner' },
+    { slot: 'LIGHTING', productId: 'streamlight-protac-2' },
+    { slot: 'LIGHTING', productId: 'luminaid-packlite-max' },
+    { slot: 'RAIN_GEAR', productId: 'eurmax-galvanized-tent-stakes' },
+    { slot: 'RAIN_GEAR', productId: 'reflective-guyline-50ft' },
+    { slot: 'RAIN_GEAR', productId: 'geertop-17x10-tarp' },
+    { slot: 'SAFETY', productId: 'thriad-first-aid-430' },
+    { slot: 'TRASH', productId: 'fwc-trash-can-wakeman' },
+  ],
 }

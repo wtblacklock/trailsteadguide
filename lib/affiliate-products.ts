@@ -436,6 +436,19 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     slot: 'RAIN_GEAR',
   },
   {
+    id: 'eurmax-galvanized-tent-stakes',
+    name: 'Eurmax Galvanized Steel Tent Stakes, 10-Pack',
+    description:
+      'The upgrade that replaces the thin wire pins in the tent bag. Galvanized steel with a bent hook that keeps a loaded guyline on the stake instead of letting it lift out in a gust. Ships with 4 tie-down ropes.',
+    amazonAsin: 'B07PQB74J4',
+    imageUrl: 'https://m.media-amazon.com/images/I/71VVpByFGdL._AC_SX679_.jpg',
+    category: 'essential',
+    templateSlugs: [],
+    priceRange: '~$10',
+    tags: ['tarp', 'family', 'budget', 'rain-ready'],
+    slot: 'RAIN_GEAR',
+  },
+  {
     id: 'frizcol-camping-fan',
     name: 'FRIZCOL 3-in-1 Camping Fan',
     description:
