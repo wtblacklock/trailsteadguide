@@ -6,6 +6,7 @@ import { AUTHOR_NAME, AUTHOR_IMAGE } from '@/lib/seo'
 import { getPrintableBySlug } from '@/lib/printables'
 import PrintableEmailGate from '@/components/printables/PrintableEmailGate'
 import DifficultyBadge from './DifficultyBadge'
+import { contentDate } from '@/lib/content-dates'
 import RelatedGearBlock from '@/components/gear/RelatedGearBlock'
 import SafetyBlock from './SafetyBlock'
 import SkillMediaBlock from './SkillMediaBlock'
@@ -17,6 +18,7 @@ interface Props {
   dateModified?: string
 }
 
+/** Last-resort only: skill routes resolve a real date from content-dates.json. */
 const DEFAULT_DATE_MODIFIED = '2026-04-24'
 
 function formatUpdatedLabel(iso: string): string {
@@ -27,7 +29,9 @@ function formatUpdatedLabel(iso: string): string {
 
 export default function SkillDetail({ skill, category, dateModified }: Props) {
   const safetyTone = skill.safetyTone ?? 'standard'
-  const updatedLabel = formatUpdatedLabel(dateModified ?? DEFAULT_DATE_MODIFIED)
+  const updatedLabel = formatUpdatedLabel(
+    dateModified ?? contentDate(`/skills/${category.slug}/${skill.slug}`) ?? DEFAULT_DATE_MODIFIED,
+  )
   return (
     <article className="bg-[#F5F3EE]">
       <div className="max-w-content mx-auto px-6 pt-12 pb-6 md:pt-16">

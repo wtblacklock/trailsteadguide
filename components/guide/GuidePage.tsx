@@ -5,6 +5,7 @@ import { getCategoryForGuide } from '@/lib/guides'
 import { AUTHOR_NAME, AUTHOR_IMAGE } from '@/lib/seo'
 import StickyQuizCTA from './StickyQuizCTA'
 import GuideQuickPicks from './GuideQuickPicks'
+import { contentDate } from '@/lib/content-dates'
 
 // Avatar initials shown behind the portrait - graceful fallback for a 404
 // on AUTHOR_IMAGE. The user will swap the photo asset later.
@@ -24,6 +25,7 @@ export type GuidePageProps = {
   children: ReactNode
 }
 
+/** Last-resort only: every guide route has a real date in content-dates.json. */
 const DEFAULT_DATE_MODIFIED = '2026-04-24'
 
 function formatUpdatedLabel(iso: string): string {
@@ -34,7 +36,9 @@ function formatUpdatedLabel(iso: string): string {
 
 export function GuidePage({ eyebrow = 'Guide', title, lede, heroImage, slug, dateModified, children }: GuidePageProps) {
   const category = getCategoryForGuide(slug)
-  const updatedLabel = formatUpdatedLabel(dateModified ?? DEFAULT_DATE_MODIFIED)
+  const updatedLabel = formatUpdatedLabel(
+    dateModified ?? contentDate(`/guides/${slug}`) ?? DEFAULT_DATE_MODIFIED,
+  )
 
   return (
     <article>

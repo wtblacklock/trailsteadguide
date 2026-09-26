@@ -11,9 +11,9 @@ import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
 
 const SLUG = '/guides/best-camping-sleeping-bag-for-kids'
 const TITLE = "Best Camping Sleeping Bag for Kids"
-const META_TITLE = "Best Kids Camping Sleeping Bag (2026)"
+const META_TITLE = "Best Kids Sleeping Bags: 2 Picks (2026)"
 const DESCRIPTION =
-  "The best camping sleeping bags for kids: what temperature rating to buy, why kids need their own bag, and the picks that work across age ranges."
+  "Kids need their own bag, not a folded-over adult one. Two picks by temperature rating: a 15°F bag that grows with them, and a $30 option for a first trip."
 const HERO_IMAGE =
   'https://images.unsplash.com/photo-1674230316788-d9c8b92f0d63?w=1400&auto=format&fit=crop&q=80'
 
