@@ -609,6 +609,18 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'KID_GEAR', productId: 'family-trivia-cards' },
     { slot: 'POWER', productId: 'anker-zolo-power-bank' },
   ],
+  'thanksgiving-camping-with-kids': [
+    { slot: 'COOKWARE', productId: 'lodge-dutch-oven' },
+    { slot: 'COOKWARE', productId: 'temppro-instant-read-thermometer' },
+    { slot: 'COOKWARE', productId: 'camp-grill-tongs' },
+    { slot: 'STOVE', productId: 'coleman-triton-2-burner' },
+    { slot: 'COOLER', productId: 'coleman-xtreme-50-cooler' },
+    { slot: 'SLEEP_BAG', productId: 'coleman-brazos-bag' },
+    { slot: 'SLEEP_SURFACE', productId: 'big-agnes-divide' },
+    { slot: 'LIGHTING', productId: 'everbrite-headlamp-5-pack' },
+    { slot: 'WINTER_GEAR', productId: 'hothands-hand-warmers-bulk' },
+    { slot: 'SAFETY', productId: 'thriad-first-aid-430' },
+  ],
   'halloween-camping-with-kids': [
     { slot: 'TENT', productId: 'coleman-sundome-4p' },
     { slot: 'SLEEP_BAG', productId: 'coleman-brazos-bag' },

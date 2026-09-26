@@ -1069,6 +1069,20 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     tags: ['family'],
     slot: 'SAFETY',
   },
+  {
+    id: 'temppro-instant-read-thermometer',
+    name: 'TempPro TempSwift Instant Read Meat Thermometer',
+    description:
+      'A 1-second instant-read probe with a backlit, auto-rotating display that stays readable after dark. The only reliable way to know poultry cooked over coals or in a Dutch oven actually reached a safe 165°F.',
+    amazonAsin: 'B07XXSYLL8',
+    affiliateUrl: 'https://www.amazon.com/dp/B07XXSYLL8?tag=trailsteadgui-20',
+    imageUrl: 'https://m.media-amazon.com/images/I/71GAhr0v1hL._AC_SL1500_.jpg',
+    category: 'essential',
+    templateSlugs: [],
+    priceRange: '~$16',
+    tags: ['family', 'budget'],
+    slot: 'COOKWARE',
+  },
 
   // ------------------------------------------------------------------
   // Legacy / deprecated. Kept in the registry so /compare/* editorial
