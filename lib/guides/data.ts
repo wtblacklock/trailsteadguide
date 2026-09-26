@@ -549,7 +549,7 @@ export const GUIDES: Guide[] = [
     metaTitle: 'Camping After Dark With Kids',
     metaDescription:
       'Camping after dark with kids: how much daylight fall costs you, the three-layer lighting setup for a campsite, and what to do with a long evening.',
-    relatedGuides: ['fall-camping-for-beginners', 'halloween-camping-with-kids', 'first-night-camping-guide'],
+    relatedGuides: ['stargazing-camping-with-kids', 'fall-camping-for-beginners', 'halloween-camping-with-kids'],
   },
   {
     slug: 'how-to-keep-kids-warm-camping',
@@ -572,5 +572,16 @@ export const GUIDES: Guide[] = [
     metaDescription:
       'Camping in bear country with kids: why fall is the busiest bear season, what actually goes in the bear box, three rules kids can remember, and what to do if you see one.',
     relatedGuides: ['fall-camping-for-beginners', 'camping-in-wyoming-for-beginners', 'dispersed-camping-on-blm-and-national-forest-land'],
+  },
+  {
+    slug: 'stargazing-camping-with-kids',
+    category: 'scenario',
+    title: 'Stargazing Camping With Kids',
+    description: 'Picking a dark-sky campsite and a moonless weekend, the fall meteor showers worth staying up for, and keeping kids warm while they look up.',
+    eyebrow: 'Night sky',
+    metaTitle: 'Stargazing Camping With Kids: Meteor Showers and Dark Skies',
+    metaDescription:
+      'Stargazing camping with kids: how to pick a dark-sky campsite and a moonless weekend, the fall 2026 meteor showers worth staying up for, and how to keep kids warm and looking up.',
+    relatedGuides: ['camping-after-dark-with-kids', 'how-to-keep-kids-warm-camping', 'fall-camping-for-beginners'],
   },
 ]
