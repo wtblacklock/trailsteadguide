@@ -394,6 +394,20 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     slot: 'SLEEP_BAG',
   },
   {
+    id: 'teton-celsius-xxl-0',
+    name: 'TETON Sports Celsius XXL 0°F Sleeping Bag',
+    description:
+      'Roomy 0°F rectangular bag with a soft flannel lining and a compression sack. The mid-price cold-weather pick between a 40°F Brazos and a $300+ mummy bag, with nearly 8,000 Amazon ratings behind it.',
+    amazonAsin: 'B001D6TB8W',
+    affiliateUrl: 'https://www.amazon.com/dp/B001D6TB8W?tag=trailsteadgui-20',
+    imageUrl: 'https://m.media-amazon.com/images/I/61TFXt2pnxL._AC_SL1500_.jpg',
+    category: 'comfort',
+    templateSlugs: [],
+    priceRange: '~$90',
+    tags: ['sleeping-bag', 'mid-range', 'cold-ready', 'family'],
+    slot: 'SLEEP_BAG',
+  },
+  {
     id: 'rab-ionosphere-5-5',
     name: 'Rab Ionosphere 5.5',
     description:
