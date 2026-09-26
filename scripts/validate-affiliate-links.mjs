@@ -31,7 +31,16 @@ function findSourceFiles() {
   )
   return out
     .split('\n')
-    .filter((p) => p && !p.startsWith('scripts/validate-affiliate-links'))
+    .filter(
+      (p) =>
+        p &&
+        !p.startsWith('scripts/validate-affiliate-links') &&
+        // Tests use invented ASINs that 404 on purpose. Scanning them reports
+        // the same two failures every run, and a real broken link is easy to
+        // miss once the output is expected to be noisy.
+        !p.includes('__tests__') &&
+        !/\.(test|spec)\.[cm]?[jt]sx?$/.test(p),
+    )
 }
 
 function extractUrls(text) {
