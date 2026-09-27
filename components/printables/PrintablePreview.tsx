@@ -30,6 +30,7 @@ import BearBagFoodStorageCard from './BearBagFoodStorageCard'
 import CampFirstAidQuickReference from './CampFirstAidQuickReference'
 import LeaveNoTraceQuickReference from './LeaveNoTraceQuickReference'
 import CampMealPlanner from './CampMealPlanner'
+import CampsiteSetupDiagram from './CampsiteSetupDiagram'
 import JuniorRangerActivitySheet from './JuniorRangerActivitySheet'
 
 export const RENDERERS: Record<string, React.ComponentType> = {
@@ -48,6 +49,7 @@ export const RENDERERS: Record<string, React.ComponentType> = {
   'camp-first-aid-quick-reference': CampFirstAidQuickReference,
   'leave-no-trace-quick-reference': LeaveNoTraceQuickReference,
   '3-day-camp-meal-planner': CampMealPlanner,
+  'campsite-setup-diagram': CampsiteSetupDiagram,
   'junior-ranger-activity-sheet': JuniorRangerActivitySheet,
 }
 
