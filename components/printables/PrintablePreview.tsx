@@ -31,6 +31,7 @@ import CampFirstAidQuickReference from './CampFirstAidQuickReference'
 import LeaveNoTraceQuickReference from './LeaveNoTraceQuickReference'
 import CampMealPlanner from './CampMealPlanner'
 import CampsiteSetupDiagram from './CampsiteSetupDiagram'
+import JuniorRangerActivitySheet from './JuniorRangerActivitySheet'
 
 export const RENDERERS: Record<string, React.ComponentType> = {
   'northern-hemisphere-constellation-wheel': ConstellationWheel,
@@ -49,6 +50,7 @@ export const RENDERERS: Record<string, React.ComponentType> = {
   'leave-no-trace-quick-reference': LeaveNoTraceQuickReference,
   '3-day-camp-meal-planner': CampMealPlanner,
   'campsite-setup-diagram': CampsiteSetupDiagram,
+  'junior-ranger-activity-sheet': JuniorRangerActivitySheet,
 }
 
 type Props = {

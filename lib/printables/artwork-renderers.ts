@@ -14,6 +14,7 @@ import CampFirstAidQuickReference from '@/components/printables/CampFirstAidQuic
 import LeaveNoTraceQuickReference from '@/components/printables/LeaveNoTraceQuickReference'
 import CampMealPlanner from '@/components/printables/CampMealPlanner'
 import CampsiteSetupDiagram from '@/components/printables/CampsiteSetupDiagram'
+import JuniorRangerActivitySheet from '@/components/printables/JuniorRangerActivitySheet'
 
 // Slug → artwork component. Each component renders its full-page print
 // content; the print page wraps it with the shared header / footer chrome
@@ -35,4 +36,5 @@ export const ARTWORK_RENDERERS: Record<string, React.ComponentType> = {
   'leave-no-trace-quick-reference': LeaveNoTraceQuickReference,
   '3-day-camp-meal-planner': CampMealPlanner,
   'campsite-setup-diagram': CampsiteSetupDiagram,
+  'junior-ranger-activity-sheet': JuniorRangerActivitySheet,
 }
