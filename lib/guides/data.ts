@@ -143,7 +143,7 @@ export const GUIDES: Guide[] = [
     shortLabel: 'Fall',
     description: 'Cold nights, condensation, early dark - fall done right.',
     eyebrow: 'Fall',
-    relatedGuides: ['camping-after-dark-with-kids', 'how-to-keep-kids-warm-camping', 'camping-in-bear-country-with-kids'],
+    relatedGuides: ['camping-after-dark-with-kids', 'how-to-keep-kids-warm-camping', 'camp-stove-fuel-in-cold-weather'],
   },
   {
     slug: 'winter-camping-for-beginners',
@@ -572,5 +572,16 @@ export const GUIDES: Guide[] = [
     metaDescription:
       'Camping in bear country with kids: why fall is the busiest bear season, what actually goes in the bear box, three rules kids can remember, and what to do if you see one.',
     relatedGuides: ['fall-camping-for-beginners', 'camping-in-wyoming-for-beginners', 'dispersed-camping-on-blm-and-national-forest-land'],
+  },
+  {
+    slug: 'camp-stove-fuel-in-cold-weather',
+    category: 'basics',
+    title: 'Camp Stove Fuel in Cold Weather',
+    description: 'Why butane sputters near freezing, how cold changes propane, and the habits that keep breakfast on schedule on a frosty morning.',
+    eyebrow: 'How-to',
+    metaTitle: 'Camp Stove Fuel in Cold Weather: Propane vs Butane',
+    metaDescription:
+      'Why butane stoves sputter near freezing, how cold propane still works, and the simple tricks that keep a family camp stove running on a frosty fall morning.',
+    relatedGuides: ['fall-camping-for-beginners', 'how-to-keep-kids-warm-camping', 'winter-camping-for-beginners'],
   },
 ]

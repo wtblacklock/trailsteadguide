@@ -580,6 +580,13 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'POWER', productId: 'anker-zolo-power-bank' },
     { slot: 'TRASH', productId: 'fwc-trash-can-wakeman' },
   ],
+  'camp-stove-fuel-in-cold-weather': [
+    { slot: 'STOVE', productId: 'coleman-triton-2-burner' },
+    { slot: 'STOVE', productId: 'coleman-1-burner' },
+    { slot: 'STOVE', productId: 'dozyant-propane-adapter-hose-5ft' },
+    { slot: 'COOKWARE', productId: 'gsi-pinnacle-camper-cookset' },
+    { slot: 'WINTER_GEAR', productId: 'hothands-hand-warmers-bulk' },
+  ],
   'labor-day-weekend-camping': [
     { slot: 'TENT', productId: 'coleman-sundome-4p' },
     { slot: 'SLEEP_BAG', productId: 'coleman-brazos-bag' },
