@@ -64,7 +64,7 @@ export default function Page() {
           },
           {
             q: 'How does Acadia, White Mountains, Adirondacks reservation work?',
-            a: 'Different systems. Acadia campgrounds (Blackwoods, Seawall, Schoodic) reserve through recreation.gov, 6 months out, popular weekends fill in hours. New Hampshire State Parks (Lafayette Place, Crawford Notch) book 11 months in advance via nhstateparks.org. New York State campgrounds (Adirondacks) book 9 months in advance via reserveamerica.com. Vermont and Maine state parks have their own systems - usually less competitive than the headline national-park sites.',
+            a: 'Different systems. Acadia campgrounds (Blackwoods, Seawall, Schoodic) reserve through recreation.gov, 6 months out - most sites drop in a block on the 1st of the month at 10am Eastern, not on a rolling daily schedule, and popular weekends fill in hours. New Hampshire State Parks (Lafayette Place, Crawford Notch) book 11 months in advance via nhstateparks.org. New York State campgrounds (Adirondacks) book 9 months in advance via reserveamerica.com. Vermont and Maine state parks have their own systems - usually less competitive than the headline national-park sites.',
           },
           {
             q: 'Where should a Northeast first-timer actually go?',
@@ -185,7 +185,7 @@ export default function Page() {
 
       <h3>National parks and federal lands</h3>
       <p>
-        Acadia is the headline national-park experience in the region - Blackwoods and Seawall on Mount Desert Island are the iconic campgrounds. Reserve through <a href="https://www.recreation.gov/" rel="noopener" target="_blank">recreation.gov</a>, 6 months out. White Mountain National Forest has dozens of developed campgrounds and is dramatically less competitive - Dolly Copp at the foot of Mt Washington and the Kancamagus Highway corridor (Hancock, Big Rock, Passaconaway) are the proven beginner picks. Green Mountain NF and Allegheny NF round out the federal-land options. For Maine&apos;s North Woods, Baxter State Park (its own reservation system, <a href="https://baxterstatepark.org/" rel="noopener" target="_blank">baxterstatepark.org</a>) and the coastal alternative Camden Hills State Park are worth knowing - both run more relaxed than Acadia.
+        Acadia is the headline national-park experience in the region - Blackwoods and Seawall on Mount Desert Island are the iconic campgrounds. Reserve through <a href="https://www.recreation.gov/" rel="noopener" target="_blank">recreation.gov</a>, 6 months out - Acadia releases most sites in a block on the 1st of the month rather than on the usual rolling daily schedule. White Mountain National Forest has dozens of developed campgrounds and is dramatically less competitive - Dolly Copp at the foot of Mt Washington and the Kancamagus Highway corridor (Hancock, Big Rock, Passaconaway) are the proven beginner picks. Green Mountain NF and Allegheny NF round out the federal-land options. For Maine&apos;s North Woods, Baxter State Park (its own reservation system, <a href="https://baxterstatepark.org/" rel="noopener" target="_blank">baxterstatepark.org</a>) and the coastal alternative Camden Hills State Park are worth knowing - both run more relaxed than Acadia.
       </p>
 
       <h3>Adirondack Park (New York)</h3>
@@ -244,7 +244,7 @@ export default function Page() {
           <strong>Underdressing for altitude nights.</strong> July at 4,000 ft in the Whites can drop into the 30s overnight. Bring the warm bag and the puffy.
         </li>
         <li>
-          <strong>Trying to book Acadia or Lafayette Place two months out for foliage weekend.</strong> Blackwoods and Seawall release 60 days ahead and book in seconds; NH state parks open 11 months out. Mid-week is the unlock - or shift to a private campground or a national-forest site outside the park.
+          <strong>Trying to book Acadia or Lafayette Place two months out for foliage weekend.</strong> Blackwoods and Seawall release 90 percent of sites six months ahead, on the 1st of the month at 10am Eastern, and book in seconds; the last 10 percent drops 14 days out. NH state parks open 11 months out. Mid-week is the unlock - or shift to a private campground or a national-forest site outside the park.
         </li>
         <li>
           <strong>Wearing cotton in the rain.</strong> Cool wet rain plus cotton clothing is how hypothermia happens at 50°F. Synthetic and wool only.
@@ -332,7 +332,7 @@ export default function Page() {
       </p>
       <h3>How does Acadia, White Mountains, Adirondacks reservation work?</h3>
       <p>
-        Different systems. Acadia: recreation.gov, 6 months out. New Hampshire State Parks: 11 months out. New York/Adirondacks: ReserveAmerica, 9 months out. Vermont and Maine state parks usually less competitive.
+        Different systems. Acadia: recreation.gov, 6 months out, released in a block on the 1st of the month at 10am Eastern. New Hampshire State Parks: 11 months out. New York/Adirondacks: ReserveAmerica, 9 months out. Vermont and Maine state parks usually less competitive.
       </p>
       <h3>Where should a Northeast first-timer actually go?</h3>
       <p>
