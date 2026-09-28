@@ -143,7 +143,7 @@ export const GUIDES: Guide[] = [
     shortLabel: 'Fall',
     description: 'Cold nights, condensation, early dark - fall done right.',
     eyebrow: 'Fall',
-    relatedGuides: ['camping-after-dark-with-kids', 'how-to-keep-kids-warm-camping', 'camping-in-bear-country-with-kids'],
+    relatedGuides: ['camping-after-dark-with-kids', 'how-to-keep-kids-warm-camping', 'camping-in-bear-country-with-kids', 'camping-in-the-ozarks-for-beginners'],
   },
   {
     slug: 'winter-camping-for-beginners',
@@ -333,6 +333,18 @@ export const GUIDES: Guide[] = [
     metaDescription:
       'Camping in Arizona for beginners: camp high in summer and low in winter, monsoon flash floods, Grand Canyon rims, and constant fire bans.',
     relatedGuides: ['camping-in-the-desert-southwest-for-beginners', 'camping-in-utah-for-beginners', 'camping-in-a-heatwave'],
+  },
+  {
+    slug: 'camping-in-the-ozarks-for-beginners',
+    category: 'location',
+    title: 'Camping in the Ozarks for Beginners',
+    shortLabel: 'Ozarks',
+    description: 'Late fall color, the new Buffalo River booking rules, ticks and chiggers, and rivers that rise fast.',
+    eyebrow: 'Ozarks',
+    metaTitle: 'Ozarks Camping for Beginners (Fall)',
+    metaDescription:
+      'Camping in the Ozarks for beginners: late fall color, the new Buffalo National River reservation rules, ticks and chiggers, gravel-bar flood risk, and easy state parks.',
+    relatedGuides: ['fall-camping-for-beginners', 'camping-in-the-appalachians-for-beginners', 'best-state-parks-for-families'],
   },
   // --- Gap content: family-focused cluster ---
   {
