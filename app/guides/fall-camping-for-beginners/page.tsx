@@ -156,7 +156,7 @@ export default function Page() {
       <h3>Cooking</h3>
       <ul>
         <li>Propane stove. Even with fire bans lifting, a stove cooks dinner faster than a fire and works under any wind that blows up after dark.</li>
-        <li>2 spare propane canisters; cold air thickens propane and slows the burn, so keep a canister in the tent overnight if temps drop near freezing.</li>
+        <li>2 spare propane canisters; cold air thickens propane and slows the burn, so keep a canister in the tent overnight if temps drop near freezing. Skip butane stoves entirely this time of year; our guide to <Link href="/guides/camp-stove-fuel-in-cold-weather">camp stove fuel in cold weather</Link> explains why.</li>
         <li>Smaller cooler than summer. A medium-size soft cooler often beats a 50-quart hard cooler in fall.</li>
         <li>1 gallon of drinking water per person per day, plus extra for cooking and cleanup. Some campgrounds shut spigots off in late October to prevent freeze damage.</li>
         <li>Hot-drink supplies - coffee, tea, hot cocoa, instant cider. The morning kettle does as much for morale as the breakfast.</li>
