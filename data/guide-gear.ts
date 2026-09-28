@@ -831,6 +831,7 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
   'how-to-start-a-campfire': [
     { slot: 'SAFETY', productId: 'uco-stormproof-matches' },
     { slot: 'SAFETY', productId: 'esbit-fire-cubes' },
+    { slot: 'SAFETY', productId: 'eurow-collapsible-bucket-10l' },
   ],
   'how-to-store-camping-gear': [
     { slot: 'STORAGE', productId: 'iris-weatherpro-44qt-bins' },
