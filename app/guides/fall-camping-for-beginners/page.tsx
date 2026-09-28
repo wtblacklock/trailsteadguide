@@ -193,7 +193,7 @@ export default function Page() {
           <strong>No real puffy.</strong> A hoodie is for shoulder season; the puffy is the warm layer that lets you sit at the picnic table after dinner instead of giving up and going to bed at 7pm. If you&apos;ve never tested cold-night layering, run a <Link href="/plans/backyard-test">backyard test</Link> on a 35°F night before committing to a state park trip.
         </li>
         <li>
-          <strong>Booking peak-foliage weekend two weeks out.</strong> Mid-October in New England, the Smokies, and the upper Midwest fills 2-3 months in advance. Mid-week is wide open if your schedule allows; otherwise either book early or shift the dates a week.
+          <strong>Booking peak-foliage weekend two weeks out.</strong> Mid-October in New England, the Smokies, and the upper Midwest fills 2-3 months in advance. Mid-week is wide open if your schedule allows; otherwise either book early or shift the dates a week. Or head somewhere that peaks later: color in the Ozarks usually runs into early November, so see <Link href="/guides/camping-in-the-ozarks-for-beginners">camping in the Ozarks for beginners</Link> if you missed the northern window.
         </li>
         <li>
           <strong>Cotton anywhere.</strong> Cold sweat is the fast lane to a miserable night. Synthetic or wool for everything that touches skin - including the t-shirt under the base layer.
