@@ -394,6 +394,20 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     slot: 'SLEEP_BAG',
   },
   {
+    id: 'teton-trailhead-20-mummy',
+    name: 'TETON Sports TrailHead 20F Mummy Sleeping Bag',
+    description:
+      'Mid-price synthetic mummy bag with a hood, zipper draft tube, and compression sack. Survival rated to 20°F, so plan on comfort in the 40s to 50s.',
+    amazonAsin: 'B00TZRPQFI',
+    affiliateUrl: 'https://www.amazon.com/dp/B00TZRPQFI?tag=trailsteadgui-20',
+    imageUrl: 'https://m.media-amazon.com/images/I/51WoG3tqLgL._AC_SL1500_.jpg',
+    category: 'comfort',
+    templateSlugs: [],
+    priceRange: '~$70',
+    tags: ['sleeping-bag', 'mid-range', 'cold-ready'],
+    slot: 'SLEEP_BAG',
+  },
+  {
     id: 'rab-ionosphere-5-5',
     name: 'Rab Ionosphere 5.5',
     description:

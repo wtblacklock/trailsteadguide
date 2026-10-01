@@ -84,6 +84,12 @@ const PRODUCT_COMPARES: CompareCard[] = [
     blurb: 'Floor sleep system versus an off-the-ground combo. Comfort, weight, packing, and which one survives kids.',
   },
   {
+    href: '/compare/mummy-vs-rectangular-sleeping-bag',
+    eyebrow: 'Gear',
+    title: 'Mummy vs rectangular sleeping bag',
+    blurb: 'Snug and warm versus roomy and easy. Which shape fits your kids, and the temperature where the mummy starts to win.',
+  },
+  {
     href: '/compare/lantern-vs-headlamp-vs-flashlight',
     eyebrow: 'Gear',
     title: 'Lantern vs headlamp vs flashlight',

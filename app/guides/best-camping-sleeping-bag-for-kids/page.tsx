@@ -104,6 +104,11 @@ export default function Page() {
         <p>
           A child who overheats in a warm bag can unzip and regulate. A child who is cold in an insufficiently rated bag has no good options.
         </p>
+        <p>
+          Shape matters too: a hooded mummy bag sleeps warmer than a rectangular bag with the same rating. See{' '}
+          <Link href="/compare/mummy-vs-rectangular-sleeping-bag">mummy vs. rectangular sleeping bags</Link>{' '}
+          for when the switch is worth it.
+        </p>
 
         <h2>What temperature rating to buy by region and season</h2>
         <ul>
