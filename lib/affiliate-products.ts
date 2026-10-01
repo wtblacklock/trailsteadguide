@@ -492,6 +492,20 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     slot: 'WINTER_GEAR',
   },
   {
+    id: 'therm-a-rest-z-lite-sol',
+    name: 'Therm-a-Rest Z Lite Sol Foam Sleeping Pad',
+    description:
+      'Folding closed-cell foam pad with a reflective coating. Cannot pop, doubles as a sit pad, and adds about R 2 of insulation under any inflatable pad or air mattress on a cold night.',
+    amazonAsin: 'B005I6R0WC',
+    affiliateUrl: 'https://www.amazon.com/dp/B005I6R0WC?tag=trailsteadgui-20',
+    imageUrl: 'https://m.media-amazon.com/images/I/71r9o+AP-yL._AC_SX679_.jpg',
+    category: 'comfort',
+    templateSlugs: [],
+    priceRange: '~$60',
+    tags: ['sleeping-pad', 'budget', 'cold-ready'],
+    slot: 'SLEEP_SURFACE',
+  },
+  {
     id: 'fwc-trash-can-wakeman',
     name: 'Wakeman Outdoor Collapsible Trash Can',
     description:
