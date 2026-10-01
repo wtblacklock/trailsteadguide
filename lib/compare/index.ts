@@ -60,6 +60,12 @@ export const COMPARE_PAGES: ComparePageEntry[] = [
       'Dome tent vs. cabin tent compared for family camping: setup time, wind resistance, headroom, weight, and price. Which style actually wins for car camping.',
   },
   {
+    slug: 'mummy-vs-rectangular-sleeping-bag',
+    title: 'Mummy vs. Rectangular Sleeping Bag for Families',
+    excerpt:
+      'Mummy vs. rectangular sleeping bag compared for family camping: warmth, room to move, kids who roll, packed size, and price. Which shape wins as fall nights get cold.',
+  },
+  {
     slug: 'family-camping-vs-cabin-rental',
     title: 'Family Camping vs Cabin Rental - Real Tradeoffs',
     excerpt:
