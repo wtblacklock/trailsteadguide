@@ -560,7 +560,7 @@ export const GUIDES: Guide[] = [
     metaTitle: 'How to Keep Kids Warm Camping on Cold Nights',
     metaDescription:
       'How to keep kids warm camping: the ground-up sleep system, what to wear to bed, the mistakes that make kids cold, and how to warm a shivering child at 2 a.m.',
-    relatedGuides: ['best-camping-sleeping-bag-for-kids', 'fall-camping-for-beginners', 'winter-camping-for-beginners'],
+    relatedGuides: ['sleeping-pad-r-value-explained', 'best-camping-sleeping-bag-for-kids', 'fall-camping-for-beginners'],
   },
   {
     slug: 'camping-in-bear-country-with-kids',
@@ -572,5 +572,16 @@ export const GUIDES: Guide[] = [
     metaDescription:
       'Camping in bear country with kids: why fall is the busiest bear season, what actually goes in the bear box, three rules kids can remember, and what to do if you see one.',
     relatedGuides: ['fall-camping-for-beginners', 'camping-in-wyoming-for-beginners', 'dispersed-camping-on-blm-and-national-forest-land'],
+  },
+  {
+    slug: 'sleeping-pad-r-value-explained',
+    category: 'basics',
+    title: 'Sleeping Pad R-Value Explained',
+    description: 'What the number measures, what R-value you need by season, why pads stack, and the air mattress trap.',
+    eyebrow: 'Gear guide',
+    metaTitle: 'Sleeping Pad R-Value Explained: What Families Need',
+    metaDescription:
+      'Sleeping pad R-value explained for family campers: what the number measures, what R-value you need by season, why pads stack, and the air mattress trap.',
+    relatedGuides: ['how-to-keep-kids-warm-camping', 'best-camping-sleeping-bag-for-kids', 'fall-camping-for-beginners'],
   },
 ]
