@@ -374,7 +374,7 @@ export const GUIDES: Guide[] = [
     title: 'Family Camping Gear List',
     description: 'The real list - six categories of gear for car camping with kids, in priority order.',
     eyebrow: 'Gear',
-    relatedGuides: ['family-camping-on-a-budget', 'best-family-tent-for-beginners', 'best-camping-sleeping-bag-for-kids'],
+    relatedGuides: ['family-camping-on-a-budget', 'best-family-tent-for-beginners', 'camping-first-aid-kit-for-families'],
   },
   {
     slug: 'best-family-tent-for-beginners',
@@ -572,5 +572,16 @@ export const GUIDES: Guide[] = [
     metaDescription:
       'Camping in bear country with kids: why fall is the busiest bear season, what actually goes in the bear box, three rules kids can remember, and what to do if you see one.',
     relatedGuides: ['fall-camping-for-beginners', 'camping-in-wyoming-for-beginners', 'dispersed-camping-on-blm-and-national-forest-land'],
+  },
+  {
+    slug: 'camping-first-aid-kit-for-families',
+    category: 'basics',
+    title: 'Camping First Aid Kit for Families',
+    description: 'A store-bought base kit, the kid-specific add-ons it leaves out, and how to handle the five injuries that actually happen at camp.',
+    eyebrow: 'Safety',
+    metaTitle: 'Family Camping First Aid Kit Checklist',
+    metaDescription:
+      'What goes in a family camping first aid kit: the base kit, kid-specific add-ons, fall extras, how to treat common camp injuries, and when to drive to urgent care.',
+    relatedGuides: ['family-camping-gear-list', 'first-time-camping-mistakes', 'camping-with-kids-first-time'],
   },
 ]

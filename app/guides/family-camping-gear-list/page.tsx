@@ -118,7 +118,7 @@ export default function Page() {
 
         <h3>Safety and comfort</h3>
         <ul>
-          <li><strong>First aid kit.</strong> At minimum: bandages in multiple sizes, antiseptic wipes, antibiotic ointment, tweezers (tick removal), moleskin (blisters), ibuprofen and children&apos;s acetaminophen, and any family-specific medications. Pre-packaged camp first aid kits are fine and save time.</li>
+          <li><strong>First aid kit.</strong> At minimum: bandages in multiple sizes, antiseptic wipes, antibiotic ointment, tweezers (tick removal), moleskin (blisters), ibuprofen and children&apos;s acetaminophen, and any family-specific medications. Pre-packaged camp first aid kits are fine and save time; our <Link href="/guides/camping-first-aid-kit-for-families">family camping first aid kit</Link> guide lists the kid-specific add-ons they leave out.</li>
           <li><strong>Bug spray.</strong> DEET (30% for adults, lower concentration for kids) or picaridin for tick country. Permethrin spray for treating clothing adds another layer of protection.</li>
           <li><strong>Sunscreen.</strong> SPF 30+ for adults, SPF 50 for kids. Reapply every 2 hours outside.</li>
           <li><strong>Camp chairs, one per person.</strong> Kids sit more and fight less when they have their own chair. Lightweight folding chairs pack flat. Budget $20-30 per chair.</li>
