@@ -90,7 +90,9 @@ export default function Page() {
           the penalty for an illegal fire is a real fine, not a warning. At a developed campground,
           use the fire ring or grate already at the site rather than building a new one; most
           campgrounds require this, and it&apos;s also just safer - that ring exists because
-          someone already checked the ground and clearance around it.
+          someone already checked the ground and clearance around it. If a ban is in effect,{' '}
+          <Link href="/guides/camping-during-a-burn-ban">camping during a burn ban</Link> covers
+          cooking, staying warm, and evening fun without a fire.
         </p>
         <p>
           Confirm the ring is at least 10 feet from your tent and any overhanging branches, and

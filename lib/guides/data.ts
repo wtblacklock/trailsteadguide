@@ -483,7 +483,16 @@ export const GUIDES: Guide[] = [
     title: 'How to Start a Campfire',
     description: 'Checking before you build, gathering materials, picking a structure, and lighting it - plus wet-weather backups.',
     eyebrow: 'How-to',
-    relatedGuides: ['campfire-recipes-for-kids', 'how-to-set-up-a-tent', 'family-camping-gear-list'],
+    relatedGuides: ['campfire-recipes-for-kids', 'camping-during-a-burn-ban', 'how-to-set-up-a-tent'],
+  },
+  {
+    slug: 'camping-during-a-burn-ban',
+    category: 'basics',
+    title: 'Camping During a Burn Ban',
+    description: 'What Stage 1 and Stage 2 fire restrictions allow, cooking on a stove, propane fire pits, and no-campfire evenings with kids.',
+    eyebrow: 'Fire restrictions',
+    metaTitle: 'Camping During a Burn Ban: A Family Guide',
+    relatedGuides: ['how-to-start-a-campfire', 'camping-after-dark-with-kids', 'fall-camping-for-beginners'],
   },
   // --- Location: where to camp with family ---
   {
