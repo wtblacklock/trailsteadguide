@@ -1,6 +1,6 @@
 # Content Gap Analysis — Trailstead Guide
 
-A backlog-shaped audit of the current content surface, what's missing, and what's worth shipping next. Snapshot re-baselined 2026-10-05 against `main` at `7ecdb88` (previous baseline: 2026-09-07).
+A backlog-shaped audit of the current content surface, what's missing, and what's worth shipping next. Snapshot re-baselined 2026-10-05 against `main` at `a65e01e` (previous baseline: 2026-09-07).
 
 ---
 
