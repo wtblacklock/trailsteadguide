@@ -26,7 +26,7 @@ export const PLAN_PRINTABLES: Record<PlanSlug, string[]> = {
     'camp-cooking-conversion-card',
     'fire-starting-checklist',
     'kids-camping-packing-list',
-    'bear-bag-food-storage-card',
+    'campsite-setup-diagram',
     'camp-first-aid-quick-reference',
   ],
   'first-weekend-camp': [
