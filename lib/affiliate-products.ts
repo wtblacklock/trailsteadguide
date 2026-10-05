@@ -46,20 +46,6 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     slot: 'TENT',
   },
   {
-    id: 'alps-lynx-4p',
-    name: 'ALPS Mountaineering Lynx 4-Person Tent',
-    description:
-      'Sturdier free-standing 4-person tent than the budget picks. Better fly coverage and pole quality for the price.',
-    amazonAsin: 'B0CXKQWRDD',
-    affiliateUrl: 'https://www.amazon.com/ALPS-Mountaineering-Lynx-4-Person-Tent/dp/B0CXKQWRDD?crid=20LCQ5IY2ZP2P&dib=eyJ2IjoiMSJ9.17xNslc2J4zELbsb3QgoYVOQhbTEipt02yPPgI47S6K1CrYLgm7kHTfaRTXru4DwV0ZS8QQuaaKZ7egE9u5P4qPy0827zl-es24P35zMu71ENfEH0Cmf_X4uDlBCV5fCeIT2H_HMrfQHf26Te2lc6uf8F0SQzkDvBoosAQwDGA8S84c4Ohef1y4gBhRJ6LNQi44mbPNB4irgzvMNjjp3NImUkGRnKy9L-UnCyctgw82pYG00eJgeKgSn4ob02e1LY06yqAp5j9mkWH8y3oEKAJFDeXbBpIniEPzZ-ZlMM_g.cZnpWS_S2qpV1BprrSumLG-hXxw0HndhMMzGTT6tYr0&dib_tag=se&keywords=ALPS%2BMountaineering%2BLynx%2B4-Person%2BTent&qid=1777553192&s=sporting-goods&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=alps%2Bmountaineering%2Blynx%2B4-person%2Btent%2B%2Csporting%2C113&sr=1-3&th=1&linkCode=ll2&tag=trailsteadgui-20&linkId=49908f5dbcc4e0608f7c7f2a53f54bba&language=en_US&ref_=as_li_ss_tl',
-    imageUrl: 'https://m.media-amazon.com/images/I/51LCvZqQ1rL._AC_SL1000_.jpg',
-    category: 'comfort',
-    templateSlugs: ['backyard-test', 'easy-family-basecamp', 'first-night-camp', 'first-weekend-camp'],
-    priceRange: '~$190',
-    tags: ['tent', 'family', 'mid-range', 'comfort'],
-    slot: 'TENT',
-  },
-  {
     id: 'tnf-wawona-6',
     name: 'The North Face Wawona 6',
     description:
@@ -1176,7 +1162,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     affiliateUrl: 'https://www.amazon.com/dp/B0GDJ48QGR?tag=trailsteadgui-20',
     imageUrl: 'https://m.media-amazon.com/images/I/51z2BsqYxUL._AC_SL1500_.jpg',
     category: 'comfort',
-    templateSlugs: [],
+    templateSlugs: ['backyard-test', 'easy-family-basecamp', 'first-night-camp', 'first-weekend-camp'],
     priceRange: '~$280',
     tags: ['tent', 'family', 'mid-range', 'rain-ready'],
     slot: 'TENT',
@@ -1285,6 +1271,23 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
   // pages and historical references keep rendering. Excluded from
   // recommendation surfaces (guide gear shelf, quiz results, Trip Pack).
   // ------------------------------------------------------------------
+  {
+    id: 'alps-lynx-4p',
+    name: 'ALPS Mountaineering Lynx 4-Person Tent',
+    description:
+      'Sturdier free-standing 4-person tent than the budget picks. Better fly coverage and pole quality for the price.',
+    amazonAsin: 'B0CXKQWRDD',
+    affiliateUrl: 'https://www.amazon.com/ALPS-Mountaineering-Lynx-4-Person-Tent/dp/B0CXKQWRDD?crid=20LCQ5IY2ZP2P&dib=eyJ2IjoiMSJ9.17xNslc2J4zELbsb3QgoYVOQhbTEipt02yPPgI47S6K1CrYLgm7kHTfaRTXru4DwV0ZS8QQuaaKZ7egE9u5P4qPy0827zl-es24P35zMu71ENfEH0Cmf_X4uDlBCV5fCeIT2H_HMrfQHf26Te2lc6uf8F0SQzkDvBoosAQwDGA8S84c4Ohef1y4gBhRJ6LNQi44mbPNB4irgzvMNjjp3NImUkGRnKy9L-UnCyctgw82pYG00eJgeKgSn4ob02e1LY06yqAp5j9mkWH8y3oEKAJFDeXbBpIniEPzZ-ZlMM_g.cZnpWS_S2qpV1BprrSumLG-hXxw0HndhMMzGTT6tYr0&dib_tag=se&keywords=ALPS%2BMountaineering%2BLynx%2B4-Person%2BTent&qid=1777553192&s=sporting-goods&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=alps%2Bmountaineering%2Blynx%2B4-person%2Btent%2B%2Csporting%2C113&sr=1-3&th=1&linkCode=ll2&tag=trailsteadgui-20&linkId=49908f5dbcc4e0608f7c7f2a53f54bba&language=en_US&ref_=as_li_ss_tl',
+    imageUrl: 'https://m.media-amazon.com/images/I/51LCvZqQ1rL._AC_SL1000_.jpg',
+    category: 'comfort',
+    templateSlugs: [],
+    priceRange: '~$190',
+    tags: ['tent', 'family', 'mid-range', 'comfort'],
+    slot: 'TENT',
+    // No Amazon buy box as of 2026-10-05 (third-party offers only, flagged
+    // as high price). Replaced by kelty-wireless-6 on every surface.
+    deprecated: true,
+  },
   {
     id: 'tent-sundome-3',
     name: 'Coleman Sundome 3-Person',

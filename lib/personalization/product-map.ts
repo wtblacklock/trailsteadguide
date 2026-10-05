@@ -54,8 +54,8 @@ export const SLEEP_PRODUCTS: SleepMap = {
   },
   split: {
     // Adult tent + kid tent - pair the family-friendly Sundome 4P with the
-    // sturdier ALPS Lynx so adults and kids have distinct setups.
-    tents: ['coleman-sundome-4p', 'alps-lynx-4p'],
+    // weather-ready Kelty Wireless 6 so adults and kids have distinct setups.
+    tents: ['coleman-sundome-4p', 'kelty-wireless-6'],
     sleepBags: ['coleman-brazos-bag'],
     pads: ['big-agnes-divide'],
     lanterns: ['luminaid-packlite-max'],

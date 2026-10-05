@@ -10,7 +10,7 @@ import type { AffiliateProduct } from '@/types'
 const SLUG = '/compare/best-beginner-tent'
 const TITLE = 'Best Beginner Tent: 3 Picks for First-Trip Comfort'
 const DESCRIPTION =
-  'Best beginner tent: a 4-person dome, a stand-up family size-up, and a sturdier upgrade. Compare capacity, setup, weather rating, and price.'
+  'Best beginner tent: a 4-person dome, a stand-up family size-up, and a weather-ready upgrade. Compare capacity, setup, weather rating, and price.'
 const H1 = 'Best beginner tent: 3 picks for your first family trip'
 
 function P(id: string): AffiliateProduct {
@@ -21,7 +21,7 @@ function P(id: string): AffiliateProduct {
 
 const TENT_BEST_SELLER = P('coleman-sundome-4p')
 const TENT_SIZE_UP = P('core-6p-instant-cabin')
-const TENT_UPGRADE = P('alps-lynx-4p')
+const TENT_UPGRADE = P('kelty-wireless-6')
 
 type Tier = 'best-seller' | 'size-up' | 'upgrade'
 
@@ -59,13 +59,13 @@ const PICKS: Pick[] = [
   },
   {
     tier: 'upgrade',
-    label: 'Sturdier upgrade',
+    label: 'Weather-ready upgrade',
     product: TENT_UPGRADE,
-    capacity: '4 people / queen air bed',
-    setup: '~15 min, free-standing',
-    weight: '~8 lbs',
-    weather: 'Heavier rain, stronger wind',
-    priceTier: '$$ Mid+',
+    capacity: '6 people / 2 doors',
+    setup: 'Color-coded, free-standing',
+    weight: '~20 lbs',
+    weather: 'Full-coverage fly, guylines attached',
+    priceTier: '$$$ Upgrade',
   },
 ]
 
@@ -91,8 +91,8 @@ const PLAN_MAP: { plan: string; href: string; pick: string; reason: string }[] =
   {
     plan: 'Easy Family Basecamp',
     href: '/plans/easy-family-basecamp',
-    pick: 'CORE 6-Person Cabin or ALPS Lynx 4P',
-    reason: 'Three nights of comfort. Stand-up height pays off, and so does sturdier pole quality.',
+    pick: 'CORE 6-Person Cabin or Kelty Wireless 6',
+    reason: 'Three nights of comfort. Stand-up height pays off, and so does a full-coverage rainfly if the forecast turns.',
   },
 ]
 
@@ -120,8 +120,8 @@ const FAQS = [
     a: 'Yes - it\'s the safest first-tent pick precisely because it\'s the most proven. Best-selling, weatherproof, fits a queen air bed, and sets up in 10 minutes. Step up only if you specifically want standing room or expect rougher weather.',
   },
   {
-    q: 'Is it worth paying more for the ALPS Lynx over the Sundome?',
-    a: 'Only if pole quality and stronger weather resistance matter more than price to you. The ALPS uses aluminum poles and a stronger guy-line system - a real difference if your first trip is in shoulder-season wind, but not something a fair-weather beginner needs to pay extra for.',
+    q: 'Is it worth paying more for the Kelty Wireless 6 over the Sundome?',
+    a: 'Only if weather protection and room matter more than price to you. The Kelty has a full-coverage rainfly, two doors with two vestibules, and guylines that come already attached - a real difference if your first trip is in shoulder-season wind or rain, but not something a fair-weather beginner needs to pay extra for.',
   },
   {
     q: 'Do I need a 6-person tent for a family of 4?',
@@ -182,7 +182,7 @@ export default function Page() {
         </h1>
         <p className="mt-6 text-lg md:text-xl text-stone-600 leading-relaxed">
           A tent is the one piece of gear that decides whether your first trip is a good
-          memory. Here are three picks - best-seller, size-up, and sturdier upgrade - with
+          memory. Here are three picks - best-seller, size-up, and weather-ready upgrade - with
           clear differences and which Trailstead plan they fit.
         </p>
       </header>
@@ -196,8 +196,8 @@ export default function Page() {
               The <strong>Coleman Sundome 4P</strong> is the safest first-tent pick - best-selling,
               weatherproof, fits a queen air bed, sets up in 10 minutes. Step up to the{' '}
               <strong>CORE 6-Person Instant Cabin</strong> if you want stand-up height and a 6-person
-              footprint. Step up to the <strong>ALPS Mountaineering Lynx 4P</strong> if pole
-              quality and stronger weather resistance matter more than the lowest price. Skip the
+              footprint. Step up to the <strong>Kelty Wireless 6</strong> if a full-coverage rainfly
+              and room for the whole family matter more than the lowest price. Skip the
               backpacking-grade options for now - your first trip rewards floor space, not weight
               savings.
             </>
@@ -271,21 +271,22 @@ export default function Page() {
             <strong>Floor space matters more than spec-sheet capacity.</strong> Tent
             manufacturers count &ldquo;persons&rdquo; assuming everyone sleeps shoulder-to-shoulder
             on a thin pad. In real life, a family of four wants a queen air bed. The Sundome 4P
-            and Lynx 4P both fit one with a narrow gear strip; the CORE 6-Person Cabin fits a queen plus
-            two kid pads with room to walk around.
+            fits one with a narrow gear strip; the CORE 6-Person Cabin and the Kelty Wireless 6 give
+            you room for a queen plus kid pads with space to move around.
           </p>
           <p>
-            <strong>Standing height changes the whole experience.</strong> The Sundome and Lynx top
+            <strong>Standing height changes the whole experience.</strong> The Sundome 4P tops
             out at about 4&rsquo;11&quot; - you sit up to change clothes, you crouch to walk
-            across. The CORE 6-Person Cabin has near-vertical walls and stand-up height. After two nights,
+            across. The CORE 6-Person Cabin has near-vertical walls and stand-up height, and the Kelty
+            Wireless 6 has a 74-inch peak. After two nights,
             most parents say the standing room was worth the extra weight and trunk space.
           </p>
           <p>
-            <strong>Pole quality is the upgrade hidden in the price.</strong> The Sundome uses
-            Coleman&rsquo;s standard fiberglass pole - fine in calm weather, fragile if it bends
-            under load. The ALPS Lynx uses aluminum poles with a stronger guy-line system. If your
-            first trip is in shoulder-season weather, that difference shows up the first time the
-            wind picks up at 2am.
+            <strong>Weather protection is the upgrade hidden in the price.</strong> The Sundome
+            uses Coleman&rsquo;s standard fiberglass pole - fine in calm weather, fragile if it bends
+            under load. The Kelty Wireless 6 adds a full-coverage rainfly, two vestibules for wet
+            gear, and guylines that come already attached. If your first trip is in shoulder-season
+            weather, that difference shows up the first time the wind picks up at 2am.
           </p>
           <p>
             <strong>None of these are backpacking tents.</strong> If you&rsquo;re carrying the tent

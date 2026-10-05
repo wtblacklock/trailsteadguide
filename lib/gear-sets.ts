@@ -101,9 +101,9 @@ export const GEAR_SETS: Record<GearSetId, GearSet> = {
     title: 'Weekend Ready Kit',
     tagline: 'Two-night comfort without overpacking the car.',
     entries: [
-      // Step up from the entry-level Sundome to a sturdier 4P with better
-      // pole + fly quality - worth it once you know you'll go back out.
-      { productId: 'alps-lynx-4p', category: 'Tent', slot: 'TENT' },
+      // Step up from the entry-level Sundome to a weather-ready tent with a
+      // full-coverage fly - worth it once you know you'll go back out.
+      { productId: 'kelty-wireless-6', category: 'Tent', slot: 'TENT' },
       { productId: 'coleman-sundome-4p', category: 'Tent', slot: 'TENT', tier: 'budget' },
       { productId: 'tnf-wawona-6', category: 'Tent', slot: 'TENT', tier: 'premium' },
       { productId: 'coleman-brazos-bag', category: 'Sleep', slot: 'SLEEP_BAG' },
