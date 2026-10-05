@@ -90,6 +90,12 @@ export const COMPARE_PAGES: ComparePageEntry[] = [
       'Air mattress vs cot-airbed combo vs sleeping pad compared for car campers: comfort, setup, packed size, durability, and price. Pick the right sleep system.',
   },
   {
+    slug: 'down-vs-synthetic-sleeping-bag',
+    title: 'Down vs. Synthetic Sleeping Bag for Families',
+    excerpt:
+      'Down vs. synthetic sleeping bag compared for family camping: warmth when wet, weight, packed size, washing, lifespan, and price. Which fill actually wins for car camping with kids.',
+  },
+  {
     slug: 'lantern-vs-headlamp-vs-flashlight',
     title: 'Camping Lantern vs Headlamp vs Flashlight: What You Need',
     excerpt:

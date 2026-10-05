@@ -242,7 +242,7 @@ export default function Page() {
 
         <h2>Sleeping pads: the part parents often miss</h2>
         <p>
-          The ground pulls heat out of a sleeping bag much faster than cold air does, because the fill under a child gets crushed flat. Every child needs a pad. A closed-cell foam pad is ideal for kids: it can not pop or deflate, kids can roll off and back on, and it is cheap. See the <Link href="/guides/family-camping-gear-list">family camping gear list</Link> for pad picks.
+          The ground pulls heat out of a sleeping bag much faster than cold air does, because the fill under a child gets crushed flat. Every child needs a pad. A closed-cell foam pad is ideal for kids: it can not pop or deflate, kids can roll off and back on, and it is cheap. See the <Link href="/guides/family-camping-gear-list">family camping gear list</Link> for pad picks, and our <Link href="/compare/down-vs-synthetic-sleeping-bag">down vs. synthetic sleeping bag comparison</Link> for why synthetic fill is the safer choice for kids.
         </p>
 
         <h2>Bag care</h2>

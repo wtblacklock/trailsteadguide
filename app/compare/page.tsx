@@ -84,6 +84,12 @@ const PRODUCT_COMPARES: CompareCard[] = [
     blurb: 'Floor sleep system versus an off-the-ground combo. Comfort, weight, packing, and which one survives kids.',
   },
   {
+    href: '/compare/down-vs-synthetic-sleeping-bag',
+    eyebrow: 'Gear',
+    title: 'Down vs synthetic sleeping bag',
+    blurb: 'Same temperature rating, very different behavior when damp. Weight, washing, price, and which fill wins with kids.',
+  },
+  {
     href: '/compare/lantern-vs-headlamp-vs-flashlight',
     eyebrow: 'Gear',
     title: 'Lantern vs headlamp vs flashlight',
