@@ -312,6 +312,34 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     slot: 'SAFETY',
   },
   {
+    id: 'allen-blaze-orange-vest',
+    name: 'Allen Deluxe Orange Hunting Vest',
+    description:
+      'Blaze orange vest sized for adults to wear over a jacket. The cheapest way to make a grown-up unmistakably visible in fall woods, and it packs down small in a daypack.',
+    amazonAsin: 'B076C8WX9Z',
+    affiliateUrl: 'https://www.amazon.com/dp/B076C8WX9Z?tag=trailsteadgui-20',
+    imageUrl: 'https://m.media-amazon.com/images/I/71HkkLiy5rS._AC_SL1500_.jpg',
+    category: 'essential',
+    templateSlugs: [],
+    priceRange: '~$14',
+    tags: ['family', 'budget', 'cold-ready'],
+    slot: 'SAFETY',
+  },
+  {
+    id: 'quietwear-youth-blaze-vest',
+    name: 'Quietwear Youth Blaze Orange Vest',
+    description:
+      'Zip-front blaze orange vest sized for kids, with real pockets so it does not read as a costume. The pick when a hand-me-down adult vest swallows a seven-year-old and slides off one shoulder all day.',
+    amazonAsin: 'B0785ZK8RK',
+    affiliateUrl: 'https://www.amazon.com/dp/B0785ZK8RK?tag=trailsteadgui-20',
+    imageUrl: 'https://m.media-amazon.com/images/I/61jlKZ9qWAL._AC_SL1500_.jpg',
+    category: 'essential',
+    templateSlugs: [],
+    priceRange: '~$17',
+    tags: ['family', 'with-kids', 'budget', 'cold-ready'],
+    slot: 'SAFETY',
+  },
+  {
     id: 'kidde-portable-co-alarm',
     name: 'Kidde Carbon Monoxide Detector, AA Battery Powered',
     description:
