@@ -247,8 +247,8 @@ export default function Page() {
         </li>
         <li>
           <strong>Shade.</strong>{' '}
-          <AmazonLink productId="core-10x10-canopy" pageSlug="camping-in-utah-for-beginners" />{' '}
-          (~$130). The single most valuable item on this list. Take it down before afternoon wind builds.
+          <AmazonLink productId="crown-shades-10x10-canopy" pageSlug="camping-in-utah-for-beginners" />{' '}
+          (~$140). The single most valuable item on this list. Take it down before afternoon wind builds.
         </li>
         <li>
           <strong>Sleeping bag.</strong>{' '}

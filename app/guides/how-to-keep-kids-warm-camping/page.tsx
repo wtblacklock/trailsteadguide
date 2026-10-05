@@ -125,7 +125,7 @@ export default function Page() {
           </li>
           <li>
             <strong>Then the bag.</strong> A liner such as the{' '}
-            <AmazonLink productId="vumos-bag-liner" pageSlug="how-to-keep-kids-warm-camping" />{' '}
+            <AmazonLink productId="sea-to-summit-reactor-extreme-liner" pageSlug="how-to-keep-kids-warm-camping" />{' '}
             adds roughly 10 to 15°F to a bag you already own and washes far more easily than the
             bag itself, which matters more with kids than you would think.
           </li>

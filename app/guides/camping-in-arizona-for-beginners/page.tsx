@@ -248,8 +248,8 @@ export default function Page() {
         </li>
         <li>
           <strong>Shade.</strong>{' '}
-          <AmazonLink productId="core-10x10-canopy" pageSlug="camping-in-arizona-for-beginners" />{' '}
-          (~$130). The most-used item at any desert site. Take it down before monsoon wind arrives.
+          <AmazonLink productId="crown-shades-10x10-canopy" pageSlug="camping-in-arizona-for-beginners" />{' '}
+          (~$140). The most-used item at any desert site. Take it down before monsoon wind arrives.
         </li>
         <li>
           <strong>Sleeping bag.</strong>{' '}

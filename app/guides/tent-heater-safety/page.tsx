@@ -212,7 +212,7 @@ export default function Page() {
           <li>
             <strong>A bag rated below the forecast low.</strong> Ratings are survival numbers, not
             comfort numbers, so leave yourself margin. A liner like the{' '}
-            <AmazonLink productId="vumos-bag-liner" pageSlug="tent-heater-safety" /> adds roughly 10
+            <AmazonLink productId="sea-to-summit-reactor-extreme-liner" pageSlug="tent-heater-safety" /> adds roughly 10
             to 15°F to a bag you already own for a fraction of the price of a new one.
           </li>
           <li>

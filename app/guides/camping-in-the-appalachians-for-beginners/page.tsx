@@ -267,8 +267,8 @@ export default function Page() {
         </li>
         <li>
           <strong>Tarp / canopy.</strong>{' '}
-          <AmazonLink productId="core-10x10-canopy" pageSlug="camping-in-the-appalachians-for-beginners" />{' '}
-          (~$130). For afternoon rain over the picnic table.
+          <AmazonLink productId="crown-shades-10x10-canopy" pageSlug="camping-in-the-appalachians-for-beginners" />{' '}
+          (~$140). For afternoon rain over the picnic table.
         </li>
         <li>
           <strong>Lighting.</strong>{' '}

@@ -481,7 +481,7 @@ export const SKILLS: Skill[] = [
       'Skipping the rain shell on a sunny morning. Mountain weather flips fast.',
     ],
     relatedGear: [
-      { name: 'Black Diamond Spot 400 Headlamp', productId: 'headlamp-family' },
+      { name: 'Black Diamond Spot 400 Headlamp', productId: 'black-diamond-spot-400' },
       { name: 'Lightweight day pack' },
     ],
     videoEmbed: {
@@ -602,7 +602,7 @@ export const SKILLS: Skill[] = [
       'Pinch barbs down with pliers for kids. Easier hook removal, easier release.',
     ],
     relatedGear: [
-      { name: 'Zebco 33 spinning combo', productId: 'zebco-33-spincast-combo' },
+      { name: 'Zebco 33 spincast combo', productId: 'zebco-33-spincast-combo' },
       { name: 'Mono fishing line, 8 lb test', productId: 'monofilament-fishing-line-8lb' },
     ],
     videoEmbed: {
@@ -747,8 +747,8 @@ export const SKILLS: Skill[] = [
       'Kitchen on the ground next to the fire. Embers travel.',
     ],
     relatedGear: [
-      { name: 'CORE 10x10 Instant Pop-Up Canopy', productId: 'canopy-camp' },
-      { name: 'ALPS Mountaineering Leisure Chair', productId: 'camp-chairs' },
+      { name: 'CROWN SHADES 10x10 Pop-Up Canopy', productId: 'crown-shades-10x10-canopy' },
+      { name: 'ALPS Mountaineering King Kong Chair', productId: 'camp-chairs' },
     ],
     videoEmbed: {
       url: 'https://www.youtube-nocookie.com/embed/dfpE0x6xTPU',
@@ -2107,7 +2107,7 @@ export const SKILLS: Skill[] = [
       'Lifting the lid on rice before 18 minutes. The steam is doing the work; letting it out extends cook time significantly.',
     ],
     relatedGear: [
-      { name: 'GSI Outdoors Pinnacle Camper Cookset', productId: 'gsi-pinnacle-camper-cookset' },
+      { name: 'GSI Outdoors Glacier Stainless Camper Cookset', productId: 'gsi-glacier-stainless-camper' },
     ],
     videoEmbed: {
       url: 'https://www.youtube-nocookie.com/embed/IYzD4OgH7oM',
@@ -2364,7 +2364,7 @@ export const SKILLS: Skill[] = [
       'Using the same length uphill and down. The adjustment is 5 minutes; the knee savings are substantial.',
     ],
     relatedGear: [
-      { name: 'Black Diamond Trail Ergo Cork Trekking Poles', productId: 'black-diamond-trekking-poles' },
+      { name: 'Black Diamond Trail Cork Trekking Poles', productId: 'black-diamond-trekking-poles' },
     ],
     videoEmbed: {
       url: 'https://www.youtube-nocookie.com/embed/dwYBhYLLytI',

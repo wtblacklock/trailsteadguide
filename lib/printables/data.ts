@@ -342,7 +342,7 @@ export const PRINTABLES: Printable[] = [
     datePublished: '2026-05-01',
     relatedSkillPath: 'safety/building-a-camp-first-aid-kit',
     relatedGuideSlug: 'first-camping-trip-checklist',
-    relatedProductIds: ['thriad-first-aid-430', 'sawyer-extractor-pump-kit'],
+    relatedProductIds: ['thriad-first-aid-430', 'tickcheck-tick-remover-kit'],
   },
   {
     slug: 'leave-no-trace-quick-reference',
@@ -420,7 +420,7 @@ export const PRINTABLES: Printable[] = [
     formatNote: 'Single-page printable · Letter / A4 · Free with email signup',
     datePublished: '2026-09-23',
     relatedGuideSlug: 'how-to-choose-a-family-campsite',
-    relatedProductIds: ['coleman-sundome-4p', 'canopy-camp', 'camp-chairs'],
+    relatedProductIds: ['coleman-sundome-4p', 'crown-shades-10x10-canopy', 'camp-chairs'],
   },
   {
     slug: 'junior-ranger-activity-sheet',

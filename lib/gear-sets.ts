@@ -155,7 +155,7 @@ export const GEAR_SETS: Record<GearSetId, GearSet> = {
       { productId: 'coleman-portable-chair-cooler', category: 'Comfort', slot: 'CHAIR', tier: 'budget' },
       { productId: 'camp-chairs', category: 'Comfort', slot: 'CHAIR', tier: 'premium' },
       // Shade for a 3-day stay is worth its weight.
-      { productId: 'core-10x10-canopy', category: 'Comfort' },
+      { productId: 'crown-shades-10x10-canopy', category: 'Comfort' },
       // The differentiator: contained play space for the smallest campers.
       { productId: 'kidco-gopod', category: 'Fun upgrade' },
     ],

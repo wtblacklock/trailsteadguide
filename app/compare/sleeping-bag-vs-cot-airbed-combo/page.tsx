@@ -82,12 +82,12 @@ const ROWS: Row[] = [
   },
   {
     product: PAD,
-    label: 'TETON Sports ComfortLite Pad',
-    comfort: 'Firm but warm',
+    label: 'Coleman Self-Inflating Pad',
+    comfort: 'Firm but warm, built-in pillow',
     setup: '~5-10 min (self-inflating)',
-    packed: 'Compact, fits backpack',
+    packed: 'Rolls up, fits a duffel',
     bestFor: 'Budget / minimal trips',
-    price: '~$75',
+    price: '~$70',
   },
 ]
 
@@ -138,7 +138,7 @@ export default function Page() {
             tent. Pick the <strong>Coleman Queen Airbed Cot Combo</strong> if
             you camp multiple nights at a time or anyone in the family has back
             issues that being off the ground solves. Pick the{' '}
-            <strong>TETON ComfortLite sleeping pad</strong> if you&rsquo;re on a
+            <strong>Coleman self-inflating sleeping pad</strong> if you&rsquo;re on a
             budget, going minimalist, or doing a one-nighter.
           </p>
         </div>
@@ -278,12 +278,13 @@ export default function Page() {
       {/* ── Deep dive: Sleeping Pad ─────────────────────────────────────── */}
       <section className="max-w-3xl mx-auto px-8 pb-16 border-t border-stone-200 pt-16">
         <h2 className="font-serif text-3xl md:text-4xl font-semibold text-stone-950 tracking-tight leading-tight mb-4">
-          TETON Sports ComfortLite Sleeping Pad
+          Coleman Self-Inflating Sleeping Pad
         </h2>
         <p className="text-stone-600 leading-relaxed text-lg mb-8">
-          A self-inflating foam pad - open the valve, walk away, come back to a
-          ready-to-sleep mat. Less comfortable than a real mattress but warmer
-          than air alone, and packs down small enough to throw in any duffel.
+          A self-inflating foam pad with a built-in pillow - open the valve, walk
+          away, come back to a ready-to-sleep mat. Less comfortable than a real
+          mattress but warmer than air alone, and rolls up small enough to throw
+          in any duffel.
         </p>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img

@@ -19,7 +19,7 @@ const PREVIEW_SETS: string[][] = [
   // Beginner-balanced kit
   ['coleman-sundome-4p', 'coleman-triton-2-burner', 'black-diamond-spot-400'],
   // Family-comfort kit
-  ['core-6p-instant-cabin', 'lost-horizon-air-foam-mattress', 'core-10x10-canopy'],
+  ['core-6p-instant-cabin', 'lost-horizon-air-foam-mattress', 'crown-shades-10x10-canopy'],
   // Cold-weather kit
   ['kelty-wireless-6', 'marmot-mad-river-0', 'rab-ionosphere-5-5'],
 ]

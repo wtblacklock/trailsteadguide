@@ -88,20 +88,6 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     slot: 'SLEEP_BAG',
   },
   {
-    id: 'vumos-bag-liner',
-    name: 'Vumos Sleeping Bag Liner',
-    description:
-      'Sleeping bag liner. Adds warmth in shoulder seasons, keeps the bag clean, doubles as a sheet in heat.',
-    amazonAsin: 'B07PRRV7NM',
-    affiliateUrl: 'https://www.amazon.com/Vumos-Sleeping-Liner-Camping-Sheet/dp/B07PRRV7NM?crid=9S2Y4ZK1FQZW&dib=eyJ2IjoiMSJ9.DRfj0zMcKBImp3I5M-Pz37TvUaosXuaWPwFPxFfKt1KSoThVMlQU-IPavBGMCmRlbfrEC1tTfK4lCA-Eeu44YQxn5hPhrEPRz0dMs_y2cZZy6pGFYVFMn_aKVglDsNJWCpNZCSkVkKBBDjOgujh-Bnm6vdnm8jExJIJl7wfOKAxcHnxl8MSuXPyVx5f2HAMk3NdrvhUm3AhX7TY0k9HEGJFBMGr7J3U8Fz03lsVis3IspILx3_D0Pzt_RN4udyycImRVavPG80apYHoWmq--aRBfgdyGLGFxb3173EW2nCA.OsWpUM6Sz9sXGJ64tLvNfOEx-CYa707Yo61iCBfV3LA&dib_tag=se&keywords=sleeping%2Bbag%2Bliner&qid=1777561011&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=sleeping%2Bbag%2Bliner%2Caps%2C162&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1&psc=1&linkCode=ll2&tag=trailsteadgui-20&linkId=d3e3af960c945e31307b10389cf52bc5&language=en_US&ref_=as_li_ss_tl',
-    imageUrl: 'https://m.media-amazon.com/images/I/61eaYiIy1wL._AC_SX679_.jpg',
-    category: 'comfort',
-    templateSlugs: ['backyard-test', 'easy-family-basecamp', 'first-night-camp', 'first-weekend-camp'],
-    priceRange: '~$20',
-    tags: ['sleeping-bag', 'budget', 'cold-ready', 'comfort'],
-    slot: 'SLEEP_BAG',
-  },
-  {
     id: 'big-agnes-divide',
     name: 'Big Agnes Divide UnInsulated Pad',
     description:
@@ -256,20 +242,6 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     slot: 'CHAIR',
   },
   {
-    id: 'core-10x10-canopy',
-    name: 'CORE 10×10 Instant Pop-Up Canopy',
-    description:
-      '10×10 instant pop-up canopy. Two-minute setup, the gear that gets used the most on hot or rainy days.',
-    amazonAsin: 'B01E45EYJY',
-    affiliateUrl: 'https://www.amazon.com/dp/B01E45EYJY?th=1&linkCode=ll2&tag=trailsteadgui-20&linkId=9617fffb052859d4708348d19b836727&language=en_US&ref_=as_li_ss_tl',
-    imageUrl: 'https://m.media-amazon.com/images/I/71upZwo-QQL._AC_SL1500_.jpg',
-    category: 'comfort',
-    templateSlugs: [],
-    priceRange: '~$130',
-    tags: ['canopy', 'shade', 'heat-friendly', 'rain-ready', 'family'],
-    slot: 'CANOPY',
-  },
-  {
     id: 'kidco-gopod',
     name: 'KidCo GoPod Portable Activity Center',
     description:
@@ -338,18 +310,6 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     priceRange: '~$20',
     tags: ['family', 'budget', 'beginner', 'cold-ready'],
     slot: 'SAFETY',
-  },
-  {
-    id: 'sawyer-extractor-pump-kit',
-    name: 'Sawyer Extractor Pump Kit',
-    description:
-      'A reusable suction pump for snake, bee, wasp, and mosquito bites and stings - no blades, one-handed to use. Not a substitute for emergency care on a venomous bite; get to help first.',
-    amazonAsin: 'B000AU9PEC',
-    imageUrl: 'https://images-na.ssl-images-amazon.com/images/P/B000AU9PEC.01.L.jpg',
-    category: 'essential',
-    templateSlugs: [],
-    priceRange: '~$15',
-    tags: ['family', 'budget'],
   },
   {
     id: 'dripdrop-hydration',
@@ -656,17 +616,6 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     priceRange: '~$70',
   },
   {
-    id: 'gsi-pinnacle-camper-cookset',
-    name: 'GSI Outdoors Pinnacle Camper Cookset',
-    description:
-      'Nesting pot, pan, and two insulated mugs in one compact set - built for one-pot car-camping meals for two.',
-    amazonAsin: 'B006ERS6OU',
-    imageUrl: '',
-    category: 'comfort',
-    templateSlugs: [],
-    priceRange: '~$70',
-  },
-  {
     id: 'lodge-cast-iron-skillet',
     name: 'Lodge 10.25" Cast Iron Skillet',
     description:
@@ -731,14 +680,15 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
   },
   {
     id: 'black-diamond-trekking-poles',
-    name: 'Black Diamond Trail Ergo Cork Trekking Poles',
+    name: 'Black Diamond Trail Cork Trekking Poles',
     description:
-      'Cork grips, adjustable length, and the most commonly recommended beginner trekking pole - takes real load off knees on descents.',
-    amazonAsin: 'B07YLT6DSQ',
-    imageUrl: '',
+      'Adjustable aluminum poles with natural cork grips and FlickLock adjustment - the classic beginner trekking pole that takes real load off knees on descents.',
+    amazonAsin: 'B08R64178T',
+    affiliateUrl: 'https://www.amazon.com/dp/B08R64178T?tag=trailsteadgui-20',
+    imageUrl: 'https://m.media-amazon.com/images/I/512yT33msCL._AC_SL1500_.jpg',
     category: 'comfort',
     templateSlugs: [],
-    priceRange: '~$140',
+    priceRange: '~$125',
   },
   {
     id: 'pull-through-knife-sharpener',
@@ -798,25 +748,27 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
   },
   {
     id: 'sawyer-squeeze-water-filter',
-    name: 'Sawyer Squeeze Water Filter',
+    name: 'Sawyer SP129 Squeeze Water Filter',
     description:
-      'The most-recommended backpacking and camping water filter - squeeze bag + hollow-fiber filter removes bacteria and protozoa from any freshwater source.',
-    amazonAsin: 'B01MY8CBXB',
-    imageUrl: '',
+      'The most-recommended camping water filter - a 0.1 micron hollow-fiber filter with two 32 oz squeeze pouches that removes bacteria and protozoa from any freshwater source.',
+    amazonAsin: 'B00B1OSU4W',
+    affiliateUrl: 'https://www.amazon.com/dp/B00B1OSU4W?tag=trailsteadgui-20',
+    imageUrl: 'https://m.media-amazon.com/images/I/71PlK2Jo5uL._SL1500_.jpg',
     category: 'essential',
     templateSlugs: [],
-    priceRange: '~$40',
+    priceRange: '~$31',
   },
   {
     id: 'zebco-33-spincast-combo',
-    name: 'Zebco 33 Spincast Combo',
+    name: 'Zebco 33 Spincast Telescopic Combo',
     description:
-      'The classic beginner rod-and-reel combo - closed-face reel means no backlash to untangle while learning to cast.',
-    amazonAsin: 'B08MM4TX1X',
-    imageUrl: '',
+      'The classic Zebco 33 spincast reel on a 6-foot telescoping rod, pre-spooled with 10 lb line. The closed-face reel means no backlash to untangle while learning to cast.',
+    amazonAsin: 'B07XW3BL6T',
+    affiliateUrl: 'https://www.amazon.com/dp/B07XW3BL6T?tag=trailsteadgui-20',
+    imageUrl: 'https://m.media-amazon.com/images/I/51FGsc4x+UL._AC_SL1500_.jpg',
     category: 'essential',
     templateSlugs: [],
-    priceRange: '~$35',
+    priceRange: '~$40',
   },
   {
     id: 'tackle-box-lure-assortment',
@@ -842,14 +794,15 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
   },
   {
     id: 'monofilament-fishing-line-8lb',
-    name: 'Monofilament Fishing Line, 8 lb Test',
+    name: 'Berkley Trilene XL Monofilament, 8 lb Test',
     description:
-      'Pre-spooled, beginner-friendly monofilament - forgiving for learning knots and casting, and the standard line weight for panfish and bass off a dock or shore.',
-    amazonAsin: 'B0000AV1LI',
-    imageUrl: '',
+      'Beginner-friendly monofilament on a 110-yard spool - forgiving for learning knots and casting, and the standard line weight for panfish and bass off a dock or shore.',
+    amazonAsin: 'B001F5H4I0',
+    affiliateUrl: 'https://www.amazon.com/dp/B001F5H4I0?tag=trailsteadgui-20',
+    imageUrl: 'https://m.media-amazon.com/images/I/7171qKyMHIL._AC_SL1334_.jpg',
     category: 'essential',
     templateSlugs: [],
-    priceRange: '~$6',
+    priceRange: '~$5',
   },
   {
     id: 'fishing-forceps-hemostat',
@@ -1266,11 +1219,126 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     slot: 'SLEEP_BAG',
   },
 
+  {
+    id: 'sea-to-summit-reactor-extreme-liner',
+    name: 'Sea to Summit Reactor Extreme Sleeping Bag Liner',
+    description:
+      'Insulated Thermolite liner that Sea to Summit rates to add up to 25°F to a sleeping bag. Stretchy mummy cut with an opening footbox, and it keeps the bag itself clean.',
+    amazonAsin: 'B0CT69SWJP',
+    affiliateUrl: 'https://www.amazon.com/dp/B0CT69SWJP?tag=trailsteadgui-20',
+    imageUrl: 'https://m.media-amazon.com/images/I/51y1ZEIIHRL._AC_SL1500_.jpg',
+    category: 'comfort',
+    templateSlugs: ['backyard-test', 'easy-family-basecamp', 'first-night-camp', 'first-weekend-camp'],
+    priceRange: '~$60',
+    tags: ['sleeping-bag', 'mid-range', 'cold-ready', 'comfort'],
+    slot: 'SLEEP_BAG',
+  },
+  {
+    id: 'crown-shades-10x10-canopy',
+    name: 'CROWN SHADES 10×10 Pop-Up Canopy',
+    description:
+      '10×10 pop-up canopy with a one-push center lock and three height settings. The gear that gets used the most on hot or rainy days.',
+    amazonAsin: 'B078XR1CS8',
+    affiliateUrl: 'https://www.amazon.com/dp/B078XR1CS8?tag=trailsteadgui-20',
+    imageUrl: 'https://m.media-amazon.com/images/I/61-p2KheVzL._AC_SL1500_.jpg',
+    category: 'comfort',
+    templateSlugs: [],
+    priceRange: '~$140',
+    tags: ['canopy', 'shade', 'heat-friendly', 'rain-ready', 'family'],
+    slot: 'CANOPY',
+  },
+  {
+    id: 'tickcheck-tick-remover-kit',
+    name: 'TickCheck Premium Tick Remover Kit',
+    description:
+      'A stainless steel tick remover for embedded adult ticks plus fine-tip tweezers for nymphs, in a small pouch. Removes ticks cleanly from kids and dogs without squeezing them.',
+    amazonAsin: 'B075DKL3Z6',
+    affiliateUrl: 'https://www.amazon.com/dp/B075DKL3Z6?tag=trailsteadgui-20',
+    imageUrl: 'https://m.media-amazon.com/images/I/81FFpKS2oQL._AC_SL1500_.jpg',
+    category: 'essential',
+    templateSlugs: [],
+    priceRange: '~$13',
+    tags: ['family', 'budget'],
+  },
+  {
+    id: 'gsi-glacier-stainless-camper',
+    name: 'GSI Outdoors Glacier Stainless Camper Cookset',
+    description:
+      'Stainless steel nesting set with two pots, a fry pan, and four each of mugs, bowls, and plates. Safe on a stove or over coals, built for one-pot family car-camping meals.',
+    amazonAsin: 'B0773K5R67',
+    affiliateUrl: 'https://www.amazon.com/dp/B0773K5R67?tag=trailsteadgui-20',
+    imageUrl: 'https://m.media-amazon.com/images/I/71-yr7MGCdL._AC_SL1500_.jpg',
+    category: 'comfort',
+    templateSlugs: [],
+    priceRange: '~$120',
+    tags: ['cookware', 'family', 'mid-range'],
+    slot: 'COOKWARE',
+  },
+
   // ------------------------------------------------------------------
   // Legacy / deprecated. Kept in the registry so /compare/* editorial
   // pages and historical references keep rendering. Excluded from
   // recommendation surfaces (guide gear shelf, quiz results, Trip Pack).
   // ------------------------------------------------------------------
+  {
+    id: 'vumos-bag-liner',
+    name: 'Vumos Sleeping Bag Liner',
+    description:
+      'Sleeping bag liner. Adds warmth in shoulder seasons, keeps the bag clean, doubles as a sheet in heat.',
+    amazonAsin: 'B07PRRV7NM',
+    affiliateUrl: 'https://www.amazon.com/Vumos-Sleeping-Liner-Camping-Sheet/dp/B07PRRV7NM?crid=9S2Y4ZK1FQZW&dib=eyJ2IjoiMSJ9.DRfj0zMcKBImp3I5M-Pz37TvUaosXuaWPwFPxFfKt1KSoThVMlQU-IPavBGMCmRlbfrEC1tTfK4lCA-Eeu44YQxn5hPhrEPRz0dMs_y2cZZy6pGFYVFMn_aKVglDsNJWCpNZCSkVkKBBDjOgujh-Bnm6vdnm8jExJIJl7wfOKAxcHnxl8MSuXPyVx5f2HAMk3NdrvhUm3AhX7TY0k9HEGJFBMGr7J3U8Fz03lsVis3IspILx3_D0Pzt_RN4udyycImRVavPG80apYHoWmq--aRBfgdyGLGFxb3173EW2nCA.OsWpUM6Sz9sXGJ64tLvNfOEx-CYa707Yo61iCBfV3LA&dib_tag=se&keywords=sleeping%2Bbag%2Bliner&qid=1777561011&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=sleeping%2Bbag%2Bliner%2Caps%2C162&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1&psc=1&linkCode=ll2&tag=trailsteadgui-20&linkId=d3e3af960c945e31307b10389cf52bc5&language=en_US&ref_=as_li_ss_tl',
+    imageUrl: 'https://m.media-amazon.com/images/I/61eaYiIy1wL._AC_SX679_.jpg',
+    category: 'comfort',
+    templateSlugs: [],
+    priceRange: '~$20',
+    tags: ['sleeping-bag', 'budget', 'cold-ready', 'comfort'],
+    slot: 'SLEEP_BAG',
+    // No Amazon buy box as of 2026-10-05. Replaced by sea-to-summit-reactor-extreme-liner.
+    deprecated: true,
+  },
+  {
+    id: 'core-10x10-canopy',
+    name: 'CORE 10×10 Instant Pop-Up Canopy',
+    description:
+      '10×10 instant pop-up canopy. Two-minute setup, the gear that gets used the most on hot or rainy days.',
+    amazonAsin: 'B01E45EYJY',
+    affiliateUrl: 'https://www.amazon.com/dp/B01E45EYJY?th=1&linkCode=ll2&tag=trailsteadgui-20&linkId=9617fffb052859d4708348d19b836727&language=en_US&ref_=as_li_ss_tl',
+    imageUrl: 'https://m.media-amazon.com/images/I/71upZwo-QQL._AC_SL1500_.jpg',
+    category: 'comfort',
+    templateSlugs: [],
+    priceRange: '~$130',
+    tags: ['canopy', 'shade', 'heat-friendly', 'rain-ready', 'family'],
+    slot: 'CANOPY',
+    // No Amazon buy box as of 2026-10-05. Replaced by crown-shades-10x10-canopy.
+    deprecated: true,
+  },
+  {
+    id: 'sawyer-extractor-pump-kit',
+    name: 'Sawyer Extractor Pump Kit',
+    description:
+      'A reusable suction pump for snake, bee, wasp, and mosquito bites and stings - no blades, one-handed to use. Not a substitute for emergency care on a venomous bite; get to help first.',
+    amazonAsin: 'B000AU9PEC',
+    imageUrl: 'https://images-na.ssl-images-amazon.com/images/P/B000AU9PEC.01.L.jpg',
+    category: 'essential',
+    templateSlugs: [],
+    priceRange: '~$15',
+    tags: ['family', 'budget'],
+    // No Amazon buy box as of 2026-10-05. Replaced by tickcheck-tick-remover-kit.
+    deprecated: true,
+  },
+  {
+    id: 'gsi-pinnacle-camper-cookset',
+    name: 'GSI Outdoors Pinnacle Camper Cookset',
+    description:
+      'Nesting pot, pan, and two insulated mugs in one compact set - built for one-pot car-camping meals for two.',
+    amazonAsin: 'B006ERS6OU',
+    imageUrl: '',
+    category: 'comfort',
+    templateSlugs: [],
+    priceRange: '~$70',
+    // No Amazon buy box as of 2026-10-05. Replaced by gsi-glacier-stainless-camper.
+    deprecated: true,
+  },
   {
     id: 'alps-lynx-4p',
     name: 'ALPS Mountaineering Lynx 4-Person Tent',
@@ -1332,14 +1400,15 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
   },
   {
     id: 'sleeping-pad-air',
-    name: 'TETON Sports ComfortLite',
+    name: 'Coleman Self-Inflating Sleeping Pad with Pillow',
     description:
-      'Self-inflating, comfortable, packs small. Real comfort upgrade over foam.',
-    amazonAsin: 'B00HC9QTO8',
-    imageUrl: 'https://m.media-amazon.com/images/I/71AVJB+xn6L._AC_SL1500_.jpg',
+      'Self-inflating 76 x 25 x 2.5 in pad with a built-in pillow, so no pump is needed. Compression straps force the air out when you pack up. A real comfort upgrade over foam.',
+    amazonAsin: 'B00BF9IYO4',
+    affiliateUrl: 'https://www.amazon.com/dp/B00BF9IYO4?tag=trailsteadgui-20',
+    imageUrl: 'https://m.media-amazon.com/images/I/71+iLKHnqyL._AC_SL1500_.jpg',
     category: 'comfort',
     templateSlugs: [],
-    priceRange: '~$75',
+    priceRange: '~$70',
     tags: ['sleeping-pad', 'mid-range', 'comfort', 'cold-ready'],
   },
   {
@@ -1382,14 +1451,15 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
   },
   {
     id: 'camp-chairs',
-    name: 'ALPS Mountaineering Leisure Chair',
+    name: 'ALPS Mountaineering King Kong Chair',
     description:
-      'Sturdy steel frame, 300 lb capacity, cup holder. The chair you actually want to sit in for an evening.',
-    amazonAsin: 'B001LF3FZK',
-    imageUrl: 'https://m.media-amazon.com/images/I/61B-kRUS-IL._AC_SL1200_.jpg',
+      'Oversized camp chair on a powder-coated steel frame with an 800 lb capacity, a cup holder in each armrest, and extra pockets. The chair you actually want to sit in for an evening.',
+    amazonAsin: 'B09L3G88SC',
+    affiliateUrl: 'https://www.amazon.com/dp/B09L3G88SC?tag=trailsteadgui-20',
+    imageUrl: 'https://m.media-amazon.com/images/I/511WCslkJDL._AC_SL1000_.jpg',
     category: 'comfort',
     templateSlugs: [],
-    priceRange: '~$95',
+    priceRange: '~$70',
     tags: ['chair', 'mid-range', 'comfort'],
   },
   {
