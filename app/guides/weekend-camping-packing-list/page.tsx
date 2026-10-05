@@ -188,7 +188,7 @@ export default function Page() {
       <ul>
         <li><strong>Add:</strong> A picnic tablecloth with clips - food prep on raw wood is gross.</li>
         <li><strong>Add:</strong> Baby wipes, even if you have no babies. Quick hand cleanup.</li>
-        <li><strong>Add:</strong> A small deck of playing cards or a travel game for rain evenings.</li>
+        <li><strong>Add:</strong> A small deck of playing cards or a travel game for rain evenings. Printed games pack flat too, like these <a href="https://kingbkits.com/kits/campfire-party" rel="noopener" target="_blank">campfire games for kids</a> with bingo cards and camping trivia.</li>
         <li><strong>Add:</strong> A packable rain tarp with paracord to rig over the picnic table.</li>
         <li><strong>Add:</strong> A collapsible water jug - refilling from a spigot 100 yards away gets old fast.</li>
       </ul>

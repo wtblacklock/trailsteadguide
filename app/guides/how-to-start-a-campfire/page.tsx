@@ -153,6 +153,12 @@ export default function Page() {
           lighting. The full rule set - the ones that don&apos;t change trip to trip - is in{' '}
           <Link href="/skills/fire/fire-safety-rules">fire safety rules</Link>.
         </p>
+        <p>
+          Kids who have something to do from their chairs are much easier to keep behind that line.
+          A round of campfire bingo or camping trivia from a set of{' '}
+          <a href="https://kingbkits.com/kits/campfire-party" rel="noopener" target="_blank">printable campfire party games</a> keeps them seated and busy while the
+          fire burns down to coals.
+        </p>
 
         <h2>Putting it out</h2>
         <p>
