@@ -21,7 +21,7 @@ const PREVIEW_SETS: string[][] = [
   // Family-comfort kit
   ['core-6p-instant-cabin', 'lost-horizon-air-foam-mattress', 'core-10x10-canopy'],
   // Cold-weather kit
-  ['alps-lynx-4p', 'marmot-mad-river-0', 'rab-ionosphere-5-5'],
+  ['kelty-wireless-6', 'marmot-mad-river-0', 'rab-ionosphere-5-5'],
 ]
 
 function findProduct(id: string): AffiliateProduct | null {
