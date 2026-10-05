@@ -35,6 +35,11 @@ export function pageMetadata(input: {
   publishedTime?: string
   modifiedTime?: string
 }): Metadata {
+  // `input.path` is always a plain route string built from route params
+  // (e.g. `/plans/${planId}`), never from `searchParams`, so canonical never
+  // includes a query string - a page with filterable/paginated query params
+  // must keep pointing at the same clean URL rather than splitting crawl
+  // budget across variants. See lib/__tests__/seo-canonical.test.ts.
   const canonical = `${SITE_URL}${input.path}`
   const image = input.image ?? DEFAULT_OG_IMAGE
   return {

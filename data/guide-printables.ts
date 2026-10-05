@@ -54,4 +54,5 @@ export const GUIDE_PRINTABLES: Record<string, string[]> = {
   'dispersed-camping-on-blm-and-national-forest-land': ['bear-bag-food-storage-card', 'leave-no-trace-quick-reference'],
   'camping-in-bear-country-with-kids': ['bear-bag-food-storage-card'],
   'labor-day-weekend-camping': ['weather-signs-field-card', 'camp-first-aid-quick-reference'],
+  'how-to-keep-kids-warm-camping': ['camp-first-aid-quick-reference'],
 }

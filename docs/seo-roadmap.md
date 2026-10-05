@@ -74,7 +74,7 @@ partial).
   across infinite variants. Same pattern applies to `/trip-pack/[planSlug]`.
 - **Effort:** S
 - **Expected lift:** low (preventative)
-- **Status:** queued
+- **Status:** shipped (2026-10-05)
 
 #### A3. Submit sitemap to Google Search Console + Bing Webmaster Tools
 - **Why:** The sitemap is comprehensive but has zero discovery value if no
