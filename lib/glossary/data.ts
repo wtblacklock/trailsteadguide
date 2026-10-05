@@ -275,6 +275,11 @@ export const TERMS: Term[] = [
 
   // Q
   {
+    term: 'Quiet hours',
+    definition:
+      "A campground's set nightly window, commonly 10 p.m. to 6 a.m., when generators, loud music, and noisy arrivals aren't allowed. Posted at check-in or the entrance kiosk - confirm the exact times for wherever you're staying.",
+  },
+  {
     term: 'Quilt',
     definition:
       'An open-back sleeping bag that wraps over you instead of zipping around. Lighter than a bag because there\'s no insulation under you (your pad does that job).',
@@ -307,6 +312,11 @@ export const TERMS: Term[] = [
   },
 
   // S
+  {
+    term: 'Shoulder season',
+    definition:
+      "The weeks between a campground's busy season and its off-season - typically early spring and late fall in most of the U.S. Crowds thin out and sites are easier to book, but confirm water is turned on and pack for colder nights than peak summer.",
+  },
   {
     term: 'Sleeping bag temp rating',
     definition:
@@ -366,6 +376,11 @@ export const TERMS: Term[] = [
   },
 
   // V
+  {
+    term: 'Vault toilet',
+    definition:
+      "A waterless outhouse-style toilet built over an underground holding tank, common at primitive sites, trailheads, and dispersed camping areas with no plumbing. Bring your own toilet paper and hand sanitizer - they often run out.",
+  },
   {
     term: 'Vestibule',
     definition:
