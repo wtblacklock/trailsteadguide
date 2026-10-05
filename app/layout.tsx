@@ -48,6 +48,8 @@ export const metadata: Metadata = {
     description:
       'Answer 6 questions. Get a complete, personalized camping plan for your family. Built for first-timers.',
   },
+  // Pinterest website claim (Trailstead Guide business profile).
+  other: { 'p:domain_verify': 'a74978abaf780afbb7906c63f7b26b1b' },
   robots: {
     index: true,
     follow: true,
