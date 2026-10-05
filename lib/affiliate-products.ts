@@ -340,6 +340,20 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     slot: 'SAFETY',
   },
   {
+    id: 'kidde-portable-co-alarm',
+    name: 'Kidde Carbon Monoxide Detector, AA Battery Powered',
+    description:
+      'Battery-powered CO alarm small enough to live in the camping bin. 85 dB alarm, LED status lights, no wiring. The one to bring for a cabin, a yurt, a rented RV, or any night your family sleeps somewhere with a heater or a fuel appliance in it.',
+    amazonAsin: 'B0DT1MGCKK',
+    affiliateUrl: 'https://www.amazon.com/dp/B0DT1MGCKK?tag=trailsteadgui-20',
+    imageUrl: 'https://m.media-amazon.com/images/I/717SCEOQCDL._AC_SX679_.jpg',
+    category: 'essential',
+    templateSlugs: [],
+    priceRange: '~$20',
+    tags: ['family', 'budget', 'beginner', 'cold-ready'],
+    slot: 'SAFETY',
+  },
+  {
     id: 'sawyer-extractor-pump-kit',
     name: 'Sawyer Extractor Pump Kit',
     description:
