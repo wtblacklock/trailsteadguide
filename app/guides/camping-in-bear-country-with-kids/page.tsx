@@ -12,7 +12,7 @@ const SLUG = '/guides/camping-in-bear-country-with-kids'
 const TITLE = 'Camping in Bear Country With Kids'
 const META_TITLE = 'Camping in Bear Country With Kids'
 const DESCRIPTION =
-  'Camping in bear country with kids: why fall is the busiest bear season, the food rule applied to a family campsite, the three rules kids can actually remember, and what to do if you see one.'
+  'Camping in bear country with kids: why fall is peak bear season, what goes in the bear box, three rules kids can remember, and what to do if you see one.'
 const HERO_IMAGE =
   'https://images.unsplash.com/photo-1785391655465-e91cb9ea64af?w=1400&auto=format&fit=crop&q=80'
 
