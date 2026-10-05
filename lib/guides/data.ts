@@ -398,7 +398,18 @@ export const GUIDES: Guide[] = [
     title: 'How to Set Up a Family Tent',
     description: 'Site selection, staking, the rainfly, and the mistakes first-timers make.',
     eyebrow: 'How-to',
-    relatedGuides: ['how-to-break-camp', 'best-family-tent-for-beginners', 'best-tent-for-rainy-camping'],
+    relatedGuides: ['setting-up-camp-in-the-dark', 'how-to-break-camp', 'best-family-tent-for-beginners'],
+  },
+  {
+    slug: 'setting-up-camp-in-the-dark',
+    category: 'basics',
+    title: 'Setting Up Camp in the Dark',
+    description: 'The arrival math, the setup order, and how to light a site so a family can still function after sunset.',
+    eyebrow: 'How-to',
+    metaTitle: 'Setting Up Camp in the Dark With Kids',
+    metaDescription:
+      'Arriving after sunset with kids: plan the evening backwards from dark, pitch a tent by headlamp, light a site properly, and handle a kid scared of the dark.',
+    relatedGuides: ['how-to-set-up-a-tent', 'fall-camping-for-beginners', 'first-night-camping-guide'],
   },
   {
     slug: 'how-to-pack-a-cooler',
