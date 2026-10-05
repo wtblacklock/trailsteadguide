@@ -187,7 +187,9 @@ export default function Page() {
           Digestion produces real heat, so a kid who went to bed hungry will run cold no matter how
           good the sleep system is. A snack with some fat and protein in it right before bed does
           measurable work overnight. A warm drink helps too, though the warmth of the drink itself
-          matters less than the calories.
+          matters less than the calories. Our{' '}
+          <Link href="/guides/cold-weather-camping-meals">cold-weather camping meals</Link> guide
+          covers hot dinners, bedtime snacks, and keeping food warm on a cold night.
         </p>
         <p>
           Where you pitch the tent matters more than most beginners expect. Cold air sinks and

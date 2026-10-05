@@ -174,6 +174,9 @@ export default function Page() {
         <p>
           For hands-on recipes kids can help make themselves - foil packets they build, roasting stick foods, and desserts beyond s&apos;mores - see <Link href="/guides/campfire-recipes-for-kids">campfire recipes for kids</Link>.
         </p>
+        <p>
+          Camping after the first frost? The menu shifts toward make-ahead one-pot dinners, hot drinks on tap, and food served into insulated mugs - see <Link href="/guides/cold-weather-camping-meals">cold-weather camping meals for families</Link>.
+        </p>
 
         <h2>Cooler management</h2>
         <p>

@@ -492,6 +492,34 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     slot: 'WINTER_GEAR',
   },
   {
+    id: 'thermos-stainless-king-40oz',
+    name: 'THERMOS Stainless King Vacuum-Insulated Beverage Bottle, 40 oz',
+    description:
+      'Boil water once with breakfast and pour it in: hot chocolate, instant soup, and warm washing water stay ready all day without relighting a slow cold-weather stove. The built-in cup and twist-and-pour stopper make it easy to serve a whole family.',
+    amazonAsin: 'B01DZQT3IU',
+    affiliateUrl: 'https://www.amazon.com/dp/B01DZQT3IU?tag=trailsteadgui-20',
+    imageUrl: 'https://m.media-amazon.com/images/I/61iAF0pBz2L._AC_SX679_.jpg',
+    category: 'comfort',
+    templateSlugs: [],
+    priceRange: '~$44',
+    tags: ['cookware', 'family', 'mid-range', 'cold-ready'],
+    slot: 'COOKWARE',
+  },
+  {
+    id: 'thermos-funtainer-food-jar',
+    name: 'THERMOS FUNTAINER Kids Food Jar with Spoon, 10 oz',
+    description:
+      'Kid-size vacuum food jar with a push-button lid and a folding spoon. Preheat it with boiling water and fill it with the breakfast-pot chili or soup, and lunch on the trail is a hot meal with no stove.',
+    amazonAsin: 'B08NCN1VZW',
+    affiliateUrl: 'https://www.amazon.com/dp/B08NCN1VZW?tag=trailsteadgui-20',
+    imageUrl: 'https://m.media-amazon.com/images/I/61b8+Fht+4L._AC_SX679_.jpg',
+    category: 'comfort',
+    templateSlugs: [],
+    priceRange: '~$19',
+    tags: ['with-kids', 'family', 'budget', 'cold-ready'],
+    slot: 'KID_GEAR',
+  },
+  {
     id: 'fwc-trash-can-wakeman',
     name: 'Wakeman Outdoor Collapsible Trash Can',
     description:
