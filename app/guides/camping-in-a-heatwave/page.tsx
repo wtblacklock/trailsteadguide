@@ -264,8 +264,8 @@ export default function Page() {
           </li>
           <li>
             <strong>Shade.</strong>{' '}
-            <AmazonLink productId="core-10x10-canopy" pageSlug="camping-in-a-heatwave" />{' '}
-            (~$130). Two minutes to set up; runs the whole hot stretch of the day.
+            <AmazonLink productId="crown-shades-10x10-canopy" pageSlug="camping-in-a-heatwave" />{' '}
+            (~$140). Two minutes to set up; runs the whole hot stretch of the day.
           </li>
           <li>
             <strong>Stove.</strong>{' '}

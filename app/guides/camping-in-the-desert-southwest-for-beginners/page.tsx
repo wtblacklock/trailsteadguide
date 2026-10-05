@@ -282,8 +282,8 @@ export default function Page() {
         </li>
         <li>
           <strong>Shade.</strong>{' '}
-          <AmazonLink productId="core-10x10-canopy" pageSlug="camping-in-the-desert-southwest-for-beginners" />{' '}
-          (~$130). Stake aggressively in desert wind. Shade trees are rare; this is shade.
+          <AmazonLink productId="crown-shades-10x10-canopy" pageSlug="camping-in-the-desert-southwest-for-beginners" />{' '}
+          (~$140). Stake aggressively in desert wind. Shade trees are rare; this is shade.
         </li>
         <li>
           <strong>Lighting.</strong>{' '}

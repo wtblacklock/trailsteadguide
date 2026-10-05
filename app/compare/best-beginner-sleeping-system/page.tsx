@@ -23,7 +23,7 @@ const BAG_BUDGET = P('coleman-brazos-bag') // synthetic 3-season
 const PAD_MID = P('big-agnes-divide') // self-inflating mid pad
 const BAG_COLD = P('marmot-mad-river-0') // 0°F mummy
 const PAD_COLD = P('rab-ionosphere-5-5') // R-5.5 insulated pad
-const LINER = P('vumos-bag-liner') // bag liner add-on
+const LINER = P('sea-to-summit-reactor-extreme-liner') // bag liner add-on
 
 type Pick = {
   label: string
@@ -288,9 +288,10 @@ export default function Page() {
             collapses if it gets wet. For first trips, synthetic is the safer choice.
           </p>
           <p>
-            <strong>Liners add range cheaply.</strong> A bag liner like the Vumos adds about 8°F
-            of warmth, doubles as a sheet on hot nights, and keeps the bag clean. At $20, it&rsquo;s
-            the cheapest upgrade in the kit and the one most worth bringing.
+            <strong>Liners add range for less than a new bag.</strong> An insulated liner like the
+            Sea to Summit Reactor Extreme, which the maker rates to add up to 25°F, stretches the
+            bag you already own and keeps it clean. At about $60, it costs far less than stepping
+            up to a colder-rated bag.
           </p>
           <p>
             <strong>Family math: stack the pads, not the bags.</strong> If you&rsquo;re sharing a
@@ -302,11 +303,11 @@ export default function Page() {
 
       <section className="max-w-3xl mx-auto px-8 pb-16 border-t border-stone-200 pt-16">
         <h2 className="font-serif text-3xl md:text-4xl font-semibold text-stone-950 tracking-tight leading-tight mb-4">
-          The cheapest upgrade: a bag liner
+          The easy warmth upgrade: a bag liner
         </h2>
         <p className="text-stone-700 leading-relaxed text-lg mb-6">
-          A bag liner adds ~8°F, keeps the bag clean, and packs to the size of a fist. Pair it
-          with any of the three tiers above for a near-free shoulder-season insurance policy.
+          An insulated liner adds real warmth, keeps the bag clean, and packs small. Pair it
+          with any of the three tiers above as cheap shoulder-season insurance.
         </p>
         <a
           href={getProductUrl(LINER)}

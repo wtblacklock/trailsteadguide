@@ -11,6 +11,7 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "validate:affiliate": "node scripts/validate-affiliate-links.mjs",
+    "affiliate:browser-audit": "node scripts/validate-affiliate-links.mjs --browser-audit",
     "affiliate:research": "node scripts/affiliate-research.mjs",
     "affiliate:audit": "node scripts/affiliate-audit.mjs",
     "affiliate:check-images": "node scripts/check-affiliate-images.mjs"

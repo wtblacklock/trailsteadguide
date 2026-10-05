@@ -267,8 +267,8 @@ export default function Page() {
         </li>
         <li>
           <strong>Shade or shelter.</strong>{' '}
-          <AmazonLink productId="core-10x10-canopy" pageSlug="camping-in-california-for-beginners" />{' '}
-          (~$130). Sun in the desert and Sierra; rain shelter on the north coast.
+          <AmazonLink productId="crown-shades-10x10-canopy" pageSlug="camping-in-california-for-beginners" />{' '}
+          (~$140). Sun in the desert and Sierra; rain shelter on the north coast.
         </li>
         <li>
           <strong>Lantern.</strong>{' '}

@@ -107,7 +107,7 @@ export const COMFORT_PRODUCTS: ComfortMap = {
   },
   high: {
     chairs: ['gci-freestyle-rocker', 'coleman-portable-chair-cooler'],
-    shade: ['core-10x10-canopy'],
+    shade: ['crown-shades-10x10-canopy'],
     extras: [],
   },
 }
