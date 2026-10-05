@@ -1195,6 +1195,34 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     tags: ['sleeping-bag', 'with-kids', 'mid-range'],
     slot: 'SLEEP_BAG',
   },
+  {
+    id: 'kelty-cosmic-20-down',
+    name: 'Kelty Cosmic 20 Down',
+    description:
+      'A long-running 20°F mummy bag filled with 550 fill power down and a water-repellent shell. Packs much smaller and lighter than a synthetic bag of the same rating; keep it dry and it lasts for years.',
+    amazonAsin: 'B0CSPKCJZK',
+    affiliateUrl: 'https://www.amazon.com/dp/B0CSPKCJZK?tag=trailsteadgui-20',
+    imageUrl: 'https://m.media-amazon.com/images/I/51tiHd10hnL._AC_SL1500_.jpg',
+    category: 'comfort',
+    templateSlugs: [],
+    priceRange: '~$190',
+    tags: ['sleeping-bag', 'premium', 'cold-ready'],
+    slot: 'SLEEP_BAG',
+  },
+  {
+    id: 'teton-trailhead-20',
+    name: 'TETON Trailhead 20',
+    description:
+      'A 20°F synthetic microfiber mummy bag with a draft tube and roomy footbox. Keeps insulating when damp, survives the washing machine, and costs about a third of a down bag with the same rating.',
+    amazonAsin: 'B007JTLKCC',
+    affiliateUrl: 'https://www.amazon.com/dp/B007JTLKCC?tag=trailsteadgui-20',
+    imageUrl: 'https://m.media-amazon.com/images/I/51CiUVyFp0L._AC_SL1500_.jpg',
+    category: 'essential',
+    templateSlugs: [],
+    priceRange: '~$65',
+    tags: ['sleeping-bag', 'budget', 'cold-ready', 'rain-ready'],
+    slot: 'SLEEP_BAG',
+  },
 
   // ------------------------------------------------------------------
   // Legacy / deprecated. Kept in the registry so /compare/* editorial
