@@ -19,6 +19,14 @@ const FRESH = '2026-04-27' // core content: home, guides, plans, tools, gear
 const RECENT = '2026-03-15' // secondary content: about, faq, quiz, checklist
 const STABLE = '2026-01-10' // rarely changes: legal pages
 
+// Guides that have had a substantive content refresh since FRESH. Keep these
+// in sync with the page's own dateModified so the sitemap, the Article
+// schema, and the visible "Last updated" date all agree.
+const GUIDE_LAST_MODIFIED: Record<string, string> = {
+  'best-family-tent-for-beginners': '2026-10-05',
+  'best-camping-sleeping-bag-for-kids': '2026-10-05',
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const skillEntries: MetadataRoute.Sitemap = [
     { url: `${BASE_URL}/skills`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.8 },
@@ -46,7 +54,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Guide articles (derived from the catalogue)
     ...GUIDES.map((g) => ({
       url: `${BASE_URL}/guides/${g.slug}`,
-      lastModified: FRESH,
+      lastModified: GUIDE_LAST_MODIFIED[g.slug] ?? FRESH,
       changeFrequency: 'monthly' as const,
       priority: 0.9,
     })),

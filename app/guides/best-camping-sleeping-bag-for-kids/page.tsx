@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { GuidePage } from '@/components/guide/GuidePage'
 import { QuickAnswer } from '@/components/guide/QuickAnswer'
+import TopPicksTable from '@/components/guide/TopPicksTable'
 import GuideArticleCTA from '@/components/guide/GuideArticleCTA'
 import RelatedGuides from '@/components/guide/RelatedGuides'
 import GuideGearShelf from '@/components/guide/GuideGearShelf'
@@ -10,12 +11,36 @@ import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
 
 const SLUG = '/guides/best-camping-sleeping-bag-for-kids'
-const TITLE = "Best Camping Sleeping Bag for Kids"
-const META_TITLE = "Best Kids Camping Sleeping Bag (2026)"
+const TITLE = 'The Best Kids Sleeping Bags for Camping (2026)'
+const META_TITLE = 'Best Kids Sleeping Bags for Camping (2026): 5 Picks by Age'
 const DESCRIPTION =
-  "The best camping sleeping bags for kids: what temperature rating to buy, why kids need their own bag, and the picks that work across age ranges."
+  'The best kids sleeping bags for camping in 2026, from a $30 summer bag to a 20°F bag for cold nights and an arms-out toddler bag. Plus the temperature rating your child actually needs.'
 const HERO_IMAGE =
   'https://images.unsplash.com/photo-1674230316788-d9c8b92f0d63?w=1400&auto=format&fit=crop&q=80'
+const DATE_MODIFIED = '2026-10-05'
+
+const FAQS = [
+  {
+    q: 'What temperature sleeping bag do kids need for camping?',
+    a: 'Pick a bag rated 10 to 15°F below the coldest night in the forecast. If the low is 45°F, a 30 to 35°F bag is the minimum. Kids lose heat faster than adults, and most kids bag ratings are the maker\'s own estimate rather than a lab test, so build in margin. A child who gets too warm can unzip. A cold child has no good options at 2am.',
+  },
+  {
+    q: 'Can kids use adult sleeping bags?',
+    a: 'Small kids should not. An adult bag is too long, and a child can not warm all that empty space at the foot, so they sleep cold. Once a child is close to adult height, around 5 feet and up, a regular adult bag works fine. Until then, use a kid-sized bag, or a bag with an adjustable length like the Retrospec Dream 25 or the fold-down REDCAMP Kids Mummy.',
+  },
+  {
+    q: 'What sleeping bag should my child bring to school camp or a scout trip?',
+    a: 'Check the expected low and pack for the cold end of it. For outdoor school, scout campouts, and other trips with nights in the 30s to 50s, a kid-sized bag rated around 20 to 25°F, like the TETON Junior 20°F, plus a foam pad and a warm hat is a safe setup. A 45 to 50°F bag is fine for cabins, sleepovers, and summer nights.',
+  },
+  {
+    q: 'What is the best sleeping bag for a toddler?',
+    a: 'A toddler-specific bag with an arms-out design, like the Kelty Space Cadet for ages 2T to 4T. Toddlers wriggle out of regular bags, and arms-out bags stay on them all night. Dress them in warm layers underneath and use a pad, just like an older child.',
+  },
+  {
+    q: 'Should I buy a sleeping bag my kid can grow into?',
+    a: 'Only if the length adjusts. A bag that is much too long now leaves a cold pocket at the feet. Bags with an adjustable length, like the Retrospec Dream 25, or a fold-up foot section, like the REDCAMP Kids Mummy, fit now and grow later.',
+  },
+]
 
 export const metadata = pageMetadata({
   title: META_TITLE,
@@ -23,9 +48,16 @@ export const metadata = pageMetadata({
   path: SLUG,
   type: 'article',
   image: HERO_IMAGE,
+  modifiedTime: DATE_MODIFIED,
 })
 
 export default function Page() {
+  const breadcrumbs = [
+    { name: 'Home', url: `${SITE_URL}/` },
+    { name: 'Guides', url: `${SITE_URL}/guides` },
+    { name: TITLE, url: `${SITE_URL}${SLUG}` },
+  ]
+
   return (
     <>
       <JsonLd
@@ -34,158 +66,204 @@ export default function Page() {
           title: TITLE,
           description: DESCRIPTION,
           image: HERO_IMAGE,
-          breadcrumbs: [
-            { name: 'Home', url: `${SITE_URL}/` },
-            { name: 'Guides', url: `${SITE_URL}/guides` },
-            { name: TITLE, url: `${SITE_URL}${SLUG}` },
+          dateModified: DATE_MODIFIED,
+          breadcrumbs,
+          keywords: [
+            'best kids sleeping bag',
+            'sleeping bag for kids',
+            'kids camping sleeping bag',
+            'toddler sleeping bag',
+            'sleeping bag for students',
           ],
         })}
       />
-      <JsonLd
-        data={faqPageGraph([
-          {
-            q: 'What temperature sleeping bag do kids need for camping?',
-            a: 'Rate the bag at least 10°F below the coldest forecast night temperature. If the forecast low is 45°F, buy a 35°F bag at minimum. Kids sleep colder than adults and the temperature drops overnight. Err toward a warmer bag - a child who overheats can unzip; a child who is cold can\'t do much.',
-          },
-          {
-            q: 'Can kids use adult sleeping bags camping?',
-            a: 'No - for most kids, an adult sleeping bag is a problem. Adult bags are too long, and children lose body heat in the empty foot space at the bottom. A kid who slides down inside an adult bag loses insulation efficiency significantly. Kids need a sleeping bag sized to their height.',
-          },
-          {
-            q: 'What is a good sleeping bag for a child aged 4-8?',
-            a: 'The Coleman Kids Sleeping Bag (50°F or 45°F rated) is the most widely recommended entry option for ages 4-8. It comes in fun prints kids love, fits children up to about 5\'2", and costs $30-40. For a step up in warmth and packability, the REI Co-op Kindercone 15°F is excellent for colder conditions.',
-          },
-          {
-            q: 'Should I buy a sleeping bag that a kid can grow into?',
-            a: 'Avoid bags that are too long for the child now. The extra length defeats the warmth design. A better option is a bag with internal compression straps or footbox drawcords that can be cinched to fit a smaller child, then opened as they grow. REI Co-op Kindercone and some Big Agnes kids bags have this feature.',
-          },
-        ])}
-      />
-      <Breadcrumbs
-        items={[
-          { name: 'Home', url: `${SITE_URL}/` },
-          { name: 'Guides', url: `${SITE_URL}/guides` },
-          { name: TITLE, url: `${SITE_URL}${SLUG}` },
-        ]}
-      />
+      <JsonLd data={faqPageGraph(FAQS)} />
+      <Breadcrumbs items={breadcrumbs} />
       <GuidePage
         slug="best-camping-sleeping-bag-for-kids"
         eyebrow="Gear guide"
-        title="Best Camping Sleeping Bag for Kids"
-        lede="Kids need their own sleeping bag - not a modified adult one - and the temperature rating matters more than most parents realize. Here&apos;s how to get it right."
+        title={TITLE}
+        lede="Five kid-sized bags matched to age, budget, and how cold it really gets at night. Plus the temperature rule that keeps kids warm instead of miserable."
         heroImage={{
           src: HERO_IMAGE,
           alt: 'Child zipped up in a colorful kids sleeping bag inside a camping tent',
         }}
+        dateModified={DATE_MODIFIED}
       >
         <QuickAnswer
-          tldr="Buy a kid-sized bag rated 10°F below your coldest forecast night. Never put a small child in an adult bag."
-          summary="Children need their own sleeping bag for two reasons: size and temperature rating. An adult bag is too long - kids lose body heat in the empty foot space, which defeats the insulation design. Temperature ratings matter more than parents expect because kids sleep colder than adults and can&apos;t regulate body heat as efficiently. Rate the bag at least 10&deg;F below the coldest forecast night temperature. For a family of four on a first trip, the Coleman kids bags ($30-40 each) are adequate. For regular cold-weather camping, the REI Kindercone 15&deg;F is the best mid-range option."
+          tldr="Buy a kid-sized bag rated 10 to 15°F below your coldest forecast night. For most kids, a 20°F bag covers spring through fall."
+          summary="The best all-round kids sleeping bag is the TETON Junior 20°F: it fits kids up to 5 feet 5 inches, weighs about 3 pounds, and is warm enough for spring, fall, and mountain summer nights for around $60. For warm summer trips and sleepovers, the REDCAMP Kids Mummy costs about $30, and the Coleman Kids 45°F is a washable rectangular option. If you want one bag that grows with your child, the Retrospec Dream 25 has an adjustable length. Toddlers from 2T to 4T do best in an arms-out bag like the Kelty Space Cadet, which stays on all night. Whichever you choose, rate the bag 10 to 15°F below the coldest forecast night, put a pad under it, and skip adult bags for small kids, because the empty space at the foot makes them sleep cold."
         />
 
-        <h2>Why kids can&apos;t use adult sleeping bags</h2>
+        <h2>Top picks at a glance</h2>
+        <TopPicksTable
+          itemHeader="Sleeping bag"
+          note="Prices and specs checked on Amazon on October 5, 2026. Prices change often."
+          columns={[
+            { key: 'rating', header: 'Rated to' },
+            { key: 'fits', header: 'Fits' },
+            { key: 'bestFor', header: 'Best for' },
+          ]}
+          rows={[
+            {
+              label: 'Best overall',
+              productId: 'teton-junior-20',
+              values: { rating: '20°F', fits: 'Up to 5 ft 5 in', bestFor: 'Spring, fall, and mountain summer trips' },
+            },
+            {
+              label: 'Best budget',
+              productId: 'redcamp-kids-mummy',
+              values: { rating: 'About 41 to 59°F', fits: 'Folds down to 4 ft 6 in', bestFor: 'Warm summer nights and backyard campouts' },
+            },
+            {
+              label: 'Best for sleepovers',
+              productId: 'coleman-kids-45',
+              values: { rating: '45°F', fits: 'Up to 5 ft 5 in', bestFor: 'Sleepovers, cabins, and warm campgrounds' },
+            },
+            {
+              label: 'Best to grow into',
+              productId: 'retrospec-dream-25',
+              values: { rating: '25°F', fits: 'Adjustable, up to 5 ft', bestFor: 'Kids who will use it for years' },
+            },
+            {
+              label: 'Best for toddlers',
+              productId: 'kelty-space-cadet-40',
+              values: { rating: '40°F', fits: '2T to 4T, up to 44 in', bestFor: 'Toddlers who wriggle out of regular bags' },
+            },
+          ]}
+        />
+
+        <h2>What temperature rating your child needs</h2>
         <p>
-          It seems like a reasonable shortcut: put the kid in an adult bag, fold the extra length over. The problem is that sleeping bag insulation works by trapping body heat in the air space around you. An extra 18 inches of empty bag at the foot draws heat away from the child&apos;s body and creates a cold pocket they can&apos;t warm up. The result is a cold, sleeping-bag-resistant child at 11pm, which is exactly what you&apos;re trying to prevent.
+          A bag&apos;s temperature number is not a comfort promise. Adult bags tested under the ISO standard list a comfort rating and a lower limit, and the big number on the stuff sack is often the lower limit, the point where an adult can sleep curled up without getting dangerously cold. Kids&apos; bags usually are not lab-tested at all, so the rating is the maker&apos;s own estimate. Kids also lose heat faster than adults.
         </p>
         <p>
-          A sleeping bag should fit close to the child&apos;s body length. Bags with adjustable footboxes can accommodate a range of heights, but the bag should never be significantly longer than the child.
+          <strong>The rule: buy a bag rated 10 to 15&deg;F below the coldest night in the forecast.</strong> Then use this chart:
+        </p>
+        <div className="not-prose my-8 overflow-x-auto">
+          <table className="w-full text-[15px] border-collapse">
+            <thead>
+              <tr className="border-b-2 border-stone-300">
+                <th className="text-left py-2 pr-4 font-semibold text-stone-900">Forecast low</th>
+                <th className="text-left py-2 pr-4 font-semibold text-stone-900">Bag rating to buy</th>
+                <th className="text-left py-2 font-semibold text-stone-900">Typical trips</th>
+              </tr>
+            </thead>
+            <tbody className="text-stone-700">
+              <tr className="border-b border-stone-200">
+                <td className="py-3 pr-4 align-top">55&deg;F and up</td>
+                <td className="py-3 pr-4 align-top">40 to 50&deg;F</td>
+                <td className="py-3 align-top">Summer at low elevation, sleepovers, cabins</td>
+              </tr>
+              <tr className="border-b border-stone-200">
+                <td className="py-3 pr-4 align-top">45 to 55&deg;F</td>
+                <td className="py-3 pr-4 align-top">30 to 40&deg;F</td>
+                <td className="py-3 align-top">Late spring, early fall, coastal summer</td>
+              </tr>
+              <tr className="border-b border-stone-200">
+                <td className="py-3 pr-4 align-top">35 to 45&deg;F</td>
+                <td className="py-3 pr-4 align-top">20 to 30&deg;F</td>
+                <td className="py-3 align-top">Spring and fall, mountain summer, scout campouts</td>
+              </tr>
+              <tr className="border-b border-stone-200">
+                <td className="py-3 pr-4 align-top">25 to 35&deg;F</td>
+                <td className="py-3 pr-4 align-top">20&deg;F or colder, plus warm layers</td>
+                <td className="py-3 align-top">Late fall, high elevation, cold snaps</td>
+              </tr>
+              <tr>
+                <td className="py-3 pr-4 align-top">Below 25&deg;F</td>
+                <td className="py-3 pr-4 align-top">0&deg;F class bag and an insulated pad</td>
+                <td className="py-3 align-top">Winter camping, see our <Link href="/guides/winter-camping-for-beginners" className="underline decoration-stone-300 underline-offset-4">winter guide</Link></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          Nights in the mountains run much colder than the nearest town. At 7,000 feet, July nights can drop into the 30s, so check the forecast for the campground itself, not the city you are driving from. When in doubt, go warmer: an overheated kid can unzip.
         </p>
 
-        <h2>How to read temperature ratings</h2>
+        <h2>Why small kids should not use adult sleeping bags</h2>
         <p>
-          Sleeping bag temperature ratings are the temperature at which an average adult male won&apos;t freeze - not the temperature at which they&apos;ll be comfortable. For children, who run colder than adults and are less efficient at self-regulating body temperature, the practical rule is:
-        </p>
-        <p>
-          <strong>Buy a bag rated at least 10&deg;F below the coldest forecast night.</strong>
-        </p>
-        <p>
-          If the forecast low for your camping weekend is 45&deg;F, buy a 35&deg;F bag. If the low could hit 35&deg;F, buy a 25&deg;F bag. The cost difference between a 45&deg;F and a 35&deg;F bag is small; the difference between a warm kid and a cold kid at midnight is enormous.
-        </p>
-        <p>
-          A child who overheats in a warm bag can unzip and regulate. A child who is cold in an insufficiently rated bag has no good options.
+          A sleeping bag keeps you warm by trapping air your body has already heated. An adult bag on a 4-foot child leaves a long, empty tunnel at the foot that the child can not warm up, and that cold pocket pulls heat away all night. The bag should be close to the child&apos;s height. If you want room to grow, choose a bag where the length adjusts or the foot folds up, rather than just buying big.
         </p>
 
-        <h2>What temperature rating to buy by region and season</h2>
+        <h2>The best kids sleeping bags, pick by pick</h2>
+
+        <h3>Best overall: TETON Junior 20&deg;F</h3>
+        <p>
+          The TETON Junior is the bag we would buy for most kids who camp more than once a summer. It is rated to 20&deg;F, fits kids up to 5 feet 5 inches, and weighs about 3 pounds. It has a soft flannel lining, draft tubes along the zipper, and a mummy-style hood on a roomier rectangular body, which suits kids who toss and turn. The same listing also offers a 0&deg;F version for cold-weather families. It sold for around $60 when we checked.
+        </p>
+        <p>
+          <strong>Best for:</strong> spring, fall, and high-elevation summer trips. <strong>Skip it if:</strong> you only camp on hot summer nights, where it will be more bag than you need.
+        </p>
+
+        <h3>Best budget: REDCAMP Kids Mummy</h3>
+        <p>
+          At about $30, the REDCAMP is the cheapest bag here, and it has more than 1,500 Amazon reviews. The version we checked is rated for roughly 41 to 59&deg;F, so it is a warm-weather bag. It is 67 inches long, but the foot folds up and zips to 4 feet 6 inches so a younger child is not swimming in it. REDCAMP also sells a warmer version on the same listing.
+        </p>
+        <p>
+          <strong>Best for:</strong> summer trips, backyard campouts, and families testing whether camping sticks. <strong>Skip it if:</strong> nights will drop below the mid-40s.
+        </p>
+
+        <h3>Best for sleepovers: Coleman Kids 45&deg;F</h3>
+        <p>
+          A simple rectangular bag rated to 45&deg;F for kids up to 5 feet 5 inches. It is machine washable, has a snag-resistant zipper, and two bags can zip together. That makes it a good fit for sleepovers, cabin trips, warm campgrounds, and school trips where kids sleep indoors.
+        </p>
+        <p>
+          <strong>Best for:</strong> sleepovers and warm nights. <strong>Skip it if:</strong> you are tent camping in spring or fall. Pair it with a liner and warm layers, or step up to a 20 to 25&deg;F bag.
+        </p>
+
+        <h3>Best to grow into: Retrospec Dream 25</h3>
+        <p>
+          The Retrospec Dream 25 is a kids mummy bag rated to 25&deg;F with an adjustable length, so it fits now and still fits a few growth spurts later. It has a draft collar to keep warm air in and water-resistant inner and outer shells. The listing says it fits kids up to 5 feet. It has fewer reviews than the TETON, but it is the best pick here if you want one warm bag to last several years.
+        </p>
+        <p>
+          <strong>Best for:</strong> kids who will camp in cooler weather for years. <strong>Skip it if:</strong> your child dislikes the snug mummy shape.
+        </p>
+
+        <h3>Best for toddlers: Kelty Space Cadet (40&deg;F)</h3>
+        <p>
+          Toddlers do not stay inside regular sleeping bags. The Kelty Space Cadet is an arms-out bag for ages 2T to 4T, up to 44 inches tall, with fleece hand covers, a snap at the top so it stays closed, and a bottom that unzips into a walk mode for early morning wandering. The version in our table is rated to 40&deg;F, and Kelty also makes a 30&deg;F version. It is a newer listing with fewer reviews, so read the latest ones before you buy. For more on sleeping arrangements with little ones, see <Link href="/guides/camping-with-toddlers">camping with toddlers</Link>.
+        </p>
+        <p>
+          <strong>Best for:</strong> ages 2 to 4. <strong>Skip it if:</strong> your child is over 44 inches. Move up to a kid-sized bag.
+        </p>
+
+        <h2>Layers that make any bag warmer</h2>
         <ul>
-          <li><strong>Summer camping below 5,000 ft elevation (Southeast, Midwest, coastal):</strong> 40&deg;F to 50&deg;F bag. Lows rarely drop below 55&deg;F in most regions in summer.</li>
-          <li><strong>Summer camping above 5,000 ft (Rockies, Sierra Nevada, high desert):</strong> 25&deg;F to 35&deg;F bag. Elevation drops temperature significantly - nights at 7,000 ft can hit 35&deg;F in July.</li>
-          <li><strong>Spring and fall, most regions:</strong> 25&deg;F to 35&deg;F bag. Nights can drop into the 30s even in May and September.</li>
-          <li><strong>Shoulder season (April, October):</strong> 20&deg;F bag or layer inside a 30&deg;F bag. Cold snaps happen.</li>
-        </ul>
-
-        <h2>Top picks for kids&apos; camping sleeping bags</h2>
-
-        <h3>Best for most families: Coleman Kids Sleeping Bag</h3>
-        <p>
-          The Coleman Kids bag comes in 50&deg;F and 45&deg;F ratings, fits kids up to about 5&apos;2&quot;, and comes in several print options that kids actually get excited about. It uses synthetic fill (dries faster than down if it gets wet), has a full zipper for easy on/off, and packs into its own stuff sack. At $30-40, it is the right answer for families trying camping for the first time with elementary-age kids.
-        </p>
-        <p>
-          <strong>Best for:</strong> Summer and warm-night camping with kids 4-10. Annual camping rather than heavy use.<br />
-          <strong>Limitation:</strong> 45&deg;F rating is the warmest I&apos;d use; buy a warmer bag for any shoulder season use.
-        </p>
-
-        <h3>Best mid-range: REI Co-op Kindercone 15&deg;F</h3>
-        <p>
-          The Kindercone is the most consistently recommended kids&apos; sleeping bag for families who camp regularly and in varied conditions. It&apos;s rated to 15&deg;F, has an adjustable footbox that shortens the bag for smaller kids (grows with the child), and uses synthetic fill that maintains loft when damp. The mummy shape is warmer than rectangular bags but takes some adjustment for kids who like to roll around. At $80-100, it&apos;s a long-term buy.
-        </p>
-        <p>
-          <strong>Best for:</strong> Families who camp multiple times per year, in spring and fall as well as summer, including any high-elevation camping.
-        </p>
-
-        <h3>Best for toddlers: Big Agnes Little Red 15&deg;F</h3>
-        <p>
-          Specifically designed for children 2-4 years old. Short length (4&apos;0&quot; max), a zipper that goes around the bottom of the bag (easier for small kids to get in), and a 15&deg;F rating. Synthetic fill. At $70-90, it&apos;s the right pick for toddlers who need a bag sized to their actual body before they grow into the Coleman or Kindercone.
-        </p>
-        <p>
-          <strong>Best for:</strong> Toddlers age 2-4 who are too small for even the smallest Coleman Kids bag.
-        </p>
-
-        <h3>Best budget option: Teton Sports LEEF Ultralight</h3>
-        <p>
-          At $45-55, the Teton LEEF offers a 20&deg;F rating in a mummy cut with a hood for cold nights. The fill compresses well, the zipper quality is better than entry Coleman bags, and it&apos;s available in smaller sizes that fit kids. Not quite as polished as the REI option but significantly more capable than the Coleman for cold-weather use.
-        </p>
-        <p>
-          <strong>Best for:</strong> Families who want a warmer-than-Coleman bag at a lower price point than REI.
-        </p>
-
-        <h2>How to layer inside a sleeping bag</h2>
-        <p>
-          Even with the right bag, kids sleep warmer with proper layering inside. The camp sleep clothing system:
-        </p>
-        <ul>
-          <li><strong>Base layer:</strong> Long underwear top and bottom (synthetic or wool, not cotton). Cotton absorbs sweat and cools the body - avoid it for sleep layers.</li>
-          <li><strong>Mid layer:</strong> A lightweight fleece or hoodie. Worn over the base layer on cold nights.</li>
-          <li><strong>Socks:</strong> Wool or synthetic. Never cotton. Socks keep feet warm through the night even when the bag temperature is marginal.</li>
-          <li><strong>Beanie:</strong> Significant amount of body heat is lost through an uninsulated head. A simple beanie can make the difference between a comfortable child and a cold one.</li>
+          <li><strong>Base layer:</strong> long underwear top and bottom in wool or synthetic. Cotton holds sweat and makes kids cold.</li>
+          <li><strong>Mid layer:</strong> a fleece on nights heading below about 45&deg;F.</li>
+          <li><strong>Dry socks:</strong> a clean pair kept only for sleeping.</li>
+          <li><strong>Hat:</strong> a warm beanie makes a big difference on cold nights.</li>
         </ul>
         <p>
-          A child in base layer + fleece + wool socks + beanie in a 35&deg;F bag will sleep comfortably at temperatures down to 25&deg;F. This is meaningful for shoulder-season camping.
+          The key word is dry. Change kids out of whatever they wore during the day before bed. For the full bedtime routine, read <Link href="/guides/how-to-keep-kids-warm-camping">how to keep kids warm camping</Link>.
         </p>
 
         <h2>Sleeping pads: the part parents often miss</h2>
         <p>
-          Cold ground pulls heat from a sleeping bag much faster than cold air. A $15 closed-cell foam pad insulates from cold ground more effectively than a $200 sleeping bag without a pad. Every child needs a sleeping pad under their bag.
-        </p>
-        <p>
-          For car camping, a lightweight foam pad or self-inflating pad works well for kids. The foam pad in particular is ideal - it can&apos;t deflate, kids can roll off it and back on without consequence, and it costs almost nothing. See the <Link href="/guides/family-camping-gear-list">family camping gear list</Link> for pad recommendations.
+          The ground pulls heat out of a sleeping bag much faster than cold air does, because the fill under a child gets crushed flat. Every child needs a pad. A closed-cell foam pad is ideal for kids: it can not pop or deflate, kids can roll off and back on, and it is cheap. See the <Link href="/guides/family-camping-gear-list">family camping gear list</Link> for pad picks.
         </p>
 
         <h2>Bag care</h2>
         <ul>
-          <li><strong>Air the bag after every trip.</strong> Synthetic fill bags develop odors if packed damp or stored immediately. Hang over a railing or lay out on a clean floor for 24-48 hours before storing.</li>
-          <li><strong>Store loosely, not in the stuff sack.</strong> Compressing fill long-term degrades its loft. Store in a breathable mesh bag or loose in a closet shelf.</li>
-          <li><strong>Wash rarely, gently.</strong> Front-loading washer on delicate, low-spin, mild detergent designed for down or synthetic fill. Air dry fully before storing - incomplete drying causes mildew that destroys fill.</li>
+          <li><strong>Air it out after every trip.</strong> Synthetic bags pick up odors if packed damp. Hang it over a railing for a day before storing.</li>
+          <li><strong>Store it loose, not in the stuff sack.</strong> Long-term compression wears out the fill.</li>
+          <li><strong>Wash gently.</strong> Use a front-loading washer on a gentle cycle with mild detergent, then dry fully on low heat before storing.</li>
         </ul>
 
+        <h2>How we picked</h2>
+        <p>
+          We looked for kid-sized bags that are easy to buy on Amazon, in stock, and well reviewed, and that each solve a specific problem: cold nights, a tight budget, sleepovers, growing kids, or toddlers. We checked every listing on October 5, 2026 and only list the ratings, sizes, and features the makers publish.
+        </p>
+
         <h2>Frequently asked</h2>
-        <h3>What temperature sleeping bag do kids need for camping?</h3>
-        <p>Rate it at least 10&deg;F below the coldest forecast night. 35&deg;F bag for summer camping, 25&deg;F for spring and fall.</p>
-        <h3>Can kids use adult sleeping bags camping?</h3>
-        <p>No. Adult bags are too long - kids lose body heat in the empty foot space and end up cold. Kids need a bag sized to their height.</p>
-        <h3>What is a good sleeping bag for a child aged 4-8?</h3>
-        <p>Coleman Kids Sleeping Bag ($30-40) for summer. REI Co-op Kindercone 15&deg;F ($80-100) for regular camping in varied conditions.</p>
-        <h3>Should I buy a sleeping bag that a kid can grow into?</h3>
-        <p>Avoid too-long bags - they defeat the insulation. Choose bags with adjustable footboxes instead, which fit the child now and can be opened as they grow.</p>
+        {FAQS.map((f) => (
+          <div key={f.q}>
+            <h3>{f.q}</h3>
+            <p>{f.a}</p>
+          </div>
+        ))}
       </GuidePage>
       <GuidePrintablesBlock guideSlug="best-camping-sleeping-bag-for-kids" />
       <GuideGearShelf guideSlug="best-camping-sleeping-bag-for-kids" />
