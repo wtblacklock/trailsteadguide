@@ -1,6 +1,6 @@
 # Content Gap Analysis — Trailstead Guide
 
-A backlog-shaped audit of the current content surface, what's missing, and what's worth shipping next. Snapshot re-baselined 2026-09-07 against `main` (previous baseline: 2026-09-03).
+A backlog-shaped audit of the current content surface, what's missing, and what's worth shipping next. Snapshot re-baselined 2026-10-05 against `main` (previous baseline: 2026-09-07).
 
 ---
 
@@ -9,19 +9,19 @@ A backlog-shaped audit of the current content surface, what's missing, and what'
 | Area | Count | Status |
 |---|---|---|
 | Plans | 4 | Foundation set — all introductory (backyard / first night / first weekend / family basecamp). No intermediate or activity-specific. Unchanged since the last baseline. |
-| Guides — total | 58 | Up from 56 on 2026-09-03. Two guides landed since: off-season gear storage and Halloween camping. |
+| Guides — total | 61 | Up from 58 on 2026-09-07. Three guides landed since, all filed as scenario: camping after dark with kids, bear country with kids, and keeping kids warm. |
 | Guides — Basics | 20 | Beginner core, family meal/gear sub-niche, plus the dispersed-camping and Recreation.gov micro-guides. `how-to-store-camping-gear` added. Densest category. |
-| Guides — Scenario | 16 | Family scenarios complete; `halloween-camping-with-kids` added as a second holiday entry. Broader life-situation scenarios (group, mobility, allergy) still absent. |
-| Guides — Seasonal | 4 | Generic spring/summer/fall/winter, unchanged for two baselines. Now the thinnest category at 7% of the guide surface, and the two most recent season-shaped guides were filed under basics and scenario instead. |
+| Guides — Scenario | 19 | Up from 16. `camping-after-dark-with-kids`, `camping-in-bear-country-with-kids` and `how-to-keep-kids-warm-camping` added, forming a dense fall/cold-with-kids cluster. Broader life-situation scenarios (group, mobility, allergy) still absent. |
+| Guides — Seasonal | 4 | Generic spring/summer/fall/winter, unchanged for three consecutive baselines. Now 6.6% of the guide surface, and all three guides that landed this cycle were season-shaped (fall darkness, fall bear activity, cold nights) yet filed under scenario. |
 | Guides — Location | 18 | 8 US regions + best-state-parks roundup + 9 single-state guides (NY, MI, PA, GA, WI, WY, MT, UT, AZ). |
 | Skills | 68 / 12 categories | Unchanged. Foundational + intermediate layer solid; several adjacent categories still absent. |
 | Activities | 37 / 8 categories | Activity content unchanged, but 4 age/weather landing pages (kids, teenagers, toddlers, rainy-day) now ship as browse surfaces. Water-based category still missing. |
 | Comparison pages | 15 | Up from 6, plus a `/compare` index. Tent / cooler / stove / sleeping-system type compares all shipped. |
 | Research | 2 | Up from 1, plus a `/research` index. Regrets + pack-analysis pieces live. |
 | Gear bundles | 4 | Unchanged. One per plan. No budget-tier, kid-only, or season-specific bundles. |
-| Affiliate catalog | 97 products | Up from 93. Breadth is no longer the constraint. |
+| Affiliate catalog | 100 products | Up from 97. Breadth is no longer the constraint. |
 | Trip Packs (paid) | 4 | One per plan — unchanged. |
-| Printables (free, email-gated) | 15 | Unchanged. Strong analog asset library. |
+| Printables (free, email-gated) | 16 | Up from 15. Junior Ranger Activity Sheet added. Strong analog asset library. |
 | Glossary | 58 terms | New since last baseline. Shipped at `/glossary`. |
 | About / trust | 1 bio | Founder story, FAQ. No testimonials wall, press, or logo strip. |
 | Quiz | 6 questions | Question coverage is sufficient for current personalization output. |
@@ -53,7 +53,7 @@ Missing (5–8 high-intent titles):
 - **Camping on a budget** (separate from the family-budget guide) — single + couple version with annual cost breakdown.
 - **Tent setup intermediate: pitching in wind/slope/uneven ground** — graduation step from beginner pitch.
 
-### Guides — Scenario (16)
+### Guides — Scenario (19)
 Family-specific scenarios are well-covered. Broader life-situation scenarios are missing.
 
 Missing (5–8 titles):
@@ -79,14 +79,15 @@ Missing (3–5 titles):
 US regions are 70% covered; specific high-traffic states are missing.
 
 Missing (5–8 titles):
-- **Camping in New York (Adirondacks)** — major NE traffic source, separate from broad Northeast guide.
-- **Camping in Michigan (Upper Peninsula)** — distinct ecosystem, high enthusiast traffic.
-- **Camping in Pennsylvania** — heavy state-park network, high search.
-- **Camping in Wisconsin** — Northwoods/lake intent.
-- **Camping in Georgia** — Southeast gap (Florida is covered, GA isn't).
-- **Camping in Wyoming / Montana** — Yellowstone/Glacier-adjacent.
-- **Camping in Utah / Arizona for beginners** — sub-divides desert-southwest by state for higher-intent matches.
-- **Camping in Canada (Ontario / BC) for first-timers** — international starter; high search from US visitors.
+- ~~**Camping in New York (Adirondacks)**~~ - **SHIPPED** as `camping-in-new-york-for-beginners`.
+- ~~**Camping in Michigan (Upper Peninsula)**~~ - **SHIPPED** as `camping-in-michigan-for-beginners`.
+- ~~**Camping in Pennsylvania**~~ - **SHIPPED** as `camping-in-pennsylvania-for-beginners`.
+- ~~**Camping in Wisconsin**~~ - **SHIPPED** as `camping-in-wisconsin-for-beginners`.
+- ~~**Camping in Georgia**~~ - **SHIPPED** as `camping-in-georgia-for-beginners`.
+- ~~**Camping in Wyoming / Montana**~~ - **SHIPPED** as `camping-in-wyoming-for-beginners` and `camping-in-montana-for-beginners`.
+- ~~**Camping in Utah / Arizona for beginners**~~ - **SHIPPED** as `camping-in-utah-for-beginners` and `camping-in-arizona-for-beginners`.
+- **Second wave: WA, OR, NC, TN** - the highest-volume states left, already linked by the region guides without a destination. Tracked as a Tier-2 gap in section 3.
+- **Camping in Canada (Ontario / BC) for first-timers** - international starter; high search from US visitors. Still the only unshipped item here, and deferred in Tier 3.
 
 ### Skills (68 / 12 categories)
 Foundational + intermediate layer is solid. Several whole categories are missing rather than thin.
@@ -141,7 +142,7 @@ Missing (4–6 follow-on ideas):
 - **Beginner gear failure rates: which items break first (forum complaint analysis)** — feeds the gear-failure-recovery guide and product compare reasoning.
 - **What kids actually remember about camping (parent survey / reddit thread synthesis)** — soft-emotional piece, high social shares.
 
-### Gear (4 bundles, 97 products)
+### Gear (4 bundles, 100 products)
 Bundles map 1:1 to plans. Missing the budget and life-stage cuts.
 
 Missing:
@@ -188,9 +189,9 @@ Several useful index/glossary pages are missing.
 
 Missing:
 - **HTML sitemap page (/sitemap or /map)** — user-facing discovery doc for crawlers and humans.
-- **`/research` index** — currently a single article with no parent. Once a 2nd piece ships, index becomes important.
-- **`/compare` index** — discovery surface for the 6 (and growing) compare pages. Currently no parent route.
-- **Glossary / camping terms page** — high AI-citation lift; explains terms used across guides (rainfly, vestibule, footprint, double-wall, etc.).
+- ~~**`/research` index**~~ - **SHIPPED** at `/research`.
+- ~~**`/compare` index**~~ - **SHIPPED** at `/compare`, now parenting 15 compare pages.
+- ~~**Glossary / camping terms page**~~ - **SHIPPED** at `/glossary`, 58 terms.
 - **"Start Here" page** — distinct from /about and /how-it-works; a curated path for cold visitors. Optional.
 
 ---
@@ -237,10 +238,10 @@ Sized as **S** (≤ a day), **M** (2–4 days), **L** (a week+). Lift = expected
 These come from the current catalogue rather than the original May snapshot.
 
 - **Canonical reservation-systems reference (one table, one source of truth)** — **S effort, high lift.** The 18 location guides plus `recreation-gov-reservation-strategy` now each assert their own booking window, release time, and reservation URL independently. The 2026-09-03 audit found three mutually inconsistent statements of the *same* Recreation.gov release time across three guides. A single sourced table (state, system, URL, window, release time) is both a citable asset and the structural fix that stops the drift. Everything else on this list is optional; this one is maintenance debt that compounds every time a state guide ships.
-- **Seasonal is now structurally underweight** — **M effort, medium lift.** Seasonal sat at 4 guides in May and is still 4, while the catalogue grew from 35 to 56. It is now 7% of the guide surface with no holiday-weekend siblings to `labor-day-weekend-camping` and no shoulder-season entry, despite the template already existing.
+- **Seasonal is now structurally underweight** — **M effort, medium lift.** Seasonal sat at 4 guides in May and is still 4, while the catalogue grew from 35 to 61. It is now 6.6% of the guide surface with no holiday-weekend siblings to `labor-day-weekend-camping` and no shoulder-season entry, despite the template already existing.
 - **Second wave of state guides: WA, OR, NC, TN** — **M effort each, high lift.** The region guides already link these agencies (`parks.wa.gov`, `stateparks.oregon.gov`, `ncparks.gov`, `tnstateparks.com`) without a dedicated destination. They are the highest-volume states left after the nine that shipped, and the guide template is now well established.
 - **Location index / state picker** — **S effort, medium lift.** 18 location guides have no browse surface between the guides hub and the individual article. A simple state-and-region picker would convert the cluster's internal-link value.
-- **Gear bundles have not kept pace with the catalogue** — **S–M effort, medium-high lift.** The affiliate catalogue more than doubled (44 to 93 products) while bundles stayed at 4, so most of the catalogue has no bundle surface. This strengthens the existing budget-tier bundle items (#12) rather than replacing them.
+- **Gear bundles have not kept pace with the catalogue** — **S–M effort, medium-high lift.** The affiliate catalogue more than doubled (44 to 100 products) while bundles stayed at 4, so most of the catalogue has no bundle surface. This strengthens the existing budget-tier bundle items (#12) rather than replacing them.
 
 ### Movement in the 2026-09-07 re-baseline
 
@@ -257,6 +258,33 @@ of which use the standard 6-month rolling window, and `camping-in-utah-for-begin
 "twelve months out" federal booking race that matches no system. Both were corrected in this
 audit, but that is now two consecutive audits fixing the same class of error in different files.
 Ship the table.
+
+### Movement in the 2026-10-05 re-baseline
+
+Three guides landed since 2026-09-07 (`camping-after-dark-with-kids`,
+`camping-in-bear-country-with-kids`, `how-to-keep-kids-warm-camping`), taking the catalogue from
+58 to 61. All three are season-shaped (fall darkness, fall bear activity, cold nights) and all
+three were filed under **scenario**, so **seasonal is still at 4** for a third consecutive
+baseline and its share of the guide surface fell again to 6.6%. The 2026-09-07 note that the
+category "is being routed around, not starved of ideas" is now the clearest pattern in this
+document: six consecutive season-shaped guides have been filed elsewhere.
+
+Those three guides also form an unplanned cluster that is worth naming: **camping with kids in
+adverse fall conditions** (dark, cold, bears) is now three guides deep with no hub or browse
+surface, and it partially overlaps the still-open scenario gap "cold-weather scenario: camping
+in 30-45°F weather". `how-to-keep-kids-warm-camping` covers the kid-specific half of that gap;
+the general shoulder-season cold-snap guide is still unbuilt, so the item stays open rather than
+being marked shipped.
+
+The **canonical reservation-systems reference** item is now backed by a third consecutive audit,
+and this time the evidence is sharper than drift between files. The 2026-10-05 audit found
+`camping-in-the-northeast-for-beginners` contradicting *itself*: its common-mistakes section
+claimed Acadia's Blackwoods and Seawall "release 60 days ahead", while the same file's
+reservations list, its Acadia section, its visible FAQ and its JSON-LD FAQ all correctly said
+6 months. Acadia in fact releases 90% of sites six months ahead on the first of the month at
+10 a.m. ET, with the remaining 10% at 14 days out. One guide, five statements of the same fact,
+one of them wrong. A shared table is the only fix that scales: the error rate per guide is not
+falling, and there are now 61 guides.
 
 ---
 
