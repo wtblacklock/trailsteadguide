@@ -246,8 +246,8 @@ export default function Page() {
       <ul>
         <li>
           <strong>Tent.</strong>{' '}
-          <AmazonLink productId="alps-lynx-4p" pageSlug="camping-in-wyoming-for-beginners" />{' '}
-          (~$180). A sturdier pole structure is worth it here. Guy out every point, every night.
+          <AmazonLink productId="kelty-wireless-6" pageSlug="camping-in-wyoming-for-beginners" />{' '}
+          (~$280). A full-coverage rainfly and pre-attached guylines are worth it here. Guy out every point, every night.
         </li>
         <li>
           <strong>Sleeping bag.</strong>{' '}
