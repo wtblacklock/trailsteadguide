@@ -131,6 +131,9 @@ export default function Page() {
         <p>
           See the <Link href="/activities/camping-activities-for-kids">camping activities for kids</Link> list for options that work in a backyard with no trails or forest.
         </p>
+        <p>
+          If the backyard campout turns into a sleepover with friends, a <a href="https://kingbkits.com/kits/sleepover-party" rel="noopener" target="_blank">sleepover party games kit</a> with a flashlight scavenger hunt and bingo cards gives a group of kids something to do between dinner and lights out.
+        </p>
 
         <h3>Stargazing as the wind-down</h3>
         <p>

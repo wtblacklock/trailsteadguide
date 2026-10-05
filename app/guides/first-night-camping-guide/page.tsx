@@ -216,7 +216,7 @@ export default function Page() {
           <li>Hand sanitizer and toilet paper, even at a campground with bathrooms.</li>
           <li>Trash bags. More than you think - wet clothes, dirty dishes, packing out.</li>
           <li>Earplugs and an eye mask, one set per adult.</li>
-          <li>A book, a deck of cards, or a downloaded movie. The evening is longer than you expect once the sun goes down.</li>
+          <li>A book, a deck of cards, or a downloaded movie. The evening is longer than you expect once the sun goes down. If you want something the whole group can play at the picnic table, a few <a href="https://kingbkits.com/kits/game-night" rel="noopener" target="_blank">printable card and party games</a> fill that hour without screens.</li>
         </ul>
 
         <h2>Common first-night mistakes</h2>

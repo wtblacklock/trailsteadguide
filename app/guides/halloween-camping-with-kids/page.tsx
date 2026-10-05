@@ -236,6 +236,12 @@ export default function Page() {
             <Link href="/guides/how-to-break-camp">how to break camp</Link>.
           </li>
         </ul>
+        <p>
+          Once the trick-or-treat loop wraps up, kids are still wired and it is already dark. A few{' '}
+          <a href="https://kingbkits.com/kits/halloween-party" rel="noopener" target="_blank">printable Halloween party games</a>, like Halloween bingo or a
+          mummy wrap race, work well at a picnic table under a lantern and give everyone a reason to
+          stay at the site.
+        </p>
 
         <h2>Frequently asked</h2>
         <h3>When do campgrounds actually hold their Halloween weekends?</h3>
