@@ -527,7 +527,18 @@ export const GUIDES: Guide[] = [
     metaTitle: 'Labor Day Weekend Camping: What to Expect',
     metaDescription:
       'Labor Day camping: why the good spots filled up months ago, what still has openings, holiday crowd etiquette, and packing for the summer-to-fall turn.',
-    relatedGuides: ['recreation-gov-reservation-strategy', 'halloween-camping-with-kids', 'fall-camping-for-beginners'],
+    relatedGuides: ['recreation-gov-reservation-strategy', 'columbus-day-weekend-camping', 'fall-camping-for-beginners'],
+  },
+  {
+    slug: 'columbus-day-weekend-camping',
+    category: 'scenario',
+    title: 'Columbus Day Weekend Camping',
+    description: 'Peak fall color meets closing week. How to find an open site, check that the water is still on, and pack for nights in the 30s.',
+    eyebrow: 'Holiday weekend',
+    metaTitle: 'Columbus Day Weekend Camping With Kids: What to Expect',
+    metaDescription:
+      'Columbus Day (Indigenous Peoples\' Day) weekend camping: foliage crowds, seasonal campground closures, what still has openings, and packing for cold nights.',
+    relatedGuides: ['labor-day-weekend-camping', 'how-to-keep-kids-warm-camping', 'halloween-camping-with-kids'],
   },
   {
     slug: 'halloween-camping-with-kids',
