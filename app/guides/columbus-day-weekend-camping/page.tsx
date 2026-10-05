@@ -12,9 +12,9 @@ import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
 const SLUG = '/guides/columbus-day-weekend-camping'
 const TITLE = 'Columbus Day Weekend Camping'
 // SEO-optimized <title>; H1/headline keep TITLE.
-const META_TITLE = 'Columbus Day Weekend Camping With Kids: What to Expect'
+const META_TITLE = 'Columbus Day Weekend Camping With Kids'
 const DESCRIPTION =
-  'Columbus Day (Indigenous Peoples\' Day) weekend camping: foliage crowds, seasonal campground closures, what still has openings, and packing for cold nights.'
+  'Columbus Day (Indigenous Peoples\' Day) weekend camping: foliage crowds, campground closures, what still has openings, and packing for cold nights.'
 const HERO_IMAGE =
   'https://images.unsplash.com/photo-1480779735619-f73b30fdc062?w=1400&auto=format&fit=crop&q=80'
 

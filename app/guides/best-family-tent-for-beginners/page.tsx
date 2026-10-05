@@ -13,9 +13,9 @@ import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
 
 const SLUG = '/guides/best-family-tent-for-beginners'
 const TITLE = 'The Best Family Tents for 2026'
-const META_TITLE = 'Best Family Tents (2026): 5 Picks by Family Size'
+const META_TITLE = 'Best Family Tents 2026: 5 by Family Size'
 const DESCRIPTION =
-  'The 5 best family tents for 2026, from a budget Coleman dome to stand-up cabin tents for big families. Compare size, setup time, and weather protection, and see what size your family really needs.'
+  'The 5 best family tents for 2026, from a budget Coleman dome to stand-up cabin tents for big families. Compare size, setup time, and weather protection.'
 const HERO_IMAGE =
   'https://images.unsplash.com/photo-1578645510447-e20b4311e3ce?w=1400&auto=format&fit=crop&q=80'
 const DATE_MODIFIED = '2026-10-05'

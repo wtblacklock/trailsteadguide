@@ -15,7 +15,7 @@ const TITLE = 'Tent Heater Safety'
 // SEO-optimized <title>; H1/headline keep TITLE.
 const META_TITLE = 'Are Propane Tent Heaters Safe?'
 const DESCRIPTION =
-  'Are tent heaters safe? Why no fuel-burning heater belongs in a family tent, what oxygen-depletion sensors do and do not cover, and the warm setup to use instead.'
+  'Are tent heaters safe? Why fuel-burning heaters never belong in a tent, the limits of oxygen-depletion sensors, and the sleep system to use instead.'
 const HERO_IMAGE =
   'https://images.unsplash.com/photo-1513781419235-2988ecacab83?w=1400&auto=format&fit=crop&q=80'
 

@@ -12,7 +12,7 @@ const SLUG = '/guides/setting-up-camp-in-the-dark'
 const TITLE = 'Setting Up Camp in the Dark'
 const META_TITLE = 'Setting Up Camp in the Dark With Kids'
 const DESCRIPTION =
-  'Arriving after sunset with kids: how to plan the evening backwards from dark, pitch a tent by headlamp, light a site so a family can function, and handle a scared kid.'
+  'Arriving after sunset with kids: plan the evening backwards from dark, pitch a tent by headlamp, light a site, and handle a kid scared of the dark.'
 const HERO_IMAGE =
   'https://images.unsplash.com/photo-1749008078593-418ca225b82b?w=1400&auto=format&fit=crop&q=80'
 
