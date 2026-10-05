@@ -172,6 +172,10 @@ export default function Page() {
           <li><strong>Pee bottle or pre-bed bathroom run.</strong> Moisture inside the tent is moisture you breathed out - minimize it.</li>
           <li><strong>Gap between fly and inner tent.</strong> If the wet fly touches the mesh, water tracks through. A taut pitch keeps the air gap.</li>
         </ul>
+        <p>
+          For the full picture, including where to pitch and what to do when the ceiling is already dripping, see{' '}
+          <Link href="/guides/how-to-prevent-tent-condensation">how to prevent tent condensation</Link>.
+        </p>
 
         <h2>What to bring (rain-specific)</h2>
         <h3>Add to your standard kit</h3>
