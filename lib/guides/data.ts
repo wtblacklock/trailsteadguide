@@ -626,7 +626,7 @@ export const GUIDES: Guide[] = [
     metaTitle: 'Halloween Camping Kids Trick-or-Treat',
     metaDescription:
       'Halloween camping with kids: how campground trick-or-treat weekends work, why they run in mid-October, and costumes that fit over warm layers.',
-    relatedGuides: ['camping-after-dark-with-kids', 'fall-camping-for-beginners', 'labor-day-weekend-camping'],
+    relatedGuides: ['camping-after-dark-with-kids', 'thanksgiving-camping-with-kids', 'fall-camping-for-beginners'],
   },
   {
     slug: 'camping-after-dark-with-kids',
@@ -683,6 +683,17 @@ export const GUIDES: Guide[] = [
     metaDescription:
       'Camping in bear country with kids: why fall is peak bear season, what goes in the bear box, three rules kids can remember, and what to do if you see one.',
     relatedGuides: ['fall-camping-for-beginners', 'camping-in-wyoming-for-beginners', 'dispersed-camping-on-blm-and-national-forest-land'],
+  },
+  {
+    slug: 'thanksgiving-camping-with-kids',
+    category: 'scenario',
+    title: 'Thanksgiving Camping With Kids',
+    description: 'Where campgrounds are still open in late November, a turkey that fits a Dutch oven, cooler food safety, and a long cold evening.',
+    eyebrow: 'Holiday weekend',
+    metaTitle: 'Thanksgiving Camping With Kids: Plan & Menu',
+    metaDescription:
+      'Thanksgiving camping with kids: where campgrounds are still open in late November, a turkey plan that works over coals, food safety in a cooler, and staying warm.',
+    relatedGuides: ['halloween-camping-with-kids', 'how-to-keep-kids-warm-camping', 'easy-family-camping-meals'],
   },
   {
     slug: 'camping-first-aid-kit-for-families',
