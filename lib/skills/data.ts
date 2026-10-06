@@ -873,6 +873,10 @@ export const SKILLS: Skill[] = [
     relatedGear: [
       { name: 'Thriad First Aid Kit (430 pcs)', productId: 'thriad-first-aid-430' },
     ],
+    videoEmbed: {
+      url: 'https://www.youtube-nocookie.com/embed/mfZaTHz0wxQ',
+      title: 'How to Prevent Blisters and Care for Them - REI',
+    },
   },
 
   // ── STARGAZING ────────────────────────────────────────────────────────────

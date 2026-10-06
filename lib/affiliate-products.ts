@@ -804,6 +804,20 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     slot: 'SAFETY',
   },
   {
+    id: 'eurow-collapsible-bucket-10l',
+    name: 'Eurow Collapsible Bucket with Handle, 10 Liters',
+    description:
+      'Holds 2.6 gallons and folds flat to 2 inches. Keep it full beside the fire ring, then drown, stir, and drown again when you put the fire out.',
+    amazonAsin: 'B08KHSDF2R',
+    affiliateUrl: 'https://www.amazon.com/dp/B08KHSDF2R?tag=trailsteadgui-20',
+    imageUrl: 'https://m.media-amazon.com/images/I/71YxTvBRdnL._AC_SX679_.jpg',
+    category: 'essential',
+    templateSlugs: [],
+    priceRange: '~$20',
+    tags: ['budget'],
+    slot: 'SAFETY',
+  },
+  {
     id: 'black-diamond-trekking-poles',
     name: 'Black Diamond Trail Cork Trekking Poles',
     description:
