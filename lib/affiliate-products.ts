@@ -1176,6 +1176,20 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     slot: 'SAFETY',
   },
   {
+    id: 'sawyer-permethrin-clothing-spray',
+    name: 'Sawyer Permethrin Insect Repellent for Clothing and Gear (24 oz)',
+    description:
+      'Permethrin treatment you spray on clothing, socks, shoes, and tent doors, not on skin. It bonds to fabric for up to 6 weeks or 6 washes and is the standard defense against ticks and chiggers in places like the Ozarks and Appalachians. Treat the gear outdoors, let it dry fully, then pair it with a skin repellent.',
+    amazonAsin: 'B001ANQVYU',
+    affiliateUrl: 'https://www.amazon.com/dp/B001ANQVYU?tag=trailsteadgui-20',
+    imageUrl: 'https://m.media-amazon.com/images/I/71BgXKIOvzL._AC_SL1500_.jpg',
+    category: 'essential',
+    templateSlugs: [],
+    priceRange: '~$18',
+    tags: ['family'],
+    slot: 'SAFETY',
+  },
+  {
     id: 'outland-firebowl-893',
     name: 'Outland Living Firebowl 893 Deluxe Propane Fire Pit',
     description:
