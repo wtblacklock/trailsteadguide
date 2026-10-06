@@ -521,6 +521,20 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     slot: 'WINTER_GEAR',
   },
   {
+    id: 'dozyant-propane-adapter-hose-5ft',
+    name: 'DOZYANT 5 ft Propane Adapter Hose, 1 lb to 20 lb',
+    description:
+      'Runs a standard 1-pound camp stove off a refillable 20-pound tank. The big tank holds pressure far better than a small cylinder on a frosty morning, and it ends the pile of disposable empties.',
+    amazonAsin: 'B07C1KZK5W',
+    affiliateUrl: 'https://www.amazon.com/dp/B07C1KZK5W?tag=trailsteadgui-20',
+    imageUrl: 'https://m.media-amazon.com/images/I/615FltOrlJL._AC_SX679_.jpg',
+    category: 'convenience',
+    templateSlugs: [],
+    priceRange: '~$18',
+    tags: ['stove', 'budget', 'cold-ready'],
+    slot: 'STOVE',
+  },
+  {
     id: 'thermos-stainless-king-40oz',
     name: 'THERMOS Stainless King Vacuum-Insulated Beverage Bottle, 40 oz',
     description:
