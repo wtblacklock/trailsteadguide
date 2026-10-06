@@ -115,7 +115,11 @@ export default function Page() {
             <strong>Sleeping pad or air mattress first.</strong> A self-inflating pad such as the{' '}
             <AmazonLink productId="big-agnes-divide" pageSlug="how-to-keep-kids-warm-camping" />{' '}
             puts real insulation between a kid and the ground. Look for an R-value around 4 or
-            higher for genuinely cold nights.
+            higher for genuinely cold nights;{' '}
+            <Link href="/guides/sleeping-pad-r-value-explained">
+              sleeping pad R-value explained
+            </Link>{' '}
+            covers what the number means and how stacking pads adds it up.
           </li>
           <li>
             <strong>A second layer on top of the pad.</strong> A cheap closed-cell foam pad, a
