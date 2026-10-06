@@ -186,6 +186,11 @@ export default function Page() {
         <p>
           A sleeping bag keeps you warm by trapping air your body has already heated. An adult bag on a 4-foot child leaves a long, empty tunnel at the foot that the child can not warm up, and that cold pocket pulls heat away all night. The bag should be close to the child&apos;s height. If you want room to grow, choose a bag where the length adjusts or the foot folds up, rather than just buying big.
         </p>
+        <p>
+          Shape matters too: a hooded mummy bag sleeps warmer than a rectangular bag with the same rating. See{' '}
+          <Link href="/compare/mummy-vs-rectangular-sleeping-bag">mummy vs. rectangular sleeping bags</Link>{' '}
+          for when the switch is worth it.
+        </p>
 
         <h2>The best kids sleeping bags, pick by pick</h2>
 
