@@ -174,7 +174,7 @@ export default function Page() {
 
       <h2>What to skip (and what to add)</h2>
       <p>
-        Things that show up on most packing lists but almost never get used on a weekend car camping trip - pair this with the <Link href="/guides/first-camping-trip-checklist">first camping trip checklist</Link> if it&apos;s your first time:
+        Things that show up on most packing lists but almost never get used on a weekend car camping trip - pair this with the <Link href="/guides/first-camping-trip-checklist">first camping trip checklist</Link> if it&apos;s your first time, and see <Link href="/guides/what-not-to-bring-camping">what not to bring camping</Link> for the full list of things to leave home:
       </p>
       <ul>
         <li><strong>Skip:</strong> A full cast-iron set. Bring one skillet if anything.</li>

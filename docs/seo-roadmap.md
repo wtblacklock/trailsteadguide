@@ -278,7 +278,9 @@ constants
   unlocks data) plus the affiliate-Reddit research (C5).
 - **Effort:** L (recurring; ~half day per guide for 1500–2500 words)
 - **Expected lift:** high (compounds)
-- **Status:** queued
+- **Status:** in progress. 82 guides as of 2026-10-06, the latest three being
+  `what-not-to-bring-camping`, `camping-in-40-degree-weather` and the first holiday gift guide,
+  `gifts-for-campers`. The live backlog for topics is `docs/content-gap-analysis.md`.
 
 #### D4. Comparison pages — add "Backyard Test vs First Night Camp"
 - **Why:** "X vs Y" pages rank well because the search intent is

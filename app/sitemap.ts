@@ -25,6 +25,9 @@ const STABLE = '2026-01-10' // rarely changes: legal pages
 const GUIDE_LAST_MODIFIED: Record<string, string> = {
   'best-family-tent-for-beginners': '2026-10-05',
   'best-camping-sleeping-bag-for-kids': '2026-10-05',
+  'camping-in-40-degree-weather': '2026-10-06',
+  'gifts-for-campers': '2026-10-06',
+  'what-not-to-bring-camping': '2026-10-06',
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
