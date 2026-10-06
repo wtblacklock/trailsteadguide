@@ -2710,6 +2710,10 @@ export const SKILLS: Skill[] = [
       'Carry bear spray where it\'s legal and know how to use it before you need it. Practice removing it from the holster.',
     ],
     safetyTone: 'critical',
+    videoEmbed: {
+      url: 'https://www.youtube-nocookie.com/embed/FP0wspzPLgc',
+      title: 'Recreating in Bear Country - Idaho Fish and Game',
+    },
     relatedSkills: ['safety/food-storage-and-bear-bags', 'safety/common-camp-injuries'],
     relatedPrintableSlug: 'bear-bag-food-storage-card',
   },
@@ -2795,6 +2799,10 @@ export const SKILLS: Skill[] = [
       'Wading in immediately and casting. You spook fish in the shallows before you get to the productive water.',
       'Casting to the middle of a pool instead of the edges and seams. The middle of a pool is rest territory - fish face into the current at the head of the pool.',
     ],
+    videoEmbed: {
+      url: 'https://www.youtube-nocookie.com/embed/KhQeXnGifgQ',
+      title: 'How to Fly Fish a Trout Stream - Minnesota Trout Unlimited',
+    },
     relatedSkills: ['fishing/rod-setup-and-casting', 'fishing/bait-and-lure-selection', 'fishing/catch-and-release'],
   },
   {

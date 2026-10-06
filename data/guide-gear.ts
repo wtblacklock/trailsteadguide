@@ -49,12 +49,14 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
   'best-tent-for-hot-weather': [
     { slot: 'TENT', productId: 'coleman-sundome-4p' },
     { slot: 'TENT', productId: 'core-6p-instant-cabin' },
+    { slot: 'HOT_GEAR', productId: 'frizcol-camping-fan' },
     { slot: 'CANOPY', productId: 'crown-shades-10x10-canopy' },
   ],
   'best-tent-for-rainy-camping': [
     { slot: 'TENT', productId: 'coleman-sundome-4p' },
     { slot: 'TENT', productId: 'core-6p-instant-cabin' },
     { slot: 'TENT', productId: 'tnf-wawona-6' },
+    { slot: 'RAIN_GEAR', productId: 'geertop-17x10-tarp' },
   ],
   'campfire-recipes-for-kids': [
     { slot: 'COOKWARE', productId: 'heavy-duty-aluminum-foil' },
@@ -1015,6 +1017,7 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
   'how-to-set-up-a-tent': [
     { slot: 'TENT', productId: 'coleman-sundome-4p' },
     { slot: 'TENT', productId: 'core-6p-instant-cabin' },
+    { slot: 'RAIN_GEAR', productId: 'geertop-17x10-tarp' },
     { slot: 'TENT', productId: 'kelty-wireless-6' },
   ],
   'camping-during-a-burn-ban': [
