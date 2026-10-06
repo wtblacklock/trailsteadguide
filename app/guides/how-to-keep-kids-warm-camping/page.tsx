@@ -147,6 +147,10 @@ export default function Page() {
           <Link href="/guides/best-camping-sleeping-bag-for-kids">
             best camping sleeping bag for kids
           </Link>
+          , and for when a snug hooded bag beats a roomy one, see{' '}
+          <Link href="/compare/mummy-vs-rectangular-sleeping-bag">
+            mummy vs. rectangular sleeping bags
+          </Link>
           .
         </p>
 
