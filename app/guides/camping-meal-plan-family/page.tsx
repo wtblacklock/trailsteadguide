@@ -15,7 +15,7 @@ const META_TITLE = 'Family Camping Meal Plan - 3-Day Template'
 const DESCRIPTION =
   'A complete 3-day family camping meal plan: every meal from arrival through pack-out, what to prep at home, and a printable shopping list.'
 const HERO_IMAGE =
-  'https://images.unsplash.com/photo-1466220549276-aef9ce186540?w=1400&auto=format&fit=crop&q=80'
+  'https://images.unsplash.com/photo-1692313532975-513a383c48f7?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({
   title: META_TITLE,
@@ -75,7 +75,7 @@ export default function Page() {
         lede="A complete 3-day plan - from arrival dinner through pack-out breakfast - with what to prep at home, what to cook at camp, and a complete shopping list."
         heroImage={{
           src: HERO_IMAGE,
-          alt: 'Food cooking in a skillet and on a grill grate over a campfire while two people relax in hammocks behind',
+          alt: 'Pancakes and bacon cooking in a black skillet set on a rock beside a campfire',
         }}
       >
         <QuickAnswer

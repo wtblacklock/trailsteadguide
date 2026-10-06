@@ -15,7 +15,7 @@ const TITLE = 'How to Plan a Camping Trip'
 const META_TITLE = 'How to Plan a Camping Trip (3-Week Guide)'
 const DESCRIPTION =
   'How to plan a camping trip: book the site, inventory the gear, plan the meals, and arrive calm - a 5-step framework for a confident first weekend.'
-const HERO_IMAGE = 'https://images.unsplash.com/photo-1445308394109-4ec2920981b1?w=1400&auto=format&fit=crop&q=80'
+const HERO_IMAGE = 'https://images.unsplash.com/photo-1758272960281-46b65da6336c?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({
   title: META_TITLE,
@@ -81,7 +81,7 @@ export default function Page() {
       lede="A step-by-step planning walkthrough. Start 3 weeks out and you&apos;ll arrive calm instead of frazzled."
       heroImage={{
         src: HERO_IMAGE,
-        alt: 'A yellow dome tent beside a fire ring and log seats at a campsite below a red rock peak',
+        alt: 'Four friends at a campfire studying a paper map together, with a red tent behind them',
       }}
     >
       <QuickAnswer
