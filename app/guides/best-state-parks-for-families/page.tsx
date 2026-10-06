@@ -153,7 +153,7 @@ export default function Page() {
         </p>
         <p>
           <strong>Best for:</strong> Florida families who want wildlife density near Tampa/Sarasota.<br />
-          <strong>Book:</strong> Florida State Parks reservation system. 11 months in advance for winter weekends (peak Florida camping season).
+          <strong>Book:</strong> Florida State Parks reservation system. 11 months in advance for Florida residents, 10 months for everyone else. Winter weekends are peak Florida camping season.
         </p>
         <p>See <Link href="/guides/camping-in-florida-for-beginners">camping in Florida for beginners</Link>.</p>
 

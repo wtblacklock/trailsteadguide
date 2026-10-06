@@ -6,7 +6,7 @@ import { getPlanTemplate } from '@/lib/plan-templates'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
 
 const SLUG = '/compare/easy-family-basecamp-vs-first-weekend-camp'
-const TITLE = 'Easy Family Basecamp vs First Weekend Camp - Comparison'
+const TITLE = 'Family Basecamp vs First Weekend Camp'
 const DESCRIPTION =
   'Easy Family Basecamp vs First Weekend Camp: pick the right multi-night plan. Compare comfort, ambition, gear, hike day, and which fits your family.'
 const H1 = 'Easy Family Basecamp vs First Weekend Camp: which plan fits your first trip?'

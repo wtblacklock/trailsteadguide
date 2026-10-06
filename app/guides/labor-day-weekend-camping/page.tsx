@@ -87,7 +87,7 @@ export default function Page() {
         <p>
           Most federally-managed campgrounds - National Parks, National Forests, Army Corps of
           Engineers sites - release reservations on a 6-month rolling window, one night at a time,
-          at 7 a.m. local time exactly six months out. That means Labor Day sites at the most
+          at 7 a.m. Pacific (10 a.m. Eastern) exactly six months out. That means Labor Day sites at the most
           popular parks opened back in early March and were claimed within minutes. If you&apos;re
           searching the week of the holiday itself, the standard reservation system has already
           done its work - and not in your favor. See{' '}
