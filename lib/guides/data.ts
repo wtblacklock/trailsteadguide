@@ -652,6 +652,17 @@ export const GUIDES: Guide[] = [
     relatedGuides: ['fall-camping-for-beginners', 'camping-in-wyoming-for-beginners', 'dispersed-camping-on-blm-and-national-forest-land'],
   },
   {
+    slug: 'camp-stove-fuel-in-cold-weather',
+    category: 'basics',
+    title: 'Camp Stove Fuel in Cold Weather',
+    description: 'Why butane sputters near freezing, how cold changes propane, and the habits that keep breakfast on schedule on a frosty morning.',
+    eyebrow: 'How-to',
+    metaTitle: 'Camp Stove Fuel in Cold Weather: Propane vs Butane',
+    metaDescription:
+      'Why butane stoves sputter near freezing, how cold propane still works, and the simple tricks that keep a family camp stove running on a frosty fall morning.',
+    relatedGuides: ['fall-camping-for-beginners', 'how-to-keep-kids-warm-camping', 'winter-camping-for-beginners'],
+  },
+  {
     slug: 'camping-with-a-baby',
     category: 'scenario',
     title: 'Camping With a Baby',
