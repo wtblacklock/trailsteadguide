@@ -68,7 +68,7 @@ export const GUIDES: Guide[] = [
     title: 'Camping With Toddlers',
     description: 'Protecting the nap, physical containment instead of verbal rules, and a sleep setup that actually works.',
     eyebrow: 'With kids',
-    relatedGuides: ['camping-with-kids-first-time', 'backyard-camping-with-kids', 'best-camping-sleeping-bag-for-kids'],
+    relatedGuides: ['camping-with-a-baby', 'camping-with-kids-first-time', 'backyard-camping-with-kids'],
   },
   {
     slug: 'summer-camping-with-kids',
@@ -638,7 +638,7 @@ export const GUIDES: Guide[] = [
     metaTitle: 'Keep Kids Warm Camping on Cold Nights',
     metaDescription:
       'How to keep kids warm camping: the ground-up sleep system, what to wear to bed, mistakes that make kids cold, and how to warm a shivering child at 2 a.m.',
-    relatedGuides: ['best-camping-sleeping-bag-for-kids', 'tent-heater-safety', 'fall-camping-for-beginners'],
+    relatedGuides: ['best-camping-sleeping-bag-for-kids', 'camping-with-a-baby', 'tent-heater-safety'],
   },
   {
     slug: 'camping-in-bear-country-with-kids',
@@ -650,6 +650,17 @@ export const GUIDES: Guide[] = [
     metaDescription:
       'Camping in bear country with kids: why fall is peak bear season, what goes in the bear box, three rules kids can remember, and what to do if you see one.',
     relatedGuides: ['fall-camping-for-beginners', 'camping-in-wyoming-for-beginners', 'dispersed-camping-on-blm-and-national-forest-land'],
+  },
+  {
+    slug: 'camping-with-a-baby',
+    category: 'scenario',
+    title: 'Camping With a Baby',
+    description: 'Safe sleep in a tent, dressing a baby for cool nights, feeding and bottles at camp, and the short trip that makes a first outing work.',
+    eyebrow: 'With kids',
+    metaTitle: 'Camping With a Baby - A Practical First-Trip Guide',
+    metaDescription:
+      'Camping with a baby: safe sleep in a tent, dressing an infant for cool fall nights, feeding and bottles at camp, and how to shape a short first trip.',
+    relatedGuides: ['camping-with-toddlers', 'how-to-keep-kids-warm-camping', 'fall-camping-for-beginners'],
   },
   {
     slug: 'stargazing-camping-with-kids',
