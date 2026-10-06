@@ -1122,6 +1122,14 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'POWER', productId: 'anker-zolo-power-bank' },
     { slot: 'TRASH', productId: 'fwc-trash-can-wakeman' },
   ],
+  'camping-first-aid-kit-for-families': [
+    { slot: 'SAFETY', productId: 'thriad-first-aid-430' },
+    { slot: 'SAFETY', productId: 'tick-twister-remover' },
+    { slot: 'SAFETY', productId: 'dripdrop-hydration' },
+    { slot: 'SAFETY', productId: 'aveeno-kids-sunscreen-lotion' },
+    { slot: 'WINTER_GEAR', productId: 'hothands-hand-warmers-bulk' },
+    { slot: 'LIGHTING', productId: 'everbrite-headlamp-5-pack' },
+  ],
   'camping-in-high-wind': [
     { slot: 'TENT', productId: 'coleman-sundome-4p' },
     { slot: 'TENT', productId: 'kelty-wireless-6' },

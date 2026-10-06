@@ -1424,6 +1424,20 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     deprecated: true,
   },
   {
+    id: 'tick-twister-remover',
+    name: 'Tick Twister Tick Remover Set (Small and Large)',
+    description:
+      'Two hooked tick removers that slide under a tick and lift it out without squeezing the body. Faster than tweezers on a squirming kid, and small enough to live in the first aid kit year-round.',
+    amazonAsin: 'B01BECRHEO',
+    affiliateUrl: 'https://www.amazon.com/dp/B01BECRHEO?tag=trailsteadgui-20',
+    imageUrl: 'https://m.media-amazon.com/images/I/71ciJXWhZ5L._AC_SL1500_.jpg',
+    category: 'essential',
+    templateSlugs: [],
+    priceRange: '~$7',
+    tags: ['with-kids', 'family', 'budget'],
+    slot: 'SAFETY',
+  },
+  {
     id: 'gsi-pinnacle-camper-cookset',
     name: 'GSI Outdoors Pinnacle Camper Cookset',
     description:
