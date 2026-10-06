@@ -75,7 +75,7 @@ export default function Page() {
         lede="The top family-friendly state park picks by region - what makes each one beginner-friendly, what to bring, and how to book before the weekend slots disappear."
         heroImage={{
           src: HERO_IMAGE,
-          alt: 'Family hiking a trail through a state park forest with kids',
+          alt: 'Red and yellow tents beside inflatable packrafts on a riverbank below snowy mountains',
         }}
       >
         <QuickAnswer

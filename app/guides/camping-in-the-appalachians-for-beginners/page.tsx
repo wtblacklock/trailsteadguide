@@ -87,7 +87,7 @@ export default function Page() {
       lede="What to expect, what changes, and how to plan your first trip in the Smokies, Blue Ridge, or Shenandoah."
       heroImage={{
         src: HERO_IMAGE,
-        alt: 'Layered ridges of the Great Smoky Mountains under morning fog, prime fall foliage camping in Tennessee',
+        alt: 'A snow-capped mountain peak glowing pink at sunset above dark forested ridges',
       }}
     >
       <QuickAnswer

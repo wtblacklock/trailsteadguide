@@ -86,7 +86,7 @@ export default function Page() {
       lede="What to expect, what to bring, and how to avoid common mistakes."
       heroImage={{
         src: HERO_IMAGE,
-        alt: 'Snow-dusted tent in pine trees on a clear cold winter morning, beginner-friendly winter camping setup',
+        alt: 'Gray canvas tent on snow-dusted ground at a forest campsite with a bike, picnic table, and fire ring',
       }}
     >
       <QuickAnswer

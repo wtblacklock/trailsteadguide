@@ -87,7 +87,7 @@ export default function Page() {
         lede="Shade strategy, hydration math, and the line where you reschedule the trip."
         heroImage={{
           src: HERO_IMAGE,
-          alt: 'Sun-baked desert mountains under a bright summer sky during a heatwave camping trip',
+          alt: 'Rugged desert mountains rising above dry grass and scrub under a bright blue sky with puffy clouds',
         }}
       >
         <QuickAnswer

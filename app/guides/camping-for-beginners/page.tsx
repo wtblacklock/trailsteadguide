@@ -81,7 +81,7 @@ export default function Page() {
       lede="If you&apos;ve never camped, start here. This is the shortest, least-intimidating path from zero to a great first trip."
       heroImage={{
         src: HERO_IMAGE,
-        alt: 'Beginner family tent pitched in a forest clearing at golden hour on a first camping trip',
+        alt: 'Silhouette of a person standing on a hillside under a bright, colorful Milky Way',
       }}
     >
       <QuickAnswer

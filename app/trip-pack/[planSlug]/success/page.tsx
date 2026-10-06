@@ -200,7 +200,7 @@ export default async function TripPackSuccessPage({ params, searchParams }: Prop
                   )}
                 </p>
                 <p className="text-xs text-stone-500">
-                  Link valid for 24 hours. Save the PDF to your device &mdash; it&rsquo;s yours to keep forever.
+                  Link valid for 24 hours. Save the PDF to your device. It&rsquo;s yours to keep forever.
                 </p>
               </div>
 
@@ -235,7 +235,7 @@ export default async function TripPackSuccessPage({ params, searchParams }: Prop
                   href="/quiz"
                   className="block text-center text-xs text-stone-500 hover:text-[#1f3622] underline underline-offset-4 pt-2"
                 >
-                  Or plan another trip &mdash; start a new quiz
+                  Or plan another trip: start a new quiz
                 </Link>
               </div>
             </>

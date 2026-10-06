@@ -1646,15 +1646,15 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
   },
   {
     id: 'camp-chairs',
-    name: 'ALPS Mountaineering King Kong Chair',
+    name: 'TIMBER RIDGE Oversized High Back Camping Chair',
     description:
-      'Oversized camp chair on a powder-coated steel frame with an 800 lb capacity, a cup holder in each armrest, and extra pockets. The chair you actually want to sit in for an evening.',
-    amazonAsin: 'B09L3G88SC',
-    affiliateUrl: 'https://www.amazon.com/dp/B09L3G88SC?tag=trailsteadgui-20',
-    imageUrl: 'https://m.media-amazon.com/images/I/511WCslkJDL._AC_SL1000_.jpg',
+      'Oversized high-back camp chair on a heavy-duty steel frame rated to 500 lbs, with a padded headrest, a cup holder, and a side pocket with a small cooler bag. The chair you actually want to sit in for an evening.',
+    amazonAsin: 'B08DTR8FQF',
+    affiliateUrl: 'https://www.amazon.com/dp/B08DTR8FQF?tag=trailsteadgui-20',
+    imageUrl: 'https://m.media-amazon.com/images/I/71FWwZrHLRL._AC_SL1500_.jpg',
     category: 'comfort',
     templateSlugs: [],
-    priceRange: '~$70',
+    priceRange: '~$76',
     tags: ['chair', 'mid-range', 'comfort'],
   },
   {

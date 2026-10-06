@@ -75,7 +75,7 @@ export default function Page() {
         lede="The smartest move before your first real camping trip - how to run a backyard night that shakes out gear issues, excites kids, and costs nothing."
         heroImage={{
           src: HERO_IMAGE,
-          alt: 'Kids helping pitch a tent in a backyard with camping gear laid out',
+          alt: 'A boy swinging a paddle at a tethered ball in front of a red dome tent on a dry lawn',
         }}
       >
         <QuickAnswer

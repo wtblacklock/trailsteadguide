@@ -86,7 +86,7 @@ export default function Page() {
         lede="Five kid-sized bags matched to age, budget, and how cold it really gets at night. Plus the temperature rule that keeps kids warm instead of miserable."
         heroImage={{
           src: HERO_IMAGE,
-          alt: 'Child zipped up in a colorful kids sleeping bag inside a camping tent',
+          alt: 'Two laughing young girls in front of a red tent at a wooded campsite covered in fallen leaves',
         }}
         dateModified={DATE_MODIFIED}
       >

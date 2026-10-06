@@ -75,7 +75,7 @@ export default function Page() {
         lede="A complete 3-day plan - from arrival dinner through pack-out breakfast - with what to prep at home, what to cook at camp, and a complete shopping list."
         heroImage={{
           src: HERO_IMAGE,
-          alt: 'Family eating a meal together at a picnic table at their campsite',
+          alt: 'Food cooking in a skillet and on a grill grate over a campfire while two people relax in hammocks behind',
         }}
       >
         <QuickAnswer

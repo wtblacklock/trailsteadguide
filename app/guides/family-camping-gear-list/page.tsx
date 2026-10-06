@@ -71,7 +71,7 @@ export default function Page() {
         lede="The real list - not 200 items. What a family of four actually needs for a car camping weekend, organized by priority."
         heroImage={{
           src: HERO_IMAGE,
-          alt: 'Camping gear laid out for a family trip: tent, sleeping bags, stove, cooler',
+          alt: 'Flat lay of a red insulated jacket, hiking boots, a trail map with a compass, a camera, and a black backpack',
         }}
       >
         <QuickAnswer

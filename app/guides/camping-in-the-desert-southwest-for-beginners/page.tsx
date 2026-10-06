@@ -87,7 +87,7 @@ export default function Page() {
       lede="What to expect, what changes, and how to plan your first trip in Arizona, Utah, or New Mexico."
       heroImage={{
         src: HERO_IMAGE,
-        alt: 'Red sandstone walls and pinyon pines along a Zion National Park canyon, Utah Desert Southwest camping country',
+        alt: 'Towering orange sandstone walls above a shallow turquoise river in a narrow Zion National Park canyon, Utah',
       }}
     >
       <QuickAnswer

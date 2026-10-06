@@ -87,7 +87,7 @@ export default function Page() {
       lede="What to expect, what changes, and how to plan your first trip in Florida."
       heroImage={{
         src: HERO_IMAGE,
-        alt: 'Slow river winding through cypress forest in the Florida Everglades, prime winter camping country',
+        alt: 'A narrow waterway winding through a tunnel of mangroves in the Florida Everglades',
       }}
     >
       <QuickAnswer

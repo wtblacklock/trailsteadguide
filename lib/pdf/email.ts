@@ -71,7 +71,7 @@ export async function sendTripPackEmail(args: SendArgs): Promise<{ ok: boolean; 
     <tr><td style="padding:4px 32px 24px;">
       <p style="margin:0;color:#8a9088;font-size:12px;line-height:1.5;">
         Link valid for 24 hours. If it expires, reply to this email and we&rsquo;ll send a fresh one.<br/>
-        Open the PDF once, save it to your device &mdash; it&rsquo;s yours to keep forever.
+        Open the PDF once, save it to your device. It&rsquo;s yours to keep forever.
       </p>
     </td></tr>
     <tr><td style="padding:20px 32px 28px;border-top:1px solid #ece4d2;">
@@ -153,13 +153,13 @@ export async function sendTripPackAbandonEmail(
       <img src="${SITE_URL}/images/logo_masthead.png" alt="Trailstead Guide" width="160" style="display:block; height:auto; margin:0 0 28px 0; max-width:160px;">
       <div style="font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#3a5a3e;font-weight:600;margin-bottom:8px;">Trailstead Trip Pack</div>
       <h1 style="font-size:26px;line-height:1.2;margin:0 0 8px;color:#1f3622;font-weight:700;letter-spacing:-0.4px;">Your ${title} pack is still waiting.</h1>
-      <p style="margin:12px 0 0;color:#5a6b5e;font-size:14px;line-height:1.6;">No pressure &mdash; we just don&rsquo;t want you to lose your spot. Your checkout link expired, but everything you set up is one click away.</p>
+      <p style="margin:12px 0 0;color:#5a6b5e;font-size:14px;line-height:1.6;">No pressure. We just don&rsquo;t want you to lose your spot. Your checkout link expired, but everything you set up is one click away.</p>
     </td></tr>
     <tr><td style="padding:20px 32px 8px;">
       <a href="${args.retryUrl}" style="display:inline-block;background:#1f3622;color:#ffffff;padding:14px 24px;border-radius:10px;text-decoration:none;font-weight:600;font-size:15px;">Pick up where you left off</a>
     </td></tr>
     <tr><td style="padding:4px 32px 24px;">
-      <p style="margin:0;color:#8a9088;font-size:12px;line-height:1.5;">Questions or second thoughts? Just reply &mdash; we&rsquo;re happy to help.</p>
+      <p style="margin:0;color:#8a9088;font-size:12px;line-height:1.5;">Questions or second thoughts? Just reply. We&rsquo;re happy to help.</p>
     </td></tr>
     <tr><td style="padding:20px 32px 28px;border-top:1px solid #ece4d2;">
       <p style="margin:0 0 8px;font-size:13px;color:#4a5450;"><strong>What&rsquo;s in the Trip Pack:</strong></p>
