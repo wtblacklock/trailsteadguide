@@ -13,7 +13,7 @@ import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
 
 const SLUG = '/guides/best-family-tent-for-beginners'
 const TITLE = 'The Best Family Tents for 2026'
-const META_TITLE = 'Best Family Tents 2026: 5 by Family Size'
+const META_TITLE = 'Best Family Tents 2026: 5 Picks by Size'
 const DESCRIPTION =
   'The 5 best family tents for 2026, from a budget Coleman dome to stand-up cabin tents for big families. Compare size, setup time, and weather protection.'
 const HERO_IMAGE =
