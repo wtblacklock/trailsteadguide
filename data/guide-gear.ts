@@ -57,7 +57,10 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'TENT', productId: 'tnf-wawona-6' },
   ],
   'campfire-recipes-for-kids': [
+    { slot: 'COOKWARE', productId: 'heavy-duty-aluminum-foil' },
+    { slot: 'COOKWARE', productId: 'camp-grill-tongs' },
     { slot: 'KID_GEAR', productId: 'carpathen-smores-sticks' },
+    { slot: 'SAFETY', productId: 'uco-stormproof-matches' },
   ],
   'camping-for-beginners': [
     { slot: 'TENT', productId: 'coleman-sundome-4p' },
@@ -326,6 +329,7 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'TENT', productId: 'kelty-wireless-6' },
     { slot: 'TENT', productId: 'coleman-sundome-4p' },
     { slot: 'SLEEP_BAG', productId: 'marmot-mad-river-0' },
+    { slot: 'SLEEP_BAG', productId: 'teton-celsius-xxl-0' },
     { slot: 'SLEEP_BAG', productId: 'coleman-brazos-bag' },
     { slot: 'SLEEP_BAG', productId: 'sea-to-summit-reactor-extreme-liner' },
     { slot: 'SLEEP_SURFACE', productId: 'mondoking-3d-pad' },
@@ -387,6 +391,7 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'TENT', productId: 'kelty-wireless-6' },
     { slot: 'TENT', productId: 'coleman-sundome-4p' },
     { slot: 'SLEEP_BAG', productId: 'marmot-mad-river-0' },
+    { slot: 'SLEEP_BAG', productId: 'teton-celsius-xxl-0' },
     { slot: 'SLEEP_BAG', productId: 'coleman-brazos-bag' },
     { slot: 'SLEEP_BAG', productId: 'sea-to-summit-reactor-extreme-liner' },
     { slot: 'SLEEP_SURFACE', productId: 'mondoking-3d-pad' },
@@ -1040,6 +1045,7 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
   ],
   'no-cook-camping-meals-kids': [
     { slot: 'COOLER', productId: 'coleman-classic-rolling-cooler' },
+    { slot: 'COOLER', productId: 'coleman-xtreme-50-cooler' },
   ],
   'rainy-camping-trips': [
     { slot: 'TENT', productId: 'coleman-sundome-4p' },
@@ -1160,6 +1166,7 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'TENT', productId: 'core-6p-instant-cabin' },
     { slot: 'TENT', productId: 'kelty-wireless-6' },
     { slot: 'SLEEP_BAG', productId: 'coleman-brazos-bag' },
+    { slot: 'SLEEP_BAG', productId: 'teton-celsius-xxl-0' },
     { slot: 'SLEEP_BAG', productId: 'sea-to-summit-reactor-extreme-liner' },
     { slot: 'SLEEP_BAG', productId: 'marmot-mad-river-0' },
     { slot: 'SLEEP_SURFACE', productId: 'big-agnes-divide' },
