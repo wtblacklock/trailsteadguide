@@ -652,6 +652,17 @@ export const GUIDES: Guide[] = [
     relatedGuides: ['fall-camping-for-beginners', 'camping-in-wyoming-for-beginners', 'dispersed-camping-on-blm-and-national-forest-land'],
   },
   {
+    slug: 'sleeping-pad-r-value-explained',
+    category: 'basics',
+    title: 'Sleeping Pad R-Value Explained',
+    description: 'What the number measures, what R-value you need by season, why pads stack, and the air mattress trap.',
+    eyebrow: 'Gear guide',
+    metaTitle: 'Sleeping Pad R-Value Explained: What Families Need',
+    metaDescription:
+      'Sleeping pad R-value explained for family campers: what the number measures, what R-value you need by season, why pads stack, and the air mattress trap.',
+    relatedGuides: ['how-to-keep-kids-warm-camping', 'best-camping-sleeping-bag-for-kids', 'fall-camping-for-beginners'],
+  },
+  {
     slug: 'camp-stove-fuel-in-cold-weather',
     category: 'basics',
     title: 'Camp Stove Fuel in Cold Weather',

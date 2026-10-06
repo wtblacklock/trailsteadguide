@@ -779,6 +779,13 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'LIGHTING', productId: 'everbrite-headlamp-5-pack' },
     { slot: 'SAFETY', productId: 'thriad-first-aid-430' },
   ],
+  'sleeping-pad-r-value-explained': [
+    { slot: 'SLEEP_SURFACE', productId: 'therm-a-rest-z-lite-sol' },
+    { slot: 'SLEEP_SURFACE', productId: 'rab-ionosphere-5-5' },
+    { slot: 'SLEEP_SURFACE', productId: 'mondoking-3d-pad' },
+    { slot: 'SLEEP_BAG', productId: 'sea-to-summit-reactor-extreme-liner' },
+    { slot: 'WINTER_GEAR', productId: 'hothands-hand-warmers-bulk' },
+  ],
   'fall-foliage-camping-with-kids': [
     { slot: 'TENT', productId: 'coleman-sundome-4p' },
     { slot: 'TENT', productId: 'core-6p-instant-cabin' },
