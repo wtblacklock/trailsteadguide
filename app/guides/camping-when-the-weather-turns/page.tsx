@@ -297,7 +297,8 @@ export default function Page() {
           <Link href="/plans/easy-family-basecamp">Easy Family Basecamp</Link> is the right call for a forecast you trust; do not pick it for a forecast that is uncertain.
         </p>
         <p>
-          See also: <Link href="/guides/rainy-camping-trips">Rainy Camping Trips</Link> for the more contained version of the same problem, and{' '}
+          See also: <Link href="/guides/rainy-camping-trips">Rainy Camping Trips</Link> for the more contained version of the same problem,{' '}
+          <Link href="/guides/camping-in-high-wind">Camping in High Wind With Kids</Link> for the site, pitch, and staking decisions that keep a tent standing below that 30 mph line, and{' '}
           <Link href="/guides/spring-camping-for-beginners">Spring Camping for Beginners</Link> for the season most weather-shift drama happens in. If you&apos;re still picking dates, <Link href="/quiz">take the 5-second quiz</Link> and we&apos;ll match a starter plan to a calmer forecast window.
         </p>
 
