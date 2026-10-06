@@ -432,7 +432,7 @@ export const GUIDES: Guide[] = [
     eyebrow: 'How-to',
     metaTitle: 'Setting Up Camp in the Dark With Kids',
     metaDescription:
-      'Arriving after sunset with kids: plan the evening backwards from dark, pitch a tent by headlamp, light a site properly, and handle a kid scared of the dark.',
+      'Arriving after sunset with kids: plan the evening backwards from dark, pitch a tent by headlamp, light a site, and handle a kid scared of the dark.',
     relatedGuides: ['how-to-set-up-a-tent', 'fall-camping-for-beginners', 'first-night-camping-guide'],
   },
   {
@@ -457,9 +457,9 @@ export const GUIDES: Guide[] = [
     title: 'How to Prevent Tent Condensation',
     description: 'Why the tent is wet inside when it never rained, and the venting, pitching, and site habits that keep sleeping bags dry on cold nights.',
     eyebrow: 'How-to',
-    metaTitle: 'How to Prevent Tent Condensation (Why Your Tent Is Wet Inside)',
+    metaTitle: 'How to Prevent Tent Condensation',
     metaDescription:
-      'How to prevent tent condensation: why the tent is wet inside when it never rained, how to vent and pitch the rainfly, where to camp, and what to do when the ceiling is dripping.',
+      'How to prevent tent condensation: why the tent is wet when it never rained, how to vent and pitch the rainfly, and what to do when the ceiling drips.',
     relatedGuides: ['rainy-camping-trips', 'fall-camping-for-beginners', 'how-to-set-up-a-tent'],
   },
   {
@@ -531,7 +531,7 @@ export const GUIDES: Guide[] = [
     eyebrow: 'Camp food',
     metaTitle: 'Cold-Weather Camping Meals for Families',
     metaDescription:
-      'Cold-weather camping meals for families: warm one-pot dinners made at home, a hot-drink station that runs all day, and the bedtime snack that keeps kids warm.',
+      'Cold-weather camping meals for families: one-pot dinners made at home, a hot-drink station that runs all day, and the bedtime snack that keeps kids warm.',
     relatedGuides: ['how-to-keep-kids-warm-camping', 'easy-family-camping-meals', 'fall-camping-for-beginners'],
   },
   {
@@ -601,9 +601,9 @@ export const GUIDES: Guide[] = [
     title: 'Columbus Day Weekend Camping',
     description: 'Peak fall color meets closing week. How to find an open site, check that the water is still on, and pack for nights in the 30s.',
     eyebrow: 'Holiday weekend',
-    metaTitle: 'Columbus Day Weekend Camping With Kids: What to Expect',
+    metaTitle: 'Columbus Day Weekend Camping With Kids',
     metaDescription:
-      'Columbus Day (Indigenous Peoples\' Day) weekend camping: foliage crowds, seasonal campground closures, what still has openings, and packing for cold nights.',
+      'Columbus Day (Indigenous Peoples\' Day) weekend camping: foliage crowds, campground closures, what still has openings, and packing for cold nights.',
     relatedGuides: ['labor-day-weekend-camping', 'how-to-keep-kids-warm-camping', 'halloween-camping-with-kids'],
   },
   {
