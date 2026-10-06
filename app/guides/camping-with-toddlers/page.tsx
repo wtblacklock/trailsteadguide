@@ -89,7 +89,8 @@ export default function Page() {
           and entertain themselves for a stretch. None of that is reliably true for a toddler. If
           your group also includes older kids, <Link href="/guides/camping-with-kids-first-time">
           camping with kids for the first time</Link> covers the general playbook - this guide is
-          specifically about what changes when the youngest camper is 1-3.
+          specifically about what changes when the youngest camper is 1-3. For a baby who is not
+          walking yet, see <Link href="/guides/camping-with-a-baby">camping with a baby</Link>.
         </p>
 
         <h2>Keep it short and close</h2>
