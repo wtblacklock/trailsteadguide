@@ -1162,6 +1162,20 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     slot: 'SAFETY',
   },
   {
+    id: 'outland-firebowl-893',
+    name: 'Outland Living Firebowl 893 Deluxe Propane Fire Pit',
+    description:
+      'A 19-inch portable propane fire pit with a carry kit and cover. Campfire glow with no embers and an instant off switch, which many (not all) fire restriction orders allow when wood fires are banned.',
+    amazonAsin: 'B00KY4S388',
+    affiliateUrl: 'https://www.amazon.com/dp/B00KY4S388?tag=trailsteadgui-20',
+    imageUrl: 'https://m.media-amazon.com/images/I/71WP5aLE7IL._AC_SL1500_.jpg',
+    category: 'comfort',
+    templateSlugs: [],
+    priceRange: '~$100',
+    tags: ['family'],
+    slot: 'WINTER_GEAR',
+  },
+  {
     id: 'coleman-sundome-6p',
     name: 'Coleman Sundome 6-Person',
     description:

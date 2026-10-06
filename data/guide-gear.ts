@@ -962,6 +962,15 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'TENT', productId: 'core-6p-instant-cabin' },
     { slot: 'TENT', productId: 'kelty-wireless-6' },
   ],
+  'camping-during-a-burn-ban': [
+    { slot: 'STOVE', productId: 'coleman-1-burner' },
+    { slot: 'STOVE', productId: 'coleman-triton-2-burner' },
+    { slot: 'WINTER_GEAR', productId: 'outland-firebowl-893' },
+    { slot: 'WINTER_GEAR', productId: 'hothands-hand-warmers-bulk' },
+    { slot: 'LIGHTING', productId: 'luminaid-packlite-max' },
+    { slot: 'LIGHTING', productId: 'everbrite-headlamp-5-pack' },
+    { slot: 'KID_GEAR', productId: 'glow-stick-necklaces-bulk' },
+  ],
   'how-to-start-a-campfire': [
     { slot: 'SAFETY', productId: 'uco-stormproof-matches' },
     { slot: 'SAFETY', productId: 'esbit-fire-cubes' },
