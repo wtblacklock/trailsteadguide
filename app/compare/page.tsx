@@ -90,6 +90,12 @@ const PRODUCT_COMPARES: CompareCard[] = [
     blurb: 'Same temperature rating, very different behavior when damp. Weight, washing, price, and which fill wins with kids.',
   },
   {
+    href: '/compare/3-season-vs-4-season-tent',
+    eyebrow: 'Gear',
+    title: '3-season vs 4-season tent',
+    blurb: 'Season ratings are about wind and snow, not warmth. When your summer tent is enough for cold nights, and when a 4-season tent earns its price.',
+  },
+  {
     href: '/compare/mummy-vs-rectangular-sleeping-bag',
     eyebrow: 'Gear',
     title: 'Mummy vs rectangular sleeping bag',

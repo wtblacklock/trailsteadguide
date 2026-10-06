@@ -60,6 +60,12 @@ export const COMPARE_PAGES: ComparePageEntry[] = [
       'Dome tent vs. cabin tent compared for family camping: setup time, wind resistance, headroom, weight, and price. Which style actually wins for car camping.',
   },
   {
+    slug: '3-season-vs-4-season-tent',
+    title: '3-Season vs. 4-Season Tent for Families',
+    excerpt:
+      '3-season vs. 4-season tent compared for family camping: wind, snow load, ventilation, condensation, weight, and price. Whether your summer tent can handle fall and winter.',
+  },
+  {
     slug: 'mummy-vs-rectangular-sleeping-bag',
     title: 'Mummy vs. Rectangular Sleeping Bag for Families',
     excerpt:

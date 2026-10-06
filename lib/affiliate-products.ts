@@ -1455,6 +1455,20 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     tags: ['cookware', 'family', 'mid-range'],
     slot: 'COOKWARE',
   },
+  {
+    id: 'geertop-4p-4-season',
+    name: 'GEERTOP 4-Person 4-Season Tent',
+    description:
+      'Freestanding double-wall dome with aluminum poles, a snow skirt, full-coverage fly, and a front vestibule. About 7 x 8 ft inside and 9 lbs packed. A budget step into cold-shoulder-season and light-snow camping, not an expedition tent.',
+    amazonAsin: 'B08KZXNVP8',
+    affiliateUrl: 'https://www.amazon.com/dp/B08KZXNVP8?tag=trailsteadgui-20',
+    imageUrl: 'https://m.media-amazon.com/images/I/51wZmtCLxOL._AC_SL1500_.jpg',
+    category: 'comfort',
+    templateSlugs: [],
+    priceRange: '~$160',
+    tags: ['tent', 'cold-ready', 'mid-range'],
+    slot: 'TENT',
+  },
 
   // ------------------------------------------------------------------
   // Legacy / deprecated. Kept in the registry so /compare/* editorial
