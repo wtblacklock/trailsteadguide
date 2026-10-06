@@ -55,6 +55,17 @@ export const GUIDES: Guide[] = [
     relatedGuides: ['camping-for-beginners', 'first-night-camping-guide', 'first-camping-trip-checklist'],
   },
   {
+    slug: 'what-not-to-bring-camping',
+    category: 'basics',
+    title: 'What Not to Bring Camping',
+    description: 'Fifteen things to leave home, from firewood and fireworks to the extra outfits, and what to pack instead.',
+    eyebrow: 'Packing',
+    metaTitle: 'What Not to Bring Camping (15 Things)',
+    metaDescription:
+      'What not to bring camping: firewood from home, cotton layers, glass, drones, fireworks, untested gear and 9 more, plus what to pack instead of each one.',
+    relatedGuides: ['weekend-camping-packing-list', 'first-time-camping-mistakes', 'first-camping-trip-checklist'],
+  },
+  {
     slug: 'camping-with-kids-first-time',
     category: 'scenario',
     title: 'Camping With Kids for the First Time',
@@ -694,6 +705,30 @@ export const GUIDES: Guide[] = [
     metaDescription:
       'Thanksgiving camping with kids: where campgrounds are still open in late November, a turkey plan that works over coals, food safety in a cooler, and staying warm.',
     relatedGuides: ['halloween-camping-with-kids', 'how-to-keep-kids-warm-camping', 'easy-family-camping-meals'],
+  },
+  {
+    slug: 'camping-in-40-degree-weather',
+    category: 'seasonal',
+    title: 'Camping in 30 and 40 Degree Weather',
+    shortLabel: 'Cold snaps',
+    description: 'The pad, bag, and bedtime routine for a night in the 30s or 40s, and when a cold, wet forecast means it is time to go home.',
+    eyebrow: 'Cold snap',
+    metaTitle: 'Camping in 30 and 40 Degree Weather',
+    metaDescription:
+      'Camping in 40 degree weather or a night in the 30s: the sleeping bag and pad you need, what to wear to bed, and when a cold snap means it is time to leave.',
+    relatedGuides: ['how-to-keep-kids-warm-camping', 'sleeping-pad-r-value-explained', 'fall-camping-for-beginners'],
+  },
+  {
+    slug: 'gifts-for-campers',
+    category: 'seasonal',
+    title: 'Gifts for Campers: A Family Gift Guide',
+    shortLabel: 'Holiday gifts',
+    description: 'Stocking stuffers, useful upgrades, bigger gifts, and picks for kids, for the camper who already owns a tent.',
+    eyebrow: 'Gift guide',
+    metaTitle: 'Gifts for Campers: 2026 Family Gift Guide',
+    metaDescription:
+      'Gifts for campers who already own a tent: stocking stuffers under $25, useful upgrades, big gifts, picks for kids, and a park pass good for a year.',
+    relatedGuides: ['family-camping-gear-list', 'thanksgiving-camping-with-kids', 'what-not-to-bring-camping'],
   },
   {
     slug: 'camping-first-aid-kit-for-families',

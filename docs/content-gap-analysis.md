@@ -48,7 +48,7 @@ Missing (5–8 high-intent titles):
 - **Campsite reservation strategy** — Recreation.gov timing, 6-month windows, cancellation refresh tricks.
 - **Camping etiquette: 12 unwritten rules** — high pin/share format, easy AI-citation passages.
 - **Camping food planning (no-cook + cooler-first)** — sits between the two existing meal guides; covers structure, not recipes.
-- **What NOT to bring camping** — counter-list to packing-list guides; high CTR.
+- ~~**What NOT to bring camping**~~ - **SHIPPED** 2026-10-06 as `what-not-to-bring-camping`.
 - **How to read a campsite map (state/national park reservation maps)** — beginner blocker, currently uncovered.
 - **Camping on a budget** (separate from the family-budget guide) — single + couple version with annual cost breakdown.
 - **Tent setup intermediate: pitching in wind/slope/uneven ground** — graduation step from beginner pitch.
@@ -57,7 +57,7 @@ Missing (5–8 high-intent titles):
 Family-specific scenarios are well-covered. Broader life-situation scenarios are missing.
 
 Missing (5–8 titles):
-- **Cold-weather scenario: camping in 30–45°F weather** — dedicated cold-snap guide separate from winter; common shoulder-season bail point.
+- ~~**Cold-weather scenario: camping in 30-45°F weather**~~ - **SHIPPED** 2026-10-06 as `camping-in-40-degree-weather`, deliberately filed under seasonal (see the 2026-10-06 movement note).
 - **Group camping for 10+ people** — coordination, site selection, shared-meal logistics.
 - **Camping with elderly relatives or limited mobility** — site selection, accessible parks, gear adjustments.
 - **Camping while pregnant** — high-search, low-supply niche.
@@ -207,7 +207,7 @@ Sized as **S** (≤ a day), **M** (2–4 days), **L** (a week+). Lift = expected
 3. ~~**Guide: "How to find dispersed camping on BLM and National Forest land"**~~ — **SHIPPED** as `dispersed-camping-on-blm-and-national-forest-land`.
 4. ~~**Guide: "Campsite reservation strategy (Recreation.gov)"**~~ — **SHIPPED** as `recreation-gov-reservation-strategy`.
 5. ~~**Glossary page (/glossary)**~~ — **SHIPPED**, 58 terms.
-6. **Guide: "What NOT to bring camping"** — **S effort, medium-high lift.** Counter-list to existing packing guides, high CTR, easy social. Still the cheapest unbuilt Tier 1 item.
+6. ~~**Guide: "What NOT to bring camping"**~~ - **SHIPPED** 2026-10-06 as `what-not-to-bring-camping` (15 items, each paired with what to pack instead).
 7. **About page trust upgrade: testimonials wall + methodology block** — **S effort, medium lift.** Conversion lift on key landing pages, especially before the quiz.
 
 ### Tier 2 — worth doing, sequence after Tier 1
@@ -308,6 +308,27 @@ over-limit values in 16 commits, swept in this audit's branch after a rebase. Me
 are mechanically checkable and currently only get checked weekly, after the fact. A pre-commit
 or CI check against `metaTitle <= 41` and `metaDescription <= 155` would stop the whole class at
 the source and is a smaller job than the reservation table.
+
+### Movement on 2026-10-06 (content PR, not a re-baseline)
+
+Three guides added, taking the catalogue in `lib/guides/data.ts` from 79 to 82 (several guides
+landed after the 2026-10-05 baseline count of 66):
+
+- `what-not-to-bring-camping` (basics) closes Tier 1 item #6.
+- `camping-in-40-degree-weather` (seasonal) closes the scenario gap "cold-weather scenario:
+  camping in 30-45°F weather". It is filed as **seasonal**, not scenario, as a first response to
+  the 2026-10-05 finding that season-shaped guides keep being routed around the seasonal
+  category. It also acts as the adult-and-family hub for the cold-night cluster
+  (`how-to-keep-kids-warm-camping`, `sleeping-pad-r-value-explained`, `tent-heater-safety`,
+  `how-to-prevent-tent-condensation`, `camp-stove-fuel-in-cold-weather`,
+  `cold-weather-camping-meals`), which it links in body.
+- `gifts-for-campers` (seasonal) is a new item not previously on this backlog: a holiday gift
+  guide built entirely from products already in the affiliate registry, timed for November and
+  December commercial searches. It is the site's first gift guide.
+
+Seasonal moves from 5 guides (the four generic seasons plus `camping-during-hunting-season`) to
+7. Basics moves from 28 to 29. The counts in section 1 are left at the 2026-10-05 baseline until
+the next full re-baseline.
 
 ---
 
