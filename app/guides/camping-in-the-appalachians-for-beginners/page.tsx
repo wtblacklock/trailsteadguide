@@ -17,7 +17,7 @@ const TITLE = 'Camping in the Appalachians for Beginners'
 const META_TITLE = 'Appalachian Camping for Beginners (Bears)'
 const DESCRIPTION =
   'Camping in the Appalachians for beginners: Smokies and Blue Ridge crowds, fall foliage timing, ticks, and the densest black-bear country in the U.S.'
-const HERO_IMAGE = 'https://images.unsplash.com/photo-1599551528722-6b6d968512a2?w=1400&auto=format&fit=crop&q=80'
+const HERO_IMAGE = 'https://images.unsplash.com/photo-1605465746300-0318f1e96278?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({
   title: META_TITLE,
@@ -87,7 +87,7 @@ export default function Page() {
       lede="What to expect, what changes, and how to plan your first trip in the Smokies, Blue Ridge, or Shenandoah."
       heroImage={{
         src: HERO_IMAGE,
-        alt: 'A snow-capped mountain peak glowing pink at sunset above dark forested ridges',
+        alt: 'Layered forested ridges of the Great Smoky Mountains under storm clouds at golden hour',
       }}
     >
       <QuickAnswer
