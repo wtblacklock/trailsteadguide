@@ -275,6 +275,18 @@ export const GUIDES: Guide[] = [
     relatedGuides: ['camping-in-florida-for-beginners', 'camping-in-a-heatwave', 'summer-camping-for-beginners'],
   },
   {
+    slug: 'camping-in-north-carolina-for-beginners',
+    category: 'location',
+    title: 'Camping in North Carolina for Beginners',
+    shortLabel: 'North Carolina',
+    description: 'Blue Ridge fall color, cold mountain nights, bears in two regions, and the windy Outer Banks.',
+    eyebrow: 'North Carolina',
+    metaTitle: 'North Carolina Camping for Beginners (Fall)',
+    metaDescription:
+      'Camping in North Carolina for beginners: Blue Ridge state parks, fall color timing, cold mountain nights, bears, the Outer Banks, and the setup that handles it.',
+    relatedGuides: ['camping-in-the-appalachians-for-beginners', 'how-to-keep-kids-warm-camping', 'camping-in-bear-country-with-kids'],
+  },
+  {
     slug: 'camping-in-wisconsin-for-beginners',
     category: 'location',
     title: 'Camping in Wisconsin for Beginners',
