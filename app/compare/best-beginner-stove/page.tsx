@@ -8,7 +8,7 @@ import { articleGraph, itemListGraph, faqPageGraph, pageMetadata, SITE_URL } fro
 import type { AffiliateProduct } from '@/types'
 
 const SLUG = '/compare/best-beginner-stove'
-const TITLE = 'Best Beginner Camp Stove: 3 Picks for First Trips'
+const TITLE = 'Best Beginner Camp Stove: 3 Picks'
 const DESCRIPTION =
   'Best beginner camp stove: single-burner, two-burner propane, and a premium two-burner. Compare BTU, fuel, ease of cleanup, and footprint.'
 const H1 = 'Best beginner camp stove: 3 picks for your first family trip'

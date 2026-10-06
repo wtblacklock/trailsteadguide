@@ -5,7 +5,7 @@ import QuickAnswer from '@/components/guide/QuickAnswer'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
 
 const SLUG = '/compare/trailstead-guide-vs-winging-it'
-const TITLE = 'Trailstead Guide vs Winging It - First-Trip Reality'
+const TITLE = 'Trailstead Guide vs Winging It'
 const DESCRIPTION =
   'Trailstead Guide vs winging it: what a structured first-trip plan actually buys you, and when figuring it out yourself is genuinely the better call.'
 const H1 = 'Trailstead Guide vs winging it: do you actually need a plan?'
