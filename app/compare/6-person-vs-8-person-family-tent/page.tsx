@@ -118,8 +118,8 @@ export default function Page() {
           </p>
           <p className="text-stone-800 leading-relaxed text-[17px]">
             Buy one size up from your headcount. A family of 4 buys a{' '}
-            <strong>6-person tent</strong>. A family of 5 or more &mdash; or two families sharing
-            one tent &mdash; buys an <strong>8-person tent</strong>. The extra floor space holds
+            <strong>6-person tent</strong>. A family of 5 or more (or two families sharing
+            one tent) buys an <strong>8-person tent</strong>. The extra floor space holds
             gear, gives kids room to spread out, and is the single most common thing first-time
             campers wish they&rsquo;d bought bigger.
           </p>

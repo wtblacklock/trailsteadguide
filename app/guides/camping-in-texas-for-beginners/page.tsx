@@ -87,7 +87,7 @@ export default function Page() {
       lede="What to expect, what changes, and how to plan your first trip in Texas."
       heroImage={{
         src: HERO_IMAGE,
-        alt: 'Sun-bleached desert mountains in Big Bend National Park, West Texas, under a clear winter camping sky',
+        alt: 'Desert mountains rising above grassy scrubland in Big Bend National Park, West Texas, under a blue sky with clouds',
       }}
     >
       <QuickAnswer

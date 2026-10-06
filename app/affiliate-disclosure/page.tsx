@@ -30,7 +30,7 @@ export default function Page() {
       </ul>
       <h2>If you have questions</h2>
       <p>
-        <a href="/contact">Send us a note</a> &mdash; we read every message.
+        <a href="/contact">Send us a note</a>. We read every message.
       </p>
     </LegalPage>
   )

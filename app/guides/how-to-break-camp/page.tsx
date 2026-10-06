@@ -75,7 +75,7 @@ export default function Page() {
         lede="Fire out cold, tent packed dry, trash gone, and the car loaded once instead of twice. The order that turns a rushed teardown into a calm one."
         heroImage={{
           src: HERO_IMAGE,
-          alt: 'A tent packed up at a quiet campsite overlooking water and mountains in early morning light',
+          alt: 'A green tunnel tent pitched on a rocky shoreline overlooking water and mountains in low sun',
         }}
       >
         <QuickAnswer

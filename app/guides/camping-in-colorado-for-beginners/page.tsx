@@ -87,7 +87,7 @@ export default function Page() {
       lede="What to expect, what changes, and how to plan your first trip in Colorado."
       heroImage={{
         src: HERO_IMAGE,
-        alt: 'Snow-capped Rocky Mountain peaks above an alpine meadow on a high-elevation Colorado camping route',
+        alt: 'Snow-dusted Rocky Mountain peaks above a calm mountain lake ringed by pine forest in Colorado',
       }}
     >
       <QuickAnswer

@@ -86,7 +86,7 @@ export default function Page() {
       lede="124 state parks, free day-use entry, waterfalls in every direction, and one health risk you have to take seriously."
       heroImage={{
         src: HERO_IMAGE,
-        alt: 'Wide waterfall spilling over a rock ledge into a hemlock forest, the signature Pennsylvania gorge landscape',
+        alt: 'Waterfall spilling over a layered rock ledge into a shallow, rocky pool in a green Pennsylvania forest',
       }}
     >
       <QuickAnswer

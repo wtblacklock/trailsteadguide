@@ -86,7 +86,7 @@ export default function Page() {
       lede="What to expect, what to bring, and how to avoid common mistakes."
       heroImage={{
         src: HERO_IMAGE,
-        alt: 'A family tent under orange and yellow leaves on a crisp fall morning, peak fall camping season',
+        alt: 'A group of campers gathered around a campfire among pine trees at dusk beside a lake',
       }}
     >
       <QuickAnswer

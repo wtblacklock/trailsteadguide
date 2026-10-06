@@ -87,7 +87,7 @@ export default function Page() {
       lede="What to expect, what changes, and how to plan your first trip in the Adirondacks, White Mountains, Acadia, or New England."
       heroImage={{
         src: HERO_IMAGE,
-        alt: 'Still Adirondack lake at dawn with low ridges and pine forest, classic Northeast summer camping scene',
+        alt: 'A hiker sitting on a rocky summit overlooking a small lake, autumn forest, and Adirondack peaks',
       }}
     >
       <QuickAnswer

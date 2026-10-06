@@ -91,7 +91,7 @@ export default function Page() {
         lede="Five tents that work for real families, matched to family size, budget, and weather. Plus the sizing rule that keeps you from buying a tent that is too small."
         heroImage={{
           src: HERO_IMAGE,
-          alt: 'Large family tent set up at a state park campsite with gear inside',
+          alt: 'A dark dome tent on a grassy seaside bluff at sunset while kids run across the field',
         }}
         dateModified={DATE_MODIFIED}
       >

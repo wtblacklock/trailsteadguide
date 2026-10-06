@@ -748,7 +748,7 @@ export const SKILLS: Skill[] = [
     ],
     relatedGear: [
       { name: 'CROWN SHADES 10x10 Pop-Up Canopy', productId: 'crown-shades-10x10-canopy' },
-      { name: 'ALPS Mountaineering King Kong Chair', productId: 'camp-chairs' },
+      { name: 'TIMBER RIDGE Oversized High Back Camping Chair', productId: 'camp-chairs' },
     ],
     videoEmbed: {
       url: 'https://www.youtube-nocookie.com/embed/dfpE0x6xTPU',

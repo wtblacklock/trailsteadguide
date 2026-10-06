@@ -86,7 +86,7 @@ export default function Page() {
       lede="A three-month season at 8,000 feet, the best national parks in the country, grizzlies, and wind that will teach you to stake a tent properly."
       heroImage={{
         src: HERO_IMAGE,
-        alt: 'Snow-capped Teton range rising behind conifers and a still lake in northwest Wyoming',
+        alt: 'Snow-capped Teton range rising behind conifers and reflected in calm water in northwest Wyoming',
       }}
     >
       <QuickAnswer

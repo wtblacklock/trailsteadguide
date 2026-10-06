@@ -81,7 +81,7 @@ export default function Page() {
       lede="A step-by-step planning walkthrough. Start 3 weeks out and you&apos;ll arrive calm instead of frazzled."
       heroImage={{
         src: HERO_IMAGE,
-        alt: 'Topo map, planning notebook, and pen on a wooden table - three weeks out from a family camping trip',
+        alt: 'A yellow dome tent beside a fire ring and log seats at a campsite below a red rock peak',
       }}
     >
       <QuickAnswer

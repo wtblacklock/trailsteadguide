@@ -81,7 +81,7 @@ export default function Page() {
       lede="Two nights. Four people. One car. Here&apos;s the complete packing list, grouped by category - and nothing is on here that you don&apos;t need."
       heroImage={{
         src: HERO_IMAGE,
-        alt: 'Family camping gear organized in piles before packing the car for a 2-night weekend trip',
+        alt: 'A small lit tent among desert shrubs below red rock cliffs at dusk',
       }}
     >
       <QuickAnswer
