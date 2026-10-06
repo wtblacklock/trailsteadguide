@@ -13,7 +13,7 @@ import AmazonLink from '@/components/affiliate/AmazonLink'
 const SLUG = '/guides/sleeping-pad-r-value-explained'
 const TITLE = 'Sleeping Pad R-Value Explained'
 // SEO-optimized <title>; H1/headline keep TITLE.
-const META_TITLE = 'Sleeping Pad R-Value Explained: What Families Need'
+const META_TITLE = 'Sleeping Pad R-Value Explained'
 const DESCRIPTION =
   'Sleeping pad R-value explained for family campers: what the number measures, what R-value you need by season, why pads stack, and the air mattress trap.'
 const HERO_IMAGE =

@@ -13,9 +13,9 @@ import AmazonLink from '@/components/affiliate/AmazonLink'
 const SLUG = '/guides/how-to-prevent-tent-condensation'
 const TITLE = 'How to Prevent Tent Condensation'
 // SEO-optimized <title>; H1/headline keep TITLE.
-const META_TITLE = 'How to Prevent Tent Condensation (Why Your Tent Is Wet Inside)'
+const META_TITLE = 'How to Prevent Tent Condensation'
 const DESCRIPTION =
-  'How to prevent tent condensation: why the tent is wet inside when it never rained, how to vent and pitch the rainfly, where to camp, and what to do when the ceiling is dripping.'
+  'How to prevent tent condensation: why the tent is wet when it never rained, how to vent and pitch the rainfly, and what to do when the ceiling drips.'
 const HERO_IMAGE =
   'https://images.unsplash.com/photo-1782190505460-7eb37f3d3121?w=1400&auto=format&fit=crop&q=80'
 

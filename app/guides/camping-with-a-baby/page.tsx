@@ -10,7 +10,7 @@ import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
 
 const SLUG = '/guides/camping-with-a-baby'
 const TITLE = 'Camping With a Baby'
-const META_TITLE = 'Camping With a Baby - A Practical First-Trip Guide'
+const META_TITLE = 'Camping With a Baby: First-Trip Guide'
 const DESCRIPTION =
   'Camping with a baby: safe sleep in a tent, dressing an infant for cool fall nights, feeding and bottles at camp, and how to shape a short first trip.'
 const HERO_IMAGE =

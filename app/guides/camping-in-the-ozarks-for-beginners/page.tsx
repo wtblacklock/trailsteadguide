@@ -15,7 +15,7 @@ const TITLE = 'Camping in the Ozarks for Beginners'
 // SEO-optimized <title>; H1/headline keep TITLE.
 const META_TITLE = 'Ozarks Camping for Beginners (Fall)'
 const DESCRIPTION =
-  'Camping in the Ozarks for beginners: late fall color, the new Buffalo National River reservation rules, ticks and chiggers, gravel-bar flood risk, and easy state parks.'
+  'Camping in the Ozarks for beginners: fall color, new Buffalo National River reservation rules, ticks and chiggers, flood risk, and easy state parks.'
 const HERO_IMAGE = 'https://images.unsplash.com/photo-1541378559612-5a3e447de20e?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({
