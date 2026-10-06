@@ -14,9 +14,9 @@ import AmazonLink from '@/components/affiliate/AmazonLink'
 const SLUG = '/guides/stargazing-camping-with-kids'
 const TITLE = 'Stargazing Camping With Kids'
 // SEO-optimized <title>; H1/headline keep TITLE.
-const META_TITLE = 'Stargazing Camping With Kids: Meteor Showers and Dark Skies'
+const META_TITLE = 'Stargazing Camping With Kids: Dark Skies'
 const DESCRIPTION =
-  'Stargazing camping with kids: how to pick a dark-sky campsite and a moonless weekend, the fall 2026 meteor showers worth staying up for, and how to keep kids warm and looking up.'
+  'Stargazing camping with kids: picking a dark-sky campsite and a moonless weekend, the fall 2026 meteor showers worth staying up for, and how to stay warm.'
 const HERO_IMAGE =
   'https://images.unsplash.com/photo-1641435354609-5240e4adb4b6?w=1400&auto=format&fit=crop&q=80'
 

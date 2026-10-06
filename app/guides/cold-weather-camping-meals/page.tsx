@@ -12,7 +12,7 @@ const SLUG = '/guides/cold-weather-camping-meals'
 const TITLE = 'Cold-Weather Camping Meals for Families'
 const META_TITLE = 'Cold-Weather Camping Meals for Families'
 const DESCRIPTION =
-  'Cold-weather camping meals for families: warm one-pot dinners made at home, a hot-drink station that runs all day, and the bedtime snack that keeps kids warm.'
+  'Cold-weather camping meals for families: one-pot dinners made at home, a hot-drink station that runs all day, and the bedtime snack that keeps kids warm.'
 const HERO_IMAGE =
   'https://images.unsplash.com/photo-1788404719421-9e2b21a68375?w=1400&auto=format&fit=crop&q=80'
 

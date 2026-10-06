@@ -12,9 +12,9 @@ import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
 
 const SLUG = '/guides/best-camping-sleeping-bag-for-kids'
 const TITLE = 'The Best Kids Sleeping Bags for Camping (2026)'
-const META_TITLE = 'Best Kids Sleeping Bags for Camping (2026): 5 Picks by Age'
+const META_TITLE = 'Best Kids Sleeping Bags for Camping 2026'
 const DESCRIPTION =
-  'The best kids sleeping bags for camping in 2026, from a $30 summer bag to a 20°F bag for cold nights and an arms-out toddler bag. Plus the temperature rating your child actually needs.'
+  'The best kids sleeping bags for camping in 2026, from a $30 summer bag to a 20°F bag for cold nights, plus the temperature rating your child really needs.'
 const HERO_IMAGE =
   'https://images.unsplash.com/photo-1674230316788-d9c8b92f0d63?w=1400&auto=format&fit=crop&q=80'
 const DATE_MODIFIED = '2026-10-05'

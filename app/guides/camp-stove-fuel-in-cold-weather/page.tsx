@@ -12,9 +12,9 @@ import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
 
 const SLUG = '/guides/camp-stove-fuel-in-cold-weather'
 const TITLE = 'Camp Stove Fuel in Cold Weather'
-const META_TITLE = 'Camp Stove Fuel in Cold Weather: Propane vs Butane'
+const META_TITLE = 'Camp Stove Fuel in Cold Weather'
 const DESCRIPTION =
-  'Why butane stoves sputter near freezing, how cold propane still works, and the simple tricks that keep a family camp stove running on a frosty fall morning.'
+  'Why butane stoves sputter near freezing, how cold propane still works, and the tricks that keep a family camp stove running on a frosty fall morning.'
 const HERO_IMAGE =
   'https://images.unsplash.com/photo-1775626094623-99a26d94dc64?w=1400&auto=format&fit=crop&q=80'
 

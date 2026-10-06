@@ -12,7 +12,7 @@ const SLUG = '/guides/camping-first-aid-kit-for-families'
 const TITLE = 'Camping First Aid Kit for Families'
 const META_TITLE = 'Family Camping First Aid Kit Checklist'
 const DESCRIPTION =
-  'What goes in a family camping first aid kit: the base kit, kid-specific add-ons, fall extras, how to treat common camp injuries, and when to drive to urgent care.'
+  'What goes in a family camping first aid kit: the base kit, kid-specific add-ons, fall extras, treating common camp injuries, and when to seek urgent care.'
 const HERO_IMAGE =
   'https://images.unsplash.com/photo-1564144573017-8dc932e0039e?w=1400&auto=format&fit=crop&q=80'
 
