@@ -177,7 +177,7 @@ export default function Page() {
       <h2>Where beginners should look</h2>
       <h3>State parks</h3>
       <p>
-        State park systems in NC, TN, and VA are well-run, with consistent bathrooms, potable water, and bear-aware infrastructure. Reserve at <a href="https://www.ncparks.gov/" rel="noopener" target="_blank">ncparks.gov</a> (North Carolina), <a href="https://tnstateparks.com/" rel="noopener" target="_blank">tnstateparks.com</a> (Tennessee), and <a href="https://www.dcr.virginia.gov/state-parks" rel="noopener" target="_blank">dcr.virginia.gov</a> (Virginia). State parks generally beat federal campgrounds on availability and consistency for first-trip use.
+        State park systems in NC, TN, and VA are well-run, with consistent bathrooms, potable water, and bear-aware infrastructure. Reserve at <a href="https://www.ncparks.gov/" rel="noopener" target="_blank">ncparks.gov</a> (North Carolina), <a href="https://tnstateparks.com/" rel="noopener" target="_blank">tnstateparks.com</a> (Tennessee), and <a href="https://www.dcr.virginia.gov/state-parks" rel="noopener" target="_blank">dcr.virginia.gov</a> (Virginia). State parks generally beat federal campgrounds on availability and consistency for first-trip use. For a state-specific plan, including fall color timing and the Outer Banks, see <Link href="/guides/camping-in-north-carolina-for-beginners">camping in North Carolina for beginners</Link>.
       </p>
 
       <h3>National parks and federal lands</h3>

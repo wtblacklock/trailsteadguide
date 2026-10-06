@@ -521,6 +521,20 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     slot: 'WINTER_GEAR',
   },
   {
+    id: 'tesorrio-sand-stakes-6pk',
+    name: 'Tesorrio 12.6 in Aluminum U-Shaped Sand Stakes, 6-Pack',
+    description:
+      'Long U-channel stakes that grip loose sand and soft ground where standard pegs pull straight out. The fix for windy beach sites like the Outer Banks, and bright orange so they do not get lost in the dunes.',
+    amazonAsin: 'B00N9OBV3E',
+    affiliateUrl: 'https://www.amazon.com/dp/B00N9OBV3E?tag=trailsteadgui-20',
+    imageUrl: 'https://m.media-amazon.com/images/I/81tn-zPmz3L._AC_SX679_.jpg',
+    category: 'essential',
+    templateSlugs: [],
+    priceRange: '~$14',
+    tags: ['family', 'budget', 'rain-ready'],
+    slot: 'RAIN_GEAR',
+  },
+  {
     id: 'therm-a-rest-z-lite-sol',
     name: 'Therm-a-Rest Z Lite Sol Foam Sleeping Pad',
     description:
