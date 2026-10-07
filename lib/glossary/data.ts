@@ -54,6 +54,11 @@ export const TERMS: Term[] = [
       'A 6-8 inch hole dug at least 200 feet from water for human waste in the backcountry. Pack out toilet paper. Part of Leave No Trace.',
   },
   {
+    term: 'Chiggers',
+    definition:
+      'Tiny mite larvae that live in tall grass and leaf litter and leave intensely itchy welts, often at the sock line or waistband. They do not burrow into skin or drink blood - the itch comes from a feeding tube the bite leaves behind, and it can last up to two weeks.',
+  },
+  {
     term: 'Clove hitch',
     definition:
       'A fast hitch used to tie a rope to a pole, post, or tree. Great for hanging lanterns or stringing a clothesline; not for heavy loads.',
@@ -81,6 +86,11 @@ export const TERMS: Term[] = [
     term: 'Declination',
     definition:
       'The angle between true north and magnetic north at your location. Adjust your compass for it before plotting bearings on a map.',
+  },
+  {
+    term: 'DEET',
+    definition:
+      'The most common active ingredient in insect repellent, effective against mosquitoes and ticks. The AAP recommends concentrations of 30% or less for children and advises against any skin repellent, DEET included, on infants under 2 months - use protective clothing and mosquito netting instead.',
   },
   {
     term: 'Dehydrated meal',
@@ -266,6 +276,11 @@ export const TERMS: Term[] = [
     term: 'Paracord',
     definition:
       'A lightweight nylon kernmantle rope (550 lb test) originally used for parachute suspension lines. The general-purpose camp rope - every kit should have 25-50 feet.',
+  },
+  {
+    term: 'Permethrin',
+    definition:
+      'An insecticide used to treat clothing and gear, not skin, that disables ticks and mosquitoes on contact rather than just repelling them. A factory treatment lasts up to 70 washes; a DIY spray-on treatment lasts about 6.',
   },
   {
     term: 'Primitive site',
