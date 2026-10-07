@@ -1033,6 +1033,14 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'COOLER', productId: 'coleman-xtreme-50-cooler' },
     { slot: 'COOLER', productId: 'rtic-45-cooler' },
   ],
+  'how-to-wash-dishes-camping': [
+    { slot: 'STOVE', productId: 'coleman-triton-2-burner' },
+    { slot: 'COOKWARE', productId: 'reliance-aqua-tainer-7gal-2pack' },
+    { slot: 'COOKWARE', productId: 'thtybros-cookware-mess-kit' },
+    { slot: 'TRASH', productId: 'montnorth-collapsible-wash-basin' },
+    { slot: 'TRASH', productId: 'campsuds-biodegradable-soap' },
+    { slot: 'TRASH', productId: 'fwc-trash-can-wakeman' },
+  ],
   'how-to-plan-a-camping-trip': [
     { slot: 'TENT', productId: 'coleman-sundome-4p' },
     { slot: 'TENT', productId: 'core-6p-instant-cabin' },
