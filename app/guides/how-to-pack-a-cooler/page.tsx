@@ -162,6 +162,9 @@ export default function Page() {
           it - standing water speeds up temperature loss and risks contaminating unsealed items.
           If the cooler doesn&apos;t have a drain plug, tilt it to pour water out instead of opening it
           fully, which limits how much warm air gets in during the process.
+          Melt water from a cooler that held raw meat is not dish water; see{' '}
+          <Link href="/guides/how-to-wash-dishes-camping">how to wash dishes while camping</Link>{' '}
+          for where gray water should go.
         </p>
 
         <h2>How long ice actually lasts by cooler type</h2>
