@@ -7,7 +7,7 @@
  * - meaning all clicks bucket together with no per-page attribution.
  *
  * Usage:
- *   <a href={amazonAffiliateUrl('B0D7QHY574', 'first-night-camping-guide')}>...</a>
+ *   <a href={amazonAffiliateUrl('B0D7QN9S9Q', 'first-night-camping-guide')}>...</a>
  */
 
 const AMAZON_ASSOCIATES_TAG = 'trailsteadgui-20'
