@@ -805,6 +805,17 @@ export const GUIDES: Guide[] = [
     metaTitle: 'Are Propane Tent Heaters Safe?',
     metaDescription:
       'Are tent heaters safe? Why fuel-burning heaters never belong in a tent, the limits of oxygen-depletion sensors, and the sleep system to use instead.',
-    relatedGuides: ['how-to-keep-kids-warm-camping', 'fall-camping-for-beginners', 'winter-camping-for-beginners'],
+    relatedGuides: ['how-to-keep-kids-warm-camping', 'tent-camping-at-an-electric-site', 'winter-camping-for-beginners'],
+  },
+  {
+    slug: 'tent-camping-at-an-electric-site',
+    category: 'scenario',
+    title: 'Tent Camping at an Electric Site',
+    description: 'What is on the pedestal, the cord and adapter to bring, what is worth plugging in, and the sleep system that still works when the power drops.',
+    eyebrow: 'Cold nights',
+    metaTitle: 'Tent Camping at an Electric Site: A Family Guide',
+    metaDescription:
+      'Tent camping at an electric site: what the pedestal outlets are, the cord and adapter to bring, what to plug in on a cold night, and how to run power safely.',
+    relatedGuides: ['tent-heater-safety', 'how-to-keep-kids-warm-camping', 'camping-in-40-degree-weather'],
   },
 ]
