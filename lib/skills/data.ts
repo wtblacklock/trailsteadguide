@@ -443,6 +443,10 @@ export const SKILLS: Skill[] = [
       'Trusting any cairn smaller than knee-high - random stacks aren’t official.',
     ],
     safetyNotes: ['If you’re lost, stop. Don’t bushwhack. Backtrack to the last known marker - that’s the rule.'],
+    videoEmbed: {
+      url: 'https://www.youtube-nocookie.com/embed/QOJjyNpAplQ',
+      title: 'Reading Trail Blazes And Handling Emergencies - Trails 101 Series - UConn Extension',
+    },
   },
   {
     slug: 'day-hike-essentials',
@@ -912,6 +916,10 @@ export const SKILLS: Skill[] = [
     ],
     relatedSkills: ['stargazing/reading-a-star-chart', 'stargazing/constellations-by-season', 'stargazing/using-red-light-at-camp'],
     relatedPrintableSlug: 'northern-hemisphere-constellation-wheel',
+    videoEmbed: {
+      url: 'https://www.youtube-nocookie.com/embed/-S8u-fYCoY0',
+      title: 'How to Find the Big Dipper - Star Walk Kids',
+    },
   },
   {
     slug: 'reading-a-star-chart',
@@ -1024,6 +1032,10 @@ export const SKILLS: Skill[] = [
     relatedGear: [
       { name: 'Celestron Outland X 8x42 Binoculars', productId: 'celestron-outland-binoculars' },
     ],
+    videoEmbed: {
+      url: 'https://www.youtube-nocookie.com/embed/qaF14j4peC8',
+      title: 'How to Spot a Planet - We The Curious',
+    },
   },
   {
     slug: 'watching-a-meteor-shower',
@@ -2209,6 +2221,10 @@ export const SKILLS: Skill[] = [
     relatedGear: [
       { name: 'Coleman Classic 50-Quart Rolling Cooler', productId: 'coleman-classic-rolling-cooler' },
     ],
+    videoEmbed: {
+      url: 'https://www.youtube-nocookie.com/embed/Wk5TYEBZd2Q',
+      title: 'How to Pack a Cooler for Camping - OARS',
+    },
   },
 
   // ── FIRE (new) ────────────────────────────────────────────────────────────

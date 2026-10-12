@@ -73,7 +73,7 @@ const ROWS: Row[] = [
     height: "6'4\" center",
     bestFor: 'Family of 5+',
     setup: '~5 min',
-    price: '~$165',
+    price: '~$160',
   },
 ]
 
