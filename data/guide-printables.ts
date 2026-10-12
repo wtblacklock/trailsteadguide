@@ -58,4 +58,10 @@ export const GUIDE_PRINTABLES: Record<string, string[]> = {
   'camping-in-bear-country-with-kids': ['bear-bag-food-storage-card'],
   'labor-day-weekend-camping': ['weather-signs-field-card', 'camp-first-aid-quick-reference'],
   'how-to-keep-kids-warm-camping': ['camp-first-aid-quick-reference'],
+  'camping-first-aid-kit-for-families': ['camp-first-aid-quick-reference'],
+  'camping-in-high-wind': ['weather-signs-field-card'],
+  'cold-weather-camping-meals': ['camp-cooking-conversion-card', '3-day-camp-meal-planner'],
+  'columbus-day-weekend-camping': ['weather-signs-field-card', 'camp-first-aid-quick-reference'],
+  'camping-with-a-baby': ['kids-camping-packing-list'],
+  'stargazing-camping-with-kids': ['northern-hemisphere-constellation-wheel', 'night-sky-bingo'],
 }
