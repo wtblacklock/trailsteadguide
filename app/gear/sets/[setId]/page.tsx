@@ -54,7 +54,7 @@ export async function generateMetadata({
   if (!data) return {}
   return pageMetadata({
     title: `${data.set.title} - Gear Set`,
-    description: `${data.set.tagline} The curated gear bundle for the ${data.plan.title} plan.`,
+    description: data.set.metaDescription,
     path: `/gear/sets/${setId}`,
   })
 }

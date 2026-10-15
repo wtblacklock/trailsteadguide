@@ -780,7 +780,7 @@ export const GUIDES: Guide[] = [
     title: 'Stargazing Camping With Kids',
     description: 'Picking a dark-sky campsite and a moonless weekend, the fall meteor showers worth staying up for, and keeping kids warm while they look up.',
     eyebrow: 'Night sky',
-    metaTitle: 'Stargazing Camping With Kids: Meteor Showers and Dark Skies',
+    metaTitle: 'Stargazing Camping With Kids: Dark Skies',
     metaDescription:
       'Stargazing camping with kids: how to pick a dark-sky campsite and a moonless weekend, the fall 2026 meteor showers worth staying up for, and how to keep kids warm and looking up.',
     relatedGuides: ['camping-after-dark-with-kids', 'how-to-keep-kids-warm-camping', 'fall-camping-for-beginners'],

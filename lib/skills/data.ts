@@ -18,6 +18,8 @@ export const SKILLS: Skill[] = [
     category: 'knots',
     title: 'Square Knot',
     tagline: 'The classic two-rope joiner - fast, symmetrical, easy to untie.',
+    metaDescription:
+      'The classic two-rope joiner: fast, symmetrical, easy to untie. Learn right over left, left over right so you never tie a slipping granny knot.',
     difficulty: 'Beginner',
     useCases: ['Joining two ropes of equal thickness', 'Tying off a bandage', 'Bundling firewood'],
     whenToUse: 'Use when joining two ropes of similar size. Avoid for heavy loads or life safety.',
@@ -55,6 +57,8 @@ export const SKILLS: Skill[] = [
     category: 'knots',
     title: 'Bowline',
     tagline: 'A fixed loop that holds under load and unties easily.',
+    metaDescription:
+      'Tie a fixed loop that holds under load and unties easily. Use the rabbit-and-tree method to anchor a rope to a tree or secure a tarp ridgeline.',
     difficulty: 'Intermediate',
     useCases: [
       'Tying a rope around a tree or post',
@@ -99,6 +103,8 @@ export const SKILLS: Skill[] = [
     category: 'knots',
     title: 'Taut-Line Hitch',
     tagline: 'An adjustable knot for tent guy lines and tarp tie-outs.',
+    metaDescription:
+      "An adjustable knot for tent guy lines and tarp tie-outs. It slides to set tension and locks under load, and it won't break like plastic tensioners.",
     difficulty: 'Intermediate',
     useCases: ['Tensioning tent guy lines', 'Adjusting tarp ridgelines', 'Any line you need to tighten or loosen quickly'],
     whenToUse: 'Use any time you need a loop that slides to adjust tension but locks under load.',
@@ -135,6 +141,8 @@ export const SKILLS: Skill[] = [
     category: 'knots',
     title: 'Clove Hitch',
     tagline: 'A fast hitch for starting a lashing or tying off to a pole.',
+    metaDescription:
+      "A fast hitch for tying a rope to a pole, tree, or carabiner. It's the standard starting knot for lashings, but it can loosen if the load reverses.",
     difficulty: 'Beginner',
     useCases: ['Tying a rope to a tree, post, or carabiner', 'Starting a lashing', 'Hanging a line between two trees'],
     whenToUse: 'Use to anchor a rope to a cylindrical object when the load won’t reverse direction.',
@@ -174,6 +182,8 @@ export const SKILLS: Skill[] = [
     category: 'cooking',
     title: 'Two-Burner Stove Basics',
     tagline: 'Light it, cook on it, shut it down - without singed eyebrows.',
+    metaDescription:
+      'Light a two-burner propane stove, cook on it, and shut it down safely. Covers leak-testing the canister with soapy water and why you never cook in a tent.',
     difficulty: 'Beginner',
     useCases: ['Boiling water for coffee', 'Frying eggs and bacon', 'Heating a pot of chili'],
     whenToUse: 'Any car-camp meal beyond a hot dog on a stick.',
@@ -216,6 +226,8 @@ export const SKILLS: Skill[] = [
     category: 'cooking',
     title: 'Foil Pack Meals',
     tagline: 'One pack per person, cooked on coals - no dishes.',
+    metaDescription:
+      'One foil pack per person, cooked on coals with no dishes. Layer potatoes, veggies, and protein, then cook 20-25 minutes over coals, never open flames.',
     difficulty: 'Beginner',
     useCases: ['Family dinner with picky eaters', 'Cooking on coals while the fire dies down', 'Minimal-cleanup nights'],
     whenToUse: 'After dinner fire has burned down to a hot bed of coals (no flames).',
@@ -264,6 +276,8 @@ export const SKILLS: Skill[] = [
     category: 'fire',
     title: 'Fire Safety Rules',
     tagline: 'The non-negotiable rules every camp fire follows.',
+    metaDescription:
+      'The non-negotiable rules every campfire follows: check for fire bans, clear a 10-foot circle, keep water and a shovel close, and never leave it unattended.',
     difficulty: 'Beginner',
     useCases: ['Any time you’re responsible for a campfire', 'Briefing kids before a fire', 'New campsite arrival check'],
     whenToUse: 'Every fire, every time. Read this before you strike a match.',
@@ -301,6 +315,8 @@ export const SKILLS: Skill[] = [
     category: 'fire',
     title: 'Starting a Fire',
     tagline: 'Tinder, kindling, fuel - the order that always works.',
+    metaDescription:
+      'Tinder, kindling, fuel: the order that always works. Build a kindling teepee, light it from the upwind side, and add wrist-thick logs once it burns steady.',
     difficulty: 'Beginner',
     useCases: ['First fire of the trip', 'Re-lighting after rain', 'Teaching a kid to start one'],
     whenToUse: 'After the safety check is done and you have water and a tool ready.',
@@ -347,6 +363,8 @@ export const SKILLS: Skill[] = [
     category: 'fire',
     title: 'Fire Structures: Teepee & Log Cabin',
     tagline: 'Two reliable shapes - one for fast heat, one for long burn.',
+    metaDescription:
+      'Two reliable fire shapes: a teepee for fast heat and boiling water, and a log cabin that builds a steady coal bed for cooking in about 30-45 minutes.',
     difficulty: 'Beginner',
     useCases: ['Cooking on coals (log cabin)', 'Fast warmth or boiling water (teepee)', 'Teaching kids the two basic shapes'],
     whenToUse: 'Pick teepee for quick heat or boiling; log cabin for steady coals to cook on.',
@@ -383,6 +401,8 @@ export const SKILLS: Skill[] = [
     category: 'fire',
     title: 'Extinguishing a Fire',
     tagline: 'Drown, stir, drown again - until cold to the touch.',
+    metaDescription:
+      "Drown, stir, drown again until it's cold to the touch. Start 20-30 minutes before you leave, use two buckets minimum, and never bury coals with dirt.",
     difficulty: 'Beginner',
     useCases: ['End of the night', 'Breaking camp', 'Any time the fire isn’t actively supervised'],
     whenToUse: 'Every fire ends this way. Start 30 minutes before you actually want to leave the ring.',
@@ -422,6 +442,8 @@ export const SKILLS: Skill[] = [
     category: 'hiking',
     title: 'Reading Trail Markers',
     tagline: 'Blazes, cairns, and confidence markers - what each one means.',
+    metaDescription:
+      'Blazes, cairns, and confidence markers explained. Learn what a turn blaze looks like, which cairns to trust, and when to backtrack to the last marker.',
     difficulty: 'Beginner',
     useCases: ['Following a marked trail', 'Knowing when you’ve missed a turn', 'Hiking with kids who like a job'],
     whenToUse: 'Every time you set foot on a trail. Markers are how the trail tells you it still exists.',
@@ -449,6 +471,8 @@ export const SKILLS: Skill[] = [
     category: 'hiking',
     title: 'Day Hike Essentials',
     tagline: 'The 10 things that go in every day pack - and why.',
+    metaDescription:
+      'The 10 things that go in every day pack, from rain shell and headlamp to first-aid kit and whistle, plus how to pack them and why to share your route.',
     difficulty: 'Beginner',
     useCases: ['Any hike longer than a campground loop', 'A hike where weather might change', 'Family day hikes'],
     whenToUse: 'Pack these the night before. A pre-built pack is a pack you actually take.',
@@ -496,6 +520,8 @@ export const SKILLS: Skill[] = [
     category: 'orienteering',
     title: 'Compass Basics',
     tagline: 'Read a bearing and walk it - without a phone.',
+    metaDescription:
+      'Read a bearing and walk it without a phone. Learn to set the bezel on a baseplate compass, aim at landmarks, and keep metal from deflecting the needle.',
     difficulty: 'Intermediate',
     useCases: ['Navigating off-trail', 'Backup when GPS fails', 'A practical skill kids can practice'],
     whenToUse: 'Every wilderness trip. Practice in the yard before you need it.',
@@ -536,6 +562,8 @@ export const SKILLS: Skill[] = [
     category: 'orienteering',
     title: 'Orienting a Map',
     tagline: 'Make the map match the world in front of you.',
+    metaDescription:
+      'Make the map match the world in front of you. Align a topo map to magnetic north with a baseplate compass, check landmarks, and allow for declination.',
     difficulty: 'Intermediate',
     useCases: ['Confirming your location at a trail junction', 'Pre-hike planning at the trailhead', 'Teaching map reading to kids'],
     whenToUse: 'Any time you want the map to mean what your eyes see.',
@@ -571,6 +599,8 @@ export const SKILLS: Skill[] = [
     category: 'fishing',
     title: 'Rod Setup and Casting',
     tagline: 'Assemble a rod, tie on a hook, and cast cleanly.',
+    metaDescription:
+      "Assemble a spinning rod, tie on a hook, and cast cleanly. A beginner setup with bobber and split shot, plus the 10-to-2 o'clock casting motion.",
     difficulty: 'Beginner',
     useCases: ['First fishing trip with kids', 'Pond and lakeshore fishing', 'Anywhere you can stand and cast'],
     whenToUse: 'Before any fishing session. Five minutes of setup saves an hour of tangles.',
@@ -615,6 +645,8 @@ export const SKILLS: Skill[] = [
     category: 'fishing',
     title: 'Catch and Release',
     tagline: 'Land it, unhook it, and let it swim - without harm.',
+    metaDescription:
+      'Land it, unhook it, and let it swim without harm. Wet your hands, keep the fish in the water, back the hook out with pliers, and never squeeze it.',
     difficulty: 'Beginner',
     useCases: ['Lakes and ponds with size limits', 'Teaching ethics with kids', 'Trout streams'],
     whenToUse: 'Every fish you don’t intend to keep.',
@@ -651,6 +683,8 @@ export const SKILLS: Skill[] = [
     category: 'shelter',
     title: 'Pitching a Tent',
     tagline: 'A two-person, fifteen-minute job - done right.',
+    metaDescription:
+      'A two-person, fifteen-minute job, done right. Pick a flat, drained spot, stake corners at 45 degrees, and clip in the rainfly before sundown.',
     difficulty: 'Beginner',
     useCases: ['First night at a new site', 'Setting up before dark', 'Teaching kids the order'],
     whenToUse: 'Always before sundown. Tents are twice as hard in the dark.',
@@ -694,6 +728,8 @@ export const SKILLS: Skill[] = [
     category: 'shelter',
     title: 'Site Selection',
     tagline: 'Where you pitch matters more than what you pitch.',
+    metaDescription:
+      'Where you pitch matters more than what you pitch. Look up for dead branches, pick flat raised ground, face the door leeward, and stay 200 feet from water.',
     difficulty: 'Beginner',
     useCases: ['Arriving at a campground with multiple sites', 'Backcountry site choice', 'Re-pitching after weather forecast changes'],
     whenToUse: 'Before you unload the car. Five minutes here saves a wet night.',
@@ -726,6 +762,8 @@ export const SKILLS: Skill[] = [
     category: 'camp-setup',
     title: 'Campsite Layout',
     tagline: 'Three zones, in this order: sleep, kitchen, fire.',
+    metaDescription:
+      'Three zones, in this order: sleep, kitchen, fire. Keep the tent at least 15 feet from the fire ring and the cooler upwind of smoke. A beginner skill.',
     difficulty: 'Beginner',
     useCases: ['Arriving at a new site', 'Coaching kids on where things go', 'Multi-night basecamp'],
     whenToUse: 'Right after you pick the site, before unpacking everything.',
@@ -760,6 +798,8 @@ export const SKILLS: Skill[] = [
     category: 'camp-setup',
     title: 'The Setup Order',
     tagline: 'The order to unload and pitch, so nothing waits on something else.',
+    metaDescription:
+      'The order to unload and pitch so nothing waits on anything else: tent first, then sleep gear, kitchen, and fire stack. About 45-60 minutes for four.',
     difficulty: 'Beginner',
     useCases: ['First trip', 'Arriving close to dark', 'Splitting tasks between two adults'],
     whenToUse: 'Every arrival. Same order every time builds family muscle memory.',
@@ -794,6 +834,8 @@ export const SKILLS: Skill[] = [
     category: 'safety',
     title: 'Building a Camp First-Aid Kit',
     tagline: 'What actually goes in the bag - and what doesn’t.',
+    metaDescription:
+      "What actually goes in a camp first-aid kit, and what doesn't. A checklist from gauze and moleskin to antihistamine, plus how to store and refresh it.",
     difficulty: 'Beginner',
     useCases: ['First trip', 'Pre-trip kit refresh', 'Hand-me-down kit you’re not sure is complete'],
     whenToUse: 'Before every trip. A kit you didn’t check is a kit that’s missing things.',
@@ -845,6 +887,8 @@ export const SKILLS: Skill[] = [
     category: 'safety',
     title: 'Common Camp Injuries',
     tagline: 'Burns, cuts, blisters, ticks - what to do, in order.',
+    metaDescription:
+      'Burns, cuts, blisters, ticks, sprains, and stings: the first move for each, in order. Plus the signs, like anaphylaxis, that mean calling 911 right away.',
     difficulty: 'Beginner',
     useCases: ['Any trip', 'Trips with kids', 'Hikes longer than a campground loop'],
     whenToUse: 'Read once before the trip. Recognition + first move is what matters.',
@@ -885,6 +929,8 @@ export const SKILLS: Skill[] = [
     category: 'stargazing',
     title: 'Finding Constellations',
     tagline: 'Three you can pick out tonight - without an app.',
+    metaDescription:
+      'Three constellations you can pick out tonight without an app: the Big Dipper, Orion, and Cassiopeia. Let your eyes adjust 10-15 minutes, then find Polaris.',
     difficulty: 'Beginner',
     useCases: ['Cloudless nights at any campsite', 'A wind-down activity for kids', 'Any night the moon is small'],
     whenToUse: 'After full dark - about 90 minutes after sunset.',
@@ -918,6 +964,8 @@ export const SKILLS: Skill[] = [
     category: 'stargazing',
     title: 'Reading a Star Chart',
     tagline: 'How to orient a planisphere - and why the sky looks different at 9pm vs midnight.',
+    metaDescription:
+      'How to orient a planisphere overhead while facing north, check it against Polaris, and why the sky at 9pm differs from midnight as it rotates.',
     difficulty: 'Beginner',
     useCases: ['Pairing a printable chart with a real night sky', 'Teaching kids how the sky rotates', 'Planning what to look for before sunset'],
     whenToUse: 'Once your eyes are dark-adapted, in the darkest spot you can safely stand at camp.',
@@ -955,6 +1003,8 @@ export const SKILLS: Skill[] = [
     category: 'stargazing',
     title: 'Constellations by Season',
     tagline: 'Which shapes are up tonight depends on the date - here’s the cheat sheet.',
+    metaDescription:
+      'Which constellations are up tonight depends on the date. A season-by-season cheat sheet, from the Summer Triangle to Orion and the year-round Big Dipper.',
     difficulty: 'Beginner',
     useCases: ['Picking what to look for before you go out', 'Pairing a camp date with a target sky'],
     whenToUse: 'Any clear night - the targets shift roughly every three months.',
@@ -992,6 +1042,8 @@ export const SKILLS: Skill[] = [
     category: 'stargazing',
     title: 'Spotting the Planets',
     tagline: 'How to tell a planet from a star without opening an app.',
+    metaDescription:
+      "How to tell a planet from a star without an app: planets don't twinkle, outshine nearby stars, and follow the ecliptic. Find Venus, Jupiter, Mars, Saturn.",
     difficulty: 'Beginner',
     useCases: ['First identification challenge with kids', 'Bright objects you spot before full dark', 'Confirming what an app told you'],
     whenToUse: 'Twilight through early evening for Venus and Mercury; all night for Jupiter, Saturn, and Mars when they’re up.',
@@ -1030,6 +1082,8 @@ export const SKILLS: Skill[] = [
     category: 'stargazing',
     title: 'Watching a Meteor Shower',
     tagline: 'When to go out, where to look, and why you don’t need any equipment.',
+    metaDescription:
+      'When to go out, where to look, and why you need no equipment. Pick a peak near a new moon, find dark sky, lie back, and give it 1-3 hours after midnight.',
     difficulty: 'Beginner',
     useCases: ['Family camp night with a memorable hook', 'A reason to camp on a specific weekend', 'Quiet evening activity with no setup'],
     whenToUse: 'On or within a day or two of the shower’s peak. Best viewing is usually after midnight, when the radiant is high overhead.',
@@ -1071,6 +1125,8 @@ export const SKILLS: Skill[] = [
     category: 'stargazing',
     title: 'Reading Lunar Phases for Camping',
     tagline: 'Which moon phase to plan around - for stargazing, hiking, or kids who fear the dark.',
+    metaDescription:
+      "Which moon phase to plan a camping trip around: new moon for the darkest stargazing, first quarter or full moon for night walks or a nervous kid's trip.",
     difficulty: 'Beginner',
     useCases: ['Picking a camp weekend for stargazing', 'Choosing a moonlit night for a kid-friendly walk', 'Avoiding a pitch-dark first trip with a nervous kid'],
     whenToUse: 'Before booking - the lunar cycle is 29.5 days, so any specific phase is on a known date.',
@@ -1112,6 +1168,8 @@ export const SKILLS: Skill[] = [
     category: 'stargazing',
     title: 'Using Red Light at Camp',
     tagline: 'Why red light preserves night vision - and how to set up a camp that doesn’t wreck your eyes.',
+    metaDescription:
+      "Why red light preserves night vision, and how to run a camp that doesn't wreck your eyes: headlamps on red before sunset, white light for emergencies only.",
     difficulty: 'Beginner',
     useCases: ['Stargazing nights', 'Any camp activity after full dark', 'Walking to the bathroom without ruining 20 minutes of dark adaptation'],
     whenToUse: 'After dark, anywhere a white headlamp would otherwise be on.',
@@ -1143,6 +1201,8 @@ export const SKILLS: Skill[] = [
     category: 'stargazing',
     title: 'Finding Dark-Sky Sites',
     tagline: 'How to read the Bortle scale and pick a campground where the Milky Way is actually visible.',
+    metaDescription:
+      'How to read the Bortle scale on a light-pollution map and pick a campground where the Milky Way shows. For a stargazing trip, aim for Bortle 4 or darker.',
     difficulty: 'Beginner',
     useCases: ['Booking a camping trip with stargazing as the focus', 'Choosing between two equidistant campgrounds', 'Setting kid expectations about what the sky will look like'],
     whenToUse: 'During trip planning - light pollution is a property of the location, not the night.',
@@ -1184,6 +1244,8 @@ export const SKILLS: Skill[] = [
     category: 'knife-skills',
     title: 'Safe Knife Handling',
     tagline: 'The four rules every knife use depends on.',
+    metaDescription:
+      'The four rules every knife use depends on: cut away from your body, keep your other hand clear, move slowly, and keep the blade sharp. Then sheath it.',
     difficulty: 'Beginner',
     useCases: ['General camp tasks', 'Food prep', 'Cord cutting'],
     whenToUse: 'Any time a knife is in use - your knife or a kid’s.',
@@ -1222,6 +1284,8 @@ export const SKILLS: Skill[] = [
     category: 'knife-skills',
     title: 'How to Hold a Knife',
     tagline: 'Three grips for three jobs - and the one to never use.',
+    metaDescription:
+      'Three knife grips for three jobs, standard, pinch, and reinforced, and the one to never use. Match the grip to carving, food prep, or cord before you cut.',
     difficulty: 'Beginner',
     useCases: ['Carving', 'Food prep', 'Cutting cord'],
     whenToUse: 'Match the grip to the job before you start cutting.',
@@ -1259,6 +1323,8 @@ export const SKILLS: Skill[] = [
     category: 'knife-skills',
     title: 'Basic Cuts: Push and Pull',
     tagline: 'The two foundational strokes every camp cut comes from.',
+    metaDescription:
+      'The push cut and the pull cut, the two strokes every camp carving cut comes from. Practice both on a softwood stick, and brace every pull cut with a thumb.',
     difficulty: 'Beginner',
     useCases: ['Carving', 'Whittling', 'Shaping a tent peg'],
     whenToUse: 'Any time you’re removing material from wood with a knife.',
@@ -1296,6 +1362,8 @@ export const SKILLS: Skill[] = [
     category: 'knife-skills',
     title: 'Knife Care & Storage',
     tagline: 'A clean, sharp, oiled knife is a safe knife.',
+    metaDescription:
+      'A clean, sharp, oiled knife is a safe knife. Wash and dry it after food, oil it with mineral oil, sharpen with a few light strokes, and store it bone-dry.',
     difficulty: 'Beginner',
     useCases: ['End of trip', 'Mid-trip food-prep cleanup', 'Long-term storage'],
     whenToUse: 'Wipe after every use. Oil and sharpen at the end of every trip.',
@@ -1336,6 +1404,8 @@ export const SKILLS: Skill[] = [
     category: 'woodcarving',
     title: 'Sharpening a Stick',
     tagline: 'The classic first carving project - a clean, controlled point.',
+    metaDescription:
+      'The classic first carving project: a clean, controlled point on a dry, thumb-thick stick. Seated push cuts and steady quarter turns, about 10-15 minutes.',
     difficulty: 'Beginner',
     timeRequired: '10-15 minutes',
     useCases: ['First carving project', 'Roasting stick', 'Shelter pin or improvised stake'],
@@ -1381,6 +1451,8 @@ export const SKILLS: Skill[] = [
     category: 'woodcarving',
     title: 'Marshmallow Stick',
     tagline: 'A sharpened stick’s big sibling - taller, cleaner, food-safe.',
+    metaDescription:
+      "A sharpened stick's big sibling: a long, bark-free green willow or hardwood roasting stick with one point or two prongs. A 15-20 minute campfire project.",
     difficulty: 'Beginner',
     timeRequired: '15-20 minutes',
     useCases: ['Campfire dessert', 'Hot dog roasting', 'Quiet pre-dinner activity for kids'],
@@ -1426,6 +1498,8 @@ export const SKILLS: Skill[] = [
     category: 'woodcarving',
     title: 'Tent Peg Carving',
     tagline: 'A real, working tent stake from a found stick.',
+    metaDescription:
+      'Carve a working tent stake from a found hardwood stick: a four-sided point and a stop-cut notch that holds a guy line. An intermediate 20-30 minute build.',
     difficulty: 'Intermediate',
     timeRequired: '20-30 minutes',
     useCases: ['Replacing a lost or broken plastic stake', 'Bushcraft practice', 'Backup pegs for tarp rigging'],
@@ -1469,6 +1543,8 @@ export const SKILLS: Skill[] = [
     category: 'woodcarving',
     title: 'Decorative Notches',
     tagline: 'A stop-cut + a chip cut. Three patterns to practice on.',
+    metaDescription:
+      'A stop-cut plus a chip cut, repeated around a stick. Practice three patterns, a ring, a chevron, and a spiral, to personalize a walking stick in 15-20 min.',
     difficulty: 'Intermediate',
     timeRequired: '15-20 minutes',
     useCases: ['Personalizing a walking stick', 'Marking grip points', 'Quiet creative time at camp'],
@@ -1514,6 +1590,8 @@ export const SKILLS: Skill[] = [
     category: 'cooking',
     title: 'Camp Coffee',
     tagline: 'Hot, strong, made without a machine - three methods that actually work.',
+    metaDescription:
+      'Hot, strong coffee made without a machine. Three camp methods that actually work, cowboy, pour-over, and percolator, with grind and ratios for each.',
     difficulty: 'Beginner',
     useCases: [
       'Morning ritual on any multi-night trip',
@@ -1558,6 +1636,8 @@ export const SKILLS: Skill[] = [
     category: 'cooking',
     title: 'Cast Iron Cooking at Camp',
     tagline: 'The most durable camp kitchen tool - if you know how to use it.',
+    metaDescription:
+      'The most durable camp kitchen tool, if you know how to use it. Preheat slowly, cook over coals, skip the soap, and oil it while warm so it never rusts.',
     difficulty: 'Beginner',
     useCases: [
       'Cooking directly over a fire or camp stove burner',
@@ -1615,6 +1695,8 @@ export const SKILLS: Skill[] = [
     category: 'safety',
     title: 'Food Storage and Bear Bags',
     tagline: 'The rule is simple: zero food in the tent, ever.',
+    metaDescription:
+      'The rule is simple: zero food in the tent, ever. How to hang a bear bag 12 feet up and 200 feet from your tent, or use a canister or bear box every night.',
     difficulty: 'Beginner',
     useCases: [
       'Any campsite in bear country',
@@ -1661,6 +1743,8 @@ export const SKILLS: Skill[] = [
     category: 'safety',
     title: 'Water Purification',
     tagline: 'Never drink unfiltered backcountry water. Here\'s how to fix that.',
+    metaDescription:
+      'Never drink unfiltered backcountry water. Filter it, treat it with tablets, or boil it, the one method that kills all pathogens, viruses included.',
     difficulty: 'Beginner',
     useCases: [
       'Any trip where you\'re sourcing water from streams, lakes, or springs',
@@ -1709,6 +1793,8 @@ export const SKILLS: Skill[] = [
     category: 'safety',
     title: 'Reading Weather at Camp',
     tagline: 'The sky tells you what\'s coming - if you know the language.',
+    metaDescription:
+      "The sky tells you what's coming if you know the language. A 2-minute morning read of clouds, wind, and pressure, and when thunder means get off the ridge.",
     difficulty: 'Beginner',
     useCases: [
       'Deciding whether to break camp before a storm',
@@ -1759,6 +1845,8 @@ export const SKILLS: Skill[] = [
     category: 'orienteering',
     title: 'Reading a Topographic Map',
     tagline: 'Contour lines turn flat paper into a 3-D picture of the land.',
+    metaDescription:
+      'Contour lines turn flat paper into a 3-D picture of the land. Spot steep ground, ridges, creeks, and saddles, and preview elevation gain before you hike.',
     difficulty: 'Intermediate',
     useCases: [
       'Planning a hike to understand elevation gain before you start',
@@ -1806,6 +1894,8 @@ export const SKILLS: Skill[] = [
     category: 'orienteering',
     title: 'Sun Navigation',
     tagline: 'Find north with a stick and a shadow - no compass needed.',
+    metaDescription:
+      'Find north with a stick and a shadow, no compass needed. Mark the shadow tip twice 15-20 minutes apart to get a true east-west line on any sunny day.',
     difficulty: 'Beginner',
     useCases: [
       'Confirming direction when compass or phone is unavailable',
@@ -1852,6 +1942,8 @@ export const SKILLS: Skill[] = [
     category: 'shelter',
     title: 'Hammock Setup',
     tagline: 'Hang level, hang safe, and wake up without back pain.',
+    metaDescription:
+      'Hang level, hang safe, and wake up without back pain. Pick live trees 12-15 feet apart, use 1-inch straps, aim for a 30-degree hang, and lie on a diagonal.',
     difficulty: 'Beginner',
     useCases: [
       'Car camping or backpacking where two suitable trees exist',
@@ -1900,6 +1992,8 @@ export const SKILLS: Skill[] = [
     category: 'hiking',
     title: 'Blister Prevention and Treatment',
     tagline: 'Blisters are optional. Most hikers just don\'t know that yet.',
+    metaDescription:
+      'Blisters are optional. Wear wool or synthetic socks, lace snugly, tape hot spots early with Leukotape, and treat a blister without popping its roof.',
     difficulty: 'Beginner',
     useCases: [
       'Any hike longer than 3 miles',
@@ -1948,6 +2042,8 @@ export const SKILLS: Skill[] = [
     category: 'fishing',
     title: 'Improved Clinch Knot',
     tagline: 'The knot every angler ties first - attaches any lure or hook to monofilament.',
+    metaDescription:
+      'The knot every angler ties first, for any hook, lure, or swivel on mono or fluorocarbon. Five wraps, the improved tuck, and wet it before you pull tight.',
     difficulty: 'Beginner',
     useCases: [
       'Tying a hook, lure, or swivel to monofilament or fluorocarbon line',
@@ -1998,6 +2094,8 @@ export const SKILLS: Skill[] = [
     category: 'knots',
     title: 'Figure-Eight Knot',
     tagline: 'The best stopper knot - fast to tie, easy to identify, hard to shake loose.',
+    metaDescription:
+      'The best stopper knot: fast to tie, easy to identify, hard to shake loose. Also makes a quick fixed loop and is a great first knot for kids.',
     difficulty: 'Beginner',
     useCases: [
       'Stopping a rope end from pulling through a carabiner or pulley',
@@ -2040,6 +2138,8 @@ export const SKILLS: Skill[] = [
     category: 'knots',
     title: 'Trucker\'s Hitch',
     tagline: 'A compound knot that gives you 3:1 mechanical advantage for lashing loads tight.',
+    metaDescription:
+      'A compound knot with 3:1 mechanical advantage for lashing loads tight. Tension a tarp ridgeline or roof-rack load, then lock it off with two half hitches.',
     difficulty: 'Intermediate',
     useCases: [
       'Lashing a tarp ridgeline tight between two trees',
@@ -2079,6 +2179,8 @@ export const SKILLS: Skill[] = [
     category: 'cooking',
     title: 'One-Pot Camp Meals',
     tagline: 'A single pot, one burner, and dinner on the table in 20 minutes.',
+    metaDescription:
+      'A single pot, one burner, and dinner on the table in 20 minutes. Brown protein, add sauce and pasta, rice, or lentils, then simmer. Almost no washing up.',
     difficulty: 'Beginner',
     useCases: [
       'Any night you want real food without a full kitchen setup',
@@ -2125,6 +2227,8 @@ export const SKILLS: Skill[] = [
     category: 'cooking',
     title: 'Camp Baking',
     tagline: 'Biscuits and cornbread from a Dutch oven over coals - no oven required.',
+    metaDescription:
+      'Bake biscuits and cornbread in a Dutch oven over coals, no oven required. Put most coals on the lid, rotate every 10 minutes, and plan on 40-50 minutes.',
     difficulty: 'Intermediate',
     useCases: [
       'A memorable campfire dessert or breakfast treat',
@@ -2171,6 +2275,8 @@ export const SKILLS: Skill[] = [
     category: 'cooking',
     title: 'Camp Food Safety',
     tagline: 'The rules that keep your whole group eating well instead of suffering.',
+    metaDescription:
+      'Rules that keep your group eating well, not getting sick: pre-chill the cooler, use block ice, follow the two-hour rule, and cook meat to temperature.',
     difficulty: 'Beginner',
     useCases: [
       'Any trip longer than one night',
@@ -2217,6 +2323,8 @@ export const SKILLS: Skill[] = [
     category: 'fire',
     title: 'Tinder and Kindling',
     tagline: 'A fire starts in your hands, not in the log pile.',
+    metaDescription:
+      'A fire starts in your hands, not in the log pile. Learn which tinder catches, how to make a loose bundle and kindling teepee, and why you never skip sizes.',
     difficulty: 'Beginner',
     useCases: [
       'Starting a fire with a lighter or match, reliably, first try',
@@ -2261,6 +2369,8 @@ export const SKILLS: Skill[] = [
     category: 'fire',
     title: 'Fire in Wet Conditions',
     tagline: 'Rain doesn\'t stop a fire - bad preparation does.',
+    metaDescription:
+      "Rain doesn't stop a fire, bad preparation does. Rig a tarp, split dry wood from standing deadwood, build on a raised platform, and use your best tinder.",
     difficulty: 'Intermediate',
     useCases: [
       'Starting or maintaining a fire after rain',
@@ -2304,6 +2414,8 @@ export const SKILLS: Skill[] = [
     category: 'hiking',
     title: 'Trail Etiquette',
     tagline: 'Six rules that keep trails pleasant for everyone - including you.',
+    metaDescription:
+      'Six rules that keep trails pleasant for everyone: who yields to whom, stepping downhill for horses, hiking single-file, and packing out every wrapper.',
     difficulty: 'Beginner',
     useCases: [
       'Any hike with more than one other group on trail',
@@ -2340,6 +2452,8 @@ export const SKILLS: Skill[] = [
     category: 'hiking',
     title: 'Trekking Poles',
     tagline: 'How to size, use, and actually benefit from them - they\'re not just for old knees.',
+    metaDescription:
+      'How to size and use trekking poles so they actually help, especially on descents. Set length for flat, uphill, and downhill, and use wrist straps right.',
     difficulty: 'Beginner',
     useCases: [
       'Hikes with significant descent - the biggest benefit is on the way down',
@@ -2381,6 +2495,8 @@ export const SKILLS: Skill[] = [
     category: 'hiking',
     title: 'Hiking with Kids',
     tagline: 'The right pace, the right bribe, and knowing when to turn around.',
+    metaDescription:
+      'The right pace, the right bribe, and knowing when to turn around. Let the youngest set the pace, snack every 30-45 minutes, and give each kid a trail job.',
     difficulty: 'Beginner',
     useCases: [
       'First hike with kids under 8',
@@ -2427,6 +2543,8 @@ export const SKILLS: Skill[] = [
     category: 'shelter',
     title: 'Tarp Rigging',
     tagline: 'Three configurations that cover any weather situation using paracord and two trees.',
+    metaDescription:
+      "Three tarp setups for any weather with paracord and two trees: A-frame, lean-to and plow-point. Tension the ridgeline with a trucker's hitch.",
     difficulty: 'Intermediate',
     useCases: [
       'Emergency or budget shelter when a tent isn\'t available',
@@ -2471,6 +2589,8 @@ export const SKILLS: Skill[] = [
     category: 'shelter',
     title: 'Rainfly and Guylines',
     tagline: 'A tent without guylines is a tent waiting to get wet.',
+    metaDescription:
+      'A tent without guylines is a tent waiting to get wet. Stake the fly off the inner tent, guy out at 45 degrees with taut-line hitches, and do it nightly.',
     difficulty: 'Beginner',
     useCases: [
       'Any trip where rain or wind is a possibility (read: most trips)',
@@ -2513,6 +2633,8 @@ export const SKILLS: Skill[] = [
     category: 'shelter',
     title: 'Tent Care and Storage',
     tagline: 'A well-stored tent lasts 15 years. A wet stored tent lasts two.',
+    metaDescription:
+      'A well-stored tent lasts 15 years; a wet stored tent lasts two. Dry it, rinse the fly without soap, seal the seams, and store it loose in a mesh bag.',
     difficulty: 'Beginner',
     useCases: [
       'End of every trip',
@@ -2555,6 +2677,8 @@ export const SKILLS: Skill[] = [
     category: 'camp-setup',
     title: 'Camp Hygiene',
     tagline: 'The dishwashing, hand-washing, and personal hygiene habits that keep everyone healthy.',
+    metaDescription:
+      'The dishwashing, handwashing, and hygiene habits that keep everyone healthy at camp: a three-basin dish setup, camp soap, and cat holes far from water.',
     difficulty: 'Beginner',
     useCases: [
       'Any trip longer than one night',
@@ -2597,6 +2721,8 @@ export const SKILLS: Skill[] = [
     category: 'camp-setup',
     title: 'Breaking Camp',
     tagline: 'The order and checklist that leaves the site better than you found it.',
+    metaDescription:
+      'The order and checklist for breaking camp that leaves the site better than you found it. Start the night before, cold fire first, then count every stake.',
     difficulty: 'Beginner',
     useCases: [
       'Last morning of every trip',
@@ -2636,6 +2762,8 @@ export const SKILLS: Skill[] = [
     category: 'safety',
     title: 'Lightning Safety',
     tagline: 'The 30/30 rule, the lightning crouch, and what to do when you can\'t get off the mountain.',
+    metaDescription:
+      "The 30/30 rule, the lightning crouch, and what to do when you can't get off the mountain. Seek a building or hard-topped car; keep groups 100 feet apart.",
     difficulty: 'Beginner',
     useCases: [
       'Any camp or hike where afternoon thunderstorms are possible (most of them)',
@@ -2678,6 +2806,8 @@ export const SKILLS: Skill[] = [
     category: 'safety',
     title: 'Wildlife Encounters',
     tagline: 'Bears, mountain lions, coyotes, and snakes - what to actually do.',
+    metaDescription:
+      'Bears, mountain lions, coyotes, and snakes: what to actually do in an encounter. Brief your group before the trip, carry bear spray, and store food right.',
     difficulty: 'Beginner',
     useCases: [
       'Any trip in bear country (most of the US West and much of the South)',
@@ -2722,6 +2852,8 @@ export const SKILLS: Skill[] = [
     category: 'safety',
     title: 'Heat Exhaustion and Heatstroke',
     tagline: 'The difference between them is the difference between a rough afternoon and an emergency.',
+    metaDescription:
+      'How to tell heat exhaustion from heatstroke, the signs of each, and first steps. Heatstroke is a 911 emergency. Prevent both with water and electrolytes.',
     difficulty: 'Beginner',
     useCases: [
       'Summer trips with hard physical activity',
@@ -2772,6 +2904,8 @@ export const SKILLS: Skill[] = [
     category: 'fishing',
     title: 'Reading Water',
     tagline: 'Fish hold in predictable places - learn to spot them before you cast.',
+    metaDescription:
+      'Fish hold in predictable places. Learn to spot riffles, pools, eddies, seams, and structure from the bank with polarized sunglasses before you make a cast.',
     difficulty: 'Beginner',
     useCases: [
       'Stream or river fishing where fish position varies with current',
@@ -2810,6 +2944,8 @@ export const SKILLS: Skill[] = [
     category: 'fishing',
     title: 'Bait and Lure Selection',
     tagline: 'What to tie on the end of your line for common freshwater species.',
+    metaDescription:
+      'What to tie on for common freshwater species: worms under a bobber, spinners, soft plastics, and catfish baits, plus how water clarity guides lure color.',
     difficulty: 'Beginner',
     useCases: [
       'First-time anglers who were handed a rod without a plan',

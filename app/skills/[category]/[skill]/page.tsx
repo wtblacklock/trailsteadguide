@@ -5,7 +5,7 @@ import JsonLd from '@/components/seo/JsonLd'
 import { SKILLS } from '@/lib/skills/data'
 import { getCategoryBySlug, getCategoryById } from '@/lib/skills/categories'
 import { getSkillBySlugs } from '@/lib/skills/helpers'
-import { SITE_URL, articleGraph, howToGraph, pageMetadata } from '@/lib/seo'
+import { SITE_URL, articleGraph, howToGraph, pageMetadata, titleWithQualifier } from '@/lib/seo'
 
 interface PageProps {
   params: Promise<{ category: string; skill: string }>
@@ -30,8 +30,8 @@ export async function generateMetadata({ params }: PageProps) {
     })
   }
   return pageMetadata({
-    title: `${skill.title} - Camp Skills`,
-    description: skill.tagline,
+    title: titleWithQualifier(skill.title, ['Camp Skills']),
+    description: skill.metaDescription ?? skill.tagline,
     path: `/skills/${categorySlug}/${skill.slug}`,
     type: 'article',
   })

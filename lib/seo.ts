@@ -25,6 +25,25 @@ export const DEFAULT_OG_IMAGE = `${SITE_URL}/opengraph-image`
  * Sets the page title, description, canonical URL, OpenGraph tags, and
  * Twitter card. Pass `noIndex: true` for thank-you / result pages.
  */
+/** Appended to every page title by the `title.template` in app/layout.tsx. */
+export const TITLE_TEMPLATE_SUFFIX = ` | ${SITE_NAME}`
+/** Rendered `<title>` budget, suffix included. Longer titles get cut in the SERP. */
+export const MAX_RENDERED_TITLE_LENGTH = 60
+
+/**
+ * `${title} - ${qualifier}` using the first qualifier that keeps the
+ * rendered title within budget, else the bare title. Lets templated pages
+ * keep a "Free Printable"-style hook where it fits without pushing long
+ * names past the limit.
+ */
+export function titleWithQualifier(title: string, qualifiers: string[]): string {
+  for (const q of qualifiers) {
+    const candidate = `${title} - ${q}`
+    if (candidate.length + TITLE_TEMPLATE_SUFFIX.length <= MAX_RENDERED_TITLE_LENGTH) return candidate
+  }
+  return title
+}
+
 export function pageMetadata(input: {
   title: string
   description: string
