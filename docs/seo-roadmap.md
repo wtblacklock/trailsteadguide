@@ -103,7 +103,15 @@ partial).
 - **Effort:** M (write a build-time script that reads `git log -1
   --format=%cI app/guides/<slug>/page.tsx` and exports a slug→date map)
 - **Expected lift:** medium
-- **Status:** queued
+- **Status:** shipped (2026-10-19). Implemented as `scripts/generate-guide-dates.mjs`,
+  which reads git history once and writes a committed
+  `lib/guides/guide-dates.generated.ts` map (baked in at generation time,
+  not read live at build, since the production build environment isn't
+  guaranteed to have full git history for a live `git log` call).
+  `articleGraph()` in `lib/seo.ts` now pulls per-guide dates from that map
+  for any `/guides/*` slug that doesn't pass explicit dates. Re-run the
+  script after future guide edits to refresh the dates (this unblocks A6,
+  whose sitemap `lastmod` work can read the same generated map).
 
 #### A6. Per-page sitemap `lastmod` from git, not the FRESH/RECENT/STABLE
 constants
