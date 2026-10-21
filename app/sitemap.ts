@@ -138,8 +138,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/research/first-time-camping-regrets`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE_URL}/research/what-1000-campers-actually-pack`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.85 },
 
-    // Funnel landings (quiz + checklist index; /checklist/result is noindex)
-    { url: `${BASE_URL}/quiz`, lastModified: RECENT, changeFrequency: 'monthly', priority: 0.6 },
+    // Funnel landing. /quiz and /checklist/result are noindex, so they stay
+    // out of the sitemap (listing a noindex URL sends search engines mixed signals).
     { url: `${BASE_URL}/checklist`, lastModified: RECENT, changeFrequency: 'monthly', priority: 0.6 },
 
     // Glossary (reference page - beginner camping vocabulary)
