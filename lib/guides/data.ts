@@ -551,7 +551,18 @@ export const GUIDES: Guide[] = [
     title: 'How to Start a Campfire',
     description: 'Checking before you build, gathering materials, picking a structure, and lighting it - plus wet-weather backups.',
     eyebrow: 'How-to',
-    relatedGuides: ['campfire-recipes-for-kids', 'camping-during-a-burn-ban', 'how-to-set-up-a-tent'],
+    relatedGuides: ['campfire-recipes-for-kids', 'teaching-kids-to-whittle', 'how-to-set-up-a-tent'],
+  },
+  {
+    slug: 'teaching-kids-to-whittle',
+    category: 'basics',
+    title: 'Teaching Kids to Whittle at Camp',
+    description: 'The grip rules, the blood circle, and three safe first projects - from a sharpened stick to a real tent peg.',
+    eyebrow: 'Skills',
+    metaTitle: 'Teaching Kids to Whittle at Camp',
+    metaDescription:
+      'Teaching kids to whittle at camp: how to judge readiness, the knife to start with, the grip and safety rules, and three safe first carving projects in order.',
+    relatedGuides: ['how-to-start-a-campfire', 'campfire-recipes-for-kids', 'camping-first-aid-kit-for-families'],
   },
   {
     slug: 'camping-during-a-burn-ban',
