@@ -261,7 +261,7 @@ export default function Page() {
         <p>
           A battery-powered unit such as the{' '}
           <AmazonLink productId="kidde-portable-co-alarm" pageSlug="tent-heater-safety" /> costs
-          about $20, needs no wiring, and lives in the camping bin year-round. Put it at sleeping
+          about $25, needs no wiring, and lives in the camping bin year-round. Put it at sleeping
           height in the room where people sleep, test it when you arrive, and pull the batteries
           when the gear goes into off-season storage so they cannot leak, the same as with every
           other battery in the kit. See{' '}

@@ -280,7 +280,9 @@ export default function Page() {
           If your family already did a campground{' '}
           <Link href="/guides/halloween-camping-with-kids">Halloween weekend</Link> in October,
           Thanksgiving is the natural next trip: a similar cold night, fewer crowds outside the warm
-          states, and a meal that becomes the thing kids remember. If the campers in your family
+          states, and a meal that becomes the thing kids remember. After that, the longer{' '}
+          <Link href="/guides/winter-break-camping-with-kids">winter break camping trip</Link>{' '}
+          is the next step up. If the campers in your family
           are already on your holiday list, our{' '}
           <Link href="/guides/gifts-for-campers">gifts for campers</Link> guide has ideas at every
           price, and{' '}
