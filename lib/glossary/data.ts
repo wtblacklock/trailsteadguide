@@ -181,6 +181,13 @@ export const TERMS: Term[] = [
 
   // G
   {
+    term: 'Giardia',
+    definition:
+      'A microscopic parasite that lives in untreated lake and stream water and causes days of stomach cramps and diarrhea if swallowed. Clear, fast-moving water is not proof it is safe - filter, boil, or chemically treat it first.',
+    href: '/skills/safety/water-purification',
+    linkText: 'Water purification',
+  },
+  {
     term: 'Ground cloth',
     definition:
       'A generic tarp or sheet under your tent - same role as a footprint, but cut from any material. Tuck it inside the tent\'s perimeter or rain runs under you.',
@@ -281,6 +288,13 @@ export const TERMS: Term[] = [
     term: 'Permethrin',
     definition:
       'An insecticide used to treat clothing and gear, not skin, that disables ticks and mosquitoes on contact rather than just repelling them. A factory treatment lasts up to 70 washes; a DIY spray-on treatment lasts about 6.',
+  },
+  {
+    term: 'Potable',
+    definition:
+      'Water confirmed safe to drink without filtering or treating, usually from a tested municipal or well supply. A campground spigot marked "potable" can be trusted; an unmarked one should not be.',
+    href: '/skills/safety/water-purification',
+    linkText: 'Water purification',
   },
   {
     term: 'Primitive site',

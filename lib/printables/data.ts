@@ -449,6 +449,31 @@ export const PRINTABLES: Printable[] = [
     relatedGuideSlug: 'camping-with-kids-first-time',
     relatedProductIds: ['kidco-gopod'],
   },
+  {
+    slug: 'fishing-quick-reference-card',
+    category: 'planning',
+    title: 'Camp Fishing Quick Reference Card',
+    description:
+      'A free printable camp fishing reference card - the basic bobber rig, the improved clinch knot, bait picks by species, and the catch-and-release steps that keep fish healthy.',
+    tagline:
+      'One rig. One knot. Four species. Everything a first-time camp angler needs on one card, front and back.',
+    whatYouGet: [
+      'The basic rig: line, swivel, split shot, bobber, and hook, in order',
+      'The improved clinch knot - the one knot that attaches almost anything to the line',
+      'Hook, bait, and setup picks for panfish, stream trout, bass, and catfish',
+      'The catch-and-release steps that keep a fish healthy if you are letting it go',
+      'Letter / A4 sized, front & back, one-color print',
+    ],
+    useCases: [
+      'Rig a rod for a first-time angler before the lake or pond is even in sight',
+      'A pocket reference for which bait to tie on when nothing is biting',
+      'Teach a kid to release a fish without hurting it',
+    ],
+    formatNote: 'Single-sheet printable · front & back · Letter / A4 · Free with email signup',
+    datePublished: '2026-10-14',
+    relatedSkillPath: 'fishing/rod-setup-and-casting',
+    relatedProductIds: ['zebco-33-spincast-combo', 'tackle-box-lure-assortment', 'fishing-forceps-hemostat'],
+  },
 ]
 
 const PRINTABLE_BY_SLUG: Record<string, Printable> = Object.fromEntries(

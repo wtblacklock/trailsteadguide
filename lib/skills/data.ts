@@ -643,6 +643,7 @@ export const SKILLS: Skill[] = [
       url: 'https://www.youtube-nocookie.com/embed/G2OsYbHPTOE',
       title: 'Spincast Rod and Reel Basics - Vermont Fish and Wildlife Department',
     },
+    relatedPrintableSlug: 'fishing-quick-reference-card',
   },
   {
     slug: 'catch-and-release',
@@ -679,6 +680,7 @@ export const SKILLS: Skill[] = [
       url: 'https://www.youtube-nocookie.com/embed/wJ3zz-UCKCo',
       title: 'How to Handle Fish for Safe Catch and Release - Pennsylvania Fish and Boat Commission',
     },
+    relatedPrintableSlug: 'fishing-quick-reference-card',
   },
 
   // ── SHELTER SETUP ─────────────────────────────────────────────────────────
@@ -2098,6 +2100,7 @@ export const SKILLS: Skill[] = [
     relatedGear: [
       { name: 'Monofilament fishing line, 8 lb test', productId: 'monofilament-fishing-line-8lb' },
     ],
+    relatedPrintableSlug: 'fishing-quick-reference-card',
   },
 
   // ── KNOTS (new) ───────────────────────────────────────────────────────────
@@ -2999,5 +3002,6 @@ export const SKILLS: Skill[] = [
       url: 'https://www.youtube-nocookie.com/embed/2Is1nxPRtV0',
       title: 'Fishing 101: Bait and Lures - Texas Parks and Wildlife',
     },
+    relatedPrintableSlug: 'fishing-quick-reference-card',
   },
 ]
