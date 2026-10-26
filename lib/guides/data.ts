@@ -452,7 +452,15 @@ export const GUIDES: Guide[] = [
     title: 'How to Pack a Cooler for Camping',
     description: 'Pre-chilling, block vs. cubed ice, the two-cooler split, and the packing order that keeps food cold for days.',
     eyebrow: 'How-to',
-    relatedGuides: ['family-camping-gear-list', 'camping-meal-plan-family', 'easy-family-camping-meals'],
+    relatedGuides: ['how-to-wash-dishes-camping', 'camping-meal-plan-family', 'easy-family-camping-meals'],
+  },
+  {
+    slug: 'how-to-wash-dishes-camping',
+    category: 'basics',
+    title: 'How to Wash Dishes While Camping',
+    description: 'The two-basin setup, how much water to bring, where gray water goes, and what to do when fall campgrounds shut off the water.',
+    eyebrow: 'How-to',
+    relatedGuides: ['how-to-pack-a-cooler', 'when-do-campgrounds-close', 'cold-weather-camping-meals'],
   },
   {
     slug: 'how-to-break-camp',

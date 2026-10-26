@@ -674,6 +674,48 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     tags: ['rain-ready', 'cold-ready', 'budget'],
     slot: 'RAIN_GEAR',
   },
+  {
+    id: 'montnorth-collapsible-wash-basin',
+    name: 'MontNorth Collapsible Wash Basin, 9L',
+    description:
+      'A 2.4-gallon dish tub with carry handles and a drain plug that folds flat to about two inches. Buy two and you have a proper wash-and-rinse station on the picnic table, then empty them through a strainer instead of tipping greasy water on the ground.',
+    amazonAsin: 'B094NSTFV6',
+    affiliateUrl: 'https://www.amazon.com/dp/B094NSTFV6?tag=trailsteadgui-20',
+    imageUrl: 'https://m.media-amazon.com/images/I/61N8nPM9zQL._AC_SX679_.jpg',
+    category: 'convenience',
+    templateSlugs: [],
+    priceRange: '~$15',
+    tags: ['trash', 'family', 'budget'],
+    slot: 'TRASH',
+  },
+  {
+    id: 'campsuds-biodegradable-soap',
+    name: 'Sierra Dawn Campsuds Biodegradable Camp Soap, 4 oz',
+    description:
+      'Concentrated, low-suds camp soap that rinses off with less water than kitchen dish soap. A few drops per basin is enough for a family dinner, and the small bottle lasts a whole season. Biodegradable still means it goes out with the gray water, not into a lake or stream.',
+    amazonAsin: 'B07FXZ5V2R',
+    affiliateUrl: 'https://www.amazon.com/dp/B07FXZ5V2R?tag=trailsteadgui-20',
+    imageUrl: 'https://m.media-amazon.com/images/I/61d4szaW+YL._AC_SX679_.jpg',
+    category: 'essential',
+    templateSlugs: [],
+    priceRange: '~$14',
+    tags: ['trash', 'budget'],
+    slot: 'TRASH',
+  },
+  {
+    id: 'reliance-aqua-tainer-7gal-2pack',
+    name: 'Reliance Aqua-Tainer 7 Gallon Water Container, 2-Pack',
+    description:
+      'Two rigid 7-gallon jugs with a reversible spigot. Fill one with drinking water and one for dishes and hand washing, and a fall campground with the spigots already shut off stops being a problem. They stack on their sides on a picnic table so the spigot pours straight into a basin.',
+    amazonAsin: 'B07TSBNKM5',
+    affiliateUrl: 'https://www.amazon.com/dp/B07TSBNKM5?tag=trailsteadgui-20',
+    imageUrl: 'https://m.media-amazon.com/images/I/71RhqoU3BzL._AC_SX679_.jpg',
+    category: 'essential',
+    templateSlugs: [],
+    priceRange: '~$52',
+    tags: ['cookware', 'family', 'mid-range', 'cold-ready'],
+    slot: 'COOKWARE',
+  },
 
   // ------------------------------------------------------------------
   // Skills gear - referenced from lib/skills/data.ts `relatedGear`.
