@@ -1153,6 +1153,11 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'SAFETY', productId: 'esbit-fire-cubes' },
     { slot: 'SAFETY', productId: 'eurow-collapsible-bucket-10l' },
   ],
+  'teaching-kids-to-whittle': [
+    { slot: 'KID_GEAR', productId: 'opinel-no7-folding-knife' },
+    { slot: 'KID_GEAR', productId: 'pull-through-knife-sharpener' },
+    { slot: 'KID_GEAR', productId: 'mineral-oil-food-safe' },
+  ],
   'how-to-store-camping-gear': [
     { slot: 'STORAGE', productId: 'iris-weatherpro-44qt-bins' },
     { slot: 'STORAGE', productId: 'drytote-desiccant-packs' },

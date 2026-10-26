@@ -383,6 +383,13 @@ export const TERMS: Term[] = [
     linkText: 'How to start a fire',
   },
   {
+    term: "Totin' Chip",
+    definition:
+      "A Scouting safety card (Cub Scouts' Whittling Chip, then Scouts BSA's Totin' Chip) earned by learning knife, saw, and axe rules before being trusted to carry one on an outing - and taken away for breaking them. The same rules work for teaching any kid at camp, scouting or not.",
+    href: '/guides/teaching-kids-to-whittle',
+    linkText: 'Teaching kids to whittle',
+  },
+  {
     term: 'Two-burner stove',
     definition:
       'A propane-fueled car-camping stove with two side-by-side burners. The standard family-camping cook setup - coffee on one side, breakfast on the other.',
