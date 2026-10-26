@@ -105,10 +105,21 @@ export default function Page() {
         </ul>
         <p>
           Prices below are approximate and change often, especially in November and December.
-          Check the current price before you buy.
+          Check the current price before you buy. Shopping for a whole family, a kid, or someone
+          who has never camped? Start with{' '}
+          <Link href="/guides/best-camping-gifts-for-families">
+            the best camping gifts for families
+          </Link>
+          ,{' '}
+          <Link href="/guides/camping-gifts-for-kids">gifts for kids who love camping</Link>, or{' '}
+          <Link href="/guides/gifts-for-new-campers">gifts for new campers</Link>.
         </p>
 
         <h2>Stocking stuffers under $25</h2>
+        <p>
+          A longer list, sorted by who it is for, is in{' '}
+          <Link href="/guides/camping-stocking-stuffers">camping stocking stuffers under $25</Link>.
+        </p>
         <ul>
           <li>
             <strong>

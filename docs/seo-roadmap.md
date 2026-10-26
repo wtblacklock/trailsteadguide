@@ -63,7 +63,9 @@ partial).
   and `/quiz` recaptures lost crawl + lost humans.
 - **Effort:** S
 - **Expected lift:** medium
-- **Status:** queued
+- **Status:** shipped (2026-10-12) - found already implemented (`app/not-found.tsx`,
+  `app/error.tsx`, shared `OffTrailLayout` with links back to `/quiz`,
+  `/guides`, and home); this status line was stale.
 
 #### A2. Audit the `pageMetadata()` canonical on query-param pages
 - **Why:** Today `pageMetadata({ path: '/plans/first-night-camp' })` correctly
@@ -92,7 +94,12 @@ partial).
   rule (`jsx-a11y/alt-text`) so future regressions break the build.
 - **Effort:** S
 - **Expected lift:** low (a11y + image-search side benefit)
-- **Status:** queued
+- **Status:** shipped (2026-10-12) - audit found 8 `alt=""` instances (not 2;
+  the count above was stale), all on product thumbnails in gear
+  cards/shelves where the product name is always rendered as adjacent
+  text, confirming they're intentionally decorative. Escalated
+  `jsx-a11y/alt-text` from warn to error in `eslint.config.mjs` so a future
+  `<img>`/`<Image>` with no `alt` attribute fails `npm run build`.
 
 #### A5. Per-guide `dateModified` instead of a single FRESH date
 - **Why:** Every guide currently shows `datePublished: '2026-01-01'` and

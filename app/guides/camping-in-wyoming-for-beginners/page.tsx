@@ -51,7 +51,7 @@ export default function Page() {
           },
           {
             q: 'How do I get a campsite in Yellowstone or Grand Teton?',
-            a: 'Book early, and know that Yellowstone uses two systems. Several Yellowstone campgrounds are operated by the park concessioner, Yellowstone National Park Lodges, and booked through them, while the others are on recreation.gov. Grand Teton campgrounds, including Gros Ventre, Colter Bay, Signal Mountain, and Jenny Lake, are on recreation.gov. Summer sites in both parks are booked out months ahead, so treat the day your window opens as a scheduled task. If you miss it, national forest campgrounds in the Bridger-Teton and Shoshone just outside the park boundaries are the realistic backup.',
+            a: 'Book early, and note that this changed for the 2027 season. Bridge Bay, Canyon, Grant Village, Madison, and Fishing Bridge RV used to be booked through the park concessioner, Yellowstone National Park Lodges; for the 2027 season their reservations move to recreation.gov, joining the campgrounds already there, so every reservable Yellowstone campground sits on one system. The concessioner still runs those five on the ground. The move also shortens their booking window to roughly six months out, matching the rest of recreation.gov, so a summer 2027 trip opens months later than the old concessioner window did. Grand Teton campgrounds, including Gros Ventre, Colter Bay, Signal Mountain, and Jenny Lake, are on recreation.gov. Summer sites in both parks are booked out months ahead, so treat the day your window opens as a scheduled task. If you miss it, national forest campgrounds in the Bridger-Teton and Shoshone just outside the park boundaries are the realistic backup.',
           },
           {
             q: 'Do I need bear spray in Wyoming?',
@@ -91,7 +91,7 @@ export default function Page() {
     >
       <QuickAnswer
         tldr="Season is late June to mid-September. Book Yellowstone and Teton months out. Bear spray on your hip, food in the bear box, and stake everything down."
-        summary="Wyoming has a short, spectacular season: late June through mid-September at elevation, with snow possible on both ends. Most of the state sits between 5,000 and 8,000 feet, so plan for altitude, intense sun, and nights near freezing even in July. Yellowstone campgrounds are split between the park concessioner and recreation.gov, Grand Teton is on recreation.gov, and both are booked months ahead. This is grizzly country: bear spray on your body, and all food, trash, and toiletries in the bear box or a hard-sided vehicle. For a genuine first trip, skip the national parks and start at a Wyoming state park like Curt Gowdy, Glendo, or Sinks Canyon, which are lower, warmer, and much easier to book. Note that Wyoming state park camping now requires a reservation at reserve.wyoming.gov."
+        summary="Wyoming has a short, spectacular season: late June through mid-September at elevation, with snow possible on both ends. Most of the state sits between 5,000 and 8,000 feet, so plan for altitude, intense sun, and nights near freezing even in July. For the 2027 season every reservable Yellowstone campground books on recreation.gov, including the five the concessioner used to take directly, and Grand Teton is on recreation.gov too; both parks are booked months ahead. This is grizzly country: bear spray on your body, and all food, trash, and toiletries in the bear box or a hard-sided vehicle. For a genuine first trip, skip the national parks and start at a Wyoming state park like Curt Gowdy, Glendo, or Sinks Canyon, which are lower, warmer, and much easier to book. Note that Wyoming state park camping now requires a reservation at reserve.wyoming.gov."
       />
       <h2>What camping in Wyoming is actually like</h2>
       <ul>
@@ -177,7 +177,7 @@ export default function Page() {
 
       <h3>Yellowstone and Grand Teton</h3>
       <p>
-        <strong>Yellowstone</strong> splits its campgrounds between two booking channels: several are run by the park concessioner, Yellowstone National Park Lodges, and the rest are on <a href="https://www.recreation.gov/" rel="noopener" target="_blank">recreation.gov</a>. Check <a href="https://www.nps.gov/yell/" rel="noopener" target="_blank">nps.gov/yell</a> for which campground uses which system, because guessing wastes the booking morning. <strong>Grand Teton</strong> campgrounds, including Gros Ventre, Colter Bay, Signal Mountain, and Jenny Lake, are on recreation.gov; details at <a href="https://www.nps.gov/grte/" rel="noopener" target="_blank">nps.gov/grte</a>. Both parks book out months ahead for summer, and both sit high enough that a July night can drop near freezing.
+        <strong>Yellowstone</strong> split its campgrounds between two booking channels for years, and that ends with the 2027 season. Bridge Bay, Canyon, Grant Village, Madison, and Fishing Bridge RV were booked through the park concessioner, Yellowstone National Park Lodges; their reservations move to <a href="https://www.recreation.gov/" rel="noopener" target="_blank">recreation.gov</a>, where the park&apos;s other campgrounds already were, so there is one system to watch instead of two. The concessioner still operates those five campgrounds. The catch is the window: those five open roughly six months out like the rest of recreation.gov, rather than the much longer lead time the concessioner allowed, so a summer trip goes on sale later than long-time visitors will expect. Check <a href="https://www.nps.gov/yell/" rel="noopener" target="_blank">nps.gov/yell</a> for each campground&apos;s current dates before you set the alarm. <strong>Grand Teton</strong> campgrounds, including Gros Ventre, Colter Bay, Signal Mountain, and Jenny Lake, are on recreation.gov; details at <a href="https://www.nps.gov/grte/" rel="noopener" target="_blank">nps.gov/grte</a>. Both parks book out months ahead for summer, and both sit high enough that a July night can drop near freezing.
       </p>
 
       <h3>National forests and BLM land</h3>
@@ -294,7 +294,7 @@ export default function Page() {
       </p>
       <h3>How do I get a campsite in Yellowstone or Grand Teton?</h3>
       <p>
-        Book months ahead. Yellowstone splits between the park concessioner and recreation.gov depending on the campground; Grand Teton is on recreation.gov. National forest campgrounds just outside the boundaries are the realistic backup.
+        Book months ahead. For the 2027 season every reservable Yellowstone campground is on recreation.gov, including Bridge Bay, Canyon, Grant Village, Madison, and Fishing Bridge RV, which the concessioner used to book directly; those five open about six months out instead of much further ahead. Grand Teton is on recreation.gov. National forest campgrounds just outside the boundaries are the realistic backup.
       </p>
       <h3>Do I need bear spray?</h3>
       <p>

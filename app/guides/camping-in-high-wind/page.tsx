@@ -165,6 +165,9 @@ export default function Page() {
         <p>
           A tent is a wing. Which way it faces decides whether the wind flows over it or gets under
           it, and the difference between a noisy night and a broken pole is usually orientation.
+          If you camp at windy, exposed sites often, our{' '}
+          <Link href="/compare/3-season-vs-4-season-tent">3-season vs. 4-season tent comparison</Link>{' '}
+          covers when a sturdier tent is worth buying.
         </p>
         <ol>
           <li>
