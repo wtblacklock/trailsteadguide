@@ -92,7 +92,16 @@ partial).
   rule (`jsx-a11y/alt-text`) so future regressions break the build.
 - **Effort:** S
 - **Expected lift:** low (a11y + image-search side benefit)
-- **Status:** queued
+- **Status:** shipped (2026-10-26). `eslint-config-next` already enabled
+  `jsx-a11y/alt-text` but only at `warn`, which doesn't fail `npm run lint`
+  in CI. Audited all 9 current `<img>`/`<Image>` elements with `alt=""`
+  (product thumbnails in `GuideGearShelf`, `GuideQuickPicks`, `AffiliateBlock`,
+  `GearSystemsBlock`, `RelatedGearBlock`, `GearHubClient`,
+  `PrintableGearCard`, `TripPackPreview`, and the generated OG image) -
+  every one sits next to the product name as visible adjacent text, so an
+  empty alt is the correct decorative/non-redundant pattern, not a gap.
+  Escalated the rule to `error` in `eslint.config.mjs` so a future image
+  added without an `alt` prop fails CI instead of only warning.
 
 #### A5. Per-guide `dateModified` instead of a single FRESH date
 - **Why:** Every guide currently shows `datePublished: '2026-01-01'` and

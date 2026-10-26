@@ -12,6 +12,21 @@ const compat = new FlatCompat({
 const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
   {
+    rules: {
+      // next/core-web-vitals ships this as "warn", which doesn't fail `npm run lint`
+      // in CI. Every current <img>/<Image> without alt text is intentionally
+      // decorative (product thumbnails whose name is already visible as adjacent
+      // text), so this escalation only guards against future regressions.
+      "jsx-a11y/alt-text": [
+        "error",
+        {
+          elements: ["img"],
+          img: ["Image"],
+        },
+      ],
+    },
+  },
+  {
     ignores: [
       "node_modules/**",
       ".next/**",
