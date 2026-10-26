@@ -194,6 +194,13 @@ export default function Page() {
             the weather that makes you want a heater. Your sleep system has to work without it.
           </li>
         </ul>
+        <p>
+          <Link href="/guides/tent-camping-at-an-electric-site">
+            Tent camping at an electric site
+          </Link>{' '}
+          covers the rest of a powered night: what the pedestal outlets are, the cord and adapter
+          to bring, and the low-wattage things that are worth plugging in instead.
+        </p>
 
         <h2>The setup that actually keeps a family warm</h2>
         <p>
