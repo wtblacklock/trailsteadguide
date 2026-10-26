@@ -12,7 +12,7 @@ const SLUG = '/guides/camping-during-hunting-season'
 const TITLE = 'Camping During Hunting Season With Kids'
 const META_TITLE = 'Camping During Hunting Season'
 const DESCRIPTION =
-  'Camping during hunting season with kids: how to check which seasons are open, which public land allows hunting, and the blaze orange and timing rules that keep a family visible.'
+  'Camping during hunting season with kids: check which seasons are open, which public land allows hunting, and the blaze orange rules that keep you visible.'
 const HERO_IMAGE =
   'https://images.unsplash.com/photo-1637221870386-fb236fd12ceb?w=1400&auto=format&fit=crop&q=80'
 

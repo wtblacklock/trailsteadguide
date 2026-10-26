@@ -13,9 +13,9 @@ import AmazonLink from '@/components/affiliate/AmazonLink'
 const SLUG = '/guides/camping-in-north-carolina-for-beginners'
 const TITLE = 'Camping in North Carolina for Beginners'
 // SEO-optimized <title>; H1/headline keep TITLE.
-const META_TITLE = 'North Carolina Camping for Beginners (Fall)'
+const META_TITLE = 'North Carolina Camping for Beginners'
 const DESCRIPTION =
-  'Camping in North Carolina for beginners: Blue Ridge state parks, fall color timing, cold mountain nights, bears, the Outer Banks, and the setup that handles all of it.'
+  'Camping in North Carolina for beginners: Blue Ridge state parks, fall color, cold mountain nights, bears, the Outer Banks, and the setup that handles it.'
 const HERO_IMAGE = 'https://images.unsplash.com/photo-1634662626305-44f7f243eb09?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({

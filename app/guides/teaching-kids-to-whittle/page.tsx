@@ -14,7 +14,7 @@ const SLUG = '/guides/teaching-kids-to-whittle'
 const TITLE = 'Teaching Kids to Whittle at Camp'
 const META_TITLE = 'Teaching Kids to Whittle at Camp'
 const DESCRIPTION =
-  'Teaching kids to whittle at camp: how to judge readiness, the knife to start with, the grip and safety rules, and three safe first carving projects in order.'
+  'Teaching kids to whittle at camp: how to judge readiness, the knife to start with, the grip and safety rules, and three safe first carving projects.'
 const HERO_IMAGE = 'https://images.unsplash.com/photo-1756719097664-82e33a1b1ac2?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({

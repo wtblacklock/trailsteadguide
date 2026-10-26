@@ -12,9 +12,9 @@ import AmazonLink from '@/components/affiliate/AmazonLink'
 const SLUG = '/guides/tent-camping-at-an-electric-site'
 const TITLE = 'Tent Camping at an Electric Site'
 // SEO-optimized <title>; H1/headline keep TITLE.
-const META_TITLE = 'Tent Camping at an Electric Site: A Family Guide'
+const META_TITLE = 'Tent Camping at an Electric Site'
 const DESCRIPTION =
-  'Tent camping at an electric site: what the pedestal outlets are, the cord and adapter to bring, what to plug in on a cold night, and how to run power safely.'
+  'Tent camping at an electric site: what pedestal outlets are, the cord and adapter to bring, what to plug in on a cold night, and how to run power safely.'
 const HERO_IMAGE =
   'https://images.unsplash.com/photo-1768224703190-6f3f0410c9ec?w=1400&auto=format&fit=crop&q=80'
 

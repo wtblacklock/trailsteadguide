@@ -11,9 +11,9 @@ import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
 
 const SLUG = '/guides/thanksgiving-camping-with-kids'
 const TITLE = 'Thanksgiving Camping With Kids'
-const META_TITLE = 'Thanksgiving Camping With Kids: Plan & Menu'
+const META_TITLE = 'Thanksgiving Camping With Kids: Menu'
 const DESCRIPTION =
-  'Thanksgiving camping with kids: where campgrounds are still open in late November, a turkey plan that works over coals, food safety in a cooler, and staying warm.'
+  'Thanksgiving camping with kids: which campgrounds are still open in late November, a turkey plan that works over coals, and food safety in a cooler.'
 const HERO_IMAGE =
   'https://images.unsplash.com/photo-1783335543126-9afdfff4d4ca?w=1400&auto=format&fit=crop&q=80'
 

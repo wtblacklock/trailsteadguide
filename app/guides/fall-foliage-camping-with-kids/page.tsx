@@ -10,9 +10,9 @@ import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
 
 const SLUG = '/guides/fall-foliage-camping-with-kids'
 const TITLE = 'Fall Foliage Camping With Kids'
-const META_TITLE = 'Fall Foliage Camping With Kids (Peak Timing)'
+const META_TITLE = 'Fall Foliage Camping With Kids: Timing'
 const DESCRIPTION =
-  'Fall foliage camping with kids: when peak color actually lands by region, why elevation beats the calendar, how to book a leaf-peeping weekend, and what to do at camp when the leaves are the whole point.'
+  'Fall foliage camping with kids: when peak color lands by region, why elevation beats the calendar, booking a leaf-peeping weekend, and what to do at camp.'
 const HERO_IMAGE =
   'https://images.unsplash.com/photo-1480779735619-f73b30fdc062?w=1400&auto=format&fit=crop&q=80'
 

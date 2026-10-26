@@ -14,7 +14,7 @@ const SLUG = '/guides/how-to-wash-dishes-camping'
 const TITLE = 'How to Wash Dishes While Camping'
 const META_TITLE = 'How to Wash Dishes While Camping'
 const DESCRIPTION =
-  'How to wash dishes while camping: the two-basin setup, how much water to bring, where gray water goes, and what changes when fall campgrounds shut off the water.'
+  'How to wash dishes while camping: the two-basin setup, how much water to bring, where gray water goes, and what to do when fall campgrounds shut off water.'
 const HERO_IMAGE =
   'https://images.unsplash.com/photo-1630545097402-e4e79fc9b9a5?w=1400&auto=format&fit=crop&q=80'
 

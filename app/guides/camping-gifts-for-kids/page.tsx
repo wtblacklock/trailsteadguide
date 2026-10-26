@@ -14,7 +14,7 @@ const SLUG = '/guides/camping-gifts-for-kids'
 const TITLE = 'Gifts for Kids Who Love Camping'
 const META_TITLE = 'Camping Gifts for Kids: 2026 Gift Guide'
 const DESCRIPTION =
-  'Camping gifts for kids, sorted by age: their own headlamp, roasting sticks, nature guides, art kits, and a sleeping bag that fits. Gear they use every trip.'
+  'Camping gifts for kids by age: their own headlamp, roasting sticks, nature guides, art kits, and a sleeping bag that fits. Gear they use every trip.'
 const HERO_IMAGE =
   'https://images.unsplash.com/photo-1756719097664-82e33a1b1ac2?w=1400&auto=format&fit=crop&q=80'
 const DATE_PUBLISHED = '2026-10-26'

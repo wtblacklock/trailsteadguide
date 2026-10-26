@@ -292,9 +292,9 @@ export const GUIDES: Guide[] = [
     shortLabel: 'North Carolina',
     description: 'Blue Ridge fall color, cold mountain nights, bears in two regions, and the windy Outer Banks.',
     eyebrow: 'North Carolina',
-    metaTitle: 'North Carolina Camping for Beginners (Fall)',
+    metaTitle: 'North Carolina Camping for Beginners',
     metaDescription:
-      'Camping in North Carolina for beginners: Blue Ridge state parks, fall color timing, cold mountain nights, bears, the Outer Banks, and the setup that handles it.',
+      'Camping in North Carolina for beginners: Blue Ridge state parks, fall color, cold mountain nights, bears, the Outer Banks, and the setup that handles it.',
     relatedGuides: ['camping-in-the-appalachians-for-beginners', 'how-to-keep-kids-warm-camping', 'camping-in-bear-country-with-kids'],
   },
   {
@@ -366,7 +366,7 @@ export const GUIDES: Guide[] = [
     eyebrow: 'Ozarks',
     metaTitle: 'Ozarks Camping for Beginners (Fall)',
     metaDescription:
-      'Camping in the Ozarks for beginners: late fall color, the new Buffalo National River reservation rules, ticks and chiggers, gravel-bar flood risk, and easy state parks.',
+      'Camping in the Ozarks for beginners: fall color, new Buffalo National River reservation rules, ticks and chiggers, flood risk, and easy state parks.',
     relatedGuides: ['fall-camping-for-beginners', 'camping-in-the-appalachians-for-beginners', 'best-state-parks-for-families'],
   },
   // --- Gap content: family-focused cluster ---
@@ -569,7 +569,7 @@ export const GUIDES: Guide[] = [
     eyebrow: 'Skills',
     metaTitle: 'Teaching Kids to Whittle at Camp',
     metaDescription:
-      'Teaching kids to whittle at camp: how to judge readiness, the knife to start with, the grip and safety rules, and three safe first carving projects in order.',
+      'Teaching kids to whittle at camp: how to judge readiness, the knife to start with, the grip and safety rules, and three safe first carving projects.',
     relatedGuides: ['how-to-start-a-campfire', 'campfire-recipes-for-kids', 'camping-first-aid-kit-for-families'],
   },
   {
@@ -642,9 +642,9 @@ export const GUIDES: Guide[] = [
     title: 'Fall Foliage Camping With Kids',
     description: 'When peak color actually lands by region, why elevation beats the calendar, and how to book the hardest weekend of the fall.',
     eyebrow: 'Fall trips',
-    metaTitle: 'Fall Foliage Camping With Kids (Peak Timing)',
+    metaTitle: 'Fall Foliage Camping With Kids: Timing',
     metaDescription:
-      'Fall foliage camping with kids: when peak color actually lands by region, why elevation beats the calendar, how to book a leaf-peeping weekend, and what to do at camp.',
+      'Fall foliage camping with kids: when peak color lands by region, why elevation beats the calendar, booking a leaf-peeping weekend, and what to do at camp.',
     relatedGuides: ['fall-camping-for-beginners', 'camping-in-the-appalachians-for-beginners', 'recreation-gov-reservation-strategy'],
   },
   {
@@ -689,7 +689,7 @@ export const GUIDES: Guide[] = [
     eyebrow: 'Fall safety',
     metaTitle: 'Camping During Hunting Season',
     metaDescription:
-      'Camping during hunting season with kids: which public land allows hunting, how to check season dates, and the blaze orange and timing rules for families.',
+      'Camping during hunting season with kids: check which seasons are open, which public land allows hunting, and the blaze orange rules that keep you visible.',
     relatedGuides: ['fall-camping-for-beginners', 'dispersed-camping-on-blm-and-national-forest-land', 'camping-after-dark-with-kids'],
   },
   {
@@ -720,9 +720,9 @@ export const GUIDES: Guide[] = [
     title: 'Thanksgiving Camping With Kids',
     description: 'Where campgrounds are still open in late November, a turkey that fits a Dutch oven, cooler food safety, and a long cold evening.',
     eyebrow: 'Holiday weekend',
-    metaTitle: 'Thanksgiving Camping With Kids: Plan & Menu',
+    metaTitle: 'Thanksgiving Camping With Kids: Menu',
     metaDescription:
-      'Thanksgiving camping with kids: where campgrounds are still open in late November, a turkey plan that works over coals, food safety in a cooler, and staying warm.',
+      'Thanksgiving camping with kids: which campgrounds are still open in late November, a turkey plan that works over coals, and food safety in a cooler.',
     relatedGuides: ['halloween-camping-with-kids', 'how-to-keep-kids-warm-camping', 'easy-family-camping-meals'],
   },
   {
@@ -770,7 +770,7 @@ export const GUIDES: Guide[] = [
     eyebrow: 'Gift guide',
     metaTitle: 'Camping Gifts for Kids: 2026 Gift Guide',
     metaDescription:
-      'Camping gifts for kids, sorted by age: their own headlamp, roasting sticks, nature guides, art kits, and a sleeping bag that fits. Gear they use every trip.',
+      'Camping gifts for kids by age: their own headlamp, roasting sticks, nature guides, art kits, and a sleeping bag that fits. Gear they use every trip.',
     relatedGuides: ['best-camping-gifts-for-families', 'camping-stocking-stuffers', 'best-camping-sleeping-bag-for-kids'],
   },
   {
@@ -817,7 +817,7 @@ export const GUIDES: Guide[] = [
     eyebrow: 'Safety',
     metaTitle: 'Family Camping First Aid Kit Checklist',
     metaDescription:
-      'What goes in a family camping first aid kit: the base kit, kid-specific add-ons, fall extras, how to treat common camp injuries, and when to drive to urgent care.',
+      'What goes in a family camping first aid kit: the base kit, kid-specific add-ons, fall extras, treating common camp injuries, and when to seek urgent care.',
     relatedGuides: ['family-camping-gear-list', 'first-time-camping-mistakes', 'camping-with-kids-first-time'],
   },
   {
@@ -826,7 +826,7 @@ export const GUIDES: Guide[] = [
     title: 'Sleeping Pad R-Value Explained',
     description: 'What the number measures, what R-value you need by season, why pads stack, and the air mattress trap.',
     eyebrow: 'Gear guide',
-    metaTitle: 'Sleeping Pad R-Value Explained: What Families Need',
+    metaTitle: 'Sleeping Pad R-Value Explained',
     metaDescription:
       'Sleeping pad R-value explained for family campers: what the number measures, what R-value you need by season, why pads stack, and the air mattress trap.',
     relatedGuides: ['how-to-keep-kids-warm-camping', 'best-camping-sleeping-bag-for-kids', 'fall-camping-for-beginners'],
@@ -837,9 +837,9 @@ export const GUIDES: Guide[] = [
     title: 'Camp Stove Fuel in Cold Weather',
     description: 'Why butane sputters near freezing, how cold changes propane, and the habits that keep breakfast on schedule on a frosty morning.',
     eyebrow: 'How-to',
-    metaTitle: 'Camp Stove Fuel in Cold Weather: Propane vs Butane',
+    metaTitle: 'Camp Stove Fuel in Cold Weather',
     metaDescription:
-      'Why butane stoves sputter near freezing, how cold propane still works, and the simple tricks that keep a family camp stove running on a frosty fall morning.',
+      'Why butane stoves sputter near freezing, how cold propane still works, and the tricks that keep a family camp stove running on a frosty fall morning.',
     relatedGuides: ['fall-camping-for-beginners', 'how-to-keep-kids-warm-camping', 'winter-camping-for-beginners'],
   },
   {
@@ -848,7 +848,7 @@ export const GUIDES: Guide[] = [
     title: 'Camping With a Baby',
     description: 'Safe sleep in a tent, dressing a baby for cool nights, feeding and bottles at camp, and the short trip that makes a first outing work.',
     eyebrow: 'With kids',
-    metaTitle: 'Camping With a Baby - A Practical First-Trip Guide',
+    metaTitle: 'Camping With a Baby: First-Trip Guide',
     metaDescription:
       'Camping with a baby: safe sleep in a tent, dressing an infant for cool fall nights, feeding and bottles at camp, and how to shape a short first trip.',
     relatedGuides: ['camping-with-toddlers', 'how-to-keep-kids-warm-camping', 'fall-camping-for-beginners'],
@@ -861,7 +861,7 @@ export const GUIDES: Guide[] = [
     eyebrow: 'Night sky',
     metaTitle: 'Stargazing Camping With Kids: Dark Skies',
     metaDescription:
-      'Stargazing camping with kids: how to pick a dark-sky campsite and a moonless weekend, the fall 2026 meteor showers worth staying up for, and how to keep kids warm and looking up.',
+      'Stargazing camping with kids: picking a dark-sky campsite and a moonless weekend, the fall 2026 meteor showers worth staying up for, and how to stay warm.',
     relatedGuides: ['camping-after-dark-with-kids', 'how-to-keep-kids-warm-camping', 'fall-camping-for-beginners'],
   },
   {
@@ -872,7 +872,7 @@ export const GUIDES: Guide[] = [
     eyebrow: 'Wind',
     metaTitle: 'Camping in High Wind With Kids',
     metaDescription:
-      'Camping in high wind with kids: what sustained and gust numbers mean, how to site and stake a family tent, what turns into a projectile, and when to leave.',
+      'Camping in high wind with kids: what the gust numbers mean, how to site and stake a family tent so it stays put, and the wind speed where you pack up.',
     relatedGuides: ['camping-when-the-weather-turns', 'how-to-set-up-a-tent', 'fall-camping-for-beginners'],
   },
   {
@@ -892,9 +892,9 @@ export const GUIDES: Guide[] = [
     title: 'Tent Camping at an Electric Site',
     description: 'What is on the pedestal, the cord and adapter to bring, what is worth plugging in, and the sleep system that still works when the power drops.',
     eyebrow: 'Cold nights',
-    metaTitle: 'Tent Camping at an Electric Site: A Family Guide',
+    metaTitle: 'Tent Camping at an Electric Site',
     metaDescription:
-      'Tent camping at an electric site: what the pedestal outlets are, the cord and adapter to bring, what to plug in on a cold night, and how to run power safely.',
+      'Tent camping at an electric site: what pedestal outlets are, the cord and adapter to bring, what to plug in on a cold night, and how to run power safely.',
     relatedGuides: ['tent-heater-safety', 'how-to-keep-kids-warm-camping', 'camping-in-40-degree-weather'],
   },
 ]

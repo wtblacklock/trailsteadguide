@@ -14,7 +14,7 @@ const TITLE = 'Camping During a Burn Ban'
 // SEO-optimized <title>; H1/headline keep TITLE.
 const META_TITLE = 'Camping During a Burn Ban: A Family Guide'
 const DESCRIPTION =
-  'Camping during a burn ban with kids: what Stage 1 and Stage 2 fire restrictions allow, whether propane fire pits are legal, and how to make a no-campfire night fun.'
+  'Camping during a burn ban with kids: what Stage 1 and 2 restrictions allow, whether propane fire pits are legal, and how to make a no-campfire night fun.'
 const HERO_IMAGE =
   'https://images.unsplash.com/photo-1513781419235-2988ecacab83?w=1400&auto=format&fit=crop&q=80'
 

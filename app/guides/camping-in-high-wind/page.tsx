@@ -12,7 +12,7 @@ const SLUG = '/guides/camping-in-high-wind'
 const TITLE = 'Camping in High Wind With Kids'
 const META_TITLE = 'Camping in High Wind With Kids'
 const DESCRIPTION =
-  'Camping in high wind with kids: what the sustained and gust numbers mean, how to site and stake a family tent so it stays put, what turns into a projectile, and the wind speed where you pack up.'
+  'Camping in high wind with kids: what the gust numbers mean, how to site and stake a family tent so it stays put, and the wind speed where you pack up.'
 const HERO_IMAGE =
   'https://images.unsplash.com/photo-1605132471675-6ab093e8b35e?w=1400&auto=format&fit=crop&q=80'
 

@@ -9,7 +9,7 @@ import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
 const SLUG = '/compare/3-season-vs-4-season-tent'
 const TITLE = '3-Season vs. 4-Season Tent for Families'
 const DESCRIPTION =
-  '3-season vs. 4-season tent compared for family camping: wind, snow load, ventilation, condensation, weight, and price. Whether your summer tent can handle fall and winter.'
+  '3-season vs. 4-season tents for families: wind, snow load, ventilation, condensation, weight, and price. Can your summer tent handle fall and winter?'
 
 export const metadata = pageMetadata({
   title: TITLE,
