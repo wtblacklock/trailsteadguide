@@ -54,6 +54,11 @@ export const TERMS: Term[] = [
       'A 6-8 inch hole dug at least 200 feet from water for human waste in the backcountry. Pack out toilet paper. Part of Leave No Trace.',
   },
   {
+    term: 'Chiggers',
+    definition:
+      'Tiny mite larvae that live in tall grass and leaf litter and leave intensely itchy welts, often at the sock line or waistband. They do not burrow into skin or drink blood - the itch comes from a feeding tube the bite leaves behind, and it can last up to two weeks.',
+  },
+  {
     term: 'Clove hitch',
     definition:
       'A fast hitch used to tie a rope to a pole, post, or tree. Great for hanging lanterns or stringing a clothesline; not for heavy loads.',
@@ -81,6 +86,11 @@ export const TERMS: Term[] = [
     term: 'Declination',
     definition:
       'The angle between true north and magnetic north at your location. Adjust your compass for it before plotting bearings on a map.',
+  },
+  {
+    term: 'DEET',
+    definition:
+      'The most common active ingredient in insect repellent, effective against mosquitoes and ticks. The AAP recommends concentrations of 30% or less for children and advises against any skin repellent, DEET included, on infants under 2 months - use protective clothing and mosquito netting instead.',
   },
   {
     term: 'Dehydrated meal',
@@ -275,6 +285,11 @@ export const TERMS: Term[] = [
       'A lightweight nylon kernmantle rope (550 lb test) originally used for parachute suspension lines. The general-purpose camp rope - every kit should have 25-50 feet.',
   },
   {
+    term: 'Permethrin',
+    definition:
+      'An insecticide used to treat clothing and gear, not skin, that disables ticks and mosquitoes on contact rather than just repelling them. A factory treatment lasts up to 70 washes; a DIY spray-on treatment lasts about 6.',
+  },
+  {
     term: 'Potable',
     definition:
       'Water confirmed safe to drink without filtering or treating, usually from a tested municipal or well supply. A campground spigot marked "potable" can be trusted; an unmarked one should not be.',
@@ -380,6 +395,13 @@ export const TERMS: Term[] = [
       'Highly flammable, fluffy material that catches a spark - dry grass, birch bark, dryer lint, fatwood shavings. Distinct from kindling, which is one step bigger.',
     href: '/skills/fire/starting-a-fire',
     linkText: 'How to start a fire',
+  },
+  {
+    term: "Totin' Chip",
+    definition:
+      "A Scouting safety card (Cub Scouts' Whittling Chip, then Scouts BSA's Totin' Chip) earned by learning knife, saw, and axe rules before being trusted to carry one on an outing - and taken away for breaking them. The same rules work for teaching any kid at camp, scouting or not.",
+    href: '/guides/teaching-kids-to-whittle',
+    linkText: 'Teaching kids to whittle',
   },
   {
     term: 'Two-burner stove',

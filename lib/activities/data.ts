@@ -5,6 +5,8 @@ export const ACTIVITIES: Activity[] = [
     slug: 'two-truths-and-a-trail',
     title: 'Two Truths and a Trail',
     tagline: 'A camp-flavored icebreaker that warms up a new group fast.',
+    metaDescription:
+      'A camp-flavored icebreaker that warms up a new group fast. No materials, 5-10 minutes, all ages, with a camp edition and an easier kid mode.',
     category: 'icebreaker',
     ageRange: 'all-ages',
     groupSize: '5-10',
@@ -32,6 +34,8 @@ export const ACTIVITIES: Activity[] = [
     slug: 'campfire-story-chain',
     title: 'Campfire Story Chain',
     tagline: 'A collaborative story built one sentence at a time.',
+    metaDescription:
+      'Build a story around the fire one sentence at a time. Works for all ages and 5-10 people in 15-30 minutes. Try the word-at-a-time version for laughs.',
     category: 'campfire',
     ageRange: 'all-ages',
     groupSize: '5-10',
@@ -63,6 +67,8 @@ export const ACTIVITIES: Activity[] = [
     slug: 'flashlight-tag',
     title: 'Flashlight Tag',
     tagline: 'Hide-and-seek after dark - the camp classic.',
+    metaDescription:
+      'Hide-and-seek after dark, the camp classic. A high-energy night game for ages 9-12 and 5-10 players: one flashlight each and a clear boundary to play in.',
     category: 'night',
     ageRange: '9-12',
     groupSize: '5-10',
@@ -98,6 +104,8 @@ export const ACTIVITIES: Activity[] = [
     slug: 'glow-stick-ring-toss',
     title: 'Glow Stick Ring Toss',
     tagline: 'Lawn-game energy in the dark, with built-in spectacle.',
+    metaDescription:
+      'Lawn-game energy in the dark. Toss glow-stick necklace rings at three stakes 6-10 feet away. First to 11 points wins. Great for ages 6-8, 2-4 players.',
     category: 'night',
     ageRange: '6-8',
     groupSize: '2-4',
@@ -135,6 +143,8 @@ export const ACTIVITIES: Activity[] = [
     slug: 'capture-the-flag',
     title: 'Capture the Flag',
     tagline: 'The original team game, scaled to a campsite.',
+    metaDescription:
+      "The original team game, scaled to a campsite. Big groups of kids 9-12 split the field, guard a bandana flag, and race to carry the other team's flag home.",
     category: 'team',
     ageRange: '9-12',
     groupSize: '10+',
@@ -174,6 +184,8 @@ export const ACTIVITIES: Activity[] = [
     slug: 'camp-olympics',
     title: 'Camp Olympics',
     tagline: 'A multi-event tournament that fills an afternoon.',
+    metaDescription:
+      'A multi-event tournament that fills an afternoon. Pick 4-6 events like tug-of-war and a three-legged race, keep score, and crown a winning team. All ages.',
     category: 'team',
     ageRange: 'all-ages',
     groupSize: '10+',
@@ -213,6 +225,8 @@ export const ACTIVITIES: Activity[] = [
     slug: 'silent-line-up-challenge',
     title: 'Silent Line-Up Challenge',
     tagline: 'A team puzzle that builds communication without words.',
+    metaDescription:
+      'A team puzzle with no talking allowed: 5-10 players sort themselves by height or birthday in 5-10 minutes. No materials needed. Best for ages 9-12.',
     category: 'team',
     ageRange: '9-12',
     groupSize: '5-10',
@@ -241,6 +255,8 @@ export const ACTIVITIES: Activity[] = [
     slug: 'rock-skipping-contest',
     title: 'Rock Skipping Contest',
     tagline: 'A simple competition that takes ten minutes and feels timeless.',
+    metaDescription:
+      'A simple shoreline competition that feels timeless. Hunt flat stones, then throw for the highest skip count. Ages 9-12, 2-4 players, about 15-30 minutes.',
     category: 'movement',
     ageRange: '9-12',
     groupSize: '2-4',
@@ -272,6 +288,8 @@ export const ACTIVITIES: Activity[] = [
     slug: 'nature-scavenger-hunt',
     title: 'Nature Scavenger Hunt',
     tagline: 'A printable list that turns a walk into a mission.',
+    metaDescription:
+      'A printable list that turns a walk into a mission. Kids 6-8 hunt for 8-12 items like a feather or a Y-shaped stick. You need a list, a bag, and a pencil.',
     category: 'exploration',
     ageRange: '6-8',
     groupSize: '2-4',
@@ -311,6 +329,8 @@ export const ACTIVITIES: Activity[] = [
     slug: 'trail-bingo',
     title: 'Trail Bingo',
     tagline: 'A 5×5 grid that turns any trail into a hunt.',
+    metaDescription:
+      'A 5×5 bingo grid that turns any trail into a hunt. Kids 6-8 fill cards with birds, mushrooms and creeks, then race for five in a row. Blackout is a bonus.',
     category: 'exploration',
     ageRange: '6-8',
     groupSize: '2-4',
@@ -341,6 +361,8 @@ export const ACTIVITIES: Activity[] = [
     slug: 'stick-shelter-build',
     title: 'Stick Shelter Build',
     tagline: 'A real survival skill kids feel proud of after.',
+    metaDescription:
+      'A real survival skill kids feel proud of. Ages 6-8 lean fallen sticks on a log or ridge line until no daylight shows through the roof. Takes 30-60 minutes.',
     category: 'creative',
     ageRange: '6-8',
     groupSize: '2-4',
@@ -381,6 +403,8 @@ export const ACTIVITIES: Activity[] = [
     slug: 'stargazing-constellation-hunt',
     title: 'Stargazing Constellation Hunt',
     tagline: 'A wind-down activity that lands the day with awe.',
+    metaDescription:
+      'A wind-down activity that lands the day with awe. Grab a red light and an offline star app, get away from lanterns, and find one new constellation each.',
     category: 'wind-down',
     ageRange: 'all-ages',
     groupSize: '2-4',
@@ -420,6 +444,8 @@ export const ACTIVITIES: Activity[] = [
     slug: 'trail-journal-sketching',
     title: 'Trail Journal Sketching',
     tagline: 'A solo activity for older kids and adults that slows the day down.',
+    metaDescription:
+      'A solo activity for teens and adults that slows the day down. A notebook, pencil, and pen are all you need for 30-60 minutes of sketching plus notes.',
     category: 'wind-down',
     ageRange: '13-17',
     groupSize: 'solo',
@@ -458,6 +484,8 @@ export const ACTIVITIES: Activity[] = [
     slug: 'shadow-puppet-theatre',
     title: 'Shadow Puppet Theatre',
     tagline: 'Hand shadows on the tent wall - the original camp entertainment.',
+    metaDescription:
+      'Hand shadows on the tent wall, the original camp entertainment. Little kids ages 3-5 need just a lantern or flashlight and a flat wall for 15-30 minutes.',
     category: 'campfire',
     ageRange: '3-5',
     groupSize: '2-4',
@@ -495,6 +523,8 @@ export const ACTIVITIES: Activity[] = [
     slug: 'leaf-rubbings',
     title: 'Leaf Rubbings',
     tagline: 'Transfer the veins of a leaf onto paper in under five minutes.',
+    metaDescription:
+      'Transfer the veins of a leaf onto paper in minutes. A calm craft for ages 3-5 using crayons, thin paper, and fresh maple, oak, or fern leaves.',
     category: 'creative',
     ageRange: '3-5',
     groupSize: '2-4',
@@ -534,6 +564,8 @@ export const ACTIVITIES: Activity[] = [
     slug: 'rock-painting',
     title: 'Rock Painting',
     tagline: 'Paint a rock at camp, hide it on the trail for a stranger to find.',
+    metaDescription:
+      'Paint a rock at camp, then hide it on the trail for a stranger to find. Kids 6-8 need smooth rocks and paint pens. Or paint story rocks to use by the fire.',
     category: 'creative',
     ageRange: '6-8',
     groupSize: '2-4',
@@ -576,6 +608,8 @@ export const ACTIVITIES: Activity[] = [
     slug: 'campfire-hot-seat',
     title: 'Campfire Hot Seat',
     tagline: 'One person in the chair, five rapid-fire questions - answers must be instant.',
+    metaDescription:
+      'One person in the chair, five rapid-fire questions, and answers must be instant. A no-prep icebreaker for all ages and 5-10 people around the fire.',
     category: 'icebreaker',
     ageRange: 'all-ages',
     groupSize: '5-10',
@@ -605,6 +639,8 @@ export const ACTIVITIES: Activity[] = [
     slug: 'improvised-bocce',
     title: 'Improvised Bocce Ball',
     tagline: 'Find five rocks and you have a full bocce set.',
+    metaDescription:
+      'Find five rocks and you have a full bocce set. Toss palm-sized stones toward a jack rock, first to 11 points wins. All ages, 2-4 players, 30-60 minutes.',
     category: 'movement',
     ageRange: 'all-ages',
     groupSize: '2-4',
@@ -642,6 +678,8 @@ export const ACTIVITIES: Activity[] = [
     slug: 'three-legged-race',
     title: 'Three-Legged Race',
     tagline: 'The simplest team race at any campsite.',
+    metaDescription:
+      'The simplest team race at any campsite. Tie partners at the ankle with a bandana and race a 30-50 foot out-and-back track. High energy for ages 6-8.',
     category: 'movement',
     ageRange: '6-8',
     groupSize: '5-10',
@@ -680,6 +718,8 @@ export const ACTIVITIES: Activity[] = [
     slug: 'tug-of-war',
     title: 'Tug of War',
     tagline: 'One rope. Two teams. Settled in thirty seconds.',
+    metaDescription:
+      'One rope, two teams, settled in thirty seconds. A 20-30 foot rope, a bandana marker, and two ground lines are all a big group needs. Best of three wins.',
     category: 'movement',
     ageRange: 'all-ages',
     groupSize: '10+',
@@ -718,6 +758,8 @@ export const ACTIVITIES: Activity[] = [
     slug: 'pinecone-bowling',
     title: 'Pinecone Bowling',
     tagline: 'Set up sticks, roll a pinecone, and you have a full bowling lane in three minutes.',
+    metaDescription:
+      'Stand up sticks, roll a pinecone, and you have a bowling lane in three minutes. Made for ages 3-5: most sticks knocked down across five turns wins.',
     category: 'movement',
     ageRange: '3-5',
     groupSize: '2-4',
@@ -756,6 +798,8 @@ export const ACTIVITIES: Activity[] = [
     slug: 'stick-javelin',
     title: 'Stick Javelin',
     tagline: 'A distance-throw competition using the most natural equipment imaginable.',
+    metaDescription:
+      'A distance-throw competition using a straight fallen stick at least 3 feet long. Longest single throw wins. Ages 9-12, 2-4 players, about 15-30 minutes.',
     category: 'movement',
     ageRange: '9-12',
     groupSize: '2-4',
@@ -792,6 +836,8 @@ export const ACTIVITIES: Activity[] = [
     slug: 'night-sound-bingo',
     title: 'Night Sound Bingo',
     tagline: 'A listening game that turns the dark into a full soundtrack.',
+    metaDescription:
+      'A listening game that turns the dark into a soundtrack. Fill a 3×3 card with owls, crickets and frogs, then mark what you hear by red headlamp. All ages.',
     category: 'night',
     ageRange: 'all-ages',
     groupSize: '2-4',
@@ -830,6 +876,8 @@ export const ACTIVITIES: Activity[] = [
     slug: 'glow-necklace-limbo',
     title: 'Glow Necklace Limbo',
     tagline: 'The only limbo bar that glows in the dark.',
+    metaDescription:
+      'The only limbo bar that glows in the dark. Link two glow-stick necklaces into a bar and see who goes lowest. Ages 6-8, 5-10 players, 15-30 minutes.',
     category: 'night',
     ageRange: '6-8',
     groupSize: '5-10',
@@ -869,6 +917,8 @@ export const ACTIVITIES: Activity[] = [
     slug: 'foil-packet-cook-off',
     title: 'Foil Packet Cook-Off',
     tagline: 'Each team builds a mystery foil packet - the fire decides the winner.',
+    metaDescription:
+      'Each team builds a mystery foil packet and the coals decide the winner. Adult cook-off from a shared pantry, judged by group vote on taste and creativity.',
     category: 'campfire',
     ageRange: 'adults',
     groupSize: '5-10',
@@ -911,6 +961,8 @@ export const ACTIVITIES: Activity[] = [
     slug: 'campfire-trivia-night',
     title: 'Campfire Trivia Night',
     tagline: 'Pub-quiz format around the fire - no internet required.',
+    metaDescription:
+      'Pub-quiz format around the fire, no internet required. Prep 20-30 questions across 4-5 categories at home, then play in teams. Highest score wins. Adults.',
     category: 'campfire',
     ageRange: 'adults',
     groupSize: '5-10',
@@ -945,6 +997,8 @@ export const ACTIVITIES: Activity[] = [
     slug: 'campfire-singalong',
     title: 'Campfire Singalong',
     tagline: 'Nobody is judged around a campfire.',
+    metaDescription:
+      'Nobody is judged around a campfire. Bring a guitar or ukulele, or just sing a cappella, with lyrics saved offline. All ages, 5-10 people, 15-30 minutes.',
     category: 'campfire',
     ageRange: 'all-ages',
     groupSize: '5-10',
@@ -978,6 +1032,8 @@ export const ACTIVITIES: Activity[] = [
     slug: 'animal-track-hunt',
     title: 'Animal Track Hunt',
     tagline: 'Read the ground like a story - every print is a clue.',
+    metaDescription:
+      'Read the ground like a story, where every print is a clue. Kids 6-8 search muddy trail edges with a track guide or app. Most unique species found wins.',
     category: 'exploration',
     ageRange: '6-8',
     groupSize: '2-4',
@@ -1017,6 +1073,8 @@ export const ACTIVITIES: Activity[] = [
     slug: 'blindfold-trust-walk',
     title: 'Blindfold Trust Walk',
     tagline: 'Navigate a short trail using only your partner\'s voice.',
+    metaDescription:
+      "Navigate a trail using only your partner's voice. Teens pair up with a bandana blindfold on a 50-100 foot path with small obstacles, then swap roles.",
     category: 'exploration',
     ageRange: '13-17',
     groupSize: '2-4',
@@ -1055,6 +1113,8 @@ export const ACTIVITIES: Activity[] = [
     slug: 'nature-mandala',
     title: 'Nature Mandala',
     tagline: 'Arrange what you find into a pattern - then photograph it and leave it.',
+    metaDescription:
+      'Arrange leaves, petals, pebbles and pinecones into a pattern, photograph it, and leave it. A calm solo activity for teens that takes about 30-60 minutes.',
     category: 'creative',
     ageRange: '13-17',
     groupSize: 'solo',
@@ -1089,6 +1149,8 @@ export const ACTIVITIES: Activity[] = [
     slug: 'pinecone-creatures',
     title: 'Pinecone Creatures',
     tagline: 'Add googly eyes and stick legs to a pinecone. You now have a pet.',
+    metaDescription:
+      'Add googly eyes and stick legs to a pinecone, and you have a pet. A 30-60 minute craft for ages 3-5 with craft glue, pipe cleaners, feathers, and markers.',
     category: 'creative',
     ageRange: '3-5',
     groupSize: '2-4',
@@ -1129,6 +1191,8 @@ export const ACTIVITIES: Activity[] = [
     slug: 'stone-cairn-challenge',
     title: 'Stone Cairn Challenge',
     tagline: 'Balance stones into a tower. Patience beats muscle every time.',
+    metaDescription:
+      'Balance stones into a tower, where patience beats muscle every time. Each builder gathers 10-15 stones. Tallest tower still up after 15 minutes wins.',
     category: 'creative',
     ageRange: 'all-ages',
     groupSize: '2-4',
@@ -1163,6 +1227,8 @@ export const ACTIVITIES: Activity[] = [
     slug: 'dirt-pictionary',
     title: 'Dirt Pictionary',
     tagline: 'Draw in the dirt with a stick. Guess before time runs out.',
+    metaDescription:
+      'Draw in the dirt with a stick and guess before time runs out. You only need soft dirt and a stick each. All ages, 5-10 players, and first to 7 points wins.',
     category: 'creative',
     ageRange: 'all-ages',
     groupSize: '5-10',
@@ -1196,6 +1262,8 @@ export const ACTIVITIES: Activity[] = [
     slug: 'cloud-watching',
     title: 'Cloud Watching',
     tagline: 'Lie back, stare up, and name what you see.',
+    metaDescription:
+      'Lie back on a blanket, stare up, and name what you see. A low-key wind-down for ages 3-5 that takes 15-30 minutes. Try naming cumulus, cirrus, and stratus.',
     category: 'wind-down',
     ageRange: '3-5',
     groupSize: '2-4',
@@ -1231,6 +1299,8 @@ export const ACTIVITIES: Activity[] = [
     slug: 'sunrise-sit',
     title: 'Sunrise Sit',
     tagline: 'Set one alarm. Sit quietly for twenty minutes. Rarely regretted.',
+    metaDescription:
+      'Set one alarm and sit quietly for twenty minutes as the sun comes up. A solo adult ritual with a camp chair, a warm layer, and coffee or tea if you like.',
     category: 'wind-down',
     ageRange: 'adults',
     groupSize: 'solo',
@@ -1269,6 +1339,8 @@ export const ACTIVITIES: Activity[] = [
     slug: 'camp-charades',
     title: 'Camp Charades',
     tagline: 'All-nature, all-camp vocabulary - harder than it sounds.',
+    metaDescription:
+      'Charades with an all-nature, all-camp vocabulary, harder than it sounds. Write 30+ words like pitching a tent, set a timer, and play in teams. All ages.',
     category: 'icebreaker',
     ageRange: 'all-ages',
     groupSize: '5-10',
@@ -1300,6 +1372,8 @@ export const ACTIVITIES: Activity[] = [
     slug: 'human-knot',
     title: 'Human Knot',
     tagline: 'A group puzzle that feels impossible for about three minutes.',
+    metaDescription:
+      'A group puzzle that feels impossible for about three minutes. 5-10 players ages 9-12 grab hands across a circle, then untangle without letting go.',
     category: 'team',
     ageRange: '9-12',
     groupSize: '5-10',

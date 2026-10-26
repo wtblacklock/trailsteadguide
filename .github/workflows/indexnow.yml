@@ -1,0 +1,30 @@
+name: IndexNow
+
+# Vercel's GitHub integration posts a deployment status for every deploy.
+# When a Production deployment succeeds, tell IndexNow (Bing and partners)
+# to recrawl the sitemap so changes are picked up without waiting.
+on:
+  deployment_status:
+  workflow_dispatch:
+
+jobs:
+  submit:
+    name: Submit sitemap to IndexNow
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event.deployment_status.state == 'success' &&
+       github.event.deployment.environment == 'Production')
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Node
+        uses: actions/setup-node@v5
+        with:
+          node-version: 24
+
+      - name: Submit
+        run: node scripts/indexnow-submit.mjs

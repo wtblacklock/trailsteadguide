@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: PageProps) {
   }
   return pageMetadata({
     title: activity.title,
-    description: activity.tagline,
+    description: activity.metaDescription ?? activity.tagline,
     path: `/activities/${slug}`,
     type: 'article',
   })

@@ -452,7 +452,15 @@ export const GUIDES: Guide[] = [
     title: 'How to Pack a Cooler for Camping',
     description: 'Pre-chilling, block vs. cubed ice, the two-cooler split, and the packing order that keeps food cold for days.',
     eyebrow: 'How-to',
-    relatedGuides: ['family-camping-gear-list', 'camping-meal-plan-family', 'easy-family-camping-meals'],
+    relatedGuides: ['how-to-wash-dishes-camping', 'camping-meal-plan-family', 'easy-family-camping-meals'],
+  },
+  {
+    slug: 'how-to-wash-dishes-camping',
+    category: 'basics',
+    title: 'How to Wash Dishes While Camping',
+    description: 'The two-basin setup, how much water to bring, where gray water goes, and what to do when fall campgrounds shut off the water.',
+    eyebrow: 'How-to',
+    relatedGuides: ['how-to-pack-a-cooler', 'when-do-campgrounds-close', 'cold-weather-camping-meals'],
   },
   {
     slug: 'how-to-break-camp',
@@ -551,7 +559,18 @@ export const GUIDES: Guide[] = [
     title: 'How to Start a Campfire',
     description: 'Checking before you build, gathering materials, picking a structure, and lighting it - plus wet-weather backups.',
     eyebrow: 'How-to',
-    relatedGuides: ['campfire-recipes-for-kids', 'camping-during-a-burn-ban', 'how-to-set-up-a-tent'],
+    relatedGuides: ['campfire-recipes-for-kids', 'teaching-kids-to-whittle', 'how-to-set-up-a-tent'],
+  },
+  {
+    slug: 'teaching-kids-to-whittle',
+    category: 'basics',
+    title: 'Teaching Kids to Whittle at Camp',
+    description: 'The grip rules, the blood circle, and three safe first projects - from a sharpened stick to a real tent peg.',
+    eyebrow: 'Skills',
+    metaTitle: 'Teaching Kids to Whittle at Camp',
+    metaDescription:
+      'Teaching kids to whittle at camp: how to judge readiness, the knife to start with, the grip and safety rules, and three safe first carving projects in order.',
+    relatedGuides: ['how-to-start-a-campfire', 'campfire-recipes-for-kids', 'camping-first-aid-kit-for-families'],
   },
   {
     slug: 'camping-during-a-burn-ban',
@@ -728,7 +747,67 @@ export const GUIDES: Guide[] = [
     metaTitle: 'Gifts for Campers: 2026 Family Gift Guide',
     metaDescription:
       'Gifts for campers who already own a tent: stocking stuffers under $25, useful upgrades, big gifts, picks for kids, and a park pass good for a year.',
-    relatedGuides: ['family-camping-gear-list', 'thanksgiving-camping-with-kids', 'what-not-to-bring-camping'],
+    relatedGuides: ['best-camping-gifts-for-families', 'camping-stocking-stuffers', 'family-camping-gear-list'],
+  },
+  {
+    slug: 'best-camping-gifts-for-families',
+    category: 'seasonal',
+    title: 'The Best Camping Gifts for Families',
+    shortLabel: 'Family gifts',
+    description: 'Shared gifts the whole family uses at the campsite, plus gift guides for kids, new campers, stocking stuffers, and under $50.',
+    eyebrow: 'Gift guide',
+    metaTitle: 'Best Camping Gifts for Families 2026',
+    metaDescription:
+      'The best camping gifts for families in 2026: shared gifts the whole family uses, plus gift guides for kids, new campers, stocking stuffers, and under $50.',
+    relatedGuides: ['camping-gifts-for-kids', 'gifts-for-new-campers', 'camping-gifts-under-50'],
+  },
+  {
+    slug: 'camping-gifts-for-kids',
+    category: 'seasonal',
+    title: 'Gifts for Kids Who Love Camping',
+    shortLabel: 'Kids gifts',
+    description: 'Camping gifts for kids sorted by age, from bug magnifiers and roasting sticks to compasses, binoculars, and a sleeping bag that fits.',
+    eyebrow: 'Gift guide',
+    metaTitle: 'Camping Gifts for Kids: 2026 Gift Guide',
+    metaDescription:
+      'Camping gifts for kids, sorted by age: their own headlamp, roasting sticks, nature guides, art kits, and a sleeping bag that fits. Gear they use every trip.',
+    relatedGuides: ['best-camping-gifts-for-families', 'camping-stocking-stuffers', 'best-camping-sleeping-bag-for-kids'],
+  },
+  {
+    slug: 'camping-stocking-stuffers',
+    category: 'seasonal',
+    title: 'Camping Stocking Stuffers Under $25',
+    shortLabel: 'Stocking stuffers',
+    description: 'Small camping gifts under $25 that get used: hand warmers, stormproof matches, headlamps, tick removers, and picks for kids.',
+    eyebrow: 'Gift guide',
+    metaTitle: 'Camping Stocking Stuffers Under $25',
+    metaDescription:
+      'Camping stocking stuffers under $25 that get used: hand warmers, stormproof matches, headlamps, a star finder, tick removers, and small gifts for kids.',
+    relatedGuides: ['best-camping-gifts-for-families', 'camping-gifts-under-50', 'camping-gifts-for-kids'],
+  },
+  {
+    slug: 'gifts-for-new-campers',
+    category: 'seasonal',
+    title: 'Gifts for New Campers',
+    shortLabel: 'Beginner gifts',
+    description: 'For someone planning a first trip: the gear gaps every beginner has, from headlamps and a stove to a first aid kit, without guessing on the tent.',
+    eyebrow: 'Gift guide',
+    metaTitle: 'Gifts for New Campers and Beginners',
+    metaDescription:
+      'Gifts for new campers and families planning a first trip: headlamps, a camp stove, a cook kit, a first aid kit, and the small gear beginners always forget.',
+    relatedGuides: ['best-camping-gifts-for-families', 'camping-for-beginners', 'first-camping-trip-checklist'],
+  },
+  {
+    slug: 'camping-gifts-under-50',
+    category: 'seasonal',
+    title: 'Camping Gifts Under $50',
+    shortLabel: 'Gifts under $50',
+    description: 'Real camping gear for $25 to $50: a vacuum bottle, power bank, first aid kit, water filter, small stove, and family games.',
+    eyebrow: 'Gift guide',
+    metaTitle: 'Camping Gifts Under $50: 2026 Picks',
+    metaDescription:
+      'Camping gifts under $50 that are real gear: a vacuum bottle, power bank, first aid kit, water filter, camp stove, and games for the whole family.',
+    relatedGuides: ['best-camping-gifts-for-families', 'camping-stocking-stuffers', 'gifts-for-campers'],
   },
   {
     slug: 'camping-first-aid-kit-for-families',
@@ -780,7 +859,7 @@ export const GUIDES: Guide[] = [
     title: 'Stargazing Camping With Kids',
     description: 'Picking a dark-sky campsite and a moonless weekend, the fall meteor showers worth staying up for, and keeping kids warm while they look up.',
     eyebrow: 'Night sky',
-    metaTitle: 'Stargazing Camping With Kids: Meteor Showers and Dark Skies',
+    metaTitle: 'Stargazing Camping With Kids: Dark Skies',
     metaDescription:
       'Stargazing camping with kids: how to pick a dark-sky campsite and a moonless weekend, the fall 2026 meteor showers worth staying up for, and how to keep kids warm and looking up.',
     relatedGuides: ['camping-after-dark-with-kids', 'how-to-keep-kids-warm-camping', 'fall-camping-for-beginners'],
@@ -805,6 +884,17 @@ export const GUIDES: Guide[] = [
     metaTitle: 'Are Propane Tent Heaters Safe?',
     metaDescription:
       'Are tent heaters safe? Why fuel-burning heaters never belong in a tent, the limits of oxygen-depletion sensors, and the sleep system to use instead.',
-    relatedGuides: ['how-to-keep-kids-warm-camping', 'fall-camping-for-beginners', 'winter-camping-for-beginners'],
+    relatedGuides: ['how-to-keep-kids-warm-camping', 'tent-camping-at-an-electric-site', 'winter-camping-for-beginners'],
+  },
+  {
+    slug: 'tent-camping-at-an-electric-site',
+    category: 'scenario',
+    title: 'Tent Camping at an Electric Site',
+    description: 'What is on the pedestal, the cord and adapter to bring, what is worth plugging in, and the sleep system that still works when the power drops.',
+    eyebrow: 'Cold nights',
+    metaTitle: 'Tent Camping at an Electric Site: A Family Guide',
+    metaDescription:
+      'Tent camping at an electric site: what the pedestal outlets are, the cord and adapter to bring, what to plug in on a cold night, and how to run power safely.',
+    relatedGuides: ['tent-heater-safety', 'how-to-keep-kids-warm-camping', 'camping-in-40-degree-weather'],
   },
 ]

@@ -51,7 +51,7 @@ export default function Page() {
           },
           {
             q: 'Do I need a reservation to camp on the Buffalo National River?',
-            a: 'At most of the popular campgrounds, yes. Starting with the 2026 season, Steel Creek, Ozark, Carver, Tyler Bend, and Rush campgrounds are reservation-only through recreation.gov, bookable from six months ahead up to the same day, and cash and checks are no longer accepted. Kyles Landing, Erbie, and some sites at Buffalo Point stay first-come, first-served. The 2026 season runs March 13 through November 15, so check nps.gov/buff for off-season status before planning a late-November trip.',
+            a: 'At most of the popular campgrounds, yes. Starting with the 2026 season, Steel Creek, Ozark, Carver, Tyler Bend, and Rush campgrounds are reservation-only through recreation.gov, bookable from six months ahead up to the same day, and cash and checks are no longer accepted. Kyles Landing and Erbie joined them on September 1, 2026, which leaves only some sites at Buffalo Point first-come, first-served. The 2026 season runs March 13 through November 15, so check nps.gov/buff for off-season status before planning a late-November trip.',
           },
           {
             q: 'How bad are ticks and chiggers in the Ozarks?',
@@ -106,7 +106,7 @@ export default function Page() {
       <ul>
         <li>Steel Creek, Ozark, Carver, Tyler Bend, and Rush campgrounds are now reservation-only on <a href="https://www.recreation.gov/" rel="noopener" target="_blank">recreation.gov</a>, from six months out up to the same day.</li>
         <li>No more cash or checks. Keep your confirmation number handy, since reservation cards are no longer posted at sites.</li>
-        <li>Kyles Landing, Erbie, and some Buffalo Point sites stay first-come, first-served, which matters on a busy October Saturday.</li>
+        <li>Kyles Landing and Erbie switched to reservation-only on September 1, 2026, so only some Buffalo Point sites are still first-come, first-served.</li>
         <li>The 2026 season runs March 13 through November 15. Check <a href="https://www.nps.gov/buff/planyourvisit/camping.htm" rel="noopener" target="_blank">nps.gov/buff</a> for off-season status.</li>
       </ul>
 
@@ -219,7 +219,7 @@ export default function Page() {
           <strong>Pitching on the gravel bar.</strong> It looks perfect: flat, open, next to the water. Rain 20 miles upstream can put that gravel bar underwater overnight. Camp in a developed site on the first trip.
         </li>
         <li>
-          <strong>Assuming Buffalo River sites are walk-up.</strong> Most of the popular campgrounds switched to reservation-only in 2026. Book on recreation.gov, or have Kyles Landing or Erbie as a fallback and arrive early.
+          <strong>Assuming Buffalo River sites are walk-up.</strong> Every developed campground on the river except some Buffalo Point sites switched to reservation-only during 2026, Kyles Landing and Erbie as of September 1. Book on recreation.gov before you drive out, because cell service along the river is unreliable.
         </li>
         <li>
           <strong>Trusting the map&apos;s drive time.</strong> Ozark highways are narrow and full of curves. Arrive in daylight, especially in November when it is dark by about 5 p.m.
@@ -281,7 +281,7 @@ export default function Page() {
       </p>
       <h3>Do I need a reservation to camp on the Buffalo National River?</h3>
       <p>
-        At most popular campgrounds, yes. Since 2026, Steel Creek, Ozark, Carver, Tyler Bend, and Rush are reservation-only on recreation.gov, from six months out to the same day. Kyles Landing, Erbie, and some Buffalo Point sites stay first-come, first-served.
+        At most popular campgrounds, yes. Since 2026, Steel Creek, Ozark, Carver, Tyler Bend, and Rush are reservation-only on recreation.gov, from six months out to the same day. Kyles Landing and Erbie joined them on September 1, 2026, leaving only some Buffalo Point sites first-come, first-served.
       </p>
       <h3>How bad are ticks and chiggers in the Ozarks?</h3>
       <p>
