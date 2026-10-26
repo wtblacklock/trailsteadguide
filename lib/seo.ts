@@ -7,6 +7,7 @@
  */
 
 import type { Metadata } from 'next'
+import { GUIDE_DATES } from './guides/guide-dates.generated'
 
 export const SITE_URL = 'https://www.trailsteadguide.com'
 export const SITE_NAME = 'Trailstead Guide'
@@ -209,15 +210,36 @@ export type ArticleInput = {
   speakable?: string[]
 }
 
+/**
+ * Per-guide dates from GUIDE_DATES (real git history) when the caller is a
+ * guide page and didn't pass explicit dates; otherwise the long-standing
+ * site-wide defaults.
+ */
+function articleDates(a: ArticleInput) {
+  if (a.datePublished || a.dateModified) {
+    return {
+      datePublished: a.datePublished ?? '2026-01-01',
+      dateModified: a.dateModified ?? '2026-04-24',
+    }
+  }
+  const guideSlug = a.slug.startsWith('/guides/') ? a.slug.slice('/guides/'.length) : null
+  const guideDates = guideSlug ? GUIDE_DATES[guideSlug] : undefined
+  return {
+    datePublished: guideDates?.datePublished ?? '2026-01-01',
+    dateModified: guideDates?.dateModified ?? '2026-04-24',
+  }
+}
+
 export function articleGraph(a: ArticleInput) {
   const url = `${SITE_URL}${a.slug}`
+  const dates = articleDates(a)
   const articleNode: Record<string, unknown> = {
     '@type': 'Article',
     headline: a.title,
     description: a.description,
     image: a.image ? [a.image] : undefined,
-    datePublished: a.datePublished ?? '2026-01-01',
-    dateModified: a.dateModified ?? '2026-04-24',
+    datePublished: dates.datePublished,
+    dateModified: dates.dateModified,
     author: { '@id': `${SITE_URL}/#author` },
     publisher: { '@id': `${SITE_URL}/#organization` },
     mainEntityOfPage: url,
