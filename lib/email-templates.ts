@@ -69,7 +69,7 @@ export function getPlanEmail(planSlug: string): PlanEmail | null {
                 </tr>
               </table>
               <p style="margin:32px 0 0 0; font-size:14px; line-height:1.6; color:#78716c;">
-                Inside you&rsquo;ll find the timeline, gear list, meals, kid activities, and safety notes &mdash; everything you need to walk out the door confident.
+                Inside you&rsquo;ll find the timeline, gear list, meals, kid activities, and safety notes: everything you need to walk out the door confident.
               </p>
               <p style="margin:20px 0 0 0; font-size:14px; line-height:1.6; color:#78716c;">
                 Bookmark the link. We&rsquo;ll keep improving the plan as more first-time families try it.
@@ -137,7 +137,7 @@ export function getContactAutoReplyEmail(args: { name: string }): PlanEmail {
                 Hey ${firstName}, thanks for reaching out.
               </h1>
               <p style="margin:0 0 20px 0; font-size:16px; line-height:1.6; color:#44403c;">
-                Your message landed in our inbox. William will reply within 48 hours &mdash; usually sooner.
+                Your message landed in our inbox. William will reply within 48 hours, usually sooner.
               </p>
               <p style="margin:0 0 28px 0; font-size:16px; line-height:1.6; color:#44403c;">
                 In the meantime, if you haven&rsquo;t built your camping plan yet, the quiz is the best place to start.
@@ -157,7 +157,7 @@ export function getContactAutoReplyEmail(args: { name: string }): PlanEmail {
             <td style="padding:24px 40px 32px 40px; border-top:1px solid #e7e5e4;">
               <p style="margin:0; font-size:13px; line-height:1.6; color:#a8a29e;">
                 Talk soon,<br>
-                William &mdash; Trailstead Guide
+                William, Trailstead Guide
               </p>
             </td>
           </tr>

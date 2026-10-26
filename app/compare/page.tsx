@@ -84,6 +84,24 @@ const PRODUCT_COMPARES: CompareCard[] = [
     blurb: 'Floor sleep system versus an off-the-ground combo. Comfort, weight, packing, and which one survives kids.',
   },
   {
+    href: '/compare/down-vs-synthetic-sleeping-bag',
+    eyebrow: 'Gear',
+    title: 'Down vs synthetic sleeping bag',
+    blurb: 'Same temperature rating, very different behavior when damp. Weight, washing, price, and which fill wins with kids.',
+  },
+  {
+    href: '/compare/3-season-vs-4-season-tent',
+    eyebrow: 'Gear',
+    title: '3-season vs 4-season tent',
+    blurb: 'Season ratings are about wind and snow, not warmth. When your summer tent is enough for cold nights, and when a 4-season tent earns its price.',
+  },
+  {
+    href: '/compare/mummy-vs-rectangular-sleeping-bag',
+    eyebrow: 'Gear',
+    title: 'Mummy vs rectangular sleeping bag',
+    blurb: 'Snug and warm versus roomy and easy. Which shape fits your kids, and the temperature where the mummy starts to win.',
+  },
+  {
     href: '/compare/lantern-vs-headlamp-vs-flashlight',
     eyebrow: 'Gear',
     title: 'Lantern vs headlamp vs flashlight',

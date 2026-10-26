@@ -12,7 +12,7 @@ const SLUG = '/guides/camping-after-dark-with-kids'
 const TITLE = 'Camping After Dark With Kids'
 const META_TITLE = 'Camping After Dark With Kids'
 const DESCRIPTION =
-  'Camping after dark with kids: how much daylight fall costs you, the three-layer lighting setup for a family campsite, and what to do with a long dark evening.'
+  'Camping after dark with kids: how much daylight fall costs you, the three-layer lighting setup for a campsite, and what to do with a long evening.'
 const HERO_IMAGE =
   'https://images.unsplash.com/photo-1587547131116-a0655a526190?w=1400&auto=format&fit=crop&q=80'
 
@@ -287,7 +287,9 @@ export default function Page() {
             <strong>Stargazing, which fall is genuinely better for.</strong> Cooler, drier air means
             steadier viewing, and dark arrives while kids are still awake, which is not true in June.
             A paper star chart set to your latitude beats a phone screen here, because the phone
-            wrecks everyone&apos;s night vision the moment it comes out.
+            wrecks everyone&apos;s night vision the moment it comes out. For picking a dark site,
+            timing a trip around the moon, and this fall&apos;s meteor showers, see{' '}
+            <Link href="/guides/stargazing-camping-with-kids">stargazing camping with kids</Link>.
           </li>
           <li>
             <strong>The fire, once it is actually built.</strong> Kids stay engaged much longer when

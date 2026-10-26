@@ -81,7 +81,7 @@ export default function Footer() {
         </div>
         <div className="max-w-page mx-auto px-8 pb-5 -mt-2">
           <p className="text-stone-600 text-xs max-w-2xl">
-            As an Amazon Associate we earn from qualifying purchases. Some links on this site are affiliate links &mdash; clicking them may earn us a small commission at no extra cost to you.
+            As an Amazon Associate we earn from qualifying purchases. Some links on this site are affiliate links. If you click one and buy, we may earn a small commission at no extra cost to you.
           </p>
         </div>
       </div>

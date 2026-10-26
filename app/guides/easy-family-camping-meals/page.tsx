@@ -75,7 +75,7 @@ export default function Page() {
         lede="Simple food that travels well, cooks fast, and kids will actually eat - plus a complete two-night meal plan you can use without modification."
         heroImage={{
           src: HERO_IMAGE,
-          alt: 'Family cooking over a camp stove at a picnic table with kids helping',
+          alt: 'A dad and two young kids eating noodles from orange bowls at a campsite picnic table, tent behind',
         }}
       >
         <QuickAnswer
@@ -173,6 +173,9 @@ export default function Page() {
         </p>
         <p>
           For hands-on recipes kids can help make themselves - foil packets they build, roasting stick foods, and desserts beyond s&apos;mores - see <Link href="/guides/campfire-recipes-for-kids">campfire recipes for kids</Link>.
+        </p>
+        <p>
+          Camping after the first frost? The menu shifts toward make-ahead one-pot dinners, hot drinks on tap, and food served into insulated mugs - see <Link href="/guides/cold-weather-camping-meals">cold-weather camping meals for families</Link>.
         </p>
 
         <h2>Cooler management</h2>

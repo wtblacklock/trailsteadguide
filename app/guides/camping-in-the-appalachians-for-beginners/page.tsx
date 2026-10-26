@@ -17,7 +17,7 @@ const TITLE = 'Camping in the Appalachians for Beginners'
 const META_TITLE = 'Appalachian Camping for Beginners (Bears)'
 const DESCRIPTION =
   'Camping in the Appalachians for beginners: Smokies and Blue Ridge crowds, fall foliage timing, ticks, and the densest black-bear country in the U.S.'
-const HERO_IMAGE = 'https://images.unsplash.com/photo-1599551528722-6b6d968512a2?w=1400&auto=format&fit=crop&q=80'
+const HERO_IMAGE = 'https://images.unsplash.com/photo-1605465746300-0318f1e96278?w=1400&auto=format&fit=crop&q=80'
 
 export const metadata = pageMetadata({
   title: META_TITLE,
@@ -87,7 +87,7 @@ export default function Page() {
       lede="What to expect, what changes, and how to plan your first trip in the Smokies, Blue Ridge, or Shenandoah."
       heroImage={{
         src: HERO_IMAGE,
-        alt: 'Layered ridges of the Great Smoky Mountains under morning fog, prime fall foliage camping in Tennessee',
+        alt: 'Layered forested ridges of the Great Smoky Mountains under storm clouds at golden hour',
       }}
     >
       <QuickAnswer
@@ -160,7 +160,7 @@ export default function Page() {
 
       <h2>Best setup for your first trip in the Appalachians</h2>
       <p>
-        These are the three beginner trip types that work in the Appalachians, mapped to plans on this site. <Link href="/quiz">Take the 5-second quiz</Link> if you want one matched to your dates and the foliage window you&apos;re aiming for. For peak fall weekends, also see <Link href="/guides/fall-camping-for-beginners">fall camping for beginners</Link>.
+        These are the three beginner trip types that work in the Appalachians, mapped to plans on this site. <Link href="/quiz">Take the 5-second quiz</Link> if you want one matched to your dates and the foliage window you&apos;re aiming for. For peak fall weekends, also see <Link href="/guides/fall-camping-for-beginners">fall camping for beginners</Link> and <Link href="/guides/fall-foliage-camping-with-kids">fall foliage camping with kids</Link>, which covers how the color front moves down the ridges here.
       </p>
       <ul>
         <li>
@@ -177,7 +177,7 @@ export default function Page() {
       <h2>Where beginners should look</h2>
       <h3>State parks</h3>
       <p>
-        State park systems in NC, TN, and VA are well-run, with consistent bathrooms, potable water, and bear-aware infrastructure. Reserve at <a href="https://www.ncparks.gov/" rel="noopener" target="_blank">ncparks.gov</a> (North Carolina), <a href="https://tnstateparks.com/" rel="noopener" target="_blank">tnstateparks.com</a> (Tennessee), and <a href="https://www.dcr.virginia.gov/state-parks" rel="noopener" target="_blank">dcr.virginia.gov</a> (Virginia). State parks generally beat federal campgrounds on availability and consistency for first-trip use.
+        State park systems in NC, TN, and VA are well-run, with consistent bathrooms, potable water, and bear-aware infrastructure. Reserve at <a href="https://www.ncparks.gov/" rel="noopener" target="_blank">ncparks.gov</a> (North Carolina), <a href="https://tnstateparks.com/" rel="noopener" target="_blank">tnstateparks.com</a> (Tennessee), and <a href="https://www.dcr.virginia.gov/state-parks" rel="noopener" target="_blank">dcr.virginia.gov</a> (Virginia). State parks generally beat federal campgrounds on availability and consistency for first-trip use. For a state-specific plan, including fall color timing and the Outer Banks, see <Link href="/guides/camping-in-north-carolina-for-beginners">camping in North Carolina for beginners</Link>.
       </p>
 
       <h3>National parks and federal lands</h3>
@@ -267,8 +267,8 @@ export default function Page() {
         </li>
         <li>
           <strong>Tarp / canopy.</strong>{' '}
-          <AmazonLink productId="core-10x10-canopy" pageSlug="camping-in-the-appalachians-for-beginners" />{' '}
-          (~$130). For afternoon rain over the picnic table.
+          <AmazonLink productId="crown-shades-10x10-canopy" pageSlug="camping-in-the-appalachians-for-beginners" />{' '}
+          (~$140). For afternoon rain over the picnic table.
         </li>
         <li>
           <strong>Lighting.</strong>{' '}

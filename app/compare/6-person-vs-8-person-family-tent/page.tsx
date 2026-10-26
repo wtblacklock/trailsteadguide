@@ -7,7 +7,7 @@ import type { AffiliateProduct } from '@/types'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
 
 const SLUG = '/compare/6-person-vs-8-person-family-tent'
-const TITLE = '6-Person vs 8-Person Family Tent: Which Size?'
+const TITLE = '6-Person vs 8-Person Family Tent'
 const DESCRIPTION =
   '6-person vs 8-person family tent compared: floor size, standing height, real capacity, setup time, and price. The sizing rule that decides it.'
 
@@ -73,7 +73,7 @@ const ROWS: Row[] = [
     height: "6'4\" center",
     bestFor: 'Family of 5+',
     setup: '~5 min',
-    price: '~$165',
+    price: '~$160',
   },
 ]
 
@@ -118,8 +118,8 @@ export default function Page() {
           </p>
           <p className="text-stone-800 leading-relaxed text-[17px]">
             Buy one size up from your headcount. A family of 4 buys a{' '}
-            <strong>6-person tent</strong>. A family of 5 or more &mdash; or two families sharing
-            one tent &mdash; buys an <strong>8-person tent</strong>. The extra floor space holds
+            <strong>6-person tent</strong>. A family of 5 or more (or two families sharing
+            one tent) buys an <strong>8-person tent</strong>. The extra floor space holds
             gear, gives kids room to spread out, and is the single most common thing first-time
             campers wish they&rsquo;d bought bigger.
           </p>

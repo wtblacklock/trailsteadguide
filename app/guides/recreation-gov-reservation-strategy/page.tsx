@@ -81,7 +81,7 @@ export default function Page() {
       lede="How the booking system actually works - rolling windows, the 7 a.m. Pacific drop, refresh strategy, and what to do when there’s nothing left two weeks out."
       heroImage={{
         src: HERO_IMAGE,
-        alt: 'A National Park valley at sunrise - the kind of campground that requires a 6-month-out reservation strategy',
+        alt: 'Hazy, forested mountain valley with a hiker on a rocky outcrop in the foreground',
       }}
     >
       <QuickAnswer
@@ -209,6 +209,9 @@ export default function Page() {
         <li><strong>Go dispersed.</strong> If the weather is good and you have a moderate amount of camping experience, dispersed camping on BLM or National Forest land is the no-reservation option.</li>
         <li><strong>Shift the dates.</strong> If you can move from a Friday-Sunday to a Sunday-Tuesday, your options multiply by roughly 5x.</li>
       </ul>
+      <p>
+        One caveat on all of these in the fall: an unavailable calendar does not always mean full. Many campgrounds stop taking reservations weeks before they actually close and run first-come, first-served until the gate shuts. See <Link href="/guides/when-do-campgrounds-close">when campgrounds close for the season</Link> for how to tell the difference.
+      </p>
 
       <h2>Common first-time mistakes</h2>
       <ul>

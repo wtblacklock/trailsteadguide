@@ -26,7 +26,7 @@ const AUTHOR_INITIALS = AUTHOR_NAME.split(' ')
 export const metadata = pageMetadata({
   title: 'About',
   description:
-    'Meet William Blacklock - Eagle Scout and founder of Trailstead Guide, a structured camping planner that turns six questions into a confident first family trip.',
+    'Meet William Blacklock - Eagle Scout and founder of Trailstead Guide, a camping planner that turns six questions into a confident first family trip.',
   path: '/about',
 })
 

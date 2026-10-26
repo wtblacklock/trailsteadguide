@@ -81,7 +81,7 @@ export default function Page() {
       lede="If you&apos;ve never camped, start here. This is the shortest, least-intimidating path from zero to a great first trip."
       heroImage={{
         src: HERO_IMAGE,
-        alt: 'Beginner family tent pitched in a forest clearing at golden hour on a first camping trip',
+        alt: 'Silhouette of a person standing on a hillside under a bright, colorful Milky Way',
       }}
     >
       <QuickAnswer
@@ -108,7 +108,7 @@ export default function Page() {
 
       <h2>Gear: borrow, don&apos;t buy</h2>
       <p>
-        You don&apos;t know what you actually like yet. Borrow a tent and sleeping bags from a friend. Rent the rest from REI or a local outfitter. After your first trip, you&apos;ll know what&apos;s worth buying. If you can, run a <Link href="/plans/backyard-test">backyard tent test</Link> the weekend before - it surfaces missing pieces while the kitchen is still 30 feet away.
+        You don&apos;t know what you actually like yet. Borrow a tent and sleeping bags from a friend. Rent the rest from REI or a local outfitter. After your first trip, you&apos;ll know what&apos;s worth buying. If you can, run a <Link href="/plans/backyard-test">backyard tent test</Link> the weekend before - it surfaces missing pieces while the kitchen is still 30 feet away. If friends or family ask what to get you for the holidays, point them to <Link href="/guides/gifts-for-new-campers">gifts for new campers</Link> or <Link href="/guides/best-camping-gifts-for-families">the best camping gifts for families</Link>: small gear like headlamps and a stove fills the gaps borrowed kits usually have.
       </p>
 
       <h2>The three things that will go wrong</h2>

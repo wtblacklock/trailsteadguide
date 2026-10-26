@@ -81,7 +81,7 @@ export default function Page() {
       lede="Free, legal, no reservation - and a lot harder than it looks. What dispersed camping actually is, the rules that matter, and when it’s the wrong move for a first-timer."
       heroImage={{
         src: HERO_IMAGE,
-        alt: 'Tent pitched alone in an open National Forest clearing - dispersed camping outside any developed campground',
+        alt: 'A lone tent lit from inside on open ground under the Milky Way, far from any campground',
       }}
     >
       <QuickAnswer

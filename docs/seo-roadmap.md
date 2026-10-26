@@ -63,7 +63,9 @@ partial).
   and `/quiz` recaptures lost crawl + lost humans.
 - **Effort:** S
 - **Expected lift:** medium
-- **Status:** queued
+- **Status:** shipped (2026-10-12) - found already implemented (`app/not-found.tsx`,
+  `app/error.tsx`, shared `OffTrailLayout` with links back to `/quiz`,
+  `/guides`, and home); this status line was stale.
 
 #### A2. Audit the `pageMetadata()` canonical on query-param pages
 - **Why:** Today `pageMetadata({ path: '/plans/first-night-camp' })` correctly
@@ -74,7 +76,7 @@ partial).
   across infinite variants. Same pattern applies to `/trip-pack/[planSlug]`.
 - **Effort:** S
 - **Expected lift:** low (preventative)
-- **Status:** queued
+- **Status:** shipped (2026-10-05)
 
 #### A3. Submit sitemap to Google Search Console + Bing Webmaster Tools
 - **Why:** The sitemap is comprehensive but has zero discovery value if no
@@ -92,7 +94,12 @@ partial).
   rule (`jsx-a11y/alt-text`) so future regressions break the build.
 - **Effort:** S
 - **Expected lift:** low (a11y + image-search side benefit)
-- **Status:** queued
+- **Status:** shipped (2026-10-12) - audit found 8 `alt=""` instances (not 2;
+  the count above was stale), all on product thumbnails in gear
+  cards/shelves where the product name is always rendered as adjacent
+  text, confirming they're intentionally decorative. Escalated
+  `jsx-a11y/alt-text` from warn to error in `eslint.config.mjs` so a future
+  `<img>`/`<Image>` with no `alt` attribute fails `npm run build`.
 
 #### A5. Per-guide `dateModified` instead of a single FRESH date
 - **Why:** Every guide currently shows `datePublished: '2026-01-01'` and
@@ -103,7 +110,15 @@ partial).
 - **Effort:** M (write a build-time script that reads `git log -1
   --format=%cI app/guides/<slug>/page.tsx` and exports a slug→date map)
 - **Expected lift:** medium
-- **Status:** queued
+- **Status:** shipped (2026-10-19). Implemented as `scripts/generate-guide-dates.mjs`,
+  which reads git history once and writes a committed
+  `lib/guides/guide-dates.generated.ts` map (baked in at generation time,
+  not read live at build, since the production build environment isn't
+  guaranteed to have full git history for a live `git log` call).
+  `articleGraph()` in `lib/seo.ts` now pulls per-guide dates from that map
+  for any `/guides/*` slug that doesn't pass explicit dates. Re-run the
+  script after future guide edits to refresh the dates (this unblocks A6,
+  whose sitemap `lastmod` work can read the same generated map).
 
 #### A6. Per-page sitemap `lastmod` from git, not the FRESH/RECENT/STABLE
 constants
@@ -278,7 +293,9 @@ constants
   unlocks data) plus the affiliate-Reddit research (C5).
 - **Effort:** L (recurring; ~half day per guide for 1500–2500 words)
 - **Expected lift:** high (compounds)
-- **Status:** queued
+- **Status:** in progress. 82 guides as of 2026-10-06, the latest three being
+  `what-not-to-bring-camping`, `camping-in-40-degree-weather` and the first holiday gift guide,
+  `gifts-for-campers`. The live backlog for topics is `docs/content-gap-analysis.md`.
 
 #### D4. Comparison pages — add "Backyard Test vs First Night Camp"
 - **Why:** "X vs Y" pages rank well because the search intent is

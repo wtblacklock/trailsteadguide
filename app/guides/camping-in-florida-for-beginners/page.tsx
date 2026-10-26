@@ -87,7 +87,7 @@ export default function Page() {
       lede="What to expect, what changes, and how to plan your first trip in Florida."
       heroImage={{
         src: HERO_IMAGE,
-        alt: 'Slow river winding through cypress forest in the Florida Everglades, prime winter camping country',
+        alt: 'A narrow waterway winding through a tunnel of mangroves in the Florida Everglades',
       }}
     >
       <QuickAnswer
@@ -247,8 +247,8 @@ export default function Page() {
         </li>
         <li>
           <strong>Shade.</strong>{' '}
-          <AmazonLink productId="core-10x10-canopy" pageSlug="camping-in-florida-for-beginners" />{' '}
-          (~$130). Two minutes to set up; covers the picnic table all day.
+          <AmazonLink productId="crown-shades-10x10-canopy" pageSlug="camping-in-florida-for-beginners" />{' '}
+          (~$140). Two minutes to set up; covers the picnic table all day.
         </li>
         <li>
           <strong>Stove.</strong>{' '}

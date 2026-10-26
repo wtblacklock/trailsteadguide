@@ -87,7 +87,7 @@ export default function Page() {
         lede="Shade strategy, hydration math, and the line where you reschedule the trip."
         heroImage={{
           src: HERO_IMAGE,
-          alt: 'Sun-baked desert mountains under a bright summer sky during a heatwave camping trip',
+          alt: 'Rugged desert mountains rising above dry grass and scrub under a bright blue sky with puffy clouds',
         }}
       >
         <QuickAnswer
@@ -264,8 +264,8 @@ export default function Page() {
           </li>
           <li>
             <strong>Shade.</strong>{' '}
-            <AmazonLink productId="core-10x10-canopy" pageSlug="camping-in-a-heatwave" />{' '}
-            (~$130). Two minutes to set up; runs the whole hot stretch of the day.
+            <AmazonLink productId="crown-shades-10x10-canopy" pageSlug="camping-in-a-heatwave" />{' '}
+            (~$140). Two minutes to set up; runs the whole hot stretch of the day.
           </li>
           <li>
             <strong>Stove.</strong>{' '}

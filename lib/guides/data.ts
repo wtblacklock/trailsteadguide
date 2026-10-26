@@ -55,6 +55,17 @@ export const GUIDES: Guide[] = [
     relatedGuides: ['camping-for-beginners', 'first-night-camping-guide', 'first-camping-trip-checklist'],
   },
   {
+    slug: 'what-not-to-bring-camping',
+    category: 'basics',
+    title: 'What Not to Bring Camping',
+    description: 'Fifteen things to leave home, from firewood and fireworks to the extra outfits, and what to pack instead.',
+    eyebrow: 'Packing',
+    metaTitle: 'What Not to Bring Camping (15 Things)',
+    metaDescription:
+      'What not to bring camping: firewood from home, cotton layers, glass, drones, fireworks, untested gear and 9 more, plus what to pack instead of each one.',
+    relatedGuides: ['weekend-camping-packing-list', 'first-time-camping-mistakes', 'first-camping-trip-checklist'],
+  },
+  {
     slug: 'camping-with-kids-first-time',
     category: 'scenario',
     title: 'Camping With Kids for the First Time',
@@ -68,7 +79,7 @@ export const GUIDES: Guide[] = [
     title: 'Camping With Toddlers',
     description: 'Protecting the nap, physical containment instead of verbal rules, and a sleep setup that actually works.',
     eyebrow: 'With kids',
-    relatedGuides: ['camping-with-kids-first-time', 'backyard-camping-with-kids', 'best-camping-sleeping-bag-for-kids'],
+    relatedGuides: ['camping-with-a-baby', 'camping-with-kids-first-time', 'backyard-camping-with-kids'],
   },
   {
     slug: 'summer-camping-with-kids',
@@ -92,7 +103,7 @@ export const GUIDES: Guide[] = [
     title: 'Rainy Camping Trips',
     description: 'Tarp setup, condensation, dry-camp recovery, and the call on whether to bail.',
     eyebrow: 'Rain',
-    relatedGuides: ['camping-when-the-weather-turns', 'camping-in-the-pacific-northwest-for-beginners', 'fall-camping-for-beginners'],
+    relatedGuides: ['how-to-prevent-tent-condensation', 'camping-when-the-weather-turns', 'fall-camping-for-beginners'],
   },
   {
     slug: 'camping-with-dogs-first-time',
@@ -116,7 +127,7 @@ export const GUIDES: Guide[] = [
     title: 'Camping When the Weather Turns',
     description: 'Lightning rules, the bail decision, what to do if you’re stuck, and how to call it.',
     eyebrow: 'Bad weather',
-    relatedGuides: ['rainy-camping-trips', 'winter-camping-for-beginners', 'fall-camping-for-beginners'],
+    relatedGuides: ['rainy-camping-trips', 'camping-in-high-wind', 'fall-camping-for-beginners'],
   },
   {
     slug: 'spring-camping-for-beginners',
@@ -143,7 +154,7 @@ export const GUIDES: Guide[] = [
     shortLabel: 'Fall',
     description: 'Cold nights, condensation, early dark - fall done right.',
     eyebrow: 'Fall',
-    relatedGuides: ['camping-after-dark-with-kids', 'halloween-camping-with-kids', 'labor-day-weekend-camping'],
+    relatedGuides: ['camping-after-dark-with-kids', 'camping-during-hunting-season', 'how-to-keep-kids-warm-camping'],
   },
   {
     slug: 'winter-camping-for-beginners',
@@ -215,7 +226,7 @@ export const GUIDES: Guide[] = [
     shortLabel: 'Appalachians',
     description: 'Smokies, Blue Ridge, fall foliage rush, ticks, and the densest bear country in the country.',
     eyebrow: 'Appalachia',
-    relatedGuides: ['camping-in-the-northeast-for-beginners', 'camping-in-colorado-for-beginners', 'fall-camping-for-beginners'],
+    relatedGuides: ['fall-foliage-camping-with-kids', 'camping-in-the-northeast-for-beginners', 'fall-camping-for-beginners'],
   },
   {
     slug: 'camping-in-the-northeast-for-beginners',
@@ -224,7 +235,7 @@ export const GUIDES: Guide[] = [
     shortLabel: 'Northeast',
     description: 'Adirondacks, White Mountains, Acadia - short summer, black flies, and foliage season.',
     eyebrow: 'Northeast',
-    relatedGuides: ['camping-in-the-appalachians-for-beginners', 'fall-camping-for-beginners', 'winter-camping-for-beginners'],
+    relatedGuides: ['fall-foliage-camping-with-kids', 'camping-in-the-appalachians-for-beginners', 'fall-camping-for-beginners'],
   },
   {
     slug: 'camping-in-new-york-for-beginners',
@@ -275,6 +286,18 @@ export const GUIDES: Guide[] = [
     relatedGuides: ['camping-in-florida-for-beginners', 'camping-in-a-heatwave', 'summer-camping-for-beginners'],
   },
   {
+    slug: 'camping-in-north-carolina-for-beginners',
+    category: 'location',
+    title: 'Camping in North Carolina for Beginners',
+    shortLabel: 'North Carolina',
+    description: 'Blue Ridge fall color, cold mountain nights, bears in two regions, and the windy Outer Banks.',
+    eyebrow: 'North Carolina',
+    metaTitle: 'North Carolina Camping for Beginners (Fall)',
+    metaDescription:
+      'Camping in North Carolina for beginners: Blue Ridge state parks, fall color timing, cold mountain nights, bears, the Outer Banks, and the setup that handles it.',
+    relatedGuides: ['camping-in-the-appalachians-for-beginners', 'how-to-keep-kids-warm-camping', 'camping-in-bear-country-with-kids'],
+  },
+  {
     slug: 'camping-in-wisconsin-for-beginners',
     category: 'location',
     title: 'Camping in Wisconsin for Beginners',
@@ -296,7 +319,7 @@ export const GUIDES: Guide[] = [
     metaTitle: 'Wyoming Camping for Beginners (Bears)',
     metaDescription:
       'Camping in Wyoming for beginners: Yellowstone and Teton campgrounds, grizzly food rules, altitude, wind, and a three-month season.',
-    relatedGuides: ['camping-in-montana-for-beginners', 'camping-in-colorado-for-beginners', 'recreation-gov-reservation-strategy'],
+    relatedGuides: ['camping-in-bear-country-with-kids', 'camping-in-montana-for-beginners', 'camping-in-colorado-for-beginners'],
   },
   {
     slug: 'camping-in-montana-for-beginners',
@@ -333,6 +356,18 @@ export const GUIDES: Guide[] = [
     metaDescription:
       'Camping in Arizona for beginners: camp high in summer and low in winter, monsoon flash floods, Grand Canyon rims, and constant fire bans.',
     relatedGuides: ['camping-in-the-desert-southwest-for-beginners', 'camping-in-utah-for-beginners', 'camping-in-a-heatwave'],
+  },
+  {
+    slug: 'camping-in-the-ozarks-for-beginners',
+    category: 'location',
+    title: 'Camping in the Ozarks for Beginners',
+    shortLabel: 'Ozarks',
+    description: 'Late fall color, the new Buffalo River booking rules, ticks and chiggers, and rivers that rise fast.',
+    eyebrow: 'Ozarks',
+    metaTitle: 'Ozarks Camping for Beginners (Fall)',
+    metaDescription:
+      'Camping in the Ozarks for beginners: late fall color, the new Buffalo National River reservation rules, ticks and chiggers, gravel-bar flood risk, and easy state parks.',
+    relatedGuides: ['fall-camping-for-beginners', 'camping-in-the-appalachians-for-beginners', 'best-state-parks-for-families'],
   },
   // --- Gap content: family-focused cluster ---
   {
@@ -374,23 +409,23 @@ export const GUIDES: Guide[] = [
     title: 'Family Camping Gear List',
     description: 'The real list - six categories of gear for car camping with kids, in priority order.',
     eyebrow: 'Gear',
-    relatedGuides: ['family-camping-on-a-budget', 'best-family-tent-for-beginners', 'best-camping-sleeping-bag-for-kids'],
+    relatedGuides: ['family-camping-on-a-budget', 'best-family-tent-for-beginners', 'camping-first-aid-kit-for-families'],
   },
   {
     slug: 'best-family-tent-for-beginners',
     category: 'basics',
-    title: 'Best Family Tent for Beginners',
-    description: 'What size to buy, dome vs. cabin, and the picks that hold up on real family trips.',
+    title: 'The Best Family Tents for 2026',
+    description: 'Five picks by family size, budget, and weather, plus the sizing rule that keeps you from buying too small.',
     eyebrow: 'Gear guide',
     relatedGuides: ['best-tent-for-rainy-camping', 'how-to-set-up-a-tent', 'best-camping-sleeping-bag-for-kids'],
   },
   {
     slug: 'best-camping-sleeping-bag-for-kids',
     category: 'basics',
-    title: 'Best Camping Sleeping Bag for Kids',
-    description: 'Temperature ratings, why kids need their own bag, and the picks that keep kids warm.',
+    title: 'The Best Kids Sleeping Bags for Camping (2026)',
+    description: 'Five kid-sized bags by age and season, plus the temperature rating your child actually needs.',
     eyebrow: 'Gear guide',
-    relatedGuides: ['family-camping-gear-list', 'best-family-tent-for-beginners', 'family-camping-for-beginners'],
+    relatedGuides: ['how-to-keep-kids-warm-camping', 'family-camping-gear-list', 'best-family-tent-for-beginners'],
   },
   {
     slug: 'how-to-set-up-a-tent',
@@ -398,7 +433,18 @@ export const GUIDES: Guide[] = [
     title: 'How to Set Up a Family Tent',
     description: 'Site selection, staking, the rainfly, and the mistakes first-timers make.',
     eyebrow: 'How-to',
-    relatedGuides: ['how-to-break-camp', 'best-family-tent-for-beginners', 'best-tent-for-rainy-camping'],
+    relatedGuides: ['setting-up-camp-in-the-dark', 'how-to-break-camp', 'best-family-tent-for-beginners'],
+  },
+  {
+    slug: 'setting-up-camp-in-the-dark',
+    category: 'basics',
+    title: 'Setting Up Camp in the Dark',
+    description: 'The arrival math, the setup order, and how to light a site so a family can still function after sunset.',
+    eyebrow: 'How-to',
+    metaTitle: 'Setting Up Camp in the Dark With Kids',
+    metaDescription:
+      'Arriving after sunset with kids: plan the evening backwards from dark, pitch a tent by headlamp, light a site, and handle a kid scared of the dark.',
+    relatedGuides: ['how-to-set-up-a-tent', 'fall-camping-for-beginners', 'first-night-camping-guide'],
   },
   {
     slug: 'how-to-pack-a-cooler',
@@ -406,7 +452,15 @@ export const GUIDES: Guide[] = [
     title: 'How to Pack a Cooler for Camping',
     description: 'Pre-chilling, block vs. cubed ice, the two-cooler split, and the packing order that keeps food cold for days.',
     eyebrow: 'How-to',
-    relatedGuides: ['family-camping-gear-list', 'camping-meal-plan-family', 'easy-family-camping-meals'],
+    relatedGuides: ['how-to-wash-dishes-camping', 'camping-meal-plan-family', 'easy-family-camping-meals'],
+  },
+  {
+    slug: 'how-to-wash-dishes-camping',
+    category: 'basics',
+    title: 'How to Wash Dishes While Camping',
+    description: 'The two-basin setup, how much water to bring, where gray water goes, and what to do when fall campgrounds shut off the water.',
+    eyebrow: 'How-to',
+    relatedGuides: ['how-to-pack-a-cooler', 'when-do-campgrounds-close', 'cold-weather-camping-meals'],
   },
   {
     slug: 'how-to-break-camp',
@@ -415,6 +469,17 @@ export const GUIDES: Guide[] = [
     description: 'The teardown order that actually works: fire out cold, tent packed dry, trash gone, and the car loaded once instead of twice.',
     eyebrow: 'How-to',
     relatedGuides: ['how-to-store-camping-gear', 'how-to-set-up-a-tent', 'how-to-start-a-campfire'],
+  },
+  {
+    slug: 'how-to-prevent-tent-condensation',
+    category: 'basics',
+    title: 'How to Prevent Tent Condensation',
+    description: 'Why the tent is wet inside when it never rained, and the venting, pitching, and site habits that keep sleeping bags dry on cold nights.',
+    eyebrow: 'How-to',
+    metaTitle: 'How to Prevent Tent Condensation',
+    metaDescription:
+      'How to prevent tent condensation: why the tent is wet when it never rained, how to vent and pitch the rainfly, and what to do when the ceiling drips.',
+    relatedGuides: ['rainy-camping-trips', 'fall-camping-for-beginners', 'how-to-set-up-a-tent'],
   },
   {
     slug: 'how-to-store-camping-gear',
@@ -451,7 +516,7 @@ export const GUIDES: Guide[] = [
     title: 'Easy Family Camping Meals',
     description: '15 camp meals that travel well, cook fast, and kids will actually eat.',
     eyebrow: 'Camp food',
-    relatedGuides: ['camping-meal-plan-family', 'no-cook-camping-meals-kids', 'family-camping-for-beginners'],
+    relatedGuides: ['camping-meal-plan-family', 'no-cook-camping-meals-kids', 'cold-weather-camping-meals'],
   },
   {
     slug: 'camping-meal-plan-family',
@@ -478,12 +543,43 @@ export const GUIDES: Guide[] = [
     relatedGuides: ['how-to-start-a-campfire', 'easy-family-camping-meals', 'camping-meal-plan-family'],
   },
   {
+    slug: 'cold-weather-camping-meals',
+    category: 'basics',
+    title: 'Cold-Weather Camping Meals for Families',
+    description: 'Warm one-pot dinners made at home, a hot-drink station that runs all day, and the bedtime snack that keeps kids warm.',
+    eyebrow: 'Camp food',
+    metaTitle: 'Cold-Weather Camping Meals for Families',
+    metaDescription:
+      'Cold-weather camping meals for families: one-pot dinners made at home, a hot-drink station that runs all day, and the bedtime snack that keeps kids warm.',
+    relatedGuides: ['how-to-keep-kids-warm-camping', 'easy-family-camping-meals', 'fall-camping-for-beginners'],
+  },
+  {
     slug: 'how-to-start-a-campfire',
     category: 'basics',
     title: 'How to Start a Campfire',
     description: 'Checking before you build, gathering materials, picking a structure, and lighting it - plus wet-weather backups.',
     eyebrow: 'How-to',
-    relatedGuides: ['campfire-recipes-for-kids', 'how-to-set-up-a-tent', 'family-camping-gear-list'],
+    relatedGuides: ['campfire-recipes-for-kids', 'teaching-kids-to-whittle', 'how-to-set-up-a-tent'],
+  },
+  {
+    slug: 'teaching-kids-to-whittle',
+    category: 'basics',
+    title: 'Teaching Kids to Whittle at Camp',
+    description: 'The grip rules, the blood circle, and three safe first projects - from a sharpened stick to a real tent peg.',
+    eyebrow: 'Skills',
+    metaTitle: 'Teaching Kids to Whittle at Camp',
+    metaDescription:
+      'Teaching kids to whittle at camp: how to judge readiness, the knife to start with, the grip and safety rules, and three safe first carving projects in order.',
+    relatedGuides: ['how-to-start-a-campfire', 'campfire-recipes-for-kids', 'camping-first-aid-kit-for-families'],
+  },
+  {
+    slug: 'camping-during-a-burn-ban',
+    category: 'basics',
+    title: 'Camping During a Burn Ban',
+    description: 'What Stage 1 and Stage 2 fire restrictions allow, cooking on a stove, propane fire pits, and no-campfire evenings with kids.',
+    eyebrow: 'Fire restrictions',
+    metaTitle: 'Camping During a Burn Ban: A Family Guide',
+    relatedGuides: ['how-to-start-a-campfire', 'camping-after-dark-with-kids', 'fall-camping-for-beginners'],
   },
   // --- Location: where to camp with family ---
   {
@@ -516,7 +612,7 @@ export const GUIDES: Guide[] = [
     metaTitle: 'Recreation.gov Reservation Strategy',
     metaDescription:
       'How recreation.gov actually works: the 6-month rolling window, the 10am ET drop, and what to do when nothing is available. A playbook for beginners.',
-    relatedGuides: ['labor-day-weekend-camping', 'how-to-plan-a-camping-trip', 'best-state-parks-for-families'],
+    relatedGuides: ['when-do-campgrounds-close', 'labor-day-weekend-camping', 'how-to-plan-a-camping-trip'],
   },
   {
     slug: 'labor-day-weekend-camping',
@@ -527,7 +623,29 @@ export const GUIDES: Guide[] = [
     metaTitle: 'Labor Day Weekend Camping: What to Expect',
     metaDescription:
       'Labor Day camping: why the good spots filled up months ago, what still has openings, holiday crowd etiquette, and packing for the summer-to-fall turn.',
-    relatedGuides: ['recreation-gov-reservation-strategy', 'halloween-camping-with-kids', 'fall-camping-for-beginners'],
+    relatedGuides: ['recreation-gov-reservation-strategy', 'columbus-day-weekend-camping', 'fall-camping-for-beginners'],
+  },
+  {
+    slug: 'columbus-day-weekend-camping',
+    category: 'scenario',
+    title: 'Columbus Day Weekend Camping',
+    description: 'Peak fall color meets closing week. How to find an open site, check that the water is still on, and pack for nights in the 30s.',
+    eyebrow: 'Holiday weekend',
+    metaTitle: 'Columbus Day Weekend Camping With Kids',
+    metaDescription:
+      'Columbus Day (Indigenous Peoples\' Day) weekend camping: foliage crowds, campground closures, what still has openings, and packing for cold nights.',
+    relatedGuides: ['labor-day-weekend-camping', 'how-to-keep-kids-warm-camping', 'halloween-camping-with-kids'],
+  },
+  {
+    slug: 'fall-foliage-camping-with-kids',
+    category: 'scenario',
+    title: 'Fall Foliage Camping With Kids',
+    description: 'When peak color actually lands by region, why elevation beats the calendar, and how to book the hardest weekend of the fall.',
+    eyebrow: 'Fall trips',
+    metaTitle: 'Fall Foliage Camping With Kids (Peak Timing)',
+    metaDescription:
+      'Fall foliage camping with kids: when peak color actually lands by region, why elevation beats the calendar, how to book a leaf-peeping weekend, and what to do at camp.',
+    relatedGuides: ['fall-camping-for-beginners', 'camping-in-the-appalachians-for-beginners', 'recreation-gov-reservation-strategy'],
   },
   {
     slug: 'halloween-camping-with-kids',
@@ -538,7 +656,7 @@ export const GUIDES: Guide[] = [
     metaTitle: 'Halloween Camping Kids Trick-or-Treat',
     metaDescription:
       'Halloween camping with kids: how campground trick-or-treat weekends work, why they run in mid-October, and costumes that fit over warm layers.',
-    relatedGuides: ['camping-after-dark-with-kids', 'fall-camping-for-beginners', 'labor-day-weekend-camping'],
+    relatedGuides: ['camping-after-dark-with-kids', 'thanksgiving-camping-with-kids', 'fall-camping-for-beginners'],
   },
   {
     slug: 'camping-after-dark-with-kids',
@@ -549,6 +667,234 @@ export const GUIDES: Guide[] = [
     metaTitle: 'Camping After Dark With Kids',
     metaDescription:
       'Camping after dark with kids: how much daylight fall costs you, the three-layer lighting setup for a campsite, and what to do with a long evening.',
-    relatedGuides: ['fall-camping-for-beginners', 'halloween-camping-with-kids', 'first-night-camping-guide'],
+    relatedGuides: ['stargazing-camping-with-kids', 'fall-camping-for-beginners', 'halloween-camping-with-kids'],
+  },
+  {
+    slug: 'when-do-campgrounds-close',
+    category: 'basics',
+    title: 'When Do Campgrounds Close for the Season?',
+    description: 'Every campground has two closing dates, and the water goes off before either one.',
+    eyebrow: 'Off-season',
+    metaTitle: 'When Do Campgrounds Close for Winter?',
+    metaDescription:
+      'When campgrounds close for the season, why the water gets shut off first, what stays open all winter, and how to check the real dates before you book.',
+    relatedGuides: ['recreation-gov-reservation-strategy', 'fall-camping-for-beginners', 'winter-camping-for-beginners'],
+  },
+  {
+    slug: 'camping-during-hunting-season',
+    category: 'seasonal',
+    title: 'Camping During Hunting Season With Kids',
+    shortLabel: 'Hunting season',
+    description: 'Which public land allows hunting, how to read the season dates, and the blaze orange rules for a family.',
+    eyebrow: 'Fall safety',
+    metaTitle: 'Camping During Hunting Season',
+    metaDescription:
+      'Camping during hunting season with kids: which public land allows hunting, how to check season dates, and the blaze orange and timing rules for families.',
+    relatedGuides: ['fall-camping-for-beginners', 'dispersed-camping-on-blm-and-national-forest-land', 'camping-after-dark-with-kids'],
+  },
+  {
+    slug: 'how-to-keep-kids-warm-camping',
+    category: 'scenario',
+    title: 'How to Keep Kids Warm Camping',
+    description: 'The ground-up sleep system, what to wear to bed, and what to do when a kid wakes up cold at 2 a.m.',
+    eyebrow: 'Cold nights',
+    metaTitle: 'Keep Kids Warm Camping on Cold Nights',
+    metaDescription:
+      'How to keep kids warm camping: the ground-up sleep system, what to wear to bed, mistakes that make kids cold, and how to warm a shivering child at 2 a.m.',
+    relatedGuides: ['best-camping-sleeping-bag-for-kids', 'camping-with-a-baby', 'tent-heater-safety'],
+  },
+  {
+    slug: 'camping-in-bear-country-with-kids',
+    category: 'scenario',
+    title: 'Camping in Bear Country With Kids',
+    description: 'The food rule applied to a real family campsite, three rules kids can remember, and what to do if one walks through your loop.',
+    eyebrow: 'Wildlife',
+    metaTitle: 'Camping in Bear Country With Kids',
+    metaDescription:
+      'Camping in bear country with kids: why fall is peak bear season, what goes in the bear box, three rules kids can remember, and what to do if you see one.',
+    relatedGuides: ['fall-camping-for-beginners', 'camping-in-wyoming-for-beginners', 'dispersed-camping-on-blm-and-national-forest-land'],
+  },
+  {
+    slug: 'thanksgiving-camping-with-kids',
+    category: 'scenario',
+    title: 'Thanksgiving Camping With Kids',
+    description: 'Where campgrounds are still open in late November, a turkey that fits a Dutch oven, cooler food safety, and a long cold evening.',
+    eyebrow: 'Holiday weekend',
+    metaTitle: 'Thanksgiving Camping With Kids: Plan & Menu',
+    metaDescription:
+      'Thanksgiving camping with kids: where campgrounds are still open in late November, a turkey plan that works over coals, food safety in a cooler, and staying warm.',
+    relatedGuides: ['halloween-camping-with-kids', 'how-to-keep-kids-warm-camping', 'easy-family-camping-meals'],
+  },
+  {
+    slug: 'camping-in-40-degree-weather',
+    category: 'seasonal',
+    title: 'Camping in 30 and 40 Degree Weather',
+    shortLabel: 'Cold snaps',
+    description: 'The pad, bag, and bedtime routine for a night in the 30s or 40s, and when a cold, wet forecast means it is time to go home.',
+    eyebrow: 'Cold snap',
+    metaTitle: 'Camping in 30 and 40 Degree Weather',
+    metaDescription:
+      'Camping in 40 degree weather or a night in the 30s: the sleeping bag and pad you need, what to wear to bed, and when a cold snap means it is time to leave.',
+    relatedGuides: ['how-to-keep-kids-warm-camping', 'sleeping-pad-r-value-explained', 'fall-camping-for-beginners'],
+  },
+  {
+    slug: 'gifts-for-campers',
+    category: 'seasonal',
+    title: 'Gifts for Campers: A Family Gift Guide',
+    shortLabel: 'Holiday gifts',
+    description: 'Stocking stuffers, useful upgrades, bigger gifts, and picks for kids, for the camper who already owns a tent.',
+    eyebrow: 'Gift guide',
+    metaTitle: 'Gifts for Campers: 2026 Family Gift Guide',
+    metaDescription:
+      'Gifts for campers who already own a tent: stocking stuffers under $25, useful upgrades, big gifts, picks for kids, and a park pass good for a year.',
+    relatedGuides: ['best-camping-gifts-for-families', 'camping-stocking-stuffers', 'family-camping-gear-list'],
+  },
+  {
+    slug: 'best-camping-gifts-for-families',
+    category: 'seasonal',
+    title: 'The Best Camping Gifts for Families',
+    shortLabel: 'Family gifts',
+    description: 'Shared gifts the whole family uses at the campsite, plus gift guides for kids, new campers, stocking stuffers, and under $50.',
+    eyebrow: 'Gift guide',
+    metaTitle: 'Best Camping Gifts for Families 2026',
+    metaDescription:
+      'The best camping gifts for families in 2026: shared gifts the whole family uses, plus gift guides for kids, new campers, stocking stuffers, and under $50.',
+    relatedGuides: ['camping-gifts-for-kids', 'gifts-for-new-campers', 'camping-gifts-under-50'],
+  },
+  {
+    slug: 'camping-gifts-for-kids',
+    category: 'seasonal',
+    title: 'Gifts for Kids Who Love Camping',
+    shortLabel: 'Kids gifts',
+    description: 'Camping gifts for kids sorted by age, from bug magnifiers and roasting sticks to compasses, binoculars, and a sleeping bag that fits.',
+    eyebrow: 'Gift guide',
+    metaTitle: 'Camping Gifts for Kids: 2026 Gift Guide',
+    metaDescription:
+      'Camping gifts for kids, sorted by age: their own headlamp, roasting sticks, nature guides, art kits, and a sleeping bag that fits. Gear they use every trip.',
+    relatedGuides: ['best-camping-gifts-for-families', 'camping-stocking-stuffers', 'best-camping-sleeping-bag-for-kids'],
+  },
+  {
+    slug: 'camping-stocking-stuffers',
+    category: 'seasonal',
+    title: 'Camping Stocking Stuffers Under $25',
+    shortLabel: 'Stocking stuffers',
+    description: 'Small camping gifts under $25 that get used: hand warmers, stormproof matches, headlamps, tick removers, and picks for kids.',
+    eyebrow: 'Gift guide',
+    metaTitle: 'Camping Stocking Stuffers Under $25',
+    metaDescription:
+      'Camping stocking stuffers under $25 that get used: hand warmers, stormproof matches, headlamps, a star finder, tick removers, and small gifts for kids.',
+    relatedGuides: ['best-camping-gifts-for-families', 'camping-gifts-under-50', 'camping-gifts-for-kids'],
+  },
+  {
+    slug: 'gifts-for-new-campers',
+    category: 'seasonal',
+    title: 'Gifts for New Campers',
+    shortLabel: 'Beginner gifts',
+    description: 'For someone planning a first trip: the gear gaps every beginner has, from headlamps and a stove to a first aid kit, without guessing on the tent.',
+    eyebrow: 'Gift guide',
+    metaTitle: 'Gifts for New Campers and Beginners',
+    metaDescription:
+      'Gifts for new campers and families planning a first trip: headlamps, a camp stove, a cook kit, a first aid kit, and the small gear beginners always forget.',
+    relatedGuides: ['best-camping-gifts-for-families', 'camping-for-beginners', 'first-camping-trip-checklist'],
+  },
+  {
+    slug: 'camping-gifts-under-50',
+    category: 'seasonal',
+    title: 'Camping Gifts Under $50',
+    shortLabel: 'Gifts under $50',
+    description: 'Real camping gear for $25 to $50: a vacuum bottle, power bank, first aid kit, water filter, small stove, and family games.',
+    eyebrow: 'Gift guide',
+    metaTitle: 'Camping Gifts Under $50: 2026 Picks',
+    metaDescription:
+      'Camping gifts under $50 that are real gear: a vacuum bottle, power bank, first aid kit, water filter, camp stove, and games for the whole family.',
+    relatedGuides: ['best-camping-gifts-for-families', 'camping-stocking-stuffers', 'gifts-for-campers'],
+  },
+  {
+    slug: 'camping-first-aid-kit-for-families',
+    category: 'basics',
+    title: 'Camping First Aid Kit for Families',
+    description: 'A store-bought base kit, the kid-specific add-ons it leaves out, and how to handle the five injuries that actually happen at camp.',
+    eyebrow: 'Safety',
+    metaTitle: 'Family Camping First Aid Kit Checklist',
+    metaDescription:
+      'What goes in a family camping first aid kit: the base kit, kid-specific add-ons, fall extras, how to treat common camp injuries, and when to drive to urgent care.',
+    relatedGuides: ['family-camping-gear-list', 'first-time-camping-mistakes', 'camping-with-kids-first-time'],
+  },
+  {
+    slug: 'sleeping-pad-r-value-explained',
+    category: 'basics',
+    title: 'Sleeping Pad R-Value Explained',
+    description: 'What the number measures, what R-value you need by season, why pads stack, and the air mattress trap.',
+    eyebrow: 'Gear guide',
+    metaTitle: 'Sleeping Pad R-Value Explained: What Families Need',
+    metaDescription:
+      'Sleeping pad R-value explained for family campers: what the number measures, what R-value you need by season, why pads stack, and the air mattress trap.',
+    relatedGuides: ['how-to-keep-kids-warm-camping', 'best-camping-sleeping-bag-for-kids', 'fall-camping-for-beginners'],
+  },
+  {
+    slug: 'camp-stove-fuel-in-cold-weather',
+    category: 'basics',
+    title: 'Camp Stove Fuel in Cold Weather',
+    description: 'Why butane sputters near freezing, how cold changes propane, and the habits that keep breakfast on schedule on a frosty morning.',
+    eyebrow: 'How-to',
+    metaTitle: 'Camp Stove Fuel in Cold Weather: Propane vs Butane',
+    metaDescription:
+      'Why butane stoves sputter near freezing, how cold propane still works, and the simple tricks that keep a family camp stove running on a frosty fall morning.',
+    relatedGuides: ['fall-camping-for-beginners', 'how-to-keep-kids-warm-camping', 'winter-camping-for-beginners'],
+  },
+  {
+    slug: 'camping-with-a-baby',
+    category: 'scenario',
+    title: 'Camping With a Baby',
+    description: 'Safe sleep in a tent, dressing a baby for cool nights, feeding and bottles at camp, and the short trip that makes a first outing work.',
+    eyebrow: 'With kids',
+    metaTitle: 'Camping With a Baby - A Practical First-Trip Guide',
+    metaDescription:
+      'Camping with a baby: safe sleep in a tent, dressing an infant for cool fall nights, feeding and bottles at camp, and how to shape a short first trip.',
+    relatedGuides: ['camping-with-toddlers', 'how-to-keep-kids-warm-camping', 'fall-camping-for-beginners'],
+  },
+  {
+    slug: 'stargazing-camping-with-kids',
+    category: 'scenario',
+    title: 'Stargazing Camping With Kids',
+    description: 'Picking a dark-sky campsite and a moonless weekend, the fall meteor showers worth staying up for, and keeping kids warm while they look up.',
+    eyebrow: 'Night sky',
+    metaTitle: 'Stargazing Camping With Kids: Dark Skies',
+    metaDescription:
+      'Stargazing camping with kids: how to pick a dark-sky campsite and a moonless weekend, the fall 2026 meteor showers worth staying up for, and how to keep kids warm and looking up.',
+    relatedGuides: ['camping-after-dark-with-kids', 'how-to-keep-kids-warm-camping', 'fall-camping-for-beginners'],
+  },
+  {
+    slug: 'camping-in-high-wind',
+    category: 'scenario',
+    title: 'Camping in High Wind With Kids',
+    description: 'What the forecast numbers mean, how to site and stake a tent that stays put, and the wind speed where you pack up.',
+    eyebrow: 'Wind',
+    metaTitle: 'Camping in High Wind With Kids',
+    metaDescription:
+      'Camping in high wind with kids: what sustained and gust numbers mean, how to site and stake a family tent, what turns into a projectile, and when to leave.',
+    relatedGuides: ['camping-when-the-weather-turns', 'how-to-set-up-a-tent', 'fall-camping-for-beginners'],
+  },
+  {
+    slug: 'tent-heater-safety',
+    category: 'scenario',
+    title: 'Tent Heater Safety',
+    description: 'Why no fuel-burning heater belongs in a family tent, what oxygen-depletion sensors do not cover, and the warm setup to use instead.',
+    eyebrow: 'Cold nights',
+    metaTitle: 'Are Propane Tent Heaters Safe?',
+    metaDescription:
+      'Are tent heaters safe? Why fuel-burning heaters never belong in a tent, the limits of oxygen-depletion sensors, and the sleep system to use instead.',
+    relatedGuides: ['how-to-keep-kids-warm-camping', 'tent-camping-at-an-electric-site', 'winter-camping-for-beginners'],
+  },
+  {
+    slug: 'tent-camping-at-an-electric-site',
+    category: 'scenario',
+    title: 'Tent Camping at an Electric Site',
+    description: 'What is on the pedestal, the cord and adapter to bring, what is worth plugging in, and the sleep system that still works when the power drops.',
+    eyebrow: 'Cold nights',
+    metaTitle: 'Tent Camping at an Electric Site: A Family Guide',
+    metaDescription:
+      'Tent camping at an electric site: what the pedestal outlets are, the cord and adapter to bring, what to plug in on a cold night, and how to run power safely.',
+    relatedGuides: ['tent-heater-safety', 'how-to-keep-kids-warm-camping', 'camping-in-40-degree-weather'],
   },
 ]

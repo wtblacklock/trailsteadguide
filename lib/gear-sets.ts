@@ -57,6 +57,8 @@ export type GearSet = {
   id: GearSetId
   title: string
   tagline: string
+  /** Meta description for /gear/sets/[setId]. Aim for 120-155 chars; the tagline alone is too short. */
+  metaDescription: string
   entries: GearSetEntry[]
 }
 
@@ -65,6 +67,8 @@ export const GEAR_SETS: Record<GearSetId, GearSet> = {
     id: 'BACKYARD_TEST_GEAR',
     title: 'Backyard Test Kit',
     tagline: 'The minimum to simulate a real campsite without leaving home.',
+    metaDescription:
+      'The minimum to simulate a real campsite without leaving home: a tent, a sleeping bag and lighting for the Backyard Test, with budget and premium picks.',
     entries: [
       { productId: 'coleman-sundome-4p', category: 'Tent', slot: 'TENT' },
       { productId: 'tnf-wawona-6', category: 'Tent', slot: 'TENT', tier: 'premium' },
@@ -80,6 +84,8 @@ export const GEAR_SETS: Record<GearSetId, GearSet> = {
     id: 'FIRST_NIGHT_MINIMAL_GEAR',
     title: 'First Night Simple Kit',
     tagline: 'One tent, one sleep system, one light setup. Nothing extra.',
+    metaDescription:
+      'One tent, one sleep system, one light setup. Nothing extra. A sleeping bag and pad, a lantern and a headlamp, with budget and premium picks for each.',
     entries: [
       { productId: 'coleman-sundome-4p', category: 'Tent', slot: 'TENT' },
       { productId: 'tnf-wawona-6', category: 'Tent', slot: 'TENT', tier: 'premium' },
@@ -100,10 +106,12 @@ export const GEAR_SETS: Record<GearSetId, GearSet> = {
     id: 'WEEKEND_BALANCED_GEAR',
     title: 'Weekend Ready Kit',
     tagline: 'Two-night comfort without overpacking the car.',
+    metaDescription:
+      'Two-night comfort without overpacking the car: a weather-ready tent, sleep system, single-burner stove, cooler, lantern, headlamps and a rocker chair.',
     entries: [
-      // Step up from the entry-level Sundome to a sturdier 4P with better
-      // pole + fly quality - worth it once you know you'll go back out.
-      { productId: 'alps-lynx-4p', category: 'Tent', slot: 'TENT' },
+      // Step up from the entry-level Sundome to a weather-ready tent with a
+      // full-coverage fly - worth it once you know you'll go back out.
+      { productId: 'kelty-wireless-6', category: 'Tent', slot: 'TENT' },
       { productId: 'coleman-sundome-4p', category: 'Tent', slot: 'TENT', tier: 'budget' },
       { productId: 'tnf-wawona-6', category: 'Tent', slot: 'TENT', tier: 'premium' },
       { productId: 'coleman-brazos-bag', category: 'Sleep', slot: 'SLEEP_BAG' },
@@ -133,6 +141,8 @@ export const GEAR_SETS: Record<GearSetId, GearSet> = {
     id: 'EASY_FAMILY_BASECAMP_GEAR',
     title: 'Family Basecamp Kit',
     tagline: 'Three-night basecamp with real beds, real shade, real meals.',
+    metaDescription:
+      'Three-night basecamp with real beds, real shade, real meals: a 6-person instant cabin, air bed, 2-burner stove, cooler, canopy and toddler play space.',
     entries: [
       // 6+ person pop-up cabin - vertical walls, room for kids and gear.
       { productId: 'core-6p-instant-cabin', category: 'Tent', slot: 'TENT' },
@@ -155,7 +165,7 @@ export const GEAR_SETS: Record<GearSetId, GearSet> = {
       { productId: 'coleman-portable-chair-cooler', category: 'Comfort', slot: 'CHAIR', tier: 'budget' },
       { productId: 'camp-chairs', category: 'Comfort', slot: 'CHAIR', tier: 'premium' },
       // Shade for a 3-day stay is worth its weight.
-      { productId: 'core-10x10-canopy', category: 'Comfort' },
+      { productId: 'crown-shades-10x10-canopy', category: 'Comfort' },
       // The differentiator: contained play space for the smallest campers.
       { productId: 'kidco-gopod', category: 'Fun upgrade' },
     ],

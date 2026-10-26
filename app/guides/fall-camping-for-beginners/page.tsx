@@ -86,7 +86,7 @@ export default function Page() {
       lede="What to expect, what to bring, and how to avoid common mistakes."
       heroImage={{
         src: HERO_IMAGE,
-        alt: 'A family tent under orange and yellow leaves on a crisp fall morning, peak fall camping season',
+        alt: 'A group of campers gathered around a campfire among pine trees at dusk beside a lake',
       }}
     >
       <QuickAnswer
@@ -156,7 +156,7 @@ export default function Page() {
       <h3>Cooking</h3>
       <ul>
         <li>Propane stove. Even with fire bans lifting, a stove cooks dinner faster than a fire and works under any wind that blows up after dark.</li>
-        <li>2 spare propane canisters; cold air thickens propane and slows the burn, so keep a canister in the tent overnight if temps drop near freezing.</li>
+        <li>2 spare propane canisters; cold air thickens propane and slows the burn, so keep a canister in the tent overnight if temps drop near freezing. Skip butane stoves entirely this time of year; our guide to <Link href="/guides/camp-stove-fuel-in-cold-weather">camp stove fuel in cold weather</Link> explains why.</li>
         <li>Smaller cooler than summer. A medium-size soft cooler often beats a 50-quart hard cooler in fall.</li>
         <li>1 gallon of drinking water per person per day, plus extra for cooking and cleanup. Some campgrounds shut spigots off in late October to prevent freeze damage.</li>
         <li>Hot-drink supplies - coffee, tea, hot cocoa, instant cider. The morning kettle does as much for morale as the breakfast.</li>
@@ -181,7 +181,7 @@ export default function Page() {
       </p>
       <ol>
         <li>
-          <strong>Packing the summer sleeping bag.</strong> A 40°F bag at a 30°F night is a long, sleepless six hours - the exact regret first-fall trippers report afterwards, often after wearing every layer they brought and stuffing clothes inside the bag for warmth. The 20°F bag is the right call from late September through early November almost everywhere.
+          <strong>Packing the summer sleeping bag.</strong> A 40°F bag at a 30°F night is a long, sleepless six hours - the exact regret first-fall trippers report afterwards, often after wearing every layer they brought and stuffing clothes inside the bag for warmth. The 20°F bag is the right call from late September through early November almost everywhere. Kids run colder than adults in the same tent, so build their setup warmer on purpose - see <Link href="/guides/how-to-keep-kids-warm-camping">how to keep kids warm camping</Link>. For the full pad, bag, and bedtime setup for a night in the 30s, see <Link href="/guides/camping-in-40-degree-weather">camping in 30 and 40 degree weather</Link>.
         </li>
         <li>
           <strong>Sealing the tent up tight.</strong> The wet ceiling at dawn isn&apos;t a leaky tent - it&apos;s your breath condensing on the cold rainfly. Crack the door zipper an inch at the top and stake the fly off the inner body for airflow. A pack towel handles the morning wipe-down.
@@ -193,16 +193,16 @@ export default function Page() {
           <strong>No real puffy.</strong> A hoodie is for shoulder season; the puffy is the warm layer that lets you sit at the picnic table after dinner instead of giving up and going to bed at 7pm. If you&apos;ve never tested cold-night layering, run a <Link href="/plans/backyard-test">backyard test</Link> on a 35°F night before committing to a state park trip.
         </li>
         <li>
-          <strong>Booking peak-foliage weekend two weeks out.</strong> Mid-October in New England, the Smokies, and the upper Midwest fills 2-3 months in advance. Mid-week is wide open if your schedule allows; otherwise either book early or shift the dates a week.
+          <strong>Booking peak-foliage weekend two weeks out.</strong> Mid-October in New England, the Smokies, and the upper Midwest fills 2-3 months in advance. Mid-week is wide open if your schedule allows; otherwise either book early or shift the dates a week. Or head somewhere that peaks later: color in the Ozarks usually runs into early November, so see <Link href="/guides/camping-in-the-ozarks-for-beginners">camping in the Ozarks for beginners</Link> if you missed the northern window.
         </li>
         <li>
           <strong>Cotton anywhere.</strong> Cold sweat is the fast lane to a miserable night. Synthetic or wool for everything that touches skin - including the t-shirt under the base layer.
         </li>
         <li>
-          <strong>Skipping the hunting check.</strong> Many state forests, national forests, and BLM lands allow firearm hunting in October and November. Check the unit, wear blaze orange on trails, and pick a campground that doesn&apos;t share its access road with hunters at dawn.
+          <strong>Skipping the hunting check.</strong> Many state forests, national forests, and BLM lands allow firearm hunting in October and November. Check the unit, wear blaze orange on trails, and pick a campground that doesn&apos;t share its access road with hunters at dawn. Our guide to <Link href="/guides/camping-during-hunting-season">camping during hunting season with kids</Link> walks through which public land allows hunting and how to read a state season calendar.
         </li>
         <li>
-          <strong>Sleeping with food in the tent.</strong> Bears in October are eating 20+ hours a day to put on winter weight, and they remember campgrounds. Bear box, locker, or trunk - every wrapper, every snack, every tube of toothpaste.
+          <strong>Sleeping with food in the tent.</strong> Bears in October are eating 20+ hours a day to put on winter weight, and they remember campgrounds. Bear box, locker, or trunk - every wrapper, every snack, every tube of toothpaste. Our guide to <Link href="/guides/camping-in-bear-country-with-kids">camping in bear country with kids</Link> has the full list of what counts as a scented item and the three rules worth teaching kids.
         </li>
       </ol>
 

@@ -342,7 +342,7 @@ export const PRINTABLES: Printable[] = [
     datePublished: '2026-05-01',
     relatedSkillPath: 'safety/building-a-camp-first-aid-kit',
     relatedGuideSlug: 'first-camping-trip-checklist',
-    relatedProductIds: ['thriad-first-aid-430', 'sawyer-extractor-pump-kit'],
+    relatedProductIds: ['thriad-first-aid-430', 'tickcheck-tick-remover-kit'],
   },
   {
     slug: 'leave-no-trace-quick-reference',
@@ -396,6 +396,83 @@ export const PRINTABLES: Printable[] = [
     relatedSkillPath: 'cooking/cast-iron-cooking',
     relatedGuideSlug: 'first-camping-trip-checklist',
     relatedProductIds: ['lodge-cast-iron-skillet'],
+  },
+  {
+    slug: 'campsite-setup-diagram',
+    category: 'planning',
+    title: 'Campsite Setup Diagram',
+    description:
+      'A free printable top-down campsite layout card - where to put the tent, kitchen, fire ring, food storage, and car relative to each other, with spacing guidance for each zone.',
+    tagline:
+      'A labeled site plan for the five things every campsite needs placed well: tent, kitchen, fire, food, and the car.',
+    whatYouGet: [
+      'A labeled top-down diagram: tent zone, kitchen zone, fire ring, food storage, and parking',
+      'Spacing guidance for each zone, including the fire-ring clearance distance campgrounds and the National Park Service recommend',
+      'A wind-direction note so smoke and cooking smells blow away from the tent',
+      'A reminder on where food storage actually belongs and when to defer to bear-country rules instead',
+      'Letter / A4 sized, one-color print',
+    ],
+    useCases: [
+      'Walk the site once before unloading the car, then set up in the right order',
+      'Settle the "where does the tent go" debate before anyone starts pitching it',
+      'Brief a co-camper or older kid who is helping set up camp for the first time',
+    ],
+    formatNote: 'Single-page printable · Letter / A4 · Free with email signup',
+    datePublished: '2026-09-23',
+    relatedGuideSlug: 'how-to-choose-a-family-campsite',
+    relatedProductIds: ['coleman-sundome-4p', 'crown-shades-10x10-canopy', 'camp-chairs'],
+  },
+  {
+    slug: 'junior-ranger-activity-sheet',
+    category: 'kids',
+    title: 'Junior Ranger Activity Sheet',
+    description:
+      'A free printable Junior Ranger-style activity sheet for camping trips - fill-in-the-blank nature notes, a sky check, and a sketch box for kids.',
+    tagline:
+      'One page, one pencil. Fill in what you noticed, sketch what you found, and sign your own ranger pledge - inspired by the booklets parks hand out at the visitor center.',
+    whatYouGet: [
+      'A fill-in-the-blank campsite report: park name, date, weather, and a temperature guess',
+      'Four open-ended observation prompts for animals, tracks, sounds, and questions',
+      'A sky check box for one cloud shape and one thing spotted after dark',
+      'A blank sketch box for a leaf, rock, or bug found on the trail',
+      'A simple ranger pledge kids sign themselves',
+      'Letter / A4 sized, one page',
+    ],
+    useCases: [
+      'A quiet-time activity while the official park Junior Ranger booklet is picked up at the visitor center',
+      'Something to fill out at the picnic table before or after a hike',
+      'A keepsake page for a trip journal or scrapbook',
+    ],
+    formatNote: 'Single-page printable · Letter / A4 · Free with email signup',
+    datePublished: '2026-09-16',
+    relatedSkillPath: 'hiking/day-hike-essentials',
+    relatedGuideSlug: 'camping-with-kids-first-time',
+    relatedProductIds: ['kidco-gopod'],
+  },
+  {
+    slug: 'fishing-quick-reference-card',
+    category: 'planning',
+    title: 'Camp Fishing Quick Reference Card',
+    description:
+      'A free printable camp fishing reference card - the basic bobber rig, the improved clinch knot, bait picks by species, and the catch-and-release steps that keep fish healthy.',
+    tagline:
+      'One rig. One knot. Four species. Everything a first-time camp angler needs on one card, front and back.',
+    whatYouGet: [
+      'The basic rig: line, swivel, split shot, bobber, and hook, in order',
+      'The improved clinch knot - the one knot that attaches almost anything to the line',
+      'Hook, bait, and setup picks for panfish, stream trout, bass, and catfish',
+      'The catch-and-release steps that keep a fish healthy if you are letting it go',
+      'Letter / A4 sized, front & back, one-color print',
+    ],
+    useCases: [
+      'Rig a rod for a first-time angler before the lake or pond is even in sight',
+      'A pocket reference for which bait to tie on when nothing is biting',
+      'Teach a kid to release a fish without hurting it',
+    ],
+    formatNote: 'Single-sheet printable · front & back · Letter / A4 · Free with email signup',
+    datePublished: '2026-10-14',
+    relatedSkillPath: 'fishing/rod-setup-and-casting',
+    relatedProductIds: ['zebco-33-spincast-combo', 'tackle-box-lure-assortment', 'fishing-forceps-hemostat'],
   },
   {
     slug: 'camping-with-dogs-field-card',

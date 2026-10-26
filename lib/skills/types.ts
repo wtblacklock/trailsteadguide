@@ -54,6 +54,12 @@ export type Skill = {
   category: SkillCategoryId
   title: string
   tagline: string
+  /**
+   * Meta description for the detail page. The one-line tagline is too short
+   * for search snippets, so this restates it with page specifics. Aim for
+   * 120-155 chars. Falls back to `tagline` when unset.
+   */
+  metaDescription?: string
   difficulty: Difficulty
   useCases: string[]
   whenToUse?: string

@@ -47,3 +47,4 @@ data/affiliate-coverage.template.csv
 
 # Brainstorming visual-companion scratch files
 .superpowers/
+scripts/pins/_cache/

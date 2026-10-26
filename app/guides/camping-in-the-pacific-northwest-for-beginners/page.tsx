@@ -87,7 +87,7 @@ export default function Page() {
       lede="What to expect, what changes, and how to plan your first trip in Washington and Oregon."
       heroImage={{
         src: HERO_IMAGE,
-        alt: 'Old-growth conifer forest along an alpine lake near Mt Rainier, Washington Pacific Northwest camping',
+        alt: 'Snow-capped Mt Rainier reflected in a still alpine lake framed by conifers at sunset, Washington',
       }}
     >
       <QuickAnswer
@@ -266,8 +266,8 @@ export default function Page() {
         </li>
         <li>
           <strong>Tarp / canopy.</strong>{' '}
-          <AmazonLink productId="core-10x10-canopy" pageSlug="camping-in-the-pacific-northwest-for-beginners" />{' '}
-          (~$130). Less for shade, more for keeping the picnic table dry.
+          <AmazonLink productId="crown-shades-10x10-canopy" pageSlug="camping-in-the-pacific-northwest-for-beginners" />{' '}
+          (~$140). Less for shade, more for keeping the picnic table dry.
         </li>
         <li>
           <strong>Lighting.</strong>{' '}

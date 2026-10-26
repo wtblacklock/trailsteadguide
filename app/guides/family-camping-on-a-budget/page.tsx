@@ -75,7 +75,7 @@ export default function Page() {
         lede="How to gear up for under $300, where to find cheap and free campsites, and why camping is genuinely one of the most affordable family vacations once the gear is sorted."
         heroImage={{
           src: HERO_IMAGE,
-          alt: 'Family eating a simple meal at a campsite with basic gear set up',
+          alt: 'Three tents lit from inside on a grassy field under a starry night sky',
         }}
         dateModified="2026-09-07"
       >
@@ -208,6 +208,9 @@ export default function Page() {
         </ul>
         <p>
           Equivalent hotel + dining vacation for 4 nights total: $1,200-2,000+. The math is stark. Camping is not expensive - the first year of gear is the only real cost, and it comes back in every trip after.
+        </p>
+        <p>
+          Evening entertainment does not need to cost much either. A deck of cards, a library field guide, and a set of <a href="https://kingbkits.com/kits/game-night" rel="noopener" target="_blank">printable family game night games</a> cover the after-dinner hours without buying anything bulky to haul to camp.
         </p>
 
         <h2>Frequently asked</h2>

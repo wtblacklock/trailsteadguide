@@ -54,6 +54,11 @@ export const TERMS: Term[] = [
       'A 6-8 inch hole dug at least 200 feet from water for human waste in the backcountry. Pack out toilet paper. Part of Leave No Trace.',
   },
   {
+    term: 'Chiggers',
+    definition:
+      'Tiny mite larvae that live in tall grass and leaf litter and leave intensely itchy welts, often at the sock line or waistband. They do not burrow into skin or drink blood - the itch comes from a feeding tube the bite leaves behind, and it can last up to two weeks.',
+  },
+  {
     term: 'Clove hitch',
     definition:
       'A fast hitch used to tie a rope to a pole, post, or tree. Great for hanging lanterns or stringing a clothesline; not for heavy loads.',
@@ -81,6 +86,11 @@ export const TERMS: Term[] = [
     term: 'Declination',
     definition:
       'The angle between true north and magnetic north at your location. Adjust your compass for it before plotting bearings on a map.',
+  },
+  {
+    term: 'DEET',
+    definition:
+      'The most common active ingredient in insect repellent, effective against mosquitoes and ticks. The AAP recommends concentrations of 30% or less for children and advises against any skin repellent, DEET included, on infants under 2 months - use protective clothing and mosquito netting instead.',
   },
   {
     term: 'Dehydrated meal',
@@ -170,6 +180,13 @@ export const TERMS: Term[] = [
   },
 
   // G
+  {
+    term: 'Giardia',
+    definition:
+      'A microscopic parasite that lives in untreated lake and stream water and causes days of stomach cramps and diarrhea if swallowed. Clear, fast-moving water is not proof it is safe - filter, boil, or chemically treat it first.',
+    href: '/skills/safety/water-purification',
+    linkText: 'Water purification',
+  },
   {
     term: 'Ground cloth',
     definition:
@@ -268,12 +285,29 @@ export const TERMS: Term[] = [
       'A lightweight nylon kernmantle rope (550 lb test) originally used for parachute suspension lines. The general-purpose camp rope - every kit should have 25-50 feet.',
   },
   {
+    term: 'Permethrin',
+    definition:
+      'An insecticide used to treat clothing and gear, not skin, that disables ticks and mosquitoes on contact rather than just repelling them. A factory treatment lasts up to 70 washes; a DIY spray-on treatment lasts about 6.',
+  },
+  {
+    term: 'Potable',
+    definition:
+      'Water confirmed safe to drink without filtering or treating, usually from a tested municipal or well supply. A campground spigot marked "potable" can be trusted; an unmarked one should not be.',
+    href: '/skills/safety/water-purification',
+    linkText: 'Water purification',
+  },
+  {
     term: 'Primitive site',
     definition:
       'A campsite with no hookups and minimal amenities - usually just a fire ring and a flat tent pad. Sometimes no toilet. Cheaper, quieter, more work.',
   },
 
   // Q
+  {
+    term: 'Quiet hours',
+    definition:
+      "A campground's set nightly window, commonly 10 p.m. to 6 a.m., when generators, loud music, and noisy arrivals aren't allowed. Posted at check-in or the entrance kiosk - confirm the exact times for wherever you're staying.",
+  },
   {
     term: 'Quilt',
     definition:
@@ -307,6 +341,11 @@ export const TERMS: Term[] = [
   },
 
   // S
+  {
+    term: 'Shoulder season',
+    definition:
+      "The weeks between a campground's busy season and its off-season - typically early spring and late fall in most of the U.S. Crowds thin out and sites are easier to book, but confirm water is turned on and pack for colder nights than peak summer.",
+  },
   {
     term: 'Sleeping bag temp rating',
     definition:
@@ -358,6 +397,13 @@ export const TERMS: Term[] = [
     linkText: 'How to start a fire',
   },
   {
+    term: "Totin' Chip",
+    definition:
+      "A Scouting safety card (Cub Scouts' Whittling Chip, then Scouts BSA's Totin' Chip) earned by learning knife, saw, and axe rules before being trusted to carry one on an outing - and taken away for breaking them. The same rules work for teaching any kid at camp, scouting or not.",
+    href: '/guides/teaching-kids-to-whittle',
+    linkText: 'Teaching kids to whittle',
+  },
+  {
     term: 'Two-burner stove',
     definition:
       'A propane-fueled car-camping stove with two side-by-side burners. The standard family-camping cook setup - coffee on one side, breakfast on the other.',
@@ -366,6 +412,11 @@ export const TERMS: Term[] = [
   },
 
   // V
+  {
+    term: 'Vault toilet',
+    definition:
+      "A waterless outhouse-style toilet built over an underground holding tank, common at primitive sites, trailheads, and dispersed camping areas with no plumbing. Bring your own toilet paper and hand sanitizer - they often run out.",
+  },
   {
     term: 'Vestibule',
     definition:

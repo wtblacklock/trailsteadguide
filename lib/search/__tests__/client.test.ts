@@ -23,7 +23,9 @@ describe('search engine', () => {
 
   it('does not flood results for a short common query', () => {
     const results = searchDocuments(engine, 'tent')
-    expect(results.length).toBeLessThan(60)
+    // Relative cap: a fixed number broke as the site grew, but a short query
+    // should still never match a quarter of everything.
+    expect(results.length).toBeLessThan(Math.ceil(buildSearchIndex().length * 0.25))
   })
 
   it('returns an empty array for a query matching nothing', () => {

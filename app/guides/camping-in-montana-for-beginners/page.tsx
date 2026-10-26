@@ -242,8 +242,8 @@ export default function Page() {
       <ul>
         <li>
           <strong>Tent.</strong>{' '}
-          <AmazonLink productId="alps-lynx-4p" pageSlug="camping-in-montana-for-beginners" />{' '}
-          (~$180). A stronger pole set earns its keep in mountain wind and a surprise August hailstorm.
+          <AmazonLink productId="kelty-wireless-6" pageSlug="camping-in-montana-for-beginners" />{' '}
+          (~$280). A full-coverage rainfly and pre-attached guylines earn their keep in mountain wind and a surprise August storm.
         </li>
         <li>
           <strong>Sleeping bag.</strong>{' '}

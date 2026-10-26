@@ -86,7 +86,7 @@ export default function Page() {
       lede="What to expect, what to bring, and how to avoid common mistakes."
       heroImage={{
         src: HERO_IMAGE,
-        alt: 'Family tent pitched in a sunlit summer meadow at a state park campground, peak season camping setup',
+        alt: 'Glowing tents pitched under tall pines at night, with a campfire lighting up the trees',
       }}
     >
       <QuickAnswer
@@ -206,6 +206,9 @@ export default function Page() {
       <p>
         Camping with young kids specifically? <Link href="/guides/summer-camping-with-kids">Summer camping with kids</Link> covers the heat and sun layer that&apos;s specific to that age group - signs of overheating kids won&apos;t report themselves, sunscreen logistics, and water play as the daily centerpiece.
       </p>
+      <p>
+        Camping over the Fourth of July? It is the busiest weekend of the summer, so book the day the reservation window opens. Personal fireworks are banned on national park, national forest, and BLM land and at most state parks, so plan a different kind of celebration at the site: a few <a href="https://kingbkits.com/kits/fourth-of-july" rel="noopener" target="_blank">printable Fourth of July party games</a>, like patriotic trivia and a red, white and blue scavenger hunt, keep kids busy until the town fireworks start.
+      </p>
 
       <h2>A starter setup that actually works</h2>
       <p>
@@ -229,8 +232,8 @@ export default function Page() {
         </li>
         <li>
           <strong>Shade.</strong>{' '}
-          <AmazonLink productId="core-10x10-canopy" pageSlug="summer-camping-for-beginners" />{' '}
-          (~$130). The gear that gets used the most on hot days. Two minutes to set up.
+          <AmazonLink productId="crown-shades-10x10-canopy" pageSlug="summer-camping-for-beginners" />{' '}
+          (~$140). The gear that gets used the most on hot days. Two minutes to set up.
         </li>
         <li>
           <strong>Lighting.</strong>{' '}

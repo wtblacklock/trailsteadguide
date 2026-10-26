@@ -87,7 +87,7 @@ export default function Page() {
       lede="What to expect, what changes, and how to plan your first trip in the Adirondacks, White Mountains, Acadia, or New England."
       heroImage={{
         src: HERO_IMAGE,
-        alt: 'Still Adirondack lake at dawn with low ridges and pine forest, classic Northeast summer camping scene',
+        alt: 'A hiker sitting on a rocky summit overlooking a small lake, autumn forest, and Adirondack peaks',
       }}
     >
       <QuickAnswer
@@ -244,7 +244,7 @@ export default function Page() {
           <strong>Underdressing for altitude nights.</strong> July at 4,000 ft in the Whites can drop into the 30s overnight. Bring the warm bag and the puffy.
         </li>
         <li>
-          <strong>Trying to book Acadia or Lafayette Place two months out for foliage weekend.</strong> Blackwoods and Seawall release 60 days ahead and book in seconds; NH state parks open 11 months out. Mid-week is the unlock - or shift to a private campground or a national-forest site outside the park.
+          <strong>Trying to book Acadia or Lafayette Place two months out for foliage weekend.</strong> Blackwoods and Seawall release most sites six months ahead, on the first of the month, and book in seconds; only a small 14-day release is left by then. NH state parks open 11 months out. Mid-week is the unlock - or shift to a private campground or a national-forest site outside the park.
         </li>
         <li>
           <strong>Wearing cotton in the rain.</strong> Cool wet rain plus cotton clothing is how hypothermia happens at 50°F. Synthetic and wool only.
@@ -286,8 +286,8 @@ export default function Page() {
         </li>
         <li>
           <strong>Tarp / canopy.</strong>{' '}
-          <AmazonLink productId="core-10x10-canopy" pageSlug="camping-in-the-northeast-for-beginners" />{' '}
-          (~$130). For the routine afternoon rain.
+          <AmazonLink productId="crown-shades-10x10-canopy" pageSlug="camping-in-the-northeast-for-beginners" />{' '}
+          (~$140). For the routine afternoon rain.
         </li>
         <li>
           <strong>Lighting.</strong>{' '}

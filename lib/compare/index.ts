@@ -60,6 +60,18 @@ export const COMPARE_PAGES: ComparePageEntry[] = [
       'Dome tent vs. cabin tent compared for family camping: setup time, wind resistance, headroom, weight, and price. Which style actually wins for car camping.',
   },
   {
+    slug: '3-season-vs-4-season-tent',
+    title: '3-Season vs. 4-Season Tent for Families',
+    excerpt:
+      '3-season vs. 4-season tent compared for family camping: wind, snow load, ventilation, condensation, weight, and price. Whether your summer tent can handle fall and winter.',
+  },
+  {
+    slug: 'mummy-vs-rectangular-sleeping-bag',
+    title: 'Mummy vs. Rectangular Sleeping Bag for Families',
+    excerpt:
+      'Mummy vs. rectangular sleeping bag compared for family camping: warmth, room to move, kids who roll, packed size, and price. Which shape wins as fall nights get cold.',
+  },
+  {
     slug: 'family-camping-vs-cabin-rental',
     title: 'Family Camping vs Cabin Rental - Real Tradeoffs',
     excerpt:
@@ -88,6 +100,12 @@ export const COMPARE_PAGES: ComparePageEntry[] = [
     title: 'Air Mattress vs Cot Combo vs Pad: What to Sleep On',
     excerpt:
       'Air mattress vs cot-airbed combo vs sleeping pad compared for car campers: comfort, setup, packed size, durability, and price. Pick the right sleep system.',
+  },
+  {
+    slug: 'down-vs-synthetic-sleeping-bag',
+    title: 'Down vs. Synthetic Sleeping Bag for Families',
+    excerpt:
+      'Down vs. synthetic sleeping bag compared for family camping: warmth when wet, weight, packed size, washing, lifespan, and price. Which fill actually wins for car camping with kids.',
   },
   {
     slug: 'lantern-vs-headlamp-vs-flashlight',

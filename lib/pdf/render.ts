@@ -12,6 +12,8 @@
  * bottom margin so content above the footer is never clipped.
  */
 
+import { existsSync } from 'node:fs'
+import path from 'node:path'
 import puppeteer, { type Browser } from 'puppeteer-core'
 
 const FOOTER_TEMPLATE = `
@@ -39,8 +41,7 @@ const HEADER_TEMPLATE = `<div style="display:none;">&nbsp;</div>`
 
 const isVercel = !!process.env.VERCEL || !!process.env.AWS_LAMBDA_FUNCTION_NAME
 
-async function localExecutablePath(): Promise<string> {
-  if (process.env.PUPPETEER_EXECUTABLE_PATH) return process.env.PUPPETEER_EXECUTABLE_PATH
+function defaultLocalExecutablePath(): string {
   // Default macOS Chrome path; users can override via env.
   if (process.platform === 'darwin') {
     return '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
@@ -50,6 +51,23 @@ async function localExecutablePath(): Promise<string> {
     return 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe'
   }
   throw new Error('No Chromium found. Set PUPPETEER_EXECUTABLE_PATH.')
+}
+
+async function localExecutablePath(): Promise<string> {
+  if (process.env.PUPPETEER_EXECUTABLE_PATH) return process.env.PUPPETEER_EXECUTABLE_PATH
+
+  const defaultPath = defaultLocalExecutablePath()
+  if (existsSync(defaultPath)) return defaultPath
+
+  // Sandboxes/CI that provision browsers via Playwright instead of a system
+  // Chrome install expose PLAYWRIGHT_BROWSERS_PATH - fall back to that when
+  // the default Chrome path isn't present.
+  if (process.env.PLAYWRIGHT_BROWSERS_PATH) {
+    const playwrightChromium = path.join(process.env.PLAYWRIGHT_BROWSERS_PATH, 'chromium')
+    if (existsSync(playwrightChromium)) return playwrightChromium
+  }
+
+  return defaultPath
 }
 
 async function launchBrowser(): Promise<Browser> {

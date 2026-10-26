@@ -87,7 +87,7 @@ export default function Page() {
       lede="What to expect, what changes, and how to plan your first trip in Arizona, Utah, or New Mexico."
       heroImage={{
         src: HERO_IMAGE,
-        alt: 'Red sandstone walls and pinyon pines along a Zion National Park canyon, Utah Desert Southwest camping country',
+        alt: 'Towering orange sandstone walls above a shallow turquoise river in a narrow Zion National Park canyon, Utah',
       }}
     >
       <QuickAnswer
@@ -282,8 +282,8 @@ export default function Page() {
         </li>
         <li>
           <strong>Shade.</strong>{' '}
-          <AmazonLink productId="core-10x10-canopy" pageSlug="camping-in-the-desert-southwest-for-beginners" />{' '}
-          (~$130). Stake aggressively in desert wind. Shade trees are rare; this is shade.
+          <AmazonLink productId="crown-shades-10x10-canopy" pageSlug="camping-in-the-desert-southwest-for-beginners" />{' '}
+          (~$140). Stake aggressively in desert wind. Shade trees are rare; this is shade.
         </li>
         <li>
           <strong>Lighting.</strong>{' '}

@@ -81,7 +81,7 @@ export default function Page() {
       lede="Two nights. Four people. One car. Here&apos;s the complete packing list, grouped by category - and nothing is on here that you don&apos;t need."
       heroImage={{
         src: HERO_IMAGE,
-        alt: 'Family camping gear organized in piles before packing the car for a 2-night weekend trip',
+        alt: 'A small lit tent among desert shrubs below red rock cliffs at dusk',
       }}
     >
       <QuickAnswer
@@ -174,7 +174,7 @@ export default function Page() {
 
       <h2>What to skip (and what to add)</h2>
       <p>
-        Things that show up on most packing lists but almost never get used on a weekend car camping trip - pair this with the <Link href="/guides/first-camping-trip-checklist">first camping trip checklist</Link> if it&apos;s your first time:
+        Things that show up on most packing lists but almost never get used on a weekend car camping trip - pair this with the <Link href="/guides/first-camping-trip-checklist">first camping trip checklist</Link> if it&apos;s your first time, and see <Link href="/guides/what-not-to-bring-camping">what not to bring camping</Link> for the full list of things to leave home:
       </p>
       <ul>
         <li><strong>Skip:</strong> A full cast-iron set. Bring one skillet if anything.</li>
@@ -188,7 +188,7 @@ export default function Page() {
       <ul>
         <li><strong>Add:</strong> A picnic tablecloth with clips - food prep on raw wood is gross.</li>
         <li><strong>Add:</strong> Baby wipes, even if you have no babies. Quick hand cleanup.</li>
-        <li><strong>Add:</strong> A small deck of playing cards or a travel game for rain evenings.</li>
+        <li><strong>Add:</strong> A small deck of playing cards or a travel game for rain evenings. Printed games pack flat too, like these <a href="https://kingbkits.com/kits/campfire-party" rel="noopener" target="_blank">campfire games for kids</a> with bingo cards and camping trivia.</li>
         <li><strong>Add:</strong> A packable rain tarp with paracord to rig over the picnic table.</li>
         <li><strong>Add:</strong> A collapsible water jug - refilling from a spigot 100 yards away gets old fast.</li>
       </ul>

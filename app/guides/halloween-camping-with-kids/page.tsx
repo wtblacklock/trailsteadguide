@@ -209,7 +209,9 @@ export default function Page() {
           <Link href="/guides/fall-camping-for-beginners">fall camping for beginners</Link>, and if
           this would be your family&apos;s first night in a tent, run a{' '}
           <Link href="/guides/backyard-camping-with-kids">backyard camping</Link> trial on a cold
-          night before committing to the real thing.
+          night before committing to the real thing. A Halloween weekend also makes a good dress
+          rehearsal for the colder, darker trip a month later: see{' '}
+          <Link href="/guides/thanksgiving-camping-with-kids">Thanksgiving camping with kids</Link>.
         </p>
 
         <h2>Decorating a site without wrecking it</h2>
@@ -236,6 +238,12 @@ export default function Page() {
             <Link href="/guides/how-to-break-camp">how to break camp</Link>.
           </li>
         </ul>
+        <p>
+          Once the trick-or-treat loop wraps up, kids are still wired and it is already dark. A few{' '}
+          <a href="https://kingbkits.com/kits/halloween-party" rel="noopener" target="_blank">printable Halloween party games</a>, like Halloween bingo or a
+          mummy wrap race, work well at a picnic table under a lantern and give everyone a reason to
+          stay at the site.
+        </p>
 
         <h2>Frequently asked</h2>
         <h3>When do campgrounds actually hold their Halloween weekends?</h3>

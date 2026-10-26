@@ -66,7 +66,7 @@ describe('getGearForGuide()', () => {
     const tents = groups.find((g) => g.slot === 'TENT')!.products.map((p) => p.id)
     expect(tents).toContain('tnf-wawona-6')
     const canopy = groups.find((g) => g.slot === 'CANOPY')
-    expect(canopy?.products[0].id).toBe('core-10x10-canopy')
+    expect(canopy?.products[0].id).toBe('crown-shades-10x10-canopy')
   })
 })
 
