@@ -728,7 +728,67 @@ export const GUIDES: Guide[] = [
     metaTitle: 'Gifts for Campers: 2026 Family Gift Guide',
     metaDescription:
       'Gifts for campers who already own a tent: stocking stuffers under $25, useful upgrades, big gifts, picks for kids, and a park pass good for a year.',
-    relatedGuides: ['family-camping-gear-list', 'thanksgiving-camping-with-kids', 'what-not-to-bring-camping'],
+    relatedGuides: ['best-camping-gifts-for-families', 'camping-stocking-stuffers', 'family-camping-gear-list'],
+  },
+  {
+    slug: 'best-camping-gifts-for-families',
+    category: 'seasonal',
+    title: 'The Best Camping Gifts for Families',
+    shortLabel: 'Family gifts',
+    description: 'Shared gifts the whole family uses at the campsite, plus gift guides for kids, new campers, stocking stuffers, and under $50.',
+    eyebrow: 'Gift guide',
+    metaTitle: 'Best Camping Gifts for Families 2026',
+    metaDescription:
+      'The best camping gifts for families in 2026: shared gifts the whole family uses, plus gift guides for kids, new campers, stocking stuffers, and under $50.',
+    relatedGuides: ['camping-gifts-for-kids', 'gifts-for-new-campers', 'camping-gifts-under-50'],
+  },
+  {
+    slug: 'camping-gifts-for-kids',
+    category: 'seasonal',
+    title: 'Gifts for Kids Who Love Camping',
+    shortLabel: 'Kids gifts',
+    description: 'Camping gifts for kids sorted by age, from bug magnifiers and roasting sticks to compasses, binoculars, and a sleeping bag that fits.',
+    eyebrow: 'Gift guide',
+    metaTitle: 'Camping Gifts for Kids: 2026 Gift Guide',
+    metaDescription:
+      'Camping gifts for kids, sorted by age: their own headlamp, roasting sticks, nature guides, art kits, and a sleeping bag that fits. Gear they use every trip.',
+    relatedGuides: ['best-camping-gifts-for-families', 'camping-stocking-stuffers', 'best-camping-sleeping-bag-for-kids'],
+  },
+  {
+    slug: 'camping-stocking-stuffers',
+    category: 'seasonal',
+    title: 'Camping Stocking Stuffers Under $25',
+    shortLabel: 'Stocking stuffers',
+    description: 'Small camping gifts under $25 that get used: hand warmers, stormproof matches, headlamps, tick removers, and picks for kids.',
+    eyebrow: 'Gift guide',
+    metaTitle: 'Camping Stocking Stuffers Under $25',
+    metaDescription:
+      'Camping stocking stuffers under $25 that get used: hand warmers, stormproof matches, headlamps, a star finder, tick removers, and small gifts for kids.',
+    relatedGuides: ['best-camping-gifts-for-families', 'camping-gifts-under-50', 'camping-gifts-for-kids'],
+  },
+  {
+    slug: 'gifts-for-new-campers',
+    category: 'seasonal',
+    title: 'Gifts for New Campers',
+    shortLabel: 'Beginner gifts',
+    description: 'For someone planning a first trip: the gear gaps every beginner has, from headlamps and a stove to a first aid kit, without guessing on the tent.',
+    eyebrow: 'Gift guide',
+    metaTitle: 'Gifts for New Campers and Beginners',
+    metaDescription:
+      'Gifts for new campers and families planning a first trip: headlamps, a camp stove, a cook kit, a first aid kit, and the small gear beginners always forget.',
+    relatedGuides: ['best-camping-gifts-for-families', 'camping-for-beginners', 'first-camping-trip-checklist'],
+  },
+  {
+    slug: 'camping-gifts-under-50',
+    category: 'seasonal',
+    title: 'Camping Gifts Under $50',
+    shortLabel: 'Gifts under $50',
+    description: 'Real camping gear for $25 to $50: a vacuum bottle, power bank, first aid kit, water filter, small stove, and family games.',
+    eyebrow: 'Gift guide',
+    metaTitle: 'Camping Gifts Under $50: 2026 Picks',
+    metaDescription:
+      'Camping gifts under $50 that are real gear: a vacuum bottle, power bank, first aid kit, water filter, camp stove, and games for the whole family.',
+    relatedGuides: ['best-camping-gifts-for-families', 'camping-stocking-stuffers', 'gifts-for-campers'],
   },
   {
     slug: 'camping-first-aid-kit-for-families',

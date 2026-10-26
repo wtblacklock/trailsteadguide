@@ -28,6 +28,11 @@ const GUIDE_LAST_MODIFIED: Record<string, string> = {
   'camping-in-40-degree-weather': '2026-10-06',
   'gifts-for-campers': '2026-10-06',
   'what-not-to-bring-camping': '2026-10-06',
+  'best-camping-gifts-for-families': '2026-10-26',
+  'camping-gifts-for-kids': '2026-10-26',
+  'camping-stocking-stuffers': '2026-10-26',
+  'gifts-for-new-campers': '2026-10-26',
+  'camping-gifts-under-50': '2026-10-26',
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
