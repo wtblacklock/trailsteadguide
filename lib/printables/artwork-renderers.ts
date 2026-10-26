@@ -16,6 +16,7 @@ import CampMealPlanner from '@/components/printables/CampMealPlanner'
 import CampsiteSetupDiagram from '@/components/printables/CampsiteSetupDiagram'
 import JuniorRangerActivitySheet from '@/components/printables/JuniorRangerActivitySheet'
 import FishingQuickReferenceCard from '@/components/printables/FishingQuickReferenceCard'
+import CampingWithDogsFieldCard from '@/components/printables/CampingWithDogsFieldCard'
 
 // Slug → artwork component. Each component renders its full-page print
 // content; the print page wraps it with the shared header / footer chrome
@@ -39,4 +40,5 @@ export const ARTWORK_RENDERERS: Record<string, React.ComponentType> = {
   'campsite-setup-diagram': CampsiteSetupDiagram,
   'junior-ranger-activity-sheet': JuniorRangerActivitySheet,
   'fishing-quick-reference-card': FishingQuickReferenceCard,
+  'camping-with-dogs-field-card': CampingWithDogsFieldCard,
 }

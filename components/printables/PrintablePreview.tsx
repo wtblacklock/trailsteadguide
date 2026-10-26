@@ -33,6 +33,7 @@ import CampMealPlanner from './CampMealPlanner'
 import CampsiteSetupDiagram from './CampsiteSetupDiagram'
 import JuniorRangerActivitySheet from './JuniorRangerActivitySheet'
 import FishingQuickReferenceCard from './FishingQuickReferenceCard'
+import CampingWithDogsFieldCard from './CampingWithDogsFieldCard'
 
 export const RENDERERS: Record<string, React.ComponentType> = {
   'northern-hemisphere-constellation-wheel': ConstellationWheel,
@@ -53,6 +54,7 @@ export const RENDERERS: Record<string, React.ComponentType> = {
   'campsite-setup-diagram': CampsiteSetupDiagram,
   'junior-ranger-activity-sheet': JuniorRangerActivitySheet,
   'fishing-quick-reference-card': FishingQuickReferenceCard,
+  'camping-with-dogs-field-card': CampingWithDogsFieldCard,
 }
 
 type Props = {

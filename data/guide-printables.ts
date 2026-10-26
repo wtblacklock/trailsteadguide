@@ -68,4 +68,5 @@ export const GUIDE_PRINTABLES: Record<string, string[]> = {
   'columbus-day-weekend-camping': ['weather-signs-field-card', 'camp-first-aid-quick-reference'],
   'camping-with-a-baby': ['kids-camping-packing-list'],
   'stargazing-camping-with-kids': ['northern-hemisphere-constellation-wheel', 'night-sky-bingo'],
+  'camping-with-dogs-first-time': ['camping-with-dogs-field-card'],
 }
