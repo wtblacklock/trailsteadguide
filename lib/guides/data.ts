@@ -723,7 +723,18 @@ export const GUIDES: Guide[] = [
     metaTitle: 'Thanksgiving Camping With Kids: Menu',
     metaDescription:
       'Thanksgiving camping with kids: which campgrounds are still open in late November, a turkey plan that works over coals, and food safety in a cooler.',
-    relatedGuides: ['halloween-camping-with-kids', 'how-to-keep-kids-warm-camping', 'easy-family-camping-meals'],
+    relatedGuides: ['winter-break-camping-with-kids', 'halloween-camping-with-kids', 'how-to-keep-kids-warm-camping'],
+  },
+  {
+    slug: 'winter-break-camping-with-kids',
+    category: 'scenario',
+    title: 'Winter Break Camping With Kids',
+    description: 'Where campgrounds are open in late December, when holiday sites book up, and how to plan around the longest nights of the year.',
+    eyebrow: 'Holiday break',
+    metaTitle: 'Christmas Break Camping With Kids',
+    metaDescription:
+      'Christmas break camping with kids: where campgrounds are open in late December, when to book, planning around 15-hour nights, and New Year at camp.',
+    relatedGuides: ['thanksgiving-camping-with-kids', 'how-to-keep-kids-warm-camping', 'winter-camping-for-beginners'],
   },
   {
     slug: 'camping-in-40-degree-weather',
