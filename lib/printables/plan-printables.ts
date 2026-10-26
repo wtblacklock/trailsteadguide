@@ -7,7 +7,7 @@ import type { Printable } from './types'
  * this trip" section on each plan page. Unlike the skill/activity
  * companion pairings (which surface a printable only if you click into a
  * specific skill or activity), every printable here is placed directly on
- * at least one plan page, so all 15 are reachable without leaving the
+ * at least one plan page, so every printable is reachable without leaving the
  * plan a visitor lands on after the quiz.
  *
  * Curated from each plan's actual recommendedSkills / activitySchedule /
@@ -30,17 +30,17 @@ export const PLAN_PRINTABLES: Record<PlanSlug, string[]> = {
     'camp-first-aid-quick-reference',
   ],
   'first-weekend-camp': [
-    'northern-hemisphere-constellation-wheel',
     'junior-ranger-activity-sheet',
     'weather-signs-field-card',
     'bear-bag-food-storage-card',
     'leave-no-trace-quick-reference',
+    'fishing-quick-reference-card',
   ],
   'easy-family-basecamp': [
     '3-day-camp-meal-planner',
     'night-sky-bingo',
     'animal-track-id-card',
-    'nature-scavenger-hunt-card',
+    'camping-with-dogs-field-card',
     'camp-first-aid-quick-reference',
   ],
 }

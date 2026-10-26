@@ -7,7 +7,7 @@ import type { AffiliateProduct } from '@/types'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
 
 const SLUG = '/compare/camp-chef-everest-vs-coleman-classic-1-burner'
-const TITLE = 'Camp Chef Everest vs Coleman 1-Burner: Which Stove?'
+const TITLE = 'Camp Chef Everest vs Coleman 1-Burner'
 const DESCRIPTION =
   'Camp Chef Everest 2-burner vs Coleman Classic 1-burner compared: BTU output, ignition, pot size, wind resistance, and price. Pick the right camp stove.'
 

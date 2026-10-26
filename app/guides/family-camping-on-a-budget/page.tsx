@@ -75,7 +75,7 @@ export default function Page() {
         lede="How to gear up for under $300, where to find cheap and free campsites, and why camping is genuinely one of the most affordable family vacations once the gear is sorted."
         heroImage={{
           src: HERO_IMAGE,
-          alt: 'Family eating a simple meal at a campsite with basic gear set up',
+          alt: 'Three tents lit from inside on a grassy field under a starry night sky',
         }}
         dateModified="2026-09-07"
       >

@@ -87,7 +87,7 @@ export default function Page() {
         lede="The leash rules, the prep, and the real heat risk that nobody warns you about."
         heroImage={{
           src: HERO_IMAGE,
-          alt: 'A young beagle on a leash outside a tent at a dog-friendly campground, first-time camping with a dog',
+          alt: 'A smiling beagle in a black collar on a dirt trail, looking up at the camera',
         }}
       >
         <QuickAnswer

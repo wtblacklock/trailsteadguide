@@ -54,7 +54,7 @@ export default function TripPackCta({
                 Take it with you: {TITLES[planSlug]} as a print-ready PDF.
               </h2>
               <p className="text-emerald-100/85 text-sm leading-relaxed">
-                Personalized timeline, packing list scaled to your party, curated gear, and a mistake-prevention guide &mdash; one pack, yours forever.
+                Personalized timeline, packing list scaled to your party, curated gear, and a mistake-prevention guide. One pack, yours forever.
               </p>
             </div>
             <div className="mt-6 md:mt-0 shrink-0">

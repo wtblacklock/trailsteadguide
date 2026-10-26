@@ -71,7 +71,7 @@ export default function Page() {
         lede="The real list - not 200 items. What a family of four actually needs for a car camping weekend, organized by priority."
         heroImage={{
           src: HERO_IMAGE,
-          alt: 'Camping gear laid out for a family trip: tent, sleeping bags, stove, cooler',
+          alt: 'Flat lay of a red insulated jacket, hiking boots, a trail map with a compass, a camera, and a black backpack',
         }}
       >
         <QuickAnswer
@@ -194,6 +194,9 @@ export default function Page() {
           <li><strong>Amazon</strong> - useful for specific items where reviews are dense enough to make confident choices. Avoid no-name tents and sleeping bags.</li>
           <li><strong>Facebook Marketplace or garage sales</strong> - camp gear depreciates heavily once it has been used. Used Coleman gear from someone who &ldquo;tried camping once&rdquo; is often a good find.</li>
         </ul>
+        <p>
+          Filling gaps in this list as holiday gifts? Our <Link href="/guides/best-camping-gifts-for-families">best camping gifts for families</Link> guide sorts ideas by who you are shopping for, from <Link href="/guides/camping-stocking-stuffers">stocking stuffers under $25</Link> to <Link href="/guides/camping-gifts-under-50">gifts under $50</Link>.
+        </p>
 
         <h2>Frequently asked</h2>
         <h3>What gear do I need for camping with a family?</h3>

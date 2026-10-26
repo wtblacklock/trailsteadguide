@@ -25,6 +25,14 @@ const STABLE = '2026-01-10' // rarely changes: legal pages
 const GUIDE_LAST_MODIFIED: Record<string, string> = {
   'best-family-tent-for-beginners': '2026-10-05',
   'best-camping-sleeping-bag-for-kids': '2026-10-05',
+  'camping-in-40-degree-weather': '2026-10-06',
+  'gifts-for-campers': '2026-10-06',
+  'what-not-to-bring-camping': '2026-10-06',
+  'best-camping-gifts-for-families': '2026-10-26',
+  'camping-gifts-for-kids': '2026-10-26',
+  'camping-stocking-stuffers': '2026-10-26',
+  'gifts-for-new-campers': '2026-10-26',
+  'camping-gifts-under-50': '2026-10-26',
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -107,6 +115,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/compare/sleeping-bag-vs-cot-airbed-combo`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE_URL}/compare/down-vs-synthetic-sleeping-bag`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE_URL}/compare/mummy-vs-rectangular-sleeping-bag`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/compare/3-season-vs-4-season-tent`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE_URL}/compare/lantern-vs-headlamp-vs-flashlight`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE_URL}/compare/backyard-test-vs-first-night-camp`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.75 },
     { url: `${BASE_URL}/compare/easy-family-basecamp-vs-first-weekend-camp`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.75 },
@@ -135,8 +144,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/research/first-time-camping-regrets`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE_URL}/research/what-1000-campers-actually-pack`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.85 },
 
-    // Funnel landings (quiz + checklist index; /checklist/result is noindex)
-    { url: `${BASE_URL}/quiz`, lastModified: RECENT, changeFrequency: 'monthly', priority: 0.6 },
+    // Funnel landing. /quiz and /checklist/result are noindex, so they stay
+    // out of the sitemap (listing a noindex URL sends search engines mixed signals).
     { url: `${BASE_URL}/checklist`, lastModified: RECENT, changeFrequency: 'monthly', priority: 0.6 },
 
     // Glossary (reference page - beginner camping vocabulary)

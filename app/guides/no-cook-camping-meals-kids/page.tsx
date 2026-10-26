@@ -75,7 +75,7 @@ export default function Page() {
         lede="When the stove is packed, the rain won&apos;t stop, or you&apos;re just too tired to cook - 20 no-prep meals and snacks that kids will actually eat at camp."
         heroImage={{
           src: HERO_IMAGE,
-          alt: 'Kids eating sandwiches and fruit at a picnic table at a campsite',
+          alt: 'Picnic of melon, grapes, cinnamon rolls, and a milk bottle on a white cloth beside a calm lake',
         }}
       >
         <QuickAnswer

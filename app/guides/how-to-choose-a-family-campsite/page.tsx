@@ -71,7 +71,7 @@ export default function Page() {
         lede="What the booking photo doesn&apos;t tell you, what actually matters with kids in tow, and how to read a campground map before the good sites disappear."
         heroImage={{
           src: HERO_IMAGE,
-          alt: 'Family setting up camp at a well-chosen shaded campsite with tent and gear',
+          alt: 'A dome tent, camp chair, and gear on an open grassy campsite ringed by shrubs',
         }}
       >
         <QuickAnswer

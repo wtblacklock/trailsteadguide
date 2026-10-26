@@ -75,7 +75,7 @@ export default function Page() {
         lede="Simple food that travels well, cooks fast, and kids will actually eat - plus a complete two-night meal plan you can use without modification."
         heroImage={{
           src: HERO_IMAGE,
-          alt: 'Family cooking over a camp stove at a picnic table with kids helping',
+          alt: 'A dad and two young kids eating noodles from orange bowls at a campsite picnic table, tent behind',
         }}
       >
         <QuickAnswer

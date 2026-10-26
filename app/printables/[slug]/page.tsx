@@ -7,7 +7,7 @@ import PrintableEmailGate from '@/components/printables/PrintableEmailGate'
 import PrintableFloatingBar from '@/components/printables/PrintableFloatingBar'
 import PrintableGearCard from '@/components/printables/PrintableGearCard'
 import PrintablePreview from '@/components/printables/PrintablePreview'
-import { pageMetadata, printableCreativeWorkGraph, SITE_URL } from '@/lib/seo'
+import { pageMetadata, printableCreativeWorkGraph, SITE_URL, titleWithQualifier } from '@/lib/seo'
 import { PRINTABLES, getPrintableBySlug } from '@/lib/printables'
 import { getSkillsLinkedToPrintable } from '@/lib/skills/helpers'
 import { getPlansLinkedToPrintable } from '@/lib/printables/plan-printables'
@@ -30,7 +30,7 @@ export async function generateMetadata({
   const printable = getPrintableBySlug(slug)
   if (!printable) return {}
   return pageMetadata({
-    title: `${printable.title} - Free Printable`,
+    title: titleWithQualifier(printable.title, ['Free Printable', 'Printable']),
     description: printable.description,
     path: `/printables/${printable.slug}`,
   })

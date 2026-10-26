@@ -4,7 +4,7 @@
  * submit the visitor lands on the print-optimized HTML view.
  */
 
-export type PrintableCategoryId = 'stargazing' | 'cooking' | 'knots' | 'fire' | 'planning' | 'kids'
+export type PrintableCategoryId = 'stargazing' | 'cooking' | 'knots' | 'fire' | 'planning' | 'kids' | 'safety'
 
 export type Printable = {
   slug: string

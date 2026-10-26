@@ -87,7 +87,7 @@ export default function Page() {
         lede="The bail decision, the lightning rules, and what to do when the forecast shifts on you mid-trip."
         heroImage={{
           src: HERO_IMAGE,
-          alt: 'Dark storm front gathering over an exposed campsite landscape, the moment a forecast turns mid-trip',
+          alt: 'Lightning bolts striking from dark storm clouds over distant city lights at night',
         }}
       >
         <QuickAnswer

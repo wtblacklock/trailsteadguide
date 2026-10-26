@@ -157,6 +157,9 @@ export default function Page() {
         <li><strong>Kid-specific camp chair.</strong> They sit more and fight less when they each have a spot.</li>
         <li><strong>Rain jackets packed at the top of the bag</strong> - kids will be the first ones soaked when the weather turns.</li>
       </ul>
+      <p>
+        Kids treat gear that is theirs alone very differently from the family bin, which makes birthdays and holidays a good time to fill these gaps. See <Link href="/guides/camping-gifts-for-kids">gifts for kids who love camping</Link>, sorted by age, or the full <Link href="/guides/best-camping-gifts-for-families">best camping gifts for families</Link> guide.
+      </p>
 
       <h2>Common kids-camping mistakes</h2>
       <ol>

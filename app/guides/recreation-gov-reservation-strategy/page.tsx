@@ -81,7 +81,7 @@ export default function Page() {
       lede="How the booking system actually works - rolling windows, the 7 a.m. Pacific drop, refresh strategy, and what to do when there’s nothing left two weeks out."
       heroImage={{
         src: HERO_IMAGE,
-        alt: 'A National Park valley at sunrise - the kind of campground that requires a 6-month-out reservation strategy',
+        alt: 'Hazy, forested mountain valley with a hiker on a rocky outcrop in the foreground',
       }}
     >
       <QuickAnswer

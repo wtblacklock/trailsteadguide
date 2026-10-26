@@ -85,7 +85,7 @@ export default function Page() {
         lede="Everything you need to take your family camping for the first time - from picking the right site to keeping everyone fed, warm, and happy enough to come back."
         heroImage={{
           src: HERO_IMAGE,
-          alt: 'Family of four setting up a tent at a state park campsite during a first family camping trip',
+          alt: 'View from inside an orange tent, looking out the open door at a pine forest campsite',
         }}
       >
         <QuickAnswer

@@ -7,7 +7,7 @@ import type { AffiliateProduct } from '@/types'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
 
 const SLUG = '/compare/rolling-cooler-vs-steel-belted-cooler'
-const TITLE = 'Rolling Cooler vs Steel-Belted: Which Coleman Cooler?'
+const TITLE = 'Rolling vs Steel-Belted Coleman Cooler'
 const DESCRIPTION =
   'Coleman Rolling Cooler vs Steel-Belted 54-Quart compared: ice retention, capacity, portability, durability, and price. Pick the right camping cooler.'
 

@@ -87,7 +87,7 @@ export default function Page() {
       lede="What to expect, what changes, and how to plan your first trip in Washington and Oregon."
       heroImage={{
         src: HERO_IMAGE,
-        alt: 'Old-growth conifer forest along an alpine lake near Mt Rainier, Washington Pacific Northwest camping',
+        alt: 'Snow-capped Mt Rainier reflected in a still alpine lake framed by conifers at sunset, Washington',
       }}
     >
       <QuickAnswer

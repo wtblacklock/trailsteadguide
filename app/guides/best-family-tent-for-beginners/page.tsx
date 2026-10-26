@@ -13,7 +13,7 @@ import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
 
 const SLUG = '/guides/best-family-tent-for-beginners'
 const TITLE = 'The Best Family Tents for 2026'
-const META_TITLE = 'Best Family Tents 2026: 5 by Family Size'
+const META_TITLE = 'Best Family Tents 2026: 5 Picks by Size'
 const DESCRIPTION =
   'The 5 best family tents for 2026, from a budget Coleman dome to stand-up cabin tents for big families. Compare size, setup time, and weather protection.'
 const HERO_IMAGE =
@@ -91,7 +91,7 @@ export default function Page() {
         lede="Five tents that work for real families, matched to family size, budget, and weather. Plus the sizing rule that keeps you from buying a tent that is too small."
         heroImage={{
           src: HERO_IMAGE,
-          alt: 'Large family tent set up at a state park campsite with gear inside',
+          alt: 'A dark dome tent on a grassy seaside bluff at sunset while kids run across the field',
         }}
         dateModified={DATE_MODIFIED}
       >

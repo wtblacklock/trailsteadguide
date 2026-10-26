@@ -8,7 +8,7 @@ import { articleGraph, itemListGraph, faqPageGraph, pageMetadata, SITE_URL } fro
 import type { AffiliateProduct } from '@/types'
 
 const SLUG = '/compare/best-beginner-sleeping-system'
-const TITLE = 'Best Beginner Sleeping System: 3 Picks for First Trips'
+const TITLE = 'Best Beginner Sleeping System: 3 Picks'
 const DESCRIPTION =
   'Best beginner sleeping system: bag plus pad, three tiers. Compare temp rating, weight, and price for budget, comfort, and cold-weather upgrades.'
 const H1 = 'Best beginner sleeping system: 3 picks for your first family trip'

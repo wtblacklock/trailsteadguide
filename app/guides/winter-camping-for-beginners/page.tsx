@@ -86,7 +86,7 @@ export default function Page() {
       lede="What to expect, what to bring, and how to avoid common mistakes."
       heroImage={{
         src: HERO_IMAGE,
-        alt: 'Snow-dusted tent in pine trees on a clear cold winter morning, beginner-friendly winter camping setup',
+        alt: 'Gray canvas tent on snow-dusted ground at a forest campsite with a bike, picnic table, and fire ring',
       }}
     >
       <QuickAnswer
@@ -114,7 +114,7 @@ export default function Page() {
       <ul>
         <li>Sleeping bag rated to 0°F or lower (not 20°F). A bag liner adds 5-10°F more.</li>
         <li>Sleeping pad with R-value 5 or higher. A pad with R-value 3 - fine in fall - is dangerously cold below 20°F. Two pads stacked (closed-cell foam under inflatable) is the proven combo.</li>
-        <li>4-season tent if you&apos;ll see real snow load or wind, or a heated cabin or yurt instead.</li>
+        <li>4-season tent if you&apos;ll see real snow load or wind, or a heated cabin or yurt instead. See our <Link href="/compare/3-season-vs-4-season-tent">3-season vs. 4-season tent comparison</Link> for where the line falls.</li>
         <li>Liquid-fuel (white gas) stove for sub-freezing temps. Propane works in a pinch with canister-warming tricks.</li>
         <li>Insulated water bottles AND a plan to keep them from freezing overnight.</li>
         <li>Real winter clothing: shell jacket and pants, insulated boots rated to at least 0°F, mittens and a warm hat that covers ears.</li>

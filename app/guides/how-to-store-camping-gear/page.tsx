@@ -74,7 +74,7 @@ export default function Page() {
         lede="Most gear does not die on a trip. It dies in a garage, over a winter, inside a bag nobody opened. Here is the one-evening pass that decides whether your kit works in the spring."
         heroImage={{
           src: HERO_IMAGE,
-          alt: 'A tent pitched on a frosted autumn ridge above a layer of low cloud at first light',
+          alt: 'A dome tent on a dry grassy ridge above a layer of low cloud at first light, with mountains behind',
         }}
         dateModified="2026-09-06"
       >

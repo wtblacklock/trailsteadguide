@@ -87,7 +87,7 @@ export default function Page() {
         lede="Rain prep, tarp setup, and the line between a different trip and a wrecked one."
         heroImage={{
           src: HERO_IMAGE,
-          alt: 'View from inside a tent doorway at a damp misty forest morning during a rainy camping trip',
+          alt: 'View from inside an orange tent doorway onto a forest campsite with rocks and tall pines',
         }}
       >
         <QuickAnswer

@@ -4,40 +4,41 @@ Products spotted during the weekly gear-rotation pass that look worth a slot but
 were not wired in yet. Each entry says what still needs to happen before it can
 ship. Trim this file as items are actioned or go stale.
 
-Last reviewed: 2026-09-07
+Last reviewed: 2026-10-12
+
+## Needs a human decision
+
+### Coleman Sundome 4-Person (`coleman-sundome-4p`) cannot be bought
+
+`B0D7QHY574` (Navy Blue) shows "Currently unavailable. We don't know when or if
+this item will be back in stock." Checked 2026-10-12, every other 4-person
+Sundome listing also fails the buy-box rule:
+
+- `B004J2GUOU` (Palm Green): only "See All Buying Options", third-party from $129.99.
+- `B0D7QN9S9Q` (Spruce Green): only "See All Buying Options", third-party from $144.29.
+  Open PR #141 swaps the registry to this ASIN, so that swap does not fix the problem.
+
+The product is named in about 77 places of editorial copy, including a whole
+`/compare/coleman-sundome-3p-vs-4p-vs-6p` page, so swapping in a different tent is
+an editorial call rather than a link fix. Options:
+
+1. Wait for Coleman to restock (re-check next week).
+2. Swap to the **Coleman Skydome 4-Person**, `B0DWV6CXVV` (Evergreen). Verified
+   2026-10-12: In Stock, Add to Cart, $99.99, 4.3 stars on 468 ratings, image
+   `https://m.media-amazon.com/images/I/71DwyBW5rDL._AC_SL1500_.jpg`. Same brand and
+   price tier with pre-attached poles, but far fewer ratings than the Sundome (23K),
+   and the Sundome-specific copy would need rewriting.
+3. Point budget shelves at the 2-person or 6-person Sundome, which are still sold
+   new, and re-word the "4-person" copy.
 
 ## Not yet verified
 
-### LuminAID PackLite Max 2-in-1 (200 lumens)
-
-- Candidate ASIN: `B08YC6H4F6` (seen in search results only, product page not opened)
-- Why: the registry's `luminaid-packlite-max` entry now correctly resolves to the
-  **Titan** (300 lumens, ~$68). The 200-lumen Max sits around $40 and would give the
-  LIGHTING slot a real budget tier under the Titan instead of jumping straight from
-  a headlamp to a $68 lantern.
-- Before adding: open `https://www.amazon.com/dp/B08YC6H4F6`, confirm the title,
-  rating, review count and stock, curl-verify the tagged link and the image, then
-  add it as a new registry id (do not reuse `luminaid-packlite-max`, which several
-  guides already point at).
+None open this week.
 
 ## Deferred, not a sourcing problem
 
-### Broader gear-slot fills in `data/guide-gear.ts`
+PR #74 has merged. On 2026-10-12 `teton-celsius-xxl-0` was added to the six
+cold-weather shelves that were waiting on it, so that item is closed.
 
-PR #74 ("align gear shelves with the products the prose recommends") has been open
-against `data/guide-gear.ts` since 2026-09-03 and rewrites STOVE and CHAIR rows
-across most regional guides. This run only touched the `how-to-pack-a-cooler`
-block, which that PR does not modify, to avoid handing the owner a merge conflict.
-
-Still thin after this run, worth revisiting once #74 lands:
-
-- `campfire-recipes-for-kids` - 1 product (KID_GEAR only)
-- `no-cook-camping-meals-kids` - 1 product
-- `how-to-start-a-campfire` - 2 products
-
-### Incomplete registry entries
-
-`rtic-45-cooler` and `coleman-xtreme-50-cooler` were repaired this run. A sweep of
-`lib/affiliate-products.ts` found no other entry missing both `amazonAsin` and
-`affiliateUrl`, which is the combination that makes a product silently disappear
-from gear shelves (see the guard in `components/guide/GuideGearShelf.tsx`).
+- `how-to-start-a-campfire` has 3 products now (matches, fire cubes, collapsible
+  bucket). A small fire extinguisher would round it out, but none is in the registry yet.
