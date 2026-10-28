@@ -2425,6 +2425,10 @@ export const SKILLS: Skill[] = [
     relatedGear: [
       { name: 'UCO Stormproof Match Kit', productId: 'uco-stormproof-matches' },
     ],
+    videoEmbed: {
+      url: 'https://www.youtube-nocookie.com/embed/bOh9u8TdGak',
+      title: 'How to build a fire: best fire starter, fire safety, and a one-match campfire in the rain - Outdoor Boys',
+    },
   },
 
   // ── HIKING (new) ──────────────────────────────────────────────────────────

@@ -4,36 +4,29 @@ Products spotted during the weekly gear-rotation pass that look worth a slot but
 were not wired in yet. Each entry says what still needs to happen before it can
 ship. Trim this file as items are actioned or go stale.
 
-Last reviewed: 2026-10-12
+Last reviewed: 2026-10-26
 
 ## Needs a human decision
 
-### Coleman Sundome 4-Person (`coleman-sundome-4p`) cannot be bought
+None open this week. The Coleman Sundome 4-Person problem from 2026-10-12 is
+resolved: the registry now points at `B0D7QN9S9Q` (Spruce Green), and the
+2026-10-26 browser audit found it buyable from its product page.
 
-`B0D7QHY574` (Navy Blue) shows "Currently unavailable. We don't know when or if
-this item will be back in stock." Checked 2026-10-12, every other 4-person
-Sundome listing also fails the buy-box rule:
-
-- `B004J2GUOU` (Palm Green): only "See All Buying Options", third-party from $129.99.
-- `B0D7QN9S9Q` (Spruce Green): only "See All Buying Options", third-party from $144.29.
-  Open PR #141 swaps the registry to this ASIN, so that swap does not fix the problem.
-
-The product is named in about 77 places of editorial copy, including a whole
-`/compare/coleman-sundome-3p-vs-4p-vs-6p` page, so swapping in a different tent is
-an editorial call rather than a link fix. Options:
-
-1. Wait for Coleman to restock (re-check next week).
-2. Swap to the **Coleman Skydome 4-Person**, `B0DWV6CXVV` (Evergreen). Verified
-   2026-10-12: In Stock, Add to Cart, $99.99, 4.3 stars on 468 ratings, image
-   `https://m.media-amazon.com/images/I/71DwyBW5rDL._AC_SL1500_.jpg`. Same brand and
-   price tier with pre-attached poles, but far fewer ratings than the Sundome (23K),
-   and the Sundome-specific copy would need rewriting.
-3. Point budget shelves at the 2-person or 6-person Sundome, which are still sold
-   new, and re-word the "4-person" copy.
+Optional: `kidde-portable-co-alarm` now points at `B0G1CR88J9` ($24.97, 4.6 stars
+on 408 ratings). The older, much more reviewed listing of the same AA battery Kidde
+alarm, `B004Y6V5CI`, was verified 2026-10-26: In Stock, Add to Cart, $27.97, 4.7
+stars on 19,945 ratings, image
+`https://m.media-amazon.com/images/I/71Q2PU+ZWVL._AC_SL1500_.jpg`. Switching would
+push it just over the "Stocking stuffers under $25" band on `/guides/gifts-for-campers`,
+so it is left as-is.
 
 ## Not yet verified
 
-None open this week.
+- **Eureka Copper Canyon LX 8** (big-family cabin tent). Named best overall
+  family tent in Outdoor Life's 2026 roundup. Not checked on Amazon yet, so
+  confirm a buy box, rating count, and the exact 8-person variant ASIN before
+  adding it. Only worth a slot if a guide wants a sturdier 8-person pick than
+  the Skydome.
 
 ## Deferred, not a sourcing problem
 
