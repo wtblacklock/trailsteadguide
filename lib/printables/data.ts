@@ -472,6 +472,7 @@ export const PRINTABLES: Printable[] = [
     formatNote: 'Single-sheet printable · front & back · Letter / A4 · Free with email signup',
     datePublished: '2026-10-14',
     relatedSkillPath: 'fishing/rod-setup-and-casting',
+    relatedGuideSlug: 'fishing-with-kids-at-camp',
     relatedProductIds: ['zebco-33-spincast-combo', 'tackle-box-lure-assortment', 'fishing-forceps-hemostat'],
   },
   {
