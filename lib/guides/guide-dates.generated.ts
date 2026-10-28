@@ -69,6 +69,7 @@ export const GUIDE_DATES: Record<string, GuideDates> = {
   'gifts-for-campers': { datePublished: '2026-10-06', dateModified: '2026-10-26' },
   'gifts-for-new-campers': { datePublished: '2026-10-26', dateModified: '2026-10-26' },
   'halloween-camping-with-kids': { datePublished: '2026-09-03', dateModified: '2026-10-05' },
+  'hiking-with-kids-from-camp': { datePublished: '2026-10-28', dateModified: '2026-10-28' },
   'how-to-break-camp': { datePublished: '2026-08-31', dateModified: '2026-10-06' },
   'how-to-choose-a-family-campsite': { datePublished: '2026-05-04', dateModified: '2026-10-06' },
   'how-to-keep-kids-warm-camping': { datePublished: '2026-09-14', dateModified: '2026-10-05' },

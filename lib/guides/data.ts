@@ -919,4 +919,15 @@ export const GUIDES: Guide[] = [
       'Fishing with kids at camp: a simple first rig, the one knot to know, what to bait when nothing bites, and safe catch-and-release steps for a first trip.',
     relatedGuides: ['how-to-choose-a-family-campsite', 'teaching-kids-to-whittle', 'camping-first-aid-kit-for-families'],
   },
+  {
+    slug: 'hiking-with-kids-from-camp',
+    category: 'basics',
+    title: 'Hiking With Kids From Camp',
+    description: 'Picking a trail for their age and pace, the day-pack essentials, reading trail markers, and what to do if someone gets lost.',
+    eyebrow: 'Skills',
+    metaTitle: 'Hiking With Kids From Camp',
+    metaDescription:
+      'Hiking with kids from camp: picking a trail for their age and pace, the day-pack essentials, reading trail markers, and what to do if someone gets lost.',
+    relatedGuides: ['how-to-choose-a-family-campsite', 'camping-first-aid-kit-for-families', 'fishing-with-kids-at-camp'],
+  },
 ]
