@@ -37,6 +37,12 @@ describe('templated meta descriptions', () => {
   )
 })
 
+describe('printable meta descriptions', () => {
+  it.each(PRINTABLES.map((p) => [p.slug, p.metaDescription ?? p.description] as const))('printable %s', (slug, desc) =>
+    expectDescription(`printable ${slug}`, desc),
+  )
+})
+
 describe('titleWithQualifier', () => {
   it('keeps the qualifier when it fits', () => {
     expect(titleWithQualifier('Knot Card', ['Free Printable'])).toBe('Knot Card - Free Printable')

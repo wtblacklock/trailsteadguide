@@ -31,7 +31,7 @@ export async function generateMetadata({
   if (!printable) return {}
   return pageMetadata({
     title: titleWithQualifier(printable.title, ['Free Printable', 'Printable']),
-    description: printable.description,
+    description: printable.metaDescription ?? printable.description,
     path: `/printables/${printable.slug}`,
   })
 }

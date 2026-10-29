@@ -143,6 +143,8 @@ export const PRINTABLES: Printable[] = [
     title: 'Animal Track ID Card',
     description:
       'A free printable animal track identification card for 8 common North American animals - deer, raccoon, rabbit, squirrel, fox, coyote, black bear, and skunk - with track sizes and field notes.',
+    metaDescription:
+      'A free printable track ID card for 8 common North American animals, from deer and raccoon to black bear and skunk, with track sizes and field notes.',
     tagline:
       'Eight animals. Eight tracks. Fold it into a pocket and know what walked through camp last night.',
     whatYouGet: [
@@ -169,6 +171,8 @@ export const PRINTABLES: Printable[] = [
     title: 'Nature Scavenger Hunt Card',
     description:
       'A free printable nature scavenger hunt checklist - 24 things to find at any campsite or trail, sorted into easy, medium, tricky, and bonus tiers for kids of all ages.',
+    metaDescription:
+      'A free printable nature scavenger hunt: 24 things to find at any campsite or trail, sorted into easy, medium, tricky and bonus tiers for kids of all ages.',
     tagline:
       '24 things to find. Works on any trail, in any forest. The first kid done has to help the youngest find theirs.',
     whatYouGet: [
@@ -195,6 +199,8 @@ export const PRINTABLES: Printable[] = [
     title: 'Night Sky Bingo Card',
     description:
       'A free printable night sky bingo card - a 5×5 grid of 25 sky objects and events to spot, from the Big Dipper and shooting stars to satellites and the Milky Way core.',
+    metaDescription:
+      'A free printable night sky bingo card: a 5×5 grid of 25 things to spot, from the Big Dipper and shooting stars to satellites and the Milky Way core.',
     tagline:
       'A bingo card for the sky. Takes one clear night. Works best far from city lights - or in a backyard on a dark night.',
     whatYouGet: [
@@ -221,6 +227,8 @@ export const PRINTABLES: Printable[] = [
     title: 'Shadow Puppet Hand Guide',
     description:
       'A free printable shadow puppet guide with hand-position diagrams for 8 animals - dog, rabbit, bird, butterfly, fox, bear, deer, and snake - for campfire and lantern storytelling.',
+    metaDescription:
+      'A free printable shadow puppet guide with hand diagrams for 8 animals, including dog, rabbit, bird and bear, for campfire and lantern storytelling.',
     tagline:
       'Eight animals. One lantern. No props. The diagrams are clear enough for a 6-year-old to follow in the dark.',
     whatYouGet: [
@@ -247,6 +255,8 @@ export const PRINTABLES: Printable[] = [
     title: 'Kids Camping Packing List',
     description:
       'A free printable kids camping packing list - age-segmented additions for toddlers (2-4), early elementary (5-8), and older kids (9-12) layered on top of the family base kit.',
+    metaDescription:
+      'A free printable kids camping packing list with age-based additions for toddlers (2-4), kids 5-8 and older kids (9-12) on top of the family base kit.',
     tagline:
       'The base family list plus everything that changes when a kid is in the group. Three age tiers, one page, checkboxes.',
     whatYouGet: [
@@ -272,6 +282,8 @@ export const PRINTABLES: Printable[] = [
     title: 'Weather Signs Field Card',
     description:
       'A free printable weather reference card for campers - five cloud types, wind shift signals, red-sky rules, and a 6-hour forecast decision tree for car campers and day hikers.',
+    metaDescription:
+      'A free printable weather card for campers: five cloud types, wind shift signals, red-sky rules and a 6-hour forecast decision tree.',
     tagline:
       'Read the sky before the sky reads you. Five cloud types, four wind signs, and the red-sky rules - on one page.',
     whatYouGet: [
@@ -298,6 +310,8 @@ export const PRINTABLES: Printable[] = [
     title: 'Bear Bag & Food Storage Card',
     description:
       'A free printable food storage reference card - what goes in the bear bag, the PCT hang method step-by-step, bear canister sizing, and the campsite food rules that apply across most US public land.',
+    metaDescription:
+      'A free printable food storage card: what goes in the bear bag, the PCT hang method step by step, bear canister sizing and campsite food rules.',
     tagline:
       'What goes in. How to hang it. What to do if the bag comes down. Print it front and back and keep your food - and the bear - safe.',
     whatYouGet: [
@@ -324,6 +338,8 @@ export const PRINTABLES: Printable[] = [
     title: 'Camp First Aid Quick Reference',
     description:
       'A free printable camp first aid reference card covering the 8 most common campsite injuries - blisters, sprains, cuts, insect stings, sunburn, dehydration, hypothermia signs, and minor burns.',
+    metaDescription:
+      'A free printable camp first aid card for the 8 most common campsite injuries, from blisters, sprains and cuts to stings, sunburn and hypothermia signs.',
     tagline:
       'Eight injuries. What to look for, what to do, when to leave. Laminate it and keep it inside the first aid kit.',
     whatYouGet: [
@@ -350,6 +366,8 @@ export const PRINTABLES: Printable[] = [
     title: 'Leave No Trace Quick Reference',
     description:
       'A free printable Leave No Trace reference card - the 7 LNT principles with specific, actionable rules for each, written for car campers and day hikers, not just backcountry users.',
+    metaDescription:
+      'A free printable Leave No Trace card: the 7 LNT principles with specific, actionable rules for each, written for car campers and day hikers.',
     tagline:
       'The 7 principles. Specific rules, not slogans. Written for families on their first trip.',
     whatYouGet: [
@@ -376,6 +394,8 @@ export const PRINTABLES: Printable[] = [
     title: '3-Day Camp Meal Planner',
     description:
       'A free printable camping meal planner - a 3-day breakfast, lunch, dinner, and snacks grid with a cook-method column, fill-in shopping list, and meal ideas for each slot.',
+    metaDescription:
+      'A free printable 3-day camping meal planner: a breakfast, lunch, dinner and snacks grid with a cook-method column, fill-in shopping list and meal ideas.',
     tagline:
       'Plan 3 days of camp food in 20 minutes. Fill the grid, transfer to the shopping list, done.',
     whatYouGet: [
@@ -403,6 +423,8 @@ export const PRINTABLES: Printable[] = [
     title: 'Campsite Setup Diagram',
     description:
       'A free printable top-down campsite layout card - where to put the tent, kitchen, fire ring, food storage, and car relative to each other, with spacing guidance for each zone.',
+    metaDescription:
+      'A free printable top-down campsite layout card showing where the tent, kitchen, fire ring, food storage and car go, with spacing guidance for each zone.',
     tagline:
       'A labeled site plan for the five things every campsite needs placed well: tent, kitchen, fire, food, and the car.',
     whatYouGet: [
@@ -455,6 +477,8 @@ export const PRINTABLES: Printable[] = [
     title: 'Camp Fishing Quick Reference Card',
     description:
       'A free printable camp fishing reference card - the basic bobber rig, the improved clinch knot, bait picks by species, and the catch-and-release steps that keep fish healthy.',
+    metaDescription:
+      'A free printable camp fishing card: the basic bobber rig, the improved clinch knot, bait picks by species and catch-and-release steps for healthy fish.',
     tagline:
       'One rig. One knot. Four species. Everything a first-time camp angler needs on one card, front and back.',
     whatYouGet: [
