@@ -77,6 +77,7 @@ export const GUIDE_DATES: Record<string, GuideDates> = {
   'how-to-plan-a-camping-trip': { datePublished: '2026-04-24', dateModified: '2026-10-06' },
   'how-to-prevent-tent-condensation': { datePublished: '2026-10-05', dateModified: '2026-10-05' },
   'how-to-set-up-a-tent': { datePublished: '2026-08-30', dateModified: '2026-10-05' },
+  'how-to-sleep-in-your-car-camping': { datePublished: '2026-10-29', dateModified: '2026-10-29' },
   'how-to-start-a-campfire': { datePublished: '2026-08-30', dateModified: '2026-10-05' },
   'how-to-store-camping-gear': { datePublished: '2026-09-06', dateModified: '2026-10-06' },
   'how-to-wash-dishes-camping': { datePublished: '2026-10-26', dateModified: '2026-10-26' },

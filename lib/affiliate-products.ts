@@ -563,6 +563,34 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     slot: 'WINTER_GEAR',
   },
   {
+    id: 'first-alert-co400-co-alarm',
+    name: 'First Alert CO400 Battery Carbon Monoxide Alarm',
+    description:
+      'Battery-powered carbon monoxide alarm with no plug or wiring, so it rides along in the car. The cheap, loud backstop for a night sleeping in a vehicle, where the risk is a blocked tailpipe or someone starting the engine for heat.',
+    amazonAsin: 'B000N8OYXI',
+    affiliateUrl: 'https://www.amazon.com/dp/B000N8OYXI?tag=trailsteadgui-20',
+    imageUrl: 'https://m.media-amazon.com/images/I/51RBX7hitxL._AC_SX679_.jpg',
+    category: 'essential',
+    templateSlugs: [],
+    priceRange: '~$22',
+    tags: ['family', 'budget', 'cold-ready'],
+    slot: 'SAFETY',
+  },
+  {
+    id: 'econour-car-window-screens',
+    name: 'EcoNour Car Window Screens for Camping (2-pack, Medium)',
+    description:
+      'Stretch mesh sleeves that slide over a rear car door like a sock, so the window can sit cracked open all night without letting bugs in. The easy fix for condensation and stale air when the family sleeps in the car.',
+    amazonAsin: 'B01M4NRZAG',
+    affiliateUrl: 'https://www.amazon.com/dp/B01M4NRZAG?tag=trailsteadgui-20',
+    imageUrl: 'https://m.media-amazon.com/images/I/81NL78NEjYL._AC_SX679_.jpg',
+    category: 'comfort',
+    templateSlugs: [],
+    priceRange: '~$18',
+    tags: ['family', 'budget', 'comfort'],
+    slot: 'SAFETY',
+  },
+  {
     id: 'tesorrio-sand-stakes-6pk',
     name: 'Tesorrio 12.6 in Aluminum U-Shaped Sand Stakes, 6-Pack',
     description:
@@ -888,16 +916,16 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     slot: 'SAFETY',
   },
   {
-    id: 'black-diamond-trekking-poles',
-    name: 'Black Diamond Trail Cork Trekking Poles',
+    id: 'cascade-mountain-tech-trekking-poles',
+    name: 'Cascade Mountain Tech Cork Grip Trekking Poles (Pair)',
     description:
-      'Adjustable aluminum poles with natural cork grips and FlickLock adjustment - the classic beginner trekking pole that takes real load off knees on descents.',
-    amazonAsin: 'B08R64178T',
-    affiliateUrl: 'https://www.amazon.com/dp/B08R64178T?tag=trailsteadgui-20',
-    imageUrl: 'https://m.media-amazon.com/images/I/512yT33msCL._AC_SL1500_.jpg',
+      'Adjustable aluminum poles with cork grips, quick-lock adjustment, and an extended foam grip for choking down on climbs - the well-reviewed budget beginner pole that takes real load off knees on descents.',
+    amazonAsin: 'B01L2HYPNW',
+    affiliateUrl: 'https://www.amazon.com/dp/B01L2HYPNW?tag=trailsteadgui-20',
+    imageUrl: 'https://m.media-amazon.com/images/I/71TJLm0G1HL._AC_SX679_.jpg',
     category: 'comfort',
     templateSlugs: [],
-    priceRange: '~$125',
+    priceRange: '~$30',
   },
   {
     id: 'pull-through-knife-sharpener',

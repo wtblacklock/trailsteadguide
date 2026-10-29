@@ -96,7 +96,7 @@ export default function Page() {
       <h2>Why it&apos;s the right first trip</h2>
       <ul>
         <li><strong>Weight doesn&apos;t matter.</strong> Bring the heavy cooler, the big tent, the real pillows</li>
-        <li><strong>The car is your shelter-of-last-resort.</strong> Rainstorm, kid meltdown, bear scare - you sleep in the car.</li>
+        <li><strong>The car is your shelter-of-last-resort.</strong> Rainstorm, kid meltdown, bear scare - you sleep in the car. <Link href="/guides/how-to-sleep-in-your-car-camping">How to sleep in your car while camping</Link> covers the layout and the safety rules.</li>
         <li><strong>It&apos;s forgiving.</strong> Forgot something? You drive into town.</li>
         <li><strong>It&apos;s near bathrooms.</strong> This is a bigger deal than you realize.</li>
       </ul>

@@ -2505,7 +2505,7 @@ export const SKILLS: Skill[] = [
       'Using the same length uphill and down. The adjustment is 5 minutes; the knee savings are substantial.',
     ],
     relatedGear: [
-      { name: 'Black Diamond Trail Cork Trekking Poles', productId: 'black-diamond-trekking-poles' },
+      { name: 'Cascade Mountain Tech Cork Grip Trekking Poles', productId: 'cascade-mountain-tech-trekking-poles' },
     ],
     videoEmbed: {
       url: 'https://www.youtube-nocookie.com/embed/dwYBhYLLytI',
