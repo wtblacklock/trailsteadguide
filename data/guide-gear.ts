@@ -940,6 +940,16 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'SAFETY', productId: 'kidde-portable-co-alarm' },
     { slot: 'SAFETY', productId: 'thriad-first-aid-430' },
   ],
+  'state-park-cabin-camping-with-kids': [
+    { slot: 'SLEEP_BAG', productId: 'coleman-brazos-bag' },
+    { slot: 'SLEEP_BAG', productId: 'sea-to-summit-reactor-extreme-liner' },
+    { slot: 'COOKWARE', productId: 'reliance-aqua-tainer-7gal-2pack' },
+    { slot: 'STOVE', productId: 'coleman-triton-2-burner' },
+    { slot: 'LIGHTING', productId: 'luminaid-packlite-max' },
+    { slot: 'LIGHTING', productId: 'everbrite-headlamp-5-pack' },
+    { slot: 'SAFETY', productId: 'kidde-portable-co-alarm' },
+    { slot: 'WINTER_GEAR', productId: 'hothands-hand-warmers-bulk' },
+  ],
   'tent-camping-at-an-electric-site': [
     { slot: 'POWER', productId: 'powgrn-50ft-12-3-outdoor-cord' },
     { slot: 'POWER', productId: 'camco-powergrip-30m-15f-adapter' },

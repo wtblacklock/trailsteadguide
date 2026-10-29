@@ -117,7 +117,11 @@ export default function Page() {
           <li>
             <strong>State park cabins and yurts.</strong> Many state park systems keep cabins or
             yurts open all year, including in snowy states. For kids who have never slept through a
-            cold night, a heated cabin with a fire ring outside is the right first winter trip.
+            cold night, a heated cabin with a fire ring outside is the right first winter trip.{' '}
+            <Link href="/guides/state-park-cabin-camping-with-kids">
+              State park cabin camping with kids
+            </Link>{' '}
+            covers what those cabins include and what to pack.
           </li>
           <li>
             <strong>A winterized loop for experienced families.</strong> Some state parks keep one
