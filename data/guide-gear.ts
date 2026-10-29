@@ -1352,4 +1352,13 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'SAFETY', productId: 'thriad-first-aid-430' },
     { slot: 'TRASH', productId: 'fwc-trash-can-wakeman' },
   ],
+  'fishing-with-kids-at-camp': [
+    { slot: 'KID_GEAR', productId: 'zebco-33-spincast-combo' },
+    { slot: 'KID_GEAR', productId: 'tackle-box-lure-assortment' },
+    { slot: 'SAFETY', productId: 'fishing-forceps-hemostat' },
+  ],
+  'hiking-with-kids-from-camp': [
+    { slot: 'LIGHTING', productId: 'black-diamond-spot-400' },
+    { slot: 'SAFETY', productId: 'leukotape-blister-prevention' },
+  ],
 }
