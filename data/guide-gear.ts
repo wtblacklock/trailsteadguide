@@ -960,6 +960,16 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'WINTER_GEAR', productId: 'hothands-hand-warmers-bulk' },
     { slot: 'LIGHTING', productId: 'everbrite-headlamp-5-pack' },
   ],
+  'how-to-sleep-in-your-car-camping': [
+    { slot: 'SAFETY', productId: 'first-alert-co400-co-alarm' },
+    { slot: 'SAFETY', productId: 'econour-car-window-screens' },
+    { slot: 'SLEEP_SURFACE', productId: 'redcamp-foam-sleeping-pad' },
+    { slot: 'SLEEP_SURFACE', productId: 'mondoking-3d-pad' },
+    { slot: 'SLEEP_BAG', productId: 'coleman-brazos-bag' },
+    { slot: 'WINTER_GEAR', productId: 'hothands-hand-warmers-bulk' },
+    { slot: 'LIGHTING', productId: 'everbrite-headlamp-5-pack' },
+    { slot: 'POWER', productId: 'anker-zolo-power-bank' },
+  ],
   'how-to-keep-kids-warm-camping': [
     { slot: 'SLEEP_BAG', productId: 'coleman-brazos-bag' },
     { slot: 'SLEEP_BAG', productId: 'sea-to-summit-reactor-extreme-liner' },
@@ -1361,5 +1371,14 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'RAIN_GEAR', productId: 'geertop-17x10-tarp' },
     { slot: 'SAFETY', productId: 'thriad-first-aid-430' },
     { slot: 'TRASH', productId: 'fwc-trash-can-wakeman' },
+  ],
+  'fishing-with-kids-at-camp': [
+    { slot: 'KID_GEAR', productId: 'zebco-33-spincast-combo' },
+    { slot: 'KID_GEAR', productId: 'tackle-box-lure-assortment' },
+    { slot: 'SAFETY', productId: 'fishing-forceps-hemostat' },
+  ],
+  'hiking-with-kids-from-camp': [
+    { slot: 'LIGHTING', productId: 'black-diamond-spot-400' },
+    { slot: 'SAFETY', productId: 'leukotape-blister-prevention' },
   ],
 }

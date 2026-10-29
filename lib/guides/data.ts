@@ -28,7 +28,7 @@ export const GUIDES: Guide[] = [
     title: 'Car Camping Beginner Guide',
     description: 'The drive-up, park-next-to-your-tent version.',
     eyebrow: 'Mode',
-    relatedGuides: ['camping-for-beginners', 'weekend-camping-packing-list', 'first-night-camping-guide'],
+    relatedGuides: ['camping-for-beginners', 'weekend-camping-packing-list', 'how-to-sleep-in-your-car-camping'],
   },
   {
     slug: 'first-camping-trip-checklist',
@@ -907,6 +907,39 @@ export const GUIDES: Guide[] = [
     metaDescription:
       'Tent camping at an electric site: what pedestal outlets are, the cord and adapter to bring, what to plug in on a cold night, and how to run power safely.',
     relatedGuides: ['tent-heater-safety', 'how-to-keep-kids-warm-camping', 'camping-in-40-degree-weather'],
+  },
+  {
+    slug: 'how-to-sleep-in-your-car-camping',
+    category: 'scenario',
+    title: 'How to Sleep in Your Car While Camping',
+    description: 'The safe way to turn the family car into a bed on a cold or stormy night: where to park, how to lay it out, ventilation, and the engine rule.',
+    eyebrow: 'Cold nights',
+    metaTitle: 'How to Sleep in Your Car While Camping',
+    metaDescription:
+      'How to sleep in your car while camping with kids: the flattest layout, cracked windows for condensation, never running the engine, and staying warm safely.',
+    relatedGuides: ['car-camping-beginner-guide', 'tent-heater-safety', 'how-to-keep-kids-warm-camping'],
+  },
+  {
+    slug: 'fishing-with-kids-at-camp',
+    category: 'basics',
+    title: 'Fishing With Kids at Camp',
+    description: 'A kid-sized first rig, the one knot that holds, and the hook-safety and license basics that make a first fishing trip go smoothly.',
+    eyebrow: 'Skills',
+    metaTitle: 'Fishing With Kids at Camp',
+    metaDescription:
+      'Fishing with kids at camp: a simple first rig, the one knot to know, what to bait when nothing bites, and safe catch-and-release steps for a first trip.',
+    relatedGuides: ['how-to-choose-a-family-campsite', 'teaching-kids-to-whittle', 'camping-first-aid-kit-for-families'],
+  },
+  {
+    slug: 'hiking-with-kids-from-camp',
+    category: 'basics',
+    title: 'Hiking With Kids From Camp',
+    description: 'Picking a trail for their age and pace, the day-pack essentials, reading trail markers, and what to do if someone gets lost.',
+    eyebrow: 'Skills',
+    metaTitle: 'Hiking With Kids From Camp',
+    metaDescription:
+      'Hiking with kids from camp: picking a trail for their age and pace, the day-pack essentials, reading trail markers, and what to do if someone gets lost.',
+    relatedGuides: ['how-to-choose-a-family-campsite', 'camping-first-aid-kit-for-families', 'fishing-with-kids-at-camp'],
   },
   {
     slug: 'state-park-cabin-camping-with-kids',
