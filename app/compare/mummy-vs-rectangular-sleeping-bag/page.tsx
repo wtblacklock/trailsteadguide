@@ -8,11 +8,12 @@ import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
 
 const SLUG = '/compare/mummy-vs-rectangular-sleeping-bag'
 const TITLE = 'Mummy vs. Rectangular Sleeping Bag for Families'
+const META_TITLE = 'Mummy vs. Rectangular Sleeping Bag'
 const DESCRIPTION =
   'Mummy vs. rectangular sleeping bag for family camping: warmth, room to move, kids who roll, packed size, and price. Which shape wins on cold nights.'
 
 export const metadata = pageMetadata({
-  title: TITLE,
+  title: META_TITLE,
   description: DESCRIPTION,
   path: SLUG,
   type: 'article',

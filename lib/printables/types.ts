@@ -11,8 +11,10 @@ export type Printable = {
   category: PrintableCategoryId
   /** Public-facing title used in metadata + headings. */
   title: string
-  /** Short SERP description (140-155 chars). */
+  /** Short SERP description (140-155 chars). Also shown on cards and the printable page. */
   description: string
+  /** Meta description override when `description` runs past 155 chars. */
+  metaDescription?: string
   /** One-sentence hook shown above the email gate. */
   tagline: string
   /** What you get - bullet list shown on the landing page. */
