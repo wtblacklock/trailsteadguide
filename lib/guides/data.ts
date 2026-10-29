@@ -163,7 +163,7 @@ export const GUIDES: Guide[] = [
     shortLabel: 'Winter',
     description: 'When tenting works, when it doesn’t, and the cabin-first beginner path.',
     eyebrow: 'Winter',
-    relatedGuides: ['camping-when-the-weather-turns', 'camping-in-colorado-for-beginners', 'camping-in-the-northeast-for-beginners'],
+    relatedGuides: ['state-park-cabin-camping-with-kids', 'camping-when-the-weather-turns', 'camping-in-colorado-for-beginners'],
   },
   {
     slug: 'camping-in-texas-for-beginners',
@@ -940,5 +940,16 @@ export const GUIDES: Guide[] = [
     metaDescription:
       'Hiking with kids from camp: picking a trail for their age and pace, the day-pack essentials, reading trail markers, and what to do if someone gets lost.',
     relatedGuides: ['how-to-choose-a-family-campsite', 'camping-first-aid-kit-for-families', 'fishing-with-kids-at-camp'],
+  },
+  {
+    slug: 'state-park-cabin-camping-with-kids',
+    category: 'scenario',
+    title: 'State Park Cabin Camping With Kids',
+    description: 'What camper cabins and yurts actually include, what they leave out, the packing list, and how to book a cold-season stay.',
+    eyebrow: 'Cold-season stays',
+    metaTitle: 'State Park Cabin Camping With Kids',
+    metaDescription:
+      'State park cabin camping with kids: what camper cabins and yurts include, what they leave out, the packing list, and how to book a cold-season stay.',
+    relatedGuides: ['winter-camping-for-beginners', 'winter-break-camping-with-kids', 'tent-heater-safety'],
   },
 ]

@@ -89,6 +89,7 @@ export const GUIDE_DATES: Record<string, GuideDates> = {
   'sleeping-pad-r-value-explained': { datePublished: '2026-10-05', dateModified: '2026-10-05' },
   'spring-camping-for-beginners': { datePublished: '2026-04-25', dateModified: '2026-10-06' },
   'stargazing-camping-with-kids': { datePublished: '2026-10-05', dateModified: '2026-10-15' },
+  'state-park-cabin-camping-with-kids': { datePublished: '2026-10-28', dateModified: '2026-10-28' },
   'summer-camping-for-beginners': { datePublished: '2026-04-25', dateModified: '2026-10-06' },
   'summer-camping-with-kids': { datePublished: '2026-08-30', dateModified: '2026-09-02' },
   'teaching-kids-to-whittle': { datePublished: '2026-10-26', dateModified: '2026-10-26' },
@@ -99,5 +100,5 @@ export const GUIDE_DATES: Record<string, GuideDates> = {
   'what-not-to-bring-camping': { datePublished: '2026-10-06', dateModified: '2026-10-06' },
   'when-do-campgrounds-close': { datePublished: '2026-10-05', dateModified: '2026-10-05' },
   'winter-camping-for-beginners': { datePublished: '2026-04-25', dateModified: '2026-10-26' },
-  'winter-break-camping-with-kids': { datePublished: '2026-10-26', dateModified: '2026-10-26' },
+  'winter-break-camping-with-kids': { datePublished: '2026-10-26', dateModified: '2026-10-28' },
 }
