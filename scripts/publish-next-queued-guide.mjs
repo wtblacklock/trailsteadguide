@@ -14,7 +14,9 @@
  *   2. appends `guide` to GUIDES in lib/guides/data.ts
  *   3. adds `gear` to GUIDE_GEAR in data/guide-gear.ts (if any)
  *   4. applies each `reciprocal` relatedGuides link on an existing guide
- *   5. deletes the queue folder
+ *   5. adds a GUIDE_DATES entry (published and modified today) to
+ *      lib/guides/guide-dates.generated.ts, in slug order
+ *   6. deletes the queue folder
  *
  * Usage:
  *   node scripts/publish-next-queued-guide.mjs                # today
@@ -31,6 +33,7 @@ const ROOT = process.cwd()
 const QUEUE_DIR = join(ROOT, 'content-queue/guides')
 const DATA_FILE = join(ROOT, 'lib/guides/data.ts')
 const GEAR_FILE = join(ROOT, 'data/guide-gear.ts')
+const DATES_FILE = join(ROOT, 'lib/guides/guide-dates.generated.ts')
 
 const args = process.argv.slice(2)
 const dryRun = args.includes('--dry-run')
@@ -103,6 +106,20 @@ function applyReciprocal(source, { slug, replace }, newSlug) {
   return { source: source.slice(0, start) + updated + source.slice(end), note }
 }
 
+/** Inserts a GUIDE_DATES row before the first existing row that sorts after it. */
+function addGuideDates(source, slug, date) {
+  const row = `  ${q(slug)}: { datePublished: ${q(date)}, dateModified: ${q(date)} },`
+  const lines = source.split('\n')
+  const rows = lines
+    .map((line, i) => ({ i, m: /^  '([^']+)': \{/.exec(line) }))
+    .filter((r) => r.m)
+  if (rows.some((r) => r.m[1] === slug)) return source
+  const after = rows.find((r) => r.m[1] > slug)
+  const at = after ? after.i : rows[rows.length - 1].i + 1
+  lines.splice(at, 0, row)
+  return lines.join('\n')
+}
+
 const due = (existsSync(QUEUE_DIR) ? readdirSync(QUEUE_DIR) : [])
   .filter((name) => /^\d{4}-\d{2}-\d{2}--/.test(name))
   .sort()
@@ -134,6 +151,8 @@ for (const r of reciprocal) {
 let gearSource = readFileSync(GEAR_FILE, 'utf8')
 if (gear.length) gearSource = insertBeforeLast(gearSource, '}', serializeGear(guide.slug, gear), GEAR_FILE)
 
+const dates = addGuideDates(readFileSync(DATES_FILE, 'utf8'), guide.slug, today)
+
 let page = readFileSync(join(folder, 'page.tsx'), 'utf8')
 page = page.replace(`dateModified="${item.publishOn}"`, `dateModified="${today}"`)
 
@@ -147,6 +166,7 @@ mkdirSync(target, { recursive: true })
 writeFileSync(join(target, 'page.tsx'), page)
 writeFileSync(DATA_FILE, data)
 writeFileSync(GEAR_FILE, gearSource)
+writeFileSync(DATES_FILE, dates)
 rmSync(folder, { recursive: true })
 
 console.log(`PUBLISHED ${guide.slug}`)

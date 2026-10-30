@@ -26,7 +26,7 @@ const CATEGORY_IDS = new Set(GUIDE_CATEGORIES.map((c) => c.id))
 const CHIP_CATEGORY_IDS = new Set(GUIDE_CATEGORIES.filter((c) => c.homeDisplay === 'chips').map((c) => c.id))
 const SLOT_IDS = new Set(GEAR_SLOTS.map((s) => s.id))
 const ACTIVE_PRODUCTS = new Set(AFFILIATE_PRODUCTS.filter((p) => !p.deprecated).map((p) => p.id))
-const DASH = /[–—]/
+const DASH = /[\u2013\u2014]/
 
 function readConst(source: string, name: string): string | null {
   const match = new RegExp(`\\bconst ${name} =\\s*\\n?\\s*(['"])((?:[^\\\\]|\\\\.)*?)\\1`).exec(source)
