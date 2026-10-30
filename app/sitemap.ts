@@ -12,6 +12,7 @@ import { SKILLS } from '@/lib/skills/data'
 import { getCategoryById } from '@/lib/skills/categories'
 import { GUIDES, GUIDE_CATEGORIES } from '@/lib/guides'
 import { PRINTABLES } from '@/lib/printables'
+import { GUIDE_DATES } from '@/lib/guides/guide-dates.generated'
 
 const BASE_URL = 'https://www.trailsteadguide.com'
 
@@ -19,21 +20,9 @@ const FRESH = '2026-04-27' // core content: home, guides, plans, tools, gear
 const RECENT = '2026-03-15' // secondary content: about, faq, quiz, checklist
 const STABLE = '2026-01-10' // rarely changes: legal pages
 
-// Guides that have had a substantive content refresh since FRESH. Keep these
-// in sync with the page's own dateModified so the sitemap, the Article
-// schema, and the visible "Last updated" date all agree.
-const GUIDE_LAST_MODIFIED: Record<string, string> = {
-  'best-family-tent-for-beginners': '2026-10-05',
-  'best-camping-sleeping-bag-for-kids': '2026-10-05',
-  'camping-in-40-degree-weather': '2026-10-06',
-  'gifts-for-campers': '2026-10-06',
-  'what-not-to-bring-camping': '2026-10-06',
-  'best-camping-gifts-for-families': '2026-10-26',
-  'camping-gifts-for-kids': '2026-10-26',
-  'camping-stocking-stuffers': '2026-10-26',
-  'gifts-for-new-campers': '2026-10-26',
-  'camping-gifts-under-50': '2026-10-26',
-}
+// Guide lastmod comes from the git-derived map that also feeds each guide's
+// Article schema and visible "Last updated" date, so all three agree.
+// Regenerate with `node scripts/generate-guide-dates.mjs`.
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const skillEntries: MetadataRoute.Sitemap = [
@@ -62,7 +51,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Guide articles (derived from the catalogue)
     ...GUIDES.map((g) => ({
       url: `${BASE_URL}/guides/${g.slug}`,
-      lastModified: GUIDE_LAST_MODIFIED[g.slug] ?? FRESH,
+      lastModified: GUIDE_DATES[g.slug]?.dateModified ?? FRESH,
       changeFrequency: 'monthly' as const,
       priority: 0.9,
     })),

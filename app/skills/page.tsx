@@ -2,6 +2,7 @@ import { Suspense } from 'react'
 import SkillsHero from '@/components/skills/SkillsHero'
 import SkillsFilterBar from '@/components/skills/SkillsFilterBar'
 import SkillsHubGrid from '@/components/skills/SkillsHubGrid'
+import SkillsHubGridView from '@/components/skills/SkillsHubGridView'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import JsonLd from '@/components/seo/JsonLd'
 import { SKILLS } from '@/lib/skills/data'
@@ -45,24 +46,9 @@ export default function SkillsPage() {
       <Suspense fallback={<div className="h-14 border-y border-stone-200/60 bg-[#F5F3EE]/95" />}>
         <SkillsFilterBar />
       </Suspense>
-      <Suspense fallback={<GridSkeleton />}>
+      <Suspense fallback={<SkillsHubGridView skills={SKILLS} isFiltered={false} />}>
         <SkillsHubGrid />
       </Suspense>
     </main>
-  )
-}
-
-function GridSkeleton() {
-  return (
-    <section className="max-w-page mx-auto px-6 py-12 md:py-16">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {Array.from({ length: 6 }).map((_, i) => (
-          <div
-            key={i}
-            className="h-56 bg-white border border-stone-200 rounded-xl shadow-sm animate-pulse"
-          />
-        ))}
-      </div>
-    </section>
   )
 }

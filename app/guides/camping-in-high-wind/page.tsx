@@ -76,7 +76,6 @@ export default function Page() {
           src: HERO_IMAGE,
           alt: 'A dome tent pitched on an exposed grassy site below a dark, wind-driven sky',
         }}
-        dateModified="2026-09-23"
       >
         <QuickAnswer
           tldr="Read the gust number, pitch the narrow end into the wind, stake and guy out everything, and leave at 30 mph sustained."

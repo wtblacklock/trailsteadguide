@@ -76,7 +76,6 @@ export default function Page() {
           src: HERO_IMAGE,
           alt: 'A dome tent on a dry grassy ridge above a layer of low cloud at first light, with mountains behind',
         }}
-        dateModified="2026-09-06"
       >
         <QuickAnswer
           tldr="Do the storage pass within a week of the last trip. Dry the tent completely, store bags and pads uncompressed, pull every battery, and bin the rest with a desiccant pack."

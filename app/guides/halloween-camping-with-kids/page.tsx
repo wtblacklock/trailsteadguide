@@ -76,7 +76,6 @@ export default function Page() {
           src: HERO_IMAGE,
           alt: 'A tent glowing from a lantern inside, pitched among bare trees and fallen leaves on a dark autumn night',
         }}
-        dateModified="2026-09-03"
       >
         <QuickAnswer
           tldr="Most campground Halloween weekends run in mid-October, not on the 31st. Book early, layer under the costume, and bring a light for every kid."

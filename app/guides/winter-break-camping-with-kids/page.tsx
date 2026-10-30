@@ -77,7 +77,6 @@ export default function Page() {
           src: HERO_IMAGE,
           alt: 'A small tent pitched on snow among pine trees, lit by low winter sun',
         }}
-        dateModified="2026-10-26"
       >
         <QuickAnswer
           tldr="Go south or book a state park cabin, reserve months ahead, plan each day around a 4:30 to 5:30pm sunset, and pack for a night near freezing even in warm states."

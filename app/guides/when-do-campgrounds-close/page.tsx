@@ -76,7 +76,6 @@ export default function Page() {
           src: HERO_IMAGE,
           alt: 'A single tent pitched alone in a cold, misty mountain meadow with no other campers in sight',
         }}
-        dateModified="2026-09-09"
       >
         <QuickAnswer
           tldr="Two different dates: reservations usually stop weeks before the campground actually closes, and the water gets shut off around mid-October even where camping continues. Check the Seasons and Booking tab, then pack your own water."

@@ -751,13 +751,13 @@ export const GUIDES: Guide[] = [
   {
     slug: 'gifts-for-campers',
     category: 'seasonal',
-    title: 'Gifts for Campers: A Family Gift Guide',
-    shortLabel: 'Holiday gifts',
-    description: 'Stocking stuffers, useful upgrades, bigger gifts, and picks for kids, for the camper who already owns a tent.',
+    title: 'Gifts for Campers Who Already Have the Gear',
+    shortLabel: 'Gifts for campers',
+    description: 'The upgrades experienced campers never buy themselves, small add-ons, bigger gifts, and a park pass.',
     eyebrow: 'Gift guide',
-    metaTitle: 'Gifts for Campers: 2026 Family Gift Guide',
+    metaTitle: 'Gifts for Campers Who Have Everything',
     metaDescription:
-      'Gifts for campers who already own a tent: stocking stuffers under $25, useful upgrades, big gifts, picks for kids, and a park pass good for a year.',
+      'Gifts for experienced campers who already own a tent: the upgrades they never buy themselves, small add-ons under $25, bigger gifts, and a park pass.',
     relatedGuides: ['best-camping-gifts-for-families', 'camping-stocking-stuffers', 'family-camping-gear-list'],
   },
   {
