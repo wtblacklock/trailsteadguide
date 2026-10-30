@@ -170,7 +170,9 @@ export default function Page() {
         </ul>
         <p>
           Prices change often in November and December, so we group gifts by price band instead of
-          quoting exact prices. Check the current price before you buy.
+          quoting exact prices. Check the current price before you buy, and see{' '}
+          <Link href="/guides/black-friday-camping-gear">Black Friday camping gear</Link> for how to
+          tell a real sale price from an inflated one.
         </p>
 
         <h2>The best gifts for the whole family</h2>

@@ -396,20 +396,6 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     slot: 'SAFETY',
   },
   {
-    id: 'marmot-mad-river-0',
-    name: 'Marmot Mad River 0',
-    description:
-      '0°F mummy bag for serious cold-weather camping. The upgrade pick when a 40°F bag plus liner stops cutting it.',
-    amazonAsin: 'B0GJMQNGXD',
-    affiliateUrl: 'https://www.amazon.com/Marmot-Mad-River-Backpacking-Sleeping/dp/B0GJMQNGXD?crid=2VC5BNWBVJRI8&dib=eyJ2IjoiMSJ9.b9RsuhkdflhxffTppkfTbgKj6AtuijY4C1b-y7JYvsu2Irx1QKs5-Ck2afhcjpEe-VeCBnzH5Ioua-c-dS1Y2YdAhq08OKoETrDhSx1LRzNVxlZRaarNC3Ud2osTT6ozxKxbYNgrB6i9roNLsCXB9w.MqnSj3Bg8t6gwqAaZqfD25-BaSmgwaNMhh3Z_p-aWNA&dib_tag=se&keywords=Marmot%2BMad%2BRiver%2B0&qid=1777573218&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=marmot%2Bmad%2Briver%2B0%2Caps%2C253&sr=8-1&th=1&linkCode=ll2&tag=trailsteadgui-20&linkId=1f4899f75afe17f32802762541b499ed&language=en_US&ref_=as_li_ss_tl',
-    imageUrl: 'https://m.media-amazon.com/images/I/51I4c4UzhIL._AC_SL1500_.jpg',
-    category: 'comfort',
-    templateSlugs: [],
-    priceRange: '~$339',
-    tags: ['sleeping-bag', 'premium', 'cold-ready'],
-    slot: 'SLEEP_BAG',
-  },
-  {
     id: 'teton-celsius-xxl-0',
     name: 'TETON Sports Celsius XXL 0°F Sleeping Bag',
     description:
@@ -1482,6 +1468,8 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     priceRange: '~$190',
     tags: ['sleeping-bag', 'premium', 'cold-ready'],
     slot: 'SLEEP_BAG',
+    // Currently unavailable on Amazon as of 2026-10-30. Replaced by teton-celsius-xxl-0.
+    deprecated: true,
   },
   {
     id: 'teton-trailhead-20',
@@ -1573,6 +1561,22 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
   // pages and historical references keep rendering. Excluded from
   // recommendation surfaces (guide gear shelf, quiz results, Trip Pack).
   // ------------------------------------------------------------------
+  {
+    id: 'marmot-mad-river-0',
+    name: 'Marmot Mad River 0',
+    description:
+      '0°F mummy bag for serious cold-weather camping. The upgrade pick when a 40°F bag plus liner stops cutting it.',
+    amazonAsin: 'B0GJMQNGXD',
+    affiliateUrl: 'https://www.amazon.com/Marmot-Mad-River-Backpacking-Sleeping/dp/B0GJMQNGXD?crid=2VC5BNWBVJRI8&dib=eyJ2IjoiMSJ9.b9RsuhkdflhxffTppkfTbgKj6AtuijY4C1b-y7JYvsu2Irx1QKs5-Ck2afhcjpEe-VeCBnzH5Ioua-c-dS1Y2YdAhq08OKoETrDhSx1LRzNVxlZRaarNC3Ud2osTT6ozxKxbYNgrB6i9roNLsCXB9w.MqnSj3Bg8t6gwqAaZqfD25-BaSmgwaNMhh3Z_p-aWNA&dib_tag=se&keywords=Marmot%2BMad%2BRiver%2B0&qid=1777573218&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=marmot%2Bmad%2Briver%2B0%2Caps%2C253&sr=8-1&th=1&linkCode=ll2&tag=trailsteadgui-20&linkId=1f4899f75afe17f32802762541b499ed&language=en_US&ref_=as_li_ss_tl',
+    imageUrl: 'https://m.media-amazon.com/images/I/51I4c4UzhIL._AC_SL1500_.jpg',
+    category: 'comfort',
+    templateSlugs: [],
+    priceRange: '~$339',
+    tags: ['sleeping-bag', 'premium', 'cold-ready'],
+    slot: 'SLEEP_BAG',
+    // Currently unavailable on Amazon as of 2026-10-30. Replaced by teton-celsius-xxl-0.
+    deprecated: true,
+  },
   {
     id: 'vumos-bag-liner',
     name: 'Vumos Sleeping Bag Liner',

@@ -7,12 +7,13 @@ export type GuideDates = { datePublished: string; dateModified: string }
 
 export const GUIDE_DATES: Record<string, GuideDates> = {
   'backyard-camping-with-kids': { datePublished: '2026-05-04', dateModified: '2026-10-06' },
-  'best-camping-gifts-for-families': { datePublished: '2026-10-26', dateModified: '2026-10-26' },
+  'best-camping-gifts-for-families': { datePublished: '2026-10-26', dateModified: '2026-10-30' },
   'best-camping-sleeping-bag-for-kids': { datePublished: '2026-05-04', dateModified: '2026-10-06' },
   'best-family-tent-for-beginners': { datePublished: '2026-05-04', dateModified: '2026-10-06' },
   'best-state-parks-for-families': { datePublished: '2026-05-04', dateModified: '2026-10-06' },
   'best-tent-for-hot-weather': { datePublished: '2026-08-30', dateModified: '2026-09-02' },
   'best-tent-for-rainy-camping': { datePublished: '2026-08-30', dateModified: '2026-09-02' },
+  'black-friday-camping-gear': { datePublished: '2026-10-30', dateModified: '2026-10-30' },
   'camp-stove-fuel-in-cold-weather': { datePublished: '2026-10-05', dateModified: '2026-10-05' },
   'campfire-recipes-for-kids': { datePublished: '2026-08-30', dateModified: '2026-09-02' },
   'camping-after-dark-with-kids': { datePublished: '2026-09-07', dateModified: '2026-10-05' },

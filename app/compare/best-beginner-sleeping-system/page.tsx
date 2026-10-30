@@ -21,7 +21,7 @@ function P(id: string): AffiliateProduct {
 
 const BAG_BUDGET = P('coleman-brazos-bag') // synthetic 3-season
 const PAD_MID = P('big-agnes-divide') // self-inflating mid pad
-const BAG_COLD = P('marmot-mad-river-0') // 0°F mummy
+const BAG_COLD = P('teton-celsius-xxl-0') // 0°F roomy rectangular
 const PAD_COLD = P('rab-ionosphere-5-5') // R-5.5 insulated pad
 const LINER = P('sea-to-summit-reactor-extreme-liner') // bag liner add-on
 
@@ -70,15 +70,15 @@ const PICKS: Pick[] = [
   },
   {
     label: 'Cold-weather upgrade',
-    combo: 'Marmot Mad River 0 + Rab Ionosphere 5.5',
-    description: 'A 0°F mummy bag plus an R-5.5 insulated pad. The pair when shoulder-season nights drop into the 30s and a 40°F bag stops cutting it.',
+    combo: 'TETON Celsius XXL 0 + Rab Ionosphere 5.5',
+    description: 'A roomy 0°F synthetic bag plus an R-5.5 insulated pad. The pair when shoulder-season nights drop into the 30s and a 40°F bag stops cutting it.',
     bag: BAG_COLD,
     pad: PAD_COLD,
     tempRating: 'Comfortable to ~20°F',
-    weightTotal: '~5 lbs',
+    weightTotal: '~8-9 lbs',
     packedSize: 'Compression sack',
     priceTier: '$$$ Premium',
-    priceTotal: '~$507',
+    priceTotal: '~$258',
   },
 ]
 
@@ -105,7 +105,7 @@ const PLAN_MAP: { plan: string; href: string; pick: string; reason: string }[] =
     plan: 'Easy Family Basecamp',
     href: '/plans/easy-family-basecamp',
     pick: 'Comfort tier, or cold-weather upgrade if shoulder season',
-    reason: 'Three nights of comfort. In summer, the Brazos + Divide combo is plenty. In May or October, the Mad River 0 + R-5.5 pad pairing keeps the trip comfortable instead of survivable.',
+    reason: 'Three nights of comfort. In summer, the Brazos + Divide combo is plenty. In May or October, the Celsius XXL 0 + R-5.5 pad pairing keeps the trip comfortable instead of survivable.',
   },
 ]
 
@@ -203,7 +203,7 @@ export default function Page() {
 
       <section className="max-w-3xl mx-auto px-8 pb-12">
         <QuickAnswer
-          tldr="Summer first trip? Brazos bag + foam pad. Want comfort? Brazos bag + Big Agnes Divide. Shoulder season? Marmot Mad River 0 + R-5.5 pad."
+          tldr="Summer first trip? Brazos bag + foam pad. Want comfort? Brazos bag + Big Agnes Divide. Shoulder season? TETON Celsius XXL 0 + R-5.5 pad."
           summary={
             <>
               For a summer first trip, the <strong>Coleman Brazos Bag with a foam pad</strong> is
@@ -211,7 +211,7 @@ export default function Page() {
               upgrade on a first trip is swapping the foam for the{' '}
               <strong>Big Agnes Divide self-inflating pad</strong> - that&rsquo;s the difference
               between waking up rested and waking up sore. For shoulder-season trips below 40°F,
-              step up to the <strong>Marmot Mad River 0 plus an R-5.5 insulated pad</strong> - a
+              step up to the <strong>TETON Celsius XXL 0 plus an R-5.5 insulated pad</strong> - a
               0°F bag with R-5.5 ground insulation keeps the trip comfortable instead of
               survivable.
             </>
@@ -283,7 +283,7 @@ export default function Page() {
           </p>
           <p>
             <strong>Synthetic bags forgive beginners; down bags don&rsquo;t.</strong> The Brazos
-            and Mad River are both synthetic - they keep insulating when wet, dry fast, and
+            and Celsius XXL are both synthetic - they keep insulating when wet, dry fast, and
             survive being machine-washed. Down compresses smaller and lasts longer, but it
             collapses if it gets wet. For first trips, synthetic is the safer choice.
           </p>

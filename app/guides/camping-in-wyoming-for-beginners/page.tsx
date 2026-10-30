@@ -251,8 +251,8 @@ export default function Page() {
         </li>
         <li>
           <strong>Sleeping bag.</strong>{' '}
-          <AmazonLink productId="marmot-mad-river-0" pageSlug="camping-in-wyoming-for-beginners" />{' '}
-          (~$150). A 0°F bag is not overkill for high-country Wyoming, even in midsummer.
+          <AmazonLink productId="teton-celsius-xxl-0" pageSlug="camping-in-wyoming-for-beginners" />{' '}
+          (~$90). A 0°F bag is not overkill for high-country Wyoming, even in midsummer.
         </li>
         <li>
           <strong>Sleeping pad.</strong>{' '}
