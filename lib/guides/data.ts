@@ -770,7 +770,7 @@ export const GUIDES: Guide[] = [
     metaTitle: 'Best Camping Gifts for Families 2026',
     metaDescription:
       'The best camping gifts for families in 2026: shared gifts the whole family uses, plus gift guides for kids, new campers, stocking stuffers, and under $50.',
-    relatedGuides: ['camping-gifts-for-kids', 'gifts-for-new-campers', 'camping-gifts-under-50'],
+    relatedGuides: ['camping-gifts-for-kids', 'gifts-for-new-campers', 'camping-gifts-under-50', 'black-friday-camping-gear'],
   },
   {
     slug: 'camping-gifts-for-kids',
@@ -819,6 +819,18 @@ export const GUIDES: Guide[] = [
     metaDescription:
       'Camping gifts under $50 that are real gear: a vacuum bottle, power bank, first aid kit, water filter, camp stove, and games for the whole family.',
     relatedGuides: ['best-camping-gifts-for-families', 'camping-stocking-stuffers', 'gifts-for-campers'],
+  },
+  {
+    slug: 'black-friday-camping-gear',
+    category: 'seasonal',
+    title: 'Black Friday Camping Gear: What to Buy',
+    shortLabel: 'Black Friday gear',
+    description: 'Which big upgrades to buy on sale first, how to judge a sale price against real price history, and what to skip even when it is cheap.',
+    eyebrow: 'Holiday sales',
+    metaTitle: 'Black Friday Camping Gear: What to Buy',
+    metaDescription:
+      'Black Friday camping gear for families: which upgrades to buy first, how to spot a real deal, and what to skip even when it is on sale.',
+    relatedGuides: ['best-camping-gifts-for-families', 'family-camping-gear-list', 'gifts-for-new-campers'],
   },
   {
     slug: 'camping-first-aid-kit-for-families',
