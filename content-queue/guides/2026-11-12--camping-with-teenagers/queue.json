@@ -1,0 +1,25 @@
+{
+  "publishOn": "2026-11-12",
+  "guide": {
+    "slug": "camping-with-teenagers",
+    "category": "scenario",
+    "title": "Camping With Teenagers",
+    "description": "Real responsibility instead of chores, a tent of their own, a phone deal agreed at home, and activities that keep teens engaged.",
+    "eyebrow": "With teens",
+    "metaTitle": "Camping With Teenagers: Make It Theirs",
+    "metaDescription": "Camping with teenagers: real jobs instead of chores, their own tent, a fair phone and signal deal, and activities that keep teens engaged all weekend.",
+    "relatedGuides": ["hiking-with-kids-from-camp", "fishing-with-kids-at-camp", "teaching-kids-to-whittle"]
+  },
+  "gear": [
+    { "slot": "TENT", "productId": "coleman-sundome-4p" },
+    { "slot": "HEADLAMP", "productId": "black-diamond-spot-400" },
+    { "slot": "POWER", "productId": "anker-zolo-power-bank" },
+    { "slot": "KID_GEAR", "productId": "opinel-no7-folding-knife" },
+    { "slot": "KID_GEAR", "productId": "celestron-outland-binoculars" },
+    { "slot": "KID_GEAR", "productId": "gsi-backpack-bocce" }
+  ],
+  "reciprocal": [
+    { "slug": "camping-with-kids-first-time", "replace": "first-camping-trip-checklist" },
+    { "slug": "hiking-with-kids-from-camp", "replace": "camping-first-aid-kit-for-families" }
+  ]
+}

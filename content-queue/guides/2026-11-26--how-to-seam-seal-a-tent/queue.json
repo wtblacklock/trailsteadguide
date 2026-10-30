@@ -1,0 +1,25 @@
+{
+  "publishOn": "2026-11-26",
+  "guide": {
+    "slug": "how-to-seam-seal-a-tent",
+    "category": "basics",
+    "title": "How to Seam Seal a Tent",
+    "description": "Find the real leak with a hose test, then pick seam sealer, seam tape, or a DWR refresh, and let it cure over the off-season.",
+    "eyebrow": "Gear care",
+    "metaTitle": "How to Seam Seal a Tent and Find Leaks",
+    "metaDescription": "How to seam seal a tent: find the real leak first, pick seam sealer, seam tape, or a DWR refresh, and do it in the off-season so it cures before spring.",
+    "relatedGuides": ["how-to-store-camping-gear", "rainy-camping-trips", "how-to-prevent-tent-condensation"]
+  },
+  "gear": [
+    { "slot": "STORAGE", "productId": "nikwax-tent-gear-solarproof" },
+    { "slot": "STORAGE", "productId": "iris-weatherpro-44qt-bins" },
+    { "slot": "STORAGE", "productId": "drytote-desiccant-packs" },
+    { "slot": "RAIN_GEAR", "productId": "geertop-17x10-tarp" },
+    { "slot": "RAIN_GEAR", "productId": "rainleaf-microfiber-towel" },
+    { "slot": "TENT", "productId": "coleman-sundome-4p" }
+  ],
+  "reciprocal": [
+    { "slug": "how-to-store-camping-gear", "replace": "fall-camping-for-beginners" },
+    { "slug": "rainy-camping-trips", "replace": "fall-camping-for-beginners" }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "publishOn": "2026-11-04",
+  "guide": {
+    "slug": "how-to-start-a-fire-with-wet-wood",
+    "category": "basics",
+    "title": "How to Start a Fire With Wet Wood",
+    "description": "Tinder to bring from home, splitting wet wood to its dry core, building off the wet ground, feeding it slowly, and drying the next load.",
+    "eyebrow": "How-to",
+    "metaTitle": "How to Start a Fire With Wet Wood",
+    "metaDescription": "How to start a campfire with wet wood: find the dry fuel, split to the dry core, build a big kindling base off the wet ground, and dry the next load.",
+    "relatedGuides": ["how-to-start-a-campfire", "rainy-camping-trips", "campfire-recipes-for-kids"]
+  },
+  "gear": [
+    { "slot": "SAFETY", "productId": "esbit-fire-cubes" },
+    { "slot": "SAFETY", "productId": "uco-stormproof-matches" },
+    { "slot": "KID_GEAR", "productId": "opinel-no7-folding-knife" },
+    { "slot": "RAIN_GEAR", "productId": "geertop-17x10-tarp" },
+    { "slot": "SAFETY", "productId": "eurow-collapsible-bucket-10l" }
+  ],
+  "reciprocal": [
+    { "slug": "how-to-start-a-campfire", "replace": "how-to-set-up-a-tent" },
+    { "slug": "rainy-camping-trips", "replace": "fall-camping-for-beginners" }
+  ]
+}

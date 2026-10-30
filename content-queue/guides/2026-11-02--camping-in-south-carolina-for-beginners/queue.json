@@ -1,0 +1,26 @@
+{
+  "publishOn": "2026-11-02",
+  "guide": {
+    "slug": "camping-in-south-carolina-for-beginners",
+    "category": "location",
+    "title": "Camping in South Carolina for Beginners",
+    "description": "Beach, swamp, and mountain state parks, a fall and winter season that beats summer, Congaree, and the bugs, ticks, and gators to plan for.",
+    "eyebrow": "South Carolina",
+    "shortLabel": "South Carolina",
+    "metaTitle": "South Carolina Camping for Beginners",
+    "metaDescription": "Camping in South Carolina for beginners: why fall and winter are the best season, beach and mountain state parks, Congaree, bugs, gators, and what to pack.",
+    "relatedGuides": ["camping-in-georgia-for-beginners", "camping-in-north-carolina-for-beginners", "camping-in-florida-for-beginners"]
+  },
+  "gear": [
+    { "slot": "SLEEP_BAG", "productId": "coleman-brazos-bag" },
+    { "slot": "TENT", "productId": "coleman-sundome-4p" },
+    { "slot": "RAIN_GEAR", "productId": "geertop-17x10-tarp" },
+    { "slot": "RAIN_GEAR", "productId": "tesorrio-sand-stakes-6pk" },
+    { "slot": "SAFETY", "productId": "sawyer-permethrin-clothing-spray" },
+    { "slot": "SAFETY", "productId": "tickcheck-tick-remover-kit" }
+  ],
+  "reciprocal": [
+    { "slug": "camping-in-georgia-for-beginners", "replace": "summer-camping-for-beginners" },
+    { "slug": "camping-in-north-carolina-for-beginners", "replace": "how-to-keep-kids-warm-camping" }
+  ]
+}

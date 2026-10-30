@@ -34,7 +34,7 @@ content-queue/guides/<publishOn>--<slug>/
     "title": "...",
     "description": "...",
     "eyebrow": "...",
-    "shortLabel": "Only for location guides, e.g. Texas",
+    "shortLabel": "Required for location and seasonal guides (homepage chips), e.g. Texas",
     "metaTitle": "41 chars max",
     "metaDescription": "155 chars max",
     "relatedGuides": ["live-slug-a", "live-slug-b", "live-slug-c"]

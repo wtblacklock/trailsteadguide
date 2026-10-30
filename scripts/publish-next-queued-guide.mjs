@@ -24,7 +24,7 @@
  * Prints `PUBLISHED <slug>` on success, or `NOTHING_DUE` (exit 0) when no
  * queued guide has a publishOn date on or before the given date.
  */
-import { copyFileSync, existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
+import { existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 
 const ROOT = process.cwd()

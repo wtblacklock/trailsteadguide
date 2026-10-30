@@ -1,0 +1,26 @@
+{
+  "publishOn": "2026-11-17",
+  "guide": {
+    "slug": "camping-in-nevada-for-beginners",
+    "category": "location",
+    "title": "Camping in Nevada for Beginners",
+    "description": "Cool-season desert camping at Valley of Fire, Red Rock, and Lake Mead, cold nights, water and wind, and when Great Basin is open.",
+    "eyebrow": "Nevada",
+    "shortLabel": "Nevada",
+    "metaTitle": "Nevada Camping for Beginners: Cool Season",
+    "metaDescription": "Camping in Nevada for beginners: why fall through spring is the season, plus Valley of Fire, Red Rock, Lake Mead, and Great Basin for a first family trip.",
+    "relatedGuides": ["camping-in-the-desert-southwest-for-beginners", "camping-in-utah-for-beginners", "camping-in-arizona-for-beginners"]
+  },
+  "gear": [
+    { "slot": "TENT", "productId": "tesorrio-sand-stakes-6pk" },
+    { "slot": "SLEEP_BAG", "productId": "teton-trailhead-20" },
+    { "slot": "SLEEP_SURFACE", "productId": "big-agnes-divide" },
+    { "slot": "COOKWARE", "productId": "reliance-aqua-tainer-7gal-2pack" },
+    { "slot": "HEADLAMP", "productId": "black-diamond-spot-400" },
+    { "slot": "SAFETY", "productId": "aveeno-kids-sunscreen-lotion" },
+    { "slot": "KID_GEAR", "productId": "planisphere" }
+  ],
+  "reciprocal": [
+    { "slug": "camping-in-the-desert-southwest-for-beginners", "replace": "camping-in-a-heatwave" }
+  ]
+}

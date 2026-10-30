@@ -22,6 +22,8 @@ const folders = existsSync(QUEUE_DIR)
 
 const LIVE = new Set(GUIDES.map((g) => g.slug))
 const CATEGORY_IDS = new Set(GUIDE_CATEGORIES.map((c) => c.id))
+/** Chip categories render `shortLabel` on the homepage, so their guides must set one. */
+const CHIP_CATEGORY_IDS = new Set(GUIDE_CATEGORIES.filter((c) => c.homeDisplay === 'chips').map((c) => c.id))
 const SLOT_IDS = new Set(GEAR_SLOTS.map((s) => s.id))
 const ACTIVE_PRODUCTS = new Set(AFFILIATE_PRODUCTS.filter((p) => !p.deprecated).map((p) => p.id))
 const DASH = /[–—]/
@@ -38,6 +40,23 @@ describe('content queue', () => {
     const slugs = folders.map((f) => f.slice(12))
     expect(new Set(dates).size).toBe(dates.length)
     expect(new Set(slugs).size).toBe(slugs.length)
+  })
+
+  it('does not reuse a hero image', () => {
+    const live = new Set<string>()
+    for (const slug of LIVE) {
+      const file = join(process.cwd(), 'app/guides', slug, 'page.tsx')
+      if (!existsSync(file)) continue
+      const hero = readConst(readFileSync(file, 'utf8'), 'HERO_IMAGE')
+      if (hero) live.add(hero.split('?')[0])
+    }
+    const queued = folders.map((f) =>
+      readConst(readFileSync(join(QUEUE_DIR, f, 'page.tsx'), 'utf8'), 'HERO_IMAGE')!.split('?')[0],
+    )
+    expect(new Set(queued).size, 'two queued guides share a hero').toBe(queued.length)
+    for (const [i, hero] of queued.entries()) {
+      expect(live.has(hero), `${folders[i]} hero is already live`).toBe(false)
+    }
   })
 
   for (const folder of folders) {
@@ -65,6 +84,9 @@ describe('content queue', () => {
         expect(guide.description.length).toBeGreaterThan(0)
         expect(guide.metaTitle.length).toBeLessThanOrEqual(41)
         expect(guide.metaDescription.length).toBeLessThanOrEqual(155)
+        if (CHIP_CATEGORY_IDS.has(guide.category)) {
+          expect(guide.shortLabel, `${guide.category} guides need a shortLabel`).toBeTruthy()
+        }
         for (const r of guide.relatedGuides ?? []) expect(LIVE.has(r), `relatedGuides ${r}`).toBe(true)
       })
 

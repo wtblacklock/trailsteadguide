@@ -1,0 +1,31 @@
+{
+  "publishOn": "2026-11-25",
+  "guide": {
+    "slug": "snowshoeing-with-kids",
+    "category": "seasonal",
+    "title": "Snowshoeing With Kids",
+    "description": "Renting vs buying kid snowshoes, where to go, ranger-led snowshoe walks, how far kids can go, and how to layer them.",
+    "eyebrow": "Winter",
+    "shortLabel": "Snowshoeing",
+    "metaTitle": "Snowshoeing With Kids: Rent or Buy?",
+    "metaDescription": "Snowshoeing with kids: renting vs buying kid snowshoes, where to go, ranger-led snowshoe walks, how far kids can go, and how to layer them.",
+    "relatedGuides": [
+      "winter-break-camping-with-kids",
+      "how-to-keep-kids-warm-camping",
+      "hiking-with-kids-from-camp"
+    ]
+  },
+  "gear": [
+    { "slot": "WINTER_GEAR", "productId": "hothands-hand-warmers-bulk" },
+    { "slot": "COOKWARE", "productId": "thermos-stainless-king-40oz" },
+    { "slot": "KID_GEAR", "productId": "thermos-funtainer-food-jar" },
+    { "slot": "KID_GEAR", "productId": "field-guide-animal-tracks" },
+    { "slot": "LIGHTING", "productId": "black-diamond-spot-400" },
+    { "slot": "SAFETY", "productId": "thriad-first-aid-430" },
+    { "slot": "POWER", "productId": "anker-zolo-power-bank" }
+  ],
+  "reciprocal": [
+    { "slug": "winter-camping-for-beginners", "replace": "camping-when-the-weather-turns" },
+    { "slug": "winter-break-camping-with-kids", "replace": "thanksgiving-camping-with-kids" }
+  ]
+}

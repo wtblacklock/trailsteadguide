@@ -1,0 +1,25 @@
+{
+  "publishOn": "2026-11-18",
+  "guide": {
+    "slug": "campground-etiquette-for-families",
+    "category": "basics",
+    "title": "Campground Etiquette for Families",
+    "description": "Quiet hours, staying out of other sites, generators, kids on bikes, dogs, fire and smoke, and leaving the site clean.",
+    "eyebrow": "Etiquette",
+    "metaTitle": "Campground Etiquette for Families",
+    "metaDescription": "Campground etiquette for families: quiet hours, not cutting through sites, generators, kids on bikes, dogs, campfire smoke, and leaving the site clean.",
+    "relatedGuides": ["how-to-choose-a-family-campsite", "camping-with-dogs-first-time", "how-to-break-camp"]
+  },
+  "gear": [
+    { "slot": "TRASH", "productId": "fwc-trash-can-wakeman" },
+    { "slot": "TRASH", "productId": "montnorth-collapsible-wash-basin" },
+    { "slot": "HEADLAMP", "productId": "everbrite-headlamp-5-pack" },
+    { "slot": "KID_GEAR", "productId": "glow-stick-necklaces-bulk" },
+    { "slot": "DOG_GEAR", "productId": "katolk-tie-out" },
+    { "slot": "SAFETY", "productId": "eurow-collapsible-bucket-10l" }
+  ],
+  "reciprocal": [
+    { "slug": "car-camping-beginner-guide", "replace": "weekend-camping-packing-list" },
+    { "slug": "how-to-choose-a-family-campsite", "replace": "how-to-plan-a-camping-trip" }
+  ]
+}

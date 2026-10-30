@@ -1,0 +1,28 @@
+{
+  "publishOn": "2026-11-14",
+  "guide": {
+    "slug": "camping-in-tennessee-for-beginners",
+    "category": "location",
+    "title": "Camping in Tennessee for Beginners",
+    "description": "Free-entry state parks, the waterfall-cut Cumberland Plateau, lake campgrounds, Smokies basics, and the seasons that work for a first family trip.",
+    "eyebrow": "Tennessee",
+    "shortLabel": "Tennessee",
+    "metaTitle": "Tennessee Camping for Beginners",
+    "metaDescription": "Camping in Tennessee for beginners: free-entry state parks, the Cumberland Plateau, Smokies campgrounds, the best seasons, and the setup that handles it.",
+    "relatedGuides": ["camping-in-the-appalachians-for-beginners", "camping-in-north-carolina-for-beginners", "best-state-parks-for-families"]
+  },
+  "gear": [
+    { "slot": "TENT", "productId": "coleman-sundome-4p" },
+    { "slot": "SLEEP_BAG", "productId": "coleman-brazos-bag" },
+    { "slot": "SLEEP_SURFACE", "productId": "mondoking-3d-pad" },
+    { "slot": "SLEEP_SURFACE", "productId": "redcamp-foam-sleeping-pad" },
+    { "slot": "STOVE", "productId": "coleman-triton-2-burner" },
+    { "slot": "HEADLAMP", "productId": "black-diamond-spot-400" },
+    { "slot": "RAIN_GEAR", "productId": "geertop-17x10-tarp" },
+    { "slot": "SAFETY", "productId": "tickcheck-tick-remover-kit" }
+  ],
+  "reciprocal": [
+    { "slug": "camping-in-the-appalachians-for-beginners", "replace": "fall-camping-for-beginners" },
+    { "slug": "camping-in-georgia-for-beginners", "replace": "summer-camping-for-beginners" }
+  ]
+}
