@@ -111,7 +111,7 @@ export const GUIDES: Guide[] = [
     title: 'Camping With Dogs for the First Time',
     description: 'Leash rules, water and food, tent etiquette, heat risk, and the prep that pays off.',
     eyebrow: 'With dogs',
-    relatedGuides: ['camping-for-beginners', 'camping-with-kids-first-time', 'first-night-camping-guide'],
+    relatedGuides: ['winter-camping-with-dogs', 'camping-for-beginners', 'camping-with-kids-first-time'],
   },
   {
     slug: 'camping-in-a-heatwave',
@@ -963,5 +963,16 @@ export const GUIDES: Guide[] = [
     metaDescription:
       'State park cabin camping with kids: what camper cabins and yurts include, what they leave out, the packing list, and how to book a cold-season stay.',
     relatedGuides: ['winter-camping-for-beginners', 'winter-break-camping-with-kids', 'tent-heater-safety'],
+  },
+  {
+    slug: 'winter-camping-with-dogs',
+    category: 'scenario',
+    title: 'Winter Camping With Dogs',
+    description: 'Which dogs handle the cold, a warm sleeping setup in the tent, paw care on ice and salt, hunting-season orange, and the signs a dog is too cold.',
+    eyebrow: 'With dogs',
+    metaTitle: 'Winter Camping With Dogs: A Family Guide',
+    metaDescription:
+      'Winter camping with dogs: which dogs handle the cold, a warm sleep setup, paw care on ice and salt, hunting-season orange, and when it is too cold to go.',
+    relatedGuides: ['camping-with-dogs-first-time', 'camping-during-hunting-season', 'camping-in-40-degree-weather'],
   },
 ]

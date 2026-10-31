@@ -205,6 +205,11 @@ export default function Page() {
           <li>Closed-cell foam pad under the dog. The cold ground steals heat through fur the same way it does through a sleeping pad.</li>
           <li>If the dog will not settle and is shivering, bring them into your sleeping bag. This is not weird - it is how everyone with a small dog handles a cold night.</li>
         </ul>
+        <p>
+          Planning a trip after the leaves come down? Our{' '}
+          <Link href="/guides/winter-camping-with-dogs">winter camping with dogs</Link> guide covers
+          paw care on ice and salt, hunting-season orange, and the signs a dog is too cold.
+        </p>
 
         <h2>What to bring (dog-specific)</h2>
         <h3>The dog kit</h3>

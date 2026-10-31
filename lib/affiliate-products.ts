@@ -1456,6 +1456,34 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     slot: 'SLEEP_BAG',
   },
   {
+    id: 'kurgo-loft-dog-jacket',
+    name: 'Kurgo Loft Dog Jacket (Medium)',
+    description:
+      'Reversible, water-resistant insulated dog coat that covers the chest and belly, with reflective trim and a zipper opening for a harness leash clip. The camp layer for small, short-haired, lean, and senior dogs on cold nights.',
+    amazonAsin: 'B01LW9GMOA',
+    affiliateUrl: 'https://www.amazon.com/dp/B01LW9GMOA?tag=trailsteadgui-20',
+    imageUrl: 'https://m.media-amazon.com/images/I/6132tBQ-llL._AC_SX679_.jpg',
+    category: 'comfort',
+    templateSlugs: [],
+    priceRange: '~$30',
+    tags: ['with-dogs', 'cold-ready', 'budget'],
+    slot: 'DOG_GEAR',
+  },
+  {
+    id: 'mushers-secret-paw-wax',
+    name: 'Musher\'s Secret Paw Wax, 60 g',
+    description:
+      'Food-grade wax rubbed into the pads and between the toes before a walk. Keeps snow from packing into ice balls and protects paws from rough ice and road salt.',
+    amazonAsin: 'B0002IJQDC',
+    affiliateUrl: 'https://www.amazon.com/dp/B0002IJQDC?tag=trailsteadgui-20',
+    imageUrl: 'https://m.media-amazon.com/images/I/61Y7N7FBq-L._AC_SX679_.jpg',
+    category: 'essential',
+    templateSlugs: [],
+    priceRange: '~$13',
+    tags: ['with-dogs', 'cold-ready', 'budget'],
+    slot: 'DOG_GEAR',
+  },
+  {
     id: 'kelty-cosmic-20-down',
     name: 'Kelty Cosmic 20 Down',
     description:

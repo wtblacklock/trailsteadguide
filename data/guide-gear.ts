@@ -1382,4 +1382,15 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'LIGHTING', productId: 'black-diamond-spot-400' },
     { slot: 'SAFETY', productId: 'leukotape-blister-prevention' },
   ],
+  'winter-camping-with-dogs': [
+    { slot: 'DOG_GEAR', productId: 'kurgo-loft-dog-jacket' },
+    { slot: 'DOG_GEAR', productId: 'mushers-secret-paw-wax' },
+    { slot: 'DOG_GEAR', productId: 'katolk-tie-out' },
+    { slot: 'SLEEP_SURFACE', productId: 'redcamp-foam-sleeping-pad' },
+    { slot: 'SLEEP_BAG', productId: 'teton-celsius-xxl-0' },
+    { slot: 'WINTER_GEAR', productId: 'hothands-hand-warmers-bulk' },
+    { slot: 'COOKWARE', productId: 'thermos-stainless-king-40oz' },
+    { slot: 'HEADLAMP', productId: 'black-diamond-spot-400' },
+    { slot: 'SAFETY', productId: 'thriad-first-aid-430' },
+  ],
 }
