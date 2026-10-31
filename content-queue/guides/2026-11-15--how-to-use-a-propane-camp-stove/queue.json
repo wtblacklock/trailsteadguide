@@ -1,0 +1,25 @@
+{
+  "publishOn": "2026-11-15",
+  "guide": {
+    "slug": "how-to-use-a-propane-camp-stove",
+    "category": "basics",
+    "title": "How to Use a Propane Camp Stove",
+    "description": "First-time setup and leak check, lighting it the safe way, getting a real simmer, beating the wind, cold mornings, and storing the cylinders.",
+    "eyebrow": "How-to",
+    "metaTitle": "How to Use a Propane Camp Stove",
+    "metaDescription": "How to use a propane camp stove: first-time setup and leak check, lighting it safely, getting a real simmer, beating the wind, and storing the cylinders.",
+    "relatedGuides": ["camp-stove-fuel-in-cold-weather", "easy-family-camping-meals", "camping-during-a-burn-ban"]
+  },
+  "gear": [
+    { "slot": "STOVE", "productId": "coleman-triton-2-burner" },
+    { "slot": "STOVE", "productId": "coleman-1-burner" },
+    { "slot": "STOVE", "productId": "dozyant-propane-adapter-hose-5ft" },
+    { "slot": "COOKWARE", "productId": "lodge-cast-iron-skillet" },
+    { "slot": "COOKWARE", "productId": "gsi-glacier-stainless-camper" },
+    { "slot": "SAFETY", "productId": "thriad-first-aid-430" }
+  ],
+  "reciprocal": [
+    { "slug": "camp-stove-fuel-in-cold-weather", "replace": "winter-camping-for-beginners" },
+    { "slug": "camping-during-a-burn-ban", "replace": "fall-camping-for-beginners" }
+  ]
+}

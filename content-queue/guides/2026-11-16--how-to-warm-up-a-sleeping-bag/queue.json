@@ -1,0 +1,25 @@
+{
+  "publishOn": "2026-11-16",
+  "guide": {
+    "slug": "how-to-warm-up-a-sleeping-bag",
+    "category": "seasonal",
+    "title": "How to Warm Up a Sleeping Bag",
+    "description": "Loft it early, a safe hot water bottle, eat and pee before bed, dry layers, liners, and keeping kids warm in their bags overnight.",
+    "eyebrow": "Cold nights",
+    "shortLabel": "Warm sleeping bag",
+    "metaTitle": "How to Warm Up a Sleeping Bag Fast",
+    "metaDescription": "How to warm up a sleeping bag on a cold night: loft it early, a safe hot water bottle, eat and pee before bed, dry layers, a liner, and tips for kids.",
+    "relatedGuides": ["how-to-keep-kids-warm-camping", "camping-in-40-degree-weather", "sleeping-pad-r-value-explained"]
+  },
+  "gear": [
+    { "slot": "SLEEP_BAG", "productId": "sea-to-summit-reactor-extreme-liner" },
+    { "slot": "SLEEP_SURFACE", "productId": "therm-a-rest-z-lite-sol" },
+    { "slot": "WINTER_GEAR", "productId": "hothands-hand-warmers-bulk" },
+    { "slot": "COOKWARE", "productId": "thermos-stainless-king-40oz" },
+    { "slot": "KID_GEAR", "productId": "teton-junior-20" }
+  ],
+  "reciprocal": [
+    { "slug": "best-camping-sleeping-bag-for-kids", "replace": "best-family-tent-for-beginners" },
+    { "slug": "camping-in-40-degree-weather", "replace": "fall-camping-for-beginners" }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "publishOn": "2026-11-07",
+  "guide": {
+    "slug": "winter-camping-packing-list",
+    "category": "seasonal",
+    "title": "Winter Camping Packing List",
+    "description": "The cold-weather family packing list by category: sleep system, clothing counts per kid, kitchen, and the warm-car bag.",
+    "eyebrow": "Packing",
+    "shortLabel": "Winter packing",
+    "metaTitle": "Winter Camping Packing List for Families",
+    "metaDescription": "A winter camping packing list for a family, by category: the sleep system, clothing counts per kid, cold-weather kitchen, and what rides in the warm car.",
+    "relatedGuides": ["winter-camping-for-beginners", "how-to-keep-kids-warm-camping", "weekend-camping-packing-list"]
+  },
+  "gear": [
+    { "slot": "SLEEP_BAG", "productId": "teton-celsius-xxl-0" },
+    { "slot": "SLEEP_BAG", "productId": "teton-junior-20" },
+    { "slot": "SLEEP_SURFACE", "productId": "therm-a-rest-z-lite-sol" },
+    { "slot": "STOVE", "productId": "coleman-triton-2-burner" },
+    { "slot": "COOKWARE", "productId": "thermos-stainless-king-40oz" },
+    { "slot": "LIGHTING", "productId": "everbrite-headlamp-5-pack" },
+    { "slot": "WINTER_GEAR", "productId": "hothands-hand-warmers-bulk" },
+    { "slot": "SLEEP_BAG", "productId": "sea-to-summit-reactor-extreme-liner" }
+  ],
+  "reciprocal": [
+    { "slug": "weekend-camping-packing-list", "replace": "camping-for-beginners" },
+    { "slug": "winter-camping-for-beginners", "replace": "camping-in-colorado-for-beginners" }
+  ]
+}
