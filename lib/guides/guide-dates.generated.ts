@@ -102,5 +102,6 @@ export const GUIDE_DATES: Record<string, GuideDates> = {
   'when-do-campgrounds-close': { datePublished: '2026-10-05', dateModified: '2026-10-05' },
   'winter-camping-for-beginners': { datePublished: '2026-04-25', dateModified: '2026-10-26' },
   'winter-camping-with-dogs': { datePublished: '2026-10-31', dateModified: '2026-10-31' },
+  'how-to-dress-kids-for-cold-weather-camping': { datePublished: '2026-11-02', dateModified: '2026-11-02' },
   'winter-break-camping-with-kids': { datePublished: '2026-10-26', dateModified: '2026-10-28' },
 }

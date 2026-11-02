@@ -166,6 +166,11 @@ export default function Page() {
           Change them. Whatever they wore during the day carries moisture from sweat, creek water,
           spilled hot chocolate, or all three, and damp fabric will pull heat out of a child for
           hours. Bedtime clothes should come out of a dry bag and go on nowhere near the campfire.
+          For daytime layers and what to pack, see{' '}
+          <Link href="/guides/how-to-dress-kids-for-cold-weather-camping">
+            how to dress kids for cold-weather camping
+          </Link>
+          .
         </p>
         <ul>
           <li>

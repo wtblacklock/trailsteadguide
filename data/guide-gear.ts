@@ -983,6 +983,13 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'LIGHTING', productId: 'everbrite-headlamp-5-pack' },
     { slot: 'SAFETY', productId: 'thriad-first-aid-430' },
   ],
+  'how-to-dress-kids-for-cold-weather-camping': [
+    { slot: 'KID_GEAR', productId: 'vicherub-kids-thermal-set' },
+    { slot: 'KID_GEAR', productId: 'wildbreakers-kids-mittens' },
+    { slot: 'WINTER_GEAR', productId: 'hothands-hand-warmers-bulk' },
+    { slot: 'SLEEP_BAG', productId: 'teton-junior-20' },
+    { slot: 'HEADLAMP', productId: 'everbrite-headlamp-5-pack' },
+  ],
   'sleeping-pad-r-value-explained': [
     { slot: 'SLEEP_SURFACE', productId: 'therm-a-rest-z-lite-sol' },
     { slot: 'SLEEP_SURFACE', productId: 'rab-ionosphere-5-5' },
