@@ -701,7 +701,18 @@ export const GUIDES: Guide[] = [
     metaTitle: 'Keep Kids Warm Camping on Cold Nights',
     metaDescription:
       'How to keep kids warm camping: the ground-up sleep system, what to wear to bed, mistakes that make kids cold, and how to warm a shivering child at 2 a.m.',
-    relatedGuides: ['best-camping-sleeping-bag-for-kids', 'camping-with-a-baby', 'tent-heater-safety'],
+    relatedGuides: ['best-camping-sleeping-bag-for-kids', 'how-to-dress-kids-for-cold-weather-camping', 'tent-heater-safety'],
+  },
+  {
+    slug: 'how-to-dress-kids-for-cold-weather-camping',
+    category: 'scenario',
+    title: 'How to Dress Kids for Cold-Weather Camping',
+    description: 'The three-layer system sized for kids, mittens and socks that stay dry, when to add or shed a layer, and what to pack.',
+    eyebrow: 'Cold days',
+    metaTitle: 'How to Dress Kids for Cold Camping',
+    metaDescription:
+      'How to dress kids for cold-weather camping: the three-layer system, why cotton fails, how many changes to pack, and when to add or shed a layer at camp.',
+    relatedGuides: ['how-to-keep-kids-warm-camping', 'camping-in-40-degree-weather', 'cold-weather-camping-meals'],
   },
   {
     slug: 'camping-in-bear-country-with-kids',

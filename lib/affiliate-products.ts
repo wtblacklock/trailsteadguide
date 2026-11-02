@@ -1484,6 +1484,34 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     slot: 'DOG_GEAR',
   },
   {
+    id: 'vicherub-kids-thermal-set',
+    name: 'ViCherub Kids Thermal Underwear Set',
+    description:
+      'Fleece-lined polyester long underwear top and bottom for kids. Wicks sweat and dries fast, which is the whole job of a base layer; cotton long johns stay wet and cold. Pack two sets: one for the day, one kept dry for sleeping.',
+    amazonAsin: 'B07V5GTML2',
+    affiliateUrl: 'https://www.amazon.com/dp/B07V5GTML2?tag=trailsteadgui-20',
+    imageUrl: 'https://m.media-amazon.com/images/I/51pAt71OVNL._AC_SX679_.jpg',
+    category: 'essential',
+    templateSlugs: [],
+    priceRange: '~$20',
+    tags: ['with-kids', 'cold-ready', 'budget'],
+    slot: 'KID_GEAR',
+  },
+  {
+    id: 'wildbreakers-kids-mittens',
+    name: 'Zelda Matilda Wildbreakers Waterproof Kids Mittens',
+    description:
+      'Waterproof, Thinsulate-insulated kids mittens with a long stay-put cuff that keeps snow and wet leaves out. Mittens keep small fingers warmer than gloves, and the waterproof shell matters more than the insulation once kids start playing on the ground. Sold in toddler through youth sizes.',
+    amazonAsin: 'B07QZWKBDB',
+    affiliateUrl: 'https://www.amazon.com/dp/B07QZWKBDB?tag=trailsteadgui-20',
+    imageUrl: 'https://m.media-amazon.com/images/I/71t+agE5tnL._AC_SX679_.jpg',
+    category: 'essential',
+    templateSlugs: [],
+    priceRange: '~$16',
+    tags: ['with-kids', 'cold-ready', 'budget'],
+    slot: 'KID_GEAR',
+  },
+  {
     id: 'kelty-cosmic-20-down',
     name: 'Kelty Cosmic 20 Down',
     description:
