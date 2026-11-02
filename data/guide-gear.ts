@@ -1195,6 +1195,7 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'SAFETY', productId: 'uco-stormproof-matches' },
     { slot: 'SAFETY', productId: 'esbit-fire-cubes' },
     { slot: 'SAFETY', productId: 'eurow-collapsible-bucket-10l' },
+    { slot: 'SAFETY', productId: 'first-alert-ez-fire-spray' },
   ],
   'teaching-kids-to-whittle': [
     { slot: 'KID_GEAR', productId: 'opinel-no7-folding-knife' },
@@ -1388,6 +1389,9 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
   'hiking-with-kids-from-camp': [
     { slot: 'LIGHTING', productId: 'black-diamond-spot-400' },
     { slot: 'SAFETY', productId: 'leukotape-blister-prevention' },
+    { slot: 'SAFETY', productId: 'thriad-first-aid-430' },
+    { slot: 'SAFETY', productId: 'aveeno-kids-sunscreen-lotion' },
+    { slot: 'KID_GEAR', productId: 'cascade-mountain-tech-trekking-poles' },
   ],
   'winter-camping-with-dogs': [
     { slot: 'DOG_GEAR', productId: 'kurgo-loft-dog-jacket' },

@@ -874,6 +874,20 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     slot: 'SAFETY',
   },
   {
+    id: 'first-alert-ez-fire-spray',
+    name: 'First Alert EZ Fire Spray (AF400)',
+    description:
+      'A light aerosol extinguisher rated for wood, paper, fabric, grease, and electrical fires, with 32 seconds of spray. Keep it by the fire ring as backup to the water bucket.',
+    amazonAsin: 'B001229JCU',
+    affiliateUrl: 'https://www.amazon.com/dp/B001229JCU?tag=trailsteadgui-20',
+    imageUrl: 'https://m.media-amazon.com/images/I/71uXDoLaSyL._AC_SX679_.jpg',
+    category: 'essential',
+    templateSlugs: [],
+    priceRange: '~$12',
+    tags: ['budget'],
+    slot: 'SAFETY',
+  },
+  {
     id: 'esbit-fire-cubes',
     name: 'Esbit Solid Fuel Tablets, 60-Pack',
     description:
