@@ -4,13 +4,9 @@ Products spotted during the weekly gear-rotation pass that look worth a slot but
 were not wired in yet. Each entry says what still needs to happen before it can
 ship. Trim this file as items are actioned or go stale.
 
-Last reviewed: 2026-10-26
+Last reviewed: 2026-11-02
 
 ## Needs a human decision
-
-None open this week. The Coleman Sundome 4-Person problem from 2026-10-12 is
-resolved: the registry now points at `B0D7QN9S9Q` (Spruce Green), and the
-2026-10-26 browser audit found it buyable from its product page.
 
 Optional: `kidde-portable-co-alarm` now points at `B0G1CR88J9` ($24.97, 4.6 stars
 on 408 ratings). The older, much more reviewed listing of the same AA battery Kidde
@@ -22,16 +18,13 @@ so it is left as-is.
 
 ## Not yet verified
 
-- **Eureka Copper Canyon LX 8** (big-family cabin tent). Named best overall
-  family tent in Outdoor Life's 2026 roundup. Not checked on Amazon yet, so
-  confirm a buy box, rating count, and the exact 8-person variant ASIN before
-  adding it. Only worth a slot if a guide wants a sturdier 8-person pick than
-  the Skydome.
+None open. The Eureka Copper Canyon LX 8 was dropped on 2026-11-02: it does not
+appear in Amazon search results (only CORE and Coleman cabin tents come up), so it
+cannot be linked through Associates. The registry's `core-9p-instant-cabin` and
+`core-10p-straight-wall-cabin` already cover the big-family cabin-tent slot.
 
-## Deferred, not a sourcing problem
+## Closed this week
 
-PR #74 has merged. On 2026-10-12 `teton-celsius-xxl-0` was added to the six
-cold-weather shelves that were waiting on it, so that item is closed.
-
-- `how-to-start-a-campfire` has 3 products now (matches, fire cubes, collapsible
-  bucket). A small fire extinguisher would round it out, but none is in the registry yet.
+- `how-to-start-a-campfire` was missing a fire extinguisher. On 2026-11-02
+  `first-alert-ez-fire-spray` (B001229JCU, 4.8 stars on 12,703 ratings, $11.98,
+  Add to Cart verified) was added to the registry and to that guide's shelf.
