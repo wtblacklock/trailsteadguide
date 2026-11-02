@@ -137,7 +137,17 @@ constants
   and flag overflows; fix the worst offenders manually.
 - **Effort:** S
 - **Expected lift:** low (better SERP CTR on the truncated ones)
-- **Status:** queued
+- **Status:** shipped (2026-11-02). Built a one-off script that reads every
+  prerendered page's `<title>` from the `npm run build` output (298 pages)
+  and flags anything over the 60-char budget. Found 5 overflows, all on
+  `/printables/<slug>/print` (the `noIndex` print view), caused by naive
+  `${printable.title} - Print View` string concatenation instead of the
+  existing `titleWithQualifier()` helper used by the printable landing
+  page and skill pages. Switched it to `titleWithQualifier(printable.title,
+  ['Print View'])`, which falls back to the bare title when the qualifier
+  doesn't fit, and added a `seo-meta-lengths.test.ts` case asserting every
+  printable's print-view title stays within budget going forward. No
+  other page type overflowed.
 
 ### B. Structured data
 
