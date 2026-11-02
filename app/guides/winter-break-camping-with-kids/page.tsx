@@ -49,7 +49,7 @@ export default function Page() {
           },
           {
             q: 'How far ahead should you book a campsite for winter break?',
-            a: 'Earlier than most people expect. Recreation.gov releases most federal sites on a rolling six-month window, so late-December dates at popular federal campgrounds went on sale in late June. Florida State Parks open reservations up to 11 months ahead, and Texas State Parks about five months ahead. If you are planning in the fall, use cancellation alerts, look at weeknights between Christmas and New Year, and check cabins and smaller parks that people overlook.',
+            a: 'Earlier than most people expect. Recreation.gov releases most federal sites on a rolling six-month window, so late-December dates at popular federal campgrounds went on sale in late June. Florida State Parks open reservations 11 months ahead for Florida residents and 10 months ahead for everyone else, and Texas State Parks about five months ahead. If you are planning in the fall, use cancellation alerts, look at weeknights between Christmas and New Year, and check cabins and smaller parks that people overlook.',
           },
           {
             q: 'How cold does it get camping in late December?',
@@ -81,7 +81,7 @@ export default function Page() {
       >
         <QuickAnswer
           tldr="Go south or book a state park cabin, reserve months ahead, plan each day around a 4:30 to 5:30pm sunset, and pack for a night near freezing even in warm states."
-          summary="Winter break camping with kids comes down to four late-December realities. First, many northern campgrounds are closed, so families head to Florida, the Gulf Coast, south Texas, southern Arizona, or the southern California deserts, or book a state park cabin or yurt closer to home. Second, those warm-weather parks are in peak season and their booking windows open early: about six months ahead on Recreation.gov and up to 11 months ahead at Florida State Parks. Third, the winter solstice brings the shortest days of the year, with sunset between about 4:30 and 5:30pm and nights of 14 to 15 hours, so hikes happen at midday and dinner happens in the dark. Fourth, desert and southern nights still drop into the 30s, so every child needs a 20-degree bag, an insulated pad, and dry layers. Stock up before Christmas Eve, since stores and camp stores close for the holiday."
+          summary="Winter break camping with kids comes down to four late-December realities. First, many northern campgrounds are closed, so families head to Florida, the Gulf Coast, south Texas, southern Arizona, or the southern California deserts, or book a state park cabin or yurt closer to home. Second, those warm-weather parks are in peak season and their booking windows open early: about six months ahead on Recreation.gov, and at Florida State Parks 11 months ahead for Florida residents but 10 months for out-of-state families. Third, the winter solstice brings the shortest days of the year, with sunset between about 4:30 and 5:30pm and nights of 14 to 15 hours, so hikes happen at midday and dinner happens in the dark. Fourth, desert and southern nights still drop into the 30s, so every child needs a 20-degree bag, an insulated pad, and dry layers. Stock up before Christmas Eve, since stores and camp stores close for the holiday."
         />
 
         <h2>Why winter break is worth it, and the catch</h2>
@@ -142,8 +142,10 @@ export default function Page() {
             six-month window, so late-December dates went on sale in late June.
           </li>
           <li>
-            <strong>Florida State Parks:</strong> reservations open up to 11 months ahead, and
-            popular coastal parks are often full for the holidays well before fall.
+            <strong>Florida State Parks:</strong> reservations open 11 months ahead for Florida
+            residents and 10 months ahead for everyone else, so an out-of-state family is
+            already a month behind. Popular coastal parks are often full for the holidays well
+            before fall.
           </li>
           <li>
             <strong>Texas State Parks:</strong> about five months ahead, which puts late-December
@@ -307,8 +309,9 @@ export default function Page() {
         </p>
         <h3>How far ahead should you book a campsite for winter break?</h3>
         <p>
-          About six months ahead for most federal campgrounds on Recreation.gov, up to 11 months for
-          Florida State Parks, and about five months for Texas State Parks. Planning later, use
+          About six months ahead for most federal campgrounds on Recreation.gov. Florida State Parks
+          open 11 months ahead for Florida residents and 10 months for everyone else, and Texas
+          State Parks about five months. Planning later, use
           cancellation alerts and look at weeknights and cabins.
         </p>
         <h3>How cold does it get camping in late December?</h3>
