@@ -1598,6 +1598,20 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     tags: ['family', 'budget'],
   },
   {
+    id: 'primacare-mylar-emergency-blankets',
+    name: 'Primacare Emergency Mylar Thermal Blankets, 10-Pack',
+    description:
+      'Ten folded 84 x 52 in reflective blankets that each pack smaller than a deck of cards. Wrap one over a child\'s dry layers or around a sleeping bag when someone is chilled and you are heading for a warm car or building.',
+    amazonAsin: 'B00DZ1NFSK',
+    affiliateUrl: 'https://www.amazon.com/dp/B00DZ1NFSK?tag=trailsteadgui-20',
+    imageUrl: 'https://m.media-amazon.com/images/I/716-cWlOuEL._AC_SX679_.jpg',
+    category: 'essential',
+    templateSlugs: [],
+    priceRange: '~$15',
+    tags: ['family', 'budget', 'cold-ready'],
+    slot: 'SAFETY',
+  },
+  {
     id: 'gsi-glacier-stainless-camper',
     name: 'GSI Outdoors Glacier Stainless Camper Cookset',
     description:

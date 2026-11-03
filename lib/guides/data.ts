@@ -712,7 +712,18 @@ export const GUIDES: Guide[] = [
     metaTitle: 'How to Dress Kids for Cold Camping',
     metaDescription:
       'How to dress kids for cold-weather camping: the three-layer system, why cotton fails, how many changes to pack, and when to add or shed a layer at camp.',
-    relatedGuides: ['how-to-keep-kids-warm-camping', 'camping-in-40-degree-weather', 'cold-weather-camping-meals'],
+    relatedGuides: ['how-to-keep-kids-warm-camping', 'hypothermia-and-frostbite-in-kids', 'camping-in-40-degree-weather'],
+  },
+  {
+    slug: 'hypothermia-and-frostbite-in-kids',
+    category: 'scenario',
+    title: 'Hypothermia and Frostbite in Kids at Camp',
+    description: 'The early warning signs in kids, first aid for the first 30 minutes, what not to do with frostbite, and when to call 911 or head home.',
+    eyebrow: 'Cold-weather safety',
+    metaTitle: 'Hypothermia and Frostbite in Kids',
+    metaDescription:
+      'Hypothermia and frostbite in kids at camp: the early warning signs, what to do in the first 30 minutes, what not to do, and when to call 911 or head home.',
+    relatedGuides: ['how-to-dress-kids-for-cold-weather-camping', 'how-to-keep-kids-warm-camping', 'camping-first-aid-kit-for-families'],
   },
   {
     slug: 'camping-in-bear-country-with-kids',
