@@ -990,6 +990,13 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'SLEEP_BAG', productId: 'teton-junior-20' },
     { slot: 'HEADLAMP', productId: 'everbrite-headlamp-5-pack' },
   ],
+  'hypothermia-and-frostbite-in-kids': [
+    { slot: 'WINTER_GEAR', productId: 'hothands-hand-warmers-bulk' },
+    { slot: 'KID_GEAR', productId: 'vicherub-kids-thermal-set' },
+    { slot: 'KID_GEAR', productId: 'wildbreakers-kids-mittens' },
+    { slot: 'SAFETY', productId: 'primacare-mylar-emergency-blankets' },
+    { slot: 'SAFETY', productId: 'thriad-first-aid-430' },
+  ],
   'sleeping-pad-r-value-explained': [
     { slot: 'SLEEP_SURFACE', productId: 'therm-a-rest-z-lite-sol' },
     { slot: 'SLEEP_SURFACE', productId: 'rab-ionosphere-5-5' },

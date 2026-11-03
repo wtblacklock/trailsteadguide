@@ -78,7 +78,7 @@ export default function Page() {
           src: HERO_IMAGE,
           alt: 'Two girls in pink winter jackets, hats, and gloves standing on a snowy rise in an evergreen forest',
         }}
-        dateModified="2026-11-02"
+        dateModified="2026-11-03"
       >
         <QuickAnswer
           tldr="Three layers, no cotton, and more spare socks than seems sensible. Change layers before kids get sweaty or cold, not after."
@@ -234,7 +234,11 @@ export default function Page() {
         </p>
         <p>
           If a child is still shivering hard after about 20 minutes of that, or seems confused or
-          unusually sleepy, warm them up in a heated car or building. Never use a fuel-burning heater
+          unusually sleepy, warm them up in a heated car or building. Our guide to{' '}
+          <Link href="/guides/hypothermia-and-frostbite-in-kids">
+            hypothermia and frostbite in kids
+          </Link>{' '}
+          covers the warning signs and first aid in detail. Never use a fuel-burning heater
           or stove inside a tent to warm anyone up;{' '}
           <Link href="/guides/tent-heater-safety">tent heater safety</Link> explains why. And when
           the forecast is cold and wet at the same time, a cabin weekend or a later date is the
