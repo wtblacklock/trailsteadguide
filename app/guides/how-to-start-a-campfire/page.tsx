@@ -167,8 +167,10 @@ export default function Page() {
           A fire isn&apos;t out when the flames are gone - coals hold enough heat to reignite or
           burn a foot for hours after they stop glowing visibly. Drown it, stir the ashes, drown it
           again, and repeat until the whole ring is cool enough to touch with a bare hand. Start
-          this process at least 30 minutes before you actually want to leave. Full method in{' '}
-          <Link href="/skills/fire/extinguishing-a-fire">extinguishing a fire</Link>.
+          this process at least 30 minutes before you actually want to leave. The step-by-step
+          version, including how much water it takes, is in{' '}
+          <Link href="/guides/how-to-put-out-a-campfire">how to put out a campfire</Link>, and the
+          skill card is <Link href="/skills/fire/extinguishing-a-fire">extinguishing a fire</Link>.
         </p>
 
         <h2>Frequently asked</h2>

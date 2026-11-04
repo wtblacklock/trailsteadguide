@@ -123,9 +123,9 @@ export default function Page() {
           a bare foot for hours after they stop glowing, so this has to start well before you
           actually plan to leave, not as the last thing before pulling out. Drown it, stir the
           ashes so no dry pocket is hiding underneath, drown it again, and repeat until the whole
-          ring is cool enough to touch with a bare hand. The full method, including what to do when
-          water is limited, is in{' '}
-          <Link href="/guides/how-to-start-a-campfire">how to start a campfire</Link>, and the
+          ring is cool enough to touch with a bare hand. The full method, including how much water
+          to have ready and what to do when water is limited, is in{' '}
+          <Link href="/guides/how-to-put-out-a-campfire">how to put out a campfire</Link>, and the
           complete safety technique is in{' '}
           <Link href="/skills/fire/extinguishing-a-fire">extinguishing a fire</Link>.
         </p>
