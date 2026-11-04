@@ -559,7 +559,18 @@ export const GUIDES: Guide[] = [
     title: 'How to Start a Campfire',
     description: 'Checking before you build, gathering materials, picking a structure, and lighting it - plus wet-weather backups.',
     eyebrow: 'How-to',
-    relatedGuides: ['campfire-recipes-for-kids', 'teaching-kids-to-whittle', 'how-to-set-up-a-tent'],
+    relatedGuides: ['how-to-put-out-a-campfire', 'campfire-recipes-for-kids', 'teaching-kids-to-whittle'],
+  },
+  {
+    slug: 'how-to-put-out-a-campfire',
+    category: 'basics',
+    title: 'How to Put Out a Campfire Completely',
+    description: 'The drown, stir, and feel method, how much water to have ready, why dirt and snow fall short, and how to give kids a real job.',
+    eyebrow: 'How-to',
+    metaTitle: 'How to Put Out a Campfire Completely',
+    metaDescription:
+      'How to put out a campfire the right way: drown, stir, and feel, how much water it takes, why dirt and snow fall short, and how to give kids a real job.',
+    relatedGuides: ['how-to-start-a-campfire', 'how-to-break-camp', 'camping-during-a-burn-ban'],
   },
   {
     slug: 'teaching-kids-to-whittle',
