@@ -997,4 +997,15 @@ export const GUIDES: Guide[] = [
       'Winter camping with dogs: which dogs handle the cold, a warm sleep setup, paw care on ice and salt, hunting-season orange, and when it is too cold to go.',
     relatedGuides: ['camping-with-dogs-first-time', 'camping-during-hunting-season', 'camping-in-40-degree-weather'],
   },
+  {
+    slug: 'water-safety-at-camp-with-kids',
+    category: 'scenario',
+    title: 'Water Safety at Camp With Kids',
+    description: 'Why a campground lake or river is riskier than a pool, the water watcher habit, life jacket rules, and what to do if a child goes under.',
+    eyebrow: 'Water safety',
+    metaTitle: 'Water Safety at Camp With Kids',
+    metaDescription:
+      'Water safety at camp with kids: why open water is riskier than a pool, life jacket rules, the water watcher habit, and what to do in an emergency.',
+    relatedGuides: ['summer-camping-with-kids', 'camping-with-toddlers', 'fishing-with-kids-at-camp'],
+  },
 ]
