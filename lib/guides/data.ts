@@ -767,7 +767,19 @@ export const GUIDES: Guide[] = [
     metaTitle: 'Christmas Break Camping With Kids',
     metaDescription:
       'Christmas break camping with kids: where campgrounds are open in late December, when to book, planning around 15-hour nights, and New Year at camp.',
-    relatedGuides: ['thanksgiving-camping-with-kids', 'how-to-keep-kids-warm-camping', 'winter-camping-for-beginners'],
+    relatedGuides: ['warm-winter-camping-destinations', 'thanksgiving-camping-with-kids', 'how-to-keep-kids-warm-camping'],
+  },
+  {
+    slug: 'warm-winter-camping-destinations',
+    category: 'seasonal',
+    title: 'Warm Winter Camping Destinations for Families',
+    shortLabel: 'Warm winter',
+    description: 'Where it stays mild from December through February, what each warm region is like at night, and how to book before the sites are gone.',
+    eyebrow: 'Winter',
+    metaTitle: 'Warm Winter Camping Spots for Families',
+    metaDescription:
+      'Where to tent camp warm this winter with kids: Florida, the Gulf Coast, south Texas, southern Arizona, and the California deserts, plus when to book.',
+    relatedGuides: ['winter-break-camping-with-kids', 'camping-in-florida-for-beginners', 'camping-in-the-desert-southwest-for-beginners'],
   },
   {
     slug: 'camping-in-40-degree-weather',
