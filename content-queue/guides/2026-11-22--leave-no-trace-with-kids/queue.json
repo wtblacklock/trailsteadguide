@@ -1,0 +1,30 @@
+{
+  "publishOn": "2026-11-22",
+  "guide": {
+    "slug": "leave-no-trace-with-kids",
+    "category": "basics",
+    "title": "Leave No Trace With Kids",
+    "description": "The seven principles turned into camp jobs and games kids can own, from the trash patrol and the thumb test to the site sweep.",
+    "eyebrow": "Skills",
+    "metaTitle": "Leave No Trace With Kids: 7 Kid Jobs",
+    "metaDescription": "Leave No Trace with kids: the seven principles turned into real camp jobs and games, from the trash patrol and the thumb test to the fire-out check.",
+    "relatedGuides": [
+      "how-to-break-camp",
+      "hiking-with-kids-from-camp",
+      "how-to-wash-dishes-camping"
+    ]
+  },
+  "gear": [
+    { "slot": "TRASH", "productId": "fwc-trash-can-wakeman" },
+    { "slot": "TRASH", "productId": "montnorth-collapsible-wash-basin" },
+    { "slot": "TRASH", "productId": "campsuds-biodegradable-soap" },
+    { "slot": "KID_GEAR", "productId": "peterson-first-guide-trees" },
+    { "slot": "KID_GEAR", "productId": "field-guide-animal-tracks" },
+    { "slot": "SAFETY", "productId": "eurow-collapsible-bucket-10l" },
+    { "slot": "STOVE", "productId": "coleman-1-burner" }
+  ],
+  "reciprocal": [
+    { "slug": "hiking-with-kids-from-camp", "replace": "how-to-choose-a-family-campsite" },
+    { "slug": "how-to-break-camp", "replace": "how-to-set-up-a-tent" }
+  ]
+}

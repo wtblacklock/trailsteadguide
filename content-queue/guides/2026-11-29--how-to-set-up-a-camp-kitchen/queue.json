@@ -1,0 +1,27 @@
+{
+  "publishOn": "2026-11-29",
+  "guide": {
+    "slug": "how-to-set-up-a-camp-kitchen",
+    "category": "basics",
+    "title": "How to Set Up a Camp Kitchen",
+    "description": "A layout that follows the food, the table and stove, a wash station, wildlife-proof food storage, and light for dinners after dark.",
+    "eyebrow": "Camp cooking",
+    "metaTitle": "How to Set Up a Camp Kitchen",
+    "metaDescription": "How to set up a camp kitchen for a family: a simple layout, the table and stove, a wash station, wildlife-proof food storage, and light for dark dinners.",
+    "relatedGuides": ["how-to-wash-dishes-camping", "how-to-pack-a-cooler", "easy-family-camping-meals"]
+  },
+  "gear": [
+    { "slot": "STOVE", "productId": "coleman-triton-2-burner" },
+    { "slot": "COOKWARE", "productId": "gsi-glacier-stainless-camper" },
+    { "slot": "COOKWARE", "productId": "camp-grill-tongs" },
+    { "slot": "COOKWARE", "productId": "reliance-aqua-tainer-7gal-2pack" },
+    { "slot": "COOLER", "productId": "coleman-xtreme-50-cooler" },
+    { "slot": "TRASH", "productId": "montnorth-collapsible-wash-basin" },
+    { "slot": "TRASH", "productId": "fwc-trash-can-wakeman" },
+    { "slot": "LIGHTING", "productId": "luminaid-packlite-max" }
+  ],
+  "reciprocal": [
+    { "slug": "how-to-wash-dishes-camping", "replace": "when-do-campgrounds-close" },
+    { "slug": "how-to-pack-a-cooler", "replace": "camping-meal-plan-family" }
+  ]
+}

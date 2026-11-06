@@ -1,0 +1,27 @@
+{
+  "publishOn": "2026-11-28",
+  "guide": {
+    "slug": "camping-in-kentucky-for-beginners",
+    "category": "location",
+    "title": "Camping in Kentucky for Beginners",
+    "shortLabel": "Kentucky",
+    "description": "State resort parks with lodges and cabins, Red River Gorge arches, Mammoth Cave tours, and lakeside camping at Land Between the Lakes.",
+    "eyebrow": "Kentucky",
+    "metaTitle": "Kentucky Camping for Beginners",
+    "metaDescription": "Camping in Kentucky for beginners: Red River Gorge, Mammoth Cave, Land Between the Lakes, and state resort parks with lodges and cabins for colder months.",
+    "relatedGuides": ["camping-in-the-appalachians-for-beginners", "best-state-parks-for-families", "state-park-cabin-camping-with-kids"]
+  },
+  "gear": [
+    { "slot": "TENT", "productId": "coleman-sundome-6p" },
+    { "slot": "SLEEP_BAG", "productId": "teton-junior-20" },
+    { "slot": "STOVE", "productId": "coleman-triton-2-burner" },
+    { "slot": "HEADLAMP", "productId": "everbrite-headlamp-5-pack" },
+    { "slot": "RAIN_GEAR", "productId": "geertop-17x10-tarp" },
+    { "slot": "SAFETY", "productId": "sawyer-permethrin-clothing-spray" },
+    { "slot": "SAFETY", "productId": "tickcheck-tick-remover-kit" }
+  ],
+  "reciprocal": [
+    { "slug": "camping-in-the-ozarks-for-beginners", "replace": "fall-camping-for-beginners" },
+    { "slug": "camping-in-the-appalachians-for-beginners", "replace": "fall-camping-for-beginners" }
+  ]
+}

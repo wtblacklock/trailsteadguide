@@ -1,0 +1,27 @@
+{
+  "publishOn": "2026-11-10",
+  "guide": {
+    "slug": "camping-in-new-mexico-for-beginners",
+    "category": "location",
+    "title": "Camping in New Mexico for Beginners",
+    "description": "Elevation picks the season, southern desert parks for the cool months, White Sands and Bandelier, wind, and dark skies.",
+    "eyebrow": "New Mexico",
+    "shortLabel": "New Mexico",
+    "metaTitle": "New Mexico Camping for Beginners",
+    "metaDescription": "Camping in New Mexico for beginners: how elevation sets the season, the best family state parks, White Sands and Bandelier, wind, and cold desert nights.",
+    "relatedGuides": ["camping-in-the-desert-southwest-for-beginners", "camping-in-arizona-for-beginners", "stargazing-camping-with-kids"]
+  },
+  "gear": [
+    { "slot": "TENT", "productId": "coleman-sundome-4p" },
+    { "slot": "SLEEP_BAG", "productId": "teton-celsius-xxl-0" },
+    { "slot": "SLEEP_SURFACE", "productId": "therm-a-rest-z-lite-sol" },
+    { "slot": "RAIN_GEAR", "productId": "eurmax-galvanized-tent-stakes" },
+    { "slot": "COOKWARE", "productId": "reliance-aqua-tainer-7gal-2pack" },
+    { "slot": "SAFETY", "productId": "dripdrop-hydration" },
+    { "slot": "KID_GEAR", "productId": "celestron-outland-binoculars" }
+  ],
+  "reciprocal": [
+    { "slug": "camping-in-arizona-for-beginners", "replace": "camping-in-a-heatwave" },
+    { "slug": "camping-in-the-desert-southwest-for-beginners", "replace": "camping-in-california-for-beginners" }
+  ]
+}

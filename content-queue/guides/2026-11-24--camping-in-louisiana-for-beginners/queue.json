@@ -1,0 +1,31 @@
+{
+  "publishOn": "2026-11-24",
+  "guide": {
+    "slug": "camping-in-louisiana-for-beginners",
+    "category": "location",
+    "title": "Camping in Louisiana for Beginners",
+    "description": "Why fall through spring is the season, bayou state parks with cabins, bugs and humidity, and alligator sense for kids.",
+    "eyebrow": "Louisiana",
+    "shortLabel": "Louisiana",
+    "metaTitle": "Louisiana Camping for Beginners (Bayous)",
+    "metaDescription": "Camping in Louisiana for beginners: why fall through spring is the season, bayou state parks with cabins, bugs and humidity, and alligator sense.",
+    "relatedGuides": [
+      "camping-in-texas-for-beginners",
+      "camping-in-florida-for-beginners",
+      "state-park-cabin-camping-with-kids"
+    ]
+  },
+  "gear": [
+    { "slot": "TENT", "productId": "coleman-sundome-4p" },
+    { "slot": "CANOPY", "productId": "crown-shades-10x10-canopy" },
+    { "slot": "SAFETY", "productId": "sawyer-permethrin-clothing-spray" },
+    { "slot": "SLEEP_BAG", "productId": "teton-junior-20" },
+    { "slot": "RAIN_GEAR", "productId": "rainleaf-microfiber-towel" },
+    { "slot": "SAFETY", "productId": "thriad-first-aid-430" },
+    { "slot": "COOLER", "productId": "coleman-classic-rolling-cooler" }
+  ],
+  "reciprocal": [
+    { "slug": "camping-in-texas-for-beginners", "replace": "camping-in-a-heatwave" },
+    { "slug": "camping-in-florida-for-beginners", "replace": "summer-camping-for-beginners" }
+  ]
+}

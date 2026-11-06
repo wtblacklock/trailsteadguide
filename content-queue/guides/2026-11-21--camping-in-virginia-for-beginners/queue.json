@@ -1,0 +1,31 @@
+{
+  "publishOn": "2026-11-21",
+  "guide": {
+    "slug": "camping-in-virginia-for-beginners",
+    "category": "location",
+    "title": "Camping in Virginia for Beginners",
+    "description": "Shenandoah, the coast, and the mountain lake parks, plus state park cabins, ticks, and what changes after November.",
+    "eyebrow": "Virginia",
+    "shortLabel": "Virginia",
+    "metaTitle": "Virginia Camping for Beginners (Cabins)",
+    "metaDescription": "Camping in Virginia for beginners: Shenandoah, the coast, and the mountain lakes, plus state park cabins, ticks, and what changes after November.",
+    "relatedGuides": [
+      "camping-in-the-appalachians-for-beginners",
+      "camping-in-north-carolina-for-beginners",
+      "state-park-cabin-camping-with-kids"
+    ]
+  },
+  "gear": [
+    { "slot": "TENT", "productId": "coleman-sundome-4p" },
+    { "slot": "SLEEP_BAG", "productId": "teton-junior-20" },
+    { "slot": "SAFETY", "productId": "sawyer-permethrin-clothing-spray" },
+    { "slot": "SAFETY", "productId": "tickcheck-tick-remover-kit" },
+    { "slot": "SAFETY", "productId": "quietwear-youth-blaze-vest" },
+    { "slot": "LIGHTING", "productId": "black-diamond-spot-400" },
+    { "slot": "WINTER_GEAR", "productId": "hothands-hand-warmers-bulk" }
+  ],
+  "reciprocal": [
+    { "slug": "camping-in-north-carolina-for-beginners", "replace": "how-to-keep-kids-warm-camping" },
+    { "slug": "camping-in-the-appalachians-for-beginners", "replace": "fall-camping-for-beginners" }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "publishOn": "2026-11-08",
+  "guide": {
+    "slug": "dutch-oven-camping-for-beginners",
+    "category": "basics",
+    "title": "Dutch Oven Camping for Beginners",
+    "description": "Choosing a camp Dutch oven, seasoning and cleanup, the charcoal coal math, and four easy first recipes for a family.",
+    "eyebrow": "Camp food",
+    "metaTitle": "Dutch Oven Camping for Beginners",
+    "metaDescription": "Dutch oven camping for beginners: choosing a camp oven, seasoning and cleanup, how many charcoal briquettes go on top and bottom, and four easy recipes.",
+    "relatedGuides": ["thanksgiving-camping-with-kids", "campfire-recipes-for-kids", "cold-weather-camping-meals"]
+  },
+  "gear": [
+    { "slot": "COOKWARE", "productId": "lodge-dutch-oven" },
+    { "slot": "COOKWARE", "productId": "camp-grill-tongs" },
+    { "slot": "COOKWARE", "productId": "heavy-duty-aluminum-foil" },
+    { "slot": "COOKWARE", "productId": "temppro-instant-read-thermometer" },
+    { "slot": "COOKWARE", "productId": "lodge-cast-iron-skillet" },
+    { "slot": "SAFETY", "productId": "uco-stormproof-matches" }
+  ],
+  "reciprocal": [
+    { "slug": "campfire-recipes-for-kids", "replace": "camping-meal-plan-family" }
+  ]
+}

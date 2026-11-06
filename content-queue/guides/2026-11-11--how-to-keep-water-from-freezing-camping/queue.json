@@ -1,0 +1,26 @@
+{
+  "publishOn": "2026-11-11",
+  "guide": {
+    "slug": "how-to-keep-water-from-freezing-camping",
+    "category": "seasonal",
+    "title": "How to Keep Water From Freezing Camping",
+    "description": "Bottles in the tent and upside down, jugs in a closed cooler, filters in the sleeping bag, and hot water ready at sunrise on a below-freezing night.",
+    "eyebrow": "Cold nights",
+    "shortLabel": "Frozen water",
+    "metaTitle": "Keep Water From Freezing When Camping",
+    "metaDescription": "How to keep water from freezing when camping: bottles upside down and in the tent, jugs in the cooler, filters kept warm, and hot water ready at sunrise.",
+    "relatedGuides": ["winter-camping-for-beginners", "camp-stove-fuel-in-cold-weather", "cold-weather-camping-meals"]
+  },
+  "gear": [
+    { "slot": "COOKWARE", "productId": "reliance-aqua-tainer-7gal-2pack" },
+    { "slot": "COOKWARE", "productId": "thermos-stainless-king-40oz" },
+    { "slot": "COOLER", "productId": "coleman-xtreme-50-cooler" },
+    { "slot": "KID_GEAR", "productId": "thermos-funtainer-food-jar" },
+    { "slot": "WINTER_GEAR", "productId": "hothands-hand-warmers-bulk" },
+    { "slot": "SLEEP_BAG", "productId": "teton-celsius-xxl-0" }
+  ],
+  "reciprocal": [
+    { "slug": "winter-camping-for-beginners", "replace": "camping-in-colorado-for-beginners" },
+    { "slug": "camping-in-40-degree-weather", "replace": "fall-camping-for-beginners" }
+  ]
+}

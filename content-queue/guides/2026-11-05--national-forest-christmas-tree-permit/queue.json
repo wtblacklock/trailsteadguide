@@ -1,0 +1,26 @@
+{
+  "publishOn": "2026-11-05",
+  "guide": {
+    "slug": "national-forest-christmas-tree-permit",
+    "category": "seasonal",
+    "title": "Cutting a Christmas Tree on National Forest Land With Kids",
+    "description": "How national forest Christmas tree permits work, the cutting rules, winter road and hunting season safety, and what to bring for a family outing.",
+    "eyebrow": "Holiday outing",
+    "shortLabel": "Christmas tree",
+    "metaTitle": "National Forest Christmas Tree Permits",
+    "metaDescription": "How to get a national forest Christmas tree permit, the cutting rules that come with it, winter road safety, and what to bring for a family tree outing.",
+    "relatedGuides": ["dispersed-camping-on-blm-and-national-forest-land", "camping-during-hunting-season", "winter-break-camping-with-kids"]
+  },
+  "gear": [
+    { "slot": "SAFETY", "productId": "quietwear-youth-blaze-vest" },
+    { "slot": "SAFETY", "productId": "allen-blaze-orange-vest" },
+    { "slot": "WINTER_GEAR", "productId": "hothands-hand-warmers-bulk" },
+    { "slot": "COOKWARE", "productId": "thermos-stainless-king-40oz" },
+    { "slot": "SAFETY", "productId": "paracord-550-50ft" },
+    { "slot": "SAFETY", "productId": "thriad-first-aid-430" }
+  ],
+  "reciprocal": [
+    { "slug": "dispersed-camping-on-blm-and-national-forest-land", "replace": "camping-for-beginners" },
+    { "slug": "camping-during-hunting-season", "replace": "camping-after-dark-with-kids" }
+  ]
+}

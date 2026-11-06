@@ -1,0 +1,27 @@
+{
+  "publishOn": "2026-11-06",
+  "guide": {
+    "slug": "camping-in-alabama-for-beginners",
+    "category": "location",
+    "title": "Camping in Alabama for Beginners",
+    "description": "Gulf Coast parks in the cool months, north Alabama mountain parks in fall, fire ants, and cold fronts.",
+    "eyebrow": "Alabama",
+    "shortLabel": "Alabama",
+    "metaTitle": "Alabama Camping for Beginners (Winter)",
+    "metaDescription": "Camping in Alabama for beginners: Gulf Coast parks in winter, north Alabama mountain parks in fall, snakes and bugs, and a setup for cool, damp nights.",
+    "relatedGuides": ["camping-in-georgia-for-beginners", "camping-in-florida-for-beginners", "state-park-cabin-camping-with-kids"]
+  },
+  "gear": [
+    { "slot": "TENT", "productId": "coleman-sundome-4p" },
+    { "slot": "SLEEP_BAG", "productId": "coleman-brazos-bag" },
+    { "slot": "SLEEP_SURFACE", "productId": "big-agnes-divide" },
+    { "slot": "STOVE", "productId": "coleman-triton-2-burner" },
+    { "slot": "RAIN_GEAR", "productId": "tesorrio-sand-stakes-6pk" },
+    { "slot": "SAFETY", "productId": "sawyer-permethrin-clothing-spray" },
+    { "slot": "LIGHTING", "productId": "everbrite-headlamp-5-pack" }
+  ],
+  "reciprocal": [
+    { "slug": "camping-in-georgia-for-beginners", "replace": "summer-camping-for-beginners" },
+    { "slug": "camping-in-florida-for-beginners", "replace": "summer-camping-for-beginners" }
+  ]
+}
