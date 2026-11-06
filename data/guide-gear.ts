@@ -539,6 +539,7 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
   'camping-meal-plan-family': [
     { slot: 'STOVE', productId: 'coleman-triton-2-burner' },
     { slot: 'COOKWARE', productId: 'thtybros-cookware-mess-kit' },
+    { slot: 'COOKWARE', productId: 'lodge-cast-iron-skillet' },
     { slot: 'COOLER', productId: 'coleman-classic-rolling-cooler' },
   ],
   'camping-when-the-weather-turns': [
@@ -902,6 +903,7 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
   'easy-family-camping-meals': [
     { slot: 'STOVE', productId: 'coleman-triton-2-burner' },
     { slot: 'COOKWARE', productId: 'thtybros-cookware-mess-kit' },
+    { slot: 'COOKWARE', productId: 'lodge-cast-iron-skillet' },
     { slot: 'COOLER', productId: 'coleman-classic-rolling-cooler' },
   ],
   'fall-camping-for-beginners': [
