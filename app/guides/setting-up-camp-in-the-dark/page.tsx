@@ -76,7 +76,6 @@ export default function Page() {
           src: HERO_IMAGE,
           alt: 'A campsite at dusk with lanterns strung under a tarp over a camp table and chairs, a second tent behind it',
         }}
-        dateModified="2026-09-14"
       >
         <QuickAnswer
           tldr="Plan the evening backwards from sunset, not forwards from your arrival. Subtract 90 minutes for a first visit. Pitch the tent first, cook one pot, leave the rest for morning."

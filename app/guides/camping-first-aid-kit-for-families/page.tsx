@@ -76,7 +76,6 @@ export default function Page() {
           src: HERO_IMAGE,
           alt: 'A well-used green first aid bag strapped to the outside of a backpack',
         }}
-        dateModified="2026-10-01"
       >
         <QuickAnswer
           tldr="Buy a prepacked base kit, add the kid medicines and tools it leaves out, keep it in one bright bag in the same spot every trip."

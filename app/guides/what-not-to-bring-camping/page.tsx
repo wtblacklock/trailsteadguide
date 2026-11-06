@@ -77,7 +77,6 @@ export default function Page() {
           src: HERO_IMAGE,
           alt: 'A single small tent glowing from a light inside below desert cliffs at dusk',
         }}
-        dateModified="2026-10-06"
       >
         <QuickAnswer
           tldr="Leave firewood from home, cotton warm layers, glass, fireworks, drones, valuables, untested gear, and the extra stuff. Bring the simpler version of each."

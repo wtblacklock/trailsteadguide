@@ -1406,3 +1406,26 @@ export const ACTIVITIES: Activity[] = [
 export function getActivityBySlug(slug: string): Activity | null {
   return ACTIVITIES.find((a) => a.slug === slug) ?? null
 }
+
+/**
+ * Activities to recommend at the bottom of an activity page: the next ones
+ * in the same category (wrapping around, so every activity gets inbound
+ * links from its neighbours), then the next ones in the whole library if
+ * the category is too small to fill the slots.
+ */
+export function getRelatedActivities(activity: Activity, count = 3): Activity[] {
+  const result: Activity[] = []
+  const seen = new Set<string>([activity.slug])
+  const fillFrom = (list: Activity[]) => {
+    const index = list.findIndex((a) => a.slug === activity.slug)
+    for (let i = 1; i <= list.length && result.length < count; i++) {
+      const next = list[(index + i) % list.length]
+      if (seen.has(next.slug)) continue
+      seen.add(next.slug)
+      result.push(next)
+    }
+  }
+  fillFrom(ACTIVITIES.filter((a) => a.category === activity.category))
+  fillFrom(ACTIVITIES)
+  return result
+}

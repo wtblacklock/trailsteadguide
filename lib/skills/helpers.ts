@@ -77,4 +77,37 @@ export function getSkillsLinkedToPrintable(
     .filter((r): r is { skill: Skill; category: SkillCategory } => r !== null)
 }
 
+/**
+ * Refs (`categorySlug/skillSlug`) for the "Continue learning" block on a
+ * skill page. Curated `relatedSkills` come first; remaining slots are
+ * filled with the next skills in the same category, wrapping around, so
+ * every skill in a category receives inbound links from its neighbours
+ * rather than the first few siblings soaking up all of them.
+ */
+export function getRelatedSkillRefs(skill: Skill, count = 4): string[] {
+  const refs: string[] = []
+  const seen = new Set<string>([`${skill.category}/${skill.slug}`])
+  const push = (s: Skill) => {
+    const key = `${s.category}/${s.slug}`
+    if (refs.length >= count || seen.has(key)) return
+    const category = SKILL_CATEGORIES.find((c) => c.id === s.category)
+    if (!category) return
+    seen.add(key)
+    refs.push(`${category.slug}/${s.slug}`)
+  }
+
+  for (const ref of skill.relatedSkills ?? []) {
+    const entry = getSkillByRef(ref)
+    if (entry) push(entry.skill)
+  }
+
+  const siblings = getSkillsByCategoryId(skill.category)
+  const index = siblings.findIndex((s) => s.slug === skill.slug)
+  for (let i = 1; i < siblings.length; i++) {
+    push(siblings[(index + i) % siblings.length])
+  }
+
+  return refs
+}
+
 export { SKILLS, SKILL_CATEGORIES }
