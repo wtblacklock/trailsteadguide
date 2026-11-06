@@ -108,6 +108,12 @@ export const COMPARE_PAGES: ComparePageEntry[] = [
       'Down vs. synthetic sleeping bag compared for family camping: warmth when wet, weight, packed size, washing, lifespan, and price. Which fill actually wins for car camping with kids.',
   },
   {
+    slug: 'foam-vs-inflatable-sleeping-pad',
+    title: 'Foam vs. Inflatable Sleeping Pad for Families',
+    excerpt:
+      'Foam vs. self-inflating vs. air sleeping pad compared for family camping: warmth, comfort, durability with kids, packed size, and price. The cold-night setup that wins.',
+  },
+  {
     slug: 'lantern-vs-headlamp-vs-flashlight',
     title: 'Camping Lantern vs Headlamp vs Flashlight: What You Need',
     excerpt:

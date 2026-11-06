@@ -102,6 +102,12 @@ const PRODUCT_COMPARES: CompareCard[] = [
     blurb: 'Snug and warm versus roomy and easy. Which shape fits your kids, and the temperature where the mummy starts to win.',
   },
   {
+    href: '/compare/foam-vs-inflatable-sleeping-pad',
+    eyebrow: 'Gear',
+    title: 'Foam vs inflatable sleeping pad',
+    blurb: 'Closed-cell foam, self-inflating, and air pads compared. Which is best for kids, which is warmest, and why cold nights call for two.',
+  },
+  {
     href: '/compare/lantern-vs-headlamp-vs-flashlight',
     eyebrow: 'Gear',
     title: 'Lantern vs headlamp vs flashlight',

@@ -150,7 +150,8 @@ export default function Page() {
           is the classic choice: it cannot pop, it doubles as a sit pad around the fire, and it
           protects whatever is on top of it from sticks and pine needles. The standard order is
           foam on the bottom against the tent floor, inflatable on top, sleeping bag on the
-          inflatable.
+          inflatable. For how foam, self-inflating, and air pads compare on their own, see{' '}
+          <Link href="/compare/foam-vs-inflatable-sleeping-pad">foam vs. inflatable sleeping pad</Link>.
         </p>
         <p>
           No foam pad? A folded wool blanket, a spare comforter, or a couple of moving blankets
