@@ -220,6 +220,11 @@ export default function Page() {
         </ol>
 
         <h2>Drying out a wet camp at home</h2>
+        <p>
+          For drying clothes, boots, and bags while you are still at camp, see{' '}
+          <Link href="/guides/how-to-dry-wet-gear-camping">how to dry wet gear while camping</Link>.
+          Once you are home:
+        </p>
         <ul>
           <li>Within 24 hours: pitch the tent in a garage, basement, or living room. Open every door and zipper.</li>
           <li>Hang the rainfly over a porch rail or stake it in the yard if the day is dry.</li>
