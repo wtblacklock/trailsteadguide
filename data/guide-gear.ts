@@ -1404,6 +1404,15 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'SAFETY', productId: 'thriad-first-aid-430' },
     { slot: 'TRASH', productId: 'fwc-trash-can-wakeman' },
   ],
+  'how-to-stake-a-tent-in-frozen-ground': [
+    { slot: 'RAIN_GEAR', productId: 'eurmax-galvanized-tent-stakes' },
+    { slot: 'RAIN_GEAR', productId: 'tesorrio-sand-stakes-6pk' },
+    { slot: 'RAIN_GEAR', productId: 'reflective-guyline-50ft' },
+    { slot: 'RAIN_GEAR', productId: 'paracord-550-50ft' },
+    { slot: 'TENT', productId: 'geertop-4p-4-season' },
+    { slot: 'WINTER_GEAR', productId: 'hothands-hand-warmers-bulk' },
+    { slot: 'WINTER_GEAR', productId: 'thermos-stainless-king-40oz' },
+  ],
   'fishing-with-kids-at-camp': [
     { slot: 'KID_GEAR', productId: 'zebco-33-spincast-combo' },
     { slot: 'KID_GEAR', productId: 'tackle-box-lure-assortment' },
