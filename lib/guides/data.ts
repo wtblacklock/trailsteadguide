@@ -791,7 +791,7 @@ export const GUIDES: Guide[] = [
     metaTitle: 'Camping in 30 and 40 Degree Weather',
     metaDescription:
       'Camping in 40 degree weather or a night in the 30s: the sleeping bag and pad you need, what to wear to bed, and when a cold snap means it is time to leave.',
-    relatedGuides: ['how-to-keep-kids-warm-camping', 'sleeping-pad-r-value-explained', 'fall-camping-for-beginners'],
+    relatedGuides: ['how-to-keep-kids-warm-camping', 'sleeping-pad-r-value-explained', 'how-to-keep-batteries-warm-camping'],
   },
   {
     slug: 'gifts-for-campers',
@@ -1019,5 +1019,17 @@ export const GUIDES: Guide[] = [
     metaDescription:
       'Winter camping with dogs: which dogs handle the cold, a warm sleep setup, paw care on ice and salt, hunting-season orange, and when it is too cold to go.',
     relatedGuides: ['camping-with-dogs-first-time', 'camping-during-hunting-season', 'camping-in-40-degree-weather'],
+  },
+  {
+    slug: 'how-to-keep-batteries-warm-camping',
+    category: 'seasonal',
+    title: 'How to Keep Phones and Batteries Warm While Camping',
+    shortLabel: 'Cold batteries',
+    description: 'Why cold drains phones, power banks, and headlamps, where to keep them overnight, when not to charge, and a battery plan for a winter weekend.',
+    eyebrow: 'Cold-weather how-to',
+    metaTitle: 'Keep Batteries Warm on Cold Camping Trips',
+    metaDescription:
+      'Why cold drains phones, power banks, and headlamps, how to keep them warm overnight, when not to charge, and the battery plan for a winter family trip.',
+    relatedGuides: ['winter-camping-for-beginners', 'camping-in-40-degree-weather', 'tent-camping-at-an-electric-site'],
   },
 ]
