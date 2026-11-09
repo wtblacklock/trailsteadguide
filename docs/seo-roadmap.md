@@ -137,7 +137,15 @@ constants
   and flag overflows; fix the worst offenders manually.
 - **Effort:** S
 - **Expected lift:** low (better SERP CTR on the truncated ones)
-- **Status:** queued
+- **Status:** shipped (2026-11-09). Added `scripts/title-length-audit.mjs`
+  (`npm run audit:titles`), which checks every rendered `<title>` -
+  literal titles in `app/**/page.tsx`, plus the data-driven ones built from
+  gear sets, plan trip-pack covers, etc. - against the 60-char budget.
+  Result: zero overflows site-wide. `titleWithQualifier()` already keeps
+  skill and printable titles in budget by construction, and the one
+  title that runs long (`/printables/[slug]/print`) is `noIndex: true`
+  by design, so it's excluded rather than "fixed." Nothing to trim this
+  run; re-run the script after future title changes.
 
 ### B. Structured data
 
