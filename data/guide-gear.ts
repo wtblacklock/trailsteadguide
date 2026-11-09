@@ -1214,6 +1214,13 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'SAFETY', productId: 'eurow-collapsible-bucket-10l' },
     { slot: 'SAFETY', productId: 'first-alert-ez-fire-spray' },
   ],
+  'how-to-keep-batteries-warm-camping': [
+    { slot: 'POWER', productId: 'anker-zolo-power-bank' },
+    { slot: 'HEADLAMP', productId: 'black-diamond-spot-400' },
+    { slot: 'HEADLAMP', productId: 'everbrite-headlamp-5-pack' },
+    { slot: 'LIGHTING', productId: 'luminaid-packlite-max' },
+    { slot: 'WINTER_GEAR', productId: 'hothands-hand-warmers-bulk' },
+  ],
   'how-to-put-out-a-campfire': [
     { slot: 'SAFETY', productId: 'eurow-collapsible-bucket-10l' },
     { slot: 'SAFETY', productId: 'first-alert-ez-fire-spray' },

@@ -170,7 +170,7 @@ export default function Page() {
 
       <h3>Safety and comfort</h3>
       <ul>
-        <li>Headlamp per person with lithium batteries. Lithium handles cold better than alkaline. Carry a backup headlamp.</li>
+        <li>Headlamp per person with lithium batteries. Lithium handles cold better than alkaline. Carry a backup headlamp, and see <Link href="/guides/how-to-keep-batteries-warm-camping">how to keep phones and batteries warm</Link> for where to store them overnight.</li>
         <li>Bright lantern in the cabin or vestibule; you&apos;ll cook every dinner in the dark.</li>
         <li>Hand warmers and toe warmers - pack twice as many as you think you need.</li>
         <li>Emergency space blanket per person. Cheap, light, and the only thing in the kit you actually do not want to use.</li>
