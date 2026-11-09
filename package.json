@@ -15,7 +15,8 @@
     "affiliate:research": "node scripts/affiliate-research.mjs",
     "affiliate:audit": "node scripts/affiliate-audit.mjs",
     "affiliate:check-images": "node scripts/check-affiliate-images.mjs",
-    "indexnow": "node scripts/indexnow-submit.mjs"
+    "indexnow": "node scripts/indexnow-submit.mjs",
+    "audit:titles": "node scripts/title-length-audit.mjs"
   },
   "dependencies": {
     "@sparticuz/chromium": "^147.0.2",
