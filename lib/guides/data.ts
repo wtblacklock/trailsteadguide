@@ -941,7 +941,7 @@ export const GUIDES: Guide[] = [
     metaTitle: 'Camping in High Wind With Kids',
     metaDescription:
       'Camping in high wind with kids: what the gust numbers mean, how to site and stake a family tent so it stays put, and the wind speed where you pack up.',
-    relatedGuides: ['camping-when-the-weather-turns', 'how-to-set-up-a-tent', 'fall-camping-for-beginners'],
+    relatedGuides: ['camping-when-the-weather-turns', 'how-to-set-up-a-tent', 'how-to-stake-a-tent-in-frozen-ground'],
   },
   {
     slug: 'tent-heater-safety',
@@ -1019,5 +1019,16 @@ export const GUIDES: Guide[] = [
     metaDescription:
       'Winter camping with dogs: which dogs handle the cold, a warm sleep setup, paw care on ice and salt, hunting-season orange, and when it is too cold to go.',
     relatedGuides: ['camping-with-dogs-first-time', 'camping-during-hunting-season', 'camping-in-40-degree-weather'],
+  },
+  {
+    slug: 'how-to-stake-a-tent-in-frozen-ground',
+    category: 'basics',
+    title: 'How to Stake a Tent in Frozen Ground or Snow',
+    description: 'Steel stakes and pilot holes for frozen dirt, deadman anchors for snow, rocks and trees when nothing goes in, and freeing frozen stakes in the morning.',
+    eyebrow: 'How-to',
+    metaTitle: 'How to Stake a Tent in Frozen Ground',
+    metaDescription:
+      'How to stake a tent in frozen ground or snow: steel stakes and pilot holes, deadman anchors, rocks and trees, and getting stakes out the next morning.',
+    relatedGuides: ['camping-in-high-wind', 'winter-camping-for-beginners', 'how-to-set-up-a-tent'],
   },
 ]

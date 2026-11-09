@@ -243,7 +243,12 @@ export default function Page() {
           </li>
           <li>
             <strong>Carry steel.</strong> Ten inch galvanized stakes hold in soil that spits out wire
-            pins, and they survive being hammered into hard ground with a rock or a mallet.
+            pins, and they survive being hammered into hard ground with a rock or a mallet. When a
+            cold front leaves the ground frozen or snowy, our{' '}
+            <Link href="/guides/how-to-stake-a-tent-in-frozen-ground">
+              how to stake a tent in frozen ground or snow
+            </Link>{' '}
+            guide covers pilot holes and deadman anchors.
           </li>
           <li>
             <strong>Soft ground needs more.</strong> In sand or loose duff, bury a stake horizontally
