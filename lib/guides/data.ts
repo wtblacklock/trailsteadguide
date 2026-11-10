@@ -897,7 +897,7 @@ export const GUIDES: Guide[] = [
     metaTitle: 'Sleeping Pad R-Value Explained',
     metaDescription:
       'Sleeping pad R-value explained for family campers: what the number measures, what R-value you need by season, why pads stack, and the air mattress trap.',
-    relatedGuides: ['how-to-keep-kids-warm-camping', 'best-camping-sleeping-bag-for-kids', 'fall-camping-for-beginners'],
+    relatedGuides: ['how-to-keep-kids-warm-camping', 'best-camping-sleeping-bag-for-kids', 'are-sleeping-bag-liners-worth-it'],
   },
   {
     slug: 'camp-stove-fuel-in-cold-weather',
@@ -1019,5 +1019,16 @@ export const GUIDES: Guide[] = [
     metaDescription:
       'Winter camping with dogs: which dogs handle the cold, a warm sleep setup, paw care on ice and salt, hunting-season orange, and when it is too cold to go.',
     relatedGuides: ['camping-with-dogs-first-time', 'camping-during-hunting-season', 'camping-in-40-degree-weather'],
+  },
+  {
+    slug: 'are-sleeping-bag-liners-worth-it',
+    category: 'basics',
+    title: 'Are Sleeping Bag Liners Worth It?',
+    description: 'How much warmth each type of liner really adds, when a liner beats a new bag, and when it is a waste of money.',
+    eyebrow: 'Gear guide',
+    metaTitle: 'Are Sleeping Bag Liners Worth It?',
+    metaDescription:
+      'Are sleeping bag liners worth it for family camping? How much warmth each type really adds, when a liner beats a new bag, and when it is a waste of money.',
+    relatedGuides: ['sleeping-pad-r-value-explained', 'how-to-keep-kids-warm-camping', 'state-park-cabin-camping-with-kids'],
   },
 ]
