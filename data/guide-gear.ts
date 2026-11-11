@@ -1007,6 +1007,11 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'SAFETY', productId: 'primacare-mylar-emergency-blankets' },
     { slot: 'SAFETY', productId: 'thriad-first-aid-430' },
   ],
+  'ticks-and-lyme-disease-in-kids': [
+    { slot: 'SAFETY', productId: 'sawyer-permethrin-clothing-spray' },
+    { slot: 'SAFETY', productId: 'tick-twister-remover' },
+    { slot: 'SAFETY', productId: 'thriad-first-aid-430' },
+  ],
   'sleeping-pad-r-value-explained': [
     { slot: 'SLEEP_SURFACE', productId: 'therm-a-rest-z-lite-sol' },
     { slot: 'SLEEP_SURFACE', productId: 'rab-ionosphere-5-5' },
