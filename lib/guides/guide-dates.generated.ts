@@ -97,6 +97,7 @@ export const GUIDE_DATES: Record<string, GuideDates> = {
   'tent-camping-at-an-electric-site': { datePublished: '2026-10-26', dateModified: '2026-10-26' },
   'tent-heater-safety': { datePublished: '2026-10-05', dateModified: '2026-10-26' },
   'thanksgiving-camping-with-kids': { datePublished: '2026-10-05', dateModified: '2026-10-26' },
+  'ticks-and-lyme-disease-in-kids': { datePublished: '2026-11-11', dateModified: '2026-11-11' },
   'weekend-camping-packing-list': { datePublished: '2026-04-24', dateModified: '2026-10-06' },
   'what-not-to-bring-camping': { datePublished: '2026-10-06', dateModified: '2026-10-06' },
   'when-do-campgrounds-close': { datePublished: '2026-10-05', dateModified: '2026-10-05' },

@@ -737,6 +737,17 @@ export const GUIDES: Guide[] = [
     relatedGuides: ['how-to-dress-kids-for-cold-weather-camping', 'how-to-keep-kids-warm-camping', 'camping-first-aid-kit-for-families'],
   },
   {
+    slug: 'ticks-and-lyme-disease-in-kids',
+    category: 'scenario',
+    title: 'Ticks and Lyme Disease in Kids at Camp',
+    description: 'How to keep ticks off your family, run an evening tick check, remove one safely, and spot the early signs of Lyme disease.',
+    eyebrow: 'Tick and bug safety',
+    metaTitle: 'Ticks and Lyme Disease at Camp',
+    metaDescription:
+      'Ticks and Lyme disease at camp: how to keep ticks off your family, do an evening tick check, remove one safely, and spot the early signs of Lyme disease.',
+    relatedGuides: ['camping-first-aid-kit-for-families', 'hiking-with-kids-from-camp', 'camping-in-the-appalachians-for-beginners'],
+  },
+  {
     slug: 'camping-in-bear-country-with-kids',
     category: 'scenario',
     title: 'Camping in Bear Country With Kids',

@@ -249,6 +249,13 @@ export const TERMS: Term[] = [
     definition:
       'If you can hear thunder, you\'re in strike range. Get off ridges and out from under tall lone trees. Crouch in a low spot until 30 minutes after the last thunder.',
   },
+  {
+    term: 'Lyme disease',
+    definition:
+      'An infection spread by the bite of an attached, infected tick. The classic sign is a rash, sometimes bullseye-shaped, within a few weeks of a bite, along with fever, fatigue, or joint pain. Caught early, it responds well to a doctor-prescribed course of antibiotics.',
+    href: '/guides/ticks-and-lyme-disease-in-kids',
+    linkText: 'Ticks and Lyme disease at camp',
+  },
 
   // M
   {
