@@ -1427,4 +1427,8 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'HEADLAMP', productId: 'black-diamond-spot-400' },
     { slot: 'SAFETY', productId: 'thriad-first-aid-430' },
   ],
+  'water-safety-at-camp-with-kids': [
+    { slot: 'SAFETY', productId: 'thriad-first-aid-430' },
+    { slot: 'SAFETY', productId: 'aveeno-kids-sunscreen-lotion' },
+  ],
 }
