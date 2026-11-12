@@ -176,7 +176,7 @@ export default function Page() {
 
       <h2>Planning with other families</h2>
       <p>
-        Camping with another family is easier in some ways and harder in others. A few things to line up before you book two adjacent sites:
+        Camping with another family is easier in some ways and harder in others. A few things to line up before you book two adjacent sites (our <Link href="/guides/camping-with-another-family">camping with another family</Link> guide goes deeper on group sites, splitting meals, and shared gear):
       </p>
       <ul>
         <li><strong>Match ages roughly.</strong> Kids within 3 years of each other entertain themselves. Wider gaps and you&apos;re managing more than one peer group.</li>
