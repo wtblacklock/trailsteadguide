@@ -20,7 +20,7 @@ export const GUIDES: Guide[] = [
     title: 'How to Plan a Camping Trip',
     description: 'Step-by-step: pick a site, book it, prep the gear.',
     eyebrow: 'Planning',
-    relatedGuides: ['camping-for-beginners', 'weekend-camping-packing-list', 'first-camping-trip-checklist'],
+    relatedGuides: ['camping-for-beginners', 'camping-with-another-family', 'weekend-camping-packing-list'],
   },
   {
     slug: 'car-camping-beginner-guide',
@@ -1019,5 +1019,16 @@ export const GUIDES: Guide[] = [
     metaDescription:
       'Winter camping with dogs: which dogs handle the cold, a warm sleep setup, paw care on ice and salt, hunting-season orange, and when it is too cold to go.',
     relatedGuides: ['camping-with-dogs-first-time', 'camping-during-hunting-season', 'camping-in-40-degree-weather'],
+  },
+  {
+    slug: 'camping-with-another-family',
+    category: 'scenario',
+    title: 'Camping With Another Family',
+    description: 'Adjacent sites or a group site, splitting dinners and costs, sharing the big gear, and the kid rules and quiet hours to agree on first.',
+    eyebrow: 'Group trip',
+    metaTitle: 'Camping With Another Family: How to Plan',
+    metaDescription:
+      'Camping with another family: adjacent sites or a group site, splitting meals and costs, shared gear, kid rules, and quiet hours that keep everyone friends.',
+    relatedGuides: ['how-to-plan-a-camping-trip', 'thanksgiving-camping-with-kids', 'camping-meal-plan-family'],
   },
 ]

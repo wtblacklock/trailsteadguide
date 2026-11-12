@@ -1427,4 +1427,15 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'HEADLAMP', productId: 'black-diamond-spot-400' },
     { slot: 'SAFETY', productId: 'thriad-first-aid-430' },
   ],
+  'camping-with-another-family': [
+    { slot: 'CANOPY', productId: 'crown-shades-10x10-canopy' },
+    { slot: 'STOVE', productId: 'coleman-triton-2-burner' },
+    { slot: 'COOLER', productId: 'coleman-classic-rolling-cooler' },
+    { slot: 'LIGHTING', productId: 'luminaid-packlite-max' },
+    { slot: 'HEADLAMP', productId: 'everbrite-headlamp-5-pack' },
+    { slot: 'KID_GEAR', productId: 'glow-stick-necklaces-bulk' },
+    { slot: 'CHAIR', productId: 'coleman-portable-chair-cooler' },
+    { slot: 'TRASH', productId: 'fwc-trash-can-wakeman' },
+    { slot: 'SAFETY', productId: 'thriad-first-aid-430' },
+  ],
 }
