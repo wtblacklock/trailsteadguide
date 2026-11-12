@@ -7,7 +7,9 @@
 //
 // POLICY:
 //   - Modern AI crawlers explicitly allowed for citation coverage.
-//   - Default rule allows all, blocks /api/ and /_next/.
+//   - Default rule allows all, blocks /api/ only. /_next/ must stay
+//     crawlable: it serves the JS, CSS and optimized images Googlebot needs
+//     to render pages.
 
 import { MetadataRoute } from 'next'
 
@@ -33,7 +35,7 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: '*',
         allow: '/',
-        disallow: ['/api/', '/_next/'],
+        disallow: ['/api/'],
       },
     ],
     sitemap: `${BASE_URL}/sitemap.xml`,

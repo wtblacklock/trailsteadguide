@@ -76,7 +76,6 @@ export default function Page() {
           src: HERO_IMAGE,
           alt: 'A cluster of lantern-lit tents glowing around a campfire in a forest campground at night',
         }}
-        dateModified="2026-09-07"
       >
         <QuickAnswer
           tldr="Move the day earlier, light the site in three layers, give every kid their own headlamp, and plan the evening like it is part of the trip."

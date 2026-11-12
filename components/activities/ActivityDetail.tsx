@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import type { Activity } from '@/lib/activities/types'
+import { getRelatedActivities } from '@/lib/activities/data'
 import { getPlanTemplate } from '@/lib/plan-templates'
 import { getPrintableBySlug } from '@/lib/printables'
 import PrintableEmailGate from '@/components/printables/PrintableEmailGate'
@@ -145,9 +146,43 @@ export default function ActivityDetail({ activity }: Props) {
           <RecommendedPlans planSlugs={activity.recommendedFor} />
         )}
 
+        <RelatedActivities activity={activity} />
+
         <ActivityNextStep />
       </div>
     </article>
+  )
+}
+
+// Sibling activities, so every activity page links to (and is linked from)
+// its neighbours instead of relying on the client-filtered hub grid.
+function RelatedActivities({ activity }: { activity: Activity }) {
+  const related = getRelatedActivities(activity)
+  if (related.length === 0) return null
+  return (
+    <section aria-labelledby="related-activities-heading">
+      <h2 id="related-activities-heading" className="font-serif text-2xl text-stone-900 mb-5">
+        More activities to try
+      </h2>
+      <ul className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        {related.map((a) => (
+          <li key={a.slug}>
+            <Link
+              href={`/activities/${a.slug}`}
+              className="group block h-full p-5 rounded-2xl ring-1 ring-stone-200 bg-white hover:ring-stone-900 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-200"
+            >
+              <p className="text-xs font-semibold tracking-[0.18em] uppercase text-stone-500 mb-2">
+                {CATEGORY_LABELS[a.category]}
+              </p>
+              <p className="font-serif text-lg font-medium text-stone-900 leading-snug mb-2 group-hover:text-stone-600 transition-colors">
+                {a.title}
+              </p>
+              <p className="text-sm text-stone-600 leading-relaxed line-clamp-2">{a.tagline}</p>
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </section>
   )
 }
 

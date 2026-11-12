@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import type { ReactNode } from 'react'
 import { getCategoryForGuide } from '@/lib/guides'
+import { GUIDE_DATES } from '@/lib/guides/guide-dates.generated'
 import { AUTHOR_NAME, AUTHOR_IMAGE } from '@/lib/seo'
 import StickyQuizCTA from './StickyQuizCTA'
 import GuideQuickPicks from './GuideQuickPicks'
@@ -19,7 +20,11 @@ export type GuidePageProps = {
   lede: string
   heroImage?: { src: string; alt: string }
   slug: string // current guide slug - used by RelatedGuides and to derive the category back-link
-  /** ISO date string (YYYY-MM-DD). Falls back to the schema default modifier. */
+  /**
+   * ISO date string (YYYY-MM-DD). Pass it only when the page also passes the
+   * same date to articleGraph; otherwise the label uses the git-derived
+   * GUIDE_DATES entry, which is what the Article schema and sitemap use.
+   */
   dateModified?: string
   children: ReactNode
 }
@@ -34,7 +39,9 @@ function formatUpdatedLabel(iso: string): string {
 
 export function GuidePage({ eyebrow = 'Guide', title, lede, heroImage, slug, dateModified, children }: GuidePageProps) {
   const category = getCategoryForGuide(slug)
-  const updatedLabel = formatUpdatedLabel(dateModified ?? DEFAULT_DATE_MODIFIED)
+  const updatedLabel = formatUpdatedLabel(
+    dateModified ?? GUIDE_DATES[slug]?.dateModified ?? DEFAULT_DATE_MODIFIED,
+  )
 
   return (
     <article>

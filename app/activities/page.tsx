@@ -2,6 +2,7 @@ import { Suspense } from 'react'
 import ActivitiesHero from '@/components/activities/ActivitiesHero'
 import ActivitiesFilterBar from '@/components/activities/ActivitiesFilterBar'
 import ActivitiesGrid from '@/components/activities/ActivitiesGrid'
+import ActivitiesGridView from '@/components/activities/ActivitiesGridView'
 import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import JsonLd from '@/components/seo/JsonLd'
 import { ACTIVITIES } from '@/lib/activities/data'
@@ -44,24 +45,9 @@ export default function ActivitiesPage() {
       <Suspense fallback={<div className="h-14 border-y border-stone-200/60 bg-[#F5F3EE]/95" />}>
         <ActivitiesFilterBar />
       </Suspense>
-      <Suspense fallback={<GridSkeleton />}>
+      <Suspense fallback={<ActivitiesGridView activities={ACTIVITIES} isFiltered={false} />}>
         <ActivitiesGrid />
       </Suspense>
     </main>
-  )
-}
-
-function GridSkeleton() {
-  return (
-    <section className="max-w-page mx-auto px-6 py-12 md:py-16">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {Array.from({ length: 6 }).map((_, i) => (
-          <div
-            key={i}
-            className="h-56 bg-white border border-stone-200 rounded-xl shadow-sm animate-pulse"
-          />
-        ))}
-      </div>
-    </section>
   )
 }

@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import type { Skill, SkillCategory } from '@/lib/skills/types'
-import { getSkillByRef } from '@/lib/skills/helpers'
+import { getRelatedSkillRefs, getSkillByRef } from '@/lib/skills/helpers'
 import { AUTHOR_NAME, AUTHOR_IMAGE } from '@/lib/seo'
 import { getPrintableBySlug } from '@/lib/printables'
 import PrintableEmailGate from '@/components/printables/PrintableEmailGate'
@@ -191,9 +191,7 @@ export default function SkillDetail({ skill, category, dateModified }: Props) {
 
         {skill.relatedPrintableSlug && <PrintableCompanion slug={skill.relatedPrintableSlug} />}
 
-        {skill.relatedSkills && skill.relatedSkills.length > 0 && (
-          <RelatedSkillsBlock refs={skill.relatedSkills} />
-        )}
+        <RelatedSkillsBlock refs={getRelatedSkillRefs(skill)} />
       </div>
 
       {/* Full-width plan CTA - sits outside the max-w-content reading column

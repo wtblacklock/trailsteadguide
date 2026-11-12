@@ -76,7 +76,6 @@ export default function Page() {
           src: HERO_IMAGE,
           alt: 'A campsite with a tent, picnic table, and fire ring under tall hardwoods in full golden autumn color',
         }}
-        dateModified="2026-09-05"
       >
         <QuickAnswer
           tldr="Color moves south and downhill, not by date. Book six months out, track weekly state color reports, and pack for a real cold night."
