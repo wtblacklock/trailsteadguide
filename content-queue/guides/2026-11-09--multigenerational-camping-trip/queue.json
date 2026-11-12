@@ -1,0 +1,26 @@
+{
+  "publishOn": "2026-11-09",
+  "guide": {
+    "slug": "multigenerational-camping-trip",
+    "category": "scenario",
+    "title": "Camping With Grandparents and Kids",
+    "description": "Campsites and cabins that work for grandparents, accessible sites, sleep comfort for older adults, and a job for every generation.",
+    "eyebrow": "Family trips",
+    "metaTitle": "Camping With Grandparents and Kids",
+    "metaDescription": "Plan a multigenerational camping trip: campsites and cabins that work for grandparents, accessible sites, better sleep for older adults, and jobs for all.",
+    "relatedGuides": ["state-park-cabin-camping-with-kids", "how-to-choose-a-family-campsite", "thanksgiving-camping-with-kids"]
+  },
+  "gear": [
+    { "slot": "SLEEP_SURFACE", "productId": "lost-horizon-air-foam-mattress" },
+    { "slot": "CHAIR", "productId": "camp-chairs" },
+    { "slot": "LIGHTING", "productId": "luminaid-packlite-max" },
+    { "slot": "HEADLAMP", "productId": "everbrite-headlamp-5-pack" },
+    { "slot": "SAFETY", "productId": "thriad-first-aid-430" },
+    { "slot": "CANOPY", "productId": "crown-shades-10x10-canopy" },
+    { "slot": "STOVE", "productId": "coleman-triton-2-burner" }
+  ],
+  "reciprocal": [
+    { "slug": "how-to-choose-a-family-campsite", "replace": "how-to-plan-a-camping-trip" },
+    { "slug": "family-camping-for-beginners", "replace": "backyard-camping-with-kids" }
+  ]
+}

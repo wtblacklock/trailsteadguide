@@ -1,0 +1,28 @@
+{
+  "publishOn": "2026-11-01",
+  "guide": {
+    "slug": "camping-gifts-for-teens",
+    "category": "seasonal",
+    "title": "Camping Gifts for Teens",
+    "description": "Gifts that give a teen their own space and a real job at camp: a hammock, a headlamp, an adult-size sleeping bag, a water filter, and a skillet.",
+    "eyebrow": "Gift guide",
+    "shortLabel": "Teen gifts",
+    "metaTitle": "Camping Gifts for Teens: 2026 Gift Guide",
+    "metaDescription": "Camping gifts for teens that give them their own space and their own job at camp: a hammock, a real headlamp, an adult-size bag, a water filter, and more.",
+    "relatedGuides": ["camping-gifts-for-kids", "gifts-for-campers", "camping-gifts-under-50"]
+  },
+  "gear": [
+    { "slot": "CHAIR", "productId": "eno-doublenest-hammock" },
+    { "slot": "HEADLAMP", "productId": "black-diamond-spot-400" },
+    { "slot": "POWER", "productId": "anker-zolo-power-bank" },
+    { "slot": "SLEEP_BAG", "productId": "teton-trailhead-20" },
+    { "slot": "SLEEP_SURFACE", "productId": "therm-a-rest-z-lite-sol" },
+    { "slot": "COOKWARE", "productId": "lodge-cast-iron-skillet" },
+    { "slot": "SAFETY", "productId": "sawyer-squeeze-water-filter" },
+    { "slot": "KID_GEAR", "productId": "celestron-outland-binoculars" }
+  ],
+  "reciprocal": [
+    { "slug": "camping-gifts-for-kids", "replace": "best-camping-sleeping-bag-for-kids" },
+    { "slug": "gifts-for-campers", "replace": "family-camping-gear-list" }
+  ]
+}
