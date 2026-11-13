@@ -66,6 +66,12 @@ export const COMPARE_PAGES: ComparePageEntry[] = [
       '3-season vs. 4-season tent compared for family camping: wind, snow load, ventilation, condensation, weight, and price. Whether your summer tent can handle fall and winter.',
   },
   {
+    slug: 'cast-iron-skillet-vs-dutch-oven',
+    title: 'Cast Iron Skillet vs. Dutch Oven for Camping',
+    excerpt:
+      'Cast iron skillet vs. camp Dutch oven compared for family camping: what each cooks, weight, fuel, cleanup, and price. Which to buy first, and when you need both.',
+  },
+  {
     slug: 'mummy-vs-rectangular-sleeping-bag',
     title: 'Mummy vs. Rectangular Sleeping Bag for Families',
     excerpt:

@@ -116,6 +116,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/compare/down-vs-synthetic-sleeping-bag`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE_URL}/compare/mummy-vs-rectangular-sleeping-bag`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE_URL}/compare/3-season-vs-4-season-tent`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/compare/cast-iron-skillet-vs-dutch-oven`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE_URL}/compare/lantern-vs-headlamp-vs-flashlight`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE_URL}/compare/backyard-test-vs-first-night-camp`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.75 },
     { url: `${BASE_URL}/compare/easy-family-basecamp-vs-first-weekend-camp`, lastModified: FRESH, changeFrequency: 'monthly', priority: 0.75 },
