@@ -137,7 +137,12 @@ export default function Page() {
         <p>
           A whole 14-pound turkey is a home-oven project. At a campsite it does not fit in a normal
           Dutch oven, takes hours of coal management in cold air, and is very hard to cook evenly.
-          The camp version keeps the meal and drops the difficulty.
+          The camp version keeps the meal and drops the difficulty. If you are deciding what cast
+          iron to bring, our{' '}
+          <Link href="/compare/cast-iron-skillet-vs-dutch-oven">
+            cast iron skillet vs. Dutch oven comparison
+          </Link>{' '}
+          covers which pan does which job.
         </p>
         <ul>
           <li>

@@ -231,7 +231,12 @@ export default function Page() {
         <p>
           Grilled cheese in a cast iron skillet is the other reliable cold-day lunch. It takes
           five minutes, every kid eats it, and the skillet holds heat well enough to keep a second
-          round warm while the first one gets eaten.
+          round warm while the first one gets eaten. Not sure whether to pack the skillet, a Dutch
+          oven, or both? Our{' '}
+          <Link href="/compare/cast-iron-skillet-vs-dutch-oven">
+            cast iron skillet vs. Dutch oven comparison
+          </Link>{' '}
+          breaks it down.
         </p>
 
         <h2>Keep the food hot once it is cooked</h2>
