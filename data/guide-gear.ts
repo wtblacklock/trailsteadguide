@@ -694,6 +694,17 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'SAFETY', productId: 'thriad-first-aid-430' },
     { slot: 'TRASH', productId: 'fwc-trash-can-wakeman' },
   ],
+  'how-to-get-kids-to-sleep-camping': [
+    { slot: 'SLEEP_BAG', productId: 'teton-junior-20' },
+    { slot: 'SLEEP_BAG', productId: 'redcamp-kids-mummy' },
+    { slot: 'SLEEP_BAG', productId: 'coleman-kids-45' },
+    { slot: 'SLEEP_SURFACE', productId: 'big-agnes-divide' },
+    { slot: 'SLEEP_SURFACE', productId: 'mondoking-3d-pad' },
+    { slot: 'LIGHTING', productId: 'luminaid-packlite-max' },
+    { slot: 'LIGHTING', productId: 'everbrite-headlamp-5-pack' },
+    { slot: 'WINTER_GEAR', productId: 'vicherub-kids-thermal-set' },
+    { slot: 'WINTER_GEAR', productId: 'hothands-hand-warmers-bulk' },
+  ],
   'camping-after-dark-with-kids': [
     { slot: 'LIGHTING', productId: 'everbrite-headlamp-5-pack' },
     { slot: 'LIGHTING', productId: 'luminaid-packlite-max' },

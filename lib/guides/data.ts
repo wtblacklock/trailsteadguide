@@ -678,7 +678,18 @@ export const GUIDES: Guide[] = [
     metaTitle: 'Camping After Dark With Kids',
     metaDescription:
       'Camping after dark with kids: how much daylight fall costs you, the three-layer lighting setup for a campsite, and what to do with a long evening.',
-    relatedGuides: ['stargazing-camping-with-kids', 'fall-camping-for-beginners', 'halloween-camping-with-kids'],
+    relatedGuides: ['stargazing-camping-with-kids', 'how-to-get-kids-to-sleep-camping', 'fall-camping-for-beginners'],
+  },
+  {
+    slug: 'how-to-get-kids-to-sleep-camping',
+    category: 'scenario',
+    title: 'How to Get Kids to Sleep While Camping',
+    description: 'Cold, dark by 5pm, and a nylon wall instead of a bedroom. How to get a family to sleep in a tent.',
+    eyebrow: 'Sleep',
+    metaTitle: 'How to Get Kids to Sleep While Camping',
+    metaDescription:
+      'How to get kids to sleep while camping: the wind-down routine, a warm sleep setup, and fixes for 5pm sunsets, tent noise, and the 2am wake-up.',
+    relatedGuides: ['camping-after-dark-with-kids', 'how-to-keep-kids-warm-camping', 'first-night-camping-guide'],
   },
   {
     slug: 'when-do-campgrounds-close',

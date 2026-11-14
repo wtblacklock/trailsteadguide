@@ -326,7 +326,11 @@ export default function Page() {
           night. And run the last bathroom trip as a group walk with headlamps rather than as
           individual missions. For the rest of the first-night sequence, our{' '}
           <Link href="/guides/first-night-camping-guide">first night camping guide</Link> covers the
-          order of operations, and{' '}
+          order of operations,{' '}
+          <Link href="/guides/how-to-get-kids-to-sleep-camping">
+            how to get kids to sleep while camping
+          </Link>{' '}
+          covers what happens once the lights go out, and{' '}
           <Link href="/guides/fall-camping-for-beginners">fall camping for beginners</Link> covers the
           sleep system that makes a 35-degree night survivable.
         </p>
