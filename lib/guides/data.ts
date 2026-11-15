@@ -778,7 +778,7 @@ export const GUIDES: Guide[] = [
     metaTitle: 'Christmas Break Camping With Kids',
     metaDescription:
       'Christmas break camping with kids: where campgrounds are open in late December, when to book, planning around 15-hour nights, and New Year at camp.',
-    relatedGuides: ['warm-winter-camping-destinations', 'thanksgiving-camping-with-kids', 'how-to-keep-kids-warm-camping'],
+    relatedGuides: ['warm-winter-camping-destinations', 'thanksgiving-camping-with-kids', 'how-to-keep-kids-warm-camping', 'first-day-hikes-with-kids'],
   },
   {
     slug: 'warm-winter-camping-destinations',
@@ -999,6 +999,18 @@ export const GUIDES: Guide[] = [
     relatedGuides: ['how-to-choose-a-family-campsite', 'teaching-kids-to-whittle', 'camping-first-aid-kit-for-families'],
   },
   {
+    slug: 'first-day-hikes-with-kids',
+    category: 'seasonal',
+    title: 'First Day Hikes With Kids',
+    description: 'How to find a guided New Year\'s Day hike at a state park, what kids wear in January cold, and how to pace short legs.',
+    eyebrow: 'Holiday',
+    shortLabel: 'New Year hikes',
+    metaTitle: 'First Day Hikes With Kids',
+    metaDescription:
+      'First Day Hikes with kids: how to find a guided New Year\'s Day hike at a state park, what to wear and pack for January cold, and how to pace little legs.',
+    relatedGuides: ['hiking-with-kids-from-camp', 'how-to-dress-kids-for-cold-weather-camping', 'winter-break-camping-with-kids'],
+  },
+  {
     slug: 'hiking-with-kids-from-camp',
     category: 'basics',
     title: 'Hiking With Kids From Camp',
@@ -1007,7 +1019,7 @@ export const GUIDES: Guide[] = [
     metaTitle: 'Hiking With Kids From Camp',
     metaDescription:
       'Hiking with kids from camp: picking a trail for their age and pace, the day-pack essentials, reading trail markers, and what to do if someone gets lost.',
-    relatedGuides: ['how-to-choose-a-family-campsite', 'camping-first-aid-kit-for-families', 'fishing-with-kids-at-camp'],
+    relatedGuides: ['how-to-choose-a-family-campsite', 'camping-first-aid-kit-for-families', 'fishing-with-kids-at-camp', 'first-day-hikes-with-kids'],
   },
   {
     slug: 'state-park-cabin-camping-with-kids',

@@ -1420,6 +1420,13 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'KID_GEAR', productId: 'tackle-box-lure-assortment' },
     { slot: 'SAFETY', productId: 'fishing-forceps-hemostat' },
   ],
+  'first-day-hikes-with-kids': [
+    { slot: 'COOKWARE', productId: 'thermos-stainless-king-40oz' },
+    { slot: 'WINTER_GEAR', productId: 'hothands-hand-warmers-bulk' },
+    { slot: 'KID_GEAR', productId: 'wildbreakers-kids-mittens' },
+    { slot: 'HEADLAMP', productId: 'black-diamond-spot-400' },
+    { slot: 'SAFETY', productId: 'thriad-first-aid-430' },
+  ],
   'hiking-with-kids-from-camp': [
     { slot: 'LIGHTING', productId: 'black-diamond-spot-400' },
     { slot: 'SAFETY', productId: 'leukotape-blister-prevention' },
