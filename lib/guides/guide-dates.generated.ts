@@ -110,6 +110,7 @@ export const GUIDE_DATES: Record<string, GuideDates> = {
   'how-to-keep-batteries-warm-camping': { datePublished: '2026-11-09', dateModified: '2026-11-09' },
   'warm-winter-camping-destinations': { datePublished: '2026-11-05', dateModified: '2026-11-05' },
   'how-to-stake-a-tent-in-frozen-ground': { datePublished: '2026-11-08', dateModified: '2026-11-08' },
+  'are-sleeping-bag-liners-worth-it': { datePublished: '2026-11-10', dateModified: '2026-11-10' },
   'camping-with-another-family': { datePublished: '2026-11-12', dateModified: '2026-11-12' },
   'how-to-get-kids-to-sleep-camping': { datePublished: '2026-11-14', dateModified: '2026-11-14' },
   'first-day-hikes-with-kids': { datePublished: '2026-11-15', dateModified: '2026-11-15' },
