@@ -539,6 +539,7 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
   'camping-meal-plan-family': [
     { slot: 'STOVE', productId: 'coleman-triton-2-burner' },
     { slot: 'COOKWARE', productId: 'thtybros-cookware-mess-kit' },
+    { slot: 'COOKWARE', productId: 'lodge-cast-iron-skillet' },
     { slot: 'COOLER', productId: 'coleman-classic-rolling-cooler' },
   ],
   'camping-when-the-weather-turns': [
@@ -693,6 +694,17 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'SAFETY', productId: 'thriad-first-aid-430' },
     { slot: 'TRASH', productId: 'fwc-trash-can-wakeman' },
   ],
+  'how-to-get-kids-to-sleep-camping': [
+    { slot: 'SLEEP_BAG', productId: 'teton-junior-20' },
+    { slot: 'SLEEP_BAG', productId: 'redcamp-kids-mummy' },
+    { slot: 'SLEEP_BAG', productId: 'coleman-kids-45' },
+    { slot: 'SLEEP_SURFACE', productId: 'big-agnes-divide' },
+    { slot: 'SLEEP_SURFACE', productId: 'mondoking-3d-pad' },
+    { slot: 'LIGHTING', productId: 'luminaid-packlite-max' },
+    { slot: 'LIGHTING', productId: 'everbrite-headlamp-5-pack' },
+    { slot: 'WINTER_GEAR', productId: 'vicherub-kids-thermal-set' },
+    { slot: 'WINTER_GEAR', productId: 'hothands-hand-warmers-bulk' },
+  ],
   'camping-after-dark-with-kids': [
     { slot: 'LIGHTING', productId: 'everbrite-headlamp-5-pack' },
     { slot: 'LIGHTING', productId: 'luminaid-packlite-max' },
@@ -798,6 +810,14 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'POWER', productId: 'anker-zolo-power-bank' },
     { slot: 'TRASH', productId: 'fwc-trash-can-wakeman' },
   ],
+  'warm-winter-camping-destinations': [
+    { slot: 'SLEEP_BAG', productId: 'teton-junior-20' },
+    { slot: 'SLEEP_SURFACE', productId: 'therm-a-rest-z-lite-sol' },
+    { slot: 'SAFETY', productId: 'aveeno-kids-sunscreen-lotion' },
+    { slot: 'CANOPY', productId: 'crown-shades-10x10-canopy' },
+    { slot: 'RAIN_GEAR', productId: 'tesorrio-sand-stakes-6pk' },
+    { slot: 'HEADLAMP', productId: 'black-diamond-spot-400' },
+  ],
   'winter-break-camping-with-kids': [
     { slot: 'SLEEP_BAG', productId: 'teton-junior-20' },
     { slot: 'SLEEP_BAG', productId: 'coleman-brazos-bag' },
@@ -894,6 +914,7 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
   'easy-family-camping-meals': [
     { slot: 'STOVE', productId: 'coleman-triton-2-burner' },
     { slot: 'COOKWARE', productId: 'thtybros-cookware-mess-kit' },
+    { slot: 'COOKWARE', productId: 'lodge-cast-iron-skillet' },
     { slot: 'COOLER', productId: 'coleman-classic-rolling-cooler' },
   ],
   'fall-camping-for-beginners': [
@@ -1204,6 +1225,12 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'SAFETY', productId: 'eurow-collapsible-bucket-10l' },
     { slot: 'SAFETY', productId: 'first-alert-ez-fire-spray' },
   ],
+  'how-to-put-out-a-campfire': [
+    { slot: 'SAFETY', productId: 'eurow-collapsible-bucket-10l' },
+    { slot: 'SAFETY', productId: 'first-alert-ez-fire-spray' },
+    { slot: 'HEADLAMP', productId: 'black-diamond-spot-400' },
+    { slot: 'SAFETY', productId: 'thriad-first-aid-430' },
+  ],
   'teaching-kids-to-whittle': [
     { slot: 'KID_GEAR', productId: 'opinel-no7-folding-knife' },
     { slot: 'KID_GEAR', productId: 'pull-through-knife-sharpener' },
@@ -1393,6 +1420,13 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'KID_GEAR', productId: 'tackle-box-lure-assortment' },
     { slot: 'SAFETY', productId: 'fishing-forceps-hemostat' },
   ],
+  'first-day-hikes-with-kids': [
+    { slot: 'COOKWARE', productId: 'thermos-stainless-king-40oz' },
+    { slot: 'WINTER_GEAR', productId: 'hothands-hand-warmers-bulk' },
+    { slot: 'KID_GEAR', productId: 'wildbreakers-kids-mittens' },
+    { slot: 'HEADLAMP', productId: 'black-diamond-spot-400' },
+    { slot: 'SAFETY', productId: 'thriad-first-aid-430' },
+  ],
   'hiking-with-kids-from-camp': [
     { slot: 'LIGHTING', productId: 'black-diamond-spot-400' },
     { slot: 'SAFETY', productId: 'leukotape-blister-prevention' },
@@ -1409,6 +1443,17 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'WINTER_GEAR', productId: 'hothands-hand-warmers-bulk' },
     { slot: 'COOKWARE', productId: 'thermos-stainless-king-40oz' },
     { slot: 'HEADLAMP', productId: 'black-diamond-spot-400' },
+    { slot: 'SAFETY', productId: 'thriad-first-aid-430' },
+  ],
+  'camping-with-another-family': [
+    { slot: 'CANOPY', productId: 'crown-shades-10x10-canopy' },
+    { slot: 'STOVE', productId: 'coleman-triton-2-burner' },
+    { slot: 'COOLER', productId: 'coleman-classic-rolling-cooler' },
+    { slot: 'LIGHTING', productId: 'luminaid-packlite-max' },
+    { slot: 'HEADLAMP', productId: 'everbrite-headlamp-5-pack' },
+    { slot: 'KID_GEAR', productId: 'glow-stick-necklaces-bulk' },
+    { slot: 'CHAIR', productId: 'coleman-portable-chair-cooler' },
+    { slot: 'TRASH', productId: 'fwc-trash-can-wakeman' },
     { slot: 'SAFETY', productId: 'thriad-first-aid-430' },
   ],
   'water-safety-at-camp-with-kids': [

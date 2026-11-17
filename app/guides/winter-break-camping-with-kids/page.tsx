@@ -77,7 +77,6 @@ export default function Page() {
           src: HERO_IMAGE,
           alt: 'A small tent pitched on snow among pine trees, lit by low winter sun',
         }}
-        dateModified="2026-10-26"
       >
         <QuickAnswer
           tldr="Go south or book a state park cabin, reserve months ahead, plan each day around a 4:30 to 5:30pm sunset, and pack for a night near freezing even in warm states."
@@ -112,7 +111,12 @@ export default function Page() {
             Arizona, and the southern California deserts are at their best. Start with{' '}
             <Link href="/guides/camping-in-florida-for-beginners">camping in Florida</Link>,{' '}
             <Link href="/guides/camping-in-texas-for-beginners">camping in Texas</Link>, or{' '}
-            <Link href="/guides/camping-in-arizona-for-beginners">camping in Arizona</Link>.
+            <Link href="/guides/camping-in-arizona-for-beginners">camping in Arizona</Link>. To
+            compare all five regions side by side, see{' '}
+            <Link href="/guides/warm-winter-camping-destinations">
+              warm winter camping destinations
+            </Link>
+            .
           </li>
           <li>
             <strong>State park cabins and yurts.</strong> Many state park systems keep cabins or

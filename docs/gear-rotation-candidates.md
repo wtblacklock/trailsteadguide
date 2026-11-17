@@ -4,7 +4,29 @@ Products spotted during the weekly gear-rotation pass that look worth a slot but
 were not wired in yet. Each entry says what still needs to happen before it can
 ship. Trim this file as items are actioned or go stale.
 
-Last reviewed: 2026-11-02
+Last reviewed: 2026-11-16
+
+## Needs a replacement (dead on main)
+
+Both are still live on the site and cannot be replaced from this environment: since
+2026-11-04 the in-app browser gets an "Access restricted" page on amazon.com, so no
+replacement ASIN can be verified. Whoever can browse Amazon should source a buyable
+listing (Add to Cart plus a price) and update `lib/affiliate-products.ts`.
+
+- `reliance-aqua-tainer-7gal-2pack` (B09NP5538N): "Currently unavailable" since
+  2026-11-06. Used on `how-to-wash-dishes-camping` and
+  `state-park-cabin-camping-with-kids` (inline `<AmazonLink>` plus shelf slots in
+  `data/guide-gear.ts`). Copy says "~$39" and "Buy two", so a 2-pack or a single
+  7 gallon Reliance Aqua-Tainer listing both fit; adjust `priceRange` to match.
+- `heavy-duty-aluminum-foil` (B0D14YNCF9): 404 since 2026-11-09. Used on
+  `camping-stocking-stuffers` (inline link and shelf), `lib/activities/data.ts`, and
+  `lib/skills/data.ts`. Any current Reynolds Wrap Heavy Duty listing works; keep it
+  under the stocking-stuffer price band (~$12).
+
+Status 2026-11-16: the in-app browser is still blocked on amazon.com, and the
+validator now verifies only 16 of 142 products (126 robot-checked), so it cannot
+even re-confirm these two. Treat the whole catalog as unverified until someone can
+run `npm run affiliate:browser-audit` from a normal browser.
 
 ## Needs a human decision
 
@@ -18,13 +40,29 @@ so it is left as-is.
 
 ## Not yet verified
 
-None open. The Eureka Copper Canyon LX 8 was dropped on 2026-11-02: it does not
-appear in Amazon search results (only CORE and Coleman cabin tents come up), so it
-cannot be linked through Associates. The registry's `core-9p-instant-cabin` and
-`core-10p-straight-wall-cabin` already cover the big-family cabin-tent slot.
+- NEMO Aurora Highrise 6P (family tent). Outdoor Life's family-tent roundup lists it
+  as a strong pick for smaller families, alongside picks the registry already covers.
+  Not checked on Amazon: since 2026-11-04 the in-app browser gets an "Access
+  restricted" page on amazon.com, so no ASIN, stock, or review count could be
+  confirmed. Before adding it, verify a variant ASIN with Add to Cart and a price,
+  and compare it against `kelty-wireless-6` and `core-6p-instant-cabin`.
+
+- Reusable ice packs for `how-to-pack-a-cooler`. Its shelf is three coolers and
+  nothing else, while the copy leans on block ice. A long-lasting, well-reviewed
+  cooler ice pack set would round it out. Not sourced: Amazon blocked (see above).
+
+## Video candidates skipped
+
+`setup-order`, `constellations-by-season` and `using-red-light-at-camp` still have
+no video. The only credible hit this week was a Cerritos Library "Constellations"
+session with NASA's Universe of Learning (`lNY4QeYa4XE`, oEmbed valid), but it is
+a craft-focused library program, not a seasonal sky guide, so it was not wired in.
 
 ## Closed this week
 
 - `how-to-start-a-campfire` was missing a fire extinguisher. On 2026-11-02
   `first-alert-ez-fire-spray` (B001229JCU, 4.8 stars on 12,703 ratings, $11.98,
   Add to Cart verified) was added to the registry and to that guide's shelf.
+- `easy-family-camping-meals` and `camping-meal-plan-family` had 3-product shelves
+  while their copy tells readers to cook in "one large skillet". On 2026-11-06 the
+  existing `lodge-cast-iron-skillet` was added to both shelves (no new ASIN).

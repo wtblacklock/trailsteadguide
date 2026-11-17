@@ -1024,7 +1024,7 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     description:
       'Pre-seasoned cast iron with three legs and a flanged lid for stacking coals on top - the standard tool for camp baking and low-and-slow one-pot meals.',
     amazonAsin: 'B004W4TXZI',
-    imageUrl: '',
+    imageUrl: 'https://m.media-amazon.com/images/I/612gVP7Ax1L._AC_SX679_.jpg',
     category: 'comfort',
     templateSlugs: [],
     priceRange: '~$70',

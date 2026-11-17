@@ -20,7 +20,7 @@ export const GUIDES: Guide[] = [
     title: 'How to Plan a Camping Trip',
     description: 'Step-by-step: pick a site, book it, prep the gear.',
     eyebrow: 'Planning',
-    relatedGuides: ['camping-for-beginners', 'weekend-camping-packing-list', 'first-camping-trip-checklist'],
+    relatedGuides: ['camping-for-beginners', 'camping-with-another-family', 'weekend-camping-packing-list'],
   },
   {
     slug: 'car-camping-beginner-guide',
@@ -559,7 +559,18 @@ export const GUIDES: Guide[] = [
     title: 'How to Start a Campfire',
     description: 'Checking before you build, gathering materials, picking a structure, and lighting it - plus wet-weather backups.',
     eyebrow: 'How-to',
-    relatedGuides: ['campfire-recipes-for-kids', 'teaching-kids-to-whittle', 'how-to-set-up-a-tent'],
+    relatedGuides: ['how-to-put-out-a-campfire', 'campfire-recipes-for-kids', 'teaching-kids-to-whittle'],
+  },
+  {
+    slug: 'how-to-put-out-a-campfire',
+    category: 'basics',
+    title: 'How to Put Out a Campfire Completely',
+    description: 'The drown, stir, and feel method, how much water to have ready, why dirt and snow fall short, and how to give kids a real job.',
+    eyebrow: 'How-to',
+    metaTitle: 'How to Put Out a Campfire Completely',
+    metaDescription:
+      'How to put out a campfire the right way: drown, stir, and feel, how much water it takes, why dirt and snow fall short, and how to give kids a real job.',
+    relatedGuides: ['how-to-start-a-campfire', 'how-to-break-camp', 'camping-during-a-burn-ban'],
   },
   {
     slug: 'teaching-kids-to-whittle',
@@ -667,7 +678,18 @@ export const GUIDES: Guide[] = [
     metaTitle: 'Camping After Dark With Kids',
     metaDescription:
       'Camping after dark with kids: how much daylight fall costs you, the three-layer lighting setup for a campsite, and what to do with a long evening.',
-    relatedGuides: ['stargazing-camping-with-kids', 'fall-camping-for-beginners', 'halloween-camping-with-kids'],
+    relatedGuides: ['stargazing-camping-with-kids', 'how-to-get-kids-to-sleep-camping', 'fall-camping-for-beginners'],
+  },
+  {
+    slug: 'how-to-get-kids-to-sleep-camping',
+    category: 'scenario',
+    title: 'How to Get Kids to Sleep While Camping',
+    description: 'Cold, dark by 5pm, and a nylon wall instead of a bedroom. How to get a family to sleep in a tent.',
+    eyebrow: 'Sleep',
+    metaTitle: 'How to Get Kids to Sleep While Camping',
+    metaDescription:
+      'How to get kids to sleep while camping: the wind-down routine, a warm sleep setup, and fixes for 5pm sunsets, tent noise, and the 2am wake-up.',
+    relatedGuides: ['camping-after-dark-with-kids', 'how-to-keep-kids-warm-camping', 'first-night-camping-guide'],
   },
   {
     slug: 'when-do-campgrounds-close',
@@ -756,7 +778,19 @@ export const GUIDES: Guide[] = [
     metaTitle: 'Christmas Break Camping With Kids',
     metaDescription:
       'Christmas break camping with kids: where campgrounds are open in late December, when to book, planning around 15-hour nights, and New Year at camp.',
-    relatedGuides: ['thanksgiving-camping-with-kids', 'how-to-keep-kids-warm-camping', 'winter-camping-for-beginners'],
+    relatedGuides: ['warm-winter-camping-destinations', 'thanksgiving-camping-with-kids', 'how-to-keep-kids-warm-camping', 'first-day-hikes-with-kids'],
+  },
+  {
+    slug: 'warm-winter-camping-destinations',
+    category: 'seasonal',
+    title: 'Warm Winter Camping Destinations for Families',
+    shortLabel: 'Warm winter',
+    description: 'Where it stays mild from December through February, what each warm region is like at night, and how to book before the sites are gone.',
+    eyebrow: 'Winter',
+    metaTitle: 'Warm Winter Camping Spots for Families',
+    metaDescription:
+      'Where to tent camp warm this winter with kids: Florida, the Gulf Coast, south Texas, southern Arizona, and the California deserts, plus when to book.',
+    relatedGuides: ['winter-break-camping-with-kids', 'camping-in-florida-for-beginners', 'camping-in-the-desert-southwest-for-beginners'],
   },
   {
     slug: 'camping-in-40-degree-weather',
@@ -773,13 +807,13 @@ export const GUIDES: Guide[] = [
   {
     slug: 'gifts-for-campers',
     category: 'seasonal',
-    title: 'Gifts for Campers: A Family Gift Guide',
-    shortLabel: 'Holiday gifts',
-    description: 'Stocking stuffers, useful upgrades, bigger gifts, and picks for kids, for the camper who already owns a tent.',
+    title: 'Gifts for Campers Who Already Have the Gear',
+    shortLabel: 'Gifts for campers',
+    description: 'The upgrades experienced campers never buy themselves, small add-ons, bigger gifts, and a park pass.',
     eyebrow: 'Gift guide',
-    metaTitle: 'Gifts for Campers: 2026 Family Gift Guide',
+    metaTitle: 'Gifts for Campers Who Have Everything',
     metaDescription:
-      'Gifts for campers who already own a tent: stocking stuffers under $25, useful upgrades, big gifts, picks for kids, and a park pass good for a year.',
+      'Gifts for experienced campers who already own a tent: the upgrades they never buy themselves, small add-ons under $25, bigger gifts, and a park pass.',
     relatedGuides: ['best-camping-gifts-for-families', 'camping-stocking-stuffers', 'family-camping-gear-list'],
   },
   {
@@ -965,6 +999,18 @@ export const GUIDES: Guide[] = [
     relatedGuides: ['how-to-choose-a-family-campsite', 'teaching-kids-to-whittle', 'camping-first-aid-kit-for-families'],
   },
   {
+    slug: 'first-day-hikes-with-kids',
+    category: 'seasonal',
+    title: 'First Day Hikes With Kids',
+    description: 'How to find a guided New Year\'s Day hike at a state park, what kids wear in January cold, and how to pace short legs.',
+    eyebrow: 'Holiday',
+    shortLabel: 'New Year hikes',
+    metaTitle: 'First Day Hikes With Kids',
+    metaDescription:
+      'First Day Hikes with kids: how to find a guided New Year\'s Day hike at a state park, what to wear and pack for January cold, and how to pace little legs.',
+    relatedGuides: ['hiking-with-kids-from-camp', 'how-to-dress-kids-for-cold-weather-camping', 'winter-break-camping-with-kids'],
+  },
+  {
     slug: 'hiking-with-kids-from-camp',
     category: 'basics',
     title: 'Hiking With Kids From Camp',
@@ -973,7 +1019,7 @@ export const GUIDES: Guide[] = [
     metaTitle: 'Hiking With Kids From Camp',
     metaDescription:
       'Hiking with kids from camp: picking a trail for their age and pace, the day-pack essentials, reading trail markers, and what to do if someone gets lost.',
-    relatedGuides: ['how-to-choose-a-family-campsite', 'camping-first-aid-kit-for-families', 'fishing-with-kids-at-camp'],
+    relatedGuides: ['how-to-choose-a-family-campsite', 'camping-first-aid-kit-for-families', 'fishing-with-kids-at-camp', 'first-day-hikes-with-kids'],
   },
   {
     slug: 'state-park-cabin-camping-with-kids',
@@ -996,6 +1042,17 @@ export const GUIDES: Guide[] = [
     metaDescription:
       'Winter camping with dogs: which dogs handle the cold, a warm sleep setup, paw care on ice and salt, hunting-season orange, and when it is too cold to go.',
     relatedGuides: ['camping-with-dogs-first-time', 'camping-during-hunting-season', 'camping-in-40-degree-weather'],
+  },
+  {
+    slug: 'camping-with-another-family',
+    category: 'scenario',
+    title: 'Camping With Another Family',
+    description: 'Adjacent sites or a group site, splitting dinners and costs, sharing the big gear, and the kid rules and quiet hours to agree on first.',
+    eyebrow: 'Group trip',
+    metaTitle: 'Camping With Another Family: How to Plan',
+    metaDescription:
+      'Camping with another family: adjacent sites or a group site, splitting meals and costs, shared gear, kid rules, and quiet hours that keep everyone friends.',
+    relatedGuides: ['how-to-plan-a-camping-trip', 'thanksgiving-camping-with-kids', 'camping-meal-plan-family'],
   },
   {
     slug: 'water-safety-at-camp-with-kids',

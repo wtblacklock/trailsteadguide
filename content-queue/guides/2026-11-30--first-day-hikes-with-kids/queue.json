@@ -1,0 +1,26 @@
+{
+  "publishOn": "2026-11-30",
+  "guide": {
+    "slug": "first-day-hikes-with-kids",
+    "category": "seasonal",
+    "title": "First Day Hikes With Kids",
+    "shortLabel": "First Day Hikes",
+    "description": "How the New Year's Day state park hikes work, how to find a guided one near you, picking the right hike for kids, and what to pack for a cold morning.",
+    "eyebrow": "New Year's Day",
+    "metaTitle": "First Day Hikes With Kids on January 1",
+    "metaDescription": "First Day Hikes with kids: how the New Year's Day state park hikes work, how to find a guided one near you, and what to pack for a cold January 1 morning.",
+    "relatedGuides": ["hiking-with-kids-from-camp", "winter-break-camping-with-kids", "how-to-keep-kids-warm-camping"]
+  },
+  "gear": [
+    { "slot": "COOKWARE", "productId": "thermos-stainless-king-40oz" },
+    { "slot": "KID_GEAR", "productId": "thermos-funtainer-food-jar" },
+    { "slot": "WINTER_GEAR", "productId": "hothands-hand-warmers-bulk" },
+    { "slot": "HEADLAMP", "productId": "everbrite-headlamp-5-pack" },
+    { "slot": "SAFETY", "productId": "thriad-first-aid-430" },
+    { "slot": "SAFETY", "productId": "quietwear-youth-blaze-vest" }
+  ],
+  "reciprocal": [
+    { "slug": "hiking-with-kids-from-camp", "replace": "fishing-with-kids-at-camp" },
+    { "slug": "winter-break-camping-with-kids", "replace": "winter-camping-for-beginners" }
+  ]
+}

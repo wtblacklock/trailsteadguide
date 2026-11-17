@@ -77,7 +77,6 @@ export default function Page() {
           src: HERO_IMAGE,
           alt: 'Three tents lit from inside on a grassy field under a starry night sky',
         }}
-        dateModified="2026-09-07"
       >
         <QuickAnswer
           tldr="Borrow gear before buying. Use state parks for $25-40/night. Cook your own food. Total trip cost: $80-120 after gear."

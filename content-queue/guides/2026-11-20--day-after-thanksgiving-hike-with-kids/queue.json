@@ -1,0 +1,27 @@
+{
+  "publishOn": "2026-11-20",
+  "guide": {
+    "slug": "day-after-thanksgiving-hike-with-kids",
+    "category": "seasonal",
+    "title": "A Day-After-Thanksgiving Hike With Kids",
+    "description": "The Black Friday family hike tradition: picking the trail, free state park days, packing leftovers safely, and blaze orange in hunting season.",
+    "eyebrow": "Holiday weekend",
+    "shortLabel": "Black Friday hike",
+    "metaTitle": "Day After Thanksgiving Hike With Kids",
+    "metaDescription": "Start a Black Friday family hike tradition: how to pick the trail, pack leftovers safely, dress for late November, and check for free state park days.",
+    "relatedGuides": ["hiking-with-kids-from-camp", "thanksgiving-camping-with-kids", "black-friday-camping-gear"]
+  },
+  "gear": [
+    { "slot": "SAFETY", "productId": "quietwear-youth-blaze-vest" },
+    { "slot": "SAFETY", "productId": "allen-blaze-orange-vest" },
+    { "slot": "SAFETY", "productId": "leukotape-blister-prevention" },
+    { "slot": "COOKWARE", "productId": "thermos-stainless-king-40oz" },
+    { "slot": "HEADLAMP", "productId": "black-diamond-spot-400" },
+    { "slot": "KID_GEAR", "productId": "peterson-first-guide-trees" },
+    { "slot": "KID_GEAR", "productId": "magnifying-glass-kids" }
+  ],
+  "reciprocal": [
+    { "slug": "thanksgiving-camping-with-kids", "replace": "halloween-camping-with-kids" },
+    { "slug": "black-friday-camping-gear", "replace": "gifts-for-new-campers" }
+  ]
+}
