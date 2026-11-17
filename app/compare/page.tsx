@@ -108,6 +108,12 @@ const PRODUCT_COMPARES: CompareCard[] = [
     blurb: 'A fast pan for the stove versus a slow oven that bakes under coals. Which one your family will use, and when to pack both.',
   },
   {
+    href: '/compare/foam-vs-inflatable-sleeping-pad',
+    eyebrow: 'Gear',
+    title: 'Foam vs inflatable sleeping pad',
+    blurb: 'Closed-cell foam, self-inflating, and air pads compared. Which is best for kids, which is warmest, and why cold nights call for two.',
+  },
+  {
     href: '/compare/lantern-vs-headlamp-vs-flashlight',
     eyebrow: 'Gear',
     title: 'Lantern vs headlamp vs flashlight',
