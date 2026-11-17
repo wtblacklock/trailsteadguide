@@ -228,7 +228,9 @@ export default function Page() {
           <li>
             <strong>Then look at the bags.</strong> A liner like the{' '}
             <AmazonLink productId="sea-to-summit-reactor-extreme-liner" pageSlug="sleeping-pad-r-value-explained" />{' '}
-            adds warmth on top once the bottom is sorted out.
+            adds warmth on top once the bottom is sorted out. See{' '}
+            <Link href="/guides/are-sleeping-bag-liners-worth-it">are sleeping bag liners worth it</Link>{' '}
+            for how much warmth to expect.
           </li>
         </ol>
         <p>

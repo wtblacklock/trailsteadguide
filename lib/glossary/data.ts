@@ -245,6 +245,13 @@ export const TERMS: Term[] = [
       'A widely-adopted seven-principle outdoor ethic: plan ahead, camp on durable surfaces, dispose of waste properly, leave what you find, minimize fire impact, respect wildlife, and be considerate of others.',
   },
   {
+    term: 'Life jacket (PFD)',
+    definition:
+      'A personal flotation device. Federal rule requires kids under 13 to wear one on a moving boat; some states set their own, sometimes stricter, age rules. Sized by weight, not age, so check the label.',
+    href: '/guides/water-safety-at-camp-with-kids',
+    linkText: 'Water safety guide',
+  },
+  {
     term: 'Lightning safety',
     definition:
       'If you can hear thunder, you\'re in strike range. Get off ridges and out from under tall lone trees. Crouch in a low spot until 30 minutes after the last thunder.',

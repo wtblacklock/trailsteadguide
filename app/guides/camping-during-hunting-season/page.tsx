@@ -76,7 +76,6 @@ export default function Page() {
           src: HERO_IMAGE,
           alt: 'A small red tent pitched among gold-leaved hardwoods in an open autumn forest',
         }}
-        dateModified="2026-09-09"
       >
         <QuickAnswer
           tldr="Check the land and the season dates before you book, put blaze orange on everyone including the dog, and keep hikes to the middle of the day."

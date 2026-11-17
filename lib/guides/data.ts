@@ -20,7 +20,7 @@ export const GUIDES: Guide[] = [
     title: 'How to Plan a Camping Trip',
     description: 'Step-by-step: pick a site, book it, prep the gear.',
     eyebrow: 'Planning',
-    relatedGuides: ['camping-for-beginners', 'weekend-camping-packing-list', 'first-camping-trip-checklist'],
+    relatedGuides: ['camping-for-beginners', 'camping-with-another-family', 'weekend-camping-packing-list'],
   },
   {
     slug: 'car-camping-beginner-guide',
@@ -678,7 +678,18 @@ export const GUIDES: Guide[] = [
     metaTitle: 'Camping After Dark With Kids',
     metaDescription:
       'Camping after dark with kids: how much daylight fall costs you, the three-layer lighting setup for a campsite, and what to do with a long evening.',
-    relatedGuides: ['stargazing-camping-with-kids', 'fall-camping-for-beginners', 'halloween-camping-with-kids'],
+    relatedGuides: ['stargazing-camping-with-kids', 'how-to-get-kids-to-sleep-camping', 'fall-camping-for-beginners'],
+  },
+  {
+    slug: 'how-to-get-kids-to-sleep-camping',
+    category: 'scenario',
+    title: 'How to Get Kids to Sleep While Camping',
+    description: 'Cold, dark by 5pm, and a nylon wall instead of a bedroom. How to get a family to sleep in a tent.',
+    eyebrow: 'Sleep',
+    metaTitle: 'How to Get Kids to Sleep While Camping',
+    metaDescription:
+      'How to get kids to sleep while camping: the wind-down routine, a warm sleep setup, and fixes for 5pm sunsets, tent noise, and the 2am wake-up.',
+    relatedGuides: ['camping-after-dark-with-kids', 'how-to-keep-kids-warm-camping', 'first-night-camping-guide'],
   },
   {
     slug: 'when-do-campgrounds-close',
@@ -778,7 +789,7 @@ export const GUIDES: Guide[] = [
     metaTitle: 'Christmas Break Camping With Kids',
     metaDescription:
       'Christmas break camping with kids: where campgrounds are open in late December, when to book, planning around 15-hour nights, and New Year at camp.',
-    relatedGuides: ['warm-winter-camping-destinations', 'thanksgiving-camping-with-kids', 'how-to-keep-kids-warm-camping'],
+    relatedGuides: ['warm-winter-camping-destinations', 'thanksgiving-camping-with-kids', 'how-to-keep-kids-warm-camping', 'first-day-hikes-with-kids'],
   },
   {
     slug: 'warm-winter-camping-destinations',
@@ -802,18 +813,18 @@ export const GUIDES: Guide[] = [
     metaTitle: 'Camping in 30 and 40 Degree Weather',
     metaDescription:
       'Camping in 40 degree weather or a night in the 30s: the sleeping bag and pad you need, what to wear to bed, and when a cold snap means it is time to leave.',
-    relatedGuides: ['how-to-keep-kids-warm-camping', 'sleeping-pad-r-value-explained', 'fall-camping-for-beginners'],
+    relatedGuides: ['how-to-keep-kids-warm-camping', 'sleeping-pad-r-value-explained', 'how-to-keep-batteries-warm-camping'],
   },
   {
     slug: 'gifts-for-campers',
     category: 'seasonal',
-    title: 'Gifts for Campers: A Family Gift Guide',
-    shortLabel: 'Holiday gifts',
-    description: 'Stocking stuffers, useful upgrades, bigger gifts, and picks for kids, for the camper who already owns a tent.',
+    title: 'Gifts for Campers Who Already Have the Gear',
+    shortLabel: 'Gifts for campers',
+    description: 'The upgrades experienced campers never buy themselves, small add-ons, bigger gifts, and a park pass.',
     eyebrow: 'Gift guide',
-    metaTitle: 'Gifts for Campers: 2026 Family Gift Guide',
+    metaTitle: 'Gifts for Campers Who Have Everything',
     metaDescription:
-      'Gifts for campers who already own a tent: stocking stuffers under $25, useful upgrades, big gifts, picks for kids, and a park pass good for a year.',
+      'Gifts for experienced campers who already own a tent: the upgrades they never buy themselves, small add-ons under $25, bigger gifts, and a park pass.',
     relatedGuides: ['best-camping-gifts-for-families', 'camping-stocking-stuffers', 'family-camping-gear-list'],
   },
   {
@@ -908,7 +919,7 @@ export const GUIDES: Guide[] = [
     metaTitle: 'Sleeping Pad R-Value Explained',
     metaDescription:
       'Sleeping pad R-value explained for family campers: what the number measures, what R-value you need by season, why pads stack, and the air mattress trap.',
-    relatedGuides: ['how-to-keep-kids-warm-camping', 'best-camping-sleeping-bag-for-kids', 'fall-camping-for-beginners'],
+    relatedGuides: ['how-to-keep-kids-warm-camping', 'best-camping-sleeping-bag-for-kids', 'are-sleeping-bag-liners-worth-it'],
   },
   {
     slug: 'camp-stove-fuel-in-cold-weather',
@@ -952,7 +963,7 @@ export const GUIDES: Guide[] = [
     metaTitle: 'Camping in High Wind With Kids',
     metaDescription:
       'Camping in high wind with kids: what the gust numbers mean, how to site and stake a family tent so it stays put, and the wind speed where you pack up.',
-    relatedGuides: ['camping-when-the-weather-turns', 'how-to-set-up-a-tent', 'fall-camping-for-beginners'],
+    relatedGuides: ['camping-when-the-weather-turns', 'how-to-set-up-a-tent', 'how-to-stake-a-tent-in-frozen-ground'],
   },
   {
     slug: 'tent-heater-safety',
@@ -999,6 +1010,18 @@ export const GUIDES: Guide[] = [
     relatedGuides: ['how-to-choose-a-family-campsite', 'teaching-kids-to-whittle', 'camping-first-aid-kit-for-families'],
   },
   {
+    slug: 'first-day-hikes-with-kids',
+    category: 'seasonal',
+    title: 'First Day Hikes With Kids',
+    description: 'How to find a guided New Year\'s Day hike at a state park, what kids wear in January cold, and how to pace short legs.',
+    eyebrow: 'Holiday',
+    shortLabel: 'New Year hikes',
+    metaTitle: 'First Day Hikes With Kids',
+    metaDescription:
+      'First Day Hikes with kids: how to find a guided New Year\'s Day hike at a state park, what to wear and pack for January cold, and how to pace little legs.',
+    relatedGuides: ['hiking-with-kids-from-camp', 'how-to-dress-kids-for-cold-weather-camping', 'winter-break-camping-with-kids'],
+  },
+  {
     slug: 'hiking-with-kids-from-camp',
     category: 'basics',
     title: 'Hiking With Kids From Camp',
@@ -1007,7 +1030,7 @@ export const GUIDES: Guide[] = [
     metaTitle: 'Hiking With Kids From Camp',
     metaDescription:
       'Hiking with kids from camp: picking a trail for their age and pace, the day-pack essentials, reading trail markers, and what to do if someone gets lost.',
-    relatedGuides: ['how-to-choose-a-family-campsite', 'camping-first-aid-kit-for-families', 'fishing-with-kids-at-camp'],
+    relatedGuides: ['how-to-choose-a-family-campsite', 'camping-first-aid-kit-for-families', 'fishing-with-kids-at-camp', 'first-day-hikes-with-kids'],
   },
   {
     slug: 'state-park-cabin-camping-with-kids',
@@ -1030,5 +1053,61 @@ export const GUIDES: Guide[] = [
     metaDescription:
       'Winter camping with dogs: which dogs handle the cold, a warm sleep setup, paw care on ice and salt, hunting-season orange, and when it is too cold to go.',
     relatedGuides: ['camping-with-dogs-first-time', 'camping-during-hunting-season', 'camping-in-40-degree-weather'],
+  },
+  {
+    slug: 'camping-with-another-family',
+    category: 'scenario',
+    title: 'Camping With Another Family',
+    description: 'Adjacent sites or a group site, splitting dinners and costs, sharing the big gear, and the kid rules and quiet hours to agree on first.',
+    eyebrow: 'Group trip',
+    metaTitle: 'Camping With Another Family: How to Plan',
+    metaDescription:
+      'Camping with another family: adjacent sites or a group site, splitting meals and costs, shared gear, kid rules, and quiet hours that keep everyone friends.',
+    relatedGuides: ['how-to-plan-a-camping-trip', 'thanksgiving-camping-with-kids', 'camping-meal-plan-family'],
+  },
+  {
+    slug: 'how-to-stake-a-tent-in-frozen-ground',
+    category: 'basics',
+    title: 'How to Stake a Tent in Frozen Ground or Snow',
+    description: 'Steel stakes and pilot holes for frozen dirt, deadman anchors for snow, rocks and trees when nothing goes in, and freeing frozen stakes in the morning.',
+    eyebrow: 'How-to',
+    metaTitle: 'How to Stake a Tent in Frozen Ground',
+    metaDescription:
+      'How to stake a tent in frozen ground or snow: steel stakes and pilot holes, deadman anchors, rocks and trees, and getting stakes out the next morning.',
+    relatedGuides: ['camping-in-high-wind', 'winter-camping-for-beginners', 'how-to-set-up-a-tent'],
+  },
+  {
+    slug: 'how-to-keep-batteries-warm-camping',
+    category: 'seasonal',
+    title: 'How to Keep Phones and Batteries Warm While Camping',
+    shortLabel: 'Cold batteries',
+    description: 'Why cold drains phones, power banks, and headlamps, where to keep them overnight, when not to charge, and a battery plan for a winter weekend.',
+    eyebrow: 'Cold-weather how-to',
+    metaTitle: 'Keep Batteries Warm on Cold Camping Trips',
+    metaDescription:
+      'Why cold drains phones, power banks, and headlamps, how to keep them warm overnight, when not to charge, and the battery plan for a winter family trip.',
+    relatedGuides: ['winter-camping-for-beginners', 'camping-in-40-degree-weather', 'tent-camping-at-an-electric-site'],
+  },
+  {
+    slug: 'water-safety-at-camp-with-kids',
+    category: 'scenario',
+    title: 'Water Safety at Camp With Kids',
+    description: 'Why a campground lake or river is riskier than a pool, the water watcher habit, life jacket rules, and what to do if a child goes under.',
+    eyebrow: 'Water safety',
+    metaTitle: 'Water Safety at Camp With Kids',
+    metaDescription:
+      'Water safety at camp with kids: why open water is riskier than a pool, life jacket rules, the water watcher habit, and what to do in an emergency.',
+    relatedGuides: ['summer-camping-with-kids', 'camping-with-toddlers', 'fishing-with-kids-at-camp'],
+  },
+  {
+    slug: 'are-sleeping-bag-liners-worth-it',
+    category: 'basics',
+    title: 'Are Sleeping Bag Liners Worth It?',
+    description: 'How much warmth each type of liner really adds, when a liner beats a new bag, and when it is a waste of money.',
+    eyebrow: 'Gear guide',
+    metaTitle: 'Are Sleeping Bag Liners Worth It?',
+    metaDescription:
+      'Are sleeping bag liners worth it for family camping? How much warmth each type really adds, when a liner beats a new bag, and when it is a waste of money.',
+    relatedGuides: ['sleeping-pad-r-value-explained', 'how-to-keep-kids-warm-camping', 'state-park-cabin-camping-with-kids'],
   },
 ]

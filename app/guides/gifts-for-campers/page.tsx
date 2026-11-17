@@ -10,10 +10,10 @@ import Breadcrumbs from '@/components/seo/Breadcrumbs'
 import { pageMetadata, articleGraph, faqPageGraph, SITE_URL } from '@/lib/seo'
 
 const SLUG = '/guides/gifts-for-campers'
-const TITLE = 'Gifts for Campers: A Family Gift Guide'
-const META_TITLE = 'Gifts for Campers: 2026 Family Gift Guide'
+const TITLE = 'Gifts for Campers Who Already Have the Gear'
+const META_TITLE = 'Gifts for Campers Who Have Everything'
 const DESCRIPTION =
-  'Gifts for campers who already own a tent: stocking stuffers under $25, useful upgrades, big gifts, picks for kids, and a park pass good for a year.'
+  'Gifts for experienced campers who already own a tent: the upgrades they never buy themselves, small add-ons under $25, bigger gifts, and a park pass.'
 const HERO_IMAGE =
   'https://images.unsplash.com/photo-1485809052957-5113b0ff51af?w=1400&auto=format&fit=crop&q=80'
 
@@ -50,16 +50,16 @@ export default function Page() {
             a: 'Skip the big core gear like tents and sleeping bags unless you know exactly what they want, since campers tend to be particular about those. The safest good gifts are the things campers use up, lose, or never buy for themselves: a good headlamp, hand warmers, a vacuum bottle, a cast iron skillet, a comfortable camp chair, a power bank, or a closed-cell foam pad that makes cold nights warmer. A national park annual pass is a strong gift for anyone who camps on public land.',
           },
           {
-            q: 'What are good camping stocking stuffers?',
-            a: 'Small, useful, and consumable: air-activated hand warmers, a multi-pack of headlamps, stormproof matches, a folding knife for an adult, an instant-read thermometer for the camp cook, roasting sticks, a pocket field guide, or a star finder. Most of these are under $25.',
+            q: 'What do you get a camper who has everything?',
+            a: 'Upgrade something they already use and tolerate rather than adding new gear. A headlamp they love instead of a flashlight, cast iron instead of a thin aluminum pot, a vacuum bottle, a warmer sleeping pad, or a comfortable camp chair. Consumables like hand warmers and fire starters are never wrong, and a national park annual pass suits anyone who camps on public land.',
           },
           {
             q: 'Is a national park pass a good gift?',
             a: 'Yes, for anyone who visits national parks or other federal recreation sites. In 2026 the America the Beautiful annual pass costs $80 for U.S. residents and covers entrance and standard amenity fees at national parks and other federal recreation sites for a year. It does not cover campsite fees, so it pairs well with a gift card or a promise to book a site together.',
           },
           {
-            q: 'What camping gifts are good for kids?',
-            a: 'Gifts that give a kid their own job or their own gear: a headlamp, a set of roasting sticks, a bug magnifier, a pocket tree guide, a kid-size vacuum food jar, or a sleeping bag sized for a child. Kids use their own gear far more than shared family gear, and it makes the next trip something to look forward to.',
+            q: 'Should you buy a tent as a gift for a camper?',
+            a: 'Usually not. Experienced campers have strong opinions about tents, sleeping bags, and backpacks, so a guessed model often gets returned. Give one only if they named the exact model, or give a gift card toward it and spend the gift budget on an upgrade they would not buy for themselves.',
           },
         ])}
       />
@@ -73,13 +73,12 @@ export default function Page() {
       <GuidePage
         slug="gifts-for-campers"
         eyebrow="Gift guide"
-        title="Gifts for Campers: A Family Gift Guide"
+        title={TITLE}
         lede="Shopping for someone who already owns a tent is harder than it looks. The best camping gifts are the things people use every trip but rarely buy for themselves, plus a few that make the next trip with the kids easier."
         heroImage={{
           src: HERO_IMAGE,
           alt: 'Flat lay of a red insulated jacket, hiking boots, a trail map with a compass, a camera, and a black backpack on wooden boards',
         }}
-        dateModified="2026-10-06"
       >
         <QuickAnswer
           tldr="Give the gear campers use up or never splurge on: headlamps, hand warmers, a vacuum bottle, cast iron, a good chair, or a park pass. Skip the tent."
@@ -115,9 +114,10 @@ export default function Page() {
           <Link href="/guides/gifts-for-new-campers">gifts for new campers</Link>.
         </p>
 
-        <h2>Stocking stuffers under $25</h2>
+        <h2>Small add-ons under $25</h2>
         <p>
-          A longer list, sorted by who it is for, is in{' '}
+          Small upgrades an experienced camper will actually use. Shopping for stockings? A longer
+          list, sorted by who it is for, is in{' '}
           <Link href="/guides/camping-stocking-stuffers">camping stocking stuffers under $25</Link>.
         </p>
         <ul>
@@ -290,9 +290,11 @@ export default function Page() {
           </li>
         </ul>
 
-        <h2>Gifts for kids who camp</h2>
+        <h2>If they camp with kids</h2>
         <p>
-          Kids treat their own gear completely differently from the family bin. A headlamp with
+          A few add-ons for the camper&apos;s kids are below; the full list by age is in{' '}
+          <Link href="/guides/camping-gifts-for-kids">camping gifts for kids</Link>. Kids treat their
+          own gear completely differently from the family bin. A headlamp with
           their name on it, their own roasting stick, or their own sleeping bag makes the next trip
           something to count down to.
         </p>
@@ -388,10 +390,11 @@ export default function Page() {
           every trip but rarely upgrade: a good headlamp, hand warmers, a vacuum bottle, cast iron,
           a comfortable chair, a power bank, or a national park pass.
         </p>
-        <h3>What are good camping stocking stuffers?</h3>
+        <h3>What do you get a camper who has everything?</h3>
         <p>
-          Hand warmers, a headlamp multi-pack, stormproof matches, an instant-read thermometer,
-          roasting sticks, a pocket field guide, or a star finder. Most are under $25.
+          Upgrade something they already use and tolerate: a headlamp they love, cast iron, a
+          vacuum bottle, a warmer sleeping pad, or a better chair. Consumables like hand warmers
+          are never wrong, and a park pass suits anyone who camps on public land.
         </p>
         <h3>Is a national park pass a good gift?</h3>
         <p>
@@ -399,10 +402,11 @@ export default function Page() {
           Beautiful annual pass is $80 for U.S. residents. It covers entrance fees, not camping
           fees.
         </p>
-        <h3>What camping gifts are good for kids?</h3>
+        <h3>Should you buy a tent as a gift for a camper?</h3>
         <p>
-          Their own gear: a headlamp, roasting sticks, a bug magnifier, a pocket tree guide, a
-          kid-size food jar, or a sleeping bag sized for a child.
+          Usually not. Tents, sleeping bags, and backpacks are personal, so give one only if they
+          named the exact model. Otherwise give a gift card toward it and spend the budget on an
+          upgrade they would not buy themselves.
         </p>
       </GuidePage>
       <GuideGearShelf guideSlug="gifts-for-campers" heading="Camping gift ideas" />

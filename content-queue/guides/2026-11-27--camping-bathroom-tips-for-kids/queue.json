@@ -1,0 +1,26 @@
+{
+  "publishOn": "2026-11-27",
+  "guide": {
+    "slug": "camping-bathroom-tips-for-kids",
+    "category": "scenario",
+    "title": "Camping Bathroom Tips for Kids",
+    "description": "Vault toilets without tears, safe nighttime trips, a potty or pee bottle for little kids, catholes where allowed, and a handwashing station.",
+    "eyebrow": "With kids",
+    "metaTitle": "Camping Bathroom Tips for Kids",
+    "metaDescription": "Camping bathroom tips for kids: vault toilets without tears, safe night trips, a pee bottle or potty for little ones, catholes, and a handwashing station.",
+    "relatedGuides": ["camping-with-toddlers", "first-night-camping-guide", "camping-after-dark-with-kids"]
+  },
+  "gear": [
+    { "slot": "HEADLAMP", "productId": "everbrite-headlamp-5-pack" },
+    { "slot": "KID_GEAR", "productId": "glow-stick-necklaces-bulk" },
+    { "slot": "LIGHTING", "productId": "fwc-lantern-consciot" },
+    { "slot": "COOKWARE", "productId": "reliance-aqua-tainer-7gal-2pack" },
+    { "slot": "TRASH", "productId": "campsuds-biodegradable-soap" },
+    { "slot": "TRASH", "productId": "montnorth-collapsible-wash-basin" },
+    { "slot": "SAFETY", "productId": "thriad-first-aid-430" }
+  ],
+  "reciprocal": [
+    { "slug": "camping-with-toddlers", "replace": "backyard-camping-with-kids" },
+    { "slug": "first-night-camping-guide", "replace": "camping-for-beginners" }
+  ]
+}

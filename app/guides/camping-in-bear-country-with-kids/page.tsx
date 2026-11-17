@@ -76,7 +76,6 @@ export default function Page() {
           src: HERO_IMAGE,
           alt: 'A black bear walking through a conifer forest clearing on a rocky slope',
         }}
-        dateModified="2026-09-14"
       >
         <QuickAnswer
           tldr="Lock every smell in the bear box or the car, keep all food out of the tent, teach kids three rules, and never run."
