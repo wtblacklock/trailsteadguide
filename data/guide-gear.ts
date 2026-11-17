@@ -1217,6 +1217,14 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'RAIN_GEAR', productId: 'geertop-17x10-tarp' },
     { slot: 'TENT', productId: 'kelty-wireless-6' },
   ],
+  'how-to-pitch-a-tent-on-uneven-ground': [
+    { slot: 'TENT', productId: 'coleman-sundome-4p' },
+    { slot: 'RAIN_GEAR', productId: 'geertop-17x10-tarp' },
+    { slot: 'RAIN_GEAR', productId: 'eurmax-galvanized-tent-stakes' },
+    { slot: 'SLEEP_SURFACE', productId: 'big-agnes-divide' },
+    { slot: 'SLEEP_SURFACE', productId: 'therm-a-rest-z-lite-sol' },
+    { slot: 'LIGHTING', productId: 'everbrite-headlamp-5-pack' },
+  ],
   'camping-during-a-burn-ban': [
     { slot: 'STOVE', productId: 'coleman-1-burner' },
     { slot: 'STOVE', productId: 'coleman-triton-2-burner' },
