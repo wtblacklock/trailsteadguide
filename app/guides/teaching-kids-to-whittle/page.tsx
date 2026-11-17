@@ -77,7 +77,6 @@ export default function Page() {
         eyebrow="Skills"
         title={TITLE}
         lede="The grip rules, the blood circle, and three safe first projects - from a sharpened stick to a real tent peg."
-        dateModified="2026-10-21"
         heroImage={{
           src: HERO_IMAGE,
           alt: 'A child eating a toasted marshmallow off a carved wooden roasting stick at a campfire',

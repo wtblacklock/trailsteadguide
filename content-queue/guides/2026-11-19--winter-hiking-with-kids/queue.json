@@ -1,0 +1,25 @@
+{
+  "publishOn": "2026-11-19",
+  "guide": {
+    "slug": "winter-hiking-with-kids",
+    "category": "seasonal",
+    "title": "Winter Hiking With Kids",
+    "description": "Layering kids for the cold, planning around short days, traction on ice, snacks and warm drinks, and a turnaround time you keep.",
+    "eyebrow": "Winter",
+    "shortLabel": "Winter hiking",
+    "metaTitle": "Winter Hiking With Kids: Safe and Fun",
+    "metaDescription": "Winter hiking with kids: how to layer them, plan around short days, add traction on ice, pack snacks and warm drinks, and set a turnaround time.",
+    "relatedGuides": ["hiking-with-kids-from-camp", "how-to-keep-kids-warm-camping", "winter-camping-for-beginners"]
+  },
+  "gear": [
+    { "slot": "COOKWARE", "productId": "thermos-stainless-king-40oz" },
+    { "slot": "KID_GEAR", "productId": "thermos-funtainer-food-jar" },
+    { "slot": "WINTER_GEAR", "productId": "hothands-hand-warmers-bulk" },
+    { "slot": "HEADLAMP", "productId": "everbrite-headlamp-5-pack" },
+    { "slot": "SAFETY", "productId": "quietwear-youth-blaze-vest" },
+    { "slot": "SAFETY", "productId": "thriad-first-aid-430" }
+  ],
+  "reciprocal": [
+    { "slug": "hiking-with-kids-from-camp", "replace": "fishing-with-kids-at-camp" }
+  ]
+}
