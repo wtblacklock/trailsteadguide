@@ -103,7 +103,7 @@ export const GUIDES: Guide[] = [
     title: 'Rainy Camping Trips',
     description: 'Tarp setup, condensation, dry-camp recovery, and the call on whether to bail.',
     eyebrow: 'Rain',
-    relatedGuides: ['how-to-prevent-tent-condensation', 'camping-when-the-weather-turns', 'fall-camping-for-beginners'],
+    relatedGuides: ['how-to-prevent-tent-condensation', 'how-to-dry-wet-gear-camping', 'camping-when-the-weather-turns'],
   },
   {
     slug: 'camping-with-dogs-first-time',
@@ -1131,5 +1131,16 @@ export const GUIDES: Guide[] = [
     metaDescription:
       'How to set up a camping tarp over the picnic table or tent: the ridgeline, three knots, a pitch that sheds rain, and what to change for wind and snow.',
     relatedGuides: ['rainy-camping-trips', 'camping-in-high-wind', 'best-tent-for-rainy-camping'],
+  },
+  {
+    slug: 'how-to-dry-wet-gear-camping',
+    category: 'basics',
+    title: 'How to Dry Wet Gear While Camping',
+    description: 'A tarp and a clothesline, the wring-and-roll trick, boots, body heat, keeping gear back from the fire, and packing enough spare kid clothes.',
+    eyebrow: 'How-to',
+    metaTitle: 'How to Dry Wet Gear While Camping',
+    metaDescription:
+      'How to dry wet clothes, boots, sleeping bags, and a tent at camp in cold, damp weather, what never to do by the fire, and how many kid spares to pack.',
+    relatedGuides: ['rainy-camping-trips', 'how-to-prevent-tent-condensation', 'hypothermia-and-frostbite-in-kids'],
   },
 ]

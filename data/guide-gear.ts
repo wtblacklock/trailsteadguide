@@ -1252,6 +1252,13 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'LIGHTING', productId: 'luminaid-packlite-max' },
     { slot: 'WINTER_GEAR', productId: 'hothands-hand-warmers-bulk' },
   ],
+  'how-to-dry-wet-gear-camping': [
+    { slot: 'RAIN_GEAR', productId: 'geertop-17x10-tarp' },
+    { slot: 'RAIN_GEAR', productId: 'rainleaf-microfiber-towel' },
+    { slot: 'RAIN_GEAR', productId: 'paracord-550-50ft' },
+    { slot: 'WINTER_GEAR', productId: 'hothands-hand-warmers-bulk' },
+    { slot: 'STORAGE', productId: 'drytote-desiccant-packs' },
+  ],
   'how-to-put-out-a-campfire': [
     { slot: 'SAFETY', productId: 'eurow-collapsible-bucket-10l' },
     { slot: 'SAFETY', productId: 'first-alert-ez-fire-spray' },
