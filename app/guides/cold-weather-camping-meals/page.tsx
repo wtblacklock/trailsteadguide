@@ -76,7 +76,6 @@ export default function Page() {
           src: HERO_IMAGE,
           alt: 'A large pot heating on a grate over a campfire ring at a campsite, with a tent and camp chair behind it',
         }}
-        dateModified="2026-09-21"
       >
         <QuickAnswer
           tldr="Cook dinner at home and reheat it at camp, keep hot water in a vacuum bottle all day, eat before sunset, and give kids a fat-and-protein snack at bedtime."

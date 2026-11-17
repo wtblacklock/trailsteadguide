@@ -77,7 +77,6 @@ export default function Page() {
           src: HERO_IMAGE,
           alt: 'Cast iron pots and a kettle hanging over a bright campfire at a grassy campsite',
         }}
-        dateModified="2026-09-17"
       >
         <QuickAnswer
           tldr="Camp where it is still open (south, southwest, or a state park cabin), cook a turkey breast in a Dutch oven, trust a thermometer, and pack for a 35-degree night."
