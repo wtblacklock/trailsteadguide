@@ -1491,4 +1491,12 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'SAFETY', productId: 'thriad-first-aid-430' },
     { slot: 'SAFETY', productId: 'aveeno-kids-sunscreen-lotion' },
   ],
+  'how-to-set-up-a-camping-tarp': [
+    { slot: 'RAIN_GEAR', productId: 'geertop-17x10-tarp' },
+    { slot: 'RAIN_GEAR', productId: 'paracord-550-50ft' },
+    { slot: 'RAIN_GEAR', productId: 'reflective-guyline-50ft' },
+    { slot: 'RAIN_GEAR', productId: 'eurmax-galvanized-tent-stakes' },
+    { slot: 'CANOPY', productId: 'crown-shades-10x10-canopy' },
+    { slot: 'HEADLAMP', productId: 'black-diamond-spot-400' },
+  ],
 }
