@@ -1,0 +1,28 @@
+{
+  "publishOn": "2026-11-23",
+  "guide": {
+    "slug": "how-to-clean-a-tent",
+    "category": "basics",
+    "title": "How to Clean a Tent",
+    "description": "The after-trip clean, washing by hand without wrecking the coating, getting off sap and mildew, and drying it fully.",
+    "eyebrow": "How-to",
+    "metaTitle": "How to Clean a Tent (Mildew, Sap, Mud)",
+    "metaDescription": "How to clean a tent after a trip: shaking out grit, washing by hand without wrecking the coating, getting off sap and mildew, and drying it fully.",
+    "relatedGuides": [
+      "how-to-store-camping-gear",
+      "how-to-break-camp",
+      "how-to-prevent-tent-condensation"
+    ]
+  },
+  "gear": [
+    { "slot": "STORAGE", "productId": "nikwax-tent-gear-solarproof" },
+    { "slot": "RAIN_GEAR", "productId": "rainleaf-microfiber-towel" },
+    { "slot": "TRASH", "productId": "montnorth-collapsible-wash-basin" },
+    { "slot": "RAIN_GEAR", "productId": "geertop-17x10-tarp" },
+    { "slot": "STORAGE", "productId": "iris-weatherpro-44qt-bins" },
+    { "slot": "STORAGE", "productId": "drytote-desiccant-packs" }
+  ],
+  "reciprocal": [
+    { "slug": "how-to-store-camping-gear", "replace": "fall-camping-for-beginners" }
+  ]
+}

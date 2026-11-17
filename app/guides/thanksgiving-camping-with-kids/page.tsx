@@ -77,7 +77,6 @@ export default function Page() {
           src: HERO_IMAGE,
           alt: 'Cast iron pots and a kettle hanging over a bright campfire at a grassy campsite',
         }}
-        dateModified="2026-09-17"
       >
         <QuickAnswer
           tldr="Camp where it is still open (south, southwest, or a state park cabin), cook a turkey breast in a Dutch oven, trust a thermometer, and pack for a 35-degree night."
@@ -137,7 +136,12 @@ export default function Page() {
         <p>
           A whole 14-pound turkey is a home-oven project. At a campsite it does not fit in a normal
           Dutch oven, takes hours of coal management in cold air, and is very hard to cook evenly.
-          The camp version keeps the meal and drops the difficulty.
+          The camp version keeps the meal and drops the difficulty. If you are deciding what cast
+          iron to bring, our{' '}
+          <Link href="/compare/cast-iron-skillet-vs-dutch-oven">
+            cast iron skillet vs. Dutch oven comparison
+          </Link>{' '}
+          covers which pan does which job.
         </p>
         <ul>
           <li>
