@@ -195,7 +195,9 @@ export default function Page() {
         <h3>Can I add a tarp over a tent that leaks?</h3>
         <p>
           Yes, rigged above the rainfly without touching it. Contact between tarp and fly carries
-          water down to the contact point and defeats the purpose.
+          water down to the contact point and defeats the purpose. Our{' '}
+          <Link href="/guides/how-to-set-up-a-camping-tarp">how to set up a camping tarp</Link> guide
+          walks through the ridgeline and knots.
         </p>
         <h3>Why does my tent get wet even with a rainfly on?</h3>
         <p>

@@ -510,7 +510,7 @@ export const GUIDES: Guide[] = [
     title: 'Best Tent for Camping in the Rain',
     description: 'Hydrostatic head, fly coverage, and the picks that actually keep a family dry.',
     eyebrow: 'Gear guide',
-    relatedGuides: ['best-family-tent-for-beginners', 'rainy-camping-trips', 'camping-when-the-weather-turns'],
+    relatedGuides: ['best-family-tent-for-beginners', 'rainy-camping-trips', 'how-to-set-up-a-camping-tarp'],
   },
   {
     slug: 'best-tent-for-hot-weather',
@@ -1120,5 +1120,16 @@ export const GUIDES: Guide[] = [
     metaDescription:
       'Are sleeping bag liners worth it for family camping? How much warmth each type really adds, when a liner beats a new bag, and when it is a waste of money.',
     relatedGuides: ['sleeping-pad-r-value-explained', 'how-to-keep-kids-warm-camping', 'state-park-cabin-camping-with-kids'],
+  },
+  {
+    slug: 'how-to-set-up-a-camping-tarp',
+    category: 'basics',
+    title: 'How to Set Up a Camping Tarp',
+    description: 'A ridgeline, three knots, and a sloped pitch that keeps the picnic table dry in rain, wind, and snow.',
+    eyebrow: 'Rain',
+    metaTitle: 'How to Set Up a Camping Tarp for Rain',
+    metaDescription:
+      'How to set up a camping tarp over the picnic table or tent: the ridgeline, three knots, a pitch that sheds rain, and what to change for wind and snow.',
+    relatedGuides: ['rainy-camping-trips', 'camping-in-high-wind', 'best-tent-for-rainy-camping'],
   },
 ]

@@ -135,6 +135,10 @@ export default function Page() {
           <li>Use ridgeline cord taut across the middle to prevent sag and pooling.</li>
           <li>Pitch the picnic table directly under the slope, with the bench seats on the high side. The table is now your kitchen, dining room, and rainy-evening living room.</li>
         </ol>
+        <p>
+          For the knots, the ridgeline, and pitches for wind and snow, see our{' '}
+          <Link href="/guides/how-to-set-up-a-camping-tarp">how to set up a camping tarp</Link> guide.
+        </p>
 
         <h3>Rainfly pitch on the tent itself</h3>
         <ul>
