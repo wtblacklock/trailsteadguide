@@ -813,18 +813,18 @@ export const GUIDES: Guide[] = [
     metaTitle: 'Camping in 30 and 40 Degree Weather',
     metaDescription:
       'Camping in 40 degree weather or a night in the 30s: the sleeping bag and pad you need, what to wear to bed, and when a cold snap means it is time to leave.',
-    relatedGuides: ['how-to-keep-kids-warm-camping', 'sleeping-pad-r-value-explained', 'fall-camping-for-beginners'],
+    relatedGuides: ['how-to-keep-kids-warm-camping', 'sleeping-pad-r-value-explained', 'how-to-keep-batteries-warm-camping'],
   },
   {
     slug: 'gifts-for-campers',
     category: 'seasonal',
-    title: 'Gifts for Campers: A Family Gift Guide',
-    shortLabel: 'Holiday gifts',
-    description: 'Stocking stuffers, useful upgrades, bigger gifts, and picks for kids, for the camper who already owns a tent.',
+    title: 'Gifts for Campers Who Already Have the Gear',
+    shortLabel: 'Gifts for campers',
+    description: 'The upgrades experienced campers never buy themselves, small add-ons, bigger gifts, and a park pass.',
     eyebrow: 'Gift guide',
-    metaTitle: 'Gifts for Campers: 2026 Family Gift Guide',
+    metaTitle: 'Gifts for Campers Who Have Everything',
     metaDescription:
-      'Gifts for campers who already own a tent: stocking stuffers under $25, useful upgrades, big gifts, picks for kids, and a park pass good for a year.',
+      'Gifts for experienced campers who already own a tent: the upgrades they never buy themselves, small add-ons under $25, bigger gifts, and a park pass.',
     relatedGuides: ['best-camping-gifts-for-families', 'camping-stocking-stuffers', 'family-camping-gear-list'],
   },
   {
@@ -963,7 +963,7 @@ export const GUIDES: Guide[] = [
     metaTitle: 'Camping in High Wind With Kids',
     metaDescription:
       'Camping in high wind with kids: what the gust numbers mean, how to site and stake a family tent so it stays put, and the wind speed where you pack up.',
-    relatedGuides: ['camping-when-the-weather-turns', 'how-to-set-up-a-tent', 'fall-camping-for-beginners'],
+    relatedGuides: ['camping-when-the-weather-turns', 'how-to-set-up-a-tent', 'how-to-stake-a-tent-in-frozen-ground'],
   },
   {
     slug: 'tent-heater-safety',
@@ -1064,5 +1064,39 @@ export const GUIDES: Guide[] = [
     metaDescription:
       'Camping with another family: adjacent sites or a group site, splitting meals and costs, shared gear, kid rules, and quiet hours that keep everyone friends.',
     relatedGuides: ['how-to-plan-a-camping-trip', 'thanksgiving-camping-with-kids', 'camping-meal-plan-family'],
+  },
+  {
+    slug: 'how-to-stake-a-tent-in-frozen-ground',
+    category: 'basics',
+    title: 'How to Stake a Tent in Frozen Ground or Snow',
+    description: 'Steel stakes and pilot holes for frozen dirt, deadman anchors for snow, rocks and trees when nothing goes in, and freeing frozen stakes in the morning.',
+    eyebrow: 'How-to',
+    metaTitle: 'How to Stake a Tent in Frozen Ground',
+    metaDescription:
+      'How to stake a tent in frozen ground or snow: steel stakes and pilot holes, deadman anchors, rocks and trees, and getting stakes out the next morning.',
+    relatedGuides: ['camping-in-high-wind', 'winter-camping-for-beginners', 'how-to-set-up-a-tent'],
+  },
+  {
+    slug: 'how-to-keep-batteries-warm-camping',
+    category: 'seasonal',
+    title: 'How to Keep Phones and Batteries Warm While Camping',
+    shortLabel: 'Cold batteries',
+    description: 'Why cold drains phones, power banks, and headlamps, where to keep them overnight, when not to charge, and a battery plan for a winter weekend.',
+    eyebrow: 'Cold-weather how-to',
+    metaTitle: 'Keep Batteries Warm on Cold Camping Trips',
+    metaDescription:
+      'Why cold drains phones, power banks, and headlamps, how to keep them warm overnight, when not to charge, and the battery plan for a winter family trip.',
+    relatedGuides: ['winter-camping-for-beginners', 'camping-in-40-degree-weather', 'tent-camping-at-an-electric-site'],
+  },
+  {
+    slug: 'water-safety-at-camp-with-kids',
+    category: 'scenario',
+    title: 'Water Safety at Camp With Kids',
+    description: 'Why a campground lake or river is riskier than a pool, the water watcher habit, life jacket rules, and what to do if a child goes under.',
+    eyebrow: 'Water safety',
+    metaTitle: 'Water Safety at Camp With Kids',
+    metaDescription:
+      'Water safety at camp with kids: why open water is riskier than a pool, life jacket rules, the water watcher habit, and what to do in an emergency.',
+    relatedGuides: ['summer-camping-with-kids', 'camping-with-toddlers', 'fishing-with-kids-at-camp'],
   },
 ]
