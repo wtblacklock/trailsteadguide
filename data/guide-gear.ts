@@ -17,6 +17,13 @@ export type GuideGearEntry = {
 }
 
 export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
+  'are-sleeping-bag-liners-worth-it': [
+    { slot: 'SLEEP_BAG', productId: 'sea-to-summit-reactor-extreme-liner' },
+    { slot: 'SLEEP_BAG', productId: 'teton-trailhead-20' },
+    { slot: 'SLEEP_BAG', productId: 'coleman-brazos-bag' },
+    { slot: 'SLEEP_SURFACE', productId: 'therm-a-rest-z-lite-sol' },
+    { slot: 'WINTER_GEAR', productId: 'hothands-hand-warmers-bulk' },
+  ],
   'backyard-camping-with-kids': [
     { slot: 'TENT', productId: 'coleman-sundome-4p' },
     { slot: 'TENT', productId: 'core-6p-instant-cabin' },
