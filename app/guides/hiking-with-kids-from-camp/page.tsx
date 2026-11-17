@@ -212,6 +212,12 @@ export default function Page() {
           </li>
         </ol>
 
+        <h2>Hiking in winter</h2>
+        <p>
+          Cold changes the math on distance, layers, and daylight. For a short, guided way to try it,
+          see <Link href="/guides/first-day-hikes-with-kids">First Day Hikes with kids</Link>.
+        </p>
+
         <h2>Where this fits in the larger plan</h2>
         <p>
           A short day hike pairs naturally with a site chosen with trail access in mind - see{' '}

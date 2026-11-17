@@ -1,0 +1,26 @@
+{
+  "publishOn": "2026-11-03",
+  "guide": {
+    "slug": "sleeping-bag-temperature-ratings-explained",
+    "category": "basics",
+    "title": "Sleeping Bag Temperature Ratings Explained",
+    "description": "Comfort vs limit vs extreme, why a 20 degree bag is not comfortable at 20, why kids bags are not lab-rated, and how to pick a bag for a cold night.",
+    "eyebrow": "Gear guide",
+    "metaTitle": "Sleeping Bag Ratings: Comfort vs Limit",
+    "metaDescription": "Sleeping bag temperature ratings explained: comfort vs limit vs extreme, why a 20 degree bag is not comfortable at 20, and how to pick a bag for kids.",
+    "relatedGuides": ["sleeping-pad-r-value-explained", "best-camping-sleeping-bag-for-kids", "camping-in-40-degree-weather"]
+  },
+  "gear": [
+    { "slot": "SLEEP_BAG", "productId": "teton-trailhead-20" },
+    { "slot": "SLEEP_BAG", "productId": "coleman-brazos-bag" },
+    { "slot": "SLEEP_BAG", "productId": "teton-celsius-xxl-0" },
+    { "slot": "SLEEP_BAG", "productId": "teton-junior-20" },
+    { "slot": "SLEEP_BAG", "productId": "retrospec-dream-25" },
+    { "slot": "SLEEP_BAG", "productId": "sea-to-summit-reactor-extreme-liner" },
+    { "slot": "SLEEP_SURFACE", "productId": "redcamp-foam-sleeping-pad" }
+  ],
+  "reciprocal": [
+    { "slug": "sleeping-pad-r-value-explained", "replace": "fall-camping-for-beginners" },
+    { "slug": "camping-in-40-degree-weather", "replace": "fall-camping-for-beginners" }
+  ]
+}

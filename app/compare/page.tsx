@@ -102,6 +102,12 @@ const PRODUCT_COMPARES: CompareCard[] = [
     blurb: 'Snug and warm versus roomy and easy. Which shape fits your kids, and the temperature where the mummy starts to win.',
   },
   {
+    href: '/compare/cast-iron-skillet-vs-dutch-oven',
+    eyebrow: 'Gear',
+    title: 'Cast iron skillet vs Dutch oven',
+    blurb: 'A fast pan for the stove versus a slow oven that bakes under coals. Which one your family will use, and when to pack both.',
+  },
+  {
     href: '/compare/lantern-vs-headlamp-vs-flashlight',
     eyebrow: 'Gear',
     title: 'Lantern vs headlamp vs flashlight',
