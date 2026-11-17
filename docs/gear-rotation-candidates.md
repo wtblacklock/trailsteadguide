@@ -4,7 +4,7 @@ Products spotted during the weekly gear-rotation pass that look worth a slot but
 were not wired in yet. Each entry says what still needs to happen before it can
 ship. Trim this file as items are actioned or go stale.
 
-Last reviewed: 2026-11-09
+Last reviewed: 2026-11-16
 
 ## Needs a replacement (dead on main)
 
@@ -22,6 +22,11 @@ listing (Add to Cart plus a price) and update `lib/affiliate-products.ts`.
   `camping-stocking-stuffers` (inline link and shelf), `lib/activities/data.ts`, and
   `lib/skills/data.ts`. Any current Reynolds Wrap Heavy Duty listing works; keep it
   under the stocking-stuffer price band (~$12).
+
+Status 2026-11-16: the in-app browser is still blocked on amazon.com, and the
+validator now verifies only 16 of 142 products (126 robot-checked), so it cannot
+even re-confirm these two. Treat the whole catalog as unverified until someone can
+run `npm run affiliate:browser-audit` from a normal browser.
 
 ## Needs a human decision
 
@@ -45,6 +50,13 @@ so it is left as-is.
 - Reusable ice packs for `how-to-pack-a-cooler`. Its shelf is three coolers and
   nothing else, while the copy leans on block ice. A long-lasting, well-reviewed
   cooler ice pack set would round it out. Not sourced: Amazon blocked (see above).
+
+## Video candidates skipped
+
+`setup-order`, `constellations-by-season` and `using-red-light-at-camp` still have
+no video. The only credible hit this week was a Cerritos Library "Constellations"
+session with NASA's Universe of Learning (`lNY4QeYa4XE`, oEmbed valid), but it is
+a craft-focused library program, not a seasonal sky guide, so it was not wired in.
 
 ## Closed this week
 
