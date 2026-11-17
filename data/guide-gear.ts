@@ -17,6 +17,13 @@ export type GuideGearEntry = {
 }
 
 export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
+  'are-sleeping-bag-liners-worth-it': [
+    { slot: 'SLEEP_BAG', productId: 'sea-to-summit-reactor-extreme-liner' },
+    { slot: 'SLEEP_BAG', productId: 'teton-trailhead-20' },
+    { slot: 'SLEEP_BAG', productId: 'coleman-brazos-bag' },
+    { slot: 'SLEEP_SURFACE', productId: 'therm-a-rest-z-lite-sol' },
+    { slot: 'WINTER_GEAR', productId: 'hothands-hand-warmers-bulk' },
+  ],
   'backyard-camping-with-kids': [
     { slot: 'TENT', productId: 'coleman-sundome-4p' },
     { slot: 'TENT', productId: 'core-6p-instant-cabin' },
@@ -539,6 +546,7 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
   'camping-meal-plan-family': [
     { slot: 'STOVE', productId: 'coleman-triton-2-burner' },
     { slot: 'COOKWARE', productId: 'thtybros-cookware-mess-kit' },
+    { slot: 'COOKWARE', productId: 'lodge-cast-iron-skillet' },
     { slot: 'COOLER', productId: 'coleman-classic-rolling-cooler' },
   ],
   'camping-when-the-weather-turns': [
@@ -692,6 +700,17 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'SAFETY', productId: 'bearvault-food-canister' },
     { slot: 'SAFETY', productId: 'thriad-first-aid-430' },
     { slot: 'TRASH', productId: 'fwc-trash-can-wakeman' },
+  ],
+  'how-to-get-kids-to-sleep-camping': [
+    { slot: 'SLEEP_BAG', productId: 'teton-junior-20' },
+    { slot: 'SLEEP_BAG', productId: 'redcamp-kids-mummy' },
+    { slot: 'SLEEP_BAG', productId: 'coleman-kids-45' },
+    { slot: 'SLEEP_SURFACE', productId: 'big-agnes-divide' },
+    { slot: 'SLEEP_SURFACE', productId: 'mondoking-3d-pad' },
+    { slot: 'LIGHTING', productId: 'luminaid-packlite-max' },
+    { slot: 'LIGHTING', productId: 'everbrite-headlamp-5-pack' },
+    { slot: 'WINTER_GEAR', productId: 'vicherub-kids-thermal-set' },
+    { slot: 'WINTER_GEAR', productId: 'hothands-hand-warmers-bulk' },
   ],
   'camping-after-dark-with-kids': [
     { slot: 'LIGHTING', productId: 'everbrite-headlamp-5-pack' },
@@ -902,6 +921,7 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
   'easy-family-camping-meals': [
     { slot: 'STOVE', productId: 'coleman-triton-2-burner' },
     { slot: 'COOKWARE', productId: 'thtybros-cookware-mess-kit' },
+    { slot: 'COOKWARE', productId: 'lodge-cast-iron-skillet' },
     { slot: 'COOLER', productId: 'coleman-classic-rolling-cooler' },
   ],
   'fall-camping-for-beginners': [
@@ -1003,6 +1023,11 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'KID_GEAR', productId: 'vicherub-kids-thermal-set' },
     { slot: 'KID_GEAR', productId: 'wildbreakers-kids-mittens' },
     { slot: 'SAFETY', productId: 'primacare-mylar-emergency-blankets' },
+    { slot: 'SAFETY', productId: 'thriad-first-aid-430' },
+  ],
+  'ticks-and-lyme-disease-in-kids': [
+    { slot: 'SAFETY', productId: 'sawyer-permethrin-clothing-spray' },
+    { slot: 'SAFETY', productId: 'tick-twister-remover' },
     { slot: 'SAFETY', productId: 'thriad-first-aid-430' },
   ],
   'sleeping-pad-r-value-explained': [
@@ -1197,6 +1222,14 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'RAIN_GEAR', productId: 'geertop-17x10-tarp' },
     { slot: 'TENT', productId: 'kelty-wireless-6' },
   ],
+  'how-to-pitch-a-tent-on-uneven-ground': [
+    { slot: 'TENT', productId: 'coleman-sundome-4p' },
+    { slot: 'RAIN_GEAR', productId: 'geertop-17x10-tarp' },
+    { slot: 'RAIN_GEAR', productId: 'eurmax-galvanized-tent-stakes' },
+    { slot: 'SLEEP_SURFACE', productId: 'big-agnes-divide' },
+    { slot: 'SLEEP_SURFACE', productId: 'therm-a-rest-z-lite-sol' },
+    { slot: 'LIGHTING', productId: 'everbrite-headlamp-5-pack' },
+  ],
   'camping-during-a-burn-ban': [
     { slot: 'STOVE', productId: 'coleman-1-burner' },
     { slot: 'STOVE', productId: 'coleman-triton-2-burner' },
@@ -1211,6 +1244,13 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'SAFETY', productId: 'esbit-fire-cubes' },
     { slot: 'SAFETY', productId: 'eurow-collapsible-bucket-10l' },
     { slot: 'SAFETY', productId: 'first-alert-ez-fire-spray' },
+  ],
+  'how-to-keep-batteries-warm-camping': [
+    { slot: 'POWER', productId: 'anker-zolo-power-bank' },
+    { slot: 'HEADLAMP', productId: 'black-diamond-spot-400' },
+    { slot: 'HEADLAMP', productId: 'everbrite-headlamp-5-pack' },
+    { slot: 'LIGHTING', productId: 'luminaid-packlite-max' },
+    { slot: 'WINTER_GEAR', productId: 'hothands-hand-warmers-bulk' },
   ],
   'how-to-put-out-a-campfire': [
     { slot: 'SAFETY', productId: 'eurow-collapsible-bucket-10l' },
@@ -1402,10 +1442,26 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'SAFETY', productId: 'thriad-first-aid-430' },
     { slot: 'TRASH', productId: 'fwc-trash-can-wakeman' },
   ],
+  'how-to-stake-a-tent-in-frozen-ground': [
+    { slot: 'RAIN_GEAR', productId: 'eurmax-galvanized-tent-stakes' },
+    { slot: 'RAIN_GEAR', productId: 'tesorrio-sand-stakes-6pk' },
+    { slot: 'RAIN_GEAR', productId: 'reflective-guyline-50ft' },
+    { slot: 'RAIN_GEAR', productId: 'paracord-550-50ft' },
+    { slot: 'TENT', productId: 'geertop-4p-4-season' },
+    { slot: 'WINTER_GEAR', productId: 'hothands-hand-warmers-bulk' },
+    { slot: 'WINTER_GEAR', productId: 'thermos-stainless-king-40oz' },
+  ],
   'fishing-with-kids-at-camp': [
     { slot: 'KID_GEAR', productId: 'zebco-33-spincast-combo' },
     { slot: 'KID_GEAR', productId: 'tackle-box-lure-assortment' },
     { slot: 'SAFETY', productId: 'fishing-forceps-hemostat' },
+  ],
+  'first-day-hikes-with-kids': [
+    { slot: 'COOKWARE', productId: 'thermos-stainless-king-40oz' },
+    { slot: 'WINTER_GEAR', productId: 'hothands-hand-warmers-bulk' },
+    { slot: 'KID_GEAR', productId: 'wildbreakers-kids-mittens' },
+    { slot: 'HEADLAMP', productId: 'black-diamond-spot-400' },
+    { slot: 'SAFETY', productId: 'thriad-first-aid-430' },
   ],
   'hiking-with-kids-from-camp': [
     { slot: 'LIGHTING', productId: 'black-diamond-spot-400' },
@@ -1424,5 +1480,28 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'COOKWARE', productId: 'thermos-stainless-king-40oz' },
     { slot: 'HEADLAMP', productId: 'black-diamond-spot-400' },
     { slot: 'SAFETY', productId: 'thriad-first-aid-430' },
+  ],
+  'camping-with-another-family': [
+    { slot: 'CANOPY', productId: 'crown-shades-10x10-canopy' },
+    { slot: 'STOVE', productId: 'coleman-triton-2-burner' },
+    { slot: 'COOLER', productId: 'coleman-classic-rolling-cooler' },
+    { slot: 'LIGHTING', productId: 'luminaid-packlite-max' },
+    { slot: 'HEADLAMP', productId: 'everbrite-headlamp-5-pack' },
+    { slot: 'KID_GEAR', productId: 'glow-stick-necklaces-bulk' },
+    { slot: 'CHAIR', productId: 'coleman-portable-chair-cooler' },
+    { slot: 'TRASH', productId: 'fwc-trash-can-wakeman' },
+    { slot: 'SAFETY', productId: 'thriad-first-aid-430' },
+  ],
+  'water-safety-at-camp-with-kids': [
+    { slot: 'SAFETY', productId: 'thriad-first-aid-430' },
+    { slot: 'SAFETY', productId: 'aveeno-kids-sunscreen-lotion' },
+  ],
+  'how-to-set-up-a-camping-tarp': [
+    { slot: 'RAIN_GEAR', productId: 'geertop-17x10-tarp' },
+    { slot: 'RAIN_GEAR', productId: 'paracord-550-50ft' },
+    { slot: 'RAIN_GEAR', productId: 'reflective-guyline-50ft' },
+    { slot: 'RAIN_GEAR', productId: 'eurmax-galvanized-tent-stakes' },
+    { slot: 'CANOPY', productId: 'crown-shades-10x10-canopy' },
+    { slot: 'HEADLAMP', productId: 'black-diamond-spot-400' },
   ],
 }

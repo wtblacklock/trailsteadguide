@@ -1,0 +1,27 @@
+{
+  "publishOn": "2026-11-13",
+  "guide": {
+    "slug": "how-to-insulate-a-tent-for-winter",
+    "category": "seasonal",
+    "title": "How to Insulate a Tent for Winter",
+    "description": "Insulate from the ground up with a footprint, closed-cell foam, and stacked pads, block the wind, and keep condensation down without sealing the vents.",
+    "eyebrow": "Cold nights",
+    "shortLabel": "Winter tent",
+    "metaTitle": "How to Insulate a Tent for Winter",
+    "metaDescription": "How to insulate a tent for winter: start with the floor, add closed-cell foam and blankets, block the wind, and keep vents open so condensation stays low.",
+    "relatedGuides": ["sleeping-pad-r-value-explained", "how-to-prevent-tent-condensation", "tent-heater-safety"]
+  },
+  "gear": [
+    { "slot": "TENT", "productId": "geertop-4p-4-season" },
+    { "slot": "SLEEP_BAG", "productId": "teton-celsius-xxl-0" },
+    { "slot": "SLEEP_SURFACE", "productId": "redcamp-foam-sleeping-pad" },
+    { "slot": "SLEEP_SURFACE", "productId": "therm-a-rest-z-lite-sol" },
+    { "slot": "SLEEP_SURFACE", "productId": "rab-ionosphere-5-5" },
+    { "slot": "RAIN_GEAR", "productId": "geertop-17x10-tarp" },
+    { "slot": "WINTER_GEAR", "productId": "hothands-hand-warmers-bulk" }
+  ],
+  "reciprocal": [
+    { "slug": "how-to-prevent-tent-condensation", "replace": "fall-camping-for-beginners" },
+    { "slug": "tent-heater-safety", "replace": "winter-camping-for-beginners" }
+  ]
+}
