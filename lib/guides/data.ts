@@ -433,7 +433,18 @@ export const GUIDES: Guide[] = [
     title: 'How to Set Up a Family Tent',
     description: 'Site selection, staking, the rainfly, and the mistakes first-timers make.',
     eyebrow: 'How-to',
-    relatedGuides: ['setting-up-camp-in-the-dark', 'how-to-break-camp', 'best-family-tent-for-beginners'],
+    relatedGuides: ['setting-up-camp-in-the-dark', 'how-to-pitch-a-tent-on-uneven-ground', 'how-to-break-camp', 'best-family-tent-for-beginners'],
+  },
+  {
+    slug: 'how-to-pitch-a-tent-on-uneven-ground',
+    category: 'basics',
+    title: 'How to Pitch a Tent on Uneven Ground or a Slope',
+    description: 'Reading a sloped or lumpy site, which way heads should point, how to stop a pad sliding, and when to move instead of fixing it.',
+    eyebrow: 'How-to',
+    metaTitle: 'Pitch a Tent on Uneven Ground or a Slope',
+    metaDescription:
+      'How to pitch a tent on uneven ground or a slope: pick the flattest spot, point heads uphill, stop sliding, and avoid low spots that flood when it rains.',
+    relatedGuides: ['how-to-set-up-a-tent', 'how-to-choose-a-family-campsite', 'camping-in-high-wind'],
   },
   {
     slug: 'setting-up-camp-in-the-dark',

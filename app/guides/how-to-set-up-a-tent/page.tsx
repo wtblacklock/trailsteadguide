@@ -134,7 +134,12 @@ export default function Page() {
           Pitching the whole tent in the dark is its own skill, and it is the normal outcome of a
           Friday-after-work arrival once the fall sunset gets early. The arrival math and the setup
           order are in{' '}
-          <Link href="/guides/setting-up-camp-in-the-dark">setting up camp in the dark</Link>.
+          <Link href="/guides/setting-up-camp-in-the-dark">setting up camp in the dark</Link>. If
+          the only open spot is sloped or lumpy, see{' '}
+          <Link href="/guides/how-to-pitch-a-tent-on-uneven-ground">
+            how to pitch a tent on uneven ground
+          </Link>
+          .
         </p>
 
         <h2>Common first-timer mistakes</h2>
