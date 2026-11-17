@@ -1479,4 +1479,8 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'TRASH', productId: 'fwc-trash-can-wakeman' },
     { slot: 'SAFETY', productId: 'thriad-first-aid-430' },
   ],
+  'water-safety-at-camp-with-kids': [
+    { slot: 'SAFETY', productId: 'thriad-first-aid-430' },
+    { slot: 'SAFETY', productId: 'aveeno-kids-sunscreen-lotion' },
+  ],
 }
