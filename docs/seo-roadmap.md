@@ -137,7 +137,18 @@ constants
   and flag overflows; fix the worst offenders manually.
 - **Effort:** S
 - **Expected lift:** low (better SERP CTR on the truncated ones)
-- **Status:** queued
+- **Status:** shipped (2026-11-16). Audited every page's rendered title
+  (bare title + ` | Trailstead Guide` suffix) against the 60-char budget:
+  guides, compare pages, activities, skills, gear sets, hub pages, and
+  tools are all within budget (skills/printables use `titleWithQualifier()`,
+  which already enforces this dynamically). The only overflow found was in
+  `lib/activities/landing-pages.ts`, whose `title` field documents itself
+  as "Matches the page's META_TITLE" but had drifted from the real
+  `META_TITLE` in each of the 4 activity-landing `page.tsx` files (up to 76
+  chars rendered). Synced the 4 titles back to match their pages' actual
+  `META_TITLE` exactly, which also fixes what `app/llms.txt/route.ts` shows
+  AI crawlers for those pages (sitemap entries were unaffected, since
+  `app/sitemap.ts` doesn't read this field's title).
 
 ### B. Structured data
 
