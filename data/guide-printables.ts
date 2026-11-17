@@ -71,4 +71,7 @@ export const GUIDE_PRINTABLES: Record<string, string[]> = {
   'camping-with-dogs-first-time': ['camping-with-dogs-field-card'],
   'fishing-with-kids-at-camp': ['fishing-quick-reference-card'],
   'hiking-with-kids-from-camp': ['nature-scavenger-hunt-card', 'leave-no-trace-quick-reference'],
+  'winter-camping-with-dogs': ['camping-with-dogs-field-card'],
+  'how-to-put-out-a-campfire': ['fire-starting-checklist'],
+  'hypothermia-and-frostbite-in-kids': ['camp-first-aid-quick-reference'],
 }
