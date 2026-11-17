@@ -1472,6 +1472,10 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'TRASH', productId: 'fwc-trash-can-wakeman' },
     { slot: 'SAFETY', productId: 'thriad-first-aid-430' },
   ],
+  'water-safety-at-camp-with-kids': [
+    { slot: 'SAFETY', productId: 'thriad-first-aid-430' },
+    { slot: 'SAFETY', productId: 'aveeno-kids-sunscreen-lotion' },
+  ],
   'how-to-set-up-a-camping-tarp': [
     { slot: 'RAIN_GEAR', productId: 'geertop-17x10-tarp' },
     { slot: 'RAIN_GEAR', productId: 'paracord-550-50ft' },
