@@ -77,7 +77,6 @@ export default function Page() {
           src: HERO_IMAGE,
           alt: 'A small dome tent on a grassy ridge above a layer of low cloud at first light, with mountains behind',
         }}
-        dateModified="2026-10-06"
       >
         <QuickAnswer
           tldr="40 degrees is fine in a tent if you stay dry, sleep on a pad of R 4 or more, and use a bag rated 10 degrees below the low."

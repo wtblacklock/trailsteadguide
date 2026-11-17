@@ -76,7 +76,6 @@ export default function Page() {
           src: HERO_IMAGE,
           alt: 'A dome tent pitched on an exposed grassy site below a dark, wind-driven sky',
         }}
-        dateModified="2026-09-23"
       >
         <QuickAnswer
           tldr="Read the gust number, pitch the narrow end into the wind, stake and guy out everything, and leave at 30 mph sustained."
@@ -243,7 +242,12 @@ export default function Page() {
           </li>
           <li>
             <strong>Carry steel.</strong> Ten inch galvanized stakes hold in soil that spits out wire
-            pins, and they survive being hammered into hard ground with a rock or a mallet.
+            pins, and they survive being hammered into hard ground with a rock or a mallet. When a
+            cold front leaves the ground frozen or snowy, our{' '}
+            <Link href="/guides/how-to-stake-a-tent-in-frozen-ground">
+              how to stake a tent in frozen ground or snow
+            </Link>{' '}
+            guide covers pilot holes and deadman anchors.
           </li>
           <li>
             <strong>Soft ground needs more.</strong> In sand or loose duff, bury a stake horizontally
