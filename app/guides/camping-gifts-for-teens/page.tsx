@@ -77,7 +77,7 @@ export default function Page() {
           src: HERO_IMAGE,
           alt: 'Four small dome tents in a misty meadow at sunrise with smoke rising from a campfire between them',
         }}
-        dateModified="2026-11-01"
+        dateModified="2026-11-18"
       >
         <QuickAnswer
           tldr="Give a teen gear that is theirs alone: a hammock, a real headlamp, an adult-size bag, a power bank, or a tool that comes with a job at camp."

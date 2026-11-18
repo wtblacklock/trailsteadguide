@@ -1511,4 +1511,14 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'CANOPY', productId: 'crown-shades-10x10-canopy' },
     { slot: 'HEADLAMP', productId: 'black-diamond-spot-400' },
   ],
+  'camping-gifts-for-teens': [
+    { slot: 'CHAIR', productId: 'eno-doublenest-hammock' },
+    { slot: 'HEADLAMP', productId: 'black-diamond-spot-400' },
+    { slot: 'POWER', productId: 'anker-zolo-power-bank' },
+    { slot: 'SLEEP_BAG', productId: 'teton-trailhead-20' },
+    { slot: 'SLEEP_SURFACE', productId: 'therm-a-rest-z-lite-sol' },
+    { slot: 'COOKWARE', productId: 'lodge-cast-iron-skillet' },
+    { slot: 'SAFETY', productId: 'sawyer-squeeze-water-filter' },
+    { slot: 'KID_GEAR', productId: 'celestron-outland-binoculars' },
+  ],
 }
