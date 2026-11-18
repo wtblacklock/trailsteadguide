@@ -196,7 +196,7 @@ export default function Page() {
         <h3>Water and kitchen</h3>
         <ul>
           <li>
-            All your drinking, cooking, and washing water. Two 7-gallon jugs like the{' '}
+            All your drinking, cooking, and washing water. Two 5-gallon jugs like the{' '}
             <AmazonLink
               productId="reliance-aqua-tainer-7gal-2pack"
               pageSlug="state-park-cabin-camping-with-kids"
