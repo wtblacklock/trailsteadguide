@@ -201,8 +201,8 @@ export default function Page() {
         </p>
         <p>
           If the water is off, bring your own. Plan about a gallon per person per day for drinking
-          and cooking, plus 1 to 2 gallons per meal for dishes. A pair of rigid jugs like the{' '}
-          <AmazonLink productId="reliance-aqua-tainer-7gal-2pack" pageSlug="how-to-wash-dishes-camping" /> covers
+          and cooking, plus 1 to 2 gallons per meal for dishes. Two rigid jugs like the{' '}
+          <AmazonLink productId="reliance-aqua-tainer-7gal-2pack" pageSlug="how-to-wash-dishes-camping" /> cover
           a family weekend: one jug for drinking water, one for washing, so nobody fills a water
           bottle from the dish jug by mistake.
         </p>
