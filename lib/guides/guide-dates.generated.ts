@@ -84,6 +84,7 @@ export const GUIDE_DATES: Record<string, GuideDates> = {
   'how-to-wash-dishes-camping': { datePublished: '2026-10-26', dateModified: '2026-10-26' },
   'labor-day-weekend-camping': { datePublished: '2026-08-30', dateModified: '2026-10-05' },
   'no-cook-camping-meals-kids': { datePublished: '2026-05-04', dateModified: '2026-10-06' },
+  'poison-ivy-oak-and-sumac-in-kids': { datePublished: '2026-11-18', dateModified: '2026-11-18' },
   'rainy-camping-trips': { datePublished: '2026-04-26', dateModified: '2026-10-06' },
   'recreation-gov-reservation-strategy': { datePublished: '2026-05-05', dateModified: '2026-10-06' },
   'setting-up-camp-in-the-dark': { datePublished: '2026-10-05', dateModified: '2026-10-05' },

@@ -110,7 +110,7 @@ export default function Page() {
           </li>
           <li>
             <strong>Poison oak.</strong> Also three leaflets, usually more rounded and lobed, closer
-            to an oak leaf's shape, with a fuzzier texture. Grows mostly as a shrub, common on the
+            to an oak leaf&apos;s shape, with a fuzzier texture. Grows mostly as a shrub, common on the
             West Coast and in parts of the Southeast.
           </li>
           <li>
