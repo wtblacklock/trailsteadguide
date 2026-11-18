@@ -836,7 +836,7 @@ export const GUIDES: Guide[] = [
     metaTitle: 'Gifts for Campers Who Have Everything',
     metaDescription:
       'Gifts for experienced campers who already own a tent: the upgrades they never buy themselves, small add-ons under $25, bigger gifts, and a park pass.',
-    relatedGuides: ['best-camping-gifts-for-families', 'camping-stocking-stuffers', 'family-camping-gear-list'],
+    relatedGuides: ['best-camping-gifts-for-families', 'camping-stocking-stuffers', 'camping-gifts-for-teens'],
   },
   {
     slug: 'best-camping-gifts-for-families',
@@ -860,7 +860,7 @@ export const GUIDES: Guide[] = [
     metaTitle: 'Camping Gifts for Kids: 2026 Gift Guide',
     metaDescription:
       'Camping gifts for kids by age: their own headlamp, roasting sticks, nature guides, art kits, and a sleeping bag that fits. Gear they use every trip.',
-    relatedGuides: ['best-camping-gifts-for-families', 'camping-stocking-stuffers', 'best-camping-sleeping-bag-for-kids'],
+    relatedGuides: ['best-camping-gifts-for-families', 'camping-stocking-stuffers', 'camping-gifts-for-teens'],
   },
   {
     slug: 'camping-stocking-stuffers',
@@ -1142,5 +1142,17 @@ export const GUIDES: Guide[] = [
     metaDescription:
       'How to dry wet clothes, boots, sleeping bags, and a tent at camp in cold, damp weather, what never to do by the fire, and how many kid spares to pack.',
     relatedGuides: ['rainy-camping-trips', 'how-to-prevent-tent-condensation', 'hypothermia-and-frostbite-in-kids'],
+  },
+  {
+    slug: 'camping-gifts-for-teens',
+    category: 'seasonal',
+    title: 'Camping Gifts for Teens',
+    description: 'Gifts that give a teen their own space and a real job at camp: a hammock, a headlamp, an adult-size sleeping bag, a water filter, and a skillet.',
+    eyebrow: 'Gift guide',
+    shortLabel: 'Teen gifts',
+    metaTitle: 'Camping Gifts for Teens: 2026 Gift Guide',
+    metaDescription:
+      'Camping gifts for teens that give them their own space and their own job at camp: a hammock, a real headlamp, an adult-size bag, a water filter, and more.',
+    relatedGuides: ['camping-gifts-for-kids', 'gifts-for-campers', 'camping-gifts-under-50'],
   },
 ]
