@@ -425,7 +425,7 @@ export const GUIDES: Guide[] = [
     title: 'The Best Kids Sleeping Bags for Camping (2026)',
     description: 'Five kid-sized bags by age and season, plus the temperature rating your child actually needs.',
     eyebrow: 'Gear guide',
-    relatedGuides: ['how-to-keep-kids-warm-camping', 'family-camping-gear-list', 'best-family-tent-for-beginners'],
+    relatedGuides: ['how-to-keep-kids-warm-camping', 'family-camping-gear-list', 'sleeping-bag-temperature-ratings-explained'],
   },
   {
     slug: 'how-to-set-up-a-tent',
@@ -930,7 +930,18 @@ export const GUIDES: Guide[] = [
     metaTitle: 'Sleeping Pad R-Value Explained',
     metaDescription:
       'Sleeping pad R-value explained for family campers: what the number measures, what R-value you need by season, why pads stack, and the air mattress trap.',
-    relatedGuides: ['how-to-keep-kids-warm-camping', 'best-camping-sleeping-bag-for-kids', 'are-sleeping-bag-liners-worth-it'],
+    relatedGuides: ['how-to-keep-kids-warm-camping', 'best-camping-sleeping-bag-for-kids', 'sleeping-bag-temperature-ratings-explained'],
+  },
+  {
+    slug: 'sleeping-bag-temperature-ratings-explained',
+    category: 'basics',
+    title: 'Sleeping Bag Temperature Ratings Explained',
+    description: 'Comfort vs limit vs extreme, why a 20 degree bag is not a 20 degree night, and how to pick a bag for your family.',
+    eyebrow: 'Gear guide',
+    metaTitle: 'Sleeping Bag Ratings Explained',
+    metaDescription:
+      'Sleeping bag temperature ratings explained for family campers: comfort vs limit vs extreme, why a 20 degree bag is not a 20 degree night, and what to buy.',
+    relatedGuides: ['sleeping-pad-r-value-explained', 'best-camping-sleeping-bag-for-kids', 'are-sleeping-bag-liners-worth-it'],
   },
   {
     slug: 'camp-stove-fuel-in-cold-weather',

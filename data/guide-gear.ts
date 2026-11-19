@@ -1037,6 +1037,14 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'SLEEP_BAG', productId: 'sea-to-summit-reactor-extreme-liner' },
     { slot: 'WINTER_GEAR', productId: 'hothands-hand-warmers-bulk' },
   ],
+  'sleeping-bag-temperature-ratings-explained': [
+    { slot: 'SLEEP_BAG', productId: 'teton-celsius-xxl-0' },
+    { slot: 'SLEEP_BAG', productId: 'coleman-brazos-bag' },
+    { slot: 'SLEEP_BAG', productId: 'sea-to-summit-reactor-extreme-liner' },
+    { slot: 'SLEEP_SURFACE', productId: 'therm-a-rest-z-lite-sol' },
+    { slot: 'SLEEP_SURFACE', productId: 'rab-ionosphere-5-5' },
+    { slot: 'WINTER_GEAR', productId: 'hothands-hand-warmers-bulk' },
+  ],
   'fall-foliage-camping-with-kids': [
     { slot: 'TENT', productId: 'coleman-sundome-4p' },
     { slot: 'TENT', productId: 'core-6p-instant-cabin' },
