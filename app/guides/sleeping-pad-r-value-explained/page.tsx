@@ -242,6 +242,10 @@ export default function Page() {
           <Link href="/guides/best-camping-sleeping-bag-for-kids">
             best camping sleeping bag for kids
           </Link>
+          , and the explainer on{' '}
+          <Link href="/guides/sleeping-bag-temperature-ratings-explained">
+            sleeping bag temperature ratings explained
+          </Link>
           .
         </p>
 
