@@ -197,6 +197,11 @@ export default function Page() {
           <li>Pick one phone in the family to keep as the reserve, fully charged and turned off, in case you need to call for help.</li>
         </ul>
 
+        <p>
+          Water has the same problem, and the fix is similar. See{' '}
+          <Link href="/guides/how-to-keep-water-from-freezing-camping">how to keep water from freezing while camping</Link>.
+        </p>
+
         <h2>Watch out for condensation</h2>
         <p>
           A very cold phone brought straight into a warm, humid car or cabin can collect moisture,
