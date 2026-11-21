@@ -1260,6 +1260,12 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'LIGHTING', productId: 'luminaid-packlite-max' },
     { slot: 'WINTER_GEAR', productId: 'hothands-hand-warmers-bulk' },
   ],
+  'how-to-keep-water-from-freezing-camping': [
+    { slot: 'COOKWARE', productId: 'reliance-aqua-tainer-7gal-2pack' },
+    { slot: 'COOKWARE', productId: 'thermos-stainless-king-40oz' },
+    { slot: 'SAFETY', productId: 'sawyer-squeeze-water-filter' },
+    { slot: 'WINTER_GEAR', productId: 'hothands-hand-warmers-bulk' },
+  ],
   'how-to-dry-wet-gear-camping': [
     { slot: 'RAIN_GEAR', productId: 'geertop-17x10-tarp' },
     { slot: 'RAIN_GEAR', productId: 'rainleaf-microfiber-towel' },

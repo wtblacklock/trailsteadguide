@@ -952,7 +952,7 @@ export const GUIDES: Guide[] = [
     metaTitle: 'Camp Stove Fuel in Cold Weather',
     metaDescription:
       'Why butane stoves sputter near freezing, how cold propane still works, and the tricks that keep a family camp stove running on a frosty fall morning.',
-    relatedGuides: ['fall-camping-for-beginners', 'how-to-keep-kids-warm-camping', 'winter-camping-for-beginners'],
+    relatedGuides: ['fall-camping-for-beginners', 'how-to-keep-kids-warm-camping', 'winter-camping-for-beginners', 'how-to-keep-water-from-freezing-camping'],
   },
   {
     slug: 'camping-with-a-baby',
@@ -1108,7 +1108,19 @@ export const GUIDES: Guide[] = [
     metaTitle: 'Keep Batteries Warm on Cold Camping Trips',
     metaDescription:
       'Why cold drains phones, power banks, and headlamps, how to keep them warm overnight, when not to charge, and the battery plan for a winter family trip.',
-    relatedGuides: ['winter-camping-for-beginners', 'camping-in-40-degree-weather', 'tent-camping-at-an-electric-site'],
+    relatedGuides: ['winter-camping-for-beginners', 'camping-in-40-degree-weather', 'tent-camping-at-an-electric-site', 'how-to-keep-water-from-freezing-camping'],
+  },
+  {
+    slug: 'how-to-keep-water-from-freezing-camping',
+    category: 'seasonal',
+    title: 'How to Keep Water From Freezing While Camping',
+    shortLabel: 'Frozen water',
+    description: 'Where to store bottles, the jug, and the filter overnight, why upside down works, and how to thaw a frozen jug without cracking it.',
+    eyebrow: 'Cold-weather how-to',
+    metaTitle: 'Keep Water From Freezing While Camping',
+    metaDescription:
+      'How to keep bottles, jugs, and filters from freezing on a cold camping trip: where to store water overnight, why upside down works, and how to thaw a jug.',
+    relatedGuides: ['winter-camping-for-beginners', 'camp-stove-fuel-in-cold-weather', 'how-to-keep-batteries-warm-camping'],
   },
   {
     slug: 'water-safety-at-camp-with-kids',
