@@ -67,7 +67,7 @@ export default function Page() {
           },
           {
             q: 'Do Wyoming state parks require reservations?',
-            a: 'Yes. Wyoming State Parks moved to a reservation requirement for camping, so the old plan of driving up and finding a first-come site at a state park no longer works. Reservations are made through the state system at reserve.wyoming.gov, and a park pass is required in addition to the campsite. Release times and rules have changed in recent seasons, so check the current details on the reservation site before you plan around a specific booking morning.',
+            a: 'In the summer season, yes. Wyoming State Parks requires camping reservations during its reservation season, so the old plan of driving up and finding a first-come site no longer works for a July or August trip. Exact dates vary by park, but the season runs roughly May 1 through September 30. Outside it, from about October 1 through the end of April, most year-round campgrounds revert to first-come, first-served and take no reservations at all. Reservations are made through the state system at reserve.wyoming.gov, and a park pass is required in addition to the campsite. Cabins and yurts are the common exception and often stay reservable year-round. Dates, release times and rules have changed in recent seasons, so check the current details for your specific park before you plan around a booking morning.',
           },
         ])}
       />
@@ -172,7 +172,7 @@ export default function Page() {
       <h2>Where beginners should look</h2>
       <h3>Wyoming state parks</h3>
       <p>
-        The honest first-trip answer. <strong>Curt Gowdy</strong> between Cheyenne and Laramie has reservoirs and good trails. <strong>Glendo</strong> and <strong>Guernsey</strong> sit on reservoirs with beaches and warm water. <strong>Keyhole</strong> is close to Devils Tower. <strong>Sinks Canyon</strong> outside Lander is a beautiful canyon at moderate elevation. All of them are lower, warmer, cheaper, and dramatically easier to book than the national parks. Park information is at <a href="https://wyoparks.wyo.gov/" rel="noopener" target="_blank">wyoparks.wyo.gov</a>, and camping is reserved through <a href="https://reserve.wyoming.gov/" rel="noopener" target="_blank">reserve.wyoming.gov</a>. Note that camping at Wyoming state parks now requires a reservation, so the drive-up-and-hope approach no longer applies.
+        The honest first-trip answer. <strong>Curt Gowdy</strong> between Cheyenne and Laramie has reservoirs and good trails. <strong>Glendo</strong> and <strong>Guernsey</strong> sit on reservoirs with beaches and warm water. <strong>Keyhole</strong> is close to Devils Tower. <strong>Sinks Canyon</strong> outside Lander is a beautiful canyon at moderate elevation. All of them are lower, warmer, cheaper, and dramatically easier to book than the national parks. Park information is at <a href="https://wyoparks.wyo.gov/" rel="noopener" target="_blank">wyoparks.wyo.gov</a>, and camping is reserved through <a href="https://reserve.wyoming.gov/" rel="noopener" target="_blank">reserve.wyoming.gov</a>. Note that camping at Wyoming state parks requires a reservation during the summer reservation season, so the drive-up-and-hope approach no longer applies to a July or August trip. The season runs roughly May 1 through September 30, though the exact dates vary by park. Outside it, from about October 1 through the end of April, most year-round campgrounds go back to first-come, first-served and take no reservations at all, while cabins and yurts often stay reservable year-round. Check your park&apos;s own page for its dates.
       </p>
 
       <h3>Yellowstone and Grand Teton</h3>
@@ -235,7 +235,7 @@ export default function Page() {
           <strong>Using the stakes that came with the tent.</strong> Wyoming wind will flatten or launch an under-staked tent. Long steel stakes, every guyline out.
         </li>
         <li>
-          <strong>Assuming you can grab a first-come state park site.</strong> Wyoming state parks now require camping reservations through reserve.wyoming.gov. Book before you drive.
+          <strong>Assuming you can grab a first-come state park site in summer.</strong> From roughly May through September, Wyoming state parks require camping reservations through reserve.wyoming.gov. Book before you drive. Most campgrounds do revert to first-come in the off-season, but that is the half of the year when Wyoming weather is hardest on a first trip.
         </li>
       </ol>
 
@@ -310,7 +310,7 @@ export default function Page() {
       </p>
       <h3>Do Wyoming state parks require reservations?</h3>
       <p>
-        Yes. Camping now requires a reservation through reserve.wyoming.gov, plus a park pass. Check the site for current release times before planning around a booking morning.
+        In the summer season, yes. Camping requires a reservation through reserve.wyoming.gov, plus a park pass, during a reservation season that runs roughly May 1 through September 30 and varies by park. From about October 1 through the end of April, most year-round campgrounds revert to first-come, first-served, while cabins and yurts often stay reservable year-round. Check your park&apos;s page for its dates and current release times before planning around a booking morning.
       </p>
     </GuidePage>
     <GuideGearShelf guideSlug="camping-in-wyoming-for-beginners" />
