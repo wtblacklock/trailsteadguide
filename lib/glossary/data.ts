@@ -425,6 +425,15 @@ export const TERMS: Term[] = [
     linkText: 'Two-burner stove basics',
   },
 
+  // U
+  {
+    term: 'Urushiol',
+    definition:
+      'The oil in poison ivy, poison oak, and poison sumac that causes the itchy rash. It is not contagious between people, but it stays active on unwashed clothes, boots, tools, and pet fur long after contact.',
+    href: '/guides/poison-ivy-oak-and-sumac-in-kids',
+    linkText: 'Poison ivy guide',
+  },
+
   // V
   {
     term: 'Vault toilet',
