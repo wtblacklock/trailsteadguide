@@ -1,6 +1,6 @@
 # Content Gap Analysis — Trailstead Guide
 
-A backlog-shaped audit of the current content surface, what's missing, and what's worth shipping next. Snapshot re-baselined 2026-10-12 against `main` at `13458a0` (previous baseline: 2026-10-05).
+A backlog-shaped audit of the current content surface, what's missing, and what's worth shipping next. Snapshot re-baselined 2026-11-16 against `main` at `345ecff` (previous baseline: 2026-10-12).
 
 ---
 
@@ -9,20 +9,20 @@ A backlog-shaped audit of the current content surface, what's missing, and what'
 | Area | Count | Status |
 |---|---|---|
 | Plans | 4 | Foundation set — all introductory (backyard / first night / first weekend / family basecamp). No intermediate or activity-specific. Unchanged since the last baseline. |
-| Guides — total | 82 | Up from 66 on 2026-10-05. Sixteen guides landed in 26 commits, the largest single cycle on record: two state guides (NC, Ozarks), a fall/holiday set (fall foliage, Thanksgiving, stargazing, gifts), a cold-and-weather set (stove fuel in cold, R-value, 40-degree, high wind, burn ban, hunting season), and four basics (first aid kit, what not to bring, when campgrounds close, camping with a baby). |
-| Guides — Basics | 29 | Up from 23. `what-not-to-bring-camping`, `when-do-campgrounds-close`, `camping-first-aid-kit-for-families`, `sleeping-pad-r-value-explained`, `camp-stove-fuel-in-cold-weather` and `camping-during-a-burn-ban` added. Still the densest category. |
-| Guides — Scenario | 26 | Up from 21. `camping-with-a-baby`, `camping-in-high-wind`, `stargazing-camping-with-kids`, `fall-foliage-camping-with-kids` and `thanksgiving-camping-with-kids` added. Broader life-situation scenarios (group, mobility, allergy, pregnancy) still absent, and the last two are holiday or season topics that belong in seasonal. |
-| Guides — Seasonal | 7 | **First movement in four baselines**, up from 4. `camping-during-hunting-season`, `camping-in-40-degree-weather` and `gifts-for-campers` were filed here deliberately in response to the 2026-10-05 finding. Still only 8.5% of the guide surface, and the routing is not yet consistent: `fall-foliage-camping-with-kids` and `thanksgiving-camping-with-kids` shipped as scenario in the same cycle. |
-| Guides — Location | 20 | Up from 18. 8 US regions + best-state-parks roundup + 11 single-state guides (NY, MI, PA, GA, WI, WY, MT, UT, AZ, NC, plus the Ozarks as a cross-state region). |
-| Skills | 68 / 12 categories | Unchanged. Foundational + intermediate layer solid; several adjacent categories still absent. |
-| Activities | 37 / 8 categories | Activity content unchanged, but 4 age/weather landing pages (kids, teenagers, toddlers, rainy-day) now ship as browse surfaces. Water-based category still missing. |
-| Comparison pages | 17 | Up from 16. `mummy-vs-rectangular-sleeping-bag` added. Tent / cooler / stove / sleeping-system type compares all shipped. |
+| Guides - total | 104 | Up from 82 on 2026-10-12, in 39 merged commits. Twenty-two guides landed across three cycles after a five-week period in which nothing merged at all: a six-guide **gift and Black Friday cluster**, a five-guide **winter and cold cluster** (warm-winter destinations, winter break, dressing kids for cold, hypothermia and frostbite, winter camping with dogs), four **camp-skill basics** (put out a campfire, wash dishes, whittling, plus fishing and hiking with kids from camp), and a scatter of scenarios (another family, cabin camping, electric site, sleeping in your car, getting kids to sleep). |
+| Guides - Basics | 34 | Up from 29. `how-to-put-out-a-campfire`, `how-to-wash-dishes-camping`, `teaching-kids-to-whittle`, `fishing-with-kids-at-camp` and `hiking-with-kids-from-camp` added. No longer the densest category: scenario has overtaken it. |
+| Guides - Scenario | 35 | Up from 26, and now the largest category. Nine added, seven of them cold-weather or shelter-shaped: `how-to-dress-kids-for-cold-weather-camping`, `hypothermia-and-frostbite-in-kids`, `winter-camping-with-dogs`, `winter-break-camping-with-kids`, `state-park-cabin-camping-with-kids`, `tent-camping-at-an-electric-site`, `how-to-sleep-in-your-car-camping`, plus `camping-with-another-family` and `how-to-get-kids-to-sleep-camping`. Broader life-situation scenarios (mobility, allergy, pregnancy) still absent; `camping-with-another-family` is the closest thing yet to the open group-camping gap but stops at two families. |
+| Guides - Seasonal | 15 | **The routing question is settled.** Up from 7, more than doubling, and now 14.4% of the guide surface against 6.1% two baselines ago. All eight additions were filed here on purpose: the six gift guides (`best-camping-gifts-for-families`, `camping-gifts-for-kids`, `camping-gifts-under-50`, `camping-stocking-stuffers`, `gifts-for-new-campers`, `black-friday-camping-gear`), plus `first-day-hikes-with-kids` and `warm-winter-camping-destinations`. Seasonal is no longer a dead category being routed around. The historical inconsistency remains unfixed, though: the six holiday and season guides filed under scenario or basics before this cycle have not been recategorised. |
+| Guides - Location | 20 | Unchanged, and the only category that did not move. 8 US regions + best-state-parks roundup + 11 single-state guides (NY, MI, PA, GA, WI, WY, MT, UT, AZ, NC, plus the Ozarks as a cross-state region). WA, OR and TN remain the open second wave. |
+| Skills | 68 / 12 categories | Unchanged for a third baseline. Foundational + intermediate layer solid; several adjacent categories still absent. Note that `teaching-kids-to-whittle` and `how-to-wash-dishes-camping` shipped as *guides*, covering ground the open knife-skills and camp-hygiene skill gaps describe. |
+| Activities | 37 / 8 categories | Activity content unchanged for a third baseline. 4 age/weather landing pages (kids, teenagers, toddlers, rainy-day) ship as browse surfaces. Water-based category still missing, though `fishing-with-kids-at-camp` and `hiking-with-kids-from-camp` now cover that intent as guides. |
+| Comparison pages | 18 | Up from 17. `3-season-vs-4-season-tent` added, which is also the first seasonal-axis compare. Tent / cooler / stove / sleeping-system type compares all shipped. |
 | Research | 2 | Up from 1, plus a `/research` index. Regrets + pack-analysis pieces live. |
 | Gear bundles | 4 | Unchanged. One per plan. No budget-tier, kid-only, or season-specific bundles. |
-| Affiliate catalog | 133 products | Up from 115. Breadth is emphatically no longer the constraint; the bundle surface is. 133 products against 4 bundles. |
+| Affiliate catalog | 147 products (127 active) | Up from 133. Breadth is emphatically no longer the constraint; the bundle surface is. **147 products against 4 bundles**, a ratio that has worsened at every baseline for five months. |
 | Trip Packs (paid) | 4 | One per plan — unchanged. |
-| Printables (free, email-gated) | 17 | Up from 15. Junior Ranger Activity Sheet and Campsite Setup Diagram added. Strong analog asset library. |
-| Glossary | 61 terms | Unchanged. Shipped at `/glossary`. |
+| Printables (free, email-gated) | 19 | Up from 17. Fishing quick reference and the Camping With Dogs Field Card added. Strong analog asset library. |
+| Glossary | 67 terms | Up from 61. Potable/giardia and the Totin' Chip terms among the additions. Shipped at `/glossary`. |
 | About / trust | 1 bio | Founder story, FAQ. No testimonials wall, press, or logo strip. |
 | Quiz | 6 questions | Question coverage is sufficient for current personalization output. |
 | Tools | 2 | trip-planner + checklist-generator. `/research`, `/compare` and `/glossary` have shipped; a human-readable HTML sitemap is still missing. |
@@ -220,12 +220,12 @@ Sized as **S** (≤ a day), **M** (2–4 days), **L** (a week+). Lift = expected
 12. **Gear: Under-$200 budget bundle + Under-$500 mid bundle** — S each / medium-high lift. Captures "cheap camping gear" intent and gives quiz comfort-tier outputs distinct destinations.
 13. **Guide: "Camping etiquette" + "How to read a campsite map"** — S each / medium lift. Tactical micro-guides; both are easy AI-citation passages.
 14. **Research piece #3: "Campsite booking timing (Recreation.gov data)"** — M / high lift. Citable stats; supports the new reservation-strategy guide.
-15. **Activities: water-games category (5 activities)** — S–M / medium lift. The age-bucketed browse half of this item **SHIPPED** (kids / teenagers / toddlers / rainy-day landing pages); the water-games content did not. Activity count is still 37 across 8 categories.
+15. **Activities: water-games category (5 activities)** - S-M / medium lift. The age-bucketed browse half of this item **SHIPPED** (kids / teenagers / toddlers / rainy-day landing pages); the water-games content did not. Activity count is still 37 across 8 categories for a third baseline. `fishing-with-kids-at-camp` now serves the water intent as a guide, which weakens the traffic case for the activity category without closing it.
 16. **Plan: 4-night intermediate state-park stay** — L / medium lift. Repeat-customer destination; later in the funnel than the existing four.
 
 ### Tier 3 — nice to have, later or never
 
-- New seasonal sub-guides (holiday weekends, shoulder season). Labor Day **SHIPPED** as `labor-day-weekend-camping`, Halloween as `halloween-camping-with-kids`, Columbus Day as `columbus-day-weekend-camping` and Thanksgiving as `thanksgiving-camping-with-kids` (all four filed under scenario); Memorial Day, July 4 and a shoulder-season entry remain.
+- New seasonal sub-guides (holiday weekends, shoulder season). Labor Day **SHIPPED** as `labor-day-weekend-camping`, Halloween as `halloween-camping-with-kids`, Columbus Day as `columbus-day-weekend-camping` and Thanksgiving as `thanksgiving-camping-with-kids` (all four filed under scenario); winter break **SHIPPED** as `winter-break-camping-with-kids` and New Year's Day **SHIPPED** as `first-day-hikes-with-kids` (both correctly filed under seasonal). Memorial Day, July 4 and a shoulder-season entry remain.
 - Cold-weather plan (only after `winter-camping-for-beginners` traffic justifies it).
 - Email drip sequence (defer until traffic data justifies — user flagged as far-out).
 - Quiz dark-comfort question (only if a corresponding plan-output change ships).
@@ -239,10 +239,10 @@ Sized as **S** (≤ a day), **M** (2–4 days), **L** (a week+). Lift = expected
 These come from the current catalogue rather than the original May snapshot.
 
 - **Canonical reservation-systems reference (one table, one source of truth)** — **S effort, high lift.** The 18 location guides plus `recreation-gov-reservation-strategy` now each assert their own booking window, release time, and reservation URL independently. The 2026-09-03 audit found three mutually inconsistent statements of the *same* Recreation.gov release time across three guides. A single sourced table (state, system, URL, window, release time) is both a citable asset and the structural fix that stops the drift. Everything else on this list is optional; this one is maintenance debt that compounds every time a state guide ships.
-- **Seasonal is recovering, but the routing rule is still arbitrary** — **S effort, editorial.** Seasonal sat at 4 guides from May through three baselines and is now **7**, the first movement in four baselines, because `camping-during-hunting-season`, `camping-in-40-degree-weather` and `gifts-for-campers` were filed there on purpose. That resolves the "revive or retire" question in favour of revive. What is left is consistency: in the *same* cycle, `fall-foliage-camping-with-kids` and `thanksgiving-camping-with-kids` shipped as `scenario`, so a gift guide now sits in seasonal while a holiday-weekend guide does not. The remaining work is a one-line written rule for what belongs in seasonal, plus a recategorisation pass over the six holiday and season guides still filed elsewhere (Halloween, Labor Day, Columbus Day, Thanksgiving, fall foliage, off-season gear storage), which would take the category from 7 to 13 with no new writing.
+- **Seasonal routing: RESOLVED as of the 2026-11-16 baseline, with one cleanup left** - **S effort, editorial.** Seasonal more than doubled from 7 to 15 and all eight additions were filed there deliberately, so the "revive or retire" question is answered and new content is routing correctly. What remains is purely retrospective: the six pre-existing holiday and season guides listed below are still filed under scenario or basics. Recategorising them would take seasonal from 15 to 21 with no new writing. Original note follows. **S effort, editorial.** Seasonal sat at 4 guides from May through three baselines and is now **7**, the first movement in four baselines, because `camping-during-hunting-season`, `camping-in-40-degree-weather` and `gifts-for-campers` were filed there on purpose. That resolves the "revive or retire" question in favour of revive. What is left is consistency: in the *same* cycle, `fall-foliage-camping-with-kids` and `thanksgiving-camping-with-kids` shipped as `scenario`, so a gift guide now sits in seasonal while a holiday-weekend guide does not. The remaining work is a one-line written rule for what belongs in seasonal, plus a recategorisation pass over the six holiday and season guides still filed elsewhere (Halloween, Labor Day, Columbus Day, Thanksgiving, fall foliage, off-season gear storage), which would take the category from 7 to 13 with no new writing.
 - **Second wave of state guides: WA, OR, TN** — **M effort each, high lift.** North Carolina **SHIPPED** in the 2026-10-12 cycle as `camping-in-north-carolina-for-beginners`. The region guides still link `parks.wa.gov`, `stateparks.oregon.gov` and `tnstateparks.com` without a dedicated destination. These are the highest-volume states left after the eleven that shipped, and the guide template is well established. Ship them *after* the canonical reservation table, so they consume it rather than adding three more copies of the same facts.
 - **Location index / state picker** — **S effort, medium lift.** 20 location guides have no browse surface between the guides hub and the individual article. A simple state-and-region picker would convert the cluster's internal-link value.
-- **Gear bundles have not kept pace with the catalogue** — **S–M effort, medium-high lift.** The affiliate catalogue has tripled (44 to 133 products) while bundles stayed at 4, so most of the catalogue has no bundle surface. The gap has widened at every one of the last four baselines. This strengthens the existing budget-tier bundle items (#12) rather than replacing them.
+- **Gear bundles have not kept pace with the catalogue** - **S-M effort, medium-high lift.** The affiliate catalogue has more than tripled (44 to 147 products) while bundles stayed at 4, so most of the catalogue has no bundle surface. The gap has widened at every one of the last five baselines. This strengthens the existing budget-tier bundle items (#12) rather than replacing them, and the six new gift guides make it worse: they are product-recommendation pages with no bundle to convert into.
 
 ### Movement in the 2026-09-07 re-baseline
 
@@ -370,6 +370,72 @@ A related process note: the reservation facts this site asserts are now spread a
 location guides, `recreation-gov-reservation-strategy`, `best-state-parks-for-families` and
 `lib/plan-templates.ts`. The weekly audit verified 14 distinct systems this cycle by web search
 and found one stale. That hit rate is sustainable; the surface area is what is growing.
+
+### Movement in the 2026-11-16 re-baseline
+
+**The queue unblocked.** The previous three baselines were written against a frozen `main`: the
+2026-10-26 audit recorded zero commits merged in seven days and 18 open pull requests, four of
+them audit output. Since then **39 commits have merged**, including the metadata-limits guard
+(#131) that had been open 20 days. Twenty-two guides landed, taking the catalogue from 82 to
+**104**. Every mechanical check in the weekly audit has a real surface to read again, and the
+2026-11-16 audit found zero defects in metadata, dashes and internal links across that growth,
+which is the guard working rather than the check being skipped.
+
+Three structural shifts worth recording:
+
+1. **Seasonal is fixed.** The category sat at 4 guides from May through three baselines while
+   season-shaped content was filed around it, and this document called it "in practice a dead
+   category". It is now **15**, having more than doubled in one cycle, with all eight additions
+   filed there on purpose. The standing "revive or retire" decision is closed in favour of
+   revive. Only the retrospective recategorisation of six older guides is left.
+2. **A gift cluster shipped with no browse surface.** Six guides
+   (`best-camping-gifts-for-families`, `camping-gifts-for-kids`, `camping-gifts-under-50`,
+   `camping-stocking-stuffers`, `gifts-for-new-campers`, `black-friday-camping-gear`) plus the
+   pre-existing `gifts-for-campers` make **seven** gift and deal guides, all seasonal, all
+   shipped inside about five weeks. There is no gift hub, no `/gifts` index, and no gear bundle
+   behind any of them. This is the single most time-boxed gap in the document: the traffic for
+   these pages arrives in November and December and does not come back until next year. See the
+   new gap below.
+3. **The cold-and-dark cluster is now the largest unhubbed cluster on the site.** Five more
+   winter guides landed (`warm-winter-camping-destinations`, `winter-break-camping-with-kids`,
+   `how-to-dress-kids-for-cold-weather-camping`, `hypothermia-and-frostbite-in-kids`,
+   `winter-camping-with-dogs`), on top of the ten-guide adverse-conditions set the 2026-10-26
+   audit named. That is roughly **15 guides** doing browse work through `relatedGuides` by hand.
+   The hub recommendation has outranked new content for three audits and is now larger than
+   some whole categories.
+
+**Location is the only category that did not move**, which sharpens the second-wave item: WA, OR
+and TN are still linked by the region guides without a destination, and the canonical
+reservation-systems table they should consume is still unbuilt. That table remains the oldest
+open structural item in this document, now backed by a sixth consecutive audit: the 2026-11-16
+run corrected `camping-in-wyoming-for-beginners` in **four places in one file** for a single
+fact about Wyoming state park walk-in sites, exactly the cost the table exists to remove.
+
+### New gaps identified in the 2026-11-16 re-baseline
+
+- **Gift hub / `/gifts` index** - **S effort, high lift, and time-boxed to the next few weeks.**
+  Seven gift and deal guides now exist with no index between the guides hub and the individual
+  article, no cross-linking surface, and no bundle. Gift intent is the highest-commercial-intent
+  traffic the site gets and it is seasonal, so a hub built in January is worth a fraction of one
+  built now. Pairs naturally with the long-open budget-tier bundles (#12), since a gift hub with
+  no bundle to convert into is leaving the money on the table twice.
+- **Guides are outgrowing the skills and activities surfaces.** Skills (68) and activities (37)
+  have not moved for three baselines while guides went 66 to 104. Four of this cycle's guides
+  (`teaching-kids-to-whittle`, `how-to-wash-dishes-camping`, `fishing-with-kids-at-camp`,
+  `hiking-with-kids-from-camp`) cover ground that open *skill* and *activity* gaps in this
+  document describe, shipped as long-form guides instead. That is not wrong, but it means the
+  skill and activity gap lists are drifting out of date rather than being worked, and content
+  that would be a 400-word skill is being written as a 2,000-word guide. Worth an explicit
+  decision: either retire the overlapping skill/activity items, or route this content there.
+- **Year-scoped park facts need a review hook.** `camping-in-montana-for-beginners` and
+  `camping-in-utah-for-beginners` both assert correctly sourced facts explicitly scoped to
+  **2026** (Glacier suspending vehicle reservations, Arches ending timed entry). Both are
+  accurate today and were re-verified on 2026-11-16, with no 2027 announcement published for
+  either park. But they will silently become stale the moment those announcements land, and the
+  site has no mechanism that surfaces "this sentence names a year that is about to end." A
+  lightweight convention, such as a `dateSensitive` note in `GUIDES` listing the facts to
+  re-check each November, would make the weekly audit cheaper and less dependent on remembering
+  which guides hardcode a season.
 
 ---
 
