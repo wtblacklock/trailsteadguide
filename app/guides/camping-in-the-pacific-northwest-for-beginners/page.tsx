@@ -68,7 +68,7 @@ export default function Page() {
           },
           {
             q: 'Where should a PNW first-timer actually go?',
-            a: 'A state park within 90 minutes of Seattle or Portland, in mid-July through August. Deception Pass, Lake Wenatchee, Cape Disappointment, Beverly Beach, and Silver Falls are all first-trip-friendly. Save Mt Rainier&apos;s Paradise area, the Hoh Rainforest, and Crater Lake for trip three - they are extraordinary but harder to reserve, harder to camp in cold, and farther from medical/repair help.',
+            a: 'A state park within 90 minutes of Seattle or Portland, in mid-July through August. Deception Pass, Lake Wenatchee, Cape Disappointment, Beverly Beach, and Silver Falls are all first-trip-friendly. Save Mt Rainier\'s Paradise area, the Hoh Rainforest, and Crater Lake for trip three - they are extraordinary but harder to reserve, harder to camp in cold, and farther from medical/repair help.',
           },
         ])}
       />

@@ -56,7 +56,7 @@ export default function Page() {
           },
           {
             q: 'How does the foliage-season rush work?',
-            a: 'Late September through Columbus Day weekend in Vermont, New Hampshire, Maine, and the Adirondacks is the most-crowded stretch of the year. Reservations book 4-11 months in advance depending on park system. Acadia, the White Mountains, and Vermont&apos;s Smugglers&apos; Notch / Stowe corridor get the heaviest traffic. Mid-week dates are dramatically easier than weekends.',
+            a: 'Late September through Columbus Day weekend in Vermont, New Hampshire, Maine, and the Adirondacks is the most-crowded stretch of the year. Reservations book 4-11 months in advance depending on park system. Acadia, the White Mountains, and Vermont\'s Smugglers\' Notch / Stowe corridor get the heaviest traffic. Mid-week dates are dramatically easier than weekends.',
           },
           {
             q: 'Are there bears? Do I need a canister?',
@@ -68,7 +68,7 @@ export default function Page() {
           },
           {
             q: 'Where should a Northeast first-timer actually go?',
-            a: 'A state park within 2 hours of home, in July-August. Lake George Islands or Eighth Lake (NY), Pillsbury or Bear Brook (NH), Quechee or Smugglers&apos; Notch (VT), Sebago or Lily Bay (ME). Save Acadia, the Presidentials, and the High Peaks for trip three or four.',
+            a: 'A state park within 2 hours of home, in July-August. Lake George Islands or Eighth Lake (NY), Pillsbury or Bear Brook (NH), Quechee or Smugglers\' Notch (VT), Sebago or Lily Bay (ME). Save Acadia, the Presidentials, and the High Peaks for trip three or four.',
           },
         ])}
       />

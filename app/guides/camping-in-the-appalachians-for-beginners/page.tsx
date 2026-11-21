@@ -64,11 +64,11 @@ export default function Page() {
           },
           {
             q: 'How hard is it to book Smokies, Shenandoah, or Blue Ridge campgrounds?',
-            a: 'Variable. The Great Smoky Mountains&apos; popular campgrounds (Cades Cove, Smokemont, Elkmont, Cataloochee) book 6 months out at recreation.gov. Shenandoah&apos;s Big Meadows and Loft Mountain are similarly competitive. Many Blue Ridge Parkway campgrounds are first-come, first-served and arrive-by-2pm to get a site on weekends. State parks (NC, TN, VA) often have more availability than the federal campgrounds for the same general area.',
+            a: 'Variable. The Great Smoky Mountains\' popular campgrounds (Cades Cove, Smokemont, Elkmont, Cataloochee) book 6 months out at recreation.gov. Shenandoah\'s Big Meadows and Loft Mountain are similarly competitive. Many Blue Ridge Parkway campgrounds are first-come, first-served and arrive-by-2pm to get a site on weekends. State parks (NC, TN, VA) often have more availability than the federal campgrounds for the same general area.',
           },
           {
             q: 'Where should an Appalachian first-timer actually go?',
-            a: 'A state park within 90 minutes of home, in late September or April-May. North Carolina&apos;s Stone Mountain SP, Mount Mitchell SP, or Hanging Rock SP; Tennessee&apos;s Fall Creek Falls or Cumberland Mountain SP; Virginia&apos;s Hungry Mother SP or Douthat SP. Save the headline national park sites (Cades Cove, Big Meadows) for trip three.',
+            a: 'A state park within 90 minutes of home, in late September or April-May. North Carolina\'s Stone Mountain SP, Mount Mitchell SP, or Hanging Rock SP; Tennessee\'s Fall Creek Falls or Cumberland Mountain SP; Virginia\'s Hungry Mother SP or Douthat SP. Save the headline national park sites (Cades Cove, Big Meadows) for trip three.',
           },
         ])}
       />
