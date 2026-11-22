@@ -323,7 +323,9 @@ export default function Page() {
           Two things make the transition easier. Get everyone into sleep layers before the last
           activity, not after it, so nobody is changing clothes in a cold tent at the end of the
           night. And run the last bathroom trip as a group walk with headlamps rather than as
-          individual missions. For the rest of the first-night sequence, our{' '}
+          individual missions; our guide to{' '}
+          <Link href="/guides/nighttime-bathroom-trips-camping-with-kids">nighttime bathroom trips</Link>{' '}
+          covers the 2 a.m. version. For the rest of the first-night sequence, our{' '}
           <Link href="/guides/first-night-camping-guide">first night camping guide</Link> covers the
           order of operations,{' '}
           <Link href="/guides/how-to-get-kids-to-sleep-camping">
