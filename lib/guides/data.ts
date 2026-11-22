@@ -79,7 +79,7 @@ export const GUIDES: Guide[] = [
     title: 'Camping With Toddlers',
     description: 'Protecting the nap, physical containment instead of verbal rules, and a sleep setup that actually works.',
     eyebrow: 'With kids',
-    relatedGuides: ['camping-with-a-baby', 'camping-with-kids-first-time', 'backyard-camping-with-kids'],
+    relatedGuides: ['camping-with-a-baby', 'camping-with-kids-first-time', 'backyard-camping-with-kids', 'nighttime-bathroom-trips-camping-with-kids'],
   },
   {
     slug: 'summer-camping-with-kids',
@@ -689,7 +689,7 @@ export const GUIDES: Guide[] = [
     metaTitle: 'Camping After Dark With Kids',
     metaDescription:
       'Camping after dark with kids: how much daylight fall costs you, the three-layer lighting setup for a campsite, and what to do with a long evening.',
-    relatedGuides: ['stargazing-camping-with-kids', 'how-to-get-kids-to-sleep-camping', 'fall-camping-for-beginners'],
+    relatedGuides: ['stargazing-camping-with-kids', 'how-to-get-kids-to-sleep-camping', 'fall-camping-for-beginners', 'nighttime-bathroom-trips-camping-with-kids'],
   },
   {
     slug: 'how-to-get-kids-to-sleep-camping',
@@ -700,7 +700,7 @@ export const GUIDES: Guide[] = [
     metaTitle: 'How to Get Kids to Sleep While Camping',
     metaDescription:
       'How to get kids to sleep while camping: the wind-down routine, a warm sleep setup, and fixes for 5pm sunsets, tent noise, and the 2am wake-up.',
-    relatedGuides: ['camping-after-dark-with-kids', 'how-to-keep-kids-warm-camping', 'first-night-camping-guide'],
+    relatedGuides: ['camping-after-dark-with-kids', 'how-to-keep-kids-warm-camping', 'first-night-camping-guide', 'nighttime-bathroom-trips-camping-with-kids'],
   },
   {
     slug: 'when-do-campgrounds-close',
@@ -1121,6 +1121,17 @@ export const GUIDES: Guide[] = [
     metaDescription:
       'How to keep bottles, jugs, and filters from freezing on a cold camping trip: where to store water overnight, why upside down works, and how to thaw a jug.',
     relatedGuides: ['winter-camping-for-beginners', 'camp-stove-fuel-in-cold-weather', 'how-to-keep-batteries-warm-camping'],
+  },
+  {
+    slug: 'nighttime-bathroom-trips-camping-with-kids',
+    category: 'scenario',
+    title: 'Nighttime Bathroom Trips While Camping With Kids',
+    description: 'Site choice, headlamps, a pee bottle or potty in the tent, and a short safe routine for the 2 a.m. bathroom trip at camp.',
+    eyebrow: 'Night with kids',
+    metaTitle: 'Night Bathroom Trips Camping With Kids',
+    metaDescription:
+      'How to handle middle-of-the-night bathroom trips at camp with kids: site choice, lighting, a pee bottle or potty in the tent, and a plan for cold nights.',
+    relatedGuides: ['camping-after-dark-with-kids', 'how-to-get-kids-to-sleep-camping', 'camping-with-toddlers', 'how-to-choose-a-family-campsite'],
   },
   {
     slug: 'water-safety-at-camp-with-kids',

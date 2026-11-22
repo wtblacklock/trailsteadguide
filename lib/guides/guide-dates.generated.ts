@@ -121,4 +121,5 @@ export const GUIDE_DATES: Record<string, GuideDates> = {
   'how-to-pitch-a-tent-on-uneven-ground': { datePublished: '2026-11-16', dateModified: '2026-11-16' },
   'sleeping-bag-temperature-ratings-explained': { datePublished: '2026-11-19', dateModified: '2026-11-19' },
   'how-to-keep-water-from-freezing-camping': { datePublished: '2026-11-21', dateModified: '2026-11-21' },
+  'nighttime-bathroom-trips-camping-with-kids': { datePublished: '2026-11-22', dateModified: '2026-11-22' },
 }
