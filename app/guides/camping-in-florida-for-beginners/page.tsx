@@ -56,7 +56,7 @@ export default function Page() {
           },
           {
             q: 'Are alligators an actual concern?',
-            a: 'Yes, but the risk is manageable. Alligators live in essentially every fresh and brackish body of water in Florida - campground lakes, canals, even retention ponds. They are mostly afraid of people, but never swim in a posted alligator area at dawn or dusk, never feed wildlife, and never let small dogs or kids near the water&apos;s edge unattended. At Everglades and Big Cypress sites, treat the entire campground edge as gator territory.',
+            a: 'Yes, but the risk is manageable. Alligators live in essentially every fresh and brackish body of water in Florida - campground lakes, canals, even retention ponds. They are mostly afraid of people, but never swim in a posted alligator area at dawn or dusk, never feed wildlife, and never let small dogs or kids near the water\'s edge unattended. At Everglades and Big Cypress sites, treat the entire campground edge as gator territory.',
           },
           {
             q: 'What should I know about hurricane season?',

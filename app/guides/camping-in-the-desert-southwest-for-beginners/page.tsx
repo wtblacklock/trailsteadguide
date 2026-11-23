@@ -64,7 +64,7 @@ export default function Page() {
           },
           {
             q: 'How do I book Zion, Arches, Grand Canyon, or Big Bend?',
-            a: 'Reserve 6 months out at recreation.gov, the day the window opens. Watchman (Zion), Devil&apos;s Garden (Arches), Mather (Grand Canyon South Rim), Chisos Basin (Big Bend) are all competitive, and the most popular weekends fill within hours. Some sites are first-come, first-served - Zion&apos;s South Campground was historically; check current rules. Mid-week and shoulder-season are dramatically easier.',
+            a: 'Reserve 6 months out at recreation.gov, the day the window opens. Watchman (Zion), Devil\'s Garden (Arches), Mather (Grand Canyon South Rim), Chisos Basin (Big Bend) are all competitive, and the most popular weekends fill within hours. Some sites are first-come, first-served - Zion\'s South Campground was historically; check current rules. Mid-week and shoulder-season are dramatically easier.',
           },
           {
             q: 'Where should a Desert Southwest first-timer actually go?',
