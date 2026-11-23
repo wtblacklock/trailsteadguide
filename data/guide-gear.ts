@@ -1030,6 +1030,9 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'SAFETY', productId: 'tick-twister-remover' },
     { slot: 'SAFETY', productId: 'thriad-first-aid-430' },
   ],
+  'poison-ivy-oak-and-sumac-in-kids': [
+    { slot: 'SAFETY', productId: 'thriad-first-aid-430' },
+  ],
   'sleeping-pad-r-value-explained': [
     { slot: 'SLEEP_SURFACE', productId: 'therm-a-rest-z-lite-sol' },
     { slot: 'SLEEP_SURFACE', productId: 'rab-ionosphere-5-5' },

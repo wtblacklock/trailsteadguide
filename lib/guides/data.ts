@@ -770,6 +770,18 @@ export const GUIDES: Guide[] = [
     relatedGuides: ['camping-first-aid-kit-for-families', 'hiking-with-kids-from-camp', 'camping-in-the-appalachians-for-beginners'],
   },
   {
+    slug: 'poison-ivy-oak-and-sumac-in-kids',
+    category: 'scenario',
+    title: 'Poison Ivy, Oak, and Sumac in Kids at Camp',
+    description:
+      'How to tell poison ivy, oak, and sumac apart, wash exposure off fast, treat the rash at camp, and know when it needs a doctor.',
+    eyebrow: 'Plant safety',
+    metaTitle: 'Poison Ivy, Oak, Sumac at Camp',
+    metaDescription:
+      'Poison ivy, oak, and sumac at camp: how to spot them, wash exposure off fast, treat the rash, and know when it needs a doctor.',
+    relatedGuides: ['ticks-and-lyme-disease-in-kids', 'camping-first-aid-kit-for-families', 'hiking-with-kids-from-camp'],
+  },
+  {
     slug: 'camping-in-bear-country-with-kids',
     category: 'scenario',
     title: 'Camping in Bear Country With Kids',
