@@ -150,7 +150,12 @@ constants
   cost." `lib/seo.ts` already has `productGraph()` — wire it up.
 - **Effort:** S
 - **Expected lift:** high (paid SKUs deserve product schema)
-- **Status:** queued
+- **Status:** shipped (2026-11-23) - found already implemented. `lib/seo.ts`
+  exports `tripPackProductGraph()` (Product + AggregateOffer across both
+  Basic/Premium tiers, with price, currency, availability, and seller), and
+  `app/trip-pack/[planSlug]/page.tsx` renders it via `<JsonLd data={productSchema} />`.
+  Covered by `lib/__tests__/seo-product-fields.test.ts`. This status line
+  was stale.
 
 #### B2. Add Person schema for an author byline
 - **Why:** All Article schemas use `author: Organization` today. E-E-A-T
