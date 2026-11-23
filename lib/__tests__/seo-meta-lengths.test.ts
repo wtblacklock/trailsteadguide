@@ -64,4 +64,13 @@ describe('titleWithQualifier', () => {
       }
     }
   })
+
+  it('keeps every printable print-view title within the rendered budget', () => {
+    for (const p of PRINTABLES) {
+      const rendered = titleWithQualifier(p.title, ['Print View']) + TITLE_TEMPLATE_SUFFIX
+      if (p.title.length + TITLE_TEMPLATE_SUFFIX.length <= MAX_RENDERED_TITLE_LENGTH) {
+        expect(rendered.length, rendered).toBeLessThanOrEqual(MAX_RENDERED_TITLE_LENGTH)
+      }
+    }
+  })
 })

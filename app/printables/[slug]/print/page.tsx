@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { PRINTABLES, getPrintableBySlug } from '@/lib/printables'
-import { pageMetadata } from '@/lib/seo'
+import { pageMetadata, titleWithQualifier } from '@/lib/seo'
 import { ARTWORK_RENDERERS } from '@/lib/printables/artwork-renderers'
 import PrintTrigger from '@/components/printables/PrintTrigger'
 
@@ -20,7 +20,7 @@ export async function generateMetadata({
   const printable = getPrintableBySlug(slug)
   if (!printable) return {}
   return pageMetadata({
-    title: `${printable.title} - Print View`,
+    title: titleWithQualifier(printable.title, ['Print View']),
     description: printable.description,
     path: `/printables/${printable.slug}/print`,
     noIndex: true, // Print view is for download; landing page is the indexable one.
