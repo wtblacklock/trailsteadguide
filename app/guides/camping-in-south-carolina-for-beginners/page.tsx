@@ -80,7 +80,7 @@ export default function Page() {
           src: HERO_IMAGE,
           alt: 'A wooden boardwalk winding through a green bottomland forest of tall hardwood trees',
         }}
-        dateModified="2026-11-02"
+        dateModified="2026-11-24"
       >
         <QuickAnswer
           tldr="Camp mid-October through April. Start at a state park with showers, on the coast or in the Upstate, and pack for bugs, a 40 degree night, and rain."
