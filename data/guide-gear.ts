@@ -1543,4 +1543,12 @@ export const GUIDE_GEAR: Record<string, GuideGearEntry[]> = {
     { slot: 'SAFETY', productId: 'sawyer-squeeze-water-filter' },
     { slot: 'KID_GEAR', productId: 'celestron-outland-binoculars' },
   ],
+  'camping-in-south-carolina-for-beginners': [
+    { slot: 'SLEEP_BAG', productId: 'coleman-brazos-bag' },
+    { slot: 'TENT', productId: 'coleman-sundome-4p' },
+    { slot: 'RAIN_GEAR', productId: 'geertop-17x10-tarp' },
+    { slot: 'RAIN_GEAR', productId: 'tesorrio-sand-stakes-6pk' },
+    { slot: 'SAFETY', productId: 'sawyer-permethrin-clothing-spray' },
+    { slot: 'SAFETY', productId: 'tickcheck-tick-remover-kit' },
+  ],
 }

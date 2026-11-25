@@ -38,6 +38,7 @@ export const GUIDE_DATES: Record<string, GuideDates> = {
   'camping-in-new-york-for-beginners': { datePublished: '2026-09-02', dateModified: '2026-09-02' },
   'camping-in-north-carolina-for-beginners': { datePublished: '2026-10-05', dateModified: '2026-10-05' },
   'camping-in-pennsylvania-for-beginners': { datePublished: '2026-09-02', dateModified: '2026-10-06' },
+  'camping-in-south-carolina-for-beginners': { datePublished: '2026-11-25', dateModified: '2026-11-25' },
   'camping-in-texas-for-beginners': { datePublished: '2026-04-26', dateModified: '2026-10-06' },
   'camping-in-the-appalachians-for-beginners': { datePublished: '2026-04-26', dateModified: '2026-10-06' },
   'camping-in-the-desert-southwest-for-beginners': { datePublished: '2026-04-26', dateModified: '2026-10-06' },

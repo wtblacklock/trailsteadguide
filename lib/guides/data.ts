@@ -283,7 +283,7 @@ export const GUIDES: Guide[] = [
     metaTitle: 'Georgia Camping for Beginners (Heat)',
     metaDescription:
       'Camping in Georgia for beginners: North Georgia mountain parks, Cumberland Island, heat and humidity, bugs, snakes, and the setup that handles it.',
-    relatedGuides: ['camping-in-florida-for-beginners', 'camping-in-a-heatwave', 'summer-camping-for-beginners'],
+    relatedGuides: ['camping-in-florida-for-beginners', 'camping-in-a-heatwave', 'camping-in-south-carolina-for-beginners'],
   },
   {
     slug: 'camping-in-north-carolina-for-beginners',
@@ -295,7 +295,7 @@ export const GUIDES: Guide[] = [
     metaTitle: 'North Carolina Camping for Beginners',
     metaDescription:
       'Camping in North Carolina for beginners: Blue Ridge state parks, fall color, cold mountain nights, bears, the Outer Banks, and the setup that handles it.',
-    relatedGuides: ['camping-in-the-appalachians-for-beginners', 'how-to-keep-kids-warm-camping', 'camping-in-bear-country-with-kids'],
+    relatedGuides: ['camping-in-the-appalachians-for-beginners', 'camping-in-south-carolina-for-beginners', 'camping-in-bear-country-with-kids'],
   },
   {
     slug: 'camping-in-wisconsin-for-beginners',
@@ -1200,5 +1200,17 @@ export const GUIDES: Guide[] = [
     metaDescription:
       'Camping gifts for teens that give them their own space and their own job at camp: a hammock, a real headlamp, an adult-size bag, a water filter, and more.',
     relatedGuides: ['camping-gifts-for-kids', 'gifts-for-campers', 'camping-gifts-under-50'],
+  },
+  {
+    slug: 'camping-in-south-carolina-for-beginners',
+    category: 'location',
+    title: 'Camping in South Carolina for Beginners',
+    description: 'Beach, swamp, and mountain state parks, a fall and winter season that beats summer, Congaree, and the bugs, ticks, and gators to plan for.',
+    eyebrow: 'South Carolina',
+    shortLabel: 'South Carolina',
+    metaTitle: 'South Carolina Camping for Beginners',
+    metaDescription:
+      'Camping in South Carolina for beginners: why fall and winter are the best season, beach and mountain state parks, Congaree, bugs, gators, and what to pack.',
+    relatedGuides: ['camping-in-georgia-for-beginners', 'camping-in-north-carolina-for-beginners', 'camping-in-florida-for-beginners'],
   },
 ]
