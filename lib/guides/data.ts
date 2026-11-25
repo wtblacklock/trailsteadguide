@@ -767,7 +767,7 @@ export const GUIDES: Guide[] = [
     metaTitle: 'Ticks and Lyme Disease at Camp',
     metaDescription:
       'Ticks and Lyme disease at camp: how to keep ticks off your family, do an evening tick check, remove one safely, and spot the early signs of Lyme disease.',
-    relatedGuides: ['camping-first-aid-kit-for-families', 'hiking-with-kids-from-camp', 'camping-in-the-appalachians-for-beginners'],
+    relatedGuides: ['camping-first-aid-kit-for-families', 'snake-safety-at-camp-with-kids', 'hiking-with-kids-from-camp'],
   },
   {
     slug: 'poison-ivy-oak-and-sumac-in-kids',
@@ -779,7 +779,19 @@ export const GUIDES: Guide[] = [
     metaTitle: 'Poison Ivy, Oak, Sumac at Camp',
     metaDescription:
       'Poison ivy, oak, and sumac at camp: how to spot them, wash exposure off fast, treat the rash, and know when it needs a doctor.',
-    relatedGuides: ['ticks-and-lyme-disease-in-kids', 'camping-first-aid-kit-for-families', 'hiking-with-kids-from-camp'],
+    relatedGuides: ['ticks-and-lyme-disease-in-kids', 'snake-safety-at-camp-with-kids', 'camping-first-aid-kit-for-families'],
+  },
+  {
+    slug: 'snake-safety-at-camp-with-kids',
+    category: 'scenario',
+    title: 'Snake Safety at Camp With Kids',
+    description:
+      'Avoid an encounter, know what to do if you see one, and the first aid steps that matter if a bite happens.',
+    eyebrow: 'Snake safety',
+    metaTitle: 'Snake Safety at Camp With Kids',
+    metaDescription:
+      'Snake safety at camp: avoid an encounter, know what to do if you see one, and the first aid steps if a bite happens, from CDC and Mayo Clinic guidance.',
+    relatedGuides: ['camping-in-bear-country-with-kids', 'ticks-and-lyme-disease-in-kids', 'camping-first-aid-kit-for-families'],
   },
   {
     slug: 'camping-in-bear-country-with-kids',
@@ -790,7 +802,7 @@ export const GUIDES: Guide[] = [
     metaTitle: 'Camping in Bear Country With Kids',
     metaDescription:
       'Camping in bear country with kids: why fall is peak bear season, what goes in the bear box, three rules kids can remember, and what to do if you see one.',
-    relatedGuides: ['fall-camping-for-beginners', 'camping-in-wyoming-for-beginners', 'dispersed-camping-on-blm-and-national-forest-land'],
+    relatedGuides: ['snake-safety-at-camp-with-kids', 'camping-in-wyoming-for-beginners', 'dispersed-camping-on-blm-and-national-forest-land'],
   },
   {
     slug: 'thanksgiving-camping-with-kids',

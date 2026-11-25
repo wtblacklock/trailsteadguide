@@ -304,6 +304,13 @@ export const TERMS: Term[] = [
       'An insecticide used to treat clothing and gear, not skin, that disables ticks and mosquitoes on contact rather than just repelling them. A factory treatment lasts up to 70 washes; a DIY spray-on treatment lasts about 6.',
   },
   {
+    term: 'Pit viper',
+    definition:
+      'The group of venomous US snakes that includes rattlesnakes, copperheads, and cottonmouths (water moccasins), named for the heat-sensing pit between each eye and nostril. Coral snakes, the other venomous group found in the US, are not pit vipers and look different. Field identification is unreliable either way, so any bite from an unidentified snake needs emergency care.',
+    href: '/guides/snake-safety-at-camp-with-kids',
+    linkText: 'Snake safety at camp',
+  },
+  {
     term: 'Potable',
     definition:
       'Water confirmed safe to drink without filtering or treating, usually from a tested municipal or well supply. A campground spigot marked "potable" can be trusted; an unmarked one should not be.',

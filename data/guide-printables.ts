@@ -73,4 +73,5 @@ export const GUIDE_PRINTABLES: Record<string, string[]> = {
   'hiking-with-kids-from-camp': ['nature-scavenger-hunt-card', 'leave-no-trace-quick-reference'],
   'ticks-and-lyme-disease-in-kids': ['camp-first-aid-quick-reference'],
   'poison-ivy-oak-and-sumac-in-kids': ['camp-first-aid-quick-reference'],
+  'snake-safety-at-camp-with-kids': ['camp-first-aid-quick-reference'],
 }
