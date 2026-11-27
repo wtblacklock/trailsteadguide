@@ -4,10 +4,12 @@ Products spotted during the weekly gear-rotation pass that look worth a slot but
 were not wired in yet. Each entry says what still needs to happen before it can
 ship. Trim this file as items are actioned or go stale.
 
-Last reviewed: 2026-11-20
+Last reviewed: 2026-11-27
 
 ## Resolved since last review
 
+- `celestron-outland-binoculars` (B004KM82IQ) was one of the 20 entries left
+  unconfirmed on 2026-11-20. Confirmed buyable this week (real Add to Cart page).
 - Both dead products carried in this file since 2026-11-06/09 were replaced by
   human-driven PRs before this week's run: `reliance-aqua-tainer-7gal-2pack` got a
   new ASIN in #202, `heavy-duty-aluminum-foil` in #198. No action needed.
@@ -35,30 +37,70 @@ everything else in the registry) works fine. A human with environment access
 should add `images-na.ssl-images-amazon.com` to the allowed hosts, or the 4
 affected entries (`lodge-cast-iron-skillet`, `celestron-outland-binoculars`,
 `sawyer-extractor-pump-kit`, `fwc-tent-sundome`) can be migrated to the modern
-domain next time someone is verifying them anyway.
+domain next time someone is verifying them anyway. Unchanged as of 2026-11-27 -
+same 4 entries, same cause.
 
-## This week's audited slice (2026-11-20)
+Separately, this week's container started with no `node_modules` (same as the
+2026-11-13 run) and no setup script in either environment, so `npm ci` has to run
+before any check works. Not a registry problem, but it costs time every run.
 
-Rather than a size-based slice of the ~127 active products, this week targeted the
-21 active entries with no recorded `affiliateUrl` (they fall back to a bare
-`/dp/<ASIN>` link via `getProductUrl()` and have likely never been individually
-re-verified): `eurmax-galvanized-tent-stakes`, `fwc-trash-can-wakeman`,
-`opinel-no7-folding-knife`, `reflective-guyline-50ft`, `suunto-a10-compass`,
-`eno-doublenest-hammock`, `lodge-cast-iron-skillet`, `pull-through-knife-sharpener`,
-`mineral-oil-food-safe`, `celestron-outland-binoculars`,
-`leukotape-blister-prevention`, `tackle-box-lure-assortment`, `lodge-dutch-oven`,
-`fishing-forceps-hemostat`, `gsi-backpack-bocce`, `team-scrimmage-vests-12pack`,
-`lawn-bowling-skittles-set`, `stove-2-burner`, `cooler-basic`,
-`fwc-lantern-consciot`, `fwc-sleeping-bag-mallome`.
+## This week's audited slice (2026-11-27)
 
-Result: `lodge-cast-iron-skillet` (B00006JSUA) came back with a genuine Add to Cart
-page - title "Lodge Pre-Seasoned Cast Iron Skillet, PFAS-Free, 10.25 Inches", price
-$23 (recorded `~$20`, close enough, no change needed). The other 20 hit the
-robot-check wall above on every attempt (several retried with 4-15s spacing) and
-could not be positively verified either way. None showed "Currently unavailable" or
-a 404, so there is no evidence any of them are dead - just unconfirmed. Next
-reviewer: try these 20 again, ideally from a normal browser session
-(`--browser-audit` snippet) rather than this container.
+Rather than continuing the no-`affiliateUrl` slice from 2026-11-20 (20 of those 21
+are still unconfirmed - see the entry above, carried forward below), this week
+targeted the next batch of actively-used products that had not had individual
+recent attention, mostly kid/toddler sleeping bags, kid cold-weather layers, and
+dog gear: `teton-junior-20`, `redcamp-kids-mummy`, `coleman-kids-45`,
+`retrospec-dream-25`, `kelty-space-cadet-40`, `kurgo-loft-dog-jacket`,
+`mushers-secret-paw-wax`, `vicherub-kids-thermal-set`, `wildbreakers-kids-mittens`,
+`kelty-cosmic-20-down`, `teton-trailhead-20`, `sea-to-summit-reactor-extreme-liner`,
+`crown-shades-10x10-canopy`, `tickcheck-tick-remover-kit`,
+`primacare-mylar-emergency-blankets`, `gsi-glacier-stainless-camper`,
+`geertop-4p-4-season`.
+
+The egress path to Amazon worked better than it has in weeks, so
+`validate-affiliate-links.mjs` was also run twice against the **full** registry
+(142 linked ASINs/short-links) rather than only the planned slice - strictly more
+signal for the same script:
+
+- Run 1 (`--quiet`): 20 OK, 1 not-buyable, 0 broken, 121 unverified.
+- Run 2 (~15 min later, full log): 16 OK, 0 not-buyable, 0 broken, 126 unverified.
+
+Confirmed buyable (real Add to Cart page, either run) that had not been
+individually confirmed before: `vicherub-kids-thermal-set`,
+`sea-to-summit-reactor-extreme-liner`, `tickcheck-tick-remover-kit` (all three
+from this week's planned slice), plus `coleman-sundome-4p`,
+`coleman-classic-rolling-cooler`, `therm-a-rest-z-lite-sol`,
+`uco-stormproof-matches`, `cascade-mountain-tech-trekking-poles`,
+`coleman-xtreme-50-cooler`, `rtic-45-cooler`, `kids-craft-supply-kit`,
+`kids-medal-ribbons-pack`, `bearvault-food-canister`, and the deprecated-but-live
+`tent-sundome-3` (via its `amzn.to` link). The rest of this week's planned slice
+(14 of 17) hit the robot-check wall on every attempt in both runs - unconfirmed,
+not evidence of being dead. Also unconfirmed again: 20 of the 21 from the
+2026-11-20 no-`affiliateUrl` slice (only `celestron-outland-binoculars`, noted
+above, came through this time).
+
+One confirmed dead product, from a genuine (non-robot-checked) product page:
+`graco-pack-n-play-on-the-go` (B09MWHG3ZT) returned "Currently unavailable" on
+the first run. See "Needs a replacement" below.
+
+Next reviewer: the remaining unconfirmed items in both slices are still worth a
+retry, ideally from a normal browser session (`--browser-audit` snippet) rather
+than this container, since the hit rate here is well under 20%.
+
+## Needs a replacement
+
+- `graco-pack-n-play-on-the-go` (B09MWHG3ZT): "Currently unavailable", confirmed
+  2026-11-27 on a genuine product page fetch (the response had
+  `id="productTitle"`, so this was not a robot check). Fills the `KID_GEAR` slot
+  on `camping-with-a-baby` and `camping-with-toddlers`. A same-category travel
+  crib/playard replacement was attempted this run, but Amazon's search page
+  (`/s?k=...`) returned a robot-check/503 on every try (unlike individual product
+  pages, which sometimes get through), so no candidate ASIN could be verified -
+  per the hard rule against inventing an ASIN, nothing was swapped in. Next run
+  (or a human with real browser access): search "Graco pack n play" or similar
+  travel playard on amazon.com, verify a current in-stock listing's ASIN, title,
+  and price, and swap it into the registry plus both guides' gear shelf.
 
 ## Needs a human decision
 
@@ -74,22 +116,26 @@ so it is left as-is.
 
 - NEMO Aurora Highrise 6P (family tent). Outdoor Life's family-tent roundup lists it
   as a strong pick for smaller families, alongside picks the registry already covers.
-  Not checked this week either - this run's Amazon time went to re-verifying the
-  21-item slice above, not sourcing new candidates (see hard rule: at most 1-2 new
-  products per run, and only once verified). Before adding it, verify a variant ASIN
-  with Add to Cart and a price, and compare it against `kelty-wireless-6` and
-  `core-6p-instant-cabin`.
+  Still not checked: this week's Amazon search attempts (for this and the Graco
+  replacement above) all hit a robot-check/503 on Amazon's `/s?k=...` search page.
+  Before adding it, verify a variant ASIN with Add to Cart and a price, and compare
+  it against `kelty-wireless-6` and `core-6p-instant-cabin`.
 
-- Reusable ice packs for `how-to-pack-a-cooler`. Its shelf is three coolers and
-  nothing else, while the copy leans on block ice. A long-lasting, well-reviewed
-  cooler ice pack set would round it out. Not sourced this week, same reason as above.
+- Reusable ice packs for `how-to-pack-a-cooler`. Confirmed again this week: the
+  shelf is still exactly three coolers (`coleman-classic-rolling-cooler`,
+  `coleman-xtreme-50-cooler`, `rtic-45-cooler`) and nothing else, while the guide's
+  copy leans on block ice. A long-lasting, well-reviewed cooler ice pack set would
+  round it out. Not sourced this week, same search-page block as above.
 
 ## Video candidates skipped
 
 `setup-order`, `constellations-by-season` and `using-red-light-at-camp` still have
-no video. The only credible hit this week was a Cerritos Library "Constellations"
+no video as of the last video pass (2026-11-16 or earlier - see git history for
+this file). That pass's only credible hit was a Cerritos Library "Constellations"
 session with NASA's Universe of Learning (`lNY4QeYa4XE`, oEmbed valid), but it is
 a craft-focused library program, not a seasonal sky guide, so it was not wired in.
+Not re-checked this week - this run (per the gear-catalog task) is scoped to
+products, not videos.
 
 ## Closed this week
 
